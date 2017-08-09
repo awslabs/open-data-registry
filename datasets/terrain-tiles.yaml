@@ -1,0 +1,15 @@
+Name: Terrain Tiles
+Description: A global dataset providing bare-earth terrain heights, tiled for easy usage and provided on S3.
+Documentation: https://mapzen.com/documentation/terrain-tiles/
+Contact: https://github.com/tilezen/joerd/issues
+UpdateFrequency: New data is added based on community feedback
+Tags:
+  - elevation
+  - earth observation
+  - gis
+License: https://mapzen.com/documentation/terrain-tiles/attribution/
+Resources:
+  - Description: Gridded elevation tiles
+    ARN: arn:aws:s3:::elevation-tiles-prod
+    Region: us-east-1
+    Type: AWS::S3::Bucket

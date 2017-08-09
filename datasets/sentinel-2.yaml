@@ -1,0 +1,30 @@
+Name: Sentinel-2
+Description: An ongoing collection of satellite imagery of all land on Earth produced by the Sentinel-2 satellite.
+Documentation: http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/
+Contact: https://lists.osgeo.org/mailman/listinfo/sentinel-pds
+UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Sentinel Scientific Hub.
+Tags:
+  - earth observation
+  - satellite imagery
+  - gis
+  - natural resource
+License: |
+  Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+Resources:
+  - Description: Level 1C scenes and metadata
+    ARN: arn:aws:s3:::sentinel-s2-l1c
+    Region: eu-central-1
+    Type: AWS::S3::Bucket
+  - Description: Level 2A scenes and metadata, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l2a
+    Region: eu-central-1
+    Type: AWS::S3::Bucket
+  - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l1c-zips
+    Region: eu-central-1
+    Type: AWS::S3::Bucket
+  - Description: New scene notifications
+    ARN: arn:aws:sns:eu-west-1:214830741341:NewSentinel2Product
+    Region: eu-west-1
+    Type: AWS::SNS::Topic
+

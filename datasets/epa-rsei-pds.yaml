@@ -1,0 +1,13 @@
+Name: EPA Risk-Screening Environmental Indicators
+Description: Detailed air model results from EPA’s Risk-Screening Environmental Indicators (RSEI) model.
+Documentation: https://www.epa.gov/rsei
+Contact: https://www.epa.gov/rsei/forms/contact-us-about-rsei-model
+UpdateFrequency: Updated infrequently
+Tags:
+  - environmental
+License: US Government work
+Resources:
+  - Description: RSEI Microdata
+    ARN: arn:aws:s3:::epa-rsei-pds
+    Region: us-east-1
+    Type: AWS::S3::Bucket

@@ -1,0 +1,19 @@
+Name: MODIS on AWS
+Description: Select products from the Moderate Resolution Imaging Spectroradiometer (MODIS) managed by the U.S. Geological Survey and NASA.
+Documentation: https://modis.gsfc.nasa.gov/
+Contact: https://github.com/AstroDigital/modis-ingestor/issues
+UpdateFrequency: New MODIS data is added regularly as soon as they are available.
+Tags:
+  - gis
+  - satellite imagery
+  - natural resource
+License: There are no restrictions on the use of data, unless expressly identified prior to or at the time of receipt.
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::modis-pds
+    Region: us-west-2
+    Type: AWS::S3::Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-west-2:552188055668:New_MODIS_Scene
+    Region: us-west-2
+    Type: AWS::SNS::Topic

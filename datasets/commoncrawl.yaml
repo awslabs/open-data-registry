@@ -1,0 +1,15 @@
+Name: Common Crawl
+Description: A corpus of web crawl data composed of over 5 billion web pages.
+Documentation: http://commoncrawl.org/the-data/get-started/
+Contact: http://commoncrawl.org/connect/contact-us/
+UpdateFrequency: Monthly
+Tags:
+  - encyclopedic
+  - machine learning
+  - internet
+License: This data is available for anyone to use under the [Common Crawl Terms of Use](http://commoncrawl.org/terms-of-use/)
+Resources:
+  - Description: Crawl data (WARC and ARC format)
+    ARN: arn:aws:s3:::commoncrawl
+    Region: us-east-1
+    Type: AWS::S3::Bucket

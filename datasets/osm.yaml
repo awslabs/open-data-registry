@@ -1,0 +1,17 @@
+Name: OpenStreetMap on AWS
+Description: OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.
+Documentation: https://aws.amazon.com/public-datasets/osm/
+Contact: https://github.com/mojodna/osm-pds-pipelines/issues
+UpdateFrequency: Data is updated weekly
+Tags:
+  - mapping
+License: https://www.openstreetmap.org/copyright
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::osm-pds
+    Region: us-east-1
+    Type: AWS::S3::Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-east-1:800218804198:New_File
+    Region: us-east-1
+    Type: AWS::SNS::Topic

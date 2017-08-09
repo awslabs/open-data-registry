@@ -1,0 +1,16 @@
+Name: SpaceNet on AWS
+Description: A corpus of commercial satellite imagery and labeled training data to foster innovation in the development of computer vision algorithms.
+Documentation: http://www.nws.noaa.gov/noaaport/document/GOES-R_NOAAPort_SBN_040416.pdf
+Contact: https://github.com/SpaceNetChallenge/utilities/issues
+UpdateFrequency: New imagery and features are added quarterly
+Tags:
+  - gis
+  - computer vision
+  - machine learning
+  - earth observation
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Resources:
+  - Description: Imagery and metadata in a Requester Pays S3 bucket
+    ARN: arn:aws:s3:::spacenet-dataset
+    Region: us-east-1
+    Type: AWS::S3::Bucket

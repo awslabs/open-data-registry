@@ -1,0 +1,14 @@
+Name: IRS 990 Filings
+Description: Machine-readable data from certain electronic 990 forms filed with the IRS from 2011 to present.
+Documentation: https://www.irs.gov/charities-non-profits/current-valid-xml-schemas-and-business-rules-for-exempt-organizations-modernized-e-file
+Contact: https://www.irs.gov/help-resources/navigate-irsgov
+UpdateFrequency: New filings are added regularly
+Tags:
+  - regulatory
+  - statistics
+License: None
+Resources:
+  - Description: xml, json, csv
+    ARN: arn:aws:s3:::irs-form-990
+    Region: us-east-1
+    Type: AWS::S3::Bucket

@@ -1,0 +1,51 @@
+desc: Simple schema for ODAR compliant dataset listings
+extensions:
+  - ext.py
+type: map
+mapping:
+  Name:
+    type: str
+    required: True
+  Description:
+    type: str
+    required: True
+  Documentation:
+    type: str
+    pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
+    required: True
+  Contact:
+    type: str
+    required: True
+  UpdateFrequency:
+    type: str
+    required: True
+  Tags:
+    type: seq
+    required: True
+    sequence:
+      - type: str
+        func: ext_tags
+  License:
+    type: str
+    required: True
+  Resources:
+    type: seq
+    required: True
+    sequence:
+      - type: map
+        mapping:
+          Description:
+            type: str
+            required: True
+          ARN:
+            type: str
+            required: True
+            pattern: ^arn:aws:.+:.*:.*:.+$
+          Region:
+            type: str
+            required: True
+            pattern: ^.+-.+-.+$
+          Type:
+            type: str
+            required: True
+            pattern: ^AWS::.+::.+$
