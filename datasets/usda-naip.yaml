@@ -1,0 +1,18 @@
+Name: NAIP on AWS
+Description: 1 meter aerial imagery captured during the agricultural growing seasons in the continental U.S.
+Documentation: https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
+Contact: https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
+UpdateFrequency: Not currently updated
+Tags:
+  - earth observation
+  - satellite imagery
+  - gis
+  - natural resource
+  - regulatory
+License: |
+  Public Domain with Attribution
+Resources:
+  - Description: Imagery and metadata in a Requester Pays bucket
+    ARN: arn:aws:s3:::aws-naip
+    Region: us-east-1
+    Type: AWS::S3::Bucket
