@@ -1,7 +1,7 @@
 Name: GOES on AWS
 Description: GOES provides continuous weather imagery and monitoring of meteorological and space environment data across North America.
 Documentation: http://www.nws.noaa.gov/noaaport/document/GOES-R_NOAAPort_SBN_040416.pdf
-Contact:
+Contact: http://www.goes.noaa.gov/contact.html
 UpdateFrequency: New data is added as soon as it's available
 Tags:
   - gis
@@ -13,8 +13,8 @@ Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: New data notifications
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
     Region: us-east-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic

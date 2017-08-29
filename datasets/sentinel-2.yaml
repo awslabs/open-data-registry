@@ -14,17 +14,17 @@ Resources:
   - Description: Level 1C scenes and metadata
     ARN: arn:aws:s3:::sentinel-s2-l1c
     Region: eu-central-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Level 2A scenes and metadata, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l2a
     Region: eu-central-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c-zips
     Region: eu-central-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: New scene notifications
     ARN: arn:aws:sns:eu-west-1:214830741341:NewSentinel2Product
     Region: eu-west-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic
 
