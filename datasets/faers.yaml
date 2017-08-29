@@ -1,0 +1,15 @@
+Name: FDA Adverse Event Reporting System (FAERS)
+Description: The FDA Adverse Event Reporting System (FAERS) is a database that contains information on adverse event and medication error reports submitted to FDA. The database is designed to support the FDA's post-marketing safety surveillance program for drug and therapeutic biologic products. This dataset contains FAERS data from 2004 through the first quarter of 2014.
+Documentation: https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm082193.htm
+Contact: cderosetracking@fda.hhs.gov
+UpdateFrequency: Not updated
+Tags:
+  - regulatory
+  - medicine
+  - pharmaceutical
+License: U.S. Government Work
+Resources:
+  - Description: https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Surveillance/AdverseDrugEffects/ucm082193.htm
+    ARN: arn:aws:s3:::faers
+    Region: us-west-2
+    Type: AWS::S3::Bucket
