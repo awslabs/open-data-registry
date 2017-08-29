@@ -12,16 +12,16 @@ Resources:
   - Description: Surface GRIB files
     ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-surface-grib
     Region: eu-west-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Pressure GRIB files
     ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-pressure-grib
     Region: eu-west-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Notifications for new surface data
     ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-surface-grib
     Region: eu-west-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic
   - Description: Notifications for new pressure data
     ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-pressure-grib
     Region: eu-west-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic
