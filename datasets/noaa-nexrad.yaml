@@ -1,7 +1,7 @@
 Name: NEXRAD on AWS
 Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
 Documentation: https://www.ncdc.noaa.gov/data-access/radar-data/nexrad
-Contact:
+Contact: https://www.ncdc.noaa.gov/contact
 UpdateFrequency: New Level II data is added as soon as it is available.
 Tags:
   - earth observation
@@ -12,16 +12,16 @@ Resources:
   - Description: NEXRAD Level II archive data
     ARN: arn:aws:s3:::noaa-nexrad-level2
     Region: us-east-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::noaa-nexrad-level2-chunks
     Region: us-east-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Notifications for real-time data
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Object
     Region: us-east-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic
   - Description: Notifications for archival data
     ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
     Region: us-east-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic

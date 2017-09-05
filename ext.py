@@ -10,3 +10,13 @@ def ext_tags(value, rule_obj, path):
 
     # If we're here, all tags were ok
     return True
+
+# Check if provided resources are in resources.yaml
+def ext_resources(value, rule_obj, path):
+    resources = yaml.load(open('resources.yaml'))
+    if value not in resources:
+        print('Invalid resource!', value)
+        return False
+
+    # If we're here, all resources were ok
+    return True

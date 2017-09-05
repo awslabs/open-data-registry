@@ -16,8 +16,8 @@ Resources:
   - Description: Project data files
     ARN: arn:aws:s3:::gdelt-open-data
     Region: us-east-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: Notifications for new data
     ARN: arn:aws:sns:us-east-1:928094251383:gdelt-csv
     Region: us-east-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic

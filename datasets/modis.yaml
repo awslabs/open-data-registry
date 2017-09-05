@@ -12,8 +12,8 @@ Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::modis-pds
     Region: us-west-2
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: New data notifications
     ARN: arn:aws:sns:us-west-2:552188055668:New_MODIS_Scene
     Region: us-west-2
-    Type: AWS::SNS::Topic
+    Type: SNS Topic

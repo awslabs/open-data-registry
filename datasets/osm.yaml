@@ -10,8 +10,8 @@ Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::osm-pds
     Region: us-east-1
-    Type: AWS::S3::Bucket
+    Type: S3 Bucket
   - Description: New data notifications
     ARN: arn:aws:sns:us-east-1:800218804198:New_File
     Region: us-east-1
-    Type: AWS::SNS::Topic
+    Type: SNS Topic
