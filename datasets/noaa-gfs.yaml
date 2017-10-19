@@ -1,0 +1,19 @@
+Name: NOAA Global Forecast System (GFS)
+Description: The Global Forecast System (GFS) is a weather forecast model produced by the National Centers for Environmental Prediction (NCEP). Dozens of atmospheric and land-soil variables are available through this dataset, from temperatures, winds, and precipitation to soil moisture and atmospheric ozone concentration. The entire globe is covered by the GFS at a base horizontal resolution of 18 miles (28 kilometers) between grid points, which is used by the operational forecasters who predict weather out to 16 days in the future. Horizontal resolution drops to 44 miles (70 kilometers) between grid point for forecasts between one week and two weeks.
+Documentation: https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs
+Contact: https://www.ncdc.noaa.gov/contact
+UpdateFrequency: Every 6 hours
+Tags:
+  - weather
+  - climate
+  - environmental
+License: U.S. Government Work
+Resources:
+  - Description: A rolling four-week archive of 0.25 degree GFS data.
+    ARN: arn:aws:s3:::noaa-gfs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-east-1:104891172899:noaa-gfs-pds
+    Region: us-east-1
+    Type: SNS Topic

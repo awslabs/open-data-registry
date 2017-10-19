@@ -1,0 +1,19 @@
+Name: NOAA High-Resolution Rapid Refresh (HRRR) Model
+Description: The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.
+Documentation: https://rapidrefresh.noaa.gov/hrrr/
+Contact: https://rapidrefresh.noaa.gov/hrrr/
+UpdateFrequency: Hourly
+Tags:
+  - weather
+  - climate
+  - environmental
+License: U.S. Government Work
+Resources:
+  - Description: A rolling one-week archive of HRRR data.
+    ARN: arn:aws:s3:::noaa-hrrr-pds
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-east-1:104891172899:noaa-hrrr-pds
+    Region: us-east-1
+    Type: SNS Topic
