@@ -33,8 +33,8 @@ Resources:
 
 The metadata required for each dataset entry is as follows:
 
-
-| - |
+| Field | Type | Description |
+| --- | --- | --- |
 | **Name** | String | The public facing name of the dataset |
 |**Description**|String|A high-level description of the dataset|
 |**Documentation**|URL|A link to documentation of the dataset|
