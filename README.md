@@ -1,4 +1,4 @@
-# open-data-registry
+# Registry of Open Data on AWS
 
 A repository of publicly available datasets available on AWS. 
 
@@ -10,7 +10,7 @@ When data is staged for analysis on AWS, it is available for fast access using A
 
 Each dataset in this repository is described with metadata saved in a YAML file in the [/datasets](/datasets) directory. We use these YAML files to provide three services:
 
-- A Registry of Open Data on AWS website.
+- A Registry of Open Data on AWS browser.
 - A hosted YAML file listing all of the dataset entries.
 - Hosted YAML files for each dataset.
 
