@@ -4,7 +4,7 @@ A repository of publicly available datasets available on AWS.
 
 ## What is this for?
 
-When data is staged for analysis on AWS, it is available for fast access using AWS APIs and SDKs and relieves data users from needing to download and store their own copies of the data. This repository exists to help people promote and discover datasets that are available on AWS.
+When data is staged for analysis on AWS, it is available for fast access using AWS APIs and SDKs, and users can access the data without needing to download and store their own copies of it. This repository exists to help people promote and discover datasets that are available on AWS.
 
 ## How are datasets added to the registry?
 
