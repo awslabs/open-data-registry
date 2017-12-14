@@ -51,3 +51,23 @@ mapping:
             type: str
             required: True
             func: ext_resources
+  DataAtWork:
+    type: seq
+    required: False
+    sequence:
+      - type: map
+        mapping:
+          Description:
+            type: str
+            required: True
+          URL:
+            type: str
+            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            required: True
+          AuthorName:
+            type: str
+            required: True
+          AuthorURL:
+            type: str
+            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            required: False
