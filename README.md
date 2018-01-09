@@ -29,7 +29,7 @@ Resources:
     ARN: 
     Region: 
     Type:
-DataATWork:
+DataAtWork:
   - Title: 
     URL: 
     AuthorName: 
