@@ -29,8 +29,8 @@ Resources:
     ARN: 
     Region: 
     Type:
-DataATWork:
-  - Description: 
+DataAtWork:
+  - Title: 
     URL: 
     AuthorName: 
     AuthorURL:
@@ -53,7 +53,7 @@ The metadata required for each dataset entry is as follows:
 |**Resources > Region**|String|AWS region unique identifier, e.g. us-east-1|
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
 |**DataAtWork**|List of lists|A list of links to examples of the dataset being used. May include tutorials, demos, or applications.|
-|**DataAtWork > Description**|String|A description of the example usage of the data.|
+|**DataAtWork > Title**|String|The title of the example usage of the data.|
 |**DataAtWork > URL**|URL|A link to the example.|
 |**DataAtWork > AuthorName**|String|Name of person or entity that created the example.|
 |**DataAtWork > AuthorURL**|String|(Optional) URL for person or entity that created the example.|
