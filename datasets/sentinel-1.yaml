@@ -1,0 +1,25 @@
+Name: Sentinel-1
+Description: Sentinel-1A is a European radar imaging satellite launched in 2014. It is the first Sentinel-1 satellite launched as part of the European Union's Copernicus program.
+Documentation: http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/
+Contact: https://esatellus.service-now.com/csp/
+UpdateFrequency: Daily
+Tags:
+  - earth observation
+  - gis
+  - remote sensing
+  - synthetic aperture radar
+License: https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions
+Resources:
+  - Description: Rolling 1 year of GRD and 2 month of SLC in a Requester Pays S3 bucket
+    ARN: arn:aws:s3:::sentinel-s1-l1c
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: SNS topic for notification of new scenes
+    ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS1L1C
+    Region: eu-central-1
+    Type: SNS Topic
+DataAtWork:
+  - Title: Sentinel Hub
+    URL: https://apps.sentinel-hub.com/sentinel-playground/?baseWmsUrl=services.sentinel-hub.com&instanceID=a7c04225-b861-452d-ac89-7765352cd855&source=S2&lat=40.98676619345964&lng=28.89301300048828&zoom=13&preset=IW_VV&layers=B04,B03,B02&maxcc=20&gain=1.0&gamma=1.0&time=2015-01-01%7C2018-01-16&atmFilter=&showDates=false
+    AuthorName: Sinergise
+    AuthorURL: http://www.sinergise.com/
