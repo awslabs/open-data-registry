@@ -1,10 +1,10 @@
 # Registry of Open Data on AWS
 
-A repository of publicly available datasets available on AWS. 
+A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals. 
 
 ## What is this for?
 
-When data is staged for analysis on AWS, it is available for fast access using AWS APIs and SDKs, and users can access the data without needing to download and store their own copies of it. This repository exists to help people promote and discover datasets that are available on AWS.
+When data is staged for analysis on AWS, users can access the data without needing to download and store their own copies of it. This repository exists to help people promote and discover datasets that are available for easy access on AWS. 
 
 ## How are datasets added to the registry?
 
@@ -94,3 +94,10 @@ Resources:
     Region: eu-west-1
     Type: SNS Topic
 ```
+
+## What kind of data can I add to the registry?
+
+The guiding principle of this registry is to expand access to useful data available on AWS. With that in mind, we prefer to list datasets that are clearly documented, are actively supported, can be used for research or educational purposes, and are optimized for analysis using AWS tools. Datasets are included at the discretion of the AWS Open Data team, which may remove datasets from the registry at any time. Data providers are responsible for maintaining and supporting the data that they share. 
+
+For more guidance on how to contribute to this registry and what kinds of data are suitable for sharing, please review the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct) and [AWS Acceptable Use Policy](https://aws.amazon.com/aup/).
+
