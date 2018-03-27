@@ -11,11 +11,19 @@ Tags:
   - meteorological
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: Imagery and metadata
+  - Description: Imagery and metadata via CICS (http://awsopendata.com/pds-docs/goes-16/cics-readme.htm)
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
     Type: S3 Bucket
   - Description: New data notifications
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
     Region: us-east-1
+    Type: SNS Topic
+  - Description: Imagery and metadata via Unidata (http://awsopendata.com/pds-docs/goes-16/unidata-readme.htm)
+    ARN: arn:aws:s3:::goesingest
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-west-2:492151760762:NewGOES16Object
+    Region: us-west-2
     Type: SNS Topic
