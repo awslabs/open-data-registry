@@ -1,6 +1,6 @@
 Name: GOES on AWS
 Description: GOES provides continuous weather imagery and monitoring of meteorological and space environment data across North America.
-Documentation: http://awsopendata.com/pds-docs/goes-16/cics-readme.htm
+Documentation: https://docs.opendata.aws/noaa-goes16/cics-readme.html
 Contact: http://www.goes.noaa.gov/contact.html
 UpdateFrequency: New data is added as soon as it's available
 Tags:
@@ -11,7 +11,7 @@ Tags:
   - meteorological
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: Imagery and metadata via CICS (http://awsopendata.com/pds-docs/goes-16/cics-readme.htm)
+  - Description: Imagery and metadata via CICS (https://docs.opendata.aws/noaa-goes16/cics-readme.html)
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
     Type: S3 Bucket
@@ -19,7 +19,7 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
     Region: us-east-1
     Type: SNS Topic
-  - Description: Imagery and metadata via Unidata (http://awsopendata.com/pds-docs/goes-16/unidata-readme.htm)
+  - Description: Imagery and metadata via Unidata (https://docs.opendata.aws/noaa-goes16/unidata-readme.html)
     ARN: arn:aws:s3:::goesingest
     Region: us-west-2
     Type: S3 Bucket
