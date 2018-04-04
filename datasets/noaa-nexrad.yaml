@@ -4,7 +4,6 @@ Documentation: https://www.ncdc.noaa.gov/data-access/radar-data/nexrad
 Contact: https://www.ncdc.noaa.gov/contact
 UpdateFrequency: New Level II data is added as soon as it is available.
 Tags:
-  - aws-pds
   - earth observation
   - natural resource
   - meteorological
@@ -15,7 +14,7 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
   - Description: NEXRAD Level II real-time data
-    ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
+    ARN: arn:aws:s3:::noaa-nexrad-level2-chunks
     Region: us-east-1
     Type: S3 Bucket
   - Description: Rich notifications for real-time data with filterable fields
@@ -27,6 +26,14 @@ Resources:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
+  - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
+    URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
+    AuthorName: Ryan May
+    AuthorURL: http://dopplershift.github.io
+  - Title: Mapping Noaa Nexrad Radar Data With CARTO
+    URL: https://carto.com/blog/mapping-nexrad-radar-data/
+    AuthorName: Stuart Lynn
+    AuthorURL: https://carto.com/blog/author/stuart-lynn/
   - Title: NEXRAD on EC2 tutorial
     URL: https://github.com/openradar/AMS_radar_in_the_cloud
     AuthorName: openradar
@@ -35,3 +42,7 @@ DataAtWork:
     URL: https://pypi.python.org/pypi/nexradaws
     AuthorName: Aaron Anderson
     AuthorURL: https://github.com/aarande
+  - Title: WeatherPipe - Amazon EMR based analysis tool for NEXRAD data stored on Amazon S3
+    URL: https://github.com/stephenlienharrell/WeatherPipe
+    AuthorName: Stephen Lien Harrell
+    AuthorURL: https://github.com/stephenlienharrell
