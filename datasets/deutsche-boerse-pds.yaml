@@ -1,0 +1,19 @@
+Name: Deutsche Boerse Public Dataset
+Description: The Deutsche Boerse Public Data Set consists of trade data aggregated to one minute intervals from the Eurex and Xetra trading engines. It provides the initial price, lowest price, highest pric, final price and volume for every minute of the trading day, and for every tradeable security.  If you need higher resolution data, including untraded price movements, please refer to our historical market data product (http://www.eurexchange.com/exchange-en/market-data/historical-data).
+Documentation: https://github.com/Deutsche-Boerse/dbg-pds
+Contact: pds@deutsche-borse.com
+UpdateFrequency: The data is updated every minute during trading hours.
+Tags:
+  - market data
+  - financial markets
+  - trading
+License: Non-commercial (NC) - licensees may copy, distribute, display, and perform the work and make derivative works and remixes based on it only for non-commercial purposes.
+Resources:
+  - Description: Eurex PDS Files
+    ARN: arn:aws:s3:::deutsche-boerse-eurex-pds
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Xetra PDS Files
+    ARN: arn:aws:s3:::deutsche-boerse-xetra-pds
+    Region: eu-central-1
+    Type: S3 Bucket
