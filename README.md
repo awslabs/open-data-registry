@@ -59,7 +59,7 @@ The metadata required for each dataset entry is as follows:
 |**DataAtWork > AuthorURL**|String|(Optional) URL for person or entity that created the example.|
 
 
-Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `http://url/1000-genomes/`
+Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
 
 ### Example entry
 
