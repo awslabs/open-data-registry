@@ -4,13 +4,13 @@ A repository of publicly available datasets that are available for access from A
 
 ## What is this for?
 
-When data is staged for analysis on AWS, users can access the data without needing to download and store their own copies of it. This repository exists to help people promote and discover datasets that are available for easy access on AWS. 
+When data is shared on AWS, anyone can analyze it and build services on top of it using a broad range of compute and data analytics products, including [Amazon EC2](https://aws.amazon.com/ec2/), [Amazon Athena](https://aws.amazon.com/athena/), [AWS Lambda](https://aws.amazon.com/lambda/) and [Amazon EMR](https://aws.amazon.com/emr/). Sharing data in the cloud lets data users spend more time on data analysis rather than data acquisition. This repository exists to help people promote and discover datasets that are available via AWS resources.
 
 ## How are datasets added to the registry?
 
 Each dataset in this repository is described with metadata saved in a YAML file in the [/datasets](/datasets) directory. We use these YAML files to provide three services:
 
-- A Registry of Open Data on AWS browser.
+- A [Registry of Open Data on AWS browser](https://registry.opendata.aws/).
 - A hosted YAML file listing all of the dataset entries.
 - Hosted YAML files for each dataset.
 
@@ -52,52 +52,63 @@ The metadata required for each dataset entry is as follows:
 |**Resources > ARN**|String|Amazon Resource Name for resource, e.g. arn:aws:s3:::commoncrawl|
 |**Resources > Region**|String|AWS region unique identifier, e.g. us-east-1|
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
-|**DataAtWork**|List of lists|A list of links to examples of the dataset being used. May include tutorials, demos, or applications.|
+|**DataAtWork** (Optional)|List of lists|A list of links to examples of the dataset being used. May include tutorials, demos, or applications.|
 |**DataAtWork > Title**|String|The title of the example usage of the data.|
 |**DataAtWork > URL**|URL|A link to the example.|
 |**DataAtWork > AuthorName**|String|Name of person or entity that created the example.|
 |**DataAtWork > AuthorURL**|String|(Optional) URL for person or entity that created the example.|
 
 
-Note also that we use the name of each YAML file as the URL slug for each dataset on the Registry of Open Data on AWS website. E.g. the metadata from `1000-genomes.yaml` is listed at `http://url/1000-genomes/`
+Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
 
 ### Example entry
 
-Here is an example of the metadata behind this dataset: https://URL/hirlam/
+Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/gdelt/
 
 ```yaml
-Name: HIRLAM Weather Model
-Description: HIRLAM (High Resolution Limited Area Model) is an operational synoptic and mesoscale weather prediction model managed by the Finnish Meteorological Institute.
-Documentation: http://en.ilmatieteenlaitos.fi/open-data-on-aws-s3
-Contact: avoin-data@fmi.fi
-UpdateFrequency: The data is updated four times a day with analysis hours 00, 06, 12 and 18. Corresponding model runs are available roughly five hours after analysis time (~ after model run has started).
+Name: Global Database of Events, Language and Tone (GDELT)
+Description: |
+  This project Project monitors the world's broadcast, print,
+  and web news from nearly every corner of every country in
+  over 100 languages and identifies the people, locations,
+  organizations, counts, themes, sources, emotions, counts,
+  quotes, images and events driving our global society every
+  second of every day.
+Documentation: http://www.gdeltproject.org/
+Contact: http://www.gdeltproject.org/about.html#contact
+UpdateFrequency: Daily
 Tags:
-  - earth observation
-  - weather
-  - meteorological
-License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+  - aws-pds
+  - events
+License: http://www.gdeltproject.org/about.html#termsofuse
 Resources:
-  - Description: Surface GRIB files
-    ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-surface-grib
-    Region: eu-west-1
+  - Description: Project data files
+    ARN: arn:aws:s3:::gdelt-open-data
+    Region: us-east-1
     Type: S3 Bucket
-  - Description: Pressure GRIB files
-    ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-pressure-grib
-    Region: eu-west-1
-    Type: S3 Bucket
-  - Description: Notifications for new surface data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-surface-grib
-    Region: eu-west-1
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:928094251383:gdelt-csv
+    Region: us-east-1
     Type: SNS Topic
-  - Description: Notifications for new pressure data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-pressure-GRIB
-    Region: eu-west-1
-    Type: SNS Topic
+DataAtWork:
+  - Title: Exploring GDELT with Athena
+    URL: http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html
+    AuthorName: Julien Simon
+    AuthorURL: https://twitter.com/julsimon
+  - Title: Running R on Amazon Athena
+    URL: https://aws.amazon.com/blogs/big-data/running-r-on-amazon-athena/
+    AuthorName: Gopal Wunnava
+    AuthorURL: https://www.linkedin.com/in/gopal-wunnava-b11a77/
+  - Title: Bootstrapping GeoMesa HBase on AWS S3
+    URL: http://www.geomesa.org/documentation/tutorials/geomesa-hbase-s3-on-aws.html
+    AuthorName: Commonwealth Computer Research, Inc.
+    AuthorURL: https://www.ccri.com
+  - Title: Creating PySpark DataFrame from CSV in AWS S3 in EMR
+    URL: https://gist.github.com/jakechen/6955f2de51212163312b6430555b8e0b
+    AuthorName: Jake Chen
+    AuthorURL: https://github.com/jakechen
 ```
 
-## What kind of data can I add to the registry?
+## How can I contribute?
 
-The guiding principle of this registry is to expand access to useful data available on AWS. With that in mind, we prefer to list datasets that are clearly documented, are actively supported, can be used for research or educational purposes, and are optimized for analysis using AWS tools. Datasets are included at the discretion of the AWS Open Data team, which may remove datasets from the registry at any time. Data providers are responsible for maintaining and supporting the data that they share. 
-
-For more guidance on how to contribute to this registry and what kinds of data are suitable for sharing, please review the [Amazon Open Source Code of Conduct](https://aws.github.io/code-of-conduct) and [AWS Acceptable Use Policy](https://aws.amazon.com/aup/).
-
+You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 
