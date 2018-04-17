@@ -2,17 +2,18 @@ language: python
 python:
   - "2.7"
 script: "for f in datasets/*; do pykwalify -d $f -s schema.yaml -q; done"
-after_success:
+before_deploy:
   - "nvm install stable"
+  - "pip install awscli --upgrade --user"
   - "git clone git@github.com:awslabs/open-data-registry-browser.git"
-  - "cp -R datasets tags.yaml open-data-registry-browser/open-data-registry"
+  - "mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry"
+  - "cp -R datasets open-data-registry-browser/data-sources/awslabs-open-data-registry/"
   - "cd open-data-registry-browser"
   - "npm install"
-  - "npm run build"
+  - "BASE_URL=https://registry.opendata.aws npm run build"
 deploy:
+  provider: script
+  script: bash _scripts/deploy.sh
   skip_cleanup: true
-  local_dir: "open-data-registry-browser/dist"
-  provider: s3
-  access_key_id: "YOUR AWS ACCESS KEY"
-  secret_access_key: "YOUR AWS SECRET KEY"
-  bucket: "S3 Bucket"
+  on:
+    branch: master
