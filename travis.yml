@@ -1,7 +1,7 @@
 language: python
 python:
   - "2.7"
-script: bash _scripts/test.sh
+script: "bash _scripts/test.sh"
 before_deploy:
   - "nvm install stable"
   - "pip install awscli --upgrade --user"
