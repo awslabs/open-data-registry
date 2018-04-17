@@ -6,5 +6,5 @@ set -e
 for f in datasets/*
 do
   echo $f
-  pykwalify -d $f -s schema.yaml -q
+  pykwalify -d $f -s schema.yaml
 done
