@@ -1,0 +1,41 @@
+Name: NASA NEX
+Description: A collection of Earth science datasets maintained by NASA, including climate change projections and satellite images of the Earth's surface.
+Documentation: https://docs.opendata.aws/nasa-nex/readme.html
+Contact: https://nex.nasa.gov/nex/contactus/
+UpdateFrequency: Infrequently
+Tags:
+  - aws-pds
+  - earth observation
+  - natural resource
+  - climate
+  - sustainability
+License: US Government work
+Resources:
+  - Description: Downscaled Climate Projections (NEX-DCP30)
+    ARN: arn:aws:s3:::nasanex/NEX-DCP30
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Global Daily Downscaled Projections (NEX-GDDP)
+    ARN: arn:aws:s3:::nasanex/NEX-GDDP
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Localized Constructed Analogs (LOCA)
+    ARN: arn:aws:s3:::nasanex/LOCA
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: MOD13Q1 (Vegetation Indices 16-Day L3 Global 250m)
+    ARN: arn:aws:s3:::nasanex/MODIS
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Landsat GLS (Global Land Survey)
+    ARN: arn:aws:s3:::nasanex/Landsat
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  - Title: Azavea Climate API
+    URL: https://climate.azavea.com
+    AuthorName: Azavea
+    AuthorURL: https://www.azavea.com/
+  - Title: Running GEOS-Chem on Cloud Computing Platforms
+    URL: http://acmg.seas.harvard.edu/presentations/IGC8/posters/Mon_Posters_Zhuang_Jiawei.pdf
+    AuthorName: Jiawei Zhuang, et al.

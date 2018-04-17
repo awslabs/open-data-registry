@@ -1,0 +1,46 @@
+Name: Landsat 8
+Description: An ongoing collection of satellite imagery of all land on Earth produced by the Landsat 8 satellite.
+Documentation: https://docs.opendata.aws/landsat-pds/readme.html
+Contact: https://lists.osgeo.org/mailman/listinfo/landsat-pds
+UpdateFrequency: New Landsat 8 scenes are added regularly as soon as they are available.
+Tags:
+  - aws-pds
+  - earth observation
+  - satellite imagery
+  - gis
+  - natural resource
+License: |
+  There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. More information on licensing and Landsat data citation is available from USGS.
+Resources:
+  - Description: Scenes and metadata
+    ARN: arn:aws:s3:::landsat-pds
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New scene notifications
+    ARN: arn:aws:sns:us-west-2:274514004127:NewSceneHTML
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  - Title: Development Seed Geolambda
+    URL: https://developmentseed.org/blog/2017/08/17/geolambdas/
+    AuthorName: Matthew Hanson
+    AuthorURL: https://developmentseed.org/team/matt-hanson/
+  - Title: FME Landsat-8 on AWS Reader
+    URL: https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_ReadersWriters/landsat8aws/landsat8aws.htm
+    AuthorName: Safe Software
+    AuthorURL: https://www.safe.com/
+  - Title: FME Landsat-8/Sentinel-2 File Selector
+    URL: http://demos.fmeserver.com/landsat-sentinel-selector/
+    AuthorName: Safe Software
+    AuthorURL: https://www.safe.com/
+  - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
+    URL: https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971
+    AuthorName: Planet
+    AuthorURL: https://www.planet.com/
+  - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
+    URL: https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
+    AuthorName: Timothy Whitehead
+  - Title: Using Vector tiles and AWS Lambda, we can build a really simple API to get Landsat and Sentinel images
+    URL: https://remotepixel.ca/blog/searchapi_20171211.html
+    AuthorName: Remote Pixel
+    AuthorURL: https://remotepixel.ca/

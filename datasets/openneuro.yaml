@@ -1,0 +1,21 @@
+Name: OpenfMRI
+Description: OpenfMRI is a database of openly-available brain imaging data. The data are shared according to a Creative Commons CC0 license, providing a broad range of brain imaging data to researchers and citizen scientists alike. The database primarily focuses on functional magnetic resonance imaging (fMRI) data, but also includes other imaging modalities including structural and diffusion MRI, electroencephalography (EEG), and magnetoencephalograpy (MEG). OpenfMRI is a project of the Center for Reproducible Neuroscience at Stanford University (http://reproducibility.stanford.edu). Development of the OpenfMRI resource has been funded by the National Science Foundation, National Institute on Drug Abuse, and the Laura and John Arnold Foundation.
+Documentation: http://openneuro.org
+Contact: Support form at https://openneuro.org
+UpdateFrequency: Unknown
+Tags:
+  - aws-pds
+  - biology
+  - imaging
+  - neurobiology
+  - neuro imaging
+License: CC0
+Resources:
+  - Description: OpenfMRI data
+    ARN: arn:aws:s3:::openfmri
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: All (uncompressed) datasets
+    ARN: arn:aws:s3:::openneuro
+    Region: us-east-1
+    Type: S3 Bucket

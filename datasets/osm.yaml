@@ -1,0 +1,31 @@
+Name: OpenStreetMap on AWS
+Description: OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.
+Documentation: https://docs.opendata.aws/osm-pds/readme.html
+Contact: https://github.com/mojodna/osm-pds-pipelines/issues
+UpdateFrequency: Data is updated weekly
+Tags:
+  - aws-pds
+  - mapping
+  - osm
+License: https://www.openstreetmap.org/copyright
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::osm-pds
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-east-1:800218804198:New_File
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  - Title: OSM+Athena (GitHub)
+    URL: https://github.com/developmentseed/mrworldwide/
+    AuthorName: Development Seed
+    AuthorURL: https://developmentseed.org/
+  - Title: Querying OpenStreetMap with Amazon Athena
+    URL: https://aws.amazon.com/blogs/big-data/querying-openstreetmap-with-amazon-athena/
+    AuthorName: Seth Fitzsimmons
+    AuthorURL: https://github.com/mojodna
+  - Title: Develop and Extract Value from Open Data
+    URL: https://aws.amazon.com/blogs/publicsector/develop-and-extract-value-from-open-data/
+    AuthorName: Daniel Bernao

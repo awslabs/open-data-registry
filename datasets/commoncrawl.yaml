@@ -1,0 +1,27 @@
+Name: Common Crawl
+Description: A corpus of web crawl data composed of over 5 billion web pages.
+Documentation: http://commoncrawl.org/the-data/get-started/
+Contact: http://commoncrawl.org/connect/contact-us/
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - encyclopedic
+  - machine learning
+  - internet
+License: This data is available for anyone to use under the [Common Crawl Terms of Use](http://commoncrawl.org/terms-of-use/)
+Resources:
+  - Description: Crawl data (WARC and ARC format)
+    ARN: arn:aws:s3:::commoncrawl
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  - Title: Dresden Web Table Corpus (DWTC)
+    URL: https://wwwdb.inf.tu-dresden.de/research-projects/dresden-web-table-corpus/
+    AuthorName: Database Systems Group Dresden
+    AuthorURL: https://wwwdb.inf.tu-dresden.de/
+  - Title: Building a Web-Scale Dependency-Parsed Corpus from CommonCrawl
+    URL: https://arxiv.org/pdf/1710.01779.pdf
+    AuthorName: Alexander Panchenko, et al.
+  - Title: Index to WARC Files and URLs in Columnar Format
+    URL: http://commoncrawl.org/2018/03/index-to-warc-files-and-urls-in-columnar-format/
+    AuthorName: Sebastian Nagel

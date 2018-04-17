@@ -1,0 +1,25 @@
+Name: Collection of daily coin data from Coin Metrics
+Description: |
+  This project is set to pull the latest daily coin data from Coin Metrics using the data.world sync applet on IFTTT.
+  Daily on-chain transaction volume is calculated as the sum of all transaction outputs belonging to the blocks mined on the given day. "Change" outputs are not included.
+  Transaction count figure doesn’t include coinbase transactions.
+  To find out more about this data visit https://data.world/scuttlemonkey/coin-metrics
+Documentation: https://data.world/scuttlemonkey/coin-metrics
+Contact: https://data.world/scuttlemonkey/coin-metrics/discuss
+UpdateFrequency: Daily
+Tags:
+  - financial markets
+  - economics
+  - bitcoin
+  - blockchain
+License: MIT License
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::dataworld-odaws-us-east-1/datasets/scuttlemonkey/coin-metrics/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  - Title: Collection of daily coin data from Coin Metrics.
+    URL: https://data.world/scuttlemonkey/coin-metrics
+    AuthorName: "@scuttlemonkey on data.world"
+    AuthorURL: https://data.world/scuttlemonkey

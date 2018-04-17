@@ -1,0 +1,22 @@
+Name: USAspending.gov
+Description: USAspending.gov database, which includes data on all spending by the federal government, including contracts, grants, loans, employee salaries, and more.
+Documentation: https://docs.opendata.aws/usaspending/readme.html
+Contact: https://github.com/fedspendingtransparency/usaspending-website/issues
+UpdateFrequency: Weekly
+Tags:
+  - aws-pds
+  - regulatory
+  - economics
+  - statistics
+  - us
+License: |
+  [U.S. Government Work](https://www.usa.gov/government-works)
+Resources:
+  - Description: PostgreSQL snapshot of USAspending.gov database on Amazon RDS
+    ARN: arn:aws:rds:us-east-1:515495268755:snapshot:usaspending-db
+    Region: us-east-1
+    Type: DB Snapshot
+DataAtWork:
+  - Title: Query USAspending.gov with RDS
+    URL: https://aws.amazon.com/blogs/aws/new-usaspending-gov-on-an-amazon-rds-snapshot/
+    AuthorName: Jed Sundwall
