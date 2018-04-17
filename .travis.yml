@@ -1,7 +1,7 @@
 language: python
 python:
   - "2.7"
-script: "for f in datasets/*; do pykwalify -d $f -s schema.yaml -q; done"
+script: bash _scripts/test.sh
 before_deploy:
   - "nvm install stable"
   - "pip install awscli --upgrade --user"
