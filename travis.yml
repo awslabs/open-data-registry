@@ -1,0 +1,19 @@
+language: python
+python:
+  - "2.7"
+script: bash _scripts/test.sh
+before_deploy:
+  - "nvm install stable"
+  - "pip install awscli --upgrade --user"
+  - "git clone git@github.com:awslabs/open-data-registry-browser.git"
+  - "mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry"
+  - "cp -R datasets open-data-registry-browser/data-sources/awslabs-open-data-registry/"
+  - "cd open-data-registry-browser"
+  - "npm install"
+  - "BASE_URL=https://registry.opendata.aws npm run build"
+deploy:
+  provider: script
+  script: bash _scripts/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master
