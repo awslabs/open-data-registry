@@ -1,0 +1,31 @@
+Name: GEOS-Chem Input Data
+Description: Input data for the GEOS-Chem Chemical Transport Model. Including the NASA/GMAO MERRA-2 and GEOS-FP meteorological products (http://wiki.seas.harvard.edu/geos-chem/index.php/Overview_of_GMAO_met_data_products), the HEMCO emission inventories (http://wiki.seas.harvard.edu/geos-chem/index.php/HEMCO_data_directories), and other small data such as model initial conditions (http://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_basics#Restart_files).
+Documentation: http://cloud-gc.readthedocs.io
+Contact: http://acmg.seas.harvard.edu/geos/
+UpdateFrequency: New meteorological and emission data will be added when available.
+Tags:
+  - aws-pds
+  - climate
+  - weather
+  - meteorological
+  - environmental
+  - air quality
+License: http://acmg.seas.harvard.edu/geos/geos_licensing.html
+Resources:
+  - Description: Top-level directory for all GEOS-Chem data.
+    ARN: arn:aws:s3:::gcgrid
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  - Title: Tutorial on accessing GEOS-Chem data bucket in S3
+    URL: http://cloud-gc.readthedocs.io/en/stable/chapter02_beginner-tutorial/use-s3.html#access-geos-chem-input-data-repository-in-s3
+    AuthorName: Jiawei Zhuang
+    AuthorURL: https://github.com/JiaweiZhuang
+  - Title: Overview of the GEOSChem-on-cloud project
+    URL: http://acmg.seas.harvard.edu/research.html#cloud
+    AuthorName: Atmospheric Chemistry Modeling Group, Harvard University
+    AuthorURL: http://acmg.seas.harvard.edu/index.html
+  - Title: Running GEOS-Chem on Cloud Computing Platforms, presented at the 8th International GEOS-Chem Meeting
+    URL: http://acmg.seas.harvard.edu/presentations/IGC8/posters/Mon_Posters_Zhuang_Jiawei.pdf
+    AuthorName: Jiawei Zhuang, et al.
+    AuthorURL: https://github.com/JiaweiZhuang
