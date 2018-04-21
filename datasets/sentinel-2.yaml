@@ -1,8 +1,9 @@
 Name: Sentinel-2
-Description: The Sentinel-2 mission is a land monitoring constellation of two satellites that provide high resolution optical imagery and provide continuity for the current SPOT and Landsat missions. The mission will provide a global coverage of the Earth's land surface every 10 days with one satellite (and 5 days with 2 satellites), making the data of great use in on-going studies.
+Description: The [Sentinel-2 mission](https://www.esa.int/Our_Activities/Observing_the_Earth/Copernicus/Sentinel-2) is a land monitoring constellation of two satellites that provide high resolution optical imagery and provide continuity for the current SPOT and Landsat missions. The mission provides a global coverage of the Earth's land surface every 5 days, making the data of great use in on-going studies.
+L1C data are available from June 2015 globally. L2A data are available from April 2017 over wider Europe region, planned to be expanded globally in July 2018.
 Documentation: http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/
 Contact: https://lists.osgeo.org/mailman/listinfo/sentinel-pds
-UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Sentinel Scientific Hub.
+UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
 Tags:
   - aws-pds
   - earth observation
@@ -29,7 +30,7 @@ Resources:
     Region: eu-west-1
     Type: SNS Topic
 DataAtWork:
-  - Title: Sentinel-2 WMS Service by Sinergise
+  - Title: Sentinel Hub WMS/WMTS/WCS Service by Sinergise
     URL: http://www.sentinel-hub.com/apps/wms
     AuthorName: Sinergise
     AuthorURL: http://www.sinergise.com/
@@ -49,8 +50,16 @@ DataAtWork:
     URL: https://s2maps.eu/
     AuthorName: EOX
     AuthorURL: https://eox.at
-  - Title: Sinergise EO Browser
+  - Title: EO Browser
     URL: http://apps.sentinel-hub.com/eo-browser/
+    AuthorName: Sinergise
+    AuthorURL: http://www.sinergise.com/
+  - Title: Sentinel Playground
+    URL: http://apps.sentinel-hub.com/sentinel-playground/
+    AuthorName: Sinergise
+    AuthorURL: http://www.sinergise.com/
+  - Title: Python package for working with Sentinel-2 AWS data
+    URL: https://github.com/sentinel-hub/sentinelhub-py
     AuthorName: Sinergise
     AuthorURL: http://www.sinergise.com/
   - Title: Tutorial for using Sentinel-2 data
