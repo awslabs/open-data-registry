@@ -1,13 +1,15 @@
 Name: Sentinel-1
-Description: Sentinel-1A is a European radar imaging (SAR) satellite launched in 2014. It is the first Sentinel-1 satellite launched as part of the European Union's Copernicus program.
+Description: "[Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) is a pair of European radar imaging (SAR) satellites launched in 2014 and 2016. Its 6 days revisit cycle and ability to observe through clouds makes it perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications."
 Documentation: http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/
 Contact: https://esatellus.service-now.com/csp/
-UpdateFrequency: Daily
+UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
 Tags:
   - aws-pds
   - earth observation
+  - satellite imagery
   - gis
-License: https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions
+License: |
+  Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
   - Description: Rolling 1 year of GRD in a Requester Pays S3 bucket
     ARN: arn:aws:s3:::sentinel-s1-l1c
@@ -18,7 +20,11 @@ Resources:
     Region: eu-central-1
     Type: SNS Topic
 DataAtWork:
-  - Title: Sentinel Hub
+  - Title: Sentinel Playground
     URL: https://apps.sentinel-hub.com/sentinel-playground/?baseWmsUrl=services.sentinel-hub.com&instanceID=a7c04225-b861-452d-ac89-7765352cd855&source=S2&lat=40.98676619345964&lng=28.89301300048828&zoom=13&preset=IW_VV&layers=B04,B03,B02&maxcc=20&gain=1.0&gamma=1.0&time=2015-01-01%7C2018-01-16&atmFilter=&showDates=false
+    AuthorName: Sinergise
+    AuthorURL: http://www.sinergise.com/
+  - Title: Sentinel Hub WMS/WMTS/WCS Service by Sinergise
+    URL: http://www.sentinel-hub.com/apps/wms
     AuthorName: Sinergise
     AuthorURL: http://www.sinergise.com/
