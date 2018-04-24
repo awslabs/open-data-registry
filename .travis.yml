@@ -3,7 +3,7 @@ python:
   - "2.7"
 script: bash _scripts/test.sh
 before_deploy:
-  - "nvm install stable"
+  - "nvm install 9.5.0"
   - "pip install awscli --upgrade"
   - "git clone https://github.com/awslabs/open-data-registry-browser.git"
   - "mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry"
