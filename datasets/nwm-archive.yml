@@ -1,0 +1,19 @@
+﻿Name: Office of Water Prediction National Water Model V1.2 Reanalysis Data
+Description: The National Water Model Reanalysis dataset contains output from a 25-year retrospective simulation (January 1993 through December 2017) of version 1.2 of the National Water Model. This simulation used observed rainfall as input and ingested other required meteorological input fields from a weather Reanalysis dataset. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time forecast model. One application of this dataset is to provide historical context to current real-time streamflow, soil moisture and snowpack NWM conditions. The Reanalysis data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. The long-term dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes.
+Documentation: https://docs.opendata.aws/nwm-archive/readme.html
+Contact: http://water.noaa.gov/about/nwm
+UpdateFrequency: No updates
+Tags:
+  - weather
+  - climate
+  - environmental
+  - disaster response
+  - agriculture
+  - transportation
+  - sustainability
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: The complete archive of NWM data.
+    ARN: arn:aws:s3:::nwm-archive
+    Region: us-east-1
+    Type: S3 Bucket
