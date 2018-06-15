@@ -78,7 +78,6 @@ Documentation: http://www.gdeltproject.org/
 Contact: http://www.gdeltproject.org/about.html#contact
 UpdateFrequency: Daily
 Tags:
-  - aws-pds
   - events
 License: http://www.gdeltproject.org/about.html#termsofuse
 Resources:
