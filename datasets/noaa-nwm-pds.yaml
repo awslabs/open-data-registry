@@ -1,0 +1,34 @@
+Name: NOAA National Water Model Short-Range Forecast
+Description: |
+  The National Water Model (NWM) is a water resources model that simulates and forecasts water
+  budget variables, including snowpack, evapotranspiration, soil moisture and streamflow, over
+  the entire continental United States (CONUS). The model, launched in August 2016, is designed
+  to improve the ability of NOAA to meet the needs of its stakeholders (forecasters, emergency
+  managers, reservoir operators, first responders, recreationists, farmers, barge operators, and
+  ecosystem and floodplain managers) by providing expanded accuracy, detail, and frequency of water
+  information. It is operated by NOAA’s Office of Water Prediction. This bucket contains a four-week
+  rollover of the Short Range Forecast model output and the corresponding forcing data for the
+  model. The model is forced with meteorological data from the High Resolution Rapid Refresh (HRRR)
+  and the Rapid Refresh (RAP) models. The Short Range Forecast configuration cycles hourly and produces
+  hourly deterministic forecasts of streamflow and hydrologic states out to 18 hours.
+Documentation: https://docs.opendata.aws/noaa-nwm-pds/readme.html
+Contact: |
+  For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
+  For any questions regarding data delivery not associated with this platform or any general questions
+  regarding the NOAA Big Data Project, email [noaa.bdp@noaa.gov](noaa.bdp@noaa.gov).
+UpdateFrequency: Daily
+Tags:
+  - weather
+  - climate
+  - environmental
+  - disaster response
+  - agriculture
+  - transportation
+  - sustainability
+License: Open Data. There are no restrictions on the use of this data
+Resources:
+  - Description: A rolling four week archive of NWM data.
+    ARN: arn:aws:s3:::noaa-nwm-pds
+    Region: us-east-1
+    Type: S3 Bucket
+
