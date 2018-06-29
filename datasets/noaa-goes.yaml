@@ -16,7 +16,7 @@ Resources:
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
     Type: S3 Bucket
-  - Description: New data notifications
+  - Description: New data notifications, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
     Region: us-east-1
     Type: SNS Topic
@@ -24,7 +24,7 @@ Resources:
     ARN: arn:aws:s3:::goesingest
     Region: us-west-2
     Type: S3 Bucket
-  - Description: New data notifications
+  - Description: New data notifications, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-west-2:492151760762:NewGOES16Object
     Region: us-west-2
     Type: SNS Topic
