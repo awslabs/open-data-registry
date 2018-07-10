@@ -1,0 +1,32 @@
+Name: NAIP on AWS
+Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This “leaf-on” imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution. More details [here](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/).
+Documentation: https://docs.opendata.aws/naip-analytic/readme.html
+Contact: https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/
+UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years.
+Tags:
+  - aws-pds
+  - earth observation
+  - satellite imagery
+  -	aerial photography
+  - gis
+  - natural resource
+  - regulatory
+  -	multispectral
+  - sustainability
+License: |
+  Public Domain with Attribution
+Resources:
+  - Description: Imagery in MRF format 4-band (RGB + NIR) and metadata in a Requester Pays bucket
+    ARN: arn:aws:s3:::naip-analytic
+    Region: us-west-2
+    Type: S3 Bucket
+- Description: Original Imagery in Geotiff format 4-band (RGB + NIR) uncompressed no overviews and metadata in a Requester Pays bucket
+    ARN: arn:aws:s3:::naip-source
+    Region: us-west-2
+    Type: S3 Bucket
+- Description: Visualization Imagery in Cloud Optimized Geotiff format 3-band (RGB) Compressed with overviews and metadata in a Requester Pays bucket
+    ARN: arn:aws:s3:::naip-visualization
+    Region: us-west-2
+    Type: S3 Bucket
+	
+
