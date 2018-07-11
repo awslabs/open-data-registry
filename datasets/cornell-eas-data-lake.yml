@@ -1,0 +1,45 @@
+Name: 'Cornell EAS Data Lake'
+Description: >
+  Earth & Atmospheric Sciences at Cornell University has created a public data
+  lake of climate data. The data is stored in columnar storage formats (ORC) to
+  make it straightforward to query using standard tools like Amazon
+  Athena or Apache Spark. The data itself is originally intended to be used for
+  building decision support tools for farmers and digital agriculture. The first
+  dataset is the historical NDFD / NDGD data distributed by NCEP / NOAA / NWS.
+
+Documentation: https://datalake.eas.cornell.edu/
+Contact: digitalag@cornell.edu
+UpdateFrequency: Hourly
+Tags:
+  - agriculture
+  - climate
+  - earth observation
+  - elevation
+  - environmental
+  - gis
+  - mapping
+  - meteorological
+  - weather
+
+License: https://datalake.eas.cornell.edu/license.txt
+Resources:
+  - Description: Cornell EAS Data Lake
+    ARN: arn:aws:s3:::cornell-eas-data-lake
+    Region: us-east-2
+    Type: S3 Bucket
+
+  - Description: Cornell EAS Data Lake Notifications
+    ARN: arn:aws:sns:us-east-2:003709786761:cornell-eas-data-lake-human
+    Region: us-east-2
+    Type: SNS Topic
+    
+  - Description: Cornell EAS Data Lake Automation Notifications
+    ARN: arn:aws:sns:us-east-2:003709786761:cornell-eas-data-lake
+    Region: us-east-2
+    Type: SNS Topic
+    
+#DataAtWork:
+#  - Title: 
+#    URL: 
+#    AuthorName: 
+#    AuthorURL:
