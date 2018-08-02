@@ -1,5 +1,7 @@
 Name: Rapid7 FDNS ANY Dataset
-Description: Subset of FDNS ANY queries against domain names produced by [Rapid7](www.rapid7.com) Project Sonar, made available in s3.  
+Description: |
+   Subset of FDNS ANY queries against domain names produced by [Rapid7](www.rapid7.com) Project Sonar, made available in s3.
+   More information on the schema found at [Rapid7's OpenData](https://opendata.rapid7.com/sonar.fdns_v2/)
 Documentation: https://opendata.rapid7.com/
 Contact: |
   research@rapid7.com
@@ -19,7 +21,6 @@ Resources:
       a 90-day retention period. This dataset represents the data returned for a name
       when an ANY query is issued. Data is partitioned by date=YYYYMM which is the 
       year-month that the FDNS ANY study was launched. 
-      More information on the schema found at [Rapid7's OpenData](https://opendata.rapid7.com/sonar.fdns_v2/)
     ARN: arn:aws:s3:::rapid7-opendata/fdns/any/v1/
     Region: us-east-1
     Type: S3 Bucket
