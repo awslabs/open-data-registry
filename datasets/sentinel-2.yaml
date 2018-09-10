@@ -21,12 +21,20 @@ Tags:
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
-  - Description: Level 1C scenes and metadata, in Requester Pays bucket
+  - Description: Level 1C scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Level 2A scenes and metadata, in Requester Pays bucket
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Level 2A scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
     ARN: arn:aws:s3:::sentinel-s2-l2a
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
   - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
