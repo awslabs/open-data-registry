@@ -1,0 +1,26 @@
+Name: NOAA Operational Forecast System (OFS)
+Description: For decades, mariners in the United States have depended on NOAA's Tide Tables for the best estimate of expected water levels. These tables provide accurate predictions of the astronomical tide (i.e., the change in water level due to the gravitational effects of the moon and sun and the rotation of the Earth); however, they cannot predict water-level changes due to wind, atmospheric pressure, and river flow, which are often significant.
+
+The National Ocean Service (NOS) has the mission and mandate to provide guidance and information to support navigation and coastal needs. To support this mission, NOS has been developing and implementing hydrodynamic model-based Operational Forecast Systems. 
+
+Documentation: https://docs.opendata.aws/noaa-ofs-pds/readme.html
+Contact: For questions regarding data content or quality, visit [the NOAA OFS site](https://tidesandcurrents.noaa.gov/models.html). For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Project, email noaa.bdp@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 4 times a day, every 6 hours starting at midnight and generates 6-hour nowcasts and 48-hour forecast guidance
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - disaster response
+  - environmental
+  - meteorological
+  - sustainability
+  - oceans
+  - water
+  - weather
+License: We need a link to a licence?
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::noaa-ofs-pds
+    Region: us-east-1
+Type: S3 Bucket
