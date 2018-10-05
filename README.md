@@ -1,6 +1,6 @@
 # Registry of Open Data on AWS
 
-A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals. 
+A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals.
 
 ## What is this for?
 
@@ -20,19 +20,20 @@ The YAML files use this structure:
 Name:
 Description:
 Contact:
+ManagedBy:
 UpdateFrequency:
 Tags:
-  - 
-License: 
+  -
+License:
 Resources:
-  - Description: 
-    ARN: 
-    Region: 
+  - Description:
+    ARN:
+    Region:
     Type:
 DataAtWork:
-  - Title: 
-    URL: 
-    AuthorName: 
+  - Title:
+    URL:
+    AuthorName:
     AuthorURL:
 ```
 
@@ -44,6 +45,7 @@ The metadata required for each dataset entry is as follows:
 |**Description**|String|A high-level description of the dataset|
 |**Documentation**|URL|A link to documentation of the dataset|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
+|**ManagedBy**|String|The name of the organization who is responsible for the data ingest process|
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
@@ -78,7 +80,6 @@ Documentation: http://www.gdeltproject.org/
 Contact: http://www.gdeltproject.org/about.html#contact
 UpdateFrequency: Daily
 Tags:
-  - aws-pds
   - events
 License: http://www.gdeltproject.org/about.html#termsofuse
 Resources:
@@ -111,4 +112,4 @@ DataAtWork:
 
 ## How can I contribute?
 
-You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 
+You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md).

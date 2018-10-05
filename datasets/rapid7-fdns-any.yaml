@@ -1,0 +1,31 @@
+Name: Rapid7 FDNS ANY Dataset
+Description: |
+   Subset of FDNS ANY queries against domain names produced by [Rapid7](https://www.rapid7.com) Project Sonar, made available in s3.
+   More information on the schema can be found at Rapid7's [Open Data website](https://opendata.rapid7.com/sonar.fdns_v2/).
+Documentation: https://opendata.rapid7.com/
+Contact: |
+  research@rapid7.com
+UpdateFrequency: |
+  Monthly
+Tags:
+  - aws-pds
+  - computer security
+  - cyber security
+  - analytics
+  - internet
+License: |
+  Non-commercial (NC) - Free for non-commercial purposes. For commercial use, contact research@rapid7.com. Full terms: https://opendata.rapid7.com/about/#terms
+Resources:
+  - Description: |
+      FDNS ANY Gzip-compressed parquet files following a HIVE partitioning model, with
+      a 90-day retention period. This dataset represents the data returned for a name
+      when an ANY query is issued. Data is partitioned by date=YYYYMM which is the 
+      year-month that the FDNS ANY study was launched. 
+    ARN: arn:aws:s3:::rapid7-opendata/fdns/any/v1/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      New FDNS parquet dataset announcements
+    ARN: arn:aws:sns:us-east-1:740874647437:s3-event-notification-new-aws-pds-dataset
+    Region: us-east-1
+    Type: SNS Topic
