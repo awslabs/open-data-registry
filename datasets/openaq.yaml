@@ -16,6 +16,18 @@ Resources:
     ARN: arn:aws:s3:::openaq-fetches
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Rich SNS topic for new measurements, 1 notification per measurement, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
+    ARN: arn:aws:sns:us-east-1:470049585876:OPENAQ_NEW_MEASUREMENT
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: SNS topic for new objects in the openaq-fetches bucket, roughly 6 objects per hour, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
+    ARN: arn:aws:sns:us-east-1:470049585876:NewFetchObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: "[OpenAQ API](https://docs.openaq.org)"
+    Host: api.openaq.org
+    Region: us-east-1
+    Type: CloudFront Distribution
 DataAtWork:
   - Title: "Smokey: Air Quality Bot"
     URL: https://www.facebook.com/smokeybot/
@@ -32,3 +44,7 @@ DataAtWork:
     URL: https://arisense.io/
     AuthorName: Aerodyne Research, Inc.
     AuthorURL: http://www.aerodyne.com/
+  - Title: Access OpenAQ data via a filterable SNS topic
+    URL: https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242
+    AuthorName: OpenAQ
+    AuthorURL: https://openaq.org
