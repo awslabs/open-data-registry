@@ -1,7 +1,5 @@
 Name: CBERS on AWS
 Description: |
-  IMPORTANT NOTICE: The repository is currently migrating its buckets,
-  please check the cbers-pds list (see Contact) for updates. 
   This project creates a S3 repository with imagery acquired
   by the China-Brazil Earth Resources Satellite (CBERS). The
   image files are recorded and processed by Instituto Nacional de Pesquisa
@@ -24,11 +22,11 @@ Tags:
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Resources:
   - Description: CBERS imagery (COG files, Requester Pays Bucket)
-    ARN: arn:aws:s3:::cbers-pds-migration
+    ARN: arn:aws:s3:::cbers-pds
     Region: us-east-1
     Type: S3 Bucket
   - Description: CBERS metadata (Quicklooks, metadata)
-    ARN: arn:aws:s3:::cbers-meta-pds-migration
+    ARN: arn:aws:s3:::cbers-meta-pds
     Region: us-east-1
     Type: S3 Bucket
   - Description: Notifications for new MUX quicklooks
