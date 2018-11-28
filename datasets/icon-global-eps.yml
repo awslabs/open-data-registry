@@ -1,0 +1,21 @@
+Name: DWD ICON-GLOBAL Ensemble - global weather prediction
+Description: ICON global EPS ensemble prediction model; 40 ensemble members; average resolution of 40km; updated at 00UTC and every following 6h with a forecast range of 120h (extended to 180h for 00UTC and 12UTC); selection of commonly used parameters; ensemble members are bundled in joint grib files
+Documentation: https://s3.eu-central-1.amazonaws.com/dwd-pds-help/dwd-icon-global-pds-help.html
+Contact: opendata@dwd.de
+ManagedBy: [Deutscher Wetterdienst](https://www.dwd.de/DE/Home/home_node.html)
+UpdateFrequency: 6 hours
+Tags: 
+    - climate
+    - disaster response
+    - earth observation
+    - environmental
+    - machine learning
+    - meteorological
+    - model
+    - weather
+License: https://www.dwd.de/EN/service/copyright/copyright_artikel.html
+Resources:
+  - Description: model output in GRIB2 data format for commonly used parameters
+    ARN: arn:aws:s3::dwd-icon-global-eps-pds
+    Region: eu-central-1
+    Type: S3 Bucket
