@@ -9,6 +9,7 @@ Description: |
   region, planned to be expanded globally in July 2018.
 Documentation: http://sentinel-pds.s3-website.eu-central-1.amazonaws.com/
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
+ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
 Tags:
   - aws-pds
@@ -17,15 +18,24 @@ Tags:
   - gis
   - natural resource
   - sustainability
+  - disaster response
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
-  - Description: Level 1C scenes and metadata
+  - Description: Level 1C scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Level 2A scenes and metadata, in Requester Pays bucket
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Level 2A scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
     ARN: arn:aws:s3:::sentinel-s2-l2a
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
   - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
@@ -39,7 +49,7 @@ Resources:
   - Description: New scene notifications for L2A
     ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS2L2A
     Region: eu-central-1
-    Type: SNS Topic    
+    Type: SNS Topic
 DataAtWork:
   - Title: Sentinel Hub WMS/WMTS/WCS Service
     URL: http://www.sentinel-hub.com/apps/wms
@@ -49,13 +59,9 @@ DataAtWork:
     URL: https://remotepixel.ca/projects/satellitesearch.html
     AuthorName: Remote Pixel
     AuthorURL: https://remotepixel.ca/
-  - Title: Astro Digital Imagery Browser
-    URL: https://fetch.astrodigital.com/
-    AuthorName: Astro Digital
-    AuthorURL: https://astrodigital.com
-  - Title: EOS DA Land Viewer
-    URL: http://lv.eosda.com/
-    AuthorName: EOS DA
+  - Title: EOS Land Viewer
+    URL: https://eos.com/landviewer/
+    AuthorName: Earth Observing System
     AuthorURL: https://eos.com/
   - Title: Sentinel-2 Cloudless Atlas
     URL: https://s2maps.eu/
@@ -99,3 +105,11 @@ DataAtWork:
     URL: https://spectator.earth/
     AuthorName: Spectator
     AuthorURL: https://spectator.earth/
+  - Title: Use the Sentinel Explorer app to explore, visualize, and analyze the entire Sentinel-2 archive
+    URL: https://sentinel2explorer.esri.com/
+    AuthorName: Esri
+    AuthorURL: https://www.esri.com/en-us/home
+  - Title: Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service
+    URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/
+    AuthorName: Esri
+    AuthorURL: https://www.esri.com/en-us/home

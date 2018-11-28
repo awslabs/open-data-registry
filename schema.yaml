@@ -3,6 +3,9 @@ extensions:
   - ext.py
 type: map
 mapping:
+  Deprecated:
+    type: bool
+    required: False
   Name:
     type: str
     required: True
@@ -16,6 +19,9 @@ mapping:
   Contact:
     type: str
     required: True
+  ManagedBy:
+    type: str
+    required: False
   UpdateFrequency:
     type: str
     required: True
