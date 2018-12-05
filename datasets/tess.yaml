@@ -1,0 +1,24 @@
+Name: Transiting Exoplanet Survey Satellite (TESS)
+Description: |
+  The Transiting Exoplanet Survey Satellite (TESS) is a two-year survey that will discover exoplanets in orbit around bright stars.
+Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
+Contact: archive@stsci.edu
+UpdateFrequency: Monthly
+Tags:
+  - astronomy
+  - aws-pds
+License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the Hubble Space Telescope.
+Resources:
+  - Description: Project data files in a 'Requester Pays' bucket
+    ARN: arn:aws:s3:::stpubdata
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  - Title: Running your own TESS cutout server in the cloud
+    URL: https://mast-labs.stsci.io/2018/12/running-your-own-tess-cutout-server-in-the-cloud
+    AuthorName: Arfon Smith
+    AuthorURL: https://twitter.com/arfon
