@@ -1,18 +1,18 @@
 Name: Africa Soil Information Service (AfSIS) Soil Chemistry
 Description: |
-    This dataset contains field and laboratory data collected through the Africa 
-    Soil Information Service (AfSIS) project, which lasted from 2009 through 2018. 
-    In this initial release, we are including data collected during Phase I, which 
-    spanned from 2009 through 2013. Georeferenced soil samples were collected from 
-    many countries throughout Sub-Saharan Africa, and their nutrient content was 
-    analyzed using *both* wet chemistry and dry chemistry. The two types of data 
-    can be paired to form a training dataset for machine learning, such that the 
-    chemical concentrations of certain nutrients can be well-predicted using less 
-    expensive dry chemistry techniques.
+    This dataset contains paired wet and dry chemistry measurements for
+    georeferenced soil samples that were collected through the Africa Soil
+    Information Service (AfSIS) project, which lasted from 2009 through 2018.
+    In this release, we include data collected during Phase I (2009-2013.)
+    Georeferenced samples were collected from many Sub-Saharan African
+    countries, and their soil properties were analyzed using *both* wet and
+    dry chemistry. The two types of data can be paired to form a training
+    dataset for machine learning, such that certain soil properties can be
+    well-predicted through less expensive dry chemistry techniques.
 Documentation: https://github.com/qedsoftware/afsis-soil-chem-tutorial
 Contact: afsis@qed.ai
-ManagedBy: QED (https://qed.ai)
-UpdateFrequency: Annually
+ManagedBy: "[QED](https://qed.ai/)"
+UpdateFrequency: As required
 Tags:
   - agriculture
   - environmental
@@ -20,9 +20,12 @@ Tags:
   - machine learning
   - life sciences
   - sustainability
-License: ODC Open Database License (ODbL) version 1.0, with attribution to AfSIS, https://afsisdb.qed.ai/terms/
+License: ODC Open Database License ("[ODbL](https://opendatacommons.org/licenses/odbl/summary/index.html)") version 1.0, with attribution to AfSIS
 Resources:
-  - Description: Field and laboratory data about soils collected through the Africa Soil Information Service (AfSIS), stored as CSV and OPUS files.
+  - Description: |
+        Paired wet and dry chemistry measurements for georeferenced soils
+        collected by the Africa Soil Information Service (AfSIS), stored
+        as CSV and OPUS files.
     ARN: arn:aws:s3:::afsis
     Region: us-east-1
     Type: S3 Bucket
