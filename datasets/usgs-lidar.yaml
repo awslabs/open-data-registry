@@ -1,0 +1,22 @@
+Name: USGS 3DEP LiDAR Point Clouds
+Description: The goal of the [USGS 3D Elevation Program](https://www.usgs.gov/core-science-systems/ngp/3dep) is to collect elevation data in the form of light detection and ranging (lidar) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides 3DEP point cloud data in [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) format for many of the resources. The resource names correspond to the USGS project names.
+Documentation: https://github.com/hobu/usgs-lidar/README.rst
+Contact: https://github.com/hobu/usgs-lidar
+ManagedBy: "[Hobu, Inc.](https://hobu.co)"
+UpdateFrequency: Periodically
+Tags:
+  - aws-pds
+  - elevation
+  - gis
+  - lidar
+  - point cloud
+License: https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map
+Resources:
+  - Description: Public Access Entwine Point Tiles
+    ARN: arn:aws:s3:::usgs-lidar-public
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Requester Pays Bucket of Raw LAZ 1.4 3DEP data
+    ARN: arn:aws:s3:::usgs-lidar
+    Region: us-west-2
+    Type: S3 Bucket
