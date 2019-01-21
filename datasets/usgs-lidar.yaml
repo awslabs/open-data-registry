@@ -9,14 +9,13 @@ Tags:
   - elevation
   - gis
   - lidar
-  - point cloud
 License: US Government Public Domain https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map
 Resources:
   - Description: Public access Entwine Point Tiles of most resources from the ``arn:aws:s3:::usgs-lidar`` bucket.
     ARN: arn:aws:s3:::usgs-lidar-public
     Region: us-west-2
     Type: S3 Bucket
-  - Description: [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) Bucket of Raw LAZ 1.4 3DEP data. Data in this bucket is more complete in coverage than the EPT bucket, but it is not a complete 3DEP mirror. Some resources in this bucket also have incomplete and missing coordinate system information, which is why they might not be mirrored into the EPT bucket.
+  - Description: A [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) Bucket of Raw LAZ 1.4 3DEP data. Data in this bucket is more complete in coverage than the EPT bucket, but it is not a complete 3DEP mirror. Some resources in this bucket also have incomplete and missing coordinate system information, which is why they might not be mirrored into the EPT bucket.
     ARN: arn:aws:s3:::usgs-lidar
     Region: us-west-2
     Type: S3 Bucket
