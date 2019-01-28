@@ -1,6 +1,6 @@
 Name: Hubble Space Telescope Public Data
 Description: |
-  The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all of the currently active instruments on HST: ACS, COS, STIS and WFC3. 
+  The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all of the currently active instruments on HST: ACS, COS, STIS and WFC3.
 Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
 Contact: archive@stsci.edu
 UpdateFrequency: Hourly
@@ -13,6 +13,7 @@ Resources:
     ARN: arn:aws:s3:::stpubdata/hst
     Region: us-east-1
     Type: S3 Bucket
+    RequesterPays: True
   - Description: Notifications for new data
     ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
     Region: us-east-1
