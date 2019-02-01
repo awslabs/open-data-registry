@@ -54,6 +54,7 @@ The metadata required for each dataset entry is as follows:
 |**Resources > ARN**|String|Amazon Resource Name for resource, e.g. arn:aws:s3:::commoncrawl|
 |**Resources > Region**|String|AWS region unique identifier, e.g. us-east-1|
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
+|**Resources > RequesterPays** (Optional)|Boolean|Only appropriate for Amazon S3 buckets, indicates whether the bucket has [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) enabled or not.|
 |**DataAtWork** (Optional)|List of lists|A list of links to example usages of the data. Example usages can be code samples, tutorials, demos, or applications.|
 |**DataAtWork > Title**|String|The title of the example usage of the data.|
 |**DataAtWork > URL**|URL|A link to the example.|
