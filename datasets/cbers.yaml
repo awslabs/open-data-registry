@@ -11,6 +11,7 @@ Description: |
   new scenes.
 Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
+ManagedBy: "[AMS Kepler](https://amskepler.com/)"
 UpdateFrequency: Daily
 Tags:
   - aws-pds
@@ -48,6 +49,10 @@ Resources:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
+  - Title: STAC search endpoint for archive
+    URL: https://stac.amskepler.com/stac/search
+    AuthorName: AMS Kepler
+    AuthorURL: https://github.com/fredliporace/cbers-2-stac
   - Title: Remote Pixel Viewer
     URL: https://viewer.remotepixel.ca
     AuthorName: Remote Pixel
