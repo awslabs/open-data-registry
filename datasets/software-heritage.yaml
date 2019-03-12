@@ -1,0 +1,29 @@
+Name: Software Heritage Graph Dataset
+Description: |
+    [Software Heritage](https://www.softwareheritage.org/) is the largest
+    existing public archive of software source code and accompanying
+    development history. The Software Heritage Graph Dataset is a fully
+    deduplicated Merkle DAG representation of the Software Heritage archive.
+
+    The dataset links together file content identifiers, source code
+    directories, Version Control System (VCS) commits tracking evolution over
+    time, up to the full states of VCS repositories as observed by Software
+    Heritage during periodic crawls. The dataset’s contents come from major
+    development forges (including GitHub and GitLab), FOSS distributions (e.g.,
+    Debian), and language-specific package managers (e.g., PyPI). Crawling
+    information is also included, providing timestamps about when and where all
+    archived source code artifacts have been observed in the wild.
+Documentation: https://wiki.softwareheritage.org/wiki/Graph_Dataset_on_Amazon_Athena
+Contact: swh-devel@inria.fr
+UpdateFrequency: Data is updated yearly
+Tags:
+  - source code
+  - open source software
+  - free software
+  - digital preservation
+License: Creative Commons Attribution 4.0 International
+Resources:
+  - Description: Software Heritage Graph Dataset
+    ARN: arn:aws:s3:::softwareheritage
+    Region: us-east-1
+    Type: S3 Bucket
