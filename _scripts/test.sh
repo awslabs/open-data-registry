@@ -4,7 +4,7 @@
 set -e
 
 # For our use case, we can ignore loading warnings
-PYTHONWARNINGS=ignore::yaml.YAMLLoadWarning
+export PYTHONWARNINGS=ignore::yaml.YAMLLoadWarning
 
 for f in datasets/*
 do
