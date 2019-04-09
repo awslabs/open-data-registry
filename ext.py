@@ -3,7 +3,7 @@ import yaml
 
 # Check if provided tags are in tags.yaml
 def ext_tags(value, rule_obj, path):
-    tags = yaml.load(open('tags.yaml'))
+    tags = yaml.safe_load(open('tags.yaml'))
     tags.append('aws-pds')
     if value not in tags:
         print('Invalid tag!', value)
@@ -15,7 +15,7 @@ def ext_tags(value, rule_obj, path):
 
 # Check if provided resources are in resources.yaml
 def ext_resources(value, rule_obj, path):
-    resources = yaml.load(open('resources.yaml'))
+    resources = yaml.safe_load(open('resources.yaml'))
     if value not in resources:
         print('Invalid resource!', value)
         return False

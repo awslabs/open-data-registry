@@ -3,20 +3,21 @@ Description: 3D models for molecular docking screens
 Contact: John Irwin chemistry4biology@gmail.com
 ManagedBy: John Irwin
 UpdateFrequency:  Monthly
-Tags: 
+Tags:
+  - aws-pds
   - biology
   - chemical biology
   - pharmaceutical
   - molecular docking
 License: ZINC is free as in beer. You may not redistribute without the written permission of John Irwin chemistry4biology@gmail.com
 Documentation: http://wiki.docking.org/index.php/ZINC15:Resources
-Resources:  
+Resources:
   - Description: 3D molecular docking structure files in db2.gz, sdf and mol2 formats
     ARN: arn:aws:s3:::zinc3d
     Region: us-east-1
     Type: S3 Bucket
-    RequesterPays: True    
-DataAtWork: 
+    RequesterPays: True
+DataAtWork:
   - Title: ZINC Database
     URL: http://zinc15.docking.org
     AuthorName: John Irwin
