@@ -1,0 +1,36 @@
+Name: NREL National Solar Radiation Data Base on AWS
+Description: |
+  The [National Solar Radiation Data Base (NSRDB)](https://nsrdb.nrel.gov/) is
+  a serially complete collection of hourly and half-hourly values of the three
+  most common measurements of solar radiation – global horizontal, direct
+  normal, and diffuse horizontal irradiance — and meteorological data. These
+  data have been collected at a sufficient number of locations and temporal and
+  spatial scales to accurately represent regional solar radiation climates.
+Documentation: https://nsrdb.nrel.gov/
+Contact: https://nsrdb.nrel.gov/contact
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: As Needed
+Tags:
+  - aws-pds
+  - solar
+  - earth observation  
+  - energy
+  - geospatial
+  - meteorological
+License: https://github.com/NREL/hsds-examples/blob/master/LICENSE
+Resources:
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) Source Files (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/hdf5-source-files-v3/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) Backend Data'
+    ARN: arn:aws:s3:::nrel-pds-hsds/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  - Title: The National Solar Radiation Data Base (NSRDB)
+    URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
+    AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby
+  - Title: NSRDB Viewer
+    URL: https://nsrdb.nrel.gov/nsrdb-viewer
+    AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby, Paul Edwards
