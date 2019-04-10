@@ -1,0 +1,60 @@
+Name: UK Met Office Atmospheric Deterministic and Probabilistic Forecasts
+Description: |
+  Meteorological data reusers now have an exciting opportunity to sample, experiment and evaluate
+  Met Office atmospheric model data, whilst also experiencing a transformative method of requesting
+  data via Restful APIs on AWS. All ahead of Met Office’s own operationally supported API platform
+  that will be launched in late 2019.
+  
+  For information about the data see the [Met Office website](https://www.metoffice.gov.uk/services/data-provision/big-data-drive/wholesale/categories/planetary-scale-applications).
+  For examples of using the data check out the [examples repository](https://github.com/MetOffice/aws-earth-examples). 
+  If you need help and support using the data please raise an issue on the examples repository.
+Documentation: https://github.com/MetOffice/aws-earth-examples  
+Contact: https://www.metoffice.gov.uk/about-us/contact
+UpdateFrequency: Daily (with 24 hour delay)
+Tags:
+  - aws-pds
+  - earth observation
+  - climate
+  - weather
+  - meteorological
+  - sustainability
+License: |
+  This data is made available under a [Creative Commons licence](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+  This data is free to use for non-commercial purposes under the terms of the licence. You must
+  ensure that you acknowledge the source of this data as prescribed by this licence. Data or any
+  derivatives made using the data are for internal use only and may not be distributed or otherwise
+  shared.
+Resources:
+  - Description: "[Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/uk-atmospheric-hi-res-model-ukv-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-ukv-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global Atmospheric Hi-Res Model - 10km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/global-atmospheric-hi-res-10km-deterministic-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-global-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (UK) MOGREPS-UK](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-uk-ensemble-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-mogreps-uk-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-global-ensemble-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-mogreps-g-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/uk-atmospheric-hi-res-model-ukv-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-ukv-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global Atmospheric Hi-Res Model - 10km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/global-atmospheric-hi-res-10km-deterministic-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-global-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (UK) MOGREPS-UK](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-uk-ensemble-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-uk-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G](https://www.metoffice.gov.uk/binaries/content/assets/mohippo/pdf/data-provision/mogreps-global-ensemble-beta-service-parameters-080818.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-g-prd
+    Region: eu-west-2
+    Type: SNS Topic
+    

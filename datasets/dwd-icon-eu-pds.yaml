@@ -1,0 +1,23 @@
+Name: DWD ICON-EU
+Description: ICON-EU regional numerical weather prediction model; european nesting region with increased resolution of approximately 6.5km with 60 vertical levels; updated at 00UTC and every following 3h with 120h forecast range; selection of commonly used parameters
+Documentation: https://s3.eu-central-1.amazonaws.com/dwd-pds-help/dwd-icon-eu-pds-help.html
+Contact: opendata@dwd.de
+ManagedBy: "[Deutscher Wetterdienst](https://www.dwd.de)"
+UpdateFrequency: Every 3 hours
+Tags:
+    - aws-pds
+    - climate
+    - disaster response
+    - earth observation
+    - environmental
+    - machine learning
+    - meteorological
+    - model
+    - weather
+    - sustainability
+License: https://www.dwd.de/EN/service/copyright/copyright_artikel.html
+Resources:
+  - Description: model output in GRIB2 data format for commonly used parameters
+    ARN: arn:aws:s3:::dwd-icon-eu-pds
+    Region: eu-central-1
+    Type: S3 Bucket

@@ -3,6 +3,9 @@ extensions:
   - ext.py
 type: map
 mapping:
+  Deprecated:
+    type: bool
+    required: False
   Name:
     type: str
     required: True
@@ -11,11 +14,13 @@ mapping:
     required: True
   Documentation:
     type: str
-    pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
     required: True
   Contact:
     type: str
     required: True
+  ManagedBy:
+    type: str
+    required: False
   UpdateFrequency:
     type: str
     required: True
@@ -51,6 +56,8 @@ mapping:
             type: str
             required: True
             func: ext_resources
+          RequesterPays:
+            type: bool
   DataAtWork:
     type: seq
     required: False
