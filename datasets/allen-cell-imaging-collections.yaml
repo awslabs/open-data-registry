@@ -1,0 +1,20 @@
+Name: Allen Cell Imaging Collections
+Description: |
+  https://allencell.quiltdata.com/b/quilt-aics
+
+  This bucket contains multiple datasets (as Quilt packages) created by the Allen Institute for Cell Science. The imaging data in this bucket contains either of the following: 1) field of view images from glass plates, 2) cell membrane, DNA, and structure segmentations, 3) cell membrane, DNA and structure contours, 4) machine learning imaging predictions of the previously listed modalities. In addition, many of the datasets include CSVs that contain feature sets related to that data.
+Documentation: https://allencell.quiltdata.com/b/quilt-aics
+Contact: jacksonb@alleninstitute.org
+ManagedBy: "[Allen Institute for Cell Science](https://www.allencell.org)"
+UpdateFrequency: Weekly
+Tags:
+  - cell biology
+  - microscopy
+  - image processing
+  - machine learning
+License: https://www.allencell.org/terms-of-use.html
+Resources:
+  - Description: Data files in a public bucket
+    ARN: arn:aws:s3:::quilt-aics
+    Region: us-east-1
+    Type: S3 Bucket
