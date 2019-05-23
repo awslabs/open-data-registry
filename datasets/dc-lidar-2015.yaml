@@ -4,9 +4,9 @@ Description: |
   This dataset, managed by the Office of the Chief Technology Officer (OCTO), through the
   direction of the District of Columbia GIS program, contains tiled point cloud data for
   the entire District along with associated metadata.
-Documentation: https://docs.opendata.aws/dc-lidar-2015/readme.html
+Documentation: "[2015 data](https://docs.opendata.aws/dc-lidar-2015/readme.html), [2018 data](https://docs.opendata.aws/dc-lidar-2018/readme.html)"
 Contact: dcgis@dc.gov
-UpdateFrequency: The most recent data is from 2015 and is not being actively updated.
+UpdateFrequency: The most recent data is from 2018. A new data acquisition is planned for 2020.
 Tags:
   - aws-pds
   - geospatial
@@ -17,5 +17,9 @@ License: See Washington, DC [Terms of Use](https://dc.gov/page/terms-and-conditi
 Resources:
   - Description: LAS, XML, SHP
     ARN: arn:aws:s3:::dc-lidar-2015
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: LAS, XML
+    ARN: arn:aws:s3:::dc-lidar-2018
     Region: us-east-1
     Type: S3 Bucket
