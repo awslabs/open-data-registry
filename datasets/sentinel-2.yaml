@@ -7,7 +7,7 @@ Description: |
   making the data of great use in on-going studies. L1C data are available from
   June 2015 globally. L2A data are available from April 2017 over wider Europe
   region and globally since December 2018.
-Documentation: https://roda.sentinel-hub.com/sentinel-s2-l1c/readme.html,https://roda.sentinel-hub.com/sentinel-s2-l2a/readme.html
+Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sentinel-hub.com/sentinel-s2-l1c/readme.html) and [Sentinel-2 L2A](https://roda.sentinel-hub.com/sentinel-s2-l2a/readme.html).
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
@@ -15,7 +15,7 @@ Tags:
   - aws-pds
   - earth observation
   - satellite imagery
-  - gis
+  - geospatial
   - natural resource
   - sustainability
   - disaster response
@@ -27,7 +27,7 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C"
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
     Type: S3 Bucket
@@ -36,7 +36,7 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A"
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket

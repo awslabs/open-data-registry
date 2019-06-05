@@ -1,6 +1,17 @@
 Name: NOAA Global Forecast System (GFS)
 Description: |
-  The Global Forecast System (GFS) is a weather forecast model produced by the National Centers for Environmental Prediction (NCEP). Dozens of atmospheric and land-soil variables are available through this dataset, from temperatures, winds, and precipitation to soil moisture and atmospheric ozone concentration. The entire globe is covered by the GFS at a base horizontal resolution of 18 miles (28 kilometers) between grid points, which is used by the operational forecasters who predict weather out to 16 days in the future. Horizontal resolution drops to 44 miles (70 kilometers) between grid point for forecasts between one week and two weeks.
+  The Global Forecast System (GFS) is a weather forecast model produced
+  by the National Centers for Environmental Prediction (NCEP). Dozens of
+  atmospheric and land-soil variables are available through this dataset,
+  from temperatures, winds, and precipitation to soil moisture and
+  atmospheric ozone concentration. The entire globe is covered by the GFS
+  at a base horizontal resolution of 18 miles (28 kilometers) between grid
+  points, which is used by the operational forecasters who predict weather
+  out to 16 days in the future. Horizontal resolution drops to 44 miles
+  (70 kilometers) between grid point for forecasts between one week and two
+  weeks. **Both the current version and the FV3-based parallel version of the
+  GFS being tested to become the new operational model at a future date are
+  available.**
 Documentation: https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-forcast-system-gfs
 Contact: For questions regarding data content or quality, visit [the NOAA GFS site](http://www.emc.ncep.noaa.gov/index.php?branch=GFS). For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Project, email noaa.bdp@noaa.gov.
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
@@ -19,7 +30,15 @@ Resources:
     ARN: arn:aws:s3:::noaa-gfs-bdp-pds
     Region: us-east-1
     Type: S3 Bucket
+  - Description: A rolling four-week archive of 0.25 FV3-based parallel version of the GFS
+    ARN: arn:aws:s3:::noaa-gfspara-pds
+    Region: us-east-1
+    Type: S3 Bucket
   - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGFSObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: New data notifications for GFSv3, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGFSParaObject
     Region: us-east-1
     Type: SNS Topic

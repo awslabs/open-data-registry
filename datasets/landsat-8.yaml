@@ -8,7 +8,7 @@ Tags:
   - aws-pds
   - earth observation
   - satellite imagery
-  - gis
+  - geospatial
   - natural resource
   - sustainability
   - disaster response
@@ -23,6 +23,10 @@ Resources:
     ARN: arn:aws:sns:us-west-2:274514004127:NewSceneHTML
     Region: us-west-2
     Type: SNS Topic
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) (ORC)"
+    ARN: arn:aws:s3:::landsat-pds-inventory
+    Region: us-west-2
+    Type: S3 Bucket    
 DataAtWork:
   - Title: Development Seed Geolambda
     URL: https://developmentseed.org/blog/2017/08/17/geolambdas/
@@ -75,3 +79,7 @@ DataAtWork:
     URL: https://eos.com/landviewer/
     AuthorName: Earth Observing System
     AuthorURL: https://eos.com/
+  - Title: "Aggi: the fire detecting Twitter bot"
+    URL: https://twitter.com/aggibot
+    AuthorName: Aggi
+    AuthorURL: https://twitter.com/aggibot
