@@ -6,7 +6,8 @@ Description: |
   satellite imagery.
 Documentation: https://dataforgood.fb.com/approach/population-density-maps-documentation/
 Contact: disastermaps@fb.com
-ManagedBy: [Facebook](https://dataforgood.fb.com/)
+ManagedBy: |
+  [Facebook](https://dataforgood.fb.com/)
 UpdateFrequency: Quarterly
 Tags:
   - population
@@ -21,7 +22,7 @@ Tags:
   - aws-pds
 License: https://creativecommons.org/licenses/by/4.0/
 Resources:
-  - Description: 
+  - Description: Project data files
     ARN: arn:aws:s3:::dataforgood-fb-data
     Region: us-east-1
     Type: S3 Bucket 
