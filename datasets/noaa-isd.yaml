@@ -1,0 +1,40 @@
+Name: NOAA Integrated Surface Database (ISD)
+Description: |
+  The Integrated Surface Database (ISD) consists
+  of global hourly and synoptic observations
+  compiled from numerous sources into a gzipped
+  fixed width format. ISD was developed as a joint
+  activity within Asheville's Federal Climate
+  Complex. The database includes over 35,000 stations
+  worldwide, with some having data as far back
+  as 1901, though the data show a substantial
+  increase in volume in the 1940s and again in
+  the early 1970s. Currently, there are over
+  14,000 "active" stations updated daily in the
+  database. The total uncompressed data volume is
+  around 600 gigabytes; however, it continues to
+  grow as more data are added. ISD includes
+  numerous parameters such as wind speed and
+  direction, wind gust, temperature, dew point,
+  cloud data, sea level pressure, altimeter setting,
+  station pressure, present weather, visibility,
+  precipitation amounts for various time periods,
+  snow depth, and various other elements as observed
+  by each station.
+Documentation: https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf
+Contact: |
+  For questions regarding data content or quality, visit [the NOAA ISD site](https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf). For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Project, email noaa.bdp@noaa.gov.
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: https://www.ncdc.noaa.gov/isd/data-access
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::noaa-isd-pds
+    Region: us-east-1
+    Type: S3 Bucket
