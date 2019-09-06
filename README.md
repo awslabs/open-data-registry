@@ -31,10 +31,21 @@ Resources:
     Region:
     Type:
 DataAtWork:
-  - Title:
-    URL:
-    AuthorName:
-    AuthorURL:
+  Tutorials:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Tools & Applications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
 ```
 
 The metadata required for each dataset entry is as follows:
@@ -93,22 +104,23 @@ Resources:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
-  - Title: Exploring GDELT with Athena
-    URL: http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html
-    AuthorName: Julien Simon
-    AuthorURL: https://twitter.com/julsimon
-  - Title: Running R on Amazon Athena
-    URL: https://aws.amazon.com/blogs/big-data/running-r-on-amazon-athena/
-    AuthorName: Gopal Wunnava
-    AuthorURL: https://www.linkedin.com/in/gopal-wunnava-b11a77/
-  - Title: Bootstrapping GeoMesa HBase on AWS S3
-    URL: http://www.geomesa.org/documentation/tutorials/geomesa-hbase-s3-on-aws.html
-    AuthorName: Commonwealth Computer Research, Inc.
-    AuthorURL: https://www.ccri.com
-  - Title: Creating PySpark DataFrame from CSV in AWS S3 in EMR
-    URL: https://gist.github.com/jakechen/6955f2de51212163312b6430555b8e0b
-    AuthorName: Jake Chen
-    AuthorURL: https://github.com/jakechen
+  Tutorial:
+    - Title: Exploring GDELT with Athena
+      URL: http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html
+      AuthorName: Julien Simon
+      AuthorURL: https://twitter.com/julsimon
+    - Title: Running R on Amazon Athena
+      URL: https://aws.amazon.com/blogs/big-data/running-r-on-amazon-athena/
+      AuthorName: Gopal Wunnava
+      AuthorURL: https://www.linkedin.com/in/gopal-wunnava-b11a77/
+    - Title: Bootstrapping GeoMesa HBase on AWS S3
+      URL: http://www.geomesa.org/documentation/tutorials/geomesa-hbase-s3-on-aws.html
+      AuthorName: Commonwealth Computer Research, Inc.
+      AuthorURL: https://www.ccri.com
+    - Title: Creating PySpark DataFrame from CSV in AWS S3 in EMR
+      URL: https://gist.github.com/jakechen/6955f2de51212163312b6430555b8e0b
+      AuthorName: Jake Chen
+      AuthorURL: https://github.com/jakechen
 ```
 
 ## How can I contribute?

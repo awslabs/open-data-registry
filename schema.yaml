@@ -59,22 +59,63 @@ mapping:
           RequesterPays:
             type: bool
   DataAtWork:
-    type: seq
+    type: map
     required: False
-    sequence:
-      - type: map
-        mapping:
-          Title:
-            type: str
-            required: True
-          URL:
-            type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
-            required: True
-          AuthorName:
-            type: str
-            required: True
-          AuthorURL:
-            type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
-            required: False
+    mapping:
+      Tutorials:
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              Title:
+                type: str
+                required: True
+              URL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: True
+              AuthorName:
+                type: str
+                required: True
+              AuthorURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: False
+      Tools & Applications:
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              Title:
+                type: str
+                required: True
+              URL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: True
+              AuthorName:
+                type: str
+                required: True
+              AuthorURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: False
+      Publications:
+        type: seq
+        sequence:
+          - type: map
+            mapping:
+              Title:
+                type: str
+                required: True
+              URL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: True
+              AuthorName:
+                type: str
+                required: True
+              AuthorURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                required: False
