@@ -1,0 +1,73 @@
+Name: Allen Cell Imaging Collections
+Description: |
+  This bucket contains multiple datasets (as Quilt packages) created by the
+  Allen Institute for Cell Science (AICS). The imaging data in this bucket contains
+  either of the following:
+
+  1) field of view images from glass plates
+  2) cell membrane, DNA, and structure segmentations
+  3) cell membrane, DNA and structure contours
+  4) machine learning imaging predictions of the previously listed modalities.
+
+  In addition, many of the datasets include CSVs that contain feature sets
+  related to that data.
+Documentation: https://open.quiltdata.com/b/allencell
+Contact: jacksonb@alleninstitute.org
+ManagedBy: "[Allen Institute for Cell Science](https://www.allencell.org)"
+UpdateFrequency: Biweekly
+Tags:
+  - biology
+  - cell imaging
+  - microscopy
+  - image processing
+  - machine learning
+License: https://www.allencell.org/terms-of-use.html
+Resources:
+  - Description: Data files in a public bucket
+    ARN: arn:aws:s3:::allencell
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Allen Cell Feature Explorer
+      URL: https://cfe.allencell.org/
+      AuthorName: Allen Institute for Cell Science
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: Allen Cell Structure Segmenter
+      URL: https://www.allencell.org/segmenter.html
+      AuthorName: Jianxu Chen, Liya Ding, Matheus P. Viana, Melissa C. Hendershott, Ruian Yang, Irina A. Mueller, Susanne M. Rafelski
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: Pytorch 3D Integrated Cell
+      URL: github.com/AllenCellModeling/pytorch_integrated_cell
+      AuthorName: Gregory R. Johnson, Rory M. Donovan-Maiye, Mary M. Maleckar
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: AICS Volume Viewer
+      URL: https://github.com/AllenInstitute/volume-viewer
+      AuthorName: Dan Toloudis
+      AuthorURL: https://alleninstitute.org/what-we-do/cell-science/about/team/staff-profiles/daniel-toloudis/
+    - Title: Visual Guide to Human Cells
+      URL: https://www.allencell.org/visual-guide-to-human-cells.html
+      AuthorName: Allen Institute for Cell Science
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: AICSImageIO
+      URL: https://github.com/AllenCellModeling/aicsimageio
+      AuthorName: Matthew Bowden, Jackson Brown, Jamie Sherman, Dan Toloudis
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: Integrated Mitotic Stem Cell
+      URL: https://imsc.allencell.org
+      AuthorName: Allen Institute for Cell Science
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+  Tutorials:
+    - Title: Download and train label-free models
+      URL: https://github.com/AllenCellModeling/pytorch_fnet/blob/master/examples/download_and_train.py
+      AuthorName: Greg Johnson
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/staff-profiles/greg-johnson/
+    - Title: Integrating single-cell sequencing and nuclear imaging data
+      URL: https://drive.google.com/file/d/1nuiYOurmbic7rZeHPen_M3fDbsN7n5Ws/view?usp=sharing
+      AuthorName: Chengxiang Qiu and William Noble
+      AuthorURL: https://noble.gs.washington.edu/
+  Publications:
+    - Title: Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy
+      URL: https://www.nature.com/articles/s41592-018-0111-2
+      AuthorName: Chawin Ounkomol, Sharmishtaa Seshamani, Mary M. Maleckar, Forrest Collman & Gregory R. Johnson
+      AuthorURL: https://alleninstitute.org/about/team/
