@@ -2,6 +2,7 @@ Name: Amazon Customer Reviews Dataset
 Description: Amazon Customer Reviews (a.k.a. Product Reviews) is one of Amazon’s iconic products. In a period of over two decades since the first review in 1995, millions of Amazon customers have contributed over a hundred million reviews to express opinions and describe their experiences regarding products on the Amazon.com website. Over 130+ million customer reviews are available to researchers as part of this dataset.
 Documentation: https://s3.amazonaws.com/amazon-reviews-pds/readme.html
 Contact: customer-review-dataset@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
 UpdateFrequency: Not defined
 Tags:
   - aws-pds
@@ -15,11 +16,18 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
-  - Title: How to scale sentiment analysis using Amazon Comprehend, AWS Glue and Amazon Athena
-    URL: https://aws.amazon.com/blogs/machine-learning/how-to-scale-sentiment-analysis-using-amazon-comprehend-aws-glue-and-amazon-athena/
-    AuthorName: Roy Hasson
-    AuthorURL: https://twitter.com/royhasson
-  - Title: Implementing a recommender system with Amazon SageMaker and Apache MXNet Gluon
-    URL: https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_applying_machine_learning/gluon_recommender_system/gluon_recommender_system.ipynb
-    AuthorName: David Arpin
-    AuthorURL: https://github.com/djarpin
+  Tutorials:
+    - Title: How to scale sentiment analysis using Amazon Comprehend, AWS Glue and Amazon Athena
+      URL: https://aws.amazon.com/blogs/machine-learning/how-to-scale-sentiment-analysis-using-amazon-comprehend-aws-glue-and-amazon-athena/
+      AuthorName: Roy Hasson
+      AuthorURL: https://twitter.com/royhasson
+    - Title: Implementing a recommender system with Amazon SageMaker and Apache MXNet Gluon
+      URL: https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_applying_machine_learning/gluon_recommender_system/gluon_recommender_system.ipynb
+      AuthorName: David Arpin
+      AuthorURL: https://github.com/djarpin
+    - Title: Querying Review Data with Kognitio AWS Marketplace product using SQL
+      URL: https://www.linkedin.com/pulse/100-shades-grey-other-amazon-review-discoveries-mark-chopping/
+      AuthorName: Mark Chopping
+      AuthorURL: https://twitter.com/markchopping1
+  Tools & Applications:
+  Publications:

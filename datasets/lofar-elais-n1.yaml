@@ -1,0 +1,25 @@
+---
+Name: LOFAR ELAIS-N1 cycle 2 observations on AWS
+Description: These data correspond to the [International LOFAR Telescope](http://www.lofar.org/) observations of the sky field ELAIS-N1 (16:10:01 +54:30:36) during the cycle 2 of observations. There are 11 runs of about 8 hours each plus the corresponding observation of the calibration targets before and after the target field. The data are measurement sets ([MS](https://casa.nrao.edu/Memos/229.html)) containing the cross-correlated data and metadata divided in 371 frequency sub-bands per target centred at ~150 MHz.
+Contact: https://www.lofarcloud.uk/
+Documentation: https://www.lofarcloud.uk/data.html
+UpdateFrequency: Not updated
+Tags:
+  - astronomy
+  - aws-pds
+  - survey
+  - imaging
+License: "The data are considered \"LOFAR data in the public domain\" and their use must adhere to the [LOFAR data policy](https://www.astron.nl/radio-observatory/observing-proposals/lofar-data-policy/lofar-data-policy). Any publication based on these data must contain the following acknowledgement text: \"This paper is based (in part) on data obtained with the International LOFAR Telescope (ILT) under project code LC2_024. LOFAR (van Haarlem et al. 2013) is the Low Frequency Array designed and constructed by ASTRON. It has observing, data processing, and data storage facilities in several countries, that are owned by various parties (each with their own funding sources), and that are collectively operated by the ILT foundation under a joint scientific policy. The ILT resources have benefitted from the following recent major funding sources: CNRS-INSU, Observatoire de Paris and Université d'Orléans, France; BMBF, MIWF-NRW, MPG, Germany; Science Foundation Ireland (SFI), Department of Business, Enterprise and Innovation (DBEI), Ireland; NWO, The Netherlands; The Science and Technology Facilities Council, UK; Ministry of Science and Higher Education, Poland\""
+Resources:
+  - Description: LOFAR ELAIS-N1 cycle 2 observations
+    ARN: arn:aws:s3:::lofar-elais-n1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: Calibration of LOFAR ELAIS-N1 data in the Amazon cloud
+      URL: https://www.lofarcloud.uk
+      AuthorName: J. Sabater
+      AuthorURL: https://github.com/nudomarinero

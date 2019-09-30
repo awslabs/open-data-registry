@@ -1,0 +1,24 @@
+Name: A Realistic Cyber Defense Dataset (CSE-CIC-IDS2018)
+Description: |
+  This dataset is the result of a collaborative project between the Communications Security Establishment (CSE) and The Canadian Institute for Cybersecurity (CIC) that use the notion of profiles to generate cybersecurity dataset in a systematic manner. It incluides a detailed description of intrusions along with abstract distribution models for applications, protocols, or lower level network entities. The dataset includes seven different attack scenarios, namely Brute-force, Heartbleed, Botnet, DoS, DDoS, Web attacks, and infiltration of the network from inside. The attacking infrastructure includes 50 machines and the victim organization has 5 departments includes 420 PCs and 30 servers. This dataset includes the network traffic and log files of each machine from the victim side, along with 80 network traffic features extracted from captured traffic using CICFlowMeter-V3.
+  For more information on the creation of this dataset, see this paper by researchers at the Canadian Institute for Cybersecurity (CIC) and the University of New Brunswick (UNB): [Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization](http://www.scitepress.org/Papers/2018/66398/66398.pdf).
+Documentation: http://www.unb.ca/cic/datasets/ids-2018.html
+Contact: CIC@unb.ca
+UpdateFrequency: Annualy
+Tags:
+  - aws-pds
+  - network traffic
+  - internet
+  - intrusion detection
+  - cyber security
+  - aws-pds
+License: http://www.unb.ca/cic/datasets/ids-2018.html
+Resources:
+  - Description: Network traffic and log files
+    ARN: arn:aws:s3:::cse-cic-ids2018
+    Region: ca-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

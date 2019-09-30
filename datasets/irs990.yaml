@@ -1,7 +1,7 @@
 Name: IRS 990 Filings
-Description: Machine-readable data from certain electronic 990 forms filed with the IRS from 2011 to present.
+Description: Machine-readable data from certain electronic 990 forms filed with the IRS from 2013 to present.
 Documentation: https://docs.opendata.aws/irs-990/readme.html
-Contact: https://www.irs.gov/help-resources/navigate-irsgov
+Contact: https://www.irs.gov/e-file-providers/e-file-for-charities-and-non-profits
 UpdateFrequency: New filings are added regularly
 Tags:
   - aws-pds
@@ -14,30 +14,41 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
-  - Title: aws-irs-990-explorer
-    URL: http://irs-990-explorer.chrisgherbert.com
-    AuthorName: Chris Herbert
-    AuthorURL: http://chrisgherbert.com/
-  - Title: 990_long
-    URL: https://github.com/CharityNavigator/990_long
-    AuthorName: Charity Navigator
-    AuthorURL: https://www.charitynavigator.org/
-  - Title: Non Profit Light
-    URL: http://nonprofitlight.com
-    AuthorName: Non Profit Light
-  - Title: Guide to Open Data for Nonprofit Research
-    URL: https://lecy.github.io/Open-Data-for-Nonprofit-Research/
-    AuthorName: lecy
-    AuthorURL: https://github.com/lecy
-  - Title: Nonprofit Explorer
-    URL: https://projects.propublica.org/nonprofits/
-    AuthorName: ProPublica
-    AuthorURL: https://propublica.org
-  - Title: Open990
-    URL: https://www.open990.com/
-    AuthorName: 990 Consulting, LLC
-    AuthorURL: https://www.990consulting.com/
-  - Title: Tutorial on using the IRS 990 e-file dataset
-    URL: https://medium.com/@open990/the-irs-990-e-file-dataset-getting-to-the-chocolatey-center-of-data-deliciousness-90f66097a600
-    AuthorName: 990 Consulting, LLC
-    AuthorURL: https://www.990consulting.com/
+  Tutorials:
+    - Title: Tutorial on using the IRS 990 e-file dataset
+      URL: https://medium.com/@open990/the-irs-990-e-file-dataset-getting-to-the-chocolatey-center-of-data-deliciousness-90f66097a600
+      AuthorName: 990 Consulting, LLC
+      AuthorURL: https://www.990consulting.com/
+  Tools & Applications:
+    - Title: Parse 990 XML using IRSx
+      URL: https://github.com/jsfenfen/990-xml-reader
+      AuthorName: Jacob Fenton
+      AuthorURL: http://jacobfenton.com/
+    - Title: aws-irs-990-explorer
+      URL: http://irs-990-explorer.chrisgherbert.com
+      AuthorName: Chris Herbert
+      AuthorURL: http://chrisgherbert.com/
+    - Title: 990_long
+      URL: https://github.com/CharityNavigator/990_long
+      AuthorName: Charity Navigator
+      AuthorURL: https://www.charitynavigator.org/
+    - Title: Non Profit Light
+      URL: http://nonprofitlight.com
+      AuthorName: Non Profit Light
+    - Title: Guide to Open Data for Nonprofit Research
+      URL: https://lecy.github.io/Open-Data-for-Nonprofit-Research/
+      AuthorName: lecy
+      AuthorURL: https://github.com/lecy
+    - Title: Nonprofit Explorer
+      URL: https://projects.propublica.org/nonprofits/
+      AuthorName: ProPublica
+      AuthorURL: https://propublica.org
+    - Title: Open990
+      URL: https://www.open990.com/
+      AuthorName: 990 Consulting, LLC
+      AuthorURL: https://www.990consulting.com/
+    - Title: Grantmakers.io
+      URL: https://www.grantmakers.io
+      AuthorName: Chad Kruse
+      AuthorURL: https://www.chadkruse.com/
+  Publications:

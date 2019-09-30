@@ -1,0 +1,23 @@
+Name: Genome Ark
+Description: The Genome Ark hosts genomic information for the Vertebrate Genomes Project (VGP) and other related projects. The VGP is an international collaboration that aims to generate complete and near error-free reference genomes for all extant vertebrate species. These genomes will be used to address fundamental questions in biology and disease, to identify species most genetically at risk for extinction, and to preserve genetic information of life.
+Documentation: https://vertebrategenomesproject.org
+Contact: Erich Jarvis <ejarvis@rockefeller.edu>
+ManagedBy: The Genome10K community of scientists
+UpdateFrequency: Data will be continually updated as it is generated.
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - genetic
+  - genomic
+  - life sciences
+License: "Before publishing on them, the VGP releases all raw sequencing reads, assembled genomes, transcriptome data, and annotations as a service to the research community under the terms of the Genome10K data use policy: https://genome10k.soe.ucsc.edu/data-use-policies/"
+Resources:
+  - Description: https://vgp.github.io
+    ARN: arn:aws:s3:::genomeark
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

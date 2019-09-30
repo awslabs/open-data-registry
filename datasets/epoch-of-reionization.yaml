@@ -1,0 +1,27 @@
+Name: Epoch of Reionization Dataset
+Description: |
+  The data are from observations with the Murchison Widefield Array (MWA) which is a
+  Square Kilometer Array (SKA) precursor in Western Australia.  This particular
+  dataset is from the Epoch of Reionization project which is a key science driver
+  of the SKA. Nearly 2PB of such observations have been recorded to date, this is
+  a small subset of that which has been exported from the MWA data archive in
+  Perth and made available to the public on AWS.  The data were taken to detect
+  signatures of the first stars and galaxies forming and the effect of these early
+  stars and galaxies on the evolution of the universe.
+Documentation: http://danielcjacobs.com/research/epoch-of-reionization-aws-public-dataset/
+Contact: brynah (at) phys.washington.edu
+ManagedBy: University of washington Radio Cosmology Group
+UpdateFrequency: Irregularly
+Tags:
+  - astronomy
+  - aws-pds
+License: BSD 2-Clause
+Resources:
+  - Description: Selected MWA EoR data (uvfits format) from 2013-2015
+    ARN: arn:aws:s3:::mwapublic
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

@@ -1,0 +1,30 @@
+Name: Open City Model (OCM)
+Description: |
+  Open City Model is an initiative to provide cityGML data for all the buildings in the United States.
+  By using other open datasets in conjunction with our own code and algorithms it is our goal to provide 3D geometries for every US building.
+Documentation: https://github.com/opencitymodel/opencitymodel
+Contact: https://github.com/opencitymodel/opencitymodel#contact
+UpdateFrequency: Quarterly
+Tags:
+  - aws-pds
+  - events
+  - cities
+  - geospatial
+License: https://github.com/opencitymodel/opencitymodel#license
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::opencitymodel
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using Open City Model with the 3dCityDB
+      URL: https://github.com/opencitymodel/opencitymodel/blob/master/examples/3dCityDB-to-GoogleEarth.md
+      AuthorName: Allen Gilliland
+      AuthorURL: https://github.com/agilliland
+    - Title: Running queries on Open City Model using AWS Athena
+      URL: https://github.com/opencitymodel/opencitymodel/blob/master/examples/Query-OpenCityModel-using-AWS-Athena.md
+      AuthorName: Allen Gilliland
+      AuthorURL: https://github.com/agilliland
+  Tools & Applications:
+  Publications:

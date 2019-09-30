@@ -1,0 +1,38 @@
+Name: OpenEEW
+Description: |
+    Grillo has developed an IoT-based earthquake early-warning system,
+    with sensors currently deployed in Mexico, Chile and Costa Rica,
+    and is now opening its entire archive of unprocessed accelerometer
+    data to the world to encourage the development of new algorithms
+    capable of rapidly detecting and characterizing earthquakes in
+    real time.
+Documentation: https://github.com/grillo/openeew
+Contact: openeew@grillo.io
+ManagedBy: "[Grillo](https://grillo.io/)"
+UpdateFrequency: Approximately every 5 minutes
+Tags:
+  - disaster response
+  - deep learning
+  - earth observation
+  - earthquakes
+  - machine learning
+  - aws-pds
+  - sustainability
+License: https://github.com/grillo/openeew#license
+Resources:
+  - Description: OpenEEW
+    ARN: arn:aws:s3:::grillo-openeew
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Analyzing a magnitude 7.2 earthquake in Mexico using Python
+      URL: https://blog.grillo.io/analyzing-a-magnitude-7-2-earthquake-in-mexico-using-python-6272a4ff63e3
+      AuthorName: Grillo
+      AuthorURL: https://grillo.io/openeew/
+  Tools & Applications:
+    - Title: OpenEEW library for Python
+      URL: https://github.com/grillo/openeew-python
+      AuthorName: Grillo
+      AuthorURL: https://grillo.io/openeew/
+  Publications:

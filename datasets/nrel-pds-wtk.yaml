@@ -1,0 +1,58 @@
+Name: NREL Wind Integration National Dataset on AWS
+Description: |
+  The [Wind Integration National Dataset (WIND)](https://www.nrel.gov/grid/wind-toolkit.html)
+  is an update and expansion of the Eastern Wind Integration Data Set and
+  Western Wind Integration Data Set. It supports the next generation of wind
+  integration studies.
+Documentation: https://www.nrel.gov/grid/wind-toolkit.html
+Contact: wind-toolkit@nrel.gov
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: As Needed
+Tags:
+  - aws-pds
+  - environmental
+  - geospatial
+  - meteorological
+  - sustainability
+License: https://github.com/NREL/hsds-examples/blob/master/LICENSE
+Resources:
+  - Description: Gridded source files (2007-2013) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/hdf5-source-files-gridded/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Techno-economic source files by date (2007-2012) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/wtk-techno-economic/hdf5-source/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Techo-economic source files by location in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/wtk-techno-economic/pywtk-data/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: CONUS, Canada and Mexico hourly source files in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/hdf5-source-files-hourly/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: CONUS, Canada and Mexico 5-minute source files in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/hdf5-source-files-5minute/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) backend data'
+    ARN: arn:aws:s3:::nrel-pds-hsds/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: HSDS Examples
+      URL: https://github.com/NREL/hsds-examples
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer
+      AuthorURL: https://www.nrel.gov/research/caleb-phillips.html
+    - Title: Wind Visualization
+      URL: https://github.com/NREL/hsds-viz
+      AuthorName: Jordan Perr-Sauer
+      AuthorURL: https://www.nrel.gov/research/jordan-perr-sauer.html
+  Publications:
+    - Title: 'Power from wind: Open data on AWS'
+      URL: https://aws.amazon.com/blogs/big-data/power-from-wind-open-data-on-aws/
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer
+      AuthorURL: https://www.nrel.gov/research/caleb-phillips.html

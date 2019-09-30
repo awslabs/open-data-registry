@@ -1,13 +1,14 @@
 Name: NAIP on AWS
-Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 60 centimeters to 100 centimeters in resolutionand is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/)
+Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/)
 Documentation: https://docs.opendata.aws/naip/readme.html
 Contact: imagerycontent@esri.com
-UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years.
+ManagedBy: "[Esri](https://www.esri.com/en-us/home)"
+UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years. 2018 data expected to be available in Summer 2019.
 Tags:
   - aws-pds
   - earth observation
   - aerial imagery
-  - gis
+  - geospatial
   - natural resource
   - regulatory
   - sustainability
@@ -18,20 +19,26 @@ Resources:
     ARN: arn:aws:s3:::naip-analytic
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: True
   - Description: The data in this bucket is Original Imagery in Geotiff format 4-band (RGB + NIR) uncompressed no overviews and metadata in a Requester Pays bucket
     ARN: arn:aws:s3:::naip-source
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: True
   - Description: The data in this bucket is 3 band RGB in Geotiff format. It is converted and managed by Esri. This imagery is provided as Cloud Optimized GeoTIFFs, has been compressed using YCbCr JPEG with quality 85. It is provided as 512x512 tiles, with pyramids created using 2x sampling by averaging. The bucket is set as a Requester Pays bucket.
     ARN: arn:aws:s3:::naip-visualization
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: True
 DataAtWork:
-  - Title: VoyagerSearch showing off Batch + NAIP
-    URL: https://www.voyagersearch.com/using-aws-batch-to-generate-image-thumbnails-for-voyager
-    AuthorName: Voyager
-    AuthorURL: https://www.voyagersearch.com/
-  - Title: EOS Land Viewer
-    URL: https://eos.com/landviewer/
-    AuthorName: Earth Observing System
-    AuthorURL: https://eos.com/
+  Tutorials:
+  Tools & Applications:
+    - Title: VoyagerSearch showing off Batch + NAIP
+      URL: https://www.voyagersearch.com/using-aws-batch-to-generate-image-thumbnails-for-voyager
+      AuthorName: Voyager
+      AuthorURL: https://www.voyagersearch.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+  Publications:

@@ -1,10 +1,30 @@
 Name: NOAA National Water Model Reanalysis
-Description: The NOAA National Water Model Reanalysis dataset contains output from a 25-year retrospective simulation (January 1993 through December 2017) of version 1.2 of the National Water Model. This simulation used observed rainfall as input and ingested other required meteorological input fields from a weather Reanalysis dataset. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time forecast model. One application of this dataset is to provide historical context to current real-time streamflow, soil moisture and snowpack NWM conditions. The Reanalysis data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. The long-term dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes.
+Description: |
+  The NOAA National Water Model Reanalysis dataset contains output
+  from multi-decade retrospective simulations. These
+  simulations used observed rainfall as input and ingested other
+  required meteorological input fields from a weather reanalysis
+  dataset. The output frequency and fields available in this
+  historical NWM dataset differ from those contained in the
+  real-time forecast model. One application of this dataset is
+  to provide historical context to current real-time streamflow,
+  soil moisture and snowpack NWM conditions. The reanalysis data
+  can be used to infer flow frequencies and perform temporal analyses
+  with hourly streamflow output and 3-hourly land surface output. The
+  long-term dataset can also be used in the development of end user
+  applications which require a long baseline of data for system
+  training or verification purposes. This dataset contains output from two
+  retrospective simulations.  Currently there are two versions of the dataset:
+  A 25-year (January 1993 through December 2017) retrospective simulation using
+  version 1.2 of the National Water Model, and a 26-year (January 1993 through
+   December 2018) retrospective simulation using version 2.0
+   of the National Water Model.
 Documentation: https://docs.opendata.aws/nwm-archive/readme.html
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
   For any questions regarding data delivery not associated with this platform or any general questions
   regarding the NOAA Big Data Project, email [noaa.bdp@noaa.gov](noaa.bdp@noaa.gov).
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: No updates
 Tags:
   - aws-pds
@@ -17,7 +37,15 @@ Tags:
   - sustainability
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: The complete archive of NWM data.
+  - Description: The complete archive of NWM data version 2.0.
+    ARN: arn:aws:s3:::noaa-nwm-retro-v2.0-pds
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: The complete archive of NWM data version 1.2.
     ARN: arn:aws:s3:::nwm-archive
     Region: us-east-1
     Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

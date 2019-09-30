@@ -1,31 +1,53 @@
 Name: GOES on AWS
-Description: GOES provides continuous weather imagery and monitoring of meteorological and space environment data across North America.
+Description: |
+  GOES satellites (GOES-16 & GOES-17) provide continuous weather imagery and
+  monitoring of meteorological and space environment data across North America.
+  GOES satellites provide the kind of continuous monitoring necessary for
+  intensive data analysis. They hover continuously over one position on the surface.
+  The satellites orbit high enough to allow for a full-disc view of the Earth. Because
+  they stay above a fixed spot on the surface, they provide a constant vigil for the
+  atmospheric "triggers" for severe weather conditions such as tornadoes, flash floods,
+  hailstorms, and hurricanes. When these conditions develop, the GOES satellites are able
+  to monitor storm development and track their movements.
 Documentation: https://docs.opendata.aws/noaa-goes16/cics-readme.html
 Contact: noaa.bdp@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New data is added as soon as it's available
 Tags:
   - aws-pds
-  - gis
+  - geospatial
   - weather
   - earth observation
   - meteorological
   - sustainability
   - disaster response
+  - satellite imagery
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: Imagery and metadata via CICS (https://docs.opendata.aws/noaa-goes16/cics-readme.html)
+  - Description: GOES-16 imagery and metadata
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
     Type: S3 Bucket
-  - Description: New data notifications, only Lambda and SQS protocols allowed
+  - Description: New data notifications for GOES-16, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
     Region: us-east-1
     Type: SNS Topic
-  - Description: Imagery and metadata via Unidata (https://docs.opendata.aws/noaa-goes16/unidata-readme.html)
-    ARN: arn:aws:s3:::goesingest
-    Region: us-west-2
+  - Description: GOES-17 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes17
+    Region: us-east-1
     Type: S3 Bucket
-  - Description: New data notifications, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-west-2:492151760762:NewGOES16Object
-    Region: us-west-2
+  - Description: New data notifications for GOES-17, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
+    Region: us-east-1
     Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Visualize GOES-16 in Python using Xarray
+      URL: https://github.com/HamedAlemo/visualize-goes16
+      AuthorName: Hamed Alemohammad
+      AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
+  Tools & Applications:
+  Publications:
+    - Title: Billions of Birds Migrate. Where Do They Go?
+      URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
+      AuthorName: National Geographic
