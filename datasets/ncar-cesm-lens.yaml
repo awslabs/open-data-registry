@@ -1,0 +1,38 @@
+Name: Community Earth System Model Large Ensemble (CESM LENS)
+Description: >
+  The Community Earth System Model (CESM) Large Ensemble Numerical Simulation (LENS) dataset includes a 40-member ensemble of climate simulations for the period 1920-2100 using historical data (1920-2005) or assuming the RCP8.5 greenhouse gas concentration scenario (2006-2100), as well as longer control runs based on pre-industrial conditions. The data comprise both surface (2D) and volumetric (3D) variables in the atmosphere, ocean, land, and ice domains. The total data volume of the original dataset is ~500TB, which has traditionally been stored as ~150,000 individual CF/NetCDF files on disk or magnetic tape made available through the NCAR Climate Data Gateway for download or via web services.
+
+     NCAR has copied a subset (currently ~70 TB) of CESM LENS data to Amazon S3 as part of the AWS Public Datasets Program. To optimize for large-scale analytics we have represented the data as ~275 Zarr stores format accessible through the Python Xarray library. Each Zarr store contains a single physical variable for a given model run type and temporal frequency (monthly, daily, 6-hourly).
+Documentation: https://doi.org/10.26024/wt24-5j82
+Contact: cesm-lens-aws@ucar.edu
+ManagedBy: [National Center for Atmospheric Research](https://ncar.ucar.edu/)
+UpdateFrequency: Rare. The LENS experiment is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the AWS copy.
+Tags:
+  - climate
+  - model
+  - atmosphere
+  - oceans
+  - land
+  - ice
+  - geospatial
+  - machine learning
+  - aws-pds
+  - sustainability
+License: https://www.earthsystemgrid.org/legal/data_terms_of_use.html
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::ncar-cesm-lens
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools and Applications:
+    - Title: Jupyter Notebook and other documentation and tools for CESM LENS on AWS
+      URL: https://github.com/NCAR/cesm-lens-aws
+      AuthorName: NCAR Science at Scale team
+    - Title: Rendered (static) version of Jupyter Notebook
+      URL: https://nbviewer.jupyter.org/gist/andersy005/00c2798f9200c3a2a14f8ea845ba15a0
+      AuthorName: Anderson Banihirwe
+  Publications:
+    - Title: The Community Earth System Model (CESM) Large Ensemble Project: A Community Resource for Studying Climate Change in the Presence of Internal Climate Variability
+      URL: https://doi.org/10.5065/d6j101d1
+      AuthorName: Kay et al. (2015), Bull. AMS, 96, 1333-1349
