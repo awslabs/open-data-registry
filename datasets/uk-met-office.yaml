@@ -4,11 +4,11 @@ Description: |
   Met Office atmospheric model data, whilst also experiencing a transformative method of requesting
   data via Restful APIs on AWS. All ahead of Met Office’s own operationally supported API platform
   that will be launched in late 2019.
-  
-  For information about the data see the [Met Office website](https://www.metoffice.gov.uk/services/data-provision/big-data-drive/wholesale/categories/planetary-scale-applications).
-  For examples of using the data check out the [examples repository](https://github.com/MetOffice/aws-earth-examples). 
+
+  For information about the data see the [Met Office website](https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/discovery).
+  For examples of using the data check out the [examples repository](https://github.com/MetOffice/aws-earth-examples).
   If you need help and support using the data please raise an issue on the examples repository.
-Documentation: https://github.com/MetOffice/aws-earth-examples  
+Documentation: https://github.com/MetOffice/aws-earth-examples
 Contact: https://www.metoffice.gov.uk/about-us/contact
 UpdateFrequency: Daily (with 24 hour delay)
 Tags:
@@ -57,4 +57,13 @@ Resources:
     ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-g-prd
     Region: eu-west-2
     Type: SNS Topic
-    
+DataAtWork:
+  Tutorials:
+    - Title: Met Office AWS Earth data - Getting Started
+      URL: https://github.com/MetOffice/aws-earth-examples/blob/master/examples/1.%20Getting%20Started.ipynb
+      AuthorName: Jacob Tomlinson
+    - Title: Met Office AWS Earth data - Subscribing to data
+      URL: https://github.com/MetOffice/aws-earth-examples/blob/master/examples/2.%20Subscribing%20to%20data.ipynb
+      AuthorName: Jacob Tomlinson
+  Tools & Applications:
+  Publications:
