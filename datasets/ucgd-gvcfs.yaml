@@ -1,0 +1,46 @@
+Name: UCGD GVCFs on AWS
+Description: Collection of data generated using the 1000 Genomes 30X WGS (Illumina NovaSeq) dataset sequenced by the New York Genome Center. All data was generated using Sentieon Genomics pipeline tools (version 201711.05)following GATK best practices. This collection includes data for references builds GRCh37 & GRCh38. 
+Documentation: 
+Contact: http://ucgd.genetics.utah.edu/people/contact/
+ManagedBy: "[UCGD](http://ucgd.genetics.utah.edu/)"
+UpdateFrequency: New data as requested or as updates requires
+Tags:
+  - bioinformatics
+  - biology
+  - genetic
+  - genomic
+  - health
+  - life sciences
+  - medicine
+  - population
+  - statistics
+License: Full public release 
+Resources:
+  - Description: 1000G WGS GVCF dataset.
+    ARN: arn:aws:s3:::1000G-wgs-gvcfs
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: References used to recall 1000G WGS GVCF dataset.
+    ARN: arn:aws:s3:::UCGD-references
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: GATK Best Practices
+      URL: https://software.broadinstitute.org/gatk/best-practices/workflow?id=11145
+      AuthorName: Broad Institute
+      AuthorURL: https://www.broadinstitute.org/
+    - Title: Sentieon GVCFtyper joint variant caller
+      URL: https://support.sentieon.com/manual/usages/general/#gvcftyper-algorithm
+      AuthorName: Sentieon Genomics
+      AuthorURL: https://support.sentieon.com/manual/#	  	  
+  Tools & Applications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
