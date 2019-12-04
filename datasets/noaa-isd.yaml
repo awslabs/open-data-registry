@@ -34,8 +34,12 @@ Tags:
   - weather
 License: https://www.ncdc.noaa.gov/isd/data-access
 Resources:
-  - Description: Project data files
+  - Description: ISD in original format
     ARN: arn:aws:s3:::noaa-isd-pds
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: ISD in CSV format
+    ARN: arn:aws:s3:::noaa-global-hourly-pds
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
