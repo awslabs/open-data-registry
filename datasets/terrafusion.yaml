@@ -1,0 +1,31 @@
+Name: Terra Fusion Data Sampler
+Description: Terra is the flagship of NASA’s Earth Observing System (EOS). It was launched into orbit on December 18, 1999 and carries five instruments: the Moderate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle Imaging SpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER), the Clouds and Earth’s Radiant Energy System (CERES), and the Measurements of Pollution in the Troposphere (MOPITT).  The Terra Basic Fusion dataset is an easy-to-access record of the changes observed by all the instruments on the Terra mission for selected areas (described below) covering the years 2000-2015. 
+Documentation: https://go.illinois.edu/terra-fusion-doc
+Contact: Larry DiGirolamo gdi@illinois.edu
+ManagedBy: University of Illinois
+UpdateFrequency: Static, with a planned update for years 2016-2020 in the future.
+Tags:
+  - Terra
+  - MODIS 
+  - MISR 
+  - CERES 
+  - MOPITT 
+  - ASTER 
+  - Earth Science 
+License: Creative Commons Level 0
+Resources:
+  - Description: AWS S3 Public Bucket Containing Terra Basic Fusion Hierarchical Data Format 5 (HDF5) files
+    ARN: arn:aws:s3:::terrafusiondatasampler
+    Region:  us-west-2 US West (Oregon)
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Basic Terra fusion product algorithm theoretical basis and data specifications 
+      URL: https://go.illinois.edu/terra-fusion-doc
+      AuthorName: Zhao, Guangu; Yang, Muqun; Clipp, Landon; Gao, Yizhao; Lee, Joe H.  
+      AuthorURL: http://hdl.handle.net/2142/105967 
+  Tools & Applications:
+    - Title: TerraFusion Github
+      URL: https://github.com/TerraFusion
+      AuthorName:
+      AuthorURL: 
