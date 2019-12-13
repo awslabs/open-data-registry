@@ -1,5 +1,15 @@
 Name: MMRF CoMMpass
-Description: The MMRF CoMMpass Study seeks to connect every person with multiple myeloma to what they need to make the best possible treatment decisions at the best possible time.
+Description:
+  The Relating Clinical Outcomes in Multiple Myeloma to Personal Assessment of
+  Genetic Profile study (CoMMpassSM, NCT01454297) is the MMRF’s landmark
+  personalized medicine initiative. CoMMpass is a longitudinal observation study
+  of around 1000 newly diagnosed myeloma patients receiving various standard
+  approved treatments. The MMRF’s vision is to track the treatment and results
+  for each CoMMpass patient so that someday the information can be used to guide
+  decisions for newly diagnosed patients. CoMMpass checked on patients every 6
+  months for 8 years, collecting tissue samples, genetic information, quality of
+  life and various disease and clinical outcomes. The study has produced one of
+  the largest genomic and clinical datasets of a single disease.
 Contact: dcf-support@datacommons.io
 ManagedBy: AWS buckets managed by University of Chicago
 UpdateFrequency: Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases, although this dataset may not be updated at every release.
@@ -7,23 +17,18 @@ Tags:
   - aws-pds
   - cancer
   - genomic
-License:
+License: NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies
 Resources:
-  - Description:
+  - Description: RNA-Seq Gene Expression Quantification
     ARN:
-    Region:
-    Type:
+    Region: us-east-1
+    Type: S3 Bucket
 DataAtWork:
-  Tutorials:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
   Tools & Applications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/MMRF-COMMPASS 
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
   Publications:
     - Title: Interim Analysis Of The MMRF CoMMpass Trial, a Longitudinal Study In Multiple Myeloma Relating Clinical Outcomes To Genomic and Immunophenotypic Profiles
       URL: https://doi.org/10.1182/blood.V122.21.532.532
