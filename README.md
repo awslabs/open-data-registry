@@ -19,6 +19,7 @@ The YAML files use this structure:
 ```yaml
 Name:
 Description:
+Documentation:
 Contact:
 ManagedBy:
 UpdateFrequency:
