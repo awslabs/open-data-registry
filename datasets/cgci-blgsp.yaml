@@ -1,0 +1,64 @@
+Name: CGCI-BLGSP open data
+Description: |
+  The Cancer Genome Characterization Initiatives (CGCI) program supports cutting-edge genomics
+  research of adult and pediatric cancers. CGCI investigators develop and apply advanced sequencing
+  methods that examine genomes, exomes, and transcriptomes within various types of tumors. The
+  Burkitt Lymphoma Genome Sequencing Project (BLGSP) aim is to create a databank of the many
+  alterations found in Burkitt lymphoma, an uncommon type of Non-Hodgkin lymphoma. The dataset
+  contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification,
+  miRNA-Seq Isoform Expression Quantification, and miRNA Expression Quantification data.
+Documentation: https://ocg.cancer.gov/programs/cgci
+Contact: dcf-support@datacommons.io
+ManagedBy: AWS buckets managed by University of Chicago
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: Clinical Supplement
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Biospecimen Supplement
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: miRNA-Seq Isoform Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: miRNA-Seq miRNA Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/CGCI-BLGSP
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: |
+        Genome-wide discovery of somatic coding and noncoding mutations in pediatric endemic and
+        sporadic Burkitt lymphoma
+      URL: https://doi.org/10.1182/blood-2018-09-871418
+      AuthorName: |
+         Bruno M. Grande, Daniela S. Gerhard, Aixiang Jiang, Nicholas B. Griner, Jeremy S. Abramson,
+         Thomas B. Alexander , Hilary Allen, Leona W. Ayers, Jeffrey M. Bethony , Kishor Bhatia ,
+         Jay Bowen , Corey Casper , John Kim Choi , Luka Culibrk , Tanja M. Davidsen, Maureen A.
+         Dyer, Julie M. Gastier-Foster, Patee Gesuwan, Timothy C. Greiner, Thomas G. Gross, Benjamin
+         Hanf, Nancy Lee Harris, Yiwen He, John D. Irvin, Elaine S. Jaffe, Steven J. M. Jones,
+         Patrick Kerchan, Nicole Knoetze, Fabio E. Leal, Tara M. Lichtenberg, Yussanne Ma, Jean Paul
+         Martin, Marie-Reine Martin, Sam M. Mbulaiteye, Charles G. Mullighan, Andrew J. Mungall,
+         Constance Namirembe, Karen Novik, Ariela Noy, Martin D. Ogwang, Abraham Omoding, Jackson
+         Orem, Steven J. Reynolds, Christopher K. Rushton, John T. Sandlund, Roland Schmitz, Cynthia
+         Taylor, Wyndham H. Wilson, George W. Wright, Eric Y. Zhao, Marco A. Marra, Ryan D. Morin,
+         Louis M. Staudt
