@@ -1,0 +1,91 @@
+Name: TARGET-ALL-P3 open data
+Description: |
+  Therapeutically Applicable Research to Generate Effective Treatments (TARGET) is the collaborative
+  effort of a large, diverse consortium of extramural and NCI investigators. The goal of the effort
+  is to accelerate molecular discoveries that drive the initiation and progression of hard-to-treat
+  childhood cancers and facilitate rapid translation of those findings into the clinic.
+
+  Acute Lymphoblastic Leukemia (ALL) is fast growing blood cancer in which too many immature white
+  blood cells are found in the blood and bone marrow. TARGET-ALL projects provide comprehensive
+  molecular characterization to determine the genetic changes that drive the initiation and
+  progression of childhood ALL. The dataset contains TARGET-ALL Phase III (P3) open Clinical
+  Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform
+  Expression Quantification, and miRNA Expression Quantification data from Genomic Data Commons
+  (GDC), and open data from GDC Legacy Archive.
+Documentation: https://ocg.cancer.gov/programs/target/projects/acute-lymphoblastic-leukemia
+Contact: dcf-support@datacommons.io
+ManagedBy: AWS buckets managed by University of Chicago
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+Resources:
+  - Description: Clinical Supplement
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Biospecimen Supplement
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: miRNA-Seq Isoform Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: miRNA-Seq miRNA Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: GDC Legacy Archive Open Data
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/TARGET-ALL-P3
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: GDC Legacy Archive
+      URL: https://portal.gdc.cancer.gov/legacy-archive/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: TARGET data matrix
+      URL: https://ocg.cancer.gov/programs/target/data-matrix
+      AuthorName: National Cancer Institute
+      AuthorURL: https://ocg.cancer.gov/
+    - Title: Broad Institute FireCloud
+      URL: https://firecloud.terra.bio/
+      AuthorName: The Broad Institute of MIT & Harvard
+      AuthorURL: https://www.broadinstitute.org/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: https://docs.sevenbridges.com/docs/target-data
+    - Title: ISB Cancer Genomics Cloud
+      URL: https://isb-cgc.appspot.com/
+      AuthorName: Institute for Systems Biology
+      AuthorURL: |
+        https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TARGET_top.html
+  Publications:
+    - Title: |
+        Genomic classification and identification of the cell of origin of pediatric mixed phenotype
+        acute leukemia
+      URL: https://doi.org/10.1038/s41586-018-0436-0
+      AuthorName: Thomas B. Alexander, Zhaohui Gu, Ilaria Iacobucci, et al.
+    - Title: |
+        The genomic landscape of pediatric and young adult T-lineage acute lymphoblastic leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=28671688
+      AuthorName: Yu Liu, John Easton, Ying Shao, et al.
+    - Title: Ancestry and pharmacogenomics of relapse in acute lymphoblastic leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/21297632
+      AuthorName: Yang JJ, Cheng C, Devidas M, et al.
