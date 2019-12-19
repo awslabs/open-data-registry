@@ -1,0 +1,32 @@
+Name: ORGANOID-PANCREATIC open data
+Description: |
+  The study generated a collection of patient-derived pancreatic normal and cancer organoids and it
+  was sequenced using WGS, WXS and RNA-Seq as well as matched tumor and normal tissue if available.
+  The study provides a valuable resource for pancreas cancer researchers. The dataset contains open
+  RNA-Seq Gene Expression Quantification data.
+Documentation: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001611.v1.p1
+Contact: dcf-support@datacommons.io
+ManagedBy: AWS buckets managed by University of Chicago
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN:
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/ORGANOID-PANCREATIC
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: Organoid Profiling Identifies Common Responders to Chemotherapy in Pancreatic Cancer
+      URL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=DetailsSearch&term=29853643[PMID]
+      AuthorName: Tiriac H, Belleau P, Engle DD, et al.
