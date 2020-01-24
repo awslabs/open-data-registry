@@ -17,4 +17,5 @@ phases:
       - npm install
   build:
     commands:
+      - bash _scripts/test.sh
       - BASE_URL=https://registry.opendata.aws npm run build
