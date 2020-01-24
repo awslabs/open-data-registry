@@ -4,13 +4,13 @@ phases:
   install:
     runtime-versions:
       python: 3.8
-      nodejs: 8
+      nodejs: 10
     commands:
       - pip install -r requirements.txt
   pre_build:
     commands:
       - pip install awscli --upgrade
-      - git clone https://github.com/awslabs/open-data-registry-browser.git
+      - git clone --branch gulp https://github.com/awslabs/open-data-registry-browser.git
       - mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry
       - cp -R datasets open-data-registry-browser/data-sources/awslabs-open-data-registry/
       - cd open-data-registry-browser
