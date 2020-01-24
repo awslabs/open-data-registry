@@ -4,9 +4,8 @@ phases:
   install:
     runtime-versions:
       python: 3.8
-      nodejs: 12
+      nodejs: 10
     commands:
-      - echo Entered the install phase.
       - pip install -r requirements.txt
   pre_build:
     commands:
