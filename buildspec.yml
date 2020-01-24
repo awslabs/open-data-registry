@@ -9,6 +9,7 @@ phases:
       - pip install -r requirements.txt
   pre_build:
     commands:
+      - bash _scripts/test.sh
       - pip install awscli --upgrade
       - git clone --branch gulp https://github.com/awslabs/open-data-registry-browser.git
       - mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry
@@ -17,5 +18,4 @@ phases:
       - npm install
   build:
     commands:
-      - bash _scripts/test.sh
       - BASE_URL=https://registry.opendata.aws npm run build
