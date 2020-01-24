@@ -19,3 +19,6 @@ phases:
   build:
     commands:
       - BASE_URL=https://registry.opendata.aws npm run build
+      - echo Build successful, now deploying.
+      - cd ../
+      - bash _scripts/deploy.sh
