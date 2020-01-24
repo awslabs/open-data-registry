@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo Current branch is $CODEBUILD_WEBHOOK_HEAD_REF
+echo Current branch is $CODEBUILD_WEBHOOK_HEAD_REF and source is $CODEBUILD_SOURCE_VERSION
 
-if [[ "$CODEBUILD_WEBHOOK_HEAD_REF" == "refs/heads/master" ]]; then
+if [[ "$CODEBUILD_WEBHOOK_HEAD_REF" == "refs/heads/master" && ${CODEBUILD_SOURCE_VERSION:0:3} != "pr/" ]]; then
     echo Deploying to S3 and invalidating CloudFront cache.
 
 	# Sync files to S3, removing files that no longer exist
