@@ -20,5 +20,4 @@ phases:
     commands:
       - BASE_URL=https://registry.opendata.aws npm run build
       - cd ../
-      - echo $CODEBUILD_WEBHOOK_HEAD_REF
-      - "[[ \"$CODEBUILD_WEBHOOK_HEAD_REF\" == \"cbtest\" ]] && echo Build successful on master, now deploying. && bash _scripts/deploy.sh"
+      - bash _scripts/deploy.sh
