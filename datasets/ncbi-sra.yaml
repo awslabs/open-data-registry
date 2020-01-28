@@ -1,0 +1,41 @@
+Name: NIH NCBI Sequence Research Archive (SRA) on AWS
+Description:  The Sequence Read Archive (SRA) stores raw sequencing data from the next generation of sequencing platforms including Roche 454 GS System®, Illumina Genome Analyzer®, Applied Biosystems SOLiD® System, Helicos Heliscope®, Complete Genomics®, and Pacific Biosciences SMRT®. SRA on AWS hosts a subset of SRA accession codes in two public S3 buckets.
+Contact: "[SRA Staff](sra@ncbi.nlm.nih.gov)"
+Documentation: https://catalog.data.gov/dataset/sequence-read-archive-sra
+ManagedBy: "[NCBI SRA](https://www.ncbi.nlm.nih.gov/sra/)"
+UpdateFrequency: No updates expected.
+Tags:
+  - aws-pds
+  - life sciences
+  - genetic
+  - genomic
+License: CC BY-NC 2.5
+Resources:
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+    ARN: arn:aws:s3:::sra-pub-src-1
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+    ARN: arn:aws:s3:::sra-pub-src-2
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: SRA in the Cloud
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+    - Title: Access SRA data using Amazon Web Services (AWS)
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Tools & Applications:
+    - Title: SRA Toolkit
+      URL: https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Publications:
+    - Title: The Sequence Read Archive
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013647/
+      AuthorName: Leinonen et al (2011)
+      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Leinonen%20R%5BAuthor%5D&cauthor=true&cauthor_uid=21062823
