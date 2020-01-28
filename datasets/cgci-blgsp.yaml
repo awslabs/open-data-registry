@@ -19,24 +19,10 @@ Tags:
   - genomic
 License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
 Resources:
-  - Description: Clinical Supplement
-    ARN:
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: Biospecimen Supplement
-    ARN:
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: RNA-Seq Gene Expression Quantification
-    ARN:
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: miRNA-Seq Isoform Expression Quantification
-    ARN:
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: miRNA-Seq miRNA Expression Quantification
-    ARN:
+  - Description: |                                                                                  
+      Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+      Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification 
+    ARN: arn:aws:s3:::gdc-cgci-blgsp-phs000235-2-open
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
