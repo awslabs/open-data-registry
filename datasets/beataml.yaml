@@ -1,0 +1,44 @@
+Name: BEATAML1.0 open data
+Description: |
+Beat AML 1.0 is a collaborative research program involving 11 academic medical centers who worked
+collectively to better understand  drugs and drug combinations that should be prioritized for
+further development within clinical and/or molecular subsets of acute myeloid leukemia (AML)
+patients. BEAT AML 1.0 provides the largest-to-date dataset on primary acute myeloid leukemia
+samples offering genomic, clinical, and drug response. This dataset contains open Clinical
+Supplement and RNA-Seq Gene Expression Quantification data.
+Documentation: |
+  https://www.cancer.gov/about-nci/organization/ccg/blog/2019/beataml
+Contact: dcf-support@datacommons.io
+ManagedBy: AWS buckets managed by University of Chicago
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: BEATAML1.0-COHORT RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-beataml1-cohort-phs001657-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: BEATAML1.0-CRENOLANIB Clinical Supplement
+    ARN: arn:aws:s3:::gdc-beataml1.0-crenolanib-phs001628-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: Functional Genomic Landscape of Acute Myeloid Leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/30333627
+      AuthorName: Jeffrey W. Tyner, Cristina E. Tognon, Dan Bottomly et al.
+    - Title: |
+        Clinical resistance to crenolanib in acute myeloid leukemia due to diverse molecular
+        mechanisms
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/30651561
+      AuthorName: Haijiao Zhang, Samantha Savage, Anna Reister Schultz et al.
