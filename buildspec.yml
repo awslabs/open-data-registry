@@ -11,7 +11,7 @@ phases:
     commands:
       - bash _scripts/test.sh
       - pip install awscli --upgrade
-      - git clone --branch gulp https://github.com/awslabs/open-data-registry-browser.git
+      - git clone https://github.com/awslabs/open-data-registry-browser.git
       - mkdir -p open-data-registry-browser/data-sources/awslabs-open-data-registry
       - cp -R datasets open-data-registry-browser/data-sources/awslabs-open-data-registry/
       - cd open-data-registry-browser
