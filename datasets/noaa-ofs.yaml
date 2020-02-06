@@ -21,6 +21,10 @@ Resources:
     ARN: arn:aws:s3:::noaa-ofs-pds
     Region: us-east-1
     Type: S3 Bucket
+  - Description: New data notifications for OFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewOFSObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
