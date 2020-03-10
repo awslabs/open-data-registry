@@ -44,7 +44,7 @@ def ext_valid_bucket_regions(value, rule_obj, path):
         # Verify=False because the wildcard matching doesn't work for buckets with '.'
         r = requests.head(url, verify=False)
         
-        if not r.status_code == requests.codes.ok:
+        if r.status_code == requests.codes.not_found:
             print("Bucket {} doesn't exist or there was a momentary glitch".format(bucket))
             return False
 
