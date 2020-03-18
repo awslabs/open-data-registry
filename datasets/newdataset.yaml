@@ -1,0 +1,29 @@
+Name: A very neat new dataset
+Description: |
+  This is a very nice example dataset.
+Documentation: https://example.com/somedocs.html
+Contact: zac@example.com
+ManagedBy: "[Example Inc](http://www.example.com/)"
+UpdateFrequency: Every minute
+Tags:
+  - aws-pds
+  - weather
+  - disaster response
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Example data netcdf files
+    ARN: arn:aws:s3:::pds-example-bucket
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: New data notifications; only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:111111111111:NewObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Open Data Registry
+      URL: https://registry.opendata.aws
+      AuthorName: Open Data Team
+      AuthorURL: https://opendata.aws
+  Tools & Applications:
+  Publications:
