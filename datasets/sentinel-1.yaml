@@ -23,7 +23,7 @@ Resources:
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s1-l1c
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: SNS topic for notification of new scenes
+  - Description: SNS topic for notification of new scenes, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS1L1C
     Region: eu-central-1
     Type: SNS Topic
