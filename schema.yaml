@@ -47,7 +47,7 @@ mapping:
             required: True
           ARN:
             type: str
-            pattern: ^arn:aws:.+:.*:.*:.+$
+            pattern: ^arn:aws|aws-iso:.+:.*:.*:.+$
           Host:
             type: str
             pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
