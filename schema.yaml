@@ -24,6 +24,17 @@ mapping:
   UpdateFrequency:
     type: str
     required: True
+  Collabs:
+    type: map
+    required: False
+    mapping:
+      ASDI:
+        type: map
+        required: False
+        mapping:
+          Tags:
+            type: seq
+            required: False
   Tags:
     type: seq
     required: True
