@@ -35,6 +35,9 @@ mapping:
           Tags:
             type: seq
             required: False
+            sequence:
+              - type: str
+                func: ext_tags
   Tags:
     type: seq
     required: True
