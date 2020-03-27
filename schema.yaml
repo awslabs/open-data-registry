@@ -37,6 +37,9 @@ mapping:
     type: seq
     required: True
     sequence:
+      - type: any
+        required: True
+        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
