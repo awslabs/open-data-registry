@@ -46,8 +46,7 @@ def ext_valid_bucket_regions(value, rule_obj, path):
         
         if r.status_code == requests.codes.not_found:
             print("Bucket {} doesn't exist or there was a momentary glitch".format(bucket))
-	    # Return true here because deprecated buckets may be removed...
-            return True
+            return False
 
         if not 'x-amz-bucket-region' in r.headers:
             print("Bucket region missing from request header?")
