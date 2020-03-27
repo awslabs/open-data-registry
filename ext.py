@@ -35,6 +35,9 @@ def ext_valid_bucket_regions(value, rule_obj, path):
     if isinstance(value, dict) and 'Type' in value and value['Type'] == 'S3 Bucket':
         bucket = value['ARN']
         parts = bucket.split(':::')
+        if not parts[0] == 'arn:aws:s3':
+            # This is probably not on public aws so we can't check
+            return True
         bucket = parts[1]
         parts = bucket.split('/')
         bucket = parts[0]
