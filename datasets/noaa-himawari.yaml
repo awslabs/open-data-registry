@@ -3,14 +3,20 @@ Description: Himawari-8, stationed at 140E, owned and operated by the Japan Mete
 Documentation: https://www.data.jma.go.jp/mscweb/en/himawari89/cloud_service/cloud_service.html https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html
 Contact: For questions regarding Himawari-8 imagery specifications, visit the JMA site:  https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html.  For examples of Full Disk Himawari-8 imagery coverage, visit the NOAA Himawari-8 data page at https://www.goes.noaa.gov/f_himawari-8.html.  For any data delivery issues or any questions in general, please contact the NOAA Big Data Project Team at: noaa.bdp@noaa.gov.
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: 10 minutes for Full Disk, 2.5 minutes for Regions 1, 2, and 3, and .5
-minutes for Regions 4 and 5.
+UpdateFrequency: 10 minutes for Full Disk, 2.5 minutes for Regions 1, 2, and 3, and .5 minutes for Regions 4 and 5.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
-  - climate
+  - geospatial
+  - weather
+  - earth observation
   - meteorological
   - sustainability
-  - weather
+  - disaster response
+  - satellite imagery
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
   - Description: Himawari-8 Imagery 
