@@ -16,7 +16,7 @@ do
   added=`git log --format="%ai" --reverse $f | head -1 | cut -d " " -f 1`
   modified=`git log --format="%ai" $f | head -1 | cut -d " " -f 1`
 
-  echo "\nRegistryEntryAdded: \"$added\"" >>$f
-  echo "RegistryEntryLastModified: \"$modified\"" >>$f
+  printf "\nRegistryEntryAdded: \"$added\"" >>$f
+  printf "RegistryEntryLastModified: \"$modified\"" >>$f
 
 done
