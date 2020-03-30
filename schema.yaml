@@ -76,7 +76,9 @@ mapping:
           RequesterPays:
             type: bool
           ControlledAccessHealth:
-            type: bool
+            type: str
+            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            required: False
   DataAtWork:
     type: map
     required: False
