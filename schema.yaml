@@ -24,6 +24,20 @@ mapping:
   UpdateFrequency:
     type: str
     required: True
+  Collabs:
+    type: map
+    required: False
+    mapping:
+      ASDI:
+        type: map
+        required: False
+        mapping:
+          Tags:
+            type: seq
+            required: False
+            sequence:
+              - type: str
+                func: ext_tags
   Tags:
     type: seq
     required: True
@@ -37,6 +51,9 @@ mapping:
     type: seq
     required: True
     sequence:
+      - type: any
+        required: True
+        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
