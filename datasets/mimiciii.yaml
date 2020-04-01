@@ -29,11 +29,15 @@ Resources:
     ARN: arn:aws:s3:::mimic-iii-physionet
     Region: us-east-1
     Type: S3 Bucket
+    ControlledAcess: https://mimic.physionet.org/gettingstarted/access/#request-access-to-mimic-iii
 DataAtWork:
   Tutorials:
     - Title: Perform biomedical informatics without a database using MIMIC-III data and Amazon Athena
       URL: https://aws.amazon.com/blogs/big-data/perform-biomedical-informatics-without-a-database-using-mimic-iii-data-and-amazon-athena/
       AuthorName: James Wiggins, Alistair Johnson
+      Services:
+        - Athena
+        - Glue
   Tools & Applications:
     - Title: MIMIC-code GitHub repository
       URL: https://github.com/MIT-LCP/mimic-code
