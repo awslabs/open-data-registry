@@ -110,6 +110,12 @@ mapping:
                 type: str
                 pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
+              Services:
+                type: seq
+                required: False
+                sequence:
+                  - type: str
+                    func: ext_services
       Tools & Applications:
         type: seq
         sequence:
