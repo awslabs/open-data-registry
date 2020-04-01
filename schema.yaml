@@ -24,6 +24,20 @@ mapping:
   UpdateFrequency:
     type: str
     required: True
+  Collabs:
+    type: map
+    required: False
+    mapping:
+      ASDI:
+        type: map
+        required: False
+        mapping:
+          Tags:
+            type: seq
+            required: False
+            sequence:
+              - type: str
+                func: ext_tags
   Tags:
     type: seq
     required: True
@@ -33,10 +47,21 @@ mapping:
   License:
     type: str
     required: True
+  RegistryEntryAdded:
+    type: str
+    required: True
+    pattern: ^\d{4}-\d{2}-\d{2}$
+  RegistryEntryLastModified:
+    type: str
+    required: True
+    pattern: ^\d{4}-\d{2}-\d{2}$
   Resources:
     type: seq
     required: True
     sequence:
+      - type: any
+        required: True
+        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
@@ -58,6 +83,10 @@ mapping:
             func: ext_resources
           RequesterPays:
             type: bool
+          ControlledAccessHealth:
+            type: str
+            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            required: False
   DataAtWork:
     type: map
     required: False
