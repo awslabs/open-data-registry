@@ -116,6 +116,11 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: NEXRAD on EC2 tutorial
+      URL: https://github.com/openradar/AMS_radar_in_the_cloud
+      Services: EC2
+      AuthorName: openradar
+      AuthorURL: https://github.com/openradar
     - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
       URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
       AuthorName: Ryan May
@@ -124,10 +129,6 @@ DataAtWork:
       URL: https://carto.com/blog/mapping-nexrad-radar-data/
       AuthorName: Stuart Lynn
       AuthorURL: https://carto.com/blog/author/stuart-lynn/
-    - Title: NEXRAD on EC2 tutorial
-      URL: https://github.com/openradar/AMS_radar_in_the_cloud
-      AuthorName: openradar
-      AuthorURL: https://github.com/openradar
   Tools & Applications:
     - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
       URL: https://pypi.org/project/nexradaws/
