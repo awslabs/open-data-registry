@@ -4,6 +4,7 @@ Documentation: http://www.ihart.org/data
 Contact: ihart2-org@stanford.edu
 UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
 Tags:
+ - aws-pds
  - autism spectrum disorder
  - genomic
  - life sciences
@@ -13,7 +14,8 @@ Resources:
  - Description: BAM and VCF files from The iHART whole genome sequencing study.
    ARN: arn:aws:s3:::ihart-release
    Region: us-east-1
-   Type: S3 Bucket      
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
 DataAtWork:
   Tutorials:
   Tools & Applications:
