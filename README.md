@@ -37,6 +37,7 @@ DataAtWork:
       URL:
       AuthorName:
       AuthorURL:
+      Services:
   Tools & Applications:
     - Title:
       URL:
@@ -67,11 +68,13 @@ The metadata required for each dataset entry is as follows:
 |**Resources > Region**|String|AWS region unique identifier, e.g. us-east-1|
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
 |**Resources > RequesterPays** (Optional)|Boolean|Only appropriate for Amazon S3 buckets, indicates whether the bucket has [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) enabled or not.|
+|**Resources > ControlledAccess** (Optional)|String|Only appropriate for Amazon S3 buckets with controlled access. Please provide a URL to instructions on how to request and gain access to the S3 bucket.|
 |**DataAtWork  [> Tutorials, Tools & Applications, Publications]**  (Optional)|List of lists|A list of links to example tutorials, tools & applications, publications that use the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name of person or entity that created  the tutorial, tool, application, or publication.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL**|String|(Optional) URL for person or entity that created the tutorial, tool, application, or publication.|
+|**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 
 Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
 
@@ -113,6 +116,11 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: NEXRAD on EC2 tutorial
+      URL: https://github.com/openradar/AMS_radar_in_the_cloud
+      Services: EC2
+      AuthorName: openradar
+      AuthorURL: https://github.com/openradar
     - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
       URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
       AuthorName: Ryan May
@@ -121,10 +129,6 @@ DataAtWork:
       URL: https://carto.com/blog/mapping-nexrad-radar-data/
       AuthorName: Stuart Lynn
       AuthorURL: https://carto.com/blog/author/stuart-lynn/
-    - Title: NEXRAD on EC2 tutorial
-      URL: https://github.com/openradar/AMS_radar_in_the_cloud
-      AuthorName: openradar
-      AuthorURL: https://github.com/openradar
   Tools & Applications:
     - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
       URL: https://pypi.org/project/nexradaws/
