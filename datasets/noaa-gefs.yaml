@@ -4,6 +4,10 @@ Documentation: https://docs.opendata.aws/noaa-gefs-pds/readme.html
 Contact: For questions regarding data content or quality, visit [the NOAA GEFS site](http://www.emc.ncep.noaa.gov/index.php?branch=GEFS). For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Project, email noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: 4 times a day, every 6 hours starting at midnight.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
   - aws-pds
   - climate
@@ -16,6 +20,10 @@ Resources:
     ARN: arn:aws:s3:::noaa-gefs-pds
     Region: us-east-1
     Type: S3 Bucket
+  - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGEFSObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
