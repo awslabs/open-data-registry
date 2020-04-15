@@ -11,6 +11,10 @@ Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sent
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
   - earth observation
@@ -45,11 +49,11 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
-  - Description: New scene notifications for L1C
+  - Description: New scene notifications for L1C, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-west-1:214830741341:NewSentinel2Product
     Region: eu-west-1
     Type: SNS Topic
-  - Description: New scene notifications for L2A
+  - Description: New scene notifications for L2A, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS2L2A
     Region: eu-central-1
     Type: SNS Topic
@@ -121,4 +125,8 @@ DataAtWork:
       URL: https://sentinel2explorer.esri.com/
       AuthorName: Esri
       AuthorURL: https://www.esri.com/en-us/home
+    - Title: Interactive map with AI detected fields and crops based on Sentinel-2 imagery
+      URL: https://map.onesoil.ai/
+      AuthorName: OneSoil
+      AuthorURL: https://onesoil.ai/
   Publications:

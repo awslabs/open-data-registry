@@ -7,6 +7,10 @@ Documentation: https://doi.org/10.26024/wt24-5j82
 Contact: cesm-lens-aws@ucar.edu
 ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
 UpdateFrequency: Rare. The LENS experiment is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the AWS copy.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
 Tags:
   - climate
   - model
@@ -18,7 +22,7 @@ Tags:
   - machine learning
   - aws-pds
   - sustainability
-License: https://www.earthsystemgrid.org/legal/data_terms_of_use.html
+License: https://www.ucar.edu/terms-of-use/data
 Resources:
   - Description: Project data files
     ARN: arn:aws:s3:::ncar-cesm-lens
@@ -31,7 +35,11 @@ DataAtWork:
       AuthorName: NCAR Science at Scale team
     - Title: Rendered (static) version of Jupyter Notebook
       URL: http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/kay-et-al-2015.v2.html
-      AuthorName: Anderson Banihirwe
+      AuthorName: Anderson Banihirwe, NCAR
+  Tutorials:
+    - Title: Analyzing large climate model ensembles in the cloud
+      URL: https://medium.com/pangeo/cesm-lens-on-aws-4e2a996397a1
+      AuthorName: Joe Hamman, NCAR
   Publications:
     - Title: "The Community Earth System Model (CESM) Large Ensemble Project: A Community Resource for Studying Climate Change in the Presence of Internal Climate Variability"
       URL: https://doi.org/10.5065/d6j101d1
