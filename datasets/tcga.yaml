@@ -1,4 +1,4 @@
-Name: The Cancer Genome Atlas open data
+Name: The Cancer Genome Atlas open and controlled data
 Description: |
   The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and
   National Human Genome Research Institute (NHGRI), aims to generate comprehensive,
@@ -11,6 +11,9 @@ Description: |
   Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping
   Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation
   Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+
+  This dataset also contains controlled WXS/RNA-Seq/miRNA-Seq/ATAC-Seq Aligned Reads, WXS Annotated
+  Somatic Mutation, WXS Raw Somatic Mutation, WXS Aggregated Somatic Mutation data from GDC. 
 Documentation: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 Contact: dcf-support@datacommons.io
 ManagedBy: AWS buckets managed by University of Chicago
@@ -29,9 +32,16 @@ Resources:
       Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy
       Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue
       Slide Image, Diagnostic Slide Image
-    ARN:
+    ARN: arn:aws:s3:::tcga-2-open
     Region: us-east-1
     Type: S3 Bucket
+  - Description: |
+      WXS/RNA-Seq/miRNA-Seq/ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic
+      Mutation, WXS Aggregated Somatic Mutation
+    AddARN: arn:aws:s3:::tcga-2-controlled
+    Region: us-east-1
+    Type: S3 Bucket
+
 DataAtWork:
   Tools & Applications:
     - Title: Genomic Data Commons
