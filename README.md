@@ -52,13 +52,13 @@ DataAtWork:
 
 The metadata required for each dataset entry is as follows:
 
-| Field | Type | Description |
+| Field | Type | Description & Style |
 | --- | --- | --- |
-| **Name** | String | The public facing name of the dataset |
-|**Description**|String|A high-level description of the dataset|
-|**Documentation**|URL|A link to documentation of the dataset|
+| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name.|
+|**Description**|String|A high-level description of the dataset.|
+|**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
-|**ManagedBy**|String|The name of the organization who is responsible for the data ingest process|
+|**ManagedBy**|String|The name of the laboratory, institution, or organization who is responsible for the data ingest process. Avoid using individuals.|
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
