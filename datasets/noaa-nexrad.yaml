@@ -4,6 +4,10 @@ Documentation: https://docs.opendata.aws/noaa-nexrad/readme.html
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New Level II data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
   - aws-pds
   - earth observation
@@ -19,6 +23,10 @@ Resources:
     Type: S3 Bucket
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: NEXRAD Level III real-time select data
+    ARN: arn:aws:s3:::unidata-nexrad-level3
     Region: us-east-1
     Type: S3 Bucket
   - Description: "[Rich notifications](https://docs.opendata.aws/noaa-nexrad/readme.html) for real-time data with filterable fields"
@@ -59,3 +67,6 @@ DataAtWork:
     - Title: Unlocking the Potential of NEXRAD Data through NOAA’s Big Data Partnership
       URL: https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-16-0021.1
       AuthorName: Steve Ansari and Stephen Del Greco
+    - Title: Declines in an abundant aquatic insect, the burrowing mayfly, across major North American waterways
+      URL: https://www.pnas.org/content/117/6/2987
+      AuthorName:  Phillip M. Stepanian, Sally A. Entrekin, Charlotte E. Wainwright, Djordje Mirkovic, Jennifer L. Tank, & Jeffrey F. Kelly
