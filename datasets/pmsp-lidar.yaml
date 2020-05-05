@@ -1,21 +1,19 @@
-Name: PMSP LiDAR Point Cloud
-Description: The objective of the M3DC of the São Paulo City Hall is to publish LiDAR point cloud data. The initial data was acquired in 2017 by aerial surveying and future data will be added. This public accessible data set is provided in the format [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) as a lossless octree, full density, based on [LASzip] ( https://laszip.org) (LAZ) encoding.
+Name: PMSP(Prefeitura Municipal de São Paulo) LiDAR Point Cloud
+Description: The objective of the M3DC(Mapa 3D Digital da Cidade) of the São Paulo City Hall is to publish LiDAR point cloud data. The initial data was acquired in 2017 by aerial surveying and future data will be added. This public accessible data set is provided in the format [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) as a lossless octree, full density, based on [LASzip] ( https://laszip.org) (LAZ) encoding.
 Documentation: https://github.com/geoinfo-smdu/M3DC
 Contact: geosampa@prefeitura.sp.gov.br
 ManagedBy: "[GeoSampa - o mapa digital da cidade de São Paulo](http://geosampa.prefeitura.sp.gov.br)"
 UpdateFrequency: Local survey executed by demand generates new data as local point clouds.
 Tags:
-  - spatial data infrastructure
-  - urban/city model
-  - lidar point cloud
-  - digital elevation/surface/terrain model
+  - cities
+  - land
+  - lidar
+  - urban
   - geospatial
-  - building
-  - cartography
-  - forestry/vegetation
-  - urban forest
-  - land use
-License: GNU General Public License v3.0 https://www.gnu.org/licenses/gpl-3.0.html
+  - elevation
+  - mapping
+  - aws-pds
+License: "[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)"
 Resources:
   - Description: São Paulo city's 3D LiDAR - EPT(Entwine Point of Clouds).
     ARN: arn:aws:s3:::ept-m3dc-pmsp
