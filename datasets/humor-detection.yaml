@@ -1,6 +1,15 @@
-Name: Humor Detection 
-Description: Humor Detection in Product Question Answering Systems.
-Documentation: https://humor-detection.s3-us-west-2.amazonaws.com/README.txt
+Name: Humor Detection from Product Question Answering Systems
+Description: |
+  This dataset provides labeled humor detection from product question answering systems.
+  The dataset contains 3 csv files: [Humorous.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Humorous.csv) 
+  containing the contains the humorous product questions, 
+  [Non-humorous-unbiased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humorous-unbiased.csv) containing 
+  the non-humorous prodcut questions from the same products as the humorous one, and, 
+  [Non-humorous-biased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humours-biased.csv) containing 
+  the non-humorous prodcut questions from randomly selected products. 
+  Each file has the question, product description, image url to the product, 
+  and a label if the question is humorous or not.
+Documentation: https://humor-detection-pds.s3-us-west-2.amazonaws.com/README.txt
 Contact: yftahz@amazon.com, ekravi@amazon.com
 ManagedBy: Alexa Shopping
 UpdateFrequency: Not currently being updated
@@ -10,7 +19,7 @@ Tags:
 License: "[cc-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 Resources:
   - Description: Humor Detection Dataset
-    ARN: arn:aws:s3:::Humor-Detection-pds
+    ARN: arn:aws:s3:::humor-detection-pds
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
