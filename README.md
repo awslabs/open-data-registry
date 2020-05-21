@@ -52,13 +52,13 @@ DataAtWork:
 
 The metadata required for each dataset entry is as follows:
 
-| Field | Type | Description |
+| Field | Type | Description & Style |
 | --- | --- | --- |
-| **Name** | String | The public facing name of the dataset |
-|**Description**|String|A high-level description of the dataset|
-|**Documentation**|URL|A link to documentation of the dataset|
+| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name.|
+|**Description**|String|A high-level description of the dataset. Only the first 600 characters will be displayed on the homepage of the [Registry of Open Data on AWS](https://registry.opendata.aws)|
+|**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
-|**ManagedBy**|String|The name of the organization who is responsible for the data ingest process|
+|**ManagedBy**|String|The name of the laboratory, institution, or organization who is responsible for the data ingest process. Avoid using individuals. If your institution manages several datasets hosted by the Public Dataset Program, please list the managing institution identically. For an example why, check out the Managed By section of the [TARGET dataset](https://registry.opendata.aws/target/)|
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
@@ -72,7 +72,7 @@ The metadata required for each dataset entry is as follows:
 |**DataAtWork  [> Tutorials, Tools & Applications, Publications]**  (Optional)|List of lists|A list of links to example tutorials, tools & applications, publications that use the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
-|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name of person or entity that created  the tutorial, tool, application, or publication.|
+|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name(s) of person or entity that created  the tutorial, tool, application, or publication. Limit scientific publication author lists to the first six authors in the format Last Name First Initial, followed by 'et al'.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL**|String|(Optional) URL for person or entity that created the tutorial, tool, application, or publication.|
 |**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 
