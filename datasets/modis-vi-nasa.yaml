@@ -1,0 +1,37 @@
+Name: MODIS Terra and Aqua Vegetation Indices at Various Spatial and Temporal Resolutions in Cloud-Optimized GeoTiff format.
+Description: |
+  Each dataset includes Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI) from the following products:
+  * Collection: MOD13Q1.006, Platform: Terra MODIS, Spatial Resolution: 250m, Temporal Resolution: Multi-Day,
+  * MOD13A1.006, Terra MODIS, 500m, Multi-Day
+  * MOD13A3.006, Terra MODIS, 1km, Monthly
+  * MYD13Q1.006, Aqua MODIS, 250m, Multi-Day
+  * MYD13A1.006, Aqua MODIS, 500m, Multi-Day
+  * MYD13A3.006, Aqua MODIS, 1km, Monthly
+Documentation: https://lpdaac.usgs.gov/product_search/?collections=Aqua+MODIS&collections=Terra+MODIS&keyword=Vegetation+Indices+%28VI%29&collection_version_id=6&spatial_resolutions=250&spatial_resolutions=500&spatial_resolutions=1000&view=list&sort=title
+Contact: manil.maskey@nasa.gov
+ManagedBy: NASA
+UpdateFrequency: None
+Tags:
+  - aws-pds
+  - geospatial
+  - satellite imagery
+  - earth observation
+  - land
+  - COVID-19
+  - environmental  
+License: There are no restrictions on the use of these data.
+Resources:
+  - Description: MODIS Vegetation Indices (VI) in Cloud-Optimized GeoTiff format.
+    ARN: arn:aws:s3:::modis-vi-nasa
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: COG Application Programming Interface (API)
+      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+    - Title: COG Viewer
+      URL: https://cogeo.xyz/
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
