@@ -1,9 +1,9 @@
 Name: OMI/Aura NO2 Cloud-Screened Tropospheric Column Global Gridded 0.25 degree x 0.25 degree in Cloud-Optimized GeoTiff
 Description: |
-  NO2 tropospheric column density, screened for CloudFraction < 30% global daily  composite at 0.25 degree resolution for the temporal range of 2004 to May 2020.
-  Original archive data in HDF5 has been processed into a Cloud-Optimized GeoTiff (COG) format. Quality Assurance - This data has been validated by the NASA Science Team at Goddard Space Flight Center.
-  Cautionary Note: https://airquality.gsfc.nasa.gov/caution-interpretation.
-  File Listing: https://omi-no2-nasa.s3-us-west-2.amazonaws.com/.
+NO2 tropospheric column density, screened for CloudFraction < 30% global daily  composite at 0.25 degree resolution for the temporal range of 2004 to May 2020.
+Original archive data in HDF5 has been processed into a Cloud-Optimized GeoTiff (COG) format. Quality Assurance - This data has been validated by the NASA Science Team at Goddard Space Flight Center.
+Cautionary Note: https://airquality.gsfc.nasa.gov/caution-interpretation.
+File Listing: https://omi-no2-nasa.s3-us-west-2.amazonaws.com/.
 Documentation: https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary
 Contact: manil.maskey@nasa.gov
 ManagedBy: NASA
@@ -17,23 +17,21 @@ Tags:
   - environmental  
 License: There are no restrictions on the use of these data.
 Resources:
-  - Description: S3 Bucket for OMI NO2 in Cloud-Optimized GeoTiff format
-    ARN: arn:aws:s3:::omi-no2-nasa
-    Region: us-west-2
-    Type: S3 Bucket
+  - Description: S3 Bucket for OMI NO2 in Cloud-Optimized GeoTiff format
+    ARN: arn:aws:s3:::omi-no2-nasa
+    Region: us-west-2
+    Type: S3 Bucket
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-    - Title: COG Application Programming Interface (API)
-      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
-    - Title: COG metadata example 
-      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url=https%3A%2F%2Fomi-no2-nasa.s3-us-west-2.amazonaws.com%2FOMI-Aura_L3-OMNO2d_2018m0101_v003-2019m1123t055315.tif&pmin=2&pmax=98&max_size=1024&histogram_bins=20
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
-    - Title: COG Viewer
-      URL: https://cogeo.xyz/
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
-  Publications:
+  Tools & Applications:
+    - Title: COG Application Programming Interface (API)
+      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+    - Title: COG metadata example 
+      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url=https%3A%2F%2Fomi-no2-nasa.s3-us-west-2.amazonaws.com%2FOMI-Aura_L3-OMNO2d_2018m0101_v003-2019m1123t055315.tif&pmin=2&pmax=98&max_size=1024&histogram_bins=20
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+    - Title: COG Viewer
+      URL: https://cogeo.xyz/
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
