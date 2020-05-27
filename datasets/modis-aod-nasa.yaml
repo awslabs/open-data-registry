@@ -4,14 +4,17 @@ Description: |
   Satellite measurements of aerosols, called aerosol optical thickness, are based on the fact that the particles change the way the atmosphere reflects and absorbs visible and infrared light. An optical thickness of less than 0.1 (palest yellow) indicates a crystal clear sky with maximum visibility, whereas a value of 1 (reddish brown) indicates very hazy conditions. (source: https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD).
   File Listing: https://modis-aod-nasa.s3-us-west-2.amazonaws.com/.
 Documentation: https://lpdaac.usgs.gov/products/mcd19a2v006/
-Contact: manil.maskey@nasa.gov
+Contact: sudipta.sarkar@nasa.gov
 ManagedBy: NASA
 UpdateFrequency: None
 Tags:
   - aws-pds
+  - air quality
+  - atmosphere
+  - earth observation
   - geospatial
   - satellite imagery
-  - air quality
+  - coronavirus
   - COVID-19
   - environmental  
 License: There are no restrictions on the use of these data.
@@ -21,12 +24,25 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
+  Tutorials:
+    - Title: 'Medium Post: COG Talk — Part 1: What’s new?'
+      URL: https://medium.com/devseed/cog-talk-part-1-whats-new-941facbcd3d1
+      AuthorName: Vincent Sarago
+      AuthorURL: https://medium.com/@_VincentS_
   Tools & Applications:
     - Title: COG Application Programming Interface (API)
       URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
-    - Title: COG Viewer
-      URL: https://cogeo.xyz/
+    - Title: COG metadata example 
+      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url=s3%3A%2F%2Fmodis-aod-nasa%2F2020.01.01.tif&pmin=2&pmax=98&max_size=1024&histogram_bins=20
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
+    - Title: COG Viewer
+      URL: https://cogeo.xyz/?url=s3://modis-aod-nasa/2020.01.01.tif
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+    - Title: 'Rasterio (Python Library) for access to geospatial raster data'
+      URL: https://rasterio.readthedocs.io/
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
