@@ -1,8 +1,14 @@
 Name: MODIS/Terra+Aqua MAIAC Land Aerosol Optical Depth Daily L2G 1 km SIN Grid in Cloud-Optimized GeoTiff (COG)
 Description: |
-  0.47 μm and 0.55 μm Aerosol Optical Depth (AOD) over land in Cloud-Optimized GeoTiff (COG) format, generated from the MCD19A2 Version 6 data product. MCD19A2 is a Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua combined Multi-angle Implementation of Atmospheric Correction (MAIAC) Land Aerosol Optical Depth (AOD) gridded Level 2 product produced daily at 1 kilometer (km) pixel resolution (source: https://lpdaac.usgs.gov/products/mcd19a2v006/).
+  0.47 μm and 0.55 μm Aerosol Optical Depth (AOD) over land in Cloud-Optimized GeoTiff (COG) format, generated from the MCD19A2 Version 6 data product.
+
+  The source product, MCD19A2, is a Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua combined Multi-angle Implementation of Atmospheric Correction (MAIAC) Land Aerosol Optical Depth (AOD) gridded Level 2 product produced daily at 1 kilometer (km) pixel resolution (source: https://lpdaac.usgs.gov/products/mcd19a2v006/).
+
+  Each cloud-optimized geotiff has global coverage for 1 day covering a temporal range of January 1, 2018 to May 25, 2020. Data is reprojected to the EPSG:4326 coordinate reference system.
+
+  Source files (HDF), having 1-16 orbits of data for each of the variables "Optical_Depth_047" and "Optical_Depth_055", are processed to select data from the orbit with the minimum view zenith angle. The observation corresponding to the orbit having the minimum view zenith angle is output to the cloud-optimized geotiff.
+
   Satellite measurements of aerosols, called aerosol optical thickness, are based on the fact that the particles change the way the atmosphere reflects and absorbs visible and infrared light. An optical thickness of less than 0.1 (palest yellow) indicates a crystal clear sky with maximum visibility, whereas a value of 1 (reddish brown) indicates very hazy conditions. (source: https://earthobservatory.nasa.gov/global-maps/MODAL2_M_AER_OD).
-  File Listing: https://modis-aod-nasa.s3-us-west-2.amazonaws.com/.
 Documentation: https://lpdaac.usgs.gov/products/mcd19a2v006/
 Contact: sudipta.sarkar@nasa.gov
 ManagedBy: NASA
@@ -11,12 +17,12 @@ Tags:
   - aws-pds
   - air quality
   - atmosphere
-  - earth observation
-  - geospatial
-  - satellite imagery
   - coronavirus
   - COVID-19
-  - environmental  
+  - earth observation  
+  - environmental
+  - geospatial  
+  - satellite imagery  
 License: There are no restrictions on the use of these data.
 Resources:
   - Description: MODIS Aerosol Optical Depth (AOD) in Cloud-Optimized GeoTiff format.
