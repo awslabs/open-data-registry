@@ -9,9 +9,12 @@ ManagedBy: NASA
 UpdateFrequency: None
 Tags:
   - aws-pds
+  - earth observation
   - geospatial
   - satellite imagery
   - air quality
+  - atmosphere
+  - coronavirus
   - COVID-19
   - environmental  
 License: There are no restrictions on the use of these data.
@@ -21,6 +24,11 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
+  Tutorials:
+    - Title: 'Medium Post: COG Talk — Part 1: What’s new?'
+      URL: https://medium.com/devseed/cog-talk-part-1-whats-new-941facbcd3d1
+      AuthorName: Vincent Sarago
+      AuthorURL: https://medium.com/@_VincentS_
   Tools & Applications:
     - Title: COG Application Programming Interface (API)
       URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
@@ -31,6 +39,10 @@ DataAtWork:
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
     - Title: COG Viewer
-      URL: https://cogeo.xyz/
+      URL: https://cogeo.xyz/?url=s3://omi-no2-nasa/OMI-Aura_L3-OMNO2d_2020m0101_v003-2020m0330t173100.tif
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
+    - Title: 'Rasterio (Python Library) for access to geospatial raster data'
+      URL: https://rasterio.readthedocs.io/
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
