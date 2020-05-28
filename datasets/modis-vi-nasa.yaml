@@ -3,22 +3,24 @@ Description: |
   Each dataset includes Normalized Difference Vegetation Index (NDVI) and Enhanced Vegetation Index (EVI) from the following products:
   * Collection: MOD13Q1.006, Platform: Terra MODIS, Spatial Resolution: 250m, Temporal Resolution: Multi-Day,
   * MOD13A1.006, Terra MODIS, 500m, Multi-Day
-  * MOD13A3.006, Terra MODIS, 1km, Monthly
-  * MYD13Q1.006, Aqua MODIS, 250m, Multi-Day
+  * MOD13A2.006, Terra MODIS, 1km, Multi-Day
   * MYD13A1.006, Aqua MODIS, 500m, Multi-Day
-  * MYD13A3.006, Aqua MODIS, 1km, Monthly
-Documentation: https://lpdaac.usgs.gov/product_search/?collections=Aqua+MODIS&collections=Terra+MODIS&keyword=Vegetation+Indices+%28VI%29&collection_version_id=6&spatial_resolutions=250&spatial_resolutions=500&spatial_resolutions=1000&view=list&sort=title
-Contact: manil.maskey@nasa.gov
+  * MYD13A2.006, Aqua MODIS, 1km, Multi-Day
+
+  Product user guide: https://landweb.modaps.eosdis.nasa.gov/QA_WWW/forPage/user_guide/MODISC6VIUserguide.pdf
+Documentation: https://lpdaac.usgs.gov/product_search/?collections=Aqua+MODIS&collections=Terra+MODIS&collection_version_id=6&keyword=Vegetation+Indices+%28VI%29&spatial_resolutions=500&spatial_resolutions=1000&view=list&sort=title
+Contact: sadashiva.devadiga-1@nasa.gov
 ManagedBy: NASA
 UpdateFrequency: None
 Tags:
   - aws-pds
-  - geospatial
-  - satellite imagery
-  - earth observation
-  - land
+  - coronavirus
   - COVID-19
-  - environmental  
+  - earth observation
+  - environmental
+  - geospatial
+  - land
+  - satellite imagery
 License: There are no restrictions on the use of these data.
 Resources:
   - Description: MODIS Vegetation Indices (VI) in Cloud-Optimized GeoTiff format.
@@ -26,12 +28,25 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
+  Tutorials:
+    - Title: 'Medium Post: COG Talk — Part 1: What’s new?'
+      URL: https://medium.com/devseed/cog-talk-part-1-whats-new-941facbcd3d1
+      AuthorName: Vincent Sarago
+      AuthorURL: https://medium.com/@_VincentS_
   Tools & Applications:
     - Title: COG Application Programming Interface (API)
       URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/docs
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
-    - Title: COG Viewer
-      URL: https://cogeo.xyz/
+    - Title: COG metadata example 
+      URL: https://pfg2k5mjei.execute-api.us-west-2.amazonaws.com/v1/metadata?url=https%3A%2F%2Fmodis-vi-nasa.s3-us-west-2.amazonaws.com%2FMYD13A1.006%2F2018.01.09.tif&pmin=2&pmax=98&max_size=1024&histogram_bins=20
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
+    - Title: COG Viewer
+      URL: https://cogeo.xyz/?url=s3://modis-vi-nasa/MYD13A1.006/2018.01.09.tif
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+    - Title: 'Rasterio (Python Library) for access to geospatial raster data'
+      URL: https://rasterio.readthedocs.io/
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
