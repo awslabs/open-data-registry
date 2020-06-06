@@ -8,14 +8,6 @@ Description: |
 
   Cautionary Note: https://airquality.gsfc.nasa.gov/caution-interpretation.
 
-  Cautionary note: There is a known issue with rio-tiler, a tool used for
-  visualizing COGs, where it throws an error when trying to project values of
-  -90° or 90°. A fix for this is coming imminently (as of May 29). To workaround
-  this error, the COG product has a latitude extent of -89.9999° to 89.9999°.
-  This also impacts the cell sizes of the output COG: where the original data
-  has cell sizes 0.25° longitude and 0.25° latitude, the output COG cell sizes
-  are 0.25° longitude -0.24999972° latitude. A new version of the product will
-  be produced in early June following a patch to rio-tiler.
 Documentation: https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary
 Contact: binita.kc@nasa.gov
 ManagedBy: NASA
