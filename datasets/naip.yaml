@@ -19,7 +19,7 @@ Tags:
 License: |
   Public Domain with Attribution
 Resources:
-  - Description: The data in this bucket is 4-band (RGB + NIR) in MRF format processed by Esri. The MRF format is a cloud-optimized open data format that provides fast access to data on S3. MRF can be accessed using GDAL and most applications build using GDAL, but also directly by web applications. Data is provided as 512x512 tiles, with reduced-resolution pyramids created using 2x sampling by averaging. Finally, data compression is efficient and lossless (meaning the data values here are the same as the source). The bucket is set as a Requester Pays bucket.
+  - Description: The data in this bucket is 4-band (RGB + NIR) in MRF format and Cloud Optimize GeoTIFF (COG) processed by Esri. The MRF format is a cloud-optimized open data format that provides fast access to data on S3. MRF can be accessed using GDAL and most applications build using GDAL, but also directly by web applications. Data is provided as 512x512 tiles, with reduced-resolution pyramids created using 2x sampling by averaging. Finally, data compression is efficient and lossless (meaning the data values here are the same as the source). A Cloud Optimized GeoTIFF (COG) is a regular GeoTIFF file, aimed at being hosted on a HTTP file server, with an internal organization that enables more efficient workflows on the cloud. It does this by leveraging the ability of clients issuing, HTTP GET range requests to ask for just the parts of a file they need. The bucket is set as a Requester Pays bucket.
     ARN: arn:aws:s3:::naip-analytic
     Region: us-west-2
     Type: S3 Bucket
