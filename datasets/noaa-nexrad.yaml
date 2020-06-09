@@ -4,6 +4,10 @@ Documentation: https://docs.opendata.aws/noaa-nexrad/readme.html
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New Level II data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
   - aws-pds
   - earth observation
@@ -19,6 +23,10 @@ Resources:
     Type: S3 Bucket
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: NEXRAD Level III real-time select data
+    ARN: arn:aws:s3:::unidata-nexrad-level3
     Region: us-east-1
     Type: S3 Bucket
   - Description: "[Rich notifications](https://docs.opendata.aws/noaa-nexrad/readme.html) for real-time data with filterable fields"
@@ -53,6 +61,15 @@ DataAtWork:
       AuthorName: Stephen Lien Harrell
       AuthorURL: https://github.com/stephenlienharrell
   Publications:
+    - Title: "Level 2 Interface Control Document for Transfer: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620010G.pdf
+      AuthorName: NOAA ROC
+    - Title: "Level 2 Interface Control Document for Message Data Formats: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620002R.pdf
+      AuthorName: NOAA ROC
+    - Title: "Level 3 Interface Control Document for Message Data Formats: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001X.pdf
+      AuthorName: NOAA ROC
     - Title: Seasonal abundance and survival of North America’s migratory avifauna determined by weather radar
       URL: https://www.nature.com/articles/s41559-018-0666-4
       AuthorName: Adriaan M. Dokter, Andrew Farnsworth, Daniel Fink, Viviana Ruiz-Gutierrez, Wesley M. Hochachka, Frank A. La Sorte, Orin J. Robinson, Kenneth V. Rosenberg & Steve Kelling
