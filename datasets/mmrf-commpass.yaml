@@ -16,12 +16,19 @@ UpdateFrequency: |
   although this dataset may not be updated at every release.
 Tags:
   - aws-pds
+  - life sciences
   - cancer
   - genomic
 License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
 Resources:
   - Description: RNA-Seq Gene Expression Quantification
     ARN: arn:aws:s3:::gdc-mmrf-commpass-phs000748-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      WGS/WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation,
+      RNA-Seq Splice Junction Quantification
+    ARN: arn:aws:s3:::gdc-mmrf-commpass-phs000748-2-controlled
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
