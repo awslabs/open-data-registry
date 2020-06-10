@@ -4,9 +4,15 @@ Description: |
   research of adult and pediatric cancers. CGCI investigators develop and apply advanced sequencing
   methods that examine genomes, exomes, and transcriptomes within various types of tumors. The
   Burkitt Lymphoma Genome Sequencing Project (BLGSP) aim is to create a databank of the many
-  alterations found in Burkitt lymphoma, an uncommon type of Non-Hodgkin lymphoma. The dataset
-  contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification,
-  miRNA-Seq Isoform Expression Quantification, and miRNA Expression Quantification data.
+  alterations found in Burkitt lymphoma, an uncommon type of Non-Hodgkin lymphoma.
+  
+  The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression
+  Quantification, miRNA-Seq Isoform Expression Quantification, and miRNA Expression Quantification
+  data.
+
+  This dataset also contains controlled WGS/Targeted Sequencing/RNA-Seq/miRNA-Seq Aligned Reads,
+  and RNA-Seq Splice Junction Quantification
+
 Documentation: https://ocg.cancer.gov/programs/cgci
 Contact: dcf-support@datacommons.io
 ManagedBy: Center for Translational Data Science at The University of Chicago
@@ -24,6 +30,12 @@ Resources:
       Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
       Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification 
     ARN: arn:aws:s3:::gdc-cgci-blgsp-phs000235-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |                                                                                  
+      WGS/Targeted Sequencing/RNA-Seq/miRNA-Seq Aligned Reads, RNA-Seq Splice Junction
+      Quantification 
+    ARN: arn:aws:s3:::gdc-cgci-phs000235-2-controlled
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
