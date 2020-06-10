@@ -4,8 +4,12 @@ Description: |
   collectively to better understand  drugs and drug combinations that should be prioritized for
   further development within clinical and/or molecular subsets of acute myeloid leukemia (AML)
   patients. Beat AML 1.0 provides the largest-to-date dataset on primary acute myeloid leukemia
-  samples offering genomic, clinical, and drug response. This dataset contains open Clinical
-  Supplement and RNA-Seq Gene Expression Quantification data.
+  samples offering genomic, clinical, and drug response.
+  
+  This dataset contains open Clinical Supplement and RNA-Seq Gene Expression Quantification data.
+
+  This dataset also contains controlled WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation,
+  WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification  
 Documentation: |
   https://www.cancer.gov/about-nci/organization/ccg/blog/2019/beataml
 Contact: dcf-support@datacommons.io
@@ -26,6 +30,12 @@ Resources:
     Type: S3 Bucket
   - Description: BEATAML1.0-CRENOLANIB Clinical Supplement
     ARN: arn:aws:s3:::gdc-beataml1.0-crenolanib-phs001628-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, RNA-Seq
+      Splice Junction Quantification
+    ARN: arn:aws:s3:::gdc-beataml1.0-crenolanib-phs001628-2-controlled
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
