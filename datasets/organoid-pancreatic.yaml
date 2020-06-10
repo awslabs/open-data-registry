@@ -2,8 +2,12 @@ Name: Pancreatic Cancer Organoid Profiling
 Description: |
   The study generated a collection of patient-derived pancreatic normal and cancer organoids and it
   was sequenced using WGS, WXS and RNA-Seq as well as matched tumor and normal tissue if available.
-  The study provides a valuable resource for pancreatic cancer researchers. The dataset contains open
-  RNA-Seq Gene Expression Quantification data.
+  The study provides a valuable resource for pancreatic cancer researchers.
+  
+  The dataset contains open RNA-Seq Gene Expression Quantification data.
+  
+  This dataset also contains controlled WGS/WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic
+  Mutation, WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification
 Documentation: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001611.v1.p1
 Contact: dcf-support@datacommons.io
 ManagedBy: Center for Translational Data Science at The University of Chicago
@@ -18,6 +22,12 @@ License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/da
 Resources:
   - Description: RNA-Seq Gene Expression Quantification
     ARN: arn:aws:s3:::gdc-organoid-pancreatic-phs001611-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      This dataset also contains controlled WGS/WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic
+      Mutation, WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification
+    ARN: arn:aws:s3:::gdc-organoid-pancreatic-phs001611-2-controlled
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
