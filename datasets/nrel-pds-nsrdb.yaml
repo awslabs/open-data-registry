@@ -37,6 +37,14 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-nsrdb/india/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Meteorological Statistical Model 1 (MTS1) data (1961-1990) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts1
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Meteorological Statistical Model 2 (MTS2) data (1991-2005) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts2
+    Region: us-west-2
+    Type: S3 Bucket
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) Backend Data'
     ARN: arn:aws:s3:::nrel-pds-hsds/
     Region: us-west-2
@@ -47,6 +55,9 @@ DataAtWork:
     - Title: NSRDB Viewer
       URL: https://nsrdb.nrel.gov/nsrdb-viewer
       AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby, Paul Edwards
+    - Title: HSDS Examples
+      URL: https://github.com/NREL/hsds-examples
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
   Publications:
     - Title: The National Solar Radiation Data Base (NSRDB)
       URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
