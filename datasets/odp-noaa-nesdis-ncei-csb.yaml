@@ -1,0 +1,23 @@
+Name: Crowdsourced Bathymetry on AWS
+Description: Community provided bathymetry data a collaboration with the International Hydrographic Organization.
+Documentation: https://docs.opendata.aws/iho-csb/readme.html
+Contact: noaa.bdp@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: New data is added once a week.
+Tags:
+  - aws
+  - noaa-bdp
+  - earth observation
+  - sustainability
+  - oceans
+  - bathymetry
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Crowdsourced bathymetry data
+    ARN: arn:aws:s3:::odp-noaa-nesdis-ncei-csb
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for CSB data
+    ARN: arn:aws:sns:us-west-2:541768555562:odp-noaa-nesdis-ncei-csb
+    Region: us-west-2
+    Type: SNS Topic
