@@ -1,0 +1,28 @@
+Name: Ford Multi-AV Seasonal Dataset
+Description: This research presents a challenging multi-agent seasonal dataset collected by a fleet of Ford autonomous vehicles at different days and times during 2017-18. The vehicles The vehicles were manually driven on an average route of 66 km in Michigan that included a mix of driving scenarios like the Detroit Airport, freeways, city-centres, university campus and suburban neighbourhood, etc. Each vehicle used in this data collection  is a Ford Fusion outfitted with an Applanix POS-LV inertial measurement unit (IMU), four HDL-32E Velodyne 3D-lidar scanners, 6 Point Grey 1.3 MP Cameras arranged on the rooftop for 360 degree coverage and 1 Pointgrey 5 MP camera mounted behind the windsheild for forward field of view. We present the seasonal variation in weather, lighting, construction and traffic conditions experienced in dynamic urban environments. This dataset can help design robust algorithms for autonomous vehicles and multi-agent systems. Each log in the dataset is time-stamped and contains raw data from all the sensors, calibration values, pose trajectory, ground truth pose, and 3D maps. All data is available in Rosbag format that can be visualized, modified and applied using the open-source Robot Operating System (ROS).
+Contact: avdata.ford.com
+Documentation: avdata.ford.com
+ManagedBy: Ford Motor Company
+UpdateFrequency: New data will be added until the entire dataset is released online.
+Tags:
+  - autonomous vehicles
+  - computer vision
+  - lidar
+  - mapping
+  - robotics
+  - transportation
+  - urban
+  - weather
+  - aws-pds 
+License: This data is intended for non-commercial academic use only. It is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+Resources:
+  - Description: All data
+    ARN: arn:aws:s3:::ford-multi-av-seasonal
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Ford AV Dataset Tutorial
+      URL: https://github.com/Ford/AVData
+      AuthorName: Ford Motor Company
+      AuthorURL:

@@ -1,0 +1,62 @@
+Name: Open NeuroData
+Description: This bucket contains multiple neuroimaging datasets (as Neuroglancer Precomputed Volumes) across multiple modalities and scales, ranging from nanoscale (electron microscopy), to microscale (cleared lightsheet microscopy and array tomography), and mesoscale (structural and functional magnetic resonance imaging). Additionally, many of the datasets include segmentations and meshes.
+Contact: support@neurodata.io
+Documentation: https://neurodata.io/help/download/
+ManagedBy: "[NeuroData](https://neurodata.io/ocp)"
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - biology
+  - image processing
+  - neuroimaging
+  - neuroscience
+  - electron microscopy
+  - life sciences
+  - lightsheet microscopy
+  - magnetic resonance imaging
+  - array tomography
+License: ODC-By v1.0 unless otherwise specified
+Resources:
+  - Description: Neuroglancer precomputed volumes in a public bucket
+    ARN: arn:aws:s3:::open-neurodata
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Download
+      URL: https://neurodata.io/help/download/
+      AuthorName: Benjamin Falk
+      AuthorURL: https://github.com/falkben
+    - Title: Visualization using Neuroglancer
+      URL: https://neurodata.io/help/visualization/
+      AuthorName: Benjamin Falk
+      AuthorURL: https://github.com/falkben
+  Tools & Applications:
+    - Title: Neuroglancer
+      URL: https://github.com/google/neuroglancer
+      AuthorName: Jeremy Maitin-Shepard
+      AuthorURL: https://github.com/jbms
+    - Title: Igneous
+      URL: https://github.com/seung-lab/igneous
+      AuthorName: William Silversmith
+      AuthorURL: https://github.com/william-silversmith
+    - Title: CloudVolume
+      URL: https://github.com/seung-lab/cloud-volume
+      AuthorName: William Silversmith
+      AuthorURL: https://github.com/william-silversmith
+  Publications:
+    - Title: A Community-Developed Open-Source Computational Ecosystem for Big Neuro Data
+      URL: https://www.nature.com/articles/s41592-018-0181-1
+      AuthorName: J. T. Vogelstein, E. Perlman, B. Falk, A. Baden, W. Gray Roncal, V. Chandrashekhar, F. Collman, S. Seshamani, J. L. Patsolic, K. Lillaney, M. Kazhdan, R. Hider, D. Pryor, J. Matelsky, T. Gion, P. Manavalan, B. Wester, M. Chevillet, E. T. Trautman, K. Khairy, E. Bridgeford, D. M. Kleissas, D. J. Tward, A. K. Crow, B. Hsueh, M. A. Wright, M. I. Miller, S. J. Smith, R. J. Vogelstein, K. Deisseroth, and R. Burns
+      AuthorURL:
+    - Title: "To the Cloud! A Grassroots Proposal to Accelerate Brain Science Discovery"
+      URL: https://doi.org/10.1016/j.neuron.2016.10.033
+      AuthorName: J. T. Vogelstein, B. Mensh, M. Häusser, N. Spruston, A. C. Evans, K. Kording, K. Amunts, C. Ebell, J. Muller, M. Telefont, S. Hill, S. P. Koushika, C. Calì, P. A. Valdés-Sosa, P. B. Littlewood, C. Koch, S. Saalfeld, A. Kepecs, H. Peng, Y. O. Halchenko, G. Kiar, M. M. Poo, J. B. Poline, M. P. Milham, A. P. Schaffer, R. Gidron, H. Okano, V. D. Calhoun, M. Chun, D. M. Kleissas, R. J. Vogelstein, E. Perlman, R. Burns, R. Huganir, and M. I. Miller
+      AuthorURL:
+    - Title: "From cosmos to connectomes: The evolution of data-intensive science"
+      URL: https://doi.org/10.1016/j.neuron.2014.08.045
+      AuthorName: R. Burns, J. T. Vogelstein, and A. S. Szalay
+      AuthorURL:
+    - Title: "The Open Connectome Project Data Cluster: Scalable Analysis and Vision for High-Throughput Neuroscience"
+      URL: https://arxiv.org/abs/1306.3543
+      AuthorName: R. Burns, W. G. Roncal, D. Kleissas, K. Lillaney, P. Manavalan, E. Perlman, D. R. Berger, D. D. Bock, K. Chung, L. Grosenick, N. Kasthuri, N. C. Weiler, K. Deisseroth, M. Kazhdan, J. Lichtman, R. C. Reid, S. J. Smith, A. S. Szalay, J. T. Vogelstein, and R. J. Vogelstein.
+      AuthorURL:
