@@ -2,7 +2,7 @@ Name: Cloud Indexes for Genomic Analyses
 Description: Genomic, pan-genomic and metagenomic indexes for analysis of sequencing data
 Documentation: https://benlangmead.github.io/aws-indexes/
 Contact: https://github.com/BenLangmead/aws-indexes/issues
-ManagedBy: Langmead Lab at Johns Hopkins University & Kim Lab at University of Texas Southewstern
+ManagedBy: Langmead Lab at Johns Hopkins University & Kim Lab at University of Texas Southwestern
 UpdateFrequency: As new data becomes available; roughly quarterly
 Tags:
   - genomic
@@ -14,7 +14,7 @@ Tags:
   - mapping
 License: Public Domain
 Resources:
-  - Description: Genomic indexes for Bowtie, Kraken, HISAT, Centrifuge
+  - Description: Genomic tools use reference databases as "indexes" to operate quickly and efficiently. This is analogous to how web search engines use indexes for fast querying. Reference databases contain indexes for reference genomes: already-assembled sequences for known species such as animals, plants, model organisms, humans, etc. This bucket contains genomic indexes for Bowtie, Kraken, HISAT, Centrifuge.
     ARN: arn:aws:s3:::genome-idx
     Region: us-east-1
     Type: S3 Bucket
