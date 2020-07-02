@@ -85,7 +85,7 @@ mapping:
             type: bool
           ControlledAccess:
             type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
             required: False
   DataAtWork:
     type: map
@@ -101,14 +101,14 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
               Services:
                 type: seq
@@ -126,14 +126,14 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
       Publications:
         type: seq
@@ -145,12 +145,12 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
