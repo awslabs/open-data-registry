@@ -6,13 +6,11 @@ ManagedBy: "[Meteorological Enviromental Earth Observation](http://www.meeo.it/)
 UpdateFrequency: Daily
 Tags:
   - aws-pds
-  - ocean
-  - sea surface temperature
+  - oceans
   - earth observation
   - environmental
   - geospatial
   - land
-  - land surface temperature
   - satellite imagery
   - sustainability
 License: https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice
@@ -29,7 +27,7 @@ Resources:
     ARN: arn:aws:s3:::meeo-s3/STC/
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Sentinel-3 Cloud Opimised GeoTIFF (COG) format
+  - Description: Sentinel-3 Cloud Optimized GeoTIFF (COG) format
     ARN: arn:aws:s3:::meeo-s3-cog/
     Region: eu-central-1
     Type: S3 Bucket
