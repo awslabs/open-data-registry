@@ -13,6 +13,10 @@ Documentation: https://docs.opendata.aws/noaa-goes16/cics-readme.html
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New data is added as soon as it's available
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
   - geospatial
@@ -41,10 +45,19 @@ Resources:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
-  - Title: Billions of Birds Migrate. Where Do They Go?
-    URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
-    AuthorName: National Geographic
-  - Title: Visualize GOES-16 in Python using Xarray
-    URL: https://github.com/HamedAlemo/visualize-goes16
-    AuthorName: Hamed Alemohammad
-    AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
+  Tutorials:
+    - Title: Visualize GOES-16 in Python using Xarray
+      URL: https://github.com/HamedAlemo/visualize-goes16
+      AuthorName: Hamed Alemohammad
+      AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
+  Tools & Applications:
+  Publications:
+    - Title: Billions of Birds Migrate. Where Do They Go?
+      URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
+      AuthorName: National Geographic
+    - Title: Embracing the cloud for climate research
+      URL: https://aws.amazon.com/blogs/publicsector/embracing-the-cloud-for-climate-research/
+      AuthorName: North Carolina State University’s North Carolina Institute for Climate Studies
+    - Title: Solar irradiance forecasting for the solar powered future
+      URL: https://aws.amazon.com/blogs/publicsector/solcast-solar-irradiance-forecasting-for-the-solar-powered-future/
+      AuthorName: Solcast

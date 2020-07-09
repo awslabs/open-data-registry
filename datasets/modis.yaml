@@ -1,8 +1,9 @@
-Name: MODIS on AWS
-Description: Select products from the Moderate Resolution Imaging Spectroradiometer (MODIS) managed by the U.S. Geological Survey and NASA.
+Deprecated: True
+Name: MODIS
+Description: The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 Version 6 Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) dataset is produced daily using 16 days of Terra and Aqua MODIS data at 500 meter (m) resolution. The view angle effects are removed from the directional reflectances, resulting in a stable and consistent NBAR product. Data are temporally weighted to the ninth day which is reflected in the Julian date in the file name.
 Documentation: https://docs.opendata.aws/modis-pds/readme.html
-Contact: https://github.com/AstroDigital/modis-ingestor/issues
-UpdateFrequency: New MODIS data is added regularly as soon as they are available.
+Contact: No contact
+UpdateFrequency: Daily
 Tags:
   - aws-pds
   - geospatial
@@ -21,15 +22,18 @@ Resources:
     Region: us-west-2
     Type: SNS Topic
 DataAtWork:
-  - Title: Sentinel Hub WMS/WMTS/WCS Service for MODIS
-    URL: http://www.sentinel-hub.com/apps/wms
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Sentinel Playground for MODIS
-    URL: https://apps.sentinel-hub.com/sentinel-playground/?source=Modis&lat=37.274052809979054&lng=-78.8818359375&zoom=7
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: EOS Land Viewer
-    URL: https://eos.com/landviewer/
-    AuthorName: Earth Observing System
-    AuthorURL: https://eos.com/
+  Tutorials:
+  Tools & Applications:
+    - Title: Sentinel Hub WMS/WMTS/WCS Service for MODIS
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground for MODIS
+      URL: https://apps.sentinel-hub.com/sentinel-playground/?source=Modis&lat=37.274052809979054&lng=-78.8818359375&zoom=7
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+  Publications:

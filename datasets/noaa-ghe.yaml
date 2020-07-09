@@ -1,6 +1,6 @@
 Name: NOAA Global Hydro Estimator (GHE)
 Description: |
-  "Global Hydro-Estimator provides a global
+  Global Hydro-Estimator provides a global
   mosaic imagery of rainfall estimates from
   multi-geostationary satellites, which
   currently includes GOES-16, GOES-15,
@@ -8,8 +8,6 @@ Description: |
   The GHE products include: Instantaneous
   rain rate, 1 hour, 3 hour, 6 hour, 24 hour
   and also multi-day rainfall accumulation.
-  More details on the products and algorithm,
-  please contact limin.zhao@noaa.gov."
 Contact: |
   For questions regarding product content or
   quality, visit https://www.ospo.noaa.gov/Products/atmosphere/ghe/index.html.
@@ -20,9 +18,14 @@ Contact: |
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 Documentation: https://www.ospo.noaa.gov/Products/atmosphere/ghe/index.html
 UpdateFrequency: 15 minute-instantaneous
+Collabs:
+  ASDI:
+    Tags:
+      - water
 Tags:
   - aws-pds
   - meteorological
+  - sustainability
   - water
   - weather
 License: There are no restrictions on the use of this data.
@@ -31,3 +34,11 @@ Resources:
     ARN: arn:aws:s3:::noaa-ghe-pds
     Region: us-east-1
     Type: S3 Bucket
+  - Description: New data notifications for GHE, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGHEObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

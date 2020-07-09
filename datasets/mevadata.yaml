@@ -1,0 +1,28 @@
+Name: Multiview Extended Video with Activities (MEVA)
+Description: |
+  The Multiview Extended Video with Activities (MEVA) dataset consists
+  video data of human activity, both scripted and unscripted,
+  collected with roughly 100 actors over several weeks.  The data was
+  collected with 29 cameras with overlapping and non-overlapping
+  fields of view. The current release consists of about 328 hours
+  (516GB, 4259 clips) of video data, as well as 4.6 hours (26GB) of
+  UAV data. Other data includes GPS tracks of actors, camera models,
+  and a site map. We have also released annotations for 22 hours of
+  data. Further updates are planned.
+Documentation: http://mevadata.org
+Contact: mevadata@kitware.com
+ManagedBy: "[Kitware](http://www.kitware.com/)"
+UpdateFrequency: |
+  We anticipate two or three updates as more
+  video data is released to the public.
+Tags:
+  - computer vision
+  - urban
+  - us
+License: http://mevadata.org/resources/MEVA-data-license.txt
+Resources:
+  - Description: AVI video clips and collection site map
+    ARN: arn:aws:s3:::mevadata-public-01
+    Region: us-east-1
+    Type: S3 Bucket
+

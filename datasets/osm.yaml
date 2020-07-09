@@ -3,6 +3,10 @@ Description: OSM is a free, editable map of the world, created and maintained by
 Documentation: https://docs.opendata.aws/osm-pds/readme.html
 Contact: https://github.com/mojodna/osm-pds-pipelines/issues
 UpdateFrequency: Data is updated weekly
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
 Tags:
   - aws-pds
   - geospatial
@@ -21,18 +25,21 @@ Resources:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
-  - Title: OSM+Athena (GitHub)
-    URL: https://github.com/developmentseed/mrworldwide/
-    AuthorName: Development Seed
-    AuthorURL: https://developmentseed.org/
-  - Title: Querying OpenStreetMap with Amazon Athena
-    URL: https://aws.amazon.com/blogs/big-data/querying-openstreetmap-with-amazon-athena/
-    AuthorName: Seth Fitzsimmons
-    AuthorURL: https://github.com/mojodna
-  - Title: Develop and Extract Value from Open Data
-    URL: https://aws.amazon.com/blogs/publicsector/develop-and-extract-value-from-open-data/
-    AuthorName: Daniel Bernao
-  - Title: "PlanetUtils (GitHub): Scripts and a Docker container to maintain your own OpenStreetMap planet"
-    URL: https://github.com/interline-io/planetutils
-    AuthorName: Interline Technologies
-    AuthorURL: https://www.interline.io/
+  Tutorials:
+    - Title: Querying OpenStreetMap with Amazon Athena
+      URL: https://aws.amazon.com/blogs/big-data/querying-openstreetmap-with-amazon-athena/
+      AuthorName: Seth Fitzsimmons
+      AuthorURL: https://github.com/mojodna
+    - Title: Develop and Extract Value from Open Data
+      URL: https://aws.amazon.com/blogs/publicsector/develop-and-extract-value-from-open-data/
+      AuthorName: Daniel Bernao
+  Tools & Applications:
+    - Title: "PlanetUtils (GitHub): Scripts and a Docker container to maintain your own OpenStreetMap planet"
+      URL: https://github.com/interline-io/planetutils
+      AuthorName: Interline Technologies
+      AuthorURL: https://www.interline.io/
+    - Title: OSM+Athena (GitHub)
+      URL: https://github.com/developmentseed/mrworldwide/
+      AuthorName: Development Seed
+      AuthorURL: https://developmentseed.org/
+  Publications:

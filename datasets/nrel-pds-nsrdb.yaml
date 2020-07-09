@@ -1,6 +1,7 @@
 Name: NREL National Solar Radiation Database on AWS
 Description: |
-  The [National Solar Radiation Database (NSRDB)](https://nsrdb.nrel.gov/) is
+  Released to the public as part of the Department of Energy's Open Energy Data Initiative,
+  the [National Solar Radiation Database (NSRDB)](https://nsrdb.nrel.gov/) is
   a serially complete collection of hourly and half-hourly values of the three
   most common measurements of solar radiation – global horizontal, direct
   normal, and diffuse horizontal irradiance — and meteorological data. These
@@ -9,18 +10,39 @@ Description: |
 Documentation: https://nsrdb.nrel.gov/
 Contact: https://nsrdb.nrel.gov/contact
 ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
-UpdateFrequency: As Needed
+UpdateFrequency: Annually
 Tags:
   - aws-pds
-  - solar
-  - earth observation  
+  - earth observation
   - energy
   - geospatial
   - meteorological
+  - solar
+  - sustainability
 License: https://github.com/NREL/hsds-examples/blob/master/LICENSE
 Resources:
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) Source Files (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/hdf5-source-files-v3/
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 4km x 30min data (1998-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) synthetically downscaled 2km x 5min for Puerto Rico (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/puerto_rico/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km data for 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/2018/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/india/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Meteorological Statistical Model 1 (MTS1) data (1961-1990) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts1
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Meteorological Statistical Model 2 (MTS2) data (1991-2005) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts2
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) Backend Data'
@@ -28,9 +50,15 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
-  - Title: The National Solar Radiation Data Base (NSRDB)
-    URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
-    AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby
-  - Title: NSRDB Viewer
-    URL: https://nsrdb.nrel.gov/nsrdb-viewer
-    AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby, Paul Edwards
+  Tutorials:
+  Tools & Applications:
+    - Title: NSRDB Viewer
+      URL: https://nsrdb.nrel.gov/nsrdb-viewer
+      AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby, Paul Edwards
+    - Title: HSDS Examples
+      URL: https://github.com/NREL/hsds-examples
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
+  Publications:
+    - Title: The National Solar Radiation Data Base (NSRDB)
+      URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
+      AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby

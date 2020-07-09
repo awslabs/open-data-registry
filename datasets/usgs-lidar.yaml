@@ -4,6 +4,10 @@ Documentation: https://github.com/hobu/usgs-lidar/
 Contact: https://github.com/hobu/usgs-lidar
 ManagedBy: "[Hobu, Inc.](https://hobu.co)"
 UpdateFrequency: Periodically
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
 Tags:
   - aws-pds
   - elevation
@@ -23,15 +27,18 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
 DataAtWork:
-  - Title: Using Lambda Layers with USGS 3DEP LiDAR Point Clouds
-    URL: https://github.com/hobu/usgs-lidar/tree/master/lambda
-    AuthorName: Howard Butler
-    AuthorURL: https://twitter.com/howardbutler
-  - Title: WebGL Visualization of USGS 3DEP Lidar Point Clouds with Potree and Plasio.js
-    URL: https://usgs.entwine.io/
-    AuthorName: Connor Manning
-    AuthorURL: https://twitter.com/csmannin
-  - Title: USGS 3DEP Lidar Point Cloud Now Available as Amazon Public Dataset
-    URL: https://www.usgs.gov/news/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset
-    AuthorName: Department of the Interior, U.S. Geological Survey
-    AuthorURL: https://www.usgs.gov
+  Tutorials:
+    - Title: Using Lambda Layers with USGS 3DEP LiDAR Point Clouds
+      URL: https://github.com/hobu/usgs-lidar/tree/master/lambda
+      AuthorName: Howard Butler
+      AuthorURL: https://twitter.com/howardbutler
+    - Title: WebGL Visualization of USGS 3DEP Lidar Point Clouds with Potree and Plasio.js
+      URL: https://usgs.entwine.io/
+      AuthorName: Connor Manning
+      AuthorURL: https://twitter.com/csmannin
+  Tools & Applications:
+  Publications:
+    - Title: USGS 3DEP Lidar Point Cloud Now Available as Amazon Public Dataset
+      URL: https://www.usgs.gov/news/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset
+      AuthorName: Department of the Interior, U.S. Geological Survey
+      AuthorURL: https://www.usgs.gov

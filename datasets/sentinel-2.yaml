@@ -11,6 +11,10 @@ Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sent
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
   - earth observation
@@ -45,74 +49,84 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
-  - Description: New scene notifications for L1C
+  - Description: New scene notifications for L1C, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-west-1:214830741341:NewSentinel2Product
     Region: eu-west-1
     Type: SNS Topic
-  - Description: New scene notifications for L2A
+  - Description: New scene notifications for L2A, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS2L2A
     Region: eu-central-1
     Type: SNS Topic
 DataAtWork:
-  - Title: Sentinel Hub WMS/WMTS/WCS Service
-    URL: http://www.sentinel-hub.com/apps/wms
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Satellite Search by Remote Pixel
-    URL: https://remotepixel.ca/projects/satellitesearch.html
-    AuthorName: Remote Pixel
-    AuthorURL: https://remotepixel.ca/
-  - Title: EOS Land Viewer
-    URL: https://eos.com/landviewer/
-    AuthorName: Earth Observing System
-    AuthorURL: https://eos.com/
-  - Title: Sentinel-2 Cloudless Atlas
-    URL: https://s2maps.eu/
-    AuthorName: EOX
-    AuthorURL: https://eox.at
-  - Title: EO Browser
-    URL: http://apps.sentinel-hub.com/eo-browser/
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Sentinel Playground
-    URL: http://apps.sentinel-hub.com/sentinel-playground/
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Python package for working with Sentinel-2 AWS data
-    URL: https://github.com/sentinel-hub/sentinelhub-py
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Tutorial for using Sentinel-2 data
-    URL: https://medium.com/@anttilip/seeing-earth-from-space-from-raw-satellite-data-to-beautiful-high-resolution-images-feb522adfa3f
-    AuthorName: Antti Lipponen
-    AuthorURL: https://medium.com/@anttilip
-  - Title: Sterling Geo Using Sentinel-2 on Amazon Web Services to Create NDVI
-    URL: https://www.youtube.com/watch?v=3tIIUr-keps
-    AuthorName: Sterling Geo
-  - Title: FME Landsat-8/Sentinel-2 File Selector
-    URL: http://demos.fmeserver.com/landsat-sentinel-selector/
-    AuthorName: Safe Software
-    AuthorURL: https://www.safe.com/
-  - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
-    URL:   https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
-    AuthorName: Timothy Whitehead
-  - Title: Using Vector tiles and AWS Lambda, we can build a really simple API to get Landsat and Sentinel images
-    URL:   https://remotepixel.ca/blog/searchapi_20171211.html
-    AuthorName: Remote Pixel
-    AuthorURL: https://remotepixel.ca/
-  - Title: QGIS plugin for Sentinel-2 data
-    URL:   https://medium.com/sentinel-hub/control-sentinel-hub-from-within-qgis-2a83eb7f13db
-    AuthorName: Sinergise
-    AuthorURL: http://www.sinergise.com/
-  - Title: Spectator - tracking Sentinel 2, accessing the data and quick preview
-    URL: https://spectator.earth/
-    AuthorName: Spectator
-    AuthorURL: https://spectator.earth/
-  - Title: Use the Sentinel Explorer app to explore, visualize, and analyze the entire Sentinel-2 archive
-    URL: https://sentinel2explorer.esri.com/
-    AuthorName: Esri
-    AuthorURL: https://www.esri.com/en-us/home
-  - Title: Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service
-    URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/
-    AuthorName: Esri
-    AuthorURL: https://www.esri.com/en-us/home
+  Tutorials:
+    - Title: Tutorial for using Sentinel-2 data
+      URL: https://medium.com/@anttilip/seeing-earth-from-space-from-raw-satellite-data-to-beautiful-high-resolution-images-feb522adfa3f
+      AuthorName: Antti Lipponen
+      AuthorURL: https://medium.com/@anttilip
+    - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
+      URL:   https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
+      AuthorName: Timothy Whitehead
+    - Title: Using Vector tiles and AWS Lambda, we can build a really simple API to get Landsat and Sentinel images
+      URL:   https://remotepixel.ca/blog/searchapi_20171211.html
+      AuthorName: Remote Pixel
+      AuthorURL: https://remotepixel.ca/
+    - Title: Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service
+      URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Learning Custom Scripts to Make Useful and Beautiful Satellite Images
+      URL: https://medium.com/sentinel-hub/create-useful-and-beautiful-satellite-images-with-custom-scripts-8ef0e6a474c6
+      AuthorName: Monja Šebela      
+  Tools & Applications:
+    - Title: Sentinel Hub WMS/WMTS/WCS Service
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Satellite Search by Remote Pixel
+      URL: https://remotepixel.ca/projects/satellitesearch.html
+      AuthorName: Remote Pixel
+      AuthorURL: https://remotepixel.ca/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: Sentinel-2 Cloudless Atlas
+      URL: https://s2maps.eu/
+      AuthorName: EOX
+      AuthorURL: https://eox.at
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground
+      URL: http://apps.sentinel-hub.com/sentinel-playground/
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Python package for working with Sentinel-2 AWS data
+      URL: https://github.com/sentinel-hub/sentinelhub-py
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sterling Geo Using Sentinel-2 on Amazon Web Services to Create NDVI
+      URL: https://www.youtube.com/watch?v=3tIIUr-keps
+      AuthorName: Sterling Geo
+    - Title: FME Landsat-8/Sentinel-2 File Selector
+      URL: http://demos.fmeserver.com/landsat-sentinel-selector/
+      AuthorName: Safe Software
+      AuthorURL: https://www.safe.com/
+    - Title: QGIS plugin for Sentinel-2 data
+      URL:   https://medium.com/sentinel-hub/control-sentinel-hub-from-within-qgis-2a83eb7f13db
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Spectator - tracking Sentinel 2, accessing the data and quick preview
+      URL: https://spectator.earth/
+      AuthorName: Spectator
+      AuthorURL: https://spectator.earth/
+    - Title: Use the Sentinel Explorer app to explore, visualize, and analyze the entire Sentinel-2 archive
+      URL: https://sentinel2explorer.esri.com/
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Interactive map with AI detected fields and crops based on Sentinel-2 imagery
+      URL: https://map.onesoil.ai/
+      AuthorName: OneSoil
+      AuthorURL: https://onesoil.ai/
+  Publications:

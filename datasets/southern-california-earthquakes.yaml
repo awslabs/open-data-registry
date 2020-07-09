@@ -1,0 +1,42 @@
+Name: Southern California Earthquake Data
+Description: This dataset contains ground motion velocity and acceleration 
+  seismic waveforms recorded by the Southern California Seismic Network (SCSN) 
+  and archived at the Southern California Earthquake Data Center (SCEDC). 
+Documentation: https://scedc.caltech.edu/cloud/
+Contact: scedc@gps.caltech.edu
+ManagedBy: "[Southern California Earthquake Data Center](https://scedc.caltech.edu)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - aws-pds
+  - earth observation
+  - earthquakes
+  - seismology
+  - sustainability
+License: SCEDC herby grants the non-exclusive, royalty free, non-transferable, 
+  worldwide right and license to use, reproduce and publicly display in all media 
+  public data from the Southern California Seismic Network. Please cite 
+  the SCEDC (doi:10.7909/C3WD3xH1) and SCSN (doi:10.7914/SN/CI) for any research
+  publications using this data.
+Resources:
+  - Description: Seismic waveform data (miniSEED format)
+    ARN: arn:aws:s3:::scedc-pds
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with SCEDC AWS Public Dataset 
+      URL: https://scedc.caltech.edu/cloud/getstarted-pds.html
+      AuthorName: Ellen Yu
+      AuthorURL: https://scedc.caltech.edu
+    - Title: Using Lambda to Process Seismograms
+      URL: https://github.com/SCEDC/pds-lambda-example
+      AuthorName: Shang-Lin Chen
+      AuthorURL: https://scedc.caltech.edu
+    - Title: 'Cactus to Clouds: Processing The SCEDC Open Data Set on AWS'
+      URL: https://nextjournal.com/thclements/cactus-to-clouds/#accessing-the-scedc-dataset-on-aws
+      AuthorName: Tim Clements
+      AuthorURL: https://tclements.github.io/

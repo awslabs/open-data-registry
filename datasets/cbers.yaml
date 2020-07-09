@@ -13,6 +13,10 @@ Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
 ManagedBy: "[AMS Kepler](https://amskepler.com/)"
 UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
   - earth observation
@@ -48,39 +52,46 @@ Resources:
     ARN: arn:aws:sns:us-east-1:599544552497:NewCB4PAN5MQuicklook
     Region: us-east-1
     Type: SNS Topic
+  - Description: Topic that receives STAC V0.7 items as new scenes are ingested
+    ARN: arn:aws:sns:us-east-1:769537946825:cbers-2-stac-0-7-CBERSSTACItemTopic-1I8YI0IIYL0R5
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
-  - Title: STAC search endpoint for archive
-    URL: https://stac.amskepler.com/stac/search
-    AuthorName: AMS Kepler
-    AuthorURL: https://github.com/fredliporace/cbers-2-stac
-  - Title: Remote Pixel Viewer
-    URL: https://viewer.remotepixel.ca
-    AuthorName: Remote Pixel
-    AuthorURL: http://remotepixel.ca/
-  - Title: EOS Land Viewer
-    URL: https://eos.com/landviewer/
-    AuthorName: Earth Observing System
-    AuthorURL: https://eos.com/
-  - Title: CBERS timelapse GIF generator
-    URL: https://github.com/fredliporace/cbersgif
-    AuthorName: Frederico Liporace
-    AuthorURL: https://github.com/fredliporace
-  - Title: aws-sat-api-py
-    URL: https://github.com/RemotePixel/aws-sat-api-py
-    AuthorName: Remote Pixel
-    AuthorURL: http://remotepixel.ca/
-  - Title: rio-tiler
-    URL: https://github.com/mapbox/rio-tiler
-    AuthorName: Mapbox
-    AuthorURL: https://www.mapbox.com/
-  - Title: cbers-tiler
-    URL: https://github.com/mapbox/cbers-tiler
-    AuthorName: Mapbox
-    AuthorURL: https://www.mapbox.com/
-  - Title: CBERS static STAC catalog served by stac-browser
-    URL: https://cbers.stac.cloud
-    AuthorName: Radiant Earth
-    AuthorURL: https://github.com/radiantearth/stac-browser
-  - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
-    URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
-    AuthorName: Frederico Liporace
+  Tutorials:
+    - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
+      URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
+      AuthorName: Frederico Liporace
+  Tools & Applications:
+    - Title: STAC V0.7 search endpoint for archive
+      URL: https://stac.amskepler.com/v07/stac/search
+      AuthorName: AMS Kepler
+      AuthorURL: https://github.com/fredliporace/cbers-2-stac
+    - Title: Remote Pixel Viewer
+      URL: https://viewer.remotepixel.ca
+      AuthorName: Remote Pixel
+      AuthorURL: http://remotepixel.ca/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: CBERS timelapse GIF generator
+      URL: https://github.com/fredliporace/cbersgif
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+    - Title: aws-sat-api-py
+      URL: https://github.com/RemotePixel/aws-sat-api-py
+      AuthorName: Remote Pixel
+      AuthorURL: http://remotepixel.ca/
+    - Title: rio-tiler
+      URL: https://github.com/mapbox/rio-tiler
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
+    - Title: cbers-tiler
+      URL: https://github.com/mapbox/cbers-tiler
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
+    - Title: CBERS static STAC catalog served by stac-browser
+      URL: https://cbers.stac.cloud
+      AuthorName: Radiant Earth
+      AuthorURL: https://github.com/radiantearth/stac-browser
+  Publications:

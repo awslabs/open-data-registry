@@ -1,0 +1,58 @@
+Name: Sentinel-5P Level 2
+Description: This data set consists of observations from the Sentinel-5 Precursor (Sentinel-5P) satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-5P is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the TROPOspheric Monitoring Instrument (TROPOMI) which is a spectrometer that senses ultraviolet (UV), visible (VIS), near (NIR) and short wave infrared (SWIR) to monitor ozone, methane, formaldehyde, aerosol, carbon monoxide, nitrogen dioxide and sulphur dioxide in the atmosphere. The satellite was launched in October 2017 and entered routine operational phase in March 2019. Data is available from July 2018 onwards.
+Documentation: https://github.com/Sentinel-5P/data-on-s3/blob/master/DocsForAws/Sentinel5P_Description.md
+Contact: sentinel5p@meeo.it
+ManagedBy: "[Meteorological Enviromental Earth Observation](http://www.meeo.it/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - air quality
+  - atmosphere
+  - earth observation
+  - environmental
+  - geospatial
+  - satellite imagery
+  - sustainability
+License: https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice
+Resources:
+  - Description: Sentinel-5p Near Real Time Data (NRTI). NetCDF format.
+    ARN: arn:aws:s3:::meeo-s5p/NRTI/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-5p Off Line Data (OFFL) NetCDF format.
+    ARN: arn:aws:s3:::meeo-s5p/OFFL/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-5p Reprocessed Data (RPRO) NetCDF format.
+    ARN: arn:aws:s3:::meeo-s5p/RPRO/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-5p Cloud Opimised GeoTIFF (COGT). TIFF format.
+    ARN: arn:aws:s3:::meeo-s5p/COGT/
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title:  Accessing Sentinel-5P Data on S3 by MEEO 
+      URL: https://github.com/Sentinel-5P/data-on-s3/blob/master/notebooks/Sentinel5P_Tutorial.ipynb
+      AuthorName: Meteorological Envionmental Earth Observation
+      AuthorURL: http://www.meeo.it/
+  Tools & Applications:
+    - Title: The Atmospheric Toolbox
+      URL: https://atmospherictoolbox.org/
+      AuthorName: European Space Agency
+      AuthorURL: https://www.esa.int/
+    - Title: Catalogue of data set
+      URL: https://meeo-s5p.s3.amazonaws.com/index.html#/?t=catalogs
+      AuthorName: Meteorological Envionmental Earth Observation
+      AuthorURL: https://www.meeo.it/
+  Publications:
+    - Title: Sentinel-5P TROPOMI Document Library
+      URL: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-5p-tropomi/document-library
+      AuthorName: European Space Agency
+      AuthorURL: https://www.esa.int/
+
