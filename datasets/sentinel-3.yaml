@@ -1,0 +1,53 @@
+Name: Sentinel-3
+Description: This data set consists of observations from the Sentinel-3 satellite of the European Commission’s Copernicus Earth Observation Programme. Sentinel-3 is a polar orbiting satellite that completes 14 orbits of the Earth a day. It carries the Ocean and Land Colour Instrument (OLCI) for medium resolution marine and terrestrial optical measurements, the Sea and Land Surface Termperature Radiometer (SLSTR), the SAR Radar Altimeter (SRAL), the MicroWave Radiometer (MWR) and the Precise Orbit Determination (POD) instruments. The satellite was launched in 2016 and entered routine operational phase in 2017. Data is available from July 2017 onwards.
+Documentation: https://github.com/Sentinel-5P/data-on-s3/blob/master/DocsForAws/Sentinel3Description.md
+Contact: sentinel3@meeo.it
+ManagedBy: "[Meteorological Enviromental Earth Observation](http://www.meeo.it/)"
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - oceans
+  - earth observation
+  - environmental
+  - geospatial
+  - land
+  - satellite imagery
+  - sustainability
+License: https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice
+Resources:
+  - Description: Sentinel-3 Near Real Time Data (NRT) format
+    ARN: arn:aws:s3:::meeo-s3/NRT/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-3 Not Time Critical (NTC) format
+    ARN: arn:aws:s3:::meeo-s3/NTC/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-3 Short Time Critical (STC) format
+    ARN: arn:aws:s3:::meeo-s3/STC/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Sentinel-3 Cloud Optimized GeoTIFF (COG) format
+    ARN: arn:aws:s3:::meeo-s3-cog/
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title:  Accessing Sentinel-3 Data on S3 by MEEO 
+      URL: https://github.com/Sentinel-5P/data-on-s3/blob/master/notebooks/Sentinel3_Tutorial.ipynb
+      AuthorName: Meteorological Envionmental Earth Observation
+      AuthorURL: http://www.meeo.it/
+  Tools & Applications:
+    - Title: Sentinel-3 Toolbox
+      URL: https://step.esa.int/main/toolboxes/sentinel-3-toolbox/
+      AuthorName: European Space Agency
+      AuthorURL: https://www.esa.int/
+    - Title: Catalogue of data set
+      URL: https://meeo-s3.s3.amazonaws.com/index.html#/?t=catalogs
+      AuthorName: Meteorological Envionmental Earth Observation
+      AuthorURL: https://www.meeo.it/
+  Publications:
+    - Title: Sentinel-3 Document Library
+      URL: https://sentinel.esa.int/web/sentinel/user-guides
+      AuthorName: European Space Agency
+      AuthorURL: https://www.esa.int/
