@@ -1,5 +1,5 @@
 Name: The Cancer Genome Atlas
-Description: |
+Description: >
   The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and
   National Human Genome Research Institute (NHGRI), aims to generate comprehensive,
   multi-dimensional maps of the key genomic changes in major types and subtypes of cancer. TCGA has
@@ -42,6 +42,7 @@ Resources:
     ARN: arn:aws:s3:::tcga-2-controlled
     Region: us-east-1
     Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000178.v1.p1
 DataAtWork:
   Tools & Applications:
     - Title: Genomic Data Commons
