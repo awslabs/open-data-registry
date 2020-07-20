@@ -29,8 +29,12 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/puerto_rico/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km data for 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/2018/
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-5min data for the Contiguous United States (CONUS) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/conus/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-10min data for the all of the Western Hemisphere (GOES full-disc) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/full_disc/
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
