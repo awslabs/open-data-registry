@@ -1,0 +1,45 @@
+Name: Folding@home COVID-19 datasets
+Description: Folding@home is a massively distributed computing project for running molecular dynamics simulations and has heavily focused it’s resources to understand SARS-CoV-2 and develop therapeutics associated with COVID-19 disease. Efforts include simulation of the viral proteome to uncover functional dynamics and cryptic pockets, detail mechanisms of infection, understand antibody binding mechanisms, and identify new small molecule therapeutics. This repository contains several major datasets from this effort and comprises the single largest collection of molecular simulation.
+Documentation: https://docs.opendata.aws/foldingathome-covid19/readme.html
+Contact: https://foldingathome.org/diseases/infectious-diseases/covid-19/
+ManagedBy: Folding@home
+UpdateFrequency: Dataset will be updated periodically as further simulations are completed
+Tags:
+  - aws-pds
+  - COVID-19
+  - coronavirus
+  - molecular-dynamics
+  - simulations
+  - health
+  - life sciences
+  - spike
+  - protein
+License: CC0, https://creativecommons.org/share-your-work/public-domain/cc0/
+Resources:
+  - Description: Simulation of SARS-CoV-2 proteome and related. Emphasis on discovering cryptic pockets and functional dynamics.
+    ARN: arn:aws:s3:::fah-public-data-covi19
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covi19-absolute-free-energy
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covi19-relative-free-energy
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covi19-antibodies
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covi19-moonshot-dynamics
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: Citizen Scientists Create an Exascale Computer to Combat COVID-19
+      URL: https://www.biorxiv.org/content/10.1101/2020.06.27.175430v1
+      AuthorName: Maxwell I. Zimmerman, Justin R. Porter, Michael D. Ward, Sukrit Singh, Neha Vithani, Artur Meller, et al.
