@@ -1,0 +1,62 @@
+Name: International Neuroimaging Data-Sharing Initiative (INDI)
+Description: >
+  This bucket contains multiple neuroimaging datasets that are part of the International Neuroimaging Data-Sharing Initiative. Raw human and non-human primate neuroimaging data include 1) Structural MRI; 2) Functional MRI; 3) Diffusion Tensor Imaging; 4) Electroencephalogram (EEG)
+  
+  In addition to the raw data, preprocessed data is also included for some datasets.
+  
+  A complete list of the available datasets can be seen in the documentation lonk provided below. 
+Documentation: http://fcon_1000.projects.nitrc.org/
+Contact: "[FCP-INDI](alexandre.franco@childmind.org)"
+ManagedBy: "[Child Mind Institute](https://childmind.org/our-research/)"
+UpdateFrequency: "Each dataset within INDI has its own release schedule. See release date and frequency for [each dataset](http://fcon_1000.projects.nitrc.org/indi/IndiPro.html)"
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroimaging
+  - neuroscience
+  - magnetic resonance imaging
+  - Homo sapiens
+License: ODC-By v1.0 for imaging data and BSD 3-Clause for CPAC, unless otherwise specified
+Resources:
+  - Description: Neuroimaging data for the International Neuroimaging Data-Sharing Initiative (INDI)
+    ARN: arn:aws:s3:::fcp-indi
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:  
+    - Title: Downloading FCP-INDI Neuroimaging Data from Amazon S3
+      URL: https://fcon_1000.projects.nitrc.org/indi/s3/index.html
+      AuthorName: INDI
+  Tools & Applications:
+    - Title: Configurable Pipeline for the Analysis of Connectomes (C-PAC)
+      URL: https://fcp-indi.github.io/docs/user/index.html#
+      AuthorName: "[INDI C-PAC Team](https://fcp-indi.github.io/)"
+  Publications:
+    - Title: "Making data sharing work: The FCP/INDI experience"
+      URL: https://www.sciencedirect.com/science/article/abs/pii/S1053811912010671?via%3Dihub
+      AuthorName: M. Mennes, B.B. Biswal, F.X. Castellanos, M.P. Milham
+    - Title: Assessment of the impact of shared brain imaging data on the scientific literature
+      URL: https://www.nature.com/articles/s41467-018-04976-1
+      AuthorName: M.P. Milham, R.C. Craddock, ..., A. Klein
+    - Title: An Open Resource for Non-human Primate Imaging
+      URL: https://www.sciencedirect.com/science/article/pii/S0896627318307682
+      AuthorName: M.P. Milham, L. Ai, ..., C.E. Schroeder
+    - Title: Accelerating the Evolution of Nonhuman Primate Neuroimaging 
+      URL: https://www.sciencedirect.com/science/article/pii/S089662731931089X
+      AuthorName: M.P. Milham, C. Petkov
+    - Title: "The NKI-Rockland sample: a model for accelerating the pace of discovery science in psychiatry"
+      URL: https://www.frontiersin.org/articles/10.3389/fnins.2012.00152/full
+      AuthorName: K.B. Nooner, S.J. Colcombe, ..., M.P. Milham
+      AuthorURL:
+    - Title: "An open resource for transdiagnostic research in pediatric mental health and learning disorders" 
+      URL: https://www.nature.com/articles/sdata2017181
+      AuthorName: L.M. Alexander, J. Escalera, ..., M.P. Milham
+    - Title: "The Healthy Brain Network Serial Scanning Initiative: a resource for evaluating inter-individual differences and their reliabilities across scan conditions and sessions" 
+      URL: https://academic.oup.com/gigascience/article/6/2/giw011/2865212
+      AuthorName: D. O'Connor, N.V. Potler, ..., M.P. Milham
+    - Title: "The autism brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain architecture in autism."
+      URL: https://www.nature.com/articles/mp201378
+      AuthorName: A. Di Martino, C-G Yan, ..., M.P. Milham
+    - Title: Enhancing studies of the connectome in autism using the autism brain imaging data exchange II.
+      URL: https://www.nature.com/articles/sdata201710
+      AuthorName: A. Di Martino, D. O'Connor, M.P. Milham
