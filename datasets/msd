@@ -14,10 +14,16 @@ Tags:
   - medicine
 License: "[CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by/4.0/)"
 Resources:
-  - Description: "| Ten tasks from the Medical Segmentation Decathlon Challenge. Tasks are organized by organ system and pathology, as follow: Liver Tumours; Brain Tumours; Hippocampus; Lung Tumours; Prostate; Cardiac; Pancreas Tumour; Colon Cancer; Hepatic Vasculature; Spleen.
+  - Description: "|
+                  Ten tasks from the Medical Segmentation Decathlon Challenge. Tasks are organized by organ system and pathology, as follow: Liver Tumours; Brain Tumours; Hippocampus; Lung Tumours; Prostate; Cardiac; Pancreas Tumour; Colon Cancer; Hepatic Vasculature; Spleen.
                   Tasks are provided in both tar.gz and uncompressed format."
-    ARN: arn:aws:s3:::MSD-for-MONAI
-    Region: us-east-2
+    ARN: arn:aws:s3:::msd-for-monai
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "|
+                  This is a mirror of s3://msd-for-monai in eu-west-2."
+    ARN: arn:aws:s3:::msd-for-monai-eu
+    Region: eu-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
