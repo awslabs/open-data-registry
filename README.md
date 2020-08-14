@@ -80,7 +80,7 @@ Note also that we use the name of each YAML file as the URL slug for each datase
 
 ### Example entry
 
-Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/gdelt/
+Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/noaa-nexrad/
 
 ```yaml
 Name: NEXRAD on AWS
