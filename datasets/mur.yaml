@@ -21,8 +21,7 @@ Tags:
   - weather
 License: There are no restrictions on the use of these data.
 Resources:
-  - Description: MUR Level 4 SST dataset in [Zarr](https://zarr.readthedocs.io/en/stable/) format. The bucket includes 2 top level directories which contain mostly equivalent zarr stores - zarr and zarr-v1. The only difference between these 2 stores is the chunk shape: the zarr directory contains a zarr store chunked (6443, 100, 100) along the dimensions (time, lat, lon) respectively, whereas zarr-v1 is chunked along
-    the same dimensions but sized (5, 1799, 3600).
+  - Description: MUR Level 4 SST dataset in [Zarr](https://zarr.readthedocs.io/en/stable/) format. The bucket includes 2 top level directories which contain mostly equivalent zarr stores - zarr/ and zarr-v1/. The only difference between these 2 stores is the chunk shape. The zarr/ directory contains a zarr store chunked (6443, 100, 100) along the dimensions (time, lat, lon) respectively, whereas zarr-v1/ is chunked along the same dimensions but sized (5, 1799, 3600).
     ARN: arn:aws:s3:::mur-sst
     Region: us-west-2
     Type: S3 Bucket
