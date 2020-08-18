@@ -11,18 +11,17 @@ Tags:
   - medicine
   - imaging
   - magnetic resonance imaging
+  - nifti
   - computed tomography
   - segmentation
 License: "[CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by/4.0/)"
 Resources:
-  - Description: "|
-                  Ten tasks from the Medical Segmentation Decathlon Challenge. Tasks are organized by organ system and pathology, as follow, Liver Tumours; Brain Tumours; Hippocampus; Lung Tumours; Prostate; Cardiac; Pancreas Tumour; Colon Cancer; Hepatic Vasculature; Spleen.
+  - Description: "Ten tasks from the Medical Segmentation Decathlon Challenge. Tasks are organized by organ system and pathology, as follow, Liver Tumours; Brain Tumours; Hippocampus; Lung Tumours; Prostate; Cardiac; Pancreas Tumour; Colon Cancer; Hepatic Vasculature; Spleen.
                   Tasks are provided in both tar.gz and uncompressed format."
     ARN: arn:aws:s3:::msd-for-monai
     Region: us-west-2
     Type: S3 Bucket
-  - Description: "|
-                  This is a mirror of s3://msd-for-monai in eu-west-2."
+  - Description: "This is a mirror of s3://msd-for-monai in eu-west-2."
     ARN: arn:aws:s3:::msd-for-monai-eu
     Region: eu-west-2
     Type: S3 Bucket
@@ -38,3 +37,7 @@ DataAtWork:
       URL: www.monai.io
       AuthorName: MONAI Development Team
       AuthorURL: https://monai.io/start.html
+  Publications:
+    - Title: "A large annotated medical image dataset for the development and evaluation of segmentation algorithms"
+      URL: https://arxiv.org/pdf/1902.09063.pdf
+      AuthorName: Simpson A. L., Antonelli M., Bakas S., Bilello M., Farahana K., van Ginneken B., et al 
