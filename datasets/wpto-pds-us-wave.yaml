@@ -18,12 +18,16 @@ Tags:
   - sustainability
 License: https://github.com/openEDI/documentation/blob/master/US_Wave.md
 Resources:
-  - Description: 32 Year Wave Hindcast (1979-2010) at 3-hour temporal resolution in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
-    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0
+  - Description: 32 Year Wave Hindcast (1979-2010) at 3-hour temporal resolution and down to 200m spatial resolution in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the West Coast of the United States with 1-hour temporal resolution and direction wave specturm data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/virtual_buoy/
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) backend data'
-    ARN: arn:aws:s3:::nrel-pds-hsds/
+    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/US_wave/
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
