@@ -1,0 +1,32 @@
+Name: Storm EVent ImageRy (SEVIR)
+Description: Collection of spatially and temporally aligned GOES-16 ABI satellite imagery, NEXRAD radar mosaics, and GOES-16 GLM lightning detections.  
+Documentation: https://nbviewer.jupyter.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/SEVIR_Tutorial.ipynb
+Contact: mark.veillette@mit.edu
+ManagedBy: Mark S. Veillette
+UpdateFrequency: New events will be added to SEVIR yearly
+Tags:
+  - satellite imagery
+  - weather
+  - meteorological
+  - aws-pds
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Dataset of storm imagery 
+    ARN: arn:aws:s3:::sevir
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to SEVIR
+      URL: https://nbviewer.jupyter.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/SEVIR_Tutorial.ipynb
+      AuthorName: Mark Veillette
+      AuthorURL: https://github.com/markveillette
+    - Title: Using Generators for SEVIR data
+      URL: https://nbviewer.jupyter.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/Generators.ipynb
+      AuthorName: Mark Veillette
+      AuthorURL: https://github.com/markveillette
+  Tools & Applications:
+    - Title: sevir -- python utilities for working with SEVIR dataset
+      URL: https://github.com/MIT-AI-Accelerator/eie-sevir
+      AuthorName: Mark Veillette
+      AuthorURL: https://github.com/markveillette

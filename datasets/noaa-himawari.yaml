@@ -23,4 +23,18 @@ Resources:
     ARN: arn:aws:s3:::noaa-himawari8
     Region: us-east-1
     Type: S3 Bucket
-
+  - Description: New data notifications for Himawari-8, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewHimawari8Object
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "Himawari-8 Advanced Himawari Imager Data on AWS (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July08_NOAA_Himawari.pdf
+      AuthorName: NOAA NESDIS
+    - Title: "Introduction of Himawari-8/9 (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July07_JMA_Himawari.pdf
+      AuthorName: JMA
+    - Title: "Himawari-8 on AWS (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July08_Amazon_Himawari.pdf
+      AuthorName: ASDI

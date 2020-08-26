@@ -1,0 +1,41 @@
+Name: Basic Local Alignment Sequences Tool (BLAST) Databases
+Description: 
+  A centralized repository of pre-formatted BLAST databases created by the
+  National Center for Biotechnology Information (NCBI).
+Documentation: https://github.com/ncbi/blast_plus_docs
+Contact: 'https://support.nlm.nih.gov/support/create-case/'
+ManagedBy: '[National Library of Medicine (NLM)](http://nlm.nih.gov/)'
+UpdateFrequency: Periodically
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - health
+  - life sciences
+  - genetic
+  - genomic
+  - transcriptomics
+  - protein
+  - reference index
+License: >-
+  "[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: BLAST databases with associated files in a public S3 bucket
+    ARN: 'arn:aws:s3:::ncbi-blast-databases'
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: BLAST+ Docker
+      URL: 'https://github.com/ncbi/blast_plus_docs'
+      AuthorName: NCBI BLAST
+  Publications:
+    - Title: >-
+        Gapped BLAST and PSI-BLAST: A New Generation of Protein Database Search
+        Programs
+      URL: 'https://pubmed.ncbi.nlm.nih.gov/9254694/'
+      AuthorName: S F Altschul, T L Madden, A A Schäffer, J Zhang, Z Zhang, W Miller, D J Lipman
+    - Title: 'BLAST+: Architecture and Applications'
+      URL: 'https://pubmed.ncbi.nlm.nih.gov/20003500'
+      AuthorName: Christiam Camacho  1 , George Coulouris, Vahram Avagyan, Ning Ma, Jason Papadopoulos, Kevin Bealer, Thomas L Madden
+
