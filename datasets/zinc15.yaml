@@ -14,11 +14,10 @@ Tags:
 License: "ZINC is free as in beer. You may not redistribute without the written permission of [John Irwin](chemistry4biology@gmail.com)"
 Documentation: http://wiki.docking.org/index.php/ZINC15:Resources
 Resources:
-  - Description: "3D molecular docking structure files in db2.gz, sdf and mol2 formats.  THIS IS A REQUESTOR PAYS BUCKET. You must include a Requestor Pays flag on all API requests. For instance, `aws s3 ls s3://zinc3d` will not work; use `aws s3 ls s3://zinc3d --request-payer`."
+  - Description: "3D molecular docking structure files in db2.gz, sdf and mol2 formats."
     ARN: arn:aws:s3:::zinc3d
     Region: us-east-1
     Type: S3 Bucket
-    RequesterPays: True
 DataAtWork:
   Tutorials:
   Tools & Applications:
