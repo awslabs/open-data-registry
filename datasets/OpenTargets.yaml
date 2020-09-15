@@ -1,0 +1,24 @@
+Name: Open Targets
+Description: This a parquet representation of the The Open Targets Platform's (https://www.targetvalidation.org/downloads/data) exports. The Open Targets Platform integrates evidence from genetics, genomics, transcriptomics, drugs, animal models and scientific literature to score and rank target-disease associations for drug target identification. The Open Targets Platform (https://www.targetvalidation.org) is a freely available resource for the integration of genetics, omics and chemical data to aid systematic drug target identification and prioritisation. 
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+Contact: https://docs.targetvalidation.org/getting-started/contact
+UpdateFrequency: <2 months after a new Open Targets release.
+Tags:  
+  - chemistry
+  - genomics
+  - molecules
+  - athena-ready
+  - life sciences
+  - biotech blueprint
+License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
+Resources: 
+  - Description: Open Targets 20.06
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/opentargets_20_06/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Open Targets 19.11
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/opentargets_1911/
+    Region: us-east-1
+    Type: S3 Bucket    
+DataAtWork:
+  Tutorials: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md

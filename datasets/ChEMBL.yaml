@@ -1,0 +1,24 @@
+Name: ChEMBL
+Description: ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs. These datasets are stored in parquet format and most easily utilized through Amazon Athena. Follow the documentation for install instructions (< 2 minute install).
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+Contact: https://www.ebi.ac.uk/about/contact
+UpdateFrequency: <2 months after a new ChEMBL release.
+Tags:  
+  - chemistry
+  - genomics
+  - molecules
+  - athena-ready
+  - life sciences
+  - biotech blueprint
+License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
+Resources: 
+  - Description: ChEMBL 27
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_27/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: ChEMBL 25
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_25/
+    Region: us-east-1
+    Type: S3 Bucket    
+DataAtWork:
+  Tutorials: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
