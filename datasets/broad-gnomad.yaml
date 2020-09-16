@@ -1,0 +1,48 @@
+Name: Genome Aggregation Database (gnomAD)
+Description: |
+  The Genome Aggregation Database (gnomAD) is a resource developed by an international coalition of investigators that aggregates and harmonizes both exome and genome data from a wide range of large-scale human sequencing projects. The summary data provided here are released for the benefit of the wider scientific community without restriction on use.
+  The v2 data set (GRCh37) spans 125,748 exome sequences and 15,708 whole-genome sequences from unrelated individuals. The v3 data set (GRCh38) spans 71,702 genomes, selected as in v2.
+  Sign up for the gnomAD mailing list [here](http://broad.io/gnomad_list).
+Documentation: https://gnomad.broadinstitute.org/about
+Contact: gnomad@broadinstitute.org
+ManagedBy: gnomAD Production Team
+UpdateFrequency: Data from new releases are made public as soon as they are available. New releases, including both minor and major versions, have historically been issued on the order of once per year.
+Tags:
+  - population genetics
+  - population
+  - whole genome sequencing
+  - genomic
+  - genetic
+  - life sciences
+  - bioinformatics
+  - short read sequencing
+License: [MIT](https://github.com/broadinstitute/gnomad_methods/blob/master/LICENSE); [terms of use](https://gnomad.broadinstitute.org/terms)
+Resources:
+  - Description: gnomAD summary data aggregated from large-scale human genome and exome sequencing projects.
+    ARN: arn:aws:s3:::gnomad-public-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Hail utilities for gnomAD
+      URL: https://pypi.org/project/gnomad/
+      AuthorName: gnomAD Production Team
+      AuthorURL: https://github.com/orgs/broadinstitute/teams/gnomad/members
+    - Title: gnomAD quality control GitHub repository
+      URL: https://github.com/broadinstitute/gnomad_qc
+      AuthorName: gnomAD Production Team
+      AuthorURL: https://github.com/orgs/broadinstitute/teams/gnomad/members
+    - Title: Hail
+      URL: https://hail.is/
+      AuthorName: Hail Team
+      AuthorURL: https://hail.is/
+    - Title: Hail on AWS Quick Start
+      URL: https://aws.amazon.com/quickstart/architecture/hail/
+      AuthorName: Amazon Web Services and "[PrivoIT](https://www.privoit.com/)"
+  Publications:
+    - Title: 2020 gnomAD Nature Collection
+      URL: https://www.nature.com/immersive/d42859-020-00002-x/index.html
+    - Title: gnomAD v2.1
+      URL: https://gnomad.broadinstitute.org/blog/2018-10-gnomad-v2-1/
+    - Title: gnomAD v3.0
+      URL: https://gnomad.broadinstitute.org/blog/2019-10-gnomad-v3-0/
