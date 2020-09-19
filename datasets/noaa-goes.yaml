@@ -1,4 +1,4 @@
-Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16 & 17"
+Name: GOES on AWS
 Description: |
   GOES satellites (GOES-16 & GOES-17) provide continuous weather imagery and
   monitoring of meteorological and space environment data across North America.
@@ -13,10 +13,6 @@ Documentation: https://docs.opendata.aws/noaa-goes16/cics-readme.html
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New data is added as soon as it's available
-Collabs:
-  ASDI:
-    Tags:
-      - satellite imagery
 Tags:
   - aws-pds
   - geospatial
@@ -50,18 +46,8 @@ DataAtWork:
       URL: https://github.com/HamedAlemo/visualize-goes16
       AuthorName: Hamed Alemohammad
       AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
-    - Title: Comparison reading GOES-R data from AWS S3 in netCDF versus zarr
-      URL: https://nbviewer.jupyter.org/github/oceanhackweek/ohw20-tutorials/blob/master/10-satellite-data-access/goes-cmp-netcdf-zarr.ipynb
-      AuthorName: Chelle Gentemann
-      AuthorURL: http://www.faralloninstitute.org/chelle
-    - Title: NOAA GOES16 Julia Jupyter Notebook Example
-      URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
-      AuthorName: Peter Schmiedeskamp
   Tools & Applications:
   Publications:
-    - Title: Comparison of Lightning Forecasts from the High-Resolution Rapid Refresh Model to Geostationary Lightning Mapper Observations
-      URL: https://doi.org/10.1175/WAF-D-19-0141.1
-      AuthorName: Brian K. Blaylock, and John D. Horel
     - Title: Billions of Birds Migrate. Where Do They Go?
       URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
       AuthorName: National Geographic

@@ -24,20 +24,6 @@ mapping:
   UpdateFrequency:
     type: str
     required: True
-  Collabs:
-    type: map
-    required: False
-    mapping:
-      ASDI:
-        type: map
-        required: False
-        mapping:
-          Tags:
-            type: seq
-            required: False
-            sequence:
-              - type: str
-                func: ext_tags
   Tags:
     type: seq
     required: True
@@ -47,21 +33,10 @@ mapping:
   License:
     type: str
     required: True
-  RegistryEntryAdded:
-    type: str
-    required: True
-    pattern: ^\d{4}-\d{2}-\d{2}$
-  RegistryEntryLastModified:
-    type: str
-    required: True
-    pattern: ^\d{4}-\d{2}-\d{2}$
   Resources:
     type: seq
     required: True
     sequence:
-      - type: any
-        required: True
-        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
@@ -72,7 +47,7 @@ mapping:
             pattern: ^arn:aws|aws-iso:.+:.*:.*:.+$
           Host:
             type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
           Region:
             type: str
             required: True
@@ -83,10 +58,6 @@ mapping:
             func: ext_resources
           RequesterPays:
             type: bool
-          ControlledAccess:
-            type: str
-            pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
-            required: False
   DataAtWork:
     type: map
     required: False
@@ -101,21 +72,15 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
-              Services:
-                type: seq
-                required: False
-                sequence:
-                  - type: str
-                    func: ext_services
       Tools & Applications:
         type: seq
         sequence:
@@ -126,14 +91,14 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
       Publications:
         type: seq
@@ -145,12 +110,12 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
                 required: False
