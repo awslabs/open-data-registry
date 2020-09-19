@@ -37,7 +37,6 @@ DataAtWork:
       URL:
       AuthorName:
       AuthorURL:
-      Services:
   Tools & Applications:
     - Title:
       URL:
@@ -52,13 +51,13 @@ DataAtWork:
 
 The metadata required for each dataset entry is as follows:
 
-| Field | Type | Description & Style |
+| Field | Type | Description |
 | --- | --- | --- |
-| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name.|
-|**Description**|String|A high-level description of the dataset. Only the first 600 characters will be displayed on the homepage of the [Registry of Open Data on AWS](https://registry.opendata.aws)|
-|**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
+| **Name** | String | The public facing name of the dataset |
+|**Description**|String|A high-level description of the dataset|
+|**Documentation**|URL|A link to documentation of the dataset|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
-|**ManagedBy**|String|The name of the laboratory, institution, or organization who is responsible for the data ingest process. Avoid using individuals. If your institution manages several datasets hosted by the Public Dataset Program, please list the managing institution identically. For an example why, check out the Managed By section of the [TARGET dataset](https://registry.opendata.aws/target/)|
+|**ManagedBy**|String|The name of the organization who is responsible for the data ingest process|
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
@@ -68,19 +67,17 @@ The metadata required for each dataset entry is as follows:
 |**Resources > Region**|String|AWS region unique identifier, e.g. us-east-1|
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
 |**Resources > RequesterPays** (Optional)|Boolean|Only appropriate for Amazon S3 buckets, indicates whether the bucket has [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) enabled or not.|
-|**Resources > ControlledAccess** (Optional)|String|Only appropriate for Amazon S3 buckets with controlled access. Please provide a URL to instructions on how to request and gain access to the S3 bucket.|
 |**DataAtWork  [> Tutorials, Tools & Applications, Publications]**  (Optional)|List of lists|A list of links to example tutorials, tools & applications, publications that use the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
-|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name(s) of person or entity that created  the tutorial, tool, application, or publication. Limit scientific publication author lists to the first six authors in the format Last Name First Initial, followed by 'et al'.|
+|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name of person or entity that created  the tutorial, tool, application, or publication.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL**|String|(Optional) URL for person or entity that created the tutorial, tool, application, or publication.|
-|**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 
 Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
 
 ### Example entry
 
-Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/noaa-nexrad/
+Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/gdelt/
 
 ```yaml
 Name: NEXRAD on AWS
@@ -116,11 +113,6 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
-    - Title: NEXRAD on EC2 tutorial
-      URL: https://github.com/openradar/AMS_radar_in_the_cloud
-      Services: EC2
-      AuthorName: openradar
-      AuthorURL: https://github.com/openradar
     - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
       URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
       AuthorName: Ryan May
@@ -129,6 +121,10 @@ DataAtWork:
       URL: https://carto.com/blog/mapping-nexrad-radar-data/
       AuthorName: Stuart Lynn
       AuthorURL: https://carto.com/blog/author/stuart-lynn/
+    - Title: NEXRAD on EC2 tutorial
+      URL: https://github.com/openradar/AMS_radar_in_the_cloud
+      AuthorName: openradar
+      AuthorURL: https://github.com/openradar
   Tools & Applications:
     - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
       URL: https://pypi.org/project/nexradaws/
