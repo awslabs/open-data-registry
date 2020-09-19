@@ -13,6 +13,10 @@ Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
 ManagedBy: "[AMS Kepler](https://amskepler.com/)"
 UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
   - earth observation
@@ -48,8 +52,8 @@ Resources:
     ARN: arn:aws:sns:us-east-1:599544552497:NewCB4PAN5MQuicklook
     Region: us-east-1
     Type: SNS Topic
-  - Description: Topic that receives STAC V0.7 items as new scenes are ingested
-    ARN: arn:aws:sns:us-east-1:769537946825:cbers-2-stac-0-7-CBERSSTACItemTopic-1I8YI0IIYL0R5
+  - Description: Topic that receives STAC V1.0 items as new scenes are ingested
+    ARN: arn:aws:sns:us-east-1:769537946825:cbers-2-stac-1-0-CBERSSTACItemTopic-8A6PE3VYG6EF
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
@@ -58,8 +62,8 @@ DataAtWork:
       URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
       AuthorName: Frederico Liporace
   Tools & Applications:
-    - Title: STAC V0.7 search endpoint for archive
-      URL: https://stac.amskepler.com/v07/stac/search
+    - Title: STAC V1.0 search endpoint for archive
+      URL: https://stac.amskepler.com/v10/stac/search
       AuthorName: AMS Kepler
       AuthorURL: https://github.com/fredliporace/cbers-2-stac
     - Title: Remote Pixel Viewer
@@ -90,4 +94,11 @@ DataAtWork:
       URL: https://cbers.stac.cloud
       AuthorName: Radiant Earth
       AuthorURL: https://github.com/radiantearth/stac-browser
+    - Title: Forest Monitor
+      URL: http://brazildatacube.dpi.inpe.br/forest-monitor/
+      AuthorName: Brazil Datacube, INPE
+      AuthorURL: http://brazildatacube.org/
   Publications:
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.

@@ -1,0 +1,48 @@
+Name: DOE's Water Power Technology Office's (WPTO) US Wave dataset
+Description: |
+  Released to the public as part of the Department of Energy's Open Energy Data Initiative,
+  this is the highest resolution publicly available long-term wave hindcast
+  dataset that – when complete – will cover the entire U.S. Exclusive Economic
+  Zone (EEZ).
+Documentation: https://github.com/openEDI/documentation/blob/master/US_Wave.md
+Contact: Levi.Kilcher@nrel.gov
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: As needed
+Tags:
+  - aws-pds
+  - earth observation
+  - energy
+  - geospatial
+  - meteorological
+  - water
+  - sustainability
+License: https://github.com/openEDI/documentation/blob/master/US_Wave.md
+Resources:
+  - Description: 32 Year Wave Hindcast (1979-2010) at 3-hour temporal resolution and down to 200m spatial resolution in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the West Coast of the United States with 1-hour temporal resolution and direction wave specturm data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/virtual_buoy/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) backend data'
+    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/US_wave/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: HSDS Examples
+      URL: https://github.com/NREL/hsds-examples
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
+  Publications:
+    - Title: Development and validation of a high-resolution regional wave hindcast model for U.S. West Coast wave   resource characterization
+      URL: https://www.osti.gov/biblio/1599105
+      AuthorName: Wu, Wei-Cheng; Wang, Taiping; Yang, Zhaoqing; Garcia Medina, Gabriel
+    - Title: High-Resolution Regional Wave Hindcast for the U.S. West Coast
+      URL: https://www.osti.gov/biblio/1573061/
+      AuthorName: Yang, Zhaoqing; Wu, Wei-Cheng; Wang, Taiping; Castrucci, Luca
+    - Title: SWAN Cycle III version 41.31A
+      URL: http://swanmodel.sourceforge.net/download/zip/swanuse.pdf
+      AuthorName: The SWAN team
