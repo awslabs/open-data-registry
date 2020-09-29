@@ -1,4 +1,4 @@
-Name: NREL Wind Integration National Dataset on AWS
+Name: NREL Wind Integration National Dataset
 Description: |
   Released to the public as part of the Department of Energy's Open Energy Data Initiative,
   the [Wind Integration National Dataset (WIND)](https://www.nrel.gov/grid/wind-toolkit.html)
@@ -19,7 +19,7 @@ Tags:
   - geospatial
   - meteorological
   - sustainability
-License: https://github.com/NREL/hsds-examples/blob/master/LICENSE
+License:  Creative Commons Attribution 3.0 United States License
 Resources:
   - Description: Source files for [wtk-us](https://www.nrel.gov/grid/wind-toolkit.html) gridded (2007-2013) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-wtk/wtk-us/
@@ -39,6 +39,10 @@ Resources:
     Type: S3 Bucket
   - Description: Offshore California Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-wtk/Offshore_CA/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Hawaii Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/Hawaii/
     Region: us-west-2
     Type: S3 Bucket
   - Description: Bangladesh wind resource data (2014-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
@@ -61,7 +65,7 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-wtk/philippines/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: Vietnam wind resource data (2016) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  - Description: Vietnam wind resource data (2016-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-wtk/vietnam/
     Region: us-west-2
     Type: S3 Bucket
