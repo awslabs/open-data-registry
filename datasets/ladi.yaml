@@ -1,10 +1,10 @@
 Name: Low Altitude Disaster Imagery (LADI) Dataset
 Description: The Low Altitude Disaster Imagery (LADI) Dataset consists of human and machine annotated airborne images collected by the Civil Air Patrol in support of various disaster responses from 2015-2019. The initial release of LADI focuses on the Atlantic hurricane seasons and coastal states along the Atlantic Ocean and Gulf of Mexico. Annotations are included for major hurricanes of Harvey, Maria, and Florence. Two key distinctions are the low altitude, oblique perspective of the imagery and disaster-related features, which are rarely featured in computer vision benchmarks and datasets.
-Documentation: https://github.com/LADI-Dataset/ladi-overview/README.md
+Documentation: https://github.com/LADI-Dataset/ladi-overview
 Contact:  ladi-dataset-admin@mit.edu
 ManagedBy: "[MIT Beaver Works](https://beaverworks.ll.mit.edu/)"
 UpdateFrequency: Periodically
-License: Creative Commons 4.0 (CY4.0)
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) 
 Tags:
   - aws-pds
   - aerial imagery
@@ -25,7 +25,6 @@ Tags:
   - transportation
   - urban
   - water
-License: Creative Commons Attribution 4.0 International (CC BY 4.0) 
 Resources:
   - Description: LADI dataset: images and labels
     ARN: arn:aws:s3:::ladi
@@ -40,15 +39,18 @@ DataAtWork:
   Tools & Applications:
     - Title: NIST TRECVID 2020 - Disaster Scene Description and Indexing (DSDI)
       URL: https://www-nlpir.nist.gov/projects/tv2020/dsdi.html
-      AuthorName: TREC Video Retrieval Evaluation (TRECVID) 
+      AuthorName: TREC Video Retrieval Evaluation (TRECVID)
+    - Title: Remote Sensing for Disaster Response Course
+      URL: https://github.com/bwsi-hadr
+      AuthorName: Beaver Works Summer Institute
+      AuthorURL: https://beaverworks.ll.mit.edu/CMS/bw/bwsi
   Publications:
    - Title: Large Scale Organization and Inference of an Imagery Dataset for Public Safety
       URL: https://doi.org/10.1109/HPEC.2019.8916437
       AuthorName: Jeffrey Liu, David Strohschein, Siddharth Samsi, Andrew Weinert
+   - Title: Video Testing at the FirstNet Innovation and Test Lab Using a Public Safety Dataset
+      URL: https://doi.org/10.1109/LNET.2019.2955833
+      AuthorName: Chris Budny, Jeffrey Liu, Andrew Weinert
     - Title: Train and Deploy an Image Classifier for Disaster Response
       URL: https://arxiv.org/abs/2005.05495
       AuthorName: Jianyu Mao, Kiana Harris, Nae-Rong Chang, Caleb Pennell, Yiming Ren
-    - Title: Integrating Multiple Deep Learning Models to Classify Disaster Scene Videos
-      AuthorName: Yuan Li, Haili Wang, Shuo Sun, Bill P Buckles
-    - Title: A Hierarchical Auto-Labeling Deep Neural Network for Disaster Scene Videos
-      AuthorName: Shuo Sun, Yuan Li, Haili Wang, Bill P Buckles
