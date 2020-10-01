@@ -1,0 +1,45 @@
+Name: Distributed Archives for Neurophysiology Data Integration (DANDI)
+Description: >
+  DANDI is a public archive of neurophysiology datasets, including raw and processed data, 
+  and associated software containers. Datasets are shared according to a Creative Commons 
+  CC0 or CC-BY licenses. The data archive provides a broad range of cellular neurophysiology data. 
+  This includes electrode and optical recordings, and associated imaging data using a 
+  set of community standards: [NWB:N - NWB:Neurophysiology](https://www.nwb.org/nwb-neurophysiology/),
+  [BIDS - Brain Imaging Data Structure](https://bids.neuroimaging.io/), and 
+  [NIDM - Neuro Imaging Data Model](http://nidm.nidash.org/). Development of DANDI is 
+  supported by the National Institute of Mental Health.
+Documentation: http://dandiarchive.org
+Contact: Support form at https://www.dandiarchive.org
+UpdateFrequency: New datasets deposited every month
+Tags:
+  - aws-pds
+  - biology
+  - cell imaging
+  - electrophysiology  
+  - life sciences
+  - infrastructure
+  - neuroimaging 
+  - neurophysiology
+  - neuroscience
+License: CC0, CC-BY
+Resources:
+  - Description: All datasets
+    ARN: arn:aws:s3:::dandiarchive
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: DANDI Web Interface
+      URL: https://dandiarchive.org/
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
+    - Title: DANDI Shell Interface
+      URL: https://github.com/dandi/dandi-cli
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
+    - Title: DANDI JupyterHub Interface
+      URL: https://hub.dandiarchive.org/
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
+  Publications:
