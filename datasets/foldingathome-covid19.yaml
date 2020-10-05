@@ -1,9 +1,9 @@
 Name: Folding@home COVID-19 datasets
 Description: Folding@home is a massively distributed computing project for running molecular dynamics simulations and has heavily focused it’s resources to understand SARS-CoV-2 and develop therapeutics associated with COVID-19 disease. Efforts include simulation of the viral proteome to uncover functional dynamics and cryptic pockets, detail mechanisms of infection, understand antibody binding mechanisms, and identify new small molecule therapeutics. This repository contains several major datasets from this effort and comprises the single largest collection of molecular simulation.
-Documentation: https://docs.opendata.aws/foldingathome-covid19/readme.html
+Documentation: https://github.com/FoldingAtHome/coronavirus
 Contact: https://foldingathome.org/diseases/infectious-diseases/covid-19/
-ManagedBy: Folding@home
-UpdateFrequency: Dataset will be updated periodically as further simulations are completed
+ManagedBy: [Folding@home](https://foldingathome.org)
+UpdateFrequency: Datasets will be updated periodically as further simulations are completed
 Tags:
   - aws-pds
   - COVID-19
@@ -12,7 +12,7 @@ Tags:
   - health
   - life sciences
   - protein
-License: "CC0 (https://creativecommons.org/share-your-work/public-domain/cc0/)"
+License: [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
 Resources:
   - Description: Simulation of SARS-CoV-2 proteome and related. Emphasis on discovering cryptic pockets and functional dynamics.
     ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
@@ -36,6 +36,9 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: "Folding@home COVID-19 efforts"
+      URL: https://github.com/FoldingAtHome/coronavirus/blob/master/README.md
+      AuthorName: "Folding@home Consortium"
   Tools & Applications:
   Publications:
     - Title: Citizen Scientists Create an Exascale Computer to Combat COVID-19
