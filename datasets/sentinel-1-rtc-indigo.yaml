@@ -1,0 +1,34 @@
+Name: Analysis Ready Sentinel-1 Backscatter Imagery
+Description: |
+  The [Sentinel-1 mission](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) is a constellation of
+  C-band Synthetic Aperature Radar (SAR) satellites from the European Space Agency launched since 2014.
+  These satellites collect observations of radar backscatter intensity day or night, regardless of the
+  weather conditions, making them enormously valuable for environmental monitoring.
+  These radar data have been processed from original Ground Range Detected (GRD) scenes into a Radiometrically
+  Terrain Corrected, tiled product suitable for analysis. This product is available over the Contiguous United States (CONUS)
+  since 2017 when Sentinel-1 data became globally available.
+Documentation: https://sentinel-s1-rtc-indigo-docs.s3-us-west-2.amazonaws.com/index.html
+Contact: For questions regarding data methodology or delivery, contact sentinel1@indigoag.com.
+ManagedBy: "[Indigo Ag, Inc.](https://www.indigoag.com/)"
+UpdateFrequency: Data are updated on a daily cadence for the dataset's spatial domain (CONUS).
+Tags:
+  - agriculture
+  - aws-pds
+  - disaster response
+  - earth observation
+  - environmental
+  - geospatial
+  - satellite imagery
+  - sustainability
+License: |
+  The use of these data fall under the terms and conditions of the [Indigo Atlas Sentinel License](https://www.indigoag.com/forms/atlas-sentinel-license).
+  Contains modified Copernicus Sentinel data.
+Resources:
+  - Description: Sentinel-1 RTC tiled data and metadata in a S3 bucket
+    ARN: arn:aws:s3:::sentinel-s1-rtc-indigo
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Simple Notification Service (SNS) topic for notification of new tile uploads
+    ARN: arn:aws:sns:us-west-2:410373799403:sentinel-s1-rtc-indigo-object_created
+    Region: us-west-2
+    Type: SNS Topic
