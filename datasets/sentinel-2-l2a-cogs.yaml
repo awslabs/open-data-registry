@@ -4,8 +4,8 @@ Description: |
   a land monitoring constellation of two satellites that provide high resolution
   optical imagery and provide continuity for the current SPOT and Landsat missions.
   The mission provides a global coverage of the Earth's land surface every 5 days,
-  making the data of great use in ongoing studies. 
-  This dataset is the same as the [Sentinel-2](https://registry.opendata.aws/sentinel-2/) 
+  making the data of great use in ongoing studies.
+  This dataset is the same as the [Sentinel-2](https://registry.opendata.aws/sentinel-2/)
   dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
   Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
   alongside the data, and a STAC API called [Earth-search](https://earth-search.aws.element84.com/v0)
@@ -49,6 +49,9 @@ DataAtWork:
     - Title: Intake-STAC with sat-search
       URL:   https://github.com/intake/intake-stac/blob/master/examples/aws-earth-search.ipynb
       AuthorName: Scott Henderson
+    - Title: Create a Dynamic Tiler with TiTiler
+      URL:   https://github.com/developmentseed/titiler/blob/master/docs/examples/Create_CustomSentinel2Tiler.ipynb
+      AuthorName: Vincent Sarago
   Publications:
     - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
       URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing
@@ -60,3 +63,6 @@ DataAtWork:
     - Title: Sat-search
       URL: https://github.com/sat-utils/sat-search
       AuthorName: Matthew Hanson
+    - Title: rio-tiler-pds
+      URL: https://github.com/cogeotiff/rio-tiler-pds
+      AuthorName: Vincent Sarago, et al.
