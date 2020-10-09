@@ -1,36 +1,86 @@
 Name: Foldingathome COVID-19 Datasets
-Description: Folding@home is a massively distributed computing project for running molecular dynamics simulations. In the light of the COVID19 pandemic, it has heavily focused its resources to understand SARS-CoV-2, and develop therapeutics associated with COVID-19 disease. Efforts include simulation of the viral proteome to uncover functional dynamics and cryptic pockets, detail mechanisms of infection, understand antibody binding mechanisms, and identify new small molecule therapeutics. This repository contains several major datasets from this effort and comprises the single largest collection of molecular simulation.
+Description: >
+  [Folding@home](http://foldingathome.org) is a massively distributed computing
+  project that uses biomolecular simulations to investigate the [molecular origins of disease](https://foldingathome.org/diseases/)
+  and accelerate the discovery of new therapies. Run by the
+  [Folding@home Consortium](https://foldingathome.org/about/the-foldinghome-consortium/),
+  a worldwide network of research laboratories focusing on a variety of different
+  diseases, Folding@home seeks to address problems in human health on a scale
+  that is infeasible by another other means, sharing the results of these large-scale
+  studies with the research community through [peer-reviewed publications](https://foldingathome.org/papers-results/)
+  and publicly shared datasets.
+
+  During the [COVID-19 epidemic](https://en.wikipedia.org/wiki/Coronavirus_disease_2019),
+  Folding@home focused its resources on understanding the vulernabilities in
+  [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2),
+  the virus that causes COVID-19 disease, and working closely with a number of
+  experimental collaborators to accelerate progress toward effective therapies for
+  treating COVID-19 and ending the pandemic. In the process, it created the world's first
+  [exascale distributed computing resource](https://doi.org/10.1101/2020.06.27.175430),
+  enabling it to generate valuable scientific datasets of unprecedented size.
+  More information about Folding@home's COVID-19 research activities at the
+  [Folding@home COVID-19 page](https://foldingathome.org/diseases/infectious-diseases/covid-19/).
+
+  In addition to working directly with experimental collaborators and rapidly sharing
+  new research findings through preprint servers, Folding@home has joined other
+  researchers in committing to [rapidly share all COVID-19 research data](https://doi.org/10.1021/acs.jcim.0c00319),
+  and has joined forces with [AWS](https://aws.amazon.com/) and the
+  [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) to share datasets of unprecented side
+  through the [AWS Open Data Registry](https://registry.opendata.aws/),
+  indexing these massive datsets via the [MolSSI COVID-19 Molecular Structure and Therapeutics Hub](https://covid.molssi.org/).
+  This repository contains several major datasets from this effort and comprises
+  the single largest collection of molecular simulation data ever released.
+
+  The following datasets are available at this time:
+
+  **SARS-CoV-2 spike protein dataset:**
+  A 1.2 ms dataset of the SARS-CoV-2 spike protein.
+  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-spike-protein-from-foldinghome-spike-nil)
+
+  **SARS-CoV-2 main viral protease simulations:**
+  A 2.6 ms dataset of the SARS-CoV-2 main viral protease (apo, monomer).
+  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#sars-cov-2-main-protease-apo-monomer-foldinghome-simulations-3clpro-3clpro-protease-activity)
+
+  **SARS-CoV-2 COVID Moonshot absolute free energy calculations:**
+  Absolute alchemical free energy calculations of crowdsourced molecule designs for the [COVID Moonshot](http://postera.ai/covid).
+  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-main-protease-protein-from-foldinghome-3clpro-nil)
+
 Documentation: https://github.com/FoldingAtHome/coronavirus
 Contact: "[Folding@home](https://foldingathome.org/contact-us/)"
 ManagedBy: "[Folding@home](https://foldingathome.org)"
-UpdateFrequency: Datasets will be updated periodically as further simulations are completed
+UpdateFrequency: Datasets will be updated periodically as additional simulations are completed.
 Tags:
   - aws-pds
   - COVID-19
+  - Folding@home
+  - SARS-CoV-2
   - coronavirus
   - simulations
   - health
   - life sciences
   - protein
+  - biomolecular simulations
+  - molecular dynamics
+  - alchemical free energy calculations
+  - absolute free energy calculations
+  - relative free energy calculations
+  - structural biology
 License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
 Resources:
-  - Description: Simulation of SARS-CoV-2 proteome and related. Emphasis on discovering cryptic pockets and functional dynamics.
+  - Description: <
+      Simulations of SARS-CoV-2 and associated host proteins, with emphasis on discovering druggable cryptic pockets.
     ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
     Region: us-east-2
     Type: S3 Bucket
-  - Description: 
+  - Description: <
+      Absolute free energy calculations of small molecules from the [COVID Moonshot](http://postera.ai).
+      [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-main-protease-protein-from-foldinghome-3clpro-nil)
     ARN: arn:aws:s3:::fah-public-data-covid19-absolute-free-energy
     Region: us-east-2
     Type: S3 Bucket
-  - Description: 
-    ARN: arn:aws:s3:::fah-public-data-covid19-relative-free-energy
-    Region: us-east-2
-    Type: S3 Bucket
-  - Description: 
-    ARN: arn:aws:s3:::fah-public-data-covid19-antibodies
-    Region: us-east-2
-    Type: S3 Bucket
-  - Description: 
+  - Description: <
+      Simulations of target proteins and bound small molecules from the [COVID Moonshot](http://postera.ai).
+      [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-main-protease-protein-from-foldinghome-3clpro-nil)
     ARN: arn:aws:s3:::fah-public-data-covid19-moonshot-dynamics
     Region: us-east-2
     Type: S3 Bucket
