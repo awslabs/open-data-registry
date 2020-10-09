@@ -1,0 +1,46 @@
+Name: Foldingathome COVID-19 Datasets
+Description: Folding@home is a massively distributed computing project for running molecular dynamics simulations. In the light of the COVID19 pandemic, it has heavily focused its resources to understand SARS-CoV-2, and develop therapeutics associated with COVID-19 disease. Efforts include simulation of the viral proteome to uncover functional dynamics and cryptic pockets, detail mechanisms of infection, understand antibody binding mechanisms, and identify new small molecule therapeutics. This repository contains several major datasets from this effort and comprises the single largest collection of molecular simulation.
+Documentation: https://github.com/FoldingAtHome/coronavirus
+Contact: "[Folding@home](https://foldingathome.org/contact-us/)"
+ManagedBy: "[Folding@home](https://foldingathome.org)"
+UpdateFrequency: Datasets will be updated periodically as further simulations are completed
+Tags:
+  - aws-pds
+  - COVID-19
+  - coronavirus
+  - simulations
+  - health
+  - life sciences
+  - protein
+License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
+Resources:
+  - Description: Simulation of SARS-CoV-2 proteome and related. Emphasis on discovering cryptic pockets and functional dynamics.
+    ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covid19-absolute-free-energy
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covid19-relative-free-energy
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covid19-antibodies
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: 
+    ARN: arn:aws:s3:::fah-public-data-covid19-moonshot-dynamics
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Folding@home COVID-19 efforts"
+      URL: https://github.com/FoldingAtHome/coronavirus/blob/master/README.md
+      AuthorName: "Folding@home Consortium"
+  Tools & Applications:
+  Publications:
+    - Title: Citizen Scientists Create an Exascale Computer to Combat COVID-19
+      URL: https://www.biorxiv.org/content/10.1101/2020.06.27.175430v1
+      AuthorName: Maxwell I. Zimmerman, Justin R. Porter, Michael D. Ward, Sukrit Singh, Neha Vithani, Artur Meller, et al.
