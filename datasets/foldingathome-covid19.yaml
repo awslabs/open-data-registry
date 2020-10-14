@@ -9,8 +9,6 @@ Description: >
   that is infeasible by another other means, sharing the results of these large-scale
   studies with the research community through [peer-reviewed publications](https://foldingathome.org/papers-results/)
   and publicly shared datasets.
-
-
   During the [COVID-19 epidemic](https://en.wikipedia.org/wiki/Coronavirus_disease_2019),
   Folding@home focused its resources on understanding the vulernabilities in
   [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2),
@@ -21,8 +19,6 @@ Description: >
   enabling it to generate valuable scientific datasets of unprecedented size.
   More information about Folding@home's COVID-19 research activities at the
   [Folding@home COVID-19 page](https://foldingathome.org/diseases/infectious-diseases/covid-19/).
-
-
   In addition to working directly with experimental collaborators and rapidly sharing
   new research findings through preprint servers, Folding@home has joined other
   researchers in committing to [rapidly share all COVID-19 research data](https://doi.org/10.1021/acs.jcim.0c00319),
@@ -32,25 +28,6 @@ Description: >
   indexing these massive datsets via the [MolSSI COVID-19 Molecular Structure and Therapeutics Hub](https://covid.molssi.org/).
   This repository contains several major datasets from this effort and comprises
   the single largest collection of molecular simulation data ever released.
-
-
-  The following datasets are available at this time:
-
-
-  **SARS-CoV-2 spike protein dataset:**
-  A 1.2 ms dataset of the SARS-CoV-2 spike protein.
-  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding)
-
-
-  **SARS-CoV-2 main viral protease simulations:**
-  A 2.6 ms dataset of the SARS-CoV-2 main viral protease (apo, monomer).
-  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#foldinghome-sars-cov-2-main-protease-apo-monomer-simulations-3clpro-3clpro-protease-activity)
-
-
-  **SARS-CoV-2 COVID Moonshot absolute free energy calculations:**
-  Absolute alchemical free energy calculations of crowdsourced molecule designs for the [COVID Moonshot](http://postera.ai/covid).
-  [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity)
-
 Documentation: https://github.com/FoldingAtHome/coronavirus
 Contact: "[Folding@home](https://foldingathome.org/contact-us/)"
 ManagedBy: "[Folding@home](https://foldingathome.org)"
@@ -71,29 +48,36 @@ Tags:
   - structural biology
 License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
 Resources:
-  - Description: <
-      Simulations of SARS-CoV-2 and associated host proteins, with emphasis on discovering druggable cryptic pockets.
+  - Description: Simulations of SARS-CoV-2 and associated host proteins, with emphasis on discovering druggable cryptic pockets, documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding).
     ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
     Region: us-east-2
     Type: S3 Bucket
-  - Description: <
-      Absolute free energy calculations of small molecules from the [COVID Moonshot](http://postera.ai).
-      [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-main-protease-protein-from-foldinghome-3clpro-nil)
+  - Description: Absolute free energy calculations of small molecules from the [COVID Moonshot](http://postera.ai), documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity)
     ARN: arn:aws:s3:::fah-public-data-covid19-absolute-free-energy
     Region: us-east-2
     Type: S3 Bucket
-  - Description: <
-      Simulations of target proteins and bound small molecules from the [COVID Moonshot](http://postera.ai).
-      [[MolSSI COVID Hub]](https://covid.molssi.org//simulations/#trajectories-of-the-sars-cov-2-main-protease-protein-from-foldinghome-3clpro-nil)
+  - Description: Simulations of target proteins and bound small molecules from the [COVID Moonshot](http://postera.ai), documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-sars-cov-2-main-protease-apo-monomer-simulations-3clpro-3clpro-protease-activity)
     ARN: arn:aws:s3:::fah-public-data-covid19-moonshot-dynamics
     Region: us-east-2
     Type: S3 Bucket
 DataAtWork:
+  Tools & Applications:
+    - Title: "SARS-CoV-2 spike protein dataset: A 1.2 ms dataset of the SARS-CoV-2 spike protein."
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding
+      AuthorName: MolSSI COVID Molecular Structure and Therapeutics Hub
+      AuthorURL: https://covid.molssi.org
+    - Title: "SARS-CoV-2 main viral protease simulations: A 2.6 ms dataset of the SARS-CoV-2 main viral protease (apo, monomer)."
+      URL: https://covid.molssi.org//simulations/#foldinghome-sars-cov-2-main-protease-apo-monomer-simulations-3clpro-3clpro-protease-activity
+      AuthorName: MolSSI COVID Molecular Structure and Therapeutics Hub
+      AuthorURL: https://covid.molssi.org
+    - Title: "SARS-CoV-2 COVID Moonshot absolute free energy calculations"
+      URL: https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity
+      AuthorName: MolSSI COVID Molecular Structure and Therapeutics Hub
+      AuthorURL: https://covid.molssi.org
   Tutorials:
     - Title: "Folding@home COVID-19 efforts"
       URL: https://github.com/FoldingAtHome/coronavirus/blob/master/README.md
       AuthorName: "Folding@home Consortium"
-  Tools & Applications:
   Publications:
     - Title: Citizen Scientists Create an Exascale Computer to Combat COVID-19
       URL: https://www.biorxiv.org/content/10.1101/2020.06.27.175430v1
