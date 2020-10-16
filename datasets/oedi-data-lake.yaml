@@ -19,10 +19,16 @@ Tags:
   - energy
   - environmental
   - sustainability
+  - geospatial
+  - model
 License:  Creative Commons Attribution 3.0 United States License
 Resources:
   - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
     ARN: arn:aws:s3:::oedi-data-lake/umcm/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
+    ARN: arn:aws:s3:::oedi-data-lake/dgen/
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
@@ -31,3 +37,6 @@ DataAtWork:
     - Title:  "On the Use of Coupled Wind, Wave, and Current Fields in the Simulation of Loads on BottomSupported Offshore Wind Turbines during Hurricanes"
       URL:  https://www.nrel.gov/docs/fy16osti/65283.pdf
       AuthorName: E. Kim, L. Manuel, M. Curcic, S. S. Chen, C. Phillips, P. Veers
+    - Title:  "The Distributed Generation Market Demand Model (dGen):Documentation"
+      URL:  https://www.nrel.gov/docs/fy16osti/65231.pdf
+      AuthorName: B. Sigrin, M. Gleason, R. Preus, I. Baring-Gould, R. Margolis
