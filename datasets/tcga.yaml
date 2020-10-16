@@ -1,0 +1,168 @@
+Name: The Cancer Genome Atlas
+Description: >
+  The Cancer Genome Atlas (TCGA), a collaboration between the National Cancer Institute (NCI) and
+  National Human Genome Research Institute (NHGRI), aims to generate comprehensive,
+  multi-dimensional maps of the key genomic changes in major types and subtypes of cancer. TCGA has
+  analyzed matched tumor and normal tissues from 11,000 patients, allowing for the comprehensive
+  characterization of 33 cancer types and subtypes, including 10 rare cancers.
+
+  The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression
+  Quantification, miRNA-Seq Isoform Expression Quantification, miRNA Expression Quantification,
+  Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping
+  Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation
+  Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+
+  This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq Aligned Reads, WXS Annotated
+  Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic Mutation data from GDC.
+  
+  TCGA is made available on AWS via the [NIH STRIDES Initiative](https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/).
+Documentation: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - genomic
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: |
+      Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+      Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy
+      Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy
+      Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue
+      Slide Image, Diagnostic Slide Image
+    ARN: arn:aws:s3:::tcga-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      WXS/RNA-Seq/miRNA-Seq/ATAC-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic
+      Mutation, WXS Aggregated Somatic Mutation
+    ARN: arn:aws:s3:::tcga-2-controlled
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000178.v1.p1
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: GDC Legacy Archive
+      URL: https://portal.gdc.cancer.gov/legacy-archive/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: TCGA Cancers Selected for Study
+      URL: |
+        https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga/studied-cancers
+      AuthorName: National Cancer Institute
+      AuthorURL: https://ocg.cancer.gov/
+    - Title: Using TCGA Data, Resources, and Materials
+      URL: |
+        https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga/using-tcga
+      AuthorName: National Cancer Institute
+      AuthorURL: https://ocg.cancer.gov/
+    - Title: Broad Institute FireCloud
+      URL: https://firecloud.terra.bio/
+      AuthorName: The Broad Institute of MIT & Harvard
+      AuthorURL: https://www.broadinstitute.org/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: https://docs.sevenbridges.com/docs/tcga-data
+    - Title: ISB Cancer Genomics Cloud
+      URL: https://isb-cgc.appspot.com/
+      AuthorName: Institute for Systems Biology
+      AuthorURL: |
+        https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TCGA_top.html
+  Publications:
+    - Title: Comprehensive Analysis of Alternative Splicing Across Tumors from 8,705 Patients
+      URL: https://doi.org/10.1016/j.ccell.2018.07.001
+      AuthorName: André Kahles, Kjong-Van Lehmann, et al.
+    - Title: Pathogenic Germline Variants in 10,389 Adult Cancers
+      URL: https://doi.org/10.1016/j.cell.2018.03.039
+      AuthorName: Kuan-lin Huang, R. Jay Mashl, et al.
+    - Title: The Immune Landscape of Cancer
+      URL: https://doi.org/10.1016/j.immuni.2018.03.023
+      AuthorName: Vésteinn Thorsson, David L. Gibbs, et al.
+    - Title: A Pan-Cancer Analysis of Enhancer Expression in Nearly 9000 Patient Samples
+      URL: https://doi.org/10.1016/j.cell.2018.03.027
+      AuthorName: Han Chen, Chunyan Li, et al.
+    - Title: Comprehensive Characterization of Cancer Driver Genes and Mutations
+      URL: https://doi.org/10.1016/j.cell.2018.02.060
+      AuthorName: Matthew H. Bailey, Collin Tokheim, et al.
+    - Title: |
+        An Integrated TCGA Pan-Cancer Clinical Data Resource to Drive High-Quality Survival Outcome
+        Analytics
+      URL: https://doi.org/10.1016/j.cell.2018.02.052
+      AuthorName: Jianfang Liu, Tara Lichtenberg, et al.
+    - Title: Oncogenic Signaling Pathways in The Cancer Genome Atlas
+      URL: https://doi.org/10.1016/j.cell.2018.03.035
+      AuthorName: Francisco Sanchez-Vega, Marco Mina, et al.
+    - Title: Integrated Genomic Analysis of the Ubiquitin Pathway across Cancer Types
+      URL: https://doi.org/10.1016/j.celrep.2018.03.047
+      AuthorName: Zhongqi Ge, Jake S. Leighton, et al.
+    - Title: |
+        Molecular Characterization and Clinical Relevance of Metabolic Expression Subtypes in Human
+        Cancers
+      URL: https://doi.org/10.1016/j.celrep.2018.03.077
+      AuthorName: Xinxin Peng, Zhongyuan Chen, et al.
+    - Title: |
+        Machine Learning Identifies Stemness Features Associated with Oncogenic Dedifferentiation
+      URL: https://doi.org/10.1016/j.cell.2018.03.034
+      AuthorName: Tathiane M. Malta, Artem Sokolov, et al.
+    - Title: |
+        Spatial Organization And Molecular Correlation Of Tumor-Infiltrating Lymphocytes Using Deep
+        Learning On Pathology Images
+      URL: https://doi.org/10.1016/j.celrep.2018.03.086
+      AuthorName: Joel Saltz, Rajarsi Gupta, et al.
+    - Title: |
+        Pan-Cancer Analysis of lncRNA Regulation Supports Their Targeting of Cancer Genes in Each
+        Tumor Context
+      URL: https://doi.org/10.1016/j.celrep.2018.03.064
+      AuthorName: Hua-Sheng Chiu, Sonal Somvanshi, et al.
+    - Title: |
+        Genomic and Molecular Landscape of DNA Damage Repair Deficiency across The Cancer Genome
+        Atlas
+      URL: https://doi.org/10.1016/j.celrep.2018.03.076
+      AuthorName: Theo A. Knijnenburg, Linghua Wang, et al.
+    - Title: Comparative Molecular Analysis of Gastrointestinal Adenocarcinomas
+      URL: https://doi.org/10.1016/j.ccell.2018.03.010
+      AuthorName: Yang Liu, Nilay S. Sethi, et al.
+    - Title: Machine Learning Detects Pan-Cancer Ras Pathway Activation in The Cancer Genome Atlas
+      URL: https://doi.org/10.1016/j.celrep.2018.03.046
+      AuthorName: Gregory P. Way, Francisco Sanchez-Vega, et al.
+    - Title: Genomic, Pathway Network, and Immunologic Features Distinguishing Squamous Carcinomas
+      URL: https://doi.org/10.1016/j.celrep.2018.03.063
+      AuthorName: Joshua D. Campbell, Christina Yau, et al.
+    - Title: Genomic and Functional Approaches to Understanding Cancer Aneuploidy
+      URL: https://doi.org/10.1016/j.ccell.2018.03.007
+      AuthorName: Alison M. Taylor, Juliann Shih, et al.
+    - Title: |
+        Scalable Open Science Approach for Mutation Calling of Tumor Exomes Using Multiple Genomic
+        Pipelines
+      URL: https://doi.org/10.1016/j.cels.2018.03.002
+      AuthorName: Kyle Ellrott, Matthew H. Bailey, et al.
+    - Title: |
+        Pan-Cancer Alterations of the MYC Oncogene and its Proximal Network Across The Cancer Genome
+        Atlas
+      URL: https://doi.org/10.1016/j.cels.2018.03.003
+      AuthorName: Franz X. Schaub, Varsha Dhankani, et al.
+    - Title: |
+        Cell-of-Origin Patterns Dominate the Molecular Classification of 10,000 Tumors from 33 Types
+        of Cancer
+      URL: https://doi.org/10.1016/j.cell.2018.03.022
+      AuthorName: Katherine A. Hoadley, Christina Yau, et al.
+    - Title: |
+        "Before and After: A Comparison of Legacy and Harmonized TCGA Data at the Genomic Data
+        Commons"
+      URL: https://doi.org/10.1016/j.cels.2019.06.006
+      AuthorName: Galen F. Gao, Joel S. Parker, et al.
+    - Title: The chromatin accessibility landscape of primary human cancers
+      URL: https://doi.org/10.1126/science.aav1898
+      AuthorName: M. Ryan Corces, Jeffrey M. Granja, et al.

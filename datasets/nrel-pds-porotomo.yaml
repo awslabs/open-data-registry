@@ -1,0 +1,51 @@
+Name: PoroTomo
+Description: |
+  Released to the public as part of the Department of Energy's Open Energy Data
+  Initiative, these data represent vertical and horizontal distributed acoustic
+  sensing (DAS) data collected as part of the Poroelastic Tomography (PoroTomo)
+  project funded in part by the Office of Energy Efficiency and Renewable
+  Energy (EERE), U.S. Department of Energy.
+Documentation: https://github.com/openEDI/documentation/blob/master/PoroTomo.md
+Contact: Thomas Coleman (thomas.coleman@silixa.com)
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: As needed
+Tags:
+  - geothermal
+  - seismology
+  - image processing
+  - geospatial
+License: Creative Commons Attribution 3.0 United States License
+Resources:
+  - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in SEG-Y format
+    ARN: arn:aws:s3:::nrel-pds-porotomo/SEG-Y/DASH/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in SEG-Y format
+    ARN: arn:aws:s3:::nrel-pds-porotomo/SEG-Y/DASV/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-porotomo/H5/DASH/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-porotomo/H5/DASV/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) backend data'
+    ARN: arn:aws:s3:::nrel-pds-hsds/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: PoroTomo DAS Data Processing Tutorial
+      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data.ipynb
+      AuthorName: Nicole Taverna and Ross Ring-Jarvi
+      AuthorURL: https://orcid.org/0000-0001-7776-2028
+  Publications:
+    - Title: 'DAS and DTS at Brady Hot Springs: Observations about Coupling and Coupled Interpretations'
+      URL: https://pangea.stanford.edu/ERE/pdf/IGAstandard/SGW/2018/Miller.pdf
+      AuthorName: Douglas E. Miller, Thomas Coleman, Xiangfang Zeng, Jeremy R. Patterson , Elena C. Reinnisch, Michael A. Cardiff, Herbert F. Wang, Dante Fratta, Whitney Trainor-Guitton, Clifford H. Thurber, Michelle ROBERTSON, Kurt FEIGL, and The PoroTomo Team
+    - Title: 'Ground motion response to an ML 4.3 earthquake using co-located distributed acoustic sensing and seismometer arrays'
+      URL: https://doi.org/10.1093/gji/ggy182
+      AuthorName: Herbert F Wang, Xiangfang Zeng, Douglas E Miller, Dante Fratta, Kurt L Feigl, Clifford H Thurber, Robert J Mellors
