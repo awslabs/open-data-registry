@@ -1,0 +1,37 @@
+Name: 21st Century Daily Global Seamless Remote Sensing Data Cubes (SDCs)
+Description: By constructing a virtual constellation of complementary types of satellites, we integrated the merit of high spatial resolution Landsat data with that of high temporal frequency MODIS data, to produce a high spatial-resolution and temporally consistent, better data set overcoming a number of shortcomings that conventional Earth observation (EO) data have, including cloud effects, data damage or loss. To do so, we developed a spatial-temporal remote sensing data reconstruction and fusion framework with an automated, serverless production chain on the AWS. Based on it, we produced the seamless data cube (SDC) at a 30 m spatial resolution and daily interval in an analysis-ready-data (ARD) format. The constructed fine-grained SDC will significantly reduce the preprocessing burden of users, broaden the use of remotely sensed data to a wider range of communities, and give us the capacity of near-real-time EO. Such kind of data is a long-term dream in the remote sensing and application community, that has never been realized before. The data set will promote new knowledge discovery on patterns, and benefit the land science community for biophysical, and socio-economic information extraction from the ARD data, making it easy and convenient to assess various policy goals such as conservation of protected areas, supporting international policy making on climate change mitigation, and raising awareness on environmental issues. The knowledge gained from this uniquely comprehensive data set will form a new foundation for achieving the United Nations (UN) Sustainable Develop Goals (SDGs). 
+Documentation: https://github.com/thu-hanliu/sdc/blob/main/SDC_document.pdf
+Contact: liuhan18@mails.tsinghua.edu.cn
+ManagedBy: Department of Earth System Science, Tsinghua University
+UpdateFrequency: Periodically
+Tags:
+  - agriculture
+  - cities
+  - disaster response
+  - earth observation
+  - environmental
+  - geospatial
+  - land
+  - machine learning
+  - mapping
+  - natural resource
+  - satellite imagery
+  - sustainability
+  - urban
+  - water
+License: Open to non-commercial uses.
+Resources:
+  - Description: Daily Seamless Remote Sensing Data Cube (SDC)
+    ARN: arn:aws:s3:::sdc-daily-thu
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to Daily SDC on AWS
+      URL: https://github.com/thu-hanliu/sdc/blob/main/SDC_document.pdf
+      AuthorName: Han Liu
+      AuthorURL: https://github.com/thu-hanliu
+    - Title: Tutorials on how to use Daily SDC on AWS
+      URL: https://github.com/thu-hanliu/sdc/blob/main/SDC_tutorial.pdf
+      AuthorName: Han Liu
+      AuthorURL: https://github.com/thu-hanliu
