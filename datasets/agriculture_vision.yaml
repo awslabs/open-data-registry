@@ -1,0 +1,23 @@
+Name: AgricultureVision
+Description: 'Dataset associated with the paper "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis". Agriculture-Vision aims to be a publicly available large-scale aerial agricultural image dataset that is high-resolution, multi-band, and with multiple types of patterns annotated by agronomy experts. In its current stage, we have captured 94,986 512x512images sampled from 3,432 farmlands with nine types of annotations: double plant, drydown, endrow, nutrient deficiency, planter skip, storm damage, water, waterway and weed cluster. All of these patterns have substantial impacts on field conditions and the final yield. These farmland images were captured between 2017 and 2019 across multiple growing seasons in numerous farming locations in the US. Each field image contains four color channels: Near-infrared (NIR), Red, Green and Blue.  We first randomly split the 3,432 farmland images with a 6/2/2 train/val/test ratio. We then assign each sampled image to the split of the farmland image they are cropped from. This guarantees that no cropped images from the same farmland will appear in multiple splits in the final dataset. The generated Agriculture-Vision dataset thus contains 56,944/18,334/19,708 train/val/test images.'
+Documentation: https://arxiv.org/abs/2001.01306
+Contact: support@intelinair.com
+ManagedBy: IntelinAir, Inc.
+UpdateFrequency: Periodically
+Tags:
+  - aerial imagery
+  - agriculture
+  - computer vision
+  - deep learning
+License: Provided in the bucket.
+Resources:
+  - Description: Terms of use and paper provided.  Dataset provided as a series of tar.gz files with data for each year and an associated json file dscribing the train/validation/test split.
+    ARN: arn:aws:s3:::agriculture-vision
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: True
+DataAtWork:
+  Publications:
+    - Title: "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis"
+      URL: https://arxiv.org/abs/2001.01306
+      AuthorName: Mang Tik Chiu, et al.
