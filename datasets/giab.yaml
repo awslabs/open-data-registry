@@ -1,16 +1,19 @@
 Name: Genome in a Bottle on AWS
-Description: Several reference genomes to enable translation of whole human genome sequencing to clinical practice.
+Description: "Several reference genomes to enable translation of whole human genome sequencing to clinical practice. Note that on 11/12/2020 these data will be updated to reflect the most [up to date GIAB release](https://www.nist.gov/programs-projects/genome-bottle). During this update there will be a temporary lapse in data availability. If data are not available by 11/13/2020 please submit an [issue](https://github.com/awslabs/open-data-registry/issues)."
 Documentation: https://docs.opendata.aws/giab/readme.html
 Contact: http://genomeinabottle.org/
 UpdateFrequency: New data are added as soon as they are available.
 Tags:
   - aws-pds
+  - genetic
   - genomic
   - life sciences
+  - reference index
+  - vcf
 License: |
   There are no restrictions on the use of this data. More information on citation is available [here](https://www.nist.gov/programs-projects/genome-bottle).
 Resources:
-  - Description: Latest data
+  - Description: "GIAB release data"
     ARN: arn:aws:s3:::giab
     Region: us-west-2
     Type: S3 Bucket
