@@ -1,0 +1,120 @@
+Name: Foldingathome COVID-19 Datasets
+Description: >
+  [Folding@home](http://foldingathome.org) is a massively distributed computing
+  project that uses biomolecular simulations to investigate the [molecular origins of disease](https://foldingathome.org/diseases/)
+  and accelerate the discovery of new therapies. Run by the
+  [Folding@home Consortium](https://foldingathome.org/about/the-foldinghome-consortium/),
+  a worldwide network of research laboratories focusing on a variety of different
+  diseases, Folding@home seeks to address problems in human health on a scale
+  that is infeasible by another other means, sharing the results of these large-scale
+  studies with the research community through [peer-reviewed publications](https://foldingathome.org/papers-results/)
+  and publicly shared datasets.
+  During the [COVID-19 epidemic](https://en.wikipedia.org/wiki/Coronavirus_disease_2019),
+  Folding@home focused its resources on understanding the vulernabilities in
+  [SARS-CoV-2](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2),
+  the virus that causes COVID-19 disease, and working closely with a number of
+  experimental collaborators to accelerate progress toward effective therapies for
+  treating COVID-19 and ending the pandemic. In the process, it created the world's first
+  [exascale distributed computing resource](https://doi.org/10.1101/2020.06.27.175430),
+  enabling it to generate valuable scientific datasets of unprecedented size.
+  More information about Folding@home's COVID-19 research activities at the
+  [Folding@home COVID-19 page](https://foldingathome.org/diseases/infectious-diseases/covid-19/).
+  In addition to working directly with experimental collaborators and rapidly sharing
+  new research findings through preprint servers, Folding@home has joined other
+  researchers in committing to [rapidly share all COVID-19 research data](https://doi.org/10.1021/acs.jcim.0c00319),
+  and has joined forces with [AWS](https://aws.amazon.com/) and the
+  [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) to share datasets of unprecented side
+  through the [AWS Open Data Registry](https://registry.opendata.aws/),
+  indexing these massive datsets via the [MolSSI COVID-19 Molecular Structure and Therapeutics Hub](https://covid.molssi.org/).
+  This repository contains several major datasets from this effort and comprises
+  the single largest collection of molecular simulation data ever released.
+Documentation: https://github.com/FoldingAtHome/coronavirus
+Contact: "[Folding@home](https://foldingathome.org/contact-us/)"
+ManagedBy: "[Folding@home](https://foldingathome.org) // The [Folding@home Consortium](https://foldingathome.org/about/the-foldinghome-consortium/)"
+UpdateFrequency: Datasets will be updated periodically as additional simulations are completed.
+Tags:
+  - alchemical free energy calculations
+  - aws-pds
+  - biomolecular modeling
+  - coronavirus
+  - COVID-19
+  - foldingathome
+  - health
+  - life sciences
+  - molecular dynamics
+  - protein
+  - SARS-CoV-2
+  - simulations
+  - structural biology
+License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
+Resources:
+  - Description: Simulations of SARS-CoV-2 and associated host proteins, with emphasis on discovering druggable cryptic pockets, documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding).
+    ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Absolute free energy calculations of small molecules from the [COVID Moonshot](http://postera.ai), documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity)
+    ARN: arn:aws:s3:::fah-public-data-covid19-absolute-free-energy
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Simulations of target proteins and bound small molecules from the [COVID Moonshot](http://postera.ai), documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-sars-cov-2-main-protease-apo-monomer-simulations-3clpro-3clpro-protease-activity)
+    ARN: arn:aws:s3:::fah-public-data-covid19-moonshot-dynamics
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: "SARS-CoV-2 main viral protease (Mpro, 3CLPro, nsp5) monomer simulations: A 2.6 ms equilibrium dataset of the SARS-CoV-2 main viral protease (apo, monomer)"
+      URL: https://covid.molssi.org//simulations/#foldinghome-sars-cov-2-main-protease-apo-monomer-simulations-3clpro-3clpro-protease-activity
+      AuthorName: "The Chodera lab at MSKCC"
+      AuthorURL: https://choderalab.org
+    - Title: "SARS-CoV-2 COVID Moonshot absolute free energy calculations"
+      URL: https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity
+      AuthorName: "The Voelz lab at Temple University"
+      AuthorURL: http://www.voelzlab.org/
+    - Title: "SARS-CoV-2 spike protein dataset: A 1.2 ms dataset of the SARS-CoV-2 spike protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp10 dataset: A 6.1 ms dataset of the SARS-CoV-2 nsp10 protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp10-nsp10-nil
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 RNA polymerase (nsp12, RdRP) dataset: A 3.4 ms dataset of the SARS-CoV-2 nsp12 protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp12-rdrp-nil
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp3 macrodomain dataset: An 11 ms dataset of the SARS-CoV-2 nsp3 macrodomain in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp3-macrodomain-macrodomain-host-immune-response
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp3 pl2pro domain dataset: An 731 µs dataset of the SARS-CoV-2 nsp3 pl2pro domain in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp3-pl2pro-domain-plpro-plpro-protease-activity
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 main viral protease (Mpro, 3CLPro, nsp5) monomer simulations: A 6.4 ms dataset of the SARS-CoV-2 main viral protease (apo, monomer) in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp5-3clpro-3clpro-protease-activity
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 main viral protease (Mpro, 3CLPro, nsp5) dimer simulations: A 2.9 ms dataset of the SARS-CoV-2 main viral protease (apo, dimer) in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp5-3clpro-3clpro-protease-activity
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp7 simulations: A 3.7 ms dataset of the SARS-CoV-2 nsp7 protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp7-nsp7-nil
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp8 simulations: A 1.8 ms dataset of the SARS-CoV-2 nsp8 protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp8-nsp8-nil
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 nsp9 simulations: A 9 ms dataset of the SARS-CoV-2 nsp9 protein in search of cryptic pockets"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp9-nsp9-nil
+      AuthorName: "The Bowman lab at Washington University in St. Louis"
+      AuthorURL: https://bowmanlab.biochem.wustl.edu
+  Tutorials:
+    - Title: "Folding@home COVID-19 efforts"
+      URL: https://github.com/FoldingAtHome/coronavirus/blob/master/README.md
+      AuthorName: "Folding@home Consortium"
+  Publications:
+    - Title: "SARS-CoV-2 Simulations Go Exascale to Capture Spike Opening and Reveal Cryptic Pockets Across the Proteome"
+      URL: https://doi.org/10.1101/2020.06.27.175430
+      AuthorName: "Maxwell I. Zimmerman, Justin R. Porter, Michael D. Ward, Sukrit Singh, Neha Vithani, Artur Meller, Upasana L. Mallimadugula, Catherine E. Kuhn, Jonathan H. Borowsky,  View ORCID ProfileRafal P. Wiewiora, Matthew F. D. Hurley, Aoife M Harbison, Carl A Fogarty, Joseph E. Coffland, Elisa Fadda, Vincent A. Voelz, John D. Chodera, Gregory R. Bowman"

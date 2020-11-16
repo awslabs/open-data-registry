@@ -1,0 +1,72 @@
+Name: Sentinel-2 Cloud-Optimized GeoTIFFs
+Description: |
+  The [Sentinel-2 mission](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) is
+  a land monitoring constellation of two satellites that provide high resolution
+  optical imagery and provide continuity for the current SPOT and Landsat missions.
+  The mission provides a global coverage of the Earth's land surface every 5 days,
+  making the data of great use in ongoing studies.
+  This dataset is the same as the [Sentinel-2](https://registry.opendata.aws/sentinel-2/)
+  dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
+  Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
+  alongside the data, and a STAC API called [Earth-search](https://earth-search.aws.element84.com/v0)
+  is freely available to search the archive. This dataset contains all of the scenes in the
+  original Sentinel-2 Public Dataset and will grow as that does.
+  L2A data are available from April 2017 over wider Europe region and globally since December 2018.
+Documentation: https://github.com/cirrus-geo/cirrus-earth-search
+Contact: opendata@element84.com
+ManagedBy: "[Element 84](https://www.element84.com/)"
+UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - disaster response
+License: |
+  Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+Resources:
+  - Description: Level 2A scenes and metadata
+    ARN: arn:aws:s3:::sentinel-cogs
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+    ARN: arn:aws:s3:::sentinel-cogs-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
+    ARN: arn:aws:sns:us-west-2:608149789419:cirrus-v0-publish
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Intake-STAC with sat-search
+      URL:   https://github.com/intake/intake-stac/blob/master/examples/aws-earth-search.ipynb
+      AuthorName: Scott Henderson
+    - Title: Create a Dynamic Tiler with TiTiler
+      URL:   https://github.com/developmentseed/titiler/blob/master/docs/examples/Create_CustomSentinel2Tiler.ipynb
+      AuthorName: Vincent Sarago
+    - Title: Use Sentinel-2 data in the Open Data Cube
+      URL: https://github.com/opendatacube/cube-in-a-box
+      AuthorName: Alex Leith
+  Publications:
+    - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
+      URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing
+      AuthorName: Matthew Hanson
+  Tools & Applications:
+    - Title: SpatioTemporal Asset Catalogs
+      URL: https://stacindex.org/
+      AuthorName: STAC Contriubutors
+    - Title: Sat-search
+      URL: https://github.com/sat-utils/sat-search
+      AuthorName: Matthew Hanson
+    - Title: rio-tiler-pds
+      URL: https://github.com/cogeotiff/rio-tiler-pds
+      AuthorName: Vincent Sarago, et al.
