@@ -10,6 +10,7 @@ Collabs:
       - weather
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - natural resource
   - weather
@@ -33,8 +34,12 @@ Resources:
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
     Region: us-east-1
     Type: SNS Topic
-  - Description: Notifications for archival data
+  - Description: Notifications for the Level II archival bucket
     ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Notifications for the Level III bucket
+    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
