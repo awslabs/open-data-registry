@@ -22,6 +22,8 @@ Resources:
     ARN: arn:aws:s3:::noaa-nbm-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nbm-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for NBM-COG Format, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewNBMCOGObject
     Region: us-east-1
@@ -30,6 +32,8 @@ Resources:
     ARN: arn:aws:s3:::noaa-nbm-grib2-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nbm-grib2-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for NBM-Grib2 Format, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewNBMGRIBObject
     Region: us-east-1

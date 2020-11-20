@@ -24,6 +24,8 @@ Resources:
     ARN: arn:aws:s3:::noaa-himawari8
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-himawari8.s3.amazonaws.com/index.html)'
   - Description: New data notifications for Himawari-8, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewHimawari8Object
     Region: us-east-1

@@ -21,10 +21,14 @@ Resources:
     ARN: arn:aws:s3:::fmi-opendata-radar-geotiff
     Region: eu-west-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://fmi-opendata-radar-geotiff.s3.amazonaws.com/index.html)'
   - Description: Volume data as HDF5
     ARN: arn:aws:s3:::fmi-opendata-radar-volume-hdf5
     Region: eu-west-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://fmi-opendata-radar-volume-hdf5.s3.amazonaws.com/index.html)'
   - Description: Notifications for new GeoTIFF data
     ARN: arn:aws:sns:eu-west-1:916174725480:fmi-opendata-radar-geotiff-object_created
     Region: eu-west-1
