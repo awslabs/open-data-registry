@@ -29,6 +29,18 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical meteorological years (TMY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tmy/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical direct years (TDY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tdy/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical global years (TGY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tgy/
+    Region: us-west-2
+    Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) synthetically downscaled 2km x 5min for Puerto Rico (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
     ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/puerto_rico/
     Region: us-west-2
@@ -43,6 +55,10 @@ Resources:
     Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-15min data from the Meteosat satellites starting in 2017 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
     ARN: arn:aws:s3:::nrel-pds-nsrdb/meteosat/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-10min data from the Himawari satellites starting in 2015 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/himawari/
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
