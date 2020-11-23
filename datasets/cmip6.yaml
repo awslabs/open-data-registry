@@ -21,11 +21,13 @@ Tags:
   - simulations
   - weather
 License: https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html
-Resources: # skip for now
+Resources:
   - Description: Zarr formatted data
     ARN: arn:aws:s3:::cmip6-pds
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmip6-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Publications:
     - Title: "Special issue | Coupled Model Intercomparison Project Phase 6 (CMIP6) Experimental Design and Organization"
