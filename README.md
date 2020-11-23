@@ -104,6 +104,8 @@ Resources:
     ARN: arn:aws:s3:::noaa-nexrad-level2
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
     Region: us-east-1
