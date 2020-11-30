@@ -26,6 +26,7 @@ Description: >
   [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) to share datasets of unprecented side
   through the [AWS Open Data Registry](https://registry.opendata.aws/),
   indexing these massive datsets via the [MolSSI COVID-19 Molecular Structure and Therapeutics Hub](https://covid.molssi.org/).
+  The complete index of all Folding@home datasets can be found [here](https://covid.molssi.org//org-contributions/#folding--home).
   This repository contains several major datasets from this effort and comprises
   the single largest collection of molecular simulation data ever released.
 Documentation: https://github.com/FoldingAtHome/coronavirus
@@ -50,6 +51,10 @@ License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
 Resources:
   - Description: Simulations of SARS-CoV-2 and associated host proteins, with emphasis on discovering druggable cryptic pockets, documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-protein-spike-spike-binding).
     ARN: arn:aws:s3:::fah-public-data-covid19-cryptic-pockets
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Simulations of SARS-CoV-2 and associated host proteins relevant to neutralization by therapeutic antibodies, documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-rbd-bound-to-human-ace2).
+    ARN: arn:aws:s3:::fah-public-data-covid19-antibodies
     Region: us-east-2
     Type: S3 Bucket
   - Description: Absolute free energy calculations of small molecules from the [COVID Moonshot](http://postera.ai), documented at the [MolSSI COVID Hub](https://covid.molssi.org//simulations/#foldinghome-expanded-ensemble-absolute-free-energy-calculations-of-potential-small-molecule-inhibitors-of-the-sars-cov-2-main-protease-from-the-covid-moonshot-3clpro-3clpro-protease-activity)
@@ -110,6 +115,10 @@ DataAtWork:
       URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-nsp9-nsp9-nil
       AuthorName: "The Bowman lab at Washington University in St. Louis"
       AuthorURL: https://bowmanlab.biochem.wustl.edu
+    - Title: "SARS-CoV-2 spike RBD bound to human ACE2 receptor (173.8 us): Wild-type and mutant simulations"
+      URL: https://covid.molssi.org//simulations/#foldinghome-simulations-of-the-sars-cov-2-spike-rbd-bound-to-human-ace2
+      AuthorName: "The Chodera lab at the Memorial Sloan Kettering Cancer Center"
+      AuthorURL: https://choderalab.org
   Tutorials:
     - Title: "Folding@home COVID-19 efforts"
       URL: https://github.com/FoldingAtHome/coronavirus/blob/master/README.md
