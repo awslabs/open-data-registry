@@ -21,6 +21,8 @@ Resources:
     ARN: arn:aws:s3:::noaa-gefs-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-gefs-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGEFSObject
     Region: us-east-1
