@@ -1,0 +1,33 @@
+Name: NOAA World Ocean Database (WOD)
+Description: >
+  The World Ocean Database (WOD) is the largest uniformly formatted, quality-controlled, publicly available historical subsurface ocean profile database. From Captain Cook's second voyage in 1772 to today's automated Argo floats, global aggregation of ocean variable information including temperature, salinity, oxygen, nutrients, and others vs. depth allow for study and understanding of the changing physical, chemical, and to some extent biological state of the World's Oceans. Browse the bucket via the AWS S3 explorer: https://noaa-wod-pds.s3.amazonaws.com/index.html
+Documentation: https://www.nodc.noaa.gov/OC5/WOD/pr_wod.html
+Contact: >
+  For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov.
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Data is update on a quarterly basis
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - climate
+  - sustainability
+  - oceans
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: World Ocean Database (WOD) NetCDF Format
+    ARN: arn:aws:s3:::noaa-wod-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-wod-pds.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Publications:
+    - Title: The World Ocean Database Introduction
+      URL: https://data.nodc.noaa.gov/woa/WOD/DOC/wod_intro.pdf
+      AuthorName: Tim P. Boyer, Olga K. Baranova, Carla Coleman, Hernan E. Garcia, Alexandra Grodsky, Ricardo A. Locarnini, Alexey V. Mishonov, Christopher R. Paver, James R. Reagan, Dan Seidov, Igor V. Smolyar, Katharine W. Weathers, Melissa M. Zweng
+    - Title: The World Ocean Database User's Manual
+      URL: https://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf
+      AuthorName: Hernan E. Garcia, Tim P. Boyer, Ricardo A. Locarnini, Olga K. Baranova, Melissa M. Zweng

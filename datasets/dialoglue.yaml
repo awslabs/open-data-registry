@@ -1,0 +1,30 @@
+Name: "DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue"
+Description: |
+  This bucket contains the checkpoints used to reproduce the baseline results reported in the DialoGLUE benchmark hosted
+  on EvalAI (https://evalai.cloudcv.org/web/challenges/challenge-page/708/overview). The associated scripts for using the checkpoints are located here:
+  https://github.com/alexa/dialoglue. The associated paper describing the benchmark and checkpoints is here: https://arxiv.org/abs/2009.13570.
+  The provided checkpoints include the CONVBERT model, a BERT-esque model trained on a large open-domain conversational
+  dataset. It also includes the CONVBERT-DG and BERT-DG checkpoints described in the linked
+  paper.
+Documentation: https://github.com/alexa/dialoglue
+Contact: mihaeric@amazon.com, mehrishikib@gmail.com, hakkanit@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not currently being updated
+Tags:
+  - aws-pds
+  - natural language processing
+  - machine learning
+  - conversation data
+License: "[CDLA-Sharing](https://cdla.io/sharing-1-0/)"
+Resources:
+  - Description: "DialoGLUE checkpoints"
+    ARN: arn:aws:s3:::dialoglue
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://dialoglue.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Publications:
+    - Title: "DialoGLUE: A Natural Language Understanding Benchmark for Task-Oriented Dialogue"
+      URL: https://arxiv.org/abs/2009.13570
+      AuthorName: Shikib Mehri, Mihail Eric, Dilek Hakkani-Tur

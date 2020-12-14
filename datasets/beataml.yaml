@@ -1,0 +1,59 @@
+Name: Beat Acute Myeloid Leukemia (AML) 1.0
+Description: |
+  Beat AML 1.0 is a collaborative research program involving 11 academic medical centers who worked
+  collectively to better understand  drugs and drug combinations that should be prioritized for
+  further development within clinical and/or molecular subsets of acute myeloid leukemia (AML)
+  patients. Beat AML 1.0 provides the largest-to-date dataset on primary acute myeloid leukemia
+  samples offering genomic, clinical, and drug response.
+  
+  This dataset contains open Clinical Supplement and RNA-Seq Gene Expression Quantification data.
+
+  This dataset also contains controlled Whole Exome Sequencing (WXS) and RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation,
+  WXS Raw Somatic Mutation, and RNA-Seq Splice Junction Quantification  
+Documentation: |
+  https://www.cancer.gov/about-nci/organization/ccg/blog/2019/beataml
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - genetic
+  - genomic
+  - Homo sapiens
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: BEATAML1.0-COHORT RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-beataml1-cohort-phs001657-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: BEATAML1.0-CRENOLANIB Clinical Supplement
+    ARN: arn:aws:s3:::gdc-beataml1.0-crenolanib-phs001628-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      WXS/RNA-Seq Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, RNA-Seq
+      Splice Junction Quantification
+    ARN: arn:aws:s3:::gdc-beataml1-cohort-phs001657-2-controlled
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001657.v1.p1&phv=417530&phd=&pha=&pht=9391&phvf=&phdf=&phaf=&phtf=&dssp=1&consent=&temp=1
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: Functional Genomic Landscape of Acute Myeloid Leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/30333627
+      AuthorName: Jeffrey W. Tyner, Cristina E. Tognon, Dan Bottomly et al.
+    - Title: |
+        Clinical resistance to crenolanib in acute myeloid leukemia due to diverse molecular
+        mechanisms
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/30651561
+      AuthorName: Zhang H, Savage S, Schultz AR, Bottomly D, White L, Segerdell E, et al.

@@ -1,0 +1,25 @@
+Name: Crowdsourced Bathymetry
+Description: Community provided bathymetry data collected in collaboration with the International Hydrographic Organization.
+Documentation: https://odp-noaa-nesdis-ncei-csb-docs.s3-us-west-2.amazonaws.com/readme.htm
+Contact: mb.info@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: New data is added once a week.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - earth observation
+  - sustainability
+  - oceans
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Crowdsourced bathymetry data
+    ARN: arn:aws:s3:::odp-noaa-nesdis-ncei-csb
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for CSB data
+    ARN: arn:aws:sns:us-west-2:541768555562:odp-noaa-nesdis-ncei-csb
+    Region: us-west-2
+    Type: SNS Topic

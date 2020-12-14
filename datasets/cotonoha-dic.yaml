@@ -1,0 +1,44 @@
+Name: Japanese Tokenizer Dictionaries
+Description: Japanese Tokenizer Dictionaries for use with MeCab.
+Documentation: |
+  This dataset includes dictionaries for tokenization and morphological
+  analysis of Japanese for use with MeCab. This includes NINJAL's UniDic, a
+  modified smaller version of UniDic for situations that require it, and the
+  legacy IPADic dictionary.
+Contact: polm@cotonoha.io
+ManagedBy: Cotonoha
+UpdateFrequency: Infrequently (typically less than once a year)
+Tags:
+  - aws-pds
+  - natural language processing
+  - csv
+  - japanese
+License: |
+  Versions of Unidic offered here are available under the GPL/LGPL/BSD license.
+  
+  IPADic is offered under a unique BSD-like license. See below. 
+  
+      https://github.com/polm/ipadic-py/blob/master/ipadic/dicdir/COPYING
+Resources:
+  - Description: "Dictionary Files"
+    ARN: arn:aws:s3:::cotonoha-dic
+    Region: ap-northeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Fugashi Word Count Tutorial
+      URL: "https://github.com/polm/fugashi-sagemaker-demo/blob/master/fugashi%20wordcount.ipynb"
+      AuthorName: "Paul O'Leary McCann"
+      AuthorURL: "https://cotonoha.io"
+      Services:
+        - SageMaker
+  "Tools & Applications":
+    - Title: unidic-py
+      URL: https://github.com/polm/unidic-py
+      AuthorName: "Paul O'Leary McCann"
+      AuthorURL: "https://cotonoha.io"
+  Publications:
+    - Title: "How to Tokenize Japanese in Python"
+      URL: https://www.dampfkraft.com/nlp/how-to-tokenize-japanese.html
+      AuthorName: "Paul O'Leary McCann"
+      AuthorURL: "https://dampfkraft.com"

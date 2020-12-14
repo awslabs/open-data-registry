@@ -1,0 +1,43 @@
+Name: JMA Himawari-8
+Description: Himawari-8, stationed at 140E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-9  as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. For questions regarding Himawari-8 imagery specifications, visit the JMA site at https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html.  For examples of Full Disk Himawari-8 imagery coverage, visit the NOAA Himawari-8 data page at https://www.goes.noaa.gov/f_himawari-8.html.
+Documentation: https://www.data.jma.go.jp/mscweb/en/himawari89/cloud_service/cloud_service.html https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html
+Contact: noaa.bdp@noaa.gov.
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 10 minutes for Full Disk, 2.5 minutes for Regions 1, 2, and 3, and .5 minutes for Regions 4 and 5.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - geospatial
+  - weather
+  - earth observation
+  - meteorological
+  - sustainability
+  - disaster response
+  - satellite imagery
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Himawari-8 Imagery
+    ARN: arn:aws:s3:::noaa-himawari8
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-himawari8.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Himawari-8, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewHimawari8Object
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "Himawari-8 Advanced Himawari Imager Data on AWS (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July08_NOAA_Himawari.pdf
+      AuthorName: NOAA NESDIS
+    - Title: "Introduction of Himawari-8/9 (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July07_JMA_Himawari.pdf
+      AuthorName: JMA
+    - Title: "Himawari-8 on AWS (pdf file)"
+      URL: https://docs.opendata.aws/noaa-himawari/2020July08_Amazon_Himawari.pdf
+      AuthorName: ASDI

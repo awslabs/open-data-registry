@@ -1,0 +1,39 @@
+Name: Speedtest by Ookla Global Fixed and Mobile Network Performance Maps
+Description: |
+  Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.
+Documentation: "[Performance Maps Overview](https://github.com/teamookla/ookla-open-data)"
+Contact: opendata@ookla.com
+ManagedBy: "[Ookla](https://www.ookla.com/ookla-for-good)"
+UpdateFrequency: Quarterly
+Tags:
+  - analytics
+  - aws-pds
+  - broadband
+  - cities
+  - civic
+  - disaster response
+  - geospatial
+  - global
+  - government spending
+  - infrastructure
+  - internet
+  - mapping
+  - parquet
+  - network traffic
+  - regulatory
+  - telecommunications
+  - tiles
+License: |
+  "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+  <br/><br/>
+  **Recommended Citation**
+  <br/>
+  Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps.
+  Based on analysis by Ookla of Speedtest Intelligence® data for [DATA TIME PERIOD].
+  Provided by Ookla and accessed [DAY MONTH YEAR].
+  Ookla trademarks used under license and reprinted with permission.
+Resources:
+  - Description: Parquet and Shapefiles
+    ARN: arn:aws:s3:::ookla-open-data
+    Region: us-west-2
+    Type: S3 Bucket

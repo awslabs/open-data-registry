@@ -1,0 +1,40 @@
+Name: CoversBR
+Description: |
+  CoversBR is the first large audio database with, predominantly, Brazilian music for the tasks of Covers Song
+  Identification (CSI) and Live Song Identifications (LSI). Due to copyright restrictions audios of
+  the songs cannot be made available, however metadata and files of features have public access. Audio
+  streamings captured from radio and TV channels for the live song identification task will be made public.
+  CoversBR is composed of metadata and features extracted from 102298 songs, distributed in 26366
+  groups of covers/versions, with an average of 3.88 versions per group. The entire collection adds up to a total of
+  approximately 7070 hours and the average song length is 240 seconds (4 minutes).
+    
+
+Documentation: https://github.com/SPLab-IT/CoversBR
+Contact: https://github.com/SPLab-IT/CoversBR/issues
+ManagedBy: "Dirceu G Silva"
+UpdateFrequency: New metadata, songs features files and audio streamings for live song identification will be added as soon as available.
+Tags:
+  - aws-pds
+  - copyright monitoring
+  - cover song identification
+  - live song identification
+  - music
+  - music features dataset
+  - music information retrieval
+  - music recognition
+License: |
+  The code in this repository is licensed under Apache 2.0
+
+  The metadata and the pre-extracted features are licensed under CC BY-NC-SA 4.0
+Resources:
+  - Description: metadata of songs, features files and audio streaming
+    ARN: arn:aws:s3:::covers-song-br
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using the (CoversBR) dataset
+      URL: https://github.com/SPLab-IT/CoversBR#using-the-dataset---tutorial
+      AuthorName: Dirceu Silva, Atila Xavier, Edgard Moraes, Marco Grivet and Fernando Perdigão
+      AuthorURL: https://github.com/SPLab-IT/CoversBR
+

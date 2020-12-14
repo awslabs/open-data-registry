@@ -1,0 +1,32 @@
+Name: National Cancer Institute Center for Cancer Research - Diffuse Large B Cell Lymphoma (DLBCL) Genomics and Expression
+Description: |
+  The study describes integrative analysis of genetic lesions in 574 diffuse large B cell lymphomas
+  (DLBCL) involving exome and transcriptome sequencing, array-based DNA copy number analysis and
+  targeted amplicon resequencing. The dataset contains open RNA-Seq Gene Expression Quantification
+  data.
+Documentation: https://gdc.cancer.gov/about-data/publications/DLBCL-2018
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-nciccr-phs001444-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/NCICCR-DLBCL
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: Genetics and Pathogenesis of Diffuse Large B Cell Lymphoma
+      URL: https://doi.org/10.1056/NEJMoa1801445
+      AuthorName: Roland Schmitz, Ph.D., George W. Wright, Ph.D., Da Wei Huang, M.D., et al.
