@@ -21,18 +21,31 @@ Tags:
   - sustainability
   - geospatial
   - model
+  - solar
 License:  Creative Commons Attribution 3.0 United States License
 Resources:
   - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
     ARN: arn:aws:s3:::oedi-data-lake/umcm/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) UMCM domains'
+    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/umcm/
+    Region: us-west-2
+    Type: S3 Bucket
   - Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
     ARN: arn:aws:s3:::oedi-data-lake/dgen/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: '[Lawrence Berkeley National Laboratory (LBNL) Tracking the Sun](https://github.com/openEDI/documentation/blob/master/TrackingtheSun.md)'
+    ARN: arn:aws:s3:::oedi-data-lake/tracking-the-sun/
+    Region: us-west-2
+    Type: S3 Bucket
 DataAtWork:
   Tools & Applications:
+    - Title: "Tracking the Sun Tool"
+      URL: https://emp.lbl.gov/tracking-sun-tool
+      AuthorName: Lawrence Berkeley National Laboratory (LBNL)
+      AuthorURL: https://emp.lbl.gov/tracking-the-sun
   Publications:
     - Title:  "On the Use of Coupled Wind, Wave, and Current Fields in the Simulation of Loads on BottomSupported Offshore Wind Turbines during Hurricanes"
       URL:  https://www.nrel.gov/docs/fy16osti/65283.pdf
@@ -40,3 +53,6 @@ DataAtWork:
     - Title:  "The Distributed Generation Market Demand Model (dGen):Documentation"
       URL:  https://www.nrel.gov/docs/fy16osti/65231.pdf
       AuthorName: B. Sigrin, M. Gleason, R. Preus, I. Baring-Gould, R. Margolis
+    - Title:  "Tracking the Sun Pricing and Design Trends for Distributed Photovoltaic Systems in the United States: 2019 Edition"
+      URL:  https://emp.lbl.gov/sites/default/files/tracking_the_sun_2019_report.pdf
+      AuthorName: G. Barbose, N. Darghouth

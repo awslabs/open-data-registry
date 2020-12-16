@@ -20,6 +20,8 @@ Resources:
     ARN: arn:aws:s3:::openaq-fetches
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://openaq-fetches.s3.amazonaws.com/index.html)'
   - Description: Rich SNS topic for new measurements, 1 notification per measurement, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
     ARN: arn:aws:sns:us-east-1:470049585876:OPENAQ_NEW_MEASUREMENT
     Region: us-east-1
