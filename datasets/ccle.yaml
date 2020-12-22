@@ -1,0 +1,64 @@
+Name: Cancer Cell Line Encyclopedia (CCLE)
+Description: |
+  The Cancer Cell Line Encyclopedia (CCLE) project is an effort to conduct a detailed genetic
+  characterization of a large panel of human cancer cell lines. The CCLE provides public access to
+  genomic data, visualization and analysis for over 1100 cancer cell lines. This dataset contains
+  RNA-Seq Aligned Reads, WXS Aligned Reads, and WGS Aligned Reads data.
+Documentation: https://portals.broadinstitute.org/ccle/about
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genetic
+  - genomic
+  - life sciences
+  - transcriptomics
+  - whole genome sequencing
+  - Homo sapiens
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Alligned Reads, WXS Alligned Reads, WGS Alligned Reads
+    ARN: arn:aws:s3:::gdc-ccle-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/legacy-archive/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: Broad Institute Cancer Cell Line Encyclopedia
+      URL: https://portals.broadinstitute.org/ccle
+      AuthorName: The Broad Institute of MIT & Harvard
+      AuthorURL: https://www.broadinstitute.org/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: https://docs.sevenbridges.com/docs/ccle-data
+    - Title: ISB CGC BigQuery tables
+      URL: https://console.cloud.google.com/bigquery?p=isb-cgc&d=CCLE_bioclin_v0&page=dataset
+      AuthorName: Institute for Systems Biology
+      AuthorURL: |
+        https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/CCLE_top.html
+  Publications:
+    - Title: Next-generation characterization of the Cancer Cell Line Encyclopedia
+      URL: https://doi.org/10.1038/s41586-019-1186-3
+      AuthorName: Ghandi, M., Huang F. et al.
+    - Title: The landscape of cancer cell line metabolism
+      URL: https://doi.org/10.1038/s41591-019-0404-8
+      AuthorName: Li, H. et al.
+    - Title: |
+        The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug
+        sensitivity
+      URL: https://doi.org/10.1038/nature11003
+      AuthorName: Barretina Caponigro Stransky et al.
+    - Title: Pharmacogenomic agreement between two cancer cell line data sets
+      URL: https://doi.org/10.1038/nature15736
+      AuthorName: |
+        The Cancer Cell Line Encyclopedia Consortium & The Genomics of Drug Sensitivity in Cancer
+        Consortium

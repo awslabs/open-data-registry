@@ -1,0 +1,45 @@
+Name: National Renewable Energy Laboratory's (NREL) PV Rooftop Database
+Description: "Released to the public as part of the Department of Energy's Open Energy Data Initiative, the National Renewable Energy Laboratory's (NREL) PV Rooftop Database (PVRDB) is a lidar-derived, geospatially-resolved dataset of suitable roof surfaces and their PV technical potential for 128 metropolitan regions in the United States. The source lidar data and building footprints were obtained by the U.S. Department of Homeland Security Homeland Security Infrastructure Program for 2006-2014. Using GIS methods, NREL identified suitable roof surfaces based on their size, orientation, and shading parameters Gagnon et al. 2016. Standard 2015 technical potential was then estimated for each plane using NREL's System Advisor Model.  The PVRDB is down-loadable by city and year of lidar collection. Five geospatial layers are available for each city and year: 1) the raster extent of the lidar collection, 2) buildings identified from the lidar data, 3) suitable developable planes for each building, 4) aspect values of the developable planes, and 5) the technical potential estimates of the developable planes. The first and current version of the PVRDB is derived from 2006-2014, 1-meter lidar data from the U.S. Department of Homeland Security for 128 metropolitan regions. Suitability is defined as any roof area that is less than 60 degrees in tilt; has an orientation facing east, southeast, south, southwest, or west; is in sunlight for a minimum number of hours per day (determined uniquely for each region); and has at least 10 m2 of contiguous area that meets the above listed criteria. Technical potential estiamtes were estimated using SAM, with NSRDB v1 as the underlying resource data. Technical parameters assumed a 2015 typical residential PV rooftop system."
+Documentation: https://github.com/openEDI/documentation/blob/master/PVROOFTOPS.md
+Contact:  https://github.com/openEDI/documentation/issues
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency:  This dataset is composed of historical data only.  No new releases are expected.
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - geospatial
+  - lidar
+  - solar
+  - sustainability
+License:  Creative Commons Attribution 3.0 United States License
+Resources:
+  - Description: PV Rooftops Dataset in Parquet format partitioned by City_Year
+    ARN: arn:aws:s3:::nrel-pv-rooftops
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title:  "NSRDB Viewer"
+      URL: https://maps.nrel.gov/nsrdb-viewer/?aL=0&bL=groad&cE=0&lR=0&mC=31.653381399664%2C-3.1640625&zL=2
+      AuthorName: NREL
+      AuthorURL:  https://www.nrel.gov/
+  Publications:
+    - Title:  "Rooftop Solar Technical Potential for Low-to-Moderate Income Households in the United States"
+      URL:  https://www.nrel.gov/docs/fy18osti/70901.pdf
+      AuthorName: Benjamin Sigrin and Meghan Mooney
+      AuthorURL:  https://www.nrel.gov/
+    - Title:  "Using GIS-based methods and lidar data to estimate rooftop solar technical potential in US cities"
+      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aa7225/pdf
+      AuthorName:  Robert Margolis et al 2017 Environ. Res. Lett. 12 074013
+      AuthorURL:
+    - Title:  "Estimating rooftop solar technical potential across the US using a combination of GIS-based methods, lidar data, and statistical modeling"
+      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aaa554/pdf
+      AuthorName:  Pieter Gagnon et al 2018 Environ. Res. Lett. 13 024027
+      AuthorURL:
+    - Title:  "Rooftop Solar Photovoltaic Technical Potential in the United States: A Detailed Assessment"
+      URL:  https://www.nrel.gov/docs/fy16osti/65298.pdf
+      AuthorName:  Pieter Gagnon, Robert Margolis, Jennifer Melius, Caleb Phillips, and Ryan Elmore
+      AuthorURL: https://www.nrel.gov/

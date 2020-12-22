@@ -1,0 +1,43 @@
+Name: Medical Segmentation Decathlon
+Description: "With recent advances in machine learning, semantic segmentation algorithms are becoming increasingly general purpose and translatable to unseen tasks. Many key algorithmic advances in the field of medical imaging are commonly validated on a small number of tasks, limiting our understanding of the generalisability of the proposed contributions. A model which works out-of-the-box on many tasks, in the spirit of AutoML, would have a tremendous impact on healthcare. The field of medical imaging is also missing a fully open source and comprehensive benchmark for general purpose algorithmic validation and testing covering a large span of challenges, such as: small data, unbalanced labels, large-ranging object scales, multi-class labels, and multimodal imaging, etc. This challenge and dataset aims to provide such resource thorugh the open sourcing of large medical imaging datasets on several highly different tasks, and by standardising the analysis and validation process."
+Documentation: http://medicaldecathlon.com
+Contact: "[Medical Decathlon Organisers](medicaldecathlon@gmail.com)"
+ManagedBy: "[MONAI Development Team](https://github.com/Project-MONAI/MONAI)"
+UpdateFrequency: "This is a static dataset; however, tutorials and resources will be updated as they are developed."
+Tags:
+  - aws-pds
+  - health
+  - life sciences
+  - medicine
+  - imaging
+  - magnetic resonance imaging
+  - nifti
+  - computed tomography
+  - segmentation
+License: "[CC-BY-SA 4.0 International](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: "Ten tasks from the Medical Segmentation Decathlon Challenge. Tasks are organized by organ system and pathology, as follow, Liver Tumours; Brain Tumours; Hippocampus; Lung Tumours; Prostate; Cardiac; Pancreas Tumour; Colon Cancer; Hepatic Vasculature; Spleen.
+                  Tasks are provided in both tar.gz and uncompressed format."
+    ARN: arn:aws:s3:::msd-for-monai
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "This is a mirror of s3://msd-for-monai in eu-west-2."
+    ARN: arn:aws:s3:::msd-for-monai-eu
+    Region: eu-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Pytorch-Integrated MSD Data Loader
+      URL: https://github.com/Project-MONAI/tutorials
+      AuthorName: MONAI Development Team
+      AuthorURL: https://github.com/Project-MONAI/MONAI
+      Services:
+  Tools & Applications:
+    - Title: "MONAI: Getting Started"
+      URL: www.monai.io
+      AuthorName: MONAI Development Team
+      AuthorURL: https://monai.io/start.html
+  Publications:
+    - Title: "A large annotated medical image dataset for the development and evaluation of segmentation algorithms"
+      URL: https://arxiv.org/pdf/1902.09063.pdf
+      AuthorName: Simpson A. L., Antonelli M., Bakas S., Bilello M., Farahana K., van Ginneken B., et al

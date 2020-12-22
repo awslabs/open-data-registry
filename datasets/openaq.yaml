@@ -4,6 +4,10 @@ Documentation: https://openaq.org
 Contact: info@openaq.org
 ManagedBy: "[OpenAQ](https://openaq.org)"
 UpdateFrequency: Minutely
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
 Tags:
   - air quality
   - cities
@@ -16,6 +20,8 @@ Resources:
     ARN: arn:aws:s3:::openaq-fetches
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://openaq-fetches.s3.amazonaws.com/index.html)'
   - Description: Rich SNS topic for new measurements, 1 notification per measurement, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
     ARN: arn:aws:sns:us-east-1:470049585876:OPENAQ_NEW_MEASUREMENT
     Region: us-east-1
@@ -55,3 +61,7 @@ DataAtWork:
       AuthorName: Aerodyne Research, Inc.
       AuthorURL: http://www.aerodyne.com/
   Publications:
+    - Title: Enabling rapid COVID-19 and air pollution analysis across the globe with OpenAQ and AWS
+      URL: https://aws.amazon.com/blogs/publicsector/enabling-rapid-covid-19-air-pollution-analysis-across-globe-openaq/
+      AuthorName: Christa Hasenkopf
+      AuthorURL: https://openaq.org

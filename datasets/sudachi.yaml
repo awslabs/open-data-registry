@@ -1,0 +1,80 @@
+Name: Sudachi Language Resources
+Description: >
+  Japanese dictionaries and word embeddings for natural language processing.
+
+  [SudachiDict](https://github.com/WorksApplications/SudachiDict) is the dictionary for a Japanese tokenizer (morphological analyzer) [Sudachi](https://github.com/WorksApplications/Sudachi).
+
+  [chiVe](https://github.com/WorksApplications/chiVe) is Japanese pretrained word embeddings (word vectors), trained using the ultra-large-scale web corpus NWJC by National Institute for Japanese Langauge and Linguistics, analyzed by Sudachi.
+Documentation: https://worksapplications.github.io/Sudachi/
+Contact: sudachi@worksap.co.jp
+ManagedBy: "[Works Applications](https://www.worksap.co.jp/about/csr/nlp/)"
+UpdateFrequency: The dictionaries are updated every few months to include neologism and fixes for the existing words.
+Tags:
+  - aws-pds
+  - natural language processing
+License: Apache-2.0
+Resources:
+  - Description: |
+      SudachiDict: Binary format of the mophological analysis dictionaries
+      chiVe: Pretrained word embedding in various formats
+    ARN: arn:aws:s3:::sudachi
+    Region: ap-northeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Sudachi Tutorial
+      URL: https://github.com/WorksApplications/Sudachi/blob/develop/docs/tutorial.md
+      AuthorName: Works Applications
+    - Title: SudachiPy Tutorial
+      URL: https://github.com/WorksApplications/SudachiPy/blob/develop/docs/tutorial.md
+      AuthorName: Works Applications
+    - Title: analysis-sudachi Tutorial
+      URL: https://github.com/WorksApplications/elasticsearch-sudachi/blob/develop/docs/tutorial.md
+      AuthorName: Works Applications
+    - Title: chiVe Tutorial
+      URL: https://github.com/WorksApplications/chiVe/blob/master/docs/tutorial.md
+      AuthorName: Works Applications
+  Tools & Applications:
+    - Title: "Sudachi: Japanese Tokenizer for Business"
+      URL: https://github.com/WorksApplications/Sudachi
+      AuthorName: Works Applications
+    - Title: "SudachiPy: Python version of Sudachi"
+      URL: https://github.com/WorksApplications/Sudachi
+      AuthorName: Works Applications
+    - Title: "analysis-sudachi: Sudachi pluglin for Elasticsearch"
+      URL: https://github.com/WorksApplications/elasticsearch-sudachi
+      AuthorName: Works Applications
+    - Title: "sudachidict_small on pypi.python.org - a Python module to download and install SudachiDict for the python tokenizer"
+      URL: https://pypi.org/project/SudachiDict-small/
+      AuthorName: Works Applications
+    - Title: "sudachidict_core on pypi.python.org - a Python module to download and install SudachiDict for the python tokenizer"
+      URL: https://pypi.org/project/SudachiDict-core/
+      AuthorName: Works Applications
+    - Title: "sudachidict_full on pypi.python.org - a Python module to download and install SudachiDict for the python tokenizer"
+      URL: https://pypi.org/project/SudachiDict-full/
+      AuthorName: Works Applications
+    - Title: "Kintoki: Dependency Parser"
+      URL: https://github.com/WorksApplications/kintoki
+      AuthorName: Works Applications
+    - Title: "jdartsclone: TRIE Data Structure using Double-Array"
+      URL: https://github.com/WorksApplications/jdartsclone
+      AuthorName: Works Applications
+  Publications:
+    - Title: "Sudachi: a Japanese Tokenizer for Business"
+      URL: http://www.lrec-conf.org/proceedings/lrec2018/summaries/8884.html
+      AuthorName: Kazuma Takaoka, Sorami Hisamoto, Noriko Kawahara, Miho Sakamoto, Yoshitaka Uchida, Yuji Matsumoto
+    - Title: "形態素解析器『Sudachi』のための大規模辞書開発"
+      URL: https://pj.ninjal.ac.jp/corpus_center/lrw/lrw2018/P-1-08.pdf
+      AuthorName: 坂本美保, 川原典子, 久本空海, 髙岡一馬, 内田佳孝
+    - Title: "複数粒度の分割結果に基づく日本語単語分散表現"
+      URL: https://www.anlp.jp/proceedings/annual_meeting/2019/pdf_dir/P8-5.pdf
+      AuthorName: 真鍋陽俊, 岡照晃, 海川祥毅, 髙岡一馬, 内田佳孝, 浅原正幸
+    - Title: "詳細化した同義関係をもつ同義語辞書の作成"
+      URL: https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P4-14.pdf
+      AuthorName: 高岡一馬, 岡部裕子, 川原典子, 坂本美保, 内田佳孝 
+    - Title: "chiVe 2.0: SudachiとNWJCを用いた実用的な日本語単語ベクトルの実現に向けて"
+      URL: https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P6-16.pdf
+      AuthorName: 河村宗一郎, 久本空海, 真鍋陽俊, 髙岡一馬, 内田佳孝, 岡照晃, 浅原正幸
+    - Title: "chiVe: 製品利用可能な日本語単語ベクトル資源の実現へ向けて ～形態素解析器Sudachiと超大規模ウェブコーパスNWJCによる分散表現の獲得と改良～"
+      URL: https://www.ieice.org/ken/paper/20200910U1zQ/
+      AuthorName: 久本空海, 山村崇, 勝田哲弘, 竹林佑斗, 髙岡一馬, 内田佳孝, 岡照晃, 浅原正幸

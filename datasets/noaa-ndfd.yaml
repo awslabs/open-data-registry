@@ -1,0 +1,34 @@
+Name: NOAA National Digital Forecast Database (NDFD)
+Description: The National Digital Forecast Database (NDFD) is a suite of gridded forecasts of sensible weather elements (e.g., cloud cover, maximum temperature).  Forecasts prepared by NWS field offices working in collaboration with the National Centers for Environmental Prediction (NCEP) are combined in the NDFD to create a seamless mosaic of digital forecasts from which operational NWS products are generated.
+Documentation: https://www.weather.gov/mdl/ndfd_home, https://www.weather.gov/mdl/ndfd_info (For NDFD Product information, instructions, and lookup tables)
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: As often as once every half hour (varies by forecast element, forecast projection, and domain)
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: National Digital Forecast Database (NDFD) Grib2 Format
+    ARN: arn:aws:s3:::noaa-ndfd-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-ndfd-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NDFD, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNDFDObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "NDFD Product Spreadsheet (excel file)"
+      URL: https://noaa-ndfd-pds.s3.amazonaws.com/NDFDelem_fullres_201906.xls
+      AuthorName: NOAA MDL

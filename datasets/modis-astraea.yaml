@@ -1,0 +1,72 @@
+Name: MODIS MYD13A1, MOD13A1, MYD11A1, MOD11A1, MCD43A4
+Description: |
+  Data from the Moderate Resolution Imaging Spectroradiometer (MODIS), managed by
+  the U.S. Geological Survey and NASA. Five products are included:
+  MCD43A4 (MODIS/Terra and Aqua Nadir BRDF-Adjusted Reflectance Daily L3 Global 500 m SIN Grid),
+  MOD11A1 (MODIS/Terra Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+  MYD11A1 (MODIS/Aqua Land Surface Temperature/Emissivity Daily L3 Global 1 km SIN Grid),
+  MOD13A1 (MODIS/Terra Vegetation Indices 16-Day L3 Global 500 m SIN Grid),
+  and MYD13A1 (MODIS/Aqua Vegetation Indices 16-Day L3 Global 500 m SIN Grid).
+  MCD43A4 has global coverage, all time (~21 years).
+  The other products have ~11 years of global coverage.  All data files are in single-band
+  cloud-optimized GeoTIFF (COG) format.
+Documentation: Documentation is available for this data at the [s22s/astraea-opendata GitHub repository](https://github.com/s22s/astraea-opendata) maintained by Astraea.
+Contact: https://astraea.earth/
+ManagedBy: "[Astraea](https://astraea.earth/)"
+UpdateFrequency: New scenes are added daily.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - agriculture
+  - geospatial
+  - satellite imagery
+  - natural resource
+  - sustainability
+  - disaster response
+License: There are no restrictions on the use of data, unless expressly identified prior to or at the time of receipt.
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::astraea-opendata
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-west-2:791757209086:astraea-opendata-events
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for MCD43A4 (ORC)"
+    ARN: arn:aws:s3:::astraea-opendata-inventory/astraea-opendata/modis-assets-MCD43A4
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for MOD11A1 (ORC)"
+    ARN: arn:aws:s3:::astraea-opendata-inventory/astraea-opendata/modis-assets-MOD11A1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for MYD11A1 (ORC)"
+    ARN: arn:aws:s3:::astraea-opendata-inventory/astraea-opendata/modis-assets-MYD11A1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for MOD13A1 (ORC)"
+    ARN: arn:aws:s3:::astraea-opendata-inventory/astraea-opendata/modis-assets-MOD13A1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for MYD13A1 (ORC)"
+    ARN: arn:aws:s3:::astraea-opendata-inventory/astraea-opendata/modis-assets-MYD13A1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: Astraea Earth OnDemand
+      URL: https://astraea.earth/earth-ondemand/
+      AuthorName: Astraea, Inc.
+      AuthorURL: https://astraea.earth
+  Publications:

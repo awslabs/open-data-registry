@@ -1,0 +1,46 @@
+Name: NIH NCBI Sequence Read Archive (SRA) on AWS
+Description:  "The Sequence Read Archive (SRA), produced by the [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/) at the [National Library of Medicine (NLM)](http://nlm.nih.gov/) at the [National Institutes of Health (NIH)](http://www.nih.gov/), stores raw DNA sequencing data and alignment information from high-throughput sequencing platforms. The SRA provides open access to these biological sequence data to support the research community's efforts to enhance reproducibility and make new discoveries by comparing data sets. This bucket contains public SRA data in  original format from select high value and newly-released studies."
+Contact: sra@ncbi.nlm.nih.gov
+Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/
+ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - life sciences
+  - genetic
+  - genomic
+  - whole genome sequencing
+  - transcriptomics
+  - bam
+  - fastq
+  - STRIDES
+License: "[U.S. Government work](https://www.ncbi.nlm.nih.gov/home/about/policies/)"
+Resources:
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+    ARN: arn:aws:s3:::sra-pub-src-1
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+    ARN: arn:aws:s3:::sra-pub-src-2
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: SRA in the Cloud
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+    - Title: Access SRA data using Amazon Web Services (AWS)
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Tools & Applications:
+    - Title: SRA Toolkit
+      URL: https://github.com/ncbi/sra-tools
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Publications:
+    - Title: The Sequence Read Archive
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013647/
+      AuthorName: Leinonen et al (2011)
+      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Leinonen%20R%5BAuthor%5D&cauthor=true&cauthor_uid=21062823

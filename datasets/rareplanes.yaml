@@ -1,0 +1,30 @@
+Name: RarePlanes
+Description: RarePlanes is a unique open-source machine learning dataset from CosmiQ Works and AI.Reverie that incorporates both real and synthetically generated satellite imagery. The RarePlanes dataset specifically focuses on the value of AI.Reverie synthetic data to aid computer vision algorithms in their ability to automatically detect aircraft and their attributes in satellite imagery. Although other synthetic/real combination datasets exist, RarePlanes is the largest openly-available very high resolution dataset built to test the value of synthetic data from an overhead perspective. The real portion of the dataset consists of 253 Maxar WorldView-3 satellite scenes spanning 112 locations and 2,142 km^2 with 14,700 hand-annotated aircraft. The accompanying synthetic dataset is generated via AI.Reverie’s novel simulation platform and features 50,000 synthetic satellite images with ~630,000 aircraft annotations. 
+Documentation: www.cosmiqworks.org/RarePlanes
+Contact: jss5102@gmail.com and avanetten@iqt.org
+ManagedBy: In-Q-Tel - CosmiQ Works
+UpdateFrequency: None Planned
+Tags:
+  - computer vision
+  - deep learning
+  - earth observation
+  - geospatial
+  - machine learning
+  - satellite imagery
+  - aws-pds
+  - labeled
+License: "[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+Resources:
+  - Description: Real and synthetic satellite imagery, annotations, and metadata
+    ARN: arn:aws:s3:::rareplanes-public
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: RarePlanes Codebase
+      URL: https://github.com/aireveries/RarePlanes
+      AuthorName: Thomas Hossler and Jacob Shermeyer
+  Publications:
+    - Title: "RarePlanes: Synthetic Data Takes Flight"
+      URL: https://arxiv.org/abs/2006.02963
+      AuthorName: Jacob Shermeyer, Thomas Hossler, Adam Van Etten, Daniel Hogan, Ryan Lewis, Daeil Kim

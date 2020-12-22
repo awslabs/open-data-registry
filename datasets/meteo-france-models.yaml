@@ -17,8 +17,13 @@ Documentation: https://mf-models-on-aws.org
 Contact: contact@openmeteodata.com
 ManagedBy: "[OpenMeteoData](https://openmeteodata.com)"
 UpdateFrequency: Every 6 hours
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
   - aws-pds
+  - agriculture
   - climate
   - disaster response
   - earth observation
@@ -34,6 +39,8 @@ Resources:
     ARN: arn:aws:s3:::mf-nwp-models
     Region: eu-west-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://mf-nwp-models.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:

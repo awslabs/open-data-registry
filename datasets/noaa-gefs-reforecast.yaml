@@ -1,0 +1,41 @@
+Name: NOAA Global Ensemble Forecast System (GEFS) Re-forecast
+Description: >
+  NOAA has generated a multi-decadal reanalysis and reforecast data set to accompany the next-generation version of its ensemble prediction system, the Global Ensemble Forecast System, version 12 (GEFSv12). Accompanying the real-time forecasts are “reforecasts” of the weather, that is, retrospective forecasts spanning the period 2000-2019. These reforecasts are not as numerous as the real-time data; they were generated only once per day, from 00 UTC initial conditions, and only 5 members were provided, with the following exception. Once weekly, an 11-member reforecast was generated, and these extend in lead time to +35 days. 
+Documentation: https://noaa-gefs-retrospective.s3.amazonaws.com/Description_of_reforecast_data.pdf
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Re-forecasts do not adhere to an update frequency.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: GEFS Re-forecast in Grib2 Format
+    ARN: arn:aws:s3:::noaa-gefs-retrospective
+    Region: us-east-1
+    Type: S3 Bucket
+    URL: https://noaa-gefs-retrospective.s3.amazonaws.com
+    Explore:
+    - '[Browse Bucket](https://noaa-gefs-retrospective.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Example using GEFS Reforecast Data from AWS
+      URL: https://github.com/vgensini/gefs_v12_example/blob/master/GEFS_v12_eample.ipynb
+      AuthorName: Victor Gensini
+      AuthorURL: https://atlas.niu.edu
+    - Title: "Retrospective Dissertation - Part 3: Reforecast Data"
+      URL: https://mogismog.github.io/retro-diss-part-3.html#retro-diss-part-3
+      AuthorName: Francisco Alvarez
+      AuthorURL: https://github.com/mogismog
+  Publications:
+    - Title: The GEFS v12 and its reanalyses and reforecasts (Slides)
+      URL: https://drive.google.com/file/d/1lCIB3qz9S1nu2qAaetnLq0N5ReyTXuHd/view
+      AuthorName: Tom Hamill

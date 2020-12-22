@@ -1,0 +1,61 @@
+Name: Oxford Nanopore Technologies Benchmark Datasets
+Description: >
+    The ont-open-data registry provides reference sequencing data from Oxford
+    Nanopore Technologies to support, 1) Exploration of the characteristics of
+    nanopore sequence data. 2) Assessment and reproduction of performance
+    benchmarks 3) Development of tools and methods. The data deposited
+    showcases DNA sequences from a representative subset of sequencing
+    chemistries. The datasets correspond to publicly-available reference
+    samples (e.g. GM24385 as reference human). Raw data are provided with
+    metadata and scripts to describe sample and data provenance.
+Documentation: https://nanoporetech.github.io/ont-open-datasets
+Contact: support@nanoporetech.com
+ManagedBy: Oxford Nanopore Technologies
+UpdateFrequency: >
+  Additional datasets will be added periodically. Updates and amendents will
+  be made to existing entries when algorithmic advancements are made (e.g.
+  improvements to basecalling algorithms).
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - fastq
+  - fast5
+  - genomic
+  - life sciences
+  - Homo sapiens
+  - whole genome sequencing
+License: >
+    Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+    https://creativecommons.org/licenses/by-nc/4.0/
+
+    The following cell lines/DNA samples were obtained from the NIGMS Human
+    Genetic Cell Repository at the Coriell Institute for Medical Research:
+    GM24385.
+Resources:
+  - Description: Oxford Nanopore Open Datasets 
+    ARN: arn:aws:s3:::ont-open-data
+    Region: eu-west-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: >
+      Nanopore sequencing data of the Genome in a Bottle sample GM24385.
+      Multiple PromethION flowcells using both the R9.4.1 and R10.3 nanopores.
+      The direct sequencer output is included, raw signal data stored in 
+      .fast5 files and basecalled data in .fastq file. Additional secondary
+      analyses are included, notably alignments of sequence data to the 
+      reference genome are provided along with statistics derived from these.
+      
+      The following cell lines/DNA samples were obtained from the NIGMS Human
+      Genetic Cell Repository at the Coriell Institute for Medical Research:
+      GM24385.
+    ARN: arn:aws:s3:::ont-open-data/gm24385_2020.09
+    Region: eu-west-1
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+    - Title: ONT Dataset Tutorials
+      URL: https://nanoporetech.github.io/ont-open-datasets/tutorials
+      AuthorName: EPI2MELabs
+      AuthorURL: https://labs.epi2me.io/

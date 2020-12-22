@@ -1,0 +1,169 @@
+Name: Gabriella Miller Kids First Pediatric Research Program (Kids First)
+Description: >
+  The NIH Common Fund's Gabriella Miller Kids First Pediatric Research Program’s
+  (“Kids First”) vision is to “alleviate suffering from childhood cancer and
+  structural birth defects by fostering collaborative research to uncover the
+  etiology of these diseases and by supporting data sharing within the pediatric
+  research community.” The program continues to generate and share whole genome
+  sequence data from thousands of children affected by these conditions, ranging
+  from rare pediatric cancers, such as osteosarcoma, to more prevalent
+  diagnoses, such as congenital heart defects. In 2018, Kids First launched the
+  Gabriella Miller Kids First Data Resource Center, charged with building a
+  large-scale data platform supporting clinical and genetic data from these
+  patients and their families in order to accelerate discovery and ultimately
+  clinical impact. Researchers can search, access, aggregate, and analyze these
+  data through the Kids First Data Resource Portal. Additionally, by using
+  cloud-based individual workspaces in CAVATICA, a data analysis and sharing
+  computation platform, researchers can cross-analyze Kids First data with data
+  from other efforts, such as NCI’s TARGET program and consortia-based datasets
+  like the Children’s Brain Tumor Tissue Consortium (CBTTC).
+  
+  Kids First is made available on AWS via the [NIH STRIDES Initiative](https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/).
+Documentation: https://kidsfirstdrc.org/
+Contact: support@kidsfirstdrc.org
+ManagedBy: "[The Gabriella Miller Kids First Data Resource Center at the Children's Hospital of Philadelphia](https://kidsfirstdrc.org/)"
+UpdateFrequency: |
+  Data is updated on a rolling basis by the KFDRC to make data available as
+  rapidly as possible under the NIH Genomic Data Sharing Policy. 
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - genetic
+  - genomic
+  - Homo sapiens
+  - pediatric
+  - structural birth defect
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: "Kids First: Pediatric Research Project on the Genomic Analysis of Congenital Diaphragmatic Hernia"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-46sk55a3
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001110.v2.p1
+  - Description: "National Heart, Lung, and Blood Institute (NHLBI) Bench to Bassinet Program: The Gabriella Miller Kids First Pediatric Research Program of the Pediatric Cardiac Genetics Consortium (PCGC)"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-preasa7s
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001138.v3.p2
+  - Description: "Gabriella Miller Kids First (GMKF) Pediatric Research Program in Susceptibility to Ewing Sarcoma Based on Germline Risk and Familial History of Cancer"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-ygva0e1c
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001228
+  - Description: "Kids First: Genomic Studies of Orofacial Cleft Birth Defects"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-9pyzahhe
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001168.v2.p2
+  - Description: "GMKF: Kids First Pediatric Research Program on Congenital Cranial Dysinnervation Disorders and Related Birth Defects"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-dztb5hrr
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001247.v1.p1
+  - Description: "Kids First: Pediatric Research Project on Adolescent Idiopathic Scoliosis"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-rm8afw0r
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001410.v1.p1
+  - Description: "Disorders/Differences of Sex Development (DSD) Study Performed at UCLA in Collaboration with the DSD-Translational Research Network (DSD-TRN), with the Support of the Gabriella Miller Kids First Pediatric Research Program"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-6fpyjqbr
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001178.v1.p1
+  - Description: "Kids First: Genomics of Orofacial Cleft Birth Defects in Latin American Families"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-r0eprsgs
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001420.v1.p1
+  - Description: "Kids First: Genomics of Orofacial Cleft Birth Defects in Latin American Families"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-r0eprsgs
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001420.v1.p1
+  - Description: "Discovering the Genetic Basis of Human Neuroblastoma: A Gabriella Miller Kids First Pediatric Research Program (Kids First) Project"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-dypmehhf
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001436.v1.p1
+  - Description: "Gabriella Miller Kids First Pediatric Research Program in Enchondromatoses and Related Malignant Tumors"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-7nq9151j
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001987.v1.p1
+  - Description: "Kids First Pediatric Research Study in Familial Predisposition to Hematopoietic Malignancies (SJFAMILY-HM)"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-vttshwv4
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001738.v1.p1
+  - Description: "Gabriella Miller Kids First Pediatric Research Program in Whole Genome Sequencing of African and Asian Orofacial Clefts Case-Parent Triads"
+    ARN: arn:aws:s3:::kf-study-us-east-1-prd-sd-dk0krwk8
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001997.v1.p1
+DataAtWork:
+  Tools & Applications:
+    - Title: Kids First DRC Portal
+      URL: https://portal.kidsfirstdrc.org
+      AuthorName: Kids First DRC
+      AuthorURL: https://kidsfirstdrc.org
+    - Title: CAVATICA
+      URL: http://cavatica.org
+      AuthorName: Seven Bridges Genomics
+      AuthorURL: http://www.sevenbridges.com
+    - Title: PedcBioPortal
+      URL: https://pedcbioportal.kidsfirstdrc.org
+      AuthorName: cBioPortal
+      AuthorURL: https://www.cbioportal.org/
+    - Title: Kids First DRC Source Code
+      URL: https://github.com/kids-first/
+      AuthorName: Kids First DRC
+      AuthorURL: https://kidsfirstdrc.org
+  Publications:
+    - Title: Genome-wide Enrichment of De Novo Coding Mutations in Orofacial Cleft Trios.
+      URL: https://pubmed.ncbi.nlm.nih.gov/32574564/
+      AuthorName: Madison R Bishop, Kimberly K Diaz Perez, et al.
+    - Title: Genomic Analyses Implicate Noncoding De Novo Variants in Congenital Heart Disease.
+      URL: https://pubmed.ncbi.nlm.nih.gov/32601476/
+      AuthorName: Felix Richter, Sarah U Morton, et al.
+    - Title: Elucidation of de novo small insertion/deletion biology with parent-of-origin phasing.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31898844
+      AuthorName: Allison H Seiden, Felix Richter, et al.
+    - Title: Whole genome sequencing of orofacial cleft trios from the Gabriella Miller Kids First Pediatric Research Consortium identifies a new locus on chromosome 21.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31848685
+      AuthorName: Nandita Mukhopadhyay, Madison Bishop, et al.
+    - Title: Germline microsatellite genotypes differentiate children with medulloblastoma.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31562520
+      AuthorName: Samuel Rivero-Hinojosa, Nicholas Kinney, et al.
+    - Title: Germline 16p11.2 Microdeletion Predisposes to Neuroblastoma.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31474320
+      AuthorName: Laura Egolf, Zalman Vaksman, et al.
+    - Title: "MAGEL2-Related Disorders: A study and case series." 
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31397880
+      AuthorName: Jameson Patak, James Gilfert, et al.
+    - Title: Phenotype delineation of ZNF462 related syndrome.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31361404
+      AuthorName: Paul Kruszka, Tommy Hu, et al.
+    - Title: Development and Clinical Validation of a Large Fusion Gene Panel for Pediatric Cancers.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31255796
+      AuthorName: Fengqi Chang, Fumin Lin, et al.
+    - Title: Decreased ACKR3 (CXCR7) function causes oculomotor synkinesis in mice and humans. 
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31211835
+      AuthorName: Mary C Whitman, Noriko Miyake, et al.
+    - Title: Deleterious de novo variants of X-linked ZC4H2 in females cause a variable phenotype with neurogenic arthrogryposis multiplex congenita.
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/31206972
+      AuthorName: Suzanna G M Frints, Friederike Hennig, et al.
+    - Title: "The Pediatric Cell Atlas: Defining the Growth Phase of Human Development at Single-Cell Resolution."
+      URL: http://www.ncbi.nlm.nih.gov/pubmed/30930166
+      AuthorName: Deanne M Taylor, Bruce J Aronow, et al.
+    - Title: MACF1 Mutations Encoding Highly Conserved Zinc-Binding Residues of the GAR Domain Cause Defects in Neuronal Migration and Axon Guidance 
+      URL: https://pubmed.ncbi.nlm.nih.gov/30471716/
+      AuthorName: William B Dobyns, Kimberly A Aldinger, et al.
+    - Title: Clinically Relevant and Minimally Invasive Tumor Surveillance of Pediatric Diffuse Midline Gliomas Using Patient-Derived Liquid Biopsy  
+      URL: https://pubmed.ncbi.nlm.nih.gov/30322880/
+      AuthorName: Eshini Panditharatna, Lindsay B Kilburn, et al.
+    - Title: Genome-Wide Association Study Identifies a Susceptibility Locus for Comitant Esotropia and Suggests a Parent-of-Origin Effect  
+      URL: https://pubmed.ncbi.nlm.nih.gov/30098192/
+      AuthorName: Sherin Shaaban, Sarah MacKinnon et al.

@@ -1,0 +1,69 @@
+Name: Multi-Scale Ultra High Resolution (MUR) Sea Surface Temperature (SST)
+Description: A global, gap-free, gridded, daily 1 km Sea Surface Temperature (SST) dataset created by merging multiple Level-2 satellite SST datasets. Those input datasets include the NASA Advanced Microwave Scanning Radiometer-EOS (AMSR-E), the JAXA Advanced Microwave Scanning Radiometer 2 (AMSR-2) on GCOM-W1, the Moderate Resolution Imaging Spectroradiometers (MODIS) on the NASA Aqua and Terra platforms, the US Navy microwave WindSat radiometer, the Advanced Very High Resolution Radiometer (AVHRR) on several NOAA satellites, and in situ SST observations from the NOAA iQuam project. Data are available from 2002 to present in Zarr format. The original source of the MUR data is the NASA JPL Physical Oceanography DAAC.
+Documentation: https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1
+Contact: podaac@podaac.jpl.nasa.gov
+ManagedBy: "[Farallon Institute](https://faralloninstitute.org)"
+UpdateFrequency: The temporal extent of the Zarr store is 2002-06-01 to 2020-01-20.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - earth observation
+  - environmental
+  - natural resource
+  - oceans
+  - satellite imagery
+  - sustainability
+  - climate
+  - water
+  - weather
+License: There are no restrictions on the use of these data.
+Resources:
+  - Description: MUR Level 4 SST dataset in [Zarr](https://zarr.readthedocs.io/en/stable/) format. The zarr/ directory contains a zarr store chunked (6443, 100, 100) along the dimensions (time, lat, lon).
+    ARN: arn:aws:s3:::mur-sst/zarr
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: MUR Level 4 SST dataset in [Zarr](https://zarr.readthedocs.io/en/stable/) format. The zarr-v1/ directory contains a zarr store chunked (5, 1799, 3600) along the dimensions (time, lat, lon).
+    ARN: arn:aws:s3:::mur-sst/zarr-v1
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Python Jupyter Notebooks
+      URL: https://github.com/pangeo-gallery/osm2020tutorial 
+      AuthorName: Chelle Gentemann, Rich Signell
+      AuthorURL: https://faralloninstitute.org
+    - Title: Python Reader Software
+      URL:  https://podaac-tools.jpl.nasa.gov/drive/files/allData/ghrsst/sw/generic_nc_readers/python/
+      AuthorName: PO.DAAC
+      AuthorURL: https://podaac.jpl.nasa.gov
+  Tools & Applications:
+    - Title: OPeNDAP server 
+      URL: https://opendap.jpl.nasa.gov/opendap/OceanTemperature/ghrsst/data/GDS2/L4/GLOB/JPL/MUR/v4.1/contents.html
+      AuthorName: Physical Oceanography Distributed Active Archive Center (PO.DAAC) 
+      AuthorURL: https://podaac.jpl.nasa.gov
+    - Title: HTTPS server 
+      URL: https://podaac-tools.jpl.nasa.gov/drive/files/allData/ghrsst/data/GDS2/L4/GLOB/JPL/MUR/v4.1
+      AuthorName: PO.DAAC 
+      AuthorURL: https://podaac.jpl.nasa.gov
+    - Title: THREDDS server 
+      URL: http://thredds.jpl.nasa.gov/thredds/catalog_ghrsst_gds2.html?dataset=MUR-JPL-L4-GLOB-v4.1
+      AuthorName: PO.DAAC 
+      AuthorURL: https://podaac.jpl.nasa.gov
+    - Title: Web discovery service
+      URL: https://podaac.jpl.nasa.gov/ws/search/granule/?datasetId=PODAAC-GHGMR-4FJ04
+      AuthorName: PO.DAAC 
+      AuthorURL: https://podaac.jpl.nasa.gov
+    - Title: State of the Ocean (SOTO) server
+      URL: https://podaac-tools.jpl.nasa.gov/soto
+      AuthorName: PO.DAAC
+      AuthorURL: https://podaac.jpl.nasa.gov
+  Publications:
+    - Title:  A multi-scale high-resolution analysis of global sea surface temperature
+      URL: https://doi.org/10.1016/j.rse.2017.07.029
+      AuthorName:  Chin, Toshio Michael, Jorge Vazquez-Cuervo, and Edward M. Armstrong
+    - Title:  GHRSST Data Processing Specification 
+      URL: https://podaac-tools.jpl.nasa.gov/drive/files/OceanTemperature/ghrsst/docs/GDS20r5.pdf
+      AuthorName:  GHRSST Project

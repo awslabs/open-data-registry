@@ -1,0 +1,45 @@
+Name: Foundation Medicine Adult Cancer Clinical Dataset (FM-AD)
+Description: |
+  The Foundation Medicine Adult Cancer Clinical Dataset (FM-AD) is a study conducted by Foundation
+  Medicine Inc (FMI). Genomic profiling data for approximately 18,000 adult patients with a diverse
+  array of cancers was generated using FoundationeOne, FMI's commercially available, comprehensive
+  genomic profiling assay. This dataset contains open Clinical and Biospecimen data.
+Documentation: |
+  https://gdc.cancer.gov/about-gdc/contributed-genomic-data-cancer-research/foundation-medicine/foundation-medicine
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is the source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: Biospecimen Supplement, Clinical Supplement
+    ARN: arn:aws:s3:::gdc-fm-ad-phs001179-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/FM-AD
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: |
+        High-Throughput Genomic Profiling of Adult Solid Tumors Reveals Novel Insights into Cancer
+        Pathogenesis
+      URL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=DetailsSearch&term=28235761[PMID]
+      AuthorName: |
+        Ryan J. Hartmaier, Lee A. Albacker, Juliann Chmielecki, Mark Bailey, Jie He, Michael E.
+        Goldberg, Shakti Ramkissoon, James Suh, Julia A. Elvin, Samuel Chiacchia, Garrett M.
+        Frampton, Jeffrey S. Ross, Vincent Miller, Philip J. Stephens and Doron Lipson
+    - Title: |
+        Targeted next-generation sequencing of advanced prostate cancer identifies potential
+        therapeutic targets and disease heterogeneity.
+      URL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=DetailsSearch&term=22981675[PMID]
+      AuthorName: |
+        Beltran H, Yelensky R, Frampton GM, Park K, Downing SR, MacDonald TY, Jarosz M, Lipson D,
+        Tagawa ST, Nanus DM, Stephens PJ, Mosquera JM, Cronin MT, Rubin MA

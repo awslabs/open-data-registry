@@ -1,0 +1,56 @@
+Name: NOAA Water-Column Sonar Data Archive
+Description: Water-column sonar data archived at the NOAA National Centers for Environmental Information.
+Documentation: https://cires.gitbook.io/ncei-wcsd-archive/
+Contact: wcd.info@noaa.gov
+ManagedBy: "[NOAA](https://www.ngdc.noaa.gov/mgg/wcd/)"
+UpdateFrequency: New water-column sonar data are added regularly as they are provided to the archive.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - earth observation
+  - biodiversity
+  - ecosystems
+  - environmental
+  - geospatial
+  - mapping
+  - oceans
+  - sustainability
+License: The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies. Neither the data Creator, NOAA, the United States Government, nor any of their employees or contractors, makes any warranty, express or implied, including warranties of merchantability and fitness for a particular purpose, or assumes any legal liability for the accuracy, completeness, or usefulness, of this information.
+Resources:
+  - Description: NCEI Water-Column Sonar Data Archive
+    ARN: arn:aws:s3:::ncei-wcsd-archive
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://ncei-wcsd-archive.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Plotting Raw EK60 Data
+      URL: https://github.com/CI-CMG/pyEcholab/tree/master/examples/cloud%20tutorials/Plotting_Raw_EK60_Data.ipynb
+      AuthorName: Carrie Wall
+    - Title: Frequency Differencing with Raw Data
+      URL: https://github.com/CI-CMG/pyEcholab/tree/master/examples/cloud%20tutorials/Frequency_Differencing_With_Raw_Data.ipynb
+      AuthorName: Carrie Wall
+    - Title: Reading and Plotting Processed CSV Data
+      URL: https://github.com/CI-CMG/pyEcholab/tree/master/examples/cloud%20tutorials/Reading_And_Plotting_Processed_CSV_Data.ipynb
+      AuthorName: Carrie Wall
+    - Title: Reading and Plotting Bottom Data
+      URL: https://github.com/CI-CMG/pyEcholab/tree/master/examples/cloud%20tutorials/Reading_And_Plotting_Bottom_Data.ipynb
+      AuthorName: Carrie Wall
+  Tools & Applications:
+    - Title: pyEcholab - an open-source, python-based toolkit for reading, processing, plotting, and exporting fisheries acoustic echosounder data
+      URL: https://github.com/CI-CMG/pyEcholab
+      AuthorName: Rick Towler, Chuck Anderson, Veronica Martinez, Pamme Crandell
+    - Title: Water Column Sonar Data Explorer - Map viewer for exploring sonar water column data
+      URL: https://www.ngdc.noaa.gov/maps/water_column_sonar/index.html
+      AuthorName: NCEI, NOAA
+  Publications:
+    - Title: Building an Accessible Archive for Water Column Sonar Data
+      URL: https://eos.org/science-updates/building-an-accessible-archive-for-water-column-sonar-data
+      AuthorName: Carrie Wall
+    - Title: Increasing the accessibility of acoustic data through global access and imagery
+      URL: https://doi.org/10.1093/icesjms/fsw014
+      AuthorName: Carrie Wall, Michael Jech, and Susan McLean

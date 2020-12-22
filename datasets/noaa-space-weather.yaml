@@ -1,0 +1,27 @@
+Name: NOAA Space Weather Forecast and Observation Data
+Description: >
+  Space weather forecast and observation data is collected and disseminated by NOAA’s Space Weather Prediction Center (SWPC) in Boulder, CO. SWPC produces forecasts for multiple space weather phenomenon types and the resulting impacts to Earth and human activities.  A variety of products are available that provide these forecast expectations, and their respective measurements, in formats that range from detailed technical forecast discussions to NOAA Scale values to simple bulletins that give information in laymen's terms.
+  Forecasting is the prediction of future events, based on analysis and modeling of the past and present conditions of the environment you are interested in. In Space Weather, persistence and recurrence of active regions on the sun over the 27-day solar rotational period play an important role in accurately forecasting the space environment.
+Documentation: https://www.swpc.noaa.gov/products-and-data
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: The update frequencies of the space weather dataset range from one minute observations to daily and monthly updates of more slowly-varying indices
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - solar
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA Space Weather Prediction Center Forecasts
+    ARN: arn:aws:s3:::noaa-swpc-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-swpc-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOAA Space Weather Prediction Center Forecasts, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewSWPCObject
+    Region: us-east-1
+    Type: SNS Topic

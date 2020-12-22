@@ -4,8 +4,13 @@ Documentation: https://roda.sentinel-hub.com/sentinel-s1-l1c/GRD/readme.html
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - satellite imagery
   - geospatial
@@ -14,7 +19,7 @@ Tags:
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
-  - Description: Rolling 1 year of GRD in a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
+  - Description: GRD in a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
     ARN: arn:aws:s3:::sentinel-s1-l1c
     Region: eu-central-1
     Type: S3 Bucket
@@ -23,7 +28,7 @@ Resources:
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s1-l1c
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: SNS topic for notification of new scenes
+  - Description: SNS topic for notification of new scenes, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
     ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS1L1C
     Region: eu-central-1
     Type: SNS Topic

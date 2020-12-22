@@ -1,0 +1,40 @@
+Name: NOAA National Blend of Models (NBM)
+Description: >
+  The National Blend of Models (NBM) is a nationally consistent and skillful suite of calibrated forecast guidance based on a blend of both NWS and non-NWS numerical weather prediction model data and post-processed model guidance. The goal of the NBM is to create a highly accurate, skillful and consistent starting point for the gridded forecast. The most recent data is under the opnl and expr prefixes. A copy is also placed under the wmo prefix. The wmo prefix is structured like so: wmo/&lt;parameter&gt;/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;wmo-file-name&gt; The wmo filename codes can be deciphered using the spreadsheet in the root of the bucket.
+Documentation: https://www.weather.gov/mdl/nbm_home
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Once per hour
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: National Blend of Models (NBM) COG Format
+    ARN: arn:aws:s3:::noaa-nbm-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nbm-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NBM-COG Format, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNBMCOGObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: National Blend of Models (NBM) Grib2 Format
+    ARN: arn:aws:s3:::noaa-nbm-grib2-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nbm-grib2-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NBM-Grib2 Format, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNBMGRIBObject
+    Region: us-east-1
+    Type: SNS Topic

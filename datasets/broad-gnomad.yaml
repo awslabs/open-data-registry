@@ -1,0 +1,76 @@
+Name: Genome Aggregation Database (gnomAD)
+Description: |
+  The Genome Aggregation Database (gnomAD) is a resource developed by an international coalition of investigators that aggregates and harmonizes both exome and genome data from a wide range of large-scale human sequencing projects. The summary data provided here are released for the benefit of the wider scientific community without restriction on use.
+  The v2 data set (GRCh37) spans 125,748 exome sequences and 15,708 whole-genome sequences from unrelated individuals. The v3 data set (GRCh38) spans 71,702 genomes, selected as in v2.
+  Sign up for the gnomAD mailing list [here](http://broad.io/gnomad_list).
+Documentation: https://gnomad.broadinstitute.org/about
+Contact: gnomad@broadinstitute.org
+ManagedBy: gnomAD Production Team at the Broad Institute
+UpdateFrequency: Data from new releases are made public as soon as they are available. New releases, including both minor and major versions, have historically been issued on the order of once per year.
+Tags:
+  - aws-pds
+  - population genetics
+  - population
+  - whole genome sequencing
+  - genomic
+  - genetic
+  - life sciences
+  - bioinformatics
+  - short read sequencing
+License: "[MIT](https://github.com/broadinstitute/gnomad_methods/blob/master/LICENSE); [terms of use](https://gnomad.broadinstitute.org/terms)"
+Resources:
+  - Description: gnomAD summary data aggregated from large-scale human genome and exome sequencing projects.
+    ARN: arn:aws:s3:::gnomad-public-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Hail utilities for gnomAD
+      URL: https://pypi.org/project/gnomad/
+      AuthorName: gnomAD Production Team
+      AuthorURL: https://github.com/orgs/broadinstitute/teams/gnomad/members
+    - Title: gnomAD quality control GitHub repository
+      URL: https://github.com/broadinstitute/gnomad_qc
+      AuthorName: gnomAD Production Team
+      AuthorURL: https://github.com/orgs/broadinstitute/teams/gnomad/members
+    - Title: Hail
+      URL: https://hail.is/
+      AuthorName: Hail Team
+      AuthorURL: https://hail.is/
+    - Title: Hail on AWS Quick Start
+      URL: https://aws.amazon.com/quickstart/architecture/hail/
+      AuthorName: Amazon Web Services and PrivoIT
+  Publications:
+    - Title: The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581, 434–443 (2020)
+      URL: https://doi.org/10.1038/s41586-020-2308-7
+      AuthorName: Karczewski, K. J., Francioli, L. C., Tiao, G., Cummings, B. B., Alföldi, J., Wang, Q., Collins, R. L., Laricchia, K. M., Ganna, A., Birnbaum, D. P., Gauthier, L. D., Brand, H., Solomonson, M., Watts, N. A., Rhodes, D., Singer-Berk, M., England, E. M., Seaby, E. G., Kosmicki, J. A., ... MacArthur, D. G. 
+    - Title: A structural variation reference for medical and population genetics. Nature 581, 444–451 (2020)
+      URL: https://doi.org/10.1038/s41586-020-2287-8
+      AuthorName: Collins, R. L., Brand, H., Karczewski, K. J., Zhao, X., Alföldi, J., Francioli, L. C., Khera, A. V., Lowther, C., Gauthier, L. D., Wang, H., Watts, N. A., Solomonson, M., O’Donnell-Luria, A., Baumann, A., Munshi, R., Walker, M., Whelan, C., Huang, Y., Brookings, T., ... Talkowski, M. E.
+    - Title: Transcript expression-aware annotation improves rare variant interpretation. Nature 581, 452–458 (2020)
+      URL: https://doi.org/10.1038/s41586-020-2329-2
+      AuthorName: Cummings, B. B., Karczewski, K. J., Kosmicki, J. A., Seaby, E. G., Watts, N. A., Singer-Berk, M., Mudge, J. M., Karjalainen, J., Kyle Satterstrom, F., O’Donnell-Luria, A., Poterba, T., Seed, C., Solomonson, M., Alföldi, J., The Genome Aggregation Database Production Team, The Genome Aggregation Database Consortium, Daly, M. J., & MacArthur, D. G.
+    - Title: Evaluating potential drug targets through human loss-of-function genetic variation. Nature 581, 459–464 (2020)
+      URL: https://doi.org/10.1038/s41586-020-2267-z
+      AuthorName: Minikel, E. V., Karczewski, K. J., Martin, H. C., Cummings, B. B., Whiffin, N., Rhodes, D., Alföldi, J., Trembath, R. C., van Heel, D. A., Daly, M. J., Genome Aggregation Database Production Team, Genome Aggregation Database Consortium, Schreiber, S. L., & MacArthur, D. G.
+    - Title: Landscape of multi-nucleotide variants in 125,748 human exomes and 15,708 genomes. Nature Communications 11, 2539 (2020)
+      URL: https://doi.org/10.1038/s41467-019-12438-5
+      AuthorName: Wang, Q., Pierce-Hoffman, E., Cummings, B. B., Karczewski, K. J., Alföldi, J., Francioli, L. C., Gauthier, L. D., Hill, A. J., O’Donnell-Luria, A. H., Genome Aggregation Database (gnomAD) Production Team, Genome Aggregation Database (gnomAD) Consortium, & MacArthur, D. G.
+    - Title: The effect of LRRK2 loss-of-function variants in humans. Nature Medicine (2020)
+      URL: https://doi.org/10.1038/s41591-020-0893-5
+      AuthorName: Whiffin, N., Armean, I. M., Kleinman, A., Marshall, J. L., Minikel, E. V., Goodrich, J. K., Quaife, N. M., Cole, J. B., Wang, Q., Karczewski, K. J., Cummings, B. B., Francioli, L., Laricchia, K., Guan, A., Alipanahi, B., Morrison, P., Baptista, M. A. S., Merchant, K. M., Genome Aggregation Database Production Team, ... MacArthur, D. G.
+    - Title: Characterising the loss-of-function impact of 5’ untranslated region variants in 15,708 individuals. Nature Communications 11, 2523 (2020)
+      URL: https://doi.org/10.1038/s41467-019-10717-9
+      AuthorName: Whiffin, N., Karczewski, K. J., Zhang, X., Chothani, S., Smith, M. J., Gareth Evans, D., Roberts, A. M., Quaife, N. M., Schafer, S., Rackham, O., Alföldi, J., O’Donnell-Luria, A. H., Francioli, L. C., Genome Aggregation Database (gnomAD) Production Team, Genome Aggregation Database (gnomAD) Consortium, Cook, S. A., Barton, P. J. R., MacArthur, D. G., & Ware, J. S.
+    - Title: Technical artifact drives apparent deviation from Hardy-Weinberg equilibrium at CCR5-∆32 and other variants in gnomAD. bioRxiv (p. 784157)
+      URL: https://doi.org/10.1101/784157
+      AuthorName: Karczewski, K. J., Gauthier, L. D., Daly, M. J.
+    - Title: Analysis of protein-coding genetic variation in 60,706 humans. Nature 536, 285–291 (2016)
+      URL: https://doi.org/10.1038/nature19057
+      AuthorName: Lek, M., Karczewski, K., Minikel, E. et al.
+    - Title: gnomAD v2.1
+      URL: https://gnomad.broadinstitute.org/blog/2018-10-gnomad-v2-1/
+      AuthorName: Laurent Francioli, Grace Tiao, Konrad Karczewski, Matthew Solomonson, Nick Watts
+    - Title: gnomAD v3.0
+      URL: https://gnomad.broadinstitute.org/blog/2019-10-gnomad-v3-0/
+      AuthorName: Laurent Francioli, Daniel MacArthur

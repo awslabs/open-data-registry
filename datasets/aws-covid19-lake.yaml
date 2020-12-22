@@ -1,0 +1,54 @@
+Name: COVID-19 Data Lake
+Description: A centralized repository of up-to-date and curated datasets on or related to the spread and characteristics of the novel corona virus (SARS-CoV-2) and its associated illness, COVID-19. Globally, there are several efforts underway to gather this data, and we are working with partners to make this crucial data freely available and keep it up-to-date. Hosted on the AWS cloud, we have seeded our curated data lake with COVID-19 case tracking data from Johns Hopkins and The New York Times, hospital bed availability from Definitive Healthcare, and over 45,000 research articles about COVID-19 and related coronaviruses from the Allen Institute for AI. 
+Documentation: https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
+Contact: aws-covid-19-data-lake@amazon.com
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: Periodically
+Tags:
+  - bioinformatics
+  - biology
+  - coronavirus
+  - COVID-19
+  - health
+  - life sciences
+  - MERS
+  - medicine
+  - SARS
+  - aws-pds
+License: Varies by dataset
+Resources:
+  - Description: Collected COVID-19 related datasets
+    ARN: arn:aws:s3:::covid19-lake
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://covid19-lake.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: A public data lake for analysis of COVID-19 data
+      URL: https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/
+      AuthorName: AWS Data Lake Team
+      AuthorURL: https://aws.amazon.com/big-data/datalakes-and-analytics/
+      Services:
+        - Glue
+        - Athena
+        - Comprehend
+        - Kendra
+        - QuickSight
+    - Title: Exploring the public AWS COVID-19 data lake
+      URL: https://aws.amazon.com/blogs/big-data/exploring-the-public-aws-covid-19-data-lake/
+      AuthorName: AWS Data Lake Team
+      AuthorURL: https://aws.amazon.com/big-data/datalakes-and-analytics/
+      Services:
+        - Athena
+        - Glue
+        - SageMaker
+  Tools & Applications:
+    - Title: "Explore the COVID-19 data lake public S3 bucket"
+      URL: https://go.aws/covid-19-data-lake
+      AuthorName: AWS Data Lake Team
+      AuthorURL: https://aws.amazon.com/big-data/datalakes-and-analytics/
+    - Title: CloudFormation template for Glue Catalog table definitions
+      URL: https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?templateURL=https://covid19-lake.s3.us-east-2.amazonaws.com/cfn/CovidLakeStack.template.json&stackName=CovidLakeStack
+      AuthorName: AWS Data Lake Team
+      AuthorURL: https://aws.amazon.com/big-data/datalakes-and-analytics/

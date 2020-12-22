@@ -1,0 +1,67 @@
+Name: "Fly Brain Anatomy: FlyLight Gen1 and Split-GAL4 Imagery"
+Description: |
+  This data set, made available by Janelia's FlyLight project, consists of fluorescence images 
+  of Drosophila melanogaster driver lines, aligned to standard templates, and stored in formats 
+  suitable for rapid searching and visualization. Additional data will be added as it is published. 
+  A large release of Gen1 MCFO samples is coming at the beginning of May 2020. 
+Documentation: https://open.quiltdata.com/b/janelia-flylight-imagery
+Contact: flylight@janelia.hhmi.org
+ManagedBy: "[Janelia Research Campus](https://www.janelia.org)"
+UpdateFrequency: As required
+Tags:
+  - biology
+  - life sciences
+  - neuroscience
+  - neurobiology
+  - neuroimaging
+  - fluorescence imaging
+  - microscopy
+  - image processing
+License: "[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: Imagery and Metadata
+    ARN: arn:aws:s3:::janelia-flylight-imagery
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Alignment Templates 
+    ARN: arn:aws:s3:::janelia-flylight-templates
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Color Depth MIPs
+    ARN: arn:aws:s3:::janelia-flylight-color-depth
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: File Operations on AWS S3
+      URL: https://github.com/JaneliaSciComp/open-data-flylight/blob/master/tutorials/File_operations_on_AWS_S3.ipynb
+      AuthorName: Rob Svirskas
+    - Title: Using Imagery on AWS S3
+      URL: https://github.com/JaneliaSciComp/open-data-flylight/blob/master/tutorials/Using_imagery_on_AWS_S3.ipynb
+      AuthorName: Rob Svirskas
+  Tools & Applications:
+    - Title: FlyLight Project Website
+      URL: https://www.janelia.org/project-team/flylight
+      AuthorName: Geoffrey Meissner
+    - Title: Fly Light Split-GAL4 Driver Collection
+      URL: http://splitgal4.janelia.org/cgi-bin/splitgal4.cgi
+      AuthorName: Rob Svirskas
+    - Title: Color Depth Search Fiji Plugin
+      URL: https://github.com/JaneliaSciComp/ColorMIP_Mask_Search
+      AuthorName: Hideo Otsuna
+    - Title: NeuronBridge
+      URL: https://neuronbridge.janelia.org
+      AuthorName: Jody Clements, Rob Svirskas, Hideo Otsuna, Cristian Goina, Konrad Rokicki
+  Publications:
+    - Title: A GAL4-Driver Line Resource for Drosophila Neurobiology
+      URL: https://doi.org/10.1016/j.celrep.2012.09.011
+      AuthorName: Jenett, A., Rubin, G. M., Ngo, T., Shepherd, D., Murphy, C., Dionne, H., Pfeiffer, B. D., Cavallaro, A., Hall, D., Jeter, J., Iyer, N., Fetter, D., Hausenfluck, J. H., Peng, H., Trautman, E. T., Svirskas, R. R., Myers, E. W., Iwinski, Z. R., Aso, Y., DePasquale, G. M., Enos, A., Hulamm, P., Lam, S. C. B., Li, H., Laverty, T. R., Long, F., Qu, L., Murphy, S. D., Rokicki, K., Safford, T., Shaw, K., Simpson, J. H., Sowell, A., Tae, S., Yu, Y., & Zugates, C. T. 
+    - Title: The neuronal architecture of the mushroom body provides a logic for associative learning
+      URL: https://doi.org/10.7554/eLife.04577
+      AuthorName: Aso, Y., Hattori, D., Yu, Y., Johnston, R. M., Iyer, N. A., Ngo, T., Dionne, H., Abbott, L., Axel, R., Tanimoto, H., & Rubin, G. M. 
+    - Title: "Color depth MIP mask search: a new tool to expedite Split-GAL4 creation"
+      URL: https://doi.org/10.1101/318006
+      AuthorName: Otsuna, H., Ito, M., & Kawase, T. 
+    - Title: An unbiased template of the Drosophila brain and ventral nerve cord
+      URL: https://doi.org/10.1101/376384
+      AuthorName: Bogovic, J.A., Otsuna, H., Heinrich, L., Ito, M., Jeter, J., Meissner, G., Nern, A., Colonell, J., Malkesman, O., Ito, K., & Saalfeld, S.

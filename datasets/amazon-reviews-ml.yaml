@@ -1,0 +1,23 @@
+Name: The Multilingual Amazon Reviews Corpus
+Description: We present a collection of Amazon reviews specifically designed to aid research in multilingual text classification. The dataset contains reviews in English, Japanese, German, French, Chinese and Spanish, collected between November 1, 2015 and November 1, 2019. Each record in the dataset contains the review text, the review title, the star rating, an anonymized reviewer ID, an anonymized product ID and the coarse-grained product category (e.g. 'books', 'appliances', etc.)
+Documentation: https://docs.opendata.aws/amazon-reviews-ml/readme.html
+Contact: multilingual-reviews-dataset@amazon.com
+ManagedBy: Amazon
+UpdateFrequency: None specified.
+Tags:
+  - aws-pds
+  - natural language processing
+  - machine learning
+License: https://docs.opendata.aws/amazon-reviews-ml/license.txt
+Resources:
+  - Description: A collection of Amazon reviews in English, Japanese, German, French, Spanish and Chinese.
+    ARN: arn:aws:s3:::amazon-reviews-ml
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: The Multilingual Amazon Reviews Corpus
+      URL: https://arxiv.org/abs/2010.02573
+      AuthorName: Phillip Keung, Yichao Lu, György Szarvas, Noah A. Smith

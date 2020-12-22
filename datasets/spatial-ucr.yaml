@@ -1,0 +1,30 @@
+Name: Geosnap Data, Center for Geospatial Sciences
+Description: |
+  This bucket contains multiple datasets (as Quilt packages) created by the
+  Center for Geospatial Sciences (CGS) at the University of California-Riverside.
+  The data in this bucket contains the following:
+ 
+  1) Tabular and geographic data from the US Census
+  2) Land Cover imagery collected from [Multi-Resolution Land Characteristics Consortium](https://www.mrlc.gov/)
+  3) Road network data processed from OpenStreetMap
+Contact: Eli Knaap <knaap@ucr.edu>
+Documentation: https://spatialucr.github.io/geosnap-guide/home
+ManagedBy: "[UCR Center for Geospatial Sciences](https://spatial.ucr.edu)"
+UpdateFrequency: Annually
+Tags:
+  - aws-pds
+  - urban
+  - geospatial
+  - demographics
+License: BSD
+Resources:
+  - Description: Data files stored as Apache parquet and GeoTiff in a public bucket
+    ARN: arn:aws:s3:::spatial-ucr
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Geosnap User Guide
+      URL: https://spatialucr.github.io/geosnap-guide/home
+      AuthorName: Eli Knaap
+      AuthorURL: https://knaaptime.com
