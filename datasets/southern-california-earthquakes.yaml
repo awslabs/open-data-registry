@@ -2,7 +2,7 @@ Name: Southern California Earthquake Data
 Description: This dataset contains ground motion velocity and acceleration 
   seismic waveforms recorded by the Southern California Seismic Network (SCSN) 
   and archived at the Southern California Earthquake Data Center (SCEDC). 
-Documentation: https://scedc.caltech.edu/cloud/
+Documentation: https://scedc.caltech.edu/data/cloud.html
 Contact: scedc@gps.caltech.edu
 ManagedBy: "[Southern California Earthquake Data Center](https://scedc.caltech.edu)"
 UpdateFrequency: Daily
@@ -22,21 +22,30 @@ License: SCEDC herby grants the non-exclusive, royalty free, non-transferable,
   the SCEDC (doi:10.7909/C3WD3xH1) and SCSN (doi:10.7914/SN/CI) for any research
   publications using this data.
 Resources:
-  - Description: Seismic waveform data (miniSEED format)
+  - Description: Seismic waveform data (miniSEED format) and earthquake catalog (ascii)
     ARN: arn:aws:s3:::scedc-pds
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
     - Title: Getting Started with SCEDC AWS Public Dataset 
-      URL: https://scedc.caltech.edu/cloud/getstarted-pds.html
+      URL: https://scedc.caltech.edu/data/getstarted-pds.html
       AuthorName: Ellen Yu
       AuthorURL: https://scedc.caltech.edu
+    - Title: Script to Download Seismic Waveforms from the SCEDC AWS Public Dataset
+      URL: https://github.com/SCEDC/cloud/tree/master/pds-fetch-continuous-data
+      AuthorName: Aparna Bhaskaran
+      AuthorURL: https://scedc.caltech.edu
     - Title: Using Lambda to Process Seismograms
-      URL: https://github.com/SCEDC/pds-lambda-example
+      URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-example
       AuthorName: Shang-Lin Chen
       AuthorURL: https://scedc.caltech.edu
     - Title: 'Cactus to Clouds: Processing The SCEDC Open Data Set on AWS'
       URL: https://nextjournal.com/thclements/cactus-to-clouds/#accessing-the-scedc-dataset-on-aws
       AuthorName: Tim Clements
       AuthorURL: https://tclements.github.io/
+    - Title: 'SeisNoise.jl GPU Computing Tutorial - Another example of accessing data s3://scedc-pds for ambient noise cross-correlation'
+      URL: https://nextjournal.com/thclements/seisnoisejl-gpu-computing-tutorial 
+      AuthorName: Tim Clements
+      AuthorURL: https://tclements.github.io/
+
