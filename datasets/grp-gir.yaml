@@ -1,0 +1,48 @@
+Name:  Gas-in-Riser Distributed Sensing Systems on AWS
+Description: Full scale experiments of gas kicks in a well instrumented with fiber optic sensors
+Documentation: https://docs.opendata.aws/gas-in-riser/readme.html
+Contact: gas.in.riser@gmail.com
+ManagedBy: "[Craft and Hawkins Department of Petroleum Engineering](https://www.lsu.edu/eng/pete/index.php)"
+UpdateFrequency: Data is contributed as it becomes available.
+Tags:
+  - distributed sensing
+  - experimental fluid dynamics
+  - multiphase flow
+  - petroleum engineering
+  - segy
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+  - Description: Gas-in-Riser Archive from Jan2020 Trials
+    ARN: arn:aws:s3:::2020q1-watern2
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore: '[Browse Bucket](https://2020q1-watern2.s3.amazonaws.com/index.html'
+  - Description: Gas-in-Riser Archive from Dec2020 Trials
+    ARN: arn:aws:s3:::2020q4-watern2
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore: '[Browse Bucket](https://2020q4-watern2.s3.amazonaws.com/index.html'
+  - Description: Notification for new data
+    ARN: arn:aws:sns:us-east-1:932460756779:NewData
+    Region: us-east-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Analyzing the LSU GRP Gas-in-Riser Data
+      URL: https://github.com/ctaylor-lsu/Gas-in-Riser-Analysis
+      AuthorName: Charles E. Taylor
+      AuthorURL: https://www.linkedin.com/in/taylorbme
+  Tools & Applications:
+    - Title: Equinor SEGYIO Library
+      URL: https://pypi.org/project/segyio/
+      AuthorName: Equinor
+      AuthorURL: https://segyio.readthedocs.io/en/latest/
+    - Title: Schlumberger SEGYIO Python Library
+      URL: https://github.com/Schlumberger/segyio
+      AuthorName: Schlumberger/Equinor
+      AuthorURL: https://www.software.slb.com/
+  Publications:
+    - Title: Distributed Sensing and Real Time Visualization of Gas Kick Dynamics in a Full-Scale Wellbore 
+      URL: https://www.onepetro.org/conference-paper/SPE-201539-MS
+      AuthorName: W.C. Williams, C.E. Taylor, M.A. Almeida, J. Sharma, P.J. Waltrich, Y. Chen, G. Feo, M. Kunju, O.L.A Santos, et al
+      AuthorURL: https://www.lsu.edu/eng/pete/people/faculty/williams.php
