@@ -29,7 +29,24 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewHRRRObject
     Region: us-east-1
     Type: SNS Topic
+  - Description: HRRR Zarr format near-real time data archive managed by the University of Utah
+    ARN: aws:s3:::hrrrzarr
+    Region: us-west-1
+    Type: S3 bucket
+    Explore:
+    - '[Browse Bucket](https://hrrrzarr.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
+    - Title: What is Zarr?
+      URL: http://what-is-zarr.s3-website-us-west-1.amazonaws.com/
+      AuthorName: Taylor Gowan
+    - Title: Conda Enironment Setup Guide
+      URL: http://hrrr-documentation.s3-website-us-west-1.amazonaws.com/
+      AuthorName: Zach Rieck
+    - Title: Zarr File Varable Definitions
+      URL: http://zarr-variable-definitions.s3-website-us-west-1.amazonaws.com/
+      AuthorName: Taylor Gowan
   Tools & Applications:
-  Publications:
+    - Title: Zarr Visualization Example
+      URL: http://zarr-code-ex.s3-website-us-west-1.amazonaws.com/
+      AuthorName: Taylor Gowan, James Powell, Zach Rieck
