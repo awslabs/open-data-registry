@@ -37,6 +37,8 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
+    Explore:
+    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-cogs-inventory
     Region: us-west-2
@@ -56,6 +58,9 @@ DataAtWork:
     - Title: Use Sentinel-2 data in the Open Data Cube
       URL: https://github.com/opendatacube/cube-in-a-box
       AuthorName: Alex Leith
+    - Title: STAC, COG, Python and QGIS
+      URL: http://www.acgeospatial.co.uk/stac-cog-python-and-qgis/
+      AuthorName: Andrew Cutts
   Publications:
     - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
       URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing
