@@ -48,7 +48,7 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/index.html)'
-  - Description: The complete archive of NWM data version 2.0 in Zarr format.
+  - Description: The streamflow from the NWM version 2.0 in Zarr format.
     ARN: arn:aws:s3:::noaa-nwm-retro-v2-zarr-pds
     Region: us-west-2
     Type: S3 Bucket
@@ -61,6 +61,11 @@ Resources:
     Explore:
     - '[Browse Bucket](https://nwm-archive.s3.amazonaws.com/index.html)'
 DataAtWork:
+  Tutorials:
+    - Title: Explore the National Water Model Reanalysis in Zarr
+      URL: https://nbviewer.jupyter.org/gist/rsignell-usgs/d3dfaf3cd3d8b39894a69b22127dfe38
+      AuthorName: Rich Signell
+      AuthorURL: https://www.usgs.gov/staff-profiles/richard-p-signell
   Publications:
     - Title: "Simulating storm surge and compound flooding events with a creek-to-ocean model: Importance of baroclinic effects"
       URL: "https://doi.org/10.1016/j.ocemod.2019.101526"
