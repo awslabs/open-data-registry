@@ -1,0 +1,34 @@
+Name: Serratus Coronavirus Discovery - Versioned Data Release
+Description: "Serratus is a collaborative open science project for ultra-rapid discovery of known and unknown coronaviruses in response to the COVID-19 pandemic through re-analysis of publicly available genomic data. Our resulting vertebrate viral alignment data is explorable via the [Serratus Explorer](serratus.io/explorer) and directly accessible on Amazon S3."
+Documentation: https://github.com/ababaian/serratus/wiki/Access-Data-Release
+Contact: https://github.com/ababaian/serratus/issues
+ManagedBy: Serratus
+UpdateFrequency: Occasionally
+Tags:
+  - life sciences
+  - genetic
+  - genomic
+  - bam
+  - virus
+  - COVID-19
+  - SARS
+  - SARS-CoV-2
+  - MERS
+License: "[CC-0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Resources:
+  - Description: Versioned and structured data releases from the Serratus project. The most current version is v201210.
+    ARN: arn:aws:s3:::lovelywater
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Serratus Explorer
+      URL: https://serratus.io/explorer
+      AuthorName: Serratus Team
+    - Title: "Tantalus: An R Package for exploration of Serratus data"
+      URL: https://github.com/serratus-bio/tantalus
+      AuthorName: Serratus Team
+  Publications:
+    - Title: Petabase-scale sequence alignment catalyses viral discovery
+      URL: https://www.biorxiv.org/content/10.1101/2020.08.07.241729v1
+      AuthorName: Edgar R., Taylor J., Altman T., Barbera P., Meleshko D., Lin V., et al (2020)
