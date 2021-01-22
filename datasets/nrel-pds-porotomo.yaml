@@ -20,6 +20,10 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data Resampled in Time MATLAB Files
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/Resampled/
+    Region: us-west-2
+    Type: S3 Bucket
   - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in SEG-Y format
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASV/
     Region: us-west-2
@@ -34,6 +38,22 @@ Resources:
     Type: S3 Bucket
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) PoroTomo domains'
     ARN: arn:aws:s3:::nrel-pds-hsds/nrel/porotomo/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Nodal Seismometer Continuous Data
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Nodal Seismometer Field Notes and Metadata
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_metadata/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Nodal Seismometer P-Picks
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/p_picks/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PoroTomo Nodal Seismometer Sweep Data
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac_sweep/
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
