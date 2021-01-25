@@ -1,8 +1,10 @@
 Name: NOAA High-Resolution Rapid Refresh (HRRR) Model
 Description: >
-  The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh. Browse the bucket via the AWS S3 explorer: https://noaa-hrrr-bdp-pds.s3.amazonaws.com/index.html
+  The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.
 Documentation: https://docs.opendata.aws/noaa-hrrr-pds/readme.html
-Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Project Team at: noaa.bdp@noaa.gov."
+Contact:  |
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](https://www.noaa.gov/)"
 UpdateFrequency: Hourly
 Collabs:
@@ -19,7 +21,7 @@ Tags:
   - disaster response
 License: U.S. Government Work
 Resources:
-  - Description: A rolling one-week archive of HRRR data.
+  - Description: Archive of HRRR data since 2014.
     ARN: arn:aws:s3:::noaa-hrrr-bdp-pds
     Region: us-east-1
     Type: S3 Bucket
@@ -29,7 +31,24 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewHRRRObject
     Region: us-east-1
     Type: SNS Topic
+  - Description: HRRR Zarr format near-real time data archive managed by the University of Utah
+    ARN: aws:s3:::hrrrzarr
+    Region: us-west-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://hrrrzarr.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-  Tools & Applications:
-  Publications:
+    - Title: What is Zarr?
+      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/What_is_Zarr.html
+      AuthorName: Taylor Gowan
+    - Title: Zarr File Varable Definitions
+      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/zarrFileVariables.html
+      AuthorName: Taylor Gowan
+    - Title: Zarr Visualization Example
+      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/zarr_examples.html
+      AuthorName: Taylor Gowan, James Powell, Zach Rieck
+    - Title: Conda Enironment Setup Guide
+      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/conda_environment.html
+      AuthorName: Zach Rieck
+
