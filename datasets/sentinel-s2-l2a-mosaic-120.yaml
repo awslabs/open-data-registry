@@ -1,12 +1,5 @@
 Name: Sentinel-2 L2A 120m Mosaic
-Description: |
-  The [Sentinel-2 mission](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) is
-  a land monitoring constellation of two satellites that provide high resolution
-  optical imagery and provide continuity for the current SPOT and Landsat missions.
-  The mission provides a global coverage of the Earth's land surface every 5 days,
-  making the data of great use in on-going studies. L1C data are available from
-  June 2015 globally. L2A data are available from September 2016 over wider Europe
-  region and globally since January 2017.
+Description: Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, modelled by removing the cloudy pixels and then performing interpolation among remaining values. As there are some parts of the world, which have lengthy cloudy periods, clouds might be remaining in some parts. The actual modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/).  
 Documentation: Documentation is available [here](https://sentinel-s2-l2a-mosaic-120.s3.amazonaws.com/readme.html).
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
