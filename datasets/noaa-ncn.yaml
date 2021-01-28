@@ -1,26 +1,26 @@
 Name: NOAA Continuously Operating Reference Stations (CORS) Network (NCN)
 Description: |
-  The "[NOAA Continuously Operating Reference Stations (CORS) Network (NCN)](https://geodesy.noaa.gov/CORS/)", managed by NOAA/National Geodetic Survey ("[NGS](https://geodesy.noaa.gov/)"), provide Global Navigation Satellite System (GNSS) data, supporting three dimensional positioning, meteorology, space weather, and geophysical applications throughout the United States. The NCN is a multi-purpose, multi-agency cooperative endeavor, combining the efforts of hundreds of government, academic, and private organizations. The stations are independently owned and operated. Each agency shares their GNSS/GPS carrier phase and code range measurements and station metadata with NGS, which are analyzed and distributed free of charge.  
+  The [NOAA Continuously Operating Reference Stations (CORS) Network (NCN)](https://geodesy.noaa.gov/CORS/), managed by NOAA/National Geodetic Survey ([NGS](https://geodesy.noaa.gov/)), provide Global Navigation Satellite System (GNSS) data, supporting three dimensional positioning, meteorology, space weather, and geophysical applications throughout the United States. The NCN is a multi-purpose, multi-agency cooperative endeavor, combining the efforts of hundreds of government, academic, and private organizations. The stations are independently owned and operated. Each agency shares their GNSS/GPS carrier phase and code range measurements and station metadata with NGS, which are analyzed and distributed free of charge.  
   NGS provides access to all NCN data collected since 9 February (040) 1994.
   ##### Access to NCN Data
   NCN data can be retrieved from:
-    - "[NOAA-NCN on AWS](https://noaa-cors-pds.s3.amazonaws.com/)"
-    - "[ftp://geodesy.noaa.gov/cors/](ftp://geodesy.noaa.gov/cors/)"
-    - "[ftp://alt.ngs.noaa.gov/cors](ftp://alt.ngs.noaa.gov/cors)"
-    - "[NGS's customized data request service - UFCORS](https://geodesy.noaa.gov/UFCORS/)"
+    - [NOAA-NCN on AWS](https://noaa-cors-pds.s3.amazonaws.com/)
+    - [ftp://geodesy.noaa.gov/cors/](ftp://geodesy.noaa.gov/cors/)
+    - [ftp://alt.ngs.noaa.gov/cors](ftp://alt.ngs.noaa.gov/cors)
+    - [NGS's customized data request service - UFCORS](https://geodesy.noaa.gov/UFCORS/)
   ##### NCN Data and Products
-    - **RINEX**: |
+    - **RINEX**: 
         The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).
         RINEX data can be found at: rinex/`YYYY`/`DDD`/`ssss`/
-    - **Station logs**: |
+    - **Station logs**: 
         - Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc..
           Station log files can be found at: station_log/`ssss`.log.txt
         - Historical and current equipment information of all NCN stations, except those that are considered IGS stations, can be found at: station_log/cummulative.station.info.cors
-    - **Published Coordinates and Velocities**: |station_log/cummulative.station.info.cors
+    - **Published Coordinates and Velocities**: station_log/cummulative.station.info.cors
         NAD83 and ITRF coordinates and velocities of each NCN station. All published coordinates and velocities are given for the Antenna Reference Point (ARP).
         Published coordianate and velocity files can be found at: coord/coord_`YY`/
-        In July 2019, NGS has published "[MYCS2](https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml)"!
-    - **Time-series Plots**: |    
+        In July 2019, NGS has published [MYCS2](https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml)!
+    - **Time-series Plots**:     
         - *Short-term* plots show the epeatibility of a site for the last 90-days with respect to the current published position, corrected for the effect of the published velocity. These plots are updated daily.
           Short-term plots can be found at: /Plots/`ssss`_`YY`.short.png
         - *Long-term* plots show the show weekly residual positions with respect to the current published coordinates from our stacked solution. Newer sites may not have a long-term plot if they were added after our Multi-year Solution Processing campaign. 
@@ -47,7 +47,7 @@ Description: |
         - igr: IGS rapid solution combination
         - igu: IGS ultra-rapid solution combination
     
-Documentation: For more information, visit "[NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)"
+Documentation: For more information, visit [NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)
 Contact: | 
   - For general inquiries about NCN data and products, email: ✉ ngs.cors at noaa.gov
   - For any questions regarding data delivery not associated with this platform, or any general questions regarding the NOAA Big Data Program, email: ✉ noaa.bdp@noaa.gov
