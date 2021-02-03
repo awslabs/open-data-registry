@@ -22,6 +22,8 @@ Resources:
     ARN: arn:aws:s3:::usgs-lidar-public
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[STAC Catalog](https://usgs-lidar-stac.s3-us-west-2.amazonaws.com/ept/catalog.json)'
   - Description: A [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) Bucket of Raw LAZ 1.4 3DEP data. Data in this bucket is more complete in coverage than the EPT bucket, but it is not a complete 3DEP mirror. Some resources in this bucket also have incomplete and missing coordinate system information, which is why they might not be mirrored into the EPT bucket.
     ARN: arn:aws:s3:::usgs-lidar
     Region: us-west-2
