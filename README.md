@@ -1,4 +1,4 @@
-# Registry of Open Data on AWS  
+# Registry of Open Data on AWS   
 
 A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals.
 
