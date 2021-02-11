@@ -1,0 +1,50 @@
+Name: SondeHub Radiosonde Telemetry
+Description: >
+  SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our
+  participating radiosonde_auto_rx receiving stations. Currently 313 receiver stations are providing
+  data for an average of 384 radiosondes a day.
+
+  Data contains telemetry frames in Universal Sonde Telemetry format, including gps position, type,
+  altitude, pressure, temperature and humidity.
+Documentation: https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data
+Contact: Michaela Wheeler <vk3fur@sondehub.org>
+ManagedBy: SondeHub
+UpdateFrequency: Data is updated as we receive it
+Tags:
+  - climate
+  - environmental
+  - weather
+  - GPS
+License: Creative Commons BY-SA 2.0
+Resources:
+  - Description: Radiosonde Telemetry as JSON blobs of Universal Telemetry format
+    ARN: arn:aws:s3:::sondehub-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/
+DataAtWork:
+  Tutorials:
+    - Title: Loading example notebooks into SageMaker
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/README.md
+      AuthorName: Michaela Wheeler
+      Services: 
+        - SageMaker
+    - Title: Using Athena to read radiosonde data
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub-athena.ipynb
+      AuthorName: Michaela Wheeler
+      Services: 
+        - Athena
+    - Title: Using pysondehub to read radiosonde data
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub.ipynb
+      AuthorName: Michaela Wheeler
+      Services: 
+        - S3
+  Tools & Applications:
+    - Title: pysondehub
+      URL: https://pypi.org/project/sondehub/
+      AuthorName: Sondehub
+      AuthorURL: https://github.com/projecthorus/pysondehub
+  Publications:
+    - Title: STM32 Development Boards (literally) Falling From The Sky (How to submit data)
+      URL: https://www.youtube.com/watch?v=YBy-bXEWZeM
+      AuthorName: Mark Jessop & Michaela Wheeler
