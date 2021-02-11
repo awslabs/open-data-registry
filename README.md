@@ -1,4 +1,4 @@
-# Registry of Open Data on AWS
+# Registry of Open Data on AWS 
 
 A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals.
 
@@ -153,4 +153,4 @@ DataAtWork:
 
 ## How can I contribute?
 
-You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md).
+You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 
