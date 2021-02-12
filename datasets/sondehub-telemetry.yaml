@@ -1,11 +1,10 @@
 Name: SondeHub Radiosonde Telemetry
 Description: >
-  SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our
-  participating radiosonde_auto_rx receiving stations. Currently 313 receiver stations are providing
-  data for an average of 384 radiosondes a day.
+  SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
 
-  Data contains telemetry frames in Universal Sonde Telemetry format, including gps position, type,
-  altitude, pressure, temperature and humidity.
+  Currently 313 receiver stations are providing data for an average of 384 radiosondes a day. 
+  The data within this repository contains received telemetry frames, including radiosonde type, gps position, and for some radiosondes atmospheric sensor data (temperature, humidity, pressure).
+  As the downlinked telemetry does not always contain calibration information, any atmospheric sensor data should be considered to be uncalibrated. Note that radiosonde_auto_rx does not have sensor data support for all radiosonde types.
 Documentation: https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data
 Contact: Michaela Wheeler <vk3fur@sondehub.org>
 ManagedBy: '[SondeHub](https://sondehub.org/)'
