@@ -8,9 +8,14 @@ Description: >
   altitude, pressure, temperature and humidity.
 Documentation: https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data
 Contact: Michaela Wheeler <vk3fur@sondehub.org>
-ManagedBy: SondeHub
+ManagedBy: '[SondeHub](https://sondehub.org/)'
 UpdateFrequency: Data is updated as we receive it
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
+  - aws-pds
   - climate
   - environmental
   - weather
@@ -21,7 +26,9 @@ Resources:
     ARN: arn:aws:s3:::sondehub-open-data
     Region: us-east-1
     Type: S3 Bucket
-    Explore: http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/
+    Explore:
+      - '[Browse Bucket by serial number](http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#serial/)'
+      - '[Browse Bucket by date/time](http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#date/)'
 DataAtWork:
   Tutorials:
     - Title: Loading example notebooks into SageMaker
