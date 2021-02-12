@@ -1,0 +1,18 @@
+Name: iNaturalist licensed observation images on AWS
+Description: Licensed images accompanying iNaturalist observations. iNaturalist is the a community science effort in which participants share observations of living organisms that they encounter and document with photographic evidence, location, and date. The community works together reviewing these images to identify these observations to species.
+Documentation: Documentation and tutorials are forthcoming. We are in the process of migrating existing images to this bucket. Once we've passed 1 million images we will begin posting accompanying metadata and tutorials for how to use this metadata to interpret these images. In the meantime, you can learn more about the iNaturalist initiative here https://www.inaturalist.org/
+Contact: help@inaturalist.org
+ManagedBy: "[iNaturalist](https://www.inaturalist.org/) is a joint initiative of the [California Academy of Sciences](https://calacademy.org/) and the [National Geographic Society](https://www.nationalgeographic.org/)"
+UpdateFrequency: Images are posted realtime and we are currently copying over images from existing observations. Once this dataset contains 1 million image files we will begin adding a weekly database of metadata tables necessary to reconstruct the iNaturalist observations.
+Tags:
+  - aws-pds
+  - earth observation
+  - biodiversity
+  - bioinformatics
+  - conservation
+License: Each image has a creative commons license. The details of those licenses will be included in the forthcoming metadata tables.
+Resources:
+  - Description: image files (e.g. jpg) associated with observations outlined in forthcoming metadata
+    ARN: arn:aws:s3:::inaturalist-open-data
+    Region: us-east-1
+    Type: S3 Bucket
