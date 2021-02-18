@@ -11,5 +11,5 @@ if [[ "$CODEBUILD_WEBHOOK_HEAD_REF" == "refs/heads/main" && ${CODEBUILD_SOURCE_V
 	# Invalidate CDN cache
 	aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
 else
-    echo No deploy needed.
+    echo No deploy needed. 
 fi
