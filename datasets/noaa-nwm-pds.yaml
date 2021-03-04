@@ -39,6 +39,12 @@ Resources:
     ARN: arn:aws:s3:::noaa-nwm-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NWM, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
