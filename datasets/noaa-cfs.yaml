@@ -1,0 +1,41 @@
+Name: NOAA Climate Forecast System (CFS)
+Description: The Climate Forecast System (CFS) is a model representing the global interaction between Earth's oceans, land, and atmosphere. Produced by several dozen scientists under guidance from the National Centers for Environmental Prediction (NCEP), this model offers hourly data with a horizontal resolution down to one-half of a degree (approximately 56 km) around Earth for many variables. CFS uses the latest scientific approaches for taking in, or assimilating, observations from data sources including surface observations, upper air balloon observations, aircraft observations, and satellite observations.
+Documentation: https://cfs.ncep.noaa.gov/
+Contact: |
+  For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Hourly, 6-Hourly, and Monthly
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Climate Forecast System (CFS) Model Data
+    ARN: arn:aws:s3:::noaa-cfs-pds 
+    Region: us-east-1
+    Type: S3 Bucket
+    URL: https://noaa-cfs-pds.s3.amazonaws.com
+    Explore:
+      - '[Browse Bucket](https://noaa-cfs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for CFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewCFSObject
+    Region: us-east-1
+    Type: S3 Bucket
+
+DataAtWork:
+  Publications:
+    - Title: The NCEP Climate Forecast System Reanalysis
+      URL: https://journals.ametsoc.org/view/journals/bams/91/8/2010bams3001_1.xml
+      AuthorName: Saha, Suranjana, and Coauthors
+    - Title: The NCEP Climate Forecast System Version 2
+      URL: https://journals.ametsoc.org/view/journals/clim/27/6/jcli-d-12-00823.1.xml
+      AuthorName: Saha, Suranjana, and Coauthors
