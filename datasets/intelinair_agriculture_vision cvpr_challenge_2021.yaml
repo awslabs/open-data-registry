@@ -1,0 +1,23 @@
+Name: AgricultureVision
+Description: 'Dataset associated with the paper "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis".  Data has been formatted for the 2021 CVPR Agrictulture Vision Workshop Challenge. '
+Documentation: https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021
+Contact: support@intelinair.com
+ManagedBy: Intelinair, Inc.
+UpdateFrequency: Periodically
+Tags:
+  - aerial imagery
+  - agriculture
+  - computer vision
+  - deep learning
+License: Provided in the bucket.
+Resources:
+  - Description: Terms of use and paper provided.  Dataset provided as a tar.gz files broken into train, validation, and test.
+    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021_supervised/
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Publications:
+    - Title: "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis"
+      URL: https://arxiv.org/abs/2001.01306
+      AuthorName: Mang Tik Chiu, Xingqian Xu, Yunchao Wei, Zilong Huang, Alexander Schwing, Robert Brunner, Hrant Khachatrian, Hovnatan Karapetyan, Ivan Dozier, Greg Rose, David Wilson, Adrian Tudor, Naira Hovakimyan, Thomas S. Huang, Honghui Shi
