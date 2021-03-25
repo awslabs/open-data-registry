@@ -1,6 +1,6 @@
-Name: North American Coordinated Regional Downscaling Experiment (NA-CORDEX)
+Name: NA-CORDEX: North American component of the Coordinated Regional Downscaling Experiment
 Description: >
-  The North American Coordinated Regional Downscaling Experiment (NA-CORDEX) produces regional climate change scenario data and guidance for North America, for use in impacts, decision-making, and climate science.
+  The NA-CORDEX dataset contains regional climate change scenario data and guidance for North America, for use in impacts, decision-making, and climate science.
   The NA-CORDEX data archive contains output from regional climate models (RCMs) run over a domain covering most of North America using boundary conditions from global climate model (GCM) simulations in the CMIP5 archive. These simulations run from 1950–2100 with a spatial resolution of 0.22°/25km or 0.44°/50km. 
   This AWS S3 version of the data inclues selected variables converted to Zarr format from the original NetCDF. Only daily data are currently available; all daily data were mapped to the Gregorian calendar. Sub-daily data may be added later. Both raw and bias-corrected data are available.
   Further details about this version of the dataset are available at the documentation link below.
@@ -16,14 +16,12 @@ Tags:
   - climate
   - model
   - atmosphere
-  - oceans
   - land
-  - ice
   - geospatial
   - machine learning
   - aws-pds
   - sustainability
-License: https://www.ucar.edu/terms-of-use/data
+License: https://na-cordex.org/terms-use.html
 Resources:
   - Description: Project data files
     ARN: arn:aws:s3:::ncar-na-cordex
@@ -31,7 +29,7 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Tools & Applications:
-    - Title: Jupyter Notebook and other documentation and tools for CESM LENS on AWS
+    - Title: Jupyter Notebook and other documentation and tools
       URL: https://github.com/NCAR/na-cordex-aws
       AuthorName: NCAR Science at Scale team
     - Title: Rendered (static) version of Jupyter Notebook
