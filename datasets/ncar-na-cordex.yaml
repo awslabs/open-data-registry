@@ -5,7 +5,7 @@ Description: >
   This AWS S3 version of the data inclues selected variables converted to Zarr format from the original NetCDF. Only daily data are currently available; all daily data were mapped to the Gregorian calendar. Sub-daily data may be added later. Both raw and bias-corrected data are available.
   Further details about this version of the dataset are available at the documentation link below.
 Documentation: https://doi.org/10.26024/9xkm-fp81
-Contact: cisl-aws-lens@ucar.edu
+Contact: cisl-aws-na-cordex@ucar.edu
 ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
 UpdateFrequency: Rare. NA-CORDEX is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the data.
 Collabs:
@@ -31,15 +31,14 @@ DataAtWork:
   Tools & Applications:
     - Title: Jupyter Notebook and other documentation and tools
       URL: https://github.com/NCAR/na-cordex-aws
-      AuthorName: NCAR Science at Scale team
+      AuthorName: Brian Bonnlander, Seth McGinnis (NCAR)
     - Title: Rendered (static) version of Jupyter Notebook
-      URL: t.b.d.
-      AuthorName: Brian Bonnlander, NCAR
-  Tutorials:
-    - Title: anything here?
-      URL: 
-      AuthorName: 
+      URL: http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/plot-zarr-diagnostics.html
+      AuthorName: Brian Bonnlander (NCAR)
+    - Title: Intake-ESM Catalog
+      URL: https://ncar-na-cordex.s3-us-west-2.amazonaws.com/catalogs/aws-na-cordex.json
+      AuthorName: Brian Bonnlander (NCAR)
   Publications:
-    - Title: 
-      URL: 
-      AuthorName: 
+    - Title: The NA-CORDEX dataset, version 1.0. NCAR Climate Data Gateway, Boulder CO (2017)
+      URL: https://doi.org/10.5065/D6SJ1JCH
+      AuthorName: Mearns, Linda O., et al.
