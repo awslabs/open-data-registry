@@ -21,7 +21,9 @@ Resources:
     ARN: arn:aws:s3:::noaa-ocs-nationalbathymetry-pds
     Region: us-east-1
     Type: S3 Bucket
-- Description: NOAA National Bathymetry New Object Notification
+    Explore:
+      - '[Browse Bucket](https://noaa-ocs-nationalbathymetry-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA National Bathymetry New Object Notification
     ARN: arn:aws:sns:us-east-1:709902155096:NewNationalBathymetryObject
     Region: us-east-1
     Type: SNS Topic
