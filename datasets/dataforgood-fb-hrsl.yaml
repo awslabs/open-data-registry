@@ -34,8 +34,12 @@ License: |
   Settlement Layer (HRSL). Source imagery for HRSL © 2016 [DigitalGlobe](http://explore.digitalglobe.com/Basemap-Vivid.html).
   Accessed DAY MONTH YEAR.
 Resources:
-  - Description: CSV and Cloud-optimized GeoTIFF files
-    ARN: arn:aws:s3:::dataforgood-fb-data
+  - Description: Cloud-optimized GeoTIFF files
+    ARN: arn:aws:s3:::dataforgood-fb-data/hrsl-cogs/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: CSV files
+    ARN: arn:aws:s3:::dataforgood-fb-data/csv/
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
