@@ -10,20 +10,30 @@ Tags:
   - genetic
   - genomic
   - whole genome sequencing
+  - whole exome sequencing
   - transcriptomics
-  - bam
   - fastq
+  - bam
+  - cram
   - STRIDES
-License: "[U.S. Government work](https://www.ncbi.nlm.nih.gov/home/about/policies/)"
+License: "[NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
 Resources:
-  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket. This is the first of two S3 buckets for source submissions from sequencing methodologies such as PacBio, Oxford Nanopore Technologies, and 10X Genomics.
     ARN: arn:aws:s3:::sra-pub-src-1
     Region: us-east-1
     Type: S3 Bucket
-  - Description: .bam, .cram, and .fastq files in a public S3 bucket
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket. This is the second of two S3 buckets for source submissions from sequencing methodologies such as PacBio, Oxford Nanopore Technologies, and 10X Genomics.
     ARN: arn:aws:s3:::sra-pub-src-2
     Region: us-east-1
     Type: S3 Bucket
+  - Description: .sra files in a public S3 bucket. This bucket contains all open access SRA submissions in .sra format.
+    ARN: arn:aws:s3:::sra-pub-src-2
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "Update notifications for s3://sra-run-odp. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:us-east-1:867126678632:sra-pub-run-odp-objects
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: SRA in the Cloud
