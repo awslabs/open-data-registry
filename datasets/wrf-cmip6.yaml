@@ -1,0 +1,34 @@
+Name: CMIP6 GCMs downscaled using WRF
+Description: High-resolution historical and future climate simulations from 1980-2100
+Documentation: https://dept.atmos.ucla.edu/alexhall/downscaling-cmip6
+Contact: s.rahimi@ucla.edu
+ManagedBy: "[UCLA Center for Climate Science](https://dept.atmos.ucla.edu/)"
+UpdateFrequency: New downscaled results are uploaded as soon as they become available
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - agriculture
+  - atmosphere
+  - climate
+  - earth observation
+  - environmental
+  - model
+  - oceans
+  - simulations
+  - weather
+License: Creative Commons Attribution-ShareAlike 4.0 International License
+Resources:
+  - Description: WRF output files
+    ARN: arn:aws:s3:::wrf-cmip6-noversioning
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://wrf-cmip6-noversioning.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Jupyter Notebook Example
+      URL: https://nbviewer.jupyter.org/urls/wrf-cmip6-noversioning.s3.amazonaws.com/Example_notebook/Notebook_example.ipynb
+      AuthorName: Stefan Rahimi

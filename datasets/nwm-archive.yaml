@@ -22,8 +22,9 @@ Description: |
 Documentation: https://docs.opendata.aws/nwm-archive/readme.html
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
-  For any questions regarding data delivery not associated with this platform or any general questions
-  regarding the NOAA Big Data Project, email [noaa.bdp@noaa.gov](noaa.bdp@noaa.gov).
+  <br />
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: No updates
 Collabs:
@@ -32,6 +33,7 @@ Collabs:
       - water
 Tags:
   - aws-pds
+  - agriculture
   - weather
   - climate
   - environmental
@@ -45,11 +47,26 @@ Resources:
     ARN: arn:aws:s3:::noaa-nwm-retro-v2.0-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/index.html)'
+  - Description: The streamflow from the NWM version 2.0 in Zarr format.
+    ARN: arn:aws:s3:::noaa-nwm-retro-v2-zarr-pds
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retro-v2-zarr-pds.s3.amazonaws.com/index.html)'
   - Description: The complete archive of NWM data version 1.2.
     ARN: arn:aws:s3:::nwm-archive
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://nwm-archive.s3.amazonaws.com/index.html)'
 DataAtWork:
+  Tutorials:
+    - Title: Explore the National Water Model Reanalysis in Zarr
+      URL: https://nbviewer.jupyter.org/gist/rsignell-usgs/d3dfaf3cd3d8b39894a69b22127dfe38
+      AuthorName: Rich Signell
+      AuthorURL: https://www.usgs.gov/staff-profiles/richard-p-signell
   Publications:
     - Title: "Simulating storm surge and compound flooding events with a creek-to-ocean model: Importance of baroclinic effects"
       URL: "https://doi.org/10.1016/j.ocemod.2019.101526"

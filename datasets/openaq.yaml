@@ -20,6 +20,8 @@ Resources:
     ARN: arn:aws:s3:::openaq-fetches
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://openaq-fetches.s3.amazonaws.com/index.html)'
   - Description: Rich SNS topic for new measurements, 1 notification per measurement, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
     ARN: arn:aws:sns:us-east-1:470049585876:OPENAQ_NEW_MEASUREMENT
     Region: us-east-1
@@ -42,6 +44,10 @@ DataAtWork:
       URL: https://medium.com/@openaq/how-in-the-world-do-you-access-air-quality-data-older-than-90-days-on-the-openaq-platform-8562df519ecd
       AuthorName: OpenAQ
       AuthorURL: https://openaq.org
+    - Title: Analyze Global Air Pollution Using Apache Spark & BigQuery
+      URL: https://kapilsreed.medium.com/how-to-analyze-global-air-quality-using-apache-spark-bigquery-7743fd54e634
+      AuthorName: Kapil Sreedharan
+      AuthorURL: https://kapilsreed.medium.com/
   Tools & Applications:
     - Title: "Smokey: Air Quality Bot"
       URL: https://www.facebook.com/smokeybot/
@@ -58,6 +64,10 @@ DataAtWork:
       URL: https://arisense.io/
       AuthorName: Aerodyne Research, Inc.
       AuthorURL: http://www.aerodyne.com/
+    - Title: OpenAQ Aggregator
+      URL: https://github.com/ksree/world-air-quality
+      AuthorName: Kapil Sreedharan
+      AuthorURL: https://github.com/ksree
   Publications:
     - Title: Enabling rapid COVID-19 and air pollution analysis across the globe with OpenAQ and AWS
       URL: https://aws.amazon.com/blogs/publicsector/enabling-rapid-covid-19-air-pollution-analysis-across-globe-openaq/

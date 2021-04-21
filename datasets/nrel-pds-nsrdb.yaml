@@ -1,4 +1,4 @@
-Name: NREL National Solar Radiation Database on AWS
+Name: NREL National Solar Radiation Database
 Description: |
   Released to the public as part of the Department of Energy's Open Energy Data Initiative,
   the [National Solar Radiation Database (NSRDB)](https://nsrdb.nrel.gov/) is
@@ -8,9 +8,13 @@ Description: |
   data have been collected at a sufficient number of locations and temporal and
   spatial scales to accurately represent regional solar radiation climates.
 Documentation: https://nsrdb.nrel.gov/
-Contact: https://nsrdb.nrel.gov/contact
+Contact: nsrdb@nrel.gov
 ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
 UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - energy
 Tags:
   - aws-pds
   - earth observation
@@ -19,10 +23,22 @@ Tags:
   - meteorological
   - solar
   - sustainability
-License: https://github.com/NREL/hsds-examples/blob/master/LICENSE
+License:  Creative Commons Attribution 3.0 United States License
 Resources:
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 4km x 30min data (1998-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
     ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical meteorological years (TMY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tmy/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical direct years (TDY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tdy/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical global years (TGY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tgy/
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) synthetically downscaled 2km x 5min for Puerto Rico (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
@@ -41,6 +57,10 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-nsrdb/meteosat/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-10min data from the Himawari satellites starting in 2015 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-nsrdb/himawari/
+    Region: us-west-2
+    Type: S3 Bucket
   - Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
     ARN: arn:aws:s3:::nrel-pds-nsrdb/india/
     Region: us-west-2
@@ -53,8 +73,8 @@ Resources:
     ARN: arn:aws:s3:::nrel-pds-nsrdb/mts2
     Region: us-west-2
     Type: S3 Bucket
-  - Description: '[HSDS](https://github.com/NREL/hsds-examples) Backend Data'
-    ARN: arn:aws:s3:::nrel-pds-hsds/nsrdb/
+  - Description: '[HSDS](https://github.com/NREL/hsds-examples) NSRDB domains'
+    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/nsrdb/
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:

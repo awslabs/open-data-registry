@@ -5,6 +5,7 @@ Contact: COSEMData@janelia.hhmi.org
 ManagedBy: "[Janelia Research Campus](https://www.janelia.org/)"
 UpdateFrequency: New datasets and derived data are added as soon as they are available.
 Tags:
+  - aws-pds
   - cell biology
   - organelle
   - electron microscopy
@@ -13,7 +14,11 @@ Tags:
 License: CC-BY-4.0
 Resources:
   - Description: Raw FIB-SEM datasets and derived data.
-    ARN: arn:aws:s3:::janelia-cosem-datasets
+    ARN: arn:aws:s3:::janelia-cosem
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Machine learning models for organelle prediction.
+    ARN: arn:aws:s3:::janelia-cosem-networks
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
