@@ -16,7 +16,7 @@ Tags:
   - bam
   - cram
   - STRIDES
-License: "[NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
 Resources:
   - Description: .bam, .cram, and .fastq files in a public S3 bucket. This is the first of two S3 buckets for source submissions from sequencing methodologies such as PacBio, Oxford Nanopore Technologies, and 10X Genomics.
     ARN: arn:aws:s3:::sra-pub-src-1
@@ -26,8 +26,12 @@ Resources:
     ARN: arn:aws:s3:::sra-pub-src-2
     Region: us-east-1
     Type: S3 Bucket
-  - Description: .sra files in a public S3 bucket. This bucket contains all open access SRA submissions in .sra format.
+  - Description: .sra files in a public S3 bucket. This bucket contains all open access SRA submissions in the SRA ETL + BQS format. The SRA Toolkit will be required to convert these objects into FASTQ or SAM files.
     ARN: arn:aws:s3:::sra-pub-src-2
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "Metadata files for the Sequence Read Archive, ready to load into [AWS Glue](https://aws.amazon.com/glue/) and query with [Amazon Athena](https://aws.amazon.com/athena/)."
+    ARN: arn:s3:::sra-pub-metadata-us-east-1/sra/metadata/
     Region: us-east-1
     Type: S3 Bucket
   - Description: "Update notifications for s3://sra-run-odp. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
@@ -42,6 +46,10 @@ DataAtWork:
       AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
     - Title: Access SRA data using Amazon Web Services (AWS)
       URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+    - Title: Get started with the SRA and Amazon Athena
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/
       AuthorName: NCBI SRA
       AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
   Tools & Applications:
