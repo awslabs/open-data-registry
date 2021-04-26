@@ -27,14 +27,14 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
   - Description: .sra files in a public S3 bucket. This bucket contains all open access SRA submissions in the SRA ETL + BQS format. The SRA Toolkit will be required to convert these objects into FASTQ or SAM files.
-    ARN: arn:aws:s3:::sra-pub-src-2
+    ARN: arn:aws:s3:::sra-pub-run-odp
     Region: us-east-1
     Type: S3 Bucket
   - Description: "Metadata files for the Sequence Read Archive, ready to load into [AWS Glue](https://aws.amazon.com/glue/) and query with [Amazon Athena](https://aws.amazon.com/athena/)."
     ARN: arn:aws:s3:::sra-pub-metadata-us-east-1/sra/metadata
     Region: us-east-1
     Type: S3 Bucket
-  - Description: "Update notifications for s3://sra-run-odp. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+  - Description: "Update notifications for s3://sra-pub-run-odp. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
     ARN: arn:aws:sns:us-east-1:867126678632:sra-pub-run-odp-objects
     Region: us-east-1
     Type: SNS Topic
