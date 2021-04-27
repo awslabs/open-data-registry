@@ -1,0 +1,52 @@
+Name: Finnish Meteorological Institute Weather Radar Data
+Description: "The up-to-date weather radar from the FMI radar network is available as Open Data. The data contain both single radar data along with composites over Finland in GeoTIFF and HDF5-formats. Available composite parameters consist of radar reflectivity (DBZ), rainfall intensity (RR), and precipitation accumulation of 1, 12, and 24 hours. Single radar parameters consist of radar reflectivity (DBZ), radial velocity (VRAD), rain classification (HCLASS), and Cloud top height (ETOP 20). Raw volume data from singe radars are also provided in HDF5 format with ODIM 2.3 conventions. Radar data becomes available as soon as it's received from the radar and pre-processed into deliverable formats. Typically the most recent radar data was collected less than 5 minutes ago."
+Documentation: http://en.ilmatieteenlaitos.fi/radar-data-on-aws-s3
+ManagedBy: "[Finnish Meteorological Institute](https://www.ilmatieteenlaitos.fi/)"
+Contact: avoin-data@fmi.fi
+UpdateFrequency: 5 minutes
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - weather
+  - meteorological
+  - sustainability
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Resources:
+  - Description: Radar data as GeoTIFF
+    ARN: arn:aws:s3:::fmi-opendata-radar-geotiff
+    Region: eu-west-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://fmi-opendata-radar-geotiff.s3.amazonaws.com/index.html)'
+  - Description: Volume data as HDF5
+    ARN: arn:aws:s3:::fmi-opendata-radar-volume-hdf5
+    Region: eu-west-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://fmi-opendata-radar-volume-hdf5.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new GeoTIFF data
+    ARN: arn:aws:sns:eu-west-1:916174725480:fmi-opendata-radar-geotiff-object_created
+    Region: eu-west-1
+    Type: SNS Topic
+  - Description: Notifications for new volume data
+    ARN: arn:aws:sns:eu-west-1:916174725480:fmi-opendata-radar-volume-hdf5-object_created
+    Region: eu-west-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Handling data with QGIS"
+      URL: https://github.com/fmidev/opendata-resources/tree/master/examples/qgis/radar-composite
+      AuthorName: Markus Peura
+    - Title: "Processing GeoTIFF data with python"
+      URL: https://github.com/fmidev/opendata-resources/blob/master/examples/python/Accumulated_prec_amount_from_radar_GeoTiff.ipynb
+      AuthorName: Roope Tervo
+    - Title: "Processing HDF5 data with python"
+      URL: https://github.com/fmidev/opendata-resources/blob/master/examples/python/radar-rhi-from-hdf5.ipynb
+      AuthorName: Roope Tervo
+  Tools & Applications:
+  Publications:

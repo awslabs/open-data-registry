@@ -6,14 +6,23 @@ UpdateFrequency: Data will be added and updated as technologies improve or new d
 Tags:
   - aws-pds
   - genomic
+  - genetic
   - life sciences
-License: Human PanGenomics Project data are licensed under the Creative Commons CC0 1.0 Universal license.
+  - fastq
+  - fast5
+  - cram
+License: "[Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.en)"
 Resources:
   - Description: Human PanGenomics Project
     ARN: arn:aws:s3:::human-pangenomics
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://human-pangenomics.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
+    - Title: Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly of eleven human genomes
+      URL: https://www.nature.com/articles/s41587-020-0503-6
+      AuthorName: Shafin et al (2020)

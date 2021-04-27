@@ -1,0 +1,17 @@
+Name: 'ZEST: ZEroShot  learning  from Task descriptions'
+Description: ZEST is a benchmark for zero-shot generalization to unseen NLP tasks,
+  with 25K labeled instances across 1,251 different tasks.
+Documentation: https://allenai.org/data/zest
+Contact: info@allenai.org
+ManagedBy: '[Allen Institute for AI](https://allenai.org)'
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - machine learning
+  - natural language processing
+License: '[CC BY](https://creativecommons.org/licenses/by/4.0)'
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::ai2-public-datasets/zest/
+    Region: us-west-2
+    Type: S3 Bucket

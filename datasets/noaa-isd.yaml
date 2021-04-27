@@ -23,7 +23,9 @@ Description: |
   by each station.
 Documentation: https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf
 Contact: |
-  For questions regarding data content or quality, visit [the NOAA ISD site](https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf). For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Project, email noaa.bdp@noaa.gov.
+  For questions regarding data content or quality, visit [the NOAA ISD site](https://www.ncei.noaa.gov/data/global-hourly/doc/isd-format-document.pdf). <br />
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Daily
 Collabs:
@@ -32,6 +34,7 @@ Collabs:
       - weather
 Tags:
   - aws-pds
+  - agriculture
   - climate
   - meteorological
   - sustainability
@@ -42,10 +45,14 @@ Resources:
     ARN: arn:aws:s3:::noaa-isd-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-isd-pds.s3.amazonaws.com/index.html)'
   - Description: ISD in CSV format
     ARN: arn:aws:s3:::noaa-global-hourly-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-global-hourly-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
