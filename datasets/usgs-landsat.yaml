@@ -1,20 +1,18 @@
-Deprecated: True
-Name: Landsat 8
+Name: USGS Landsat
 Description: |
-  An ongoing collection of satellite imagery of all land on Earth produced by
-  the Landsat 8 satellite.
-
-  **Note this dataset is deprecated in favor of the [USGS cloud access mechanism](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access). This bucket will be deleted on July 1, 2021.**
-Documentation: https://docs.opendata.aws/landsat-pds/readme.html
-Contact: https://lists.osgeo.org/mailman/listinfo/landsat-pds
-ManagedBy: "[Planet](https://www.planet.com/)"
-UpdateFrequency: New Landsat 8 scenes are added regularly as soon as they are available.
+  This joint NASA/USGS program provides the longest continuous space-based record of 
+  Earth’s land in existence. Every day, Landsat satellites provide essential information 
+  to help land managers and policy makers make wise decisions about our resources and our environment.
+  Data is provided for Landsats 1, 2, 3, 4, 5, 7, and 8.
+Documentation: https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access
+Contact: https://answers.usgs.gov/
+ManagedBy: "[United States Geological Survey](https://www.usgs.gov)"
+UpdateFrequency: New scenes are added daily.
 Collabs:
   ASDI:
     Tags:
       - satellite imagery
 Tags:
-  - aws-pds
   - agriculture
   - earth observation
   - satellite imagery
@@ -23,23 +21,17 @@ Tags:
   - sustainability
   - disaster response
 License: |
-  There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. More information on licensing and Landsat data citation is available from USGS.
+  There are no restrictions on Landsat data downloaded from the USGS; it can be used or 
+  redistributed as desired. We do request that you include a [statement of the data source](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con) 
+  when citing, copying, or reprinting USGS Landsat data or images.
 Resources:
   - Description: Scenes and metadata
-    ARN: arn:aws:s3:::landsat-pds
+    ARN: arn:aws:s3:::usgs-landsat/collection02/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: True
     Explore:
-    - '[Browse Bucket](https://landsat-pds.s3.amazonaws.com/index.html)'
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/landsat-8-l1-c1)'
-  - Description: New scene notifications
-    ARN: arn:aws:sns:us-west-2:274514004127:NewSceneHTML
-    Region: us-west-2
-    Type: SNS Topic
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) (ORC)"
-    ARN: arn:aws:s3:::landsat-pds-inventory
-    Region: us-west-2
-    Type: S3 Bucket
+    - '[STAC Catalog](https://landsatlook.usgs.gov/sat-api/collections)'
 DataAtWork:
   Tutorials:
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
@@ -61,6 +53,21 @@ DataAtWork:
       URL: http://www.acgeospatial.co.uk/cog-part-2-python/
       AuthorName: acgeospatial
       AuthorURL: http://www.acgeospatial.co.uk/
+    - Title: Landsat Cloud Direct Access Requester Pays Tutorial
+      URL: https://www.usgs.gov/media/files/landsat-cloud-direct-access-requester-pays-tutorial
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Landsat Data is Moving to the Cloud
+      URL: https://www.usgs.gov/media/videos/landsat-data-cloud
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Landsat in the Cloud – Supporting Current Workflows
+      URL: https://www.usgs.gov/media/videos/landsat-cloud-will-my-workflow-be-supported
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Cloud Segmentation in Landsat-8 Images
+      URL: https://medium.com/sentinel-hub/clouds-segmentation-in-landsat-8-images-da370815235
+      AuthorName: Ingrid Grenet      
   Tools & Applications:
     - Title: landsatlive.live
       URL: https://landsatlive.live

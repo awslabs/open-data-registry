@@ -28,20 +28,20 @@ Resources:
       This includes both the supervised and additional raw imagery.  The supervised portion is split train-val-test.  
       The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.
       This is the high-resolution-only subset of cvpr_challenge_2021_full.
-    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021
-    Region: us-east-1
-    Type: S3 Bucket
-    RequesterPays: False
-  - Description: >
+  ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021
+  Region: us-east-1
+  Type: S3 Bucket
+  RequesterPays: False
+ - Description: >
       Dataset affiliated with the 2021 CVPR Agricutlure Vision Workshop.
       This includes both the supervised and additional raw imagery, both high-resolution (10cm/pixel) and low-resolution (sentinel-1 10m/pixel) imagery.  
       The supervised portion is split train-val-test.  The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.  
       High-resolution images are named <MMDDYY>_<channel_high>.tif
       Low-resolution images are named <MMDDYY>_gamma0_<polarization>_low.tif.
-    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021_full
-    Region: us-east-1
-    Type: S3 Bucket
-    RequesterPays: False
+ ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021_full
+ Region: us-east-1
+ Type: S3 Bucket
+ RequesterPays: False
 DataAtWork:
   Publications:
     - Title: "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis"
