@@ -31,6 +31,8 @@ def retry(howmany):
                 except:
                     attempts += 1
                     time.sleep(1)
+                    if attempts >= howmany:
+                        raise
 
         return f
 
@@ -119,7 +121,7 @@ def get_bucket_region(url):
 
     if r.status_code == requests.codes.not_found:
         raise Exception(
-            "Bucket {} doesn't exist or there was a momentary glitch".format(bucket)
+            "Bucket {} doesn't exist or there was a momentary glitch".format(url)
         )
 
     if not "x-amz-bucket-region" in r.headers:
