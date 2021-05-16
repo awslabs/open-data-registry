@@ -5,15 +5,18 @@ Contact: vitamin@amazon.com
 ManagedBy: Amazon
 UpdateFrequency: None
 Tags:
+  - aws-pds
+  - amazon.science
   - natural language processing
   - machine learning
 License: https://cdla.dev/permissive-1-0/
 Resources:
   - Description: Amazon product questions and their answers, along with the public product information.
     ARN: arn:aws:s3:::amazon-pqa
-    Region: us-east-2
+    Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
   Publications:
     - Title: Answering Product-Questions by Utilizing Questions from Other Contextually Similar Products
       AuthorName: Ohad Rozen, David Carmel, Avihai Mejer, Vitaly Mirkis, and Yftah Ziser
+      URL: https://2021.naacl.org/program/accepted/
