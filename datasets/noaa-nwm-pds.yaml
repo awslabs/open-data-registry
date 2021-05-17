@@ -14,8 +14,9 @@ Description: |
 Documentation: https://docs.opendata.aws/noaa-nwm-pds/readme.html
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
-  For any questions regarding data delivery not associated with this platform or any general questions
-  regarding the NOAA Big Data Program, email [noaa.bdp@noaa.gov](noaa.bdp@noaa.gov).
+  <br />
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Daily
 Collabs:
@@ -38,6 +39,12 @@ Resources:
     ARN: arn:aws:s3:::noaa-nwm-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NWM, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:

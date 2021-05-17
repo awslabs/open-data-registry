@@ -22,14 +22,15 @@ Tags:
   - geospatial
   - model
   - solar
+  - lidar
 License:  Creative Commons Attribution 3.0 United States License
 Resources:
-  - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/umcm/
+  - Description: '[Data Catalog of the Open Energy Data Initiative (OEDI)](https://data.openei.org/)'
+    ARN: arn:aws:s3:::oedi-data-lake/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: '[HSDS](https://github.com/NREL/hsds-examples) UMCM domains'
-    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/umcm/
+  - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
+    ARN: arn:aws:s3:::oedi-data-lake/umcm/
     Region: us-west-2
     Type: S3 Bucket
   - Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
@@ -40,12 +41,28 @@ Resources:
     ARN: arn:aws:s3:::oedi-data-lake/tracking-the-sun/
     Region: us-west-2
     Type: S3 Bucket
+  - Description: '[Lawrence Berkeley National Laboratory (LBNL) AlphaBuilding-SyntheticDataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)'
+    ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/A_Synthetic_Building_Operation_Dataset.h5
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - (PVRDB)](https://github.com/openEDI/documentation/blob/master/pv-rooftop.md)'
+    ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - Puerto Rico (PVRDB-PR)](https://github.com/openEDI/documentation/blob/master/pv-rooftop-pr.md)'
+    ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop-pr/
+    Region: us-west-2
+    Type: S3 Bucket
 DataAtWork:
   Tools & Applications:
     - Title: "Tracking the Sun Tool"
       URL: https://emp.lbl.gov/tracking-sun-tool
       AuthorName: Lawrence Berkeley National Laboratory (LBNL)
       AuthorURL: https://emp.lbl.gov/tracking-the-sun
+    - Title:  "NSRDB Viewer"
+      URL: https://maps.nrel.gov/nsrdb-viewer/?aL=0&bL=groad&cE=0&lR=0&mC=31.653381399664%2C-3.1640625&zL=2
+      AuthorName: National Renewable Energy Laboratory (NREL)
+      AuthorURL:  https://www.nrel.gov/
   Publications:
     - Title:  "On the Use of Coupled Wind, Wave, and Current Fields in the Simulation of Loads on BottomSupported Offshore Wind Turbines during Hurricanes"
       URL:  https://www.nrel.gov/docs/fy16osti/65283.pdf
@@ -56,3 +73,15 @@ DataAtWork:
     - Title:  "Tracking the Sun Pricing and Design Trends for Distributed Photovoltaic Systems in the United States: 2019 Edition"
       URL:  https://emp.lbl.gov/sites/default/files/tracking_the_sun_2019_report.pdf
       AuthorName: G. Barbose, N. Darghouth
+    - Title:  "Rooftop Solar Technical Potential for Low-to-Moderate Income Households in the United States"
+      URL:  https://www.nrel.gov/docs/fy18osti/70901.pdf
+      AuthorName: Benjamin Sigrin and Meghan Mooney
+    - Title:  "Using GIS-based methods and lidar data to estimate rooftop solar technical potential in US cities"
+      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aa7225/pdf
+      AuthorName:  Robert Margolis et al 2017 Environ. Res. Lett. 12 074013
+    - Title:  "Estimating rooftop solar technical potential across the US using a combination of GIS-based methods, lidar data, and statistical modeling"
+      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aaa554/pdf
+      AuthorName:  Pieter Gagnon et al 2018 Environ. Res. Lett. 13 024027
+    - Title:  "Rooftop Solar Photovoltaic Technical Potential in the United States: A Detailed Assessment"
+      URL:  https://www.nrel.gov/docs/fy16osti/65298.pdf
+      AuthorName:  Pieter Gagnon, Robert Margolis, Jennifer Melius, Caleb Phillips, and Ryan Elmore

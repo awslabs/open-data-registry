@@ -1,9 +1,12 @@
 Name: Coupled Model Intercomparison Project 6
-Description: >
-  The sixth phase of global coupled ocean-atmosphere general circulation model ensemble. Additional data can be requested via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScFjA5IddqBs2Rc0xGbzn32NPq12TKr-b-8KGtXWyNDK5sJCg/viewform)
+Description: |
+  The sixth phase of global coupled ocean-atmosphere general circulation model ensemble.
+  Additional data can be requested via [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScFjA5IddqBs2Rc0xGbzn32NPq12TKr-b-8KGtXWyNDK5sJCg/viewform)
+  <br /><br />
+  This [application](http://bit.ly/CMIP6_Citation_Search) is one of several possibilities to find CMIP6 data citations. Alternative tools to find CMIP6 data references are described in [this blog post](https://cmip6cite.blogspot.com/2020/04/how-to-find-cmip6-data-citations.html). General information on the Citation Service is available at: [cmip6cite.wdc-climate.de](https://cmip6cite.wdc-climate.de).
 Documentation: https://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6
 Contact: https://github.com/pangeo-data/pangeo-datastore/issues
-ManagedBy: "[Pangeo](https://pangeo.io/)"
+ManagedBy: "ESGF and Pangeo"
 UpdateFrequency: "Core CMIP6 datasets are added as soon as they are available."
 Collabs:
   ASDI:
@@ -28,7 +31,28 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmip6-pds.s3.amazonaws.com/index.html)'
+    - '[Data Catalog](https://cmip6-pds.s3.amazonaws.com/pangeo-cmip6.csv)'
+  - Description: Netcdf formatted data managed by the Earth System Grid Federation
+    ARN: arn:aws:s3:::esgf-world
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://esgf-world.s3.amazonaws.com/index.html)'
+    - '[Data Catalog](https://cmip6-nc.s3.amazonaws.com/esgf-world.csv.gz)'
 DataAtWork:
+  Tutorials:
+    - Title: Processing CMIP6 data in Zarr format with Dask & AWS Fargate
+      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/cmip6_zarr.ipynb
+      AuthorName: Zac Flamig
+    - Title: Finding CMIP6 data using intake-esm and plotting time series for points
+      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/cmip6/notebooks/cmip6_airtemperature.ipynb
+      AuthorName: Zac Flamig
+    - Title: Getting Started with CMIP6 Data
+      URL: https://github.com/aradhakrishnanGFDL/gfdl-aws-analysis/blob/community/doc/quickstartdoc.md
+      AuthorName: Aparna Radhakrishnan
+    - Title: Comparing CMIP6 Zarr vs NetCDF Holdings
+      URL: https://nbviewer.jupyter.org/github/aradhakrishnanGFDL/gfdl-aws-analysis/blob/master/examples/a1r-CompareAWS-NCvsZarr.ipynb
+      AuthorName: Aparna Radhakrishnan
   Publications:
     - Title: "Special issue | Coupled Model Intercomparison Project Phase 6 (CMIP6) Experimental Design and Organization"
       URL: https://gmd.copernicus.org/articles/special_issue590.html
