@@ -25,7 +25,7 @@ Tags:
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: Project data files
+  - Description: NOMADS Production OFS Data (30 day rolling retention)
     ARN: arn:aws:s3:::noaa-ofs-pds
     Region: us-east-1
     Type: S3 Bucket
@@ -33,6 +33,16 @@ Resources:
     - '[Browse Bucket](https://noaa-ofs-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for OFS, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewOFSObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: CO-OPS Operational OFS Data (Historical Retention)
+    ARN: arn:aws:s3:::noaa-nos-ofs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-ofs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for CO-OPS OFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
