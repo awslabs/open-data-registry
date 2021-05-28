@@ -1,0 +1,21 @@
+Name: Covid-19 Images Dataset
+Description: This dataset is a collection of thorax X-Ray and tomographies of patients with suspicion of COVID-19 and a positive or negative diagnoses via RT-PCR test. These images were provided by Hospital das Clínicas, Hospital Sirio-Libanes and by Laboratory Fleury.
+Documentation: https://docs.google.com/document/d/1isuyQnszSio3JUZ1_3C4DTPC1fvaJGAR4ziTWGRi8K4/edit?usp=sharing
+Contact: inlab.inrad@hc.fm.usp.br
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: As Necessary
+Tags:
+  - bioinformatics
+  - coronavirus
+  - COVID-19
+  - health
+  - life sciences
+  - medicine
+  - SARS
+  - aws-pds
+License: Attribution 4.0 International (CC BY 4.0)
+Resources:
+  - Description: The X-Rays images are in .png and the CT-Scans are in .nii their name are modified using hash MD5 and there is a csv with this hash MD5 and a code showing if it is a positive, negative or a disease other than covid, there is also a file explaining this codes or you can learn more in the documentation.
+    ARN: arn:aws:s3:::inlab-opendata-covid-anonymized-images
+    Region: us-west-2
+    Type: S3 Bucket
