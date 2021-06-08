@@ -1,0 +1,29 @@
+Name: 'FEVEROUS: Fact Extraction and VERification Over Unstructured and Structured information'
+Description: FEVEROUS (Fact Extraction and VERification Over Unstructured and Structured information) is a
+  fact verification dataset which consists of 87,026 verified claims. Each claim is annotated with evidence in
+  the form of sentences and/or cells from tables in Wikipedia, as well as a label indicating whether this evidence
+  supports, refutes, or does not provide enough information to reach a verdict.
+Documentation: https://fever.ai/resources.html
+Contact: fever-organisers@googlegroups.com
+ManagedBy: '[FEVER team](https://fever.ai)'
+UpdateFrequency: Not updated
+Tags:
+  - natural language processing
+  - machine learning
+  - fact verification
+License: '[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)'
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::fever.public/feverous/
+    Region: eu-west-1
+    Type: S3 Bucket
+    Explore:
+DataAtWork:
+  Tools & Applications:
+    - Title: FEVEROUS Annotation Tool & Baseline
+      URL: https://github.com/Raldir/FEVEROUS
+      AuthorName: Rami Aly
+  Publications:
+    - Title: 'FEVEROUS: Fact Extraction and VERification Over Unstructured and Structured information'
+      URL: https://fever.ai/resources.html
+      AuthorName: Rami Aly, Zhijiang Guo, Michael Sejr Schlichtkrull, James Thorne, Andreas Vlachos, Christos Christodoulopoulos, Oana Cocarascu, Arpit Mittal
