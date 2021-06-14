@@ -32,6 +32,10 @@ Resources:
     RequesterPays: True
     Explore:
     - '[STAC Catalog](https://landsatlook.usgs.gov/sat-api/collections)'
+  - Description: New scene notifications
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
