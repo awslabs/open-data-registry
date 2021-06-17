@@ -1,0 +1,22 @@
+Name: Amazon Berkeley Objects Dataset
+Description: Amazon Berkeley Objects (ABO) is a collection of 147,702 product listings with multilingual metadata and 398,212 unique catalog images. 8,222 listings come with turntable photography (also referred as "spin" or "360º-View" images), as sequences of 24 or 72 images, for a total of 586,584 images in 8,209 unique sequences. For 7,953 products, the collection also provides high-quality 3d models, as glTF 2.0 files.
+Documentation: https://amazon-berkeley-objects.s3.us-east-1.amazonaws.com/README.md
+Contact: amazon-berkeley-objects@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science
+  - computer vision
+  - deep learning
+  - information retrieval
+  - machine learning
+  - machine translation
+License: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) https://creativecommons.org/licenses/by-nc/4.0/
+Resources:
+  - Description: Product listings and metadata in gzip-compressed CSV and JSON, catalog images and 360º-view images in JPEG and PNG and 3d models in glTF 2.0 (.glb) format.
+    ARN: arn:aws:s3:::amazon-berkeley-objects
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Explore dataset](https://amazon-berkeley-objects.s3.us-east-1.amazonaws.com/index.html)'
+    - '[README](https://amazon-berkeley-objects.s3.us-east-1.amazonaws.com/README.md)'
