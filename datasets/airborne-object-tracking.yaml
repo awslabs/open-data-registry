@@ -13,7 +13,7 @@ License: Community Data License Agreement – Permissive, Version 1.0 https://cd
 Resources:
   - Description: The training dataset is further split into smaller directories. Each subdirectory contains ImageSets and Images folders. Metadata and ground truth information about image sequences are saved as groundtruth.json (and its tabular representation  groundtruth.csv) in ImageSets folders. Information about airborne encounters are saved in  valid_encounters_maxRange700_maxGap3_minEncLen30.json and valid_encounters_maxRange700_maxGap3_minEncLen30.csv. The Images folder holds images sampled from one sequence per directory. Images are 2448 pixels wide by 2048 pixels high, encoded as 8-bit grayscale images and saved as PNG files.
     ARN: arn:aws:s3:::airborne-obj-detection-challenge-training
-    Region: US East (N. Virginia) us-east-1
+    Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Explore dataset](https://github.com/amazon-research/siam-mot/blob/main/readme/model_zoo.md)'
