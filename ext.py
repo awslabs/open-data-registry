@@ -30,7 +30,7 @@ def retry(howmany):
                     return func(*args, **kwargs)
                 except:
                     attempts += 1
-                    time.sleep(1.0 * 2.0 ** attempts)
+                    time.sleep(1.0 * 4.0 ** attempts)
                     if attempts >= howmany:
                         raise
 
