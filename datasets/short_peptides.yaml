@@ -1,0 +1,31 @@
+Name: Conformational Space of Short Peptides
+Description: This data set allows us to explore the conformational space of all possible peptides using the 20 common amino acids. It consists of a collection of exhaustive molecular dynamics simulations of tripeptides and pentapeptides.
+Documentation: https://github.com/ToyokoLabs/SBG/blob/master/README.md
+Contact: awsopendata@toyoko.io
+ManagedBy: "[Toyoko](https://www.toyoko.io/) and [SGB](http://ufq.unq.edu.ar/sbg/)"
+UpdateFrequency: Not updated
+Tags:
+  - peptidomics
+  - aws-s3
+  - amazon.science
+  - peptides
+  - structures
+  - 3D structures
+  - amber
+  - bioactives
+  - life sciences
+License: CC-BY 4.0 See https://github.com/ToyokoLabs/SBG/blob/master/LICENSE
+Resources:
+  - Description: tri-peptides.
+    ARN: arn:aws:s3:::toyokounqpeptides/tripep/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: penta-peptides.
+    ARN: arn:aws:s3:::toyokounqpeptides/5pep/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: Conformational Space of Short Peptides (in preparation)
+      URL: N/A
+      AuthorName: Sebastian Bassi, Virginia Gonzalez, Nicolás Palopoli, Mariano Yacovino, Agustina Nardo.
