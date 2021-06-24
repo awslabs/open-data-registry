@@ -5,6 +5,7 @@ Contact: awsopendata@toyoko.io
 ManagedBy: "[Toyoko](https://www.toyoko.io/) and [SGB](http://ufq.unq.edu.ar/sbg/)"
 UpdateFrequency: Not updated
 Tags:
+  - aws-pds
   - amino acid
   - bioinformatics
   - biomolecular modeling
@@ -14,15 +15,11 @@ Tags:
   - life sciences
 License: CC-BY 4.0 See https://github.com/ToyokoLabs/SBG/blob/master/LICENSE
 Resources:
-  - Description: tri-peptides.
+  - Description: Tri-peptides
     ARN: arn:aws:s3:::toyokounqpeptides/tripep/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: penta-peptides.
+  - Description: Penta-peptides
     ARN: arn:aws:s3:::toyokounqpeptides/5pep/
     Region: us-west-2
     Type: S3 Bucket
-DataAtWork:
-  Publications:
-    - Title: Conformational Space of Short Peptides (in preparation)
-      AuthorName: Sebastian Bassi, Virginia Gonzalez, Nicolás Palopoli, Gustavo Parisi, Agustina Nardo.
