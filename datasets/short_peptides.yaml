@@ -15,11 +15,17 @@ Tags:
   - life sciences
 License: CC-BY 4.0 See https://github.com/ToyokoLabs/SBG/blob/master/LICENSE
 Resources:
-  - Description: Tri-peptides
+  - Description: tri-peptides. All possible 8000 tri-peptides, 2 replicas. File types: Amber .out, .traj and .crd. To retrieve files use this format: N{AA}{AA}C{AA}-R{replic_number}.dmd.1.{ext}, for example, for ALA-SER-ASN traj file for replica 2, the name is NALASERCASN-R2.dmd.1.traj
     ARN: arn:aws:s3:::toyokounqpeptides/tripep/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: Penta-peptides
+  - Description: penta-peptides. All possible 3200000 penta-peptides, no replicas. File types: .tar.bz2. To retrieve files use this format: N{AA}{AA}{AA}{AA}C{AA}-R1.tar.bz2
     ARN: arn:aws:s3:::toyokounqpeptides/5pep/
     Region: us-west-2
     Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Intro to Conformational Space of Short Peptides
+      URL: https://www.toyoko.io/pepdataset/
+      AuthorName: Sebastian Bassi and Virginia Gonzalez
+      AuthorURL: https://about.me/bassi
