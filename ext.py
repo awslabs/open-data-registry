@@ -18,7 +18,7 @@ host_regex = re.compile(r"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/
 controlled_access_regex = re.compile(
     r"^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$"
 )
-explore_regex = re.compile(r"^\[.+\]\(https?:\/\/[\w\d.\-\/#]+\)$")
+explore_regex = re.compile(r"^\[.+\]\(https?:\/\/[\w\d.\-\/#\?\&=]+\)$")
 
 
 def retry(howmany):
@@ -30,7 +30,7 @@ def retry(howmany):
                     return func(*args, **kwargs)
                 except:
                     attempts += 1
-                    time.sleep(1.0 * 2.0 ** attempts)
+                    time.sleep(1.0 * 4.0 ** attempts)
                     if attempts >= howmany:
                         raise
 
@@ -113,7 +113,7 @@ def ext_resources_explore(value, rule_obj, path):
     return True
 
 
-@retry(3)
+@retry(5)
 def get_bucket_region(url):
     # Get the headers for this bucket.
     # Verify=False because the wildcard matching doesn't work for buckets with '.'
