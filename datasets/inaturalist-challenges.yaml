@@ -1,0 +1,41 @@
+Name: iNaturalist Challenge Datasets
+Description: |
+  The iNaturalist challenges have been held in conjunction
+  with the FGVC workshop at CVPR. These datasets aim to
+  benchmark the performance and progress of computer vision
+  classification models on tasks related to species
+  identification in images. The images are sourced from the
+  [iNaturalist project](https://www.inaturalist.org/).
+Documentation: https://github.com/visipedia/inat_comp
+Contact: inatchallenges@googlegroups.com
+ManagedBy: "[Visipedia](https://visipedia.org/)"
+UpdateFrequency: Yearly
+Tags:
+  - biodiversity
+  - earth observation
+  - aws-pds
+  - computer vision
+  - machine learning
+  - deep learning
+License: CC BY-NC-ND 4.0
+Resources:
+  - Description: Bucket with yearly datasets in subfolders.
+    ARN: arn:aws:s3:::ml-inat-competition-datasets
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Benchmarking Representation Learning for Natural World Image Collections (Video Overview)
+      URL: https://youtu.be/JuPUvgSnK6A
+      AuthorName: Grant Van Horn, Oisin Mac Aodha (2021)
+    - Title: Images from the iNaturalist Dataset
+      URL: https://youtu.be/LNq1rCUf7v4
+      AuthorName: Grant Van Horn, Oisin Mac Aodha (2018)
+  Tools & Applications:
+  Publications:
+    - Title: Benchmarking Representation Learning for Natural World Image Collections
+      URL: https://arxiv.org/abs/2103.16483
+      AuthorName: Van Horn et al (2021)
+    - Title: The iNaturalist Species Classification and Detection Dataset
+      URL: https://arxiv.org/abs/1707.06642
+      AuthorName: Van Horn et al (2018)
