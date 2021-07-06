@@ -18,7 +18,7 @@ host_regex = re.compile(r"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/
 controlled_access_regex = re.compile(
     r"^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$"
 )
-explore_regex = re.compile(r"^\[.+\]\(https?:\/\/[\w\d.\-\/#\?\&=]+\)$")
+explore_regex = re.compile(r"^\[.+\]\(https?:\/\/[\w\d.\-\/#\?\&\%=]+\)$")
 
 
 def retry(howmany):
