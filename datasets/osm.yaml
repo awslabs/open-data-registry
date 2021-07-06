@@ -50,3 +50,107 @@ DataAtWork:
       AuthorName: Development Seed
       AuthorURL: https://developmentseed.org/
   Publications:
+Glue-DDL:
+- Name: planet
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat
+    StoredAsSubDirectories: False
+    Location: "s3://osm-pds/planet/"
+    SerdeInfo:
+      SerializationLibrary: org.apache.hadoop.hive.ql.io.orc.OrcSerde
+    Columns:
+      - Name: id
+        Type: bigint
+      - Name: type
+        Type: string
+      - Name: tags
+        Type: "map<string,string>"
+      - Name: lat
+        Type: "decimal(9,7)"
+      - Name: lon
+        Type: "decimal(10,7)"
+      - Name: nds
+        Type: "array<struct<ref:bigint>>"
+      - Name: members
+        Type: "array<struct<type:string,ref:bigint,role:string>>"
+      - Name: changeset
+        Type: bigint
+      - Name: timestamp
+        Type: timestamp
+      - Name: uid
+        Type: bigint
+      - Name: user
+        Type: string
+      - Name: version
+        Type: bigint
+- Name: planet_history
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat
+    StoredAsSubDirectories: False
+    Location: "s3://osm-pds/planet-history/"
+    SerdeInfo:
+      SerializationLibrary: org.apache.hadoop.hive.ql.io.orc.OrcSerde
+    Columns:
+      - Name: id
+        Type: bigint
+      - Name: type
+        Type: string
+      - Name: tags
+        Type: "map<string,string>"
+      - Name: lat
+        Type: "decimal(9,7)"
+      - Name: lon
+        Type: "decimal(10,7)"
+      - Name: nds
+        Type: "array<struct<ref:bigint>>"
+      - Name: members
+        Type: "array<struct<type:string,ref:bigint,role:string>>"
+      - Name: changeset
+        Type: bigint
+      - Name: timestamp
+        Type: timestamp
+      - Name: uid
+        Type: bigint
+      - Name: user
+        Type: string
+      - Name: version
+        Type: bigint
+      - Name: visible
+        Type: boolean
+- Name: changesets
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat
+    StoredAsSubDirectories: False
+    Location: "s3://osm-pds/changesets/"
+    SerdeInfo:
+      SerializationLibrary: org.apache.hadoop.hive.ql.io.orc.OrcSerde
+    Columns:
+      - Name: id
+        Type: bigint
+      - Name: tags
+        Type: "map<string,string>"
+      - Name: created_at
+        Type: timestamp
+      - Name: open
+        Type: boolean
+      - Name: closed_at
+        Type: timestamp
+      - Name: comments_count
+        Type: bigint
+      - Name: min_lat
+        Type: "decimal(9,7)"
+      - Name: max_lat
+        Type: "decimal(9,7)"
+      - Name: min_lon
+        Type: "decimal(10,7)"
+      - Name: max_lon
+        Type: "decimal(10,7)"
+      - Name: num_changes
+        Type: bigint
+      - Name: uid
+        Type: bigint
+      - Name: user
+        Type: string

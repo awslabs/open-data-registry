@@ -41,3 +41,35 @@ DataAtWork:
       AuthorURL: https://twitter.com/2xxeformyshirt
   Tools & Applications:
   Publications:
+
+Glue-DDL:
+- Name: fdnsany
+  Parameters:
+    projection.enabled: "true"
+    projection.date.type: "date"
+    projection.date.range: "202104,NOW"
+    projection.date.interval: "1"
+    projection.date.interval.unit: "MONTHS"
+    projection.date.format: "yyyyMM"
+    storage.location.template: "s3://rapid7-opendata/fdns/any/v1/date=${date}/"
+  PartitionKeys:
+    - Name: date
+      Type: string
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.mapred.TextInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+    StoredAsSubDirectories: False
+    Location: "s3://rapid7-opendata/fdns/any/v1/"
+    SerdeInfo:
+      SerializationLibrary: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe
+      Parameters:
+              serialization.format: "1"
+    Columns:
+      - Name: timestamp
+        Type: timestamp
+      - Name: name
+        Type: string
+      - Name: type
+        Type: string
+      - Name: value
+        Type: string

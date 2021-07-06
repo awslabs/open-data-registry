@@ -39,3 +39,31 @@ DataAtWork:
       AuthorName: Kapil Sreedharan
   Tools & Applications:
   Publications:
+Glue-DDL:
+- Name: allyears
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.mapred.TextInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+    StoredAsSubDirectories: False
+    Location: s3://noaa-ghcn-pds/csv/
+    SerdeInfo:
+      Parameters:
+        field.delim: ","
+      SerializationLibrary: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+    Columns:
+    - Name: id
+      Type: string
+    - Name: year_date
+      Type: string
+    - Name: element
+      Type: string
+    - Name: data_value
+      Type: string
+    - Name: m_flag
+      Type: string
+    - Name: q_flag
+      Type: string
+    - Name: s_flag
+      Type: string
+    - Name: obs_time
+      Type: string

@@ -80,3 +80,51 @@ DataAtWork:
       URL: https://aws.amazon.com/blogs/publicsector/enabling-rapid-covid-19-air-pollution-analysis-across-globe-openaq/
       AuthorName: Christa Hasenkopf
       AuthorURL: https://openaq.org
+
+Glue-DDL:
+- Name: openaq
+  Parameters:
+    projection.enabled: "true"
+    projection.datetime.type: "date"
+    projection.datetime.range: "2013-01-01,NOW"
+    projection.datetime.interval: "1"
+    projection.datetime.interval.unit: "DAYS"
+    projection.datetime.format: "yyyy-MM-dd"
+    storage.location.template: "s3://openaq-fetches/realtime-gzipped/${datetime}/"
+  PartitionKeys:
+    - Name: datetime
+      Type: string
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.mapred.TextInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+    StoredAsSubDirectories: False
+    Location: "s3://openaq-fetches/realtime-gzipped/"
+    SerdeInfo:
+      SerializationLibrary: org.openx.data.jsonserde.JsonSerDe
+    Columns:
+      - Name: date
+        Type: "struct<utc:string,local:string>"
+      - Name: parameter
+        Type: string
+      - Name: location
+        Type: string
+      - Name: value
+        Type: float
+      - Name: unit
+        Type: string
+      - Name: city
+        Type: string
+      - Name: attribution
+        Type: "array<struct<name:string,url:string>>"
+      - Name: averagingperiod
+        Type: "struct<unit:string,value:float>"
+      - Name: coordinates
+        Type: "struct<latitude:float,longitude:float>"
+      - Name: country
+        Type: string
+      - Name: sourcename
+        Type: string
+      - Name: sourcetype
+        Type: string
+      - Name: mobile
+        Type: string
