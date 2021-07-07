@@ -17,46 +17,66 @@ Tags:
   - geospatial
 License: Creative Commons Attribution 3.0 United States License
 Resources:
+  - Description: 'PoroTomo Datasets'
+    ARN: arn:aws:s3:::nrel-pds-porotomo/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo)'
   - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in SEG-Y format
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASH%2F)'
   - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data Resampled in Time MATLAB Files
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/Resampled/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASH%2FResampled%2F)'
   - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in SEG-Y format
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASV/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASV%2F)'
   - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/H5/DASH/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FH5%2FDASH%2F)'
   - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/H5/DASV/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FH5%2FDASV%2F)'
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) PoroTomo domains'
     ARN: arn:aws:s3:::nrel-pds-hsds/nrel/porotomo/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fporotomo%2F)'
   - Description: PoroTomo Nodal Seismometer Continuous Data
     ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_sac%2F)'
   - Description: PoroTomo Nodal Seismometer Field Notes and Metadata
     ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_metadata/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: PoroTomo Nodal Seismometer P-Picks
-    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/p_picks/
-    Region: us-west-2
-    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_metadata%2F)'
   - Description: PoroTomo Nodal Seismometer Sweep Data
     ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac_sweep/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_sac_sweep%2F)'
 DataAtWork:
   Tutorials:
     - Title: PoroTomo DAS Data Processing Tutorial for SEG-Y Files
