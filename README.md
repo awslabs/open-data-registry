@@ -87,7 +87,7 @@ Here is an example of the metadata behind this dataset registration: https://reg
 ```yaml
 Name: NEXRAD on AWS
 Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
-Documentation: https://docs.opendata.aws/noaa-nexrad/readme.html
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New Level II data is added as soon as it is available.
@@ -110,7 +110,7 @@ Resources:
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
     Region: us-east-1
     Type: S3 Bucket
-  - Description: "[Rich notifications](https://docs.opendata.aws/noaa-nexrad/readme.html) for real-time data with filterable fields"
+  - Description: "[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications) for real-time data with filterable fields"
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
     Region: us-east-1
     Type: SNS Topic
