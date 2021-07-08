@@ -45,9 +45,9 @@ Resources:
     Region: af-south-1
     Type: SNS Topic
   - Description: USGS receiver queue, can subscribe with [Lambda](https://aws.amazon.com/lambda/). Message contains items sent from USGS SNS.
-      ARN: arn:aws:sqs:af-south-1:543785577597:deafrica-pds-landsat-usgs-sns-filter
-      Region: af-south-1
-      Type: SQS QUEUE
+    ARN: arn:aws:sqs:af-south-1:543785577597:deafrica-pds-landsat-usgs-sns-filter
+    Region: af-south-1
+    Type: SQS QUEUE
   - Description: Africa filtered items, can subscribe with [Lambda](https://aws.amazon.com/lambda/). Message contains Africa zone filtered items sent from lambda landsat-usgs-sns-filter-deafrica-pds-UpdateQueue.
     ARN: arn:aws:sqs:af-south-1:543785577597:deafrica-pds-landsat-sync-scene
     Region: af-south-1
