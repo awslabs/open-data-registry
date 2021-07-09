@@ -40,7 +40,7 @@ Resources:
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-scene-topic
     Region: af-south-1
     Type: SNS Topic
-  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message is sent for objects added to deafrica-landsat bucket.
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-landsat s3 bucket all object create events.
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-topic
     Region: af-south-1
     Type: SNS Topic
