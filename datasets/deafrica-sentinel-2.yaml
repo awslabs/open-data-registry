@@ -39,6 +39,10 @@ Resources:
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-scene-topic
     Region: af-south-1
     Type: SNS Topic
+  - Description: Object creation notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-sentinel-2 s3 bucket all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-topic
+    Region: af-south-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Use Sentinel-2 data in the Open Data Cube
