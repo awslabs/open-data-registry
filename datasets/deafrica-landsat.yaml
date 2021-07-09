@@ -44,26 +44,6 @@ Resources:
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-topic
     Region: af-south-1
     Type: SNS Topic
-  - Description: USGS receiver queue, can subscribe with [Lambda](https://aws.amazon.com/lambda/). Message contains items sent from USGS SNS.
-    ARN: arn:aws:sqs:af-south-1:543785577597:deafrica-pds-landsat-usgs-sns-filter
-    Region: af-south-1
-    Type: SQS QUEUE
-  - Description: Africa filtered items, can subscribe with [Lambda](https://aws.amazon.com/lambda/). Message contains Africa zone filtered items sent from lambda landsat-usgs-sns-filter-deafrica-pds-UpdateQueue.
-    ARN: arn:aws:sqs:af-south-1:543785577597:deafrica-pds-landsat-sync-scene
-    Region: af-south-1
-    Type: SQS QUEUE
-  - Description: Indexing items, can subscribe with [Lambda](https://aws.amazon.com/lambda/). Message contains processed stacs to be indexed, sent from deafrica-landsat-scene-topic.
-    ARN: arn:aws:sqs:af-south-1:565417506782:deafrica-prod-af-eks-index-landsat-scene
-    Region: af-south-1
-    Type: SQS QUEUE
-  - Description: Lambda Bach that filters USGS SNS for African tiles. It receives messages from deafrica-pds-landsat-usgs-sns-filter SQS wthich it's signed to.
-    ARN: arn:aws:lambda:af-south-1:543785577597:function:landsat-usgs-sns-filter-deafrica-pds-UpdateQueue
-    Region: af-south-1
-    Type: Lambda
-  - Description: Lambda Bach that processes messages, applying the required Africa definitions. It receives messages from deafrica-pds-landsat-sync-scene SQS wthich it's signed to.
-    ARN: arn:aws:lambda:af-south-1:543785577597:function:landsat-sync-deafrica-pds-Transfer
-    Region: af-south-1
-    Type: Lambda
 DataAtWork:
   Tutorials:
     - Title: Digital Earth Africa Training
