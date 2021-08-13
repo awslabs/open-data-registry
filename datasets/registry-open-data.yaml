@@ -12,4 +12,41 @@ Resources:
   - Description: Registry of Open Data on AWS
     ARN: arn:aws:s3:::registry.opendata.aws/roda/ndjson/
     Region: us-east-1
-    Type: S3 Bucket  
+    Type: S3 Bucket 
+
+Glue-DDL:
+- Name: datasets
+  StorageDescriptor:
+    InputFormat: org.apache.hadoop.mapred.TextInputFormat
+    OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+    StoredAsSubDirectories: False
+    Location: s3://registry.opendata.aws/roda/ndjson/
+    SerdeInfo:
+      Parameters:
+        mapping.tools: "Tools & Applications"
+      SerializationLibrary: org.openx.data.jsonserde.JsonSerDe
+    Columns:
+    - Name: Name
+      Type: string
+    - Name: Descriptin
+      Type: string
+    - Name: Contact
+      Type: string
+    - Name: UpdateFrequency
+      Type: string
+    - Name: License
+      Type: string
+    - Name: ManagedBy
+      Type: string
+    - Name: RegistryEntryAdded
+      Type: string
+    - Name: RegistryEntryLastModified
+      Type: string
+    - Name: Slug
+      Type: string
+    - Name: Tags
+      Type: "array<string>"
+    - Name: Resources
+      Type: "array<struct<Description:string,ARN:string,Region:string,Type:string,Explore:array<string>>>"
+    - Name: DataAtWork
+      Type: "struct<Tutorials:array<struct<Title:string,URL:string,AuthorName:string,AuthorURL:string>>,Publications:array<struct<Title:string,URL:string,AuthorName:string,AuthorURL:string>>,tools:array<struct<Title:string,URL:string,AuthorName:string,AuthorURL:string>>>"
