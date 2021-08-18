@@ -1,0 +1,45 @@
+Name: OrcaSound
+Description: Collecting orca vocalizations & shipnoises in the Puget Sound area.
+Documentation: https://www.orcasound.net
+Contact: sveirs@gmail.com
+ManagedBy: OrcaSound
+UpdateFrequency: Frequently
+Tags:
+  - atmosphere
+  - biodiversity
+  - climate
+  - coastal
+  - hydrophone
+  - acoustics
+  - deep learning
+  - ecosystems
+  - environmental
+  - geospatial
+  - machine learning
+  - mapping
+  - oceans
+  - open source software
+License: 
+Resources:
+  - Description: Collected orca acoustics data (HLS)
+    ARN: arn:aws:s3:::streaming-orcasound-net
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Collected orca acoustics data (FLAC)
+    ARN: arn:aws:s3:::archive-orcasound-net
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Training data for ML models
+    ARN: arn:aws:s3:::acoustic-sandbox
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: A public data lake for oceanic ecology data
+      URL: https://open.quiltdata.com/b/<tbd>
+      AuthorName: <tbd>
+      AuthorURL: https://www.github.com/<tbd>
+    - Title: Github for our acoustic analysis
+      URL: https://www.github.com/orcasound
+      AuthorName: <tbd>
+      AuthorURL: https://www.github.com/<tbd>
