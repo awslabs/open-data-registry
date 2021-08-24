@@ -1,0 +1,48 @@
+Name: OpenCell on AWS
+Description: |
+  The OpenCell project is a proteome-scale effort to measure the localization and interactions of human proteins
+  using high-throughput genome engineering to endogenously tag thousands of proteins in the human proteome.
+  This dataset consists of the raw confocal fluorescence microscopy images for all tagged cell lines in the OpenCell library. 
+  These images can be interpreted both individually, to determine the localization of particular proteins of interest,
+  and in aggregate, by training machine learning models to classify or quantify subcellular localization patterns. 
+Documentation: https://opencell.czbiohub.org/download
+Contact: opencell@czbiohub.org
+ManagedBy: "[Chan Zuckerberg Biohub](https://www.czbiohub.org/)"
+UpdateFrequency: This is the final version of the dataset.
+Tags:
+  - aws-pds
+  - biology
+  - cell biology
+  - life sciences
+  - imaging
+  - cell imaging
+  - fluorescence imaging
+  - microscopy
+  - computer vision
+  - machine learning
+License: https://github.com/czbiohub/opencell/blob/master/LICENSE
+Resources:
+  - Description: Live-cell confocal fluorescence microscopy images of the OpenCell library of fluorescently tagged cell lines
+    ARN: arn:aws:s3:::czb-opencell
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: OpenCell web portal
+      URL: https://opencell.czbiohub.org
+      AuthorName: OpenCell team
+      AuthorURL: https://www.czbiohub.org/manuel-leonetti-intracellular-architecture
+    - Title: cytoself (an unsupervised ML model to quantify localization patterns)
+      URL: https://github.com/royerlab/cytoself
+      AuthorName: Hirofumi Kobayashi, Keith C. Cheveralls, Manuel D. Leonetti, Loic A. Royer
+      AuthorURL: https://www.royerlab.org
+  Publications:
+    - Title: "OpenCell: proteome-scale endogenous tagging enables the cartography of human cellular organization"
+      URL: https://www.biorxiv.org/content/10.1101/2021.03.29.437450v1
+      AuthorName: Nathan H. Cho, Keith C. Cheveralls, Andreas-David Brunner, Kibeom Kim, André C. Michaelis, Preethi Raghavan, et al.
+      AuthorURL: https://www.czbiohub.org/manuel-leonetti-intracellular-architecture
+    - Title: "Self-Supervised Deep-Learning Encodes High-Resolution Features of Protein Subcellular Localization"
+      URL: https://www.biorxiv.org/content/10.1101/2021.03.29.437595v1
+      AuthorName: Hirofumi Kobayashi, Keith C. Cheveralls, Manuel D. Leonetti, Loic A. Royer
+      AuthorURL: https://www.royerlab.org

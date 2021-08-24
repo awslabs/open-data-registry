@@ -11,7 +11,7 @@ Description: |
   model. The model is forced with meteorological data from the High Resolution Rapid Refresh (HRRR)
   and the Rapid Refresh (RAP) models. The Short Range Forecast configuration cycles hourly and produces
   hourly deterministic forecasts of streamflow and hydrologic states out to 18 hours.
-Documentation: https://docs.opendata.aws/noaa-nwm-pds/readme.html
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nwm-pds
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
   <br />
@@ -39,6 +39,12 @@ Resources:
     ARN: arn:aws:s3:::noaa-nwm-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NWM, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
