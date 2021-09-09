@@ -7,17 +7,17 @@ Description: |
 
   The data set covers seasonal (DJF/MAM/JJA/SON) metrics of:
 
- - Median 6-, 12-, 18-, 24-, 36-, and 48-day repeat coherence estimates for C-band VV and HH polarized data
- - Mean backscatter (gamma naught) for VV, VH, HH, and HV polarizations
- - Seasonal coherence decay model parameters rho, tau, and rmse
- - Local incidence and layover/shadow regions for all relative orbits (175 orbits)
+  - Median 6-, 12-, 18-, 24-, 36-, and 48-day repeat coherence estimates for C-band VV and HH polarized data
+  - Mean backscatter (gamma naught) for VV, VH, HH, and HV polarizations
+  - Seasonal coherence decay model parameters rho, tau, and rmse
+  - Local incidence and layover/shadow regions for all relative orbits (175 orbits)
 
- Note that in the data set filenames the seasons were referred to as northern hemisphere winter (DJF), spring (MAM), summer (JJA), and fall (SON).
+  Note that in the data set filenames the seasons were referred to as northern hemisphere winter (DJF), spring (MAM), summer (JJA), and fall (SON).
 
-   The data set is available in two main components:
+  The data set is available in two main components:
 
- 1) 1x1 degree tiles. Each tile contains GeoTiffs at 3 arcsec pixel spacing of all metrics available in the tile. (s3://sentinel-1-global-coherence-earthbigdata/data/tiles/)
- 2) Global mosaicked tiles as cloud optimized GeoTIFFs (COG) at 0.01 degree pixel spacing (s3://sentinel-1-global-coherence-earthbigdata/data/mosaics/) for each of the computed metrics.
+  1) 1x1 degree tiles. Each tile contains GeoTiffs at 3 arcsec pixel spacing of all metrics available in the tile. (s3://sentinel-1-global-coherence-earthbigdata/data/tiles/)
+  2) Global mosaicked tiles as cloud optimized GeoTIFFs (COG) at 0.01 degree pixel spacing (s3://sentinel-1-global-coherence-earthbigdata/data/mosaics/) for each of the computed metrics.
 
 Documentation: http://sentinel-1-global-coherence-earthbigdata.s3-website-us-west-2.amazonaws.com/
 Contact: For questions regarding data methodology or delivery, contact info@earthbigdata.com.
@@ -49,7 +49,7 @@ License: |
   Citation: 
   Any use of this data set in publications or sharing should use this citation
 
-  "Global Seasonal Maps of Interferometric Coherence and Backscatter from one year of Sentinel-1 C-band SAR data". Josef Kellndorfer, Oliver Cartus, Marco Lavalle, Christophe Magnard, Shadi Oveisgharan, Batu Osmanoglu, Paul Rosen, Urs Wegmüller. doi: In Review.
+  "Global Seasonal Data Set of Interferometric Coherence and Backscatter from one Year of Sentinel-1 C-band SAR Data". Josef Kellndorfer, Oliver Cartus, Marco Lavalle, Christophe Magnard, Shadi Oveisgharan, Batu Osmanoglu, Paul Rosen, Urs Wegmüller. doi: In Review.
 
 Resources:
   - Description: 1x1 degreee tiled data and metadata in a S3 bucket, Global [VRT](https://gdal.org/drivers/raster/vrt.html) mosaics (.vrt) with external overview files (.ovr)
