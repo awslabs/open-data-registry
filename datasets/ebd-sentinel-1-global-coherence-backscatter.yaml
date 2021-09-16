@@ -28,12 +28,12 @@ License: |
   The use of these data fall under the terms and conditions of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode). Contains modified Copernicus Sentinel data. -- Any use of this data set in publications or sharing should use this citation: "Global Seasonal Data Set of Interferometric Coherence and Backscatter from one Year of Sentinel-1 C-band SAR Data". Josef Kellndorfer, Oliver Cartus, Marco Lavalle, Christophe Magnard, Shadi Oveisgharan, Batu Osmanoglu, Paul Rosen, Urs Wegmüller. doi: In Review. Accessed on [https://registry.opendata.aws/ebd-sentinel-1-global-coherence-backscatter/](https://registry.opendata.aws/ebd-sentinel-1-global-coherence-backscatter/)
 
 Resources:
-  - Description: 1x1 degreee tiled data and metadata in a S3 bucket, Global [VRT](https://gdal.org/drivers/raster/vrt.html) mosaics (.vrt) with external overview files (.ovr)
+  - Description: 1x1 degreee tiled data and metadata in a S3 bucket, Global [VRT](https://gdal.org/drivers/raster/vrt.html) mosaics (.vrt) with external overview files (.ovr) (search for vrts with bucket/prefix sentinel-1-global-coherence-earthbigdata/data/tiles/Global)
     ARN: arn:aws:s3:::sentinel-1-global-coherence-earthbigdata/data/tiles
     Region: us-west-2
     Type: S3 Bucket
   - Description: Global mosaics at 0.01 degree pixel spacing as cloud optimized GeoTIFFs in a S3 bucket
-    ARN: arn:aws:s3:::sentinel-1-global-coherence-earthbigdata/data/mosacis
+    ARN: arn:aws:s3:::sentinel-1-global-coherence-earthbigdata/data/mosaics
     Region: us-west-2
     Type: S3 Bucket
 
