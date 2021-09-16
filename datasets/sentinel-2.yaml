@@ -150,8 +150,6 @@ Glue-DDL:
     StoredAsSubDirectories: True
     Location: s3://sentinel-inventory/sentinel-s2-l1c/inventory-orc/hive/
     SerdeInfo:
-      Parameters:
-        mapping.tools: "Tools & Applications"
       SerializationLibrary: org.apache.hadoop.hive.ql.io.orc.OrcSerde
     Columns:
     - Name: bucket
@@ -162,14 +160,14 @@ Glue-DDL:
       Type: bigint
     - Name: last_modified_date
       Type: bigint
-    Parameters:
-        projection.dt.format: yyyy-MM-dd-HH
-        projection.dt.interval: 1
-        projection.dt.interval.unit: HOURS
-        projection.dt.range: "2021-09-01-00,NOW"
-        projection.dt.type: date
-        projection.enabled: True
-        storage.location.template: 
+  Parameters:
+      projection.dt.format: yyyy-MM-dd-HH
+      projection.dt.interval: "1"
+      projection.dt.interval.unit: HOURS
+      projection.dt.range: "2021-09-01-00,NOW"
+      projection.dt.type: date
+      projection.enabled: "True"
+      storage.location.template: "s3://sentinel-inventory/sentinel-s2-l1c/inventory-orc/hive/dt=${dt}-00"
   PartitionKeys:
     - Name: dt
       Type: string
