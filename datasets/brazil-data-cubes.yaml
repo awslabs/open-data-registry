@@ -1,0 +1,65 @@
+Name: Earth Observation Data Cubes for Brazil
+Description: "Earth observation (EO) data cubes produced from analysis-ready data (ARD) images of CBERS-4, Sentinel-2 and Landsat-8 satelites. Currently, each data cube contains images from a single satellite and sensor. There are two types of EO data cubes: identity and regular. Identity EO data cubes are ARD merged and cropped into a cube grid cell. Regular EO data cubes are created using temporal composition function over Identity data cubes to obtain
+regularly-spaced in time (e.g. 16 days). These data cubes are mainly produced to support image time series analysis."
+Documentation: https://brazil-data-cube.github.io/products.html
+Contact: brazildatacube@inpe.br
+ManagedBy: "[INPE - Brazil Data Cube](http://brazildatacube.org/)"
+UpdateFrequency: New EO data cubes are added as soon as there are produced by the Brazil Data Cube project.
+Tags:
+  - earth observation
+  - image processing
+  - machine learning
+  - image time series analysis
+  - geoscience
+  - geospatial
+  - open source software
+  - satellite imagery
+  - analysis ready data
+  - classification
+  - EO data cubes
+License: "The EO data cubes are produced from free and open images of Landsat-8, Sentinel-2 and CBERS-4 satellites. Terms and Conditions for the use and distribution of [Landsat Data](https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf), Terms and Conditions for the use and distribution of [Sentinel Data](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/TC_Sentinel_Data_31072014.pdf) Terms and Conditions for the use and distribution of [CBERS data](http://mtc-m16c.sid.inpe.br/col/dpi.inpe.br/banon/2006/08.03.19.25/doc/appl_07_2004.pdf)"
+Resources:
+  - Description: Earth Observation Data Cubes for Brazil
+    ARN: arn:aws:s3:::brazil-data-cubes
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+    - Title: SpatioTemporal Asset Catalog (STAC) of Brazil Data Cube Collections
+      URL: https://brazil-data-cube.github.io/applications/stac.html
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io/
+    - Title: Using Python to Access Image Collections Data (Jupyter notebook)
+      URL: https://brazil-data-cube.github.io/applications/stac/general.html
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io/
+    - Title: Using R to Access Image Collections Data (Jupyter notebook)
+      URL: https://brazil-data-cube.github.io/applications/stac/general.html#r-client-library
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+  Tools & Applications:
+    - Title: stac.py - python library to query and download Image Collections from Brazil Data Cube Catalog on Amazon S3
+      URL: https://pypi.org/project/stac.py/
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: rstac - R library to query and download Image Collections from Brazil Data Cube Catalog on Amazon S3
+      URL: https://github.com/brazil-data-cube/rstac
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: Tile Map Service to view Image Collections from Brazil Data Cube Catalog
+      URL: https://github.com/brazil-data-cube/bdc-tiler
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: cube-builder-aws - Application to generate data cubes on AWS environment.
+      URL: https://github.com/brazil-data-cube/cube-builder-aws
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: wtss.py - Python library to query the Brazil Data Cube Catalog (STAC) and access the time series of the data cubes.
+      URL: https://pypi.org/project/wtss.py/
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+  Publications:
+    - Title: "Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products."
+      URL: https://www.mdpi.com/2072-4292/12/24/4033
+      AuthorName: K. R. Ferreira, et al.
