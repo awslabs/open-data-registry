@@ -1,0 +1,66 @@
+Name: Pacific Ocean Sound Recordings
+Description: |
+  This project provides three resources - passive acoustic data (sound recordings) from a deep-ocean environment
+  of central California, derived data products, and analysis tools.  These resources are intended for applications
+  in ocean soundscape research, education, and the arts.
+Documentation: https://docs.mbari.org/pacific-sound/
+Contact: dcline@mbari.org
+ManagedBy: Monterey Bay Aquarium Research Institute
+UpdateFrequency: daily
+Tags:
+  - acoustics
+  - bioacoustics
+  - biodiversity
+  - ecosystems
+  - biology
+  - life science
+  - marine mammals
+  - ocean acoustics
+  - ocean noise
+  - soundscape
+  - climate
+  - coastal
+  - hydrophone
+  - deep learning
+  - machine learning
+  - environmental
+  - geospatial
+  - oceans
+  - open source software
+License: CC-BY 4.0
+Resources:
+  - Description: original 256 kHz audio recordings
+    ARN: arn:aws:s3:::pacific-sound-256khz
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: decimated 2 kHz audio recordings
+    ARN: arn:aws:s3:::pacific-sound-2khz
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: decimated 16 kHz audio recordings
+    ARN: arn:aws:s3:::pacific-sound-16khz
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: machine learning models
+    ARN: arn:aws:s3:::pacific-sound-models
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Tutorials on machine learning and signal processing methods for anthropogenic and cetacean study using the pacific-sound archives
+      URL: https://docs.mbari.org/pacific-sound/
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+  Publications:
+    - Title: New Passive Acoustic Monitoring in Monterey Bay National Marine Sanctuary
+      URL: http://doi.org/10.1109/OCEANS.2016.7761363
+      AuthorName: Ryan et al. (2016)
+    - Title: Humpback whale song occurrence reflects ecosystem variability in feeding and migratory habitat of the northeast Pacific
+      URL: https://doi.org/10.1371/journal.pone.0222456
+      AuthorName: Ryan et al. (2019)
+    - Title: Seal bomb noise as a potential threat to Monterey Bay harbor porpoise
+      URL: https://doi.org/10.3389/fmars.2020.00142
+      AuthorName: Simonis et al. (2020)
+    - Title: Animal-borne metrics enable acoustic detection of blue whale migration
+      URL: https://doi.org/10.1016/j.cub.2020.08.105
+      AuthorName: Oestreich et al. (2020)
