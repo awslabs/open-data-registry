@@ -20,6 +20,8 @@ Tags:
   - geospatial
   - satellite imagery
   - sustainability
+  - cog
+  - stac
 License: |
   The use of these data fall under the terms and conditions of the [Indigo Atlas Sentinel License](https://www.indigoag.com/forms/atlas-sentinel-license).
   Contains modified Copernicus Sentinel data.
@@ -28,6 +30,8 @@ Resources:
     ARN: arn:aws:s3:::sentinel-s1-rtc-indigo
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://scottyhq.github.io/sentinel1-rtc-stac/#/)'
   - Description: Simple Notification Service (SNS) topic for notification of new tile uploads
     ARN: arn:aws:sns:us-west-2:410373799403:sentinel-s1-rtc-indigo-object_created
     Region: us-west-2
