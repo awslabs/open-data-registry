@@ -40,7 +40,8 @@ Resources:
     ARN: arn:aws:s3:::deafrica-landsat-inventory
     Region: af-south-1
     Type: S3 Bucket
-  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC ST and SR record for each new Item    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-scene-topic
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC ST and SR record for each new Item    
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-scene-topic
     Region: af-south-1
     Type: SNS Topic
   - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-landsat s3 bucket all object create events.
