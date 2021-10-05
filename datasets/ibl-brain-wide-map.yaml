@@ -2,20 +2,23 @@ Name: IBL Neuropixels Brainwide Map on AWS
 Description: Electrophysiological recordings of mouse brain activity acquired using Neuropixels probes.
 Documentation: https://docs.google.com/document/d/1OqIqqakPakHXRAwceYLwFY9gOrm8_P62XIfCTnHwstg/edit
 Contact: info@internationalbrainlab.org
-ManagedBy: "[IBL](https://www.internationalbrainlab.com)"
+ManagedBy: "[International Brain Lab](https://www.internationalbrainlab.com)"
 UpdateFrequency: TBD
 Tags:
+  - aws-pds
+  - biology
+  - life sciences
   - neuroscience
   - neurophysiology
   - open source software
   - Mus musculus
 License: MIT
 Resources:
-  - Description: Public pilot ephys data release
+  - Description: Public pilot Map electrophysiology data release
     ARN: arn:aws:s3:::ibl-brain-wide-map-public
     Region: us-east-1
     Type: S3 Bucket
-  - Description: Private Brain-Wide Map ephys data
+  - Description: "Embargoed Brain-Wide Map electrophysiology data. These data are currently only available to IBL participating laboratories and will be released to the public in 2022."
     ARN: arn:aws:s3:::ibl-brain-wide-map-private
     Region: us-east-1
     Type: S3 Bucket
