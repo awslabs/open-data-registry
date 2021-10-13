@@ -113,18 +113,14 @@ def ext_resources_explore(value, rule_obj, path):
     return True
 
 
-@retry(5)
+@retry(4)
 def get_bucket_region(url):
     # Get the headers for this bucket.
     # Verify=False because the wildcard matching doesn't work for buckets with '.'
     r = requests.head(url, verify=False)
 
     if r.status_code == requests.codes.not_found:
-        print(r.headers)
-        print("{} {} {}".format(r.status_code, r.reason, r.url))
-        raise Exception(
-            "Bucket {} doesn't exist or there was a momentary glitch".format(url)
-        )
+        return None
 
     if not "x-amz-bucket-region" in r.headers:
         print(r.headers)
@@ -170,6 +166,9 @@ def ext_valid_bucket_regions(value, rule_obj, path):
         url = "https://{}.s3.amazonaws.com".format(bucket)
 
         region = get_bucket_region(url)
+        if region is None:
+            print("The bucket {} does not exist".format(bucket))
+            return False
         if not value["Region"].lower() == region.lower():
             print(
                 "The region for bucket {} is listed as {} but is actually {}".format(
