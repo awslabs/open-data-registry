@@ -1,6 +1,6 @@
 Name: Terrain Tiles
 Description: A global dataset providing bare-earth terrain heights, tiled for easy usage and provided on S3.
-Documentation: https://mapzen.com/documentation/terrain-tiles/
+Documentation: https://github.com/tilezen/joerd/tree/master/docs
 Contact: https://github.com/tilezen/joerd/issues
 UpdateFrequency: New data is added based on community feedback
 Collabs:
@@ -9,19 +9,25 @@ Collabs:
       - elevation
 Tags:
   - aws-pds
+  - agriculture
   - elevation
   - earth observation
   - geospatial
   - sustainability
   - disaster response
-License: https://mapzen.com/terms/
+License: https://github.com/tilezen/joerd/blob/master/docs/attribution.md
 Resources:
   - Description: Gridded elevation tiles
     ARN: arn:aws:s3:::elevation-tiles-prod
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Map](https://elevation-tiles-prod.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
+    - Title: Using GDAL to Produce a Geotiff for an Area
+      URL: https://gis.stackexchange.com/questions/201831/how-to-efficiently-access-files-with-gdal-from-an-s3-bucket-using-vsis3/202608#202608
+      AuthorName: Chris Henrick
   Tools & Applications:
     - Title: R package for accessing Terrain Tiles
       URL: https://cran.r-project.org/web/packages/elevatr/vignettes/introduction_to_elevatr.html
@@ -59,4 +65,18 @@ DataAtWork:
       URL: https://podpac.org/datasets.html#terraintiles
       AuthorName: Creare
       AuthorURL: http://www.creare.com/
+    - Title: "Terradactile: Generate DEM and hillshade Cloud Optimized GeoTIFFs for visualization and download based on terrain tiles"
+      URL: https://terradactile.sparkgeo.com/
+      AuthorName: Sparkgeo
+      AuthorURL: https://sparkgeo.com/
+    - Title: "Customizable Terrain Tiles"
+      URL: https://clockworkmicro.com/
+      AuthorName: Clockwork Micro
+      AuthorURL: https://clockworkmicro.com/
   Publications:
+    - Title: "Landscape transformations produce favorable roosting conditions for turkey vultures and black vultures"
+      URL: https://www.nature.com/articles/s41598-021-94045-3
+      AuthorName: Jacob E. Hill, Kenneth F. Kellner, Bryan M. Kluever, Michael L. Avery, John S. Humphrey, Eric A. Tillman, Travis L. DeVault & Jerrold L. Belant
+    - Title: Interactive Visualization of 3D Terrain Data Stored in the Cloud
+      URL: https://ieeexplore.ieee.org/abstract/document/9298063
+      AuthorName: Gregory Larrick, Yun Tian, Uri Rogers, Halim Acosta, and Fangyang Shen

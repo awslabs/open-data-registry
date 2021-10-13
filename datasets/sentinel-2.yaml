@@ -5,8 +5,8 @@ Description: |
   optical imagery and provide continuity for the current SPOT and Landsat missions.
   The mission provides a global coverage of the Earth's land surface every 5 days,
   making the data of great use in on-going studies. L1C data are available from
-  June 2015 globally. L2A data are available from April 2017 over wider Europe
-  region and globally since December 2018.
+  June 2015 globally. L2A data are available from September 2016 over wider Europe
+  region and globally since January 2017.
 Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sentinel-hub.com/sentinel-s2-l1c/readme.html) and [Sentinel-2 L2A](https://roda.sentinel-hub.com/sentinel-s2-l2a/readme.html).
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
@@ -17,12 +17,15 @@ Collabs:
       - satellite imagery
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - satellite imagery
   - geospatial
   - natural resource
   - sustainability
   - disaster response
+  - cog
+  - stac
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
@@ -31,6 +34,8 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
+    Explore:
+    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l1c)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
@@ -39,6 +44,8 @@ Resources:
     ARN: arn:aws:s3:::sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a)'
     RequesterPays: True
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
@@ -66,26 +73,18 @@ DataAtWork:
     - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
       URL:   https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
       AuthorName: Timothy Whitehead
-    - Title: Using Vector tiles and AWS Lambda, we can build a really simple API to get Landsat and Sentinel images
-      URL:   https://remotepixel.ca/blog/searchapi_20171211.html
-      AuthorName: Remote Pixel
-      AuthorURL: https://remotepixel.ca/
     - Title: Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service
       URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/
       AuthorName: Esri
       AuthorURL: https://www.esri.com/en-us/home
     - Title: Learning Custom Scripts to Make Useful and Beautiful Satellite Images
       URL: https://medium.com/sentinel-hub/create-useful-and-beautiful-satellite-images-with-custom-scripts-8ef0e6a474c6
-      AuthorName: Monja Šebela      
+      AuthorName: Monja Šebela
   Tools & Applications:
     - Title: Sentinel Hub WMS/WMTS/WCS Service
       URL: http://www.sentinel-hub.com/apps/wms
       AuthorName: Sinergise
       AuthorURL: http://www.sinergise.com/
-    - Title: Satellite Search by Remote Pixel
-      URL: https://remotepixel.ca/projects/satellitesearch.html
-      AuthorName: Remote Pixel
-      AuthorURL: https://remotepixel.ca/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
@@ -130,3 +129,10 @@ DataAtWork:
       AuthorName: OneSoil
       AuthorURL: https://onesoil.ai/
   Publications:
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.
+    - Title: "Coral-spawn slicks: Reflectance spectra and detection using optical satellite data"
+      URL: https://www.sciencedirect.com/science/article/pii/S0034425720304284
+      AuthorName: Hiroya Yamano, Asahi Sakuma, Saki Harii
+

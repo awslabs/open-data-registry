@@ -1,8 +1,8 @@
 Name: NEXRAD on AWS
 Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
-Documentation: https://docs.opendata.aws/noaa-nexrad/readme.html
-Contact: noaa.bdp@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
+Contact: support-level2@unidata.ucar.edu
+ManagedBy: "[Unidata](https://www.unidata.ucar.edu/)"
 UpdateFrequency: New Level II data is added as soon as it is available.
 Collabs:
   ASDI:
@@ -10,6 +10,7 @@ Collabs:
       - weather
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - natural resource
   - weather
@@ -21,16 +22,28 @@ Resources:
     ARN: arn:aws:s3:::noaa-nexrad-level2
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
     Region: us-east-1
     Type: S3 Bucket
-  - Description: "[Rich notifications](https://docs.opendata.aws/noaa-nexrad/readme.html) for real-time data with filterable fields"
+  - Description: NEXRAD Level III real-time select data
+    ARN: arn:aws:s3:::unidata-nexrad-level3
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://unidata-nexrad-level3.s3.amazonaws.com/index.html)'
+  - Description: "[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications) for real-time data with filterable fields"
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
     Region: us-east-1
     Type: SNS Topic
-  - Description: Notifications for archival data
+  - Description: Notifications for the Level II archival bucket
     ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Notifications for the Level III bucket
+    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
@@ -47,6 +60,8 @@ DataAtWork:
       URL: https://github.com/openradar/AMS_radar_in_the_cloud
       AuthorName: openradar
       AuthorURL: https://github.com/openradar
+      Services:
+        - EC2
   Tools & Applications:
     - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
       URL: https://pypi.org/project/nexradaws/
@@ -56,7 +71,22 @@ DataAtWork:
       URL: https://github.com/stephenlienharrell/WeatherPipe
       AuthorName: Stephen Lien Harrell
       AuthorURL: https://github.com/stephenlienharrell
+    - Title: Open NEXRAD Data Access for Level 3 with Lambda@Edge
+      URL: https://github.com/zflamig/ondas-pds
+      AuthorName: Zac Flamig
+    - Title: "Into the eye of the storm: NEXRAD Level II open data"
+      URL: https://blog.mapbox.com/3d-animated-hurricane-map-from-radar-data-affaed8a3d70
+      AuthorName: Jonni Walker
   Publications:
+    - Title: "Level 2 Interface Control Document for Transfer: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620010G.pdf
+      AuthorName: NOAA ROC
+    - Title: "Level 2 Interface Control Document for Message Data Formats: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620002R.pdf
+      AuthorName: NOAA ROC
+    - Title: "Level 3 Interface Control Document for Message Data Formats: Build 18"
+      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001X.pdf
+      AuthorName: NOAA ROC
     - Title: Seasonal abundance and survival of North America’s migratory avifauna determined by weather radar
       URL: https://www.nature.com/articles/s41559-018-0666-4
       AuthorName: Adriaan M. Dokter, Andrew Farnsworth, Daniel Fink, Viviana Ruiz-Gutierrez, Wesley M. Hochachka, Frank A. La Sorte, Orin J. Robinson, Kenneth V. Rosenberg & Steve Kelling
@@ -66,3 +96,6 @@ DataAtWork:
     - Title: Declines in an abundant aquatic insect, the burrowing mayfly, across major North American waterways
       URL: https://www.pnas.org/content/117/6/2987
       AuthorName:  Phillip M. Stepanian, Sally A. Entrekin, Charlotte E. Wainwright, Djordje Mirkovic, Jennifer L. Tank, & Jeffrey F. Kelly
+    - Title: Extreme Pyroconvective Updrafts During a Megafire
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL089001
+      AuthorName:  B. Rodriguez, N. P. Lareau, D. E. Kingsmill, & C. B. Clements

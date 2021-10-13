@@ -1,0 +1,21 @@
+Name: "InRad COVID-19 X-Ray and CT Scans"
+Description: This dataset is a collection of anonymized thoracic radiographs (X-Rays) and computed tomography (CT) scans of patients with suspected COVID-19. Images are acommpanied by a positive or negative diagnosis for SARS-CoV2 infection via RT-PCR. These images were provided by Hospital das Clínicas da Universidade de São Paulo, Hospital Sirio-Libanes, and by Laboratory Fleury.
+Documentation: https://docs.google.com/document/d/1isuyQnszSio3JUZ1_3C4DTPC1fvaJGAR4ziTWGRi8K4/edit?usp=sharing
+Contact: inlab.inrad@hc.fm.usp.br
+ManagedBy: "[Faculdade de Medicina da Universidade de São Paulo Institute of Radiology (InRad)](http://inrad.hc.fm.usp.br)"
+UpdateFrequency: As Necessary
+Tags:
+  - aws-pds
+  - bioinformatics
+  - coronavirus
+  - COVID-19
+  - health
+  - life sciences
+  - medicine
+  - SARS
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Resources:
+  - Description: Radiographs in .png format CT-Scans in .nii format. Object names include a hash MD5. Hash MD5 are matched to a positive or negative RT-PCR test for SARS-CoV-2 or a non-COVID diagnosis as defined by codes that can be found in the accompanying file or the above documentation.
+    ARN: arn:aws:s3:::inlab-opendata-covid-anonymized-images
+    Region: us-west-2
+    Type: S3 Bucket

@@ -1,0 +1,28 @@
+Name: Ohio State Cardiac MRI Raw Data (OCMR)
+Description: OCMR is an open-access repository that provides multi-coil k-space data for cardiac cine.  The fully sampled MRI datasets are intended for quantitative comparison and evaluation of image reconstruction methods. The free-breathing, prospectively undersampled datasets are intended to evaluate their performance and generalizability qualitatively.
+Documentation: https://github.com/MRIOSU/OCMR
+Contact: https://github.com/MRIOSU/OCMR/issues
+ManagedBy: "[OCMR](https://www.ocmr.info/)"
+UpdateFrequency: Annually
+Tags:
+  - aws-pds
+  - life sciences
+  - Homo sapiens
+  - magnetic resonance imaging
+  - image processing
+  - imaging
+  - signal processing
+  - machine learning
+License: Creative Commons Attribution-NonCommercial 4.0 International License (https://creativecommons.org/licenses/by-nc/4.0/)
+Resources:
+  - Description: Raw k-space data for cardiac MRI dataset in a public S3 bucket
+    ARN: arn:aws:s3:::ocmr
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: OCMR Tutorial
+      URL: https://github.com/MRIOSU/OCMR/blob/master/Python/example_ocmr.ipynb
+      AuthorName: Chong Chen
+      AuthorURL: https://cmr.engineering.osu.edu/people/trainees
+  Publications:

@@ -1,0 +1,44 @@
+Name: Refgenie reference genome assets
+Description: Pre-built refgenie reference genome data assets used for aligning and analyzing DNA sequence data.
+Documentation: http://refgenie.databio.org
+Contact: https://github.com/databio/refgenie/issues
+ManagedBy: Sheffield lab at the University of Virginia
+UpdateFrequency: As new data becomes availble (roughly quarterly)
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - genetic
+  - genomic
+  - infrastructure
+  - life sciences
+  - single-cell transcriptomics
+  - transcriptomics
+  - whole genome sequencing  
+License: Public domain
+Resources:
+  - Description: Refgenie S3 Bucket
+    ARN: arn:aws:s3:::awspds.refgenie.databio.org
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials: 
+    - Title: Basic Refgenie tutorial
+      URL: http://refgenie.databio.org/en/latest/tutorial/
+      AuthorName: Nathan Sheffield
+      AuthorURL: http://www.databio.org
+      Services:
+  Tools & Applications:
+    - Title: "Pipeline for ATAC-seq data analysis"
+      URL: http://pepatac.databio.org
+      AuthorName: Jason Smith and Nathan Sheffield
+      AuthorURL: http://databio.org
+    - Title: "Pipeline for PRO-seq data analysis"
+      URL: http://peppro.databio.org
+      AuthorName: Jason Smith and Nathan Sheffield
+      AuthorURL: http://databio.org
+  Publications:
+    - Title: "Refgenie: a reference genome resource manager"
+      URL: https://doi.org/10.1093/gigascience/giz149
+      AuthorName: Michał Stolarczyk, Vincent P Reuter, Jason P Smith, Neal E Magee, Nathan C Sheffield 
+      AuthorURL: http://www.databio.org

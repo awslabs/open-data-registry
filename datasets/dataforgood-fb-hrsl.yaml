@@ -5,7 +5,7 @@ Description: |
   using machine learning models on high-resolution worldwide Digital Globe
   satellite imagery. CIESIN population counts aggregated from worldwide census
   data are allocated to blocks where imagery appears to contain buildings.
-Documentation: "[Project overview](https://dataforgood.fb.com/population-density-maps-documentation/) and [instructions for use with AWS Athena](https://dataforgood.fb.com/docs/using-hrsl-public-dataset-with-athena/)"
+Documentation: "[Project overview](https://dataforgood.facebook.com/dfg/docs/methodology-high-resolution-population-density-maps) and [instructions for use with AWS Athena](https://dataforgood.facebook.com/dfg/docs/using-hrsl-public-dataset-with-athena)"
 Contact: disastermaps@fb.com
 ManagedBy: "[Facebook](https://dataforgood.fb.com/)"
 UpdateFrequency: Quarterly
@@ -34,8 +34,12 @@ License: |
   Settlement Layer (HRSL). Source imagery for HRSL © 2016 [DigitalGlobe](http://explore.digitalglobe.com/Basemap-Vivid.html).
   Accessed DAY MONTH YEAR.
 Resources:
-  - Description: CSV and Cloud-optimized GeoTIFF files
-    ARN: arn:aws:s3:::dataforgood-fb-data
+  - Description: Cloud-optimized GeoTIFF files
+    ARN: arn:aws:s3:::dataforgood-fb-data/hrsl-cogs/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: CSV files
+    ARN: arn:aws:s3:::dataforgood-fb-data/csv/
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:

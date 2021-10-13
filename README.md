@@ -1,6 +1,6 @@
-# Registry of Open Data on AWS
+# Registry of Open Data on AWS 
 
-A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety government organizations, researchers, businesses, and individuals.
+A repository of publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety of government organizations, researchers, businesses, and individuals.
 
 ## What is this for?
 
@@ -31,6 +31,7 @@ Resources:
     ARN:
     Region:
     Type:
+    Explore:
 DataAtWork:
   Tutorials:
     - Title:
@@ -52,13 +53,13 @@ DataAtWork:
 
 The metadata required for each dataset entry is as follows:
 
-| Field | Type | Description |
+| Field | Type | Description & Style |
 | --- | --- | --- |
-| **Name** | String | The public facing name of the dataset |
-|**Description**|String|A high-level description of the dataset|
-|**Documentation**|URL|A link to documentation of the dataset|
+| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name.|
+|**Description**|String|A high-level description of the dataset. Only the first 600 characters will be displayed on the homepage of the [Registry of Open Data on AWS](https://registry.opendata.aws)|
+|**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
-|**ManagedBy**|String|The name of the organization who is responsible for the data ingest process|
+|**ManagedBy**|String|The name of the laboratory, institution, or organization who is responsible for the data ingest process. Avoid using individuals. If your institution manages several datasets hosted by the Public Dataset Program, please list the managing institution identically. For an example why, check out the Managed By section of the [TARGET dataset](https://registry.opendata.aws/target/)|
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
@@ -69,10 +70,11 @@ The metadata required for each dataset entry is as follows:
 |**Resources > Type**|String|Can be _CloudFront Distribution_, _DB Snapshot_, _S3 Bucket_, or _SNS Topic_. A list of supported resources is maintained in the [resources.yaml](resources.yaml) file in this repo. If you want to recommend a resource that is not included in [resources.yaml](resources.yaml), please submit a pull request to add it to that file.|
 |**Resources > RequesterPays** (Optional)|Boolean|Only appropriate for Amazon S3 buckets, indicates whether the bucket has [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) enabled or not.|
 |**Resources > ControlledAccess** (Optional)|String|Only appropriate for Amazon S3 buckets with controlled access. Please provide a URL to instructions on how to request and gain access to the S3 bucket.|
+|**Resources > Explore** (Optional)|List of strings|Additional links that can be used to explore the bucket resource, i.e. links to S3 JS Explorer index.html for the bucket or the AWS S3 console.|
 |**DataAtWork  [> Tutorials, Tools & Applications, Publications]**  (Optional)|List of lists|A list of links to example tutorials, tools & applications, publications that use the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
-|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name of person or entity that created  the tutorial, tool, application, or publication.|
+|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name(s) of person or entity that created  the tutorial, tool, application, or publication. Limit scientific publication author lists to the first six authors in the format Last Name First Initial, followed by 'et al'.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL**|String|(Optional) URL for person or entity that created the tutorial, tool, application, or publication.|
 |**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 
@@ -80,12 +82,12 @@ Note also that we use the name of each YAML file as the URL slug for each datase
 
 ### Example entry
 
-Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/gdelt/
+Here is an example of the metadata behind this dataset registration: https://registry.opendata.aws/noaa-nexrad/
 
 ```yaml
 Name: NEXRAD on AWS
 Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
-Documentation: https://docs.opendata.aws/noaa-nexrad/readme.html
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
 Contact: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: New Level II data is added as soon as it is available.
@@ -102,11 +104,13 @@ Resources:
     ARN: arn:aws:s3:::noaa-nexrad-level2
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
     Region: us-east-1
     Type: S3 Bucket
-  - Description: "[Rich notifications](https://docs.opendata.aws/noaa-nexrad/readme.html) for real-time data with filterable fields"
+  - Description: "[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications) for real-time data with filterable fields"
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
     Region: us-east-1
     Type: SNS Topic
@@ -149,4 +153,4 @@ DataAtWork:
 
 ## How can I contribute?
 
-You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md).
+You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 

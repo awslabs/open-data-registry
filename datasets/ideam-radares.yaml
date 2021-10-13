@@ -1,0 +1,29 @@
+﻿Name: IDEAM - Colombian Radar Network
+Description: Historical and one-day delay data from the IDEAM radar network.
+Documentation: http://www.pronosticosyalertas.gov.co/archivos-radar
+Contact: atencionalciudadano@ideam.gov.co, radares_ideam@ideam.gov.co
+ManagedBy: "[IDEAM](http://www.ideam.gov.co/)"
+UpdateFrequency : Updated level II data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - natural resource
+  - weather
+  - meteorological
+  - sustainability
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Resources:
+  - Description: Level II data
+    ARN: arn:aws:s3:::s3-radaresideam
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Guia de como explorar y plotear los archivos de radar utilizando el lenguaje de programación Python
+      URL: http://www.pronosticosyalertas.gov.co/documents/78690/112207077/AWS_RADARESCOL.pdf/aafc181d-0b6a-47e0-97e9-9b6290ac84d6
+      AuthorName: IDEAM

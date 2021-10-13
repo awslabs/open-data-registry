@@ -1,25 +1,27 @@
 Name: NAIP on AWS
-Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeotTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/)
-Documentation: https://docs.opendata.aws/naip/readme.html
+Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeoTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/)
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/naip
 Contact: imagerycontent@esri.com
 ManagedBy: "[Esri](https://www.esri.com/en-us/home)"
-UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years. NAIP 2018 data is available.
+UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years. NAIP 2019 data is available.
 Collabs:
   ASDI:
     Tags:
       - agriculture
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - aerial imagery
   - geospatial
   - natural resource
   - regulatory
   - sustainability
+  - cog
 License: |
   Public Domain with Attribution
 Resources:
-  - Description: The data in this bucket is 4-band (RGB + NIR) in MRF format processed by Esri. The MRF format is a cloud-optimized open data format that provides fast access to data on S3. MRF can be accessed using GDAL and most applications build using GDAL, but also directly by web applications. Data is provided as 512x512 tiles, with reduced-resolution pyramids created using 2x sampling by averaging. Finally, data compression is efficient and lossless (meaning the data values here are the same as the source). The bucket is set as a Requester Pays bucket.
+  - Description: The data in this bucket is 4-band (RGB + NIR) in MRF format and Cloud Optimized GeoTIFF (COG) processed by Esri. The MRF format is a cloud-optimized open data format that provides fast access to data on S3. MRF can be accessed using GDAL and most applications build using GDAL, but also directly by web applications. Data is provided as 512x512 tiles, with reduced-resolution pyramids created using 2x sampling by averaging. Finally, data compression is efficient and lossless (meaning the data values here are the same as the source). A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned. The bucket is set as a Requester Pays bucket.
     ARN: arn:aws:s3:::naip-analytic
     Region: us-west-2
     Type: S3 Bucket

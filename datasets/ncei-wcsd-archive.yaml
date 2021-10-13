@@ -2,7 +2,7 @@ Name: NOAA Water-Column Sonar Data Archive
 Description: Water-column sonar data archived at the NOAA National Centers for Environmental Information.
 Documentation: https://cires.gitbook.io/ncei-wcsd-archive/
 Contact: wcd.info@noaa.gov
-ManagedBy: "[NOAA NCEI](https://www.ngdc.noaa.gov/mgg/wcd/)"
+ManagedBy: "[NOAA](https://www.ngdc.noaa.gov/mgg/wcd/)"
 UpdateFrequency: New water-column sonar data are added regularly as they are provided to the archive.
 Collabs:
   ASDI:
@@ -21,9 +21,11 @@ Tags:
 License: The data may be used and redistributed for free but is not intended for legal use, since it may contain inaccuracies. Neither the data Creator, NOAA, the United States Government, nor any of their employees or contractors, makes any warranty, express or implied, including warranties of merchantability and fitness for a particular purpose, or assumes any legal liability for the accuracy, completeness, or usefulness, of this information.
 Resources:
   - Description: NCEI Water-Column Sonar Data Archive
-    ARN: arn:aws:s3:::ncei-wcsd-archive
-    Region: us-west-2
+    ARN: arn:aws:s3:::noaa-wcsd-pds
+    Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-wcsd-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: Plotting Raw EK60 Data
