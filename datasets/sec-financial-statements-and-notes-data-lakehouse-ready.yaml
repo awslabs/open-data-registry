@@ -1,0 +1,29 @@
+Name: SEC Financial Statments and Notes - Data Lakehouse Ready
+Description: |
+  The [SEC Financial Statement and Notes Data Sets](https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html) provide the text and detailed numeric information from all financial statements and their notes.  This data is extracted from exhibits to corporate financial reports filed with the SEC using eXtensible Business Reporting Language (XBRL). The data is presented in a flattened compressed parquet format to help users analyze and compare corporate disclosure information over time and across registrants. The data sets also contain additional fields such as a company's Standard Industrial Classification to facilitate the data's use.
+  This dataset is 'Lakehouse Ready'. Meaning, you can query this data in-place straight out of the Registry of Open Data S3 bucket. [Deploy this dataset's corresponding CloudFormation template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateUrl=https%3A%2F%2Faws-roda-fintech-datalake.s3.amazonaws.com%2FSECFinancialStatementsAndNotes.RodaTemplate.json&stackName=SEC-FinancialStatementsAndNotes-RODA) to create the  AWS Glue catalog entries into your account in about 30 seconds. That one step will enable you to write SQL with AWS Athena, build dashboards and charts with Amazon Quicksight, perform HPC with AWS EMR, or join into your AWS Redshift clusters. More detail in (the documentation)[https://github.com/aws-samples/data-lake-as-code/blob/roda-fintech/README.md.
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda-fintech/README.md
+Contact: https://github.com/aws-samples/data-lake-as-code/issues
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: These data sets will be updated monthly. Prior to November 2020, the data sets were updated quarterly. Data contained in documents filed after 530PM Eastern on the last day of the month will be included in the subsequent posting.
+Tags:
+  - fintech
+  - sec
+  - filings
+  - capital markets
+License: "[MIT](https://github.com/broadinstitute/gnomad_methods/blob/master/LICENSE); [terms of use](https://gnomad.broadinstitute.org/terms)"
+Resources:
+  - Description: Parquet representations of the SEC Financial Statements and Notes data [aggregated from the sec.gov](https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html)
+    ARN: arn:aws:s3:::aws-roda-fintech-datalake/sec_financial_statements/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: SEC Financial Statements and Notes Tables and Columns Documentation 
+      URL: https://www.sec.gov/files/aqfsn_1.pdf
+      AuthorName: SEC
+      Services:
+          - Athena
+          - Glue
+  Tools & Applications:
+  Publications:
