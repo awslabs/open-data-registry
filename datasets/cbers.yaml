@@ -29,6 +29,8 @@ Tags:
   - satellite imagery
   - sustainability
   - disaster response
+  - stac
+  - cog
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Resources:
   - Description: CBERS imagery (COG files, Requester Pays Bucket)
@@ -71,11 +73,11 @@ DataAtWork:
     - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
       URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
       AuthorName: Frederico Liporace
+      Services:
+        - SNS
+        - Lambda
+        - DynamoDB
   Tools & Applications:
-    - Title: Remote Pixel Viewer
-      URL: https://viewer.remotepixel.ca
-      AuthorName: Remote Pixel
-      AuthorURL: http://remotepixel.ca/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
