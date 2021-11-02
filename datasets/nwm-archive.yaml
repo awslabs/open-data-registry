@@ -1,30 +1,37 @@
 Name: NOAA National Water Model CONUS Retrospective Dataset
 Description: |
-  The NOAA National Water Model Retrospective dataset contains input and output from multi-decade CONUS retrospective simulations. These simulations used meteorological input fields from meteorological retrospective datasets. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time operational NWM forecast model.  <br />
-  
+  The NOAA National Water Model Retrospective dataset contains input and output from multi-decade CONUS retrospective simulations. These simulations used meteorological input fields from meteorological retrospective datasets. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time operational NWM forecast model.
+  <br/>
+  <br/>
   One application of this dataset is to provide historical context to current near real-time streamflow, soil moisture and snowpack conditions. The retrospective data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. This dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes. <br />
-  
-  Currently there are three versions of the NWM retrospective dataset  <br />
-  
-  A 42-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model. <br />
-  A 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model. <br />
-  A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model. <br />
- 
+  <br/>
+  <br/>  
+  Currently there are three versions of the NWM retrospective dataset
+  <br/>
+  <br/>  
+  A 42-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
+  A 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model.
+  A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model.
+  <br/>
+  <br/> 
   Version 2.1 uses forcings from the Office of Water Prediction Analysis of Record for Calibration (AORC) dataset while Version 2.0 and version 1.2 use input meteorological forcing from the North American Land Data Assimilation (NLDAS) data set. Note that no streamflow or other data assimilation is performed within any of the NWM retrospective simulations.
-  
+  <br/>
+  <br/>
   NWM Retrospective data is available in two formats, NetCDF and Zarr.  The NetCDF files contain the full set of NWM output data, while the Zarr files contain a subset of NWM output fields that vary with model version. 
-  
+  <br/>
+  <br/>
   NWM V2.1:  All model output and forcing input fields are available in the NetCDF format.  All model output fields along with the precipitation forcing field are available in the Zarr format.
   NWM V2.0:  All model output fields are available in NetCDF format. Model channel output including streamflow and related fields are available in Zarr format.
   NWM V1.2:  All model output fields are available in NetCDF format.
-
+  <br/>
+  <br/>
   A table listing the data available within each NetCDF and Zarr file is located in the documentation page.  This data includes meteorological NWM forcing inputs along with NWM hydrologic and land surface outputs, and varies by version number. 
 Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/nwm-archive
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
-  <br />
+  <br/>
   For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  <br/> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: No updates
 Collabs:
