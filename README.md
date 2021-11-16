@@ -73,7 +73,6 @@ The metadata required for each dataset entry is as follows:
 |**Resources > RequesterPays** (Optional)|Boolean|Only appropriate for Amazon S3 buckets, indicates whether the bucket has [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) enabled or not.|
 |**Resources > ControlledAccess** (Optional)|String|Only appropriate for Amazon S3 buckets with controlled access. Please provide a URL to instructions on how to request and gain access to the S3 bucket.|
 |**Resources > Explore** (Optional)|List of strings|Additional links that can be used to explore the bucket resource, i.e. links to S3 JS Explorer index.html for the bucket or the AWS S3 console.|
-|**Citation > AuthorSubmitted** (Optional)|String|Any text that you would like a data user to include if they are referencing this dataset in a publication or repository. If left empty, we will provide default language that you can see below in the example entry.|
 |**DataAtWork  [> Tutorials, Tools & Applications, Publications]**  (Optional)|List of lists|A list of links to example tutorials, tools & applications, publications that use the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
@@ -102,7 +101,6 @@ Tags:
   - meteorological
   - sustainability
 License: There are no restrictions on the use of this data.
-Citation: NEXRAD on AWS was accessed on January 3rd, 2022 from registry.opendata.aws/noaa-nexrad/.
 Resources:
   - Description: NEXRAD Level II archive data
     ARN: arn:aws:s3:::noaa-nexrad-level2
