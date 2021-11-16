@@ -32,6 +32,8 @@ Resources:
     Region:
     Type:
     Explore:
+Citation:
+  - AuthorSubmitted:
 DataAtWork:
   Tutorials:
     - Title:
