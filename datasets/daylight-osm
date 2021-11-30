@@ -1,24 +1,29 @@
 Name: Daylight OpenStreetMap Distribution
 Description: |
-  description
-Documentation: "[Project overview](https://dataforgood.facebook.com/dfg/docs/methodology-high-resolution-population-density-maps) and [instructions for use with AWS Athena](https://dataforgood.facebook.com/dfg/docs/using-hrsl-public-dataset-with-athena)"
-Contact: disastermaps@fb.com
+  Daylight is a complete distribution of global, open map data that’s freely available with support from community and professional mapmakers. Meta combines the work of global contributors to projects like OpenStreetMap with quality and consistency checks from Daylight mapping partners to create a free, stable, and easy-to-use street-scale global map. The Daylight Map Distribution contains a subset of the OpenStreetMap database.
+Documentation: "[Project Website](https://daylightmap.org)"
+Contact: osm@fb.com
 ManagedBy: "[Meta](https://dataforgood.fb.com/)"
 UpdateFrequency: Quarterly
 Collabs:
 Tags:
   - openstreetmap
 License: |
-  ODbL?
+  [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/)
 Resources:
-  - Description: OSM PBF Files
+  - Description: Daylight OSM PBF Files
+    ARN: arn:aws:s3:::daylight
+    Region: us-west-1
+    Type: S3 Bucket
+  - Description: Daylight OSM Features (Parquet)
     ARN: arn:aws:s3:::daylight
     Region: us-west-2
     Type: S3 Bucket
-  - Description: Parquet Files
+  - Description: Daylight OSM Elements (Parquet)
     ARN: arn:aws:s3:::daylight...
     Region: us-west-2
     Type: S3 Bucket
+
 DataAtWork:
   Tutorials:
   Tools & Applications:
