@@ -26,14 +26,13 @@ UpdateFrequency:
 Tags:
   -
 License:
+Citation:
 Resources:
   - Description:
     ARN:
     Region:
     Type:
     Explore:
-Citation:
-  - AuthorSubmitted:
 DataAtWork:
   Tutorials:
     - Title:
@@ -65,6 +64,7 @@ The metadata required for each dataset entry is as follows:
 |**UpdateFrequency**|String|An explanation of how frequently the dataset is updated|
 |**Tags**|List of strings|Tags that topically describe the dataset. A list of supported tags is maintained in the [tags.yaml](tags.yaml) file in this repo. If you want to recommend a tag that is not included in [tags.yaml](tags.yaml), please submit a pull request to add it to that file.|
 |**License**|String|An explanation of the dataset license and/or a URL to more information about data terms of use of the dataset|
+|**Citation** (Optional)|String|A custom citation to be used when citing this dataset, will be appended to the default citation used for all datasets.|
 |**Resources**|List of lists|A list of AWS resources that users can use to consume the data. Each resource entry requires the metadata below:|
 |**Resources > Description**|String|A technical description of the data available within the AWS resource, including information about file formats and scope.|
 |**Resources > ARN**|String|Amazon Resource Name for resource, e.g. arn:aws:s3:::commoncrawl|
@@ -77,7 +77,7 @@ The metadata required for each dataset entry is as follows:
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > Title**|String|The title of the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name(s) of person or entity that created  the tutorial, tool, application, or publication. Limit scientific publication author lists to the first six authors in the format Last Name First Initial, followed by 'et al'.|
-|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL**|String|(Optional) URL for person or entity that created the tutorial, tool, application, or publication.|
+|**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL** (Optional)|String|URL for person or entity that created the tutorial, tool, application, or publication.|
 |**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 
 Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
