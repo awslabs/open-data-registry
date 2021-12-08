@@ -1,5 +1,6 @@
 Name: Poseidon seismic, well, and interpretation data
-Description: Raw and interpreted data from Poseidon gas field for use in geoscience machining learning applications.
+Description: |
+  Raw and interpreted data from Poseidon gas field for use in geoscience machining learning applications.
   - SEISMIC DATA - Cloud-native seismic files in two different formats OpenVDS+ and Real Simple Seismic (rss). Our team converted these from SEG-Y so you can have fast slice access for your machine learning pipeline! Please see our example notebooks on various ways to access the seismic data here and here. Cloud versions (for SageMaker) are here and here. Following seismic datasets are available. We may add more files (seismic attributes/features) during the competition.
     - Near, Mid, and Far Stacks in TWT
     - Full Stack with AGC 
@@ -47,7 +48,8 @@ DataAtWork:
   Tutorials:
     - Title: Load the Data into SageMaker tutorial (Jupyter notebook)
       URL: https://github.com/GeoML-SIG/geoml_competitions/blob/main/seismic_inversion_2021/sagemaker-notebooks/Geophysics%20on%20Cloud%20-%20SageMaker%20Load%20the%20Data.ipynb
-      Services: SageMaker
+      Services:
+        - SageMaker
       AuthorName: Altay Sansal
       AuthorURL: https://www.linkedin.com/in/tasansal/
     - Title: Reading Cloud Wells into Pandas DataFrame (Jupyter notebook)
