@@ -1,11 +1,11 @@
-Name: Daylight OpenStreetMap Distribution
+Name: Daylight Map Distribution of OpenStreetMap
 Description: |
-  Daylight is a complete distribution of global, open map data that’s freely available with support from community and professional mapmakers. Meta combines the work of global contributors to projects like OpenStreetMap with quality and consistency checks from Daylight mapping partners to create a free, stable, and easy-to-use street-scale global map. The Daylight Map Distribution contains a subset of the OpenStreetMap database. In addition to the standard OpenStreetMap PBF format, Daylight is available in the two parquet formats that are optimized for AWS Athena including geometries (Points, LineStrings, Polygons, or MultiPolygons). First, **Daylight OSM Features** contains all 977M renderable OSM features. Second, **Daylight OSM Elements** contains all of OSM, including 6B nodes without  and relations that do not contain geometries, such as turn restrictions.
+  Daylight is a complete distribution of global, open map data that’s freely available with support from community and professional mapmakers. Meta combines the work of global contributors to projects like OpenStreetMap with quality and consistency checks from Daylight mapping partners to create a free, stable, and easy-to-use street-scale global map. The Daylight Map Distribution contains a validated subset of the OpenStreetMap database. In addition to the standard OpenStreetMap PBF format, Daylight is available in two parquet formats that are optimized for AWS Athena including geometries (Points, LineStrings, Polygons, or MultiPolygons). First, **Daylight OSM Features** contains all 977M renderable OSM features. Second, **Daylight OSM Elements** contains all of OSM, including 6B nodes without attributes, and relations that do not contain geometries, such as turn restrictions.
 Documentation: "[Project Website](https://daylightmap.org)"
 Contact: osm@fb.com
 ManagedBy: "[Meta](https://dataforgood.fb.com/)"
 UpdateFrequency: Quarterly
-# Collabs:
+Collabs:
 Tags:
   - openstreetmap
 License: |
@@ -23,7 +23,6 @@ Resources:
     ARN: arn:aws:s3:::daylight-openstreetmap/parquet/daylight_osm_elements
     Region: us-west-2
     Type: S3 Bucket
-
 DataAtWork:
   Tutorials:
   Tools & Applications:
