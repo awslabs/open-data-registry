@@ -13,6 +13,8 @@ Tags:
   - image processing
   - machine learning
   - open source software
+  - cog
+  - stac
 License: "The EO data cubes are produced from free and open images of Landsat-8, Sentinel-2 and CBERS-4 satellites. Terms and Conditions for the use and distribution of [Landsat Data](https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf), Terms and Conditions for the use and distribution of [Sentinel Data](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/TC_Sentinel_Data_31072014.pdf) Terms and Conditions for the use and distribution of [CBERS data](http://mtc-m16c.sid.inpe.br/col/dpi.inpe.br/banon/2006/08.03.19.25/doc/appl_07_2004.pdf)"
 Resources:
   - Description: Earth Observation Data Cubes for Brazil - Sentinel 2A/2B
@@ -20,11 +22,15 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-sentinel-2.s3.us-west-2.amazonaws.com/catalog.json)' 
   - Description: Earth Observation Data Cubes for Brazil - CBERS 4
     ARN: arn:aws:s3:::bdc-cbers
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-cbers.s3.us-west-2.amazonaws.com/catalog.json)'
   - Description: Notifications for new EO Data Cubes Sentinel-2 scenes
     ARN: arn:aws:sns:us-west-2:896627514407:bdc-sentinel-2-object_created
     Region: us-west-2
@@ -48,8 +54,12 @@ DataAtWork:
       URL: https://github.com/brazil-data-cube/cube-builder-aws
       AuthorName: Brazil Data Cube
       AuthorURL: https://brazil-data-cube.github.io
+      Services:
+      - Lambda
+      - S3
+      - DynamoDB
     - Title: Tile Map Service to view Image Collections from Brazil Data Cube Catalog
-      URL: https://github.com/brazil-data-cube/bdc-tiler
+      URL: https://github.com/brazil-data-cube/code-gallery/blob/master/jupyter/Python/tiler/bdc-tiler_introduction.ipynb
       AuthorName: Brazil Data Cube
       AuthorURL: https://brazil-data-cube.github.io
   Publications:
