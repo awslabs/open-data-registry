@@ -1,0 +1,30 @@
+Name: CAFE60 reanalysis
+Description: "The CSIRO Climate retrospective Analysis and Forecast Ensemble system: version 1 (CAFE60v1) provides a large ensemble retrospective analysis of the global climate system from 1960 to present with sufficiently many realizations and at spatio-temporal resolutions suitable to enable probabilistic climate studies. Using a variant of the ensemble Kalman filter, 96 climate state estimates are generated over the most recent six decades. These state estimates are constrained by monthly mean ocean, atmosphere and sea ice observations such that their trajectories track the observed state while enabling estimation of the uncertainties in the approximations to the retrospective mean climate over recent decades. Strongly coupled data assimilation (SCDA) is implemented via an ensemble transform Kalman filter in order to constrain a general circulation climate model to observations. Satellite (altimetry, sea surface temperature, sea ice concentration) and in situ ocean temperature and salinity profiles are directly assimilated each month, whereas atmospheric observations are sub-sampled from the JRA55 atmospheric reanalysis. Strong coupling is implemented via explicit cross domain covariances between ocean, atmosphere, sea ice and ocean biogeochemistry. Atmospheric and surface ocean fields are available at daily resolution and monthly resolution for the land, subsurface ocean and sea ice. The system also produces a complete data archive of initial conditions potentially enabling individual forecasts for all members each month over the 60 year period. The size of the ensemble and application of strongly coupled data assimilation lead to new insights for future reanalyses. CAFE60v1 has been validated in comparison to empirical indices of the major climate teleconnections and blocking from various reanalysis products (ERA5, JRA55, NCEP NR1). Estimates of the large scale ocean structure and transports have been compared to those derived from gridded observational products (WOA18, HadISST, ERSSTv5) and climate model projections (CMIP). Sea ice (extent, concentration and variability) and land surface (precipitation and surface air temperatures) are also compared to a variety of model (ERA5, CMIP) and observational (GPCP, AWAP, HadCRU4, GIOMAS, NSIDC, HadISST) products. This analysis shows that CAFE60v1 is a useful, comprehensive and unique data resource for studying internal climate variability and predictability, including the recent climate response to anthropogenic forcing on multi-year to decadal time scales."
+Documentation: "https://data.csiro.au/dap/ws/v2/collections/49803/support/4029"
+Contact: "Terence.O'Kane@csiro.au"
+ManagedBy: "[CSIRO](http://csiro.au/)"
+UpdateFrequency: 6 Monthly (Approx)
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - climate
+  - sustainability
+License: "Creative Commons Attribution-ShareAlike 4.0 International Licence"
+Resources:
+  - Description: "CSIRO Climate retrospective Analysis and Forecast Ensemble system: version 1 (CAFE60v1) data"
+    ARN: arn:aws:s3:::cafe60-reanalysis-dataset-aws-open-data
+    Region: ap-southeast-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cafe60-reanalysis-dataset-aws-open-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for updates to data
+    ARN: arn:aws:sns:ap-southeast-2:970429975021:Cafe60-Data-Changes
+    Region: ap-southeast-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

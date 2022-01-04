@@ -9,11 +9,12 @@ Description: >
   The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression
   Quantification, miRNA-Seq Isoform Expression Quantification, miRNA Expression Quantification,
   Genotyping Array Copy Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping
-  Array Gene Level Copy Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation
-  Beta Value Tissue Slide Image, and Diagnostic Slide Image data from Genomic Data Commons (GDC).
+  Array Gene Level Copy Number Scores, and WXS Masked Somatic Mutation data from Genomic Data
+  Commons (GDC).
 
-  This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq Aligned Reads, WXS Annotated
-  Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic Mutation data from GDC.
+  This dataset also contains controlled Whole Exome Sequencing (WXS), RNA-Seq, miRNA-Seq, ATAC-Seq
+  Aligned Reads, WXS Annotated Somatic Mutation, WXS Raw Somatic Mutation, and WXS Aggregated Somatic
+  Mutation data from GDC.
   
   TCGA is made available on AWS via the [NIH STRIDES Initiative](https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/).
 Documentation: https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
@@ -35,8 +36,7 @@ Resources:
       Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
       Isoform Expression Quantification, miRNA Expression Quantification, Genotyping Array Copy
       Number Segment, Genotyping Array Masked Copy Number Segment, Genotyping Array Gene Level Copy
-      Number Scores, WXS Masked Somatic Mutation, Methylation Array Methylation Beta Value Tissue
-      Slide Image, Diagnostic Slide Image
+      Number Scores, WXS Masked Somatic Mutation
     ARN: arn:aws:s3:::tcga-2-open
     Region: us-east-1
     Type: S3 Bucket

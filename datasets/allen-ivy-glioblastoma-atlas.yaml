@@ -1,0 +1,43 @@
+Name: Allen Ivy Glioblastoma Atlas
+Description: |
+  This dataset consists of images of glioblastoma human brain tumor tissue sections that have been probed for expression of particular genes believed to play a role in development of the cancer.  Each tissue section is adjacent to another section that was stained with a reagent useful for identifying histological features of the tumor.  Each of these types of images has been completely annotated for tumor features by a machine learning process trained by expert medical doctors.
+Contact: awspds@alleninstitute.org
+Documentation: https://glioblastoma.alleninstitute.org/static/docs
+ManagedBy: "[Allen Institute](http://www.alleninstitute.org/)"
+UpdateFrequency: Never
+Tags:
+  - aws-pds
+  - biology
+  - genetic
+  - gene expression
+  - imaging
+  - neurobiology
+  - image processing
+  - life sciences
+  - machine learning
+  - computer vision
+  - cancer
+  - glioblastoma
+  - Homo sapiens
+License: http://www.alleninstitute.org/legal/terms-use/
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::allen-ivy-glioblastoma-atlas
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Accessing Ivy Glioblastoma Atlas Project data
+      URL: https://github.com/AllenInstitute/open_dataset_tools/blob/main/example_notebooks/Accessing_Ivy_Glioblastoma_Atlas_Project_Data.ipynb
+      AuthorName: Allen Institute for Brain Science
+      AuthorURL: www.alleninstitute.org
+  Tools & Applications:
+    - Title: Ivy Glioblastoma Atlas Project
+      URL: https://glioblastoma.alleninstitute.org
+      AuthorName: Allen Institute for Brain Science
+      AuthorURL: www.alleninstitute.org
+  Publications:
+    - Title: An anatomic transcriptional atlas of human glioblastoma
+      URL: http://science.sciencemag.org/content/360/6389/660
+      AuthorName: Ralph Puchalski, et al.
+      AuthorURL: www.alleninstitute.org

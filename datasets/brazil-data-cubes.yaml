@@ -1,0 +1,64 @@
+Name: Earth Observation Data Cubes for Brazil
+Description: "Earth observation (EO) data cubes produced from analysis-ready data (ARD) images of CBERS-4, Sentinel-2 and Landsat-8 satelites. Currently, each data cube contains images from a single satellite and sensor. There are two types of EO data cubes: identity and regular. Identity EO data cubes are ARD merged and cropped into a cube grid cell. Regular EO data cubes are created using temporal composition function over Identity data cubes to obtain
+regularly-spaced in time (e.g. 16 days). These data cubes are mainly produced to support image time series analysis."
+Documentation: http://brazildatacube.org/en/home-page-2/
+Contact: brazildatacube@inpe.br
+ManagedBy: "[INPE - Brazil Data Cube](http://brazildatacube.org/)"
+UpdateFrequency: New EO data cubes are added as soon as there are produced by the Brazil Data Cube project.
+Tags:
+  - earth observation
+  - satellite imagery
+  - geoscience
+  - geospatial
+  - image processing
+  - machine learning
+  - open source software
+  - cog
+  - stac
+License: "The EO data cubes are produced from free and open images of Landsat-8, Sentinel-2 and CBERS-4 satellites. Terms and Conditions for the use and distribution of [Landsat Data](https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf), Terms and Conditions for the use and distribution of [Sentinel Data](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/TC_Sentinel_Data_31072014.pdf) Terms and Conditions for the use and distribution of [CBERS data](http://mtc-m16c.sid.inpe.br/col/dpi.inpe.br/banon/2006/08.03.19.25/doc/appl_07_2004.pdf)"
+Resources:
+  - Description: Earth Observation Data Cubes for Brazil - Sentinel 2A/2B
+    ARN: arn:aws:s3:::bdc-sentinel-2
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-sentinel-2.s3.us-west-2.amazonaws.com/catalog.json)' 
+  - Description: Earth Observation Data Cubes for Brazil - CBERS 4
+    ARN: arn:aws:s3:::bdc-cbers
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-cbers.s3.us-west-2.amazonaws.com/catalog.json)'
+  - Description: Notifications for new EO Data Cubes Sentinel-2 scenes
+    ARN: arn:aws:sns:us-west-2:896627514407:bdc-sentinel-2-object_created
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Notifications for new EO Data Cubes CBERS scenes
+    ARN: arn:aws:sns:us-west-2:896627514407:bdc-cbers-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Using Python to Access Image Collections Data (Jupyter notebook)
+      URL: https://github.com/brazil-data-cube/code-gallery/blob/master/jupyter/Python/stac/stac-aws-introduction.ipynb
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io/
+    - Title: Tile Map Service to view Image Collections from Brazil Data Cube Catalog
+      URL: https://github.com/brazil-data-cube/code-gallery/blob/master/jupyter/Python/tiler/bdc-tiler_introduction.ipynb
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io 
+  Tools & Applications:
+    - Title: rstac - R library to query and download Image Collections from Brazil Data Cube Catalog on Amazon S3
+      URL: https://github.com/brazil-data-cube/rstac
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: cube-builder-aws - Application to generate data cubes on AWS environment.
+      URL: https://github.com/brazil-data-cube/cube-builder-aws
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+  Publications:
+    - Title: "Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products."
+      URL: https://www.mdpi.com/2072-4292/12/24/4033
+      AuthorName: K. R. Ferreira, et al.
