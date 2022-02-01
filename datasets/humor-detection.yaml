@@ -11,9 +11,11 @@ Description: |
   and a label if the question is humorous or not.
 Documentation: https://humor-detection-pds.s3-us-west-2.amazonaws.com/README.txt
 Contact: yftahz@amazon.com, ekravi@amazon.com
-ManagedBy: Alexa Shopping
+ManagedBy: "[Amazon](https://www.amazon.com/)"
 UpdateFrequency: Not currently being updated
 Tags:
+  - aws-pds
+  - amazon.science
   - natural language processing
   - machine learning
 License: "[CDLA-Sharing](https://cdla.io/sharing-1-0/)"
@@ -22,6 +24,8 @@ Resources:
     ARN: arn:aws:s3:::humor-detection-pds
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://humor-detection-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Publications:
     - Title: Humor Detection in Product Question Answering Systems.

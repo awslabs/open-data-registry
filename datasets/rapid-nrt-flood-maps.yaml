@@ -4,7 +4,13 @@ Documentation: https://github.com/QingYang6/RAPID-NRT-flood-maps-on-AWS/blob/mas
 Contact: xinyi.shen@uconn.edu; qing.yang6@hotmail.com
 ManagedBy: University of Connecticut; Guangxi University
 UpdateFrequency: NRT data will be update as soon as SAR images available and done processed.
+Collabs:
+  ASDI:
+    Tags:
+      - water
 Tags:
+  - aws-pds
+  - agriculture
   - earth observation
   - water
   - environmental
@@ -15,6 +21,8 @@ Resources:
     ARN: arn:aws:s3:::rapid-nrt-flood-maps
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://rapid-nrt-flood-maps.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:

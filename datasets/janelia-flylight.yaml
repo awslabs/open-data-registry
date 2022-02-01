@@ -2,15 +2,16 @@ Name: "Fly Brain Anatomy: FlyLight Gen1 and Split-GAL4 Imagery"
 Description: |
   This data set, made available by Janelia's FlyLight project, consists of fluorescence images 
   of Drosophila melanogaster driver lines, aligned to standard templates, and stored in formats 
-  suitable for rapid searching and visualization. Additional data will be added as it is published. 
-  A large release of Gen1 MCFO samples is coming at the beginning of May 2020. 
+  suitable for rapid searching in the cloud. Additional data will be added as it is published. 
 Documentation: https://open.quiltdata.com/b/janelia-flylight-imagery
 Contact: flylight@janelia.hhmi.org
 ManagedBy: "[Janelia Research Campus](https://www.janelia.org)"
 UpdateFrequency: As required
 Tags:
+  - aws-pds
   - biology
   - life sciences
+  - imaging
   - neuroscience
   - neurobiology
   - neuroimaging
@@ -39,6 +40,17 @@ DataAtWork:
     - Title: Using Imagery on AWS S3
       URL: https://github.com/JaneliaSciComp/open-data-flylight/blob/master/tutorials/Using_imagery_on_AWS_S3.ipynb
       AuthorName: Rob Svirskas
+    - Title: Scaling Neuroscience Research on AWS
+      URL: https://aws.amazon.com/blogs/architecture/scaling-neuroscience-research-on-aws/
+      AuthorName: Konrad Rokicki
+      Services:
+         - Lambda
+         - AppSync
+         - DynamoDB
+         - Step Functions
+    - Title: Tutorial for neuronbridger (R API)
+      URL: http://natverse.org/neuronbridger/
+      AuthorName: Alexander Bates
   Tools & Applications:
     - Title: FlyLight Project Website
       URL: https://www.janelia.org/project-team/flylight
@@ -55,13 +67,16 @@ DataAtWork:
   Publications:
     - Title: A GAL4-Driver Line Resource for Drosophila Neurobiology
       URL: https://doi.org/10.1016/j.celrep.2012.09.011
-      AuthorName: Jenett, A., Rubin, G. M., Ngo, T., Shepherd, D., Murphy, C., Dionne, H., Pfeiffer, B. D., Cavallaro, A., Hall, D., Jeter, J., Iyer, N., Fetter, D., Hausenfluck, J. H., Peng, H., Trautman, E. T., Svirskas, R. R., Myers, E. W., Iwinski, Z. R., Aso, Y., DePasquale, G. M., Enos, A., Hulamm, P., Lam, S. C. B., Li, H., Laverty, T. R., Long, F., Qu, L., Murphy, S. D., Rokicki, K., Safford, T., Shaw, K., Simpson, J. H., Sowell, A., Tae, S., Yu, Y., & Zugates, C. T. 
+      AuthorName: Arnim Jenett, Gerald M Rubin, Teri-TB Ngo, David Shepherd, Christine Murphy, Heather Dionne, Barret D Pfeiffer, Amanda Cavallaro, Donald Hall, Jennifer Jeter, Nirmala Iyer, Dona Fetter, Joanna H Hausenfluck, Hanchuan Peng, Eric T Trautman, Robert R Svirskas, Eugene W Myers, Zbigniew R Iwinski, Yoshinori Aso, Gina M DePasquale, Adrianne Enos, Phuson Hulamm, Shing Chun Benny Lam, Hsing-Hsi Li, Todd R Laverty, Fuhui Long, Lei Qu, Sean D Murphy, Konrad Rokicki, Todd Safford, Kshiti Shaw, Julie H Simpson, Allison Sowell, Susana Tae, Yang Yu, Christopher T Zugates
     - Title: The neuronal architecture of the mushroom body provides a logic for associative learning
       URL: https://doi.org/10.7554/eLife.04577
-      AuthorName: Aso, Y., Hattori, D., Yu, Y., Johnston, R. M., Iyer, N. A., Ngo, T., Dionne, H., Abbott, L., Axel, R., Tanimoto, H., & Rubin, G. M. 
+      AuthorName:  Yoshinori Aso, Daisuke Hattori, Yang Yu, Rebecca M Johnston, Nirmala A Iyer, Teri-TB Ngo, Heather Dionne, LF Abbott, Richard Axel, Hiromu Tanimoto, Gerald M Rubin
     - Title: "Color depth MIP mask search: a new tool to expedite Split-GAL4 creation"
       URL: https://doi.org/10.1101/318006
-      AuthorName: Otsuna, H., Ito, M., & Kawase, T. 
+      AuthorName: Hideo Otsuna, Masayoshi Ito, Takashi Kawase
     - Title: An unbiased template of the Drosophila brain and ventral nerve cord
       URL: https://doi.org/10.1101/376384
-      AuthorName: Bogovic, J.A., Otsuna, H., Heinrich, L., Ito, M., Jeter, J., Meissner, G., Nern, A., Colonell, J., Malkesman, O., Ito, K., & Saalfeld, S.
+      AuthorName: John A Bogovic, Hideo Otsuna, Larissa Heinrich, Masayoshi Ito, Jennifer Jeter, Geoffrey Meissner, Aljoscha Nern, Jennifer Colonell, Oz Malkesman, Kei Ito, Stephan Saalfeld
+    - Title: "An image resource of subdivided Drosophila GAL4-driver expression patterns for neuron-level searches"
+      URL: https://doi.org/10.1101/2020.05.29.080473
+      AuthorName: Geoffrey W Meissner, Zachary Dorman, Aljoscha Nern, Kaitlyn Forster, Theresa Gibney, Jennifer Jeter, Lauren Johnson, Yisheng He, Kelley Lee, Brian Melton, Brianna Yarbrough, Jody Clements, Cristian Goina, Hideo Otsuna, Konrad Rokicki, Robert R Svirskas, Yoshinori Aso, Gwyneth M Card, Barry J Dickson, Erica Ehrhardt, Jens Goldammer, Masayoshi Ito, Wyatt Korff, Ryo Minegishi, Shigehiro Namiki, Gerald M Rubin, Gabriella Sterne, Tanya Wolff, Oz Malkesman, FlyLight Project Team

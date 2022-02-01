@@ -1,14 +1,17 @@
 Name: CBERS on AWS
 Description: |
-  This project creates a S3 repository with imagery acquired
-  by the China-Brazil Earth Resources Satellite (CBERS). The
-  image files are recorded and processed by Instituto Nacional de Pesquisa
+  Imagery acquired
+  by the China-Brazil Earth Resources Satellite (CBERS), 4 and 4A.
+  The
+  image files are recorded and processed by Instituto Nacional de Pesquisas
   Espaciais (INPE) and are converted to Cloud Optimized Geotiff
   format in order to optimize its use for cloud based applications.
-  The repository contains all CBERS-4 MUX, AWFI, PAN5M and
+  Contains all CBERS-4 MUX, AWFI, PAN5M and
   PAN10M scenes acquired since
   the start of the satellite mission and is daily updated with
   new scenes.
+  CBERS-4A MUX Level 4 (Orthorectified) scenes are being experimentally
+  ingested starting from 04-13-2021.
 Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
 ManagedBy: "[AMS Kepler](https://amskepler.com/)"
@@ -19,12 +22,15 @@ Collabs:
       - satellite imagery
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - geospatial
   - imaging
   - satellite imagery
   - sustainability
   - disaster response
+  - stac
+  - cog
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Resources:
   - Description: CBERS imagery (COG files, Requester Pays Bucket)
@@ -32,6 +38,8 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: True
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'    
   - Description: CBERS metadata (Quicklooks, metadata)
     ARN: arn:aws:s3:::cbers-meta-pds
     Region: us-east-1
@@ -52,8 +60,12 @@ Resources:
     ARN: arn:aws:sns:us-east-1:599544552497:NewCB4PAN5MQuicklook
     Region: us-east-1
     Type: SNS Topic
-  - Description: Topic that receives STAC V0.7 items as new scenes are ingested
-    ARN: arn:aws:sns:us-east-1:769537946825:cbers-2-stac-0-7-CBERSSTACItemTopic-1I8YI0IIYL0R5
+  - Description: Notifications for new CBERS 4A quicklooks, all sensors
+    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4AQuicklook
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Topic that receives STAC V1.0.0 items as new scenes are ingested
+    ARN: arn:aws:sns:us-east-1:769537946825:cbers2stac-prod-stacitemtopic4BCE3141-VI09VRB6LBEK
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
@@ -61,15 +73,11 @@ DataAtWork:
     - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
       URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
       AuthorName: Frederico Liporace
+      Services:
+        - SNS
+        - Lambda
+        - DynamoDB
   Tools & Applications:
-    - Title: STAC V0.7 search endpoint for archive
-      URL: https://stac.amskepler.com/v07/stac/search
-      AuthorName: AMS Kepler
-      AuthorURL: https://github.com/fredliporace/cbers-2-stac
-    - Title: Remote Pixel Viewer
-      URL: https://viewer.remotepixel.ca
-      AuthorName: Remote Pixel
-      AuthorURL: http://remotepixel.ca/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
@@ -94,6 +102,10 @@ DataAtWork:
       URL: https://cbers.stac.cloud
       AuthorName: Radiant Earth
       AuthorURL: https://github.com/radiantearth/stac-browser
+    - Title: Forest Monitor
+      URL: http://brazildatacube.dpi.inpe.br/forest-monitor/
+      AuthorName: Brazil Datacube, INPE
+      AuthorURL: http://brazildatacube.org/
   Publications:
     - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
       URL: https://ieeexplore.ieee.org/abstract/document/9165649

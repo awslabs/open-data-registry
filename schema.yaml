@@ -21,6 +21,9 @@ mapping:
   ManagedBy:
     type: str
     required: False
+  Citation:
+    type: str
+    required: False
   UpdateFrequency:
     type: str
     required: True
@@ -69,10 +72,10 @@ mapping:
             required: True
           ARN:
             type: str
-            pattern: ^arn:aws|aws-iso:.+:.*:.*:.+$
+            func: ext_resources_arn
           Host:
             type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+            func: ext_resources_host
           Region:
             type: str
             required: True
@@ -85,8 +88,14 @@ mapping:
             type: bool
           ControlledAccess:
             type: str
-            pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+            func: ext_resources_controlled_access
             required: False
+          Explore:
+            type: seq
+            required: False
+            sequence:
+              - type: str
+                func: ext_resources_explore
   DataAtWork:
     type: map
     required: False

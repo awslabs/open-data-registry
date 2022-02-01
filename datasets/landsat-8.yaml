@@ -1,6 +1,11 @@
+Deprecated: True
 Name: Landsat 8
-Description: An ongoing collection of satellite imagery of all land on Earth produced by the Landsat 8 satellite.
-Documentation: https://docs.opendata.aws/landsat-pds/readme.html
+Description: |
+  An ongoing collection of satellite imagery of all land on Earth produced by
+  the Landsat 8 satellite.
+
+  **Note this dataset is deprecated in favor of the [USGS cloud access mechanism](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access). This bucket will be deleted on July 1, 2021.**
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/landsat-pds
 Contact: https://lists.osgeo.org/mailman/listinfo/landsat-pds
 ManagedBy: "[Planet](https://www.planet.com/)"
 UpdateFrequency: New Landsat 8 scenes are added regularly as soon as they are available.
@@ -10,6 +15,7 @@ Collabs:
       - satellite imagery
 Tags:
   - aws-pds
+  - agriculture
   - earth observation
   - satellite imagery
   - geospatial
@@ -23,6 +29,9 @@ Resources:
     ARN: arn:aws:s3:::landsat-pds
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://landsat-pds.s3.amazonaws.com/index.html)'
+    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/landsat-8-l1-c1)'
   - Description: New scene notifications
     ARN: arn:aws:sns:us-west-2:274514004127:NewSceneHTML
     Region: us-west-2

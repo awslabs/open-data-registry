@@ -4,6 +4,10 @@ Description: |
 Documentation: https://www.bav.admin.ch/bav/de/home/themen-a-z/geoinformation/geobasisdaten/haltestellen-des-oeffentlichen-verkehrs.html
 Contact: fredi.daellenbach@bav.admin.ch
 UpdateFrequency: annually
+Collabs:
+  ASDI:
+    Tags:
+      - infrastructure
 Tags:
   - cities
   - geospatial
@@ -17,6 +21,8 @@ Resources:
     ARN: arn:aws:s3:::data.geo.admin.ch/ch.bav.haltestellen-oev/data.zip
     Region: eu-west-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://data.geo.admin.ch/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
