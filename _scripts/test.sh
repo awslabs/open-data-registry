@@ -14,6 +14,13 @@ do
   	exit 1
   fi
 
+  # Check file name is all lower case
+  if [ ${f} != ${f,,} ]
+  then
+        echo Error: Exiting because file name should be all lower case
+        exit 1
+  fi
+
   # Apply schema
   pykwalify -d $f -s schema.yaml -q
 done
