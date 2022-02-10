@@ -1,0 +1,37 @@
+Name: DigitalCorpora
+Description: Disk images, memory dumps, network packet captures, and files for use in digital forensics research and education. All of this information is accessible through the digitalcorpora.org website, and made available at s3://digitalcorpora/. Some of these datasets implement scenarios that were performed by students, faculty, and others acting *in persona*. As such, the information is synthetic and may be used without prior authorization or IRB approval. Details of these datasets can be found at http://www.simson.net/clips/academic/2009.DFRWS.Corpora.pdf
+Contact: Digital Corpora <admin@digitalcorpora.org>
+ManagedBy: "[Simson Garfinkel](https://simson.net/)"
+Documentation: https://digitalcorpora.org
+UpdateFrequency: Quarterly
+Tags:
+  - aws-pds
+  - computer security
+  - cyber security
+  - CSI
+  - information retrieval
+  - computer forensics
+  - digital forensics
+  - machine learning
+  - machine translation
+  - image processing
+  - imaging
+  - internet
+  - intrusion detection
+  - text analysis
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Digital Corpora Dataset
+    ARN: arn:aws:s3:::digitalcorpora
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: Bringing Science to Digital Forensics with Standardized Forensic Corpora
+      URL: http://www.simson.net/clips/academic/2009.DFRWS.Corpora.pdf
+      AuthorURL: https://simson.net/
+      AuthorName: Garfinkel, Farrell, Roussev and Dinolt
+    - Title: Creating Realistic Corpora for Forensic and Security Education
+      URL: http://simson.net/clips/academic/2011.ADFSL.Corpora.pdf
+      AuthorName: Woods, K., Christopher Lee, Simson Garfinkel, David Dittrich, Adam Russel, Kris Kearton
+      AuthorURL: https://simson.net/

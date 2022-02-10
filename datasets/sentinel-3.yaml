@@ -13,6 +13,8 @@ Tags:
   - land
   - satellite imagery
   - sustainability
+  - cog
+  - stac
 License: https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice
 Resources:
   - Description: Sentinel-3 Near Real Time Data (NRT) format
@@ -31,6 +33,8 @@ Resources:
     ARN: arn:aws:s3:::meeo-s3-cog/
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://meeo-s3.s3.amazonaws.com/)'
 DataAtWork:
   Tutorials:
     - Title:  Accessing Sentinel-3 Data on S3 by MEEO 

@@ -1,0 +1,56 @@
+Name: SondeHub Radiosonde Telemetry
+Description: >
+  SondeHub Radiosonde telemetry contains global radiosonde (weather balloon) data captured by SondeHub from our participating radiosonde_auto_rx receiving stations. radiosonde_auto_rx is a open source project aimed at receiving and decoding telemetry from airborne radiosondes using software-defined-radio techniques, enabling study of the telemetry and sometimes recovery of the radiosonde itself.
+
+  Currently 313 receiver stations are providing data for an average of 384 radiosondes a day. 
+  The data within this repository contains received telemetry frames, including radiosonde type, gps position, and for some radiosondes atmospheric sensor data (temperature, humidity, pressure).
+  As the downlinked telemetry does not always contain calibration information, any atmospheric sensor data should be considered to be uncalibrated. Note that radiosonde_auto_rx does not have sensor data support for all radiosonde types.
+Documentation: https://github.com/projecthorus/sondehub-infra/wiki/Amazon-Open-Data
+Contact: Michaela Wheeler <vk3fur@sondehub.org>
+ManagedBy: '[SondeHub](https://sondehub.org/)'
+UpdateFrequency: Data is updated as we receive it
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - climate
+  - environmental
+  - weather
+  - GPS
+License: Creative Commons BY-SA 2.0
+Resources:
+  - Description: Radiosonde Telemetry as JSON blobs of Universal Telemetry format
+    ARN: arn:aws:s3:::sondehub-history
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket by serial number](http://sondehub-history.s3-website-us-east-1.amazonaws.com/#serial/)'
+      - '[Browse Bucket by date/time](http://sondehub-history.s3-website-us-east-1.amazonaws.com/#date/)'
+DataAtWork:
+  Tutorials:
+    - Title: Loading example notebooks into SageMaker
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/README.md
+      AuthorName: Michaela Wheeler
+      Services: 
+        - SageMaker
+    - Title: Using Athena to read radiosonde data
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub-athena.ipynb
+      AuthorName: Michaela Wheeler
+      Services: 
+        - Athena
+    - Title: Using pysondehub to read radiosonde data
+      URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub.ipynb
+      AuthorName: Michaela Wheeler
+      Services: 
+        - S3
+  Tools & Applications:
+    - Title: pysondehub
+      URL: https://pypi.org/project/sondehub/
+      AuthorName: Sondehub
+      AuthorURL: https://github.com/projecthorus/pysondehub
+  Publications:
+    - Title: STM32 Development Boards (literally) Falling From The Sky (How to submit data)
+      URL: https://www.youtube.com/watch?v=YBy-bXEWZeM
+      AuthorName: Mark Jessop & Michaela Wheeler

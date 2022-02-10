@@ -5,44 +5,100 @@ Description: |
   sensing (DAS) data collected as part of the Poroelastic Tomography (PoroTomo)
   project funded in part by the Office of Energy Efficiency and Renewable
   Energy (EERE), U.S. Department of Energy.
-Documentation: https://github.com/openEDI/documentation/blob/master/PoroTomo.md
+Documentation: https://github.com/openEDI/documentation/blob/master/PoroTomo/PoroTomo.md
 Contact: Thomas Coleman (thomas.coleman@silixa.com)
 ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
 UpdateFrequency: As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
 Tags:
+  - aws-pds
   - geothermal
   - seismology
   - image processing
   - geospatial
 License: Creative Commons Attribution 3.0 United States License
 Resources:
+  - Description: 'PoroTomo Datasets'
+    ARN: arn:aws:s3:::nrel-pds-porotomo/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo)'
   - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in SEG-Y format
-    ARN: arn:aws:s3:::nrel-pds-porotomo/SEG-Y/DASH/
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASH%2F)'
+  - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data Resampled in Time MATLAB Files
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASH/Resampled/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASH%2FResampled%2F)'
   - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in SEG-Y format
-    ARN: arn:aws:s3:::nrel-pds-porotomo/SEG-Y/DASV/
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/SEG-Y/DASV/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FSEG-Y%2FDASV%2F)'
   - Description: PoroTomo Horizontal Distributed Acoustic Sensing (DASH) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-porotomo/H5/DASH/
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/H5/DASH/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FH5%2FDASH%2F)'
   - Description: PoroTomo Vertical Distributed Acoustic Sensing (DASV) Data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-porotomo/H5/DASV/
+    ARN: arn:aws:s3:::nrel-pds-porotomo/DAS/H5/DASV/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=DAS%2FH5%2FDASV%2F)'
   - Description: '[HSDS](https://github.com/NREL/hsds-examples) PoroTomo domains'
     ARN: arn:aws:s3:::nrel-pds-hsds/nrel/porotomo/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fporotomo%2F)'
+  - Description: PoroTomo Nodal Seismometer Continuous Data
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_sac%2F)'
+  - Description: PoroTomo Nodal Seismometer Field Notes and Metadata
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_metadata/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_metadata%2F)'
+  - Description: PoroTomo Nodal Seismometer Sweep Data
+    ARN: arn:aws:s3:::nrel-pds-porotomo/Nodal/nodal_sac_sweep/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-porotomo&prefix=Nodal%2Fnodal_sac_sweep%2F)'
 DataAtWork:
   Tutorials:
-    - Title: PoroTomo DAS Data Processing Tutorial
-      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data.ipynb
+    - Title: PoroTomo DAS Data Processing Tutorial for SEG-Y Files
+      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data_SEGY.ipynb
       AuthorName: Nicole Taverna and Ross Ring-Jarvi
       AuthorURL: https://orcid.org/0000-0001-7776-2028
+    - Title: PoroTomo DAS Data Processing Tutorial for hdf5 Files
+      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data_hdf5.ipynb
+      AuthorName: Nicole Taverna and Michael Rossol
+      AuthorURL: https://orcid.org/0000-0001-7776-2028
+    - Title: PoroTomo DAS Data Processing Tutorial for hdf5 Files via HSDS and h5pyd
+      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data_hsds.ipynb
+      AuthorName: Michael Rossol and Nicole Taverna
+      AuthorURL: https://orcid.org/0000-0001-7776-2028
   Publications:
+    - Title: 'PoroTomo Final Technical Report: Poroelastic Tomography by Adjoint Inverse Modeling of Data from Seismology, Geodesy, and Hydrology'
+      URL: https://doi.org/10.2172/1499141
+      AuthorName: Kurt L. Feigl, Lesley M. Parker, and the PoroTomo Team
     - Title: 'DAS and DTS at Brady Hot Springs: Observations about Coupling and Coupled Interpretations'
       URL: https://pangea.stanford.edu/ERE/pdf/IGAstandard/SGW/2018/Miller.pdf
       AuthorName: Douglas E. Miller, Thomas Coleman, Xiangfang Zeng, Jeremy R. Patterson , Elena C. Reinnisch, Michael A. Cardiff, Herbert F. Wang, Dante Fratta, Whitney Trainor-Guitton, Clifford H. Thurber, Michelle ROBERTSON, Kurt FEIGL, and The PoroTomo Team
