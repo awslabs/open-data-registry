@@ -8,13 +8,13 @@ UpdateFrequency: Never
 Tags:
   - astronomy
   - aws-pds
-License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the Hubble Space Telescope.
+License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the Galaxy Evolution Explorer Satellite.
 Resources:
-  - Description: Project data files in a ['GALEX'](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) bucket
+  - Description: Galex Project data files
     ARN: arn:aws:s3:::stpubdata/galex
     Region: us-east-1
     Type: S3 Bucket
-    RequesterPays: True
+    RequesterPays: False
   - Description: Notifications for new data
     ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
     Region: us-east-1
