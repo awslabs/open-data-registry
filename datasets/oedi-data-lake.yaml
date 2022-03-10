@@ -79,6 +79,12 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=ATB%2F)'
+  - Description: "[End-Use Load Profiles for the U.S. Building Stock](https://www.nrel.gov/buildings/end-use-load-profiles.html)"
+    ARN: arn:aws:s3:::oedi-data-lake/nrel-pds-building-stock/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F)'
 DataAtWork:
   Tools & Applications:
     - Title: "Tracking the Sun Tool"

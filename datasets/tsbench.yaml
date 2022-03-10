@@ -1,0 +1,25 @@
+Name: TSBench
+Description: |
+  TSBench comprises thousands of benchmark evaluations for time series forecasting methods. It provides various metrics (i.e. measures of accuracy, latency, number of model parameters, ...) of 13 time series forecasting methods across 44 heterogeneous datasets. Time series forecasting methods include both classical and deep learning methods while several hyperparameters settings are evaluated for the deep learning methods.
+  
+  In addition to the tabular data providing the metrics, TSBench includes the probabilistic forecasts of all evaluated methods for all 44 datasets. While the tabular data is small (about 10 MiB), the forecasts amount to almost 600 GiB of data.
+Documentation: https://github.com/awslabs/gluon-ts/tree/master/src/gluonts/nursery/tsbench/README.md
+Contact: borchero@in.tum.de, dsalina@amazon.com
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com)"
+UpdateFrequency: Not expected to be updated
+Tags:
+  - machine learning
+  - deep learning
+  - meta learning
+  - benchmark
+  - time series forecasting
+License: "[CC BY](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: TSBench Evaluation Metrics and Probabilistic Forecasts
+    ARN: arn:aws:s3:::odp-tsbench
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials: []
+  Tools & Applications: []
+  Publications: []
