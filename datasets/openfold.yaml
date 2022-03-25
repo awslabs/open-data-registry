@@ -1,0 +1,23 @@
+Name: OpenFold Training Data
+Description: Multiple sequence alignments (MSAs) and template hits for 634,000 PDB chains and approx. 350,000 UniClust30 clusters. MSAs were generated with HHBlits and JackHMMER against MGnify, BFD, UniRef90, and UniClust30 while templates were identified from PDB70 with HHSearch, all according to procedures outlined in the supplement to the AlphaFold 2 Nature paper (Jumper et al. 2021). We expect the database to be broadly useful to structural biologists training or validating deep learning models for protein structure prediction and related tasks. 
+Documentation: https://docs.google.com/document/d/1R90-VJSLQEbot7tgXF3zb068Y1ZJAmsckQ_t2sJTv2c/edit?usp=sharing
+Contact: https://github.com/aqlaboratory/openfold/issues
+ManagedBy: OpenFold
+UpdateFrequency: Never
+Tags:
+  - openfold
+  - msa
+  - protein
+  - protein template
+  - protein folding
+  - alphafold
+  - open source software
+  - life sciences
+  - aws-pds
+License: CC BY 4.0
+Resources:
+  - Description: A .tar.gz archive of MSAs and template hits.
+    ARN: arn:aws:s3:::openfold
+    Region: us-east-1
+    Type: S3 Bucket
+
