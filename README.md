@@ -50,6 +50,7 @@ DataAtWork:
       URL:
       AuthorName:
       AuthorURL:
+DeprecatedNotice:
 ```
 
 The metadata required for each dataset entry is as follows:
