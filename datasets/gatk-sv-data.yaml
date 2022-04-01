@@ -1,0 +1,48 @@
+Name: GATK Structural Variation (SV) Data
+Description: |
+  This dataset holds the data needed to run a [structural variation discovery pipeline](https://github.com/broadinstitute/gatk-sv)
+  for Illumina short-read whole-genome sequencing (WGS) data in AWS.
+Documentation: https://github.com/LokaHQ/aws-open-data/blob/main/gatk-sv/documentation.md
+Contact: awsdata@loka.com
+ManagedBy: "[Loka Inc.](https://loka.com/)"
+UpdateFrequency: Every 3 months
+Tags:
+  - biology
+  - bioinformatics
+  - genetic
+  - genomic
+  - life sciences
+  - structural variation
+  - gatk-sv
+  - cromwell
+License: https://github.com/LokaHQ/aws-open-data/blob/main/LICENSE
+Resources:
+  - Description: |
+      This dataset contains, among others, the following data:
+        * Illumina short-read whole-genome CRAMs or BAMs, aligned to hg38 with [bwa-mem](https://github.com/lh3/bwa). BAMs must also be indexed.
+        * Indexed GVCFs produced by GATK HaplotypeCaller, or a jointly genotyped VCF.
+        * Family structure definitions file in [PED format](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format).
+        * Reference files from the human reference genome Hg38.
+    ARN: arn:aws:s3:::gatk-sv-data-us-east-2
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: |
+      This dataset contains, among others, the following data:
+        * Illumina short-read whole-genome CRAMs or BAMs, aligned to hg38 with [bwa-mem](https://github.com/lh3/bwa). BAMs must also be indexed.
+        * Indexed GVCFs produced by GATK HaplotypeCaller, or a jointly genotyped VCF.
+        * Family structure definitions file in [PED format](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format).
+        * Reference files from the human reference genome Hg38.
+    ARN: arn:aws:s3:::gatk-sv-data-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Structural Variant Analysis on AWS with Amazon FSx for Lustre
+      URL: https://github.com/LokaHQ/aws-open-data/blob/main/gatk-sv/tutorial.md
+      AuthorName: Goldfinch Bio and Loka Inc.
+      AuthorURL: "[Goldfinch Bio](https://www.goldfinchbio.com/) and [Loka Inc](https://loka.com/)."
+  Tutorials:
+    - Title: AWS Setup & Execution
+      URL: https://github.com/goldfinchbio/aws-gatk-sv
+      AuthorName: Goldfinch Bio and Loka Inc.
+      AuthorURL: "[Goldfinch Bio](https://www.goldfinchbio.com/) and [Loka Inc](https://loka.com/)."
