@@ -23,6 +23,10 @@ Resources:
     ARN: arn:aws:s3:::daylight-map-distribution/release/
     Region: us-west-1
     Type: S3 Bucket
+  - Description: New OSM PBF Notification
+    ARN: arn:aws:sns:us-west-1:632571768781:Daylight
+    Region: us-west-1
+    Type: SNS Topic
   - Description: Daylight OSM Features (Parquet)
     ARN: arn:aws:s3:::daylight-openstreetmap/parquet/osm_features
     Region: us-west-2
@@ -31,12 +35,16 @@ Resources:
     ARN: arn:aws:s3:::daylight-openstreetmap/parquet/osm_elements
     Region: us-west-2
     Type: S3 Bucket
+  - Description: New Parquet File Notification
+    ARN: arn:aws:sns:us-west-2:632571768781:Analysis_Ready_Daylight
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials: 
     - Title: Loading the Daylight Map Distribution OpenStreetMap Features into AWS Athena
       URL: https://gist.github.com/jenningsanderson/3e42a99dcb8f760038ad8aa47ea38ce8
       AuthorName: Jennings Anderson
-      AuthorURL: jenningsanderson.com
+      AuthorURL: http://jenningsanderson.com
       Services:
         - Athena
   Tools & Applications:
