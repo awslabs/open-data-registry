@@ -18,4 +18,4 @@ fi
 # Validate yaml
 echo "Validating yamls against schema..."
 ls datasets |
-    xargs -P10 -I{} pykwalify -d {} -s schema.yaml -
+    xargs -t -P10 -I{} pykwalify -d datasets/{} -s schema.yaml
