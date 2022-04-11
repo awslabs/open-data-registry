@@ -18,4 +18,4 @@ fi
 # Validate yaml
 echo "Validating yamls against schema..."
 ls datasets |
-    xargs -P20 -I{} bash -c "pykwalify -q -d datasets/{} -s schema.yaml || echo {} failed validation"
+    xargs -P20 -I{} bash -c "pykwalify -q -d datasets/{} -s schema.yaml || echo {} failed validation; exit 1"
