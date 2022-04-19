@@ -1,4 +1,4 @@
-desc: Simple schema for ODAR compliant dataset listings
+desc: Simple schema for RODA compliant dataset listings
 extensions:
   - ext.py
 type: map
@@ -6,6 +6,9 @@ mapping:
   Deprecated:
     type: bool
     required: False
+  DeprecatedNotice:
+    type: str
+    required: False    
   Name:
     type: str
     required: True
