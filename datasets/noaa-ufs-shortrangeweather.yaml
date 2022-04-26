@@ -33,3 +33,7 @@ Resources:
     Type: S3 Bucket
     Explore:
      - '[Browse Bucket](https://noaa-ufs-srw-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Short-Range Weather data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewUFSSRWObject
+    Region: us-east-1
+    Type: SNS Topic
