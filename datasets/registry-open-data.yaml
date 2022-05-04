@@ -12,4 +12,8 @@ Resources:
   - Description: Registry of Open Data on AWS
     ARN: arn:aws:s3:::registry.opendata.aws/roda/ndjson/
     Region: us-east-1
-    Type: S3 Bucket  
+    Type: S3 Bucket
+  - Description: SNS topic for object create events
+    ARN: arn:aws:sns:us-east-1:652627389412:roda-object_created
+    Region: us-east-1
+    Type: SNS Topic
