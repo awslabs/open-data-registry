@@ -1,0 +1,58 @@
+Name: The Singapore Nanopore Expression Data Set
+Description: The SG-NEx project is an international collaboration that was initiated at the Genome Institute of Singapore. The aim of the SG-NEx Project is to generate reference transcriptomes for 5 of the most commonly used cancer cell lines using Nanopore long read RNA-Seq data: A549, HepG2, HCT116, K562 and MCF7. 
+Transcriptome profiling is done using PCR-cDNA sequencing ("PCR-cDNA"), amplification-free cDNA sequencing ("direct cDNA"), direct sequencing of native RNA (“direct RNA”), and short read RNA-Seq. All samples are sequenced with at least 3 high quality replicates. For a subset of samples, we used sequin spike-in RNAs.
+Documentation: https://github.com/GoekeLab/sg-nex-data/blob/master/README.md
+Contact: [SG-NEx team](https://github.com/GoekeLab/sg-nex-data)
+ManagedBy: 'SG-NEx team(https://github.com/GoekeLab/sg-nex-data)'
+UpdateFrequency: |
+  Datasets will be updated periodically as additional datasets are generated.
+Tags:
+  - Nanopore RNA-Seq
+  - Transcriptomic
+  - Long read sequencing
+License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)""
+Citation: 
+Resources: 
+  - Description: SG-NEx datasets in AWS open data bucket
+    ARN: arn:aws:s3:::sg-nex-data/*
+    Region: ap-southeast-1
+    Type: S3 Bucket 
+    Explore: 
+DataAtWork:
+  Tutorials: 
+    - Title: bambu: reference-guided transcript discovery and quantification for long read RNA-Seq data
+      URL: https://goekelab.github.io/bambu/
+      AuthorName: "Jonathan Goeke's Lab"
+      AuthorURL: https://github.com/GoekeLab 
+  Tools & Applications:
+    - Title: Nanopore sequencing technology, bioinformatics and applications.
+      URL: https://doi.org/10.1038/s41587-021-01108-x
+      AuthorName: Yunhao Wang, et al.
+    - Title: Beyond sequencing: machine learning algorithms extract biology hidden in Nanopore signal data.
+      URL: https://doi.org/10.1016/j.tig.2021.09.001
+      AuthorName: Yuk Kei Wan, et al.
+    - Title: Isoform age-splice isoform profiling using long-read technologies.
+      URL:  https://doi.org/10.3389/fmolb.2021.711733
+      AuthorName: Ricardo De Paoli-Iseppi, et al.
+    - Title: Direct long-read RNA sequencing identifies a subset of questionable exitrons likely arising from reverse transcription artifacts.
+      URL:  https://doi.org/10.1186/s13059-021-02411-1
+      AuthorName: Laura Schulz, et al.
+    - Title: IsoTV: processing and visualizing functional features of translated transcript isoforms.
+      URL:  https://doi.org/10.1093/bioinformatics/btab103
+      AuthorName: Siddharth Annaldasula, et al.
+    - Title: Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore.
+      URL:  https://doi.org/10.1038/s41587-021-00949-w
+      AuthorName: Ploy N. Pratanwanich, et al.
+    - Title: Detection of m6A from direct RNA sequencing using a Multiple Instance Learning framework.
+      URL:  https://doi.org/10.1101/2021.09.20.461055
+      AuthorName: Christopher Hendra, et al.
+    - Title: Direct RNA sequencing reveals SARS-CoV-2 m6A sites and possible differential DRACH motif methylation among variants.
+      URL:  https://doi.org/10.1101/2021.08.24.457397
+      AuthorName: João H. Campos, et al.
+    - Title: JAFFAL: Detecting fusion genes with long read transcriptome sequencing.
+      URL:  https://doi.org/10.1186/s13059-021-02588-5
+      AuthorName: Nadia M. Davidson, et al.
+  Publications:
+    - Title: A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines.
+      URL: https://doi.org/10.1101/2021.04.21.440736
+      AuthorName: Ying Chen, et al.
