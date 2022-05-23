@@ -57,7 +57,7 @@ The metadata required for each dataset entry is as follows:
 
 | Field | Type | Description & Style |
 | --- | --- | --- |
-| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name.|
+| **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name. Must be between 5 and 130 characters.|
 |**Description**|String|A high-level description of the dataset. Only the first 600 characters will be displayed on the homepage of the [Registry of Open Data on AWS](https://registry.opendata.aws)|
 |**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
