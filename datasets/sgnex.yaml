@@ -1,5 +1,5 @@
 Name: The Singapore Nanopore Expression Data Set
-Description: The SG-NEx project is an international collaboration that was initiated at the Genome Institute of Singapore. The aim of the SG-NEx Project is to generate reference transcriptomes for 5 of the most commonly used cancer cell lines using Nanopore long read RNA-Seq data: A549, HepG2, HCT116, K562 and MCF7. 
+Description: The SG-NEx project is an international collaboration that was initiated at the Genome Institute of Singapore. The aim of the SG-NEx Project is to generate reference transcriptomes for the most commonly used cancer cell lines using Nanopore long read RNA-Seq data.
 Transcriptome profiling is done using PCR-cDNA sequencing ("PCR-cDNA"), amplification-free cDNA sequencing ("direct cDNA"), direct sequencing of native RNA (“direct RNA”), and short read RNA-Seq. All samples are sequenced with at least 3 high quality replicates. For a subset of samples, we used sequin spike-in RNAs.
 Documentation: https://github.com/GoekeLab/sg-nex-data/blob/master/README.md
 Contact: [SG-NEx team](https://github.com/GoekeLab/sg-nex-data)
@@ -13,7 +13,7 @@ Tags:
 License: "[CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)""
 Citation: 
 Resources: 
-  - Description: SG-NEx datasets in AWS open data bucket
+  - Description: Nanopre RNA Seq transcript discovery and quantification, Nanopore RNA seq RNA modification detection with xPore, Nanopore RNA seq RNA modification detection with m6Anet, Nanopore RNA Seq gene expression quantification, 
     ARN: arn:aws:s3:::sg-nex-data/*
     Region: ap-southeast-1
     Type: S3 Bucket 
@@ -22,8 +22,10 @@ DataAtWork:
   Tutorials: 
     - Title: bambu: reference-guided transcript discovery and quantification for long read RNA-Seq data
       URL: https://goekelab.github.io/bambu/articles/bambu.html
-      AuthorName: "Jonathan Goeke's Lab"
-      AuthorURL: https://github.com/GoekeLab 
+      AuthorName: Ying Chen
+      Title: RNA modification analysis tutorial with xPore
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/update-docs-aws/docs/xPore_ONT_tutorial_draft1.ipynb
+      AuthorName: Yuk Kei Wan
   Tools & Applications:
     - Title: Nanopore sequencing technology, bioinformatics and applications.
       URL: https://doi.org/10.1038/s41587-021-01108-x
