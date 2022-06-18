@@ -29,6 +29,8 @@ Tags:
   - natural resource
   - sustainability
   - disaster response
+  - cog
+  - stac
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
@@ -49,11 +51,14 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: How to Work with Landsat and Sentinel-2 on AWS with Python
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
     - Title: Intake-STAC with sat-search
       URL:   https://github.com/intake/intake-stac/blob/master/examples/aws-earth-search.ipynb
       AuthorName: Scott Henderson
     - Title: Create a Dynamic Tiler with TiTiler
-      URL:   https://github.com/developmentseed/titiler/blob/master/docs/examples/Create_CustomSentinel2Tiler.ipynb
+      URL:   https://github.com/developmentseed/titiler/blob/master/docs/examples/notebooks/Create_CustomSentinel2Tiler.ipynb
       AuthorName: Vincent Sarago
     - Title: Use Sentinel-2 data in the Open Data Cube
       URL: https://github.com/opendatacube/cube-in-a-box
@@ -61,11 +66,30 @@ DataAtWork:
     - Title: STAC, COG, Python and QGIS
       URL: http://www.acgeospatial.co.uk/stac-cog-python-and-qgis/
       AuthorName: Andrew Cutts
+    - Title: How to process Sentinel-2 data in a serverless Lambda on AWS?
+      URL: https://www.linkedin.com/pulse/how-sunny-my-city-better-process-stac-sentinel2-lambda-alvaro-huarte
+      AuthorName: Alvaro Huarte
+      Services:
+        - Lambda
+        - SNS
+    - Title: Transforming Geospatial Data to Cloud-Native Frameworks with Element 84 on AWS
+      URL: https://aws.amazon.com/blogs/apn/transforming-geospatial-data-to-cloud-native-frameworks-with-element-84-on-aws/
+      AuthorName: Matt Hanson, Imtranur Rahman, Mary-Elizabeth Morin, and Ariel Walcutt
+      Services:
+        - EKS
+        - SageMaker
+        - S3
   Publications:
     - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
       URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing
       AuthorName: Matthew Hanson
+    - Title: "OpenSentinelMap: A Large-Scale Land Use Dataset using OpenStreetMap and Sentinel-2 Imagery"
+      URL: https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/papers/Johnson_OpenSentinelMap_A_Large-Scale_Land_Use_Dataset_Using_OpenStreetMap_and_Sentinel-2_CVPRW_2022_paper.pdf
+      AuthorName: Noah Johnson, Wayne Treible, Daniel Crispell
   Tools & Applications:
+    - Title: Fire detection Twitter bot using satellite imagery
+      URL: https://twitter.com/FirewatchBot
+      AuthorName: Firewatch
     - Title: SpatioTemporal Asset Catalogs
       URL: https://stacindex.org/
       AuthorName: STAC Contriubutors

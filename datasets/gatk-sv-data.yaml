@@ -1,0 +1,51 @@
+Name: GATK Structural Variation (SV) Data
+Description: |
+  This dataset holds the data needed to run a [structural variation discovery pipeline](https://github.com/broadinstitute/gatk-sv)
+  for Illumina short-read whole-genome sequencing (WGS) data in AWS.
+Documentation: https://github.com/LokaHQ/aws-open-data/blob/main/gatk-sv/documentation.md
+Contact: awsdata@loka.com
+ManagedBy: "[Loka Inc.](https://loka.com/)"
+UpdateFrequency: Every 3 months
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - genetic
+  - genomic
+  - life sciences
+  - structural variation
+  - gatk-sv
+  - cromwell
+License: https://github.com/LokaHQ/aws-open-data/blob/main/LICENSE
+Resources:
+  - Description: |
+      This dataset contains, among others, the following data:
+       <ul>
+       * Illumina short-read whole-genome CRAMs or BAMs, aligned to hg38 with <a href="https://github.com/lh3/bwa">bwa-mem</a>. BAMs must also be indexed.<br>
+       * Indexed GVCFs produced by GATK HaplotypeCaller, or a jointly genotyped VCF.
+       * Family structure definitions file in <a href="https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format">PED format</a>.<br>
+       * Reference files from the human reference genome Hg38.
+       </ul>
+    ARN: arn:aws:s3:::gatk-sv-data-us-east-2
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: |
+      This dataset contains, among others, the following data:
+       <ul>
+       * Illumina short-read whole-genome CRAMs or BAMs, aligned to hg38 with <a href="https://github.com/lh3/bwa">bwa-mem</a>. BAMs must also be indexed.<br>
+       * Indexed GVCFs produced by GATK HaplotypeCaller, or a jointly genotyped VCF.
+       * Family structure definitions file in <a href="https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format">PED format</a>.<br>
+       * Reference files from the human reference genome Hg38.
+       </ul>
+    ARN: arn:aws:s3:::gatk-sv-data-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Structural Variant Analysis on AWS with Amazon FSx for Lustre
+      URL: https://aws.amazon.com/blogs/industries/using-structural-variant-analysis-on-aws-with-amazon-fsx-for-lustre-in-novel-therapeutic-discovery/
+      AuthorName: Goldfinch Bio and Loka Inc.
+  Tutorials:
+    - Title: AWS Setup & Execution
+      URL: https://github.com/goldfinchbio/aws-gatk-sv
+      AuthorName: Goldfinch Bio and Loka Inc.

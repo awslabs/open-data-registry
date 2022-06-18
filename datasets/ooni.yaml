@@ -1,14 +1,19 @@
-Name: Open Observatory of Network Interference
+Name: Open Observatory of Network Interference (OONI)
 Description: A free software, global observation network for detecting censorship, surveillance and traffic manipulation on the internet.
-Documentation: https://ooni.torproject.org/about/
-Contact: https://ooni.torproject.org/get-involved/
-UpdateFrequency: Daily
+Documentation: https://ooni.org/data/
+Contact: https://ooni.org/get-involved/
+ManagedBy: Open Observatory of Network Interference
+UpdateFrequency: Hourly
 Tags:
   - aws-pds
   - internet
-License: Creative Commons Attribution-ShareAlike 4.0 International https://github.com/OpenObservatory/legal/blob/master/LEGALCODE-CC4.0-BY-SA.txt
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International https://github.com/ooni/license/blob/master/data/LICENSE.md
 Resources:
-  - Description: S3 bucket with data
+  - Description: New S3 bucket with JSONL files
+    ARN: arn:aws:s3:::ooni-data-eu-fra
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Old S3 bucket with cans for older measurements
     ARN: arn:aws:s3:::ooni-data
     Region: us-east-1
     Type: S3 Bucket

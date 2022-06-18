@@ -1,4 +1,4 @@
-desc: Simple schema for ODAR compliant dataset listings
+desc: Simple schema for RODA compliant dataset listings
 extensions:
   - ext.py
 type: map
@@ -6,9 +6,15 @@ mapping:
   Deprecated:
     type: bool
     required: False
+  DeprecatedNotice:
+    type: str
+    required: False    
   Name:
     type: str
     required: True
+    range:
+      min: 5
+      max: 130
   Description:
     type: str
     required: True
@@ -19,6 +25,9 @@ mapping:
     type: str
     required: True
   ManagedBy:
+    type: str
+    required: False
+  Citation:
     type: str
     required: False
   UpdateFrequency:
@@ -83,6 +92,8 @@ mapping:
             func: ext_resources
           RequesterPays:
             type: bool
+          AccountRequired:
+            type: bool            
           ControlledAccess:
             type: str
             func: ext_resources_controlled_access

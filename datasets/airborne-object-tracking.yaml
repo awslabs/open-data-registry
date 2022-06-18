@@ -1,0 +1,20 @@
+Name: Airborne Object Tracking Dataset
+Description: Airborne Object Tracking (AOT) is a collection of 4,943 flight sequences of around 120 seconds each, collected at 10 Hz in diverse conditions. There are 5.9M+ images and 3.3M+ 2D annotations of airborne objects in the sequences. There are 3,306,350 frames without labels as they contain no airborne objects. For images with labels, there are on average 1.3 labels per image. All airborne objects in the dataset are labelled.
+Documentation: https://www.aicrowd.com/challenges/airborne-object-tracking-challenge
+Contact: airborne-object-tracking-challenge@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science
+  - computer vision
+  - deep learning
+  - machine learning
+License: Community Data License Agreement – Permissive, Version 1.0 https://cdla.dev/permissive-1-0/
+Resources:
+  - Description: The training dataset is further split into smaller directories. Each subdirectory contains ImageSets and Images folders. Metadata and ground truth information about image sequences are saved as groundtruth.json (and its tabular representation  groundtruth.csv) in ImageSets folders. Information about airborne encounters are saved in  valid_encounters_maxRange700_maxGap3_minEncLen30.json and valid_encounters_maxRange700_maxGap3_minEncLen30.csv. The Images folder holds images sampled from one sequence per directory. Images are 2448 pixels wide by 2048 pixels high, encoded as 8-bit grayscale images and saved as PNG files.
+    ARN: arn:aws:s3:::airborne-obj-detection-challenge-training
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Explore dataset](https://github.com/amazon-research/siam-mot/blob/main/readme/model_zoo.md)'
+    - '[README](https://gitlab.aicrowd.com/amazon-prime-air/airborne-detection-starter-kit/-/blob/master/docs/DATASET.md)'
