@@ -22,6 +22,9 @@ Tags:
   - sustainability
   - disaster response
   - deafrica
+  - stac
+  - cog
+  - synthetic aperture radar
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
@@ -30,18 +33,24 @@ Resources:
     Region: af-south-1
     Type: S3 Bucket
     RequesterPays: False
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s1_rtc)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
     ARN: arn:aws:s3:::deafrica-sentinel-1-inventory
     Region: af-south-1
     Type: S3 Bucket
   - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-1-scene-topic
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-sentinel-1 s3 bucket all object create events.
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-1-topic
     Region: af-south-1
     Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Digital Earth Africa Training
-      URL: http://training.digitalearthafrica.org/
+      URL: http://learn.digitalearthafrica.org/
       AuthorName: Digital Earth Africa Contributors
   Tools & Applications:
     - Title: "Digital Earth Africa Explorer"
@@ -50,3 +59,22 @@ DataAtWork:
     - Title: "Digital Earth Africa web services"
       URL: https://ows.digitalearth.africa
       AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan
+    - Title: "An Operational Analysis Ready Radar Backscatter Dataset for the African Continent"
+      URL: https://doi.org/10.3390/rs14020351
+      AuthorName: Fang Yuan, Marko Repse, Alex Leith, Ake Rosenqvist, Grega Milcinski, Negin F. Moghaddam, Tishampati Dhar, Chad Burton, Lisa Hall, Cedric Jorand and Adam Lewis

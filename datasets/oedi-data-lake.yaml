@@ -29,30 +29,74 @@ Resources:
     ARN: arn:aws:s3:::oedi-data-lake/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake)'
   - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
     ARN: arn:aws:s3:::oedi-data-lake/umcm/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=umcm%2F)'
   - Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
     ARN: arn:aws:s3:::oedi-data-lake/dgen/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dgen%2F)'
   - Description: '[Lawrence Berkeley National Laboratory (LBNL) Tracking the Sun](https://github.com/openEDI/documentation/blob/master/TrackingtheSun.md)'
     ARN: arn:aws:s3:::oedi-data-lake/tracking-the-sun/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=tracking-the-sun%2F)'
   - Description: '[Lawrence Berkeley National Laboratory (LBNL) AlphaBuilding-SyntheticDataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)'
     ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/A_Synthetic_Building_Operation_Dataset.h5
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=building_synthetic_dataset%2F)'
   - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - (PVRDB)](https://github.com/openEDI/documentation/blob/master/pv-rooftop.md)'
     ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop%2F)'
   - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - Puerto Rico (PVRDB-PR)](https://github.com/openEDI/documentation/blob/master/pv-rooftop-pr.md)'
     ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop-pr/
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop-pr%2F)'
+  - Description: '[Synthetic Models for Advanced, Realistic Testing: Distribution systems and Scenarios (SMART-DS) Datasets](https://github.com/openEDI/documentation/tree/main/SMART-DS)'
+    ARN: arn:aws:s3:::oedi-data-lake/SMART-DS/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=SMART-DS%2F)'
+  - Description: "[NREL's Annual Technology Baseline (ATB)](https://atb.nrel.gov)"
+    ARN: arn:aws:s3:::oedi-data-lake/ATB/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=ATB%2F)'
+  - Description: "[End-Use Load Profiles for the U.S. Building Stock](https://www.nrel.gov/buildings/end-use-load-profiles.html)"
+    ARN: arn:aws:s3:::oedi-data-lake/nrel-pds-building-stock/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F)'
+  - Description: "[Photovoltaic Data Acquisition (PVDAQ) Public Datasets](https://data.openei.org/submissions/4568)"
+    ARN: arn:aws:s3:::oedi-data-lake/pvdaq/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pvdaq%2F)'
+  - Description: "[BUTTER - Empirical Deep Learning Dataset](https://github.com/openEDI/documentation/blob/main/BUTTER.md)"
+    ARN: arn:aws:s3:::oedi-data-lake/butter/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=butter%2F)'
 DataAtWork:
   Tools & Applications:
     - Title: "Tracking the Sun Tool"

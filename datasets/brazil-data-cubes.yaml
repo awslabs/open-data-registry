@@ -1,0 +1,74 @@
+Name: Earth Observation Data Cubes for Brazil
+Description: "Earth observation (EO) data cubes produced from analysis-ready data (ARD) of CBERS-4, Sentinel-2 A/B and Landsat-8 satellite images for Brazil. The datacubes are regular in time and use a hierarchical tiling system. Further details are described in [Ferreira et al. (2020)](https://www.mdpi.com/2072-4292/12/24/4033)."
+Documentation: http://brazildatacube.org/en/home-page-2/
+Contact: brazildatacube@inpe.br
+ManagedBy: "[INPE - Brazil Data Cube](http://brazildatacube.org/)"
+UpdateFrequency: New EO data cubes are added as soon as there are produced by the Brazil Data Cube project.
+Tags:
+  - earth observation
+  - satellite imagery
+  - geoscience
+  - geospatial
+  - image processing
+  - open source software
+  - cog
+  - stac
+  - aws-pds
+License:  |
+  The EO data cubes are produced from free and open images of CBERS-4, Landsat-8 and Sentinel-2 satellites. Data usage is subject to Terms and Conditions for the use and distribution of [Landsat data](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con), Legal Notice on the use and distribution of [Sentinel-2 data](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice/) and License for use and distribution of [CBERS data](https://creativecommons.org/licenses/by-sa/3.0/). When using data produced by the Brazil Data Cube, please acknowledge the work of the Brazilian National Institute for Space Research (INPE) in producing such data.
+  CBERS-4 image courtesy of the National Institute for Space Research (INPE).
+  Landsat-8 image courtesy of the U.S. Geological Survey.
+  Sentinel-2 (ESA) image courtesy of the Copernicus SciHub.
+  Sentinel-2 Cloud-Optimized GeoTIFFs data 2017-2018, was accessed on June/2021 from https://registry.opendata.aws/sentinel-2-l2a-cogs.
+Resources:
+  - Description: Earth Observation Data Cubes for Brazil - Sentinel 2A/2B
+    ARN: arn:aws:s3:::bdc-sentinel-2
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-sentinel-2.s3.us-west-2.amazonaws.com/catalog.json)'
+  - Description: Earth Observation Data Cubes for Brazil - CBERS 4
+    ARN: arn:aws:s3:::bdc-cbers
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[BDC STAC V0.9.0 endpoint](https://bdc-cbers.s3.us-west-2.amazonaws.com/catalog.json)'
+  - Description: Notifications for new EO Data Cubes Sentinel-2 scenes
+    ARN: arn:aws:sns:us-west-2:896627514407:bdc-sentinel-2-object_created
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Notifications for new EO Data Cubes CBERS scenes
+    ARN: arn:aws:sns:us-west-2:896627514407:bdc-cbers-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Using Python to Access Image Collections Data (Jupyter notebook)
+      URL: https://github.com/brazil-data-cube/code-gallery/blob/master/jupyter/Python/stac/stac-aws-introduction.ipynb
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io/
+    - Title: Tile Map Service to view Image Collections from Brazil Data Cube Catalog
+      URL: https://github.com/brazil-data-cube/code-gallery/blob/master/jupyter/Python/tiler/bdc-tiler_introduction.ipynb
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+  Tools & Applications:
+    - Title: rstac - R library to query and download Image Collections from Brazil Data Cube Catalog on Amazon S3
+      URL: https://github.com/brazil-data-cube/rstac
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+    - Title: cube-builder-aws - Application to generate data cubes on AWS environment.
+      URL: https://github.com/brazil-data-cube/cube-builder-aws
+      AuthorName: Brazil Data Cube
+      AuthorURL: https://brazil-data-cube.github.io
+  Publications:
+    - Title: "Earth Observation Data Cubes for Brazil: Requirements, Methodology and Products."
+      URL: https://www.mdpi.com/2072-4292/12/24/4033
+      AuthorName: K. R. Ferreira, et al.
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.
+    - Title: Building Earth Observation Data Cubes on AWS
+      URL: https://www.proquest.com/openview/070d2a753cc88d26535c98293171a5ac/1?
+      AuthorName: Ferreira, K R; Queiroz, G R; Marujo, R F B; Costa, R W.  

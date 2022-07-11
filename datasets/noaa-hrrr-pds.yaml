@@ -1,11 +1,11 @@
 Name: NOAA High-Resolution Rapid Refresh (HRRR) Model
 Description: >
   The HRRR is a NOAA real-time 3-km resolution, hourly updated, cloud-resolving, convection-allowing atmospheric model, initialized by 3km grids with 3km radar assimilation. Radar data is assimilated in the HRRR every 15 min over a 1-h period adding further detail to that provided by the hourly data assimilation from the 13km radar-enhanced Rapid Refresh.
-Documentation: https://docs.opendata.aws/noaa-hrrr-pds/readme.html
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-hrrr
 Contact:  |
   For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
   <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
-ManagedBy: "[NOAA](https://www.noaa.gov/)"
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Hourly
 Collabs:
   ASDI:
@@ -39,19 +39,13 @@ Resources:
     - '[Browse Bucket](https://hrrrzarr.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-    - Title: What is Zarr?
-      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/What_is_Zarr.html
+    - Title: The HRRR Zarr Archive Managed by MesoWest
+      URL: https://mesowest.utah.edu/html/hrrr/
       AuthorName: Taylor Gowan
-    - Title: Zarr File Varable Definitions
-      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/zarrFileVariables.html
-      AuthorName: Taylor Gowan
-    - Title: Zarr Visualization Example
-      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/zarr_examples.html
-      AuthorName: Taylor Gowan, James Powell, Zach Rieck
-    - Title: Conda Enironment Setup Guide
-      URL: https://mesowest.utah.edu/html/hrrr/zarr_documentation/conda_environment.html
-      AuthorName: Zach Rieck
     - Title: "HRRR-B Python package: download and read HRRR grib2 files"
       URL: https://github.com/blaylockbk/HRRR_archive_download
       AuthorName: Brian Blaylock
-
+  Publications:
+    - Title: Using Cloud Computing to Analyze Model Output Archived in Zarr Format
+      URL: https://doi.org/10.1175/JTECH-D-21-0106.1
+      AuthorName: Taylor A. Gowan, John D. Horel, Alexander A. Jacques, and Adair Kovac
