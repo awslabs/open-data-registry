@@ -117,6 +117,10 @@ mapping:
                 type: str
                 pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
+              NotebookURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?\.ipynb$
+                required: False
               AuthorName:
                 type: str
                 required: True
