@@ -23,6 +23,11 @@ Resources:
     ARN: arn:aws:s3:::oicr.icgc.meta/metadata
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Raw sequencing and other primary data from non-TCGA ICGC projects
+    ARN: arn:aws:s3:::oicr.icgc
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://docs.icgc.org/download/guide/
 DataAtWork:
   Tutorials:
     - Title: AWS Pancancer Workflow Launcher
