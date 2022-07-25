@@ -1,4 +1,4 @@
-Name: Digital Earth Africa Water Observations from Space
+Name: Digital Earth Africa NDVI Monthly Climatology and Anomaly
 Description: |
   Water Observations from Space (WOfS) is a service that draws on satellite imagery to provide historical surface water observations of the whole African continent. WOfS allows users to understand the location and movement of inland and coastal water present in the African landscape. It shows where water is usually present; where it is seldom observed; and where inundation of the surface has been observed by satellite.
   They are generated using the WOfS classification algorithm on Landsat satellite data. There are several WOfS products available for the African continent including scene-level data and annual or all time summaries.
@@ -33,13 +33,6 @@ Resources:
     RequesterPays: False
     Explore:
     - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/wofs_ls)'
-  - Description: Water Observations from Space Annual Summary data
-    ARN: arn:aws:s3:::deafrica-services/wofs_ls_summary_annual
-    Region: af-south-1
-    Type: S3 Bucket
-    RequesterPays: False
-    Explore:
-    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/wofs_ls_summary_annual)'
   - Description: Water Observations from Space All-Time Summary data
     ARN: arn:aws:s3:::deafrica-services/wofs_ls_summary_alltime
     Region: af-south-1
