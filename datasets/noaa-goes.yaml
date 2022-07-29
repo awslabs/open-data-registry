@@ -1,12 +1,9 @@
 Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16 & 17"
 Description: |
-  NOAA GOES-T will launch in March 2022!! For more information check out the [GOES-T Webpage](https://www.nesdis.noaa.gov/next-generation/goes-t-launch).
-  <br/>
-  <br/>
-  NEW GOES-T Data!!! Over the coming months, GOES-R Program plans to share data files externally once an instrument has reached Provisional maturity.  Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the Big Data Program.
+  NEW GOES-18 Data!!! GOES-18 is now provisional and data has began streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the NOAA Open Data Dissemination Program.
   <br/>
   <br/> 
-  GOES satellites (GOES-16 & GOES-17) provide continuous weather imagery and
+  GOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous weather imagery and
   monitoring of meteorological and space environment data across North America.
   GOES satellites provide the kind of continuous monitoring necessary for
   intensive data analysis. They hover continuously over one position on the surface.
@@ -55,6 +52,16 @@ Resources:
     - '[Browse Bucket](https://noaa-goes17.s3.amazonaws.com/index.html)'
   - Description: New data notifications for GOES-17, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: GOES-18 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes18
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
