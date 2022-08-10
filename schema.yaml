@@ -26,7 +26,7 @@ mapping:
     required: True
   ManagedBy:
     type: str
-    required: False
+    required: True
   Citation:
     type: str
     required: False
@@ -68,9 +68,6 @@ mapping:
     type: seq
     required: True
     sequence:
-      - type: any
-        required: True
-        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
@@ -103,7 +100,7 @@ mapping:
             required: False
             sequence:
               - type: str
-                func: ext_resources_explore
+                func: ext_resources_explore              
   DataAtWork:
     type: map
     required: False
@@ -120,6 +117,10 @@ mapping:
                 type: str
                 pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
+              NotebookURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?\.ipynb$
+                required: False
               AuthorName:
                 type: str
                 required: True
