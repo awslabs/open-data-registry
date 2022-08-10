@@ -1,10 +1,11 @@
 Name: The Singapore Nanopore Expression Data Set
-Description: The Singapore Nanopore Expression (SG-NEx) project is an international collaboration to generate reference transcriptomes and a comprehensive benchmark data set for long read Nanopore RNA-Seq. Transcriptome profiling is done using PCR-cDNA sequencing ("PCR-cDNA"), amplification-free cDNA sequencing ("direct cDNA"), direct sequencing of native RNA (“direct RNA”), and short read RNA-Seq. The SG-NEx core data includes 5 of the most commonly used cell lines and it is extended with additional cell lines and samples that cover a broad range of human tissues. All core samples are sequenced with at least 3 high quality replicates. For a subset of samples spike-in RNAs are used and matched m6A profiling data is available.
+Description: "The Singapore Nanopore Expression (SG-NEx) project is an international collaboration to generate reference transcriptomes and a comprehensive benchmark data set for long read Nanopore RNA-Seq. Transcriptome profiling is done using PCR-cDNA sequencing ("PCR-cDNA"), amplification-free cDNA sequencing ("direct cDNA"), direct sequencing of native RNA (“direct RNA”), and short read RNA-Seq. The SG-NEx core data includes 5 of the most commonly used cell lines and it is extended with additional cell lines and samples that cover a broad range of human tissues. All core samples are sequenced with at least 3 high quality replicates. For a subset of samples spike-in RNAs are used and matched m6A profiling data is available."
 Documentation: https://github.com/GoekeLab/sg-nex-data
-Contact: [SG-NEx team](https://github.com/GoekeLab/sg-nex-data)
-ManagedBy: 'The Genome Institute of Singapore (https://www.a-star.edu.sg/gis)'
+Contact: "[SG-NEx team](https://github.com/GoekeLab/sg-nex-data)"
+ManagedBy: "The Genome Institute of Singapore (https://www.a-star.edu.sg/gis)"
 UpdateFrequency: Datasets will be updated periodically as additional data are generated.
 Tags:
+  - aws-pds
   - genomic
   - transcriptomics
   - life sciences
@@ -15,10 +16,10 @@ Tags:
   - fastq
   - bam
 License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
-Citation: 'Please cite Chen et al. "A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines." bioRxiv (2021). doi: https://doi.org/10.1101/2021.04.21.440736 when referencing the SG-NEx data in publications.'
+Citation: "In addition, please cite Chen et al. "A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines." bioRxiv (2021). doi: https://doi.org/10.1101/2021.04.21.440736 when referencing the SG-NEx data in publications."
 Resources: 
   - Description: Nanopore long read RNA Seq data and matched short read RNA-Seq from the Singapore Nanopore Expression Project (SG-NEx). The data includes raw signal data (fast5), basecalled reads (fastq), aligned reads (bam), processed data for RNA modification detection (json), reference genome annotation files (gtf and fa) and sample metadat (txt).
-    ARN: arn:aws:s3:::sg-nex-data/*
+    ARN: arn:aws:s3:::sg-nex-data
     Region: ap-southeast-1
     Type: S3 Bucket 
     Explore: 
