@@ -15,8 +15,23 @@ Tags:
  - vcf
 License: Data use is subject to the access and publication polices of the iHART. More information on terms of use is available at [iHART website](http://www.ihart.org/)
 Resources:
- - Description: BAM and VCF files from The iHART whole genome sequencing study.
+ - Description: BAM, gVCF, and VCF files from The iHART whole genome sequencing study, Phase I
    ARN: arn:aws:s3:::ihart-release
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
+- Description: BAM, gVCF, and VCF files from The iHART whole genome sequencing study, Phase II
+   ARN: arn:aws:s3:::ihart-main
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
+- Description: Cram, gVCF, and VCF files from The iHART whole genome sequencing study, Phase I+II, GRCh38
+   ARN: arn:aws:s3:::ihart-main
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
+- Description: gVCF, and VCF files from The iHART whole genome sequencing study, control data sets
+   ARN: arn:aws:s3:::ihart-psp, arn:aws:s3:::ihart-brain
    Region: us-east-1
    Type: S3 Bucket
    ControlledAccess: http://www.ihart.org/access
