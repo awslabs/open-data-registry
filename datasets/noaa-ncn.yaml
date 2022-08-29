@@ -4,9 +4,9 @@ Description: |
   NGS provides access to all NCN data collected since 9 February (040) 1994.
   - #### Access to NCN Data and Products
       - [NOAA-NCN on AWS](https://noaa-cors-pds.s3.amazonaws.com/index.html)
-      - [NCN https](https://geodesy.noaa.gov/corsdata/)
+      - [NGS server: https://geodesy.noaa.gov/corsdata/](https://geodesy.noaa.gov/corsdata/)
       - [NGS's customized data request service (UFCORS)](https://geodesy.noaa.gov/UFCORS/)
-      - [Anonymous ftp://geodesy.noaa.gov/cors/](ftp://geodesy.noaa.gov/cors/)
+      - [NGS Anonymous ftp://geodesy.noaa.gov/cors/ - This service is going away on August 02, 2021!](ftp://geodesy.noaa.gov/cors/)
   - #### NCN Data and Products
       - **RINEX**: The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).<br/>RINEX data can be found at: *rinex/`YYYY`/`DDD`/`ssss`/*
       - **Station logs**: 
@@ -43,6 +43,10 @@ Contact: |
   - For any questions regarding data delivery not associated with this platform, or any general questions regarding the NOAA Big Data Program, email ✉ noaa.bdp at noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Most data are available within 1 hour from when they were recorded at the remote site, and a few sites have a delay of 24 hours.
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
 Tags:
   - aws-pds
   - broadcast ephemeris

@@ -1,0 +1,54 @@
+Name: NOAA Joint Polar Satellite System (JPSS) 
+Description: Satellites in the JPSS constellation gather global measurements of atmospheric, terrestrial and oceanic conditions, including sea and land surface temperatures, vegetation, clouds, rainfall, snow and ice cover, fire locations and smoke plumes, atmospheric temperature, water vapor and ozone. JPSS delivers key observations for the Nation's essential products and services, including forecasting severe weather like hurricanes, tornadoes and blizzards days in advance, and assessing environmental hazards such as droughts, forest fires, poor air quality and harmful coastal waters. Further, JPSS will provide continuity of critical, global observations of Earth’s atmosphere, oceans and land through 2038. The data will be available from 2012-01-19 to present. 
+Documentation: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: New data is added as soon as it's available
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA JPSS Data
+    ARN: arn:aws:s3:::noaa-jpss
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-jpss.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for JPSS data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewJPSSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: JPSS Short Course from the 2018 Annual Meeting of American Meteorological Society
+      URL: http://rammb.cira.colostate.edu/training/visit/links_and_tutorials/ams_austin_tx_JPSS_workshop_2018.asp
+      AuthorName: Colorado State University
+    - Title: VIIRS Active Fire Quick Guide
+      URL: https://rapidrefresh.noaa.gov/hrrr/HRRRsmoke/VIIRSActiveFireQuickGuide-FinalForm-.pdf
+      AuthorName: NOAA
+    - Title: JPSS Satellites (COMET)
+      URL: https://www.meted.ucar.edu/training_course.php?id=54
+      AuthorName: UCAR
+    - Title: VIIRS Products (NASA SPoRT)
+      URL: https://weather.msfc.nasa.gov/sport/jpsspg/viirs.html
+      AuthorName: NASA
+    - Title: JPSS Training Resources
+      URL: https://www.jpss.noaa.gov/training_resources.html
+      AuthorName: NOAA
+  Publications: 
+    - Title: JPSS Science Seminar Annual Digest 2020
+      URL: https://www.jpss.noaa.gov/assets/pdfs/science_publications/2020_science_seminar_digest.pdf
+      AuthorName: NOAA
+  Tools & Applications:
+    - Title: JPSS Proving Ground
+      URL: https://www.jpss.noaa.gov/proving_ground.html
+      AuthorName: NOAA

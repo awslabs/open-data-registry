@@ -1,8 +1,26 @@
-Name: Global Surface Summary of Day
-Description: GSOD is a collection of daily weather measurements (temperature, wind speed, humidity, pressure, and more) from 9000+ weather stations around the world.
+Name: NOAA Global Surface Summary of Day
+Description: |
+  Global Surface Summary of the Day is derived from The Integrated Surface Hourly (ISH) dataset. The ISH dataset includes global data obtained from the USAF Climatology Center, located in the Federal Climate Complex with NCDC. The latest daily summary data are normally available 1-2 days after the date-time of the observations used in the daily summaries. The online data files begin with 1929 and are at the time of this writing at the Version 8 software level. Over 9000 stations' data are typically available. The daily elements included in the dataset (as available from each station) are: <br/>
+  Mean temperature (.1 Fahrenheit) <br/>
+  Mean dew point (.1 Fahrenheit) <br/>
+  Mean sea level pressure (.1 mb) <br/>
+  Mean station pressure (.1 mb) <br/>
+  Mean visibility (.1 miles) <br/>
+  Mean wind speed (.1 knots) <br/>
+  Maximum sustained wind speed (.1 knots) <br/>
+  Maximum wind gust (.1 knots) <br/>
+  Maximum temperature (.1 Fahrenheit) <br/>
+  Minimum temperature (.1 Fahrenheit) <br/>
+  Precipitation amount (.01 inches) <br/>
+  Snow depth (.1 inches) <br/>
+  Indicator for occurrence of: Fog, Rain or Drizzle, Snow or Ice Pellets, Hail, Thunder, Tornado/Funnel Cloud.<br/><br/>
+  Global summary of day data for 18 surface meteorological elements are derived from the synoptic/hourly observations contained in USAF DATSAV3 Surface data and Federal Climate Complex Integrated Surface Hourly (ISH). Historical data are generally available for 1929 to the present, with data from 1973 to the present being the most complete. For some periods, one or more countries' data may not be available due to data restrictions or communications problems. In deriving the summary of day data, a minimum of 4 observations for the day must be present (allows for stations which report 4 synoptic observations/day). Since the data are converted to constant units (e.g, knots), slight rounding error from the originally reported values may occur (e.g, 9.9 instead of 10.0). The mean daily values described below are based on the hours of operation for the station. For some stations/countries, the visibility will sometimes 'cluster' around a value (such as 10 miles) due to the practice of not reporting visibilities greater than certain distances. The daily extremes and totals--maximum wind gust, precipitation amount, and snow depth--will only appear if the station reports the data sufficiently to provide a valid value. Therefore, these three elements will appear less frequently than other values. Also, these elements are derived from the stations' reports during the day, and may comprise a 24-hour period which includes a portion of the previous day. The data are reported and summarized based on Greenwich Mean Time (GMT, 0000Z - 2359Z) since the original synoptic/hourly data are reported and based on GMT.
 Documentation: http://www.ncdc.noaa.gov/
-Contact: http://www.ncdc.noaa.gov/
-UpdateFrequency: Currently updated infrequently. Last updated on September 13, 2016.
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+Contact: |
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+UpdateFrequency: Data is updated as new products are available.
 Collabs:
   ASDI:
     Tags:
@@ -17,13 +35,19 @@ Tags:
   - regulatory
   - sustainability
 License: |
-  The data is intended for free and unrestricted use in research, education, and other non-commercial activities. Per World Meteorological Organization (WMO) Resolution 40, redistribution of these data by others must provide this same notification, and non-U.S. data cannot be redistributed for commercial purposes.
+  Open Data. There are no restrictions on the use of this data
 Resources:
   - Description: Measurements and metadata
-    ARN: arn:aws:s3:::aws-gsod
+    ARN: arn:aws:s3:::noaa-gsod-pds
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: "ML Demo: Predicting Air Quality w/ ASDI NOAA + OpenAQ Datasets in SageMaker Studio Lab (SMSL)"
+      URL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/
+      NotebookURL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/blob/main/aq_by_weather.ipynb
+      AuthorName: Aaron Soto
+      Services:
+      - SageMaker Studio Lab    
   Tools & Applications:
   Publications:

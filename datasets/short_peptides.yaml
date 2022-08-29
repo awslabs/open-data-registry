@@ -1,0 +1,31 @@
+Name: Conformational Space of Short Peptides
+Description: Co-managed by [Toyoko](toyoko.io) and the [Structural Biology Group at the Universidad Nacional de Quilmes](http://ufq.unq.edu.ar/sbg/), this dataset allows us to explore the conformational space of all possible peptides using the 20 common amino acids. It consists of a collection of exhaustive molecular dynamics simulations of tripeptides and pentapeptides.
+Documentation: https://github.com/ToyokoLabs/SBG/blob/master/README.md
+Contact: awsopendata@toyoko.io
+ManagedBy: "[Toyoko](https://www.toyoko.io/)"
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - amino acid
+  - bioinformatics
+  - biomolecular modeling
+  - molecular dynamics
+  - protein
+  - structural biology
+  - life sciences
+License: CC-BY 4.0 See https://github.com/ToyokoLabs/SBG/blob/master/LICENSE
+Resources:
+  - Description: 'Tri-peptides. All possible 8000 tri-peptides, 2 replicas. File types: Amber .out, .traj and .crd. To retrieve files use this format: N{AA}{AA}C{AA}-R{replic_number}.dmd.1.{ext}, for example, for ALA-SER-ASN traj file for replica 2, the name is NALASERCASN-R2.dmd.1.traj'
+    ARN: arn:aws:s3:::toyokounqpeptides/tripep/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: 'Penta-peptides. All possible 3200000 penta-peptides, no replicas. File types: .tar.bz2. To retrieve files use this format: N{AA}{AA}{AA}{AA}C{AA}-R1.tar.bz2'
+    ARN: arn:aws:s3:::toyokounqpeptides/5pep/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Intro to Conformational Space of Short Peptides
+      URL: https://www.toyoko.io/pepdataset/
+      AuthorName: Sebastian Bassi and Virginia Gonzalez
+      AuthorURL: https://about.me/bassi

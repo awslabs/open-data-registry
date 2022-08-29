@@ -1,0 +1,53 @@
+Name: BossDB Open Neuroimagery Datasets
+Description: This data ecosystem, Brain Observatory Storage Service & Database (BossDB), contains several neuro-imaging datasets across multiple modalities and scales, ranging from nanoscale (electron microscopy), to microscale (cleared lightsheet microscopy and array tomography), and mesoscale (structural and functional magnetic resonance imaging). Additionally, many of the datasets include dense segmentation and meshes.
+Contact: brock.wester@jhuapl.edu
+Documentation: https://bossdb.org/
+ManagedBy: "[Johns Hopkins University Applied Physics Laboratory](https://https://jhuapl.edu)"
+UpdateFrequency: New datasets are added as soon as it is available. Minor updates on existing datasets occur sporadically.
+Tags:
+  - aws-pds
+  - life sciences
+  - imaging
+  - neuroscience
+  - neuroimaging
+  - electron microscopy
+  - x-ray tomography
+  - x-ray microtomography
+  - x-ray
+  - magnetic resonance imaging
+  - light-sheet microscopy
+  - calcium imaging
+  - volumetric imaging
+License: Creative Commons 4.0 International (CC BY 4.0)
+Resources:
+  - Description: Large 3D volumes of neuroimaging data and image processing products such as segmentation and reconstructed meshes
+    ARN: arn:aws:s3:::bossdb-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Data access and download
+      URL: https://bossdb.org/get-started
+      AuthorName: Jordan Matelsky
+      AuthorURL: https://github.com/j6k4m8
+  Tools & Applications:
+    - Title: bossDB
+      URL: https://bossdb.org
+      AuthorName: bossDB Team
+    - Title: CloudVolume
+      URL: https://github.com/seung-lab/cloud-volume
+      AuthorName: Seung Lab
+  Publications:
+    - Title: 'intern: Integrated Toolkit for Extensible and Reproducible Neuroscience'
+      URL: https://www.biorxiv.org/content/10.1101/2020.05.15.098707v1
+      AuthorName: Jordan K Matelsky, Luis Rodriguez, Daniel Xenes, Timothy Gion, Robert Hider Jr., Brock Wester, William Gray-Roncal 
+      AuthorURL: https://bossdb.org/publications
+    
+    - Title: 'The Block Object Storage Service (bossDB): A Cloud-Native Approach for Petascale Neuroscience Discovery'
+      URL: https://doi.org/10.1101/217745v2
+      AuthorName: Robert Hider Jr., Dean M. Kleissas, Derek Pryor, Timothy Gion, Luis Rodriguez, Jordan Matelsky, William Gray-Roncal, Brock Wester 
+      AuthorURL: https://bossdb.org/publications
+    
+    - Title: A Community-Developed Open-Source Computational Ecosystem for Big Neuro Data
+      URL: https://doi.org/10.1038/s41592-018-0181-1
+      AuthorName: J. T. Vogelstein, E. Perlman, B. Falk, A. Baden, W. Gray Roncal, V. Chandrashekhar, F. Collman, S. Seshamani, J. L. Patsolic, K. Lillaney, M. Kazhdan, R. Hider, D. Pryor, J. Matelsky, T. Gion, P. Manavalan, B. Wester, M. Chevillet, E. T. Trautman, K. Khairy, E. Bridgeford, D. M. Kleissas, D. J. Tward, A. K. Crow, B. Hsueh, M. A. Wright, M. I. Miller, S. J. Smith, R. J. Vogelstein, K. Deisseroth, and R. Burns

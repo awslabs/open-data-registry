@@ -1,6 +1,9 @@
-Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16 & 17"
+Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18"
 Description: |
-  GOES satellites (GOES-16 & GOES-17) provide continuous weather imagery and
+  NEW GOES-18 Data!!! GOES-18 is now provisional and data has began streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the NOAA Open Data Dissemination Program.
+  <br/>
+  <br/> 
+  GOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous weather imagery and
   monitoring of meteorological and space environment data across North America.
   GOES satellites provide the kind of continuous monitoring necessary for
   intensive data analysis. They hover continuously over one position on the surface.
@@ -8,8 +11,8 @@ Description: |
   they stay above a fixed spot on the surface, they provide a constant vigil for the
   atmospheric "triggers" for severe weather conditions such as tornadoes, flash floods,
   hailstorms, and hurricanes. When these conditions develop, the GOES satellites are able
-  to monitor storm development and track their movements.
-Documentation: https://docs.opendata.aws/noaa-goes16/cics-readme.html
+  to monitor storm development and track their movements. SUVI products available in both NetCDF and FITS. 
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-goes16
 Contact:  |
   For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
   <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
@@ -51,6 +54,16 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
     Region: us-east-1
     Type: SNS Topic
+  - Description: GOES-18 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes18
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Visualize GOES-16 in Python using Xarray
@@ -58,15 +71,23 @@ DataAtWork:
       AuthorName: Hamed Alemohammad
       AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
     - Title: Comparison reading GOES-R data from AWS S3 in netCDF versus zarr
-      URL: https://nbviewer.jupyter.org/github/oceanhackweek/ohw20-tutorials/blob/master/10-satellite-data-access/goes-cmp-netcdf-zarr.ipynb
+      URL: https://nbviewer.jupyter.org/github/oceanhackweek/ohw-tutorials/blob/OHW20/10-satellite-data-access/goes-cmp-netcdf-zarr.ipynb
       AuthorName: Chelle Gentemann
       AuthorURL: http://www.faralloninstitute.org/chelle
     - Title: NOAA GOES16 Julia Jupyter Notebook Example
       URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
       AuthorName: Peter Schmiedeskamp
+      Services:
+        - CloudFormation
+        - EC2
+        - SageMaker
     - Title: Processing GOES-16 data with Dask & AWS Fargate
       URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/goes16_dask.ipynb
       AuthorName: Zac Flamig
+      Services:
+        - CloudFormation
+        - Fargate
+        - SageMaker
     - Title: Forecasting Hurricane Tracks with TensorFlow and data from AWS S3
       URL: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
       AuthorName: Kyle Archie
@@ -94,3 +115,15 @@ DataAtWork:
     - Title: Beginner’s Guide to GOES-R Series Data
       URL: https://noaa-goes16.s3.amazonaws.com/Beginners_Guide_to_GOES-R_Series_Data.pdf
       AuthorName: Danielle Losos
+    - Title: GOES Quick Guides (Spanish)
+      URL: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/GOES/QuickGuides/Spanish
+      AuthorName: Anthony Segura García
+    - Title: "SunCast: Solar Irradiance Nowcasting from Geosynchronous Satellite Data"
+      URL: https://arxiv.org/pdf/2201.06173.pdf
+      AuthorName: Dhileeban Kumaresan, Richard Wang, Ernesto Martinez, Richard Cziva, Alberto Todeschini, Colorado J Reed, Hossein Vahabi
+    - Title: The Use of Composite GOES-R Satellite Imagery to Evaluate a TC Intensity and Vortex Structure Forecast by an FV3GFS-Based Hurricane Forecast Model
+      URL: https://doi.org/10.3390/atmos13010126
+      AuthorName: Shaowu Bao, Zhan Zhang, Evan Kalina, and Bin Liu
+    - Title: Imaging Considerations From a Geostationary Orbit Using the Short Wavelength Side of the Mid-Infrared Water Vapor Absorption Band
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EA002080
+      AuthorName: N.B. Miller, M.M. Gunshor, A.J. Merrelli, T.S. L'Ecuyer, T.J. Schmit, J.J. Gerth, N.J. Gordillo

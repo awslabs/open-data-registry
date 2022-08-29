@@ -23,6 +23,8 @@ Tags:
   - sustainability
   - disaster response
   - deafrica
+  - stac
+  - cog
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
@@ -31,11 +33,17 @@ Resources:
     Region: af-south-1
     Type: S3 Bucket
     RequesterPays: False
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s2_l2a)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
     ARN: arn:aws:s3:::deafrica-sentinel-2-inventory
     Region: af-south-1
     Type: S3 Bucket
   - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-scene-topic
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-sentinel-2 s3 bucket all object create events.
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-topic
     Region: af-south-1
     Type: SNS Topic
@@ -45,7 +53,10 @@ DataAtWork:
       URL: https://github.com/opendatacube/cube-in-a-box
       AuthorName: Alex Leith
     - Title: Digital Earth Africa Training
-      URL: http://training.digitalearthafrica.org/
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Downloading and streaming data using STAC metadata
+      URL: https://docs.digitalearthafrica.org/en/latest/sandbox/notebooks/Frequently_used_code/Downloading_data_with_STAC.html 
       AuthorName: Digital Earth Africa Contributors
   Tools & Applications:
     - Title: "Digital Earth Africa Explorer"
@@ -54,3 +65,19 @@ DataAtWork:
     - Title: "Digital Earth Africa web services"
       URL: https://ows.digitalearth.africa
       AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan

@@ -20,6 +20,8 @@ Tags:
   - natural resource
   - sustainability
   - disaster response
+  - stac
+  - cog
 License: |
   There are no restrictions on Landsat data downloaded from the USGS; it can be used or 
   redistributed as desired. We do request that you include a [statement of the data source](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con) 
@@ -31,9 +33,17 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
     Explore:
-    - '[STAC Catalog](https://landsatlook.usgs.gov/sat-api/collections)'
+    - '[STAC Catalog](https://landsatlook.usgs.gov/stac-server/collections)'
+  - Description: New scene notifications
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: "How to Work with Landsat and Sentinel-2 on AWS with Python"
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com/
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
       URL: https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971
       AuthorName: Planet
@@ -41,10 +51,6 @@ DataAtWork:
     - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
       URL: https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
       AuthorName: Timothy Whitehead
-    - Title: Using Vector tiles and AWS Lambda, we can build a really simple API to get Landsat and Sentinel images
-      URL: https://remotepixel.ca/blog/searchapi_20171211.html
-      AuthorName: Remote Pixel
-      AuthorURL: https://remotepixel.ca/
     - Title: Integrate imagery from the full Landsat archive into your own apps, maps, and analysis with Landsat image services
       URL: http://www.arcgis.com/home/group.html?id=a74dff13f1be4b2ba7264c3315c57077#overview
       AuthorName: Esri
@@ -67,12 +73,11 @@ DataAtWork:
       AuthorURL: https://www.usgs.gov
     - Title: Cloud Segmentation in Landsat-8 Images
       URL: https://medium.com/sentinel-hub/clouds-segmentation-in-landsat-8-images-da370815235
-      AuthorName: Ingrid Grenet      
+      AuthorName: Ingrid Grenet
+    - Title: Creating a STAC of Landsat data
+      URL: https://pystac.readthedocs.io/en/stable/tutorials/creating-a-landsat-stac.html
+      AuthorName: PySTAC Contributors
   Tools & Applications:
-    - Title: landsatlive.live
-      URL: https://landsatlive.live
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
@@ -111,6 +116,10 @@ DataAtWork:
       AuthorURL: http://www.sinergise.com/
     - Title: Sentinel Playground for Landsat
       URL: https://apps.sentinel-hub.com/sentinel-playground/?source=L8
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
       AuthorName: Sinergise
       AuthorURL: http://www.sinergise.com/
     - Title: Dynamic map tiling with Cloud-Optimized GeoTIFFs

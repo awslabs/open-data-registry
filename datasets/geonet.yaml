@@ -1,0 +1,51 @@
+Name: GeoNet Aotearoa New Zealand Data
+Description: GeoNet provides geological hazard information for Aotearoa New Zealand. This dataset contains data and products recorded by the GeoNet sensor network. The dataset currently include GNSS data and additional datasets will be added in the near future.
+  GNSS (Global Navigation Satellite System) data include raw data in proprietary and Receiver Independent Exchange Format (RINEX) and local tie-in survey conducted during equipment changes, more details can be found on '[the GeoNet geodetic page](https://www.geonet.org.nz/data/types/geodetic)' website.
+  Coastal gauge data include relative measurement of sea level measured by tsunami monitoring gauges. Raw and quality control data are provided in CREX format (Character Form for the Representtion and eXchange of metereological data), more details can be found on '[the GeoNet coastal tsunami monitoring gauges page](https://www.geonet.org.nz/data/types/tidal_gauges)'.
+Documentation: https://github.com/GeoNet/data-tutorials/tree/main/AWS_Open_Data
+Contact: For questions regarding data content or quality, please visit '[the GeoNet site](https://www.geonet.org.nz/)]', contact info@geonet.org.nz or use GitHub issue on [GeoNet/help](https://github.com/GeoNet/help).
+ManagedBy: "[GeoNet](https://www.geonet.org.nz/)"
+UpdateFrequency: Daily for majority of datasets.
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - aws-pds
+  - geophysics
+  - geoscience
+  - earthquakes
+  - geoscience
+  - Continuously Operating Reference Station (CORS)
+  - GNSS
+  - GPS
+  - RINEX
+  - coastal
+  - oceans
+License: GeoNet data are made available free of charge under '[CC3 licence](https://creativecommons.org/licenses/by/3.0/nz/)' to facilitate research and risk assessment. Please acknowledge the GeoNet programme and its sponsors when using the data, see '[GeoNet Data Policy](https://www.geonet.org.nz/policy)'. 
+Resources:
+  - Description: Data files
+    ARN: arn:aws:s3:::geonet-open-data
+    Region: ap-southeast-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials: 
+    - Title: GeoNet continuous GNSS network RAW files
+      URL: https://doi.org/10.21420/TMHV-0T46
+      AuthorName: GNS Science - Te Pū Ao
+    - Title: GeoNet continuous GNSS network RINEX
+      URL: https://doi.org/10.21420/RXKE-AZ44
+      AuthorName: GNS Science - Te Pū Ao
+    - Title: Available GeoNet GNSS event high rate data
+      URL: https://doi.org/10.21420/NQYC-EG34
+      AuthorName: GNS Science - Te Pū Ao
+    - Title: Aotearoa/New Zealand GeoNet Coastal Tsunami Gauge Digital Waveform Dataset
+      URL: https://doi.org/10.21420/EJ6W-RC96
+      AuthorName: GNS Science - Te Pū Ao
+  Publications:
+    - Title: The development and evolution of the GeoNet and PositioNZ GNSS continuously operating network in New Zealand
+      URL: https://doi.org/10.1080/00288306.2015.1127821
+      AuthorName: "P. Gentle; K. Gledhill; G. Blick"
+    - Title: Tsunami Forecasting and Monitoring in New Zealand
+      URL: https://doi.org/10.1007/s00024-010-0223-9
+      AuthorName: "W. Power; N. Gale"

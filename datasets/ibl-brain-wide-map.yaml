@@ -1,0 +1,34 @@
+Name: IBL Neuropixels Brainwide Map on AWS
+Description: Electrophysiological recordings of mouse brain activity acquired using Neuropixels probes.
+Documentation: https://docs.google.com/document/d/1OqIqqakPakHXRAwceYLwFY9gOrm8_P62XIfCTnHwstg/edit
+Contact: info@internationalbrainlab.org
+ManagedBy: "[IBL](https://www.internationalbrainlab.com)"
+UpdateFrequency: TBD
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - open source software
+  - Mus musculus
+License: MIT
+Resources:
+  - Description: Public pilot ephys data release
+    ARN: arn:aws:s3:::ibl-brain-wide-map-public
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
+      URL: https://pypi.org/project/ONE-api/
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Tutorials:
+    - Title: Accessing the public data via ONE
+      URL: https://int-brain-lab.github.io/ONE/one_installation.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Exploring the public IBL data with ONE
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/one_quickstart.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
