@@ -23,7 +23,7 @@ Tags:
 License: |
   [Capella EULA](https://www.capellaspace.com/wp-content/uploads/2021/09/EULA-Single-Org-Open-Data-License-Ver.-1.0-September-2021-Final.pdf)
 Resources:
-  - Description: Capella Open Data SLC, GEO, GEC, SICD scenes
+  - Description: Capella Space Open Data in COG format
     ARN: arn:aws:s3:::capella-open-data/data/
     Region: us-west-2
     Type: S3 Bucket
@@ -31,6 +31,12 @@ Resources:
     Explore:
     - '[STAC Catalog](https://capella-open-data.s3.us-west-2.amazonaws.com/stac/catalog.json)'
     - '[STAC browser](https://capella-open-data.s3.us-west-2.amazonaws.com/index.html)'
+Resources:
+  - Description: Capella Space Open Data in TileDB format
+    ARN: arn:aws:s3:::capella-space-open-data/data/tiledb/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
 DataAtWork:
   Tutorials:
     - Title: Scaling GEO Images in QGIS
