@@ -1,5 +1,5 @@
-Name: "1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5 and 3.7"
-Description: This dataset contains alignment files and short nucleotide, copy number, repeat expansion (STR) and structural variant call files from the 1000 Genomes Project Phase 3 dataset (n=3202) using Illumina DRAGEN v3.5.7b and v3.7.6 software. The v3.7.6 dataset also includes results from joint small variant, de novo structural variant, de novo copy number variant and repeat expansion calls on 602 trio families comprised of members from the 1000 Genomes Project Phase 3 dataset, as well as DRAGEN gVCF Genotyper (v3.8.3) analysis on the entire dataset (n=3202).  Improvements and new features in the v3.7.6 individual samples analyses include CYP2D6 variant calling and joint detection (see ‘DRAGEN 3.7 User Guide’ for details on these features) and use of graph-based hg19 and hg38 reference hash tables (see ‘DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes’ for details). 
+Name: "1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5, 3.7 and 4.0"
+Description: This dataset contains alignment files and short nucleotide, copy number, repeat expansion (STR), structural variant and other variant call files from the 1000 Genomes Project Phase 3 dataset (n=3202) using Illumina DRAGEN v3.5.7b, v3.7.6 and v4.0.3 software. The v3.7.6 dataset also includes results from joint small variant, de novo structural variant, de novo copy number variant and repeat expansion calls on 602 trio families comprised of members from the 1000 Genomes Project Phase 3 dataset, as well as DRAGEN gVCF Genotyper (v3.8.3) analysis on the entire dataset (n=3202).  Improvements and new features in the v3.7.6 individual samples analyses include CYP2D6 variant calling and joint detection (see ‘DRAGEN 3.7 User Guide’ for details on these features) and use of graph-based hg19 and hg38 reference hash tables (see ‘DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes’ for details). The DRAGEN v4.0.3 dataset features improved small variant calling accuracy due to utilization of the newly integrated machine learning functionality with an updated graph based reference for difficult to map regions (see ‘DRAGEN Sets New Standard for Data Accuracy in PrecisionFDA Benchmark Data. Optimizing Variant Calling Performance with Illumina Machine Learning and DRAGEN Graph’); accuracy and runtime improvements in the SV caller; new targeted callers including: CYP2B6, GBA, SMN and a Star Allele PGx caller; and an expanded catalog for use with Expansion Hunter STR caller (see 'DRAGEN v4.0.3 Software Release Notes' for details on these and other new features and improvements). 
 Contact: "[Illumina, Inc.](mailto:support@illumina.com)"
 Documentation: "[DRAGEN Support Resources](https://support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)"
 ManagedBy: "[Illumina, Inc.](https://www.illumina.com/products/by-type/informatics-products/dragen-bio-it-platform.html)"
@@ -12,7 +12,9 @@ Tags:
   - genetic
   - genomic
   - bam
+  - cram
   - vcf
+  - gvcf
 License: "TBD"
 Resources:
   - Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, metrics  and other supporting files from DRAGEN v3.5.6b analyses in a public S3 bucket. 
@@ -27,6 +29,11 @@ Resources:
     ARN: arn:aws:s3:::1000genomes-dragen-v3.7.6
     Region: us-east-1
     Type: S3 Bucket
+  - Description: CRAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, cyp2b6-tsv, cyp2d6-tsv, gba-tsv, smn-tsv, star-allele-tsv, metrics and other supporting files from DRAGEN v4.0.3 analyses in a public S3 bucket.
+    ARN: arn:aws:s3:::1000genomes-dragen-v4.0.3
+    Region: us-east-1
+    Type: S3 Bucket
+
 DataAtWork:
   Tutorials:
     - Title: "DRAGEN Quick Start on AWS"
@@ -38,7 +45,7 @@ DataAtWork:
       URL: https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html#key-features
       AuthorName: Illumina Inc.
       AuthorURL: https://www.illumina.com/
-    - Title: "DRAGEN 3.7.5b Release"
+    - Title: "DRAGEN 3.5.7b Software Release Notes"
       URL: https://support.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/DRAGEN-3.5.7b-Customer-Release-Notes-1000000131537-00.pdf
       AuthorName: Illumina Inc.
       AuthorURL: https://www.illumina.com/
@@ -46,6 +53,11 @@ DataAtWork:
       URL: https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/dragen-bio-it/Illumina-DRAGEN-Bio-IT-Platform-User-Guide-1000000141465-00.pdf
       AuthorName: Illumina Inc.
       AuthorURL: https://www.illumina.com/
+    - Title: "DRAGEN v4.0.3 Software Release Notes"
+      URL: https://support.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/200024449_01_DRAGEN-4.0-Customer-Release-Notes.pdf
+      AuthorName: Illumina Inc.
+      AuthorURL: https://www.illumina.com/
+
   Publications:
     - Title: "precisionFDA Truth Challenge V2: Calling variants from short- and long-reads in difficult-to-map regions (Preprint)"
       URL: https://www.biorxiv.org/content/10.1101/2020.11.13.380741v1
@@ -53,3 +65,8 @@ DataAtWork:
     - Title: "DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes"
       URL: https://www.illumina.com/science/genomics-research/dragen-wins-precisionfda-challenge-showcase-accuracy-gains.html
       AuthorName: Illumina Inc. (2021)
+    - Title: ” DRAGEN Sets New Standard for Data Accuracy in PrecisionFDA Benchmark Data. Optimizing Variant Calling Performance with Illumina Machine Learning and DRAGEN Graph”
+      URL: https://www.illumina.com/science/genomics-research/articles/dragen-shines-again-precisionfda-truth-challenge-v2.html
+      AuthorName: Illumina Inc. (2022)
+
+      
