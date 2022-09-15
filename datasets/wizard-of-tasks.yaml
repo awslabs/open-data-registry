@@ -1,0 +1,26 @@
+Name: Wizard of Tasks
+Description: Wizard of Tasks (WoT) is a dataset containing conversations for Conversational Task Assistants (CTAs). A CTA is a conversational agent whose goal is to help humans to perform real-world tasks. A CTA can help in exploring available tasks, answering task-specific questions and guiding users through step-by-step instructions. WoT contains about 550 conversations with ~18,000 utterances in two domains, i.e., Cooking and Home Improvement.
+Documentation: https://wizard-of-tasks.s3.us-west-2.amazonaws.com/README.md
+Contact: giusecas@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not currently being updated
+Tags:
+  - conversation data
+  - dialog
+  - amazon.science
+  - natural language processing
+  - machine learning
+License: "[cc-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+Resources:
+  - Description: Wizard of Tasks Dataset
+    ARN: arn:aws:s3:::wizard-of-tasks
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[wizard_of_tasks_cooking_v1.0.json](https://wizard-of-tasks.s3.us-west-2.amazonaws.com/wizard_of_tasks_cooking_v1.0.json)'
+      - '[wizard_of_tasks_diy_v1.0.json](https://wizard-of-tasks.s3.us-west-2.amazonaws.com/wizard_of_tasks_diy_v1.0.json)'
+DataAtWork:
+  Publications:
+     - Title: "Wizard of Tasks: A Novel Conversational Dataset for Solving Real-World Tasks in Conversational Settings"
+       URL: https://aclanthology.org/events/coling-2022/
+       AuthorName: Jason Ingyu Choi, Saar Kuzi, Nikhita Vedula, Jie Zhao, Giuseppe Castellucci, Marcus Collins, Shervin Malmasi, Oleg Rokhlenko and Eugene Agichtein
