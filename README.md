@@ -37,6 +37,7 @@ DataAtWork:
   Tutorials:
     - Title:
       URL:
+      NotebookURL:
       AuthorName:
       AuthorURL:
       Services:
@@ -80,6 +81,7 @@ The metadata required for each dataset entry is as follows:
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > URL**|URL|A link to the tutorial, tool, application, or publication that uses the data.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorName**|String|Name(s) of person or entity that created  the tutorial, tool, application, or publication. Limit scientific publication author lists to the first six authors in the format Last Name First Initial, followed by 'et al'.|
 |**DataAtWork [> Tutorials, Tools & Applications, Publications] > AuthorURL** (Optional)|String|URL for person or entity that created the tutorial, tool, application, or publication.|
+|**DataAtWork [> Tutorials] > NotebookURL** (Optional)|URL|A link to a Jupyter notebook (.ipynb) on GitHub that shows how this data can be used.|
 |**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 |**DeprecatedNotice** (Optional)|String|Only appropriate for datasets that are being retired, indicates to users that the dataset will soon be deprecated and should include the date that the dataset will no longer be available.|
 
