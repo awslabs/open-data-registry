@@ -3,6 +3,7 @@ Description: A global dataset providing bare-earth terrain heights, tiled for ea
 Documentation: https://github.com/tilezen/joerd/tree/master/docs
 Contact: https://github.com/tilezen/joerd/issues
 UpdateFrequency: New data is added based on community feedback
+ManagedBy: "Mapzen, a Linux Foundation project"
 Collabs:
   ASDI:
     Tags:
@@ -23,6 +24,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Map](https://elevation-tiles-prod.s3.amazonaws.com/index.html)'
+  - Description: Gridded elevation tiles - replication in EU region
+    ARN: arn:aws:s3:::elevation-tiles-prod-eu
+    Region: eu-central-1
+    Type: S3 Bucket   
 DataAtWork:
   Tutorials:
     - Title: Using GDAL to Produce a Geotiff for an Area
