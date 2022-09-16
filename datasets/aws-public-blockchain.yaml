@@ -1,0 +1,25 @@
+Name: AWS Public Blockchain Data
+Description: The AWS Public Blockchain Data provide datasets from the Bitcoin and Ethereum blockchains. The blockchain data is transformed into multiple tables as compressed Parquet files partitioned by date to allow efficient access for most common analytics queries.
+Documentation: https://github.com/aws-samples/digital-assets-examples/blob/main/analytics/
+Contact: aws-public-blockchain@amazon.com
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: New data is delivered constantly to the current date folders as one Parquet file per block. Intra-day data is aggregated everyday at 00:30 UTC.
+Tags:
+  - blockchain
+  - bitcoin
+  - ethereum
+License: https://github.com/aws-samples/digital-assets-examples/blob/main/LICENSE
+Resources:
+  - Description: AWS Public Blockchain Data
+    ARN: arn:aws:s3:::aws-public-blockchain
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Schema of Datasets
+      URL: https://github.com/aws-samples/digital-assets-examples/blob/main/analytics/schema.md
+    - Title: Examples for using this data with Amazon SageMaker Studio
+      URL: https://github.com/aws-samples/digital-assets-examples/blob/main/analytics/notebooks.md
+  Publications:
+    - Title: Access Bitcoin and Ethereum open datasets for cross-chain analytics
+      URL: https://aws.amazon.com/blogs/database/access-bitcoin-and-ethereum-open-datasets-for-cross-chain-analytics/
