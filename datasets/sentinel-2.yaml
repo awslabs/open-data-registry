@@ -50,8 +50,13 @@ Resources:
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
+  - Description: Zipped archives for each product with 3 day retention period, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c-zips
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: Zipped archives for each product with 3 day retention period, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l2a-zips
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
