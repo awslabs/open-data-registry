@@ -1,0 +1,45 @@
+Name: REMA
+Description:  The Reference Elevation Model of Antarctica - 2m GSD Digital Elevation Models (DEMs) and mosaics from 2009 to the present
+Documentation: https://www.pgc.umn.edu/data/rema/
+Contact: pgc-support@umn.edu
+ManagedBy: "[Polar Geospatial Center](http://www.pgc.umn.edu/)"
+UpdateFrequency: New DEM strips are added twice yearly.  Mosaic products are added as soon as they are available.
+Tags:
+  - remote sensing
+  - digital elevation model
+  - photogrammetry
+  - Antarctic
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Along with [acknowledging PGC](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/), the REMA dataset should be cited as follows:
+DEM  Mosaics: Howat, I; Porter, C; Noh, MJ; Husby, E; Khuvis, S; Danish, E; Tomko, K; Gardiner, J; Negrete, A; Yadav, B; Klassen, J; Kelleher, C; Cloutier, M; Bakker, J; Enos, J; Arnold, G; Bauer, G; Morin, P, 2022, The Reference Elevation Model of Antarctica - Mosaics, Version 2, [doi.org/10.7910/DVN/EBW8UC](https://doi.org/10.7910/DVN/EBW8UC), Harvard Dataverse, V1
+DEM Strips: Howat, I; Porter, C; Noh, MJ; Husby, E; Khuvis, S; Danish, E; Tomko, K; Gardiner, J; Negrete, A; Yadav, B; Klassen, J; Kelleher, C; Cloutier, M; Bakker, J; Enos, J; Arnold, G; Bauer, G; Morin, P, 2022, The Reference Elevation Model of Antarctica - Strips, Version 4.1, [doi.org/10.7910/DVN/X7NDNY](https://doi.org/10.7910/DVN/X7NDNY), Harvard Dataverse, V1"
+Resources:
+  - Description: REMA DEM Mosaics
+    ARN: arn:aws:s3:::pgc-opendata-dems/rema/mosaics/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics)'
+  - Description: REMA DEM Strips
+    ARN: arn:aws:s3:::pgc-opendata-dems/rema/strips/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips)'
+DataAtWork:
+  Tutorials:
+    - Title:
+      URL:
+      NotebookURL:
+      AuthorName:
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title: The Reference Elevation Model of Antarctica, The Cryosphere, 13, 665-674, , 2019.
+      URL: https://doi.org/10.5194/tc-13-665-2019
+      AuthorName: Howat, IM, Porter, C, Smith, BE, Noh, MJ, and Morin, P
