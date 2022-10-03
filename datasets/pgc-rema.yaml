@@ -1,0 +1,54 @@
+Name: REMA
+Description: The Reference Elevation Model of Antarctica - 2m GSD Digital Elevation Models (DEMs) and mosaics from 2009 to the present
+Documentation: https://www.pgc.umn.edu/data/rema/
+Contact: pgc-support@umn.edu
+ManagedBy: "[Polar Geospatial Center](http://www.pgc.umn.edu/)"
+UpdateFrequency: New DEM strips are added twice yearly.  Mosaic products are added as soon as they are available.
+Tags:
+  - elevation
+  - earth observation
+  - geospatial
+  - mapping
+  - open source software
+  - satellite imagery
+  - cog
+  - stac
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Along with [acknowledging PGC](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/), the REMA dataset should be cited as follows:
+DEM  Mosaics: Porter, C; Morin, P; Howat, I; Noh, MJ; Bates, B; Peterman, K; Keesey, S; Schlenk, M; Gardiner, J; Tomko, K; Willis, M; Kelleher, C; Cloutier, M; Husby, E; Foga, S; Nakamura, H; Platson, M; Wethington, M; Williamson, C; Bauer, G; Enos, J; Arnold, G; Kramer, W; Becker, P; Doshi, A; D'Souza, C; Cummens, P; Laurier, F; Bojesen, M, 2018, ArcticDEM, Version 3, [doi.org/10.7910/DVN/OHHUKH](https://doi.org/10.7910/DVN/OHHUKH), Harvard Dataverse, V1
+DEM Strips: Porter, C; Howat, I; Noh, MJ; Husby, E; Khuvis, S; Danish, E; Tomko, K; Gardiner, J; Negrete, A; Yadav, B; Klassen, J; Kelleher, C; Cloutier, M; Bakker, J; Enos, J; Arnold, G; Bauer, G; Morin, P, 2022, ArcticDEM - Strips, Version 4.1, [doi.org/10.7910/DVN/C98DVS](https://doi.org/10.7910/DVN/C98DVS), Harvard Dataverse, V1"
+Resources:
+  - Description: REMA DEM Mosaics
+    ARN: arn:aws:s3:::pgc-opendata-dems/rema/mosaics/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics)'
+  - Description: REMA DEM Strips
+    ARN: arn:aws:s3:::pgc-opendata-dems/rema/strips/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips)'
+DataAtWork:
+  Tools & Applications:
+    - Title: REMA Explorer
+      URL: https://rema.apps.pgc.umn.edu/
+      AuthorName: Polar Geospatial Center & ESRI
+  Publications:
+    - Title: "The Reference Elevation Model of Antarctica"
+      URL: https://doi.org/10.5194/tc-13-665-2019
+      AuthorName: Ian M. Howat, Claire Porter, Benjanim E. Smith, Myoung-Jong Noh, Paul Morin
+    - Title: "The surface extraction from TIN based search-space minimization (SETSM) algorithm"
+      URL: https://doi.org/10.1016/j.isprsjprs.2017.04.019
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Automated stereo-photogrammetric DEM generation at high latitudes: Surface Extraction with TIN-based Search-space Minimization (SETSM) validation and demonstration over glaciated regions"
+      URL: https://doi.org/10.1080/15481603.2015.1008621
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Automatic relative RPC image model bias compensation through hierarchical image matching for improving DEM quality"
+      URL: https://doi.org/10.1016/j.isprsjprs.2017.12.008
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Deep glacial troughs and stabilizing ridges unveiled beneath the margins of the Antarctic ice sheet"
+      URL: https://doi.org/10.1038/s41561-019-0510-8
+      AuthorName: Mathieu Morlighem, Eric Rignot, Tobias Binder, Donald Blankenship, Reinhard Drews, Graeme Eagles, Olaf Eisen, Fausto Ferraccioli, René Forsberg, Peter Fretwell, Vikram Goel, Jamin S. Greenbaum, Hilmar Gudmundsson, Jingxue Guo, Veit Helm, Coen Hofstede, Ian Howat, Angelika Humbert, Wilfried Jokat, Nanna B. Karlsson, Won Sang Lee, Kenichi Matsuoka, Romain Millan, Jeremie Mouginot, John Paden, Frank Pattyn, Jason Roberts, Sebastian Rosier, Antonia Ruppel, Helene Seroussi, Emma C. Smith, Daniel Steinhage, Bo Sun, Michiel R. van den Broeke, Tas D. van Ommen, Melchior van Wessem, Duncan A. Young
+
