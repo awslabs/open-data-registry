@@ -1,0 +1,48 @@
+Name: Maxar Open Data Program
+Description: |
+  Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, 
+  monitoring of staging areas and emergency response, damage assessment, and recovery. These images are generated
+  using the [Maxar ARD](https://ard.maxar.com/docs) pipeline, tiled on an organized grid in analysis-ready
+  cloud-optimized formats.
+
+Documentation: https://www.maxar.com/open-data
+Contact: https://www.maxar.com/open-data
+UpdateFrequency: New data is released in response to activations. Older data may be migrated to the ARD format as needed.
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - earth observation
+  - disaster response
+  - geospatial
+  - satellite imagery
+  - sustainability
+  - COG
+  - STAC
+  - ARCO
+License: Creative Commons Attribution Non Commercial 4.0
+ManagedBy: "[Maxar](https://www.maxar.com/)"
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::maxar-opendata
+    AccountRequired: no
+    Host: maxar-opendata
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - title: ARD Deliverables and File Structure
+      url: https://ard.maxar.com/docs/ard-order-delivery/about-ard-order-delivery/
+    - title: ARD and Command Line Tools
+      url: https://ard.maxar.com/docs/working-with-ard/command-line-tools/
+    - title: Data Access (SDK tutorial)
+      url: https://ard.maxar.com/docs/sdk/sdk/data-access/
+  Tools & Applications:
+    - title: Maxar ARD SDK (max-ard)
+      url: https://ard.maxar.com/docs/sdk/
+    - title: STAC Catalog (via STAC Index)
+      url: https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/
+    - title: STAC Catalog (via STAC Browser)
+      url: https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json
+  Publications:
