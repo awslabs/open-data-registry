@@ -4,7 +4,6 @@ Description: |
   monitoring of staging areas and emergency response, damage assessment, and recovery. These images are generated
   using the [Maxar ARD](https://ard.maxar.com/docs) pipeline, tiled on an organized grid in analysis-ready
   cloud-optimized formats.
-
 Documentation: https://www.maxar.com/open-data
 Contact: https://www.maxar.com/open-data
 UpdateFrequency: New data is released in response to activations. Older data may be migrated to the ARD format as needed.
@@ -18,9 +17,8 @@ Tags:
   - geospatial
   - satellite imagery
   - sustainability
-  - COG
-  - STAC
-  - ARCO
+  - cog
+  - stac
 License: Creative Commons Attribution Non Commercial 4.0
 ManagedBy: "[Maxar](https://www.maxar.com/)"
 Resources:
@@ -30,19 +28,33 @@ Resources:
     Host: maxar-opendata
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[STAC Catalog](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json)'
+    - '[STAC Browser](https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/)'
 DataAtWork:
   Tutorials:
-    - title: ARD Deliverables and File Structure
-      url: https://ard.maxar.com/docs/ard-order-delivery/about-ard-order-delivery/
-    - title: ARD and Command Line Tools
-      url: https://ard.maxar.com/docs/working-with-ard/command-line-tools/
-    - title: Data Access (SDK tutorial)
-      url: https://ard.maxar.com/docs/sdk/sdk/data-access/
+    - Title: ARD Deliverables and File Structure
+      URL: https://ard.maxar.com/docs/ard-order-delivery/about-ard-order-delivery/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: ARD and Command Line Tools
+      URL: https://ard.maxar.com/docs/working-with-ard/command-line-tools/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: Data Access (SDK tutorial)
+      URL: https://ard.maxar.com/docs/sdk/sdk/data-access/
   Tools & Applications:
-    - title: Maxar ARD SDK (max-ard)
-      url: https://ard.maxar.com/docs/sdk/
-    - title: STAC Catalog (via STAC Index)
-      url: https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/
-    - title: STAC Catalog (via STAC Browser)
-      url: https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json
+    - Title: Maxar ARD SDK (max-ard)
+      URL: https://ard.maxar.com/docs/sdk/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
   Publications:
+    - Title: Seeing a Better World from Space
+      URL: https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1124&context=purduegisday
+      AuthorName: Carly Sakumura
+    - Title: Using Data from Earth Observation to Support Sustainable Development Indicators: An Analysis of the Literature and Challenges for the Future 
+      URL: https://doi.org/10.3390/su14031191
+      AuthorName: Ana Andries, Stephen Morse, Richard J. Murphy, Jim Lynch, and Emma R. Woolliams
+    - Title: Disaster, Infrastructure and Participatory Knowledge The Planetary Response Network
+      URL: https://eprints.lancs.ac.uk/id/eprint/167032/1/Simmons_et_al_2022_CSTP_PRN_Paper_Special_Issue_Accepted_Version.pdf
+      AuthorName: Brooke Simmons, Chris Lintott, Steven Reece, et al.
