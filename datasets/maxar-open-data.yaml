@@ -24,10 +24,9 @@ ManagedBy: "[Maxar](https://www.maxar.com/)"
 Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::maxar-opendata
-    AccountRequired: no
-    Host: maxar-opendata
     Region: us-east-1
     Type: S3 Bucket
+    AccountRequired: no
     Explore:
     - '[STAC Catalog](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json)'
     - '[STAC Browser](https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/)'
@@ -41,7 +40,7 @@ DataAtWork:
       URL: https://ard.maxar.com/docs/working-with-ard/command-line-tools/
       AuthorName: Maxar Open Data
       AuthorURL: https://www.maxar.com/open-data
-    - Title: Data Access (SDK tutorial)
+    - Title: "Data Access (SDK tutorial)"
       URL: https://ard.maxar.com/docs/sdk/sdk/data-access/
   Tools & Applications:
     - Title: Maxar ARD SDK (max-ard)
