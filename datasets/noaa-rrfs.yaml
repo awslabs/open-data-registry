@@ -1,14 +1,14 @@
-Name: NOAA Rapid Refresh Forecast System (RRFS) Ensemble [Prototype]
+Name: NOAA Rapid Refresh Forecast System (RRFS) [Prototype]
 Description: |
   The Rapid Refresh Forecast System (RRFS) is the National Oceanic and Atmospheric Administration’s (NOAA) next generation convection-allowing, rapidly-updated ensemble prediction system, currently scheduled for operational implementation in 2024. The operational configuration will feature a 3 km grid covering North America and include deterministic forecasts every hour out to 18 hours, with deterministic and ensemble forecasts to 60 hours four times per day at 00, 06, 12, and 18 UTC.The RRFS will provide guidance to support forecast interests including, but not limited to, aviation, severe convective weather, renewable energy, heavy precipitation, and winter weather on timescales where rapidly-updated guidance is particularly useful.<br/><br/>
 
   The RRFS is underpinned by the [Unified Forecast System (UFS)](https://ufscommunity.org/), a community-based Earth modeling initiative, and benefits from collaborative development efforts across NOAA, academia, and research institutions.<br/><br/>
 
   This bucket provides access to real time, experimental RRFS prototype output as of October 2022. This bucket also holds output from past experimental RRFS prototypes that were evaluated as a part of NOAA testbed projects. The immediate section describes the data for the real time system. The section that follows thereafter describes outputs from three past NOAA Testbed experiments. <br/><br/>
-  
+  <hr/>
   Real time, experimental RRFS Prototype output  <br/><br/>
   
-  The real-time RRFS prototype is experimental and evolving. It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.
+  The real-time RRFS prototype is experimental and evolving. It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
 
   We currently provide hourly deterministic forecasts at 3 km grid spacing over the CONUS out to 60 hours at 00 and 12 UTC, and out to 18 hours at other times. Future enhancements will include an ensemble forecast component and expansion to the planned North American domain. All forecasts are initialized from a hybrid 3DEnVar data assimilation system with hourly updates.
 
@@ -20,7 +20,7 @@ Description: |
   Meaning that this is the pressure level post-processed gridded data.
 
   <br/><br/>
-    
+  <hr/>  
   Past output from NOAA Testbed Experiments  
   
   <br/><br/>
@@ -80,17 +80,19 @@ DataAtWork:
   Publications:
     - Title: "Community modeling framework underpinning the RRFS - The UFS Short Range Weather Application"
       URL: "https://github.com/ufs-community/ufs-srweather-app/"
-      AuthorName: UFS community
+      AuthorName: UFS Community
     - Title: "Status and Opportunities with the Rapid Refresh Forecast System"
       URL: "https://epic.noaa.gov/wp-content/uploads/2022/07/1.-SRW-Carley.pdf"
       AuthorName: Carley J. R. and C. R. Alexander     
     - Title: "A Limited Area Modeling Capability for the Finite-Volume Cubed-Sphere (FV3) Dynamical Core and Comparison With a Global Two-Way Nest"
       URL: "https://doi.org/10.1029/2021MS002483"
       AuthorName: Black, T. L., J. A. Abeles, B. T. Blake, D. Jovic, E. Rogers, X. Zhang, E. A. Aligo, L. C. Dawson, Y. Lin, E. Strobach, P. C. Shafran, and J. R. Carley
+    - Title: "Assessment of the data assimilation framework for the Rapid Refresh Forecast System v0.1 and impacts on forecasts of a convective storm case study"
+      URL: "hhttps://doi.org/10.5194/gmd-15-6891-2022"
+      AuthorName: Banos, I. H., W. D. Mayfield, G. Ge, L. F. Sapucci, J. R. Carley, and L. Nance
+    - Title: "Highlights from a Year of Continued Development of the Rapid Refresh Forecast System (RRFS)"
+      URL: "https://ams.confex.com/ams/102ANNUAL/meetingapp.cgi/Paper/391702"
+      AuthorName: Carley J. R. and C. R. Alexander
     - Title: "Prototype UFS-Based Rapid Refresh Forecast System (RRFS) on the Cloud"
       URL: "https://ams.confex.com/ams/101ANNUAL/meetingapp.cgi/Paper/381608"
       AuthorName: Holt, C., D. Abdi, J. A. Abeles, J. R. Carley, C. W. Harrop, R. Panda, S. Trahan, and C. R. Alexander
-    - Title: "Status of NOAA's Next Generation Convection-Allowing Ensemble: The Rapid Refresh Forecast System"
-      URL: "https://ams.confex.com/ams/101ANNUAL/meetingapp.cgi/Paper/378383"
-      AuthorName: Carley J.R., C.R. Alexander, J.K. Wolff, J. Beck, L. Wicker, E. Rogers, J.A Abeles, E. Aligo, J.A. Aravequia, B. Blake, L. Dawson, C.-H. Jeon, D. Jovic, T. Lei, J. Purser, M.E. Pyle, P. Shafran, R. Vasic, W.-S. Wu, Y. Wu, X. Zhang, D.T. Kleist, and J.-W. Bao
-   
