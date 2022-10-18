@@ -11,7 +11,12 @@ Documentation: Documentation is available under [support.capellaspace.com](https
 Contact: opendata@capellaspace.com
 ManagedBy: "[Capella Space](https://www.capellaspace.com/)"
 UpdateFrequency: New data is added quarterly.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
+  - aws-pds
   - cog
   - stac
   - earth observation
@@ -23,14 +28,19 @@ Tags:
 License: |
   [Capella EULA](https://www.capellaspace.com/wp-content/uploads/2021/09/EULA-Single-Org-Open-Data-License-Ver.-1.0-September-2021-Final.pdf)
 Resources:
-  - Description: Capella Open Data SLC, GEO, GEC, SICD scenes
+  - Description: Capella Space Open Data in COG format
     ARN: arn:aws:s3:::capella-open-data/data/
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
     Explore:
     - '[STAC Catalog](https://capella-open-data.s3.us-west-2.amazonaws.com/stac/catalog.json)'
-    - '[STAC browser](https://capella-open-data.s3.us-west-2.amazonaws.com/index.html)'
+    - '[STAC Browser](https://capella-open-data.s3.us-west-2.amazonaws.com/index.html)'
+  - Description: Capella Space Open Data in TileDB format
+    ARN: arn:aws:s3:::capella-open-data/data/tiledb/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
 DataAtWork:
   Tutorials:
     - Title: Scaling GEO Images in QGIS
@@ -50,3 +60,9 @@ DataAtWork:
     - Title: Radar Generalized Image Quality Equation Applied to Capella Open Dataset
       URL: https://ieeexplore.ieee.org/document/9764201/
       AuthorName: Wade Schwartzkopf, Jason Brown, Gordon Farquharson, Craig Stringham, Michael Duersch, Jordan Heemskerk
+    - Title: Analyzing LiDAR and SAR data with Capella Space and TileDB
+      URL: https://tiledb.com/blog/analyzing-lidar-and-sar-data-with-capella-space-and-tiledb
+      AuthorName: Stavros Papadopoulos
+    - Title: Open SAR data and scalable analytics
+      URL: https://medium.com/tiledb/open-sar-data-and-scalable-analytics-bfd1a5257e9
+      AuthorName: Norman Barker
