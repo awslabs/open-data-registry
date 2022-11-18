@@ -1,0 +1,51 @@
+Name: The MIT Supercloud Dataset
+Description: Collection of parsed datacenter logs and time series data of hardware utilization from the MIT Supercloud system. 
+Documentation: https://github.com/MIT-AI-Accelerator/datacenter-challenge
+Contact: mit-dcc@mit.edu
+ManagedBy: Siddharth Samsi
+UpdateFrequency: Data will be updated annually
+Tags:
+  - datacenter
+  - HPC
+  - cloud computing
+  - workload analysis
+  - energy
+  - aws-pds
+License: http://creativecommons.org/licenses/by-nc-nd/4.0/
+Citation: Samsi, Siddharth, Weiss, Matthew, Bestor, David, et al. "The MIT Supercloud Dataset." 2021 IEEE High Performance Extreme Computing Conference (HPEC). IEEE, 2021. 
+Resources:
+  - Description: The MIT Supercloud Dataset
+    ARN: arn:aws:s3:::mit-supercloud-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to the MIT Supercloud Dataset
+      URL: https://nbviewer.org/github/MIT-AI-Accelerator/MIT-Supercloud-Dataset/blob/main/notebooks/Intro-to-MIT-Supercloud-Dataset.ipynb
+      AuthorName: Matthew Weiss
+      NotebookURL: https://github.com/MIT-AI-Accelerator/MIT-Supercloud-Dataset/blob/main/notebooks/Intro-to-MIT-Supercloud-Dataset.ipynb
+      Services:
+        - SageMaker Studio Lab
+    - Title: Generating the labelled dataset
+      URL: https://nbviewer.org/github/MIT-AI-Accelerator/MIT-Supercloud-Dataset/blob/main/notebooks/Intro-to-MIT-Supercloud-Dataset.ipynb
+      NotebookURL: https://github.com/MIT-AI-Accelerator/MIT-Supercloud-Dataset/blob/main/notebooks/Intro-to-MIT-Supercloud-Dataset.ipynb
+      AuthorName: Matthew Weiss
+      AuthorURL: https://github.com/MIT-AI-Accelerator/workload-classification
+      Services:
+        - SageMaker Studio Lab
+  Tools & Applications:
+    - Title: The MIT Supercloud Workload Classification Challenge
+      URL: https://github.com/MIT-AI-Accelerator/workload-classification
+      AuthorName: Benny J. Tang, Qiqi Chen, Matthew L. Weiss, et. al.
+  Publications:
+    - Title: The MIT Supercloud Dataset
+      URL: https://arxiv.org/abs/2108.02037
+      AuthorName: Siddharth Samsi, Matthew Weiss, David Bestor, et. al.
+    - Title: "AI-Enabling Workloads on Large-Scale GPU-Accelerated System: Characterization, Opportunities, and Implications"
+      URL: https://doi.ieeecomputersociety.org/10.1109/HPCA53966.2022.00093
+      AuthorName: Baolin Li, Rohin Arora, Siddharth Samsi, et. al.
+      AuthorURL: https://github.com/boringlee24/HPCA22_SuperCloud
+    - Title: The MIT Supercloud Workload Classification Challenge
+      URL: https://arxiv.org/abs/2204.05839
+      AuthorName: Benny J. Tang, Qiqi Chen, Matthew L. Weiss, et. al.
+      AuthorURL: https://github.com/MIT-AI-Accelerator/workload-classification
