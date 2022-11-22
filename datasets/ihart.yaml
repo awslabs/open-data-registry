@@ -2,20 +2,44 @@ Name: iHART Whole Genome Sequencing Data Set
 Description: iHART is the [Hartwell Foundation](http://www.thehartwellfoundation.org/)’s Autism Research and Technology Initiative. This release contains whole genome data from over 1000 families with 2 or more children with autism, of which biomaterials were provided by the Autism Genetic Resource Exchange ([AGRE](http://research.agre.org/)).
 Documentation: http://www.ihart.org/data
 Contact: ihart2-org@stanford.edu
+ManagedBy: '[Stanford University](https://wall-lab.stanford.edu/projects/ihart/)'
 UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
 Tags:
  - aws-pds
  - autism spectrum disorder
+ - genetic
  - genomic
  - life sciences
  - whole genome sequencing
+ - bam
+ - vcf
 License: Data use is subject to the access and publication polices of the iHART. More information on terms of use is available at [iHART website](http://www.ihart.org/)
 Resources:
- - Description: BAM and VCF files from The iHART whole genome sequencing study.
+ - Description: BAM, gVCF, and VCF files from The iHART whole genome sequencing study, Phase I
    ARN: arn:aws:s3:::ihart-release
    Region: us-east-1
    Type: S3 Bucket
    ControlledAccess: http://www.ihart.org/access
+ - Description: BAM, gVCF, and VCF files from The iHART whole genome sequencing study, Phase II
+   ARN: arn:aws:s3:::ihart-main
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
+ - Description: Cram, gVCF, and VCF files from The iHART whole genome sequencing study, Phase I+II, GRCh38
+   ARN: arn:aws:s3:::ihart-hg38
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access
+ - Description: gVCF and VCF files from The iHART whole genome sequencing study, control data sets
+   ARN: arn:aws:s3:::ihart-psp
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access   
+ - Description: gVCF and VCF files from The iHART whole genome sequencing study, control data sets
+   ARN: arn:aws:s3:::ihart-brain
+   Region: us-east-1
+   Type: S3 Bucket
+   ControlledAccess: http://www.ihart.org/access   
 DataAtWork:
   Tutorials:
   Tools & Applications:

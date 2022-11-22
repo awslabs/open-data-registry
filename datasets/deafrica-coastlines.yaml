@@ -1,0 +1,77 @@
+Name: Digital Earth Africa Coastlines
+Description: |
+  Africa's long and dynamic coastline is subject to a wide range of pressures, including extreme weather and climate, sea level rise and human development. Understanding how the coastline responds to these pressures is crucial to managing this region, from social, environmental and economic perspectives.
+  The Digital Earth Africa Coastlines (provisional) is a continental dataset that includes annual shorelines and rates of coastal change along the entire African coastline from 2000 to the present.
+  The product combines satellite data from the Digital Earth Africa program with tidal modelling to map the typical location of the coastline at mean sea level for each year. The product enables trends of coastal erosion and growth to be examined annually at both a local and continental scale, and for patterns of coastal change to be mapped historically and updated regularly as data continues to be acquired. This allows current rates of coastal change to be compared with that observed in previous years or decades.
+  The ability to map shoreline positions for each year provides valuable insights into whether changes to the coastline are the result of particular events or actions, or a process of more gradual change over time. This information can enable scientists, managers and policy makers to assess impacts from the range of drivers impacting the coastlines and potentially assist planning and forecasting for future scenarios.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Coastlines_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: To be defined.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - earth observation
+  - geospatial
+  - satellite imagery
+  - sustainability
+  - deafrica
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: DE Africa Coastlines
+    ARN: arn:aws:s3:::deafrica-services/coastlines
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Monitoring coastal erosion along Africa’s coastline
+      URL: https://docs.digitalearthafrica.org/en/latest/sandbox/notebooks/Real_world_examples/Coastal_erosion.html
+      AuthorName: Digital Earth Africa Contributors  
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Web Feature Service"
+      URL: https://geoserver.digitalearth.africa/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Web Map Service"
+      URL: https://geoserver.digitalearth.africa/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: Introducing the Digital Earth Africa Coastlines Service 
+      URL: https://www.youtube.com/watch?v=k7S49TX7SHE
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Mapping Australia's dynamic coastline at mean sea level using three decades of Landsat imagery"
+      URL: https://doi.org/10.1016/j.rse.2021.112734
+      AuthorName: Robbi Bishop-Taylor, Rachel Nanson, Stephen Sagar, Leo Lymburner
+    - Title: "Monitoring coastal erosion at Saly Portudal resort, Mbour-Senegal"
+      URL: https://www.digitalearthafrica.org/media-center/blog/monitoring-coastal-erosion-saly-portudal-resort-mbour-senegal
+      AuthorName: Ndeye Fatou SANE, Lissong DIOP, Mamadou Lamine NDIAYE, Amadou SALL, Dr. Moussa SALL
+      

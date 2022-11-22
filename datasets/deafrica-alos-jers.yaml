@@ -18,7 +18,9 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
+  - sustainability
   - disaster response
+  - synthetic aperture radar
   - deafrica
   - stac
   - cog
@@ -31,13 +33,13 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac)'
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/alos_palsar_mosaic)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
     ARN: arn:aws:s3:::deafrica-input-datasets-inventory
     Region: af-south-1
     Type: S3 Bucket
   - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent contain all object creation events.
-    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-topic
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-input-datasets-topic
     Region: af-south-1
     Type: SNS Topic
 DataAtWork:
@@ -62,7 +64,7 @@ DataAtWork:
       URL: https://sandbox.digitalearth.africa/
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Notebook Repo"
-      URL: https://github.com/digitalearthafrica
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Geoportal"
       URL: https://www.africageoportal.com/pages/digital-earth-africa
