@@ -9,21 +9,18 @@ Tags:
   - encyclopedic
   - natural language processing
   - internet
-License: This data is available for anyone to use subject to rules and regulations of USA.
+License:  Creative Commons license
 Resources:
   - Description: Common Screens (jpeg and csv format)
     ARN: arn:aws:s3:::common-screens
     Region: us-west-2
     Type: S3 Bucket
-    AccountRequired: True
+  - Description: Cloudfront CDN distribution for hotlinking screenshots
+    Host: dqh5x5k6xg3n1.cloudfront.net
+    Region: us-west-2
+    Type: CloudFront Distribution    
 DataAtWork:
   Tutorials:
-    - Title: Example Search Engine
-      URL: https://front-page.com
-      AuthorName: Common Screens
-    - Title: Similar Site Finder
-      URL: https://similarsite.org
-      AuthorName: Common Screens
     - Title: IAB Text Classification
       URL: https://commonscreens.com/?page_id=2512
       AuthorName: Common Screens
