@@ -40,7 +40,8 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs)'
+    - '[Earth Search STAC L2A Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a)'
+    - '[STAC Browser L2A Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l2a)' 
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-cogs-inventory
     Region: us-west-2
@@ -106,3 +107,6 @@ DataAtWork:
       URL: https://github.com/e-sensing/sits
       AuthorName: "e-Sensing"
       AuthorURL: http://www.esensing.org/
+    - Title: FilmDrop Demo
+      URL: https://console.demo.filmdrop.io/
+      AuthorName: Element 84
