@@ -42,6 +42,16 @@ Tags:
   - satellite imagery
 License: There are no restrictions on the use of this data.
 Resources:
+  - Description: GOES-18 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes18
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
+    Region: us-east-1
+    Type: SNS Topic
   - Description: GOES-16 imagery and metadata
     ARN: arn:aws:s3:::noaa-goes16
     Region: us-east-1
@@ -60,16 +70,6 @@ Resources:
     - '[Browse Bucket](https://noaa-goes17.s3.amazonaws.com/index.html)'
   - Description: New data notifications for GOES-17, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: GOES-18 imagery and metadata
-    ARN: arn:aws:s3:::noaa-goes18
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
