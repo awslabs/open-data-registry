@@ -4,6 +4,10 @@ Documentation: https://dataverse.unc.edu/dataverse/cmascenter
 Contact: cmas@unc.edu
 ManagedBy: "[CMAS CENTER](https://cmascenter.org/)"
 UpdateFrequency: New data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
 Tags:
   - aws-pds
   - air quality
@@ -32,6 +36,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)'
+  - Description: CMAQ Data
+    ARN: arn:aws:s3:::cmas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html)'
   - Description: EQUATES EPA’s Air QUAlity TimE Series Project Data
     ARN: arn:aws:s3:::cmas-equates
     Region: us-east-1
