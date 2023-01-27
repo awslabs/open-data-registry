@@ -1,0 +1,22 @@
+Name: Sentinel Near Real-time Canada Mirror
+Description: "The official Government of Canada 🍁 mirror for Sentinel-1,2,3 data under the EU's Copernicus programme focused on Canada-wide coverage. Additional Sentinel-2 and Sentinel-6 products over Canada are retrieved from [EUMETSAT](https://eoportal.eumetsat.int/cas/login)"
+Documentation: https://sentinel.esa.int/web/sentinel/home
+Contact: eodms-sgdot@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
+UpdateFrequency: Sentinel-1 is a near real-time (NRT) dataset retrieved from ESA's [collaborative hubs](https://colhub.copernicus.eu/), not the open hub. Other sensors are updated as quickly as possible based on Canada coverage availability at the source.
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - sustainability
+  - disaster response
+  - synthetic aperture radar
+  - stac
+License: Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+Resources:
+  - Description: Sentinel data in an S3 bucket broken down by sensor, product type and date.
+    ARN: arn:aws:s3:::sentinel-products-ca-mirror
+    Region: ca-central-1
+    Type: S3 Bucket
