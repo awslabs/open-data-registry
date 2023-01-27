@@ -5,6 +5,7 @@ Contact: eodms-sgdot@nrcan-rncan.gc.ca
 ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
 UpdateFrequency: Sentinel-1 is a near real-time (NRT) dataset retrieved from ESA's [collaborative hubs](https://colhub.copernicus.eu/), not the open hub. Other sensors are updated as quickly as possible based on Canada coverage availability at the source.
 Tags:
+  - aws-pds
   - agriculture
   - earth observation
   - satellite imagery
@@ -19,5 +20,3 @@ Resources:
     ARN: arn:aws:s3:::sentinel-products-ca-mirror
     Region: ca-central-1
     Type: S3 Bucket
-    Explore:
-    - '[EODMS STAC for Sentinel Collections](https://eodms-sgdot.nrcan-rncan.gc.ca/stac/collections)'
