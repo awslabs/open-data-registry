@@ -4,6 +4,10 @@ Documentation: https://dataverse.unc.edu/dataverse/cmascenter
 Contact: cmas@unc.edu
 ManagedBy: "[CMAS CENTER](https://cmascenter.org/)"
 UpdateFrequency: New data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
 Tags:
   - aws-pds
   - air quality
@@ -62,6 +66,12 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2016.s3.amazonaws.com/index.html)'
+  - Description: CMAQ 2018 Modeling Platform
+    ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: Documentation for CMAQ on AWS ParallelCluster
