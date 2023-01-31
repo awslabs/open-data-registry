@@ -1,0 +1,57 @@
+Name: NOAA - hourly position, current, and sea surface temperature from drifters
+Description: This dataset includes *hourly* sea surface temperature and current data collected by satellite-tracked surface drifting buoys ("drifters") of the [NOAA Global Drifter Program](https://www.aoml.noaa.gov/phod/gdp). The [Drifter Data Assembly Center (DAC) at NOAA’s Atlantic Oceanographic and Meteorological Laboratory (AOML)](https://www.aoml.noaa.gov/phod/gdp/data.php) has applied quality control procedures and processing to edit these observational data and obtain estimates at regular hourly intervals. The data include positions (latitude and longitude), sea surface temperatures (total, diurnal, and non-diurnal components) and velocities (eastward, northward) with accompanying uncertainty estimates. Metadata include identification numbers, experiment number, start location and time, end location and time, drogue loss date, death code, manufacturer, and drifter type.
+  <br />
+  <br />
+  Please note that data from the Global Drifter Program are also available at [6-hourly intervals](https://doi.org/10.25921/7ntx-z961) but derived via alternative methods. The 6-hourly dataset goes back further in time (1979) and may be more appropriate for studies of long-term, low frequency patterns of the oceanic circulation. Yet, the 6-hourly dataset does not resolve fully high-frequency processes such as tides and inertial oscillations as well as sea surface temperature diurnal variability.
+  <br />
+  <br />
+  [CITING NOAA - hourly position, current, and sea surface temperature from drifters data. Citation for this dataset should include the following information below.]
+  <br />
+  Elipot, Shane; Sykulski, Adam; Lumpkin, Rick; Centurioni, Luca; Pazos, Mayra (2022). Hourly location, current velocity, and temperature collected from Global Drifter Program drifters world-wide. [indicate subset used]. NOAA National Centers for Environmental Information. Dataset. https://doi.org/10.25921/x46c-3620.
+Documentation: https://www.aoml.noaa.gov/phod/gdp/hourly_data.php
+Contact: |
+  Please direct scientific inquiries to Dr. Rick Lumpkin (Rick.Lumpkin@noaa.gov) and Dr. Luca Centurioni (lcenturioni@ucsd.edu). Inquiries about the dataset itself may be directed to Dr. Shane Elipot (selipot@miami.edu).
+  <br />
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> 
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: New data is added as soon as it's available.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+  - oceans
+  - environmental
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Hourly position, current, and sea surface temperature data from drifters
+    ARN: arn:aws:s3:::noaa-oar-hourly-gdp-pds 
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-oar-hourly-gdp-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Hourly position, current, and sea surface temperature data from drifters, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewHourlyGDPObject
+    Region: us-east-1
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: Working with GDP hourly data using python and xarray, a CloudDrift notebook 
+      URL: https://github.com/Cloud-Drift/gdp-get-started
+      AuthorName: Shane Elipot
+      AuthorURL: https://people.miami.edu/profile/2c5f7c9fe748639bf50c85194ee4b558
+  Publications:
+    - Title: A global surface drifter dataset at hourly resolution (2016)
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016JC011716
+      AuthorName: Elipot, S., R. Lumpkin, R. C. Perez, J. M. Lilly, J. J. Early, and A. M. Sykulski
+    - Title: A Dataset of Hourly Sea Surface Temperature From Drifting Buoys (2022)
+      URL: https://www.nature.com/articles/s41597-022-01670-2
+      AuthorName: Elipot, S., A. Sykulski, R. Lumpkin, L. Centurioni, and M. Pazos
