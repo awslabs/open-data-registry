@@ -1,10 +1,10 @@
 Name: NASA / USGS Uncontrolled HiRISE RDRs
 Description: |
-    These uncontrolled High Resolution Imaging Science Experiment (HiRISE) Reduced Data Record (RDR) observations of Mars are produced from the Planetary Data System (PDS) HiRISE RDRs generated and released by the HiRISE team. These RDRs have been converted to 32-bit Cloud Optimized GeoTiffs (COGs) to be analysis ready and cloud streamable. Data were processed from the 16-bit PDS stored RDRs and are released with lossy LERC compression. The compression error is under the calibration accuracy of the HiRISE processing pipeline. Therefore, these 32-bit COGs are effectively lossless. Data are released using simple cylindrical (planetocentric positive East, center longitude 180, 0-360 longitude domain) or a pole centered polar stereographic projection. Data are projected to the appropriate IAU WKT2 represented projection. Each observation includes a provenance.txt file describing all processing done to the PDS released RDR.
+    These uncontrolled High Resolution Imaging Science Experiment (HiRISE) Reduced Data Record (RDR) observations of Mars are produced from the Planetary Data System (PDS) HiRISE RDRs generated and released by the HiRISE team. The original derived map projected RDRs have been converted to 32-bit Cloud Optimized GeoTiffs (COGs) to be analysis ready and cloud streamable. Data were processed from the 16-bit PDS stored RDRs and are released with lossy Limited Error Raster Compression (LERC) compression. The LERC compression rate was set such that the original precision (calibration accuracy) of HiRISE images were maintained. Therefore, these 32-bit COGs are effectively lossless. Data are released using simple cylindrical (planetocentric positive East, center longitude 180, 0-360 longitude domain) or a pole centered polar stereographic projection. Data are projected to the appropriate IAU Well-known Text v2 (WKT2) represented projection. Each observation includes a provenance.txt file describing all processing done to the PDS released RDR.
 Documentation: https://stac.astrogeology.usgs.gov/docs/data/mars/hirise
 Contact: https://answers.usgs.gov/
 ManagedBy: "[NASA](https://www.nasa.gov)"
-UpdateFrequency: HiRISE data updated as new releases are made to the Planetary Data System.
+UpdateFrequency: HiRISE data will be updated as new releases are made to the Planetary Data System.
 Tags:
   - aws-pds
   - planetary
