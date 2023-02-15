@@ -7,6 +7,13 @@ Description: |
     γ0 = 10*log10(DN2) - 83.0 dB
     CARD4L stands for CEOS Analysis Ready Data for Land (Level 2.2) data are ortho-rectified and radiometrically terrain-corrected.
     This dataset is compatible with the [Committee on Earth Observation (CEOS)](https://ceos.org/) [Analysis Ready Data for LAND (CARD4L)](https://ceos.org/ard/files/PFS/NRB/v5.5/CARD4L-PFS_NRB_v5.5.pdf) standard.
+    
+    In addition to the Scansar CARD4L L2.2 dataset, we have provided 2022 & 2023 PALSAR-2 ScanSAR L1.1 and L2.1 data for regions in Turkey and 
+    Syria impacted by the magnitude 7.8 and 7.5 earthquakes that occurred on February 6, 2023. L1.1 is range and single look azimuth compressed data represented by complex I and Q channels to preserve the magnitude and phase 
+    information. Range coordinate is in slant range. In the case of ScanSAR mode, an image file is generated per each scan. Level 2.1 data is 
+    orthorectified from level 1.1 data by using digital elevation model. Pixel spacing is selectable depending on observation modes. Image 
+    coordinate in map projection is geocoded.
+    
 Documentation: https://www.eorc.jaxa.jp/ALOS/en/dataset/palsar2_l22_e.htm
 Contact: aproject@jaxa.jp
 ManagedBy: "[JAXA](https://www.jaxa.jp/)"
@@ -35,7 +42,13 @@ Resources:
     ARN: arn:aws:s3:::jaxaalos2/palsar2/L2.2/Africa/
     Region: us-west-2
     Type: S3 Bucket
-    RequesterPays: False
+    RequesterPays: False   
+Resources:
+  - Description: PALSAR-2 ScanSAR L1.1 & L2.2
+    ARN: arn:aws:s3:::jaxaalos2/palsar2-scansar/Turkey-Syria-earthquake/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False    
 DataAtWork:
   Tutorials:
   Tools & Applications:
