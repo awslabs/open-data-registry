@@ -1,0 +1,34 @@
+Name: "Multi Token Completion"
+Description: |
+  This dataset provides masked sentences and multi-token phrases that were masked-out of these sentences.
+  We offer 3 datasets: a general purpose dataset extracted from the Wikipedia and Books corpora, and 2 additional datasets extracted from pubmed abstracts.
+  As for the pubmed data, please be aware that the dataset does not reflect the most current/accurate data available from NLM (it is not being updated).
+  For these datasets, the columns provided for each datapoint are as follows:
+  text- the original sentence
+  span- the span (phrase) which is masked out
+  span_lower- the lowercase version of span
+  range- the range in the text string which will be masked out (this is important because span might appear more than once in text)
+  freq- the corpus  frequency of span_lower
+  masked_text- the masked version of text, span is replaced with [MASK]
+  Additinaly, we provide a small (3K) dataset with human annotations.
+Documentation: https://multi-token-completion.s3.amazonaws.com/README.txt
+Contact: guyk@amazon.com, orenk@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not currently being updated
+Tags:
+  - amazon.science
+  - natural language processing
+  - machine learning
+License: |
+  Datasets are published under [CC-NC-SA-3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
+  Human evaluation is published under [CC-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Resources:
+  - Description: multi-token-completion Datasets
+    ARN: arn:aws:s3:::multi-token-completion
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "Simple and Effective Multi-Token Completion from Masked Language Models"
+      AuthorName: Oren Kalinsky, Guy Kushilevitz, Alex Libov & Yoav Goldberg
+      URL: https://2023.eacl.org/
