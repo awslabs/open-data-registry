@@ -1,5 +1,7 @@
 Name: NOAA Joint Polar Satellite System (JPSS) 
-Description: Satellites in the JPSS constellation gather global measurements of atmospheric, terrestrial and oceanic conditions, including sea and land surface temperatures, vegetation, clouds, rainfall, snow and ice cover, fire locations and smoke plumes, atmospheric temperature, water vapor and ozone. JPSS delivers key observations for the Nation's essential products and services, including forecasting severe weather like hurricanes, tornadoes and blizzards days in advance, and assessing environmental hazards such as droughts, forest fires, poor air quality and harmful coastal waters. Further, JPSS will provide continuity of critical, global observations of Earth’s atmosphere, oceans and land through 2038. The data will be available from 2012-01-19 to present. 
+Description: **Near Real Time JPSS data is now flowing! See bucket information on the right side of this page to access products!**
+
+  <br /> Satellites in the JPSS constellation gather global measurements of atmospheric, terrestrial and oceanic conditions, including sea and land surface temperatures, vegetation, clouds, rainfall, snow and ice cover, fire locations and smoke plumes, atmospheric temperature, water vapor and ozone. JPSS delivers key observations for the Nation's essential products and services, including forecasting severe weather like hurricanes, tornadoes and blizzards days in advance, and assessing environmental hazards such as droughts, forest fires, poor air quality and harmful coastal waters. Further, JPSS will provide continuity of critical, global observations of Earth’s atmosphere, oceans and land through 2038. The data will be available from 2012-01-19 to present. 
 Documentation: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/JPSS
 Contact: For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
   <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
@@ -19,7 +21,37 @@ Tags:
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: NOAA JPSS Data
+  - Description: NOAA JPSS NOAA-20 Data
+    ARN: arn:aws:s3:::noaa-nesdis-n20-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nesdis-n20-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for JPSS data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNOAA20Object
+    Region: us-east-1
+    Type: SNS Topic  
+   - Description: NOAA JPSS NOAA-21 Data
+    ARN: arn:aws:s3:::noaa-nesdis-n21-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nesdis-n21-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for JPSS data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNOAA21Object
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: NOAA JPSS SNPP (Suomi NPP) Data
+    ARN: arn:aws:s3:::noaa-nesdis-snpp-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nesdis-snpp-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for JPSS data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewSNPPObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: NOAA JPSS Development Data
     ARN: arn:aws:s3:::noaa-jpss
     Region: us-east-1
     Type: S3 Bucket
