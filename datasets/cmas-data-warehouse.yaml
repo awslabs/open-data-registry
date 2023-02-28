@@ -30,18 +30,6 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
-  - Description: EQUATES CONUS-1 Benchmark Data with MCIP data compressed using nc4 compression
-    ARN: arn:aws:s3:::cmas-equates-conus1-benchmark
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://cmas-equates-conus1-benchmark.s3.amazonaws.com/index.html)'
-  - Description: AMET Data
-    ARN: arn:aws:s3:::cmas-amet
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore: 
-    - '[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)'
   - Description: CMAQ Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
@@ -54,12 +42,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
-  - Description: MCIP Input and Output Data
-    ARN: arn:aws:s3:::cmas-mcip
+  - Description: CMAQ 2018 Modeling Platform
+    ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
     Region: us-east-1
     Type: S3 Bucket
-    Explore: 
-    - '[Browse Bucket](https://cmas-mcip.s3.amazonaws.com/index.html)'
+    Explore:
+    - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
   - Description: 2016v3 Modeling Platform
     ARN: arn:aws:s3:::2016v3platform
     Region: us-east-1
@@ -72,18 +60,6 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-smoke-modeling-platform-2016.s3.amazonaws.com/index.html)'
-  - Description: CMAQ 2016 Modeling Platform
-    ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2016
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2016.s3.amazonaws.com/index.html)'
-  - Description: CMAQ 2018 Modeling Platform
-    ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: Documentation for CMAQ on AWS ParallelCluster
