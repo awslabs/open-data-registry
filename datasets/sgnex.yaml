@@ -13,6 +13,7 @@ Tags:
   - short read sequencing
   - bioinformatics
   - fast5
+  - blow5
   - fasta
   - fastq
   - bam
@@ -25,6 +26,12 @@ Resources:
     Type: S3 Bucket 
     Explore: 
     - '[Browse Bucket](http://sg-nex-data.s3-website-ap-southeast-1.amazonaws.com/)'
+  - Description: Nanopore long read RNA Seq data from the Singapore Nanopore Expression Project (SG-NEx). The data includes raw signal data (blow5), converted from raw signal data (fast5).
+    ARN: arn:aws:s3:::sg-nex-data-blow5
+    Region: ap-southeast-1
+    Type: S3 Bucket 
+    Explore: 
+    - '[Browse Bucket](http://sg-nex-data-blow5.s3-website-ap-southeast-1.amazonaws.com/)'
 DataAtWork:
   Tutorials: 
     - Title: Accessing the SG-NEx dataset on AWS
@@ -39,6 +46,9 @@ DataAtWork:
     - Title: RNA modification analysis tutorial with m6Anet
       URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_m6Anet_tutorial.md
       AuthorName: Yu Song Chuah 
+    - Title: Directly basecalling from signal data in S/Blow5 format
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_blow5_tutorial.md
+      AuthorName: Hasindu : 
   Tools & Applications:
     - Title: "xPore: Identification of differential RNA modification from direct RNA-Seq data"
       URL: https://github.com/GoekeLab/xpore
