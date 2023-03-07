@@ -23,13 +23,13 @@ Tags:
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: NOAA WAM-IP Products
+  - Description: NOAA WAM-IPE Products
     ARN: arn:aws:s3:::noaa-nws-wam-ipe-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nws-wam-ipe-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for NOAA WAM-IP Products, only Lambda and SQS protocols allowed
+  - Description: New data notifications for NOAA WAM-IPE Products, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:709902155096:NewWIFSObject
     Region: us-east-1
     Type: SNS Topic
