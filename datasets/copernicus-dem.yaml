@@ -2,7 +2,7 @@ Name: Copernicus Digital Elevation Model (DEM)
 Description: |
   The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs and comes from Copernicus DEM 2021 release.
 Documentation: https://copernicus-dem-30m.s3.amazonaws.com/readme.html
-Contact: https://forum.sentinel-hub.com/
+Contact: https://forum.sentinel-hub.com/c/aws-copdem/28
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: None, except GLO-30 Public can be updated if the public tile list changes.
 Collabs:
@@ -27,6 +27,14 @@ Resources:
     Type: S3 Bucket
   - Description: GLO-90 in S3 bucket.
     ARN: arn:aws:s3:::copernicus-dem-90m
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: STAC for GLO-30 Public in S3 bucket.
+    ARN: arn:aws:s3:::copernicus-dem-30m-stac
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: STAC for GLO-90 in S3 bucket.
+    ARN: arn:aws:s3:::copernicus-dem-90m-stac
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:
