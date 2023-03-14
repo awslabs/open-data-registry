@@ -14,7 +14,8 @@ Description: |
     information is also included, providing timestamps about when and where all
     archived source code artifacts have been observed in the wild.
 Documentation: https://docs.softwareheritage.org/devel/swh-dataset/graph/athena.html
-Contact: swh-devel@inria.fr
+Contact: aws@softwareheritage.org
+ManagedBy: Software Heritage
 UpdateFrequency: Data is updated yearly
 Tags:
   - aws-pds
@@ -33,6 +34,10 @@ License: |
 Resources:
   - Description: Software Heritage Graph Dataset
     ARN: arn:aws:s3:::softwareheritage
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files"
+    ARN: arn:aws:s3:::softwareheritage-inventory
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:

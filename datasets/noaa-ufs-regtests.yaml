@@ -1,0 +1,38 @@
+Name: NOAA Unified Forecast System Weather Model (UFS-WM) Regression Tests
+Description: The Unified Forecast System (UFS) is a community-based, coupled, comprehensive Earth Modeling System. The ufs-weather-model (UFS-WM) is the model source    of the UFS for NOAA’s operational numerical weather prediction applications. The UFS-WM Regression Test (RT) is the testing software to ensure that previously developed and tested capabilities in UFS-WM still work after code changes are integrated into the system. It is required that UFS-WM RTs are performed successfully on the required Tier-1 platforms whenever code changes are made to the UFS-WM.  The results of the UFS-WM RTs are summarized in log files and these files will be committed to the UFS-WM repository along with the code changes. Currently, the UFS-WM RTs have been developed to support several applications targeted for operational implementations including the global weather forecast, subseasonal to seasonal forecasts, hurricane forecast, regional rapid refresh forecast, and ocean analysis. 
+  <br/>
+  <br/>
+  At this time, there are 123 regression tests to support the UFS applications. The tests are evolving along with the development merged to the UFS-WM  code repository. The regression test framework has been developed in the UFS-WM to run these tests on tier-1 supported systems. Each of the regression tests require a set of input data files and configuration files. The configuration files include namelist and model configuration files residing within the UFS-WM code repository. The input data includes initial conditions, climatology data, and fixed data sets such as orographic data and grid specification data. In addition, the regression test framework maintains baseline data created from certain revisions of the UFS-WM code repository. When code changes are not expected to alter baseline results, regression tests will be performed against current baseline and as a result, the regression test log files are created – revealing a summary of no change within the results. If the code changes are expected to alter model results, impact to the regression tests will be specified in the pull request. The code changes and model results will be reviewed and confirmed. Once the model results are confirmed,  a new baseline will be generated. In some cases, new input data will need to be added or old data will need to be replaced, these data will be put in the input data location with proper timestamp, and regression tests will be performed with the updated data sets.
+  <br/>
+  <br/>
+  The regression test framework serves as a test system to maintain the functionalities in the UFS-WM. The input data and the baselines need to be maintained and updated during the code integration to support the regression tests.
+Documentation: https://ufs-weather-model.readthedocs.io/en/ufs-v1.0.0/index.html
+Contact: |
+  For questions regarding data content or quality, visit  https://github.com/ufs-community/ufs-weather-model/issues
+  <br/>
+  <br/>
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: The input and baseline datasets are updated for the latest two-months of development code commits/revisions made to the UFS-WM’s development branch.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: "The UFS-WM has license page at: https://github.com/ufs-community/ufs-weather-model/blob/develop/LICENSE.md"
+Resources:
+  - Description: Unified Forecast System Weather Model (UFS-WM) Regression Tests data
+    ARN: arn:aws:s3:::noaa-ufs-regtests-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-ufs-regtests-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Weather Model Regression data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewUFSObject
+    Region: us-east-1
+    Type: SNS Topic

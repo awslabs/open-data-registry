@@ -1,0 +1,24 @@
+Name: Homeland Security and Infrastructure US Cities
+Description: The U.S. Cities elevation data collection program supported the US Department of Homeland Security Homeland Security and Infrastructure Program (HSIP). As part of the HSIP Program, there were 133+ U.S. cities that had imagery and LiDAR collected to provide the Homeland Security, Homeland Defense, and Emergency Preparedness, Response and Recovery (EPR&R) community with common operational, geospatially enabled baseline data needed to analyze threat, support critical infrastructure protection and expedite readiness, response and recovery in the event of a man-made or natural disaster. As a part of that, for some time, recurring LiDAR data was also being collected by a joint agreement of NGA and other federal agencies and the HIFLDS Working Group. The publicly released data excluded US Military Installation coverage, but it is provided in as is. These collects were acquired by contract using commercial collection companies. Some metadata information about the collection can be found at USGS at https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/Non_Standard_Contributed/NGA_US_Cities/Topeka_KS/NGA%20133%20US%20Cities%20Data%20Disclaimer%20and%20Explanation%20Readme.pdf
+Documentation: https://github.com/hobuinc/hsip-lidar
+Contact: https://github.com/hobuinc/hsip-lidar
+ManagedBy: "[Hobu, Inc.](https://hobu.co)"
+UpdateFrequency: Periodically
+Collabs:
+  ASDI:
+    Tags:
+      - infrastructure
+Tags:
+  - aws-pds
+  - elevation
+  - disaster response
+  - geospatial
+  - lidar
+License: US Government Public Domain https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map
+Resources:
+  - Description: A [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) Bucket of HSIP data including building footprints, LiDAR, ortho imagery, and vegetation delination.
+    ARN: arn:aws:s3:::usgs-lidar-uscities
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+

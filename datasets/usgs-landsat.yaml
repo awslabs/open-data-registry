@@ -18,7 +18,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - stac
   - cog
@@ -33,13 +32,17 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
     Explore:
-    - '[STAC Catalog](https://landsatlook.usgs.gov/sat-api/collections)'
+    - '[STAC Catalog](https://landsatlook.usgs.gov/stac-server/collections)'
   - Description: New scene notifications
     ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify
     Region: us-west-2
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: "How to Work with Landsat and Sentinel-2 on AWS with Python"
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com/
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
       URL: https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971
       AuthorName: Planet
@@ -69,12 +72,11 @@ DataAtWork:
       AuthorURL: https://www.usgs.gov
     - Title: Cloud Segmentation in Landsat-8 Images
       URL: https://medium.com/sentinel-hub/clouds-segmentation-in-landsat-8-images-da370815235
-      AuthorName: Ingrid Grenet      
+      AuthorName: Ingrid Grenet
+    - Title: Creating a STAC of Landsat data
+      URL: https://pystac.readthedocs.io/en/stable/tutorials/creating-a-landsat-stac.html
+      AuthorName: PySTAC Contributors
   Tools & Applications:
-    - Title: landsatlive.live
-      URL: https://landsatlive.live
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
@@ -113,6 +115,10 @@ DataAtWork:
       AuthorURL: http://www.sinergise.com/
     - Title: Sentinel Playground for Landsat
       URL: https://apps.sentinel-hub.com/sentinel-playground/?source=L8
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
       AuthorName: Sinergise
       AuthorURL: http://www.sinergise.com/
     - Title: Dynamic map tiling with Cloud-Optimized GeoTIFFs

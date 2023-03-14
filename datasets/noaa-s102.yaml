@@ -1,0 +1,31 @@
+Name: NOAA S-102 Bathymetric Surface Data
+Description: S-102 is a data and metadata encoding specification that is part of the [S-100 Universal Hydrographic Data Model](https://iho.int/en/s100-project), an international standard for hydrographic data exchange. This collection of data contains bathymetric surfaces from [NOAA/NOS/OCS National Bathymetric Source](https://nauticalcharts.noaa.gov/updates/building-the-national-bathymetry/), for various U.S. coastal and offshore waters and the great lakes. These datasets are encoded as HDF5 files conforming to the S-102 specification.
+Documentation: https://noaa-s102-pds.s3.amazonaws.com/README.html
+Contact: For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Irregular, updated when new data is available.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - bathymetry
+  - marine navigation
+  - hydrography
+  - oceans
+  - seafloor
+  - water
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA S-102 Bathymetric Surface Datasets
+    ARN: arn:aws:s3:::noaa-s102-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-s102-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA S-102 Bathymetric Surface New Object Notification
+    ARN: arn:aws:sns:us-east-1:123901341784:NewS102Object
+    Region: us-east-1
+    Type: SNS Topic

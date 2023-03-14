@@ -18,7 +18,6 @@ Tags:
   - environmental
   - geospatial
   - meteorological
-  - sustainability
 License:  Creative Commons Attribution 3.0 United States License
 Resources:
   - Description: 'NREL Wind Resource Datasets'
@@ -93,6 +92,18 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=kazakhstan%2F)'
+  - Description: Maine wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/maine/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=maine%2F)'
+  - Description: Gulf of Mexico wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/gulf_of_mexico/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=gulf_of_mexico%2F)'
   - Description: Philippines wind resource data (2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
     ARN: arn:aws:s3:::nrel-pds-wtk/philippines/
     Region: us-west-2
@@ -147,6 +158,30 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=philippines_tmy%2F)'
+  - Description: Great Lakes wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/Great_Lakes/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Great_Lakes%2F)'
+  - Description: Puerto Rico wind resource data (2001-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/pr100/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=pr100%2F)'
+  - Description: Southeast Asia wind resource data (2017-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind%2F)'
+  - Description: Southeast Asia wind resource data v2 (2007-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind_v2/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind_v2%2F)'
 DataAtWork:
   Tutorials:
     - Title: HSDS Examples

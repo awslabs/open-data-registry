@@ -1,5 +1,5 @@
 Name: Earth Observation Data Cubes for Brazil
-Description: "Earth observation (EO) data cubes produced from analysis-ready data (ARD) of CBERS-4, Sentinel-2 and Landsat-8 satellite images for the entire region of Brazil. Based on a hierarchical tiling system, the data cubes are regular in time, created by using a temporal compositing function to select the best pixel (free of cloud and cloud shadow) in each period (e.g. a month or 16 days). These EO data cubes are created by the Brazil Data Cube project developed by the Brazilian National Institute for Space Research (INPE)."
+Description: "Earth observation (EO) data cubes produced from analysis-ready data (ARD) of CBERS-4, Sentinel-2 A/B and Landsat-8 satellite images for Brazil. The datacubes are regular in time and use a hierarchical tiling system. Further details are described in [Ferreira et al. (2020)](https://www.mdpi.com/2072-4292/12/24/4033)."
 Documentation: http://brazildatacube.org/en/home-page-2/
 Contact: brazildatacube@inpe.br
 ManagedBy: "[INPE - Brazil Data Cube](http://brazildatacube.org/)"
@@ -10,11 +10,16 @@ Tags:
   - geoscience
   - geospatial
   - image processing
-  - machine learning
   - open source software
   - cog
   - stac
-License: "The EO data cubes are produced from free and open images of Landsat-8, Sentinel-2 and CBERS-4 satellites. Terms and Conditions for the use and distribution of [Landsat Data](https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf), Terms and Conditions for the use and distribution of [Sentinel Data](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/TC_Sentinel_Data_31072014.pdf) Terms and Conditions for the use and distribution of [CBERS data](http://mtc-m16c.sid.inpe.br/col/dpi.inpe.br/banon/2006/08.03.19.25/doc/appl_07_2004.pdf)"
+  - aws-pds
+License:  |
+  The EO data cubes are produced from free and open images of CBERS-4, Landsat-8 and Sentinel-2 satellites. Data usage is subject to Terms and Conditions for the use and distribution of [Landsat data](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con), Legal Notice on the use and distribution of [Sentinel-2 data](https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice/) and License for use and distribution of [CBERS data](https://creativecommons.org/licenses/by-sa/3.0/). When using data produced by the Brazil Data Cube, please acknowledge the work of the Brazilian National Institute for Space Research (INPE) in producing such data.
+  CBERS-4 image courtesy of the National Institute for Space Research (INPE).
+  Landsat-8 image courtesy of the U.S. Geological Survey.
+  Sentinel-2 (ESA) image courtesy of the Copernicus SciHub.
+  Sentinel-2 Cloud-Optimized GeoTIFFs data 2017-2018, was accessed on June/2021 from https://registry.opendata.aws/sentinel-2-l2a-cogs.
 Resources:
   - Description: Earth Observation Data Cubes for Brazil - Sentinel 2A/2B
     ARN: arn:aws:s3:::bdc-sentinel-2
@@ -64,3 +69,6 @@ DataAtWork:
     - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
       URL: https://ieeexplore.ieee.org/abstract/document/9165649
       AuthorName: K. R. Ferreira, et al.
+    - Title: Building Earth Observation Data Cubes on AWS
+      URL: https://www.proquest.com/openview/070d2a753cc88d26535c98293171a5ac/1?
+      AuthorName: Ferreira, K R; Queiroz, G R; Marujo, R F B; Costa, R W.  

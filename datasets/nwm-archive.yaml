@@ -47,7 +47,6 @@ Tags:
   - disaster response
   - agriculture
   - transportation
-  - sustainability
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
   - Description: The complete archive of NWM input forcing and model output data version 2.1 in NetCDF format.
@@ -63,11 +62,11 @@ Resources:
     Explore:
     - '[Browse Bucket](https://noaa-nwm-retro-v2-zarr-pds.s3.amazonaws.com/index.html)'    
   - Description: The complete archive of NWM data version 2.0.
-    ARN: arn:aws:s3:::noaa-nwm-retro-v2.0-pds
+    ARN: arn:aws:s3:::noaa-nwm-retro-v2-0-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/index.html)'
+    - '[Browse Bucket](https://noaa-nwm-retro-v2-0-pds.s3.amazonaws.com/index.html)'
   - Description: The streamflow from the NWM version 2.0 in Zarr format.
     ARN: arn:aws:s3:::noaa-nwm-retro-v2-zarr-pds
     Region: us-west-2
@@ -96,5 +95,8 @@ DataAtWork:
       AuthorURL: https://github.com/jmccreight
   Publications:
     - Title: "Simulating storm surge and compound flooding events with a creek-to-ocean model: Importance of baroclinic effects"
-      URL: "https://doi.org/10.1016/j.ocemod.2019.101526"
+      URL: https://doi.org/10.1016/j.ocemod.2019.101526
       AuthorName: Fei Ye, et al.
+    - Title: On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process
+      URL: https://doi.org/10.31223/X5BH0P
+      AuthorName: Jonathan M. Frame, Frederik Kratzert, Hoshin V. Gupta, Paul Ullrich and Grey S. Nearing

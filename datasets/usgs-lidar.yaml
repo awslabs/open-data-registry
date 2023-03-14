@@ -1,5 +1,5 @@
 Name: USGS 3DEP LiDAR Point Clouds
-Description: The goal of the [USGS 3D Elevation Program ](https://www.usgs.gov/core-science-systems/ngp/3dep) (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) format, which a lossless, full-density, streamable octree based on [LASzip](https://laszip.org) (LAZ) encoding. The second resource is a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) of the same data in LAZ (Compressed LAS) format. Resource names in both buckets correspond to the USGS project names.
+Description: The goal of the [USGS 3D Elevation Program ](https://www.usgs.gov/core-science-systems/ngp/3dep) (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) format, which a lossless, full-density, streamable octree based on [LASzip](https://laszip.org) (LAZ) encoding. The second resource is a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) of the original, Raw LAZ (Compressed LAS) 1.4 3DEP format, and more complete in coverage, as sources with incomplete or missing CRS, will not have an ETP tile generated.  Resource names in both buckets correspond to the USGS project names.
 Documentation: https://github.com/hobu/usgs-lidar/
 Contact: https://github.com/hobu/usgs-lidar
 ManagedBy: "[Hobu, Inc.](https://hobu.co)"
@@ -15,7 +15,6 @@ Tags:
   - disaster response
   - geospatial
   - lidar
-  - sustainability
   - stac
 License: US Government Public Domain https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map
 Resources:
@@ -65,3 +64,6 @@ DataAtWork:
       URL: https://www.usgs.gov/news/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset
       AuthorName: Department of the Interior, U.S. Geological Survey
       AuthorURL: https://www.usgs.gov
+    - Title: Statewide USGS 3DEP Lidar Topographic Differencing Applied to Indiana, USA 
+      URL: https://www.mdpi.com/2072-4292/14/4/847/htm
+      AuthorName: Chelsea Phipps Scott, Matthew Beckley, Minh Phan, Emily Zawacki, Christopher Crosby, Viswanath Nandigam, and Ramon Arrowsmith

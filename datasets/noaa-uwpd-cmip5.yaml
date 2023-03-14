@@ -1,0 +1,72 @@
+Name: Coupled Model Intercomparison Project Phase 5 (CMIP5) University of Wisconsin-Madison Probabilistic Downscaling Dataset
+Description: |
+  The University of Wisconsin Probabilistic Downscaling (UWPD) is a statistically downscaled dataset based on the Coupled Model Intercomparison Project Phase 5 (CMIP5) climate models. UWPD consists of three variables, daily precipitation and maximum and minimum temperature. The spatial resolution is 0.1<span>&#176;</span>x0.1<span>&#176;</span> degree resolution for the United States and southern Canada east of the Rocky Mountains.
+  <br/>
+  <br/>
+  The downscaling methodology is not deterministic. Instead, to properly capture unexplained variability and extreme events, the methodology predicts a spatially and temporally varying Probability Density Function (PDF) for each variable. Statistics such as the mean, mean PDF and annual maximum statistics can be calculated directly from the daily PDF and these statistics are included in the dataset. In addition, “standard”, “raw” data is created by randomly sampling from the PDFs to create a “realization” of the local scale given the large-scale from the climate model. There are 3 realizations for temperature and 14 realizations for precipitation.
+  <br/>
+  <br/>
+  The directory structure of the data is as follows
+  <br/>
+  <code>[cmip_version]/[scenario]/[climate_model]/[ensemble_member]/</code>
+  <br/>
+  The realizations are as follows
+  <br/>
+  <code>prcp_[realization_number]_[year].nc</code>
+  <code>temp_[realization_number]_[year].nc</code>
+  <br/>
+  The time mean files averaged over certain year bounds are as follows
+  <br/>
+  <code>prcp_mean_[year_bound_1]_[year_bound_2].nc</code>
+  <code>temp_mean_[year_bound_1]_[year_bound_2].nc</code>
+  <br/>
+  The time-mean Cumulative Distribution Function (CDF) files are as follows
+  <br/>
+  <code>prcp_cdf_[year_bound_1]_[year_bound_2].nc</code>
+  <code>temp_cdf_[year_bound_1]_[year_bound_2].nc</code>
+  <br/>
+  The CDF of the annual maximum precipitation is given for each year in the record
+  <code>prcp_annual_max_cdf_[start_year_of_scenario]_[end_year_of_scenario].nc</code>
+  <br />
+Documentation: http://djlorenz.github.io/downscaling2/main.html
+Contact: |
+  For questions about data development, quality and content, please contact Dr. David Lorenz at david.lorenz@wisc.edu.
+  <br />
+  For general questions or feedback about the data and its usage, please submit the inquiries to Hydrometeorological Design Study Center at hdsc.questions@noaa.gov. 
+  <br />
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Periodically, as new data becomes available or when corrections are implemented.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - disaster response
+  - environmental
+  - meteorological
+  - sustainability
+  - oceans
+  - water
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Data files
+    ARN: arn:aws:s3:::noaa-nws-uwpd-cmip5-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-uwpd-cmip5-pds.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Publications:
+    - Title: "Assessment Report: Analysis of Impact of Nonstationary Climate on NOAA Atlas 14 Estimates"
+      URL: https://hdsc.nws.noaa.gov/hdsc/files25/NA14_Assessment_report_202201v1.pdf
+      AuthorName: NOAA
+
+
+

@@ -3,7 +3,7 @@ Description: ChEMBL is a manually curated database of bioactive molecules with d
 Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
 Contact: https://github.com/aws-samples/data-lake-as-code/issues
 ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
-UpdateFrequency: Under 2 months after a new ChEMBL release.
+UpdateFrequency: Upon request. We try to keep it updated to every odd version.
 Tags:  
   - chemistry
   - genomic
@@ -13,6 +13,10 @@ Tags:
   - parquet
 License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
 Resources: 
+  - Description: ChEMBL 29
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_29/
+    Region: us-east-1
+    Type: S3 Bucket
   - Description: ChEMBL 27
     ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_27/
     Region: us-east-1

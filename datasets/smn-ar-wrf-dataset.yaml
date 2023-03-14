@@ -1,0 +1,37 @@
+Name: "SMN Hi-Res Weather Forecast over Argentina"
+Description: |
+  The Servicio Meteorológico Nacional de Argentina (SMN-Arg), the National Meteorological Service of Argentina, shares its deterministic forecasts generated with WRF 4.0 (Weather and Research Forecasting) initialized at 00 and 12 UTC every day.
+  <br/>
+  <br/>
+  This forecast includes some key hourly surface variables –2 m temperature, 2 m relative humidity, 10 m wind magnitude and direction, and precipitation–, along with other daily variables, minimum and maximum temperature.
+  <br/>
+  <br/>
+  The forecast covers Argentina, Chile, Uruguay, Paraguay and parts of Bolivia and Brazil  in a Lambert conformal projection, with 4 km horizontal resolution. The maximum lead time is 72 hours. 
+  <br/>
+  <br/>
+  Forecasts are initialized with the NCEP-NOAA Global Forecast Systems analysis and forecasts ([GFS](https://www.ncei.noaa.gov/products/weather-climate-models/global-forecast)).
+Documentation: |
+  General information, tutorials and examples:
+  <br/>
+  [https://odp-aws-smn.github.io/documentation_wrf_det](https://odp-aws-smn.github.io/documentation_wrf_det)
+Contact: For any questions regarding the data set or any general questions, you can contact us atl odp-aws@smn.gov.ar. We also would like to know how this data is being used in order to improve our available products.
+ManagedBy: "[SMN](http://www.smn.gov.ar/)"
+UpdateFrequency: New data is added as soon as it's available. Two forecast cycles a day initialized at 00 UTC and 12 UTC.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - earth observation
+  - natural resource
+  - weather
+  - meteorological
+License: "[Creative Commons Attribution 2.5 Argentina License](https://creativecommons.org/licenses/by/2.5/ar)"
+Resources:
+  - Description: WRF SMN data
+    ARN: arn:aws:s3:::smn-ar-wrf
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+    - "[Browse Bucket](https://smn-ar-wrf.s3.amazonaws.com/index.html)"
