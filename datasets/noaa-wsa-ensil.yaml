@@ -1,4 +1,4 @@
-Name: NOAA Wang Sheeley Arge (WSA) Ensil
+Name: NOAA Wang Sheeley Arge (WSA) Enlil
 Description: The WSA-Enlil heliospheric model provides critical information regarding the propagation of solar Coronal Mass Ejections (CMEs) and transient structures within the heliosphere. Two distinct models comprise the WSA-Enlil modeling system; 1) the Wang-Sheeley-Arge (WSA) semi-empirical solar coronal model, and 2) the Enlil magnetohydrodynamic (MHD) heliospheric model. MHD modeling of the full domain (solar photosphere to Earth) is extremely computationally demanding due to the large parameter space and resulting characteristic speeds within the system. To reduce the computational burden and improve the timeliness (and hence the utility in forecasting space weather disturbances) of model results, the domain of the MHD model (Enlil) is limited from 21.5 Solar Radii (R_s) to just beyond the orbit of Earth, while the inner portion, spanning from the solar photosphere to 21.5R_s, is characterized by the WSA model. This coupled modeling system is driven by solar synoptic maps composed of numerous magnetogram observations from the National Solar Observatory’s (NSO) Global Oscillation Network Group (GONG). Such maps provide a full surface description of solar photospheric magnetic flux density, while not accounting for the evolution of surface features for regions outside the view of the observatories.
   <br/>
   <br/>
@@ -25,13 +25,13 @@ Tags:
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: NOAA WSA-Ensil Products
-    ARN: arn:aws:s3:::noaa-wsa-ensil-pds
+  - Description: NOAA WSA-Enlil Products
+    ARN: arn:aws:s3:::noaa-wsa-enlil-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://noaa-wsa-ensil-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for NOAA WSA-Ensil Products, only Lambda and SQS protocols allowed
+    - '[Browse Bucket](https://noaa-wsa-enlil-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOAA WSA-Enlil Products, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:709902155096:NewSWPCWSAEnlilObject
     Region: us-east-1
     Type: SNS Topic
