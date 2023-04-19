@@ -1,0 +1,33 @@
+Name: "Pit30M: A Benchmark for Global Localization in the Age of Self-driving Cars"
+Description: |
+  The Pit30M dataset is a large-scale multi-sensor dataset with localization ground truth. The dataset spans over a year of driving in Pittsburgh, PA, USA, comprising over 1,000 trips, 25,000 km, and 1,500 hours driven under different times of day, seasons, and diverse weather conditions. Moreover, we provide accurate ground truth poses (under 10 cm of error) for all our data. With over 30 million images and LiDAR sweeps, our dataset is one to two orders of magnitude larger than the biggest publicly-available dataset for this task. We also provide metadata such as time of day, weather, and approximate occlusion by leveraging image and LiDAR segmentation, which allow us to formally quantify the diversity in our dataset and understand localization errors.
+  <br/>
+  This dataset was presented at the International Conference on Intelligent Robots and Systems 2020, in a paper authored by Julieta Martinez, Sasha Doubov, Jack Fan, Ioan Andrei Bârsan, Shenlong Wang, Gellért Máttyus, Raquel Urtasun. This work was nominated as a Finalist for Best Application Paper at the conference.
+Documentation: https://github.com/pit30m/pit30m
+Contact: pit30m@gmail.com
+ManagedBy: "Andrei Bârsan (University of Toronto)"
+UpdateFrequency: n/A
+Tags:
+  - autonomous vehicles
+  - robotics
+  - computer vision
+  - lidar
+  - large-scale
+  - neural rendering
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC 4.0)
+Resources:
+  - Description: The Pit30M dataset
+    ARN: arn:aws:s3:::pit30m
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to Visualizing Sensor Types (Jupyter notebook)
+      URL: https://studiolab.sagemaker.aws/import/github/pit30m/pit30m/blob/main/examples/tutorial_00_introduction.ipynb
+      AuthorName: Andrei Bârsan
+      Services:
+        - SageMaker Studio Lab
+  Publications:
+    - Title: "Pit30M: A benchmark for global localization in the age of self-driving cars"
+      URL: https://arxiv.org/abs/2012.12437
+      AuthorName: J Martinez, S Doubov, J Fan, IA Barsan, S Wang, G Mattyus, R Urtasun
