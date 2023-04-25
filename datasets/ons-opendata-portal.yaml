@@ -1,0 +1,26 @@
+Name: ONS Open Data Portal
+Description: The ONS Open Data Portal gathers historical data from the Brazilian electricity sector in an easy and democratic way with main objective is to facilitate and improve the access and consumption of this type of content by all its users and audiences. The Portal gathers consolidated data on energy generation (hydraulic, thermal, solar and wind), areas of country and international energy exchange, and energy load. Information about equipment such as transmission line, generating unit, converters and others; and hydrological data obtained from reservoirs and hydrographic basins in Brazil. 
+Documentation: https://dados.ons.org.br/dataset/
+Contact: dadosabertos@ons.org.br
+ManagedBy: "[ONS - National Electric System Operator](https://www.ons.org.br/)"
+UpdateFrequency: diary
+Citation: Portuguese
+Tags:  
+    - electricity
+    - hydrography
+    - energy
+License: CC-BY 4.0
+Resources:  
+  - Description: Basic network transformation capacity
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-transformacao)'    
+  - Description: Installed generation capacity
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-geracao)'        
+ 
