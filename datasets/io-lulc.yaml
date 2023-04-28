@@ -1,0 +1,66 @@
+Name: 10m Annual Land Use Land Cover (9-class)
+Description: |
+  This dataset, produced by Impact Observatory, Microsoft, and Esri, displays a global map of land use/land cover (LULC)
+  derived from ESA Sentinel-2 imagery at 10m resolution for the years
+  2017 - 2022. Each year is generated from Impact Observatory’s deep
+  learning AI land classification model using a massive training
+  dataset of billions of human-labeled image pixels. The global maps
+  were produced by applying this model to every Sentinel-2 scene,
+  processing over 2,000,000 satellite Earth observations. Leaders in governments, 
+  NGOs, finance and industry need trustworthy,
+  actionable information about the changing world to understand opportunities,
+  identify threats, and measure the impacts of actions. Many of the most useful
+  applications of LULC maps require the ability to measure changes in land use
+  and land cover over time. With a time-series of LULC maps, monitoring of
+  deforestation, urban expansion, agricultural land conversion, and surface
+  water scarcity all become possible. The algorithm generates LULC predictions
+  for 9 classes globally. These classifications include Built, Crops, Trees,
+  Water, Rangeland, Flooded Vegetation, Snow/Ice, Bare Ground, and Clouds. 
+
+Documentation: https://www.impactobservatory.com/global_maps
+Contact: hello@impactobservatory.com
+ManagedBy: "[Impact Observatory](https://www.impactobservatory.com/)"
+UpdateFrequency: Annually, each January
+Tags:
+  - aws-pds
+  - earth observation
+  - environmental
+  - geospatial
+  - satellite imagery
+  - sustainability
+  - stac
+  - cog
+  - land cover
+  - land use
+  - machine learning
+  - mapping
+  - planetary
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: 10m Annual Land Use Land Cover (9-class)
+    ARN: arn:aws:s3:::io-10m-annual-lulc
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/)'
+DataAtWork:
+  Tools & Applications:
+    - Title: View the dataset on UN Biodiversity Lab Map Viewer
+      URL: https://map.unbiodiversitylab.org/earth?basemap=grayscale&coordinates=20,0,2&layers=10m-annual-land-use-land-cover-9-class-01_100
+      AuthorName: United Nations Development Programme
+  Publications:
+    - Title: Global land use / land cover with Sentinel 2 and deep learning
+      URL: https://ieeexplore.ieee.org/document/9553499  
+      AuthorName: K. Karra, C. Kontgis, Z. Statman-Weil, J. C. Mazzariello, M. Mathis and S. P. Brumby
+    - Title: Mapping the world with unmatched frequency
+      URL: https://medium.com/impactobservatoryinc/mapping-the-world-with-unmatched-frequency-54a83527f138
+      AuthorName: Mark Hannel
+    - Title: '‘Very Dire’: Devastated by Floods, Pakistan Faces Looming Food Crisis'
+      URL: https://www.nytimes.com/2022/09/11/world/asia/pakistan-floods-food-crisis.html
+      AuthorName: New York Times
+    - Title: These maps from satellite data show how much Earth has changed in only five years
+      URL: https://www.fastcompany.com/90729824/these-maps-from-satellite-data-show-how-much-earth-has-changed-in-only-five-years
+      AuthorName: Fast Company
+    - Title: The world's most populated and greenest megacities (and how we found out)
+      URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/worlds-greenest-megacities/
+      AuthorName: Esri

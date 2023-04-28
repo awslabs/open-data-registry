@@ -22,7 +22,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - stac
 License: |
@@ -34,7 +33,9 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
     Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l1c)'
+    - '[Earth Search STAC L1C Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[Earth Search STAC Browser L1C Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[STAC V1.0.0 endpoint](https://sentinel-s2-l1c-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
@@ -43,19 +44,19 @@ Resources:
     ARN: arn:aws:s3:::sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-    Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a)'
     RequesterPays: True
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://sentinel-s2-l2a-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Zipped archives for each product with 3 day retention period, in Requester Pays bucket
+  - Description: Zipped archives for each L1C product with 3 day retention period, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c-zips
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
-  - Description: Zipped archives for each product with 3 day retention period, in Requester Pays bucket
+  - Description: Zipped archives for each L2A product with 3 day retention period, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l2a-zips
     Region: eu-central-1
     Type: S3 Bucket
