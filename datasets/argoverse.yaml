@@ -1,0 +1,60 @@
+Name: Argoverse
+Description: |
+  Home of the Argoverse datasets.
+
+  Public datasets supported by detailed maps to test, experiment, and teach self-driving vehicles how to understand the world around them.
+
+  This bucket includes the following datasets:
+
+  1. Argoverse 1 (AV1)
+    - Motion Forecasting
+    - Tracking
+  2. Argoverse 2 (AV2)
+    - Motion Forecasting
+    - Lidar
+    - Sensor
+  3. Trust, but Verify (TbV)
+    - Map Change Detection
+
+Documentation: https://argoverse.github.io/user-guide/
+Contact: https://github.com/argoverse/av2-api/issues
+ManagedBy: "[Argoverse](https://argoverse.org)"
+UpdateFrequency: Infrequently
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - computer vision
+  - lidar
+  - robotics
+  - geospatial
+License: "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)"
+Resources:
+  - Description: Argoverse
+    ARN: arn:aws:s3:::argoverse
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Argoverse 2 API
+      URL: https://github.com/argoverse/av2-api
+      AuthorName: Argoverse Authors
+      AuthorURL: https://github.com/argoverse
+  Tools & Applications:
+    - Title: "PyPi package for `av2`"
+      URL: https://pypi.org/project/av2/
+      AuthorName: Argoverse Authors
+      AuthorURL: https://github.com/argoverse
+    - Title: "conda-forge package for `av2`"
+      URL: https://anaconda.org/conda-forge/av2
+      AuthorName: Argoverse Authors
+      AuthorURL: https://github.com/argoverse
+  Publications:
+    - Title: "Argoverse: 3D Tracking and Forecasting With Rich Maps"
+      URL: https://arxiv.org/abs/2301.00493
+      AuthorName: Ming-Fang Chang, John Lambert, Patsorn Sangkloy, Jagjeet Singh, Slawomir Bak, Andrew Hartnett, De Wang, Peter Carr, Simon Lucey, Deva Ramanan, James Hays
+    - Title: "Argoverse 2: Next Generation Datasets for Self-Driving Perception and Forecasting"
+      URL: https://arxiv.org/abs/2301.00493
+      AuthorName: Benjamin Wilson, William Qi, Tanmay Agarwal, John Lambert, Jagjeet Singh, Siddhesh Khandelwal, Bowen Pan, Ratnesh Kumar, Andrew Hartnett, Jhony Kaesemodel Pontes, Deva Ramanan, Peter Carr, James Hays
+    - Title: "Trust, but Verify: Cross-Modality Fusion for HD Map Change Detection"
+      URL: https://arxiv.org/abs/2212.07312
+      AuthorName: John Lambert, James Hays

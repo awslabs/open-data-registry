@@ -1,0 +1,42 @@
+Name: PALSAR-2 ScanSAR Turkey & Syria Earthquake (L2.1 & L1.1)
+Description: |
+    JAXA has responded to the Earthquake events in Turkey and Syria by conducting emergency disaster observations and providing data as requested by the Disaster and Emergency Management Authority (AFAD), Ministry of Interior in Turkey, through Sentinel Asia and the International Disaster Charter. Additional information on the event and dataset can be found [here](https://earth.jaxa.jp/en/earthview/2023/02/14/7381/index.html). The 25 m PALSAR-2 ScanSAR is normalized backscatter data of PALSAR-2 broad area observation mode with observation width of 350 km. Polarization data are stored as 16-bit digital numbers (DN). The DN values can be converted to gamma naught values in decibel unit (dB) using the following equation: γ0 = 10*log10(DN2) - 83.0 dB. Included in this dataset are ALOS PALSAR Level 1.1 and 2.1 data. Level 1.1 is range and single look azimuth compressed data represented by complex I and Q channels to preserve the magnitude and phase information. Range coordinate is in slant range. In the case of ScanSAR mode, an image file is generated per each scan. Level 2.1 data is orthorectified from level 1.1 data by using digital elevation model. Pixel spacing is selectable depending on observation modes. Image coordinate in map projection is geocoded.
+Documentation: https://www.eorc.jaxa.jp/ALOS/en/dataset/alos_open_and_free_e.htm, https://www.eorc.jaxa.jp/ALOS/en/dataset/palsar2_l22_e.htm
+Contact: aproject@jaxa.jp
+ManagedBy: "[JAXA](https://www.jaxa.jp/)"
+UpdateFrequency: As available. 
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - disaster response
+  - synthetic aperture radar
+  - deafrica
+  - stac
+  - cog
+License: Data is available for free under the [terms of use](https://earth.jaxa.jp/policy/en.html).
+Resources:
+  - Description: PALSAR-2 ScanSAR L1.1 & L2.2
+    ARN: arn:aws:s3:::jaxaalos2/palsar2-scansar/Turkey-Syria-earthquake/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False    
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: "ALOS series Open and Free Data"
+      URL: https://www.eorc.jaxa.jp/ALOS/en/dataset/alos_open_and_free_e.htm
+      AuthorName: JAXA EORC
+    - Title: "ALOS-2 observations of earthquakes in southeastern Turkey in 2023"
+      URL: https://earth.jaxa.jp/en/earthview/2023/02/14/7381/index.html
+      AuthorName: JAXA EORC
+

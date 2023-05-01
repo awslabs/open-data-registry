@@ -2,11 +2,11 @@ Name: 10m Annual Land Use Land Cover (9-class)
 Description: |
   This dataset, produced by Impact Observatory, Microsoft, and Esri, displays a global map of land use/land cover (LULC)
   derived from ESA Sentinel-2 imagery at 10m resolution for the years
-  2017 - 2021. Each year is generated from Impact Observatory’s deep
+  2017 - 2022. Each year is generated from Impact Observatory’s deep
   learning AI land classification model using a massive training
   dataset of billions of human-labeled image pixels. The global maps
   were produced by applying this model to every Sentinel-2 scene,
-  processing over 400,000 Earth observations per year. Leaders in governments, 
+  processing over 2,000,000 satellite Earth observations. Leaders in governments, 
   NGOs, finance and industry need trustworthy,
   actionable information about the changing world to understand opportunities,
   identify threats, and measure the impacts of actions. Many of the most useful
@@ -41,6 +41,8 @@ Resources:
     ARN: arn:aws:s3:::io-10m-annual-lulc
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/)'
 DataAtWork:
   Tools & Applications:
     - Title: View the dataset on UN Biodiversity Lab Map Viewer

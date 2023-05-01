@@ -1,0 +1,40 @@
+Name: HYbrid Coordinate Ocean Model Global Ocean Forecast System Reanalysis 
+Description: "Global Ocean Forecasting System (GOFS) 3.1 output on the GLBv0.08 grid. The resolution is 0.08° resolution between 40°S and 40°N, 0.04° poleward of these latitudes. The temportal frequenct is 3 hourly. This data was created by the Naval Research Laboratory: Ocean Dynamics and Prediction Branch."
+Documentation: https://www.hycom.org/dataserver/gofs-3pt1/reanalysis
+Contact: help@hycom.org
+ManagedBy: "[COAPS](https://www.coaps.fsu.edu/)"
+UpdateFrequency: "Static Dataset Covering 1994-01-01 to 2015-12-31"
+Tags:
+  - aws-pds
+  - global
+  - oceans
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: "GOFS 3.1: 41-layer HYCOM + NCODA Global 1/12° Reanalysis"
+    ARN: arn:aws:s3:::hycom-gofs-3pt1-reanalysis
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: HYCOM-examples repository
+      URL: https://github.com/HYCOM/HYCOM-examples
+      AuthorName: Dr. Alexandra Bozec
+      AuthorURL: https://www.coaps.fsu.edu/alexandra-bozec
+  Tools & Applications:
+    - Title: HYCOM-tools repository
+      URL: https://github.com/HYCOM/HYCOM-tools
+      AuthorName: Dr. Alan Wallcraft
+      AuthorURL: https://www.coaps.fsu.edu/alan-wallcraft
+  Publications:
+    - Title: "GOFS 3.1 Validation Test Report"
+      URL: https://www7320.nrlssc.navy.mil/pubs/2017/metzger-2017.pdf
+      AuthorName: E. Joseph Metzger, Naval Research Laboratory
+    - Title: "Validation Test Report for the Improved Synthetic Ocean Profile (ISOP) System, Part I: Synthetic Profile Methods and Algorithm"
+      URL: https://apps.dtic.mil/sti/pdfs/ADA585251.pdf
+      AuthorName: NAVAL RESEARCH LAB STENNIS DETACHMENT STENNIS SPACE CENTER MS OCEANOGRAPHY DIV
+    - Title: "Variational Data Assimilation for the Global Ocean"
+      URL: https://doi.org/10.1007/978-3-642-35088-7_13
+      AuthorName: James A. Cummings, Ole Martin Smedstad
+    - Title: "Operational multivariate ocean data assimilation"
+      URL: https://doi.org/10.1256/qj.05.105
+      AuthorName: James A. Cummings
