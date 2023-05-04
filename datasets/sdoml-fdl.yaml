@@ -1,0 +1,51 @@
+Name: Solar Dynamics Observatory (SDO) Machine Learning Dataset
+Description: We present a curated dataset from the NASA Solar Dynamics Observatory (SDO) mission in a format suitable for machine learning (ML) research. Beginning from level 1 scientific products, we have preprocessed this data by down-sampling AIA and HMI images from 4096 × 4096 to 512 × 512 pixels, removed QUALITY ne 0 observations, corrected for instrumental degradation over time, and applied exposure corrections. We also have ensured that both AIA and HMI data are spatially colocated, have identical angular resolutions, and that all instruments are chronosynchronous. The v1 version of the dataset is available in both .npz and .mm format and the v2 version is based on the v1 version, but converted to a cloud friendly Zarr format with full FITS header/keyword information. In addition, the degradation correction has been updated using latest calibration (v9). We anticipate this curated dataset will facilitate machine learning research in heliophysics and the physical sciences generally, increasing the scientific return of the SDO mission. This work is a deliverable of the 2018 NASA Frontier Development Lab program and also supported by SpaceML.org. Data from 2010-2018 are available for SDOMLv1 and data from 2010-2020 are available for SDOMLv2.
+Documentation: https://github.com/SDOML/sdoml.github.io
+Contact: Meng Jin (jinmeng@lmsal.com) and Paul Wright (paul@pauljwright.co.uk) 
+ManagedBy: "[NASA](http://www.nasa.gov/)"
+UpdateFrequency: N/A (The IDL/Python scripts for generating the datasets are published online, which can be used by users to generate the v1 dataset after 2018 and v2 dataset after 2020)
+Tags:
+  -aws-pds
+  -machine learning
+  -NASA SMD AI
+License: There are no restrictions on the use of this data.
+Citation:
+Resources:
+  - Description: The v1 dataset includes AIA observations 2010-2018 and v2 includes AIA observations 2010-2020 in all 10 wavebands (94A, 131A, 171A, 193A, 211A, 304A, 335A, 1600A, 1700A, 4500A), with 512x512 resolution and 6 minutes cadence; HMI vector magnetic field observations 2010-2018 in Bx, By, and Bz components, with 512x512 resolution and 12 minutes cadence; The EVE observations in 39 wavelengths from 2010-05-01 to 2014-05-26, with 10 seconds cadence.
+    ARN: arn:aws:s3::: gov-nasa-hdrl-data1/contrib    
+    Region:
+    Type: S3 bucket
+    Explore:
+DataAtWork:
+  Tutorials: 
+    - Title: SDOMLv2 Github
+      URL: https://github.com/spaceml-org/helionb-sdoml/tree/main/notebooks/01_sdoml_dataset_2018
+      NotebookURL:
+      AuthorName:
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title: Scripts for generating the SDOMLv1 dataset
+      URL:https://github.com/SDOML/SDOML
+      AuthorName:
+      AuthorURL:
+    - Title: Scripts for generating the SDOMLv2 dataset
+      URL:https://github.com/SDOML/SDOMLv2
+      AuthorName:
+      AuthorURL: 
+    - Title: ML applications based on the SDOMLv1 dataset
+      URL: https://gitlab.com/frontierdevelopmentlab/living-with-our-star/expanding-sdo-capabilities
+      AuthorName:
+      AuthorURL:
+    - Title: ML applications based on the SDOMLv2 dataset
+      URL: https://github.com/spaceml-org/helionb-sdoml
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title: A Machine-learning Data Set Prepared from the NASA Solar Dynamics Observatory Mission
+      URL: http://adsabs.harvard.edu/abs/2019ApJS..242....7G
+      AuthorName: Galvez, Richard search by orcid ; Fouhey, David F. search by orcid ; Jin, Meng search by orcid ; Szenicer, Alexandre; et al
+      AuthorURL:
+DeprecatedNotice:
+ADXCategories:
+  -    
