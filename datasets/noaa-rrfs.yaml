@@ -13,14 +13,20 @@ Description: |
   
   The real-time RRFS prototype is experimental and evolving. It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
 
-  We currently provide hourly deterministic forecasts at 3 km grid spacing over the CONUS out to 60 hours at 00 and 12 UTC, and out to 18 hours at other times. Future enhancements will include an ensemble forecast component and expansion to the planned North American domain. All forecasts are initialized from a hybrid 3DEnVar data assimilation system with hourly updates.
-
-  Output is available on the S3 bucket for every third cycle, and is organized by cycle day and time of day.  For example, `rrfs_a/rrfs_a.20221012/00/` contains the forecast initialized at 00 UTC on 12 October 2022.  Users will find two types of output in GRIB2 format.  The first is:<br/><br/>
+ We currently provide hourly deterministic forecasts at 3 km grid spacing over the CONUS out to 60 hours at 00, 06, 12, and 18 UTC, and out to 18 hours for other cycles. Future enhancements will include a transition to running over the North American domain planned for use by the operational RRFS. All forecasts are initialized from a hybrid 3DEnVar data assimilation system with hourly updates. Output is organized by cycle date and cycle hour.
+  
+For example, `rrfs_a/rrfs_a.20230428/12/control` contains the deterministic forecast initialized at 12 UTC on 28 April 2023. Users will find two types of output in GRIB2 format. The first is:<br/><br/>
   rrfs.t00z.natlev.f018.conus_3km.grib2 <br/><br/>
-  Meaning that this is the RRFS_A initialized at 00 UTC, covers the CONUS domain, and is the native level post-processed gridded data at hour 18.  This output is on a Lambert Conic Conformal domain at 3 km grid spacing.<br/><br/>
-  The second output file in grib2 format is:<br/><br/>
+  
+Meaning that this is the RRFS_A initialized at 00 UTC, covers the CONUS domain, and is the native level post-processed gridded data at hour 18.  This output is on a Lambert Conic Conformal gird at 3 km grid spacing.<br/><br/>
+
+The second output file in grib2 format is:<br/><br/>
+  
   rrfs.t00z.prslev.f018.conus_3km.grib2 <br/><br/>
-  Meaning that this is the pressure level post-processed gridded data.
+ 
+The “prslev” descriptor indicates that this post-processed gridded data is output on pressure levels.
+
+Beginning on May 1st, 2023 we have begun to regularly provide experimental single-physics and multi-physics RRFS ensemble forecasts at 3 km grid spacing over the CONUS out to 60 hours at 00, 06, 12, and 18 UTC. These experimental ensembles are provided as a part of NOAA's ongoing Testbed experiments for the Spring and Summer of 2023 and are intended to help inform the final configuration of RRFSv1's ensemble. Output is available for 00, 06, 12, and 18 UTC cycles, and is organized by cycle date and cycle hour. For example, `rrfs_a/rrfs_a.20230428/12/single_physics/mem0001` contains the forecast from member 1 of the single-physics ensemble, and `rrfs_a/rrfs_a.20230428/12/multi_physics/mem0004` contains the forecast from member 4 of the multi-physics ensemble, both initialized at 12 UTC on 28 April 2023.  Users will find two types of output in GRIB2 format, which have the same file names as the deterministic RRFS forecast.
 
   <br/><br/>
   <hr/>  
