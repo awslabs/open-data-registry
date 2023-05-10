@@ -1,0 +1,28 @@
+Name: Allen Institute for Neural Dynamics - Extracellular Electrophysiology Compression Benchmark
+Description: Extracellular electrophysiology data is growing at a remarkable pace. This data, collected neuropixels probes by the Allen Institute and the International Brain Lab can be used to benchmark throughput rates and storage ratios of various data compression algorithms.
+Documentation: https://aind-data-schema.readthedocs.io/en/latest/opendata.html
+Contact: aindopendata@alleninstitute.org
+ManagedBy: "[Allen Institute](http://neuraldynamics.alleninstitute.org/)"
+UpdateFrequency: Weekly
+Tags:
+  - aws-pds
+  - neurobiology
+  - life sciences
+  - signal processing
+  - electrophysiology
+  - Mus musculus
+License: CC-BY-4.0
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::aind-benchmark-data/ephys-compression
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: AIND Ephys Compression Benchmark
+      URL: https://aind-data-schema.readthedocs.io/en/latest/opendata.html
+      AuthorName: David Feng, Alessio Buccino
+      AuthorURL: https://twitter.com/AllenInstitute
+  Tools & Applications:
+  Publications:
+
