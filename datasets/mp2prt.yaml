@@ -1,0 +1,41 @@
+Name: "Molecular Profiling to Predict Response to Treatment (phs001965)"
+Description: >
+  The Molecular Profiling to Predict Response to Treatment (MP2PRT) program is part of the NCI's Cancer Moonshot Initiative. The aim of this program is the retrospective characterization and analysis of biospecimens collected from completed NCI-sponsored trials of the National Clinical Trials Network and the NCI Community Oncology Research Program. This study, titled "Identification of Genetic Changes Associated with Relapse and/or Adaptive Resistance in Patients Registered as Favorable Histology Wilms Tumor on AREN03B2", performs genomic characterization (WGS 30X, Total RNAseq, miRNAseq) on a discovery set of 70 trio cases (normal tissue, tumor tissue at time of diagnosis, tumor tissue at time of relapse) from patients who relapsed with Favorable Histology Wilms Tumor. Prioritized findings from the discovery set will be validated using Targeted Sequencing in an independent validation set of 47 relapse samples. The MP2PRT study is made available on AWS via the NIH STRIDES Initiative (https://aws.amazon.com/blogs/publicsector/aws-and-national-institutes-of-health-collaborate-to-accelerate-discoveries-with-strides-initiative/).
+Documentation: https://datacatalog.ccdi.cancer.gov/dataset/GDC-MP2PRT
+Contact: support@nci-gdc.datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - genomic
+  - whole genome sequencing
+  - STRIDES
+License: "[NIH Genomic Data Sharing Policy](https://gdc.cancer.gov/access-data/data-access-policies)"
+Citation: "In addition, please cite the following grants in any publication that cites this data: U10CA180886 (NCTN Operations Center Grant); 1U24-CA196173 (Human Specimen Banking in NCI-Sponsored Clinical Trials); U10CA180899 (NCTN Statistics & Data Center)"
+Resources:
+  - Description: |
+      miRNA Sequencing, Total RNA Sequencing, Whole Genome Sequencing, Targeted Sequencing
+    ARN: arn:aws:s3:::gdc-mp2prt-wt-phs001965-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: Childhood Cancer Data Initiative Data Catalog
+      URL: https://datacatalog.ccdi.cancer.gov/dataset/GDC-MP2PRT
+      AuthorName: National Cancer Institute
+      AuthorURL: https://datacatalog.ccdi.cancer.gov/
+  Publications:
+    - Title: "Genetic changes associated with relapse in favorable histology Wilms tumor: A Children's Oncology Group AREN03B2 study"
+      URL: https://doi.org/10.1016/j.xcrm.2022.100644
+      AuthorName: Samantha Gadd, Vicki Huff, et al.
+    - Title: "Finding the way to Wilms tumor by comparing the primary and relapse tumor samples"
+      URL: https://doi.org/10.1016/j.xcrm.2022.100667
+      AuthorName: Filippo Spreafico, Sara Ciceri, et al.
