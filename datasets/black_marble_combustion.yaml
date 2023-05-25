@@ -2,7 +2,7 @@ Name: Nighttime-Fire-Flare
 Description: Detection of nighttime combustion (fire and gas flaring) from daily top of atmosphere data from NASA's Black Marble VNP46A1 product using VIIRS Day/Night Band and VIIRS thermal bands.
 Documentation: https://docs.google.com/document/d/e/2PACX-1vSeDj3BbmvKCrFY3aimZ7-0eMhEN0OFIFk1JDTv3Fvfe4BjfFTwuS8OSMuSGa5vDs2fQKjlrJN8Ut2X/pub
 Contact: schakraborty@usra.edu
-ManagedBy: "[USRA](https://srijachakraborty.com/) [NASA Black Marble] (https://blackmarble.gsfc.nasa.gov/)"
+ManagedBy: "[USRA](https://srijachakraborty.com/) and [NASA Black Marble](https://blackmarble.gsfc.nasa.gov/)"
 UpdateFrequency: New combustion detections are added whenever it is available and with model updates.
 Tags:
   - aws-pds
@@ -18,7 +18,7 @@ Tags:
 License: There are no restrictions on the use of this data.
 Resources: 
   - Description: NASA Black Marble Combustion Detections, Earth Science Training Data
-    ARN: arn:aws:s3:::vnp46a1_thermal_anomaly
+    ARN: arn:aws:s3:::us-west-2.opendata.source.coop/vnp46a1_thermal_anomaly/
     Region: us-west-2
     Type: S3 Bucket
     Explore:
