@@ -1,215 +1,251 @@
-Name: NREL Wind Integration National Dataset
-Description: |
-  Released to the public as part of the Department of Energy's Open Energy Data Initiative,
-  the [Wind Integration National Dataset (WIND)](https://www.nrel.gov/grid/wind-toolkit.html)
-  is an update and expansion of the Eastern Wind Integration Data Set and
-  Western Wind Integration Data Set. It supports the next generation of wind
-  integration studies.
-Documentation: https://www.nrel.gov/grid/wind-toolkit.html
-Contact: wind-toolkit@nrel.gov
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
-UpdateFrequency: As Needed
 Collabs:
   ASDI:
     Tags:
-      - energy
-Tags:
-  - aws-pds
-  - environmental
-  - geospatial
-  - meteorological
-License:  Creative Commons Attribution 3.0 United States License
-Resources:
-  - Description: 'NREL Wind Resource Datasets'
-    ARN: arn:aws:s3:::nrel-pds-wtk/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk)'
-  - Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html) CONUS (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/conus/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=conus%2F)'
-  - Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html) Canada (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/canada/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=canada%2F)'
-  - Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html) Mexico (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/mexico/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=mexico%2F)'
-  - Description: Offshore California Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/Offshore_CA/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Offshore_CA%2F)'
-  - Description: Hawaii Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/Hawaii/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Hawaii%2F)'
-  - Description: NW Pacific Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/NW_Pacific/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=NW_Pacific%2F)'
-  - Description: Mid Atlantic Wind Resource data for (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/Mid_Atlantic/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Mid_Atlantic%2F)'
-  - Description: Bangladesh wind resource data (2014-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/bangladesh/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=bangladesh%2F)'
-  - Description: Central Asia wind resource data (2015) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/central_asia/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=central_asia%2F)'
-  - Description: India wind resource data (2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/india/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=india%2F)'
-  - Description: Kazakhstan wind resource data (2015) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/kazakhstan/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=kazakhstan%2F)'
-  - Description: Maine wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/maine/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=maine%2F)'
-  - Description: Gulf of Mexico wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/gulf_of_mexico/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=gulf_of_mexico%2F)'
-  - Description: Philippines wind resource data (2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/philippines/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=philippines%2F)'
-  - Description: Vietnam wind resource data (2016-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/vietnam/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=vietnam%2F)'
-  - Description: '[HSDS](https://github.com/NREL/hsds-examples) WIND domains'
-    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/wtk/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fwtk%2F)'
-  - Description: Source files for [wtk-us](https://www.nrel.gov/grid/wind-toolkit.html) gridded (2007-2013) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/wtk-us/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=wtk-us%2F)'
-  - Description: '[HSDS](https://github.com/NREL/hsds-examples) gridded WIND Toolkit domain'
-    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/wtk-us.h5
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fwtk-us.h5%2F)'
-  - Description: Techno-economic subset of the [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html) by location in [netCDF](https://www.unidata.ucar.edu/software/netcdf) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/wtk-techno-economic/pywtk-data/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=wtk-techno-economic%2Fpywtk-data%2F)'
-  - Description: Data for the [Eastern Wind Integration Study](https://www.nrel.gov/grid/eastern-western-wind-data.html) (2004-2006) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/eastern_wind/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=eastern_wind%2F)'
-  - Description: Data for the [Western Wind Integration Study](https://www.nrel.gov/grid/eastern-western-wind-data.html) (2004-2006) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/western_wind/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=western_wind%2F)'
-  - Description: Philippines typical meteorological year data in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/philippines_tmy/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=philippines_tmy%2F)'
-  - Description: Great Lakes wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/Great_Lakes/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Great_Lakes%2F)'
-  - Description: Puerto Rico wind resource data (2001-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/pr100/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=pr100%2F)'
-  - Description: Southeast Asia wind resource data (2017-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind%2F)'
-  - Description: Southeast Asia wind resource data v2 (2007-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind_v2/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind_v2%2F)'
+    - energy
+Contact: wind-toolkit@nrel.gov
+DOI: 10.60489/roda.aw547i
 DataAtWork:
-  Tutorials:
-    - Title: HSDS Examples
-      URL: https://github.com/NREL/hsds-examples
-      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
-      AuthorURL: https://www.nrel.gov/research/caleb-phillips.html
-  Tools & Applications:
-    - Title: Wind Visualization
-      URL: https://github.com/NREL/hsds-viz
-      AuthorName: Jordan Perr-Sauer
-      AuthorURL: https://www.nrel.gov/research/jordan-perr-sauer.html
-    - Title: Wind Prospector
-      URL: https://maps.nrel.gov/wind-prospector/
-      AuthorName: Paul Edwards
   Publications:
-    - Title: 'Power from wind: Open data on AWS'
-      URL: https://aws.amazon.com/blogs/big-data/power-from-wind-open-data-on-aws/
-      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer
-      AuthorURL: https://www.nrel.gov/research/caleb-phillips.html
-    - Title: 'The Wind Integration National Dataset (WIND) Toolkit'
-      URL: https://www.sciencedirect.com/science/article/pii/S0306261915004237?via%3Dihub/
-      AuthorName: Caroline Draxl, Andrew Clifton, Bri-Mathias Hodge, Jim McCaa
-    - Title: 'Overview and Meteorological Validation of the Wind Integration National Dataset Toolkit'
-      URL: https://www.nrel.gov/docs/fy15osti/61740.pdf
-      AuthorName: Caroline Draxl, Bri-Mathias Hodge, Andrew Clifton, Jim McCaa
-    - Title: 'Validation of Power Output for the WIND Toolkit'
-      URL: https://www.nrel.gov/docs/fy14osti/61714.pdf
-      AuthorName: J. King, Andrew Clifton, Bri-Mathias Hodge
-    - Title: 'A Twenty-Year Analysis of Winds in California for Offshore Wind Energy Production Using WRF v4.1.2'
-      URL: https://gmd.copernicus.org/preprints/gmd-2021-50/gmd-2021-50.pdf
-      AuthorName: Alex Rybchuk, Mike Optis, Julie K. Lundquist, Michael Rossol, Walt Musial
+  - AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer
+    AuthorURL: https://www.nrel.gov/research/caleb-phillips.html
+    Title: 'Power from wind: Open data on AWS'
+    URL: https://aws.amazon.com/blogs/big-data/power-from-wind-open-data-on-aws/
+  - AuthorName: Caroline Draxl, Andrew Clifton, Bri-Mathias Hodge, Jim McCaa
+    Title: The Wind Integration National Dataset (WIND) Toolkit
+    URL: https://www.sciencedirect.com/science/article/pii/S0306261915004237?via%3Dihub/
+  - AuthorName: Caroline Draxl, Bri-Mathias Hodge, Andrew Clifton, Jim McCaa
+    Title: Overview and Meteorological Validation of the Wind Integration National
+      Dataset Toolkit
+    URL: https://www.nrel.gov/docs/fy15osti/61740.pdf
+  - AuthorName: J. King, Andrew Clifton, Bri-Mathias Hodge
+    Title: Validation of Power Output for the WIND Toolkit
+    URL: https://www.nrel.gov/docs/fy14osti/61714.pdf
+  - AuthorName: Alex Rybchuk, Mike Optis, Julie K. Lundquist, Michael Rossol, Walt
+      Musial
+    Title: A Twenty-Year Analysis of Winds in California for Offshore Wind Energy
+      Production Using WRF v4.1.2
+    URL: https://gmd.copernicus.org/preprints/gmd-2021-50/gmd-2021-50.pdf
+  Tools & Applications:
+  - AuthorName: Jordan Perr-Sauer
+    AuthorURL: https://www.nrel.gov/research/jordan-perr-sauer.html
+    Title: Wind Visualization
+    URL: https://github.com/NREL/hsds-viz
+  - AuthorName: Paul Edwards
+    Title: Wind Prospector
+    URL: https://maps.nrel.gov/wind-prospector/
+  Tutorials:
+  - AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael
+      Rossol
+    AuthorURL: https://www.nrel.gov/research/caleb-phillips.html
+    Title: HSDS Examples
+    URL: https://github.com/NREL/hsds-examples
+Description: 'Released to the public as part of the Department of Energy''s Open Energy
+  Data Initiative,
+
+  the [Wind Integration National Dataset (WIND)](https://www.nrel.gov/grid/wind-toolkit.html)
+
+  is an update and expansion of the Eastern Wind Integration Data Set and
+
+  Western Wind Integration Data Set. It supports the next generation of wind
+
+  integration studies.
+
+  '
+Documentation: https://www.nrel.gov/grid/wind-toolkit.html
+License: Creative Commons Attribution 3.0 United States License
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+Name: NREL Wind Integration National Dataset
+Resources:
+- ARN: arn:aws:s3:::nrel-pds-wtk/
+  Description: NREL Wind Resource Datasets
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/conus/
+  Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html)
+    CONUS (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=conus%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/canada/
+  Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html)
+    Canada (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=canada%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/mexico/
+  Description: Source files for [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html)
+    Mexico (2007-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=mexico%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/Offshore_CA/
+  Description: Offshore California Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Offshore_CA%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/Hawaii/
+  Description: Hawaii Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Hawaii%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/NW_Pacific/
+  Description: NW Pacific Wind Resource data for (2000-2019) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=NW_Pacific%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/Mid_Atlantic/
+  Description: Mid Atlantic Wind Resource data for (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Mid_Atlantic%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/bangladesh/
+  Description: Bangladesh wind resource data (2014-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=bangladesh%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/central_asia/
+  Description: Central Asia wind resource data (2015) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=central_asia%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/india/
+  Description: India wind resource data (2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=india%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/kazakhstan/
+  Description: Kazakhstan wind resource data (2015) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=kazakhstan%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/maine/
+  Description: Maine wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=maine%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/gulf_of_mexico/
+  Description: Gulf of Mexico wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=gulf_of_mexico%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/philippines/
+  Description: Philippines wind resource data (2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=philippines%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/vietnam/
+  Description: Vietnam wind resource data (2016-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=vietnam%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-hsds/nrel/wtk/
+  Description: '[HSDS](https://github.com/NREL/hsds-examples) WIND domains'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fwtk%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/wtk-us/
+  Description: Source files for [wtk-us](https://www.nrel.gov/grid/wind-toolkit.html)
+    gridded (2007-2013) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=wtk-us%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-hsds/nrel/wtk-us.h5
+  Description: '[HSDS](https://github.com/NREL/hsds-examples) gridded WIND Toolkit
+    domain'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fwtk-us.h5%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/wtk-techno-economic/pywtk-data/
+  Description: Techno-economic subset of the [WIND Toolkit](https://www.nrel.gov/grid/wind-toolkit.html)
+    by location in [netCDF](https://www.unidata.ucar.edu/software/netcdf) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=wtk-techno-economic%2Fpywtk-data%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/eastern_wind/
+  Description: Data for the [Eastern Wind Integration Study](https://www.nrel.gov/grid/eastern-western-wind-data.html)
+    (2004-2006) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=eastern_wind%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/western_wind/
+  Description: Data for the [Western Wind Integration Study](https://www.nrel.gov/grid/eastern-western-wind-data.html)
+    (2004-2006) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=western_wind%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/philippines_tmy/
+  Description: Philippines typical meteorological year data in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=philippines_tmy%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/Great_Lakes/
+  Description: Great Lakes wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=Great_Lakes%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/pr100/
+  Description: Puerto Rico wind resource data (2001-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=pr100%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind/
+  Description: Southeast Asia wind resource data (2017-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind_v2/
+  Description: Southeast Asia wind resource data v2 (2007-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind_v2%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- environmental
+- geospatial
+- meteorological
+UpdateFrequency: As Needed

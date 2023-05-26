@@ -1,46 +1,62 @@
-﻿Name: SILO climate data on AWS
-Description: |
-  [SILO](https://www.longpaddock.qld.gov.au/silo) is a database of Australian [climate data](https://www.longpaddock.qld.gov.au/silo/about/climate-variables) from 1889 to the present. It provides continuous, daily time-step [data products](https://www.longpaddock.qld.gov.au/silo/about/data-products) in ready-to-use [formats](https://www.longpaddock.qld.gov.au/silo/about/file-formats-and-samples) for research and operational applications.
-  SILO's gridded datasets (in NetCDF and GeoTiff formats) are hosted on AWS Public Data. Point data (at both station and grid cell locations) are available from the [SILO website](https://www.longpaddock.qld.gov.au/silo/). Incremental update files for mirroring point datasets at station locations are also available on AWS Public Data.
-Documentation: https://www.longpaddock.qld.gov.au/silo/gridded-data
-Contact: https://www.longpaddock.qld.gov.au/silo/contact-us
-ManagedBy: Queensland Government
-UpdateFrequency: Daily
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - earth observation
-  - environmental
-  - meteorological
-  - model
-  - sustainability
-  - water
-  - weather
-License: |
-  SILO datasets are constructed by the [Queensland Government](http://www.qld.gov.au/) using observational data provided by the [Australian Bureau of Meteorology](http://www.bom.gov.au/) and other providers as noted in the metadata. All SILO datasets are provided under the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) license.
-Resources:
-  - Description: SILO open data
-    ARN: arn:aws:s3:::silo-open-data
-    Region: ap-southeast-2
-    Type: S3 Bucket
+    - climate
+Contact: https://www.longpaddock.qld.gov.au/silo/contact-us
+DOI: 10.60489/roda.efbif0
 DataAtWork:
-  Tutorials:
-    - Title: Using relative humidity grids with xarray from s3
-      URL: https://nbviewer.jupyter.org/github/RichardScottOZ/Adelaide-Temperatue/blob/main/Humidity-grids.ipynb
-      AuthorName: Richard Scott
+  Publications: null
   Tools & Applications:
-    - Title: Python script to calculate a regional mean
-      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/python
-      AuthorName: SILO
-    - Title: NetCDF Operators to calculate seasonal means
-      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/nco
-      AuthorName: SILO
-    - Title: Convert NetCDF to ESRI ArcASCII or GeoTIFF
-      URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/conversion
-      AuthorName: SILO
-  Publications:
+  - AuthorName: SILO
+    Title: Python script to calculate a regional mean
+    URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/python
+  - AuthorName: SILO
+    Title: NetCDF Operators to calculate seasonal means
+    URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/nco
+  - AuthorName: SILO
+    Title: Convert NetCDF to ESRI ArcASCII or GeoTIFF
+    URL: https://www.longpaddock.qld.gov.au/silo/gridded-data/conversion
+  Tutorials:
+  - AuthorName: Richard Scott
+    Title: Using relative humidity grids with xarray from s3
+    URL: https://nbviewer.jupyter.org/github/RichardScottOZ/Adelaide-Temperatue/blob/main/Humidity-grids.ipynb
+Description: '[SILO](https://www.longpaddock.qld.gov.au/silo) is a database of Australian
+  [climate data](https://www.longpaddock.qld.gov.au/silo/about/climate-variables)
+  from 1889 to the present. It provides continuous, daily time-step [data products](https://www.longpaddock.qld.gov.au/silo/about/data-products)
+  in ready-to-use [formats](https://www.longpaddock.qld.gov.au/silo/about/file-formats-and-samples)
+  for research and operational applications.
+
+  SILO''s gridded datasets (in NetCDF and GeoTiff formats) are hosted on AWS Public
+  Data. Point data (at both station and grid cell locations) are available from the
+  [SILO website](https://www.longpaddock.qld.gov.au/silo/). Incremental update files
+  for mirroring point datasets at station locations are also available on AWS Public
+  Data.
+
+  '
+Documentation: https://www.longpaddock.qld.gov.au/silo/gridded-data
+License: 'SILO datasets are constructed by the [Queensland Government](http://www.qld.gov.au/)
+  using observational data provided by the [Australian Bureau of Meteorology](http://www.bom.gov.au/)
+  and other providers as noted in the metadata. All SILO datasets are provided under
+  the [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
+  license.
+
+  '
+ManagedBy: Queensland Government
+Name: SILO climate data on AWS
+Resources:
+- ARN: arn:aws:s3:::silo-open-data
+  Description: SILO open data
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- earth observation
+- environmental
+- meteorological
+- model
+- sustainability
+- water
+- weather
+UpdateFrequency: Daily

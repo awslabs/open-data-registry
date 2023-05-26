@@ -1,38 +1,42 @@
-Name: ComStock
-Description: |
-  The commercial building sector stock model, or ComStock, is a highly
-  granular, bottom-up model that uses multiple data sources, statistical
-  sampling methods, and advanced building energy simulations to estimate
-  the annual sub-hourly energy consumption of the commercial building stock
-  across the United States.
-Documentation: https://comstock.nrel.gov/
-Contact: ComStock@nrel.gov
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
-UpdateFrequency: Annually
 Collabs:
   ASDI:
     Tags:
-      - energy
-Tags:
-  - aws-pds
-  - energy
-License: '[ComStock License](https://github.com/NREL/ComStock/blob/main/LICENSE.txt)'
-Resources:
-  - Description: '[ComStock](https://comstock.nrel.gov/) model output'
-    ARN: arn:aws:s3:::nrel-pds-building-stock/comstock/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-building-stock)'
+    - energy
+Contact: ComStock@nrel.gov
+DOI: 10.60489/roda.l4g1zw
 DataAtWork:
+  Publications: null
+  Tools & Applications: null
   Tutorials:
-    - Title: Downloading individual building data files from ComStock results
-      URL: https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Individual_Building_Data.md
-      AuthorName: Carlo Bianchi, Andrew Parker
-    - Title: Running queries on ComStock using AWS Athena
-      URL: https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Query_ComStock_Athena.md
-      AuthorName: Carlo Bianchi, Andrew Parker, Henry Horsey
-  Tools & Applications:
+  - AuthorName: Carlo Bianchi, Andrew Parker
+    Title: Downloading individual building data files from ComStock results
+    URL: https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Individual_Building_Data.md
+  - AuthorName: Carlo Bianchi, Andrew Parker, Henry Horsey
+    Title: Running queries on ComStock using AWS Athena
+    URL: https://github.com/openEDI/documentation/blob/main/NREL_Building_Stock/Query_ComStock_Athena.md
+Description: 'The commercial building sector stock model, or ComStock, is a highly
 
-  Publications:
+  granular, bottom-up model that uses multiple data sources, statistical
 
+  sampling methods, and advanced building energy simulations to estimate
+
+  the annual sub-hourly energy consumption of the commercial building stock
+
+  across the United States.
+
+  '
+Documentation: https://comstock.nrel.gov/
+License: '[ComStock License](https://github.com/NREL/ComStock/blob/main/LICENSE.txt)'
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+Name: ComStock
+Resources:
+- ARN: arn:aws:s3:::nrel-pds-building-stock/comstock/
+  Description: '[ComStock](https://comstock.nrel.gov/) model output'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-building-stock)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- energy
+UpdateFrequency: Annually

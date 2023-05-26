@@ -1,46 +1,49 @@
-Name: CoversBR
-Description: |
-  CoversBR is the first large audio database with, predominantly, Brazilian music for the tasks of Covers Song
-  Identification (CSI) and Live Song Identifications (LSI). Due to copyright restrictions audios of
-  the songs cannot be made available, however metadata and files of features have public access. Audio
-  streamings captured from radio and TV channels for the live song identification task will be made public.
-  CoversBR is composed of metadata and features extracted from 102298 songs, distributed in 26366
-  groups of covers/versions, with an average of 3.88 versions per group. The entire collection adds up to a total of
-  approximately 7070 hours and the average song length is 240 seconds (4 minutes).
-    
-
-Documentation: https://github.com/SPLab-IT/CoversBR
 Contact: https://github.com/SPLab-IT/CoversBR/issues
-ManagedBy: "Dirceu G Silva"
-UpdateFrequency: New metadata, songs features files and audio streamings for live song identification will be added as soon as available.
-Tags:
-  - aws-pds
-  - copyright monitoring
-  - cover song identification
-  - live song identification
-  - music
-  - music features dataset
-  - music information retrieval
-  - music recognition
-License: |
-  The code in this repository is licensed under Apache 2.0
-
-  The metadata and the pre-extracted features are licensed under CC BY-NC-SA 4.0
-Resources:
-  - Description: metadata of songs, features files and audio streaming
-    ARN: arn:aws:s3:::covers-song-br
-    Region: us-west-2
-    Type: S3 Bucket
+DOI: 10.60489/roda.keag5e
 DataAtWork:
   Tutorials:
-    - Title: Using the (CoversBR) dataset
-      URL: https://github.com/SPLab-IT/CoversBR#using-the-dataset---tutorial
-      AuthorName: Dirceu Silva, Atila Xavier, Edgard Moraes, Marco Grivet and Fernando Perdigão
-      AuthorURL: https://github.com/SPLab-IT/CoversBR
-    - Title: Getting started with Cover Song Identification and Genre classification
-      URL: https://github.com/aws-samples/aws-music-genre-classification
-      NotebookURL: https://github.com/aws-samples/aws-music-genre-classification/blob/main/music-genre-classification-with-coversbr-dataset.ipynb
-      AuthorName: Gabriel Bella Martini
-      Services:
-        - SageMaker Studio Lab
+  - AuthorName: "Dirceu Silva, Atila Xavier, Edgard Moraes, Marco Grivet and Fernando\
+      \ Perdig\xE3o"
+    AuthorURL: https://github.com/SPLab-IT/CoversBR
+    Title: Using the (CoversBR) dataset
+    URL: https://github.com/SPLab-IT/CoversBR#using-the-dataset---tutorial
+  - AuthorName: Gabriel Bella Martini
+    NotebookURL: https://github.com/aws-samples/aws-music-genre-classification/blob/main/music-genre-classification-with-coversbr-dataset.ipynb
+    Services:
+    - SageMaker Studio Lab
+    Title: Getting started with Cover Song Identification and Genre classification
+    URL: https://github.com/aws-samples/aws-music-genre-classification
+Description: "CoversBR is the first large audio database with, predominantly, Brazilian\
+  \ music for the tasks of Covers Song\nIdentification (CSI) and Live Song Identifications\
+  \ (LSI). Due to copyright restrictions audios of\nthe songs cannot be made available,\
+  \ however metadata and files of features have public access. Audio\nstreamings captured\
+  \ from radio and TV channels for the live song identification task will be made\
+  \ public.\nCoversBR is composed of metadata and features extracted from 102298 songs,\
+  \ distributed in 26366\ngroups of covers/versions, with an average of 3.88 versions\
+  \ per group. The entire collection adds up to a total of\napproximately 7070 hours\
+  \ and the average song length is 240 seconds (4 minutes).\n  \n"
+Documentation: https://github.com/SPLab-IT/CoversBR
+License: 'The code in this repository is licensed under Apache 2.0
 
+
+  The metadata and the pre-extracted features are licensed under CC BY-NC-SA 4.0
+
+  '
+ManagedBy: Dirceu G Silva
+Name: CoversBR
+Resources:
+- ARN: arn:aws:s3:::covers-song-br
+  Description: metadata of songs, features files and audio streaming
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- copyright monitoring
+- cover song identification
+- live song identification
+- music
+- music features dataset
+- music information retrieval
+- music recognition
+UpdateFrequency: New metadata, songs features files and audio streamings for live
+  song identification will be added as soon as available.

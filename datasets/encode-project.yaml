@@ -1,51 +1,74 @@
-Name: Encyclopedia of DNA Elements (ENCODE)
-Description: |
-  The Encyclopedia of DNA Elements (ENCODE) Consortium is an international collaboration of
-  research groups funded by the National Human Genome Research Institute (NHGRI). The goal
-  of ENCODE is to build a comprehensive parts list of functional elements in the human genome,
-  including elements that act at the protein and RNA levels, and regulatory elements that
-  control cells and circumstances in which a gene is active. ENCODE investigators employ a
-  variety of assays and methods to identify functional elements. The discovery and annotation
-  of gene elements is accomplished primarily by sequencing a diverse range of RNA sources,
-  comparative genomics, integrative bioinformatic methods, and human curation. Regulatory
-  elements are typically investigated through DNA hypersensitivity assays, assays of
-  DNA methylation, and immunoprecipitation (IP) of proteins that interact with DNA and RNA,
-  i.e., modified histones, transcription factors, chromatin regulators, and
-  RNA-binding proteins, followed by sequencing.
 Contact: encode-help@lists.stanford.edu
-ManagedBy: ENCODE Data Coordinating Center
-Documentation: https://www.encodeproject.org
-UpdateFrequency: Daily
-Tags:
-  - aws-pds
-  - biology
-  - bioinformatics
-  - genetic
-  - genomic
-  - life sciences
-License: External data users may freely download, analyze, and publish results based on any ENCODE data without restrictions.
-Resources:
-  - Description: Released and archived ENCODE data
-    ARN: arn:aws:s3:::encode-public
-    Region: us-west-2
-    Type: S3 Bucket
+DOI: 10.60489/roda.cthr6z
 DataAtWork:
-  Tutorials:
-    - Title: Exploring ENCODE data from EC2 with Jupyter notebook
-      URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/mount_s3_bucket_and_run_jupyter_on_ec2.ipynb
-      AuthorName: Keenan Graham
-      AuthorURL: https://github.com/keenangraham
-    - Title: ENCODE CTCF ChIP-seq data correlation across different cell types
-      URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/ctcf_chip_seq_cross_cell_type_correlation.ipynb
-      AuthorName: Paul Sud
-      AuthorURL: https://github.com/p-sud
-    - Title: Ingesting ENCODE data into TileDB with S3 backend
-      URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/ingest_encode_data_tile_db_with_s3_backend.ipynb
-      AuthorName: Otto Jolanki
-      AuthorURL: https://github.com/ottojolanki
-  Tools & Applications:
   Publications:
-    - Title: New developments on the Encyclopedia of DNA Elements (ENCODE) data portal 
-      URL: https://academic.oup.com/nar/article/48/D1/D882/5622708#190992715
-      AuthorName: Luo et al 2020
-      AuthorURL: http://orcid.org/0000-0001-6948-2042
+  - AuthorName: Luo et al 2020
+    AuthorURL: http://orcid.org/0000-0001-6948-2042
+    Title: New developments on the Encyclopedia of DNA Elements (ENCODE) data portal
+    URL: https://academic.oup.com/nar/article/48/D1/D882/5622708#190992715
+  Tools & Applications: null
+  Tutorials:
+  - AuthorName: Keenan Graham
+    AuthorURL: https://github.com/keenangraham
+    Title: Exploring ENCODE data from EC2 with Jupyter notebook
+    URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/mount_s3_bucket_and_run_jupyter_on_ec2.ipynb
+  - AuthorName: Paul Sud
+    AuthorURL: https://github.com/p-sud
+    Title: ENCODE CTCF ChIP-seq data correlation across different cell types
+    URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/ctcf_chip_seq_cross_cell_type_correlation.ipynb
+  - AuthorName: Otto Jolanki
+    AuthorURL: https://github.com/ottojolanki
+    Title: Ingesting ENCODE data into TileDB with S3 backend
+    URL: https://github.com/ENCODE-DCC/encode-data-usage-examples/blob/master/ingest_encode_data_tile_db_with_s3_backend.ipynb
+Description: 'The Encyclopedia of DNA Elements (ENCODE) Consortium is an international
+  collaboration of
+
+  research groups funded by the National Human Genome Research Institute (NHGRI).
+  The goal
+
+  of ENCODE is to build a comprehensive parts list of functional elements in the human
+  genome,
+
+  including elements that act at the protein and RNA levels, and regulatory elements
+  that
+
+  control cells and circumstances in which a gene is active. ENCODE investigators
+  employ a
+
+  variety of assays and methods to identify functional elements. The discovery and
+  annotation
+
+  of gene elements is accomplished primarily by sequencing a diverse range of RNA
+  sources,
+
+  comparative genomics, integrative bioinformatic methods, and human curation. Regulatory
+
+  elements are typically investigated through DNA hypersensitivity assays, assays
+  of
+
+  DNA methylation, and immunoprecipitation (IP) of proteins that interact with DNA
+  and RNA,
+
+  i.e., modified histones, transcription factors, chromatin regulators, and
+
+  RNA-binding proteins, followed by sequencing.
+
+  '
+Documentation: https://www.encodeproject.org
+License: External data users may freely download, analyze, and publish results based
+  on any ENCODE data without restrictions.
+ManagedBy: ENCODE Data Coordinating Center
+Name: Encyclopedia of DNA Elements (ENCODE)
+Resources:
+- ARN: arn:aws:s3:::encode-public
+  Description: Released and archived ENCODE data
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- biology
+- bioinformatics
+- genetic
+- genomic
+- life sciences
+UpdateFrequency: Daily

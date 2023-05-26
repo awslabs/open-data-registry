@@ -1,55 +1,55 @@
-Name: Terra Fusion Data Sampler
-Description: |
-  The Terra Basic Fusion dataset is a fused dataset of the original Level 1 radiances
-  from the five Terra instruments. They have been fully validate to contain the original
-  Terra instrument Level 1 data. Each Level 1 Terra Basic Fusion file contains one full
-  Terra orbit of data and is typically 15 – 40 GB in size, depending on how much data was
-  collected for that orbit. It contains instrument radiance in physical units; radiance
-  quality indicator; geolocation for each IFOV at its native resolution; sun-view geometry;
-  bservation time; and other attributes/metadata. It is stored in HDF5, conformed to CF
-  conventions, and accessible by netCDF-4 enhanced models. It’s naming convention
-  follows: TERRA_BF_L1B_OXXXX_YYYYMMDDHHMMSS_F000_V000.h5. A concise description of the
-  dataset, along with links to complete documentation and available software tools, can
-  be found on the Terra Fusion project page: https://terrafusion.web.illinois.edu.</br></br>
-
-  Terra is the flagship satellite of NASA’s Earth Observing System (EOS). It was launched
-  into orbit on December 18, 1999 and carries five instruments. These are the
-  Moderate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle Imaging
-  SpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and Reflection
-  Radiometer (ASTER), the Clouds and Earth’s Radiant Energy System (CERES), and the
-  Measurements of Pollution in the Troposphere (MOPITT).</br></br>
-
-  The Terra Basic Fusion dataset is an easy-to-access record of the Level 1 radiances
-  for instruments on the Terra mission for selected WRS-2 paths covering the years
-  2000-2015. These paths are Paths 20-26 (e.g., US corn belt), 108 (e.g., Japan),
-  125 (e.g., China), 143 (e.g., India), 150 (e.g., Showa Station, Antarctica),
-  169 (e.g., Europe and Africa), 188 (e.g., Nigeria calibration site), and 233
-  (e.g., Greenland).
-Documentation: https://go.illinois.edu/terra-fusion-doc
-Contact: gdi@illinois.edu
-ManagedBy: University of Illinois
-UpdateFrequency: Static, with a planned update for years 2016-2020 in the future.
 Collabs:
   ASDI:
     Tags:
-      - satellite imagery
-Tags:
-  - aws-pds
-  - geospatial
-  - satellite imagery
-License: Creative Commons Level 0
-Resources:
-  - Description: AWS S3 Public Bucket Containing Terra Basic Fusion Hierarchical Data Format 5 (HDF5) files
-    ARN: arn:aws:s3:::terrafusiondatasampler
-    Region: us-west-2
-    Type: S3 Bucket
+    - satellite imagery
+Contact: gdi@illinois.edu
+DOI: 10.60489/roda.05bv3x
 DataAtWork:
-  Tutorials:
-    - Title: Basic Terra fusion product algorithm theoretical basis and data specifications
-      URL: https://go.illinois.edu/terra-fusion-doc
-      AuthorName: Zhao, Guangu; Yang, Muqun; Clipp, Landon; Gao, Yizhao; Lee, Joe H.
-      AuthorURL: http://hdl.handle.net/2142/105967
   Tools & Applications:
-    - Title: TerraFusion GitHub
-      URL: https://github.com/TerraFusion
-      AuthorName: University of Illinois
+  - AuthorName: University of Illinois
+    Title: TerraFusion GitHub
+    URL: https://github.com/TerraFusion
+  Tutorials:
+  - AuthorName: Zhao, Guangu; Yang, Muqun; Clipp, Landon; Gao, Yizhao; Lee, Joe H.
+    AuthorURL: http://hdl.handle.net/2142/105967
+    Title: Basic Terra fusion product algorithm theoretical basis and data specifications
+    URL: https://go.illinois.edu/terra-fusion-doc
+Description: "The Terra Basic Fusion dataset is a fused dataset of the original Level\
+  \ 1 radiances\nfrom the five Terra instruments. They have been fully validate to\
+  \ contain the original\nTerra instrument Level 1 data. Each Level 1 Terra Basic\
+  \ Fusion file contains one full\nTerra orbit of data and is typically 15 \u2013\
+  \ 40 GB in size, depending on how much data was\ncollected for that orbit. It contains\
+  \ instrument radiance in physical units; radiance\nquality indicator; geolocation\
+  \ for each IFOV at its native resolution; sun-view geometry;\nbservation time; and\
+  \ other attributes/metadata. It is stored in HDF5, conformed to CF\nconventions,\
+  \ and accessible by netCDF-4 enhanced models. It\u2019s naming convention\nfollows:\
+  \ TERRA_BF_L1B_OXXXX_YYYYMMDDHHMMSS_F000_V000.h5. A concise description of the\n\
+  dataset, along with links to complete documentation and available software tools,\
+  \ can\nbe found on the Terra Fusion project page: https://terrafusion.web.illinois.edu.</br></br>\n\
+  \nTerra is the flagship satellite of NASA\u2019s Earth Observing System (EOS). It\
+  \ was launched\ninto orbit on December 18, 1999 and carries five instruments. These\
+  \ are the\nModerate-resolution Imaging Spectroradiometer (MODIS), the Multi-angle\
+  \ Imaging\nSpectroRadiometer (MISR), the Advanced Spaceborne Thermal Emission and\
+  \ Reflection\nRadiometer (ASTER), the Clouds and Earth\u2019s Radiant Energy System\
+  \ (CERES), and the\nMeasurements of Pollution in the Troposphere (MOPITT).</br></br>\n\
+  \nThe Terra Basic Fusion dataset is an easy-to-access record of the Level 1 radiances\n\
+  for instruments on the Terra mission for selected WRS-2 paths covering the years\n\
+  2000-2015. These paths are Paths 20-26 (e.g., US corn belt), 108 (e.g., Japan),\n\
+  125 (e.g., China), 143 (e.g., India), 150 (e.g., Showa Station, Antarctica),\n169\
+  \ (e.g., Europe and Africa), 188 (e.g., Nigeria calibration site), and 233\n(e.g.,\
+  \ Greenland).\n"
+Documentation: https://go.illinois.edu/terra-fusion-doc
+License: Creative Commons Level 0
+ManagedBy: University of Illinois
+Name: Terra Fusion Data Sampler
+Resources:
+- ARN: arn:aws:s3:::terrafusiondatasampler
+  Description: AWS S3 Public Bucket Containing Terra Basic Fusion Hierarchical Data
+    Format 5 (HDF5) files
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- geospatial
+- satellite imagery
+UpdateFrequency: Static, with a planned update for years 2016-2020 in the future.

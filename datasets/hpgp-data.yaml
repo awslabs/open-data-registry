@@ -1,29 +1,33 @@
-Name: Human PanGenomics Project
-Description: This dataset includes sequencing data, assemblies, and analyses for the offspring of ten parent-offspring trios.
-Documentation: https://github.com/human-pangenomics/hpgp-data
 Contact: https://github.com/human-pangenomics/hpgp-data/issues
-ManagedBy: '(Human Pangenome Reference Consortium)[https://humanpangenome.org/]'
-UpdateFrequency: Data will be added and updated as technologies improve or new data uses are encountered.
-Tags:
-  - aws-pds
-  - genomic
-  - genetic
-  - life sciences
-  - fastq
-  - fast5
-  - cram
-License: "[Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.en)"
-Resources:
-  - Description: Human PanGenomics Project
-    ARN: arn:aws:s3:::human-pangenomics
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://human-pangenomics.s3.amazonaws.com/index.html)'
+DOI: 10.60489/roda.9cp50n
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
   Publications:
-    - Title: Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly of eleven human genomes
-      URL: https://www.nature.com/articles/s41587-020-0503-6
-      AuthorName: Shafin et al (2020)
+  - AuthorName: Shafin et al (2020)
+    Title: Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly
+      of eleven human genomes
+    URL: https://www.nature.com/articles/s41587-020-0503-6
+  Tools & Applications: null
+  Tutorials: null
+Description: This dataset includes sequencing data, assemblies, and analyses for the
+  offspring of ten parent-offspring trios.
+Documentation: https://github.com/human-pangenomics/hpgp-data
+License: '[Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed.en)'
+ManagedBy: (Human Pangenome Reference Consortium)[https://humanpangenome.org/]
+Name: Human PanGenomics Project
+Resources:
+- ARN: arn:aws:s3:::human-pangenomics
+  Description: Human PanGenomics Project
+  Explore:
+  - '[Browse Bucket](https://human-pangenomics.s3.amazonaws.com/index.html)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- genomic
+- genetic
+- life sciences
+- fastq
+- fast5
+- cram
+UpdateFrequency: Data will be added and updated as technologies improve or new data
+  uses are encountered.

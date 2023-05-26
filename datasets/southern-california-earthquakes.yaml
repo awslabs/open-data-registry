@@ -1,70 +1,69 @@
-Name: Southern California Earthquake Data
-Description: This dataset contains ground motion velocity and acceleration 
-  seismic waveforms recorded by the Southern California Seismic Network (SCSN) 
-  and archived at the Southern California Earthquake Data Center (SCEDC). A
-  Distributed Acousting Sensing (DAS) dataset is included.
-Documentation: https://scedc.caltech.edu/data/cloud.html
-Contact: scedc@gps.caltech.edu
-ManagedBy: "[Southern California Earthquake Data Center](https://scedc.caltech.edu)"
-UpdateFrequency: Daily
 Collabs:
   ASDI:
     Tags:
-      - disaster response
-Tags:
-  - aws-pds
-  - earth observation
-  - earthquakes
-  - seismology
-License: SCEDC herby grants the non-exclusive, royalty free, non-transferable, 
-  worldwide right and license to use, reproduce and publicly display in all media 
-  public data from the Southern California Seismic Network. Please cite 
-  the SCEDC (doi:10.7909/C3WD3xH1) and SCSN (doi:10.7914/SN/CI) for any research
-  publications using this data.
-Resources:
-  - Description: Seismic waveform data (miniSEED format) and earthquake catalog (ascii)
-    ARN: arn:aws:s3:::scedc-pds
-    Region: us-west-2
-    Type: S3 Bucket
+    - disaster response
+Contact: scedc@gps.caltech.edu
+DOI: 10.60489/roda.w8g7q9
 DataAtWork:
-  Tutorials:
-    - Title: Getting Started with SCEDC AWS Public Dataset 
-      URL: https://scedc.caltech.edu/data/getstarted-pds.html
-      AuthorName: Ellen Yu
-      AuthorURL: https://scedc.caltech.edu
-    - Title: Script to Download Seismic Waveforms from the SCEDC AWS Public Dataset
-      URL: https://github.com/SCEDC/cloud/tree/master/pds-fetch-continuous-data
-      AuthorName: Aparna Bhaskaran
-      AuthorURL: https://scedc.caltech.edu
-    - Title: Using Lambda to Process Seismograms
-      URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-example
-      AuthorName: Shang-Lin Chen
-      AuthorURL: https://scedc.caltech.edu
-      Services:
-         - Lambda
-    - Title: 'Cactus to Clouds: Processing The SCEDC Open Data Set on AWS'
-      URL: https://nextjournal.com/thclements/cactus-to-clouds/#accessing-the-scedc-dataset-on-aws
-      AuthorName: Tim Clements
-      AuthorURL: https://tclements.github.io/
-    - Title: 'SeisNoise.jl GPU Computing Tutorial - Another example of accessing data s3://scedc-pds for ambient noise cross-correlation'
-      URL: https://nextjournal.com/thclements/seisnoisejl-gpu-computing-tutorial 
-      AuthorName: Tim Clements
-    - Title: 'Using Amazon API Gateway and Lambda to window and decimate waveforms'
-      URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-apis
-      AuthorName: Shang-Lin Chen
-      AuthorURL: https://scedc.caltech.edu
-      Services:
-         - Lambda
-    - Title: 'Jupyter Notebook tutorial on Ridgecrest DAS dataset'
-      URL: https://github.com/SCEDC/cloud/blob/master/pds_ridgecrest_das.ipynb
-      AuthorName: Jiuxun Yin
-      
-      
   Publications:
-    - Title: Southern California Earthquake Data Now Available in the AWS Cloud
-      URL: https://pubs.geoscienceworld.org/ssa/srl/article-abstract/doi/10.1785/0220210039/600883/Southern-California-Earthquake-Data-Now-Available
-      AuthorName: "Ellen Yu; Aparna Bhaskaran; Shang‐Lin Chen; Zachary E. Ross; Egill Hauksson; Robert W. Clayton"
-    - Title: The Seismic Signature of California's Earthquakes, Droughts, and Floods.
-      URL: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JB025553
-      AuthorName: "Tim Clements; Marine Denolle"
-
+  - AuthorName: "Ellen Yu; Aparna Bhaskaran; Shang\u2010Lin Chen; Zachary E. Ross;\
+      \ Egill Hauksson; Robert W. Clayton"
+    Title: Southern California Earthquake Data Now Available in the AWS Cloud
+    URL: https://pubs.geoscienceworld.org/ssa/srl/article-abstract/doi/10.1785/0220210039/600883/Southern-California-Earthquake-Data-Now-Available
+  - AuthorName: Tim Clements; Marine Denolle
+    Title: The Seismic Signature of California's Earthquakes, Droughts, and Floods.
+    URL: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JB025553
+  Tutorials:
+  - AuthorName: Ellen Yu
+    AuthorURL: https://scedc.caltech.edu
+    Title: Getting Started with SCEDC AWS Public Dataset
+    URL: https://scedc.caltech.edu/data/getstarted-pds.html
+  - AuthorName: Aparna Bhaskaran
+    AuthorURL: https://scedc.caltech.edu
+    Title: Script to Download Seismic Waveforms from the SCEDC AWS Public Dataset
+    URL: https://github.com/SCEDC/cloud/tree/master/pds-fetch-continuous-data
+  - AuthorName: Shang-Lin Chen
+    AuthorURL: https://scedc.caltech.edu
+    Services:
+    - Lambda
+    Title: Using Lambda to Process Seismograms
+    URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-example
+  - AuthorName: Tim Clements
+    AuthorURL: https://tclements.github.io/
+    Title: 'Cactus to Clouds: Processing The SCEDC Open Data Set on AWS'
+    URL: https://nextjournal.com/thclements/cactus-to-clouds/#accessing-the-scedc-dataset-on-aws
+  - AuthorName: Tim Clements
+    Title: SeisNoise.jl GPU Computing Tutorial - Another example of accessing data
+      s3://scedc-pds for ambient noise cross-correlation
+    URL: https://nextjournal.com/thclements/seisnoisejl-gpu-computing-tutorial
+  - AuthorName: Shang-Lin Chen
+    AuthorURL: https://scedc.caltech.edu
+    Services:
+    - Lambda
+    Title: Using Amazon API Gateway and Lambda to window and decimate waveforms
+    URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-apis
+  - AuthorName: Jiuxun Yin
+    Title: Jupyter Notebook tutorial on Ridgecrest DAS dataset
+    URL: https://github.com/SCEDC/cloud/blob/master/pds_ridgecrest_das.ipynb
+Description: This dataset contains ground motion velocity and acceleration seismic
+  waveforms recorded by the Southern California Seismic Network (SCSN) and archived
+  at the Southern California Earthquake Data Center (SCEDC). A Distributed Acousting
+  Sensing (DAS) dataset is included.
+Documentation: https://scedc.caltech.edu/data/cloud.html
+License: SCEDC herby grants the non-exclusive, royalty free, non-transferable, worldwide
+  right and license to use, reproduce and publicly display in all media public data
+  from the Southern California Seismic Network. Please cite the SCEDC (doi:10.7909/C3WD3xH1)
+  and SCSN (doi:10.7914/SN/CI) for any research publications using this data.
+ManagedBy: '[Southern California Earthquake Data Center](https://scedc.caltech.edu)'
+Name: Southern California Earthquake Data
+Resources:
+- ARN: arn:aws:s3:::scedc-pds
+  Description: Seismic waveform data (miniSEED format) and earthquake catalog (ascii)
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- earth observation
+- earthquakes
+- seismology
+UpdateFrequency: Daily

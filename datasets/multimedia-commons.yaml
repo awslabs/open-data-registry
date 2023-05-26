@@ -1,24 +1,38 @@
-Name: Multimedia Commons
-Description: The Multimedia Commons is a collection of audio and visual features computed for the nearly 100 million Creative Commons-licensed Flickr images and videos in the YFCC100M dataset from Yahoo! Labs, along with ground-truth annotations for selected subsets. The International Computer Science Institute (ICSI) and Lawrence Livermore National Laboratory are producing and distributing a core set of derived feature sets and annotations as part of an effort to enable large-scale video search capabilities. They have released this feature corpus into the public domain, under Creative Commons License 0, so it is free for anyone to use for any purpose.
-Documentation: https://multimediacommons.wordpress.com/yfcc100m-core-dataset/
-Contact:  multimedia-commons@icsi.berkeley.edu
-UpdateFrequency: Not updated.
-ManagedBy: "[Multimedia Commons](http://mmcommons.org/)"
-Tags:
-  - aws-pds
-  - computer vision
-  - machine learning
-  - multimedia
-  - video
-License: The International Computer Science Institute and Lawrence Livermore National Laboratory have released the feature corpus and annotations under Creative Commons 0 (public domain), so there are no restrictions on use. More information on licensing and citation of the original metadata and the underlying images and videos is available from Yahoo! Labs at https://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67
-Resources:
-  - Description: This directory has 99,171,688 image files and 787,479 video files. The videos add up to around 8,081 hours, with an average video length of 37s and a median length of 28s.
-    ARN: arn:aws:s3:::multimedia-commons
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://multimedia-commons.s3.amazonaws.com/index.html)'
+Contact: multimedia-commons@icsi.berkeley.edu
+DOI: 10.60489/roda.52b9ka
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: The Multimedia Commons is a collection of audio and visual features computed
+  for the nearly 100 million Creative Commons-licensed Flickr images and videos in
+  the YFCC100M dataset from Yahoo! Labs, along with ground-truth annotations for selected
+  subsets. The International Computer Science Institute (ICSI) and Lawrence Livermore
+  National Laboratory are producing and distributing a core set of derived feature
+  sets and annotations as part of an effort to enable large-scale video search capabilities.
+  They have released this feature corpus into the public domain, under Creative Commons
+  License 0, so it is free for anyone to use for any purpose.
+Documentation: https://multimediacommons.wordpress.com/yfcc100m-core-dataset/
+License: The International Computer Science Institute and Lawrence Livermore National
+  Laboratory have released the feature corpus and annotations under Creative Commons
+  0 (public domain), so there are no restrictions on use. More information on licensing
+  and citation of the original metadata and the underlying images and videos is available
+  from Yahoo! Labs at https://webscope.sandbox.yahoo.com/catalog.php?datatype=i&did=67
+ManagedBy: '[Multimedia Commons](http://mmcommons.org/)'
+Name: Multimedia Commons
+Resources:
+- ARN: arn:aws:s3:::multimedia-commons
+  Description: This directory has 99,171,688 image files and 787,479 video files.
+    The videos add up to around 8,081 hours, with an average video length of 37s and
+    a median length of 28s.
+  Explore:
+  - '[Browse Bucket](https://multimedia-commons.s3.amazonaws.com/index.html)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- computer vision
+- machine learning
+- multimedia
+- video
+UpdateFrequency: Not updated.

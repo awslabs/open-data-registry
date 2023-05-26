@@ -1,62 +1,73 @@
-Name: ICGC on AWS
-Description: The International Cancer Genome Consortium (ICGC) coordinates projects with the common aim of accelerating research into the causes and control of cancer. The PanCancer Analysis of Whole Genomes (PCAWG) study is an international collaboration to identify common patterns of mutation in whole genomes from ICGC. More than 2,400 consistently analyzed genomes corresponding to over 1,100 unique ICGC donors are now freely available on Amazon S3 to credentialed researchers subject to ICGC data sharing policies.
-Documentation: https://dcc.icgc.org/icgc-in-the-cloud/aws
 Contact: dcc-support@icgc.org
-ManagedBy: '[International Cancer Genome Collaboratory](https://dcc.icgc.org/)'
-UpdateFrequency: New data is added as soon as it is available.
-Tags:
-  - aws-pds
-  - cancer
-  - genetic
-  - genomic
-  - life sciences
-  - bam
-  - vcf
-License: Data use is subject to the access and publication polices of the source. Distribution of the data is subject to ICGC Trusted Partner Approval.  More information on terms of use is available at https://icgc.org/daco
-Resources:
-  - Description: BAM and VCF files from the The PanCancer Analysis of Whole Genomes (PCAWG) study.
-    ARN: arn:aws:s3:::icgc
-    Region: us-east-1
-    Type: S3 Bucket
-    ControlledAccess: https://icgc.org/daco
-  - Description: This public Amazon S3 bucket contains analysis metadata in XML format for genome analysis results. More information at http://oicr.icgc.meta.s3.amazonaws.com/metadata/README
-    ARN: arn:aws:s3:::oicr.icgc.meta/metadata
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: Raw sequencing and other primary data from non-TCGA ICGC projects
-    ARN: arn:aws:s3:::oicr.icgc
-    Region: us-east-1
-    Type: S3 Bucket
-    ControlledAccess: https://docs.icgc.org/download/guide/
+DOI: 10.60489/roda.ldfvno
 DataAtWork:
-  Tutorials:
-    - Title: AWS Pancancer Workflow Launcher
-      URL: https://github.com/ICGC-TCGA-PanCancer/cli/wiki
-      AuthorName: Solomon Shorser
-      AuthorURL: https://github.com/solomonshorser
-  Tools & Applications:
   Publications:
-    - Title: Pan-cancer analysis of whole genomes
-      URL: https://www.nature.com/articles/s41586-020-1969-6
-      AuthorName: The ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium (2020)
-      AuthorURL: https://dcc.icgc.org/pcawg
-    - Title: Analyses of non-coding somatic drivers in 2,693 cancer whole genomes
-      URL: https://www.nature.com/articles/s41586-020-1965-x
-      AuthorName: Rheinbay et al (2020)
-      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Rheinbay%20E%5BAuthor%5D&cauthor=true&cauthor_uid=28658208
-    - Title: Genomic basis of RNA alterations in cancer
-      URL: https://www.nature.com/articles/s41586-020-1970-0
-      AuthorName: PCAWG Transcriptome Core Group et al. (2020)
-      AuthorURL: https://icgc.org/committees-and-working-groups#71954
-    - Title: Patterns of somatic structural variation in human cancer genomes
-      URL: https://www.nature.com/articles/s41586-019-1913-9
-      AuthorName: Li et al. (2020)
-      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Yilong%20Li
-    - Title: The evolutionary history of 2,658 cancers
-      URL: https://www.nature.com/articles/s41586-019-1907-7
-      AuthorName: Gerstung et al (2020)
-      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Moritz%20Gerstung
-    - Title: The repertoire of mutational signatures in human cancer
-      URL: https://www.nature.com/articles/s41586-020-1943-3
-      AuthorName: Alexandrov et al (2020)
-      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Ludmil%20B.%20Alexandrov
+  - AuthorName: The ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium (2020)
+    AuthorURL: https://dcc.icgc.org/pcawg
+    Title: Pan-cancer analysis of whole genomes
+    URL: https://www.nature.com/articles/s41586-020-1969-6
+  - AuthorName: Rheinbay et al (2020)
+    AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Rheinbay%20E%5BAuthor%5D&cauthor=true&cauthor_uid=28658208
+    Title: Analyses of non-coding somatic drivers in 2,693 cancer whole genomes
+    URL: https://www.nature.com/articles/s41586-020-1965-x
+  - AuthorName: PCAWG Transcriptome Core Group et al. (2020)
+    AuthorURL: https://icgc.org/committees-and-working-groups#71954
+    Title: Genomic basis of RNA alterations in cancer
+    URL: https://www.nature.com/articles/s41586-020-1970-0
+  - AuthorName: Li et al. (2020)
+    AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Yilong%20Li
+    Title: Patterns of somatic structural variation in human cancer genomes
+    URL: https://www.nature.com/articles/s41586-019-1913-9
+  - AuthorName: Gerstung et al (2020)
+    AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Moritz%20Gerstung
+    Title: The evolutionary history of 2,658 cancers
+    URL: https://www.nature.com/articles/s41586-019-1907-7
+  - AuthorName: Alexandrov et al (2020)
+    AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Ludmil%20B.%20Alexandrov
+    Title: The repertoire of mutational signatures in human cancer
+    URL: https://www.nature.com/articles/s41586-020-1943-3
+  Tools & Applications: null
+  Tutorials:
+  - AuthorName: Solomon Shorser
+    AuthorURL: https://github.com/solomonshorser
+    Title: AWS Pancancer Workflow Launcher
+    URL: https://github.com/ICGC-TCGA-PanCancer/cli/wiki
+Description: The International Cancer Genome Consortium (ICGC) coordinates projects
+  with the common aim of accelerating research into the causes and control of cancer.
+  The PanCancer Analysis of Whole Genomes (PCAWG) study is an international collaboration
+  to identify common patterns of mutation in whole genomes from ICGC. More than 2,400
+  consistently analyzed genomes corresponding to over 1,100 unique ICGC donors are
+  now freely available on Amazon S3 to credentialed researchers subject to ICGC data
+  sharing policies.
+Documentation: https://dcc.icgc.org/icgc-in-the-cloud/aws
+License: Data use is subject to the access and publication polices of the source.
+  Distribution of the data is subject to ICGC Trusted Partner Approval.  More information
+  on terms of use is available at https://icgc.org/daco
+ManagedBy: '[International Cancer Genome Collaboratory](https://dcc.icgc.org/)'
+Name: ICGC on AWS
+Resources:
+- ARN: arn:aws:s3:::icgc
+  ControlledAccess: https://icgc.org/daco
+  Description: BAM and VCF files from the The PanCancer Analysis of Whole Genomes
+    (PCAWG) study.
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oicr.icgc.meta/metadata
+  Description: This public Amazon S3 bucket contains analysis metadata in XML format
+    for genome analysis results. More information at http://oicr.icgc.meta.s3.amazonaws.com/metadata/README
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oicr.icgc
+  ControlledAccess: https://docs.icgc.org/download/guide/
+  Description: Raw sequencing and other primary data from non-TCGA ICGC projects
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- cancer
+- genetic
+- genomic
+- life sciences
+- bam
+- vcf
+UpdateFrequency: New data is added as soon as it is available.

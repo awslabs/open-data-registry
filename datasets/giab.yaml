@@ -1,36 +1,42 @@
-Name: Genome in a Bottle on AWS
-Description: "Several reference genomes to enable translation of whole human genome sequencing to clinical practice. On 11/12/2020 these data were updated to reflect the most [up to date GIAB release](https://www.nist.gov/programs-projects/genome-bottle)."
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/giab
 Contact: http://genomeinabottle.org/
-ManagedBy: '[National Institute of Standards and Technology](https://www.nist.gov/)'
-UpdateFrequency: New data are added as soon as they are available.
-Tags:
-  - aws-pds
-  - genetic
-  - genomic
-  - life sciences
-  - reference index
-  - vcf
-License: |
-  There are no restrictions on the use of this data. More information on citation is available [here](https://www.nist.gov/programs-projects/genome-bottle).
-Resources:
-  - Description: "GIAB release data, last updated 11/12/2020."
-    ARN: arn:aws:s3:::giab
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.o13kp6
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-    - Title: GA4GH Benchmarking Tools
-      URL: https://github.com/ga4gh/benchmarking-tools
-      AuthorName: GA4GH Benchmarking Team
-    - Title: The Genome in a Bottle Github Project
-      URL: https://github.com/genome-in-a-bottle/about_GIAB
-      AuthorName: Genome In A Bottle Consortium
   Publications:
-    - Title: Extensive sequencing of seven human genomes to characterize benchmark reference materials
-      URL: https://www.nature.com/articles/sdata201625
-      AuthorName: Zook J et al (2016)
-    - Title: High-coverage, long-read sequencing of Han Chinese trio reference samples
-      URL: https://www.nature.com/articles/s41597-019-0098-2
-      AuthorName: Wang Y et al (2019)
+  - AuthorName: Zook J et al (2016)
+    Title: Extensive sequencing of seven human genomes to characterize benchmark reference
+      materials
+    URL: https://www.nature.com/articles/sdata201625
+  - AuthorName: Wang Y et al (2019)
+    Title: High-coverage, long-read sequencing of Han Chinese trio reference samples
+    URL: https://www.nature.com/articles/s41597-019-0098-2
+  Tools & Applications:
+  - AuthorName: GA4GH Benchmarking Team
+    Title: GA4GH Benchmarking Tools
+    URL: https://github.com/ga4gh/benchmarking-tools
+  - AuthorName: Genome In A Bottle Consortium
+    Title: The Genome in a Bottle Github Project
+    URL: https://github.com/genome-in-a-bottle/about_GIAB
+  Tutorials: null
+Description: Several reference genomes to enable translation of whole human genome
+  sequencing to clinical practice. On 11/12/2020 these data were updated to reflect
+  the most [up to date GIAB release](https://www.nist.gov/programs-projects/genome-bottle).
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/giab
+License: 'There are no restrictions on the use of this data. More information on citation
+  is available [here](https://www.nist.gov/programs-projects/genome-bottle).
+
+  '
+ManagedBy: '[National Institute of Standards and Technology](https://www.nist.gov/)'
+Name: Genome in a Bottle on AWS
+Resources:
+- ARN: arn:aws:s3:::giab
+  Description: GIAB release data, last updated 11/12/2020.
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- genetic
+- genomic
+- life sciences
+- reference index
+- vcf
+UpdateFrequency: New data are added as soon as they are available.

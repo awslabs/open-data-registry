@@ -1,55 +1,77 @@
-Name: "1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5 and 3.7"
-Description: This dataset contains alignment files and short nucleotide, copy number, repeat expansion (STR) and structural variant call files from the 1000 Genomes Project Phase 3 dataset (n=3202) using Illumina DRAGEN v3.5.7b and v3.7.6 software. The v3.7.6 dataset also includes results from joint small variant, de novo structural variant, de novo copy number variant and repeat expansion calls on 602 trio families comprised of members from the 1000 Genomes Project Phase 3 dataset, as well as DRAGEN gVCF Genotyper (v3.8.3) analysis on the entire dataset (n=3202).  Improvements and new features in the v3.7.6 individual samples analyses include CYP2D6 variant calling and joint detection (see ‘DRAGEN 3.7 User Guide’ for details on these features) and use of graph-based hg19 and hg38 reference hash tables (see ‘DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes’ for details). 
-Contact: "[Illumina, Inc.](mailto:support@illumina.com)"
-Documentation: "[DRAGEN Support Resources](https://support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)"
-ManagedBy: "[Illumina, Inc.](https://www.illumina.com/products/by-type/informatics-products/dragen-bio-it-platform.html)"
-UpdateFrequency: Files may be updated subsequent to changes to the 1000 Genomes Project data set or select new DRAGEN features or offerings.
-Tags:
-  - aws-pds
-  - life sciences
-  - health
-  - biology
-  - genetic
-  - genomic
-  - bam
-  - vcf
-License: "TBD"
-Resources:
-  - Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, metrics  and other supporting files from DRAGEN v3.5.6b analyses in a public S3 bucket. 
-    ARN: arn:aws:s3:::1000genomes-dragen
-    Region: us-west-2
-    Type: S3 Bucket
-  - Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, cyp2d6-tsv, metrics and other supporting files from DRAGEN v3.7.6 analyses in a public S3 bucket. 
-    ARN: arn:aws:s3:::1000genomes-dragen-3.7.6
-    Region: us-west-2
-    Type: S3 Bucket
-  - Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, cyp2d6-tsv, metrics and other supporting files from DRAGEN v3.7.6 analyses in a public S3 bucket. This is a clone of the 1000genomes-dragen-3.7.6 bucket in the us-east-1 region. 
-    ARN: arn:aws:s3:::1000genomes-dragen-v3.7.6
-    Region: us-east-1
-    Type: S3 Bucket
+Contact: '[Illumina, Inc.](mailto:support@illumina.com)'
+DOI: 10.60489/roda.knk5u2
 DataAtWork:
-  Tutorials:
-    - Title: "DRAGEN Quick Start on AWS"
-      URL: https://github.com/aws-quickstart/quickstart-illumina-dragen
-      AuthorName: AWS Quick Start Team
-      AuthorURL: https://github.com/aws-quickstart
-  Tools & Applications:
-    - Title: "DRAGEN on BaseSpace Sequence Hub"
-      URL: https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html#key-features
-      AuthorName: Illumina Inc.
-      AuthorURL: https://www.illumina.com/
-    - Title: "DRAGEN 3.7.5b Release"
-      URL: https://support.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/DRAGEN-3.5.7b-Customer-Release-Notes-1000000131537-00.pdf
-      AuthorName: Illumina Inc.
-      AuthorURL: https://www.illumina.com/
-    - Title: "DRAGEN 3.7 User Guide"
-      URL: https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/dragen-bio-it/Illumina-DRAGEN-Bio-IT-Platform-User-Guide-1000000141465-00.pdf
-      AuthorName: Illumina Inc.
-      AuthorURL: https://www.illumina.com/
   Publications:
-    - Title: "precisionFDA Truth Challenge V2: Calling variants from short- and long-reads in difficult-to-map regions (Preprint)"
-      URL: https://www.biorxiv.org/content/10.1101/2020.11.13.380741v1
-      AuthorName: Olson et al (2020)
-    - Title: "DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes"
-      URL: https://www.illumina.com/science/genomics-research/dragen-wins-precisionfda-challenge-showcase-accuracy-gains.html
-      AuthorName: Illumina Inc. (2021)
+  - AuthorName: Olson et al (2020)
+    Title: 'precisionFDA Truth Challenge V2: Calling variants from short- and long-reads
+      in difficult-to-map regions (Preprint)'
+    URL: https://www.biorxiv.org/content/10.1101/2020.11.13.380741v1
+  - AuthorName: Illumina Inc. (2021)
+    Title: DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains
+      from Alt-aware Mapping and Graph Reference Genomes
+    URL: https://www.illumina.com/science/genomics-research/dragen-wins-precisionfda-challenge-showcase-accuracy-gains.html
+  Tools & Applications:
+  - AuthorName: Illumina Inc.
+    AuthorURL: https://www.illumina.com/
+    Title: DRAGEN on BaseSpace Sequence Hub
+    URL: https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html#key-features
+  - AuthorName: Illumina Inc.
+    AuthorURL: https://www.illumina.com/
+    Title: DRAGEN 3.7.5b Release
+    URL: https://support.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/DRAGEN-3.5.7b-Customer-Release-Notes-1000000131537-00.pdf
+  - AuthorName: Illumina Inc.
+    AuthorURL: https://www.illumina.com/
+    Title: DRAGEN 3.7 User Guide
+    URL: https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/dragen-bio-it/Illumina-DRAGEN-Bio-IT-Platform-User-Guide-1000000141465-00.pdf
+  Tutorials:
+  - AuthorName: AWS Quick Start Team
+    AuthorURL: https://github.com/aws-quickstart
+    Title: DRAGEN Quick Start on AWS
+    URL: https://github.com/aws-quickstart/quickstart-illumina-dragen
+Description: "This dataset contains alignment files and short nucleotide, copy number,\
+  \ repeat expansion (STR) and structural variant call files from the 1000 Genomes\
+  \ Project Phase 3 dataset (n=3202) using Illumina DRAGEN v3.5.7b and v3.7.6 software.\
+  \ The v3.7.6 dataset also includes results from joint small variant, de novo structural\
+  \ variant, de novo copy number variant and repeat expansion calls on 602 trio families\
+  \ comprised of members from the 1000 Genomes Project Phase 3 dataset, as well as\
+  \ DRAGEN gVCF Genotyper (v3.8.3) analysis on the entire dataset (n=3202).  Improvements\
+  \ and new features in the v3.7.6 individual samples analyses include CYP2D6 variant\
+  \ calling and joint detection (see \u2018DRAGEN 3.7 User Guide\u2019 for details\
+  \ on these features) and use of graph-based hg19 and hg38 reference hash tables\
+  \ (see \u2018DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains\
+  \ from Alt-aware Mapping and Graph Reference Genomes\u2019 for details)."
+Documentation: '[DRAGEN Support Resources](https://support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)'
+License: TBD
+ManagedBy: '[Illumina, Inc.](https://www.illumina.com/products/by-type/informatics-products/dragen-bio-it-platform.html)'
+Name: 1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5 and 3.7
+Resources:
+- ARN: arn:aws:s3:::1000genomes-dragen
+  Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf,
+    CNV-bw, metrics  and other supporting files from DRAGEN v3.5.6b analyses in a
+    public S3 bucket.
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::1000genomes-dragen-3.7.6
+  Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf,
+    CNV-bw, cyp2d6-tsv, metrics and other supporting files from DRAGEN v3.7.6 analyses
+    in a public S3 bucket.
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::1000genomes-dragen-v3.7.6
+  Description: BAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf,
+    CNV-bw, cyp2d6-tsv, metrics and other supporting files from DRAGEN v3.7.6 analyses
+    in a public S3 bucket. This is a clone of the 1000genomes-dragen-3.7.6 bucket
+    in the us-east-1 region.
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- life sciences
+- health
+- biology
+- genetic
+- genomic
+- bam
+- vcf
+UpdateFrequency: Files may be updated subsequent to changes to the 1000 Genomes Project
+  data set or select new DRAGEN features or offerings.

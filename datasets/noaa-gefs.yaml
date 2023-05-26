@@ -1,35 +1,51 @@
-Name: NOAA Global Ensemble Forecast System (GEFS)
-Description: The Global Ensemble Forecast System (GEFS), previously known as the GFS Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts, or ensemble members.  The National Centers for Environmental Prediction (NCEP) started the GEFS to address the nature of uncertainty in weather observations, which is used to initialize weather forecast models. The GEFS attempts to quantify the amount of uncertainty in a forecast by generating an ensemble of multiple forecasts, each minutely different, or perturbed, from the original observations. With global coverage, GEFS is produced four times a day with weather forecasts going out to 16 days.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-gefs-pds
-Contact: |
-  For questions regarding data content or quality, visit [the NOAA GEFS site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php). <br/>
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: 4 times a day, every 6 hours starting at midnight.
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: Project data files
-    ARN: arn:aws:s3:::noaa-gefs-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gefs-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGEFSObject
-    Region: us-east-1
-    Type: SNS Topic
+    - weather
+Contact: 'For questions regarding data content or quality, visit [the NOAA GEFS site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gefs.php).
+  <br/>
+
+  For any questions regarding data delivery or any general questions regarding the
+  NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+
+  '
+DOI: 10.60489/roda.zk3fg1
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: The Global Ensemble Forecast System (GEFS), previously known as the GFS
+  Global ENSemble (GENS), is a weather forecast model made up of 21 separate forecasts,
+  or ensemble members.  The National Centers for Environmental Prediction (NCEP) started
+  the GEFS to address the nature of uncertainty in weather observations, which is
+  used to initialize weather forecast models. The GEFS attempts to quantify the amount
+  of uncertainty in a forecast by generating an ensemble of multiple forecasts, each
+  minutely different, or perturbed, from the original observations. With global coverage,
+  GEFS is produced four times a day with weather forecasts going out to 16 days.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-gefs-pds
+License: Open Data. There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA Global Ensemble Forecast System (GEFS)
+Resources:
+- ARN: arn:aws:s3:::noaa-gefs-pds
+  Description: Project data files
+  Explore:
+  - '[Browse Bucket](https://noaa-gefs-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGEFSObject
+  Description: New data notifications for GFS, only Lambda and SQS protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- weather
+UpdateFrequency: 4 times a day, every 6 hours starting at midnight.

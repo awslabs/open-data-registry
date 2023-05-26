@@ -1,43 +1,47 @@
-Name: HIRLAM Weather Model
-Description: HIRLAM (High Resolution Limited Area Model) is an operational synoptic and mesoscale weather prediction model managed by the Finnish Meteorological Institute.
-Documentation: http://en.ilmatieteenlaitos.fi/open-data-on-aws-s3
-ManagedBy: "[Finnish Meteorological Institute](https://www.ilmatieteenlaitos.fi/)"
-Contact: avoin-data@fmi.fi
-UpdateFrequency: The data is updated four times a day with analysis hours 00, 06, 12 and 18. Corresponding model runs are available roughly five hours after analysis time (~ after model run has started).
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - earth observation
-  - climate
-  - weather
-  - meteorological
-License: Creative Commons Attribution 4.0 International (CC BY 4.0)
-Resources:
-  - Description: Surface GRIB files
-    ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-surface-grib
-    Region: eu-west-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://fmi-opendata-rcrhirlam-surface-grib.s3.amazonaws.com/index.html)'
-  - Description: Pressure GRIB files
-    ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-pressure-grib
-    Region: eu-west-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://fmi-opendata-rcrhirlam-pressure-grib.s3.amazonaws.com/index.html)'
-  - Description: Notifications for new surface data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-surface-grib
-    Region: eu-west-1
-    Type: SNS Topic
-  - Description: Notifications for new pressure data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-pressure-grib
-    Region: eu-west-1
-    Type: SNS Topic
+    - weather
+Contact: avoin-data@fmi.fi
+DOI: 10.60489/roda.wjsdre
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: HIRLAM (High Resolution Limited Area Model) is an operational synoptic
+  and mesoscale weather prediction model managed by the Finnish Meteorological Institute.
+Documentation: http://en.ilmatieteenlaitos.fi/open-data-on-aws-s3
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+ManagedBy: '[Finnish Meteorological Institute](https://www.ilmatieteenlaitos.fi/)'
+Name: HIRLAM Weather Model
+Resources:
+- ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-surface-grib
+  Description: Surface GRIB files
+  Explore:
+  - '[Browse Bucket](https://fmi-opendata-rcrhirlam-surface-grib.s3.amazonaws.com/index.html)'
+  Region: eu-west-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::fmi-opendata-rcrhirlam-pressure-grib
+  Description: Pressure GRIB files
+  Explore:
+  - '[Browse Bucket](https://fmi-opendata-rcrhirlam-pressure-grib.s3.amazonaws.com/index.html)'
+  Region: eu-west-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-surface-grib
+  Description: Notifications for new surface data
+  Region: eu-west-1
+  Type: SNS Topic
+- ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-rcrhirlam-pressure-grib
+  Description: Notifications for new pressure data
+  Region: eu-west-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- earth observation
+- climate
+- weather
+- meteorological
+UpdateFrequency: The data is updated four times a day with analysis hours 00, 06,
+  12 and 18. Corresponding model runs are available roughly five hours after analysis
+  time (~ after model run has started).

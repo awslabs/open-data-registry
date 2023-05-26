@@ -1,48 +1,56 @@
-Name: NOAA/PMEL Ocean Climate Stations Moorings
-Description: |
-  The mission of the Ocean Climate Stations (OCS) Project is to make meteorological and 
-  oceanic measurements from autonomous platforms.  Calibrated, quality-controlled, and well-documented 
-  climatological measurements are available on the OCS webpage and the OceanSITES Global Data
-  Assembly Centers (GDACs), with near-realtime data available prior to release of the complete, 
-  downloaded datasets.<br/><br/>
-  
-  OCS measurements served through the Big Data Program come from OCS high-latitude moored buoys located in the Kuroshio 
-  Extension (32°N 145°E) and the Gulf of Alaska (50°N 145°W).  Initiated in 2004 and 2007, 
-  the respective moored buoys, KEO and Papa, measure a suite of surface and subsurface essential ocean variables.
-  The surface suite includes air temperature, relative humidity, shortwave and longwave radiation, barometric pressure, winds, and rain, 
-  while subsurface instrumentation includes temperature, salinity, and ocean currents.  Individual buoy deployments are stitched together into 
-  a continuous time-series, which is synced to the OceanSITES GDACs, and subsequently, to BDP.
-
-Documentation: https://www.pmel.noaa.gov/ocs/ http://www.oceansites.org https://dods.ndbc.noaa.gov/oceansites/
-Contact: For questions regarding data content or quality, users are directed to the OCS webpage (https://www.pmel.noaa.gov/ocs/). For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: KEO and Papa data on BDP are synchronized with the OceanSITES Global Data Assembly Center periodically.
 Collabs:
   ASDI:
     Tags:
-      - oceans
-Tags:
-  - aws-pds
-  - climate
-  - environmental
-  - oceans
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: OCS moored buoy data
-    ARN: arn:aws:s3:::noaa-oar-keo-papa-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore: 
-     - '[Browse Bucket](https://noaa-oar-keo-papa-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for OCS moored buoy data, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:709902155096:NewKeoPapaObject
-    Region: us-east-1
-    Type: SNS Topic
-
+    - oceans
+Contact: For questions regarding data content or quality, users are directed to the
+  OCS webpage (https://www.pmel.noaa.gov/ocs/). For any questions regarding data delivery
+  or any general questions regarding the NOAA Open Data Dissemination (NODD) Program,
+  email the NODD Team at nodd@noaa.gov. <br /> We also seek to identify case studies
+  on how NOAA data is being used and will be featuring those stories in joint publications
+  and in upcoming events. If you are interested in seeing your story highlighted,
+  please share it with the NODD team by emailing nodd@noaa.gov
+DOI: 10.60489/roda.butzu7
 DataAtWork:
   Publications:
-    - Title: OCS publications - All OCS-relevant publications are updated at the URL below.
-      URL: https://www.pmel.noaa.gov/ocs/publications
-      AuthorName: PMEL
+  - AuthorName: PMEL
+    Title: OCS publications - All OCS-relevant publications are updated at the URL
+      below.
+    URL: https://www.pmel.noaa.gov/ocs/publications
+Description: "The mission of the Ocean Climate Stations (OCS) Project is to make meteorological\
+  \ and \noceanic measurements from autonomous platforms.  Calibrated, quality-controlled,\
+  \ and well-documented \nclimatological measurements are available on the OCS webpage\
+  \ and the OceanSITES Global Data\nAssembly Centers (GDACs), with near-realtime data\
+  \ available prior to release of the complete, \ndownloaded datasets.<br/><br/>\n\
+  \nOCS measurements served through the Big Data Program come from OCS high-latitude\
+  \ moored buoys located in the Kuroshio \nExtension (32\xB0N 145\xB0E) and the Gulf\
+  \ of Alaska (50\xB0N 145\xB0W).  Initiated in 2004 and 2007, \nthe respective moored\
+  \ buoys, KEO and Papa, measure a suite of surface and subsurface essential ocean\
+  \ variables.\nThe surface suite includes air temperature, relative humidity, shortwave\
+  \ and longwave radiation, barometric pressure, winds, and rain, \nwhile subsurface\
+  \ instrumentation includes temperature, salinity, and ocean currents.  Individual\
+  \ buoy deployments are stitched together into \na continuous time-series, which\
+  \ is synced to the OceanSITES GDACs, and subsequently, to BDP.\n"
+Documentation: https://www.pmel.noaa.gov/ocs/ http://www.oceansites.org https://dods.ndbc.noaa.gov/oceansites/
+License: Open Data. There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA/PMEL Ocean Climate Stations Moorings
+Resources:
+- ARN: arn:aws:s3:::noaa-oar-keo-papa-pds
+  Description: OCS moored buoy data
+  Explore:
+  - '[Browse Bucket](https://noaa-oar-keo-papa-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:709902155096:NewKeoPapaObject
+  Description: New data notifications for OCS moored buoy data, only Lambda and SQS
+    protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- climate
+- environmental
+- oceans
+- weather
+UpdateFrequency: KEO and Papa data on BDP are synchronized with the OceanSITES Global
+  Data Assembly Center periodically.

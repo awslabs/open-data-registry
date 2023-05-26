@@ -1,32 +1,31 @@
-Name: Humor Detection from Product Question Answering Systems
-Description: |
-  This dataset provides labeled humor detection from product question answering systems.
-  The dataset contains 3 csv files: [Humorous.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Humorous.csv) 
-  containing the humorous product questions, 
-  [Non-humorous-unbiased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humorous-unbiased.csv) containing 
-  the non-humorous prodcut questions from the same products as the humorous one, and, 
-  [Non-humorous-biased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humours-biased.csv) containing 
-  the non-humorous prodcut questions from randomly selected products. 
-  Each file has the question, product description, image url to the product, 
-  and a label if the question is humorous or not.
-Documentation: https://humor-detection-pds.s3-us-west-2.amazonaws.com/README.txt
 Contact: yftahz@amazon.com, ekravi@amazon.com
-ManagedBy: "[Amazon](https://www.amazon.com/)"
-UpdateFrequency: Not currently being updated
-Tags:
-  - amazon.science
-  - natural language processing
-  - machine learning
-License: "[CDLA-Sharing](https://cdla.io/sharing-1-0/)"
-Resources:
-  - Description: Humor Detection Dataset
-    ARN: arn:aws:s3:::humor-detection-pds
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://humor-detection-pds.s3.amazonaws.com/index.html)'
+DOI: 10.60489/roda.hjwhd6
 DataAtWork:
   Publications:
-    - Title: Humor Detection in Product Question Answering Systems.
-      URL: https://sigir.org/sigir2020/
-      AuthorName: Yftah Ziser, Elad Kravi & David Carmel
+  - AuthorName: Yftah Ziser, Elad Kravi & David Carmel
+    Title: Humor Detection in Product Question Answering Systems.
+    URL: https://sigir.org/sigir2020/
+Description: "This dataset provides labeled humor detection from product question\
+  \ answering systems.\nThe dataset contains 3 csv files: [Humorous.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Humorous.csv)\
+  \ \ncontaining the humorous product questions, \n[Non-humorous-unbiased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humorous-unbiased.csv)\
+  \ containing \nthe non-humorous prodcut questions from the same products as the\
+  \ humorous one, and, \n[Non-humorous-biased.csv](https://humor-detection-pds.s3-us-west-2.amazonaws.com/Non-humours-biased.csv)\
+  \ containing \nthe non-humorous prodcut questions from randomly selected products.\
+  \ \nEach file has the question, product description, image url to the product, \n\
+  and a label if the question is humorous or not.\n"
+Documentation: https://humor-detection-pds.s3-us-west-2.amazonaws.com/README.txt
+License: '[CDLA-Sharing](https://cdla.io/sharing-1-0/)'
+ManagedBy: '[Amazon](https://www.amazon.com/)'
+Name: Humor Detection from Product Question Answering Systems
+Resources:
+- ARN: arn:aws:s3:::humor-detection-pds
+  Description: Humor Detection Dataset
+  Explore:
+  - '[Browse Bucket](https://humor-detection-pds.s3.amazonaws.com/index.html)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- amazon.science
+- natural language processing
+- machine learning
+UpdateFrequency: Not currently being updated

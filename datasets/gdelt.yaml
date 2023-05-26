@@ -1,57 +1,64 @@
-Name: Global Database of Events, Language and Tone (GDELT)
-Description: |
-  This project monitors the world's broadcast, print,
-  and web news from nearly every corner of every country in
-  over 100 languages and identifies the people, locations,
-  organizations, counts, themes, sources, emotions,
-  quotes, images and events driving our global society every
-  second of every day.
-Documentation: http://www.gdeltproject.org/
 Contact: http://www.gdeltproject.org/about.html#contact
-UpdateFrequency: Not currently being updated
-ManagedBy: Unmanaged
-Tags:
-  - aws-pds
-  - events
-  - disaster response
-License: http://www.gdeltproject.org/about.html#termsofuse
-Resources:
-  - Description: Project data files
-    ARN: arn:aws:s3:::gdelt-open-data
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: Notifications for new data
-    ARN: arn:aws:sns:us-east-1:928094251383:gdelt-csv
-    Region: us-east-1
-    Type: SNS Topic
+DOI: 10.60489/roda.8s01by
 DataAtWork:
-  Tutorials:
-    - Title: Exploring GDELT with Athena
-      URL: http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html
-      AuthorName: Julien Simon
-      AuthorURL: https://twitter.com/julsimon
-    - Title: Running R on Amazon Athena
-      URL: https://aws.amazon.com/blogs/big-data/running-r-on-amazon-athena/
-      AuthorName: Gopal Wunnava
-      AuthorURL: https://www.linkedin.com/in/gopal-wunnava-b11a77/
-    - Title: Bootstrapping GeoMesa HBase on AWS S3
-      URL: http://www.geomesa.org/documentation/tutorials/geomesa-hbase-s3-on-aws.html
-      AuthorName: Commonwealth Computer Research, Inc.
-      AuthorURL: https://www.ccri.com
-    - Title: Creating PySpark DataFrame from CSV in AWS S3 in EMR
-      URL: https://gist.github.com/jakechen/6955f2de51212163312b6430555b8e0b
-      AuthorName: Jake Chen
-      AuthorURL: https://github.com/jakechen
-    - Title: Analysing Brexit Coverage In The Media Over Time
-      URL: https://www.linkedin.com/pulse/media-brexit-story-so-far-may-corbyn-less-shambles-than-mark-chopping/
-      AuthorName: Mark Chopping
-      AuthorURL: https://www.kognitio.com
-    - Title: How to partition your geospatial data lake for analysis with Amazon Redshift 
-      URL: https://aws.amazon.com/blogs/publicsector/how-partition-geospatial-data-lake-analysis-amazon-redshift/
-      AuthorName: Jeff DeMuth, Luke Wells, and Nemanja Boric
+  Publications: null
   Tools & Applications:
-    - Title: Globe Events
-      URL: http://live.thermobook.net/globe-events/
-      AuthorName: thermobook
-      AuthorURL: http://www.thermobook.net
-  Publications:
+  - AuthorName: thermobook
+    AuthorURL: http://www.thermobook.net
+    Title: Globe Events
+    URL: http://live.thermobook.net/globe-events/
+  Tutorials:
+  - AuthorName: Julien Simon
+    AuthorURL: https://twitter.com/julsimon
+    Title: Exploring GDELT with Athena
+    URL: http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html
+  - AuthorName: Gopal Wunnava
+    AuthorURL: https://www.linkedin.com/in/gopal-wunnava-b11a77/
+    Title: Running R on Amazon Athena
+    URL: https://aws.amazon.com/blogs/big-data/running-r-on-amazon-athena/
+  - AuthorName: Commonwealth Computer Research, Inc.
+    AuthorURL: https://www.ccri.com
+    Title: Bootstrapping GeoMesa HBase on AWS S3
+    URL: http://www.geomesa.org/documentation/tutorials/geomesa-hbase-s3-on-aws.html
+  - AuthorName: Jake Chen
+    AuthorURL: https://github.com/jakechen
+    Title: Creating PySpark DataFrame from CSV in AWS S3 in EMR
+    URL: https://gist.github.com/jakechen/6955f2de51212163312b6430555b8e0b
+  - AuthorName: Mark Chopping
+    AuthorURL: https://www.kognitio.com
+    Title: Analysing Brexit Coverage In The Media Over Time
+    URL: https://www.linkedin.com/pulse/media-brexit-story-so-far-may-corbyn-less-shambles-than-mark-chopping/
+  - AuthorName: Jeff DeMuth, Luke Wells, and Nemanja Boric
+    Title: How to partition your geospatial data lake for analysis with Amazon Redshift
+    URL: https://aws.amazon.com/blogs/publicsector/how-partition-geospatial-data-lake-analysis-amazon-redshift/
+Description: 'This project monitors the world''s broadcast, print,
+
+  and web news from nearly every corner of every country in
+
+  over 100 languages and identifies the people, locations,
+
+  organizations, counts, themes, sources, emotions,
+
+  quotes, images and events driving our global society every
+
+  second of every day.
+
+  '
+Documentation: http://www.gdeltproject.org/
+License: http://www.gdeltproject.org/about.html#termsofuse
+ManagedBy: Unmanaged
+Name: Global Database of Events, Language and Tone (GDELT)
+Resources:
+- ARN: arn:aws:s3:::gdelt-open-data
+  Description: Project data files
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:928094251383:gdelt-csv
+  Description: Notifications for new data
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- events
+- disaster response
+UpdateFrequency: Not currently being updated

@@ -1,41 +1,58 @@
-Name: Solar Dynamics Observatory (SDO) Machine Learning Dataset
-Description: The v1 dataset includes AIA/HMI observations 2010-2018 and v2 includes AIA/HMI observations 2010-2020 in all 10 wavebands (94A, 131A, 171A, 193A, 211A, 304A, 335A, 1600A, 1700A, 4500A), with 512x512 resolution and 6 minutes cadence; HMI vector magnetic field observations in Bx, By, and Bz components, with 512x512 resolution and 12 minutes cadence; The EVE observations in 39 wavelengths from 2010-05-01 to 2014-05-26, with 10 seconds cadence.
-Documentation: https://github.com/SDOML/sdoml.github.io
-Contact: Meng Jin (jinmeng@lmsal.com) and Paul Wright (paul@pauljwright.co.uk) 
-ManagedBy: "[NASA](http://www.nasa.gov/)"
-UpdateFrequency: N/A (The IDL/Python scripts for generating the datasets are published online, which can be used by users to generate the v1 dataset after 2018 and v2 dataset after 2020)
-Tags:
-  - aws-pds
-  - machine learning
-  - NASA SMD AI
-License: There are no restrictions on the use of this data.
-Citation:
-Resources:
-  - Description: The v1 dataset includes AIA observations 2010-2018 and v2 includes AIA observations 2010-2020 in all 10 wavebands (94A, 131A, 171A, 193A, 211A, 304A, 335A, 1600A, 1700A, 4500A), with 512x512 resolution and 6 minutes cadence; HMI vector magnetic field observations in Bx, By, and Bz components, with 512x512 resolution and 12 minutes cadence; The EVE observations in 39 wavelengths from 2010-05-01 to 2014-05-26, with 10 seconds cadence.
-    ARN: arn:aws:s3:::gov-nasa-hdrl-data1/contrib/fdl-sdoml/
-    Type: S3 Bucket
-    Region: us-west-2
+ADXCategories: null
+Citation: null
+Contact: Meng Jin (jinmeng@lmsal.com) and Paul Wright (paul@pauljwright.co.uk)
+DOI: 10.60489/roda.lz6xdj
 DataAtWork:
-  Tutorials: 
-    - Title: SDOMLv2 Github
-      URL: https://github.com/spaceml-org/helionb-sdoml/tree/main/notebooks/01_sdoml_dataset_2018
-      AuthorName: Wright, Paul J.; Jin, Meng; Cheung, Mark C. M.
-  Tools & Applications:
-    - Title: Scripts for generating the SDOMLv1 dataset
-      URL: https://github.com/SDOML/SDOML
-      AuthorName: Fouhey, David F.; Jin, Meng
-    - Title: Scripts for generating the SDOMLv2 dataset
-      URL: https://github.com/SDOML/SDOMLv2
-      AuthorName: Jin, Meng
-    - Title: ML applications based on the SDOMLv1 dataset
-      URL: https://gitlab.com/frontierdevelopmentlab/living-with-our-star/expanding-sdo-capabilities
-      AuthorName: Salvatelli, Valentina; dos Santos, Luiz F. G.; Bose, Souvik; Neuberg, Brad; Cheung, Mark C. M.; Janvier, Miho; Jin, Meng; Gal, Yarin; Boerner, Paul; Baydin, Atılım Güneş
-    - Title: ML applications based on the SDOMLv2 dataset
-      URL: https://github.com/spaceml-org/helionb-sdoml
-      AuthorName: Wright, Paul J.
   Publications:
-    - Title: A Machine-learning Data Set Prepared from the NASA Solar Dynamics Observatory Mission
-      URL: http://adsabs.harvard.edu/abs/2019ApJS..242....7G
-      AuthorName: Galvez, Richard search by orcid ; Fouhey, David F. search by orcid ; Jin, Meng search by orcid ; Szenicer, Alexandre; et al
-DeprecatedNotice:
-ADXCategories: 
+  - AuthorName: Galvez, Richard search by orcid ; Fouhey, David F. search by orcid
+      ; Jin, Meng search by orcid ; Szenicer, Alexandre; et al
+    Title: A Machine-learning Data Set Prepared from the NASA Solar Dynamics Observatory
+      Mission
+    URL: http://adsabs.harvard.edu/abs/2019ApJS..242....7G
+  Tools & Applications:
+  - AuthorName: Fouhey, David F.; Jin, Meng
+    Title: Scripts for generating the SDOMLv1 dataset
+    URL: https://github.com/SDOML/SDOML
+  - AuthorName: Jin, Meng
+    Title: Scripts for generating the SDOMLv2 dataset
+    URL: https://github.com/SDOML/SDOMLv2
+  - AuthorName: "Salvatelli, Valentina; dos Santos, Luiz F. G.; Bose, Souvik; Neuberg,\
+      \ Brad; Cheung, Mark C. M.; Janvier, Miho; Jin, Meng; Gal, Yarin; Boerner, Paul;\
+      \ Baydin, At\u0131l\u0131m G\xFCne\u015F"
+    Title: ML applications based on the SDOMLv1 dataset
+    URL: https://gitlab.com/frontierdevelopmentlab/living-with-our-star/expanding-sdo-capabilities
+  - AuthorName: Wright, Paul J.
+    Title: ML applications based on the SDOMLv2 dataset
+    URL: https://github.com/spaceml-org/helionb-sdoml
+  Tutorials:
+  - AuthorName: Wright, Paul J.; Jin, Meng; Cheung, Mark C. M.
+    Title: SDOMLv2 Github
+    URL: https://github.com/spaceml-org/helionb-sdoml/tree/main/notebooks/01_sdoml_dataset_2018
+DeprecatedNotice: null
+Description: The v1 dataset includes AIA/HMI observations 2010-2018 and v2 includes
+  AIA/HMI observations 2010-2020 in all 10 wavebands (94A, 131A, 171A, 193A, 211A,
+  304A, 335A, 1600A, 1700A, 4500A), with 512x512 resolution and 6 minutes cadence;
+  HMI vector magnetic field observations in Bx, By, and Bz components, with 512x512
+  resolution and 12 minutes cadence; The EVE observations in 39 wavelengths from 2010-05-01
+  to 2014-05-26, with 10 seconds cadence.
+Documentation: https://github.com/SDOML/sdoml.github.io
+License: There are no restrictions on the use of this data.
+ManagedBy: '[NASA](http://www.nasa.gov/)'
+Name: Solar Dynamics Observatory (SDO) Machine Learning Dataset
+Resources:
+- ARN: arn:aws:s3:::gov-nasa-hdrl-data1/contrib/fdl-sdoml/
+  Description: The v1 dataset includes AIA observations 2010-2018 and v2 includes
+    AIA observations 2010-2020 in all 10 wavebands (94A, 131A, 171A, 193A, 211A, 304A,
+    335A, 1600A, 1700A, 4500A), with 512x512 resolution and 6 minutes cadence; HMI
+    vector magnetic field observations in Bx, By, and Bz components, with 512x512
+    resolution and 12 minutes cadence; The EVE observations in 39 wavelengths from
+    2010-05-01 to 2014-05-26, with 10 seconds cadence.
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- machine learning
+- NASA SMD AI
+UpdateFrequency: N/A (The IDL/Python scripts for generating the datasets are published
+  online, which can be used by users to generate the v1 dataset after 2018 and v2
+  dataset after 2020)

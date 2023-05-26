@@ -1,66 +1,62 @@
-Name: Public Utility Data Liberation Project
-Description: |
-  The Public Utility Data Liberation Project (PUDL) provides analysis-ready energy system data to climate advocates,
-  researchers, policymakers, and journalists.
-  <br/>
-  <br/>
-  [PUDL](https://catalyst.coop/pudl/) is an [open source data processing pipeline](https://github.com/catalyst-cooperative/pudl)
-  that makes US energy data easier to access and use programmatically. Hundreds of gigabytes of valuable data
-  are published by US government agencies, but it's often difficult to work with.
-  PUDL takes the original spreadsheets, CSV files, and databases and turns them into a unified resource. This allows users to
-  spend more time on novel analysis and less time on data preparation.
-  <br/>
-  <br/>
-  This information allows users to explore the operating costs of individual power plants, and see how fuel costs impact
-  the viability of different types of generation.  It can highlight the competitiveness of renewable electricity in the
-  market today.  It can show how the generation mix of different utilities has evolved over time, and how the usage of
-  individual power plants has changed as fuel prices have changed and more renewable generation has been brought online.
-  <br/>
-  <br/>
-  The data hosted on Amazon Web Services is intended to be accessed through the 
-  [PUDL Intake Catalog](https://github.com/catalyst-cooperative/pudl-catalog).
-  The catalog allows users to access the data via a uniform API for each data type (parquet, SQL),
-  handles local caching and provides rich metadata about the data.
-
-Documentation: |
-  To access the data via the the PUDL intake catalog, follow the setup
-  [instructions in the documentation](https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/). 
-  You can learn more about the data in the [PUDL data dictionary documentation](https://catalystcoop-pudl.readthedocs.io/en/dev/data_dictionaries/index.html).
-Contact: For general questions or feedback about the data, create an GitHub issue or discussion in the [PUDL repo](https://github.com/catalyst-cooperative/pudl). We also love talking to our users during [PUDL Office Hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
-ManagedBy: "[Catalyst Cooperative](https://catalyst.coop/)"
-UpdateFrequency: |
-  The federal agencies that publish the raw data PUDL processes release new data, monthly, quarterly and yearly. 
-  PUDL is continuously improving the data and tries to release new versions of the data monthly.
-Tags:
-  - climate
-  - climate model
-  - energy
-  - environmental
-  - government records
-  - infrastructure
-  - open source software
-  - electricity
-  - energy modeling
-  - utilities
-
-License: The PUDL data and documentation are published under the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
-Resources:
-  - Description: All PUDL data outputs.
-    ARN: arn:aws:s3:::intake.catalyst.coop
-    Region: us-west-2
-    Type: S3 Bucket
+ADXCategories:
+- Environmental Data
+- Resources Data
+Contact: For general questions or feedback about the data, create an GitHub issue
+  or discussion in the [PUDL repo](https://github.com/catalyst-cooperative/pudl).
+  We also love talking to our users during [PUDL Office Hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
+DOI: 10.60489/roda.rds8ix
 DataAtWork:
   Tutorials:
-    - Title: PUDL Intake Catalog Setup
-      URL: https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/
-      AuthorName: Catalyst Cooperative
-      AuthorURL: https://catalyst.coop/
-    - Title: PUDL Examples
-      URL: https://github.com/catalyst-cooperative/pudl-examples
-      AuthorName: Catalyst Cooperative
-      AuthorURL: https://catalyst.coop/
-      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/notebooks/03-pudl-parquet.ipynb
-
-ADXCategories:
-  - Environmental Data
-  - Resources Data
+  - AuthorName: Catalyst Cooperative
+    AuthorURL: https://catalyst.coop/
+    Title: PUDL Intake Catalog Setup
+    URL: https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/
+  - AuthorName: Catalyst Cooperative
+    AuthorURL: https://catalyst.coop/
+    NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/notebooks/03-pudl-parquet.ipynb
+    Title: PUDL Examples
+    URL: https://github.com/catalyst-cooperative/pudl-examples
+Description: "The Public Utility Data Liberation Project (PUDL) provides analysis-ready\
+  \ energy system data to climate advocates,\nresearchers, policymakers, and journalists.\n\
+  <br/>\n<br/>\n[PUDL](https://catalyst.coop/pudl/) is an [open source data processing\
+  \ pipeline](https://github.com/catalyst-cooperative/pudl)\nthat makes US energy\
+  \ data easier to access and use programmatically. Hundreds of gigabytes of valuable\
+  \ data\nare published by US government agencies, but it's often difficult to work\
+  \ with.\nPUDL takes the original spreadsheets, CSV files, and databases and turns\
+  \ them into a unified resource. This allows users to\nspend more time on novel analysis\
+  \ and less time on data preparation.\n<br/>\n<br/>\nThis information allows users\
+  \ to explore the operating costs of individual power plants, and see how fuel costs\
+  \ impact\nthe viability of different types of generation.  It can highlight the\
+  \ competitiveness of renewable electricity in the\nmarket today.  It can show how\
+  \ the generation mix of different utilities has evolved over time, and how the usage\
+  \ of\nindividual power plants has changed as fuel prices have changed and more renewable\
+  \ generation has been brought online.\n<br/>\n<br/>\nThe data hosted on Amazon Web\
+  \ Services is intended to be accessed through the \n[PUDL Intake Catalog](https://github.com/catalyst-cooperative/pudl-catalog).\n\
+  The catalog allows users to access the data via a uniform API for each data type\
+  \ (parquet, SQL),\nhandles local caching and provides rich metadata about the data.\n"
+Documentation: "To access the data via the the PUDL intake catalog, follow the setup\n\
+  [instructions in the documentation](https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/).\
+  \ \nYou can learn more about the data in the [PUDL data dictionary documentation](https://catalystcoop-pudl.readthedocs.io/en/dev/data_dictionaries/index.html).\n"
+License: The PUDL data and documentation are published under the [Creative Commons
+  Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
+ManagedBy: '[Catalyst Cooperative](https://catalyst.coop/)'
+Name: Public Utility Data Liberation Project
+Resources:
+- ARN: arn:aws:s3:::intake.catalyst.coop
+  Description: All PUDL data outputs.
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- climate
+- climate model
+- energy
+- environmental
+- government records
+- infrastructure
+- open source software
+- electricity
+- energy modeling
+- utilities
+UpdateFrequency: "The federal agencies that publish the raw data PUDL processes release\
+  \ new data, monthly, quarterly and yearly. \nPUDL is continuously improving the\
+  \ data and tries to release new versions of the data monthly.\n"

@@ -1,38 +1,48 @@
-Name: District of Columbia - Classified Point Cloud LiDAR
-Description: |
-  LiDAR point cloud data for Washington, DC is available for anyone to use on Amazon S3.
-  This dataset, managed by the Office of the Chief Technology Officer (OCTO), through the
-  direction of the District of Columbia GIS program, contains tiled point cloud data for
-  the entire District along with associated metadata.
-Documentation: "[2015 data](https://github.com/awslabs/open-data-docs/tree/main/docs/dc-lidar-2015), [2018 data](https://github.com/awslabs/open-data-docs/tree/main/docs/dc-lidar-2018)"
-Contact: dcgis@dc.gov
-UpdateFrequency: The most recent data is from 2018 and 2015 data is available as well. A new data acquisition is planned for 2020.
-ManagedBy: "[Washington DC government](https://dc.gov/)"
 Collabs:
   ASDI:
     Tags:
-      - elevation
-Tags:
-  - aws-pds
-  - geospatial
-  - cities
-  - us-dc
-  - disaster response
-License: See Washington, DC [Terms of Use](https://dc.gov/page/terms-and-conditions-use)
-Resources:
-  - Description: LAS, XML, SHP
-    ARN: arn:aws:s3:::dc-lidar-2015
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://dc-lidar-2015.s3.amazonaws.com/index.html)'
-  - Description: LAS, XML
-    ARN: arn:aws:s3:::dc-lidar-2018
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://dc-lidar-2018.s3.amazonaws.com/index.html)'
+    - elevation
+Contact: dcgis@dc.gov
+DOI: 10.60489/roda.1bmtk3
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: 'LiDAR point cloud data for Washington, DC is available for anyone to
+  use on Amazon S3.
+
+  This dataset, managed by the Office of the Chief Technology Officer (OCTO), through
+  the
+
+  direction of the District of Columbia GIS program, contains tiled point cloud data
+  for
+
+  the entire District along with associated metadata.
+
+  '
+Documentation: '[2015 data](https://github.com/awslabs/open-data-docs/tree/main/docs/dc-lidar-2015),
+  [2018 data](https://github.com/awslabs/open-data-docs/tree/main/docs/dc-lidar-2018)'
+License: See Washington, DC [Terms of Use](https://dc.gov/page/terms-and-conditions-use)
+ManagedBy: '[Washington DC government](https://dc.gov/)'
+Name: District of Columbia - Classified Point Cloud LiDAR
+Resources:
+- ARN: arn:aws:s3:::dc-lidar-2015
+  Description: LAS, XML, SHP
+  Explore:
+  - '[Browse Bucket](https://dc-lidar-2015.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::dc-lidar-2018
+  Description: LAS, XML
+  Explore:
+  - '[Browse Bucket](https://dc-lidar-2018.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- geospatial
+- cities
+- us-dc
+- disaster response
+UpdateFrequency: The most recent data is from 2018 and 2015 data is available as well.
+  A new data acquisition is planned for 2020.

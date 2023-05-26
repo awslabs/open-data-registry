@@ -1,126 +1,148 @@
-Name: NREL National Solar Radiation Database
-Description: |
-  Released to the public as part of the Department of Energy's Open Energy Data Initiative,
-  the [National Solar Radiation Database (NSRDB)](https://nsrdb.nrel.gov/) is
-  a serially complete collection of hourly and half-hourly values of the three
-  most common measurements of solar radiation – global horizontal, direct
-  normal, and diffuse horizontal irradiance — and meteorological data. These
-  data have been collected at a sufficient number of locations and temporal and
-  spatial scales to accurately represent regional solar radiation climates.
-Documentation: https://nsrdb.nrel.gov/
-Contact: nsrdb@nrel.gov
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
-UpdateFrequency: Annually
 Collabs:
   ASDI:
     Tags:
-      - energy
-Tags:
-  - aws-pds
-  - earth observation
-  - energy
-  - geospatial
-  - meteorological
-  - solar
-License:  Creative Commons Attribution 3.0 United States License
-Resources:
-  - Description: '[NREL Solar Radiation Datasets](https://nsrdb.nrel.gov/)'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 4km x 30min data (1998-2018) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical meteorological years (TMY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tmy/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftmy%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical direct years (TDY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tdy/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftdy%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical global years (TGY) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tgy/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftgy%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) synthetically downscaled 2km x 5min for Puerto Rico (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/puerto_rico/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Fpuerto_rico%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-5min data for the Contiguous United States (CONUS) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/conus/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=conus%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-10min data for the all of the Western Hemisphere (GOES full-disc) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/full_disc/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=full_disc%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-15min data from the Meteosat satellites starting in 2017 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/meteosat/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=meteosat%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-10min data from the Himawari satellites starting in 2015 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/himawari/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=himawari%2F)'
-  - Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/india/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=india%2F)'
-  - Description: Meteorological Statistical Model 1 (MTS1) data (1961-1990) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts1
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=mts1%2F)'
-  - Description: Meteorological Statistical Model 2 (MTS2) data (1991-2005) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
-    ARN: arn:aws:s3:::nrel-pds-nsrdb/mts2
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=mts2%2F)'
-  - Description: '[HSDS](https://github.com/NREL/hsds-examples) NSRDB domains'
-    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/nsrdb/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fnsrdb%2F)'
+    - energy
+Contact: nsrdb@nrel.gov
+DOI: 10.60489/roda.oo1hvm
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-    - Title: NSRDB Viewer
-      URL: https://nsrdb.nrel.gov/nsrdb-viewer
-      AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby, Paul Edwards
-    - Title: HSDS Examples
-      URL: https://github.com/NREL/hsds-examples
-      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
   Publications:
-    - Title: The National Solar Radiation Data Base (NSRDB)
-      URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
-      AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin, James Shelby
-    - Title: Physics-guided machine learning for improved accuracy of the National Solar Radiation Database
-      URL: https://www.sciencedirect.com/science/article/abs/pii/S0038092X22000044
-      AuthorName: Grant Buster, Mike Bannister, Aron Habte, Dylan Hettinger, Galen Maclaurin, Michael Rossol, Manajit Sengupta, Yu Xie
+  - AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin,
+      James Shelby
+    Title: The National Solar Radiation Data Base (NSRDB)
+    URL: https://www.sciencedirect.com/science/article/pii/S136403211830087X
+  - AuthorName: Grant Buster, Mike Bannister, Aron Habte, Dylan Hettinger, Galen Maclaurin,
+      Michael Rossol, Manajit Sengupta, Yu Xie
+    Title: Physics-guided machine learning for improved accuracy of the National Solar
+      Radiation Database
+    URL: https://www.sciencedirect.com/science/article/abs/pii/S0038092X22000044
+  Tools & Applications:
+  - AuthorName: Manajit Sengupta, Yu Xe, Anthony Lopez, Aron Habte, Galen Maclaurin,
+      James Shelby, Paul Edwards
+    Title: NSRDB Viewer
+    URL: https://nsrdb.nrel.gov/nsrdb-viewer
+  - AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael
+      Rossol
+    Title: HSDS Examples
+    URL: https://github.com/NREL/hsds-examples
+  Tutorials: null
+Description: "Released to the public as part of the Department of Energy's Open Energy\
+  \ Data Initiative,\nthe [National Solar Radiation Database (NSRDB)](https://nsrdb.nrel.gov/)\
+  \ is\na serially complete collection of hourly and half-hourly values of the three\n\
+  most common measurements of solar radiation \u2013 global horizontal, direct\nnormal,\
+  \ and diffuse horizontal irradiance \u2014 and meteorological data. These\ndata\
+  \ have been collected at a sufficient number of locations and temporal and\nspatial\
+  \ scales to accurately represent regional solar radiation climates.\n"
+Documentation: https://nsrdb.nrel.gov/
+License: Creative Commons Attribution 3.0 United States License
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+Name: NREL National Solar Radiation Database
+Resources:
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/
+  Description: '[NREL Solar Radiation Datasets](https://nsrdb.nrel.gov/)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 4km x 30min data (1998-2018) in
+    [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tmy/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical meteorological years (TMY)
+    in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftmy%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tdy/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical direct years (TDY) in
+    [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftdy%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/tgy/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) v3 typical global years (TGY) in
+    [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Ftgy%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/v3/puerto_rico/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) synthetically downscaled 2km x 5min
+    for Puerto Rico (1998-2017) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=v3%2Fpuerto_rico%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/conus/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-5min data for the Contiguous
+    United States (CONUS) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=conus%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/full_disc/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) 2km-10min data for the all of the
+    Western Hemisphere (GOES full-disc) starting with 2018 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=full_disc%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/meteosat/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-15min data from the Meteosat
+    satellites starting in 2017 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=meteosat%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/himawari/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) 4km-10min data from the Himawari
+    satellites starting in 2015 in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=himawari%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/india/
+  Description: '[NSRDB](https://nsrdb.nrel.gov/) Suny-India data (2000-2014) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=india%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/mts1
+  Description: Meteorological Statistical Model 1 (MTS1) data (1961-1990) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=mts1%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-nsrdb/mts2
+  Description: Meteorological Statistical Model 2 (MTS2) data (1991-2005) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5)
+    format
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-nsrdb&prefix=mts2%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nrel-pds-hsds/nrel/nsrdb/
+  Description: '[HSDS](https://github.com/NREL/hsds-examples) NSRDB domains'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fnsrdb%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- earth observation
+- energy
+- geospatial
+- meteorological
+- solar
+UpdateFrequency: Annually

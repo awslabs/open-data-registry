@@ -1,46 +1,50 @@
-Name: SILAM Air Quality
-Description: "Air Quality is a global SILAM atmospheric composition and air quality forecast performed on a daily basis for > 100 species and covering the troposphere and the stratosphere. The output produces 3D concentration fields and aerosol optical thickness. The data are unique: 20km resolution for global AQ models is unseen worldwide."
-Documentation: http://en.ilmatieteenlaitos.fi/open-data-on-aws-s3
-ManagedBy: "[Finnish Meteorological Institute](https://www.ilmatieteenlaitos.fi/)"
-Contact: avoin-data@fmi.fi
-UpdateFrequency: 1 time a day
 Collabs:
   ASDI:
     Tags:
-      - air quality
-Tags:
-  - aws-pds
-  - earth observation
-  - climate
-  - weather
-  - air quality
-  - meteorological
-License: Creative Commons Attribution 4.0 International (CC BY 4.0)
-Resources:
-  - Description: Surface NetCDF files
-    ARN: arn:aws:s3:::fmi-opendata-silam-surface-netcdf
-    Region: eu-west-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://fmi-opendata-silam-surface-netcdf.s3.amazonaws.com/index.html)'
-  - Description: Surface Zarr files
-    ARN: arn:aws:s3:::fmi-opendata-silam-surface-zarr
-    Region: eu-west-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://fmi-opendata-silam-surface-zarr.s3.amazonaws.com/index.html)'
-  - Description: Notifications for new netcdf surface data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-silam-surface-netcdf
-    Region: eu-west-1
-    Type: SNS Topic
-  - Description: Notifications for new zarr surface data
-    ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-silam-surface-zarr
-    Region: eu-west-1
-    Type: SNS Topic
+    - air quality
+Contact: avoin-data@fmi.fi
+DOI: 10.60489/roda.eo8d3q
 DataAtWork:
+  Publications: null
+  Tools & Applications: null
   Tutorials:
-    - Title: "Simple examples"
-      URL: https://github.com/fmidev/opendata-resources/tree/master/examples/python
-      AuthorName: Roope Tervo      
-  Tools & Applications:
-  Publications:
+  - AuthorName: Roope Tervo
+    Title: Simple examples
+    URL: https://github.com/fmidev/opendata-resources/tree/master/examples/python
+Description: 'Air Quality is a global SILAM atmospheric composition and air quality
+  forecast performed on a daily basis for > 100 species and covering the troposphere
+  and the stratosphere. The output produces 3D concentration fields and aerosol optical
+  thickness. The data are unique: 20km resolution for global AQ models is unseen worldwide.'
+Documentation: http://en.ilmatieteenlaitos.fi/open-data-on-aws-s3
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+ManagedBy: '[Finnish Meteorological Institute](https://www.ilmatieteenlaitos.fi/)'
+Name: SILAM Air Quality
+Resources:
+- ARN: arn:aws:s3:::fmi-opendata-silam-surface-netcdf
+  Description: Surface NetCDF files
+  Explore:
+  - '[Browse Bucket](https://fmi-opendata-silam-surface-netcdf.s3.amazonaws.com/index.html)'
+  Region: eu-west-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::fmi-opendata-silam-surface-zarr
+  Description: Surface Zarr files
+  Explore:
+  - '[Browse Bucket](https://fmi-opendata-silam-surface-zarr.s3.amazonaws.com/index.html)'
+  Region: eu-west-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-silam-surface-netcdf
+  Description: Notifications for new netcdf surface data
+  Region: eu-west-1
+  Type: SNS Topic
+- ARN: arn:aws:sns:eu-west-1:916174725480:new-fmi-opendata-silam-surface-zarr
+  Description: Notifications for new zarr surface data
+  Region: eu-west-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- earth observation
+- climate
+- weather
+- air quality
+- meteorological
+UpdateFrequency: 1 time a day

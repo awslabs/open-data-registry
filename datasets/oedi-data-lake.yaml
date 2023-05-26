@@ -1,154 +1,167 @@
-Name: Department of Energy's Open Energy Data Initiative (OEDI)
-Description: |
-  Data released under the Department of Energy's Open Energy Data Initiative
-  (DOE). The Open Energy Data Initiative (OEDI) aims to improve and automate
-  access of high-value energy data sets across the U.S. Department of Energy’s
-  (DOE’s) programs, offices, and national laboratories. OEDI aims to make data
-  actionable and discoverable by researchers and industry to accelerate
-  analysis and advance innovation.
-Documentation: https://github.com/openEDI/documentation/
-Contact:  https://github.com/openEDI/documentation/issues
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
-UpdateFrequency:  As needed
 Collabs:
   ASDI:
     Tags:
-      - energy
-Tags:
-  - aws-pds
-  - energy
-  - environmental
-  - geospatial
-  - model
-  - solar
-  - lidar
-License:  Creative Commons Attribution 3.0 United States License
-Resources:
-  - Description: '[Data Catalog of the Open Energy Data Initiative (OEDI)](https://data.openei.org/)'
-    ARN: arn:aws:s3:::oedi-data-lake/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake)'
-  - Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/umcm/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=umcm%2F)'
-  - Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/dgen/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dgen%2F)'
-  - Description: '[Lawrence Berkeley National Laboratory (LBNL) Tracking the Sun](https://github.com/openEDI/documentation/blob/master/TrackingtheSun.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/tracking-the-sun/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=tracking-the-sun%2F)'
-  - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - (PVRDB)](https://github.com/openEDI/documentation/blob/master/pv-rooftop.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop%2F)'
-  - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - Puerto Rico (PVRDB-PR)](https://github.com/openEDI/documentation/blob/master/pv-rooftop-pr.md)'
-    ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop-pr/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop-pr%2F)'
-  - Description: '[Synthetic Models for Advanced, Realistic Testing: Distribution systems and Scenarios (SMART-DS) Datasets](https://github.com/openEDI/documentation/tree/main/SMART-DS)'
-    ARN: arn:aws:s3:::oedi-data-lake/SMART-DS/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=SMART-DS%2F)'
-  - Description: "[NREL's Annual Technology Baseline (ATB)](https://atb.nrel.gov)"
-    ARN: arn:aws:s3:::oedi-data-lake/ATB/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=ATB%2F)'
-  - Description: "[End-Use Load Profiles for the U.S. Building Stock](https://www.nrel.gov/buildings/end-use-load-profiles.html)"
-    ARN: arn:aws:s3:::oedi-data-lake/nrel-pds-building-stock/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F)'
-  - Description: "[Photovoltaic Data Acquisition (PVDAQ) Public Datasets](https://data.openei.org/submissions/4568)"
-    ARN: arn:aws:s3:::oedi-data-lake/pvdaq/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pvdaq%2F)'
-  - Description: "[BUTTER - Empirical Deep Learning Dataset](https://github.com/openEDI/documentation/blob/main/BUTTER.md)"
-    ARN: arn:aws:s3:::oedi-data-lake/butter/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=butter%2F)'
-  - Description: "[AlphaBuilding - Synthetic Dataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)"
-    ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=building_synthetic_dataset%2F)'
-  - Description: "[PR100: Puerto Rico Grid Resilience and Transition to 100% Renewable Energy](https://data.openei.org/submissions/5749)"
-    ARN: arn:aws:s3:::oedi-data-lake/PR100/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=PR100%2F)'
-  - Description: "[Demand-Side Grid Model (dsgrid) Data from the Electrification Futures Project (EFS)](https://data.openei.org/submissions/4130)"
-    ARN: arn:aws:s3:::oedi-data-lake/dsgrid-2018-efs/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dsgrid-2018-efs%2F)'
-  - Description: "[EGS Collab Experiment 1: Continuous Active-Source Seismic Monitoring (CASSM) Data](https://data.openei.org/submissions/5789)"
-    ARN: arn:aws:s3:::oedi-data-lake/egs_collab/EGS_CASSM/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=egs_collab%2FEGS_CASSM%2F)'
-  - Description: "[Tidal Resource Data from Sequim Bay Inlet, WA, August 2020](https://data.openei.org/submissions/5702)"
-    ARN: arn:aws:s3:::oedi-data-lake/primre/sequim-tidal-resource/
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=primre%2Fsequim-tidal-resource%2F)'
+    - energy
+Contact: https://github.com/openEDI/documentation/issues
+DOI: 10.60489/roda.dwet28
 DataAtWork:
-  Tools & Applications:
-    - Title: "Tracking the Sun Tool"
-      URL: https://emp.lbl.gov/tracking-sun-tool
-      AuthorName: Lawrence Berkeley National Laboratory (LBNL)
-      AuthorURL: https://emp.lbl.gov/tracking-the-sun
-    - Title:  "NSRDB Viewer"
-      URL: https://maps.nrel.gov/nsrdb-viewer/?aL=0&bL=groad&cE=0&lR=0&mC=31.653381399664%2C-3.1640625&zL=2
-      AuthorName: National Renewable Energy Laboratory (NREL)
-      AuthorURL:  https://www.nrel.gov/
   Publications:
-    - Title:  "On the Use of Coupled Wind, Wave, and Current Fields in the Simulation of Loads on BottomSupported Offshore Wind Turbines during Hurricanes"
-      URL:  https://www.nrel.gov/docs/fy16osti/65283.pdf
-      AuthorName: E. Kim, L. Manuel, M. Curcic, S. S. Chen, C. Phillips, P. Veers
-    - Title:  "The Distributed Generation Market Demand Model (dGen):Documentation"
-      URL:  https://www.nrel.gov/docs/fy16osti/65231.pdf
-      AuthorName: B. Sigrin, M. Gleason, R. Preus, I. Baring-Gould, R. Margolis
-    - Title:  "Tracking the Sun Pricing and Design Trends for Distributed Photovoltaic Systems in the United States: 2019 Edition"
-      URL:  https://emp.lbl.gov/sites/default/files/tracking_the_sun_2019_report.pdf
-      AuthorName: G. Barbose, N. Darghouth
-    - Title:  "Rooftop Solar Technical Potential for Low-to-Moderate Income Households in the United States"
-      URL:  https://www.nrel.gov/docs/fy18osti/70901.pdf
-      AuthorName: Benjamin Sigrin and Meghan Mooney
-    - Title:  "Using GIS-based methods and lidar data to estimate rooftop solar technical potential in US cities"
-      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aa7225/pdf
-      AuthorName:  Robert Margolis et al 2017 Environ. Res. Lett. 12 074013
-    - Title:  "Estimating rooftop solar technical potential across the US using a combination of GIS-based methods, lidar data, and statistical modeling"
-      URL:  https://iopscience.iop.org/article/10.1088/1748-9326/aaa554/pdf
-      AuthorName:  Pieter Gagnon et al 2018 Environ. Res. Lett. 13 024027
-    - Title:  "Rooftop Solar Photovoltaic Technical Potential in the United States: A Detailed Assessment"
-      URL:  https://www.nrel.gov/docs/fy16osti/65298.pdf
-      AuthorName:  Pieter Gagnon, Robert Margolis, Jennifer Melius, Caleb Phillips, and Ryan Elmore
+  - AuthorName: E. Kim, L. Manuel, M. Curcic, S. S. Chen, C. Phillips, P. Veers
+    Title: On the Use of Coupled Wind, Wave, and Current Fields in the Simulation
+      of Loads on BottomSupported Offshore Wind Turbines during Hurricanes
+    URL: https://www.nrel.gov/docs/fy16osti/65283.pdf
+  - AuthorName: B. Sigrin, M. Gleason, R. Preus, I. Baring-Gould, R. Margolis
+    Title: The Distributed Generation Market Demand Model (dGen):Documentation
+    URL: https://www.nrel.gov/docs/fy16osti/65231.pdf
+  - AuthorName: G. Barbose, N. Darghouth
+    Title: 'Tracking the Sun Pricing and Design Trends for Distributed Photovoltaic
+      Systems in the United States: 2019 Edition'
+    URL: https://emp.lbl.gov/sites/default/files/tracking_the_sun_2019_report.pdf
+  - AuthorName: Benjamin Sigrin and Meghan Mooney
+    Title: Rooftop Solar Technical Potential for Low-to-Moderate Income Households
+      in the United States
+    URL: https://www.nrel.gov/docs/fy18osti/70901.pdf
+  - AuthorName: Robert Margolis et al 2017 Environ. Res. Lett. 12 074013
+    Title: Using GIS-based methods and lidar data to estimate rooftop solar technical
+      potential in US cities
+    URL: https://iopscience.iop.org/article/10.1088/1748-9326/aa7225/pdf
+  - AuthorName: Pieter Gagnon et al 2018 Environ. Res. Lett. 13 024027
+    Title: Estimating rooftop solar technical potential across the US using a combination
+      of GIS-based methods, lidar data, and statistical modeling
+    URL: https://iopscience.iop.org/article/10.1088/1748-9326/aaa554/pdf
+  - AuthorName: Pieter Gagnon, Robert Margolis, Jennifer Melius, Caleb Phillips, and
+      Ryan Elmore
+    Title: 'Rooftop Solar Photovoltaic Technical Potential in the United States: A
+      Detailed Assessment'
+    URL: https://www.nrel.gov/docs/fy16osti/65298.pdf
+  Tools & Applications:
+  - AuthorName: Lawrence Berkeley National Laboratory (LBNL)
+    AuthorURL: https://emp.lbl.gov/tracking-the-sun
+    Title: Tracking the Sun Tool
+    URL: https://emp.lbl.gov/tracking-sun-tool
+  - AuthorName: National Renewable Energy Laboratory (NREL)
+    AuthorURL: https://www.nrel.gov/
+    Title: NSRDB Viewer
+    URL: https://maps.nrel.gov/nsrdb-viewer/?aL=0&bL=groad&cE=0&lR=0&mC=31.653381399664%2C-3.1640625&zL=2
+Description: "Data released under the Department of Energy's Open Energy Data Initiative\n\
+  (DOE). The Open Energy Data Initiative (OEDI) aims to improve and automate\naccess\
+  \ of high-value energy data sets across the U.S. Department of Energy\u2019s\n(DOE\u2019\
+  s) programs, offices, and national laboratories. OEDI aims to make data\nactionable\
+  \ and discoverable by researchers and industry to accelerate\nanalysis and advance\
+  \ innovation.\n"
+Documentation: https://github.com/openEDI/documentation/
+License: Creative Commons Attribution 3.0 United States License
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+Name: Department of Energy's Open Energy Data Initiative (OEDI)
+Resources:
+- ARN: arn:aws:s3:::oedi-data-lake/
+  Description: '[Data Catalog of the Open Energy Data Initiative (OEDI)](https://data.openei.org/)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/umcm/
+  Description: '[University of Miami Coupled Model (UMCM) for Hurricanes Ike and Sandy](https://github.com/openEDI/documentation/blob/master/UMCM_Hurricanes.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=umcm%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/dgen/
+  Description: '[Distributed Generation Market Demand (dGen) model](https://github.com/openEDI/documentation/blob/master/dGen.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dgen%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/tracking-the-sun/
+  Description: '[Lawrence Berkeley National Laboratory (LBNL) Tracking the Sun](https://github.com/openEDI/documentation/blob/master/TrackingtheSun.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=tracking-the-sun%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop/
+  Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database -
+    (PVRDB)](https://github.com/openEDI/documentation/blob/master/pv-rooftop.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop-pr/
+  Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database -
+    Puerto Rico (PVRDB-PR)](https://github.com/openEDI/documentation/blob/master/pv-rooftop-pr.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pv-rooftop-pr%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/SMART-DS/
+  Description: '[Synthetic Models for Advanced, Realistic Testing: Distribution systems
+    and Scenarios (SMART-DS) Datasets](https://github.com/openEDI/documentation/tree/main/SMART-DS)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=SMART-DS%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/ATB/
+  Description: '[NREL''s Annual Technology Baseline (ATB)](https://atb.nrel.gov)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=ATB%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/nrel-pds-building-stock/
+  Description: '[End-Use Load Profiles for the U.S. Building Stock](https://www.nrel.gov/buildings/end-use-load-profiles.html)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=nrel-pds-building-stock%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/pvdaq/
+  Description: '[Photovoltaic Data Acquisition (PVDAQ) Public Datasets](https://data.openei.org/submissions/4568)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=pvdaq%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/butter/
+  Description: '[BUTTER - Empirical Deep Learning Dataset](https://github.com/openEDI/documentation/blob/main/BUTTER.md)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=butter%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/
+  Description: '[AlphaBuilding - Synthetic Dataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=building_synthetic_dataset%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/PR100/
+  Description: '[PR100: Puerto Rico Grid Resilience and Transition to 100% Renewable
+    Energy](https://data.openei.org/submissions/5749)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=PR100%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/dsgrid-2018-efs/
+  Description: '[Demand-Side Grid Model (dsgrid) Data from the Electrification Futures
+    Project (EFS)](https://data.openei.org/submissions/4130)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dsgrid-2018-efs%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/egs_collab/EGS_CASSM/
+  Description: '[EGS Collab Experiment 1: Continuous Active-Source Seismic Monitoring
+    (CASSM) Data](https://data.openei.org/submissions/5789)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=egs_collab%2FEGS_CASSM%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::oedi-data-lake/primre/sequim-tidal-resource/
+  Description: '[Tidal Resource Data from Sequim Bay Inlet, WA, August 2020](https://data.openei.org/submissions/5702)'
+  Explore:
+  - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=primre%2Fsequim-tidal-resource%2F)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- energy
+- environmental
+- geospatial
+- model
+- solar
+- lidar
+UpdateFrequency: As needed

@@ -1,31 +1,37 @@
-Name: Cloud Indexes for Bowtie, Kraken, HISAT, and Centrifuge
-Description: Genomic tools use reference databases as indexes to operate quickly and efficiently, analogous to how web search engines use indexes for fast querying. Here, we aggregate genomic, pan-genomic and metagenomic indexes for analysis of sequencing data.
-Documentation: https://benlangmead.github.io/aws-indexes/
 Contact: https://github.com/BenLangmead/aws-indexes/issues
-ManagedBy: Langmead Lab at Johns Hopkins University & Kim Lab at University of Texas Southwestern
-UpdateFrequency: As new data becomes available; roughly quarterly
-Tags:
-  - aws-pds
-  - genomic
-  - bioinformatics
-  - biology
-  - whole genome sequencing
-  - medicine
-  - reference index
-  - mapping
-License: Public Domain
-Resources:
-  - Description: This bucket contains genomic indexes for Bowtie, Kraken, HISAT, and Centrifuge.
-    ARN: arn:aws:s3:::genome-idx
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.xrdyld
 DataAtWork:
-   Tutorials:
-     - Title: Table of contents for tutorials for constituent tools
-       URL: https://benlangmead.github.io/aws-indexes/tutorial
-       AuthorName: Ben Langmead
-       AuthorURL: https://benlangmead.github.io/aws-indexes
-   Publications:
-     - Title: Reducing reference bias using multiple population reference genomes
-       URL: https://www.biorxiv.org/content/10.1101/2020.03.03.975219v4.full.pdf
-       AuthorName: Chen et al (2020)
+  Publications:
+  - AuthorName: Chen et al (2020)
+    Title: Reducing reference bias using multiple population reference genomes
+    URL: https://www.biorxiv.org/content/10.1101/2020.03.03.975219v4.full.pdf
+  Tutorials:
+  - AuthorName: Ben Langmead
+    AuthorURL: https://benlangmead.github.io/aws-indexes
+    Title: Table of contents for tutorials for constituent tools
+    URL: https://benlangmead.github.io/aws-indexes/tutorial
+Description: Genomic tools use reference databases as indexes to operate quickly and
+  efficiently, analogous to how web search engines use indexes for fast querying.
+  Here, we aggregate genomic, pan-genomic and metagenomic indexes for analysis of
+  sequencing data.
+Documentation: https://benlangmead.github.io/aws-indexes/
+License: Public Domain
+ManagedBy: Langmead Lab at Johns Hopkins University & Kim Lab at University of Texas
+  Southwestern
+Name: Cloud Indexes for Bowtie, Kraken, HISAT, and Centrifuge
+Resources:
+- ARN: arn:aws:s3:::genome-idx
+  Description: This bucket contains genomic indexes for Bowtie, Kraken, HISAT, and
+    Centrifuge.
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- genomic
+- bioinformatics
+- biology
+- whole genome sequencing
+- medicine
+- reference index
+- mapping
+UpdateFrequency: As new data becomes available; roughly quarterly

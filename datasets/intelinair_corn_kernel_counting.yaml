@@ -1,26 +1,37 @@
-Name: Corn Kernel Counting Dataset
-Description: 'Dataset associated with the March 2021 Frontiers in Robotics and AI paper "Broad Dataset and Methods for Counting and Localization of On-Ear Corn Kernels", DOI: 10.3389/frobt.2021.627009'
-Documentation: https://www.frontiersin.org/articles/10.3389/frobt.2021.627009/abstract
 Contact: support@intelinair.com
-ManagedBy: Intelinair, Inc.
-UpdateFrequency: Periodically
-Tags:
-  - agriculture
-  - computer vision
-  - machine learning
-License: Provided in the bucket.
-Resources:
-  - Description: >
-      Folder contains the terms of use, paper, and zip file of data in COOC format.
-      Each kernel is annotated with an instance mask and appropriate class.
-      The dataset is broken into three subcomponents.  The "base" (i.e. "corn") subset contains images from a wide variety of domains such as those you might find on the internet.  The "narrow" subset contains images with a single ear as would be anticipated in the application.  The "many" dataset resembles the base dataset but has a huge number of ears and kernels in each image.
-      Images were annotated for (healthy) kernels, diseased kernels, “incomplete” (i.e. not fully matured) kernels, barren tips (i.e where the top of the ear does not produce kernels), and “kernel areas” where on-ear kernels were166present but resolution/lighting prevented annotation. 
-    ARN: arn:aws:s3:::intelinair-data-releases/corn-kernel-counting
-    Region: us-east-1
-    Type: S3 Bucket
-    RequesterPays: False
+DOI: 10.60489/roda.kcyvrj
 DataAtWork:
   Publications:
-    - Title: "Broad Dataset and Methods for Counting and Localization of On-Ear Corn Kernels"
-      URL: https://www.frontiersin.org/articles/10.3389/frobt.2021.627009/abstract
-      AuthorName: Jennifer Hobbs, Vachik Khachatryan, Barathwaj Anandan, Harutyun Hovhannisyan, David Wilson
+  - AuthorName: Jennifer Hobbs, Vachik Khachatryan, Barathwaj Anandan, Harutyun Hovhannisyan,
+      David Wilson
+    Title: Broad Dataset and Methods for Counting and Localization of On-Ear Corn
+      Kernels
+    URL: https://www.frontiersin.org/articles/10.3389/frobt.2021.627009/abstract
+Description: 'Dataset associated with the March 2021 Frontiers in Robotics and AI
+  paper "Broad Dataset and Methods for Counting and Localization of On-Ear Corn Kernels",
+  DOI: 10.3389/frobt.2021.627009'
+Documentation: https://www.frontiersin.org/articles/10.3389/frobt.2021.627009/abstract
+License: Provided in the bucket.
+ManagedBy: Intelinair, Inc.
+Name: Corn Kernel Counting Dataset
+Resources:
+- ARN: arn:aws:s3:::intelinair-data-releases/corn-kernel-counting
+  Description: "Folder contains the terms of use, paper, and zip file of data in COOC\
+    \ format. Each kernel is annotated with an instance mask and appropriate class.\
+    \ The dataset is broken into three subcomponents.  The \"base\" (i.e. \"corn\"\
+    ) subset contains images from a wide variety of domains such as those you might\
+    \ find on the internet.  The \"narrow\" subset contains images with a single ear\
+    \ as would be anticipated in the application.  The \"many\" dataset resembles\
+    \ the base dataset but has a huge number of ears and kernels in each image. Images\
+    \ were annotated for (healthy) kernels, diseased kernels, \u201Cincomplete\u201D\
+    \ (i.e. not fully matured) kernels, barren tips (i.e where the top of the ear\
+    \ does not produce kernels), and \u201Ckernel areas\u201D where on-ear kernels\
+    \ were166present but resolution/lighting prevented annotation. \n"
+  Region: us-east-1
+  RequesterPays: false
+  Type: S3 Bucket
+Tags:
+- agriculture
+- computer vision
+- machine learning
+UpdateFrequency: Periodically

@@ -1,46 +1,51 @@
-Name: Software Heritage Graph Dataset
-Description: |
-    [Software Heritage](https://www.softwareheritage.org/) is the largest
-    existing public archive of software source code and accompanying
-    development history. The Software Heritage Graph Dataset is a fully
-    deduplicated Merkle DAG representation of the Software Heritage archive.
-
-    The dataset links together file content identifiers, source code
-    directories, Version Control System (VCS) commits tracking evolution over
-    time, up to the full states of VCS repositories as observed by Software
-    Heritage during periodic crawls. The dataset’s contents come from major
-    development forges (including GitHub and GitLab), FOSS distributions (e.g.,
-    Debian), and language-specific package managers (e.g., PyPI). Crawling
-    information is also included, providing timestamps about when and where all
-    archived source code artifacts have been observed in the wild.
-Documentation: https://docs.softwareheritage.org/devel/swh-dataset/graph/athena.html
 Contact: aws@softwareheritage.org
-ManagedBy: Software Heritage
-UpdateFrequency: Data is updated yearly
-Tags:
-  - aws-pds
-  - source code
-  - open source software
-  - free software
-  - digital preservation
-License: |
-    Creative Commons Attribution 4.0 International.
-
-    By accessing the dataset, you agree with the Software Heritage [Ethical
-    Charter for using the archive
-    data](https://www.softwareheritage.org/legal/users-ethical-charter/) and
-    the [terms of use for bulk
-    access](https://www.softwareheritage.org/legal/bulk-access-terms-of-use/).
-Resources:
-  - Description: Software Heritage Graph Dataset
-    ARN: arn:aws:s3:::softwareheritage
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files"
-    ARN: arn:aws:s3:::softwareheritage-inventory
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.90xchj
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: "[Software Heritage](https://www.softwareheritage.org/) is the largest\n\
+  existing public archive of software source code and accompanying\ndevelopment history.\
+  \ The Software Heritage Graph Dataset is a fully\ndeduplicated Merkle DAG representation\
+  \ of the Software Heritage archive.\n\nThe dataset links together file content identifiers,\
+  \ source code\ndirectories, Version Control System (VCS) commits tracking evolution\
+  \ over\ntime, up to the full states of VCS repositories as observed by Software\n\
+  Heritage during periodic crawls. The dataset\u2019s contents come from major\ndevelopment\
+  \ forges (including GitHub and GitLab), FOSS distributions (e.g.,\nDebian), and\
+  \ language-specific package managers (e.g., PyPI). Crawling\ninformation is also\
+  \ included, providing timestamps about when and where all\narchived source code\
+  \ artifacts have been observed in the wild.\n"
+Documentation: https://docs.softwareheritage.org/devel/swh-dataset/graph/athena.html
+License: 'Creative Commons Attribution 4.0 International.
+
+
+  By accessing the dataset, you agree with the Software Heritage [Ethical
+
+  Charter for using the archive
+
+  data](https://www.softwareheritage.org/legal/users-ethical-charter/) and
+
+  the [terms of use for bulk
+
+  access](https://www.softwareheritage.org/legal/bulk-access-terms-of-use/).
+
+  '
+ManagedBy: Software Heritage
+Name: Software Heritage Graph Dataset
+Resources:
+- ARN: arn:aws:s3:::softwareheritage
+  Description: Software Heritage Graph Dataset
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::softwareheritage-inventory
+  Description: '[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)
+    files'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- source code
+- open source software
+- free software
+- digital preservation
+UpdateFrequency: Data is updated yearly

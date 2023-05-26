@@ -1,31 +1,33 @@
-Name: Crowdsourced Bathymetry
-Description: Community provided bathymetry data collected in collaboration with the International Hydrographic Organization.
-Documentation: https://noaa-dcdb-bathymetry-pds.s3.amazonaws.com/docs/readme.html
-Contact: mb.info@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: New data is added once a week.
 Collabs:
   ASDI:
     Tags:
-      - oceans
-Tags:
-  - aws-pds
-  - earth observation
-  - oceans
-License: There are no restrictions on the use of this data.
-Resources:
-  - Description: Crowdsourced bathymetry data
-    ARN: arn:aws:s3:::noaa-dcdb-bathymetry-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-dcdb-bathymetry-pds.s3.amazonaws.com/index.html)'
-  - Description: Notifications for CSB data
-    ARN: arn:aws:sns:us-east-1:709902155096:NewDCDBBathymetryObject
-    Region: us-east-1
-    Type: SNS Topic
+    - oceans
+Contact: mb.info@noaa.gov
+DOI: 10.60489/roda.4rbqwd
 DataAtWork:
   Tutorials:
-    - Title: Crowdsourced Bathymetry Data (CSB) Visualization
-      URL: https://github.com/dneufeldcu/notebooks/blob/main/esipCSBfinal.ipynb
-      AuthorName: David Neufeld
+  - AuthorName: David Neufeld
+    Title: Crowdsourced Bathymetry Data (CSB) Visualization
+    URL: https://github.com/dneufeldcu/notebooks/blob/main/esipCSBfinal.ipynb
+Description: Community provided bathymetry data collected in collaboration with the
+  International Hydrographic Organization.
+Documentation: https://noaa-dcdb-bathymetry-pds.s3.amazonaws.com/docs/readme.html
+License: There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: Crowdsourced Bathymetry
+Resources:
+- ARN: arn:aws:s3:::noaa-dcdb-bathymetry-pds
+  Description: Crowdsourced bathymetry data
+  Explore:
+  - '[Browse Bucket](https://noaa-dcdb-bathymetry-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:709902155096:NewDCDBBathymetryObject
+  Description: Notifications for CSB data
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- earth observation
+- oceans
+UpdateFrequency: New data is added once a week.

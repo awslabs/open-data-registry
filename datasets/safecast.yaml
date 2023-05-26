@@ -1,38 +1,43 @@
-Name: Safecast
-Description: An ongoing collection of radiation and air quality measurements taken by devices involved in the Safecast project.
-Documentation: https://github.com/Safecast/safecastapi/wiki/Data-Sets
-Contact: https://groups.google.com/forum/#!forum/safecast-devices
-ManagedBy: "[Safecast](https://safecast.org/)"
-UpdateFrequency: Continuous
 Collabs:
   ASDI:
     Tags:
-      - air quality
-Tags:
-  - air quality
-  - aws-pds
-  - climate
-  - environmental
-  - geospatial
-  - radiation
-License: |
-  Safecast data is published under a [CC0 designation](https://creativecommons.org/publicdomain/zero/1.0/). This is a public domain designation and means the data is free and open for anyone to use under any circumstance.
-Resources:
-  - Description: Bulk exports of air and radiation measurements
-    ARN: arn:aws:s3:::safecast-opendata-public-us-east-1
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://safecast-opendata-public-us-east-1.s3.amazonaws.com/index.html)'
-  - Description: New air and radiation measurement payloads
-    ARN: arn:aws:sns:us-west-2:985752656544:ingest-measurements-prd
-    Region: us-west-2
-    Type: SNS Topic
+    - air quality
+Contact: https://groups.google.com/forum/#!forum/safecast-devices
+DOI: 10.60489/roda.xjcvy9
 DataAtWork:
-  Tutorials:
+  Publications: null
   Tools & Applications:
-    - Title: Safecast Map
-      URL: http://safecast.org/tilemap/
-      AuthorName: Nick Dolezal
-      AuthorURL: https://github.com/frangible
-  Publications:
+  - AuthorName: Nick Dolezal
+    AuthorURL: https://github.com/frangible
+    Title: Safecast Map
+    URL: http://safecast.org/tilemap/
+  Tutorials: null
+Description: An ongoing collection of radiation and air quality measurements taken
+  by devices involved in the Safecast project.
+Documentation: https://github.com/Safecast/safecastapi/wiki/Data-Sets
+License: 'Safecast data is published under a [CC0 designation](https://creativecommons.org/publicdomain/zero/1.0/).
+  This is a public domain designation and means the data is free and open for anyone
+  to use under any circumstance.
+
+  '
+ManagedBy: '[Safecast](https://safecast.org/)'
+Name: Safecast
+Resources:
+- ARN: arn:aws:s3:::safecast-opendata-public-us-east-1
+  Description: Bulk exports of air and radiation measurements
+  Explore:
+  - '[Browse Bucket](https://safecast-opendata-public-us-east-1.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-west-2:985752656544:ingest-measurements-prd
+  Description: New air and radiation measurement payloads
+  Region: us-west-2
+  Type: SNS Topic
+Tags:
+- air quality
+- aws-pds
+- climate
+- environmental
+- geospatial
+- radiation
+UpdateFrequency: Continuous

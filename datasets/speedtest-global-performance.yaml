@@ -1,54 +1,64 @@
-Name: Speedtest by Ookla Global Fixed and Mobile Network Performance Maps
-Description: |
-  Global fixed broadband and mobile (cellular) network performance, allocated to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters at the equator). Data is provided in both Shapefile format as well as Apache Parquet with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download speed, upload speed, and latency are collected via the Speedtest by Ookla applications for Android and iOS and averaged for each tile. Measurements are filtered to results containing GPS-quality location accuracy.
-Documentation: "[Performance Maps Overview](https://github.com/teamookla/ookla-open-data)"
+Citation: "Speedtest\xAE by Ookla\xAE Global Fixed and Mobile Network Performance\
+  \ Maps.\nBased on analysis by Ookla of Speedtest Intelligence\xAE data for [DATA\
+  \ TIME PERIOD].\nProvided by Ookla and accessed [DAY MONTH YEAR].\nOokla trademarks\
+  \ used under license and reprinted with permission.\n"
 Contact: opendata@ookla.com
-ManagedBy: "[Ookla](https://www.ookla.com/ookla-for-good)"
-UpdateFrequency: Quarterly
-Tags:
-  - analytics
-  - aws-pds
-  - broadband
-  - cities
-  - civic
-  - disaster response
-  - geospatial
-  - global
-  - government spending
-  - infrastructure
-  - internet
-  - mapping
-  - parquet
-  - network traffic
-  - regulatory
-  - telecommunications
-  - tiles
-License: |
-  "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
-Citation: |
-  Speedtest® by Ookla® Global Fixed and Mobile Network Performance Maps.
-  Based on analysis by Ookla of Speedtest Intelligence® data for [DATA TIME PERIOD].
-  Provided by Ookla and accessed [DAY MONTH YEAR].
-  Ookla trademarks used under license and reprinted with permission.
-Resources:
-  - Description: Parquet and Shapefiles
-    ARN: arn:aws:s3:::ookla-open-data
-    Region: us-west-2
-    Type: S3 Bucket
+DOI: 10.60489/roda.yf9ak8
 DataAtWork:
   Tutorials:
-    - Title: "New Year, Great Data: The Best Ookla Open Data Projects We’ve Seen So Far"
-      URL: https://www.speedtest.net/insights/blog/best-ookla-open-data-projects-2021/
-      AuthorName: Katie Jolly
-    - Title: "Bootstrapping Dask on 1000 cores with AWS Fargate"
-      URL: https://towardsdatascience.com/bootstrapping-dask-on-1000-cores-with-aws-fargate-1e1b7fd1a32c
-      AuthorName: Imri Paran
-      Services:
-        - Fargate
-        - EKS
-    - Title: "How to deliver performant GIS desktop applications with Amazon AppStream 2.0"
-      URL: https://aws.amazon.com/blogs/publicsector/how-to-deliver-performant-gis-desktop-applications-amazon-appstream-2-0/
-      AuthorName: Ethan Fahy and Spencer DeBrosse
-      Services:
-        - AppStream
-        - RDS
+  - AuthorName: Katie Jolly
+    Title: "New Year, Great Data: The Best Ookla Open Data Projects We\u2019ve Seen\
+      \ So Far"
+    URL: https://www.speedtest.net/insights/blog/best-ookla-open-data-projects-2021/
+  - AuthorName: Imri Paran
+    Services:
+    - Fargate
+    - EKS
+    Title: Bootstrapping Dask on 1000 cores with AWS Fargate
+    URL: https://towardsdatascience.com/bootstrapping-dask-on-1000-cores-with-aws-fargate-1e1b7fd1a32c
+  - AuthorName: Ethan Fahy and Spencer DeBrosse
+    Services:
+    - AppStream
+    - RDS
+    Title: How to deliver performant GIS desktop applications with Amazon AppStream
+      2.0
+    URL: https://aws.amazon.com/blogs/publicsector/how-to-deliver-performant-gis-desktop-applications-amazon-appstream-2-0/
+Description: 'Global fixed broadband and mobile (cellular) network performance, allocated
+  to zoom level 16 web mercator tiles (approximately 610.8 meters by 610.8 meters
+  at the equator). Data is provided in both Shapefile format as well as Apache Parquet
+  with geometries represented in Well Known Text (WKT) projected in EPSG:4326. Download
+  speed, upload speed, and latency are collected via the Speedtest by Ookla applications
+  for Android and iOS and averaged for each tile. Measurements are filtered to results
+  containing GPS-quality location accuracy.
+
+  '
+Documentation: '[Performance Maps Overview](https://github.com/teamookla/ookla-open-data)'
+License: '"[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+
+  '
+ManagedBy: '[Ookla](https://www.ookla.com/ookla-for-good)'
+Name: Speedtest by Ookla Global Fixed and Mobile Network Performance Maps
+Resources:
+- ARN: arn:aws:s3:::ookla-open-data
+  Description: Parquet and Shapefiles
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- analytics
+- aws-pds
+- broadband
+- cities
+- civic
+- disaster response
+- geospatial
+- global
+- government spending
+- infrastructure
+- internet
+- mapping
+- parquet
+- network traffic
+- regulatory
+- telecommunications
+- tiles
+UpdateFrequency: Quarterly

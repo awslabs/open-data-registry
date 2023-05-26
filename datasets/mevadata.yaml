@@ -1,40 +1,54 @@
-Name: Multiview Extended Video with Activities (MEVA)
-Description: |
-  The Multiview Extended Video with Activities (MEVA) dataset consists
-  video data of human activity, both scripted and unscripted,
-  collected with roughly 100 actors over several weeks.  The data was
-  collected with 29 cameras with overlapping and non-overlapping
-  fields of view. The current release consists of about 328 hours
-  (516GB, 4259 clips) of video data, as well as 4.6 hours (26GB) of
-  UAV data. Other data includes GPS tracks of actors, camera models,
-  and a site map. We have also released annotations for roughly 184 hours of
-  data. Further updates are planned.
-Documentation: http://mevadata.org
 Contact: mevadata@kitware.com
-ManagedBy: "[Kitware](http://www.kitware.com/)"
-UpdateFrequency: |
-  We anticipate two or three updates as more
-  video data is released to the public.
-Tags:
-  - aws-pds
-  - computer vision
-  - urban
-  - us
-  - video
-License: http://mevadata.org/resources/MEVA-data-license.txt
-Resources:
-  - Description: AVI video clips and collection site map
-    ARN: arn:aws:s3:::mevadata-public-01
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.w5yicu
 DataAtWork:
   Publications:
-    - Title: "MEVA: A Large-Scale Multiview, Multimodal Video Dataset for Activity Detection"
-      URL: https://openaccess.thecvf.com/content/WACV2021/html/Corona_MEVA_A_Large-Scale_Multiview_Multimodal_Video_Dataset_for_Activity_Detection_WACV_2021_paper.html
-      AuthorName: Kellie Corona, Katie Osterdahl, Roderic Collins, Anthony Hoogs
-    - Title: "ActEV: Activities in Extended Video"
-      URL: https://actev.nist.gov/
-      AuthorName: National Institute of Standards and Technology (NIST)
-    - Title: "TinyAction Challenge: Recognizing Real-world Low-resolution Activities in Videos"
-      URL: https://arxiv.org/abs/2107.11494
-      AuthorName: Praveen Tirupattur, Aayush J Rana, Tushar Sangam, Shruti Vyas, Yogesh S Rawat, Mubarak Shah
+  - AuthorName: Kellie Corona, Katie Osterdahl, Roderic Collins, Anthony Hoogs
+    Title: 'MEVA: A Large-Scale Multiview, Multimodal Video Dataset for Activity Detection'
+    URL: https://openaccess.thecvf.com/content/WACV2021/html/Corona_MEVA_A_Large-Scale_Multiview_Multimodal_Video_Dataset_for_Activity_Detection_WACV_2021_paper.html
+  - AuthorName: National Institute of Standards and Technology (NIST)
+    Title: 'ActEV: Activities in Extended Video'
+    URL: https://actev.nist.gov/
+  - AuthorName: Praveen Tirupattur, Aayush J Rana, Tushar Sangam, Shruti Vyas, Yogesh
+      S Rawat, Mubarak Shah
+    Title: 'TinyAction Challenge: Recognizing Real-world Low-resolution Activities
+      in Videos'
+    URL: https://arxiv.org/abs/2107.11494
+Description: 'The Multiview Extended Video with Activities (MEVA) dataset consists
+
+  video data of human activity, both scripted and unscripted,
+
+  collected with roughly 100 actors over several weeks.  The data was
+
+  collected with 29 cameras with overlapping and non-overlapping
+
+  fields of view. The current release consists of about 328 hours
+
+  (516GB, 4259 clips) of video data, as well as 4.6 hours (26GB) of
+
+  UAV data. Other data includes GPS tracks of actors, camera models,
+
+  and a site map. We have also released annotations for roughly 184 hours of
+
+  data. Further updates are planned.
+
+  '
+Documentation: http://mevadata.org
+License: http://mevadata.org/resources/MEVA-data-license.txt
+ManagedBy: '[Kitware](http://www.kitware.com/)'
+Name: Multiview Extended Video with Activities (MEVA)
+Resources:
+- ARN: arn:aws:s3:::mevadata-public-01
+  Description: AVI video clips and collection site map
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- computer vision
+- urban
+- us
+- video
+UpdateFrequency: 'We anticipate two or three updates as more
+
+  video data is released to the public.
+
+  '

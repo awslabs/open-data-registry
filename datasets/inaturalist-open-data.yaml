@@ -1,23 +1,35 @@
-Name: "iNaturalist Licensed Observation Images"
-Description: iNaturalist is a community science effort in which participants share observations of living organisms that they encounter and document with photographic evidence, location, and date. The community works together reviewing these images to identify these observations to species. This collection represents the licensed images accompanying iNaturalist observations.
-Documentation: Documentation can be found <a href="https://github.com/inaturalist/inaturalist-open-data/tree/documentation">here</a>. You can learn more about iNaturalist <a href="https://www.inaturalist.org/">here</a>.
-Contact: help@inaturalist.org
-ManagedBy: "[iNaturalist](https://www.inaturalist.org/) is a joint initiative of the [California Academy of Sciences](https://calacademy.org/) and the [National Geographic Society](https://www.nationalgeographic.org/)"
-UpdateFrequency: "Images are posted in real time, and we are currently copying over images from existing observations. Metadata is updated monthly. More information on the metadata can be found in the [documentation](https://github.com/inaturalist/inaturalist-open-data)"
 Collabs:
   ASDI:
     Tags:
-      - ecosystems
-Tags:
-  - aws-pds
-  - earth observation
-  - biodiversity
-  - bioinformatics
-  - conservation
-  - life sciences
-License: Creative Commons or Public Domain (CC0), varying by image. More information on how to query and properly treat licenses can be found in the <a href="https://github.com/inaturalist/inaturalist-open-data">documentation</a>
+    - ecosystems
+Contact: help@inaturalist.org
+DOI: 10.60489/roda.y0hmwf
+Description: iNaturalist is a community science effort in which participants share
+  observations of living organisms that they encounter and document with photographic
+  evidence, location, and date. The community works together reviewing these images
+  to identify these observations to species. This collection represents the licensed
+  images accompanying iNaturalist observations.
+Documentation: Documentation can be found <a href="https://github.com/inaturalist/inaturalist-open-data/tree/documentation">here</a>.
+  You can learn more about iNaturalist <a href="https://www.inaturalist.org/">here</a>.
+License: Creative Commons or Public Domain (CC0), varying by image. More information
+  on how to query and properly treat licenses can be found in the <a href="https://github.com/inaturalist/inaturalist-open-data">documentation</a>
+ManagedBy: '[iNaturalist](https://www.inaturalist.org/) is a joint initiative of the
+  [California Academy of Sciences](https://calacademy.org/) and the [National Geographic
+  Society](https://www.nationalgeographic.org/)'
+Name: iNaturalist Licensed Observation Images
 Resources:
-  - Description: Image files (e.g. JPEG) associated with metadata describing the observation associated with the image file.
-    ARN: arn:aws:s3:::inaturalist-open-data
-    Region: us-east-1
-    Type: S3 Bucket
+- ARN: arn:aws:s3:::inaturalist-open-data
+  Description: Image files (e.g. JPEG) associated with metadata describing the observation
+    associated with the image file.
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- earth observation
+- biodiversity
+- bioinformatics
+- conservation
+- life sciences
+UpdateFrequency: Images are posted in real time, and we are currently copying over
+  images from existing observations. Metadata is updated monthly. More information
+  on the metadata can be found in the [documentation](https://github.com/inaturalist/inaturalist-open-data)

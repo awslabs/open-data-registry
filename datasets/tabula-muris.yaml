@@ -1,29 +1,40 @@
-Name: Tabula Muris
-Description: |
-  Tabula Muris is a compendium of single cell transcriptomic data from the model organism *Mus musculus* comprising more than 100,000 cells from 20 organs and tissues. These data represent a new resource for cell biology, reveal gene expression in poorly characterized cell populations, and allow for direct and controlled comparison of gene expression in cell types shared between tissues, such as T-lymphocytes and endothelial cells from different anatomical locations. Two distinct technical approaches were used for most organs: one approach, microfluidic droplet-based 3’-end counting, enabled the survey of thousands of cells at relatively low coverage, while the other, FACS-based full length transcript analysis, enabled characterization of cell types with high sensitivity and coverage. The cumulative data provide the foundation for an atlas of transcriptomic cell biology. See: https://www.nature.com/articles/s41586-018-0590-4
-Documentation: https://github.com/czbiohub/tabula-muris/blob/master/tabula-muris-on-aws.md
 Contact: If you have questions about the data, you can create an Issue at https://github.com/czbiohub/tabula-muris.
-ManagedBy: "[Chan Zuckerberg Biohub](https://www.czbiohub.org/)"
-UpdateFrequency: This is the final version of the dataset, it will not be updated.
-Tags:
-  - aws-pds
-  - biology
-  - encyclopedic
-  - genomic
-  - health
-  - life sciences
-  - medicine
-License: https://github.com/czbiohub/tabula-muris/blob/master/LICENSE
-Resources:
-  - Description: https://github.com/czbiohub/tabula-muris
-    ARN: arn:aws:s3:::czb-tabula-muris
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.s125ig
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
   Publications:
-    - Title: Single-cell transcriptomics of 20 mouse organs creates a Tabula Muris.
-      URL: https://www.ncbi.nlm.nih.gov/pubmed/30283141
-      AuthorName: Tabula Muris Consortium (2019)
-      AuthorURL: https://tabula-muris.ds.czbiohub.org/
+  - AuthorName: Tabula Muris Consortium (2019)
+    AuthorURL: https://tabula-muris.ds.czbiohub.org/
+    Title: Single-cell transcriptomics of 20 mouse organs creates a Tabula Muris.
+    URL: https://www.ncbi.nlm.nih.gov/pubmed/30283141
+  Tools & Applications: null
+  Tutorials: null
+Description: "Tabula Muris is a compendium of single cell transcriptomic data from\
+  \ the model organism *Mus musculus* comprising more than 100,000 cells from 20 organs\
+  \ and tissues. These data represent a new resource for cell biology, reveal gene\
+  \ expression in poorly characterized cell populations, and allow for direct and\
+  \ controlled comparison of gene expression in cell types shared between tissues,\
+  \ such as T-lymphocytes and endothelial cells from different anatomical locations.\
+  \ Two distinct technical approaches were used for most organs: one approach, microfluidic\
+  \ droplet-based 3\u2019-end counting, enabled the survey of thousands of cells at\
+  \ relatively low coverage, while the other, FACS-based full length transcript analysis,\
+  \ enabled characterization of cell types with high sensitivity and coverage. The\
+  \ cumulative data provide the foundation for an atlas of transcriptomic cell biology.\
+  \ See: https://www.nature.com/articles/s41586-018-0590-4\n"
+Documentation: https://github.com/czbiohub/tabula-muris/blob/master/tabula-muris-on-aws.md
+License: https://github.com/czbiohub/tabula-muris/blob/master/LICENSE
+ManagedBy: '[Chan Zuckerberg Biohub](https://www.czbiohub.org/)'
+Name: Tabula Muris
+Resources:
+- ARN: arn:aws:s3:::czb-tabula-muris
+  Description: https://github.com/czbiohub/tabula-muris
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- biology
+- encyclopedic
+- genomic
+- health
+- life sciences
+- medicine
+UpdateFrequency: This is the final version of the dataset, it will not be updated.

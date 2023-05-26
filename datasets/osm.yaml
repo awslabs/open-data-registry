@@ -1,52 +1,54 @@
-Name: OpenStreetMap on AWS
-Description: OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/osm-pds
-Contact: https://github.com/mojodna/osm-pds-pipelines/issues
-UpdateFrequency: Data is updated weekly
-ManagedBy: Pacific Atlas
 Collabs:
   ASDI:
     Tags:
-      - disaster response
-Tags:
-  - aws-pds
-  - geospatial
-  - mapping
-  - osm
-  - disaster response
-License: https://www.openstreetmap.org/copyright
-Resources:
-  - Description: Imagery and metadata
-    ARN: arn:aws:s3:::osm-pds
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: New data notifications
-    ARN: arn:aws:sns:us-east-1:800218804198:New_File
-    Region: us-east-1
-    Type: SNS Topic
+    - disaster response
+Contact: https://github.com/mojodna/osm-pds-pipelines/issues
+DOI: 10.60489/roda.czangb
 DataAtWork:
-  Tutorials:
-    - Title: Querying OpenStreetMap with Amazon Athena
-      URL: https://aws.amazon.com/blogs/big-data/querying-openstreetmap-with-amazon-athena/
-      AuthorName: Seth Fitzsimmons
-      AuthorURL: https://github.com/mojodna
-    - Title: Develop and Extract Value from Open Data
-      URL: https://aws.amazon.com/blogs/publicsector/develop-and-extract-value-from-open-data/
-      AuthorName: Daniel Bernao
-    - Title: Querying OpenStreetMap Changesets with Amazon Athena
-      URL: https://www.openstreetmap.org/user/Jennings%20Anderson/diary/394762
-      AuthorName: Jennings Anderson
-      AuthorURL: https://www.openstreetmap.org/user/Jennings%20Anderson/diary
-      Services:
-        - Athena
-      
+  Publications: null
   Tools & Applications:
-    - Title: "PlanetUtils (GitHub): Scripts and a Docker container to maintain your own OpenStreetMap planet"
-      URL: https://github.com/interline-io/planetutils
-      AuthorName: Interline Technologies
-      AuthorURL: https://www.interline.io/
-    - Title: OSM+Athena (GitHub)
-      URL: https://github.com/developmentseed/mrworldwide/
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
-  Publications:
+  - AuthorName: Interline Technologies
+    AuthorURL: https://www.interline.io/
+    Title: 'PlanetUtils (GitHub): Scripts and a Docker container to maintain your
+      own OpenStreetMap planet'
+    URL: https://github.com/interline-io/planetutils
+  - AuthorName: Development Seed
+    AuthorURL: https://developmentseed.org/
+    Title: OSM+Athena (GitHub)
+    URL: https://github.com/developmentseed/mrworldwide/
+  Tutorials:
+  - AuthorName: Seth Fitzsimmons
+    AuthorURL: https://github.com/mojodna
+    Title: Querying OpenStreetMap with Amazon Athena
+    URL: https://aws.amazon.com/blogs/big-data/querying-openstreetmap-with-amazon-athena/
+  - AuthorName: Daniel Bernao
+    Title: Develop and Extract Value from Open Data
+    URL: https://aws.amazon.com/blogs/publicsector/develop-and-extract-value-from-open-data/
+  - AuthorName: Jennings Anderson
+    AuthorURL: https://www.openstreetmap.org/user/Jennings%20Anderson/diary
+    Services:
+    - Athena
+    Title: Querying OpenStreetMap Changesets with Amazon Athena
+    URL: https://www.openstreetmap.org/user/Jennings%20Anderson/diary/394762
+Description: OSM is a free, editable map of the world, created and maintained by volunteers.
+  Regular OSM data archives are made available in Amazon S3.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/osm-pds
+License: https://www.openstreetmap.org/copyright
+ManagedBy: Pacific Atlas
+Name: OpenStreetMap on AWS
+Resources:
+- ARN: arn:aws:s3:::osm-pds
+  Description: Imagery and metadata
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:800218804198:New_File
+  Description: New data notifications
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- geospatial
+- mapping
+- osm
+- disaster response
+UpdateFrequency: Data is updated weekly

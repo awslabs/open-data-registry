@@ -1,38 +1,40 @@
-Name: Co-Produced Climate Data to Support California's Resilience Investments
-Description: Downscaled future and historical climate projections for California and her environs in support of California's Fifth Climate Assessment
-Documentation: https://analytics.cal-adapt.org/data/
-Contact: analytics@cal-adapt.org
-ManagedBy: Cal-Adapt Analytics Engine https://analytics.cal-adapt.org/
-UpdateFrequency: Infrequent, Irregular
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - atmosphere
-  - aws-pds
-  - climate
-  - climate model
-  - earth observation
-  - geoscience
-  - geospatial
-  - meteorological
-  - simulations
-  - weather
-  - zarr
-License: Varies, see dataset specific metadata
-Resources:
-  - Description: Data catalog
-    ARN: arn:aws:s3:::cadcat
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://cadcat.s3.amazonaws.com/index.html)'
-      - '[Data Catalog](https://cadcat.s3.amazonaws.com/cae.yaml)'
+    - climate
+Contact: analytics@cal-adapt.org
+DOI: 10.60489/roda.u2fg95
 DataAtWork:
   Tutorials:
-    - Title: Example Use Cases of Data Via Cal-Adapt Analytics Engine
-      URL: https://analytics.cal-adapt.org/docs/use-cases/
-      NotebookURL: https://nbviewer.org/urls/cadcat.s3.amazonaws.com/catalog.ipynb
-      AuthorName: Cal-Adapt Analytics Engine Team
-      AuthorURL: https://github.com/cal-adapt
+  - AuthorName: Cal-Adapt Analytics Engine Team
+    AuthorURL: https://github.com/cal-adapt
+    NotebookURL: https://nbviewer.org/urls/cadcat.s3.amazonaws.com/catalog.ipynb
+    Title: Example Use Cases of Data Via Cal-Adapt Analytics Engine
+    URL: https://analytics.cal-adapt.org/docs/use-cases/
+Description: Downscaled future and historical climate projections for California and
+  her environs in support of California's Fifth Climate Assessment
+Documentation: https://analytics.cal-adapt.org/data/
+License: Varies, see dataset specific metadata
+ManagedBy: Cal-Adapt Analytics Engine https://analytics.cal-adapt.org/
+Name: Co-Produced Climate Data to Support California's Resilience Investments
+Resources:
+- ARN: arn:aws:s3:::cadcat
+  Description: Data catalog
+  Explore:
+  - '[Browse Bucket](https://cadcat.s3.amazonaws.com/index.html)'
+  - '[Data Catalog](https://cadcat.s3.amazonaws.com/cae.yaml)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- atmosphere
+- aws-pds
+- climate
+- climate model
+- earth observation
+- geoscience
+- geospatial
+- meteorological
+- simulations
+- weather
+- zarr
+UpdateFrequency: Infrequent, Irregular

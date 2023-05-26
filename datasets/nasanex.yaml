@@ -1,68 +1,82 @@
-Name: NASA Earth Exchange (NEX) Data Collection
-Description: |
-  A collection of downscaled climate change projections, derived from the
-  General Circulation Model (GCM) runs conducted under the Coupled Model
-  Intercomparison Project Phase 5 (CMIP5) [Taylor et al. 2012] and across
-  the four greenhouse gas emissions scenarios known as Representative
-  Concentration Pathways (RCPs) [Meinshausen et al. 2011]. The NASA Earth
-  Exchange group maintains the NEX-DCP30 (CMIP5), NEX-GDDP (CMIP5), and
-  LOCA (CMIP5).
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/nasa-nex
-Contact: https://www.nasa.gov/nex/team
-UpdateFrequency: Infrequently
-ManagedBy: NASA
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - CMIP5
-  - natural resource
-  - climate
-  - sustainability
-License: US Government work
-Resources:
-  - Description: Downscaled Climate Projections (NEX-DCP30)
-    ARN: arn:aws:s3:::nasanex/NEX-DCP30
-    Region: us-west-2
-    Type: S3 Bucket
-  - Description: Global Daily Downscaled Projections (NEX-GDDP)
-    ARN: arn:aws:s3:::nasanex/NEX-GDDP
-    Region: us-west-2
-    Type: S3 Bucket
-  - Description: Localized Constructed Analogs (LOCA)
-    ARN: arn:aws:s3:::nasanex/LOCA
-    Region: us-west-2
-    Type: S3 Bucket
+    - climate
+Contact: https://www.nasa.gov/nex/team
+DOI: 10.60489/roda.5ke7lb
 DataAtWork:
-  Tutorials:
-    - Title: Accessing and plotting NASA-NEX data, from GEOSChem-on-cloud tutorial.
-      URL: https://cloud-gc.readthedocs.io/en/latest/chapter02_beginner-tutorial/use-s3.html#access-nasa-nex-data-in-s3-optional-but-recommended
-      AuthorName: Jiawei Zhuang
-      AuthorURL: https://github.com/JiaweiZhuang
-    - Title: Sample Python code to analyze NASA-NEX data.
-      URL: https://cloud-gc.readthedocs.io/en/latest/chapter06_appendix/plot_NASANEX.html
-      AuthorName: Jiawei Zhuang
-      AuthorURL: https://github.com/JiaweiZhuang
-  Tools & Applications:
-    - Title: Azavea Climate API
-      URL: https://climate.azavea.com
-      AuthorName: Azavea
-      AuthorURL: https://www.azavea.com/
   Publications:
-    - Title: Downscaled Climate Projections Suitable for Resource Management, Eos Trans. AGU, 94(37), 321.
-      AuthorName: Thrasher, B., J. Xiong, W. Wang, F. Melton, A. Michaelis and R. Nemani (2013)
-      URL: https://doi.org/10.1002/2013EO370002
-    - Title: Statistical downscaling using Localized Constructed Analogs (LOCA).
-      AuthorName: Pierce, D. W., D. R. Cayan, and B. L. Thrasher (2014)
-      URL: https://doi.org/10.1175/JHM-D-14-0082.1
-    - Title: "Climate Downscaling Using YNet: a Deep Convolutional Network with Skip Connections and Fusion"
-      URL: https://www.kdd.org/kdd2020/accepted-papers/view/climate-downscaling-using-ynet-a-deep-convolutional-network-with-skip-conne
-      AuthorName: Yumin Liu, Auroop Ganguly, and Jennifer Dy
-    - Title: Explainable deep learning for insights in El Nino and river flows
-      URL: https://arxiv.org/ftp/arxiv/papers/2201/2201.02596.pdf
-      AuthorName: Yumin Liu, Kate Duffy, Jennifer G. Dy, and Auroop R. Ganguly
-    - Title: Potential changes in cooling degree day under different global warming levels and shared socioeconomic pathways in West Africa
-      AuthorName: Oluwarotimi Delano Thierry Odou, Heidi Heinrichs Ursula, Rabani Adamou, Thierry Godjo, and Mounkaila S Moussa
-      URL: https://iopscience.iop.org/article/10.1088/1748-9326/acbc8f
+  - AuthorName: Thrasher, B., J. Xiong, W. Wang, F. Melton, A. Michaelis and R. Nemani
+      (2013)
+    Title: Downscaled Climate Projections Suitable for Resource Management, Eos Trans.
+      AGU, 94(37), 321.
+    URL: https://doi.org/10.1002/2013EO370002
+  - AuthorName: Pierce, D. W., D. R. Cayan, and B. L. Thrasher (2014)
+    Title: Statistical downscaling using Localized Constructed Analogs (LOCA).
+    URL: https://doi.org/10.1175/JHM-D-14-0082.1
+  - AuthorName: Yumin Liu, Auroop Ganguly, and Jennifer Dy
+    Title: 'Climate Downscaling Using YNet: a Deep Convolutional Network with Skip
+      Connections and Fusion'
+    URL: https://www.kdd.org/kdd2020/accepted-papers/view/climate-downscaling-using-ynet-a-deep-convolutional-network-with-skip-conne
+  - AuthorName: Yumin Liu, Kate Duffy, Jennifer G. Dy, and Auroop R. Ganguly
+    Title: Explainable deep learning for insights in El Nino and river flows
+    URL: https://arxiv.org/ftp/arxiv/papers/2201/2201.02596.pdf
+  - AuthorName: Oluwarotimi Delano Thierry Odou, Heidi Heinrichs Ursula, Rabani Adamou,
+      Thierry Godjo, and Mounkaila S Moussa
+    Title: Potential changes in cooling degree day under different global warming
+      levels and shared socioeconomic pathways in West Africa
+    URL: https://iopscience.iop.org/article/10.1088/1748-9326/acbc8f
+  Tools & Applications:
+  - AuthorName: Azavea
+    AuthorURL: https://www.azavea.com/
+    Title: Azavea Climate API
+    URL: https://climate.azavea.com
+  Tutorials:
+  - AuthorName: Jiawei Zhuang
+    AuthorURL: https://github.com/JiaweiZhuang
+    Title: Accessing and plotting NASA-NEX data, from GEOSChem-on-cloud tutorial.
+    URL: https://cloud-gc.readthedocs.io/en/latest/chapter02_beginner-tutorial/use-s3.html#access-nasa-nex-data-in-s3-optional-but-recommended
+  - AuthorName: Jiawei Zhuang
+    AuthorURL: https://github.com/JiaweiZhuang
+    Title: Sample Python code to analyze NASA-NEX data.
+    URL: https://cloud-gc.readthedocs.io/en/latest/chapter06_appendix/plot_NASANEX.html
+Description: 'A collection of downscaled climate change projections, derived from
+  the
+
+  General Circulation Model (GCM) runs conducted under the Coupled Model
+
+  Intercomparison Project Phase 5 (CMIP5) [Taylor et al. 2012] and across
+
+  the four greenhouse gas emissions scenarios known as Representative
+
+  Concentration Pathways (RCPs) [Meinshausen et al. 2011]. The NASA Earth
+
+  Exchange group maintains the NEX-DCP30 (CMIP5), NEX-GDDP (CMIP5), and
+
+  LOCA (CMIP5).
+
+  '
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/nasa-nex
+License: US Government work
+ManagedBy: NASA
+Name: NASA Earth Exchange (NEX) Data Collection
+Resources:
+- ARN: arn:aws:s3:::nasanex/NEX-DCP30
+  Description: Downscaled Climate Projections (NEX-DCP30)
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nasanex/NEX-GDDP
+  Description: Global Daily Downscaled Projections (NEX-GDDP)
+  Region: us-west-2
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::nasanex/LOCA
+  Description: Localized Constructed Analogs (LOCA)
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- CMIP5
+- natural resource
+- climate
+- sustainability
+UpdateFrequency: Infrequently

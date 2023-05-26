@@ -1,32 +1,41 @@
-Name: High Resolution Downscaled Climate Data for Southeast Alaska
-Description: "This dataset contains historical and projected dynamically downscaled climate data for the Southeast region of the State of Alaska at 1 and 4km spatial resolution and hourly temporal resolution. Select variables are also summarized into daily resolutions. This data was produced using the Weather Research and Forecasting (WRF) model (Version 4.0). We downscaled both Climate Forecast System Reanalysis (CFSR) historical reanalysis data (1980-2019) and both historical and projected runs from two GCM’s from the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical run: 1980-2010 and RCP 8.5: 2030-2060)."
-Documentation: https://www.sciencebase.gov/catalog/item/5f93658882ce720ee2d598a7
-Contact: http://directory.iarc.uaf.edu/richard-lader
-ManagedBy: Scenarios Network for Alaska + Arctic Planning at the International Arctic Research Center, University of Alaska, Fairbanks
-UpdateFrequency: as needed
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - coastal
-  - earth observation
-  - environmental
-  - weather
-  - aws-pds
-  - sustainability
-License: https://creativecommons.org/licenses/by/4.0/
-Resources:
-  - Description: High-res dynamically downscaled climate data for Southeast Alaska.
-    ARN: arn:aws:s3:::wrf-se-ak-ar5
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](http://wrf-se-ak-ar5.s3-website-us-west-2.amazonaws.com/)'
+    - climate
+Contact: http://directory.iarc.uaf.edu/richard-lader
+DOI: 10.60489/roda.61puk4
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: "This dataset contains historical and projected dynamically downscaled\
+  \ climate data for the Southeast region of the State of Alaska at 1 and 4km spatial\
+  \ resolution and hourly temporal resolution. Select variables are also summarized\
+  \ into daily resolutions. This data was produced using the Weather Research and\
+  \ Forecasting (WRF) model (Version 4.0). We downscaled both Climate Forecast System\
+  \ Reanalysis (CFSR) historical reanalysis data (1980-2019) and both historical and\
+  \ projected runs from two GCM\u2019s from the Coupled Model Inter-comparison Project\
+  \ 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical run: 1980-2010 and RCP 8.5: 2030-2060)."
+Documentation: https://www.sciencebase.gov/catalog/item/5f93658882ce720ee2d598a7
+License: https://creativecommons.org/licenses/by/4.0/
+ManagedBy: Scenarios Network for Alaska + Arctic Planning at the International Arctic
+  Research Center, University of Alaska, Fairbanks
+Name: High Resolution Downscaled Climate Data for Southeast Alaska
+Resources:
+- ARN: arn:aws:s3:::wrf-se-ak-ar5
+  Description: High-res dynamically downscaled climate data for Southeast Alaska.
+  Explore:
+  - '[Browse Bucket](http://wrf-se-ak-ar5.s3-website-us-west-2.amazonaws.com/)'
+  Region: us-west-2
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- coastal
+- earth observation
+- environmental
+- weather
+- aws-pds
+- sustainability
+UpdateFrequency: as needed

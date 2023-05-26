@@ -1,143 +1,167 @@
-Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18"
-Description: |
-  <br/>
-  <br/> 
-  NOTICE: As of January 10th 2023, GOES-18 assumed the GOES-West position and all data files are deemed both operational and provisional, so no ‘preliminary, non-operational’ caveat is needed. GOES-17 is now offline, shifted approximately 105 degree West, where it will be in on-orbit storage. GOES-17 data will no longer flow into the GOES-17 bucket. Operational GOES-West products can be found in the GOES-18 bucket. 
-  <br/>
-  <br/> 
-  NEW GOES-18 Data!!! GOES-18 is now provisional and data has began streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the NOAA Open Data Dissemination Program.
-  <br/>
-  <br/> 
-  GOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous weather imagery and
-  monitoring of meteorological and space environment data across North America.
-  GOES satellites provide the kind of continuous monitoring necessary for
-  intensive data analysis. They hover continuously over one position on the surface.
-  The satellites orbit high enough to allow for a full-disc view of the Earth. Because
-  they stay above a fixed spot on the surface, they provide a constant vigil for the
-  atmospheric "triggers" for severe weather conditions such as tornadoes, flash floods,
-  hailstorms, and hurricanes. When these conditions develop, the GOES satellites are able
-  to monitor storm development and track their movements. SUVI products available in both NetCDF and FITS. 
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-goes16
-Contact:  |
-  <br/>
-  For questions related to specific GOES Products, please visit the "[GOES-R website](https://www.ncei.noaa.gov/products/satellite/goes-r-series)" and navigate to the Help section.
-  <br/>
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: New data is added as soon as it's available
 Collabs:
   ASDI:
     Tags:
-      - satellite imagery
-Tags:
-  - aws-pds
-  - agriculture
-  - geospatial
-  - weather
-  - earth observation
-  - meteorological
-  - disaster response
-  - satellite imagery
-License: There are no restrictions on the use of this data.
-Resources:
-  - Description: GOES-18 imagery and metadata
-    ARN: arn:aws:s3:::noaa-goes18
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: GOES-16 imagery and metadata
-    ARN: arn:aws:s3:::noaa-goes16
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-goes16.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GOES-16, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: GOES-17 imagery and metadata
-    ARN: arn:aws:s3:::noaa-goes17
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-goes17.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GOES-17, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
-    Region: us-east-1
-    Type: SNS Topic
+    - satellite imagery
+Contact: '<br/>
+
+  For questions related to specific GOES Products, please visit the "[GOES-R website](https://www.ncei.noaa.gov/products/satellite/goes-r-series)"
+  and navigate to the Help section.
+
+  <br/>
+
+  For any questions regarding data delivery or any general questions regarding the
+  NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+
+  '
+DOI: 10.60489/roda.z4cva7
 DataAtWork:
-  Tutorials:
-    - Title: Visualize GOES-16 in Python using Xarray
-      URL: https://github.com/HamedAlemo/visualize-goes16
-      AuthorName: Hamed Alemohammad
-      AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
-    - Title: Comparison reading GOES-R data from AWS S3 in netCDF versus zarr
-      URL: https://nbviewer.jupyter.org/github/oceanhackweek/ohw-tutorials/blob/OHW20/10-satellite-data-access/goes-cmp-netcdf-zarr.ipynb
-      AuthorName: Chelle Gentemann
-      AuthorURL: http://www.faralloninstitute.org/chelle
-    - Title: NOAA GOES16 Julia Jupyter Notebook Example
-      URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
-      AuthorName: Peter Schmiedeskamp
-      Services:
-        - CloudFormation
-        - EC2
-        - SageMaker
-    - Title: Processing GOES-16 data with Dask & AWS Fargate
-      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/goes16_dask.ipynb
-      AuthorName: Zac Flamig
-      Services:
-        - CloudFormation
-        - Fargate
-        - SageMaker
-    - Title: Forecasting Hurricane Tracks with TensorFlow and data from AWS S3
-      URL: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
-      AuthorName: Kyle Archie
-  Tools & Applications:
-    - Title: GOES-2-go is a python package for downloading and plotting plotting GOES data.
-      URL: https://github.com/blaylockbk/goes2go
-      AuthorName: Brian K. Blaylock
-      AuthorURL: https://www.linkedin.com/in/blaylockbk/
-    - Title: Modern Data Platform Orchestration with Dagster Software-Defined Assets
-      URL: https://medium.com/p/6a7182b0d834
-      AuthorName: Adebayo Adejare
-      AuthorURL: https://medium.com/@adebayoadejare
   Publications:
-    - Title: Observations of lightning in relation to transitions in volcanic activity during the 3 June 2018 Fuego Eruption
-      URL: https://www.nature.com/articles/s41598-020-74576-x
-      AuthorName: Christopher J. Schultz, Virginia P. Andrews, Kimberly D. Genareau, and Aaron R. Naeger
-    - Title: Comparison of Lightning Forecasts from the High-Resolution Rapid Refresh Model to Geostationary Lightning Mapper Observations
-      URL: https://doi.org/10.1175/WAF-D-19-0141.1
-      AuthorName: Brian K. Blaylock, and John D. Horel
-    - Title: Billions of Birds Migrate. Where Do They Go?
-      URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
-      AuthorName: National Geographic
-    - Title: Embracing the cloud for climate research
-      URL: https://aws.amazon.com/blogs/publicsector/embracing-the-cloud-for-climate-research/
-      AuthorName: North Carolina State University’s North Carolina Institute for Climate Studies
-    - Title: Solar irradiance forecasting for the solar powered future
-      URL: https://aws.amazon.com/blogs/publicsector/solcast-solar-irradiance-forecasting-for-the-solar-powered-future/
-      AuthorName: Solcast
-    - Title: Beginner’s Guide to GOES-R Series Data
-      URL: https://noaa-goes16.s3.amazonaws.com/Beginners_Guide_to_GOES-R_Series_Data.pdf
-      AuthorName: Danielle Losos
-    - Title: GOES Quick Guides (Spanish)
-      URL: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/GOES/QuickGuides/Spanish
-      AuthorName: Anthony Segura García
-    - Title: "SunCast: Solar Irradiance Nowcasting from Geosynchronous Satellite Data"
-      URL: https://arxiv.org/pdf/2201.06173.pdf
-      AuthorName: Dhileeban Kumaresan, Richard Wang, Ernesto Martinez, Richard Cziva, Alberto Todeschini, Colorado J Reed, Hossein Vahabi
-    - Title: The Use of Composite GOES-R Satellite Imagery to Evaluate a TC Intensity and Vortex Structure Forecast by an FV3GFS-Based Hurricane Forecast Model
-      URL: https://doi.org/10.3390/atmos13010126
-      AuthorName: Shaowu Bao, Zhan Zhang, Evan Kalina, and Bin Liu
-    - Title: Imaging Considerations From a Geostationary Orbit Using the Short Wavelength Side of the Mid-Infrared Water Vapor Absorption Band
-      URL: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EA002080
-      AuthorName: N.B. Miller, M.M. Gunshor, A.J. Merrelli, T.S. L'Ecuyer, T.J. Schmit, J.J. Gerth, N.J. Gordillo
-    - Title: Identifying the Causes of Pyrocumulonimbus (PyroCb)
-      URL: https://arxiv.org/pdf/2211.08883.pdf
-      AuthorName: Emiliano Díaz Salas-Porras, Kenza Tazi, Ashwin Braude, Daniel Okoh, Kara D. Lamb, Duncan Watson-Parris, Paula Harder, and Nis Meinert
+  - AuthorName: Christopher J. Schultz, Virginia P. Andrews, Kimberly D. Genareau,
+      and Aaron R. Naeger
+    Title: Observations of lightning in relation to transitions in volcanic activity
+      during the 3 June 2018 Fuego Eruption
+    URL: https://www.nature.com/articles/s41598-020-74576-x
+  - AuthorName: Brian K. Blaylock, and John D. Horel
+    Title: Comparison of Lightning Forecasts from the High-Resolution Rapid Refresh
+      Model to Geostationary Lightning Mapper Observations
+    URL: https://doi.org/10.1175/WAF-D-19-0141.1
+  - AuthorName: National Geographic
+    Title: Billions of Birds Migrate. Where Do They Go?
+    URL: https://www.nationalgeographic.com/magazine/2018/03/bird-migration-interactive-maps/
+  - AuthorName: "North Carolina State University\u2019s North Carolina Institute for\
+      \ Climate Studies"
+    Title: Embracing the cloud for climate research
+    URL: https://aws.amazon.com/blogs/publicsector/embracing-the-cloud-for-climate-research/
+  - AuthorName: Solcast
+    Title: Solar irradiance forecasting for the solar powered future
+    URL: https://aws.amazon.com/blogs/publicsector/solcast-solar-irradiance-forecasting-for-the-solar-powered-future/
+  - AuthorName: Danielle Losos
+    Title: "Beginner\u2019s Guide to GOES-R Series Data"
+    URL: https://noaa-goes16.s3.amazonaws.com/Beginners_Guide_to_GOES-R_Series_Data.pdf
+  - AuthorName: "Anthony Segura Garc\xEDa"
+    Title: GOES Quick Guides (Spanish)
+    URL: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/GOES/QuickGuides/Spanish
+  - AuthorName: Dhileeban Kumaresan, Richard Wang, Ernesto Martinez, Richard Cziva,
+      Alberto Todeschini, Colorado J Reed, Hossein Vahabi
+    Title: 'SunCast: Solar Irradiance Nowcasting from Geosynchronous Satellite Data'
+    URL: https://arxiv.org/pdf/2201.06173.pdf
+  - AuthorName: Shaowu Bao, Zhan Zhang, Evan Kalina, and Bin Liu
+    Title: The Use of Composite GOES-R Satellite Imagery to Evaluate a TC Intensity
+      and Vortex Structure Forecast by an FV3GFS-Based Hurricane Forecast Model
+    URL: https://doi.org/10.3390/atmos13010126
+  - AuthorName: N.B. Miller, M.M. Gunshor, A.J. Merrelli, T.S. L'Ecuyer, T.J. Schmit,
+      J.J. Gerth, N.J. Gordillo
+    Title: Imaging Considerations From a Geostationary Orbit Using the Short Wavelength
+      Side of the Mid-Infrared Water Vapor Absorption Band
+    URL: https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EA002080
+  - AuthorName: "Emiliano D\xEDaz Salas-Porras, Kenza Tazi, Ashwin Braude, Daniel\
+      \ Okoh, Kara D. Lamb, Duncan Watson-Parris, Paula Harder, and Nis Meinert"
+    Title: Identifying the Causes of Pyrocumulonimbus (PyroCb)
+    URL: https://arxiv.org/pdf/2211.08883.pdf
+  Tools & Applications:
+  - AuthorName: Brian K. Blaylock
+    AuthorURL: https://www.linkedin.com/in/blaylockbk/
+    Title: GOES-2-go is a python package for downloading and plotting plotting GOES
+      data.
+    URL: https://github.com/blaylockbk/goes2go
+  - AuthorName: Adebayo Adejare
+    AuthorURL: https://medium.com/@adebayoadejare
+    Title: Modern Data Platform Orchestration with Dagster Software-Defined Assets
+    URL: https://medium.com/p/6a7182b0d834
+  Tutorials:
+  - AuthorName: Hamed Alemohammad
+    AuthorURL: https://www.linkedin.com/in/hamedalemohammad/
+    Title: Visualize GOES-16 in Python using Xarray
+    URL: https://github.com/HamedAlemo/visualize-goes16
+  - AuthorName: Chelle Gentemann
+    AuthorURL: http://www.faralloninstitute.org/chelle
+    Title: Comparison reading GOES-R data from AWS S3 in netCDF versus zarr
+    URL: https://nbviewer.jupyter.org/github/oceanhackweek/ohw-tutorials/blob/OHW20/10-satellite-data-access/goes-cmp-netcdf-zarr.ipynb
+  - AuthorName: Peter Schmiedeskamp
+    Services:
+    - CloudFormation
+    - EC2
+    - SageMaker
+    Title: NOAA GOES16 Julia Jupyter Notebook Example
+    URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
+  - AuthorName: Zac Flamig
+    Services:
+    - CloudFormation
+    - Fargate
+    - SageMaker
+    Title: Processing GOES-16 data with Dask & AWS Fargate
+    URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/goes16_dask.ipynb
+  - AuthorName: Kyle Archie
+    Title: Forecasting Hurricane Tracks with TensorFlow and data from AWS S3
+    URL: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
+Description: "<br/>\n<br/> \nNOTICE: As of January 10th 2023, GOES-18 assumed the\
+  \ GOES-West position and all data files are deemed both operational and provisional,\
+  \ so no \u2018preliminary, non-operational\u2019 caveat is needed. GOES-17 is now\
+  \ offline, shifted approximately 105 degree West, where it will be in on-orbit storage.\
+  \ GOES-17 data will no longer flow into the GOES-17 bucket. Operational GOES-West\
+  \ products can be found in the GOES-18 bucket. \n<br/>\n<br/> \nNEW GOES-18 Data!!!\
+  \ GOES-18 is now provisional and data has began streaming. Data files will be available\
+  \ between Provisional and the Operational Declaration of the satellite, however,\
+  \ data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception\
+  \ is during the interleave period when ABI Radiances and Cloud and Moisture Imagery\
+  \ data will be shared operationally via the NOAA Open Data Dissemination Program.\n\
+  <br/>\n<br/> \nGOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous\
+  \ weather imagery and\nmonitoring of meteorological and space environment data across\
+  \ North America.\nGOES satellites provide the kind of continuous monitoring necessary\
+  \ for\nintensive data analysis. They hover continuously over one position on the\
+  \ surface.\nThe satellites orbit high enough to allow for a full-disc view of the\
+  \ Earth. Because\nthey stay above a fixed spot on the surface, they provide a constant\
+  \ vigil for the\natmospheric \"triggers\" for severe weather conditions such as\
+  \ tornadoes, flash floods,\nhailstorms, and hurricanes. When these conditions develop,\
+  \ the GOES satellites are able\nto monitor storm development and track their movements.\
+  \ SUVI products available in both NetCDF and FITS. \n"
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-goes16
+License: There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18
+Resources:
+- ARN: arn:aws:s3:::noaa-goes18
+  Description: GOES-18 imagery and metadata
+  Explore:
+  - '[Browse Bucket](https://noaa-goes18.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGOES18Object
+  Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+- ARN: arn:aws:s3:::noaa-goes16
+  Description: GOES-16 imagery and metadata
+  Explore:
+  - '[Browse Bucket](https://noaa-goes16.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGOES16Object
+  Description: New data notifications for GOES-16, only Lambda and SQS protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+- ARN: arn:aws:s3:::noaa-goes17
+  Description: GOES-17 imagery and metadata
+  Explore:
+  - '[Browse Bucket](https://noaa-goes17.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGOES17Object
+  Description: New data notifications for GOES-17, only Lambda and SQS protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- geospatial
+- weather
+- earth observation
+- meteorological
+- disaster response
+- satellite imagery
+UpdateFrequency: New data is added as soon as it's available

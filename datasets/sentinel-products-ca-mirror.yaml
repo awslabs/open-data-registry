@@ -1,25 +1,41 @@
-Name: Sentinel Near Real-time Canada Mirror
-Description: "The official Government of Canada (GC) 🍁 Near Real-time (NRT) Sentinel Mirror connected to the [EU Copernicus programme](https://www.copernicus.eu), focused on Canadian coverage. In 2015, [Canada joined the Sentinel collaborative ground segment](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Canada_joins_Sentinel_collaborative_ground_segment) which introduced an NRT Sentinel mirror site for users and programs inside the Government of Canada (GC). In 2022, the [Commission signed a Copernicus Arrangement with the Canadian Space Agency](https://defence-industry-space.ec.europa.eu/signature-copernicus-arrangement-between-canadian-space-agency-and-european-commission-2022-05-16_en) with the aim to share each other’s satellite Earth Observation data on the basis of reciprocity. Further to this arrangement as well as ongoing [Open Government](https://open.canada.ca/en/about-open-government) efforts, the private mirror was made open to the public, here on the AWS Open Dataset Registry. Additional Sentinel-2 and Sentinel-6 products over Canada are also retrieved from [EUMETSAT](https://eoportal.eumetsat.int/cas/login)."
-Documentation: https://sentinel.esa.int/web/sentinel/home
 Contact: eodms-sgdot@nrcan-rncan.gc.ca
-ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
-UpdateFrequency: Sentinel-1 is an NRT dataset retrieved from ESA's [collaborative hub](https://colhub.copernicus.eu/) within 90 minutes of satellite downlink. Non-NRT Sentinel-2 and Sentinel-3 are also retrieved. Other sensors are updated as quickly as possible based on Canada coverage and availability at the source.
-Tags:
-  - aws-pds
-  - agriculture
-  - earth observation
-  - satellite imagery
-  - geospatial
-  - sustainability
-  - disaster response
-  - synthetic aperture radar
-  - stac
-License: Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+DOI: 10.60489/roda.eh8zsn
+Description: "The official Government of Canada (GC) \U0001F341 Near Real-time (NRT)\
+  \ Sentinel Mirror connected to the [EU Copernicus programme](https://www.copernicus.eu),\
+  \ focused on Canadian coverage. In 2015, [Canada joined the Sentinel collaborative\
+  \ ground segment](https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Canada_joins_Sentinel_collaborative_ground_segment)\
+  \ which introduced an NRT Sentinel mirror site for users and programs inside the\
+  \ Government of Canada (GC). In 2022, the [Commission signed a Copernicus Arrangement\
+  \ with the Canadian Space Agency](https://defence-industry-space.ec.europa.eu/signature-copernicus-arrangement-between-canadian-space-agency-and-european-commission-2022-05-16_en)\
+  \ with the aim to share each other\u2019s satellite Earth Observation data on the\
+  \ basis of reciprocity. Further to this arrangement as well as ongoing [Open Government](https://open.canada.ca/en/about-open-government)\
+  \ efforts, the private mirror was made open to the public, here on the AWS Open\
+  \ Dataset Registry. Additional Sentinel-2 and Sentinel-6 products over Canada are\
+  \ also retrieved from [EUMETSAT](https://eoportal.eumetsat.int/cas/login)."
+Documentation: https://sentinel.esa.int/web/sentinel/home
+License: Access to Sentinel data is free, full and open for the broad Regional, National,
+  European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+ManagedBy: '[Natural Resources Canada](https://www.nrcan.gc.ca/)'
+Name: Sentinel Near Real-time Canada Mirror
 Resources:
-  - Description: NRT Sentinel data in an S3 bucket broken down by sensor, product type and date.
-    ARN: arn:aws:s3:::sentinel-products-ca-mirror
-    Region: ca-central-1
-    Type: S3 Bucket
-    Explore: 
-    - '[EODMS STAC for Sentinel products](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/)'
-    
+- ARN: arn:aws:s3:::sentinel-products-ca-mirror
+  Description: NRT Sentinel data in an S3 bucket broken down by sensor, product type
+    and date.
+  Explore:
+  - '[EODMS STAC for Sentinel products](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/)'
+  Region: ca-central-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- earth observation
+- satellite imagery
+- geospatial
+- sustainability
+- disaster response
+- synthetic aperture radar
+- stac
+UpdateFrequency: Sentinel-1 is an NRT dataset retrieved from ESA's [collaborative
+  hub](https://colhub.copernicus.eu/) within 90 minutes of satellite downlink. Non-NRT
+  Sentinel-2 and Sentinel-3 are also retrieved. Other sensors are updated as quickly
+  as possible based on Canada coverage and availability at the source.

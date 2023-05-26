@@ -1,45 +1,87 @@
-Name: NOAA Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global)
-Description: |
-  NOTICE - PNS23-01: Description of Known Issues and More Details Regarding Upgrade of the Surge and Tide Operational Forecast System (STOFS, formerly ESTOFS) to Version 1.1.1 Effective January 10, 2023 More information can be found "[HERE](https://www.weather.gov/media/notification/pdf_2023_24/pns23-01_stofs_v1.1.1.pdf)"<br /><br />
-  
-  NOTICE - The Coast Survey Development Laboratory (CSDL) in NOAA/National Ocean Service (NOS)/Office of Coast Survey is upgrading the Surge and Tide Operational Forecast System (STOFS, formerly ESTOFS) to Version 1.1.0. A Service Change Notice (SCN) has been issued and can be found "[HERE](https://www.weather.gov/media/notification/pdf2/scn22-108_stofs_v1.1.0_aab.pdf)"<br /><br />
-  
-  NOAA's Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global) provides users with nowcasts (analyses of near present conditions) and forecast guidance of water level conditions for the entire globe. STOFS-2D-Global has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. STOFS-2D-Global was developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), the University of Notre Dame, the University of North Carolina, and The Water Institute of the Gulf. The model generates forecasts out to 180 hours four times per day; forecast output includes water levels caused by the combined effects of storm surge and tides, by astronomical tides alone, and by sub-tidal water levels (isolated storm surge).  <br /><br />
-
-  The hydrodynamic model employed by STOFS-2D-Global is the ADvanced CIRCulation (ADCIRC) finite element model. The model is forced by GFS winds, mean sea level pressure, and sea ice. The unstructured grid used by STOFS-2D-Global consists of 12,784,991 nodes and 24,875,313 triangular elements. Coastal resolution is at least 1.5 km globally, and up to 80 m for Hawaii, Alaska, and the U.S. West Coast (30 m for Chetco River, OR); up to 90-120 m for the Pacific Islands including Guam, American Samoa, Marianas, Wake Island, Marshall Islands, and Palau; and up to 120 m for the U.S. East Coast, Puerto Rico, and Micronesia. The flood plain extends overland to approximately 6 m elevation ASL for the U.S. East Coast, and up to 20 m elevation ASL for the Pacific Islands. STOFS-2D-Global a) reduces bias and errors due to the removal of the open ocean boundaries that were included in previous ESTOFS regional domains (ESTOFS-Atlantic, -Pacific, -Micronesia); b) includes internal tide-induced dissipation in the deep ocean; c) includes sea ice effect on wind drag; and d) includes spatially varying Manning's N bottom friction for improved tide and surge prediction. <br /><br />
-
-  STOFS-2D-Global water level forecast guidance output available here include NetCDF, GRIB2, and SHEF files. Please see README documentation for more details.
-Documentation: https://noaa-gestofs-pds.s3.amazonaws.com/README.html
-Contact: |
-  For questions regarding data content or quality, visit the ESTOFS site (https://polar.ncep.noaa.gov/estofs/). 
-  <br /> For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Four times per day, every 6 hours starting at midnight UTC
 Collabs:
   ASDI:
     Tags:
-      - oceans
-Tags:
-  - aws-pds
-  - global
-  - coastal
-  - disaster response
-  - weather
-  - water
-  - environmental
-  - meteorological
-  - oceans
-  - climate
+    - oceans
+Contact: "For questions regarding data content or quality, visit the ESTOFS site (https://polar.ncep.noaa.gov/estofs/).\
+  \ \n<br /> For any questions regarding data delivery or any general questions regarding\
+  \ the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.\n\
+  <br /> We also seek to identify case studies on how NOAA data is being used and\
+  \ will be featuring those stories in joint publications and in upcoming events.\
+  \ If you are interested in seeing your story highlighted, please share it with the\
+  \ NODD team by emailing nodd@noaa.gov\n"
+DOI: 10.60489/roda.zh8h3z
+Description: 'NOTICE - PNS23-01: Description of Known Issues and More Details Regarding
+  Upgrade of the Surge and Tide Operational Forecast System (STOFS, formerly ESTOFS)
+  to Version 1.1.1 Effective January 10, 2023 More information can be found "[HERE](https://www.weather.gov/media/notification/pdf_2023_24/pns23-01_stofs_v1.1.1.pdf)"<br
+  /><br />
+
+
+  NOTICE - The Coast Survey Development Laboratory (CSDL) in NOAA/National Ocean Service
+  (NOS)/Office of Coast Survey is upgrading the Surge and Tide Operational Forecast
+  System (STOFS, formerly ESTOFS) to Version 1.1.0. A Service Change Notice (SCN)
+  has been issued and can be found "[HERE](https://www.weather.gov/media/notification/pdf2/scn22-108_stofs_v1.1.0_aab.pdf)"<br
+  /><br />
+
+
+  NOAA''s Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global)
+  provides users with nowcasts (analyses of near present conditions) and forecast
+  guidance of water level conditions for the entire globe. STOFS-2D-Global has been
+  developed to serve the marine navigation, weather forecasting, and disaster mitigation
+  user communities. STOFS-2D-Global was developed in a collaborative effort between
+  the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National
+  Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central
+  Operations (NCO), the University of Notre Dame, the University of North Carolina,
+  and The Water Institute of the Gulf. The model generates forecasts out to 180 hours
+  four times per day; forecast output includes water levels caused by the combined
+  effects of storm surge and tides, by astronomical tides alone, and by sub-tidal
+  water levels (isolated storm surge).  <br /><br />
+
+
+  The hydrodynamic model employed by STOFS-2D-Global is the ADvanced CIRCulation (ADCIRC)
+  finite element model. The model is forced by GFS winds, mean sea level pressure,
+  and sea ice. The unstructured grid used by STOFS-2D-Global consists of 12,784,991
+  nodes and 24,875,313 triangular elements. Coastal resolution is at least 1.5 km
+  globally, and up to 80 m for Hawaii, Alaska, and the U.S. West Coast (30 m for Chetco
+  River, OR); up to 90-120 m for the Pacific Islands including Guam, American Samoa,
+  Marianas, Wake Island, Marshall Islands, and Palau; and up to 120 m for the U.S.
+  East Coast, Puerto Rico, and Micronesia. The flood plain extends overland to approximately
+  6 m elevation ASL for the U.S. East Coast, and up to 20 m elevation ASL for the
+  Pacific Islands. STOFS-2D-Global a) reduces bias and errors due to the removal of
+  the open ocean boundaries that were included in previous ESTOFS regional domains
+  (ESTOFS-Atlantic, -Pacific, -Micronesia); b) includes internal tide-induced dissipation
+  in the deep ocean; c) includes sea ice effect on wind drag; and d) includes spatially
+  varying Manning''s N bottom friction for improved tide and surge prediction. <br
+  /><br />
+
+
+  STOFS-2D-Global water level forecast guidance output available here include NetCDF,
+  GRIB2, and SHEF files. Please see README documentation for more details.
+
+  '
+Documentation: https://noaa-gestofs-pds.s3.amazonaws.com/README.html
 License: Open Data. There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global)
 Resources:
-  - Description: NOAA STOFS-2D-Global Water Level Forecast Guidance
-    ARN: arn:aws:s3:::noaa-gestofs-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gestofs-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA STOFS-2D-Global Water Level Forecast Guidance New Dataset Notification
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGESTOFSObject
-    Region: us-east-1
-    Type: SNS Topic
+- ARN: arn:aws:s3:::noaa-gestofs-pds
+  Description: NOAA STOFS-2D-Global Water Level Forecast Guidance
+  Explore:
+  - '[Browse Bucket](https://noaa-gestofs-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGESTOFSObject
+  Description: NOAA STOFS-2D-Global Water Level Forecast Guidance New Dataset Notification
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- global
+- coastal
+- disaster response
+- weather
+- water
+- environmental
+- meteorological
+- oceans
+- climate
+UpdateFrequency: Four times per day, every 6 hours starting at midnight UTC

@@ -1,24 +1,24 @@
-Name: Central Weather Bureau OpenData
-Description: Various kinds of weather raw data and charts from Central Weather Bureau.
-Documentation: https://opendata.cwb.gov.tw/devManual/insrtuction
-Contact: od@cwb.gov.tw
-ManagedBy: "[Central Weather Bureau](https://www.cwb.gov.tw/)"
-UpdateFrequency: Data is updated as soon as newer one is available.
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - climate
-  - earth observation
-  - earthquakes
-  - satellite imagery
-  - weather
+    - weather
+Contact: od@cwb.gov.tw
+DOI: 10.60489/roda.i4f3yp
+Description: Various kinds of weather raw data and charts from Central Weather Bureau.
+Documentation: https://opendata.cwb.gov.tw/devManual/insrtuction
 License: http://data.gov.tw/license
+ManagedBy: '[Central Weather Bureau](https://www.cwb.gov.tw/)'
+Name: Central Weather Bureau OpenData
 Resources:
-  - Description: CWB data lake
-    ARN: arn:aws:s3:::cwbopendata
-    Region: ap-northeast-1
-    Type: S3 Bucket
-
+- ARN: arn:aws:s3:::cwbopendata
+  Description: CWB data lake
+  Region: ap-northeast-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- climate
+- earth observation
+- earthquakes
+- satellite imagery
+- weather
+UpdateFrequency: Data is updated as soon as newer one is available.

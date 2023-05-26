@@ -1,33 +1,35 @@
-Name: AWS iGenomes
-Description: Common reference genomes hosted on AWS S3. Can be used when aligning and analysing raw DNA sequencing data.
-Documentation: https://ewels.github.io/AWS-iGenomes/
 Contact: https://github.com/ewels/AWS-iGenomes/issues
-ManagedBy: '[SciLifeLab](https://opensource.scilifelab.se/)'
-UpdateFrequency: New data are added when available.
-Tags:
-  - aws-pds
-  - agriculture
-  - biology
-  - genetic
-  - genomic
-  - life sciences
-  - reference index
-  - Caenorhabditis elegans
-  - Danio rerio
-  - Homo sapiens
-  - Mus musculus
-  - Rattus norvegicus
-License: Multiple - please see [data origins](https://github.com/ewels/AWS-iGenomes#data-origin).
-Resources:
-  - Description: AWS-iGenomes S3 Bucket
-    ARN: arn:aws:s3:::ngi-igenomes
-    Region: eu-west-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.uiscmr
 DataAtWork:
-  Tutorials:
+  Publications: null
   Tools & Applications:
-    - Title: nf-core analysis pipelines
-      URL: http://nf-co.re/
-      AuthorName: Phil Ewels
-      AuthorURL: http://phil.ewels.co.uk/
-  Publications:
+  - AuthorName: Phil Ewels
+    AuthorURL: http://phil.ewels.co.uk/
+    Title: nf-core analysis pipelines
+    URL: http://nf-co.re/
+  Tutorials: null
+Description: Common reference genomes hosted on AWS S3. Can be used when aligning
+  and analysing raw DNA sequencing data.
+Documentation: https://ewels.github.io/AWS-iGenomes/
+License: Multiple - please see [data origins](https://github.com/ewels/AWS-iGenomes#data-origin).
+ManagedBy: '[SciLifeLab](https://opensource.scilifelab.se/)'
+Name: AWS iGenomes
+Resources:
+- ARN: arn:aws:s3:::ngi-igenomes
+  Description: AWS-iGenomes S3 Bucket
+  Region: eu-west-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- biology
+- genetic
+- genomic
+- life sciences
+- reference index
+- Caenorhabditis elegans
+- Danio rerio
+- Homo sapiens
+- Mus musculus
+- Rattus norvegicus
+UpdateFrequency: New data are added when available.

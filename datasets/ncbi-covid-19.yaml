@@ -1,42 +1,57 @@
-Name: COVID-19 Genome Sequence Dataset
-Description: A centralized sequence repository for all records containing sequence associated with the novel corona virus (SARS-CoV-2) submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA). Included are both the original sequences submitted by the principal investigator as well as SRA-processed sequences that require the SRA Toolkit for analysis. Additionally, submitter provided metadata included in associated BioSample and BioProject records is available alongside NCBI calculated data, such k-mer based taxonomy analysis results, contiguous assemblies (contigs) and associated statistics such as contig length, blast results for the assembled contigs, contig annotation, blast databases of contigs and their annotated peptides, and VCF files generated for each record relative to the SARS-CoV-2 RefSeq record. Finally, metadata is additionally made available in parquet format to facilitate search and filtering using the AWS Athena Service.
-Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
 Contact: https://support.nlm.nih.gov/support/create-case/
-ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
-UpdateFrequency: Hourly
-Tags:
-  - aws-pds
-  - bioinformatics
-  - biology
-  - coronavirus
-  - COVID-19
-  - fastq
-  - bam
-  - cram
-  - genomic
-  - genetic
-  - health
-  - life sciences
-  - MERS
-  - SARS
-  - virus
-  - STRIDES
-  - whole genome sequencing
-  - transcriptomics
-License: "[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
-Resources:
-  - Description: "Genomic sequence reads of SARS-CoV-2 and related coronaviridae, organized by NCBI accession. Files in the `sra-src` folder are in FASTQ, BAM, or CRAM format (original submission); files in the  `run` folder are in .sra format and require the [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit)"
-    ARN: arn:aws:s3:::sra-pub-sars-cov2
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: Metadata for sra-pub-sars-cov2 in an Athena-queryable format
-    ARN: arn:aws:s3:::sra-pub-sars-cov2-metadata-us-east-1
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.56j4ka
 DataAtWork:
-  Tutorials:
+  Publications: null
   Tools & Applications:
-    - Title: Download SRA sequence data using Amazon Web Services (AWS)
-      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
-      AuthorName: NCBI SRA
-  Publications:
+  - AuthorName: NCBI SRA
+    Title: Download SRA sequence data using Amazon Web Services (AWS)
+    URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+  Tutorials: null
+Description: A centralized sequence repository for all records containing sequence
+  associated with the novel corona virus (SARS-CoV-2) submitted to the National Center
+  for Biotechnology Information (NCBI) Sequence Read Archive (SRA). Included are both
+  the original sequences submitted by the principal investigator as well as SRA-processed
+  sequences that require the SRA Toolkit for analysis. Additionally, submitter provided
+  metadata included in associated BioSample and BioProject records is available alongside
+  NCBI calculated data, such k-mer based taxonomy analysis results, contiguous assemblies
+  (contigs) and associated statistics such as contig length, blast results for the
+  assembled contigs, contig annotation, blast databases of contigs and their annotated
+  peptides, and VCF files generated for each record relative to the SARS-CoV-2 RefSeq
+  record. Finally, metadata is additionally made available in parquet format to facilitate
+  search and filtering using the AWS Athena Service.
+Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+License: '[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)'
+ManagedBy: '[National Library of Medicine (NLM)](http://nlm.nih.gov/)'
+Name: COVID-19 Genome Sequence Dataset
+Resources:
+- ARN: arn:aws:s3:::sra-pub-sars-cov2
+  Description: Genomic sequence reads of SARS-CoV-2 and related coronaviridae, organized
+    by NCBI accession. Files in the `sra-src` folder are in FASTQ, BAM, or CRAM format
+    (original submission); files in the  `run` folder are in .sra format and require
+    the [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit)
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::sra-pub-sars-cov2-metadata-us-east-1
+  Description: Metadata for sra-pub-sars-cov2 in an Athena-queryable format
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- bioinformatics
+- biology
+- coronavirus
+- COVID-19
+- fastq
+- bam
+- cram
+- genomic
+- genetic
+- health
+- life sciences
+- MERS
+- SARS
+- virus
+- STRIDES
+- whole genome sequencing
+- transcriptomics
+UpdateFrequency: Hourly

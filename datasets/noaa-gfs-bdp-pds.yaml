@@ -1,81 +1,81 @@
-Name: NOAA Global Forecast System (GFS)
-Description: |
-  NOTE - Upgrade NCEP Global Forecast System to v16.3.0 - Effective November 29, 2022 See notification [HERE](https://www.weather.gov/media/notification/pdf2/scn22-104_gfs.v16.3.0.pdf)
-  <br/>
-  <br/>
-  The Global Forecast System (GFS) is a weather forecast model produced
-  by the National Centers for Environmental Prediction (NCEP). Dozens of
-  atmospheric and land-soil variables are available through this dataset,
-  from temperatures, winds, and precipitation to soil moisture and
-  atmospheric ozone concentration. The entire globe is covered by the GFS
-  at a base horizontal resolution of 18 miles (28 kilometers) between grid
-  points, which is used by the operational forecasters who predict weather
-  out to 16 days in the future. Horizontal resolution drops to 44 miles
-  (70 kilometers) between grid point for forecasts between one week and two
-  weeks.
-  <br/>
-  <br/>
-  The NOAA Global Forecast Systems (GFS) Warm Start Initial Conditions are 
-  produced by the National Centers for Environmental Prediction Center (NCEP) 
-  to run operational deterministic medium-range numerical weather predictions.   
-  The GFS is built with the GFDL Finite-Volume Cubed-Sphere Dynamical Core (FV3) 
-  and the Grid-Point Statistical Interpolation (GSI) data assimilation system.  
-  Please visit the links below in the Documentation section to find more details 
-  about the model and the data assimilation systems.   The current operational 
-  GFS is run at 64 layers in the vertical extending from the surface to the upper
-  stratosphere and on six cubic-sphere tiles at  the C768 or 13-km horizontal
-  resolution.  A new version of the GFS that has 127 layers extending to the
-  mesopause will be implemented for operation on February 3, 2021.   These initial
-  conditions are made available four times per day for running forecasts at the
-  00Z, 06Z, 12Z and 18Z cycles, respectively.   For each cycle, the dataset
-  contains the first guess of the atmosphere states found in the directory
-  ./gdas.yyyymmdd/hh-6/RESTART, which are  6-hour GDAS forecast from the last
-  cycle,  and atmospheric analysis increments and surface analysis for the current
-  cycle  found in the directory ./gfs.yyyymmdd/hh, which are produced by the data
-  assimilation systems. 
-Documentation: https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php
-Contact: For questions regarding data content or quality, visit [the NOAA GFS site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php). For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: 4 times a day, every 6 hours starting at midnight UTC
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - disaster response
-  - environmental
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: GFS data
-    ARN: arn:aws:s3:::noaa-gfs-bdp-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gfs-bdp-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGFSObject
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: GFS Warm Start Initial Conditions
-    ARN: arn:aws:s3:::noaa-gfs-warmstart-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gfs-warmstart-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GFS Warm Start IC, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGfsWarmStartObject
-    Region: us-east-1
-    Type: SNS Topic
+    - weather
+Contact: For questions regarding data content or quality, visit [the NOAA GFS site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php).
+  For any questions regarding data delivery or any general questions regarding the
+  NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+DOI: 10.60489/roda.hjo9em
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
   Publications:
-    - Title: GFS Warm Restart Files Additional Information
-      URL: https://noaa-gfs-warmstart-pds.s3.amazonaws.com/GFS+Warm+Restart+Files.v1.pdf
-      AuthorName: Fanglin Yang
+  - AuthorName: Fanglin Yang
+    Title: GFS Warm Restart Files Additional Information
+    URL: https://noaa-gfs-warmstart-pds.s3.amazonaws.com/GFS+Warm+Restart+Files.v1.pdf
+  Tools & Applications: null
+  Tutorials: null
+Description: "NOTE - Upgrade NCEP Global Forecast System to v16.3.0 - Effective November\
+  \ 29, 2022 See notification [HERE](https://www.weather.gov/media/notification/pdf2/scn22-104_gfs.v16.3.0.pdf)\n\
+  <br/>\n<br/>\nThe Global Forecast System (GFS) is a weather forecast model produced\n\
+  by the National Centers for Environmental Prediction (NCEP). Dozens of\natmospheric\
+  \ and land-soil variables are available through this dataset,\nfrom temperatures,\
+  \ winds, and precipitation to soil moisture and\natmospheric ozone concentration.\
+  \ The entire globe is covered by the GFS\nat a base horizontal resolution of 18\
+  \ miles (28 kilometers) between grid\npoints, which is used by the operational forecasters\
+  \ who predict weather\nout to 16 days in the future. Horizontal resolution drops\
+  \ to 44 miles\n(70 kilometers) between grid point for forecasts between one week\
+  \ and two\nweeks.\n<br/>\n<br/>\nThe NOAA Global Forecast Systems (GFS) Warm Start\
+  \ Initial Conditions are \nproduced by the National Centers for Environmental Prediction\
+  \ Center (NCEP) \nto run operational deterministic medium-range numerical weather\
+  \ predictions.   \nThe GFS is built with the GFDL Finite-Volume Cubed-Sphere Dynamical\
+  \ Core (FV3) \nand the Grid-Point Statistical Interpolation (GSI) data assimilation\
+  \ system.  \nPlease visit the links below in the Documentation section to find more\
+  \ details \nabout the model and the data assimilation systems.   The current operational\
+  \ \nGFS is run at 64 layers in the vertical extending from the surface to the upper\n\
+  stratosphere and on six cubic-sphere tiles at  the C768 or 13-km horizontal\nresolution.\
+  \  A new version of the GFS that has 127 layers extending to the\nmesopause will\
+  \ be implemented for operation on February 3, 2021.   These initial\nconditions\
+  \ are made available four times per day for running forecasts at the\n00Z, 06Z,\
+  \ 12Z and 18Z cycles, respectively.   For each cycle, the dataset\ncontains the\
+  \ first guess of the atmosphere states found in the directory\n./gdas.yyyymmdd/hh-6/RESTART,\
+  \ which are  6-hour GDAS forecast from the last\ncycle,  and atmospheric analysis\
+  \ increments and surface analysis for the current\ncycle  found in the directory\
+  \ ./gfs.yyyymmdd/hh, which are produced by the data\nassimilation systems. \n"
+Documentation: https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php
+License: Open Data. There are no restrictions on the use of this data.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA Global Forecast System (GFS)
+Resources:
+- ARN: arn:aws:s3:::noaa-gfs-bdp-pds
+  Description: GFS data
+  Explore:
+  - '[Browse Bucket](https://noaa-gfs-bdp-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGFSObject
+  Description: New data notifications for GFS, only Lambda and SQS protocols allowed
+  Region: us-east-1
+  Type: SNS Topic
+- ARN: arn:aws:s3:::noaa-gfs-warmstart-pds
+  Description: GFS Warm Start Initial Conditions
+  Explore:
+  - '[Browse Bucket](https://noaa-gfs-warmstart-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewGfsWarmStartObject
+  Description: New data notifications for GFS Warm Start IC, only Lambda and SQS protocols
+    allowed
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- climate
+- disaster response
+- environmental
+- meteorological
+- weather
+UpdateFrequency: 4 times a day, every 6 hours starting at midnight UTC

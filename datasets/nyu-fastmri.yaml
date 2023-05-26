@@ -1,49 +1,55 @@
-Name: NYU Langone & FAIR FastMRI Dataset
-Description: This dataset contains deidentified raw k-space data and DICOM image files of over 1,500 knees and 6,970 brains. 
-Contact: "[Florian  Knoll](florian.knoll@nyuangone.org)"
-Documentation: https://fastmri.med.nyu.edu/
-ManagedBy: "[FastMRI](https://fastmri.med.nyu.edu/)"
-UpdateFrequency: The dataset is estimated to grow annually to include MRI raw data and imaging for additional body structures.
-Tags:
-  - aws-pds
-  - life sciences
-  - health
-  - imaging
-  - biology
-  - image processing
-  - neurobiology
-  - neuroimaging
-  - magnetic resonance imaging
-License: MIT License
-Resources:
-  - Description: Raw k-space data and DICOM files for a knee and brain dataset in a public S3 bucket
-    ARN: arn:aws:s3:::fastmri-dataset
-    Region: us-east-1
-    Type: S3 Bucket
-    ControlledAccess: https://fastmri.med.nyu.edu/
+Contact: '[Florian  Knoll](florian.knoll@nyuangone.org)'
+DOI: 10.60489/roda.xllpjd
 DataAtWork:
-  Tutorials:
-    - Title: FastMRI Tutorial (Jupyter Notebook)
-      URL: https://github.com/facebookresearch/fastMRI/blob/master/fastMRI_tutorial.ipynb
-      AuthorName: Tullie Murrell 
-      AuthorURL: https://scholar.google.com/citations?user=LjjLn2YAAAAJ&hl=en
-    - Title: "How to Get Started Working with the FastMRI Dataset (and why you should!)"
-      URL: https://medium.com/@khodges42/how-to-get-started-diy-neurohacking-with-the-fastmri-dataset-and-why-you-should-6a02a6bb896e
-      AuthorName: Kevin Hodges
   Publications:
-    - Title: Advancing machine learning for MR image reconstruction with an open competition:Overview of the 2019 fastMRI challenge
-      URL: https://arxiv.org/abs/2001.02518
-      AuthorName: Knoll et al (2020)
-      AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
-    - Title: fastMRI:An Open Dataset and Benchmarks for Accelerated MRI
-      URL: https://arxiv.org/abs/1811.08839
-      AuthorName: Zbontar et al (2019)
-      AuthorURL: https://arxiv.org/search/cs?searchtype=author&query=Zbontar%2C+J
-    - Title: Assessment of the generalization of learned image reconstruction and the potential for transfer learning. 
-      URL: https://www.ncbi.nlm.nih.gov/pubmed/29774597
-      AuthorName: Knoll et al (2019)
-      AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
-    - Title: Deep Learning Methods for Parallel Magnetic Resonance Image Reconstruction 
-      URL: https://arxiv.org/abs/1904.01112
-      AuthorName: Knoll et al (2019)
-      AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
+  - AuthorName: Knoll et al (2020)
+    AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
+    Title: Advancing machine learning for MR image reconstruction with an open competition:Overview
+      of the 2019 fastMRI challenge
+    URL: https://arxiv.org/abs/2001.02518
+  - AuthorName: Zbontar et al (2019)
+    AuthorURL: https://arxiv.org/search/cs?searchtype=author&query=Zbontar%2C+J
+    Title: fastMRI:An Open Dataset and Benchmarks for Accelerated MRI
+    URL: https://arxiv.org/abs/1811.08839
+  - AuthorName: Knoll et al (2019)
+    AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
+    Title: Assessment of the generalization of learned image reconstruction and the
+      potential for transfer learning.
+    URL: https://www.ncbi.nlm.nih.gov/pubmed/29774597
+  - AuthorName: Knoll et al (2019)
+    AuthorURL: https://arxiv.org/search/eess?searchtype=author&query=Knoll%2C+F
+    Title: Deep Learning Methods for Parallel Magnetic Resonance Image Reconstruction
+    URL: https://arxiv.org/abs/1904.01112
+  Tutorials:
+  - AuthorName: Tullie Murrell
+    AuthorURL: https://scholar.google.com/citations?user=LjjLn2YAAAAJ&hl=en
+    Title: FastMRI Tutorial (Jupyter Notebook)
+    URL: https://github.com/facebookresearch/fastMRI/blob/master/fastMRI_tutorial.ipynb
+  - AuthorName: Kevin Hodges
+    Title: How to Get Started Working with the FastMRI Dataset (and why you should!)
+    URL: https://medium.com/@khodges42/how-to-get-started-diy-neurohacking-with-the-fastmri-dataset-and-why-you-should-6a02a6bb896e
+Description: This dataset contains deidentified raw k-space data and DICOM image files
+  of over 1,500 knees and 6,970 brains.
+Documentation: https://fastmri.med.nyu.edu/
+License: MIT License
+ManagedBy: '[FastMRI](https://fastmri.med.nyu.edu/)'
+Name: NYU Langone & FAIR FastMRI Dataset
+Resources:
+- ARN: arn:aws:s3:::fastmri-dataset
+  ControlledAccess: https://fastmri.med.nyu.edu/
+  Description: Raw k-space data and DICOM files for a knee and brain dataset in a
+    public S3 bucket
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- life sciences
+- health
+- imaging
+- biology
+- image processing
+- neurobiology
+- neuroimaging
+- magnetic resonance imaging
+UpdateFrequency: The dataset is estimated to grow annually to include MRI raw data
+  and imaging for additional body structures.

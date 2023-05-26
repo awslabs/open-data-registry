@@ -1,27 +1,33 @@
-Name: Genome Ark
-Description: The Genome Ark hosts genomic information for the Vertebrate Genomes Project (VGP) and other related projects. The VGP is an international collaboration that aims to generate complete and near error-free reference genomes for all extant vertebrate species. These genomes will be used to address fundamental questions in biology and disease, to identify species most genetically at risk for extinction, and to preserve genetic information of life.
-Documentation: https://vertebrategenomesproject.org
 Contact: '[Dr. Erich Jarvis](ejarvis@rockefeller.edu)'
-ManagedBy: The Genome10K community of scientists
-UpdateFrequency: Data will be continually updated as it is generated.
-Tags:
-  - aws-pds
-  - biodiversity
-  - bioinformatics
-  - biology
-  - conservation
-  - genetic
-  - genomic
-  - life sciences
-License: '[G10K Data Use Policy](https://genome10k.soe.ucsc.edu/data-use-policies/)'
-Resources:
-  - Description: https://vgp.github.io
-    ARN: arn:aws:s3:::genomeark
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://genomeark.s3.amazonaws.com/index.html)'
+DOI: 10.60489/roda.lke9bt
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: The Genome Ark hosts genomic information for the Vertebrate Genomes Project
+  (VGP) and other related projects. The VGP is an international collaboration that
+  aims to generate complete and near error-free reference genomes for all extant vertebrate
+  species. These genomes will be used to address fundamental questions in biology
+  and disease, to identify species most genetically at risk for extinction, and to
+  preserve genetic information of life.
+Documentation: https://vertebrategenomesproject.org
+License: '[G10K Data Use Policy](https://genome10k.soe.ucsc.edu/data-use-policies/)'
+ManagedBy: The Genome10K community of scientists
+Name: Genome Ark
+Resources:
+- ARN: arn:aws:s3:::genomeark
+  Description: https://vgp.github.io
+  Explore:
+  - '[Browse Bucket](https://genomeark.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- biodiversity
+- bioinformatics
+- biology
+- conservation
+- genetic
+- genomic
+- life sciences
+UpdateFrequency: Data will be continually updated as it is generated.

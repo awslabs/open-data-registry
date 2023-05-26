@@ -1,72 +1,77 @@
-Name: RADARSAT-1
-Description: Developed and operated by the Canadian Space Agency, it is Canada's first commercial Earth observation satellite.
-Documentation: https://www.asc-csa.gc.ca/eng/satellites/radarsat1/what-is-radarsat1.asp
-Contact: https://www.eodms-sgdot.nrcan-rncan.gc.ca
-ManagedBy: "[Natural Resources Canada](https://nrcan.gc.ca/)"
-UpdateFrequency: The initial product release includes the 36000 products originally ordered by the Government of Canada. Products are added on an adhoc basis driven by prioritized foreign repatriation efforts and new processing orders from the raw archive.
 Collabs:
   ASDI:
     Tags:
-      - satellite imagery
-Tags:
-  - earth observation
-  - global
-  - aws-pds
-  - ice
-  - agriculture
-  - disaster response
-  - satellite imagery
-  - geospatial
-  - cog
-  - synthetic aperture radar
-License: "[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)"
-Resources:
-  - Description: Cloud Optimized GeoTIFF scenes and metadata in an S3 bucket
-    ARN: arn:aws:s3:::radarsat-r1-l1-cog
-    Region: ca-central-1
-    Type: S3 Bucket
+    - satellite imagery
+Contact: https://www.eodms-sgdot.nrcan-rncan.gc.ca
+DOI: 10.60489/roda.hl7sia
 DataAtWork:
-  Tutorials:
-    - Title: PCI Geomatics Webinar | Cloud enabling earth observation archives
-      URL: https://www.youtube.com/watch?v=SvejDH5-Hic
-      AuthorName: CATALYST
-      AuthorURL: https://catalyst.earth
-      Services:
+  Publications: null
   Tools & Applications:
-    - Title: EODMS RAPI Client Python Script
-      URL: https://github.com/nrcan-eodms-sgdot-rncan/eodms-rapi-orderdownload
-      AuthorName: Earth Observation Data Management System - Natural Resources Canada
-      AuthorURL: https://www.eodms-sgdot.nrcan-rncan.gc.ca/index-en.html                                        
-    - Title: RADARSTAC
-      URL: https://www.radarstac.com
-      AuthorName: Sparkgeo Consulting Inc. 
-      AuthorURL: https://sparkgeo.com/
-    - Title: QGIS
-      URL: https://qgis.org
-      AuthorName: German QGIS user group
-      AuthorURL: https://www.qgis.de/
-    - Title: GDAL
-      URL: https://gdal.org
-      AuthorName: GDAL
-      AuthorURL: https://gdal.org
-    - Title: MapReady
-      URL: https://www.asf.alaska.edu/data-tools/mapready
-      AuthorName: NASA
-      AuthorURL: https://www.asf.alaska.edu
-    - Title: OpenEV
-      URL: http://openev.sourceforge.net/index.php
-      AuthorName: Frank Warmerdam
-      AuthorURL: http://openev.sourceforge.net/index.php
-    - Title: Catalyst Professional
-      URL: https://catalyst.earth/products/catalyst-pro/
-      AuthorName: CATALYST 
-      AuthorURL: https://catalyst.earth
-    - Title: Gamma
-      URL: https://www.gamma-rs.ch/
-      AuthorName: Gamme Remote Sensing
-      AuthorURL: https://www.gamma-rs.ch/
-    - Title: ENVI SARscape
-      URL: https://www.harrisgeospatial.com/Software-Technology/ENVI-SARscape
-      AuthorName: L3Harris Geospatial
-      AuthorURL: https://www.l3harrisgeospatial.com
-  Publications:
+  - AuthorName: Earth Observation Data Management System - Natural Resources Canada
+    AuthorURL: https://www.eodms-sgdot.nrcan-rncan.gc.ca/index-en.html
+    Title: EODMS RAPI Client Python Script
+    URL: https://github.com/nrcan-eodms-sgdot-rncan/eodms-rapi-orderdownload
+  - AuthorName: Sparkgeo Consulting Inc.
+    AuthorURL: https://sparkgeo.com/
+    Title: RADARSTAC
+    URL: https://www.radarstac.com
+  - AuthorName: German QGIS user group
+    AuthorURL: https://www.qgis.de/
+    Title: QGIS
+    URL: https://qgis.org
+  - AuthorName: GDAL
+    AuthorURL: https://gdal.org
+    Title: GDAL
+    URL: https://gdal.org
+  - AuthorName: NASA
+    AuthorURL: https://www.asf.alaska.edu
+    Title: MapReady
+    URL: https://www.asf.alaska.edu/data-tools/mapready
+  - AuthorName: Frank Warmerdam
+    AuthorURL: http://openev.sourceforge.net/index.php
+    Title: OpenEV
+    URL: http://openev.sourceforge.net/index.php
+  - AuthorName: CATALYST
+    AuthorURL: https://catalyst.earth
+    Title: Catalyst Professional
+    URL: https://catalyst.earth/products/catalyst-pro/
+  - AuthorName: Gamme Remote Sensing
+    AuthorURL: https://www.gamma-rs.ch/
+    Title: Gamma
+    URL: https://www.gamma-rs.ch/
+  - AuthorName: L3Harris Geospatial
+    AuthorURL: https://www.l3harrisgeospatial.com
+    Title: ENVI SARscape
+    URL: https://www.harrisgeospatial.com/Software-Technology/ENVI-SARscape
+  Tutorials:
+  - AuthorName: CATALYST
+    AuthorURL: https://catalyst.earth
+    Services: null
+    Title: PCI Geomatics Webinar | Cloud enabling earth observation archives
+    URL: https://www.youtube.com/watch?v=SvejDH5-Hic
+Description: Developed and operated by the Canadian Space Agency, it is Canada's first
+  commercial Earth observation satellite.
+Documentation: https://www.asc-csa.gc.ca/eng/satellites/radarsat1/what-is-radarsat1.asp
+License: '[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)'
+ManagedBy: '[Natural Resources Canada](https://nrcan.gc.ca/)'
+Name: RADARSAT-1
+Resources:
+- ARN: arn:aws:s3:::radarsat-r1-l1-cog
+  Description: Cloud Optimized GeoTIFF scenes and metadata in an S3 bucket
+  Region: ca-central-1
+  Type: S3 Bucket
+Tags:
+- earth observation
+- global
+- aws-pds
+- ice
+- agriculture
+- disaster response
+- satellite imagery
+- geospatial
+- cog
+- synthetic aperture radar
+UpdateFrequency: The initial product release includes the 36000 products originally
+  ordered by the Government of Canada. Products are added on an adhoc basis driven
+  by prioritized foreign repatriation efforts and new processing orders from the raw
+  archive.

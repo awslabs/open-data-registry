@@ -1,25 +1,27 @@
-Name: EPA Risk-Screening Environmental Indicators
-Description: Detailed air model results from EPA’s Risk-Screening Environmental Indicators (RSEI) model.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/epa-rsei-pds
-Contact: https://www.epa.gov/rsei/forms/contact-us-about-rsei-model
-ManagedBy: "[Environmental Protection Agency](https://www.epa.gov/rsei/)"
-UpdateFrequency: Updated infrequently
 Collabs:
   ASDI:
     Tags:
-      - air quality
-Tags:
-  - aws-pds
-  - environmental
-License: US Government work
-Resources:
-  - Description: RSEI Microdata
-    ARN: arn:aws:s3:::epa-rsei-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://epa-rsei-pds.s3.amazonaws.com/index.html)'
+    - air quality
+Contact: https://www.epa.gov/rsei/forms/contact-us-about-rsei-model
+DOI: 10.60489/roda.0pivix
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+  Publications: null
+  Tools & Applications: null
+  Tutorials: null
+Description: "Detailed air model results from EPA\u2019s Risk-Screening Environmental\
+  \ Indicators (RSEI) model."
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/epa-rsei-pds
+License: US Government work
+ManagedBy: '[Environmental Protection Agency](https://www.epa.gov/rsei/)'
+Name: EPA Risk-Screening Environmental Indicators
+Resources:
+- ARN: arn:aws:s3:::epa-rsei-pds
+  Description: RSEI Microdata
+  Explore:
+  - '[Browse Bucket](https://epa-rsei-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- environmental
+UpdateFrequency: Updated infrequently

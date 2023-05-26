@@ -1,26 +1,28 @@
-Name: VoiSeR
-Description: Voice-based refinements of product search
-Documentation: https://amazon-conversational-product-search.s3.amazonaws.com/README.md
 Contact: filicesf@amazon.com
-ManagedBy: "[Amazon](https://www.amazon.com/)"
-UpdateFrequency: Not currently being updated
-Tags:
-  - amazon.science
-  - natural language processing
-  - machine learning
-  - information retrieval
-License: "[cc-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
-Resources:
-  - Description: VoiSeR Dataset
-    ARN: arn:aws:s3:::amazon-conversational-product-search
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - '[voiser_products_v1.0.json](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_products_v1.0.json)'
-      - '[voiser_utterances_v1.0.json](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_utterances_v1.0.json)'
-      - '[voiser_images_v1.0.zip](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_images_v1.0.zip)'
+DOI: 10.60489/roda.xd36mg
 DataAtWork:
   Publications:
-    - Title: "VoiSeR: A New Benchmark for Voice-Based Search Refinement"
-      URL: https://www.aclweb.org/anthology/venues/eacl/
-      AuthorName: Simone Filice, Giuseppe Castellucci, Marcus Collins, Eugene Agichtein & Oleg Rokhlenko
+  - AuthorName: Simone Filice, Giuseppe Castellucci, Marcus Collins, Eugene Agichtein
+      & Oleg Rokhlenko
+    Title: 'VoiSeR: A New Benchmark for Voice-Based Search Refinement'
+    URL: https://www.aclweb.org/anthology/venues/eacl/
+Description: Voice-based refinements of product search
+Documentation: https://amazon-conversational-product-search.s3.amazonaws.com/README.md
+License: '[cc-by-sa 4.0](https://creativecommons.org/licenses/by-sa/4.0/)'
+ManagedBy: '[Amazon](https://www.amazon.com/)'
+Name: VoiSeR
+Resources:
+- ARN: arn:aws:s3:::amazon-conversational-product-search
+  Description: VoiSeR Dataset
+  Explore:
+  - '[voiser_products_v1.0.json](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_products_v1.0.json)'
+  - '[voiser_utterances_v1.0.json](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_utterances_v1.0.json)'
+  - '[voiser_images_v1.0.zip](https://amazon-conversational-product-search.s3.amazonaws.com/voiser_images_v1.0.zip)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- amazon.science
+- natural language processing
+- machine learning
+- information retrieval
+UpdateFrequency: Not currently being updated

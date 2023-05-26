@@ -1,42 +1,45 @@
-Name: IBL Neuropixels Brainwide Map on AWS
-Description: Electrophysiological recordings of mouse brain activity acquired using Neuropixels probes and accompanying behavioral data.
-Documentation: https://int-brain-lab.github.io/iblenv/notebooks_external/data_release_brainwidemap.html
 Contact: info@internationalbrainlab.org
-ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
-UpdateFrequency: TBD
-Tags:
-  - aws-pds
-  - life sciences
-  - neuroscience
-  - neurophysiology
-  - open source software
-  - Mus musculus
-License: MIT
-Resources:
-  - Description: Project data in public bucket
-    ARN: arn:aws:s3:::ibl-brain-wide-map-public
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.h1w88o
 DataAtWork:
   Tools & Applications:
-    - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
-      URL: https://pypi.org/project/ONE-api/
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
-    - Title: Data Explorer
-      URL: https://viz.internationalbrainlab.org/app
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  - AuthorName: IBL Data Architecture Working Group
+    AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    Title: ONE-api on pypi.python.org - python API to query and download neurophysiology
+      data
+    URL: https://pypi.org/project/ONE-api/
+  - AuthorName: IBL Data Architecture Working Group
+    AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    Title: Data Explorer
+    URL: https://viz.internationalbrainlab.org/app
   Tutorials:
-    - Title: Download the public datasets
-      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
-    - Title: Find data associated with a release or publication
-      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
-    - Title: Loading Data
-      URL: https://int-brain-lab.github.io/iblenv/loading_examples.html#
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  - AuthorName: IBL Data Architecture Working Group
+    AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    Title: Download the public datasets
+    URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html
+  - AuthorName: IBL Data Architecture Working Group
+    AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    Title: Find data associated with a release or publication
+    URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
+  - AuthorName: IBL Data Architecture Working Group
+    AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    Title: Loading Data
+    URL: https://int-brain-lab.github.io/iblenv/loading_examples.html#
+Description: Electrophysiological recordings of mouse brain activity acquired using
+  Neuropixels probes and accompanying behavioral data.
+Documentation: https://int-brain-lab.github.io/iblenv/notebooks_external/data_release_brainwidemap.html
+License: MIT
+ManagedBy: '[International Brain Laboratory](https://www.internationalbrainlab.com)'
+Name: IBL Neuropixels Brainwide Map on AWS
+Resources:
+- ARN: arn:aws:s3:::ibl-brain-wide-map-public
+  Description: Project data in public bucket
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- life sciences
+- neuroscience
+- neurophysiology
+- open source software
+- Mus musculus
+UpdateFrequency: TBD

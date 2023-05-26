@@ -1,40 +1,47 @@
-Name: ChEMBL - Data Lakehouse Ready
-Description: ChEMBL is a manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs. This representation of ChEMBL is stored in Parquet format and most easily utilized through Amazon Athena. Follow the documentation for install instructions (< 2 minute install). New ChEMBL releases occur sporadically; the most up to date information on ChEMBL releases can be found [here](https://chembl.gitbook.io/chembl-interface-documentation/downloads).
-Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
 Contact: https://github.com/aws-samples/data-lake-as-code/issues
-ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
-UpdateFrequency: Upon request. We try to keep it updated to every odd version.
-Tags:  
-  - chemistry
-  - genomic
-  - molecule
-  - life sciences
-  - biotech blueprint
-  - parquet
-License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
-Resources: 
-  - Description: ChEMBL 29
-    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_29/
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: ChEMBL 27
-    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_27/
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: ChEMBL 25
-    ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_25/
-    Region: us-east-1
-    Type: S3 Bucket    
+DOI: 10.60489/roda.9n66r5
 DataAtWork:
-  Tutorials:
-    - Title: Data Lake as Code Deployment Guide
-      URL: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
-      AuthorName: AWS Biotech Blueprints Team
-      Services:
-        - Athena
-        - Glue
-        - Lake Formation
   Publications:
-    - Title: Data Lake as Code, Featuring ChEMBL and Open Targets
-      URL: https://aws.amazon.com/blogs/startups/a-data-lake-as-code-featuring-chembl-and-opentargets/
-      AuthorName: Paul Underwood
+  - AuthorName: Paul Underwood
+    Title: Data Lake as Code, Featuring ChEMBL and Open Targets
+    URL: https://aws.amazon.com/blogs/startups/a-data-lake-as-code-featuring-chembl-and-opentargets/
+  Tutorials:
+  - AuthorName: AWS Biotech Blueprints Team
+    Services:
+    - Athena
+    - Glue
+    - Lake Formation
+    Title: Data Lake as Code Deployment Guide
+    URL: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+Description: ChEMBL is a manually curated database of bioactive molecules with drug-like
+  properties. It brings together chemical, bioactivity and genomic data to aid the
+  translation of genomic information into effective new drugs. This representation
+  of ChEMBL is stored in Parquet format and most easily utilized through Amazon Athena.
+  Follow the documentation for install instructions (< 2 minute install). New ChEMBL
+  releases occur sporadically; the most up to date information on ChEMBL releases
+  can be found [here](https://chembl.gitbook.io/chembl-interface-documentation/downloads).
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
+ManagedBy: '[Amazon Web Services](https://aws.amazon.com/)'
+Name: ChEMBL - Data Lakehouse Ready
+Resources:
+- ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_29/
+  Description: ChEMBL 29
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_27/
+  Description: ChEMBL 27
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::aws-roda-hcls-datalake/chembl_25/
+  Description: ChEMBL 25
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- chemistry
+- genomic
+- molecule
+- life sciences
+- biotech blueprint
+- parquet
+UpdateFrequency: Upon request. We try to keep it updated to every odd version.

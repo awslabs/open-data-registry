@@ -1,41 +1,46 @@
-Name: High Resolution Canopy Height Maps by WRI and Meta
-Description: |
-  Canopy Height maps for a selection of regions. Created using machine learning models on high-resolution worldwide Maxar satellite imagery. 
-Documentation: "[Project overview](https://dataforgood.facebook.com/dfg/docs)"
+Citation: "Meta and World Resources Institude (WRI) - 2023. High Resolution Canopy\
+  \ Height Maps (CHM). Source imagery for CHM \xA9 2016 [Maxar](https://www.maxar.com/products/imagery-basemaps).\
+  \ Accessed DAY MONTH YEAR."
 Contact: dataforgood@meta.com
-ManagedBy: "[Meta](https://dataforgood.fb.com/)"
-UpdateFrequency: TBD
-Tags:
-  - aws-pds
-  - cog
-  - earth observation
-  - climate
-  - land cover
-  - agriculture
-  - machine learning
-  - aerial imagery
-  - satellite imagery
-  - image processing
-  - geospatial
-License: |
-  https://creativecommons.org/licenses/by/4.0/
-Citation:
-  Meta and World Resources Institude (WRI) - 2023. High Resolution
-  Canopy Height Maps (CHM). Source imagery for CHM © 2016 [Maxar](https://www.maxar.com/products/imagery-basemaps).
-  Accessed DAY MONTH YEAR.
-Resources:
-  - Description: Cloud-optimized GeoTIFF files and Geojson files with observation date
-    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/
-    Region: us-east-1
-    Type: S3 Bucket
+DOI: 10.60489/roda.7z9abm
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
   Publications:
-    - Title: "Every tree counts: Large-scale mapping of canopy height at the resolution of individual trees"
-      URL: https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees/
-      AuthorName: Jamie Tolan, Camille Couprie, and Tracy Johns
-    - Title: Sub-meter resolution canopy height maps using self-supervised learning and a vision transformer trained on Aerial and GEDI Lidar
-      URL: https://doi.org/10.48550/arXiv.2304.07213
-      AuthorName: Jamie Tolan, Hung-I Yang, Ben Nosarzewski, Guillaume Couairon, Huy Vo, John Brandt, Justine Spore, Sayantan Majumdar, Daniel Haziza, Janaki Vamaraju, Theo Moutakanni, Piotr Bojanowski, Tracy Johns, Brian White, Tobias Tiecke, Camille Couprie
- 
+  - AuthorName: Jamie Tolan, Camille Couprie, and Tracy Johns
+    Title: 'Every tree counts: Large-scale mapping of canopy height at the resolution
+      of individual trees'
+    URL: https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees/
+  - AuthorName: Jamie Tolan, Hung-I Yang, Ben Nosarzewski, Guillaume Couairon, Huy
+      Vo, John Brandt, Justine Spore, Sayantan Majumdar, Daniel Haziza, Janaki Vamaraju,
+      Theo Moutakanni, Piotr Bojanowski, Tracy Johns, Brian White, Tobias Tiecke,
+      Camille Couprie
+    Title: Sub-meter resolution canopy height maps using self-supervised learning
+      and a vision transformer trained on Aerial and GEDI Lidar
+    URL: https://doi.org/10.48550/arXiv.2304.07213
+  Tools & Applications: null
+  Tutorials: null
+Description: "Canopy Height maps for a selection of regions. Created using machine\
+  \ learning models on high-resolution worldwide Maxar satellite imagery. \n"
+Documentation: '[Project overview](https://dataforgood.facebook.com/dfg/docs)'
+License: 'https://creativecommons.org/licenses/by/4.0/
+
+  '
+ManagedBy: '[Meta](https://dataforgood.fb.com/)'
+Name: High Resolution Canopy Height Maps by WRI and Meta
+Resources:
+- ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/
+  Description: Cloud-optimized GeoTIFF files and Geojson files with observation date
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- cog
+- earth observation
+- climate
+- land cover
+- agriculture
+- machine learning
+- aerial imagery
+- satellite imagery
+- image processing
+- geospatial
+UpdateFrequency: TBD

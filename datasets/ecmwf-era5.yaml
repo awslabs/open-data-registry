@@ -1,54 +1,74 @@
-Name: ECMWF ERA5 Reanalysis
-Description: |
-  ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the global climate, and the first reanalysis produced as an operational service. It utilizes the best available observation data from satellites and in-situ stations, which are assimilated and processed using ECMWF's Integrated Forecast System (IFS) Cycle 41r2.
-  The dataset provides all essential atmospheric meteorological parameters like, but not limited to, air temperature, pressure and wind at different altitudes, along with surface parameters like rainfall, soil moisture content and sea parameters like sea-surface temperature and wave height.
-  ERA5 provides data at a considerably higher spatial and temporal resolution than its legacy counterpart ERA-Interim. ERA5 consists of high resolution version with 31 km horizontal resolution, and a reduced resolution ensemble version with 10 members. It is currently available since 2008, but will be continuously extended backwards, first until 1979 and then to 1950.
-  Learn more about ERA5 in Jon Olauson's paper [ERA5: The new champion of wind power modelling?](https://www.researchgate.net/publication/320084119_ERA5_The_new_champion_of_wind_power_modelling).
-Documentation: https://github.com/planet-os/notebooks/blob/master/aws/era5-pds.md
-Contact: etoodu@intertrust.com
-ManagedBy: "[Intertrust](https://www.intertrust.com/)"
-UpdateFrequency: Monthly
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - earth observation
-  - meteorological
-  - weather
-License: Generated using Copernicus Climate Change Service Information 2018. See http://apps.ecmwf.int/datasets/licences/copernicus/ for additional information.
-Resources:
-  - Description: ERA5 Reanalysis NetCDF 4 files
-    ARN: arn:aws:s3:::era5-pds
-    Region: us-east-1
-    Type: S3 Bucket
+    - climate
+Contact: etoodu@intertrust.com
+DOI: 10.60489/roda.c91uk6
 DataAtWork:
-  Tutorials:
-    - Title: Accessing ERA5 Data on S3 Using Boto
-      URL: https://github.com/planet-os/notebooks/blob/master/aws/era5-s3-via-boto.ipynb
-      AuthorName: Intertrust Technologies Corporation
-      AuthorURL: https://www.intertrust.com/
-    - Title: ERA5 tutorial using the Planet OS API
-      URL: https://github.com/planet-os/notebooks/blob/master/api-examples/ERA5_tutorial.ipynb
-      AuthorName: Intertrust Technologies Corporation
-      AuthorURL: https://www.intertrust.com/
-    - Title: Processing ERA5 data in NetCDF Format
-      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/era5.ipynb
-      AuthorName: Zac Flamig
-    - Title: Processing ERA5 data in Zarr Format
-      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/era5_zarr.ipynb
-      AuthorName: Zac Flamig
-    - Title: Intro to Amazon EMR Studio
-      URL: https://www.youtube.com/watch?v=rZ3zeJ6WKPY&list=RDCMUCd6MoB9NC6uYN2grvUNT-Zg
-      AuthorName: Damon Cortesi
-      AuthorURL: https://dacort.dev/
-      Services:
-        - EMR
-  Tools & Applications:
   Publications:
-    - Title: Potential changes in cooling degree day under different global warming levels and shared socioeconomic pathways in West Africa
-      AuthorName: Oluwarotimi Delano Thierry Odou, Heidi Heinrichs Ursula, Rabani Adamou, Thierry Godjo, and Mounkaila S Moussa
-      URL: https://iopscience.iop.org/article/10.1088/1748-9326/acbc8f
+  - AuthorName: Oluwarotimi Delano Thierry Odou, Heidi Heinrichs Ursula, Rabani Adamou,
+      Thierry Godjo, and Mounkaila S Moussa
+    Title: Potential changes in cooling degree day under different global warming
+      levels and shared socioeconomic pathways in West Africa
+    URL: https://iopscience.iop.org/article/10.1088/1748-9326/acbc8f
+  Tools & Applications: null
+  Tutorials:
+  - AuthorName: Intertrust Technologies Corporation
+    AuthorURL: https://www.intertrust.com/
+    Title: Accessing ERA5 Data on S3 Using Boto
+    URL: https://github.com/planet-os/notebooks/blob/master/aws/era5-s3-via-boto.ipynb
+  - AuthorName: Intertrust Technologies Corporation
+    AuthorURL: https://www.intertrust.com/
+    Title: ERA5 tutorial using the Planet OS API
+    URL: https://github.com/planet-os/notebooks/blob/master/api-examples/ERA5_tutorial.ipynb
+  - AuthorName: Zac Flamig
+    Title: Processing ERA5 data in NetCDF Format
+    URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/era5.ipynb
+  - AuthorName: Zac Flamig
+    Title: Processing ERA5 data in Zarr Format
+    URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/era5_zarr.ipynb
+  - AuthorName: Damon Cortesi
+    AuthorURL: https://dacort.dev/
+    Services:
+    - EMR
+    Title: Intro to Amazon EMR Studio
+    URL: https://www.youtube.com/watch?v=rZ3zeJ6WKPY&list=RDCMUCd6MoB9NC6uYN2grvUNT-Zg
+Description: 'ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the
+  global climate, and the first reanalysis produced as an operational service. It
+  utilizes the best available observation data from satellites and in-situ stations,
+  which are assimilated and processed using ECMWF''s Integrated Forecast System (IFS)
+  Cycle 41r2.
+
+  The dataset provides all essential atmospheric meteorological parameters like, but
+  not limited to, air temperature, pressure and wind at different altitudes, along
+  with surface parameters like rainfall, soil moisture content and sea parameters
+  like sea-surface temperature and wave height.
+
+  ERA5 provides data at a considerably higher spatial and temporal resolution than
+  its legacy counterpart ERA-Interim. ERA5 consists of high resolution version with
+  31 km horizontal resolution, and a reduced resolution ensemble version with 10 members.
+  It is currently available since 2008, but will be continuously extended backwards,
+  first until 1979 and then to 1950.
+
+  Learn more about ERA5 in Jon Olauson''s paper [ERA5: The new champion of wind power
+  modelling?](https://www.researchgate.net/publication/320084119_ERA5_The_new_champion_of_wind_power_modelling).
+
+  '
+Documentation: https://github.com/planet-os/notebooks/blob/master/aws/era5-pds.md
+License: Generated using Copernicus Climate Change Service Information 2018. See http://apps.ecmwf.int/datasets/licences/copernicus/
+  for additional information.
+ManagedBy: '[Intertrust](https://www.intertrust.com/)'
+Name: ECMWF ERA5 Reanalysis
+Resources:
+- ARN: arn:aws:s3:::era5-pds
+  Description: ERA5 Reanalysis NetCDF 4 files
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- earth observation
+- meteorological
+- weather
+UpdateFrequency: Monthly

@@ -1,35 +1,45 @@
-﻿Name: Downscaled Climate Data for Alaska
-Description: "This dataset contains historical and projected dynamically downscaled climate data for the State of Alaska and surrounding regions at 20km spatial resolution and hourly temporal resolution. Select variables are also summarized into daily resolutions. This data was produced using the Weather Research and Forecasting (WRF) model (Version 3.5). We downscaled both ERA-Interim historical reanalysis data (1979-2015) and both historical and projected runs from 2 GCM’s from the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4 (historical run: 1970-2005 and RCP 8.5: 2006-2100)."
-Documentation: http://ckan.snap.uaf.edu/dataset/historical-and-projected-dynamically-downscaled-climate-data-for-the-state-of-alaska-and-surrou
-Contact: http://directory.iarc.uaf.edu/peter-bieniek
-ManagedBy: Scenarios Network for Alaska + Arctic Planning at the International Arctic Research Center, University of Alaska, Fairbanks
-UpdateFrequency: as needed
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - coastal
-  - earth observation
-  - environmental
-  - weather
-  - aws-pds
-  - sustainability
-License: https://creativecommons.org/licenses/by/4.0/
-Resources:
-  - Description: Dynamically downscaled climate data for Alaska and surrounding regions.
-    ARN: arn:aws:s3:::wrf-ak-ar5
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](http://wrf-ak-ar5.s3-website-us-east-1.amazonaws.com/)'
+    - climate
+Contact: http://directory.iarc.uaf.edu/peter-bieniek
+DOI: 10.60489/roda.woqk8e
 DataAtWork:
-  Tutorials:
-  Tools & Applications:
   Publications:
-    - Title: "Atmospheric Circulation Drivers of Extreme High Water Level Events at Foggy Island Bay, Alaska"
-      URL: https://www.mdpi.com/2073-4433/13/11/1791/pdf
-      AuthorName: Peter A. Bieniek, Li Erikson, and Jeremy Kasper
+  - AuthorName: Peter A. Bieniek, Li Erikson, and Jeremy Kasper
+    Title: Atmospheric Circulation Drivers of Extreme High Water Level Events at Foggy
+      Island Bay, Alaska
+    URL: https://www.mdpi.com/2073-4433/13/11/1791/pdf
+  Tools & Applications: null
+  Tutorials: null
+Description: "This dataset contains historical and projected dynamically downscaled\
+  \ climate data for the State of Alaska and surrounding regions at 20km spatial resolution\
+  \ and hourly temporal resolution. Select variables are also summarized into daily\
+  \ resolutions. This data was produced using the Weather Research and Forecasting\
+  \ (WRF) model (Version 3.5). We downscaled both ERA-Interim historical reanalysis\
+  \ data (1979-2015) and both historical and projected runs from 2 GCM\u2019s from\
+  \ the Coupled Model Inter-comparison Project 5 (CMIP5): GFDL-CM3 and NCAR-CCSM4\
+  \ (historical run: 1970-2005 and RCP 8.5: 2006-2100)."
+Documentation: http://ckan.snap.uaf.edu/dataset/historical-and-projected-dynamically-downscaled-climate-data-for-the-state-of-alaska-and-surrou
+License: https://creativecommons.org/licenses/by/4.0/
+ManagedBy: Scenarios Network for Alaska + Arctic Planning at the International Arctic
+  Research Center, University of Alaska, Fairbanks
+Name: Downscaled Climate Data for Alaska
+Resources:
+- ARN: arn:aws:s3:::wrf-ak-ar5
+  Description: Dynamically downscaled climate data for Alaska and surrounding regions.
+  Explore:
+  - '[Browse Bucket](http://wrf-ak-ar5.s3-website-us-east-1.amazonaws.com/)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- coastal
+- earth observation
+- environmental
+- weather
+- aws-pds
+- sustainability
+UpdateFrequency: as needed

@@ -1,29 +1,31 @@
-Name: Xiph.Org Test Media
+Contact: Thomas Daede tdaede@xiph.org
+DOI: 10.60489/roda.h96r64
+DataAtWork:
+  Publications: null
+  Tools & Applications: null
+  Tutorials:
+  - AuthorName: Thomas Daede
+    AuthorURL: https://www.xiph.org/
+    Title: Encoding video with AV1 on EC2
+    URL: https://media.xiph.org/aws.html
 Description: Uncompressed video used for video compression and video processing research.
 Documentation: https://media.xiph.org/aws.html
-Contact: Thomas Daede tdaede@xiph.org
-UpdateFrequency: New videos are added when contributors submit them.
-ManagedBy: "[Xiph.org](https://xiph.org/)"
-Tags:
-  - aws-pds
-  - computer vision
-  - image processing
-  - imaging
-  - media
-  - movies
-  - multimedia
-  - video
-License: Various. Most are under the CC-BY license. License text accompanies each sequence.
+License: Various. Most are under the CC-BY license. License text accompanies each
+  sequence.
+ManagedBy: '[Xiph.org](https://xiph.org/)'
+Name: Xiph.Org Test Media
 Resources:
-  - Description: Video and imagery data
-    ARN: arn:aws:s3:::xiph-media
-    Region: us-east-1
-    Type: S3 Bucket
-DataAtWork:
-  Tutorials:
-    - Title: Encoding video with AV1 on EC2
-      URL: https://media.xiph.org/aws.html
-      AuthorName: Thomas Daede
-      AuthorURL: https://www.xiph.org/
-  Tools & Applications:
-  Publications:
+- ARN: arn:aws:s3:::xiph-media
+  Description: Video and imagery data
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- computer vision
+- image processing
+- imaging
+- media
+- movies
+- multimedia
+- video
+UpdateFrequency: New videos are added when contributors submit them.

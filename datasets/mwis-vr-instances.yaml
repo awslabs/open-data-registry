@@ -1,18 +1,19 @@
-Name: MWIS VR Instances
-Description: Large-scale node-weighted conflict graphs for maximum weight independent set solvers 
-Documentation: https://mwis-vr-instances.s3.amazonaws.com/vrInstances.pdf
 Contact: resendem@amazon.com
-ManagedBy: "[Amazon](https://www.amazon.com/)"
-UpdateFrequency: Infrequent
-Tags:
-  - amazon.science
-  - traffic
-  - transportation
-  - graph
+DOI: 10.60489/roda.cle2lt
+Description: Large-scale node-weighted conflict graphs for maximum weight independent
+  set solvers
+Documentation: https://mwis-vr-instances.s3.amazonaws.com/vrInstances.pdf
 License: MIT-0
+ManagedBy: '[Amazon](https://www.amazon.com/)'
+Name: MWIS VR Instances
 Resources:
-  - Description: Conflict graphs for maximum weight independent set
-    ARN: arn:aws:s3:::mwis-vr-instances
-    Region: us-east-1
-    Type: S3 Bucket
-
+- ARN: arn:aws:s3:::mwis-vr-instances
+  Description: Conflict graphs for maximum weight independent set
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- amazon.science
+- traffic
+- transportation
+- graph
+UpdateFrequency: Infrequent
