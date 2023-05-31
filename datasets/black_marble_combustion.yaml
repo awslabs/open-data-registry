@@ -1,0 +1,32 @@
+Name: Nighttime-Fire-Flare
+Description: Detection of nighttime combustion (fire and gas flaring) from daily top of atmosphere data from NASA's Black Marble VNP46A1 product using VIIRS Day/Night Band and VIIRS thermal bands.
+Documentation: https://docs.google.com/document/d/e/2PACX-1vSeDj3BbmvKCrFY3aimZ7-0eMhEN0OFIFk1JDTv3Fvfe4BjfFTwuS8OSMuSGa5vDs2fQKjlrJN8Ut2X/pub
+Contact: schakraborty@usra.edu
+ManagedBy: "[USRA](https://srijachakraborty.com/) and [NASA Black Marble](https://blackmarble.gsfc.nasa.gov/)"
+UpdateFrequency: New combustion detections are added whenever it is available and with model updates.
+Tags:
+  - aws-pds
+  - anomaly detection
+  - classification
+  - earth observation
+  - satellite imagery
+  - disaster response
+  - socioeconomic
+  - environmental
+  - urban
+  - NASA SMD AI
+License: There are no restrictions on the use of this data.
+Resources: 
+  - Description: NASA Black Marble Combustion Detections, Earth Science Training Data
+    ARN: arn:aws:s3:::us-west-2.opendata.source.coop/vnp46a1_thermal_anomaly/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+DataAtWork:
+  Publications:
+  - Title: NASA SMD AI Workshop Report
+    URL: https://science.nasa.gov/files/atoms/files/NASA%20SMD%20AI%20Workshop%2021%20(spreads)%20(1).pdf
+    AuthorName: SMD Artificial Intelligence Machine Learning (AI/ML) Working Group
+  - Title: Potentially underestimated gas flaring activities—a new approach to detect combustion using machine learning and NASA's Black Marble product suite
+    URL: https://doi.org/10.1088/1748-9326/acb6a7
+    AuthorName: Srija Chakraborty, Tomohiro Oda, Virginia Kalb, Zhuosen Wang, Miguel O Román
