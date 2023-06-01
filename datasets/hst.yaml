@@ -1,14 +1,15 @@
-Name: Hubble Space Telescope Public Data
+Name: Hubble Space Telescope
 Description: |
-  The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all of the currently active instruments on HST: ACS, COS, STIS and WFC3.
-Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
+  The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all currently active instruments on HST: ACS, COS, STIS, WFC3, and FGS.
+Documentation: https://archive.stsci.edu/missions-and-data/hst
 Contact: archive@stsci.edu
 ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: This research is based on observations made with the NASA/ESA Hubble Space Telescope obtained from the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy, Inc., under NASA contract NAS 5–26555. These observations are associated with program(s) __________.
 UpdateFrequency: Hourly
 Tags:
   - astronomy
   - aws-pds
-License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the Hubble Space Telescope.
+License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce, and publicly display in all media public data from the Hubble Space Telescope.
 Resources:
   - Description: HST Mission data files
     ARN: arn:aws:s3:::stpubdata/hst
@@ -26,6 +27,8 @@ DataAtWork:
       AuthorName: Arfon Smith
       AuthorURL: https://twitter.com/arfon
   Tools & Applications:
+    - Title: TIKE, a free Jupyter-based platform to access MAST's AWS data
+      URL: https://timeseries.science.stsci.edu
   Publications:
     - Title: Making HST Public Data Available on AWS
       URL: https://mast-labs.stsci.io/2018/06/hst-public-data-on-aws
