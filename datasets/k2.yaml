@@ -1,7 +1,7 @@
 Name: K2 Mission Data
 Description: |
-  The K2 mission observed 100 square degrees for 80 days each across 20 different pointings along the ecliptic, collecting high-precision photometry for a selection of targets within each field. The mission began when the original Kepler mission ended due to loss of the second reaction wheel in 2011. More information about the K2 mission is available at [MAST](https://archive.stsci.edu/k2/).
-Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
+  The K2 mission observed 100 square degrees for 80 days each across 20 different pointings along the ecliptic, collecting high-precision photometry for a selection of targets within each field. The mission began when the original Kepler mission ended due to loss of the second reaction wheel in 2011.
+Documentation: https://archive.stsci.edu/missions-and-data/k2
 Contact: archive@stsci.edu
 ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
 UpdateFrequency: Never
@@ -15,11 +15,9 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
-  - Description: Notifications for new data
-    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
-    Region: us-east-1
-    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
+      - Title: TIKE - a free, Jupyter-based platform to access MAST's AWS data
+        URL: https://timeseries.science.stsci.edu
   Publications:
