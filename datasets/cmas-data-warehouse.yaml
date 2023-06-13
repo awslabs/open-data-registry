@@ -1,5 +1,6 @@
 Name: CMAS Data Warehouse
-Description: CMAS Data Warehouse on AWS collects and disseminates meteorology, emissions and air quality model input and output for Community Multiscale Air Quality (CMAQ) Model Applications
+Description: |
+  CMAS Data Warehouse on AWS collects and disseminates meteorology, emissions and air quality model input and output for Community Multiscale Air Quality (CMAQ) Model Applications. This dataset is available as part of the AWS Open Data Program, therefore egress fees are not charged to either the host or the person downloading the data.  This S3 bucket is maintained as a public service by the University of North Carolina's CMAS Center, the US EPA’s Office of Research and Development, and the US EPA’s Office of Air and Radiation.  Metadata and DOIs for datasets included in the CMAS Data Warehouse are available from the CMAS Dataverse site: https://dataverse.unc.edu/dataverse/cmascenter 
 Documentation: https://dataverse.unc.edu/dataverse/cmascenter
 Contact: cmas@unc.edu
 ManagedBy: "[CMAS CENTER](https://cmascenter.org/)"
@@ -35,6 +36,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: CMAS WWLLN Lightning Data
+    ARN: arn:aws:s3:::cmas-wwlln-lightning
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-wwlln-lightning.s3.amazonaws.com/index.html)'
   - Description: EQUATES EPA’s Air QUAlity TimE Series Project Data
     ARN: arn:aws:s3:::cmas-equates
     Region: us-east-1
@@ -52,7 +59,7 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
-    - '[Browse Bucket](https://2016v3plaform.s3.amazonaws.com/index.html)'
+    - '[Browse Bucket](https://2016v3platform.s3.amazonaws.com/index.html)'
   - Description: SMOKE 2016 Modeling Platform 
     ARN: arn:aws:s3:::cmas-smoke-modeling-platform-2016
     Region: us-east-1
