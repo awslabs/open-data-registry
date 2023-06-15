@@ -1,0 +1,45 @@
+Name: "Aurora Multi-Sensor Dataset"
+Description: |
+  The Aurora Multi-Sensor Dataset is an open, large-scale multi-sensor dataset with highly accurate localization ground truth, captured between January 2017 and February 2018 in the metropolitan area of Pittsburgh, PA, USA by Aurora (via Uber ATG) in collaboration with the University of Toronto. The de-identified dataset contains rich metadata, such as weather and semantic segmentation, and spans all four seasons, rain, snow, overcast and sunny days, different times of day, and a variety of traffic conditions.
+  <br/>
+  The Aurora Multi-Sensor Dataset contains data from a 64-beam Velodyne HDL-64E LiDAR sensor and seven 1920x1200-pixel resolution cameras including a forward-facing stereo pair and five wide-angle lenses covering a 360-degree view around the vehicle.
+  <br/>
+  This data can be used to develop and evaluate large-scale long-term approaches to autonomous vehicle localization. Its size and diversity make it suitable for a wide range of research areas such as 3D reconstruction, virtual tourism, HD map construction, and map compression, among others.
+  <br/>
+  The data was first presented at the International Conference on Intelligent Robots and Systems (IROS) in 2020, where it was nominated as a Finalist for Best Application Paper at the conference.
+Documentation: |
+  A third-party development kit authored by Andrei Bârsan of the University of Toronto, made available under the MIT License, can be found here: https://github.com/pit30m/pit30m. Aurora makes no representations as to the functionality or performance of the dev-kit.
+Contact: ams-dataset@aurora.tech
+ManagedBy: Aurora Operations, Inc.
+UpdateFrequency: This dataset is complete.
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - computer vision
+  - lidar
+  - mapping
+  - robotics
+  - transportation
+  - urban
+  - weather
+  - traffic
+  - image processing
+  - machine learning
+  - deep learning
+License: This data is intended for non-commercial academic use only. It is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+Resources:
+  - Description: Aurora Multi-Sensor Dataset
+    ARN: arn:aws:s3:::pit30m
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to Visualizing Sensor Types (Jupyter notebook)
+      URL: https://studiolab.sagemaker.aws/import/github/pit30m/pit30m/blob/main/examples/tutorial_00_introduction.ipynb
+      AuthorName: "Andrei Bârsan (note: Aurora makes no representations as to the accuracy or functionality of the tutorial)"
+      Services:
+        - SageMaker Studio Lab
+  Publications:
+    - Title: "\"Pit30M: A benchmark for global localization in the age of self-driving cars\", in 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (pp. 4477-4484)"
+      URL: https://ras.papercept.net/images/temp/IROS/files/0132.pdf
+      AuthorName: Martinez, J., Doubov, S., Fan, J., Bârsan, I. A., Wang, S., Máttyus, G., Urtasun, R.
