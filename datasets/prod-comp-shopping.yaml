@@ -1,0 +1,25 @@
+Name: Product Comparison Dataset for Online Shopping
+Description: The Product Comparison dataset for online shopping is a new, manually annotated dataset with about 15K human generated sentences, which compare related products based on one or more of their attributes (the first such data we know of for product comparison). It covers ∼8K product sets, their selected attributes, and comparison texts. 
+Documentation: https://prod-comp-shopping-dataset.s3.us-west-2.amazonaws.com/README.md
+Contact:  Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: None
+Tags:
+  - product comparison
+  - online shopping
+  - amazon.science
+  - natural language processing
+  - machine learning
+License: "[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+Resources:
+  - Description: Product Comparison Dataset for Online Shopping
+    ARN: arn:aws:s3:::prod-comp-shopping-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[final_prodcomp_dataset_cleaned.tsv](https://prod-comp-shopping-dataset.s3.us-west-2.amazonaws.com/final_prodcomp_dataset_cleaned.tsv)'
+DataAtWork:
+  Publications:
+     - Title: "Generating Explainable Product Comparisons for Online Shopping"
+       URL: https://dl.acm.org/doi/pdf/10.1145/3539597.3570489
+       AuthorName: Nikhita Vedula, Marcus Collins, Eugene Agichtein and Oleg Rokhlenko
