@@ -164,3 +164,6 @@ DataAtWork:
 ## How can I contribute?
 
 You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 
+
+### New to Github and contributing via pull requests?
+In addition to [Github's getting started documentation](https://docs.github.com/en/get-started), this [video tutorial shows the complete end-to-end process of contributing to this repository](https://youtu.be/5nocWdjN1DA).
