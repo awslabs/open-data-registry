@@ -63,7 +63,7 @@ The metadata required for each dataset entry is as follows:
 | --- | --- | --- |
 | **Name** | String | The public facing name of the dataset. Spell out acronyms and abbreviations. We do not require "AWS" or "Open Data" to be in the dataset name. Must be between 5 and 130 characters.|
 |**Description**|String|A high-level description of the dataset. Only the first 600 characters will be displayed on the homepage of the [Registry of Open Data on AWS](https://registry.opendata.aws)|
-|**DOI**|String|A [DOI](https://www.doi.org/) of the dataset.|
+|**DOI**|String|A [DOI](https://www.doi.org/) of the dataset. Note that DOIs are minted for datasets on a roughly quarterly basis. Please do not add your own DOI to this field.|
 |**Documentation**|URL|A link to documentation of the dataset, preferably hosted on the data provider's website or Github repository.|
 |**Contact**|String|May be an email address, a link to contact form, a link to GitHub issues page, or any other instructions to contact the producer of the dataset|
 |**ManagedBy**|String|The name of the laboratory, institution, or organization who is responsible for the data ingest process. Avoid using individuals. If your institution manages several datasets hosted by the Public Dataset Program, please list the managing institution identically. For an example why, check out the Managed By section of the [TARGET dataset](https://registry.opendata.aws/target/)|
