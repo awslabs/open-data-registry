@@ -11,21 +11,16 @@ Description: |
   Each global map was produced by applying this model to the Sentinel-2 annual scene collections
   from the Mircosoft Planetary Computer. Each of the maps has an assessed average accuracy of over 75%. 
 
-  These maps, v1.2, have been improved from Impact Observatory’s previous release and provide
+  These maps have been improved from Impact Observatory’s previous release and provide
   a relative reduction in the amount of anomalous change between classes,
   particularly between “Bare” and any of the vegetative classes
   “Trees,” “Crops,” “Flooded Vegetation,” and “Rangeland”.
   This updated time series of annual global maps is also re-aligned to match the ESA UTM tiling grid for Sentinel-2 imagery. 
 
-  Impact Observatory’s previous 9-class time series remains available in the AWS Registry of Open Data
-  through the STAC endpoint in the collection named io-annual-lulc-v1.1. 
-  New applications should use the updated v1.2 time series to take advantage of the updated classifications
-  and the alignment with Sentinel-2 imagery to ease comparisons. 
-
 Documentation: https://www.impactobservatory.com/global_maps
 Contact: hello@impactobservatory.com
 ManagedBy: "[Impact Observatory](https://www.impactobservatory.com/)"
-UpdateFrequency: A new year is made available annually, each January. A new time series was provided July 2023 in v1.2 to reduce anomalous change.  
+UpdateFrequency: A new year is made available annually, each January. A new time series was provided July 2023 to reduce anomalous change.  
 Tags:
   - aws-pds
   - earth observation
@@ -43,11 +38,11 @@ Tags:
 License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 Resources:
   - Description: 10m Annual Land Use Land Cover (9-class)
-    ARN: arn:aws:s3:::io-10m-annual-lulc-v1.2
+    ARN: arn:aws:s3:::io-10m-annual-lulc
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/collections/io-annual-lulc-v1.2)'
+    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/collections/io-annual-lulc)'
 DataAtWork:
   Tools & Applications:
     - Title: View the dataset on UN Biodiversity Lab Map Viewer
