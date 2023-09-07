@@ -1,14 +1,12 @@
 Name: New Zealand Imagery
 Description: |
-  The New Zealand Imagery dataset consists of New Zealand's publicly owned aerial and satellite imagery, which is freely available to use under an open licence.
+  The New Zealand Imagery dataset consists of New Zealand's publicly owned aerial and satellite imagery, which is freely available to use under an open licence. The dataset ranges from the latest high-resolution aerial imagery down to 5cm in some urban areas to lower resolution satellite imagery that provides full coverage of mainland New Zealand, Chathams and other offshore islands. It also includes historical imagery that has been scanned from film, orthorectified (removing distortions) and georeferenced (correctly positioned) to create a unique and crucial record of changes to the New Zealand landscape.
 
-  The dataset ranges from the latest high-resolution aerial imagery down to 5cm in some urban areas to lower resolution satellite imagery that provides full coverage of mainland New Zealand, Chathams and other offshore islands. 
-
-  It also includes historical imagery that has been scanned from film, orthorectified (removing distortions) and georeferenced (correctly positioned) to create a unique and crucial record of changes to the New Zealand landscape.
+  All of the imagery files are [Cloud Optimised GeoTIFFs](https://www.cogeo.org/) using lossless WEBP compression for the main image and lossy WEBP compression for the overviews. These image files are accompanied by [STAC metadata](https://stacspec.org/). The imagery is organised by region and survey.
 Documentation: https://github.com/linz/imagery
 Contact: imagery@linz.govt.nz
 ManagedBy: "[Toitū Te Whenua Land Information New Zealand](https://www.linz.govt.nz)"
-UpdateFrequency: Periodically, as new data becomes available
+UpdateFrequency: New imagery will regularly be added, as part of being published to the LINZ Data Service and LINZ Basemaps.
 
 Tags:
   - aerial imagery
@@ -19,11 +17,11 @@ Tags:
   - stac
   - cog
 
-License: "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)"
-Citation:
+License: Toitū Te Whenua Land Information New Zealand does not own the copyright for all of the imagery that is available in this bucket. Licensors are contained in the STAC Collection file accompanying each imagery survey. Licensed for re-use under "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)".
+Citation: Licensed by (insert the licensor) for re-use under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
 Resources:
-  - Description: Scenes and metadata
+  - Description: New Zealand Imagery with accompanying metadata
     ARN: arn:aws:s3:::nz-imagery
     Region: ap-southeast-2
     Type: S3 Bucket
