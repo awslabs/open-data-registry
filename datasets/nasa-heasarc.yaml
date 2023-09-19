@@ -4,7 +4,7 @@ Description: |
   <br/><br/>
   This is a relatively modest total data volume but contains significant complexity and heterogeneity among the different missions. Data provided here are stored in the Flexible Image Transport System ([FITS](https://heasarc.gsfc.nasa.gov/docs/heasarc/fits.html)) format common in astronomy. Higher level products are further defined to be consistent between missions following [data model standards](https://heasarc.gsfc.nasa.gov/docs/heasarc/ofwg/ofwg_recomm.html) agreed by the community and maintained by the HEASARC. Analysis of these data may require software also provided by HEASARC, the [HEASoft package](https://heasarc.gsfc.nasa.gov/docs/software/lheasoft/), consisting of tools generic to all FITS data, generic to all HEASARC-compliant data, and/or specific to individual missions as appropriate. Some missions provide standard science-ready data products, while others provide low-level data types and software to generate science-ready products from them. See the links for each mission for more information on how to use the data.
   <br/><br/>
-  The [The HEASARC Website](https://heasarc.gsfc.nasa.gov/) also has archive browsing tools where you can query for observations corresponding to temporal and spatial constraints among others. These tools will ultimately point to files located on the archive by giving a URL beginning with the path https://heasarc.gsfc.nasa.gov/FTP/. The data that are provided in the ODR follow the same structure, so when our tools give an https access URL, a user can simply swap in s3://nasa-heasarc/ for the first part of that URL and get a cloud URI. Note also that some selections have been made to what has been copied to the ODR, while the HEASARC archive itself remains the definitive and legacy source for the complete datasets.
+  The [HEASARC Website](https://heasarc.gsfc.nasa.gov/) also has archive browsing tools where you can query for observations corresponding to temporal and spatial constraints among others. These tools will ultimately point to files located on the archive by giving a URL beginning with the path https://heasarc.gsfc.nasa.gov/FTP/. The data that are provided in the ODR follow the same structure, so when our tools give an https access URL, a user can simply swap in s3://nasa-heasarc/ for the first part of that URL and get a cloud URI. Note also that some selections have been made to what has been copied to the ODR, while the HEASARC archive itself remains the definitive and legacy source for the complete datasets.
   <br/><br/>
   The HEASARC also provides user support, both generic and mission-specific, through a set of email helpdesks available through the website's [Feedback page](https://heasarc.gsfc.nasa.gov/cgi-bin/Feedback).
 
@@ -32,7 +32,7 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [ASCA Mission](https://heasarc.gsfc.nasa.gov/docs/asca/asca.html) Data Archive. More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html). Total size of 0.35 GB.
+ - Description: The [ASCA Mission](https://heasarc.gsfc.nasa.gov/docs/asca/asca.html) Data Archive. More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html). Total size of 1.3 TB.
    ARN: arn:aws:s3:::nasa-heasarc/asca/data/rev2
    Region: us-east-1
    Type: S3 Bucket
@@ -42,7 +42,12 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [Compton Mission](https://heasarc.gsfc.nasa.gov/docs/cgro/cgro.html). More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/cgro/). Total size of 0.2 TB. 
+ - Description: "[Chandra Mission](https://heasarc.gsfc.nasa.gov/docs/chandra/chandra.html) Data Archive supported by the [Chandra X-ray Observatory](https://chandra.harvard.edu/) and the [Chandra X-ray Center](https://cxc.harvard.edu/) in addition to the HEASARC.  Total size > 3.7 TB."
+   ARN: arn:aws:s3:::nasa-heasarc/chandra/data/byobsid
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [Compton Mission](https://heasarc.gsfc.nasa.gov/docs/cgro/cgro.html). More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/cgro/). Total size of 207 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/compton/data
    Region: us-east-1
    Type: S3 Bucket
@@ -67,33 +72,48 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [The EXOSAT Observatory](https://heasarc.gsfc.nasa.gov/docs/exosat/exosat.html) Data Archive. Total size 3 GB. 
+ - Description: The [The EXOSAT Observatory](https://heasarc.gsfc.nasa.gov/docs/exosat/exosat.html) Data Archive. Total size 80 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/exosat/data/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [Ginga Mission](https://heasarc.gsfc.nasa.gov/docs/ginga/ginga.html) Data Archive. Total size 18 GB. 
+ - Description: "[Fermi](https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/fermi.html) LAT weekly Data Products as well as GBM bursts and triggers.  (The full mission data are archived at HEASARC, though only the most generically useful subset of them are provided here.)  Total size 2.3 TB."
+   ARN: arn:aws:s3:::heasarc-public/fermi/data/
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [Ginga Mission](https://heasarc.gsfc.nasa.gov/docs/ginga/ginga.html) Data Archive. Total size 19 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/ginga/data/
    Region: us-east-1
    Type: S3 Bucket
  
- - Description: The [HaloSat Mission](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html) Data Archive.  More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html). Total size 2.5 GB. 
+ - Description: The [HaloSat Mission](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html) Data Archive.  More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/halosat/halosat.html). Total size 3.5 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/halosat/data/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [HEAO-1](https://heasarc.gsfc.nasa.gov/docs/heao1/heao1.html) Mission Data Archive. Total size 7 GB. 
+ - Description: The [HEAO-1](https://heasarc.gsfc.nasa.gov/docs/heao1/heao1.html) Mission Data Archive. Total size 8.4 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/heao1/data/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [HETE-2](https://heasarc.gsfc.nasa.gov/docs/hete2/hete2.html) Mission Data Archive. Total size 39 GB. 
+ - Description: The [HETE-2](https://heasarc.gsfc.nasa.gov/docs/hete2/hete2.html) Mission Data Archive. Total size 287 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/hete2/data/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [Hitomi Mission](https://heasarc.gsfc.nasa.gov/docs/hitomi/index.html) Data Archive. Total size 50 GB. 
+ - Description: The [Hitomi Mission](https://heasarc.gsfc.nasa.gov/docs/hitomi/index.html) Data Archive. Total size 115 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/hitomi/data/
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [NICER Mission](https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/nicer.html) Data Archive.  For more information, see the [NICER Science Center](https://heasarc.gsfc.nasa.gov/docs/nicer/). Total size > 17 TB.
+   ARN: arn:aws:s3:::heasarc-public/nicer/data/obs/
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [NuSTAR Mission](https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/nustar.html) Data Archive.  For more information, see the NuSTAR pages [at HEASARC](https://heasarc.gsfc.nasa.gov/docs/nustar/) or [at CalTech](https://www.nustar.caltech.edu/).  Total size > 3 TB.
+   ARN: arn:aws:s3:::heasarc-public/nustar/data/obs/
    Region: us-east-1
    Type: S3 Bucket
 
@@ -102,8 +122,13 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [ROSAT Mission](https://heasarc.gsfc.nasa.gov/docs/rosat/rosat.html) Data Archive.  For more information, see the website of the [ROSAT Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/rosat/rosgof.html). Total size 4 GB. 
+ - Description: The [ROSAT Mission](https://heasarc.gsfc.nasa.gov/docs/rosat/rosat.html) Data Archive.  For more information, see the website of the [ROSAT Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/rosat/rosgof.html). Total size 209 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/rosat/data/
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [RXTE Mission](https://heasarc.gsfc.nasa.gov/docs/xte/rxte.html) Data Archive. For more information, see the website of [the RXTE Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/xte/xte_1st.html). Total size 5.4 TB. 
+   ARN: arn:aws:s3:::nasa-heasarc/xte/data/archive/
    Region: us-east-1
    Type: S3 Bucket
 
@@ -112,17 +137,22 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [BeppoSAX Mission](https://heasarc.gsfc.nasa.gov/docs/sax/sax.html) Data Archive.  More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/sax/saxgof.html). Total size 175 GB. 
+ - Description: The [BeppoSAX Mission](https://heasarc.gsfc.nasa.gov/docs/sax/sax.html) Data Archive.  More information available at [the mission support website](https://heasarc.gsfc.nasa.gov/docs/sax/saxgof.html). Total size 293 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/sax/data/
    Region: us-east-1
    Type: S3 Bucket
  
- - Description: The [Suzaku Mission](https://heasarc.gsfc.nasa.gov/docs/astroe/astroe2.html) Data Archive.  For more information, see the website of the [Suzaku/Astro-E2 Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/suzaku/astroegof.html). Total size 4.6 TB. 
+ - Description: The [Suzaku Mission](https://heasarc.gsfc.nasa.gov/docs/astroe/astroe2.html) Data Archive.  For more information, see the website of the [Suzaku/Astro-E2 Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/suzaku/astroegof.html). Total size 5.4 TB. 
    ARN: arn:aws:s3:::nasa-heasarc/suzaku/data/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [VELA 5B Mission](https://heasarc.gsfc.nasa.gov/docs/vela5b/vela5b.html) Data Archive.  Total size 5 GB. 
+ - Description: "[Swift Mission](https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/swift.html) Data Archive. For more information, see the website of the [Swift Science Center](http://swift.gsfc.nasa.gov/). Total size > 12 TB."
+   ARN: arn:aws:s3:::nasa-heasarc/swift/data/obs/
+   Region: us-east-1
+   Type: S3 Bucket
+
+ - Description: The [VELA 5B Mission](https://heasarc.gsfc.nasa.gov/docs/vela5b/vela5b.html) Data Archive.  Total size < 1 GB. 
    ARN: arn:aws:s3:::nasa-heasarc/vela5b/data/
    Region: us-east-1
    Type: S3 Bucket
@@ -132,13 +162,13 @@ Resources:
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [XQC Mission](https://heasarc.gsfc.nasa.gov/docs/rockets/xqc.html) Data Archive.  Total size < 1 GB. 
-   ARN: arn:aws:s3:::nasa-heasarc/xqc/data/spectra/
+ - Description: "[XMM-Newton  Mission](https://heasarc.gsfc.nasa.gov/docs/xmm/xmm.html) Data Archive.  For more information, see the website of [the XMM-Newton Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/xmm/xmmgof.html).  Total size > 10 TB."
+   ARN: arn:aws:s3:::nasa-heasarc/xmm/data/rev0/
    Region: us-east-1
    Type: S3 Bucket
 
- - Description: The [Rossi XTE Mission](https://heasarc.gsfc.nasa.gov/docs/xte/rxte.html) Data Archive. For more information, see the website of [the RXTE Guest Observer Facility](https://heasarc.gsfc.nasa.gov/docs/xte/xte_1st.html). Total size 2.6 TB. 
-   ARN: arn:aws:s3:::nasa-heasarc/xte/data/archive/
+ - Description: The [XQC Mission](https://heasarc.gsfc.nasa.gov/docs/rockets/xqc.html) Data Archive.  Total size < 1 GB. 
+   ARN: arn:aws:s3:::nasa-heasarc/xqc/data/spectra/
    Region: us-east-1
    Type: S3 Bucket
 
@@ -158,5 +188,3 @@ DataAtWork:
      URL: https://heasarc.gsfc.nasa.gov/docs/heasarc/biblio/pubs/
      AuthorName: Various; curated by HEASARC
      AuthorURL: https://heasarc.gsfc.nasa.gov/
-
-
