@@ -1,0 +1,41 @@
+Name: 4D Nucleome (4DN)
+Description: |
+  The goal of the National Institutes of Health (NIH) Common Fund’s 4D Nucleome (4DN) program
+  is to study the three-dimensional organization of the nucleus in space and time (the 4th dimension).
+  The nucleus of a cell contains DNA, the genetic “blueprint” that encodes all of the genes a living
+  organism uses to produce proteins needed to carry out life-sustaining cellular functions. Understanding
+  the conformation of the nuclear DNA and how it is maintained or changes in response to environmental
+  and cellular cues over time will provide insights into basic biology as well as aspects of human
+  health and disease. The 4DN is an international consortium of researchers who generate data that
+  include results from a variety of genomics and imaging assays with a focus on, but not exclusive to,
+  those that demonstrate close contact between chromatin loci that are non-adjacent on the linear DNA
+  sequence of chromosomes. Additional assays probe the nuclear landscape in the context of interactions
+  of chromatin with specific proteins, RNAs and epigenetic changes.
+Contact: support@4dnucleome.org
+ManagedBy: 4DN Data Coordination and Integration Center (4DN-DCIC)
+Documentation: https://data.4dnucleome.org
+UpdateFrequency: Daily
+Tags:
+  - biology
+  - bioinformatics
+  - genetic
+  - genomic
+  - imaging
+  - life sciences
+  - aws-pds
+License: External data users may freely download, analyze, and publish results based on any 4DN data provided here without restrictions.
+Resources:
+  - Description: Released and archived 4DNucleome data
+    ARN: arn:aws:s3:::4dn-open-data-public
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Finding and Downloading 4DN Data files
+      URL: https://data.4dnucleome.org/help/user-guide/downloading-files
+      AuthorName: 4DN-DCIC
+      AuthorURL: data.4dnucleome.org
+    - Title: Using jupyterhub on the 4DN data portal
+      URL: https://data.4dnucleome.org/tools/jupyterhub
+      AuthorName: 4DN-DCIC
+      AuthorURL: data.4dnucleome.org
