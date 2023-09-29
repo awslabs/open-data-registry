@@ -25,15 +25,17 @@ Resources:
     ARN: arn:aws:s3:::noaa-nesdis-tcprimed-pds
     Region: us-east-1
     Type: S3 Bucket
-    Explore: https://noaa-nesdis-tcprimed-pds.s3.amazonaws.com/index.html
+    Explore: 
+    - '[Browse Bucket](https://noaa-nesdis-tcprimed-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: NOAA Center for Artificial Intelligence (NCAI) TC PRIMED Learning Journey Jupyter Notebooks
       URL: https://rammb-data.cira.colostate.edu/tcprimed/products.html
-      NotebookURL: https://github.com/CSU-CIRA/tcprimed_learning_journey/tree/main
+      NotebookURL: https://github.com/CSU-CIRA/tcprimed_learning_journey/blob/main/TCPRIMED_Chap0_Introduction.ipynb
       AuthorName: Naufal Razin (CSU/CIRA), Kathy Haynes (CSU/CIRA), Chris Slocum (NOAA/STAR)
   #    AuthorURL:
-      Services: S3
+      Services:
+      - S3
   #Tools & Applications:
   #  - Title:
   #    URL:
