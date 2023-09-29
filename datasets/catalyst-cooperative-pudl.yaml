@@ -15,17 +15,11 @@ Description: |
   the viability of different types of generation.  It can highlight the competitiveness of renewable electricity in the
   market today.  It can show how the generation mix of different utilities has evolved over time, and how the usage of
   individual power plants has changed as fuel prices have changed and more renewable generation has been brought online.
-  <br/>
-  <br/>
-  The data hosted on Amazon Web Services is intended to be accessed through the 
-  [PUDL Intake Catalog](https://github.com/catalyst-cooperative/pudl-catalog).
-  The catalog allows users to access the data via a uniform API for each data type (parquet, SQL),
-  handles local caching and provides rich metadata about the data.
 
 Documentation: |
-  To access the data via the the PUDL intake catalog, follow the setup
-  [instructions in the documentation](https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/). 
-  You can learn more about the data in the [PUDL data dictionary documentation](https://catalystcoop-pudl.readthedocs.io/en/dev/data_dictionaries/index.html).
+  You can download the [data directly](https://catalystcoop-pudl.readthedocs.io/en/dev/data_access.html#nightly-builds)
+  or via the [aws CLI tool](https://catalystcoop-pudl.readthedocs.io/en/dev/dev/nightly_data_builds.html#how-to-access-the-nightly-build-outputs-from-aws).
+  If you'd like a UI to explore a subset of the data you can visit [data.catalyst.coop](https://data.catalyst.coop/).
 Contact: For general questions or feedback about the data, create an GitHub issue or discussion in the [PUDL repo](https://github.com/catalyst-cooperative/pudl). We also love talking to our users during [PUDL Office Hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
 ManagedBy: "[Catalyst Cooperative](https://catalyst.coop/)"
 UpdateFrequency: |
@@ -46,15 +40,11 @@ Tags:
 License: The PUDL data and documentation are published under the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
 Resources:
   - Description: All PUDL data outputs.
-    ARN: arn:aws:s3:::intake.catalyst.coop
+    ARN: arn:aws:s3:::pudl.catalyst.coop
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
-    - Title: PUDL Intake Catalog Setup
-      URL: https://catalystcoop-pudl-catalog.readthedocs.io/en/latest/
-      AuthorName: Catalyst Cooperative
-      AuthorURL: https://catalyst.coop/
     - Title: PUDL Examples
       URL: https://github.com/catalyst-cooperative/pudl-examples
       AuthorName: Catalyst Cooperative
