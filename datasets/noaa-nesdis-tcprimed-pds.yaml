@@ -1,0 +1,51 @@
+Name: Tropical Cyclone Precipitation, Infrared, Microwave, and Environmental Dataset (TC PRIMED)
+Description: The Tropical Cyclone Precipitation, Infrared, Microwave and Environmental Dataset (TC PRIMED) is a dataset centered around passive microwave observations of global tropical cyclones from low-Earth-orbiting satellites. TC PRIMED is a compilation of tropical cyclone data from various sources, including 1) tropical cyclone information from the National Oceanic and Atmospheric Administration (NOAA) National Weather Service National Hurricane Center (NHC) and Central Pacific Hurricane Center (CPHC) and the U.S. Department of Defense Joint Typhoon Warning Center, 2) low-Earth-orbiting satellite observations and products from the National Aeronautics and Space Administration (NASA) Global Precipitation Measurement (GPM) mission constellation satellites, and 3) environmental fields and diagnostics calculated from the European Center for Medium-Range Weather Forecasts (ECMWF) fifth-generation reanalysis (ERA5).
+Documentation: https://rammb-data.cira.colostate.edu/tcprimed/TCPRIMED_v01r00_documentation.pdf
+Contact: CIRA_tcprimed [at] colostate [dot] edu
+ManagedBy: "[CIRA](https://www.cira.colostate.edu/)"
+UpdateFrequency: Annually, several months after the conclusion of the Northern Hemisphere tropical cyclone season
+Tags:
+  - atmosphere
+  - aws-pds
+  - earth observation
+  - environmental
+  - geophysics
+  - geoscience
+  - global
+  - meteorological
+  - model
+  - netcdf
+  - precipitation
+  - satellite imagery
+  - weather
+License: No constraints on data access or use
+Citation: See citation instructions at https://rammb-data.cira.colostate.edu/tcprimed/publications.html
+Resources:
+  - Description: The Tropical Cyclone Precipitation, Infrared, Microwave and Environmental Dataset (TC PRIMED) is a dataset centered around passive microwave observations of global tropical cyclones from low-Earth-orbiting satellites. The files are available in NetCDF format.
+    ARN: arn:aws:s3:::noaa-nesdis-tcprimed-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://noaa-nesdis-tcprimed-pds.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: NOAA Center for Artificial Intelligence (NCAI) TC PRIMED Learning Journey Jupyter Notebooks
+      URL: https://rammb-data.cira.colostate.edu/tcprimed/products.html
+      NotebookURL: https://github.com/CSU-CIRA/tcprimed_learning_journey/blob/main/TCPRIMED_Chap0_Introduction.ipynb
+      AuthorName: Naufal Razin (CSU/CIRA), Kathy Haynes (CSU/CIRA), Chris Slocum (NOAA/STAR)
+  #    AuthorURL:
+      Services:
+      - S3
+  #Tools & Applications:
+  #  - Title:
+  #    URL:
+  #    AuthorName:
+  #    AuthorURL:
+  #Publications:
+  #  - Title:
+  #    URL:
+  #    AuthorName:
+  #    AuthorURL:
+#DeprecatedNotice:
+ADXCategories:
+  - Environmental Data   
