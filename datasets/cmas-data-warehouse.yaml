@@ -30,12 +30,18 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
-  - Description: CMAQ Data
+  - Description: CMAQ Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: AMET Data
+    ARN: arn:aws:s3:::cmas-amet
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)'
   - Description: CMAS WWLLN Lightning Data
     ARN: arn:aws:s3:::cmas-wwlln-lightning
     Region: us-east-1
@@ -54,12 +60,24 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
+  - Description: 2019 Modeling Platform
+    ARN: arn:aws:s3:::2019platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://2019platform.s3.amazonaws.com/index.html)'
   - Description: 2016v3 Modeling Platform
     ARN: arn:aws:s3:::2016v3platform
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://2016v3platform.s3.amazonaws.com/index.html)'
+  - Description: SMOKE Test Case
+    ARN: arn:aws:s3:::cmas-smoke-testcase
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmas-smoke-testcase.s3.amazonaws.com/index.html)'
   - Description: SMOKE 2016 Modeling Platform 
     ARN: arn:aws:s3:::cmas-smoke-modeling-platform-2016
     Region: us-east-1

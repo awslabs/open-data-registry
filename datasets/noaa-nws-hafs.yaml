@@ -1,0 +1,40 @@
+Name: NOAA Hurricane Analysis and Forecast System (HAFS)
+Description:  |
+  The last several hurricane seasons have been active with records being set for the number of tropical storms and hurricanes in the Atlantic basin.  These record-breaking seasons underscore the importance of accurate hurricane forecasting. Imperative to increased forecasting skill for hurricanes is the development of the Hurricane Forecast Analysis System or HAFS. To accelerate improvements in hurricane forecasting, this project has the following goals:
+  <br /> 
+  <br /> 
+  1) To improve the HAFS. The HAFS is NOAA’s next-generation multi-scale numerical model, with data assimilation package and ocean coupling, which will provide an operational analysis and forecast out to seven days, with reliable and skillful guidance on hurricane track and intensity (including rapid intensification), storm size, genesis, storm surge, rainfall and tornadoes associated with hurricanes.
+  <br /> 
+  <br /> 
+  2) To integrate into the Unified Forecasting System(UFS). The UFS is a community-based, coupled comprehensive Earth system modeling system whose numerical applications span local to global domains and predictive time scales from sub-hourly analyses to seasonal predictions. It is designed to support the Weather Enterprise and to be the source system for NOAA’s operational numerical weather prediction applications. The HAFS will be a part of UFS geared for hurricane model applications. HAFS comprises five major components; (a) High-resolution moving nest (b) High-resolution physics (c) Multi-scale data assimilation (DA) (d) 3D ocean coupling, and (e) Observations to support the DA.
+  <br /> 
+  <br /> 
+  [Read about how the storm-following model improves intensity forecasts](https://www.aoml.noaa.gov/hurricane-model-that-follows-multiple-storms-improves-intensity-forecasts/)
+Documentation: https://wpo.noaa.gov/the-hurricane-analysis-and-forecast-system-hafs/
+Contact: |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Event Driven
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Hurricane Analysis Forecast System (HAFS) Data
+    ARN: arn:aws:s3:::noaa-nws-hafs-pds 
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-nws-hafs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for HAFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewHAFSObject
+    Region: us-east-1
+    Type: SNS Topic
