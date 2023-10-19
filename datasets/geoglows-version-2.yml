@@ -11,15 +11,26 @@ Tags:
   - Simulation
   - Zarr
   - NetCDF
+  - Geopackage
   - Hydrologic Model
-License: CC BY 4.0
+License: Creative Commons BY 4 (CC BY 4.0)
 Citation: https://doi.org/10.1111/jfr3.12859
 Resources:
-  - Description: GEOGloWS Hydrologic Model Version 2 Retrospective Discharge Outputs
-    ARN: Pending
-    Region: Pending
+  - Description: GEOGloWS Hydrologic Model Version 2 Retrospective Discharge Outputs - Zarr Format
+    ARN: arn:aws:s3:::geoglows-v2-retro-zarr
+    Region: us-west-2
     Type: S3 Bucket
-    Explore: Pending
+    Explore: http://geoglows-v2-retro-zarr.s3-website-us-west-2.amazonaws.com
+  - Description: GEOGloWS Hydrologic Model Version 2 Retrospective Discharge Outputs - netCDF Format
+    ARN: arn:aws:s3:::geoglows-v2-retro-netcdf
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: http://geoglows-v2-retro-netcdf.s3-website-us-west-2.amazonaws.com
+  - Description: GEOGloWS Hydrologic Model Version 2 Streams Hydrofabric
+    ARN: arn:aws:s3:::geoglows-v2-streams
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: http://geoglows-v2-streams.s3-website-us-west-2.amazonaws.com
 DataAtWork:
   Tutorials:
     - Title: Finding River Numbers 
