@@ -1,9 +1,9 @@
 Name: CZ CELLxGENE Discover Census
 Description: |
-CZ CELLxGENE Discover ([cellxgene.cziscience.com](https://cellxgene.cziscience.com/)) is a free-to-use platform for the exploration, analysis, and retrieval of single-cell data. CZ CELLxGENE Discover hosts the largest aggregation of standardized single-cell data from the major human and mouse tissues, with modalities that include gene expression, chromatin accessibility, DNA methylation, and spatial transcriptomics.
-This year, CZ CELLxGENE Discover has made available all of its human and mouse RNA single-cell data through Census (https://chanzuckerberg.github.io/cellxgene-census/) – a free-to-use service with an API and data that allows for querying its single-cell data corpus directly from Python or R. 
-The API uses a new technology, TileDB-SOMA, that allows for efficient and low-latency querying. The data are fully standardized and hosted publicly for free access, and they are composed by a count matrix of tens of millions of cells (observations) by >60 k genes (features) accompanied by standard cell metadata variables (e.g. cell type, tissue, sequencing technology, donor id, etc)  and gene metadata that includes GENCODE-based IDs and gene names. While these data are built from hundreds of datasets, the APIs enable convenient cell- and gene-based filtering to obtain any slice of interest in a matter of seconds. All data can be quickly transformed to NumPy, Pandas, Anndata, Seurat, or R base objects. We created data loaders for the data to be directly used by PyTorch for modeling at scale.
-In addition, all the source dataset files in H5AD format are also available for retrieval. 
+  CZ CELLxGENE Discover ([cellxgene.cziscience.com](https://cellxgene.cziscience.com/)) is a free-to-use platform for the exploration, analysis, and retrieval of single-cell data. CZ CELLxGENE Discover hosts the largest aggregation of standardized single-cell data from the major human and mouse tissues, with modalities that include gene expression, chromatin accessibility, DNA methylation, and spatial transcriptomics.
+  This year, CZ CELLxGENE Discover has made available all of its human and mouse RNA single-cell data through Census (https://chanzuckerberg.github.io/cellxgene-census/) – a free-to-use service with an API and data that allows for querying its single-cell data corpus directly from Python or R. 
+  The API uses a new technology, TileDB-SOMA, that allows for efficient and low-latency querying. The data are fully standardized and hosted publicly for free access, and they are composed by a count matrix of tens of millions of cells (observations) by >60 k genes (features) accompanied by standard cell metadata variables (e.g. cell type, tissue, sequencing technology, donor id, etc)  and gene metadata that includes GENCODE-based IDs and gene names. While these data are built from hundreds of datasets, the APIs enable convenient cell- and gene-based filtering to obtain any slice of interest in a matter of seconds. All data can be quickly transformed to NumPy, Pandas, Anndata, Seurat, or R base objects. We created data loaders for the data to be directly used by PyTorch for modeling at scale.
+  In addition, all the source dataset files in H5AD format are also available for retrieval. 
 Documentation: https://chanzuckerberg.github.io/cellxgene-census/
 Contact: cellxgene@chanzuckerberg.com
 ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
@@ -112,6 +112,6 @@ DataAtWork:
       AuthorName: CZI
       AuthorURL: https://github.com/chanzuckerberg/
   Publications:
-    - Title: scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI.
+    - Title: "scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI."
       URL: https://www.biorxiv.org/content/10.1101/2023.04.30.538439v2
       AuthorName: Haotian Cui, et al.
