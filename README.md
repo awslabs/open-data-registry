@@ -52,6 +52,8 @@ DataAtWork:
       AuthorName:
       AuthorURL:
 DeprecatedNotice:
+ADXCategories:
+  -    
 ```
 
 The metadata required for each dataset entry is as follows:
@@ -84,6 +86,7 @@ The metadata required for each dataset entry is as follows:
 |**DataAtWork [> Tutorials] > NotebookURL** (Optional)|URL|A link to a Jupyter notebook (.ipynb) on GitHub that shows how this data can be used.|
 |**DataAtWork [> Tutorials] > Services** (Optional)|String|For tutorials only. List AWS Services applied in your tutorial. A list of supported AWS services is maintained in the [services.yaml](services.yaml) file in this repo. If you want to recommend a resource that is not included in [services.yaml](services.yaml), please submit a pull request to add it to that file.|
 |**DeprecatedNotice** (Optional)|String|Only appropriate for datasets that are being retired, indicates to users that the dataset will soon be deprecated and should include the date that the dataset will no longer be available.|
+|**ADXCategories**|List of strings|Allowed categories can be found in [adx_categories.yaml](adx_categories.yaml), at most, 2 can be added. Adding categories to your listing will improve searchability within the AWS Data Exchange.|
 
 Note also that we use the name of each YAML file as the URL slug for each dataset on the [Registry of Open Data on AWS website](https://registry.opendata.aws). E.g. the metadata from `1000-genomes.yaml` is listed at `https://registry.opendata.aws/1000-genomes/`
 
@@ -161,3 +164,6 @@ DataAtWork:
 ## How can I contribute?
 
 You are welcome to contribute dataset entries or usage examples to the Registry of Open Data on AWS. Please review our [contribution guidelines](CONTRIBUTING.md). 
+
+### New to Github and contributing via pull requests?
+In addition to [Github's getting started documentation](https://docs.github.com/en/get-started), this [video tutorial shows the complete end-to-end process of contributing to this repository](https://youtu.be/5nocWdjN1DA).

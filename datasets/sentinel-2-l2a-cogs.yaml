@@ -8,7 +8,7 @@ Description: |
   This dataset is the same as the [Sentinel-2](https://registry.opendata.aws/sentinel-2/)
   dataset, except the JP2K files were converted into Cloud-Optimized GeoTIFFs (COGs).
   Additionally, SpatioTemporal Asset Catalog metadata has were in a JSON file
-  alongside the data, and a STAC API called [Earth-search](https://earth-search.aws.element84.com/v0)
+  alongside the data, and a STAC API called [Earth-search](https://earth-search.aws.element84.com/v1)
   is freely available to search the archive. This dataset contains all of the scenes in the
   original Sentinel-2 Public Dataset and will grow as that does.
   L2A data are available from April 2017 over wider Europe region and globally since December 2018.
@@ -27,7 +27,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - cog
   - stac
@@ -40,7 +39,8 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a-cogs)'
+    - '[Earth Search STAC L2A Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a)'
+    - '[STAC Browser L2A Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l2a)' 
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-cogs-inventory
     Region: us-west-2
@@ -79,6 +79,14 @@ DataAtWork:
         - EKS
         - SageMaker
         - S3
+    - Title: Access satellite imagery using Python
+      URL: https://carpentries-incubator.github.io/geospatial-python/05-access-data/
+      AuthorName: The Carpentries
+    - Title: Monitoring Lake Mead drought using the new Amazon SageMaker geospatial capabilities
+      URL: https://aws.amazon.com/blogs/machine-learning/monitoring-lake-mead-drought-using-the-new-amazon-sagemaker-geospatial-capabilities/
+      AuthorName: Xiong Zhou, Anirudh Viswanathan, Erran Li, Trenton Lipscomb, and Xingjian Shi 
+      Services:
+      - SageMaker
   Publications:
     - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
       URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing
@@ -103,3 +111,6 @@ DataAtWork:
       URL: https://github.com/e-sensing/sits
       AuthorName: "e-Sensing"
       AuthorURL: http://www.esensing.org/
+    - Title: FilmDrop Demo
+      URL: https://console.demo.filmdrop.io/
+      AuthorName: Element 84

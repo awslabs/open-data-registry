@@ -1,0 +1,37 @@
+Name: NOAA Wang Sheeley Arge (WSA) Enlil
+Description: The WSA-Enlil heliospheric model provides critical information regarding the propagation of solar Coronal Mass Ejections (CMEs) and transient structures within the heliosphere. Two distinct models comprise the WSA-Enlil modeling system; 1) the Wang-Sheeley-Arge (WSA) semi-empirical solar coronal model, and 2) the Enlil magnetohydrodynamic (MHD) heliospheric model. MHD modeling of the full domain (solar photosphere to Earth) is extremely computationally demanding due to the large parameter space and resulting characteristic speeds within the system. To reduce the computational burden and improve the timeliness (and hence the utility in forecasting space weather disturbances) of model results, the domain of the MHD model (Enlil) is limited from 21.5 Solar Radii (R_s) to just beyond the orbit of Earth, while the inner portion, spanning from the solar photosphere to 21.5R_s, is characterized by the WSA model. This coupled modeling system is driven by solar synoptic maps composed of numerous magnetogram observations from the National Solar Observatory’s (NSO) Global Oscillation Network Group (GONG). Such maps provide a full surface description of solar photospheric magnetic flux density, while not accounting for the evolution of surface features for regions outside the view of the observatories.
+  <br/>
+  <br/>
+  In its current configuration (NOAA WSA-Enlil V3.0), the modeling system consists of WSA V5.4 and Enlil V2.9e. The system relies upon the zero point corrected GONG synoptic maps (mrzqs) to define the inner photospheric boundary.
+  <br/>
+  <br/>
+  The operational data files provided in this bucket include NetCDF files containing 3-dimensional gridded neutral density from 100 to 1000 km, Total Electron Content (TEC), and Maximum Usable Frequency (MUF).
+  <br/>
+  <br/>  
+  The full 3D datasets from the operational model are provided here as compressed tar files with naming convention wsa_enlil.mrid########.full3d.tgz. These files consist of the full set of 3D datacubes (tim.*.nc), all time series results stored at predefined observation points (evo.*.nc), and supplemented by the operational CME fits (conefiles) and the operationally employed photospheric boundary synoptic maps (GONG mrzqs files).
+Documentation: https://www.swpc.noaa.gov/products/wsa-enlil-solar-wind-prediction
+Contact:  |
+  For any questions regarding WSA-Ensil data, please contact Eric Adamson (eric.adamson@noaa.gov) 
+  <br/>
+  For data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Only model output from model runs containing CMEs are provided here. As these runs are executed on demand, there is no regular update frequency.
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - solar
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA WSA-Enlil Products
+    ARN: arn:aws:s3:::noaa-wsa-enlil-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-wsa-enlil-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOAA WSA-Enlil Products, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewSWPCWSAEnlilObject
+    Region: us-east-1
+    Type: SNS Topic

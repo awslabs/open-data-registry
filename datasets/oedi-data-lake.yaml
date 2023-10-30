@@ -18,7 +18,6 @@ Tags:
   - aws-pds
   - energy
   - environmental
-  - sustainability
   - geospatial
   - model
   - solar
@@ -49,12 +48,6 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=tracking-the-sun%2F)'
-  - Description: '[Lawrence Berkeley National Laboratory (LBNL) AlphaBuilding-SyntheticDataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)'
-    ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/A_Synthetic_Building_Operation_Dataset.h5
-    Region: us-west-2
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=building_synthetic_dataset%2F)'
   - Description: '[National Renewable Energy Laboratory (NREL) PV Rooftop Database - (PVRDB)](https://github.com/openEDI/documentation/blob/master/pv-rooftop.md)'
     ARN: arn:aws:s3:::oedi-data-lake/pv-rooftop/
     Region: us-west-2
@@ -97,6 +90,42 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=butter%2F)'
+  - Description: "[AlphaBuilding - Synthetic Dataset](https://lbnl-eta.github.io/AlphaBuilding-SyntheticDataset/)"
+    ARN: arn:aws:s3:::oedi-data-lake/building_synthetic_dataset/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=building_synthetic_dataset%2F)'
+  - Description: "[PR100: Puerto Rico Grid Resilience and Transition to 100% Renewable Energy](https://data.openei.org/submissions/5749)"
+    ARN: arn:aws:s3:::oedi-data-lake/PR100/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=PR100%2F)'
+  - Description: "[Demand-Side Grid Model (dsgrid) Data from the Electrification Futures Project (EFS)](https://data.openei.org/submissions/4130)"
+    ARN: arn:aws:s3:::oedi-data-lake/dsgrid-2018-efs/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dsgrid-2018-efs%2F)'
+  - Description: "[EGS Collab Experiment 1: Continuous Active-Source Seismic Monitoring (CASSM) Data](https://data.openei.org/submissions/5789)"
+    ARN: arn:aws:s3:::oedi-data-lake/egs_collab/EGS_CASSM/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=egs_collab%2FEGS_CASSM%2F)'
+  - Description: "[Tidal Resource Data from Sequim Bay Inlet, WA, August 2020](https://data.openei.org/submissions/5702)"
+    ARN: arn:aws:s3:::oedi-data-lake/primre/sequim-tidal-resource/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=primre%2Fsequim-tidal-resource%2F)'
+  - Description: "[Wind and Loads on Parabolic Troughs](https://data.openei.org/submissions/5938)"
+    ARN: arn:aws:s3:::oedi-data-lake/NSO/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=NSO%2F)'
 DataAtWork:
   Tools & Applications:
     - Title: "Tracking the Sun Tool"
