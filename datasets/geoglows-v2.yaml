@@ -1,0 +1,68 @@
+Name: GEOGloWS Hydrologic Model Version 2
+Description: |
+  The GEOGloWS Hydrologic Model provides a global simulation of river discharge. The model simulates river discharge at 
+  7 million river segments over a period of more than 80 years beginning on 1 January 1940. The retrospective simulation 
+  is updated weekly to monthly keeping the lag time small. The model is also used to produce daily forecasts which are 
+  not archived in this repository. The model is based on the ERA5 reanalysis climate data and forecasts are derived from 
+  the ECMWF Integrated Forecast System (IFS). The stream network is derived from the TDX-Hydro streams and basins data 
+  produced by the United State's National Geospatial Intelligence Agency. The model simulations are computed daily at 
+  the ECMWF super computing facility in Bologna, Italy.<br><br>
+  This repository contains: (1) model configuration files used to generate the simulations, (2) the model retrospective 
+  outputs in zarr format optimized for time series queries of up to a few hundred rivers on demand, (3) the model output 
+  in netCDF format best for bulk downloading large volumes of data, (4) estimated return period flows for all 7 million 
+  rivers in netCDF format, (5) the GIS streams datasets used by the model, (6) the GIS streams datasets optimized for 
+  visualizations used by Esri's Living Atlas layer.
+Documentation: https://data.geoglows.org
+Contact: https://groups.google.com/g/geoglows
+ManagedBy: Riley Hales
+UpdateFrequency: Monthly
+Tags:
+  - hydrology
+  - hydrologic model
+  - simulations
+  - zarr
+  - netCDF
+  - hydrography
+  - geopackage
+License: "[Creative Commons BY 4 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: https://doi.org/10.1111/jfr3.12859
+Resources:
+  - Description: GEOGloWS Hydrologic Model Version 2
+    ARN: arn:aws:s3:::geoglows-v2
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: http://geoglows-v2.s3-website-us-west-2.amazonaws.com
+DataAtWork:
+  Tutorials:
+    - Title: GEOGloWS V2 Tutorials
+      URL: https://data.geoglows.org
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+    - Title: Finding River Numbers 
+      URL: https://data.geoglows.org/tutorials/finding-river-numbers
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+    - Title: Access Hydrographs from Zarr Files
+      URL: https://data.geoglows.org/tutorials/query-retro-data
+      NotebookURL: https://colab.research.google.com/drive/19f8n-YMqGxL_qcn3aw5yv4oYUFFlB8IK?usp=sharing
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+      Services: S3
+    - Title: Bulk Download and Query netCDF Files
+      URL: https://data.geoglows.org/tutorials/download-retro-data
+      NotebookURL: https://colab.research.google.com/drive/1jU915e-OrSnawi_OJkEH7gj4Pznu4qzu?usp=share_link
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+      Services: S3
+  Tools & Applications:
+    - Title: GEOGloWS Hydroviewer
+      URL: https://apps.geoglows.org/apps/geoglows-hydroviewer
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+  Publications:
+    - Title: Advancing global hydrologic modeling with the GEOGloWS ECMWF streamflow service
+      URL: https://doi.org/10.1111/jfr3.12859
+      AuthorName: Hales et al.
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
