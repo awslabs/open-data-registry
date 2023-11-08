@@ -38,7 +38,12 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
-  - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
+  - Description: LiDAR-derived Point Cloud tiles for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. There is currently one data resource in this folder -  1) Phase 1 LiDAR-derived point clouds in LAZ format. Phase 2 and Phase 3 efforts have not achieved Statewide coverage to date. It is our aim to provide Phase 2 and Phase 3 data in a COPC (LAZ format).
+    ARN: arn:aws:s3:::kyfromabove/elevation/PointCloud/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+ - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
     ARN: arn:aws:s3:::kyfromabove/elevation/SpotElevations/
     Region: us-west-2
     Type: S3 Bucket
