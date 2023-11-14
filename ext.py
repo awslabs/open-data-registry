@@ -7,13 +7,15 @@ from urllib3.exceptions import InsecureRequestWarning
 # Suppress the warning on Verify=False requests
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
-tags = yaml.safe_load(open("tags.yaml"))
+yaml = YAML(typ='safe', pure=True)
+
+tags = yaml.load(open("tags.yaml"))
 tags.append("aws-pds")
 
-adx_categories = yaml.safe_load(open("adx_categories.yaml"))
+adx_categories = yaml.load(open("adx_categories.yaml"))
 
-resources = yaml.safe_load(open("resources.yaml"))
-services = yaml.safe_load(open("services.yaml"))
+resources = yaml.load(open("resources.yaml"))
+services = yaml.load(open("services.yaml"))
 
 arn_regex = re.compile(r"^arn:(aws|aws-iso):.+:.*:.*:.+$")
 host_regex = re.compile(r"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/?$")
