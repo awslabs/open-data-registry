@@ -23,10 +23,10 @@ ManagedBy: "[Maxar](https://www.maxar.com/)"
 Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::maxar-opendata
-    Region: us-east-1
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.dualstack.us-west-2.amazonaws.com/events/catalog.json)'
     - '[STAC Catalog](https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/)'
 DataAtWork:
   Tutorials:
