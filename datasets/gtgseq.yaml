@@ -1,8 +1,8 @@
 Name: Garvan Institute Long Read Sequencing Benchmark Data
-Description: "This open dataset contains genome sequencing data from the Genomic Technologies Group at Garvan Institute of Medical Research, Australia. Currently, the dataset contains two reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. The two samples are NA12878 (HG001) and NA24385 (HG002), sequenced on an Oxford Nanopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells. Raw signal data output by the sequencer is provided for these samples in BLOW5 format, and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. In the future, we plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT."
+Description: "The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Currently, there are two samples, which are NA12878 (HG001) and NA24385 (HG002), sequenced on an Oxford Nanopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells. Raw signal data output by the sequencer is provided for these datasets in BLOW5 format, and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. In the future, we plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT."
 Documentation: https://github.com/GenTechGp/gtgseq
 Contact: "[gtgseq team](https://github.com/GenTechGp/gtgseq/issues)"
-ManagedBy: "Genomic Technologies Group, Garvan Institute of Medical Ressearch (https://www.garvan.org.au/research/kinghorn-centre-for-clinical-genomics/research-programs/genomic-technologies)"
+ManagedBy: "Genomic Technologies Group, Garvan Institute of Medical Research (https://www.garvan.org.au/research/labs-groups/genomic-technologies-lab)"
 UpdateFrequency:  We plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT. We will continue to provide updated basecalls when there is a major update to the basecalling software.
 Tags:
   - genomic
@@ -21,10 +21,16 @@ Resources:
     - '[Browse Bucket](https://gtgseq.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials: 
+    - Title: Fetching subsets with slow5curl and samtools
+      URL: https://github.com/GenTechGp/gtgseq/blob/main/docs/slow5curl.md
+      AuthorName: Bonson Wong  
     - Title: Directly processing on an s3fs mount
       URL: https://github.com/GenTechGp/gtgseq/blob/main/docs/mount.md
       AuthorName: Hasindu Gamaarachchi
   Tools & Applications:
+    - Title: "Slow5curl: library and tool for accessing remote BLOW5 files."
+      URL: https://github.com/BonsonW/slow5curl
+      AuthorName:  Wong, B., et al.  
     - Title: "Slow5lib: toolkit slow5lib is a software library for reading & writing SLOW5 files."
       URL: https://github.com/hasindu2008/slow5lib
       AuthorName:  Gamaarachchi, H., Samarakoon, H., Jenner, S.P. et al.
