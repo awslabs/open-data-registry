@@ -1,0 +1,18 @@
+Name: USearch Molecules
+Description: Collection of 7 billion small molecules in SMILES notation with 28 billion fingerprints, including MACCS, ECFP4, FCFP4, and PubChem, with pre-constructed USearch indexes over them.
+Documentation: https://github.com/ashvardanian/usearch-molecules
+Contact: ash.vardanian@unum.cloud
+ManagedBy: "[Ash Vardanian](https://ashvardanian.com)"
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - life sciences
+  - biology
+  - chemical biology
+  - pharmaceutical
+License: "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::usearch-molecules
+    Region: us-west-2
+    Type: S3 Bucket
