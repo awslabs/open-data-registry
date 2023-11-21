@@ -1,0 +1,84 @@
+Name: Inter-mission Time Series of Land Ice Velocity and Elevation (ITS-LIVE)
+Description: >
+  The Inter-mission Time Series of Land Ice Velocity and Elevation (ITS-LIVE) project has a singular mission: to
+  accelerate ice sheet and glacier research by producing globally comprehensive, high resolution, low latency,
+  temporally dense, multi-sensor records of land ice and ice shelf change, while minimizing barriers between the data
+  and the user.
+
+  ITS-LIVE data currently consists of NetCDF Level 2 scene-pair ice flow products posted to a standard 120 m grid
+  derived from Landsat 4/5/7/8/9 and Sentinel-2 optical scenes, and Sentinel-1 SAR scenes. We have processed all
+  land-ice intersecting image pairs from Mission start to the of 2022 for all missions, with a temporal baseline of
+  500 days for optical pairs and 60 days for SAR paris. Over the next two years, we expect to continue processing new
+  optical scene-pairs as they come in, extend the SAR temporal baseline and continue processing new Seninel-1 scenes
+  as they come in. We also expect to extend processing to include ASTER, RADARSAT, and NISAR imagery. Further, all scene
+  pair data is combined into a set of Zarr datacubes cloud-optimized for time-series analysis, with a suite of user
+  tools available to effectively query the data.
+
+  The ITS_LIVE project is also producing a suite of Level 3 products, including: quarterly and annual ice-sheet and
+  regional velocity mosaics as Cloud-Optimized GeoTIFFs, standardized records of elevation change rates for Greenland
+  and Antarctica, and ice shelf and tidewater glacier front positions.
+Documentation: https://its-live-data.s3.us-west-2.amazonaws.com/readme.html
+Contact: >
+  Have any questions? Ask the ITS_LIVE community on [GITTER](https://gitter.im/its_live/community)
+ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
+UpdateFrequency: up to daily, as new satellite imagery is made available.
+Tags:
+  - ice
+  - earth observation
+  - satellite imagery
+  - geophysics
+  - geospatial
+  - global
+  - cog
+  - netcdf
+  - zarr
+  - stac
+License: "[Creative Commons Zero (CC0) 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://its-live.jpl.nasa.gov/#how-to-cite
+Resources:
+  - Description: ITS_LIVE Data S3 Bucket
+    ARN: arn:aws:s3:::its-live-data
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[STAC V1.0.0 endpoint](https://stac.asf.alaska.edu/collections/its-live-datacubes)"
+      - "[Via STAC Browser](https://radiantearth.github.io/stac-browser/#/external/stac.asf.alaska.edu/collections/its-live-datacubes)"
+DataAtWork:
+  Tutorials:
+    - Title: ITS_LIVE Point Data Access
+      URL: https://github.com/nasa-jpl/its_live
+      NotebookURL: https://github.com/nasa-jpl/its_live/blob/main/notebooks/itslive-notebook.ipynb
+      AuthorName: Maria Liukis, Alex S. Gardner, Luis A. López, Mark Fahnestock, and Joseph H. Kennedy
+      AuthorURL: https://its-live.jpl.nasa.gov/#people
+    - Title: Using xarray to examine cloud-based glacier surface velocity data
+      URL: https://e-marshall.github.io/itslive/intro.html
+      AuthorName: Emma Marshall
+      AuthorURL: https://github.com/e-marshall
+  Tools & Applications:
+    - Title: A serverless React-Leaflet website to plot and share ITS_LIVE data
+      URL: https://mappin.itsliveiceflow.science/
+      AuthorName: Jacob Fahnestock
+      AuthorURL: www.linkedin.com/in/fahnestockj
+    - Title: "ITS_LIVEpy: A Python client for ITSLIVE glacier velocity data"
+      URL: https://github.com/nasa-jpl/itslive-py
+      AuthorName: Luis A. López and Mark Fahnestock
+      AuthorURL: https://its-live.jpl.nasa.gov/#people
+    - Title: Chad Greene's ITS_LIVE Matlab collection
+      URL: https://github.com/chadagreene/ITS_LIVE
+      AuthorName: Chad A. Greene
+      AuthorURL: http://www.chadagreene.com/
+    - Title: ITS_LIVE Data Access Portal
+      URL: https://nsidc.org/apps/itslive/
+      AuthorName: NSIDC
+      AuthorURL: https://nsidc.org
+    - Title: ITS_LIVE Data Access API
+      URL: https://nsidc.org/apps/itslive-search/docs#/
+      AuthorName: NSIDC
+      AuthorURL: https://nsidc.org
+  Publications:
+    - Title: Increased West Antarctic and unchanged East Antarctic ice discharge over the last 7 years
+      URL: https://doi:10.5194/tc-12-521-2018
+      AuthorName: Gardner, A. S., G. Moholdt, T. Scambos, M. Fahnstock, S. Ligtenberg, M. van den Broeke, and J. Nilsson
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
