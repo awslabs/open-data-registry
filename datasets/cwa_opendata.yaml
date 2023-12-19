@@ -1,0 +1,19 @@
+Name: Central Weather Administration OpenData
+Description: Various kinds of weather raw data and charts from Central Weather Administration.
+Documentation: https://opendata.cwa.gov.tw/devManual/insrtuction
+Contact: od@cwa.gov.tw
+ManagedBy: "[Central Weather Administration](https://www.cwa.gov.tw/)"
+UpdateFrequency: Data is updated as soon as newer one is available.
+Tags:
+  - aws-pds
+  - climate
+  - earth observation
+  - earthquakes
+  - satellite imagery
+  - weather
+License: http://data.gov.tw/license
+Resources:
+  - Description: CWA data lake
+    ARN: arn:aws:s3:::cwaopendata
+    Region: ap-northeast-1
+    Type: S3 Bucket
