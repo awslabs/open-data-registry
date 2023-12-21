@@ -2,7 +2,7 @@ Name: Automated Segmentation of Intracellular Substructures in Electron Microsco
 Description: High Resolution 3D Images of Cells & Cellular Substructures & Associated Trained Segmentation Models
 Documentation: https://open.quiltdata.com/b/asem-project
 Contact: tklab@tklab.hms.harvard.edu
-ManagedBy: "[Kirchhausen Lab](https://kirchhausen.hms.harvard.edu/)"
+ManagedBy: Kirchhausen Lab at Harvard Medical School
 UpdateFrequency: Data is added as it becomes available
 Tags:
   - biology
@@ -11,16 +11,15 @@ Tags:
   - microscopy
   - electron microscopy
   - FIBSEM
-License: All available datasets and models are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+License: All available datasets and models are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (https://creativecommons.org/licenses/by-sa/4.0/)
   - Description: High resolution 3D cell image datasets
     ARN: arn:aws:s3:::asem-project/datasets/
     Region: us-east-1
     Type: S3 Bucket
-  - Description: Trained ML segmentation models for use in [ASEM pipeline](https://github.com/kirchhausenlab/incasem)
+  - Description: Trained ML segmentation models for use in ASEM pipeline
     ARN: arn:aws:s3:::asem-project/models/
     Region: us-east-1
     Type: S3 Bucket
-
 DataAtWork:
   Tutorials:
     - Title: Data layout and how to view
