@@ -1,0 +1,56 @@
+Name: Wind AI Bench
+Description: |
+  This data lake contains multiple datasets related to fundamental problems 
+  in wind energy research. This includes data for wind plant power production 
+  for various layouts/wind flow scenarios, data for two- and three-dimensional 
+  flow around different wind turbine airfoils/blades, wind turbine noise 
+  production, among others. The purpose of these datasets is to establish a 
+  standard benchmark against which new AI/ML methods can be tested, compared, 
+  and deployed. Details regarding the generation and formatting of the data for 
+  each dataset is included in the metadata as well as example notebooks and 
+  documentation that show how to access the data for ML modeling.
+Documentation: https://github.com/NREL/windAI_bench
+Contact: Ryan King (ryan.king@nrel.gov)
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - benchmark
+  - machine learning
+License: Creative Commons Attribution 4.0 United States License
+Resources:
+  - Description: '[Wind AI Bench Flow Redirection and Induction in Steady State (FLORIS) Wind Plant Power Production Data Sets]
+  (https://data.openei.org/submissions/5884)'
+    ARN: arn:aws:s3:::nrel-pds-windai/wind_plant_power/floris/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-windai&prefix=wind_plant_power%2Ffloris%2F)'
+  - Description: '[Wind AI Bench Airfoil Computational Fluid Dynamics (CFD) - 2k Shapes Data Sets](https://data.openei.org/submissions/5970)'
+    ARN: arn:aws:s3:::nrel-pds-windai/aerodynamic_shapes/2D/2K_airfoils/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-windai&prefix=aerodynamic_shapes%2F2D%2F2k_airfoils%2F)'
+  - Description: '[Wind AI Bench Airfoil Computational Fluid Dynamics (CFD) - 9k Shapes Data Sets](https://data.openei.org/submissions/5889)'
+    ARN: arn:aws:s3:::nrel-pds-windai/aerodynamic_shapes/2D/9K_airfoils/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-windai&prefix=aerodynamic_shapes%2F2D%2F9k_airfoils%2F)'
+DataAtWork:
+  Tutorials:
+    - Title: Wind AI Bench FLORIS PlayGen
+      URL: https://github.com/NREL/windAI_bench/tree/main/FLORIS_PLayGen
+      AuthorName: Dakota Ramos, Andrew Glaws
+    - Title: Airfoil 2k
+      URL: https://github.com/NREL/windAI_bench/tree/main/airfoil_2k
+      AuthorName: Dakota Ramos, Andrew Glaws
+    - Title: Airfoil 9k
+      URL: https://github.com/NREL/windAI_bench/tree/main/airfoil_9k
+      AuthorName: Dakota Ramos, Andrew Glaws
