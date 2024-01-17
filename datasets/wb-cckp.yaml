@@ -1,0 +1,20 @@
+Name: World Bank - Climate Change Knowledge Portal(CCKP)
+Description: Light Every Night - World Bank Nighttime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is published and openly available under the terms of the World Bank’s open data license.
+Documentation: https://worldbank.github.io/climateknowledgeportal
+Contact: C. MacKenzie Dove cdove@worldbank.org; askclimate@worldbank.org
+ManagedBy: "[World Bank Group](https://www.worldbank.org/en/home)"
+UpdateFrequency: Semi-annually
+Tags:
+  - climate
+  - climate data
+  - historical climate data
+  - projected climate data
+  - CMIP6
+  License: "[World Bank Open Database License (ODbL)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: World Bank Climate Change Knowledge Portal observed and projected climate datasets
+    ARN: arn:aws:s3:::wbg-cckp
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Climate Change Knowledge Portal(https://climateknowledgeportal.worldbank.org/)'
