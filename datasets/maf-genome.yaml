@@ -14,19 +14,19 @@ License: CC-BY-SA
 Resources:
   - Genotyping files of Axiom Array setA
     - Description: GRLS_Genotyping/setA/AxiomGT1.bin.{bed,bim,fam}		
-      ARN: arn::aws::sns:us-
+      ARN: arn::aws::sns:us-mafgrlsgenome
       Region: us-west-2
       Type: S3 Bucket
       RequesterPays: False
   - Genotyping files of Axiom Array setB
     - Description: GRLS_Genotyping/setB/AxiomGT1.bin.{bed,bim,fam)
-      ARN: arn::aws::sns:us-
+      ARN: arn::aws::sns:us-mafgrlsgenome
       Region: us-west-2
       Type: S3 Bucket
       RequesterPays: False
   - A text file that maps between replicate 
     - Description: GRLS_Genotyping/map_id_sex.tab  	
-      ARN: arn::aws::sns:us-
+      ARN: arn::aws::sns:us-mafgrlsgenome
       Region: us-west-2
       Type: S3 Bucket
       RequesterPays: False
@@ -35,7 +35,6 @@ DataAtWork:
     - Title: GRLS GWAS Tutorial
       URL: https://maf-grls.github.io/grGWAS/1.install/
       AuthorName: Tamer Mansour
-    Tools & Applications:
     Publications: 
       - Title: Cohort profile: The Golden Retriever Lifetime Study (GRLS)
         URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4581032/
