@@ -1,24 +1,25 @@
-Name: Inter-mission Time Series of Land Ice Velocity and Elevation (ITS-LIVE)
+Name: Inter-mission Time Series of Land Ice Velocity and Elevation (ITS_LIVE)
 Description: >
-  The Inter-mission Time Series of Land Ice Velocity and Elevation (ITS-LIVE) project has a singular mission: to
+  The Inter-mission Time Series of Land Ice Velocity and Elevation (ITS_LIVE) project has a singular mission: to
   accelerate ice sheet and glacier research by producing globally comprehensive, high resolution, low latency,
   temporally dense, multi-sensor records of land ice and ice shelf change, while minimizing barriers between the data
   and the user.
 
-  ITS-LIVE data currently consists of NetCDF Level 2 scene-pair ice flow products posted to a standard 120 m grid
-  derived from Landsat 4/5/7/8/9 and Sentinel-2 optical scenes, and Sentinel-1 SAR scenes. We have processed all
-  land-ice intersecting image pairs from Mission start to the of 2022 for all missions, with a temporal baseline of
-  500 days for optical pairs and 60 days for SAR paris. Over the next two years, we expect to continue processing new
-  optical scene-pairs as they come in, extend the SAR temporal baseline and continue processing new Seninel-1 scenes
-  as they come in. We also expect to extend processing to include ASTER, RADARSAT, and NISAR imagery. Further, all scene
-  pair data is combined into a set of Zarr datacubes cloud-optimized for time-series analysis, with a suite of user
-  tools available to effectively query the data.
+  ITS_LIVE data currently consists of NetCDF Level 2 scene-pair ice flow products posted to a standard 120 m grid
+  derived from Landsat 4/5/7/8/9 and Sentinel-2 optical scenes, and Sentinel-1 SAR scenes. For all missions We have
+  processed all land-ice intersecting image pairs from Mission start to the end of 2022, with a temporal baseline of
+  500 days for optical pairs and 60 days for SAR paris.
+
+  The ITS_LIVE project will continue processing new optical scene-pairs as they come in, extend the SAR temporal
+  baseline and continue processing new Seninel-1 scenes as they come in. We also expect to extend processing to include
+  ASTER, RADARSAT, and NISAR imagery. Further, all scene pair data is combined into a set of Zarr datacubes
+  cloud-optimized for time-series analysis, with a suite of user tools available to effectively query the data.
 
   The ITS_LIVE project is also producing a suite of Level 3 products, including: quarterly and annual ice-sheet and
   regional velocity mosaics as Cloud-Optimized GeoTIFFs, standardized records of elevation change rates for Greenland
   and Antarctica, and ice shelf and tidewater glacier front positions.
 
-  For more information about the ITS-LIVE project, please see <https://its-live.jpl.nasa.gov/>.
+  For more information about the ITS_LIVE project, please see <https://its-live.jpl.nasa.gov/>.
 
 Documentation: https://its-live-data.s3.us-west-2.amazonaws.com/README.html
 Contact: >
@@ -69,10 +70,14 @@ DataAtWork:
       URL: https://mappin.itsliveiceflow.science/
       AuthorName: Jacob Fahnestock
       AuthorURL: www.linkedin.com/in/fahnestockj
-    - Title: "ITS_LIVEpy: A Python client for ITSLIVE glacier velocity data"
+    - Title: "ITS_LIVEpy: A Python client for ITS_LIVE glacier velocity data"
       URL: https://github.com/nasa-jpl/itslive-py
       AuthorName: Luis A. López and Mark Fahnestock
       AuthorURL: https://its-live.jpl.nasa.gov/#people
+    - Title: "ITS_LIVE_TOOL: A package designed to aid users working with the ITS_LIVE data"
+      URL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL
+      AuthorName: Victor Devaux-Chupin and Emma Marshall
+      AuthorURL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL/graphs/contributors
     - Title: Chad Greene's ITS_LIVE Matlab collection
       URL: https://github.com/chadagreene/ITS_LIVE
       AuthorName: Chad A. Greene
