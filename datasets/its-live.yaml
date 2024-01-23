@@ -17,9 +17,16 @@ Description: >
   The ITS_LIVE project is also producing a suite of Level 3 products, including: quarterly and annual ice-sheet and
   regional velocity mosaics as Cloud-Optimized GeoTIFFs, standardized records of elevation change rates for Greenland
   and Antarctica, and ice shelf and tidewater glacier front positions.
-Documentation: https://its-live-data.s3.us-west-2.amazonaws.com/README.md
+
+  For more information about the ITS-LIVE project, please see <https://its-live.jpl.nasa.gov/>.
+
+Documentation: https://its-live-data.s3.us-west-2.amazonaws.com/README.html
 Contact: >
-  Have any questions? Ask the ITS_LIVE community on [GITTER](https://gitter.im/its_live/community)
+  If you have questions about the data itself or the processing methods used, please post in the
+  [ITS_LIVE Community gitter](https://app.gitter.im/#/room/#its_live_community:gitter.im).
+
+  If you have question about how the data is managed on AWS, please email the [ASF Tools Team](mailto:uaf-asf-apd@alaska.edu).
+
 ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
 UpdateFrequency: up to daily, as new satellite imagery is made available.
 Tags:
@@ -41,8 +48,11 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - "[STAC V1.0.0 endpoint](https://stac.asf.alaska.edu/collections/its-live-datacubes)"
-      - "[Via STAC Browser](https://radiantearth.github.io/stac-browser/#/external/stac.asf.alaska.edu/collections/its-live-datacubes)"
+      - '[Browse Bucket](https://its-live-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-west-2:367587189974:its-live-data-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: ITS_LIVE Point Data Access
