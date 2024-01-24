@@ -2,20 +2,20 @@ Name: Inter-mission Time Series of Land Ice Velocity and Elevation (ITS_LIVE)
 Description: >
   The Inter-mission Time Series of Land Ice Velocity and Elevation (ITS_LIVE) project has a singular mission: to
   accelerate ice sheet and glacier research by producing globally comprehensive, high resolution, low latency,
-  temporally dense, multi-sensor records of land ice and ice shelf change, while minimizing barriers between the data
-  and the user.
+  temporally dense, multi-sensor records of land ice and ice shelf change while minimizing barriers between the data and
+  the user.
 
   ITS_LIVE data currently consists of NetCDF Level 2 scene-pair ice flow products posted to a standard 120 m grid
-  derived from Landsat 4/5/7/8/9 and Sentinel-2 optical scenes, and Sentinel-1 SAR scenes. For all missions We have
-  processed all land-ice intersecting image pairs from Mission start to the end of 2022, with a temporal baseline of
-  500 days for optical pairs and 60 days for SAR paris.
+  derived from Landsat 4/5/7/8/9, Sentinel-2 optical scenes, and Sentinel-1 SAR scenes. We have processed all land-ice
+  intersecting image pairs separated by ≤546 days for optical and ≤12 for SAR sensors, for all missions from each
+  mission start to the end of 2022.
 
-  The ITS_LIVE project will continue processing new optical scene-pairs as they come in, extend the SAR temporal
-  baseline and continue processing new Seninel-1 scenes as they come in. We also expect to extend processing to include
-  ASTER, RADARSAT, and NISAR imagery. Further, all scene pair data is combined into a set of Zarr datacubes
-  cloud-optimized for time-series analysis, with a suite of user tools available to effectively query the data.
+  The ITS_LIVE project will continue processing new optical and radar scene pairs as they come in, and will soon
+  increase production to include SAR image pairs separated by more than 12 days. We also expect to extend processing
+  to include ASTER, RADARSAT, and NISAR imagery. Further, all scene pair data are combined into a set of Zarr datacubes
+  that are cloud-optimized for time-series analysis, with a suite of user tools available to query the data effectively.
 
-  The ITS_LIVE project is also producing a suite of Level 3 products, including: quarterly and annual ice-sheet and
+  The ITS_LIVE project is also producing a suite of Level 3 products, including quarterly and annual ice-sheet and
   regional velocity mosaics as Cloud-Optimized GeoTIFFs, standardized records of elevation change rates for Greenland
   and Antarctica, and ice shelf and tidewater glacier front positions.
 
@@ -26,10 +26,11 @@ Contact: >
   If you have questions about the data itself or the processing methods used, please post in the
   [ITS_LIVE Community gitter](https://app.gitter.im/#/room/#its_live_community:gitter.im).
 
-  If you have question about how the data is managed on AWS, please email the [ASF Tools Team](mailto:uaf-asf-apd@alaska.edu).
+  If you have questions about how the data is managed on AWS, please email the
+  [ASF Tools Team](mailto:uaf-asf-apd@alaska.edu).
 
 ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
-UpdateFrequency: up to daily, as new satellite imagery is made available.
+UpdateFrequency: Up to daily, as new satellite imagery is made available.
 Tags:
   - ice
   - earth observation
@@ -66,18 +67,10 @@ DataAtWork:
       AuthorName: Emma Marshall
       AuthorURL: https://github.com/e-marshall
   Tools & Applications:
-    - Title: A serverless React-Leaflet website to plot and share ITS_LIVE data
-      URL: https://mappin.itsliveiceflow.science/
-      AuthorName: Jacob Fahnestock
-      AuthorURL: www.linkedin.com/in/fahnestockj
     - Title: "ITS_LIVEpy: A Python client for ITS_LIVE glacier velocity data"
       URL: https://github.com/nasa-jpl/itslive-py
       AuthorName: Luis A. López and Mark Fahnestock
       AuthorURL: https://its-live.jpl.nasa.gov/#people
-    - Title: "ITS_LIVE_TOOL: A package designed to aid users working with the ITS_LIVE data"
-      URL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL
-      AuthorName: Victor Devaux-Chupin and Emma Marshall
-      AuthorURL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL/graphs/contributors
     - Title: Chad Greene's ITS_LIVE Matlab collection
       URL: https://github.com/chadagreene/ITS_LIVE
       AuthorName: Chad A. Greene
@@ -90,10 +83,36 @@ DataAtWork:
       URL: https://nsidc.org/apps/itslive-search/docs#/
       AuthorName: NSIDC
       AuthorURL: https://nsidc.org
+    - Title: A serverless React-Leaflet website to plot and share ITS_LIVE data
+      URL: https://mappin.itsliveiceflow.science/
+      AuthorName: Jacob Fahnestock
+      AuthorURL: www.linkedin.com/in/fahnestockj
+    - Title: "ITS_LIVE_TOOL: A package designed to aid users working with the ITS_LIVE data"
+      URL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL
+      AuthorName: Victor Devaux-Chupin and Emma Marshall
+      AuthorURL: https://github.com/vdevauxchupin/ITS_LIVE_TOOL/graphs/contributors
   Publications:
     - Title: Ubiquitous acceleration in Greenland Ice Sheet calving from 1985 to 2022
       URL: https://doi.org/10.1038/s41586-023-06863-2
       AuthorName: Greene, C.A., A.S. Gardner, M. Wood, and J.K. Cuzzone
+    - Title: Widespread slowdown in thinning rates of West Antarctic Ice Shelves
+      URL: https://doi.org/10.5194/tc-17-3409-2023
+      AuthorName: Paolo, F. S., A.S. Gardner, C.A. Greene, J. Nilsson, M.P. Schodlok, N.-J. Schlegel, and H.A. Fricker
+    - Title: Antarctic calving loss rivals ice-shelf thinning
+      URL: https://doi.org/10.1038/s41586-022-05037-w
+      AuthorName: Greene, C.A., A.S. Gardner, N.-J. Schlegel, and A.D. Fraser
+    - Title: "Elevation change of the Antarctic Ice Sheet: 1985 to 2020"
+      URL: https://doi.org/10.5194/essd-14-3573-2022
+      AuthorName: Nilsson, J., A.S. Gardner, and F.S. Paolo
+    - Title: Detecting seasonal ice dynamics in satellite images
+      URL: https://doi.org/10.5194/tc-14-4365-2020
+      AuthorName: Greene, C.A., A.S. Gardner, and L.C. Andrews
+    - Title: Processing methodology for the ITS_LIVE Sentinel-1 ice velocity products
+      URL: https://doi.org/10.5194/essd-14-5111-2022
+      AuthorName: Lei, Y., A.S. Gardner, and P. Agram
+    - Title: Autonomous Repeat Image Feature Tracking (autoRIFT) and Its Application for Tracking Ice Displacement. Remote Sensing
+      URL: https://doi.org/10.3390/rs13040749
+      AuthorName: Lei, Y., A.S. Gardner, and P. Agram
     - Title: Increased West Antarctic and unchanged East Antarctic ice discharge over the last 7 years
       URL: https://doi.org/10.5194/tc-12-521-2018
       AuthorName: Gardner, A. S., G. Moholdt, T. Scambos, M. Fahnstock, S. Ligtenberg, M. van den Broeke, and J. Nilsson
