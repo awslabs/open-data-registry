@@ -15,15 +15,22 @@ Description: |
   We currently provide hourly deterministic forecasts at 3 km grid spacing out to 60 hours at 00, 06, 12, and 18 UTC, and out to 18 hours for other cycles. Output is organized by cycle date and cycle hour.
   
   For example, `rrfs_a/rrfs_a.20230428/12/control` contains the deterministic forecast initialized at 12 UTC on 28 April 2023. Users will find two types of output in GRIB2 format. The first is:<br/><br/>
-  rrfs.t00z.natlev.f018.conus_3km.grib2 <br/><br/>
+  `rrfs.t00z.natlev.f018.conus_3km.grib2` <br/><br/>
   
   Meaning that this is the RRFS_A initialized at 00 UTC, covers the CONUS domain, and is the native level post-processed gridded data at hour 18.  This output is on a Lambert Conic Conformal gird at 3 km grid spacing.<br/><br/>
 
   The second output file in grib2 format is:<br/><br/>
   
-  rrfs.t00z.prslev.f018.conus_3km.grib2 <br/><br/>
+  `rrfs.t00z.prslev.f018.conus_3km.grib2` <br/><br/>
  
   The “prslev” descriptor indicates that this post-processed gridded data is output on pressure levels.
+
+  For users interested in other domains, output is provided on the full 3-km North American grid and also subset over Alaska, Hawaii, and Puerto Rico. The files are identified as follows: <br/><br/>
+
+  North America: `rrfs.t00z.prslev.f002.grib2`
+  Alaska: `rrfs.t00z.prslev.f002.ak.grib2`
+  Hawaii: `rrfs.t00z.prslev.f002.hi.grib2`
+  Puerto Rico: `rrfs.t00z.prslev.f002.pr.grib2`
 
   Beginning on Decmber 8th, 2023 we now provide prototype RRFSv1 ensemble output and products. Output is available for 00, 06, 12, and 18 UTC cycles, and is organized by cycle date and cycle hour. For example, `rrfs_a/rrfs_a.20231214/00/mem0001` contains the forecast from member 1, and `rrfs_a/rrfs_a.20231214/00/enspost_timelag` contains the ensemble products.
 
