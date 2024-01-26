@@ -1,0 +1,30 @@
+Name: RCM CEOS ARD
+Description: "The [RADARSAT Constellation Mission (RCM)](https://www.asc-csa.gc.ca/eng/satellites/radarsat/) is Canada's third generation of Earth observation satellites. Launched on June 12, 2019, the three identical satellites work together to bring solutions to key challenges for Canadians. As part of ongoing [Open Government](https://open.canada.ca/en/about-open-government) efforts, NRCan has developed a CEOS analysis ready data (ARD) processing capability for RCM and is processing the Canada-wide, 30M Compact-Polarization standard coverage, every 12 days. Previously, users were stuck ordering, downloading and processing RCM images (level 1) on their own, often with expensive software. This new dataset aims to remove these burdens with a new STAC catalog for discover and direct download from S3."
+Documentation: https://www.asc-csa.gc.ca/eng/satellites/radarsat/
+Contact: eodms-sgdot@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
+UpdateFrequency: 
+Tags:
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - sustainability
+  - disaster response
+  - synthetic aperture radar
+  - stac
+License: RCM image products are available free of charge, to the broadest extent possible, in order to promote the development of innovative products and services derived from SAR data. The Government of Canada retains ownership of all RCM data and image products. Intellectual property rights to value-added products (VAPs) created from the RCM image products will remain with the creator of the VAP. Acceptable uses of RCM image products are set out in the [RCM Public User License Agreement](https://www.asc-csa.gc.ca/eng/satellites/radarsat/access-to-data/public-user-license-agreement.asp), which is provided with each RCM image product.
+Resources:
+  - Description: RCM CEOS Analysis Ready Data in an S3 bucket.
+    ARN: arn:aws:s3:::rcm-ceos-ard
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[EODMS STAC for RCM products](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/)'
+DataAtWork:
+  Tutorials:
+    - Title: Using Python to Access RCM CEOS ARD Data (Jupyter notebook)
+      URL: https://github.com/eodms-sgdot/eodms_ard
+      AuthorName: Natural Resources Canada
+      AuthorURL: https://www.nrcan.gc.ca
+    
