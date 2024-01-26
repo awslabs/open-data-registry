@@ -1,0 +1,29 @@
+Name: USGS COAWST (Coupled Ocean Atmosphere Wave and Sediment Transport) Forecast Model Archive, US East and Gulf Coasts
+Description: The COAWST modeling system has been used to simulate ocean, wave and sediment transport processes along the of US East Coast and Gulf of Mexico. The grid has a horizontal resolution of approximately 5km and is resolved with 16 vertical terrain following levels. The model has been executed on a daily basis since August 2009 with outputs written every hour. This archive contains model output from 2009-08-21 to 2022-06-17. 
+Documentation: https://www.sciencebase.gov/catalog/item/610acd4fd34ef8d7056893da
+Contact: jbzambon@fathomscience.com
+ManagedBy: Fathom Science
+UpdateFrequency: None
+Citation: Warner, J.C., and Kalra, T.S., 2022, Collection of COAWST model forecast for the US East Coast and Gulf of Mexico, U.S. Geological Survey data release, https://doi.org/10.5066/P903KPBJ
+Tags:
+  - aws-pds
+  - oceans
+License: CC0
+Resources:
+  - Description: A collection of NetCDF4 files, kerchunk generated JSON files, and an Intake catalog
+    ARN: arn:aws:s3:::usgs-coawst
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: COAWST Explorer Notebook
+      URL: https://github.com/fs-jbzambon/opendata-coawst
+      NotebookURL: https://github.com/fs-jbzambon/opendata-coawst/blob/main/COAWST_explore.ipynb
+      AuthorName: Rich Signell
+      AuthorURL: https://about.me/rich.signell
+      Services:
+  Publications:
+    - Title: Coupled-Ocean-Atmosphere-Wave-Sediment Transport (COAWST) Modeling System, U.S. Geological Survey Software Release, 23 April 2019
+      URL: https://doi.org/10.5066/P9NQUAOW
+      AuthorName: Warner, J.C., Ganju, N.K., Sherwood, C.R., Kalra, T.S., Aretxabaleta, A., He, R., Zambon, J., and Kumar, N.
+ 

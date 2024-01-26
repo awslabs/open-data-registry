@@ -1,9 +1,9 @@
 Name: COVID-19 Genome Sequence Dataset
-Description: A centralized sequence repository for all records containing sequence associated with the novel corona virus (SARS-CoV-2) submitted to the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA). Included are both the original sequences submitted by the principal investigator as well as SRA-processed sequences that require the SRA Toolkit for analysis. Additionally, submitter provided metadata included in associated BioSample and BioProject records is available alongside NCBI calculated data, such k-mer based taxonomy analysis results, contiguous assemblies (contigs) and associated statistics such as contig length, blast results for the assembled contigs, contig annotation, blast databases of contigs and their annotated peptides, and VCF files generated for each record relative to the SARS-CoV-2 RefSeq record. Finally, metadata is additionally made available in parquet format to facilitate search and filtering using the AWS Athena Service.
+Description: This repository within the [ACTIV TRACE initiative](https://www.nih.gov/research-training/medical-research-initiatives/activ/tracking-resistance-coronavirus-evolution-trace) houses a comprehensive collection of datasets related to SARS-CoV-2. The processing of SARS-CoV-2 Sequence Read Archive (SRA) files has been optimized to identify genetic variations in viral samples. This information is then presented in the Variant Call Format (VCF). Each VCF file corresponds to the SRA parent-run's accession ID. Additionally, the data is available in the parquet format, making it easier to search and filter using the Amazon Athena Service. The SARS-CoV-2 Variant Calling Pipeline is designed to handle new data every six hours, with updates to the AWS ODP bucket occurring daily.
 Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
 Contact: https://support.nlm.nih.gov/support/create-case/
 ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
-UpdateFrequency: Hourly
+UpdateFrequency: Daily
 Tags:
   - aws-pds
   - bioinformatics
