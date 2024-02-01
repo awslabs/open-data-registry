@@ -2,23 +2,24 @@ Name: nuPlan
 Description: nuPlan is the world's first large-scale planning benchmark for autonomous driving.
 Documentation: https://nuplan.org
 Contact: https://nuplan.org
-ManagedBy: [Motional, Inc.](https://motional.com)
+ManagedBy: "[Motional, Inc.](https://motional.com)"
 UpdateFrequency: Finalized
 Tags:
   - aws-pds
   - autonomous vehicles
-  - planning
   - lidar
   - robotics
   - transportation
   - urban
 License: "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
 Resources:
-  - Description: Globally cached distribution of the nuPlan Dataset. Web frontend is available to browse the dataset.
+  - Description: |
+      Globally cached distribution of the nuPlan Dataset. Web frontend is available to browse the dataset.
     Host: https://d1qinkmu0ju04f.cloudfront.net
     Region: ap-northeast-1
     Type: CloudFront Distribution
-  - Description: nuPlan Dataset
+  - Description: |
+      nuPlan Dataset
     ARN: arn:aws:s3:::motional-nuplan
     Region: ap-northeast-1
     Type: S3 Bucket
