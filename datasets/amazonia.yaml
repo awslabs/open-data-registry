@@ -30,24 +30,20 @@ Tags:
   - cog
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Resources:
-  - Description: Amazonia 1 imagery (COG files)
-    ARN: arn:aws:s3:::amazonia-pds
-    Region: us-east-1
+  - Description: Amazonia 1 imagery (COG files, quicklooks, metadata)
+    ARN: arn:aws:s3:::brazil-eosats
+    Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
     Explore:
     - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
-  - Description: Amazonia 1 metadata (Quicklooks, metadata)
-    ARN: arn:aws:s3:::amazonia-meta-pds
-    Region: us-east-1
-    Type: S3 Bucket
   - Description: Notifications for new quicklooks
-    ARN: arn:aws:sns:us-east-1:599544552497:NewAMQuicklook
-    Region: us-east-1
+    ARN: arn:aws:sns:us-west-2:599544552497:NewAM1Quicklook
+    Region: us-west-2
     Type: SNS Topic
   - Description: Topic that receives STAC V1.0.0 items as new scenes are ingested
-    ARN: arn:aws:sns:us-east-1:769537946825:cbers2stac-prod-stacitemtopic4BCE3141-VI09VRB6LBEK
-    Region: us-east-1
+    ARN: arn:aws:sns:us-west-2:769537946825:br-eo-stac-prod-stacitemtopic4BCE3141-Z8he7LYjqXFe
+    Region: us-west-2
     Type: SNS Topic
 DataAtWork:
   Tutorials:
@@ -58,8 +54,27 @@ DataAtWork:
         - SNS
         - Lambda
         - DynamoDB
+    - Title: The Evolution of ASDI's Data Infrastructure
+      URL: https://developmentseed.org/blog/2023-10-20-asdi
+      AuthorName: Sean Harkins
+      Services:
+        - SNS
+        - Lambda
+        - ECR
+        - SQS
+        - S3
+        - Athena
   Tools & Applications:
     - Title: STAC V1.0.0 endpoint
       URL: https://stac.amskepler.com/v100
       AuthorName: AMS Kepler
-      AuthorURL: https://github.com/fredliporace/cbers-2-stac
+      AuthorURL: https://github.com/fredliporace
+    - Title: Amazonia 1 stactools package
+      URL: https://github.com/stactools-packages/amazonia-1
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+    - Title: Amazonia 1 stactools-pipeline
+      URL: https://github.com/developmentseed/stactools-pipelines/pull/33
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+
