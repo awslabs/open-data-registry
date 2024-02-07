@@ -16,11 +16,14 @@ Tags:
 License: |
   [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/)
 Resources:
-  - Description:
-    ARN:
-    Region:
-    Type:
-    Explore:
+  - Description: real-changesets
+    ARN: arn:aws:s3:::real-changesets
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New File Notification
+    ARN: arn:aws:sns:us-west-2:877446169145:real-changesets-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: OSMCha
