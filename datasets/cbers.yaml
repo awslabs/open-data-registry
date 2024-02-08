@@ -40,6 +40,11 @@ Resources:
     RequesterPays: False
     Explore:
     - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+  - Description: STAC static catalog root file
+    ARN: s3://br-eo-stac-1-0-0/catalog.json
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
   - Description: Notifications for new CBERS 4A quicklooks, all sensors
     ARN: arn:aws:sns:us-west-2:599544552497:NewCB4AQuicklook
     Region: us-west-2
