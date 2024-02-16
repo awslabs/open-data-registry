@@ -1,0 +1,43 @@
+Name: Sofar Spotter Archive
+Description: This dataset includes archival hourly data from the [Sofar Spotter buoy global network] (https://weather.sofarocean.com/) from 2019 to March 2022.
+  <br />
+Documentation: "[Spotter Technical Reference Manual](https://content.sofarocean.com/hubfs/Spotter%20product%20documentation%20page/Sofar%20-%20Technical_Reference_Manual.pdf)"
+Contact: opendata@sofarocean.com
+ManagedBy: "[Sofar Ocean](https://www.sofarocean.com/company/contact-us)"
+UpdateFrequency: As available
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - sustainability
+  - weather
+  - oceans
+  - environmental
+  - oceans
+License: "[Sofar Data Access Agreement](https://sofarocean.notion.site/sofarocean/Sofar-Data-Access-Agreement-fe4e091fa0b5453d9a8bd97c4b6940d5)"
+Citation: 
+Resources:
+  - Description: Hourly position, wave spectra and bulk wave parameters from global free drifting Spotter buoys.
+    ARN: arn:aws:s3:::sofar-spotter-archive
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+      - '[Browse Bucket](https://sofar-spotter-archive.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Exploring Bulk Variables from the Spotter Archive
+      URL: https://github.com/sofarocean/spotter-data-archive/blob/main/examples/plot_spotter_bulk_data.ipynb
+      AuthorName: Isabel A. Houghton
+    - Title: Exploring Wave Spectra Variables from the Spotter Archive
+      URL: https://github.com/sofarocean/spotter-data-archive/blob/main/examples/plot_spotter_spectra_data.ipynb
+      AuthorName: Isabel A. Houghton
+    - Title: Analyzing Spotter data with CloudDrift
+      URL: https://github.com/sofarocean/spotter-data-archive/blob/main/examples/spotter_data_with_clouddrift.ipynb
+      AuthorName: Milan Curcic
+  Publications:
+    - Title: Performance Characteristics of “Spotter,” a Newly Developed Real-Time Wave Measurement Buoy (2019)
+      URL: https://journals.ametsoc.org/view/journals/atot/36/6/jtech-d-18-0151.1.xml
+      AuthorName: K. Raghukumar, G. Chang, F. Spada, C. Jones, T. Janssen, A. Gans
+    - Title: Performance Statistics of a Real-Time Pacific Ocean Weather Sensor Network (2021)
+      URL: https://journals.ametsoc.org/view/journals/atot/38/5/JTECH-D-20-0187.1.xml
+      AuthorName: I. Houghton, P. Smit, D. Clark, C. Dunning, A. Fisher, N. Nidzieko, P. Chamberlain, T. Janssen
