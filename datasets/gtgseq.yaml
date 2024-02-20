@@ -1,0 +1,52 @@
+Name: Garvan Institute Long Read Sequencing Benchmark Data
+Description: "The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Currently, there are two samples, which are NA12878 (HG001) and NA24385 (HG002), sequenced on an Oxford Nanopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells. Raw signal data output by the sequencer is provided for these datasets in BLOW5 format, and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. In the future, we plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT."
+Documentation: https://github.com/GenTechGp/gtgseq
+Contact: "[gtgseq team](https://github.com/GenTechGp/gtgseq/issues)"
+ManagedBy: "Genomic Technologies Group, Garvan Institute of Medical Research (https://www.garvan.org.au/research/labs-groups/genomic-technologies-lab)"
+UpdateFrequency:  We plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT. We will continue to provide updated basecalls when there is a major update to the basecalling software.
+Tags:
+  - genomic
+  - life sciences
+  - long read sequencing
+  - bioinformatics
+  - aws-pds
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+Citation: "Gamaarachchi, H., Samarakoon, H., Jenner, S.P. et al. Fast nanopore sequencing data analysis with SLOW5. Nat Biotechnol 40, 1026–1029 (2022). https://doi.org/10.1038/s41587-021-01147-4"
+Resources: 
+  - Description:  Currently, the dataset contains two reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Raw signal data output by the sequencer is provided for these datasets in BLOW5 format. Basecalls are available in bgzip compressed FASTQ format. Alignments are available in BAM format.  More information can be found at https://github.com/GenTechGp/gtgseq/blob/main/docs/data.md.
+    ARN: arn:aws:s3:::gtgseq
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://gtgseq.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials: 
+    - Title: Fetching subsets with slow5curl and samtools
+      URL: https://github.com/GenTechGp/gtgseq/blob/main/docs/slow5curl.md
+      AuthorName: Bonson Wong  
+    - Title: Directly processing on an s3fs mount
+      URL: https://github.com/GenTechGp/gtgseq/blob/main/docs/mount.md
+      AuthorName: Hasindu Gamaarachchi
+  Tools & Applications:
+    - Title: "Slow5curl: library and tool for accessing remote BLOW5 files."
+      URL: https://github.com/BonsonW/slow5curl
+      AuthorName:  Wong, B., et al.  
+    - Title: "Slow5lib: toolkit slow5lib is a software library for reading & writing SLOW5 files."
+      URL: https://github.com/hasindu2008/slow5lib
+      AuthorName:  Gamaarachchi, H., Samarakoon, H., Jenner, S.P. et al.
+    - Title: "Slow5tools: toolkit for converting (FAST5 <-> SLOW5), compressing, viewing, indexing and manipulating data in SLOW5 format."
+      URL: https://github.com/hasindu2008/slow5tools
+      AuthorName: Samarakoon, H., Ferguson, J.M., Jenner, S.P. et al.
+    - Title: "buttery-eel: The buttery eel - a slow5 guppy basecaller wrapper"
+      URL: https://github.com/Psy-Fer/buttery-eel
+      AuthorName: Samarakoon, H., Ferguson, J.M., Gamaarachchi H. et al.
+  Publications:
+    - Title: Fast nanopore sequencing data analysis with SLOW5.
+      URL: https://doi.org/10.1038/s41587-021-01147-4
+      AuthorName: Gamaarachchi, H., Samarakoon, H., Jenner, S.P. et al.
+    - Title: Flexible and efficient handling of nanopore sequencing signal data with slow5tools.
+      URL: https://doi.org/10.1186/s13059-023-02910-3
+      AuthorName: Samarakoon, H., Ferguson, J.M., Jenner, S.P. et al.
+    - Title: Accelerated nanopore basecalling with SLOW5 data format.
+      URL: https://doi.org/10.1093/bioinformatics/btad352
+      AuthorName: Samarakoon, H., Ferguson, J.M., Gamaarachchi H. et al. 

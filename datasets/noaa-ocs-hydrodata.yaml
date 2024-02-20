@@ -1,0 +1,34 @@
+Name: NOAA Office of Coast Survey - Hydrographic Survey Data
+Description: |
+  Founded in 1807, NOAA’s Office of Coast Survey is the nation’s first scientific agency and today is responsible for supporting nearly $5.4 trillion in economic activity through providing advanced marine navigation services. The Office of Coast Survey collects and qualifies hydrographic, bathymetric, and topographic data, from NOAA platforms and many other data providers. These data and associated deliverables are posted here for various users to access, including but not limited to the "[National Bathymetric Source Program](https://registry.opendata.aws/noaa-bathymetry/)" for incorporation into compilations of the best available bathymetry and NOAA’s National Center for Environmental Information (NCEI) for archival. Qualified data is cleared for application to the navigation products and for public distribution without restriction. Unqualified data is either in queue to be qualified or deemed not to be usable for navigation, but cleared for public distribution according to the data license associated with each file.
+Documentation: https://nauticalcharts.noaa.gov/
+Contact: |
+  For general questions or feedback about the data, please submit inquiries
+  through the NOAA Office of Coast Survey (OCS) "[ASSIST Tool](https://www.nauticalcharts.noaa.gov/customer-service/assist/)". 
+  For any data delivery issues, please contact the NOAA Open Data Dissemination Team (NODD) at NODD@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: This bucket is updated as new data source become available
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - earth observation
+  - model
+  - oceans
+  - bathymetry
+  - marine navigation
+  - oceans
+License: Creative Commons licenses are attached to each file and, where available, are attached to the consituent sources within the file.  The compilation is provided as a government work under CC0, but the individual sources may have copyright and limitations on use.
+Resources:
+  - Description: NOAA Office of Coast Survey Hydrographic Survey Data
+    ARN: arn:aws:s3:::noaa-ocs-hydrodata-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-ocs-hydrodata-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA Office of Coast Survey Hydrographic Survey Data New Object Notification
+    ARN: arn:aws:sns:us-east-1:709902155096:NewOCSHYDROObject
+    Region: us-east-1
+    Type: SNS Topic

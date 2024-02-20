@@ -1,0 +1,50 @@
+Name: ASF SAR Data Products for Disaster Events
+Description: >
+  synthetic Aperture Radar (SAR) data is a powerful tool for monitoring and assessing disaster events and can provide
+  valuable insights for researchers, scientists, and emergency response teams. 
+  
+  The Alaska Satellite Facility (ASF) curates this collection of (primarily) SAR and SAR-derived satellite data products
+  from a variety of data sources for disaster events.
+Documentation: https://asf-event-data.s3.us-west-2.amazonaws.com/README.md
+Contact: https://asf.alaska.edu/asf/contact-us/
+ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
+UpdateFrequency: >
+  Irregular, in response to disaster events
+Tags:
+  - aws-pds
+  - disaster response
+  - satellite imagery
+  - geospatial
+  - cog
+  - stac
+License: This data falls under the terms and conditions of the [Creative Commons Zero (CC0) 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/) unless otherwise noted.
+Citation:
+Resources:
+  - Description: ASF Event data S3 bucket
+    ARN: arn:aws:s3:::asf-event-data
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://asf-event-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new event data
+    ARN: arn:aws:sns:us-west-2:654654592981:asf-event-data-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: ASF Event Search
+      URL: https://search.asf.alaska.edu/#/?searchType=Event%20Search
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+  Publications:
+    - Title: Event Search Manual
+      URL: https://docs.asf.alaska.edu/vertex/events/
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+    - Title: SARVIEWS Events Collection
+      URL: https://docs.asf.alaska.edu/datasets/events_about/
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data

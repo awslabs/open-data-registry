@@ -1,0 +1,42 @@
+Name: VENUS L2A Cloud-Optimized GeoTIFFs
+Description: |
+  The [Venµs science mission](https://www.theia-land.fr/en/product/venus/) is a joint research mission undertaken by CNES and ISA, 
+  the Israel Space Agency. It aims to demonstrate the effectiveness of high-resolution multi-temporal observation optimised through 
+  Copernicus, the global environmental and security monitoring programme. Venµs was launched from the Centre Spatial Guyanais by a 
+  VEGA rocket, during the night from 2017, August 1st to 2nd. Thanks to its multispectral camera (12 spectral bands in the visible 
+  and near-infrared ranges, with spectral characteristics provided [here](https://labo.obs-mip.fr/multitemp/?page_id=14229)), it 
+  acquires imagery every 1-2 days over 100+ areas at a spatial resolution of 4 to 5m. This dataset has been converted into Cloud 
+  Optimized GeoTIFFs (COGs). Additionally, SpatioTemporal Asset Catalog metadata are generated in a JSON file alongside the data. 
+  This dataset contains all of the Venus L2A datasets and will continue to grow as the Venus mission acquires new data over the 
+  preselected sites.
+Documentation: https://github.com/earthdaily/venus-on-aws/
+Contact: Klaus Bachhuber - klaus.bachhuber@earthdaily.com
+ManagedBy: "[EarthDaily Analytics](https://earthdaily.com/)"
+UpdateFrequency: New Venus data are added regularly
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - image processing
+  - natural resource
+  - disaster response
+  - cog
+  - stac
+  - activity detection
+  - environmental
+  - land cover  
+License: https://creativecommons.org/licenses/by-nc/4.0/
+Resources:
+  - Description: Venus L2A dataset (COG) and metadata (STAC)
+    ARN: arn:aws:s3:::venus-l2a-cogs
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC Browser Venus L2A (COG) Catalog](https://radiantearth.github.io/stac-browser/#/external/venus-l2a-cogs.s3.us-east-1.amazonaws.com/catalog.json)' 
+  - Description: New Venus L2A dataset notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains link to STAC record for each new dataset made available.
+    ARN: arn:aws:sns:us-east-1:794383284256:venus-l2a-cogs-object_created
+    Region: us-east-1
+    Type: SNS Topic
