@@ -10,7 +10,11 @@ Description: |
 Documentation: https://sentinel-s1-rtc-indigo-docs.s3-us-west-2.amazonaws.com/index.html
 Contact: For questions regarding data methodology or delivery, contact sentinel1@indigoag.com.
 ManagedBy: "[Indigo Ag, Inc.](https://www.indigoag.com/)"
-UpdateFrequency: Data are updated on a daily cadence for the dataset's spatial domain (CONUS).
+UpdateFrequency: Data updates are paused while we repair the processing pipeline, but the target is to update on a daily cadence for the dataset's spatial domain (CONUS).
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - agriculture
   - aws-pds
@@ -19,12 +23,11 @@ Tags:
   - environmental
   - geospatial
   - satellite imagery
-  - sustainability
   - cog
   - stac
+  - synthetic aperture radar
 License: |
-  The use of these data fall under the terms and conditions of the [Indigo Atlas Sentinel License](https://www.indigoag.com/forms/atlas-sentinel-license).
-  Contains modified Copernicus Sentinel data.
+  The use of these data fall under the terms and conditions of the [Indigo Atlas Sentinel License](https://www.indigoag.com/forms/atlas-sentinel-license). 
 Resources:
   - Description: Sentinel-1 RTC tiled data and metadata in a S3 bucket
     ARN: arn:aws:s3:::sentinel-s1-rtc-indigo
@@ -36,3 +39,11 @@ Resources:
     ARN: arn:aws:sns:us-west-2:410373799403:sentinel-s1-rtc-indigo-object_created
     Region: us-west-2
     Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Compare Cloud-Optimized Geotiffs from Amazon Sustainability Data Initiative (ASDI) hosted on S3 using SageMaker Studio Lab (SMSL)
+      URL: https://github.com/aws-samples/asdi-smsl-demo-delta
+      NotebookURL: https://github.com/aws-samples/asdi-smsl-demo-delta/blob/main/Compare-GeoTiffs-S3.ipynb
+      AuthorName: Gianfranco Rapino
+      Services:
+      - SageMaker Studio Lab

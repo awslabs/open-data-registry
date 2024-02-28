@@ -1,9 +1,32 @@
 Name: NOAA National Bathymetric Source Data
 Description: |
-  The National Bathymetric Source (NBS) project creates and maintains high-resolution bathymetry composed of the best available data. This project enables the creation of next-generation nautical charts while also providing support for modeling, industry, science, regulation, and public curiosity. Primary sources of bathymetry include NOAA and U.S. Army Corps of Engineers hydrographic surveys and topographic bathymetric (topo-bathy) lidar (light detection and ranging) data.  Data submitted through the NOAA Office of Coast Survey’s external source data process are also included, with gaps in deep water filled through Global Multi-Resolution Topography, a merged model of bathymetry. Different vertical datums and file formats are made available to meet various uses. Bathymetric Attributed Grid (BAG) files or multilayer floating point GeoTIFFs with assocated Raster Attribute Tables (RAT) contain elevation, vertical uncertainty, with other quality metrics and source information. These files are arranged in a tiling, naming, and resolution scheme corresponding to the Electronic Navigational Chart (ENC) but are not for navigation due to the inclusion of additional non-navigation data and non-navigation vertical datums.  For navigational datasets please see the S-102 distribution portal. In the future "[nowCOAST](https://nowcoast.noaa.gov/)" will provide to the public web mapping services for the National Bathymetry.
-Documentation: https://nauticalcharts.noaa.gov/updates/building-the-national-bathymetry/
+  The National Bathymetric Source (NBS) project creates and maintains 
+  high-resolution bathymetry composed of the best available data. 
+  This project enables the creation of next-generation nautical charts 
+  while also providing support for modeling, industry, science, 
+  regulation, and public curiosity. Primary sources of bathymetry include 
+  NOAA and U.S. Army Corps of Engineers hydrographic surveys and 
+  topographic bathymetric (topo-bathy) lidar (light detection and ranging) 
+  data.  Data submitted through the NOAA Office of Coast Survey’s external 
+  source data process are also included, with gaps in deep water filled 
+  through Global Multi-Resolution Topography, a merged model of 
+  bathymetry. Different vertical datums and file formats are made 
+  available to meet various uses. The BlueTopo folder includes multilayer 
+  floating point GeoTIFFs with associated Raster Attribute Tables (RAT) 
+  containing elevation, vertical uncertainty, with other quality metrics 
+  and source information. These files are arranged in a spatial tiling and
+  resolution scheme corresponding to the Electronic Navigational Chart (ENC)
+  but are not for navigation due to the inclusion of additional 
+  non-navigation data and non-navigation vertical datums. For 
+  navigational datasets please see the S-102 distribution portal. 
+  "[nowCOAST](https://nowcoast.noaa.gov/)" provides public access to BlueTopo
+  through the nowCOAST viewer, web map tile services (WMTS), and links to
+  individual datasets.
+Documentation: https://nauticalcharts.noaa.gov/data/bluetopo.html
 Contact: |
-  For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/. For any data delivery issues, please contact the NOAA Big Data Project Team at: noaa.bdp@noaa.gov.
+  For general questions or feedback about the data, please submit inquiries
+  through the NOAA Office of Coast Survey (OCS) "[ASSIST Tool](https://www.nauticalcharts.noaa.gov/customer-service/assist/)". 
+  For any data delivery issues, please contact the NOAA Open Data Dissemination Team (NODD) at NODD@noaa.gov.
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Monthly where new data is available.
 Collabs:
@@ -15,7 +38,10 @@ Tags:
   - earth observation
   - model
   - oceans
-License: Creative Commons licenses are attached to each file and, where available, are attached to the consituent sources within the file.  The compilation is provided as a government work under CC0, but the indiviual sources may have copyright and limitations on use.
+  - bathymetry
+  - marine navigation
+  - oceans
+License: Creative Commons licenses are attached to each file and, where available, are attached to the consituent sources within the file.  The compilation is provided as a government work under CC0, but the individual sources may have copyright and limitations on use.
 Resources:
   - Description: NOAA National Bathymetric Source Data
     ARN: arn:aws:s3:::noaa-ocs-nationalbathymetry-pds

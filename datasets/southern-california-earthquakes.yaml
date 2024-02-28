@@ -1,7 +1,8 @@
 Name: Southern California Earthquake Data
 Description: This dataset contains ground motion velocity and acceleration 
   seismic waveforms recorded by the Southern California Seismic Network (SCSN) 
-  and archived at the Southern California Earthquake Data Center (SCEDC). 
+  and archived at the Southern California Earthquake Data Center (SCEDC). A
+  Distributed Acousting Sensing (DAS) dataset is included.
 Documentation: https://scedc.caltech.edu/data/cloud.html
 Contact: scedc@gps.caltech.edu
 ManagedBy: "[Southern California Earthquake Data Center](https://scedc.caltech.edu)"
@@ -15,7 +16,6 @@ Tags:
   - earth observation
   - earthquakes
   - seismology
-  - sustainability
 License: SCEDC herby grants the non-exclusive, royalty free, non-transferable, 
   worldwide right and license to use, reproduce and publicly display in all media 
   public data from the Southern California Seismic Network. Please cite 
@@ -40,6 +40,8 @@ DataAtWork:
       URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-example
       AuthorName: Shang-Lin Chen
       AuthorURL: https://scedc.caltech.edu
+      Services:
+         - Lambda
     - Title: 'Cactus to Clouds: Processing The SCEDC Open Data Set on AWS'
       URL: https://nextjournal.com/thclements/cactus-to-clouds/#accessing-the-scedc-dataset-on-aws
       AuthorName: Tim Clements
@@ -47,9 +49,22 @@ DataAtWork:
     - Title: 'SeisNoise.jl GPU Computing Tutorial - Another example of accessing data s3://scedc-pds for ambient noise cross-correlation'
       URL: https://nextjournal.com/thclements/seisnoisejl-gpu-computing-tutorial 
       AuthorName: Tim Clements
-      AuthorURL: https://tclements.github.io/
+    - Title: 'Using Amazon API Gateway and Lambda to window and decimate waveforms'
+      URL: https://github.com/SCEDC/cloud/tree/master/pds-lambda-apis
+      AuthorName: Shang-Lin Chen
+      AuthorURL: https://scedc.caltech.edu
+      Services:
+         - Lambda
+    - Title: 'Jupyter Notebook tutorial on Ridgecrest DAS dataset'
+      URL: https://github.com/SCEDC/cloud/blob/master/pds_ridgecrest_das.ipynb
+      AuthorName: Jiuxun Yin
+      
+      
   Publications:
     - Title: Southern California Earthquake Data Now Available in the AWS Cloud
       URL: https://pubs.geoscienceworld.org/ssa/srl/article-abstract/doi/10.1785/0220210039/600883/Southern-California-Earthquake-Data-Now-Available
       AuthorName: "Ellen Yu; Aparna Bhaskaran; Shang‐Lin Chen; Zachary E. Ross; Egill Hauksson; Robert W. Clayton"
+    - Title: The Seismic Signature of California's Earthquakes, Droughts, and Floods.
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JB025553
+      AuthorName: "Tim Clements; Marine Denolle"
 

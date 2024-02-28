@@ -4,6 +4,10 @@ Documentation: "Documentation can be found [here](https://github.com/gbif/occurr
 Contact: helpdesk@gbif.org
 ManagedBy: "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))"
 UpdateFrequency: Snapshots of GBIF are taken on a monthly basis
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
 Tags:
   - aws-pds
   - earth observation
@@ -11,7 +15,8 @@ Tags:
   - bioinformatics
   - conservation
   - life sciences
-License: "This dataset is available under a [CC-BY](https://creativecommons.org/licenses/by/4.0/) license and with the GBIF [terms of use](https://www.gbif.org/terms). Please refer to the GBIF [citation guidelines](https://www.gbif.org/citation-guidelines) when using this dataset."
+License: "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [terms of use](https://www.gbif.org/terms)."
+Citation: "In addition, include the relevant DOI found from [the table](https://www.gbif.org/occurrence-snapshots). For more information on how to cite GBIF datasets, please refer to the GBIF [citation guidelines](https://www.gbif.org/citation-guidelines)."
 Resources:
   - Description: GBIF species occurrence data in Parquet format (af-south-1 region).
     Explore:
@@ -63,3 +68,10 @@ Resources:
     ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created
     Region: us-east-1
     Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: GBIF and Apache-Spark on AWS tutorial
+      URL: https://data-blog.gbif.org/post/aws-and-gbif/
+      AuthorName: John Waller
+      Services:
+        - EMR

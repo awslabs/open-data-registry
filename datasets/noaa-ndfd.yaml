@@ -1,10 +1,13 @@
 Name: NOAA National Digital Forecast Database (NDFD)
 Description: |
+  Please note NWS is Soliciting Comments until April 30, 2024 on Availability of Probabilistic Snow Grids for Select Weather Forecast Offices (WFOs) as an Experimental Element in the National Digital Forecast Database (NDFD) for the Contiguous United States (CONUS). A PDF version of the Public Notice can be found "[HERE](https://www.weather.gov/media/notification/pdf2/pns19-02_prob_snow_aad.pdf)"
+  <br />
+  <br />
   The National Digital Forecast Database (NDFD) is a suite of gridded forecasts of sensible weather elements (e.g., cloud cover, maximum temperature).  Forecasts prepared by NWS field offices working in collaboration with the National Centers for Environmental Prediction (NCEP) are combined in the NDFD to create a seamless mosaic of digital forecasts from which operational NWS products are generated. The most recent data is under the opnl and expr prefixes. A copy is also placed under the wmo prefix. The wmo prefix is structured like so: wmo/&lt;parameter&gt;/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;wmo-file-name&gt; The wmo filename codes can be deciphered using the spreadsheet in the root of the bucket.
-Documentation: https://www.weather.gov/mdl/ndfd_home, https://www.weather.gov/mdl/ndfd_info (For NDFD Product information, instructions, and lookup tables)
+Documentation: https://vlab.noaa.gov/web/mdl/ndfd (For NDFD Product information, instructions, and lookup tables)
 Contact:  |
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: As often as once every half hour (varies by forecast element, forecast projection, and domain)
 Collabs:
@@ -16,7 +19,6 @@ Tags:
   - agriculture
   - climate
   - meteorological
-  - sustainability
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
@@ -33,5 +35,5 @@ Resources:
 DataAtWork:
   Publications:
     - Title: "NDFD Product Spreadsheet (excel file)"
-      URL: https://noaa-ndfd-pds.s3.amazonaws.com/NDFDelem_fullres_201906.xls
+      URL: https://noaa-ndfd-pds.s3.amazonaws.com/NDFDelem_fullres_202206.xls
       AuthorName: NOAA MDL

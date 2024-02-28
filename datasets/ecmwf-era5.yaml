@@ -1,3 +1,5 @@
+Deprecated: True
+DeprecatedNotice: The provider of this dataset will no longer maintain this dataset.  We are open to talking with anyone else who might be willing to provide this dataset to the community.  Contact <a href="mailto:opendata@amazon.com">opendata@amazon.com</a>.
 Name: ECMWF ERA5 Reanalysis
 Description: |
   ERA5 is the fifth generation of ECMWF atmospheric reanalyses of the global climate, and the first reanalysis produced as an operational service. It utilizes the best available observation data from satellites and in-situ stations, which are assimilated and processed using ECMWF's Integrated Forecast System (IFS) Cycle 41r2.
@@ -5,7 +7,8 @@ Description: |
   ERA5 provides data at a considerably higher spatial and temporal resolution than its legacy counterpart ERA-Interim. ERA5 consists of high resolution version with 31 km horizontal resolution, and a reduced resolution ensemble version with 10 members. It is currently available since 2008, but will be continuously extended backwards, first until 1979 and then to 1950.
   Learn more about ERA5 in Jon Olauson's paper [ERA5: The new champion of wind power modelling?](https://www.researchgate.net/publication/320084119_ERA5_The_new_champion_of_wind_power_modelling).
 Documentation: https://github.com/planet-os/notebooks/blob/master/aws/era5-pds.md
-Contact: datahub@intertrust.com
+Contact: etoodu@intertrust.com
+ManagedBy: "[Intertrust](https://www.intertrust.com/)"
 UpdateFrequency: Monthly
 Collabs:
   ASDI:
@@ -17,7 +20,6 @@ Tags:
   - climate
   - earth observation
   - meteorological
-  - sustainability
   - weather
 License: Generated using Copernicus Climate Change Service Information 2018. See http://apps.ecmwf.int/datasets/licences/copernicus/ for additional information.
 Resources:
@@ -49,3 +51,10 @@ DataAtWork:
         - EMR
   Tools & Applications:
   Publications:
+    - Title: Potential changes in cooling degree day under different global warming levels and shared socioeconomic pathways in West Africa
+      AuthorName: Oluwarotimi Delano Thierry Odou, Heidi Heinrichs Ursula, Rabani Adamou, Thierry Godjo, and Mounkaila S Moussa
+      URL: https://iopscience.iop.org/article/10.1088/1748-9326/acbc8f
+    - Title: Temperature and salinity trends in the northern limit of the Canary Current Upwelling System
+      AuthorName: P. Otero, A. Cabrero, F. Alonso-Pérez, J. Gago, E. Nogueira
+      URL: https://doi.org/10.1016/j.scitotenv.2023.165791
+  

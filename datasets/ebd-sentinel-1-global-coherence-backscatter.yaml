@@ -1,12 +1,16 @@
 Name: 
   Global Seasonal Sentinel-1 Interferometric Coherence and Backscatter Data Set
 Description: |
-  This data set is the first-of-its-kind spatial representation of multi-seasonal, global SAR repeat-pass interferometric coherence and backscatter signatures. Global coverage comprises all land masses and ice sheets from 82 degrees northern to 79 degress southern latitude. The data set is derived from high-resolution multi-temporal repeat-pass interferometric processing of about 205,000 Sentinel-1 Single-Look-Complex data acquired in Interferometric Wide-Swath mode (Sentinel-1 IW mode) from 1-Dec-2019 to 30-Nov-2020. The data set was developed by [Earth Big Data LLC](https://earthbigdata.com) and [Gamma Remote Sensing AG](https://www.gamma-rs.ch), under contract for [NASA's Jet Propulsion Laboratory](https://jpl.nasa.gov). The data set covers four sets of seasonal (DJF/MAM/JJA/SON) metrics: 1) Median 6-, 12-, 18-, 24-, 36-, and 48-day repeat coherence estimates for C-band VV and HH polarized data, 2) Mean backscatter (gamma naught) for VV, VH, HH, and HV polarizations, 3) Seasonal coherence decay model parameters rho, tau, and rmse, 4) Local incidence and layover/shadow regions for all relative orbits (175 orbits). Note that in the data set filenames the seasons were referred to as northern hemisphere winter (DJF), spring (MAM), summer (JJA), and fall (SON). The data set is available in two main components: 1) 1x1 degree tiles. Each tile contains GeoTiffs at 3 arcsec pixel spacing of all metrics available in the tile. (s3://sentinel-1-global-coherence-earthbigdata/data/tiles/), 2) Global mosaicked tiles as cloud optimized GeoTIFFs (COG) at 0.01 degree pixel spacing (s3://sentinel-1-global-coherence-earthbigdata/data/mosaics/) for each of the computed metrics.
+  This data set is the first-of-its-kind spatial representation of multi-seasonal, global SAR repeat-pass interferometric coherence and backscatter signatures. Global coverage comprises all land masses and ice sheets from 82 degrees northern to 79 degrees southern latitude. The data set is derived from high-resolution multi-temporal repeat-pass interferometric processing of about 205,000 Sentinel-1 Single-Look-Complex data acquired in Interferometric Wide-Swath mode (Sentinel-1 IW mode) from 1-Dec-2019 to 30-Nov-2020. The data set was developed by [Earth Big Data LLC](https://earthbigdata.com) and [Gamma Remote Sensing AG](https://www.gamma-rs.ch), under contract for [NASA's Jet Propulsion Laboratory](https://jpl.nasa.gov). The data set covers four sets of seasonal (DJF/MAM/JJA/SON) metrics: 1) Median 6-, 12-, 18-, 24-, 36-, and 48-day repeat coherence estimates for C-band VV and HH polarized data, 2) Mean backscatter (gamma naught) for VV, VH, HH, and HV polarizations, 3) Seasonal coherence decay model parameters rho, tau, and rmse, 4) Local incidence and layover/shadow regions for all relative orbits (175 orbits). Note that in the data set filenames the seasons were referred to as northern hemisphere winter (DJF), spring (MAM), summer (JJA), and fall (SON). The data set is available in two main components: 1) 1x1 degree tiles. Each tile contains GeoTiffs at 3 arcsec pixel spacing of all metrics available in the tile. (s3://sentinel-1-global-coherence-earthbigdata/data/tiles/), 2) Global mosaicked tiles as cloud optimized GeoTIFFs (COG) at 0.01 degree pixel spacing (s3://sentinel-1-global-coherence-earthbigdata/data/mosaics/) for each of the computed metrics.
 
 Documentation: http://sentinel-1-global-coherence-earthbigdata.s3-website-us-west-2.amazonaws.com/
 Contact: For questions regarding data methodology or delivery, contact info@earthbigdata.com.
 ManagedBy: "[Earth Big Data LLC](https://earthbigdata.com/)"
 UpdateFrequency: The data set covers the time period from 1-Dec-2019 to 30-Nov-2020. No updates are currently produced.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - global
   - satellite imagery
@@ -23,13 +27,13 @@ Tags:
   - mapping
   - natural resource
   - cog
+  - synthetic aperture radar
   - aws-pds
-
 License: |
   The use of these data fall under the terms and conditions of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode). Contains modified Copernicus Sentinel data. -- Any use of this data set in publications or sharing should use this citation: "Global Seasonal Data Set of Interferometric Coherence and Backscatter from one Year of Sentinel-1 C-band SAR Data". Josef Kellndorfer, Oliver Cartus, Marco Lavalle, Christophe Magnard, Shadi Oveisgharan, Batu Osmanoglu, Paul Rosen, Urs Wegmüller. doi: In Review. Accessed on [https://registry.opendata.aws/ebd-sentinel-1-global-coherence-backscatter/](https://registry.opendata.aws/ebd-sentinel-1-global-coherence-backscatter/)
 
 Resources:
-  - Description: 1x1 degreee tiled data and metadata in a S3 bucket, Global [VRT](https://gdal.org/drivers/raster/vrt.html) mosaics (.vrt) with external overview files (.ovr) (search for vrts with bucket/prefix sentinel-1-global-coherence-earthbigdata/data/tiles/Global)
+  - Description: 1x1 degree tiled data and metadata in a S3 bucket, Global [VRT](https://gdal.org/drivers/raster/vrt.html) mosaics (.vrt) with external overview files (.ovr) (search for vrts with bucket/prefix sentinel-1-global-coherence-earthbigdata/data/tiles/Global)
     ARN: arn:aws:s3:::sentinel-1-global-coherence-earthbigdata/data/tiles
     Region: us-west-2
     Type: S3 Bucket
@@ -49,6 +53,12 @@ DataAtWork:
       AuthorName: Josef Kellndorfer
       AuthorURL: https://earthbigdata.com
   Publications:
+    - Title: "Global seasonal Sentinel-1 interferometric coherence and backscatter data set" 
+      URL: https://doi.org/10.1038/s41597-022-01189-6
+      AuthorName: Josef Kellndorfer, Oliver Cartus, Marco Lavalle, Christophe Magnard, Pietro Milillo, Shadi Oveisgharan, Batu Osmanoglu, Paul A. Rosen, Urs Wegmüller 
+    - Title: "Webinar: The new era of SAR Time Series Analysis and Visualization: Cloud meets Big SAR Data. IEEE GRSS Bay Area Chapter (Dec. 3rd 2021)"
+      URL: https://www.youtube.com/watch?v=ZR3L9l7WcHU
+      AuthorName: Josef Kellndorfer
     - Title: Generating Global Temporal Coherence Maps from one year of Sentinel-1 C-band data, ESA Fringe 2021 Poster (Youtube)
       URL: https://www.youtube.com/watch?v=U3wbC6UWqx4
       AuthorName: Oliver Cartus, Josef Kellndorfer, Shadi Oveisgharan, Batu Osmanoglu, Paul Rosen, Urs Wegmüller

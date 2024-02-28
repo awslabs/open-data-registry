@@ -6,6 +6,10 @@ Documentation: https://docs.mbari.org/pacific-sound/
 Contact: dcline@mbari.org
 ManagedBy: "[Monterey Bay Aquarium Research Institute](https://www.mbari.org/)"
 UpdateFrequency: daily
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
 Tags:
   - aws-pds
   - acoustics
@@ -48,6 +52,22 @@ Resources:
     Type: S3 Bucket
   - Description: original 256 kHz audio recordings year 2021
     ARN: arn:aws:s3:::pacific-sound-256khz-2021
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: original 256 kHz audio recordings year 2022
+    ARN: arn:aws:s3:::pacific-sound-256khz-2022
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: original 256 kHz audio recordings year 2023
+    ARN: arn:aws:s3:::pacific-sound-256khz-2023
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: original 256 kHz audio recordings year 2024
+    ARN: arn:aws:s3:::pacific-sound-256khz-2024
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: original 256 kHz audio recordings year 2025
+    ARN: arn:aws:s3:::pacific-sound-256khz-2025
     Region: us-west-2
     Type: S3 Bucket
   - Description: decimated 2 kHz audio recordings

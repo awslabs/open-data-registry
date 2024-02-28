@@ -1,13 +1,12 @@
-Name: High Resolution Population Density Maps + Demographic Estimates by CIESIN and Facebook
+Name: High Resolution Population Density Maps + Demographic Estimates by CIESIN and Meta
 Description: |
   Population data for a selection of countries, allocated to 1 arcsecond blocks and provided in a combination of CSV
   and Cloud-optimized GeoTIFF files. This refines [CIESIN’s Gridded Population of the World](https://sedac.ciesin.columbia.edu/data/collection/gpw-v4)
-  using machine learning models on high-resolution worldwide Digital Globe
-  satellite imagery. CIESIN population counts aggregated from worldwide census
+  using machine learning models on high-resolution worldwide Maxar satellite imagery. CIESIN population counts aggregated from worldwide census
   data are allocated to blocks where imagery appears to contain buildings.
 Documentation: "[Project overview](https://dataforgood.facebook.com/dfg/docs/methodology-high-resolution-population-density-maps) and [instructions for use with AWS Athena](https://dataforgood.facebook.com/dfg/docs/using-hrsl-public-dataset-with-athena)"
 Contact: disastermaps@fb.com
-ManagedBy: "[Facebook](https://dataforgood.fb.com/)"
+ManagedBy: "[Meta](https://dataforgood.fb.com/)"
 UpdateFrequency: Quarterly
 Collabs:
   ASDI:
@@ -21,17 +20,14 @@ Tags:
   - satellite imagery
   - image processing
   - geospatial
-  - sustainability
   - disaster response
   - aws-pds
 License: |
   https://creativecommons.org/licenses/by/4.0/
-  <br/><br/>
-  **Recommended Citation**
-  <br/>
-  Facebook Connectivity Lab and Center for International Earth Science
-  Information Network - CIESIN - Columbia University. 2016. High Resolution
-  Settlement Layer (HRSL). Source imagery for HRSL © 2016 [DigitalGlobe](http://explore.digitalglobe.com/Basemap-Vivid.html).
+Citation:
+  Meta and Center for International Earth Science
+  Information Network - CIESIN - Columbia University. 2022. High Resolution
+  Settlement Layer (HRSL). Source imagery for HRSL © 2016 [Maxar](https://www.maxar.com/products/imagery-basemaps).
   Accessed DAY MONTH YEAR.
 Resources:
   - Description: Cloud-optimized GeoTIFF files
@@ -44,5 +40,9 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
-  Tools & Applications:
-  Publications:
+    - Title: Investigating environmental characteristics of US cities using publicly available ASDI datasets 
+      URL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook
+      NotebookURL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook/blob/main/ASDI_Cities_Demo.ipynb
+      AuthorName: Darren Ko
+      Services:
+        - SageMaker Studio Lab

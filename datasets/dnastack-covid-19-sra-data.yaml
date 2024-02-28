@@ -1,0 +1,49 @@
+Name: DNAStack COVID19 SRA Data
+Description: >
+  The [Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra/) is the primary archive of high-throughput sequencing data, hosted by the National Institutes of Health (NIH). The SRA represents the largest publicly available repository of SARS-CoV-2 sequencing data.
+  This dataset was created by DNAstack using SARS-CoV-2 sequencing data sourced from the SRA. Where possible, raw sequence data were processed by DNAstack through a unified bioinformatics pipeline to produce genome assemblies and variant calls. The use of a standardized workflow to produce this harmonized dataset allows public data generated using different methodologies to be combined and compared for a more powerful global analysis of available SARS-CoV-2 data, allowing researchers rapid access to aggregated downstream results for accelerated insight generation.
+  Methodology: Reads from the SRA were extracted in FASTQ format, then entered into a different pipeline depending on the sequencing technology used to create the reads: the [ARTIC protocol](https://artic.network/ncov-2019/ncov2019-bioinformatics-sop.html) for Oxford Nanopore-derived reads; the [SIGNAL pipeline](https://github.com/jaleezyy/covid-19-signal) for paired-end Illumina reads; and the [CoSA pipeline](https://github.com/PacificBiosciences/CoSA) (using [DeepVariant](https://github.com/google/deepvariant) for variant calling) for PacBio reads. Briefly, reads were primer-trimmed and aligned to the SARS-CoV-2 reference genome, following which contiguous regions were assembled and variant sites were called. [Pangolin](https://github.com/cov-lineages/pangolin) was then used to assign viral lineage based on the assembled genome.
+Documentation: https://github.com/DNAstack/dnastack-open-data
+Contact: "[DNAstack](bioinformatics@dnastack.com)"
+ManagedBy: "[DNAstack](https://dnastack.com/)"
+UpdateFrequency: Rolling
+Tags:
+  - aws-pds
+  - bam
+  - bioinformatics
+  - coronavirus
+  - COVID-19
+  - fasta
+  - fastq
+  - global
+  - genetic
+  - genomic
+  - health
+  - life sciences
+  - long read sequencing
+  - SARS-CoV-2
+  - vcf
+  - virus
+  - whole genome sequencing
+License: "[DNAstack terms of use](https://dnastack.com/terms-of-use/)"
+Resources:
+  - Description: SARS-CoV-2 raw sequencing and output data (FASTQ, BAM, FASTA, VCF)
+    ARN: arn:aws:s3:::dnastack-covid-19-sra-data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+      - "[Browse bucket](https://dnastack-covid-19-sra-data.s3.amazonaws.com/)"
+DataAtWork:
+  Tutorials:
+    - Title: "Viral lineage assignment"
+      URL: https://github.com/DNAstack/dnastack-open-data/tree/master/tutorials/assign_lineage
+      AuthorName: "Heather Ward"
+      Services:
+        - Batch
+        - EC2
+        - S3
+  Tools & Applications:
+    - Title: "Viral AI"
+      URL: https://viral.ai/collections/ncbi-sra
+      AuthorName: DNAstack

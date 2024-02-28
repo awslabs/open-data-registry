@@ -2,8 +2,8 @@ Name: NOAA Rapid Refresh (RAP)
 Description: The Rapid Refresh (RAP) is a NOAA/NCEP operational weather prediction system comprised primarily of a numerical forecast model and analysis/assimilation system to initialize that model. It covers North America and is run with a horizontal resolution of 13 km and 50 vertical layers. The RAP was developed to serve users needing frequently updated short-range weather forecasts, including those in the US aviation community and US severe weather forecasting community. The model is run for every hour of the day; it is integrated to 51 hours for the 03/09/15/21 UTC cycles and to 21 hours for every other cycle. The RAP uses the ARW core of the WRF model and the Gridpoint Statistical Interpolation (GSI) analysis - the analysis is aided with the assimilation of cloud and hydrometeor data to provide more skill in short-range cloud and precipitation forecasts.
 Documentation: https://www.nco.ncep.noaa.gov/pmb/products/rap/
 Contact: |
-  For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Hourly
 Collabs:
@@ -15,7 +15,6 @@ Tags:
   - agriculture
   - climate
   - meteorological
-  - sustainability
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
@@ -23,7 +22,6 @@ Resources:
     ARN: arn:aws:s3:::noaa-rap-pds 
     Region: us-east-1
     Type: S3 Bucket
-    URL: https://noaa-rap-pds.s3.amazonaws.com
     Explore:
       - '[Browse Bucket](https://noaa-rap-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for RAP, only Lambda and SQS protocols allowed

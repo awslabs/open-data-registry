@@ -1,0 +1,43 @@
+Name: NOAA Real-Time Mesoscale Analysis (RTMA) / Unrestricted Mesoscale Analysis (URMA)
+Description:  |
+  The Real-Time Mesoscale Analysis (RTMA) is a NOAA National Centers For Environmental Prediction (NCEP) high-spatial and temporal resolution analysis/assimilation system for near-surf ace weather conditions. Its main component is the NCEP/EMC Gridpoint Statistical Interpolation (GSI) system applied in two-dimensional variational mode to assimilate conventional and satellite-derived observations.<br/><br/>
+  The RTMA was developed to support NDFD operations and provide field forecasters with high quality analyses for nowcasting, situational awareness, and forecast verification purposes. The system produces hourly analyses at 2. 5 km resolution for the Conus NDFD grid, 3 km for the Alaska NDFD grid and 2.5 km for the Hawaii, Puerto-Rico and Guam NDFD grids.<br/><br/>
+  Data is available from the start of 2019 until present. URMA is a time lagged version of this product and is updated when new observations come in.
+Documentation: https://www.nco.ncep.noaa.gov/pmb/products/rtma/
+Contact: |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Hourly
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Real-Time Mesoscale Analysis (RTMA) Data
+    ARN: arn:aws:s3:::noaa-rtma-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-rtma-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for RTMA data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNCEPRTMAObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Unrestricted Mesoscale Analysis (URMA) Data
+    ARN: arn:aws:s3:::noaa-urma-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-urma-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for URMA data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNCEPURMAObject
+    Region: us-east-1
+    Type: SNS Topic

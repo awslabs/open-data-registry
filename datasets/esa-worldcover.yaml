@@ -1,3 +1,5 @@
+Deprecated: True
+DeprecatedNotice: This dataset listing has been deprecated with the release of the 2021 & 2020 [ESA WorldCover](https://registry.opendata.aws/esa-worldcover-vito) dataset. For more background on this see this [blog post](https://blog.vito.be/remotesensing/worldcover2021).
 Name: ESA WorldCover 
 Description: The European Space Agency (ESA) WorldCover is a global land cover map with 11 different land cover classes produced at 10m resolution based on combination of both Sentinel-1 and Sentinel-2 data. In areas where Sentinel-2 images are covered by clouds for an extended period of time, Sentinel-1 data then provides complimentary information on the structural characteristics of the observed land cover. Therefore, the combination of Sentinel-1 and Sentinel-2 data makes it possible to update the land cover map almost in real time. WorldCover Map has been produced for 2020 (01 January to 31 December) with a global coverage as part of the 5th Earth Observation Envelope Programme (EOEP-5). It provides valuable information for applications such as biodiversity, food security, carbon assessment and climate modelling. More information can be found on the [WorldCover website](https://esa-worldcover.org/en) and the product [User Manual](https://esa-worldcover.s3.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf).  
 
@@ -12,21 +14,41 @@ Collabs:
 Tags:
   - aws-pds
   - earth observation
-  - machine learning
   - agriculture
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - cog
+  - disaster response
+  - mapping
+  - synthetic aperture radar
 License: |
  CC-BY 4.0, for Citation see [Citation section](https://esa-worldcover.org/en/data-access) / [DOI](https://doi.org/10.5281/zenodo.5571936)
-
 Resources:
   - Description: ESA WorldCover in a S3 bucket
     ARN: arn:aws:s3:::esa-worldcover
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: False
-
-
+DataAtWork:
+  Tutorials:
+  - Title: Global Fire Spread Prediction System
+    URL: https://github.com/SatelliteVu/SatelliteVu-AWS-Disaster-Response-Hackathon
+    AuthorName: SatelliteVu
+    AuthorURL: https://www.satellitevu.com/
+  Tools & Applications:
+  - Title: WorldCover Viewer
+    URL: https://viewer.esa-worldcover.org/worldcover/ta
+    AuthorName: ESA/Vito
+    AuthorURL: https://esa-worldcover.org/en
+  - Title: TerraScope Viewer
+    URL: https://viewer.terrascope.be/
+    AuthorName: TerraScope
+    AuthorURL: https://terrascope.be/en/about-us
+  Publications:
+  - Title: Release of the 10 m WorldCover map
+    URL: https://blog.vito.be/remotesensing/release-of-the-10-m-worldcover-map
+    AuthorName: Ruben Van De Kerchove
+  - Title: Remote Sensing Mapping of Build-Up Land with Noisy Label via Fault-Tolerant Learning 
+    URL: https://doi.org/10.3390/rs14092263
+    AuthorName: Gang Xu, Yongjun Fang, Min Deng, Geng Sun and Jie Chen.

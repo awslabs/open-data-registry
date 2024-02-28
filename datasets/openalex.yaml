@@ -1,0 +1,46 @@
+Name: OpenAlex dataset
+Description: An open, comprehensive index of scolarly papers, citations, authors, institutions, and journals.
+Documentation: https://docs.openalex.org
+Contact: team@ourresearch.org
+ManagedBy: "[OurResearch](https://ourresearch.org/)"
+UpdateFrequency: Approximately monthly
+Tags:
+  - graph
+  - json
+  - metadata
+  - scholarly communication
+  - aws-pds
+License: "[CC0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Resources:
+  - Description: OpenAlex Entities in JSON Lines format
+    ARN: arn:aws:s3:::openalex
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://openalex.s3.amazonaws.com/browse.html)"
+  - Description: Openalex Entities decomposed to tab-separated columnar files for backward compatibility with Microsoft Academic Graph
+    ARN: arn:aws:s3:::openalex-mag-format
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://openalex-mag-format.s3.amazonaws.com/browse.html)"
+DataAtWork:
+  Tutorials:
+    - Title: Download snapshot
+      URL: https://docs.openalex.org/download-snapshot
+      AuthorName: OurResearch
+      AuthorURL: https://ourresearch.org
+    - Title: Getting citation data from OpenAlex by DOI (Jupyter notebook)
+      URL: https://twitter.com/ipoga/status/1521604494592782336
+      AuthorName: Jens Peter Anderson
+      AuthorURL: https://twitter.com/ipoga
+    - Title: Data Analysis and Knowledge Graph with OpenAlex dataset
+      URL: https://github.com/aws-samples/aws-openalex-knowledge-graph
+      NotebookURL: https://github.com/aws-samples/aws-openalex-knowledge-graph/blob/main/eda-knowledge-graph-with-openalex-dataset.ipynb
+      AuthorName: Gabriel Bella Martini
+      Services:
+        - SageMaker Studio Lab
+  Publications:
+    - Title: "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts"
+      URL: https://arxiv.org/abs/2205.01833
+      AuthorName: Jason Priem, Heather Piwowar, Richard Orr

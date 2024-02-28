@@ -1,10 +1,12 @@
 Name: Sudachi Language Resources
 Description: >
-  Japanese dictionaries and word embeddings for natural language processing.
+  Japanese dictionaries and pre-trained models (word embeddings and language models) for natural language processing.
 
   [SudachiDict](https://github.com/WorksApplications/SudachiDict) is the dictionary for a Japanese tokenizer (morphological analyzer) [Sudachi](https://github.com/WorksApplications/Sudachi).
 
-  [chiVe](https://github.com/WorksApplications/chiVe) is Japanese pretrained word embeddings (word vectors), trained using the ultra-large-scale web corpus NWJC by National Institute for Japanese Langauge and Linguistics, analyzed by Sudachi.
+  [chiVe](https://github.com/WorksApplications/chiVe) is Japanese pretrained word embeddings (word vectors), trained using the ultra-large-scale web corpus NWJC by National Institute for Japanese Language and Linguistics, analyzed by Sudachi.
+
+  [chiTra](https://github.com/WorksApplications/SudachiTra) is a library for using large-scale pre-trained language models with the Japanese tokenizer SudachiPy.
 Documentation: https://worksapplications.github.io/Sudachi/
 Contact: sudachi@worksap.co.jp
 ManagedBy: "[Works Applications](https://www.worksap.co.jp/about/csr/nlp/)"
@@ -20,6 +22,10 @@ Resources:
     ARN: arn:aws:s3:::sudachi
     Region: ap-northeast-1
     Type: S3 Bucket
+  - Description: Cloudfront CDN mirror
+    Host: d2ej7fkh96fzlu.cloudfront.net
+    Region: ap-northeast-1
+    Type: CloudFront Distribution  
 DataAtWork:
   Tutorials:
     - Title: Sudachi Tutorial
@@ -34,6 +40,9 @@ DataAtWork:
     - Title: chiVe Tutorial
       URL: https://github.com/WorksApplications/chiVe/blob/master/docs/tutorial.md
       AuthorName: Works Applications
+    - Title: chiTra Tutorial
+      URL: https://github.com/WorksApplications/SudachiTra/blob/main/README.md
+      AuthorName: Works Applications
   Tools & Applications:
     - Title: "Sudachi: Japanese Tokenizer for Business"
       URL: https://github.com/WorksApplications/Sudachi
@@ -43,6 +52,9 @@ DataAtWork:
       AuthorName: Works Applications
     - Title: "analysis-sudachi: Sudachi pluglin for Elasticsearch"
       URL: https://github.com/WorksApplications/elasticsearch-sudachi
+      AuthorName: Works Applications
+    - Title: "chiTra: SudachiPy for hugging face Transformers"
+      URL: https://github.com/WorksApplications/SudachiTra
       AuthorName: Works Applications
     - Title: "sudachidict_small on pypi.python.org - a Python module to download and install SudachiDict for the python tokenizer"
       URL: https://pypi.org/project/SudachiDict-small/
@@ -71,7 +83,7 @@ DataAtWork:
       AuthorName: 真鍋陽俊, 岡照晃, 海川祥毅, 髙岡一馬, 内田佳孝, 浅原正幸
     - Title: "詳細化した同義関係をもつ同義語辞書の作成"
       URL: https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P4-14.pdf
-      AuthorName: 高岡一馬, 岡部裕子, 川原典子, 坂本美保, 内田佳孝 
+      AuthorName: 高岡一馬, 岡部裕子, 川原典子, 坂本美保, 内田佳孝
     - Title: "chiVe 2.0: SudachiとNWJCを用いた実用的な日本語単語ベクトルの実現に向けて"
       URL: https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P6-16.pdf
       AuthorName: 河村宗一郎, 久本空海, 真鍋陽俊, 髙岡一馬, 内田佳孝, 岡照晃, 浅原正幸

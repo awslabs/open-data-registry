@@ -1,0 +1,68 @@
+Name: Capella Space Synthetic Aperture Radar (SAR) Open Dataset
+Description: |
+  Open Synthetic Aperture Radar (SAR) data from Capella Space. Capella Space is an information services company
+    that provides on-demand, industry-leading, high-resolution synthetic aperture radar (SAR) Earth observation
+    imagery. Through a constellation of small satellites, Capella provides easy access to frequent, timely, and
+    flexible information affecting dozens of industries worldwide. Capella's high-resolution SAR satellites are
+    matched with unparalleled infrastructure to deliver reliable global insights that sharpen our understanding
+    of the changing world – improving decisions about commerce, conservation, and security on Earth. Learn more
+    at www.capellaspace.com.
+Documentation: Documentation is available under [support.capellaspace.com](https://support.capellaspace.com/)
+Contact: opendata@capellaspace.com
+ManagedBy: "[Capella Space](https://www.capellaspace.com/)"
+UpdateFrequency: New data is added quarterly.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - cog
+  - stac
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - image processing
+  - computer vision
+  - synthetic aperture radar
+License: |
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: Capella Space Open Data in COG format
+    ARN: arn:aws:s3:::capella-open-data/data/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC Catalog](https://capella-open-data.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/capella-open-data.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+  - Description: Capella Space Open Data in TileDB format
+    ARN: arn:aws:s3:::capella-open-data/data/tiledb/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+    - Title: Scaling GEO Images in QGIS
+      URL: https://support.capellaspace.com/hc/en-us/articles/7124025490964-Scaling-GEO-Images-in-QGIS
+      AuthorName: Capella Space
+      AuthorURL: https://www.capellaspace.com/
+  Tools & Applications:
+    - Title: Python SDK for api.capellaspace.com
+      URL: https://capella-console-client.readthedocs.io/en/main/
+      AuthorName: Capella Space
+      AuthorURL: https://www.capellaspace.com/
+    - Title: Single Look Complex data reader for Capella SLC images - python module to convert Capella SLC data into an amplitude image.
+      URL: https://github.com/capellaspace/tools/tree/master/capella-slc-reader
+      AuthorName: Capella Space
+      AuthorURL: https://www.capellaspace.com/
+  Publications:
+    - Title: Radar Generalized Image Quality Equation Applied to Capella Open Dataset
+      URL: https://ieeexplore.ieee.org/document/9764201/
+      AuthorName: Wade Schwartzkopf, Jason Brown, Gordon Farquharson, Craig Stringham, Michael Duersch, Jordan Heemskerk
+    - Title: Analyzing LiDAR and SAR data with Capella Space and TileDB
+      URL: https://tiledb.com/blog/analyzing-lidar-and-sar-data-with-capella-space-and-tiledb
+      AuthorName: Stavros Papadopoulos
+    - Title: Open SAR data and scalable analytics
+      URL: https://medium.com/tiledb/open-sar-data-and-scalable-analytics-bfd1a5257e9
+      AuthorName: Norman Barker
