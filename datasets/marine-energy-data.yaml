@@ -1,0 +1,37 @@
+Name: Department of Energy's Marine Energy Data Lake 
+Description: |
+  Data released from projects funded by the Department of Energy's Water Power Technologies Office (DOE WPTO) 
+  that are too large or complex to be conveniently accessed by traditional means. The Marine Energy data lake 
+  aims to improve and automate access of high-value MHK data sets, making data actionable and discoverable by 
+  researchers and industry to accelerate analysis and advance innovation. 
+  This data lake is a sister-data lake to the Department of Energy’s Open Energy Data Initiative (OEDI) data lake. 
+Documentation: https://github.com/openEDI/documentation/
+Contact:  https://github.com/openEDI/documentation/issues
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency:  As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - marine
+  - water
+License:  Creative Commons Attribution 4.0 United States License 
+Resources:
+  - Description: '[Data Catalog of the Marine and Hydrokinetic Data Repository](https://mhkdr.openei.org/)'
+    ARN: arn:aws:s3:::marine-energy-data/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data)'
+  - Description: "[Tidal Resource Data from Sequim Bay Inlet, WA, August 2020](https://mhkdr.openei.org/submissions/395)"
+    ARN: arn:aws:s3:::marine-energy-data/primre/sequim-tidal-resource/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=primre%2Fsequim-tidal-resource%2F)'
+DataAtWork:
+  Tools & Applications:
+  Publications:

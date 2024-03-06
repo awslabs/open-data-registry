@@ -1,0 +1,48 @@
+Name: Overture Maps Foundation Open Map Data
+Description: |
+  Overture is a collaboratively built, global, open map data project for developers who build map services or use geospatial data. Overture Open Map Data contains data that are standardized under the themes of Admins, Base, Buildings, Places, and Transportation. Overture also includes a Global Entity Reference System (GERS) which encodes map data to a shared universal reference. Beginning with the Overture 2023-11-14-alpha.0 release, the data is available as cloud-native GeoParquet files. 
+Documentation: Documentation is available at [docs.overturemaps.org](https://docs.overturemaps.org/)
+Contact: info@overturemaps.org
+ManagedBy: "[Overture Maps Foundation](https://overturemaps.org)"
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - geospatial
+  - global
+  - mapping
+  - osm
+  - parquet
+  - transportation
+License: |
+  Overture data is licensed under the Community Database License Agreement Permissive v2 (CDLA) unless derived from a source that requires publishing under a different license, such as data derived from OpenStreetMap, that constitutes a 'Derivative Database' (as defined under ODbL v1.0), which will be licensed under ODbL v1.0.
+Citation:
+Resources:
+  - Description: Overture Maps Foundation Data (GeoParquet)
+    ARN: arn:aws:s3:::overturemaps-us-west-2/release/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New File Notification
+    ARN: arn:aws:sns:us-west-2:913550007193:overturemaps-us-west-2
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Working With Overture Data: A Step-by-Step Guide"
+      URL: https://overturemaps.org/webinar-recap-working-with-overture-data-a-step-by-step-guide/
+      AuthorName: Jennings Anderson
+      Services: 
+        - Athena
+    - Title: Accessing Overture Maps Data
+      URL: https://github.com/OvertureMaps/data/blob/main/README.md
+      AuthorName: Overture Maps Foundation
+  Tools & Applications:
+  Publications:
+    - Title: "Building Heights: From open USGS lidar to open Overture maps"
+      URL: https://project.linuxfoundation.org/hubfs/Overture%20Maps/Building%20Heights%20Whitepaper_041423.pdf
+      AuthorName: Overture Maps Foundation
+    - Title: Overture Data Schema
+      URL: https://docs.overturemaps.org/
+      AuthorName: Overture Maps Foundation
+    - Title: Global Entity Reference System
+      URL: https://docs.overturemaps.org/gers/
+      AuthorName: Overture Maps Foundation

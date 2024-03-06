@@ -1,7 +1,7 @@
 Name: 10m Annual Land Use Land Cover (9-class)
 Description: |
   This dataset, produced by Impact Observatory, Microsoft, and Esri, displays a global map of land use and land cover (LULC)
-  derived from ESA Sentinel-2 imagery at 10 meter resolution for the years 2017 - 2022. 
+  derived from ESA Sentinel-2 imagery at 10 meter resolution for the years 2017 - 2023. 
 
   Each map is a composite of LULC predictions for 9 classes throughout the year
   in order to generate a representative snapshot of each year. 
@@ -16,6 +16,8 @@ Description: |
   particularly between “Bare” and any of the vegetative classes
   “Trees,” “Crops,” “Flooded Vegetation,” and “Rangeland”.
   This updated time series of annual global maps is also re-aligned to match the ESA UTM tiling grid for Sentinel-2 imagery. 
+
+  Data can be accessed directly from the Registry of Open Data on AWS, from the [STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/collections/io-10m-annual-lulc/items), or from the [IO Store](https://www.impactobservatory.com/maps-for-good/) for a specific Area of Interest (AOI).   
 
 Documentation: https://www.impactobservatory.com/global_maps
 Contact: hello@impactobservatory.com
@@ -42,7 +44,7 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/collections/io-annual-lulc)'
+    - '[STAC 1.0.0 endpoint](https://api.impactobservatory.com/stac-aws/collections/io-10m-annual-lulc/items)'
 DataAtWork:
   Tools & Applications:
     - Title: View the dataset on UN Biodiversity Lab Map Viewer
