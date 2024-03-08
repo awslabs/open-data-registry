@@ -1,0 +1,65 @@
+Name: >-
+  Community Multiscale Air Quality (CMAQ) 2019 3D Gridded and Column data from
+  the EPA's Air Quality Time Series (EQUATES) Project
+Description: >-
+  The data are part of EPA’s Air Quality Time Series (EQUATES) Project.  The
+  data consist of hourly gridded pollutant concentrations estimates by the
+  Community Multiscale Air Quality (CMAQ) model version 5.3.2
+  (https://doi.org/10.15139/S3/F2KJSK) for January 1 – December 31, 2019.  Model
+  data is provided for two spatial domains :  the Northern Hemisphere (108 km x
+  108km horizontal grid spacing) and the Contiguous United States including
+  parts of Canada and Mexico (12km x 12km horizontal grid spacing).  Two types
+  of hourly data are provided: three-dimensional air pollutant concentrations
+  and vertical column pollutant totals. Previous studies have used this type of
+  CMAQ 3D and vertical column air quality data to evaluate the modeling system,
+  created model-observed ‘fused’ surfaces, and to analyze spatial and temporal
+  changes in air quality in the upper atmosphere, e.g.,
+  https://doi.org/10.1016/j.envint.2019.104909;
+  https://doi.org/10.5194/acp-17-12449-2017;
+  https://doi.org/10.1029/2006JD008085;
+  https://doi.org/10.5194/acp-15-9997-2015.
+Documentation: >-
+  EQUATES data DOI: https://doi.org/10.15139/S3/F2KJSK. Please see the Data Use
+  Statement if you plan to use this data for your own research. Additional
+  information may be found on the EQUATES home page (www.epa.gov/cmaq/equates).
+  For questions or issues please use this User Support Forum:
+  https://forum.cmascenter.org/t/about-the-equates-category/2723
+Contact: CMAQ_Team@epa.gov
+ManagedBy: >-
+  U.S. Environmental Protection Agency, Office of Research and Development,
+  Center for Environmental Measurement and Modeling, Atmospheric and
+  Environmental Systems Modeling Division
+UpdateFrequency: Annual
+Tags:
+  - aws-pds
+  - air quality
+  - atmosphere
+  - model
+License: >-
+  These datasets are products of the U.S. Government and are intended for public
+  access and use. Unless otherwise specified, all data produced by the U.S EPA
+  is, by default, in the public domain and are not subject to domestic copyright
+  protection under 17 U.S.C. § 105. More details on the U.S. Public Domain
+  license are available here: http://www.usa.gov/publicdomain/label/1.0/
+Citation: >-
+  US EPA, 2021, "EQUATESv1.0: Emissions, WRF/MCIP, CMAQv5.3.2 Data -- 2002-2019
+  US_12km and NHEMI_108km", https://doi.org/10.15139/S3/F2KJSK, UNC Dataverse,
+  V5
+Resources:
+  - Description: >-
+      The 2019 CMAQ output are stored as compressed netcdf/hdf5 formatted files
+      using I/O API data structures (https://www.cmascenter.org/ioapi/).
+      Information on the model projection and grid structure is contained in the
+      header information of the netcdf file. The netcdf files can be opened and
+      manipulated using I/O API utilities (e.g. M3XTRACT, M3WNDW) or other
+      software programs that can read and write netcdf formatted files (e.g.
+      Fortran, R, Python).
+    ARN: 'arn:aws:s3:::epa-equates-v1'
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://epa-equates-v1.s3.amazonaws.com/index.html)'
+  - Description: Notifications for EQUATES bucket
+    ARN: 'arn:aws:sns:us-east-1:127085394039:epa-equates-v1-object_created'
+    Region: us-east-1
+    Type: SNS Topic
