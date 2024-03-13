@@ -1,0 +1,67 @@
+Name: New Zealand Elevation
+Description: |
+  The New Zealand Elevation dataset consists of New Zealand's publicly owned digital elevation models and digital surface models, which are freely available to use under an open licence. The dataset contains 1m resolution grids derived from LiDAR data. Point clouds are not included in the initial release.
+
+  All of the elevation files are [Cloud Optimised GeoTIFFs](https://www.cogeo.org/) using LERC compression for the main grid and LERC compression with lower max_z_error for the overviews. These elevation files are accompanied by [STAC metadata](https://stacspec.org/). The elevation data is organised by region and survey.
+Documentation: https://github.com/linz/elevation
+Contact: elevation@linz.govt.nz
+ManagedBy: "[Toitū Te Whenua Land Information New Zealand](https://www.linz.govt.nz)"
+UpdateFrequency: New elevation data will regularly be added, as part of being published to the LINZ Data Service and LINZ Basemaps.
+
+Tags:
+  - aws-pds
+  - elevation
+  - earth observation
+  - stac
+  - cog
+  - geospatial
+
+License: Toitū Te Whenua Land Information New Zealand does not own the copyright for all of the elevation data that is available in this bucket. Licensors are contained in the STAC Collection file accompanying each elevation data survey. Licensed for re-use under "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)".
+Citation: Licensed by (insert the licensor) for re-use under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Resources:
+  - Description: New Zealand Elevation with accompanying metadata
+    ARN: arn:aws:s3:::nz-elevation
+    Region: ap-southeast-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: Browsing the s3://nz-elevation bucket
+      URL: https://github.com/linz/elevation/blob/master/docs/usage.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: Elevation survey naming and path conventions
+      URL: https://github.com/linz/elevation/blob/master/docs/naming.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+  Tools & Applications:
+    - Title: LINZ Basemaps
+      URL: https://basemaps.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Data Service
+      URL: https://data.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Topographic Workflows - Bulk elevation data processing with Kubernetes and Argo Workflows
+      URL: https://github.com/linz/topo-workflows
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+  Publications:
+    - Title: Stress Detection in New Zealand Kauri Canopies with WorldView-2 Satellite and LiDAR Data
+      URL: https://doi.org/10.3390/rs12121906
+      AuthorName: Jane J. Meiforth, Henning Buddenbaum, Joachim Hill, James D. Shepherd and John R. Dymond
+
+    - Title: Dairy farming exposure and impacts from coastal flooding and sea level rise in Aotearoa-New Zealand
+      URL: https://doi.org/10.1016/j.ijdrr.2023.104079
+      AuthorName: Heather Craig, Alec Wild and Ryan Paulik
+
+    - Title: "Underpinning Terroir with Data: Integrating Vineyard Performance Metrics with Soil and Climate Data to Better Understand Within-Region Variation in Marlborough, New Zealand"
+      URL: https://doi.org/10.1155/2023/8811402
+      AuthorName: R. G. V. Bramley, J. Ouzman, A. P. Sturman, G. J. Grealish, C. E. M. Ratcliff and M. C. T. Trought
