@@ -1,0 +1,80 @@
+Name: nuScenes
+Description: Public large-scale dataset for autonomous driving. It enables researchers to study challenging urban driving situations using the full sensor suite of a real self-driving car.
+Documentation: https://www.nuscenes.org
+Contact: https://www.nuscenes.org
+ManagedBy: "[Motional, Inc.](https://motional.com)"
+UpdateFrequency: Finalized
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - computer vision
+  - lidar
+  - robotics
+  - transportation
+  - urban
+License: "[Commercial](https://www.nuscenes.org/terms-of-use)"
+Resources:
+  - Description: Globally cached distribution of the nuScenes Dataset. Web frontend is available to browse the dataset.
+    Host: https://d36yt3mvayqw5m.cloudfront.net
+    Region: ap-northeast-1
+    Type: CloudFront Distribution
+  - Description: nuScenes Dataset
+    ARN: arn:aws:s3:::motional-nuscenes
+    Region: ap-northeast-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://motional-nuscenes.s3.ap-northeast-1.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: nuScenes devkit tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/nuscenes_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuScenes lidarseg and panoptic tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/nuscenes_lidarseg_panoptic_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuImages devkit tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/nuimages_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuScenes prediction tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/prediction_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuScenes CAN bus tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/can_bus_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuScenes Map Expansion Tutorial
+      URL: https://colab.research.google.com/github/nutonomy/nuscenes-devkit/
+      NotebookURL: https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/tutorials/map_expansion_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title: nuScenes devkit
+      URL: https://github.com/nutonomy/nuscenes-devkit
+      AuthorName: Motional
+      AuthorURL:
+  Publications:
+    - Title: "nuScenes: A multimodal dataset for autonomous driving"
+      URL: https://arxiv.org/abs/1903.11027
+      AuthorName: Holger Caesar, Varun Bankiti, Alex H. Lang, Sourabh Vora, Venice Erin Liong, Qiang Xu, Anush Krishnan, Yu Pan, Giancarlo Baldan, Oscar Beijbom
+      AuthorURL:
+    - Title: "Panoptic nuScenes: A Large-Scale Benchmark for LiDAR Panoptic Segmentation and Tracking"
+      URL: https://arxiv.org/abs/2109.03805
+      AuthorName: Whye Kit Fong, Rohit Mohan, Juana Valeria Hurtado, Lubing Zhou, Holger Caesar, Oscar Beijbom, Abhinav Valada
+      AuthorURL:
+ADXCategories:
+  - Automotive Data

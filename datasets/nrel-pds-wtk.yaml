@@ -182,6 +182,36 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind_v2%2F)'
+  - Description: Southeast Asia wind resource data v3 (2007-2021) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/seasiawind_v3/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=seasiawind_v3%2F)'
+  - Description: Mid Atlantic wind resource data with modeled wakes in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/NOW-WAKES_Mid_Atlantic/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=NOW-WAKES_Mid_Atlantic%2F)'
+  - Description: California offshore wind resource data (2000-2022) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/now23_california/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=now23_california%2F)'
+  - Description: South Atlantic offshore wind resource data (2000-2020) in [HDF5](https://portal.hdfgroup.org/display/HDF5) format
+    ARN: arn:aws:s3:::nrel-pds-wtk/south_atlantic/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=south_atlantic)'
+  - Description: Mid Atlantic three-dimensional planetary boundary layer (3D PBL) scheme wind resource data
+    ARN: arn:aws:s3:::nrel-pds-wtk/mid_atlantic_3d_pbl/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-wtk&prefix=mid_atlantic_3d_pbl%2F)'
 DataAtWork:
   Tutorials:
     - Title: HSDS Examples

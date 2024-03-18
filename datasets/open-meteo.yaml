@@ -1,0 +1,55 @@
+Name: Open-Meteo Weather API Database
+Description: |
+  Open-Meteo integrates weather models from reputable national weather services, offering a swift and efficient weather API. Real-time weather forecasts are unified into a time-series database that provides historical and future weather data for any location worldwide.
+
+  Through Open-Meteo on AWS Open Data, you can download the Open-Meteo weather database and analysis weather data locally. Docker images are provided to download data and to expose an HTTP API endpoint. Using Open-Meteo SDKs, you can seamlessly integrate weather data into your Python, Typescript, Swift, Kotlin, or Java applications.
+
+  The entire source code is open-source, and contributions are welcome!
+
+  To get started, familiarize yourself with the [available weather models](https://github.com/open-meteo/open-data) and explore tutorials on downloading 80 years of [historical weather data from ERA5](https://github.com/open-meteo/open-data/tree/main/tutorial_download_era5) or set up your own [real-time weather API](https://github.com/open-meteo/open-data/tree/main/tutorial_weather_api) with high-resolution models.
+
+  If you have any questions, feel free to reach out on [GitHub discussions](https://github.com/open-meteo/open-meteo/discussions).
+Documentation: https://github.com/open-meteo/open-data
+Contact: info@open-meteo.com
+ManagedBy: "[Open-Meteo](https://www.open-meteo.com/)"
+UpdateFrequency: Hourly
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - earth observation
+  - meteorological
+  - weather
+License: CC-BY 4.0
+Resources:
+  - Description: Open-Meteo Weather API Database
+    ARN: arn:aws:s3:::openmeteo
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://openmeteo.s3.amazonaws.com/index.html#data/)"
+DataAtWork:
+  Tutorials:
+    - Title: Run Your Own Weather API
+      URL: https://github.com/open-meteo/open-data/tree/main/tutorial_weather_api
+      AuthorName: Open-Meteo
+      AuthorURL: https://www.open-meteo.com/
+    - Title: Accessing 80 Years Historical Weather Data from ERA5
+      URL: https://github.com/open-meteo/open-data/tree/main/tutorial_download_era5
+      AuthorName: Open-Meteo
+      AuthorURL: https://www.open-meteo.com/
+  Tools & Applications:
+    - Title: Open-Meteo API documentation
+      URL: https://www.open-meteo.com/en/docs
+      AuthorName: Open-Meteo
+      AuthorURL: https://www.open-meteo.com/
+    - Title: Open-Meteo API source-code
+      URL: https://github.com/open-meteo/open-meteo
+      AuthorName: Open-Meteo
+      AuthorURL: https://www.open-meteo.com/
+  Publications:
+    - Title: Zippenfenig, P. (2023). Open-Meteo.com Weather API [Computer software]
+      AuthorName: Patrick Zippenfenig
+      URL: https://doi.org/10.5281/ZENODO.7970649
+ADXCategories:
+  - Environmental Data
