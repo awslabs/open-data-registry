@@ -11,10 +11,10 @@ Description: |
   <br/>
   **CONUS Domain** - CONUS retrospective output is provided by all four versions of the NWM
   <br/>
-  Version 3.0 - A 44-year (February 1979 through January 2023) retrospective simulation using version 3.0 of the National Water Model.
-  Version 2.1 - A 42-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
-  Version 2.0 - A 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model.
-  Version 1.2 - A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model.
+  1) Version 3.0 - A 44-year (February 1979 through January 2023) retrospective simulation using version 3.0 of the National Water Model.
+  2) Version 2.1 - A 42-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
+  3) Version 2.0 - A 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model.
+  4) Version 1.2 - A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model.
   <br/>
   <br/>
   **oCOUNS Domains** - Only v3.0 of the NWM Retrospective data set provides coverage of the NWM Alaska, Hawaii and Puerto Rico / US Virgin Island domains.
@@ -32,10 +32,10 @@ Description: |
   **Formats** - NWM Retrospective data is available in two formats, NetCDF and Zarr.  The NetCDF files contain the full set of NWM output data, while the Zarr files contain a subset of NWM output fields that vary with model version.
   <br/>
   <br/>
-  NWM V3.0:  All model output and forcing input fields are available in the NetCDF format.  All model output fields along with the precipitation forcing field are available in the Zarr format.
-  NWM V2.1:  All model output and forcing input fields are available in the NetCDF format.  Many of the model output fields along with the precipitation forcing field are available in the Zarr format
-  NWM V2.0:  All model output fields are available in NetCDF format.  Model channel output including streamflow and related fields are available in Zarr format.
-  NWM V1.2:  All model output fields are available in NetCDF format.
+  1) NWM V3.0:  All model output and forcing input fields are available in the NetCDF format.  All model output fields along with the precipitation forcing field are available in the Zarr format.
+  2) NWM V2.1:  All model output and forcing input fields are available in the NetCDF format.  Many of the model output fields along with the precipitation forcing field are available in the Zarr format
+  3) NWM V2.0:  All model output fields are available in NetCDF format.  Model channel output including streamflow and related fields are available in Zarr format.
+  4) NWM V1.2:  All model output fields are available in NetCDF format.
   <br/>
   <br/>
   A table listing the data available within each NetCDF and Zarr file is located in the '[documentation page](https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/nwm/README.md)'.  This data includes meteorological NWM forcing inputs along with NWM hydrologic and land surface outputs, and varies by version number. 
@@ -65,6 +65,12 @@ Tags:
   - transportation
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
+  - Description: The complete archive of NWM input forcing and model output data version 3.0 in NetCDF and Zarr format.
+    ARN: arn:aws:s3:::noaa-nwm-retrospective-3-0-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com/index.html)'
   - Description: The complete archive of NWM input forcing and model output data version 2.1 in NetCDF format.
     ARN: arn:aws:s3:::noaa-nwm-retrospective-2-1-pds
     Region: us-east-1
@@ -116,7 +122,7 @@ DataAtWork:
   Publications:
     - Title: "NOAA's National Water Model: Advancing Operational Hydrology Through Continental-scale Modeling."
       URL: https://doi.org/10.1111/1752-1688.13184
-      AuthorName: Cosgrove, Brian, David Gochis, Trey Flowers, Aubrey Dugger, Fred Ogden, Tom Graziano, Ed Clark, et al; 2024
+      AuthorName: Brian Cosgrove, David Gochis, Trey Flowers, Aubrey Dugger, Fred Ogden, Tom Graziano, Ed Clark, et al; 2024
     - Title: "Simulating storm surge and compound flooding events with a creek-to-ocean model: Importance of baroclinic effects"
       URL: https://doi.org/10.1016/j.ocemod.2019.101526
       AuthorName: Fei Ye, et al.
