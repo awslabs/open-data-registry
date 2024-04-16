@@ -1,0 +1,120 @@
+Name: NOAA Analysis of Record for Calibration (AORC) Dataset
+Description: |
+  The Analysis Of Record for Calibration (AORC) is a gridded record of near-surface  weather conditions covering the continental United States and Alaska and their  hydrologically contributing areas. It is defined on a latitude/longitude spatial grid with a mesh length of 30 arc seconds (~800 m), and a temporal resolution of one hour.  Elements include hourly total precipitation, temperature, specific humidity, terrain-level  pressure, downward longwave and shortwave radiation, and west-east and south-north wind components. It spans the period from 1979 across the Continental U.S. (CONUS) and from 1981 across Alaska, to the near-present (at all locations). This suite of eight variables is sufficient to drive most land-surface and hydrologic models and is used as input to the National Water Model (NWM) retrospective simulation. While the native AORC process generates netCDF output, the data is post-processed to create a cloud optimized Zarr formatted equivalent for dissemination using cloud technology and infrastructure.
+  <br/>
+  <br/>
+  **AORC Version 1.1 dataset creation**
+  <br/>
+  The AORC dataset was created after reviewing, identifying, and processing multiple large-scale, observation, and analysis datasets. There are two versions of The Analysis Of Record for Calibration (AORC) data.
+  <br/>
+  <br/>
+  The initial AORC Version 1.0 dataset was completed in November 2019 and consisted of a grid with 8 elements at a resolution of 30 arc seconds.  The AORC version 1.1 dataset was created to address issues "[see Table 1 in Fall et al., 2023](https://onlinelibrary.wiley.com/doi/10.1111/1752-1688.13143)" in the version 1.0 CONUS dataset. Full documentation on version 1.1 of the AORC data and the related journal publication are provided below.
+  <br/>
+  <br/>
+  The native AORC version 1.1 process creates a dataset that consists of netCDF files with the following dimensions: 1 hour, 4201 latitude values (ranging from 25.0 to 53.0), and 8401 longitude values (ranging from -125.0 to -67).
+  <br/>
+  <br/>
+  The data creation runs with a 10-day lag to ensure the inclusion of any corrections to the input Stage IV and NLDAS data.
+  <br/>
+  <br/>
+  **Note** - The full extent of the AORC grid as defined in its data files exceed those cited above; those outermost rows and columns of data grids are filled with missing values and are the remnant of an early set of required AORC extents that have since been adjusted inward.
+  <br/>
+  <br/>
+  **AORC Version 1.1 Zarr Conversion**
+  <br/>
+  <br/>
+  The goal for converting the AORC data from netCDF to Zarr was to allow users to quickly and efficiently load/use the data.  For example, one year of data takes 28 mins to load via NetCDF while only taking 3.2 seconds to load via Zarr (resulting in a substantial increase in speed).  For longer periods of time, the percentage increase in speed using Zarr (vs NetCDF) is even higher.  Using Zarr also leads to less memory and CPU utilization.
+  <br/>
+  <br/>
+  It was determined that the optimal conversion for the data was 1 year worth of Zarr files with a chunk size of 18MB. The chunking was completed across all 8 variables.  The chunks consist of the following dimensions: 144 time, 128 latitude, and 256 longitude. To create the files in the Zarr format, the NetCDF files were rechunked using chunk() and "[Xarray](https://docs.xarray.dev/en/stable/)".  After chunking the files, they were converted to a monthly Zarr file. Then, each monthly Zarr file was combined using "[to_zarr](https://docs.xarray.dev/en/latest/generated/xarray.Dataset.to_zarr.html)" to create a Zarr file that represents a full year
+  <br/>
+  <br/>
+  Users wanting more than 1 year of data will be able to utilize Zarr utilities/libraries to combine multiple years up to the span of the full data set.
+  <br/>
+  <br/>
+  There are eight variables representing the meteorological conditions
+  <br/>
+  **Total Precipitaion (APCP_surface)**
+  <br/>
+  1) Hourly total precipitation (kgm-2 or mm)  for Calibration (AORC) dataset
+  <br/>
+  **Air Temperature (TMP_2maboveground)**
+  1) Temperature (at 2 m above-ground-level (AGL)) (K)
+  <br/>
+  **Specific Humidity (SPFH_2maboveground)**
+  <br/>
+  1) Specific humidity (at 2 m AGL) (g g-1) 
+  <br/>
+  **Downward Long-Wave Radiation Flux (DLWRF_surface)**
+  <br/>
+  1) longwave (infrared)
+  2) radiation flux (at the  surface) (W m-2) 
+  <br/>
+  **Downward Short-Wave Radiation Flux (DSWRF_surface)**
+  <br/>
+  1) Downward shortwave (solar)
+  2) radiation flux (at the  surface) (W m-2)
+  <br/>
+  **Pressure (PRES_surface)**
+  <br/>
+  1) Air pressure (at the surface) (Pa)
+  <br/>
+  **U-Component of Wind (UGRD_10maboveground)"
+  <br/>
+  1)U (west-east) - components of the wind (at 10 m AGL) (m s-1)
+  <br/>
+  **V-Component of Wind (VGRD_10maboveground)"
+  <br/>
+  1) V (south-north) - components of the wind (at 10 m AGL) (m s-1)
+  <br/>
+  <br/>
+  **Precipitation and Temperature**
+  <br/>
+  <br/>
+  The gridded AORC precipitation dataset contains one-hour Accumulated Surface Precipitation (APCP) ending at the “top” of each hour, in liquid water-equivalent units  (kg m-2 to the nearest 0.1 kg m-2), while the gridded AORC temperature dataset is comprised of instantaneous, 2 m above-ground-level (AGL) temperatures at the top of each hour (in Kelvin, to the nearest 0.1).
+  <br/>
+  <br/>
+  **Specific Humidity, Pressure, Downward Radiation, Wind**
+  <br/>
+  <br/>
+  The development process for the six additional dataset components of the Conus AORC [i.e., specific humidity at 2m above ground (kg kg-1); downward  longwave and shortwave radiation fluxes at the surface (W m-2); terrain-level pressure (Pa); and west-east and south-north wind components at 10 m above ground (m s-1)] has  two distinct periods, based on datasets and methodology applied: 1979–2015 and 2016–present. 
+Documentation: "[Analysis of Record for Calibration: Version 1.1 Sources, Methods, and Verification](https://www.weather.gov/media/owp/operations/aorc_v1_1_methods.pdf)"
+Contact: |
+  For questions regarding data content or quality, email the AORC team at aorc.info@noaa.gov.
+  <br/>
+  This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
+  <br/>
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: To be determined
+Collabs:
+  ASDI:
+    Tags:
+      - water
+Tags:
+  - aws-pds
+  - agriculture
+  - weather
+  - climate
+  - environmental
+  - disaster response
+  - agriculture
+  - transportation
+License: CC-0 - Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: 1-km resolution AORC version 1.1
+    ARN: arn:aws:s3:::noaa-nws-aorc-v1-1-1km
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-aorc-v1-1-1km.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Explore the AORC 1.1 dataset in Zarr
+      URL: https://nbviewer.org/github/NOAA-OWP/AORC-jupyter-notebooks/blob/master/jupyter_notebooks/AORC_Zarr_notebook.ipynb
+      AuthorName: Michael AuCoin
+      AuthorURL: 
+  Publications:
+    - Title: "The Office of Water Prediction's Analysis of Record for Calibration, version 1.1: Dataset description and precipitation evaluation (09 July 2023). J. Am. Water Resour. Assoc., 59 (6). 1246-1272."
+      URL: https://doi.org/10.1111/1752-1688.13143
+      AuthorName: Greg Fall, David Kitzmiller, Sandra Pavlovic, Ziya Zhang, Nathan Patrick, Michael St. Laurent, Carl Trypaluk, Wanru Wu, and Dennis Miller
