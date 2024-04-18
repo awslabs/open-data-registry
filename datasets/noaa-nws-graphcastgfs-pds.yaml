@@ -1,0 +1,57 @@
+Name: (EXPERIMENTAL) NOAA GraphCast Global Forecast System (GFS) (EXPERIMENTAL)
+Description: |
+  The GraphCast Global Forecast System (GraphCastGFS) is an experimental system set up by the National Centers for Environmental Prediction (NCEP) to produce medium range global forecasts. The model runs in two modes on different vertical resolutions; 13 and 37 pressure levels. The horizontal resolution is a 0.25 degree latitude-longitude grid (about 28 km). The model runs 4 times a day at 00Z, 06Z, 12Z and 18Z cycles. Major atmospheric and surface fields including temperature, wind components, geopotential height, specific humidity, and vertical velocity are available. The products are 6 hourly forecasts up to 10 days. The data format is GRIB2.
+  <br/>
+  <br/>
+  The GraphCastGFS system is an experimental weather forecast model built upon the pre-trained Google DeepMind’s GraphCast Machine Learning Weather Prediction (MLWP) model. The GraphCast model is implemented as a message passing graph neural network (GNN) architecture with “encoder-processor-decoder” configuration. It uses an icosahedron grid with multiscale edges and has around 37 million parameters. This model is pre-trained with ECMWF’s ERA5 reanalysis data. The GraphCastGFSl takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs GraphCast (37 levels) and GraphCast_operational (13 levels) with weights provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent to GFS from GraphCastGFS’ native forecast data.
+  <br/>
+  <br/>
+  The input data for both modes generated from the GDAS data as GraphCast input is provided under input/ directory. One file is for 13 pressure levels and the other for 37 pressure levels. 
+  Example of file names are
+  <br/>
+  <br/>
+  source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc
+  <br/>
+  source-gdas_date-2024022000_res-0.25_levels-37_steps-2.nc
+  <br/>
+  One file is for 13 pressure levels and the other for 37 pressure levels. The 13 and 37 pressure level forecasts are under forecasts_13_levels/ and forecasts_37_levels/, respectively. There are 
+  40 files under each directory covering a 10 day forecast. An example of file name is listed below
+  <br/>
+  <br/>
+  graphcastgfs.t00z.pgrb2.0p25.f006
+  <br/>
+  <br/>
+  Please note that this NOAA GFS Model was produced using a code package released by Google DeepMind. For information on Google DeepMind, please visit their github page listed in the documentation and license sections of this page. 
+Documentation: For the NOAA Product, https://graphcastgfs.readthedocs.io/en/latest/index.html and for background graphcast information, https://github.com/google-deepmind/graphcast/tree/main/graphcast
+Contact: For questions regarding data content or quality, visit [the NOAA EMC Github site](https://github.com/noaa-emc/graphcast/issues). For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 4 times a day at 00Z, 06Z, 12Z and 18Z
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+License: NOAA's GraphCast GFS products are released under CC0 license. The underlying GraphCast code package created by DeepMind is released by Google under a separate license. The products in this bucket only contain NOAA produced products and not GrahCast code or training data. For information on GraphCast, please visit the "[Google DeepMind GraphCast Gitub License page](https://github.com/google-deepmind/graphcast?tab=readme-ov-file#license-and-attribution)".
+Resources:
+  - Description: GraphCast GFS data
+    ARN: arn:aws:s3:::noaa-nws-graphcastgfs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-graphcastgfs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GraphCast GFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNWSGRAPHCASTGFSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

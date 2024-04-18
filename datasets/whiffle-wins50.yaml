@@ -1,0 +1,35 @@
+Name: Whiffle WINS50 Open Data on AWS
+Description: Large Eddy Simulation (LES) data of the Winds of the North Sea in 2050 (WINS50) project.
+Documentation: https://gitlab.com/whiffle-public/whiffle-open-data
+Contact: support@whiffle.nl
+ManagedBy: "[Whiffle](http://www.whiffle.nl/)"
+UpdateFrequency: No updates planned.
+Tags:
+  - aws-pds
+  - weather
+  - sustainability
+  - atmosphere
+  - electricity
+  - meteorological
+  - model
+  - zarr
+  - turbulence
+License: CC BY-SA 4.0
+Resources:
+  - Description: Whiffle WINS50 LES Data
+    ARN: arn:aws:s3:::whiffle-wins50-data
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://whiffle-wins50-data.s3.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: Whiffle WINS50 Tutorials
+      URL: https://gitlab.com/whiffle-public/whiffle-open-data
+      AuthorName: Whiffle
+      AuthorURL: https://whiffle.nl
+  Tools & Applications: []
+  Publications:
+    - Title: Investigating energy production and wake losses of multi-gigawatt offshore wind farms with atmospheric large-eddy simulation
+      URL: https://wes.copernicus.org/articles/8/787/2023
+      AuthorName: Baas, P., Verzijlbergh, R., van Dorp, P., and Jonker, H
