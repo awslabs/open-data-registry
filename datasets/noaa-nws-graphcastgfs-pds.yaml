@@ -13,13 +13,11 @@ Description: |
   2) The 13 levels graphcast ML model was fine-tuned with NCEP’s GDAS data as inputs and ECMWF ERA5 data as ground truth from 20210323 to 20220901, validated from 20220901 to 20230101. Evaluation is done with forecasts from 20230101-20240101. The new weights created from the training are used to create global forecasts. It is important to note that the GraphCastGFS v1 model weights obtained from Google’s DeepMInd were provided based on 12 timesteps training with ERA5 data, while the GraphCastGFS v2 model weights resulted from training with 20 timesteps with GDAS and ERA5 data that significantly increased the accuracy of the forecasts compared with GraphCastGFS V1.
   <br/>
   <br/>
-  The input data for both modes generated from the GDAS data as GraphCast input is provided under input/ directory. One file is for 13 pressure levels and the other for 37 pressure levels. 
-  Example of file names are
+  The input data generated from the GDAS data as GraphCast input is provided under input/ directory. An example of file names is shown below
   <br/>
   <br/>
   source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc
   <br/>
-  source-gdas_date-2024022000_res-0.25_levels-37_steps-2.nc
   <br/>
   The files are under forecasts_13_levels/. There are 40 files under each directory covering a 10 day forecast. An example of file name is listed below
   <br/>
