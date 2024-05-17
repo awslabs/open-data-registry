@@ -1,0 +1,26 @@
+Name: Single-Cell Atlas of Human Blood During Healthy Aging
+Description: Comprehensive, large-scale single-cell profiling of healthy human blood at different ages is one of the critical pending tasks required to establish a framework for systematic understanding of human aging. Here, using single-cell RNA/TCR/BCR-seq with protein feature barcoding (20 antibodies), we profiled 317 samples from 166 healthy individuals aged 25 to 85 years old drawn over 3-year period. Dataset spanning ~2 million cells describes 50 subpopulations of blood immune cells, with 14 subpopulations changing with age, including a novel NKG2C+ CD8 Tcm population that decreases with age. We describe age-associated accumulation of Th2 and HLA-DR+ memory CD4 T cells, CCR4+ CD8 Tcm cells and GZMK+ CD8 Tem cells. We validate key findings using 30-plex spectral cytometry panel. We characterize patterns of antigen receptor clonality across subpopulations of T and B cells and describe their age-dependence. Our work provides novel insights into healthy human aging and unique annotated resource of unprecedented depth.
+Documentation: https://www.synapse.org/#!Synapse:syn49637038/
+Contact: martyomov@wustl.edu
+ManagedBy: Sage Bionetworks
+UpdateFrequency: Never
+Tags:
+  - aws-pds
+  - protein
+  - single-cell transcriptomics
+License: '[CC BY]'
+Citation: Terekhova M, Swain A, Bohacova P, et al. Single-cell atlas of healthy human blood unveils age-related loss of NKG2C+GZMB-CD8+ memory T cells and accumulation of type 2 memory T cells. Immunity. 2023;56(12):2836-2854.e9. doi:10.1016/j.immuni.2023.10.013
+Resources:
+  - Description: Raw sequencing data (fastq.gz), TCR/BCR clonotype tables (.csv), normalized counts matrix (.rds, .h5ad), UMAP coordinates (.csv), metadata (.csv), cytometry data (.fcs)
+    ARN: arn:aws:s3:::single.cell.human.blood.atlas.opendata.sagebase.org
+    Region: us-east-1
+    Type: S3 Bucket
+    AccountRequired: False
+    ControlledAccess: https://www.synapse.org/#!Synapse:syn49637038/
+DataAtWork:
+  Publications:
+    - Title: Single-cell atlas of healthy human blood unveils age-related loss of NKG2C+GZMB−CD8+ memory T cells and accumulation of type 2 memory T cells
+      URL: https://doi.org/10.1016/j.immuni.2023.10.013
+      AuthorName: Terekhova M, Swain A, Bohacova P, Aladyeva E, Arthur L, et al
+ADXCategories:
+    - Healthcare & Life Sciences Data

@@ -1,0 +1,55 @@
+Name: NOAA's Coastal Ocean Reanalysis (CORA) Dataset
+Description: |
+  NOAA's Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coast (GEC) is produced using verified hourly water levels from the Center of Operational Oceanographic Products & Services (CO-OPS), through hydrodynamic modeling from Advanced Circulation "[ADCIRC](https://adcirc.org/)" and Simulating WAves Nearshore "[SWAN](https://swanmodel.sourceforge.io/)" models. Data are assimilated, processed, corrected, and processed again before quality assurance and skill assessment with additional verified tide station-based observations.
+  <br/>
+  <br/>
+  Details for CORA Dataset
+  <br/>
+  <br/>
+  **Timeseries** - 1979 to 2022
+  <br/>
+  **Size** - Approx. 20.5TB
+  <br/>
+  **Domain** - Lat 5.8 to 45.8 ; Long -98.0 to -53.8
+  <br/>
+  **Nodes** - 1813443 centroids, 3564104 elements 
+  <br/>
+  **Grid cells** - Currently apporximately 505
+  <br/>
+  **Spatial Resolution** - 500m, 1983 Contiguous USA Albers projection (EPSG:5070)
+  <br/>
+Documentation: https://tidesandcurrents.noaa.gov/
+Contact: |
+  For questions regarding data content or quality, email CO-OPS.UserServices@noaa.gov
+  <br/>
+  This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
+  <br/>
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
+ManagedBy: "[NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)"
+UpdateFrequency: Monthly, quarterly, and annually, depending on the dataset.
+Collabs:
+  ASDI:
+    Tags:
+      - water
+Tags:
+  - aws-pds
+  - agriculture
+  - weather
+  - climate
+  - environmental
+  - disaster response
+  - agriculture
+  - transportation
+  - oceans
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF
+    ARN: arn:aws:s3:::noaa-nos-cora-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
+    Region: us-east-1
+    Type: SNS Topic  

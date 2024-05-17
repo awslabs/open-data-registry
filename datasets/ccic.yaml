@@ -1,0 +1,52 @@
+Name: Chalmers Cloud Ice Climatology
+Description: The Chalmers Cloud Ice Climatology (CCIC) is a novel, deep-learning-based climate record of ice-particle concentrations in the atmosphere. CCIC results are available at high spatial and temporal resolution (0.07° / 3 h from 1983, 0.036° / 30 min from 2000) and thus ideally suited for evaluating high-resolution weather and climate models or studying individual weather systems.
+Documentation: https://ccic.readthedocs.io
+Contact: https://github.com/see-geo/ccic
+ManagedBy: "[Geoscience and Remote Sensing at Chalmers University of Technology](https://www.chalmers.se/en/departments/see/research/geo)"
+UpdateFrequency: Quarterly
+Tags:
+  - atmosphere
+  - aws-pds
+  - climate
+  - deep learning
+  - environmental
+  - exploration
+  - geophysics
+  - geoscience
+  - geospatial
+  - global
+  - ice
+  - planetary
+  - satellite imagery
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Please refer to https://ccic.readthedocs.io/en/latest/intro.html#citing-ccic for instructions on how to cite the CCIC data."
+Resources:
+  - Description: CCIC total ice water path and 2D cloud probability in Zarr format
+    ARN: arn:aws:s3:::chalmerscloudiceclimatology
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://chalmerscloudiceclimatology.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Reading CCIC data
+      URL: https://ccic.readthedocs.io/en/latest/getting_started.html#reading-ccic-data
+      AuthorName: Adrià Amell & Simon Pfreundschuh
+      Services:
+        - S3
+    - Title: Storm tracking with CCIC
+      URL: https://ccic.readthedocs.io/en/latest/applications/storm_tracking.html
+      AuthorName: Julia Kukulies
+      AuthorURL: https://juliakukulies.github.io/
+      Services:
+        - S3
+  Tools & Applications:
+    - Title: CCIC on PyPI -- software for training and processing the CCIC retrievals and to read CCIC Zarr files
+      URL: https://pypi.org/project/ccic/
+      AuthorName: Simon Pfreundschuh
+      AuthorURL: https://github.com/SEE-GEO/ccic
+  Publications:
+    - Title: "The Chalmers Cloud Ice Climatology: Retrieval implementation and validation"
+      URL: https://doi.org/10.5194/egusphere-2023-1953
+      AuthorName: Adrià Amell, Simon Pfreundschuh, and Patrick Eriksson
