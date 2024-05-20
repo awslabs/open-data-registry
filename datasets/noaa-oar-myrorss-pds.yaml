@@ -1,0 +1,33 @@
+Name: NOAA Multi-Year Reanalysis of Remotely Sensed Storms (MYRORSS)
+Description: |
+  The Multi-Year Reanalysis of Remotely Sensed Storms (MYRORSS) consists of radar reflectivity data run through the Multi-Radar, Multi-Sensor (MRMS) framework to create a three-dimensional radar volume on a quasi-Cartesian latitude-longitude grid across the entire contiguous United States. The radar reflectivity grid is also combined with hourly forecast model analyses to produce derived products such as echo top heights and hail size estimates. Radar Doppler velocity data was also processed into two azimuthal shear layer products. The source radar data was from the [NEXRAD Level-II archive](https://registry.opendata.aws/noaa-nexrad/) and the model analyses came from [NOAA's Rapid Update Cycle model](https://www.ncei.noaa.gov/has/HAS.FileAppRouter?datasetname=RUCANL130&subqueryby=STATION&applname=&outdest=FILE). Radar reflectivity was quality controlled to remove non-weather echoes and the data set was manually quality contolled to remove errors as revealed through inspection of daily accumulations of the hail size product and the azimuthal shear products. MYRORSS contains data from April 1998 through December 2011. The horizontal resolution is 0.01<span>&#176;</span> by 0.01<span>&#176;</span> and the vertical spacing is stretched where at the lowest levels the spacing is 250-m and at the top of the domain 1000-m. The radar data was merged at imperfect timesteps, though in general the temporal spacing is around 5-min. 
+Documentation: https://osf.io/9gzp2/
+Contact: "For any data delivery issues or any questions in general, please contact the NOAA Big Data Program Team at: noaa.bdp@noaa.gov."
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: No updates
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - meteorological
+  - natural resource
+  - sustainability
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Multi-Year Reanalysis of Remotely Sensed Storms
+    ARN: arn:aws:s3:::noaa-oar-myrorss-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-oar-myrorss-pds.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+  Publications:
+    - Title: "Comprehensive radar data for the contiguous United States: Multi-year reanalysis of remotely sensed storms."
+      URL: https://doi.org/10.15763/DBS.CIMMS.MYRORSS.DATA
+      AuthorName: Williams, S. S., K. L. Ortega, T. M. Smith, and A. E. Reinhart
