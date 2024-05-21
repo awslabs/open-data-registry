@@ -5,9 +5,10 @@ Description: >-
   and technical analyses conducted by the EPA's Office of Air Quality Planning and
   Standards. Specifically, this data is Weather Research and Forecasting Model (v4.4.2)
   conducted at a 12-km resolution over the Continental United States (12US). Additionally,
-  MCIP-processed files are also available as part of this dataset to asset in the use of
-  emissions processing and photochemical modeling. These files may be used in downstream 
-  applications to generate emissions, photochemical modeling, or dispersion modeling inputs.
+  MCIP-processed files and wrfcamx-processed (12US1 domain) are also available as part 
+  of this dataset to asset in the use of emissions processing and photochemical modeling. 
+  These files may be used in downstream applications to generate emissions, photochemical 
+  modeling, or dispersion modeling inputs.
 Documentation: >-
   2022 WRF Modeling TSD: 
   https://www.epa.gov/system/files/documents/2024-03/wrf_2022_tsd.pdf. 
@@ -35,7 +36,8 @@ Resources:
   - Description: >-
       The 2022 WRF output are stored as uncompressed netcdf/hdf5 formatted files in 
       the /WRF directory. The 2022 MCIP output are stored as uncompressed netcdf/hdf5 
-      formatted files in IOAPI format in the /MCIP directory. Information on the model 
+      formatted files in IOAPI format in the /MCIP directory. The wrfcamx files are stored 
+      as uncompressed netcdf files in the /wrfcamx directory. Information on the model 
       projection and grid structure is contained in the header information of the 
       netcdf file. The netcdf files can be opened and manipulated using software programs 
       that can read and write netcdf formatted files (e.g. Fortran, R, Python).
@@ -43,7 +45,10 @@ Resources:
       23UTC for each modeled day. For more information: https://www2.mmm.ucar.edu/wrf/users/
       The MCIP files are daily files with multiple files for each day. For more information
       about what each MCIP file contains, please see the following GitHub entry:
-      https://github.com/USEPA/CMAQ/blob/main/PREP/mcip/README.md
+      https://github.com/USEPA/CMAQ/blob/main/PREP/mcip/README.md For more information about
+      what each wrfcamx file contains, please see the README file in the wrfcamx source
+      code file available from Ramboll at: 
+      https://www.camx.com/getmedia/wrfcamx_v5.2.10Jan22.tgz
     ARN: 'arn:aws:s3:::epa-2022-modeling-platform'
     Region: us-east-1
     Type: S3 Bucket
