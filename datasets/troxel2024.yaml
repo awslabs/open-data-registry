@@ -1,0 +1,39 @@
+# This is the metadata that will generate the ODR page (e.g., https://registry.opendata.aws/wise-neowiser/)
+# Field descriptions: https://github.com/awslabs/open-data-registry?tab=readme-ov-file#how-are-datasets-added-to-the-registry
+Name: Troxel 2024
+Description: This release consists of simulated data products for the Roman and Rubin (LSST) missions.
+Documentation: https://irsa.ipac.caltech.edu/data/theory/Roman/Troxel2024/
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The Troxel 2024 dataset has been finalized and will not be updated.
+Tags:
+  - astronomy
+  - imaging
+  - object detection
+  - parquet
+  - satellite imagery
+  - simulations
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "If you use the Troxel 2024 dataset, please cite the Digital Object Identifier (DOI): [](). In addition, follow the [Troxel acknowledgement guidelines]() and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Resources:
+  - Description: 'Rubin data products include 52,000 individual LSST images with associated processed data products. The Rubin data will be similar to what is documented here: https://arxiv.org/abs/2101.04855'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/rubin/
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Roman data products include 500 individual Roman images with associated processed data products.'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/roman/
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data
