@@ -1,8 +1,6 @@
-# This is the metadata that will generate the ODR page (e.g., https://registry.opendata.aws/wise-neowiser/)
-# Field descriptions: https://github.com/awslabs/open-data-registry?tab=readme-ov-file#how-are-datasets-added-to-the-registry
-Name: Troxel 2024
-Description: This release consists of simulated data products for the Roman and Rubin (LSST) missions.
-Documentation: https://irsa.ipac.caltech.edu/data/theory/Roman/Troxel2024/
+Name: 'OpenUniverse Matched Rubin and Roman Simulations: Data Preview (Troxel et al. 2024)'
+Description: 'This release consists of simulated data products designed to mimic observations of the same region of the sky as seen by two astronomical facilities: the Nancy Grace Roman Telescope and the Vera C. Rubin Observatory.'
+Documentation: https://irsa.ipac.caltech.edu/data/theory/Troxel2024/
 Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
 ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
 UpdateFrequency: The Troxel 2024 dataset has been finalized and will not be updated.
@@ -15,16 +13,16 @@ Tags:
   - simulations
   - survey
 License: https://irsa.ipac.caltech.edu/data_use_terms.html
-Citation: "If you use the Troxel 2024 dataset, please cite the Digital Object Identifier (DOI): [](). In addition, follow the [Troxel acknowledgement guidelines]() and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Citation: "If you use the Troxel 2024 dataset, please follow the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
 Resources:
-  - Description: 'Rubin data products include 52,000 individual LSST images with associated processed data products. The Rubin data will be similar to what is documented here: https://arxiv.org/abs/2101.04855'
-    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/rubin/
+  - Description: 'The simulated Roman data products include truth files listing the basic physical properties of the simulated astronomical objects; truth images that include the appropriate bandpass and PSF but limited sources of noise; calibrated images that include relevant backgrounds and major sources of noise; and coadded images created using the IMCOM software.'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/roman/
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Roman data products include 500 individual Roman images with associated processed data products.'
-    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/roman/
+  - Description: 'The simulated Rubin data products include raw pixel data, calibrated exposures, coadds of the calibrated exposures, and catalogs of photometry measured from the simulated images.'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/troxel2024/rubin/
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
