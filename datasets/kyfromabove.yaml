@@ -5,6 +5,7 @@ Contact: More information regarding the KyFromAbove program can be found at http
 ManagedBy: "[Kentucky Division of Geographic Information](https://kygeonet.ky.gov)"
 UpdateFrequency: KyFromAbove data is typically updated on an annual basis. Each year, a portion of the state is acquired with an overall update cycle of every three to four years. This update cadance is determined by both funding and the length of leaf-off conditions in a given year. This catalog currently includes imagery and LiDAR data from 2010 through 2022 for most products.
 Tags:
+  - aws-pds
   - earth observation
   - aerial imagery
   - geospatial
@@ -38,6 +39,11 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
+  - Description: LiDAR-derived Point Cloud tiles for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. There is currently one data resource in this folder -  1) Phase 1 LiDAR-derived point clouds in LAZ format. Phase 2 and Phase 3 efforts have not achieved Statewide coverage to date. It is our aim to provide Phase 2 and Phase 3 data in a COPC (LAZ format).
+    ARN: arn:aws:s3:::kyfromabove/elevation/PointCloud/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
   - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
     ARN: arn:aws:s3:::kyfromabove/elevation/SpotElevations/
     Region: us-west-2
@@ -60,6 +66,9 @@ Resources:
     RequesterPays: False
 DataAtWork:
   Publications:
+    - Title: A New View of Kentucky's Cities
+      URL: https://www.mydigitalpublication.com/publication/?m=16892&i=816848&view=articleBrowser&article_id=4737566&ver=html5
+      AuthorName: Kent Anness
     - Title: KyTopo! Kentucky's New Topographic Map Series
       URL: https://www.esri.com/about/newsroom/arcuser/kytopo-kentuckys-new-topographic-map-series/
       AuthorName: Kent Anness

@@ -6,29 +6,30 @@ ManagedBy: "[ONS - National Electric System Operator](https://www.ons.org.br/)"
 UpdateFrequency: diary
 Citation: Portuguese
 Tags:  
+    - aws-pds
     - electricity
     - hydrography
     - energy
 License: CC-BY 4.0
 Resources:  
-  - Description: "Basic network transformation capacity (PT-BR Capacidade de transformação da rede básica)"
+  - Description: "Daily schedule energetic balance (PT-BR Balanço energético da programação diária)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-transformacao)'    
-  - Description: "Installed generation capacity (PT-BR Capacidade instalada de geração)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-geracao)'        
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-programacao-diaria)'
   - Description: "DESSEM energy balance (PT-BR Balanço de energia DESSEM)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-energia-dessem)'
+  - Description: "Subsystems energy balance (PT-BR Balanço de energia nos subsistemas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-energia-subsistema)'
   - Description: "Weekly marginal cost of operation (PT-BR Custo Marginal de Operação (CMO) semanal)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -41,48 +42,36 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/cmo-semi-horario)'
-  - Description: "Monthly energy charge (PT-BR Carga de energia mensal)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/carga-mensal)'
-  - Description: "Daily energy charge (PT-BR Carga de Energia Diária)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/carga-energia)'
-  - Description: "Operation restriction data due to constrained-off of wind farms - breakdown by power plant (PT-BR Dados de restrição de operação por constrained-off de usinas eólicas - detalhamento por usina)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/restricao_coff_eolica_detail)'
-  - Description: "Operation restriction data due to constrained-off of wind farms (PT-BR Dados de restrição de operação por constrained-off de usinas eólicas)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/restricao_coff_eolica_usi)'
-  - Description: "Daily schedule energetic balance (PT-BR Balanço energético da programação diária)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-programacao-diaria)'
-  - Description: "Subsystems energy balance (PT-BR Balanço de energia nos subsistemas)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-energia-subsistema)'
   - Description: "Unit Variable Cost of thermal power plants (PT-BR Custo Variável Unitário (CVU) das Usinas Térmicas)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/cvu-usitermica)'
+  - Description: "Installed generation capacity (PT-BR Capacidade instalada de geração)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-geracao)'  
+  - Description: "Basic network transformation capacity (PT-BR Capacidade de transformação da rede básica)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-transformacao)'
+  - Description: "Daily energy charge (PT-BR Carga de Energia Diária)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/carga-energia)'        
+  - Description: "Monthly energy charge (PT-BR Carga de energia mensal)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/carga-mensal)'
   - Description: "Scheduled energy charge (PT-BR Carga de energia programda)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -101,6 +90,12 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/curva-carga)'
+  - Description: "Power plant availability data (PT-BR Dados de Disponibilidade de Usinas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/disponibilidade_usina)'
   - Description: "Reservoir hydrological data (PT-BR Dados hidrológicos de reservatório)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -113,6 +108,24 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/grandezas_fluviometricas)'
+  - Description: "Energy Exchange Data by Modality (PT-BR Dados de Intercâmbio de Energia por Modalidade)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/intercambio_modalidade)'
+  - Description: "Operation restriction data due to constrained-off of wind farms - breakdown by power plant (PT-BR Dados de restrição de operação por constrained-off de usinas eólicas - detalhamento por usina)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/restricao_coff_eolica_detail)'
+  - Description: "Operation restriction data due to constrained-off of wind farms (PT-BR Dados de restrição de operação por constrained-off de usinas eólicas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/restricao_coff_eolica_usi)'
   - Description: "Data of the relationship between power plant and group (PT-BR Dados do relacionamento entre conjuntos e usinas)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -191,6 +204,12 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/fator-capacidade-2)'
+  - Description: "Commercial generation for international export (PT-BR Geração Comercial Para Exportação Internacional)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/geracao-exportacao-internacional)'
   - Description: "Thermal generation due to dispatch (PT-BR Geração térmica por motivo de despacho)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -274,4 +293,10 @@ Resources:
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/reservatorio)'            
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/reservatorio)'
+  - Description: "TEIFa (Equivalent Rate of Forced Unavailability) and TEIP (Scheduled Unavailability Rate) Rates (PT-BR Taxas TEIFa (Taxa Equivalente de Indisponibilidade Forçada) e TEIP (Taxa de Indisponibilidade Programada))"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/reservatorio)'          

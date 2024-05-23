@@ -1,0 +1,69 @@
+Name: Global 30m Height Above Nearest Drainage (HAND)
+Description: >
+  Height Above Nearest Drainage (HAND) is a terrain model that normalizes topography to the relative heights along the
+  drainage network and is used to describe the relative soil gravitational potentials or the local drainage potentials.
+  Each pixel value represents the vertical distance to the nearest drainage. The HAND data provides near-worldwide land
+  coverage at 30 meters and was produced from the 2021 release of the Copernicus GLO-30 Public DEM as distributed in the
+  [Registry of Open Data on AWS](https://registry.opendata.aws/copernicus-dem/).
+Documentation: https://glo-30-hand.s3.us-west-2.amazonaws.com/readme.html
+Contact: https://asf.alaska.edu/asf/contact-us/
+ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
+UpdateFrequency: >
+  None, except HAND may be updated if the[ Copernicus GLO-30 Public](https://registry.opendata.aws/copernicus-dem/)
+  dataset is updated.
+Tags:
+  - aws-pds
+  - elevation
+  - hydrology
+  - agriculture
+  - disaster response
+  - satellite imagery
+  - geospatial
+  - cog
+  - stac
+License: >
+  Copyright 2022 Alaska Satellite Facility (ASF). Produced using the Copernicus WorldDEM™-30 © DLR e.V. 2010-2014
+  and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights
+  reserved. The use of the HAND data falls under the terms and conditions of the 
+  [Creative Commons Zero (CC0) 1.0 Universal License](https://creativecommons.org/publicdomain/zero/1.0/).
+Citation:
+Resources:
+  - Description: GLO-30 HAND S3 bucket
+    ARN: arn:aws:s3:::glo-30-hand
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://stac.asf.alaska.edu/collections/glo-30-hand)'
+      - '[Via STAC Browser](https://radiantearth.github.io/stac-browser/#/external/stac.asf.alaska.edu/collections/glo-30-hand)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-west-2:879002409890:glo-30-hand-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Search the GLO-30 HAND Catalog in Python
+      URL: https://github.com/ASFHyP3/OpenData/blob/main/glo-30-hand/search-hand-notebook.ipynb
+      NotebookURL: https://github.com/ASFHyP3/OpenData/blob/main/glo-30-hand/search-hand-notebook.ipynb
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+    - Title: Generate your own HAND data in Python
+      URL: https://github.com/ASFHyP3/OpenData/blob/main/glo-30-hand/generate-hand-notebook.ipynb
+      NotebookURL: https://github.com/ASFHyP3/OpenData/blob/main/glo-30-hand/generate-hand-notebook.ipynb
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+  Tools & Applications:
+    - Title: GLO-30 HAND Webmap
+      URL: https://asf-daac.maps.arcgis.com/apps/mapviewer/index.html?webmap=6b82a2e4ccd343d5ba73dc04d386e4ee
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+    - Title: GLO-30 HAND ImageServer
+      URL: https://gis.asf.alaska.edu/arcgis/rest/services/GlobalHAND/GLO30_HAND/ImageServer
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+  Publications:
+    - Title: 'AGU 2022: A New Global 30m HAND Dataset to Support Hydrological Services and Applications'
+      URL: https://docs.google.com/presentation/d/1GzHn4bQrqqKj6DFFXwQ9zIvN7-etSjyIpHz3fQmxO0s/edit#slide=id.p
+      AuthorName: Joseph H. Kennedy, et al.
+      AuthorURL: https://jhkennedy.org/
+ADXCategories:
+  - Environmental Data

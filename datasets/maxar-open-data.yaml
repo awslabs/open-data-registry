@@ -12,6 +12,7 @@ Collabs:
     Tags:
       - disaster response
 Tags:
+  - aws-pds
   - earth observation
   - disaster response
   - geospatial
@@ -23,10 +24,10 @@ ManagedBy: "[Maxar](https://www.maxar.com/)"
 Resources:
   - Description: Imagery and metadata
     ARN: arn:aws:s3:::maxar-opendata
-    Region: us-east-1
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.dualstack.us-west-2.amazonaws.com/events/catalog.json)'
     - '[STAC Catalog](https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/)'
 DataAtWork:
   Tutorials:
@@ -66,9 +67,6 @@ DataAtWork:
       AuthorName: Maxar Open Data
       AuthorURL: https://www.maxar.com/open-data
   Publications:
-    - Title: Seeing a Better World from Space
-      URL: https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1124&context=purduegisday
-      AuthorName: Carly Sakumura
     - Title: "Using Data from Earth Observation to Support Sustainable Development Indicators: An Analysis of the Literature and Challenges for the Future"
       URL: https://doi.org/10.3390/su14031191
       AuthorName: Ana Andries, Stephen Morse, Richard J. Murphy, Jim Lynch, and Emma R. Woolliams
