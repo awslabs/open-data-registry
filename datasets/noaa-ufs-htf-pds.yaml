@@ -1,0 +1,44 @@
+Name: NOAA Unified Forecast System (UFS) Hierarchical Testing Framework (HTF)
+Description: |
+  The "[Unified Forecast System](https://ufs.epic.noaa.gov/)" (UFS) is a community-based, coupled, comprehensive Earth Modeling System. The Hierarchical Testing Framework (HTF) serves as a comprehensive toolkit designed to enhance the testing capabilities within UFS "[repositories](https://github.com/ufs-community)". It aims to standardize and simplify the testing process across various "[UFS Weather Model](https://github.com/ufs-community/ufs-weather-model)" (WM) components and associated modules, aligning with the Hierarchical System Development (HSD) approach and NOAA baseline operational metrics.
+  <br/>
+  <br/>
+  The HTF provides a structured methodology for test case design and execution, which enhances code management practices, fosters user accessibility, and promotes adherence to established testing protocols. It enables developers to conduct testing efficiently and consistently, ensuring code integrity and reliability through the use of established technologies such as CMake and CTest. When integrated with containerization techniques, the HTF facilitates portability of test cases and promotes reproducibility across different computing environments. This approach reduces the computational overhead and enhances collaboration within the UFS community by providing a unified testing framework. 
+  <br/>
+  <br/>
+  Acknowledgment - The Unified Forecast System (UFS) atmosphere-ocean coupled model experimental version # data used in this study are made available through the UFS Research to Operations (UFS-R2O) project sponsored by the National Weather Service (NWS) Office of Science and Technology Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric Administration (NOAA) Oceanic and Atmospheric Research (OAR) Weather Program Office (WPO).
+Documentation: https://epic-ufs-htf.readthedocs.io/en/develop/ 
+Contact: |
+  For questions regarding data content or quality, visit https://github.com/NOAA-EPIC/ufs-htf/issues 
+  <br />
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team here: nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: The UFS HTF is in its prototype phase and will be updated as new case studies are added.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+  - oceans
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA Unified Forecast System (UFS) Hierarchical Testing Framework (HTF) Data
+    ARN: arn:aws:s3:::noaa-ufs-htf-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-ufs-htf-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS HTF, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNWSUFSHTFObject
+    Region: us-east-1
+    Type: SNS Topic  
+DataAtWork:
+  Publications:
