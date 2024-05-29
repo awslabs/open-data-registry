@@ -1,7 +1,8 @@
 Name: New York City Taxi and Limousine Commission (TLC) Trip Record Data
-Description: Data of trips taken by taxis and for-hire vehicles in New York City.
-Documentation: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+Description: "Data of trips taken by taxis and for-hire vehicles in New York City. Note: access to this dataset is free, however direct S3 access does require an AWS account. Anonymous downloads are accessible from the dataset's documentation webpage listed below."
+Documentation: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 Contact: research@tlc.nyc.gov
+ManagedBy: City of New York Taxi and Limousine Commission
 UpdateFrequency: As soon as new data is available to be shared publicly.
 Tags:
   - aws-pds
@@ -10,10 +11,11 @@ Tags:
   - transportation
 License: http://www1.nyc.gov/home/terms-of-use.page
 Resources:
-  - Description: CSV files containing NYC TLC trip data.
+  - Description: PARQUET files containing NYC TLC trip data.
     ARN: arn:aws:s3:::nyc-tlc
     Region: us-east-1
     Type: S3 Bucket
+    AccountRequired: True
 DataAtWork:
   Tutorials:
     - Title: Machine learning on distributed Dask using Amazon SageMaker and AWS Fargate

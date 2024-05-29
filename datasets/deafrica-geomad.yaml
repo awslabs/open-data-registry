@@ -1,0 +1,103 @@
+Name: Digital Earth Africa GeoMAD
+Description: |
+  GeoMAD is the Digital Earth Africa (DE Africa) surface reflectance geomedian and triple Median Absolute Deviation data service. It is a cloud-free composite of satellite data compiled over specific timeframes.
+  The geomedian component combines measurements collected over the specified timeframe to produce one representative, multispectral measurement for every pixel unit of the African continent. The end result is a comprehensive dataset that can be used to generate true-colour images for visual inspection of anthropogenic or natural landmarks. The full spectral dataset can be used to develop more complex algorithms.
+  For each pixel, invalid data is discarded, and remaining observations are mathematically summarised using the geomedian statistic. Flyover coverage provided by collecting data over a period of time also helps scope intermittently cloudy areas.
+  Variations between the geomedian and the individual measurements are captured by the three Median Absolute Deviation (MAD) layers. These are higher-order statistical measurements calculating variation relative to the geomedian. The MAD layers can be used on their own or together with geomedian to gain insights about the land surface, and understand change over time.
+  Calculating GeoMAD over different timeframes and sensors provides a range of insights to the environment. An annual timeframe allows better correction for cloud cover and reduces artifacts for comparison over multiple years. A semiannual timeframe, for example six-month blocks, better captures seasonal variation within one year, but can also be used to compare equivalent periods from different years. Likewise, Landsat sensors allows full utility of the surface reflectance archive dating back to 1984, while more recent Sentinel-2 data provides higher-frequency flyovers and better resolution.
+  The Digital Earth Africa GeoMAD service currently provides annual and six-month semiannual datasets, with separate services for Landsat and Sentinel-2 sensors.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/GeoMAD_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: GeoMADs for Sentinel-2 and Landsat are updated as their respective time periods are available.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - disaster response
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Sentinel-2 GeoMAD (Annual) data
+    ARN: arn:aws:s3:::deafrica-services/gm_s2_annual
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/gm_s2_annual)'
+  - Description: Sentinel-2 GeoMAD (Semi-Annual) data
+    ARN: arn:aws:s3:::deafrica-services/gm_s2_semiannual
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/gm_s2_semiannual)'
+  - Description: Landsat 8 GeoMAD (Annual) data
+    ARN: arn:aws:s3:::deafrica-services/gm_ls8_annual
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/gm_ls8_annual)'
+  - Description: Landsat 5 and 7 GeoMAD (Annual) data
+    ARN: arn:aws:s3:::deafrica-services/gm_ls5_ls7_annual
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/gm_ls5_ls7_annual)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-services bucket contain all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (Sentinel-2 Annual GeoMAD)"
+      URL: https://explorer.digitalearth.africa/products/gm_s2_annual
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (Sentinel-2 Semi-Annual GeoMAD)"
+      URL: https://explorer.digitalearth.africa/products/gm_s2_semiannual
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (Landsat 8 GeoMAD)"
+      URL: https://explorer.digitalearth.africa/products/gm_ls8_annual
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (Landsat 5 and 7 GeoMAD)"
+      URL: https://explorer.digitalearth.africa/products/gm_ls5_ls7_annual
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan

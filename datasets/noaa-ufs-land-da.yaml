@@ -1,0 +1,39 @@
+Name: NOAA Unified Forecast System (UFS) Land Data Assimilation (DA) System
+Description: The Unified Forecast System (UFS) is a community-based, coupled, comprehensive Earth modeling system. It supports "[multiple applications](https://ufscommunity.org/science/aboutapps/)" covering different forecast durations and spatial domains. The Land Data Assimilation (DA) System is an offline version of the Noah Multi-Physics (Noah-MP) land surface model (LSM) used in the UFS Weather Model (WM). Its data assimilation framework uses "[Joint Effort for Data assimilation Integration - JEDI] (https://www.jcsda.org/jcsda-project-jedi)" software. The offline Noah-MP LSM is a stand-alone, uncoupled model used to execute land surface simulations. In this traditional uncoupled mode, near-surface atmospheric forcing data is required as input. Sample forcing and restart data are provided in this data bucket.  
+  <br/>
+  <br/>
+  The Noah-MP LSM has evolved through community efforts to pursue and refine a modern-era LSM suitable for use in the National Centers for Environmental Prediction (NCEP) operational weather and climate prediction models. This collaborative effort continues with participation from entities such as NCAR, NCEP, NASA, and university groups. 
+  <br/>
+  <br/>
+  For details regarding the physical parameterizations used in Noah-MP, see "[Niu, et al. (2011)] (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2010JD015139)". The "[Land DA User’s Guide] (https://land-da.readthedocs.io/en/latest/)" provides information on building and running the Land DA System in offline mode. Users can access additional technical support via the "[UFS GitHub Discussions] (https://github.com/NOAA-EPIC/land-offline_workflow/discussions)" for the Land DA System.
+  <br/>
+Documentation: https://land-da.readthedocs.io/en/latest/
+Contact: |
+  For questions regarding data content or quality, visit https://github.com/NOAA-EPIC/land-offline_workflow/discussions
+  <br/>
+  <br/>
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: These are stable datasets for use with the Land DA System. They will not be updated frequently. Additional data may be added with each subsequent Land DA release. 
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: "The Land DA license page can be found at: https://github.com/NOAA-EPIC/land-offline_workflow/blob/develop/LICENSE"
+Resources:
+  - Description: Unified Forecast System (UFS) Land Data Assimilation (DA) System
+    ARN: arn:aws:s3:::noaa-ufs-land-da-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-ufs-land-da-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Land Data Assimilation (DA) System, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewUFSLANDDAObject
+    Region: us-east-1
+    Type: SNS Topic

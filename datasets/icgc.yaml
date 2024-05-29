@@ -2,12 +2,16 @@ Name: ICGC on AWS
 Description: The International Cancer Genome Consortium (ICGC) coordinates projects with the common aim of accelerating research into the causes and control of cancer. The PanCancer Analysis of Whole Genomes (PCAWG) study is an international collaboration to identify common patterns of mutation in whole genomes from ICGC. More than 2,400 consistently analyzed genomes corresponding to over 1,100 unique ICGC donors are now freely available on Amazon S3 to credentialed researchers subject to ICGC data sharing policies.
 Documentation: https://dcc.icgc.org/icgc-in-the-cloud/aws
 Contact: dcc-support@icgc.org
+ManagedBy: '[International Cancer Genome Collaboratory](https://dcc.icgc.org/)'
 UpdateFrequency: New data is added as soon as it is available.
 Tags:
   - aws-pds
   - cancer
+  - genetic
   - genomic
   - life sciences
+  - bam
+  - vcf
 License: Data use is subject to the access and publication polices of the source. Distribution of the data is subject to ICGC Trusted Partner Approval.  More information on terms of use is available at https://icgc.org/daco
 Resources:
   - Description: BAM and VCF files from the The PanCancer Analysis of Whole Genomes (PCAWG) study.
@@ -19,6 +23,11 @@ Resources:
     ARN: arn:aws:s3:::oicr.icgc.meta/metadata
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Raw sequencing and other primary data from non-TCGA ICGC projects
+    ARN: arn:aws:s3:::oicr.icgc
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://docs.icgc.org/download/guide/
 DataAtWork:
   Tutorials:
     - Title: AWS Pancancer Workflow Launcher

@@ -11,7 +11,7 @@ Description: |
       - **RINEX**: The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).<br/>RINEX data can be found at: *rinex/`YYYY`/`DDD`/`ssss`/*
       - **Station logs**: 
           - Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc..<br/>Station log files can be found at: *station_log/`ssss`.log.txt*
-          - Historical and current equipment information of all NCN stations, except those that are considered IGS stations.<br/>These data can be found at: *station_log/cummulative.station.info.cors*
+          - Historical and current equipment information of all NCN stations, except those that are considered IGS stations.<br/>These data can be found at: *station_log/cumulative.station.info.cors*
       - **Published Coordinates and Velocities**: NAD83 and ITRF coordinates and velocities of each NCN station. All published coordinates and velocities are given for the Antenna Reference Point (ARP).<br/>Published coordinate and velocity files can be found at: *coord/coord_`YY`/*<br/>In July 2019, NGS published [MYCS2](https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml)!
       - **Time-series Plots**:
           - *Short-term* plots show the repeatability of a site for the last 90-days with respect to the current published position, corrected for the effect of the published velocity. These plots are updated daily.<br/>Short-term plots can be found at: */Plots/`ssss`_`YY`.short.png*
@@ -40,9 +40,14 @@ Description: |
 Documentation: For more information, visit [NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)
 Contact: |
   - For general inquiries about NCN data and products, email ✉ ngs.cors at noaa.gov
-  - For any questions regarding data delivery not associated with this platform, or any general questions regarding the NOAA Big Data Program, email ✉ noaa.bdp at noaa.gov
+  - For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  - We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Most data are available within 1 hour from when they were recorded at the remote site, and a few sites have a delay of 24 hours.
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
 Tags:
   - aws-pds
   - broadcast ephemeris

@@ -30,6 +30,11 @@ Resources:
     ARN: arn:aws:s3:::sra-pub-run-odp
     Region: us-east-1
     Type: S3 Bucket
+  - Description: ".sra files in a controlled-access S3 bucket. This bucket contains controlled-access dbGaP submissions in the SRA Normalized format with full base quality scores. The SRA Toolkit will be required to convert these objects into FASTQ or SAM files. Note that this bucket is updated on a daily basis, however, there may be a one to two day lag between accessions being findable via the [SRA Search](https://www.ncbi.nlm.nih.gov/sra/advanced) and being accessible in this S3 bucket."
+    ARN: arn:aws:s3:::sra-ca-run-odp
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login
   - Description: "Metadata files for the Sequence Read Archive, ready to load into [AWS Glue](https://aws.amazon.com/glue/) and query with [Amazon Athena](https://aws.amazon.com/athena/)."
     ARN: arn:aws:s3:::sra-pub-metadata-us-east-1/sra/metadata
     Region: us-east-1

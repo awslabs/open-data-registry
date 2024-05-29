@@ -14,9 +14,9 @@ Tags:
   - earth observation
   - satellite imagery
   - geospatial
-  - sustainability
   - disaster response
   - cog
+  - synthetic aperture radar
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
@@ -25,6 +25,8 @@ Resources:
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://sentinel-s1-l1c-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/
     Region: eu-central-1

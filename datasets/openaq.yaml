@@ -3,63 +3,51 @@ Description: Global, aggregated physical air quality data from public data sourc
 Documentation: https://openaq.org
 Contact: info@openaq.org
 ManagedBy: "[OpenAQ](https://openaq.org)"
-UpdateFrequency: Minutely
+UpdateFrequency: Hourly
 Collabs:
   ASDI:
     Tags:
       - air quality
 Tags:
+  - aws-pds
   - air quality
   - cities
   - environmental
   - geospatial
-  - sustainability
-License: CC BY 4.0
+License: Varies, depends on data provider
 Resources:
-  - Description: Minutely CSVs of global air quality fetched from sources all over the world
-    ARN: arn:aws:s3:::openaq-fetches
+  - Description: Daily gzipped CSVs of global air quality measurements fetched from sources all over the world
+    ARN: arn:aws:s3:::openaq-data-archive
     Region: us-east-1
     Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://openaq-fetches.s3.amazonaws.com/index.html)'
-  - Description: Rich SNS topic for new measurements, 1 notification per measurement, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
-    ARN: arn:aws:sns:us-east-1:470049585876:OPENAQ_NEW_MEASUREMENT
+  - Description: SNS topic for new objects in the openaq-data-archive bucket
+    ARN: arn:aws:sns:us-east-1:817926761842:openaq-data-archive-object_created
     Region: us-east-1
     Type: SNS Topic
-  - Description: SNS topic for new objects in the openaq-fetches bucket, roughly 6 objects per hour, more details [here](https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242)
-    ARN: arn:aws:sns:us-east-1:470049585876:NewFetchObject
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: "[OpenAQ API](https://docs.openaq.org)"
+  - Description: "[OpenAQ API](https://api.openaq.org)"
     Host: api.openaq.org
     Region: us-east-1
     Type: CloudFront Distribution
 DataAtWork:
   Tutorials:
-    - Title: Access OpenAQ data via a filterable SNS topic
-      URL: https://medium.com/@openaq/get-faster-access-to-real-time-air-quality-data-from-around-the-world-c6f9793d5242
+    - Title: Accessing data from the OpenAQ archive
+      URL: https://docs.openaq.org/docs/accessing-openaq-archive-data
       AuthorName: OpenAQ
       AuthorURL: https://openaq.org
       Services:
-        - SNS
-    - Title: Using Athena to access the whole archive
-      URL: https://medium.com/@openaq/how-in-the-world-do-you-access-air-quality-data-older-than-90-days-on-the-openaq-platform-8562df519ecd
+        - S3
+    - Title: Querying with AWS Athena
+      URL: https://docs.openaq.org/docs/querying-with-aws-athena
       AuthorName: OpenAQ
       AuthorURL: https://openaq.org
       Services:
         - Athena
-        - Glue
-    - Title: Analyze Global Air Pollution Using Apache Spark & BigQuery
-      URL: https://kapilsreed.medium.com/how-to-analyze-global-air-quality-using-apache-spark-bigquery-7743fd54e634
-      AuthorName: Kapil Sreedharan
-      AuthorURL: https://kapilsreed.medium.com/
-    - Title: Build your own Air Quality Monitor with OpenAQ and EMR on EKS
-      URL: https://dacort.dev/posts/emr-eks-custom-images-with-openaq/
-      AuthorName: Damon Cortesi
-      AuthorURL: https://dacort.dev/
+    - Title: OpenaQ direct file access ObservableHQ notebook
+      URL: https://observablehq.com/@openaq/openaq-direct-file-access
+      AuthorName: OpenAQ
+      AuthorURL: https://openaq.org
       Services:
-        - EMR
-        - EKS
+        - S3
   Tools & Applications:
     - Title: "Smokey: Air Quality Bot"
       URL: https://www.facebook.com/smokeybot/
@@ -69,13 +57,6 @@ DataAtWork:
       URL: https://github.com/ropensci/ropenaq
       AuthorName: Maëlle Salmon
       AuthorURL: https://github.com/maelle
-    - Title: hackAIR
-      URL: http://www.hackair.eu/
-      AuthorName: hackAir
-    - Title: ARISense
-      URL: https://arisense.io/
-      AuthorName: Aerodyne Research, Inc.
-      AuthorURL: http://www.aerodyne.com/
     - Title: OpenAQ Aggregator
       URL: https://github.com/ksree/world-air-quality
       AuthorName: Kapil Sreedharan

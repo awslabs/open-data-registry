@@ -10,6 +10,8 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 tags = yaml.safe_load(open("tags.yaml"))
 tags.append("aws-pds")
 
+adx_categories = yaml.safe_load(open("adx_categories.yaml"))
+
 resources = yaml.safe_load(open("resources.yaml"))
 services = yaml.safe_load(open("services.yaml"))
 
@@ -47,6 +49,15 @@ def ext_tags(value, rule_obj, path):
 
     # If we're here, all tags were ok
     return True
+
+# Check if provided ADX categories are in adx_categories.yaml
+def ext_adx_categories(value, rule_obj, path):
+    if value not in adx_categories:
+        print("Invalid ADX category!", value)
+        return False
+
+    # If we're here, all categories were ok
+    return True    
 
 
 # Check if provided resources are in resources.yaml
@@ -109,72 +120,5 @@ def ext_resources_explore(value, rule_obj, path):
     if not re.fullmatch(explore_regex, value):
         print("Explore string '{}' is not a valid link".format(value))
         return False
-
-    return True
-
-
-@retry(4)
-def get_bucket_region(url):
-    # Get the headers for this bucket.
-    # Verify=False because the wildcard matching doesn't work for buckets with '.'
-    r = requests.head(url, verify=False)
-
-    if r.status_code == requests.codes.not_found:
-        return None
-
-    if not "x-amz-bucket-region" in r.headers:
-        print(r.headers)
-        print("{} {} {}".format(r.status_code, r.reason, r.url))
-        raise Exception("Bucket region missing from request header?")
-
-    return r.headers["x-amz-bucket-region"]
-
-
-def ext_valid_bucket_regions(value, rule_obj, path):
-
-    # Validate required fields in resources
-    if not isinstance(value, dict):
-        print("Did not receives a resources dictionary...")
-        return False
-
-    if "Type" not in value:
-        print("Type is a required resources field")
-        return False
-
-    if "Description" not in value:
-        print("Description is a required resources field")
-        return False
-
-    if "Region" not in value:
-        print("Region is a required resources field")
-        return False
-
-    if "Explore" in value and not isinstance(value["Explore"], list):
-        print("Explore must be an array of links")
-        return False
-
-    # Make sure this is a dict, and a bucket, then validate the region
-    if value["Type"] == "S3 Bucket":
-        bucket = value["ARN"]
-        parts = bucket.split(":::")
-        if not parts[0] == "arn:aws:s3":
-            # This is probably not on public aws so we can't check
-            return True
-        bucket = parts[1]
-        parts = bucket.split("/")
-        bucket = parts[0]
-        url = "https://{}.s3.amazonaws.com".format(bucket)
-
-        region = get_bucket_region(url)
-        if region is None:
-            print("The bucket {} does not exist".format(bucket))
-            return False
-        if not value["Region"].lower() == region.lower():
-            print(
-                "The region for bucket {} is listed as {} but is actually {}".format(
-                    bucket, value["Region"], region
-                )
-            )
-            return False
 
     return True

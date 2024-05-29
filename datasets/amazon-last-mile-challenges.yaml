@@ -1,0 +1,89 @@
+Name: 2021 Amazon Last Mile Routing Research Challenge Dataset
+Description: "The 2021 Amazon Last Mile Routing Research Challenge was an innovative research initiative led by Amazon.com and supported by the Massachusetts Institute of Technology’s Center for Transportation and Logistics. Over a period of 4 months, participants were challenged to develop innovative machine learning-based methods to enhance classic optimization-based approaches to solve the travelling salesperson problem, by learning from historical routes executed by Amazon delivery drivers. The primary goal of the Amazon Last Mile Routing Research Challenge was to foster innovative applied research in route planning, building on recent advances in predictive modeling, and using a real-world problem and data. The dataset released for the research challenge includes route-, stop-, and package-level features for 9,184 historical routes performed by Amazon drivers in 2018 in five metropolitan areas in the United States. This real-world dataset excludes any personally identifiable information (all route and package identifiers have been randomly regenerated and related location data have been obfuscated to ensure anonymity). Although multiple synthetic benchmark datasets are available in the literature, the dataset of the 2021 Amazon Last Mile Routing Research Challenge is the first large and publicly available dataset to include instances based on real-world operational routing data. The dataset is fully described and formally introduced in the following Transportation Science article: https://pubsonline.informs.org/doi/10.1287/trsc.2022.1173" 
+
+
+Documentation: https://github.com/MIT-CAVE/rc-cli/blob/main/templates/data_structures.md
+Contact: lastmile-research-challenge@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: None
+
+Tags:
+  - transportation
+  - machine learning
+  - deep learning
+  - amazon.science
+  - urban
+  - analytics
+  - geospatial
+  - logistics
+  - last mile
+  - optimization
+  - routing
+
+License: "Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. The material for the Amazon Last Mile Routing Research Challenge is provided under a Creative Commons Attribution-NonCommercial 4.0 International Public License (the “License”). You may not use this material except in compliance with the License. You may obtain a copy of the License at: https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt"
+
+Citation: "Merchan, Daniel; Arora, Jatin; Pachon, Julian; Konduri, Karthik; Winkenbach, Matthias; Parks, Steven; Noszek, Joseph (2022). Transportation Science."
+
+Resources:
+  - Description: "Dataset including training and testing data. Folder almrrc2021_data_training includes 6,112 historical routes used for model traning; folder almrrc2021_data_evaluation includes 3072 historical routes used for model evaluation. All routes correspond to year 2018. Please refer to the Tranportation Science article  (https://pubsonline.informs.org/doi/10.1287/trsc.2022.1173) for a comprehensive description of the dataset, and to this documentation page (https://github.com/MIT-CAVE/rc-cli/blob/main/templates/data_structures.md) for details on data structure and format."
+    ARN: arn:aws:s3:::amazon-last-mile-challenges
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Code repository used for the 2021 Amazon Routing Research Challenge (this repository is included for reference and documentation purposes only, you do not need to install it to access the data)
+      URL: https://github.com/MIT-CAVE/rc-cli
+      AuthorName: CAVE Lab, MIT Center for Transportation and Logistics
+      AuthorURL: https://cave.mit.edu/
+    - Title: AWS Last Mile Route Sequence Optimization
+      URL: https://github.com/aws-samples/amazon-sagemaker-amazon-routing-challenge-sol
+      AuthorName: Chen Wu, Yin Song, Verdi March, Eden Duthi
+  Publications:
+    - Title: "2021 Amazon Last Mile Routing Research Challenge: Data Set"
+      URL: https://pubsonline.informs.org/doi/pdf/10.1287/trsc.2022.1173
+      AuthorName: Daniel Merchán, Jatin Arora, Julian Pachon, Karthik Konduri, Matthias Winkenbach, Steven Parks, Joseph Noszek
+    - Title: Can language models be used for real-world urban-delivery route optimization?
+      URL: https://www.cell.com/the-innovation/pdf/S2666-6758(23)00148-0.pdf
+      AuthorName: Yang Liu, Fanyou Wu, Zhiyuan Liu, Kai Wang, Feiyue Wang, Xiaobo Qu
+    - Title: Constrained Local Search for Last-Mile Routing
+      URL: https://doi.org/10.1287/trsc.2022.1185
+      AuthorName: William Cook, Stephan Held, Keld Helsgaun
+    - Title: Predicting drivers route trajectories in last-mile delivery using a pair-wise attention-based pointer neural network
+      URL: https://doi.org/10.1016/j.tre.2023.103168
+      AuthorName: Baichuan Mo, Qingyi Wang, Xiaotong Guo, Matthias Winkenbach, Jinhua Zhao
+    - Title: Integrating driver behavior into last-mile delivery routing - Combining machine learning and optimization in a hybrid decision support framework
+      URL: https://doi.org/10.1016/j.ejor.2023.04.043
+      AuthorName: Peter Dieter, Matthew Caron, Guido Schryen
+    - Title: Machine Learning for Data-Driven Last-Mile Delivery Optimization
+      URL: https://doi.org/10.1287/trsc.2022.0029
+      AuthorName: Sami Serkan Özarik, Paulo da Costa, Alexandre M. Florio
+    - Title: Making opportunity sales in attended home delivery
+      URL: https://doi.org/10.1016/j.cor.2023.106362
+      AuthorName: Çelen Naz Ötken, Bariş Yildiz, Okan Arslan, Gilbert Laporte
+    - Title: Planning robust drone-truck delivery routes under road traffic uncertainty
+      URL: https://doi.org/10.1016/j.ejor.2023.02.031
+      AuthorName: Yu Yang, Chiwei Yan, Yufeng Cao, Roberto Roberti
+    - Title: The Driver-Aide Problem Coordinated Logistics for Last-Mile Delivery
+      URL: https://doi.org/10.1287/msom.2022.0211
+      AuthorName: S. Raghavan , Rui Zhang
+    - Title: Inverse Optimization for Routing Problems
+      URL: https://arxiv.org/abs/2307.07357
+      AuthorName: Pedro Zattoni Scroccaro, Piet van Beek, Peyman Mohajerin Esfahani, Bilge Atasoy
+    - Title: Human-Centric Parcel Delivery at Deutsche Post with Operations Research and Machine Learning
+      URL: https://doi.org/10.1287/inte.2023.0031
+      AuthorName: Uğur Arikan , Thorsten Kranz, Baris Cem Sal, Severin Schmitt, Jonas Witt 
+    - Title: Crowdkeeping in Last-Mile Delivery
+      URL: https://doi.org/10.1287/trsc.2022.0323
+      AuthorName: Xin Wang , Okan Arslan , Erick Delage
+    - Title: Learn global and optimize local A data-driven methodology for last-mile routing
+      URL: https://doi.org/10.1016/j.cor.2023.106312
+      AuthorName: Mayukh Ghosh, Alex Kuiper, Roshan Mahes, Donato Maragno
+    - Title: Probability estimation and structured output prediction for learning preferences in last mile delivery
+      URL: https://doi.org/10.1016/j.cie.2024.109932
+      AuthorName: Rocsildes Canoy, Victor Bucarey, Jayanta Mandi, Maxime Mulamba, Yves Molenbruch, Tias Guns
+    - Title: Does parking matter? The impact of parking time on last-mile delivery optimization
+      URL: https://doi.org/10.1016/j.tre.2023.103391
+      AuthorName: Sara Reed, Ann Melissa Campbell, Barrett W. Thomas
+
+
+

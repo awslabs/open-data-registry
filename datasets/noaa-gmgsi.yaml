@@ -1,9 +1,10 @@
 Name: NOAA Global Mosaic of Geostationary Satellite Imagery (GMGSI)
 Description: |
-  NOAA/NESDIS Global Mosaic of Geostationary Satellite Imagery (GMGSI) visible (VIS), shortwave infrared (SIR), longwave infrared (LIR) imagery, and water vaport imagery (WV) are composited from data from several geostationary satellites orbiting the globe, including the GOES-East and GOES-West Satellites operated by U.S. NOAA/NESDIS, the Meteosat-11 and Meteosat-8 satellites from theMeteosat Second Generation (MSG) series of satellites operated by European Organization for the Exploitation of Meteorological Satellites (EUMETSAT), and the Himawari-8 satellite operated by the Japan Meteorological Agency (JMA). GOES-East is positioned at 75 deg W longitude over the equator. GOES-West is located at 137.2 deg W longitude over the equator. Both satellites cover an area from the eastern Atlantic Ocean to the central Pacific Ocean region. The Meteosat-11 satellite is located at 0 deg E longitude to cover Europe and Africa regions. The Meteosat-8 satellite is located at 41.5 deg E longitude to cover the Indian Ocean region. The Himawari-8 satellite is located at 140.7 deg E longitude to cover the Asia-Oceania region. The visible imagery indicates cloud cover and ice and snow cover. The shortwave, or mid-infrared, indicates cloud cover and fog at night. The longwave, or thermal infrared, depicts cloud cover and land/sea temperature patterns. The water vapor imagery indicates the amount of water vapor contained in the mid to upper levels of the troposphere, with the darker grays indicating drier air and the brighter grays/whites indicating more saturated air. GMGSI composite images have an approximate 8 km (5 mile) horizontal resolution and are updated every hour.
+  NOAA/NESDIS Global Mosaic of Geostationary Satellite Imagery (GMGSI) visible (VIS), shortwave infrared (SIR), longwave infrared (LIR) imagery, and water vapor imagery (WV) are composited from data from several geostationary satellites orbiting the globe, including the GOES-East and GOES-West Satellites operated by U.S. NOAA/NESDIS, the Meteosat-10 and Meteosat-9 satellites from theMeteosat Second Generation (MSG) series of satellites operated by European Organization for the Exploitation of Meteorological Satellites (EUMETSAT), and the Himawari-9 satellite operated by the Japan Meteorological Agency (JMA). GOES-East is positioned at 75 deg W longitude over the equator. GOES-West is located at 137.2 deg W longitude over the equator. Both satellites cover an area from the eastern Atlantic Ocean to the central Pacific Ocean region. The Meteosat-10 satellite is located at 0 deg E longitude to cover Europe and Africa regions. The Meteosat-9 satellite is located at 45.5 deg E longitude to cover the Indian Ocean region. The Himawari-9 satellite is located at 140.7 deg E longitude to cover the Asia-Oceania region. The visible imagery indicates cloud cover and ice and snow cover. The shortwave, or mid-infrared, indicates cloud cover and fog at night. The longwave, or thermal infrared, depicts cloud cover and land/sea temperature patterns. The water vapor imagery indicates the amount of water vapor contained in the mid to upper levels of the troposphere, with the darker grays indicating drier air and the brighter grays/whites indicating more saturated air. GMGSI composite images have an approximate 8 km (5 mile) horizontal resolution and are updated every hour.
 Documentation: "[https://www.ospo.noaa.gov/Operations/GOES/index.html](https://www.ospo.noaa.gov/Operations/GOES/index.html); [https://www.ospo.noaa.gov/Products/imagery/index.html](https://www.ospo.noaa.gov/Products/imagery/index.html)"
 Contact: |
-  For any data delivery issues, please contact the NOAA Big Data Project Team at: noaa.bdp@noaa.gov. For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Hourly
 Collabs:
@@ -15,7 +16,6 @@ Tags:
   - agriculture
   - climate
   - meteorological
-  - sustainability
   - weather
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
@@ -23,7 +23,6 @@ Resources:
     ARN: arn:aws:s3:::noaa-gmgsi-pds
     Region: us-east-1
     Type: S3 Bucket
-    URL: https://noaa-gmgsi-pds.s3.amazonaws.com
     Explore:
     - '[Browse Bucket](https://noaa-gmgsi-pds.s3.amazonaws.com/index.html)'
   - Description: New data notifications for GMGSI, only Lambda and SQS protocols allowed

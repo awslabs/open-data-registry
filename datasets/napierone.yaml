@@ -1,5 +1,5 @@
 Name: NapierOne Mixed File Dataset
-Description: NapierOne is a modern cybersecurity mixed file data set, primarily aimed at, but not limited to, ransomware detection and forensic analysis. The dataset contains over 450,000 distinct files, representing 44 distinct popular file types. It was designed to address the known deficiency in research reproducibility and improve consistency by facilitating research replication and repeatability. The data set was inspired by the Govdocs1 data set and it is intended that ‘NapierOne’ be used as a complement to this original data set. An investigation was performed with the goal of determining the common files types currently in use. No specific research was found that explicitly provided this information, so an alternative consensus approach was employed. This involved combining the findings from multiple sources of file type usage into an overall ranked list. After which 5,000 real-world example files were gathered, and a specific data subset was created, for each of the common file types identified. In some circumstances, multiple data subsets were created for a specific file type, each subset representing a specific characteristic for that file type. For example, there are multiple data subsets for the ZIP file type with each subset containing examples of a specific compression method. Ransomware execution tends to produce files that have high entropy, so examples of file types that naturally have this attribute are also present. The resulting entire data set comprises of more than 90 separate data subsets divided between 44 distinct file types, resulting in over 450,000 unique files in total. Currently, the data set contains examples of the following file types APK, BIN, BMP, CSS, CSV, DOC, DOCX, DWG, ELF, EPS,EPUB, EXE, GIF, GZIP, HTML, ICS, JS, JPG, JSON, MKV, MP3, MP4, ODS, OXPS, PDF, PNG, PPT, PPTX, PS1, RAR, SVG, TAR, TIF, TXT, WEBP, XLS, XLSX, XML, ZIP, ZLIB, 7Zip
+Description: NapierOne is a modern cybersecurity mixed file data set, primarily aimed at, but not limited to, ransomware detection and forensic analysis. The dataset contains over 500,000 distinct files, representing 44 distinct popular file types. It was designed to address the known deficiency in research reproducibility and improve consistency by facilitating research replication and repeatability. The data set was inspired by the Govdocs1 data set and it is intended that ‘NapierOne’ be used as a complement to this original data set. An investigation was performed with the goal of determining the common files types currently in use. No specific research was found that explicitly provided this information, so an alternative consensus approach was employed. This involved combining the findings from multiple sources of file type usage into an overall ranked list. After which 5,000 real-world example files were gathered, and a specific data subset was created, for each of the common file types identified. In some circumstances, multiple data subsets were created for a specific file type, each subset representing a specific characteristic for that file type. For example, there are multiple data subsets for the ZIP file type with each subset containing examples of a specific compression method. Ransomware execution tends to produce files that have high entropy, so examples of file types that naturally have this attribute are also present. The resulting entire data set comprises of more than 90 separate data subsets divided between 44 distinct file types, resulting in over 500,000 unique files in total. Currently, the data set contains examples of the following file types APK, BIN, BMP, CSS, CSV, DOC, DOCX, DWG, ELF, EPS,EPUB, EXE, GIF, GZIP, HTML, ICS, JS, JPG, JSON, MKV, MP3, MP4, ODS, OXPS, PDF, PNG, PPT, PPTX, PS1, RAR, SVG, TAR, TIF, TXT, WEBP, XLS, XLSX, XML, ZIP, ZLIB, 7Zip
 Documentation: https://github.com/simonrdavies/NapierOne
 Contact:  Simon Davies  s.davies@napier.ac.uk Richard Macfarlane  R.Macfarlane@napier.ac.uk William J. Buchanan b.buchanan@napier.ac.uk
 ManagedBy: "[School of Computing at Edinburgh Napier University](https://www.napier.ac.uk/about-us/our-schools/school-of-computing/)"
@@ -12,6 +12,7 @@ Tags:
 - ransomware
 - malware
 - mixed file dataset
+- aws-pds
 License: NapierOne is released under the Edinburgh Napier University License Agreement and allows free, full and open access to all. For more details please refer to the License and Attribution section of the documentation. The license agreement means that you are free to Copy, publish, distribute and transmit the Information; Adapt the Information; Exploit the Information commercially and non-commercially for example, by combining it with other Information, or by including it in your own product or application. You must (where you do any of the above) Acknowledge the source of the information in your product.
 Resources:
   - Description: NapierOne Mixed File Dataset
@@ -24,8 +25,12 @@ DataAtWork:
   Tutorials: 
     - Title: napierOne use examples
       URL: https://github.com/simonrdavies/NapierOne/blob/main/tutorials.md
-      AuthorName: sdavies
+      AuthorName: s.davies
       AuthorURL: https://github.com/simonrdavies/NapierOne/
-      
-  Tools & Applications:
   Publications:
+    - Title: NapierOne - A modern mixed file data set alternative to Govdocs1
+      URL: https://doi.org/10.1016/j.fsidi.2021.301330
+      AuthorName: Simon R.Davies, Richard Macfarlane, William J.Buchanan
+    - Title: Exploring the Need For an Updated Mixed File Research Data Set
+      URL: https://doi.org/10.1109/ICEET53442.2021.9659618
+      AuthorName: Simon R.Davies, Richard Macfarlane, William J.Buchanan.

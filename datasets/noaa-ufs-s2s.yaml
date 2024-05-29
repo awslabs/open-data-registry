@@ -1,17 +1,17 @@
-Name: NOAA Unified Forecast System Subseasonal to Seasonal Prototypes 5 & 6
+Name: NOAA Unified Forecast System Subseasonal to Seasonal Prototypes
 Description: |
-  The Unified Forecast System Subseasonal to Seasonal prototype 5 (UFS S2Sp5) dataset is reforecast data from the UFS atmosphere-ocean coupled model experimental prototype version 5 produced by the Medium Range and Subseasonal to Seasonal Application team of the UFS-R2O project. The UFS S2Sp5 is the first dataset released to the broader weather community for analysis and feedback as part of the development of the next generation operational numerical weather prediction system from NWS. The dataset includes all the major weather variables for atmosphere, land, ocean, sea ice, and ocean waves.
+  The Unified Forecast System Subseasonal to Seasonal prototypes consist of reforecast data from the UFS atmosphere-ocean coupled model experimental prototype version 5, 6, 7, and 8 produced by the Medium Range and Subseasonal to Seasonal Application team of the UFS-R2O project. The UFS prototypes are the first dataset released to the broader weather community for analysis and feedback as part of the development of the next generation operational numerical weather prediction system from NWS. The datasets includes all the major weather variables for atmosphere, land, ocean, sea ice, and ocean waves.
   <br/>
   <br/>
-  Acknowledgment - The Unified Forecast System (UFS) atmosphere-ocean coupled model experimental version 5 (UFS S2Sp5) data used in this study are made available through the UFS Research to Operations (UFS-R2O) project sponsored by the National Weather Service (NWS) Office of Science and Technology Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric Administration (NOAA) Oceanic and Atmospheric Research (OAR) Weather Program Office (WPO).
-Documentation: https://vlab.noaa.gov/web/ufs-r2o/global-coupling NWS Disclaimer https://www.weather.gov/disclaimer
+  Acknowledgment - The Unified Forecast System (UFS) atmosphere-ocean coupled model experimental version # data used in this study are made available through the UFS Research to Operations (UFS-R2O) project sponsored by the National Weather Service (NWS) Office of Science and Technology Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric Administration (NOAA) Oceanic and Atmospheric Research (OAR) Weather Program Office (WPO).
+Documentation: https://vlab.noaa.gov/web/ufs-r2o/dataproducts NWS Disclaimer https://www.weather.gov/disclaimer
 Contact: |
-  For questions regarding data content or quality, visit https://vlab.ncep.noaa.gov/web/ufs-r2o/coupled-model-prototype5. 
+  For questions regarding data content or quality, visit https://vlab.noaa.gov/web/ufs-r2o/coupled-model-prototype5. 
   <br />
   For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
   <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Prototype 5 is a retrospective run for the period from 2011 to 2018. The runs are initialized twice per month (1st and 15th) and the length of the forecast is 35 days with an output frequency of 6 hours.
+UpdateFrequency: A Prototype is a retrospective run for the period from 2011 to 2018. The runs are initialized twice per month (1st and 15th) and the length of the forecast is 35 days with an output frequency of 6 hours.
 Collabs:
   ASDI:
     Tags:
@@ -23,15 +23,25 @@ Tags:
   - disaster response
   - environmental
   - meteorological
-  - sustainability
   - weather
   - oceans
-
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: UFS prototype files (5 & 6)
+  - Description: UFS prototype files (5, 6, 7, & 8)
     ARN: arn:aws:s3:::noaa-ufs-prototypes-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-ufs-prototypes-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Prototype, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewUfsPrototypesObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+    Publications:
+    - Title: "Advances in Seasonal Predictions of Arctic Sea Ice With NOAA UFS"
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102392
+      AuthorName: Jieshun Zhu, Wanqiu Wang, Yanyun Liu, Arun Kumar, and David DeWitt
+    - Title: "The impact of tropical SST biases on the S2S precipitation forecast skill over the Contiguous United States in the UFS global coupled model"
+      URL: https://doi.org/10.1175/WAF-D-22-0162.1
+      AuthorName: Hedanqiu Bai, Bin Li, Avichal Mehra, Jessica Meixner, Shrinivas Moorthi, Sulagna Ray, Lydia Stefanova, Jiande Wang, Jun Wang, Denise Worthen, Fanglin Yang, and Cristiana Stan

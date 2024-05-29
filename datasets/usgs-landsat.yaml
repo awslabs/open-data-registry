@@ -3,7 +3,11 @@ Description: |
   This joint NASA/USGS program provides the longest continuous space-based record of 
   Earth’s land in existence. Every day, Landsat satellites provide essential information 
   to help land managers and policy makers make wise decisions about our resources and our environment.
-  Data is provided for Landsats 1, 2, 3, 4, 5, 7, and 8.
+  Data is provided for Landsats 1, 2, 3, 4, 5, 7, 8, and 9 (excludes Landsat 6).
+
+  As of June 28, 2023 ([announcement](https://www.usgs.gov/landsat-missions/news/changes-coming-landsats-simple-notification-service-amazon-web-service)),
+  the previous single SNS topic `arn:aws:sns:us-west-2:673253540267:public-c2-notify` was replaced with
+  three new SNS topics for different types of scenes.
 Documentation: https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access
 Contact: https://answers.usgs.gov/
 ManagedBy: "[United States Geological Survey](https://www.usgs.gov)"
@@ -13,12 +17,12 @@ Collabs:
     Tags:
       - satellite imagery
 Tags:
+  - aws-pds
   - agriculture
   - earth observation
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - stac
   - cog
@@ -33,13 +37,26 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
     Explore:
-    - '[STAC Catalog](https://landsatlook.usgs.gov/sat-api/collections)'
-  - Description: New scene notifications
-    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify
+    - '[STAC Catalog](https://landsatlook.usgs.gov/stac-server/collections)'
+  - Description: New scene notifications, Level-1 and Level-2 Scenes
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify-v2
     Region: us-west-2
     Type: SNS Topic
+  - Description: New scene notifications, Level 3 Science Products
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-level-3-tile-notify-v2
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: New scene notifications, U.S. ARD Tiles
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-ard-tile-notify-v2
+    Region: us-west-2
+    Type: SNS Topic
+
 DataAtWork:
   Tutorials:
+    - Title: "How to Work with Landsat and Sentinel-2 on AWS with Python"
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com/
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
       URL: https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971
       AuthorName: Planet
@@ -69,12 +86,11 @@ DataAtWork:
       AuthorURL: https://www.usgs.gov
     - Title: Cloud Segmentation in Landsat-8 Images
       URL: https://medium.com/sentinel-hub/clouds-segmentation-in-landsat-8-images-da370815235
-      AuthorName: Ingrid Grenet      
+      AuthorName: Ingrid Grenet
+    - Title: Creating a STAC of Landsat data
+      URL: https://pystac.readthedocs.io/en/stable/tutorials/creating-a-landsat-stac.html
+      AuthorName: PySTAC Contributors
   Tools & Applications:
-    - Title: landsatlive.live
-      URL: https://landsatlive.live
-      AuthorName: Development Seed
-      AuthorURL: https://developmentseed.org/
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
@@ -113,6 +129,10 @@ DataAtWork:
       AuthorURL: http://www.sinergise.com/
     - Title: Sentinel Playground for Landsat
       URL: https://apps.sentinel-hub.com/sentinel-playground/?source=L8
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
       AuthorName: Sinergise
       AuthorURL: http://www.sinergise.com/
     - Title: Dynamic map tiling with Cloud-Optimized GeoTIFFs

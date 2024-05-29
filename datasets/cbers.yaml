@@ -10,8 +10,9 @@ Description: |
   PAN10M scenes acquired since
   the start of the satellite mission and is daily updated with
   new scenes.
-  CBERS-4A MUX Level 4 (Orthorectified) scenes are being experimentally
-  ingested starting from 04-13-2021.
+  CBERS-4A MUX Level 4 (Orthorectified) scenes are being
+  ingested starting from 04-13-2021. CBERS-4A WFI Level 4 (Orthorectified)
+  scenes are being ingested starting from 10-12-2022.
 Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
 ManagedBy: "[AMS Kepler](https://amskepler.com/)"
@@ -27,46 +28,35 @@ Tags:
   - geospatial
   - imaging
   - satellite imagery
-  - sustainability
   - disaster response
   - stac
   - cog
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Resources:
-  - Description: CBERS imagery (COG files, Requester Pays Bucket)
-    ARN: arn:aws:s3:::cbers-pds
-    Region: us-east-1
+  - Description: CBERS imagery (COG files, quicklooks, metadata)
+    ARN: arn:aws:s3:::brazil-eosats
+    Region: us-west-2
     Type: S3 Bucket
-    RequesterPays: True
+    RequesterPays: False
     Explore:
-    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'    
-  - Description: CBERS metadata (Quicklooks, metadata)
-    ARN: arn:aws:s3:::cbers-meta-pds
-    Region: us-east-1
+    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+    - '[stacindex](https://stacindex.org/catalogs/cbers)'
+  - Description: STAC static catalog
+    ARN: arn:aws:s3:::br-eo-stac-1-0-0
+    Region: us-west-2
     Type: S3 Bucket
-  - Description: Notifications for new MUX quicklooks
-    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4MUXQuicklook
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Notifications for new AWFI quicklooks
-    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4AWFIQuicklook
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Notifications for new PAN10M quicklooks
-    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4PAN10MQuicklook
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Notifications for new PAN5M quicklooks
-    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4PAN5MQuicklook
-    Region: us-east-1
-    Type: SNS Topic
+    RequesterPays: False
   - Description: Notifications for new CBERS 4A quicklooks, all sensors
-    ARN: arn:aws:sns:us-east-1:599544552497:NewCB4AQuicklook
-    Region: us-east-1
+    ARN: arn:aws:sns:us-west-2:599544552497:NewCB4AQuicklook
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Notifications for new CBERS 4 quicklooks, all sensors
+    ARN: arn:aws:sns:us-west-2:599544552497:NewCB4Quicklook
+    Region: us-west-2
     Type: SNS Topic
   - Description: Topic that receives STAC V1.0.0 items as new scenes are ingested
-    ARN: arn:aws:sns:us-east-1:769537946825:cbers2stac-prod-stacitemtopic4BCE3141-VI09VRB6LBEK
-    Region: us-east-1
+    ARN: arn:aws:sns:us-west-2:769537946825:br-eo-stac-prod-stacitemtopic4BCE3141-Z8he7LYjqXFe
+    Region: us-west-2
     Type: SNS Topic
 DataAtWork:
   Tutorials:
@@ -78,6 +68,10 @@ DataAtWork:
         - Lambda
         - DynamoDB
   Tools & Applications:
+    - Title: STAC V1.0.0 endpoint
+      URL: https://stac.amskepler.com/v100
+      AuthorName: AMS Kepler
+      AuthorURL: https://github.com/fredliporace/cbers-2-stac
     - Title: EOS Land Viewer
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System

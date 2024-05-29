@@ -22,7 +22,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - stac
 License: |
@@ -34,7 +33,10 @@ Resources:
     Type: S3 Bucket
     RequesterPays: True
     Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l1c)'
+    - '[Earth Search STAC L1C Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[Earth Search STAC Browser L1C Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[STAC V1.0.0 endpoint](https://sentinel-s2-l1c-stac.s3.amazonaws.com/)'
+    - '[Earth Viewer by Element 84](https://viewer.aws.element84.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
@@ -43,15 +45,20 @@ Resources:
     ARN: arn:aws:s3:::sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-    Explore:
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/sentinel-s2-l2a)'
     RequesterPays: True
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://sentinel-s2-l2a-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Zipped archives for each product with 7 day retention period, in Requester Pays bucket
+  - Description: Zipped archives for each L1C product with 3 day retention period, in Requester Pays bucket
     ARN: arn:aws:s3:::sentinel-s2-l1c-zips
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: Zipped archives for each L2A product with 3 day retention period, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l2a-zips
     Region: eu-central-1
     Type: S3 Bucket
     RequesterPays: True
@@ -65,6 +72,23 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: How to Work with Landsat and Sentinel-2 on AWS with Python
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com
+    - Title: Getting Started With Geospatial Data Analysis
+      URL: https://github.com/samx18/geospatial_analysis/
+      NotebookURL: https://github.com/samx18/geospatial_analysis/blob/main/geospatial_analysis.ipynb
+      AuthorName: Sam Palani
+      AuthorURL: https://samx18.medium.com
+      Services:
+        - SageMaker Studio Lab
+    - Title: Detecting deforestation using unsupervised K-means clustering on Sentinel-2 satellite imagery and SageMaker Studio Lab (SMSL)
+      URL: https://github.com/aws-samples/aws-smsl-geospatial-analysis-deforestation/
+      NotebookURL: https://github.com/aws-samples/aws-smsl-geospatial-analysis-deforestation/blob/main/geospatial_analysis_deforestation.ipynb
+      AuthorName: Parth Patel
+      Services:
+        - SageMaker Studio Lab
     - Title: Tutorial for using Sentinel-2 data
       URL: https://medium.com/@anttilip/seeing-earth-from-space-from-raw-satellite-data-to-beautiful-high-resolution-images-feb522adfa3f
       AuthorName: Antti Lipponen
@@ -79,6 +103,18 @@ DataAtWork:
     - Title: Learning Custom Scripts to Make Useful and Beautiful Satellite Images
       URL: https://medium.com/sentinel-hub/create-useful-and-beautiful-satellite-images-with-custom-scripts-8ef0e6a474c6
       AuthorName: Monja Šebela
+    - Title: Vegetation Analysis Pre/Post Lava Fire Using SentinelHub and Sentinel-2 Imagery on AWS
+      URL: https://github.com/aws-samples/aws-sentinel2-smsl-notebook
+      NotebookURL: https://github.com/aws-samples/aws-sentinel2-smsl-notebook/blob/main/geospatial_imagery_analysis.ipynb
+      AuthorName: Mike Jeffe
+      Services:
+        - SageMaker Studio Lab
+    - Title: TCS Digital Farming Generates Near Real-Time Insights on Crop Conditions for Actionable Decision Making
+      URL: https://aws.amazon.com/blogs/apn/tcs-digital-farming-generates-near-real-time-insights-on-crop-conditions-for-actionable-decision-making/
+      AuthorName: Dr. Suryakant Sawant, Mahesh Sarode, Rajoy Jose, and Kiran Killedar
+      Services:
+        - SageMaker
+        - Lambda
   Tools & Applications:
     - Title: Sentinel Hub WMS/WMTS/WCS Service
       URL: http://www.sentinel-hub.com/apps/wms

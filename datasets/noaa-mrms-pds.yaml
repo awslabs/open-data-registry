@@ -1,0 +1,57 @@
+Name: NOAA Multi-Radar/Multi-Sensor System (MRMS)
+Description:  |
+  The MRMS system was developed to produce severe weather, transportation, and precipitation products for improved decision-making capability to improve hazardous weather forecasts and warnings, along with hydrology, aviation, and numerical weather prediction.
+  <br/>
+  <br/>
+  MRMS is a system with fully-automated algorithms that quickly and intelligently integrate data streams from multiple radars, surface and upper air observations, lightning detection systems, satellite observations, and forecast models. Numerous two-dimensional multiple-sensor products offer assistance for hail, wind, tornado, quantitative precipitation estimations, convection, icing, and turbulence diagnosis.
+  <br/>
+  <br/>
+  MRMS is being used to develop and test new Federal Aviation Administration (FAA) NextGen products in addition to advancing techniques in quality control, icing detection, and turbulence in collaboration with the National Center for Atmospheric Research, the University Corporation for Atmospheric Research, and Lincoln Laboratories.
+  <br/>
+  <br/>
+  MRMS was deployed operationally in 2014 at the National Center for Environmental Prediction (NCEP). All of the 100+ products it produces are available via NCEP to all of the WFOs, RFCs, CWSUs and NCEP service centers. In addition, the MRMS product suite is publicly available to any other entity who wishes to access and use the data. Other federal agencies that use MRMS include FEMA, DOD, FAA, and USDA.
+  <br/>
+  <br/>  
+  MRMS is the proposed operational version of the WDSS-II and NMQ research systems.
+  <br/>
+  <br/> 
+  The MRMS system was jointly developed in cooperation with the Cooperative Institute for Severe and High-Impact Weather Research and Operations (CIWRO) (formerly CIMMS), and the University of Oklahoma retains the right to commercially license the software. Several leading weather information companies have previously licensed the MRMS system from the University of Oklahoma for commercial use, although the software is available for government at no cost.
+  <br/>
+Documentation: https://www.nssl.noaa.gov/projects/mrms/
+Contact: |
+  For specific MRMS data questions, please reach out to the MRMS Team at mrms@noaa.gov
+  <br/>
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Data is delivered in real-time with a 2-minute update cycle.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA Multi-Radar/Multi-Sensor System (MRMS)
+    ARN: arn:aws:s3:::noaa-mrms-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-mrms-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for MRMS data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewMRMSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "Multi-Radar Multi-Sensor (MRMS) Quantitative Precipitation Estimation: Initial Operating Capabilities"
+      URL: https://journals.ametsoc.org/view/journals/bams/97/4/bams-d-14-00174.1.xml
+      AuthorName: Jian Zhang, Kenneth Howard, Carrie Langston, Brian Kaney, Youcun Qi, Lin Tang, Heather Grams, Yadong Wang, Stephen Cocks, Steven Martinaitis, Ami Arthur, Karen Cooper, Jeff Brogden, David Kitzmiller
+    - Title: "Multi-Radar Multi-Sensor (MRMS) Severe Weather and Aviation Products: Initial Operating Capabilities"
+      URL: https://journals.ametsoc.org/view/journals/bams/97/9/bams-d-14-00173.1.xml
+      AuthorName: Travis M. Smith, Valliappa Lakshmanan, Gregory J. Stumpf, Kiel L. Ortega, Kurt Hondl, Karen Cooper, Kristin M. Calhoun, Darrel M. Kingfield, Kevin L. Manross, Robert Toomey, Jeff Brogden

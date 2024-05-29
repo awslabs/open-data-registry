@@ -1,0 +1,38 @@
+Name: NOAA Unified Forecast System Short-Range Weather (UFS SRW) Application
+Description: The "[Unified Forecast System (UFS)](https://ufscommunity.org/)" is a community-based, coupled, comprehensive Earth Modeling System. It supports " [multiple applications](https://ufscommunity.org/science/aboutapps/)" with different forecast durations and spatial domains. The UFS Short-Range Weather (SRW) Application figures among these applications. It targets predictions of atmospheric behavior on a limited spatial domain and on time scales from minutes to several days. The SRW Application includes a prognostic atmospheric model, pre-processor, post-processor, and community workflow for running the system end-to-end. The "[SRW Application Users's Guide](https://ufs-srweather-app.readthedocs.io/en/develop/)" includes information on these components and provides detailed instructions on how to build and run the SRW Application. Users can access additional technical support via the "[UFS GitHub Discussions](https://github.com/ufs-community/ufs-srweather-app/discussions/categories/q-a)"
+  <br/>
+  <br/>
+  This data registry contains the data required to run the “out-of-the-box” SRW Application case. The SRW App requires numerous input files to run, including static datasets (fix files containing climatological information, terrain and land use data), initial condition data files, lateral boundary condition data files, and model configuration files (such as namelists). The SRW App experiment generation system also contains a set of workflow end-to-end (WE2E) tests that exercise various configurations of the system (e.g., different grids, physics suites). Data for running a subset of these WE2E tests are also included within this registry. 
+  <br/>
+  <br/>
+  Users can generate forecasts for dates not included in this data registry by downloading and manually adding raw model files for the desired dates. Many of these model files are publicly available and can be accessed via links on the "[Developmental Testbed Center](https://dtcenter.org/nwp-containers-online-tutorial/publicly-available-data-sets)" website. 
+Documentation: https://ufs-srweather-app.readthedocs.io/en/develop/
+Contact: |
+  For questions regarding data content or quality, visit  https://github.com/ufs-community/ufs-srweather-app/issues
+  <br/>
+  <br/>
+  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov. We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team at noaa.bdp@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: These are stable datasets for use with the SRW Application. They will not be updated frequently. 
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: "The UFS SRW Application license page can be found at: https://github.com/ufs-community/ufs-srweather-app/blob/develop/LICENSE.md"
+Resources:
+  - Description: Unified Forecast System Short-Range Weather (UFS SRW) Application data
+    ARN: arn:aws:s3:::noaa-ufs-srw-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+     - '[Browse Bucket](https://noaa-ufs-srw-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Short-Range Weather data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewUFSSRWObject
+    Region: us-east-1
+    Type: SNS Topic

@@ -19,7 +19,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - deafrica
   - stac
@@ -35,8 +34,8 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac)'
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files"
     ARN: arn:aws:s3:::deafrica-landsat-inventory
     Region: af-south-1
     Type: S3 Bucket
@@ -51,7 +50,7 @@ Resources:
 DataAtWork:
   Tutorials:
     - Title: Digital Earth Africa Training
-      URL: http://training.digitalearthafrica.org/
+      URL: http://learn.digitalearthafrica.org/
       AuthorName: Digital Earth Africa Contributors
   Tools & Applications:
     - Title: "Digital Earth Africa Explorer (LS8 Surface Reflectance)"
@@ -72,9 +71,6 @@ DataAtWork:
     - Title: "Digital Earth Africa Explorer (LS5 Surface Temperature)"
       URL: https://explorer.digitalearth.africa/products/ls5_st
       AuthorName: Digital Earth Africa Contributors
-    - Title: "Digital Earth Africa Explorer (Landsat Fractional Cover Observations from Space)"
-      URL: https://explorer.digitalearth.africa/products/fc_ls
-      AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa web services"
       URL: https://ows.digitalearth.africa
       AuthorName: Digital Earth Africa Contributors
@@ -85,11 +81,11 @@ DataAtWork:
       URL: https://sandbox.digitalearth.africa/
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Notebook Repo"
-      URL: https://github.com/digitalearthafrica
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Geoportal"
       URL: https://www.africageoportal.com/pages/digital-earth-africa
-      AuthorName: Digital Earth Africa Contributors
+      AuthorName: ESRI
   Publications:
     - Title: "Introduction to DE Africa"
       URL: https://youtu.be/Wkf7N6O9jJQ

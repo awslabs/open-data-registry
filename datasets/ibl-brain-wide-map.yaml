@@ -1,17 +1,19 @@
 Name: IBL Neuropixels Brainwide Map on AWS
-Description: Electrophysiological recordings of mouse brain activity acquired using Neuropixels probes.
-Documentation: https://docs.google.com/document/d/1OqIqqakPakHXRAwceYLwFY9gOrm8_P62XIfCTnHwstg/edit
+Description: Electrophysiological recordings of mouse brain activity acquired using Neuropixels probes and accompanying behavioral data.
+Documentation: https://int-brain-lab.github.io/iblenv/notebooks_external/data_release_brainwidemap.html
 Contact: info@internationalbrainlab.org
-ManagedBy: "[IBL](https://www.internationalbrainlab.com)"
+ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
 UpdateFrequency: TBD
 Tags:
+  - aws-pds
+  - life sciences
   - neuroscience
   - neurophysiology
   - open source software
   - Mus musculus
-License: MIT
+License: CC-BY 4.0
 Resources:
-  - Description: Public pilot ephys data release
+  - Description: Project data in public bucket
     ARN: arn:aws:s3:::ibl-brain-wide-map-public
     Region: us-east-1
     Type: S3 Bucket
@@ -21,12 +23,32 @@ DataAtWork:
       URL: https://pypi.org/project/ONE-api/
       AuthorName: IBL Data Architecture Working Group
       AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
-  Tutorials:
-    - Title: Accessing the public data via ONE
-      URL: https://int-brain-lab.github.io/ONE/one_installation.html
+    - Title: Data Explorer
+      URL: https://viz.internationalbrainlab.org/app
       AuthorName: IBL Data Architecture Working Group
       AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
-    - Title: Exploring the public IBL data with ONE
-      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/one_quickstart.html
+  Tutorials:
+    - Title: Introduction to IBL and the brain-wide map dataset
+      URL: https://colab.research.google.com/drive/1Ua-NlpYYZCIOF56xbsT9YR71Enkotd-b#scrollTo=7XzVVlhsVHMK
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Using IBL data with ONE
+      URL: https://colab.research.google.com/drive/1y3sRI1wC7qbWqN6skvulzPOp6xw8tLm7#scrollTo=GSvi21Dn84wJ
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Example analysis of the brain-wide map dataset
+      URL: https://colab.research.google.com/drive/1th3MRZGHMSaeAvGmKGJQ84rBk8eEI4Fu
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Download the public datasets
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Find data associated with a release or publication
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Loading Data
+      URL: https://int-brain-lab.github.io/iblenv/loading_examples.html#
       AuthorName: IBL Data Architecture Working Group
       AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members

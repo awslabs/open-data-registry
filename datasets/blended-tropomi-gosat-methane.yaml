@@ -1,0 +1,40 @@
+Name: Blended TROPOMI+GOSAT Satellite Data Product for Atmospheric Methane
+Description: A dataset of satellite retrievals of atmospheric methane that extends from 30 April 2018 to present.
+Documentation: https://github.com/nicholasbalasus/write_blended_files/blob/main/PUM.md
+Contact: nicholasbalasus@g.harvard.edu
+ManagedBy: Nicholas Balasus
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - climate
+  - environmental
+  - satellite imagery
+License: There are no restrictions on the use of this data, but please contact nicholasbalasus@g.harvard.edu before its use in a publication.
+Citation: Please cite Balasus et al. (2023).
+Resources:
+  - Description: Blended TROPOMI+GOSAT netCDF files
+    ARN: arn:aws:s3:::blended-tropomi-gosat-methane
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://s3-us-west-2.amazonaws.com/blended-tropomi-gosat-methane/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Plotting one month of blended TROPOMI+GOSAT methane retrievals
+      URL: https://github.com/nicholasbalasus/write_blended_files/blob/main/resources/aws_tutorial_1.ipynb
+      AuthorName: Nicholas Balasus
+      AuthorURL: https://nicholasbalasus.github.io
+      Services:
+      - SageMaker Studio Lab
+    - Title: Downloading the full data record from AWS
+      URL: https://github.com/nicholasbalasus/write_blended_files/blob/main/resources/aws_tutorial_2.ipynb
+      AuthorName: Nicholas Balasus
+      AuthorURL: https://nicholasbalasus.github.io
+      Services:
+      - SageMaker Studio Lab
+  Publications:
+    - Title: A blended TROPOMI+GOSAT satellite data product for atmospheric methane using machine learning to correct retrieval biases
+      URL: https://doi.org/10.5194/amt-16-3787-2023
+      AuthorName: N. Balasus, D.J. Jacob, A. Lorente, J.D. Maasakkers, R.J. Parker, H. Boesch, Z. Chen, M.M. Kelp, H. Nesser, D.J. Varon
+ADXCategories:
+  - Environmental Data

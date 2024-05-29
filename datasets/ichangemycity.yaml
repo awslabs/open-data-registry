@@ -1,19 +1,21 @@
+Deprecated: True
+DeprecatedNotice: The provider of this dataset no longer provides this data through this mechanism. If there are any questions, reach out through the contact mechanism listed below.
 Name: IChangeMyCity Complaints Data from Janaagraha
 Description: The [IChangeMyCity](https://www.ichangemycity.com) project provides insight into the complaints raised by citizens from diffent cities of India related to the issues in their neighbourhoods and the resolution of the same by the civic bodies.
 Documentation: http://ichangemycity-janaagraha-complaints-data-aws.s3.ap-south-1.amazonaws.com/readme.html
 Contact: data@janaagraha.org
+ManagedBy: Not currently managed
 UpdateFrequency: Daily
 Tags:
   - aws-pds
   - cities
   - civic
   - complaints
-  - machine learning
 License: There are no restrictions on the use of data received from IChangeMyCity.com. More information on licensing and IChangeMyCity data citation is available from IChangeMyCity.com
 Resources:
   - Description: IChangeMyCity Complaints
     ARN: arn:aws:s3:::ichangemycity-janaagraha-complaints-data-aws
-    Region: ap-south-1
+    Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:

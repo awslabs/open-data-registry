@@ -1,0 +1,64 @@
+Name: NOAA Global Real-Time Ocean Forecast System (Global RTOFS)
+Description: |
+  NOAA is soliciting public comment on petential changes to the Real Time Ocean Forecast System (RTOFS) through March 27, 2024. Please see Public Notice at (https://www.weather.gov/media/notification/pdf_2023_24/pns24-12_rtofs_v2.4.0.pdf)<br /><br />
+  
+  NOAA's Global Real-Time Ocean Forecast System (Global RTOFS) provides users with nowcasts (analyses of near present conditions) and forecast guidance up to eight days of ocean temperature and salinity, water velocity, sea surface elevation, sea ice coverage and sea ice thickness. <br /><br />
+
+  The Global Operational Real-Time Ocean Forecast System (Global RTOFS) is based on an eddy resolving 1/12° global HYCOM (HYbrid Coordinates Ocean Model) (https://www.hycom.org/), which is coupled to the Community Ice CodE (CICE) Version 4 (https://www.arcus.org/witness-the-arctic/2018/5/highlight/1). The RTOFS grid has a 1/12 degree horizontal resolution and 41 hybrid vertical levels on a global tripolar grid. <br /><br />
+
+  Since 2020, the RTOFS system implements a multivariate, multi-scale 3DVar data assimilation algorithm (Cummings and Smedstad, 2014) using a 24-hour update cycle. The data types presently assimilated include <br /><br />
+  
+  (1) satellite Sea Surface Temperature (SST) from METOP-B, JPSS-VIIRS, and  in-Situ SST, from ships, fixed and drifting buoys <br />
+  (2) Sea Surface Salinity (SSS) from SMAP, SMOS, and buoys <br />
+  (3) profiles of Temperature and Salinity from Animal-borne, Alamo floats, Argo floats, CTD, fixed buoys, gliders, TESAC, and XBT <br />
+  (4) Absolute Dynamic Topography (ADT) from Altika, Cryosat, Jason-3, Sentinel 3a, 3b, 6a <br />
+  (5) sea ice concentration from SSMI/S, AMSR2 <br /> <br />
+  
+  The system is designed to incorporate new observing systems as the data becomes available. <br /> <br />
+  
+  Once the observations go through a fully automated quality control and thinning process, the increments, or corrections, are obtained by executing the 3D variational algorithm. The increments are then added to the 24-hours forecast fields using a 6-hourly incremental analysis update. An earlier version of the system is described in Garraffo et al (2020). <br /> <br />
+  
+  Garraffo, Z.D., J.A. Cummings, S. Paturi, Y. Hao, D. Iredell, T. Spindler, B. Balasubramanian, I. Rivin, H-C. Kim, A. Mehra, 2020. Real Time Ocean-Sea Ice Coupled Three Dimensional Variational Global Data Assimilative Ocean Forecast System. In Research Activities in Earth System Modeling, edited by E. Astakhova, WMO, World Climate Research Program Report No.6, July 2020. <br /> <br />
+  
+  Cummings, J. A. and O. M. Smedstad. 2013. Variational Data Assimilation for the Global Ocean.
+  Data Assimilation for Atmospheric, Oceanic and Hydrologic Applications (Vol II)
+  S. Park and L. Xu (eds), Springer, Chapter 13, 303-343. <br /> <br />
+
+  Global Real Time Ocean Forecasting System RTOFS output available here include NetCDF and Hycom binary a/b files. Please see README documentation for more details. 
+Documentation: https://noaa-nws-rtofs-pds.s3.amazonaws.com/README.html
+Contact: |
+  For questions regarding data content or quality, visit the RTOFS site (https://polar.ncep.noaa.gov/global/). 
+  <br /> For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Once a day. The products are available at the following times each day <br />
+  00z - Analysis and analysis post-processing <br />
+  06z - forecast days 1-4, post-processing for most of these days <br />
+  12z - forecast days 5-8, post-processing for these days and some of forecast days 1-4. <br />
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - global
+  - coastal
+  - disaster response
+  - weather
+  - water
+  - environmental
+  - meteorological
+  - oceans
+  - climate
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA Global Real Time Ocean Forecasting System Data
+    ARN: arn:aws:s3:::noaa-nws-rtofs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-rtofs-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA Global Real Time Ocean Forecasting System New Dataset Notification
+    ARN: arn:aws:sns:us-east-1:709902155096:NewRTOFSObject
+    Region: us-east-1
+    Type: SNS Topic

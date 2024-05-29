@@ -1,15 +1,18 @@
-Name: NOAA Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS)
+Name: NOAA Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global)
 Description: |
-  NOAA's Global Extratropical Surge and Tide Operational Forecast System (Global ESTOFS) provides users with nowcasts (analyses of near present conditions) and forecast guidance of water level conditions for the entire globe. Global ESTOFS has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. Global ESTOFS was developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), the University of Notre Dame, the University of North Carolina, and The Water Institute of the Gulf. The model generates forecasts out to 180 hours four times per day; forecast output includes water levels caused by the combined effects of storm surge and tides, by astronomical tides alone, and by sub-tidal water levels (isolated storm surge). <br /><br />
+  
+  NOTICE - The Coast Survey Development Laboratory (CSDL) in NOAA/National Ocean Service (NOS)/Office of Coast Survey has upgraded the Surge and Tide Operational Forecast System (STOFS, formerly ESTOFS) to Version 2.1. A Service Change Notice (SCN) has been issued and can be found "[HERE](https://www.weather.gov/media/notification/pdf_2023_24/scn23-124_stofs_upgrade_v2.1.4_aaf.pdf)"<br /><br />
+  
+  NOAA's Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global) provides users with nowcasts (analyses of near present conditions) and forecast guidance of water level conditions for the entire globe. STOFS-2D-Global has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. STOFS-2D-Global was developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), the University of Notre Dame, the University of North Carolina, and The Water Institute of the Gulf. The model generates forecasts out to 180 hours four times per day; forecast output includes water levels caused by the combined effects of storm surge and tides, by astronomical tides alone, and by sub-tidal water levels (isolated storm surge).  <br /><br />
 
-  The hydrodynamic model employed by Global ESTOFS is the ADvanced CIRCulation (ADCIRC) finite element model. The model is forced by GFS winds, mean sea level pressure, and sea ice. The unstructured grid used by Global ESTOFS consists of 8,452,486 nodes and 16,226,163 triangular elements. Coastal resolution is up to 80 m for Hawaii and the U.S. West Coast; up to 90-120 m for the Pacific Islands including Guam, American Samoa, Marianas, Wake Island, Marshall Islands, and Palau; and up to 120 m for the U.S. East Coast, Puerto Rico, Micronesia, and Alaska. The flood plain extends overland to approximately 6 m elevation ASL for the U.S. East Coast, and up to 20 m elevation ASL for the Pacific Islands. Global ESTOFS a) reduces bias and errors due to the removal of the open ocean boundaries that were included in previous ESTOFS regional domains (ESTOFS-Atlantic, -Pacific, -Micronesia); b) includes internal tide-induced dissipation in the deep ocean; c) includes sea ice effect on wind drag, and d) incorporates a bias correction using 2-day average water level observations from CO-OPS tide stations that are interpolated spatially across the Global ESTOFS mesh. <br /><br />
+  The hydrodynamic model employed by STOFS-2D-Global is the ADvanced CIRCulation (ADCIRC) finite element model. The model is forced by GFS winds, mean sea level pressure, and sea ice. The unstructured grid used by STOFS-2D-Global consists of 12,785,004 nodes and 24,875,336 triangular elements. Coastal resolution is at least 1.5 km globally, and up to 80 m for the U.S. West Coast and Alaska, up to 90-120 m for the Pacific Islands including Hawaii, Guam, American Samoa, Marianas, Wake Island, Marshall Islands, and Palau, and up to 120 m for the U.S. East Coast and Puerto Rico. The flood plain extends overland to approximately 10 m elevation above MSL for the U.S. East Coast, and up to 20 m elevation above MSL for the Pacific Islands. STOFS-2D-Global water level forecast guidance is referenced to global MSL (GMSL) for gridded output and local MSL (LMSL) for station output (SHEF files are referenced to MLLW). <br /><br />
 
-  Global ESTOFS water level forecast guidance output available here include NetCDF, GRIB2, and SHEF files. Please see README documentation for more details.
+  STOFS-2D-Global water level forecast guidance output available here include NetCDF, GRIB2, and SHEF files. Please see README documentation for more details.
 Documentation: https://noaa-gestofs-pds.s3.amazonaws.com/README.html
 Contact: |
   For questions regarding data content or quality, visit the ESTOFS site (https://polar.ncep.noaa.gov/estofs/). 
-  <br /> For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  <br /> For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Four times per day, every 6 hours starting at midnight UTC
 Collabs:
@@ -26,17 +29,16 @@ Tags:
   - environmental
   - meteorological
   - oceans
-  - sustainability
   - climate
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: NOAA Global ESTOFS Water Level Forecast Guidance
+  - Description: NOAA STOFS-2D-Global Water Level Forecast Guidance
     ARN: arn:aws:s3:::noaa-gestofs-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-gestofs-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA Global ESTOFS Water Level Forecast Guidance New Dataset Notification
+  - Description: NOAA STOFS-2D-Global Water Level Forecast Guidance New Dataset Notification
     ARN: arn:aws:sns:us-east-1:123901341784:NewGESTOFSObject
     Region: us-east-1
     Type: SNS Topic

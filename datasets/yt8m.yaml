@@ -1,0 +1,42 @@
+Name: YouTube 8 Million - Data Lakehouse Ready
+Description: |
+  This both the original .tfrecords and a Parquet representation of the [YouTube 8 Million dataset](https://research.google.com/youtube8m/). YouTube-8M is a large-scale labeled video dataset that consists of millions of YouTube video IDs, with high-quality machine-generated annotations from a diverse vocabulary of 3,800+ visual entities. It comes with precomputed audio-visual features from billions of frames and audio segments, designed to fit on a single hard disk. This dataset also includes the YouTube-8M Segments data from June 2019. 
+  This dataset is 'Lakehouse Ready'. Meaning, you can query this data in-place straight out of the Registry of Open Data S3 bucket. [Deploy this dataset's corresponding CloudFormation template](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/quickcreate?templateUrl=https://aws-roda-ml-datalake.s3.us-west-2.amazonaws.com/YT8MRodaTemplate.RodaTemplate.json&stackName=YT8M-RODA) to create the  AWS Glue Catalog entries into your account in about 30 seconds. That one step will enable you to interact with the data with AWS Athena, AWS SageMaker, AWS EMR, or join into your AWS Redshift clusters. More detail in (the documentation)[https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/README.md.
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/docs/roda_install.md
+Contact: https://github.com/aws-samples/data-lake-as-code/issues
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: Google Research has not updated the dataset since 2019.
+Tags:  
+  - amazon.science
+  - computer vision
+  - machine learning
+  - labeled
+  - parquet
+  - video
+License: https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/docs/roda_attributions.txt
+Resources: 
+  - Description: Original YT8M *.tfrecords. [File structure info can be found here](https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/docs/roda_install.md).
+    ARN: arn:aws:s3:::aws-roda-ml-datalake/yt8m/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Lakehouse ready YT8M as Glue Parquet files. [Install instructions here](https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/docs/roda_install.md).
+    ARN: arn:aws:s3:::aws-roda-ml-datalake/yt8m_ods/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Replica of the two locations above in us-east-1.
+    ARN: arn:aws:s3:::aws-roda-ml-datalake-us-east-1/
+    Region: us-east-1
+    Type: S3 Bucket 
+DataAtWork:
+  Tutorials:
+    - Title: Data Lake as Code Deployment Guide
+      URL: https://github.com/aws-samples/data-lake-as-code/blob/roda-ml/docs/roda_install.md
+      AuthorName: AWS Industry Blueprints Team
+      Services:
+        - Athena
+        - Glue
+        - Lake Formation
+  Publications:
+    - Title: YouTube 8 Million 
+      URL: https://research.google.com/youtube8m/
+      AuthorName: Google Research

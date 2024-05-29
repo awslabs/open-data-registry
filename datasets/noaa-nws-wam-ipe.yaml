@@ -1,0 +1,43 @@
+Name: NOAA Whole Atmosphere Model-Ionosphere Plasmasphere Electrodynamics (WAM-IPE) Forecast System (WFS)
+Description: The coupled Whole Atmosphere Model-Ionosphere Plasmasphere Electrodynamics (WAM-IPE) Forecast System (WFS) is developed and maintained by the NOAA Space Weather Prediction Center (SWPC). The WAM-IPE model provides a specification of ionosphere and thermosphere conditions with real-time nowcasts and forecasts up to two days in advance in response to solar, geomagnetic, and lower atmospheric forcing. The WAM is an extension of the Global Forecast System (GFS) with a spectral hydrostatic dynamical core utilizing an enthalpy thermodynamic variable to 150 vertical levels on a hybrid pressure-sigma grid, with a model top of approximately 3 x 10-7 Pa (typically 400-600km depending on levels of solar activity). Additional upper atmospheric physics and chemistry, including electrodynamics and plasma processes, are included. The IPE model provides the plasma component of the atmosphere. It is a time-dependent, global 3D model of the ionosphere and plasmasphere from 90 km to approximately 10,000 km. WAM fields of winds, temperature, and molecular and atomic atmospheric composition are coupled to IPE to enable the plasma to respond to changes driven by the neutral atmosphere.
+  <br/>
+  <br/>
+  
+  The operational WAM-IPE is currently running in two different Concepts of Operation (CONOPS) to produce results of Nowcast and Forecast. The WAM-IPE real-time nowcast system (WRS) ingests real-time solar wind parameters every 5 minutes from NOAA’s spacecrafts located at Lagrange point 1 (L1) between the Sun and Earth in order to capture rapid changes in the ionosphere and thermosphere due to the sudden onset of geomagnetic storms. The nowcast is reinitialized every six hours to include the latest forcing from the lower atmosphere. The forecast system (WFS) runs four times daily (0, 6, 12, 18 UT), providing two-day forecasts. Observed solar wind parameters are used whenever observational values are available, for the forecast portion, the forecasted 3-hour Kp and daily F10.7 issued by SWFO are ingested into the model to estimate solar wind parameters. Lower atmospheric data assimilation only carries out twice daily at 0 and 12 UT cycles to maintain the stability of the coupled model. Model version v1.2 became available in July 2023, featuring the implementation of the WRS into operations, as well as improvements to the Kp-derived solar wind parameters utilized by WFS forecasts.
+  <br/>
+  <br/>
+  The data files within this bucket are provided strictly on a non-operational basis, with no guarantee of timely delivery or availability. There may exist temporal gaps in coverage.
+  <br/>
+  <br/>
+  The top-level versioned directories (v1.x) include NetCDF files from operational runs providing 3-dimensional gridded neutral density every 10 minutes with an altitude range from 100 to 1000 km. wfs.YYYYMMDD subdirectories contain two-day forecasts, updated four times daily (cycle initialization 00, 06, 12, 18 UT). wrs.YYYYMMDD subdirectories contain real-time nowcast neutral density outputs, reinitialized every six hours up to the most current UT time.
+  <br/>
+  <br/>
+  Additionally, model outputs intended exclusively for research purposes are contained in the top-level NON-OPERATIONAL_RESEARCH directory. Please contact the WAM-IPE team (contact information available below) before accessing such files.
+  <br/>
+  <br/>
+Documentation: https://www.swpc.noaa.gov/products/wam-ipe
+Contact:  |
+  For any questions regarding WAM-IPE data, please contact Adam Kubaryk (adam.kubaryk@noaa.gov) and/or Tzu-Wei Fang (tzu-wei.fang@noaa.gov) 
+  <br/>
+  For data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: The update frequencies of the WAM-IPE dataset range from 10 minutes to 6 hours depending on the CONOPS.
+Tags:
+  - aws-pds
+  - climate
+  - meteorological
+  - solar
+  - weather
+License: CC-0, Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA WAM-IPE Products
+    ARN: arn:aws:s3:::noaa-nws-wam-ipe-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-wam-ipe-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOAA WAM-IPE Products, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewWIFSObject
+    Region: us-east-1
+    Type: SNS Topic

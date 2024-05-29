@@ -1,0 +1,43 @@
+Name: Korea Meteorological Administration (KMA) GK-2A Satellite Data
+Description:   |
+  The Geo-KOMPSAT-2A (GK2A) is the new generation geostationary meteorological satellite (located in 128.2°E) of the Korea Meteorological Administration (KMA). The main mission of the GK2A is to observe the atmospheric phenomena over the Asia-Pacific region. The Advance Meteorological Imager (AMI) on GK2A scan the Earth full disk every 10 minutes and the Korean Peninsula area every 2 minutes with a high spatial resolution of 4 visible channels and 12 infrared channels. In addition, the AMI has an ability of flexible target area scanning useful for monitoring severe weather events such as typhoon and volcanic eruption and so on. And for space weather mission, the Korea Space wEather Monitor (KSEM) on the GK2A observes the space environment with the particle detector, magnetometer and charging monitor. For questions regarding GK2A imagery specifications, visit the GK2A site at https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.intro. To view the GK2A Fact Sheet please visit https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.fact.
+  <br/>
+  <br/>
+  NOAA provides access to GK2A data on AWS in coordination with the Korean Meteorlogical Administration.
+  <br/>
+Documentation: https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.fact
+Contact:  |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 10 minutes for Full Disk, 2 minutes for  4 visible channels and 12 infrared channels.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - geospatial
+  - weather
+  - earth observation
+  - meteorological
+  - disaster response
+  - satellite imagery
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: GK2A Imagery
+    ARN: arn:aws:s3:::noaa-gk2a-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-gk2a-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GK2A, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewGK2AObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "GK2A Full Fact Sheet"
+      URL: https://nmsc.kma.go.kr/enhome/html/base/cmm/selectPage.do?page=satellite.gk2a.fact
+      AuthorName: KMA

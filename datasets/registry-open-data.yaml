@@ -5,6 +5,7 @@ Contact: opendata@amazon.com
 ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
 UpdateFrequency: Automatically when new datasets are added
 Tags:  
+  - amazon.science
   - json
   - metadata
 License: "[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)"
@@ -12,4 +13,8 @@ Resources:
   - Description: Registry of Open Data on AWS
     ARN: arn:aws:s3:::registry.opendata.aws/roda/ndjson/
     Region: us-east-1
-    Type: S3 Bucket  
+    Type: S3 Bucket
+  - Description: SNS topic for object create events
+    ARN: arn:aws:sns:us-east-1:652627389412:roda-object_created
+    Region: us-east-1
+    Type: SNS Topic

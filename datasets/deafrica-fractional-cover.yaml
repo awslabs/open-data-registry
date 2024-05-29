@@ -1,0 +1,85 @@
+Name: Digital Earth Africa Fractional Cover
+Description: |
+  Fractional cover (FC) describes the landscape in terms of coverage by green vegetation, non-green vegetation (including deciduous trees during autumn, dry grass, etc.) and bare soil. It provides insight into how areas of dry vegetation and/or bare soil and green vegetation are changing over time. The product is derived from Landsat satellite data, using an algorithm developed by the [Joint Remote Sensing Research Program](https://www.jrsrp.org.au/). 
+  Digital Earth Africa's FC service has two components. Fractional Cover is estimated from each Landsat scene, providing measurements from individual days. Fractional Cover Annual Summary (Percentiles) provides 10th, 50th, and 90th percentiles estimated independently for the green vegetation, non-green vegetation, and bare soil fractions observed in each calendar year (1st of January - 31st December).
+  While the scene based Fractional Cover can be used to study dynamic processes, the annual summaries make it easier to analyse year to year changes. The percentiles provide robust estimates of the low, median and high proportion values observed for each cover type in a year, which can be used to characterise the land cover.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Fractional_Cover_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New scene-level data is added as new Landsat data is available. New summaries are available soon after data is available for a year.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - disaster response
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - sustainability
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Fractional Cover data
+    ARN: arn:aws:s3:::deafrica-services/fc_ls
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/fc_ls)'
+  - Description: Fractional Cover Annual Summary data
+    ARN: arn:aws:s3:::deafrica-services/fc_ls_summary_annual
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/fc_ls_summary_annual)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item    
+    ARN: arn:aws:sns:af-south-1:565417506782:deafrica-landsat-wofs
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (Fractional Cover)"
+      URL: https://explorer.digitalearth.africa/products/fc_ls
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (Fractional Cover Annual Summary)"
+      URL: https://explorer.digitalearth.africa/products/fc_ls_summary_annual
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan 

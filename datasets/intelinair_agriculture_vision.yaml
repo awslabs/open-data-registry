@@ -6,12 +6,17 @@ Description: >
   Each field image contains four color channels: Near-infrared (NIR), Red, Green and Blue.  We first randomly split the 3,432 farmland images with a 6/2/2 train/val/test ratio. We then assign each sampled image to the split of the farmland image they are cropped from. This guarantees that no cropped images from the same farmland will appear in multiple splits in the final dataset. 
   The generated (supervised) Agriculture-Vision dataset thus contains 56,944/18,334/19,708 train/val/test images.
 
-  Additionally, we continue to grow this datset.  In 2021 as a part of the [Prize Challenge at CVPR](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021), we have added sequences of full-field imagery across 52 fields to promote the use of weakly supervised methods.
+  Additionally, we continue to grow this dataset.  In 2021 as a part of the [Prize Challenge at CVPR](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021), we have added sequences of full-field imagery across 52 fields to promote the use of weakly supervised methods.
 Documentation: https://arxiv.org/abs/2001.01306
 Contact: support@intelinair.com
 ManagedBy: Intelinair, Inc.
 UpdateFrequency: Periodically
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
 Tags:
+  - aws-pds
   - aerial imagery
   - agriculture
   - computer vision

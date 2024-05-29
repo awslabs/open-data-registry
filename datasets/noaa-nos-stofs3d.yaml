@@ -1,0 +1,49 @@
+Name: NOAA 3-D Surge and Tide Operational Forecast System for the Atlantic Basin (STOFS-3D-Atlantic)
+Description: |
+
+ NOTICE - The Coast Survey Development Laboratory (CSDL) in NOAA/National Ocean Service (NOS)/Office of Coast Survey is upgrading the Surge and Tide Operational Forecast System (STOFS, formerly ESTOFS) to Version 2.1.7. A Service Change Notice (SCN) has been issued and can be found "[HERE](https://www.weather.gov/media/notification/pdf_2023_24/scn23-124_stofs_upgrade_v2.1.4_aaf.pdf)"<br /><br />
+
+  NOAA's Surge and Tide Operational Forecast System: Three-Dimensional Component for the Atlantic Basin (STOFS-3D-Atlantic). STOFS-3D-Atlantic runs daily (at 12 UTC)  to provide users with 24-hour nowcasts (analyses of near present conditions) and up to 96-hour forecast guidance of water level conditions, and 2- and 3-dimensional fields of water temperature, salinity, and currents. The water level outputs represent the combined tidal and subtidal water surface elevations and are referenced to xGEOID20B <br /><br />
+  STOFS-3D-Atlantic has been developed to serve the marine navigation, weather forecasting, and disaster mitigation user communities. It is developed in a collaborative effort between the NOAA/National Ocean Service (NOS)/Office of Coast Survey, the NOAA/National Weather Service (NWS)/National Centers for Environmental Prediction (NCEP) Central Operations (NCO), and the Virginia Institute of Marine Science. <br /><br />
+  
+  STOFS-3D-Atlantic employs the Semi-implicit Cross-scale Hydroscience Integrated System Model (SCHISM) as the hydrodynamic model core. Its unstructured grid consists of 2,926,236 nodes and 5,654,157 triangular or quadrilateral elements. Grid resolution is 1.5-2 km near the shoreline, ~600 m for the floodplain, down to 8 m for watershed rivers (at least 3 nodes across each river cross-section), and around 2-10 m for levees. Along the U.S. coastline, the land boundary of the domain aligns with the 10-m contour above xGEOID20B, encompassing the coastal transitional zone most vulnerable to coastal and inland flooding. <br /> <br />
+  
+  STOFS-3D-Atlantic makes uses of outputs from the National Water Model (NWM) to include inland hydrology and extreme precipitation effects on coastal flooding; forecast guidance from the NCEP Global Forecast System (GFS) and High-Resolution Rapid Refresh (HRRR) model as the surface meteorological forcing; the tidal water level and currents from the FES2014 tidal database; and the subtidal water level, and subtidal three-dimensional water temperature, salinity, and currents from the NCEP Global Real-Time Ocean Forecast System (G-RTOFS) with the subtidal water level from G-RTOFS and Copernicus Absolute Dynamic Topography (ADT) satellite altimetry observation as the open ocean boundary forcing. <br /> <br />
+  
+  STOFS-3D-Atlantic forecast guidance output available here include NetCDF, GRIB2, SHEF, and GPKG files. Please see README documentation for more details.
+Documentation: https://noaa-nos-stofs3d-pds.s3.amazonaws.com/README.html
+Contact: |
+  For questions regarding data content or quality, visit the STOFS site (https://polar.ncep.noaa.gov/stofs/). 
+  <br /> For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: One time per day at 12 UTC
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - global
+  - coastal
+  - marine navigation
+  - disaster response
+  - weather
+  - water
+  - environmental
+  - meteorological
+  - oceans
+  - sustainability
+  - climate
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA STOFS-3D-Atlantic Forecast Guidance
+    ARN: arn:aws:s3:::noaa-nos-stofs3d-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-stofs3d-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA STOFS-3D-Atlantic Forecast Guidance New Dataset Notification
+    ARN: arn:aws:sns:us-east-1:709902155096:NewICOGS3DObject
+    Region: us-east-1
+    Type: SNS Topic

@@ -1,9 +1,9 @@
-Name: JMA Himawari-8
-Description: Himawari-8, stationed at 140E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-9  as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. For questions regarding Himawari-8 imagery specifications, visit the JMA site at https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html.  For examples of Full Disk Himawari-8 imagery coverage, visit the NOAA Himawari-8 data page at https://www.goes.noaa.gov/f_himawari-8.html.
+Name: JMA Himawari-8/9
+Description: Himawari-9, stationed at 140.7E, owned and operated by the Japan Meteorological Agency (JMA), is a geostationary meteorological satellite, with Himawari-8 as on-orbit back-up, that provides constant and uniform coverage of east Asia, and the west and central Pacific regions from around 35,800 km above the equator with an orbit corresponding to the period of the earth’s rotation. This allows JMA weather offices to perform uninterrupted observation of environmental phenomena such as typhoons, volcanoes, and general weather systems. Archive data back to July 2015 is available for Full Disk (AHI-L1b-FLDK) products in the bucket. For questions regarding Himawari-9 imagery specifications, visit the JMA site at https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html.  For examples of Full Disk Himawari-9 imagery coverage, visit the NOAA Himawari-9 data page at https://www.ospo.noaa.gov/Products/imagery/himawari.html.
 Documentation: https://www.data.jma.go.jp/mscweb/en/himawari89/cloud_service/cloud_service.html https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_ahi.html
 Contact:  |
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: 10 minutes for Full Disk, 2.5 minutes for Regions 1, 2, and 3, and .5 minutes for Regions 4 and 5.
 Collabs:
@@ -17,7 +17,6 @@ Tags:
   - weather
   - earth observation
   - meteorological
-  - sustainability
   - disaster response
   - satellite imagery
 License: Open Data. There are no restrictions on the use of this data.
@@ -30,6 +29,16 @@ Resources:
     - '[Browse Bucket](https://noaa-himawari8.s3.amazonaws.com/index.html)'
   - Description: New data notifications for Himawari-8, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-east-1:123901341784:NewHimawari8Object
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Himawari-9 Imagery
+    ARN: arn:aws:s3:::noaa-himawari9
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-himawari9.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Himawari-9, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewHimawariNineObject
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
@@ -46,3 +55,6 @@ DataAtWork:
     - Title: "Himawari-8: Enabling access to key weather data"
       URL: https://aws.amazon.com/blogs/publicsector/himawari-8-enabling-access-key-weather-data/
       AuthorName: Manan Dalal, Jena Kent
+    - Title: Identifying the Causes of Pyrocumulonimbus (PyroCb)
+      URL: https://arxiv.org/pdf/2211.08883.pdf
+      AuthorName: Emiliano Díaz Salas-Porras, Kenza Tazi, Ashwin Braude, Daniel Okoh, Kara D. Lamb, Duncan Watson-Parris, Paula Harder, and Nis Meinert

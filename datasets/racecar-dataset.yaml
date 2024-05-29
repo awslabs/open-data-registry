@@ -1,0 +1,49 @@
+Name: RACECAR Dataset
+Description: The RACECAR dataset is the first open dataset for full-scale and high-speed autonomous racing. Multi-modal sensor data has been collected from fully autonomous Indy race cars operating at speeds of up to 170 mph (273 kph). Six teams who raced in the Indy Autonomous Challenge during 2021-22 have contributed to this dataset. The dataset spans 11 interesting racing scenarios across two race tracks which include solo laps, multi-agent laps, overtaking situations, high-accelerations, banked tracks, obstacle avoidance, pit entry and exit at different speeds. The data is organized and released in both ROS2 and nuScenes format. We have also developed the ROS2-to-nuScenes conversion library to achieve this. The RACECAR data is unique because of the high-speed environment of autonomous racing and is suitable to explore issues regarding localization, object detection and tracking (LiDAR, Radar, and Camera), and mapping that arise at the limits of operation of the autonomous vehicle.
+Documentation: https://github.com/linklab-uva/RACECAR_DATA
+Contact: Prof. Madhur Behl (madhur.behl@viginia.edu)
+ManagedBy: Amar Kulkarni (ark8su@virginia.edu)
+UpdateFrequency: This dataset was constructed during a single racing season (2021-22). Future seasons may potentially be added.
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - autonomous racing
+  - robotics
+  - computer vision
+  - perception
+  - lidar
+  - radar
+  - GNSS
+  - image processing
+  - localization
+  - object detection
+  - object tracking
+
+License: Creative Commons Attribution-NonCommercial 4.0 International Public License [(CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+Citation: Amar Kulkarni, John Chrosniak, Emory Ducote, Florian Sauerbeck, Andrew Saba, Utkarsh Chirimar, John Link, Marcello Cellina, and Madhur Behl. "RACECAR--The Dataset for High-Speed Autonomous Racing." International Conference on Intelligent Robots and Systems IROS (2023).
+Resources:
+  - Description: The RACECAR dataset is the first open dataset for full-scale and high-speed autonomous racing. The data is organized and released in both ROS2 and nuScenes format.
+    ARN: arn:aws:s3:::racecar-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: RACECAR Tutorials - ROS2 Visualization
+      URL: https://github.com/linklab-uva/RACECAR_DATA/tree/main#tutorial-1-ros2-visualization
+      AuthorName: Amar Kulkarni, Utkarsh Chirimar
+    - Title: RACECAR Tutorials - ROS2 Localization
+      URL: https://github.com/linklab-uva/RACECAR_DATA/tree/main#tutorial-2-ros2-localization
+      AuthorName: Amar Kulkarni
+    - Title: RACECAR Tutorials - nuScenes
+      URL: https://github.com/linklab-uva/RACECAR_DATA/tree/main#tutorial-3-nuscenes-jupyter-notebook
+      NotebookURL: https://github.com/linklab-uva/RACECAR_DATA/blob/main/nuscenes_tutorial.ipynb
+      AuthorName: John Chrosniak
+  Tools & Applications:
+    - Title: rosbag2nuscenes conversion library
+      URL: https://github.com/linklab-uva/rosbag2nuscenes
+      AuthorName: John Chrosniak, Emory Ducote, John Link, Madhur Behl
+      AuthorURL: https://github.com/linklab-uva/rosbag2nuscenes
+  Publications:
+    - Title: RACECAR--The Dataset for High-Speed Autonomous Racing
+      URL: https://doi.org/10.48550/arXiv.2306.03252
+      AuthorName: Amar Kulkarni, John Chrosniak, Emory Ducote, Florian Sauerbeck, Andrew Saba, Utkarsh Chirimar, John Link, Marcello Cellina, and Madhur Behl

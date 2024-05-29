@@ -1,0 +1,43 @@
+Name: NASA / USGS Europa Controlled Observations
+Description: |
+  The Solid State Imager (SSI) on NASA's Galileo spacecraft acquired more than 500 images of Jupiter's moon, Europa. These images vary from relatively low-resolution hemispherical imaging, to high-resolution targeted images that cover a small portion of the surface. Here we provide a set of 481 minimally processed, projected Galileo images with photogrammetrically improved locations on Europa's surface. These individual images were subsequently used as input into a set of 92 observation mosaics. <br/><br/>
+  These images provide users with nearly the entire Galileo Europa imaging dataset at its native resolution and with improved relative image locations. The Solid State Imager on NASA's Galileo spacecraft provided the only moderate- to high-resolution images of Jupiter's moon, Europa. Unfortunately, uncertainty in the position and pointing of the spacecraft, as well as the position and orientation of Europa, when the images were acquired resulted in significant errors in image locations on the surface. The result of these errors is that images acquired during different Galileo orbits, or even at different times during the same orbit, are significantly misaligned (errors of up to 100 km on the surface). <br/><br/>
+  The dataset provides a set of individual images that can be used for scientific analysis and mission planning activities.
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/jupiter/europa/galileo_individual_images/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: No future updates planned.
+Tags:
+  - aws-pds
+  - planetary
+  - satellite imagery
+  - stac
+  - cog
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P9VKKK7C
+Resources:
+  - Description: Scenes and metadata
+    ARN: arn:aws:s3:::astrogeo-ard/jupiter/europa/galileo_voyager/usgs_controlled_observations/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/api/collections/galileo_usgs_photogrammetrically_controlled_observations)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors

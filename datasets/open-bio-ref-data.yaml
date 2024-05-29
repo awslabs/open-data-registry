@@ -1,0 +1,56 @@
+Name: Open Bioinformatics Reference Data for Galaxy
+Description: >
+  This dataset provides genomic reference data and software packages for use
+  with [Galaxy](https://galaxyproject.org/) and
+  [Bioconductor](https://bioconductor.org/) applications. The reference data is
+  available for hundreds of reference genomes and has been formatted for use
+  with a variety of tools. The available configuration files make this data
+  easily incorporable with a local Galaxy server without additional data
+  preparation. Additionally, Bioconductor's AnnotationHub and ExperimentHub
+  data are provided for use via R packages through which the data can be
+  downloaded and installed into any R environment.
+Documentation: https://github.com/openbiorefdata/documentation/
+Contact: outreach@galaxyproject.org or https://support.bioconductor.org/
+ManagedBy: Galaxy and Bioconductor Projects
+UpdateFrequency: Periodically but not on a set schedule.
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - genetic
+  - genomic
+  - life sciences
+  - reference index
+License: Public Domain
+Resources:
+  - Description: >
+      The data is organized as versioned objects for reference data, and data
+      packages for use with the R programming language. The reference data is
+      primarily intended for use with the Galaxy application, and has been
+      formatted for easy configuration. In the future, additional formats may be
+      provided. The packages as well as the AnnotationHub and ExperimentHub data are intended for use with R / Bioconductor.
+    ARN: arn:aws:s3:::biorefdata
+    Region: ap-southeast-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using Open Bio Ref Data with Galaxy and Bioconductor
+      URL: https://github.com/openbiorefdata/tutorials/
+      AuthorName: Enis Afgan, Alexandru Mahmoud, Nuwan Goonasekera
+  Tools & Applications:
+    - Title: Galaxy
+      URL: https://usegalaxy.org/
+      AuthorName: Galaxy Project
+    - Title: Bioconductor
+      URL: https://bioconductor.org/
+      AuthorName: Bioconductor Project
+  Publications:
+    - Title: Wrangling Galaxy's reference data
+      URL: https://doi.org/10.1093/bioinformatics/btu119
+      AuthorName: Daniel Blankenberg, James E. Johnson, The Galaxy Team, James Taylor, Anton Nekrutenko
+    - Title: "TCGA Workflow: Analyze cancer genomics and epigenomics data using Bioconductor packages"
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5302158/
+      AuthorName: Tiago C. Silva, Antonio Colaprico, Catharina Olsen, Fulvio D'Angelo, Gianluca Bontempi, Michele Ceccarelli, Houtan Noushmehr
+    - Title: Accessible, curated metagenomic data through ExperimentHub
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5862039/
+      AuthorName: Edoardo Pasolli, Lucas Schiffer, Paolo Manghi, Audrey Renson, Valerie Obenchain, Duy Tin Truong, Francesco Beghini, Faizan Malik, Marcel Ramos, Jennifer B Dowd, Curtis Huttenhower, Martin Morgan, Nicola Segata, and Levi Waldron

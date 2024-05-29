@@ -7,15 +7,16 @@ UpdateFrequency: Monthly
 Tags:
   - aws-pds
   - encyclopedic
-  - machine learning
   - natural language processing
   - internet
+  - web archive
 License: This data is available for anyone to use under the [Common Crawl Terms of Use](https://commoncrawl.org/terms-of-use/)
 Resources:
   - Description: Crawl data (WARC and ARC format)
     ARN: arn:aws:s3:::commoncrawl
     Region: us-east-1
     Type: S3 Bucket
+    AccountRequired: True
 DataAtWork:
   Tutorials:
     - Title: Analysing Petabytes of Websites
@@ -42,7 +43,16 @@ DataAtWork:
       URL: https://towardsdatascience.com/large-scale-graph-mining-with-spark-750995050656
       AuthorName: Win Suen
       AuthorURL: https://github.com/wsuen/pygotham2018_graphmining
+    - Title: One click to download all the web pages you may want
+      URL: https://medium.com/@jaderd/one-click-to-download-exactly-the-web-pages-you-may-want-no-matter-how-many-they-are-d4834265a0a3
+      AuthorName: Jader Dias
+      Services:
+        - Athena
+        - Lambda
   Tools & Applications:
+    - Title: "Glove: Global vectors for word representation"
+      AuthorName: Jeffrey Pennington, Richard Socher, Christopher D. Manning
+      URL: https://aclanthology.org/D14-1162.pdf
     - Title: Learning word vectors for 157 languages
       URL: https://www.aclweb.org/anthology/L18-1550
       AuthorName: Facebook AI Research
@@ -55,6 +65,16 @@ DataAtWork:
       URL: https://arxiv.org/abs/1911.00359
       AuthorName: Facebook AI Research
       AuthorURL: https://github.com/facebookresearch/cc_net
+    - Title: Search the html across 25 billion websites for passive reconnaissance using common crawl
+      AuthorName: Ryan Elkins
+      URL: https://medium.com/@brevityinmotion/search-the-html-across-25-billion-websites-for-passive-reconnaissance-using-common-crawl-7fe109250b83
+    - Title: Ransacking your password reset tokens
+      URL: https://positive.security/blog/ransack-data-exfiltration
+      AuthorName: Lukas Euler
+    - Title: "All Around The World: The Common Crawl Dataset - Attack Surface Research"
+      URL: https://labs.watchtowr.com/all-around-the-world-the-common-crawl-dataset/
+      AuthorName: Aliz Hammond
+      AuthorURL: https://labs.watchtowr.com/
   Publications:
     - Title: Building a Web-Scale Dependency-Parsed Corpus from CommonCrawl
       URL: https://arxiv.org/pdf/1710.01779.pdf
@@ -107,3 +127,24 @@ DataAtWork:
     - Title: Language models are few-shot learners
       URL: https://arxiv.org/abs/2005.14165
       AuthorName: Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, et al
+    - Title: "mT5: A massively multilingual pre-trained text-to-text transformer"
+      URL: https://arxiv.org/abs/2010.11934
+      AuthorName: Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, et al
+    - Title: "No Language Left Behind: scaling human-centered machine translation"
+      URL: https://arxiv.org/abs/2207.04672
+      AuthorName: Costa-jussà, Marta R., James Cross, Onur Çelebi, Maha Elbayad, Kenneth Heafield, Kevin Heffernan, et al
+    - Title: "LAION-5B: An open large-scale dataset for training next generation image-text models"
+      URL: https://arxiv.org/abs/2210.0840
+      AuthorName: Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade Gordon, Ross Wightman, Mehdi Cherti, et al
+    - Title: "Coyo-700m: Image-text pair dataset"
+      URL: https://github.com/kakaobrain/coyo-dataset
+      AuthorName: Minwoo Byeon, Beomhee Park, Haecheon Kim, Sungjun Lee, Woonhyuk Baek, Saehoon Kim
+    - Title: "LLaMA: open and efficient foundation language models"
+      URL: https://arxiv.org/abs/2302.13971
+      AuthorName: Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, et al
+    - Title: "Language is not all you need: aligning perception with language models"
+      URL: https://arxiv.org/abs/2302.14045
+      AuthorName: Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, et al
+    - Title: "Multimodal C4: an open, billion-scale corpus of images interleaved with text"
+      URL: https://arxiv.org/abs/2304.06939
+      AuthorName: Wanrong Zhu, Jack Hessel, Anas Awadalla, Samir Yitzhak Gadre, Jesse Dodge, Alex Fang, et al
