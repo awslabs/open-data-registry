@@ -1,0 +1,60 @@
+Name: >-
+  OAQPS 2022 Modeling Platform 
+Description: >-
+  The data are part of the 2022 Modeling Platform used to support regulatory actions
+  and technical analyses conducted by the EPA's Office of Air Quality Planning and
+  Standards. Specifically, this data is Weather Research and Forecasting Model (v4.4.2)
+  conducted at a 12-km resolution over the Continental United States (12US). Additionally,
+  MCIP-processed files and wrfcamx-processed (12US1 domain) are also available as part 
+  of this dataset to asset in the use of emissions processing and photochemical modeling. 
+  These files may be used in downstream applications to generate emissions, photochemical 
+  modeling, or dispersion modeling inputs.
+Documentation: >-
+  2022 WRF Modeling TSD: 
+  https://www.epa.gov/system/files/documents/2024-03/wrf_2022_tsd.pdf. 
+Contact: Misenis.Chris@epa.gov
+ManagedBy: >-
+  U.S. Environmental Protection Agency, Office of Air Quality Planning and Standards,
+  Air Quality Assessment Division, Air Quality Modeling Group
+UpdateFrequency: As needed
+Tags:
+  - aws-pds
+  - air quality
+  - regulatory
+  - weather
+  - meteorological
+License: >-
+  These datasets are products of the U.S. Government and are intended for public
+  access and use. Unless otherwise specified, all data produced by the U.S EPA
+  is, by default, in the public domain and are not subject to domestic copyright
+  protection under 17 U.S.C. § 105. More details on the U.S. Public Domain
+  license are available here: http://www.usa.gov/publicdomain/label/1.0/
+Citation: >-
+  US EPA, 2024, "Meteorological Model Performance for Annual 2022 Simulation
+  WRF v4.4.2"
+Resources:
+  - Description: >-
+      The 2022 WRF output are stored as uncompressed netcdf/hdf5 formatted files in 
+      the /WRF directory. The 2022 MCIP output are stored as uncompressed netcdf/hdf5 
+      formatted files in IOAPI format in the /MCIP directory. The wrfcamx files are stored 
+      as uncompressed netcdf files in the /wrfcamx directory. Information on the model 
+      projection and grid structure is contained in the header information of the 
+      netcdf file. The netcdf files can be opened and manipulated using software programs 
+      that can read and write netcdf formatted files (e.g. Fortran, R, Python).
+      The WRF files are daily files containing hourly data beginning at 00UTC through
+      23UTC for each modeled day. For more information: https://www2.mmm.ucar.edu/wrf/users/
+      The MCIP files are daily files with multiple files for each day. For more information
+      about what each MCIP file contains, please see the following GitHub entry:
+      https://github.com/USEPA/CMAQ/blob/main/PREP/mcip/README.md For more information about
+      what each wrfcamx file contains, please see the README file in the wrfcamx source
+      code file available from Ramboll at: 
+      https://www.camx.com/getmedia/wrfcamx_v5.2.10Jan22.tgz
+    ARN: 'arn:aws:s3:::epa-2022-modeling-platform'
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://epa-2022-modeling-platform.s3.amazonaws.com/index.html)'
+  - Description: Notification for the 2022 Modeling Platform bucket
+    ARN: 'arn:aws:sns:us-east-1:127085394039:epa-2022-modeling-platform-object_created'
+    Region: us-east-1
+    Type: SNS Topic

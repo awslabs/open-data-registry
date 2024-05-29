@@ -33,6 +33,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-ufs-prototypes-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Prototype, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewUfsPrototypesObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
     Publications:
     - Title: "Advances in Seasonal Predictions of Arctic Sea Ice With NOAA UFS"
