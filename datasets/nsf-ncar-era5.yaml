@@ -1,0 +1,40 @@
+Name: NSF NCAR Curated ECMWF Reanalysis 5 (ERA5)
+Description: NSF NCAR is providing a NetCDF-4 structured version of the 0.25 degree atmospheric ECMWF Reanalysis 5 (ERA5) to the AWS ODSP. ERA5 is produced using high-resolution forecasts (HRES) at 31 kilometer resolution (one fourth the spatial resolution of the operational model) and a 62 kilometer resolution ten member 4D-Var ensemble of data assimilation (EDA) in CY41r2 of ECMWF's Integrated Forecast System (IFS) with 137 hybrid sigma-pressure (model) levels in the vertical, up to a top level of 0.01 hPa. Atmospheric data on these levels are interpolated to 37 pressure levels (the same levels as in ERA-Interim). Surface or single level data are also available, containing 2D parameters such as precipitation, 2 meter temperature, top of atmosphere radiation and vertical integrals over the entire atmosphere. The IFS is coupled to a soil model, the parameters of which are also designated as surface parameters, and an ocean wave model. Generally, the data is available at an hourly frequency and consists of analyses and short (12 hour) forecasts, initialized twice daily from analyses at 06 and 18 UTC. Most analyses parameters are also available from the forecasts. The data are provided in CF-compliant NetCDF4 format files. ERA5 products are used to train ML/AI based weather forecast models and support retrospective climate research use cases, including where to locate solar and wind farms.
+Documentation: https://doi.org/10.5065/BH6N-5N20
+Contact: rdahelp@ucar.edu
+ManagedBy: "[NSF National Center for Atmospheric Research](https://ncar.ucar.edu/)"
+UpdateFrequency: Monthly, with a 3-4 month lag from realtime
+Tags:
+  - climate
+  - model
+  - atmosphere
+  - land
+  - data assimilation
+  - forecast
+  - meteorological
+  - weather
+  - geoscience
+  - geospatial
+  - aws-pds
+  - netcdf 
+License: https://www.ucar.edu/terms-of-use/data
+Citation: European Centre for Medium-Range Weather Forecasts. 2019, updated monthly. ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid). Research Data Archive at the National Center for Atmospheric Research, Computational and Information Systems Laboratory. https://doi.org/10.5065/BH6N-5N20.
+Resources:
+  - Description: ERA5 NetCDF4 Data Files
+    ARN:  arn:aws:s3:::nsf-ncar-era5
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://nsf-ncar-era5.s3.amazonaws.com/index.html)'
+  - Description: Notifications for the NSF NCAR ERA5 bucket
+    ARN: arn:aws:sns:us-west-2:891377163634:nsf-ncar-era5-object_created 
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: The ERA5 global reanalysis
+      URL: https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803
+      AuthorName: Hersbach et al 2020
+      AuthorURL: https://orcid.org/0000-0001-5330-7071 
+ADXCategories:
+  - Environmental Data
