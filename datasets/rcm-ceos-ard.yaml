@@ -13,20 +13,12 @@ Tags:
   - disaster response
   - synthetic aperture radar
   - stac
+  - analysis ready data
 License: RCM image products are available free of charge, to the broadest extent possible, in order to promote the development of innovative products and services derived from SAR data. The Government of Canada retains ownership of all RCM data and image products. Intellectual property rights to value-added products (VAPs) created from the RCM image products will remain with the creator of the VAP. Acceptable uses of RCM image products are set out in the [RCM Public User License Agreement](https://www.asc-csa.gc.ca/eng/satellites/radarsat/access-to-data/public-user-license-agreement.asp), which is provided with each RCM image product.
 Resources:
-  - Description: RCM CEOS Analysis Ready Data in an S3 bucket.
+  - Description: RCM CEOS Analysis Ready Data in an public S3 bucket.
     ARN: arn:aws:s3:::rcm-ceos-ard
     Region: ca-central-1
     Type: S3 Bucket
     Explore: 
-    - '[EODMS STAC for RCM products](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/)'
-DataAtWork:
-  Tutorials:
-    - Title: Using Python to Access RCM CEOS ARD Data (Jupyter notebook)
-      URL: https://github.com/eodms-sgdot/eodms_ard
-      NotebookURL: https://github.com/eodms-sgdot/eodms_ard/blob/main/rcm-ceos-ard.ipynb
-      AuthorName: Natural Resources Canada
-      AuthorURL: https://www.nrcan.gc.ca
-      Services:
-      - SageMaker Studio Lab
+    - '[EODMS STAC for RCM CEOS ARD 🥞](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/collections/rcm-ard/items)'
