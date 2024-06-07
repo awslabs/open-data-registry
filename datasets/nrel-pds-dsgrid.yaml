@@ -1,0 +1,51 @@
+Name: Demand-Side Grid (dsgrid) Toolkit 
+Description: |
+  Projects that use the dsgrid toolkit assemble bottom-up descriptions of electricity 
+  demand and related data that are highly resolved geographically, temporally, and sectorally. 
+  Typically modelers describe multiple scenarios of future energy use at hourly resolution, 
+  suitable for inclusion in long-term power system planning models, i.e., capacity expansion and 
+  production cost models. 
+Documentation: https://www.nrel.gov/analysis/dsgrid.html  
+Contact: elaine.hale@nrel.gov
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - data assimilation 
+  - electricity 
+  - energy 
+  - energy modeling 
+  - meteorological 
+  - transportation
+  - industrial
+  - solar
+License: Creative Commons Attribution 4.0 United States License
+Resources:
+  - Description: Transportation Energy & Mobility Pathway Options (TEMPO) Model Datasets
+    ARN: arn:aws:s3:::nrel-pds-dsgrid/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-dsgrid&prefix=tempo%2F)'
+DataAtWork:
+  Tutorials:
+    - Title: dsgrid Documentation
+      URL: https://dsgrid.github.io/dsgrid/
+      AuthorName: Elaine Hale
+    - Title: dsgrid Project Standard Scenarios
+      URL: https://github.com/dsgrid/dsgrid-project-StandardScenarios
+      AuthorName: Elaine Hale
+  Tools & Applications:
+    - Title: Demand-Side Grid Toolkit
+      URL: https://www.nrel.gov/analysis/dsgrid.html
+      AuthorName: Elaine Hale
+  Publications:
+    - Title: The Demand-side Grid (dsgrid) Model Documentation
+      URL: https://www.nrel.gov/docs/fy18osti/71492.pdf
+      AuthorName: Elaine Hale, Henry Horsey, Brandon Johnson, et al.
+    - Title: Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States
+      URL: https://www.nrel.gov/docs/fy23osti/83916.pdf
+      AuthorName: Arthur Yip, Christopher Hoehne, Paige Jadun, Catherine Ledna, Elaine Hale, and Matteo Muratori
