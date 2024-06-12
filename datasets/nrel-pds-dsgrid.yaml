@@ -24,21 +24,39 @@ Tags:
   - solar
 License: Creative Commons Attribution 4.0 United States License
 Resources:
-  - Description: Transportation Energy & Mobility Pathway Options (TEMPO) Model Datasets
+  - Description: Demand-side grid (dsgrid) Toolkit Datasets
     ARN: arn:aws:s3:::nrel-pds-dsgrid/
     Region: us-west-2
     Type: S3 Bucket
     Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-dsgrid%2F)' 
+  - Description: '[Transportation Energy & Mobility Pathway Options (TEMPO) Model Datasets](https://data.openei.org/submissions/5958)'
+    ARN: arn:aws:s3:::nrel-pds-dsgrid/tempo/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-dsgrid&prefix=tempo%2F)'
+  - Description: '[Demand-Side Grid Model (dsgrid) Data from the Electrification Futures Project (EFS)](https://data.openei.org/submissions/4130)'
+    ARN: arn:aws:s3:::oedi-data-lake/dsgrid-2018-efs/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dsgrid-2018-efs%2F)'
 DataAtWork:
   Tutorials:
     - Title: dsgrid Documentation
       URL: https://dsgrid.github.io/dsgrid/
       AuthorName: Elaine Hale
-    - Title: dsgrid Project Standard Scenarios
-      URL: https://github.com/dsgrid/dsgrid-project-StandardScenarios
+    - Title: Python API for Accessing dsgrid Data for the [Electrification Futures Study (EFS)](https://data.openei.org/submissions/4130)
+      URL: https://github.com/dsgrid/dsgrid-legacy-efs-api
+      AuthorName: Elaine Hale
+    - Title: dsgrid Project Standard Scenarios for the [TEMPO Project](https://data.openei.org/submissions/5958)
+      URL: https://github.com/dsgrid/dsgrid-project-StandardScenarios/tree/main/tempo_project
       AuthorName: Elaine Hale
   Tools & Applications:
+    - Title: GitHub Repository for Working with the dsgrid Projects
+      URL: https://github.com/dsgrid/dsgrid
+      AuthorName: Elaine Hale
     - Title: Demand-Side Grid Toolkit
       URL: https://www.nrel.gov/analysis/dsgrid.html
       AuthorName: Elaine Hale
