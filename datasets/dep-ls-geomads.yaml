@@ -1,30 +1,35 @@
 Name: Landsat Geometric Median and Absolute Deviations (GeoMAD) over the Pacific.
-Description: The GeoMAD is derived from Landsat surface reflectance data. The data are masked for cloud, shadows and other image artefacts using the associated pixel quality product to help provide as clear a set of observations as possible from which to calculate the medians.
+Description: |
+  The GeoMAD is derived from Landsat surface reflectance data.
+  The data are masked for cloud, shadows and other image artefacts
+  using the associated pixel quality product to help provide as
+  clear a set of observations as possible from which to calculate the medians.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
-UpdateFrequency: Annually 
+UpdateFrequency: Annually
 Tags:
-  - earth observations
+  - earth observation
   - landsat
-  - GeoMAD
   - geoscience
   - geospatial
   - pacific
-License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States (CC BY-NC-SA 3.0 US) https://creativecommons.org/licenses/by-nc-sa/3.0/us/
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-  - Description: GeoMADs are computed per calendar year, per sensor (Landsat 5, Landsat 7 and Landsat 8) from terrain-illumination-corrected surface reflectance data (Analysis Ready Data), and compared to the annual geometric median of that data.
+  - Description: Data access
     ARN: Pending
     Region: us-west-2
     Type: S3 Bucket
-    Explore:
-    - '[Browse Product](https://stac-browser.dep.datacube.world/collections/dep_ls_geomad)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
+    - Title: "Digital Earth Pacific Map"
+      URL: https://maps.digitalearthpacific.org/
+      AuthorName: Digital Earth Pacific Contributors
   Publications:
     - Title: Digital Earth Pacific Open Data Access Documentation
       URL: https://digitalearthpacific.github.io/data-access/
       AuthorName: digitalearthpacific
       AuthorURL: https://github.com/digitalearthpacific
-    -
