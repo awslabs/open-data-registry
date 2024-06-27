@@ -1,0 +1,25 @@
+Name: mirrulations
+Description: "The regulations.gov website allows users to view proposed rules and supporting documents for the federal rule-making process.  In addition, users can post and view comments about those proposed rules.  The site contains about 27 million pieces of text and binary data, but the API that provides access only allows a user to obtain one thousand items per hour.  As a result, it would take approximately 3 years to download all the data.
+
+  Mirrulations (MIRRor of regULATIONS.gov) is a system that uses a collection of donated API keys to create a mirror of the data.  In addition, for each pdf in the dataset the system extracts available text and stores it as a separate text file.  It has successfully downloaded all historic data and continues to run and collect data each hour.
+
+  This data is valuable for data journalism.  As a public record of the rule-making process, it contains insights into the workings of federal agencies.  This dataset provides a single text corpus of the federal rule-making process."
+Documentation: https://github.com/MoravianUniversity/mirrulations-data/blob/main/structure.md
+Contact: colemanb@moravian.edu
+ManagedBy: "[Moravian University Computer Science](https://www.moravian.edu/computer-science)"
+UpdateFrequency: Hourly
+Tags:
+  - government records
+License: https://creativecommons.org/publicdomain/mark/1.0/deed.en
+Resources:
+  - Description: Mirrulations dataset
+    ARN: arn:aws:s3:::mirrulations
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Extracting Comment Sentiment from Public Comments
+      URL: https://github.com/MoravianUniversity/mirrulations-data
+      AuthorName: Ben Coleman
+      AuthorURL: https://www.moravian.edu/computer-science/faculty
+      Services: 
