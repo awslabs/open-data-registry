@@ -1,0 +1,34 @@
+Name: GEOS-Chem Input Data
+Description: Input data for the GEOS-Chem Chemical Transport Model, includes NASA/GMAO MERRA-2 and GEOS-FP [meteorological products](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#met), [chemistry input data](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#chemistry-input-data), [emissions input data](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#emis-inputs), and other smaller datasets such as model [initial conditions](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#initial-conditions-input-data>).
+Documentation: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/geos-chem-input-data-on-aws.html
+Contact: https://geoschem.github.io/support-team.html
+UpdateFrequency: New meteorological and emission data will be added when available.
+ManagedBy: "[Washington University in St. Louis](https://wustl.edu) and [Harvard University](https://www.harvard.edu/) and"
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
+Tags:
+  - aws-ods
+  - climate
+  - weather
+  - meteorological
+  - environmental
+  - air quality
+  - chemistry
+  - atmosphere
+  - model
+License: https://geoschem.github.io/license.html
+Resources:
+  - Description: Top-level directory for all GEOS-Chem data.
+    ARN: unknown
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Getting started
+      URL: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/getting-started-aws.html
+      AuthorName: Yidan Tang
+      AuthorURL: https://github.com/geoschem
+  Tools & Applications:
+  Publications:
