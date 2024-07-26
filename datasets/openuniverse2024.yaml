@@ -1,0 +1,38 @@
+Name: 'OpenUniverse 2024 Matched Rubin and Roman Simulations: Preview'
+Description: 'This release consists of simulated data products designed to mimic observations of the same region of the sky as seen by two astronomical facilities: the Nancy Grace Roman Telescope and the Vera C. Rubin Observatory.'
+Documentation: https://irsa.ipac.caltech.edu/data/theory/openuniverse2024
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The OpenUniverse 2024 Data Preview has been finalized and will not be updated.
+Tags:
+  - aws-pds
+  - astronomy
+  - imaging
+  - object detection
+  - parquet
+  - satellite imagery
+  - simulations
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "Please also follow the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html) and the citation guidelines for this particular data set listed here: https://irsa.ipac.caltech.edu/data/theory/openuniverse2024/overview.html."
+Resources:
+  - Description: 'The simulated Roman data products include truth files listing the basic physical properties of the simulated astronomical objects; truth images that include the appropriate bandpass and PSF but limited sources of noise; calibrated images that include relevant backgrounds and major sources of noise; and coadded images created using the IMCOM software.'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/openuniverse2024/roman/
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'The simulated Rubin data products include raw pixel data, calibrated exposures, coadds of the calibrated exposures, and catalogs of photometry measured from the simulated images.'
+    ARN: arn:aws:s3:::nasa-irsa-simulations/openuniverse2024/rubin/
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data

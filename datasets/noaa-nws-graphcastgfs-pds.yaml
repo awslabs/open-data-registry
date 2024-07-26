@@ -1,0 +1,67 @@
+Name: (EXPERIMENTAL) NOAA GraphCast Global Forecast System (GFS) (EXPERIMENTAL)
+Description: |
+  The GraphCast Global Forecast System (GraphCastGFS) is an experimental system set up by the National Centers for Environmental Prediction (NCEP) to produce medium range global forecasts. The horizontal resolution is a 0.25 degree latitude-longitude grid (about 28 km). The model runs 4 times a day at 00Z, 06Z, 12Z and 18Z cycles. Major atmospheric and surface fields including temperature, wind components, geopotential height, specific humidity, and vertical velocity, are available. The products are 6 hourly forecasts up to 10 days. The data format is GRIB2.
+  <br/>
+  <br/>
+  The GraphCastGFS system is an experimental weather forecast model built upon the pre-trained Google DeepMind’s GraphCast Machine Learning Weather Prediction (MLWP) model. The GraphCast model is implemented as a message-passing graph neural network (GNN) architecture with “encoder-processor-decoder” configuration. It uses an icosahedron grid with multiscale edges and has around 37 million parameters. This model is pre-trained with ECMWF’s ERA5 reanalysis data. The GraphCastGFSl takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs GraphCast (37 levels) and GraphCast_operational (13 levels) with a pre-trained model provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent with GFS from GraphCastGFS’ native forecast data.
+  <br/>
+  <br/>
+  **The GraphCastGFS version 2 made the following changes from the GraphcastCastGFS version 1.**
+  <br/>
+  1. The 37 vertical levels model is removed due to the storage restriction and limited accuracy.
+  <br/>
+  2. The 13 levels graphcast ML model was fine-tuned with NCEP’s GDAS data as inputs and ECMWF ERA5 data as ground truth from 20210323 to 20220901, validated from 20220901 to 20230101. Evaluation is done with forecasts from 20230101-20240101. The new weights created from the training are used to create global forecasts. It is important to note that the GraphCastGFS v1 model weights obtained from Google’s DeepMInd were provided based on 12 timesteps training with ERA5 data, while the GraphCastGFS v2 model weights resulted from training with 14 timesteps with GDAS and ERA5 data that significantly increased the accuracy of the forecasts compared with GraphCastGFS V1.
+  <br/>
+  <br/>
+  The input data generated from the GDAS data as GraphCast input is provided under input/ directory. An example of file names is shown below
+  <br/>
+  <br/>
+  source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc
+  <br/>
+  <br/>
+  The files are under forecasts_13_levels/. There are 40 files under each directory covering a 10 day forecast. An example of file name is listed below
+  <br/>
+  <br/>
+  graphcastgfs.t00z.pgrb2.0p25.f006
+  <br/>
+  <br/>
+  *The GraphCastGFS version 2.1 change log:*
+  <br/>
+  <br/>
+  1. Starting from 06 cycle on 20240710, the forecast length is increased from 10 days to 16 days.
+  <br/>
+  <br/>
+  Please note that this NOAA GraphCastGFS Model was produced using a code package released by Google DeepMind. For information on Google DeepMind, please visit their github page listed in the documentation and license sections of this page.
+Documentation: For the NOAA Product, https://graphcastgfs.readthedocs.io/en/latest/index.html and for background graphcast information, https://github.com/google-deepmind/graphcast/tree/main/graphcast
+Contact: For questions regarding data content or quality, visit [the NOAA EMC Github site](https://github.com/noaa-emc/graphcast/issues). For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 4 times a day at 00Z, 06Z, 12Z and 18Z
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+License: NOAA's GraphCast GFS products are released under CC0 license. The products in this bucket only contain NOAA produced products and not GraphCast code or training data. For information on the GraphCast code package, please visit the "[Google DeepMind GraphCast Gitub License page](https://github.com/google-deepmind/graphcast?tab=readme-ov-file#license-and-attribution)".
+Resources:
+  - Description: GraphCast GFS data
+    ARN: arn:aws:s3:::noaa-nws-graphcastgfs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nws-graphcastgfs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GraphCast GFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNWSGRAPHCASTGFSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
