@@ -1,0 +1,74 @@
+Name: NOAA Cloud Optimized Zarr Reference Files (Kerchunk)
+Description: |
+  This repository contains references to datasets published to the NOAA Open Data Dissemination Program. These reference datasets serve as index files to the original data by mapping to the [Zarr V2 specification](https://zarr-specs.readthedocs.io/en/latest/v2/v2.0.html). When multidimensional model output is read through zarr, data can be lazily loaded (i.e. retrieving only the data chunks needed for processing) and data reads can be scaled horizontally to optimize object storage read performance. 
+  <br/>
+  <br/>
+  The process used to optimize the data is called [kerchunk](https://fsspec.github.io/kerchunk/). RPS runs [the workflow](https://asascience-open.github.io/nextgen-dmac/ingest/ingest-prototype.html) in their AWS cloud environment every time a new data notification is received from a relevant source data bucket.
+  <br/>
+  <br/>
+  These are the current datasets being cloud-optimized. Refer to those pages for file naming conventions and other information regarding the specific model implementations:
+  <br/>
+  [NOAA Operational Forecast System (OFS)](https://registry.opendata.aws/noaa-ofs/)
+  <br/>  
+  [NOAA Global Real-Time Ocean Forecast System (Global RTOFS)](https://registry.opendata.aws/noaa-rtofs/)
+  <br/>  
+  [NOAA National Water Model Short-Range Forecast](https://registry.opendata.aws/noaa-nwm-pds/)
+  <br/>
+  <br/>
+  Filenames follow the source dataset’s conventions. For example, if the source file is
+  <br/>
+  nos.dbofs.fields.f024.20240527.t00z.nc
+  <br/>
+  <br/>
+  Then the cloud-optimized filename is the same, with “.zarr” appended
+  <br/>
+  nos.dbofs.fields.f024.20240527.t00z.nc.zarr
+  <br/>
+  <br/>
+  **Data Aggregations**
+  <br/>
+  We also produce virtual aggregations to group an entire forecast model run, and the “best” available forecast.
+  <br/>
+  Best Forecast (continuously updated) -  nos.dbofs.fields.best.nc.zarr
+  Full Model Run -  nos.dbofs.fields.forecast.[YYYYMMDD].t[CC]z.nc.zarr
+  <br/>
+  - CC is the model run cycles, 00, 06, 12, 18 , or 03, 09, 15, 21 for nowcast and forecast runs
+  <br/>
+  - YYYY = year, MM = month, DD = day
+  <br/>
+  <br/>
+  Cloud optimization workflows supported by [RPS Group](https://www.rpsgroup.com/services/oceans-and-coastal/metocean-science-and-technology/), a Tetra Tech Company
+Documentation: Refer to source datasets documentation
+Contact: |
+  For questions regarding data content or quality, visit [Email The Tetra Tech Team](nodd-support@tetratech.com). 
+  <br />
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA's National Ocean Service, the Integrated Ocean Observing System (IOOS)](https://ioos.noaa.gov/)"
+UpdateFrequency: Optimizations run every time new data is uploaded to the source buckets and are available here within minutes.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - disaster response
+  - environmental
+  - meteorological
+  - oceans
+  - water
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: Cloud-optimized Zarr Reference Files
+    ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Cloud-optimized Zarr Reference Files
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNODDKerchunkObject
+    Region: us-east-1
+    Type: SNS Topic    
