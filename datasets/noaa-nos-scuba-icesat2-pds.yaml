@@ -1,0 +1,54 @@
+Name: NOAA / NGA Satellite Computed Bathymetry Assessment-SCuBA
+Description: |
+  One of the National Geospatial-Intelligence Agency’s (NGA) and the National Oceanic and Atmospheric Administration’s (NOAA) missions is to ensure the safety of navigation on the seas by 
+  maintaining the most current information and the highest quality services for U.S. and global transport networks. To achieve this mission, we need accurate coastal bathymetry over diverse 
+  environmental conditions. The SCuBA program focused on providing critical information to improve existing bathymetry resources and techniques with two specific objectives. The first objective 
+  was to validate National Aeronautics and Space Administration’s (NASA) Ice, Cloud and land Elevation SATellite-2 (ICESat-2), an Earth observing, space-based light detection and ranging (LiDAR) 
+  capability, as a useful bathymetry tool for nearshore bathymetry information in differing environmental conditions. Upon validating the ICESat-2 bathymetry retrievals relative to sea floor 
+  type, water clarity, and water surface dynamics, the next objective is to use ICESat-2 as a calibration tool to improve existing Satellite Derived Bathymetry (SDB) coastal bathymetry products 
+  with poor coastal depth information but superior spatial coverage. Current resources that monitor coastal bathymetry can have large vertical depth errors (up to 50 percent) in the nearshore 
+  region; however, derived results from ICESat-2 shows promising results for improving the accuracy of the bathymetry information in the nearshore region.
+  <br/>
+  <br/>
+  **Project Overview**
+  <br/>
+  One of NGA’s and NOAA’s primary missions is to provide safety of navigation information.  However, coastal depth information is still lacking in some regions—specifically, remote regions. In fact, it has been reported that 80 percent of the entire seafloor has not been mapped. Traditionally, airborne LiDARs and survey boats are used to map the seafloor, but in remote areas, we have to rely on satellite capabilities, which currently lack the vertical accuracy desired to support safety of navigation in shallow water. In 2018, NASA launched a space-based LiDAR system called ICESat-2 that has global coverage and a polar orbit originally designed to monitor the ice elevation in polar regions. Remarkably, because it has a green laser beam, ICESat-2 also happens to collect bathymetry information [ICESat-2](nasa.gov). With algorithm development provided by University of Texas (UT) Austin, NGA Research and Development (R&D) leveraged the ICESat-2 platform to generate SCuBA, an automated depth retrieval algorithm for accurate, global, refraction-corrected underwater depths from 0 m to 30 m, detailed in Figure 1 of the documentation. The key benefit of this product is the vertical depth accuracy of depth retrievals, which is ideal for a calibration tool.  NGA and NOAA National Geodetic Survey (NGS), partnered to make this product available to the public for all US territories.
+  [View the SCuBA Info Graphic](https://raw.githubusercontent.com/NOAA-Big-Data-Program/bdp-data-docs/main/SCuBA/SCuBA_Infographic_small.png)
+  <br/>
+  All details on how SCuBA was developed, how to access data, and how to use the data, please visit the [DOCUMENTATION](https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/SCuBA/NOAA_website_SCUBA_22MAY24_GOLD.docx.pdf) page. 
+Documentation: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/SCuBA/NOAA_website_SCUBA_22MAY24_GOLD.docx.pdf
+Contact: |
+  For questions regarding data content or quality, email gretchen.imahori@noaa.gov
+  <br/>
+  This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
+  <br/>
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
+ManagedBy: "[NOAA’s National Geodetic Survey](https://geodesy.noaa.gov/)"
+UpdateFrequency: Monthly, quarterly, and annually, depending on the dataset.
+Collabs:
+  ASDI:
+    Tags:
+      - water
+Tags:
+  - aws-pds
+  - bathymetry
+  - agriculture
+  - weather
+  - climate
+  - environmental
+  - disaster response
+  - agriculture
+  - transportation
+  - oceans
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NOAA / NGA Satellite Computed Bathymetry Assessment (SCuBA) data
+    ARN: arn:aws:s3:::noaa-nos-scuba-icesat2-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-scuba-icesat2-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA / NGA Satellite Computed Bathymetry Assessment (SCuBA) data notifications
+    ARN: arn:aws:sns:us-east-1:709902155096:NewICESATObject
+    Region: us-east-1
+    Type: SNS Topic  
