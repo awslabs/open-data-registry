@@ -8,9 +8,9 @@ Description: |
   <br/>
   **The GraphCastGFS version 2 made the following changes from the GraphcastCastGFS version 1.**
   <br/>
-  1) The 37 vertical levels model is removed due to the storage restriction and limited accuracy.
+  1. The 37 vertical levels model is removed due to the storage restriction and limited accuracy.
   <br/>
-  2) The 13 levels graphcast ML model was fine-tuned with NCEP’s GDAS data as inputs and ECMWF ERA5 data as ground truth from 20210323 to 20220901, validated from 20220901 to 20230101. Evaluation is done with forecasts from 20230101-20240101. The new weights created from the training are used to create global forecasts. It is important to note that the GraphCastGFS v1 model weights obtained from Google’s DeepMInd were provided based on 12 timesteps training with ERA5 data, while the GraphCastGFS v2 model weights resulted from training with 14 timesteps with GDAS and ERA5 data that significantly increased the accuracy of the forecasts compared with GraphCastGFS V1.
+  2. The 13 levels graphcast ML model was fine-tuned with NCEP’s GDAS data as inputs and ECMWF ERA5 data as ground truth from 20210323 to 20220901, validated from 20220901 to 20230101. Evaluation is done with forecasts from 20230101-20240101. The new weights created from the training are used to create global forecasts. It is important to note that the GraphCastGFS v1 model weights obtained from Google’s DeepMInd were provided based on 12 timesteps training with ERA5 data, while the GraphCastGFS v2 model weights resulted from training with 14 timesteps with GDAS and ERA5 data that significantly increased the accuracy of the forecasts compared with GraphCastGFS V1.
   <br/>
   <br/>
   The input data generated from the GDAS data as GraphCast input is provided under input/ directory. An example of file names is shown below
@@ -23,6 +23,12 @@ Description: |
   <br/>
   <br/>
   graphcastgfs.t00z.pgrb2.0p25.f006
+  <br/>
+  <br/>
+  *The GraphCastGFS version 2.1 change log:*
+  <br/>
+  <br/>
+  1. Starting from 06 cycle on 20240710, the forecast length is increased from 10 days to 16 days.
   <br/>
   <br/>
   Please note that this NOAA GraphCastGFS Model was produced using a code package released by Google DeepMind. For information on Google DeepMind, please visit their github page listed in the documentation and license sections of this page.
@@ -43,7 +49,7 @@ Tags:
   - environmental
   - meteorological
   - weather
-License: NOAA's GraphCast GFS products are released under CC0 license. The products in this bucket only contain NOAA produced products and not GrahCast code or training data. For information on the GraphCast code package, please visit the "[Google DeepMind GraphCast Gitub License page](https://github.com/google-deepmind/graphcast?tab=readme-ov-file#license-and-attribution)".
+License: NOAA's GraphCast GFS products are released under CC0 license. The products in this bucket only contain NOAA produced products and not GraphCast code or training data. For information on the GraphCast code package, please visit the "[Google DeepMind GraphCast Gitub License page](https://github.com/google-deepmind/graphcast?tab=readme-ov-file#license-and-attribution)".
 Resources:
   - Description: GraphCast GFS data
     ARN: arn:aws:s3:::noaa-nws-graphcastgfs-pds
