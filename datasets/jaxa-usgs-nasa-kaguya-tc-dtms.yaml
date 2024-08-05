@@ -1,0 +1,41 @@
+Name: JAXA / USGS / NASA Kaguya/SELENE Terrain Camera Digital Terrain Models
+Description: |
+    The Japan Aerospace EXploration Agency (JAXA) SELenological and ENgineering Explorer (SELENE) mission’s Kaguya spacecraft was launched on September 14, 2007 and science operations around the Moon started October 20, 2007. The primary mission in a circular polar orbit 100-km above the surface lasted from October 20, 2007 until October 31, 2008. An extended mission was then conducted in lower orbits (averaging 50km above the surface) from November 1, 2008 until the SELENE mission ended with Kaguya impacting the Moon on June 10, 2009. These data are digital terrain models derived using the NASA Ames Stereo Pipeline (ASP) and the Kaguya stereoscopic data. Digital terrain models (DTMs) in this data set were bundle adjusted and aligned to Lunar Orbiter Laser Altimeter (LOLA) shot data. The sensor model intrinsics used for these data have been re-estimated to reduce inter-DTM horizontal and vertical errors. Data are controlled to LOLA using the ASP pc_align program. Data co-register at orthoimage resolution (11-37 meters per pixel). At image resolution horizontal offsets are measurable. Horizontal precision is measures to be better than 30 meters per pixel on average. Vertical errors are mean centered to zero. An assessment of overlapping DTMs showed vertical precision on the order of 4 meters. Spacecraft jitter and unmodelled lense distortion at the observation edges is believed to be the major contributor to the vertical errors. To create these analysis ready data, we have taken the ASP genreated data, map projected the data to a stereopair centered orthographic projection and converted to a Cloud Optimized GeoTiff (COG) for online streaming. These data use a priori spacecraft ephemerides (for the nominal mission) and improved, but not controlled spacecraft ephemerides for the extended mission. These data co-register with other LOLA controlled data to the aforementioned horizontal and vertical accuracies.
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/moon/kaguyatc/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: The Kaguya/SELENE mission has completed. At least one update to this dataset is planned to address identified issues with the nominal swath width evening observations.
+Tags:
+  - aws-pds
+  - planetary
+  - elevation
+  - stac
+  - cog
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P13D7VMG
+Resources:
+  - Description: Digital terrain models, orthoimages, shaded reliefs, and quality assurance documents
+    ARN: arn:aws:s3:::astrogeo-ard/moon/kaguya/terrain_camera/usgs_dtms/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/api/collections/kaguya_terrain_camera_usgs_dtms)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors

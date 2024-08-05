@@ -1,0 +1,39 @@
+Name: NOAA Global Data Assimilation (DA) Test Data
+Description: |
+  The [Unified Forecast System (UFS)](https://ufs.epic.noaa.gov/) is a community-based, coupled, comprehensive Earth Modeling System. It supports [multiple applications](https://ufs.epic.noaa.gov/applications/) with different forecast durations and spatial domains. The [Global Data Assimilation System (GDAS)](https://github.com/NOAA-EMC/GDASApp) Application (App) is being used as the basis for uniting the [Global Workflow](http://NOAA-EMC/global-workflow) and Global Forecast System (GFS) model with [Joint Effort for Data assimilation Integration (JEDI)](https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/en/latest/) capabilities.
+  <br/>
+  <br/>
+  The National Centers for Environmental Prediction (NCEP) use GDAS to interpolate data from various observing systems and instruments onto a three-dimensional grid. GDAS obtains its data through several observation types: surface, balloon, wind profilers, aircraft reports, buoys, radar, and satellite. This gridded output data is then used to initialize the GFS model. GDAS can be used in standalone mode to run forward operators and variational data assimilation (DA) for evaluation/development purposes. In the GDAS App, it supports GFS/GDAS cycled forecasts in the Global Workflow. Currently, GDAS primarily uses GSI for its data assimilation and cycling, but efforts are underway to replace GSI with JEDI. 
+Documentation: https://github.com/NOAA-EMC/GDASApp/wiki
+Contact: For questions regarding data content or quality, post on the ufs-community forum at https://github.com/orgs/ufs-community/discussions or email support.epic@noaa.gov. For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: These are stable datasets for use with global DA projects. They will be updated as new sample cases are added. 
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+License: "GNU Lesser Public License v2.1: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html#SEC1"
+Resources:
+  - Description: Global Data Assimilation (DA) System Test Data
+    ARN: arn:aws:s3:::noaa-ufs-gdas-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-ufs-gdas-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Global Data Assimilation (DA) System Test Data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNWSUFSGDASObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

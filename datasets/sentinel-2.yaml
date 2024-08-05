@@ -36,6 +36,7 @@ Resources:
     - '[Earth Search STAC L1C Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
     - '[Earth Search STAC Browser L1C Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
     - '[STAC V1.0.0 endpoint](https://sentinel-s2-l1c-stac.s3.amazonaws.com/)'
+    - '[Earth Viewer by Element 84](https://viewer.aws.element84.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
@@ -114,6 +115,12 @@ DataAtWork:
       Services:
         - SageMaker
         - Lambda
+    - Title: Using Sentinel-2 Data from the AWS Open Data Project to measure water hyacinth growth
+      URL: https://gitlab.aws.dev/ltl/aws-sentinel2-smsl-water-hyacinth
+      NotebookURL: https://gitlab.aws.dev/ltl/aws-sentinel2-smsl-water-hyacinth/-/blob/main/Harties.ipynb
+      AuthorName: Louise Liddell
+      Services:
+        - SageMaker Studio Lab
   Tools & Applications:
     - Title: Sentinel Hub WMS/WMTS/WCS Service
       URL: http://www.sentinel-hub.com/apps/wms
