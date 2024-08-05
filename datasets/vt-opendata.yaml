@@ -1,0 +1,58 @@
+Name: Vermont Open Geospatial on AWS
+Description: The State of Vermont has partnered with Amazon's Open Data Initative to make a wide range of geospatial data available in the public domain. Vermont acquires aerial imagery and LiDAR during leaf-off conditions. The imagery typically ranges from 30-centimeter to 15-centimeter in resolution and is available from Vermont's Amazon S3 bucket in a Cloud Optimized GeoTiff (COG) format. LiDAR data has been acquired and is available as USGS Quality Level-1 (QL1) and Level-2 (QL2) compliant datasets in COG format. Geospatial datasets derived from imagery and/or lidar are also available as COGs, including high resolution landcover.
+Documentation: https://vcgi.vermont.gov/data-and-programs/
+Contact: If you have specific questions please contact - vcgi@vermont.gov
+ManagedBy: "[Vermont Center for Geographic Information](https://vcgi.vermont.gov)"
+UpdateFrequency: Vermont acquires statewide imagery approximately once every other year. Lidar is acquired approximately once every 5-8 years. High-resolution landcover is generated once every other year.
+Tags:
+  - earth observation
+  - aerial imagery
+  - geospatial
+  - lidar
+  - elevation
+  - land cover
+License: |
+  Public Domain with Attribution
+Resources:
+  - Description: Elevation datsets (primarily lidar based) are organized in this bucket as statewide file mosaics and by acquisition year (often a portion of the state in any given year). These data are available in Cloud Optimized GeoTIFF (COG) format and use the following naming convention; 1) Statewide COGs - STATEWIDE_<AQYEAR-AQYEAR>_<RESOLUTION>cm_<DERIVATIVE>, 2) By Acquisition Year - <AQYEAR>_<RESOLUTION>cm_<DERIVATIVE>. Individual tiles are also available as lossless COGs under the ./_Tiles subfolder.
+    ARN: arn:aws:s3:::vtopendata-prd/Elevation
+    Region: us-east-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Imagery datsets are organized in this bucket as statewide file mosaics and by acquisition year (often a portion of the state in any given year). These data are available in Cloud Optimized GeoTIFF (COG) format and use the following naming convention; 1) Statewide - STATEWIDE_<AQYEAR-AQYEAR>_<RESOLUTION>cm_<LEAFSTATUS>_<#BANDS>Band, 2) By Acquisition Year - <AQYEAR>_<RESOLUTION>cm_<LEAFSTATUS>_<#BANDS>Band. Individual tiles are also available as lossless COGs under the ./_Tiles subfolder.
+    ARN: arn:aws:s3:::vtopendata-prd/Imagery
+    Region: us-east-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Landcover datsets are organized in this bucket as statewide file mosaics. These data are available in Cloud Optimized GeoTIFF (COG) format and use the following naming convention STATEWIDE_<AQYEAR>_<RESOLUTION>cm_LANDCOVER_<DerivativeType>.
+    ARN: arn:aws:s3:::vtopendata-prd/Landcover
+    Region: us-east-2
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+    - Title: Imagery Program FAQs
+      URL: https://vcgi.vermont.gov/resources/frequently-asked-questions/imagery-program-faqs
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Lidar Program FAQs
+      URL: https://vcgi.vermont.gov/resources/frequently-asked-questions/lidar-program-faqs
+      AuthorName: Vermont Center for Geographic Information
+  Tools & Applications:
+    - Title: Elevation Page - Vermont Open Geodata Portal
+      URL: https://geodata.vermont.gov/pages/elevation
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Imagery Page - Vermont Open Geodata Portal
+      URL: https://geodata.vermont.gov/pages/imagery
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Landcover Page - Vermont Open Geodata Portal
+      URL: https://geodata.vermont.gov/pages/land-cover
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Vermont AWS S3 Open Data Bucket Browser - Imagery
+      URL: https://vtopendata-prd.s3-us-east-2.amazonaws.com/index.html#Imagery/
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Vermont AWS S3 Open Data Bucket Browser - Elevation
+      URL: https://vtopendata-prd.s3-us-east-2.amazonaws.com/index.html#Elevation/
+      AuthorName: Vermont Center for Geographic Information
+    - Title: Vermont AWS S3 Open Data Bucket Browser - Landcover
+      URL: https://vtopendata-prd.s3-us-east-2.amazonaws.com/index.html#Landcover/
+      AuthorName: Vermont Center for Geographic Information
