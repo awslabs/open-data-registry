@@ -1,0 +1,42 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
+  If using data from the Ningaloo (TAN100) mooring, please add to the citation - "Department
+  of Jobs, Tourism, Science and Innovation (DJTSI), Western Australian Government".
+  If using data from the Ocean Reference Station 65m (ORS065) mooring, please add
+  to the citation - "Sydney Water Corporation".
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_temperature_logger_delayed_qc.ipynb
+    Title: Accessing IMOS - Australian National Mooring Network (ANMN) Facility -
+      Temperature and salinity time-series
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_temperature_logger_delayed_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: The Australian National Mooring Network (ANMN) Facility is a series of
+  national reference stations and regional moorings designed to monitor particular
+  oceanographic phenomena in Australian coastal ocean waters. This collection contains
+  time-series observations of temperature and salinity from moorings deployed by the
+  ANMN. The primary parameters are temperature, pressure (when available) and depth
+  of the instrument. A subset of this collection also includes conductivity and salinity.
+  The observations were made using a range of temperature loggers, conductivity-temperature-depth
+  (CTD) instruments, and temperature sensors on acoustic Doppler current profilers
+  (ADCPs). We are also producing a gridded product of temperature time-series profiles
+  based on these data. These will be available in a separate collection.
+Documentation: https://catalogue-imos.org.au/geonetwork/srv/eng/catalog.search#/metadata/7e13b5f3-4a70-4e31-9e95-335efa491c5c
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: National Mooring Network - Temperature and salinity time-series
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_temperature_logger_delayed_qc.parquet
+  Description: Cloud Optimised AODN dataset of IMOS - Australian National Mooring
+    Network (ANMN) Facility - Temperature and salinity time-series
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+UpdateFrequency: As Needed
