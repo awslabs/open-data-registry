@@ -1,0 +1,33 @@
+Name: Beryl's test foo.txt
+Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
+Contact: support-level2@unidata.ucar.edu
+ManagedBy: "[Unidata](https://www.unidata.ucar.edu/)"
+UpdateFrequency: New Level II data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - natural resource
+  - weather
+  - meteorological
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: NEXRAD Level II archive data
+    ARN: arn:aws:s3:::beryl-foo-test
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
+  - Description: Notifications for the Level III bucket
+    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
