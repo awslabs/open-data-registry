@@ -1,0 +1,50 @@
+Citation: 'IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
+  If using data from the Ningaloo (TAN100) mooring, please add to the citation - "Department
+  of Jobs, Tourism, Science and Innovation (DJTSI), Western Australian Government". '
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
+    Title: Accessing IMOS - Moorings - Hourly time-series product
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: "Integrated Marine Observing System (IMOS) have moorings across both\
+  \ it's National Mooring Network and Deep Water Moorings facilities. The National\
+  \ Mooring Network facility comprises a series of national reference stations and\
+  \ regional moorings designed to monitor particular oceanographic phenomena in Australian\
+  \ coastal ocean waters. The Deep Water Moorings facility (formerly known as the\
+  \ Australian Bluewater Observing System) provides the coordination of national efforts\
+  \ in the sustained observation of open ocean properties with particular emphasis\
+  \ on observations important to climate and carbon cycle studies, with selected moorings\
+  \ from its Deep Water Arrays sub-facility providing data to this collection.\nThis\
+  \ collection represents the hourly aggregated time-series product, which combines\
+  \ selected variables measured by all the instruments deployed at a site, binning\
+  \ the values into a fixed one-hour interval. Only good-quality measurements (according\
+  \ to the automated quality-control procedures applied by the National Mooring Network)\
+  \ are included. \nThe parameters are: temperature, salinity, dissolved oxygen, chlorophyll\
+  \ estimates, turbidity, down-welling photosynthetic photon flux (PAR), and current\
+  \ velocity, accompanied by depth and pressure when available. The observations were\
+  \ made using a range of temperature loggers, conductivity-temperature-depth (CTD)\
+  \ instruments, water-quality monitors (WQM), acoustic Doppler current profilers\
+  \ (ADCPs), and single-point current meters."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/efd8201c-1eca-412e-9ad2-0534e96cea14
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Moorings - Hourly time-series product
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_hourly_timeseries_delayed_qc.parquet
+  Description: Cloud Optimised AODN dataset of IMOS - Moorings - Hourly time-series
+    product
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- chemistry
+- ocean velocity
+UpdateFrequency: As Needed
