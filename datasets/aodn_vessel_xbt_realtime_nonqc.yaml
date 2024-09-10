@@ -1,0 +1,41 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_xbt_realtime_nonqc.ipynb
+    Title: Accessing IMOS - SOOP Expendable Bathythermographs (XBT) Research Group
+      - XBT real-time data
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_xbt_realtime_nonqc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: XBT real-time data is available through the IMOS portal. Data is acquired
+  by technicians who ride the ships of opportunity in order to perform high density
+  sampling along well established transit lines. The data acquisition system used
+  is the Quoll developed by Turo Technology. Data collected and is stored in netcdf
+  files, with real-time data messages (JJVV bathy messages) created on the ship and
+  sent to shore by iridium sbd. This is inserted onto the GTS by our colleagues at
+  the Australian Bureau of Meteorology. The full resolution data is collected from
+  the ship and returned for processing to scientists at CSIRO in Hobart. It undergoes
+  a full scientific QC process which identifies both bad data and oceanic features
+  such as eddies, fronts and temperature inversions. Finally, the data is distributed
+  to the GTSPP global data acquisition centre in Washington DC where it is made freely
+  available to all. This SOOP dataset covers waters around Australia and across to
+  New Zealand.
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/35234913-aa3c-48ec-b9a4-77f822f66ef8
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Ships of Opportunity - Expendable bathythermographs - Real time
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_xbt_realtime_nonqc.parquet
+  Description: Cloud Optimised AODN dataset of IMOS - SOOP Expendable Bathythermographs
+    (XBT) Research Group - XBT real-time data
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+UpdateFrequency: As Needed
