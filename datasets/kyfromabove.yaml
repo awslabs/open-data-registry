@@ -53,37 +53,37 @@ Resources:
     ARN: arn:aws:s3:::kyfromabove/elevation/PointCloud/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: False
     Explore:
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/PointCloud/)'
-    RequesterPays: False
   - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
     ARN: arn:aws:s3:::kyfromabove/elevation/SpotElevations/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: False
     Explore:
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/SpotElevations/)'
-    RequesterPays: False
   - Description: KyFromAbove aerial imagery, both nadir and oblique views, can be found in this bucket. Phase 1 and 2 data is currently available. Phase 3 data will be provided upon completion of each acquisition area of interest.
     ARN: arn:aws:s3:::kyfromabove/imagery/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: False
     Explore:
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/)'
-    RequesterPays: False
   - Description: KyFromAbove ortho imagery for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. Each image tile has been converted to a Cloud Optimized GeoTiff format. Phase 1 and 2 data is organized by acquisition year and is currently available for use. Phase 3 will be provided upon completion of the project and will be organized by year and season, imagery is being acquired during the fall and spring leaf-off seasons as sun angle permits.
     ARN: arn:aws:s3:::kyfromabove/imagery/orthos/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: False    
     Explore:
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/orthos/)'
-    RequesterPays: False
   - Description: KyFromAbove oblique imagery can be found in this folder. The four oblique views associated with each ortho image are provided in a 3-band (RGB) Cloud Optimized GeoTiff format using the default 512x512 tile setting. There are no oblique images available for Phase 1 and 2. Phase 3 data is being provided upon completion of each acquisition area of interest. It is organized by year and season (where Season1 = Spring and Season2 = Fall) as imagery is being acquired during the fall and spring leaf-off seasons as sun angle and weather conditions permit.
     ARN: arn:aws:s3:::kyfromabove/imagery/obliques/
     Region: us-west-2
     Type: S3 Bucket
+    RequesterPays: False
     Explore:
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/obliques/)'
-    RequesterPays: False
 DataAtWork:
   Publications:
     - Title: A New View of Kentucky's Cities
