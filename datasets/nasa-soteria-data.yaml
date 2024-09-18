@@ -1,0 +1,30 @@
+Name: "NASA SOTERIA Simulation Testbed Data"
+Description: Commercial pilot simulation data during safety-of-flight scenarios. 
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/nasa-soteria-data
+Contact: chad.l.stephens@nasa.gov; tyler.fettrow@nasa.gov
+ManagedBy: "[NASA](http://www.nasa.gov/)"
+UpdateFrequency: As required
+Tags:
+  - workload analysis
+  - neuroimaging
+  - transportation
+  - airtraffic operations
+  - resilient behavior
+  - pilots
+  - physiology
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: SOTERIA study data.
+    ARN: arn:aws:s3:::nasa-soteria-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: SOTERIA Simulation: Experimental Methods, Data Processing, and Data Quality. 
+      URL: In Progress
+      AuthorName: Tyler Fettrow, Chad Stephens, Lance Prinzel, Jon Holbrook, Sepher Bastami, Michael Stewart, Kathryn Ballard, Daniel Kiggins. 
+  Tools & Applications:
+    - Title: Python Processing Code
+      URL: https://github.com/tylerfettrow/soteria-processing-python
+      AuthorName: Tyler Fettrow
