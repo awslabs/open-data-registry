@@ -1,0 +1,61 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
+  If using data from gliders deployed from Onslow, Western Australia, please add to
+  the citation - "Department of Jobs, Tourism, Science and Innovation (DJTSI), Western
+  Australian Government"
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
+    Title: Accessing Ocean Gliders - delayed mode glider deployments
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: The Australian National Facility for Ocean Gliders (ANFOG), with IMOS/NCRIS
+  funding, deploys a fleet of eight gliders around Australia. The data represented
+  by this record, are presented in delayed mode. The underwater ocean glider represents
+  a technological revolution for oceanography. Autonomous ocean gliders can be built
+  relatively cheaply, are controlled remotely and are reusable allowing them to make
+  repeated subsurface ocean observations at a fraction of the cost of conventional
+  methods. The data retrieved from the glider fleet will contribute to the study of
+  the major boundary current systems surrounding Australia and their links to coastal
+  ecosystems. The ANFOG glider fleet consists of two types; Slocum gliders and Seagliders.
+  Slocum gliders (named for Joshua Slocum, the first solo global circumnavigator),
+  manufactured by Webb Research Corp are optimised for shallow coastal waters (<200m)
+  where high manoeuvrability is needed. ANFOG will have three Slocum gliders for deployment
+  on the continental shelf. Seagliders, built at the University of Washington, are
+  designed to operate more efficiently in the open ocean up to 1000m water depth.
+  ANFOG uses their five Seagliders to monitor the boundary currents and continental
+  shelves, which is valuable for gathering long-term environmental records of physical,
+  chemical and biological data not widely measured to date. Whilst the Slocum gliders,
+  due to their low cost and operational flexibility, will be of great use in intensive
+  coastal monitoring, both types of gliders weigh only 52kg, enabling them to be launched
+  from small boats. They have a suite of sensors able to record temperature, salinity,
+  dissolved oxygen, turbidity, dissolved organic matter and chlorophyll against position
+  and depth Sustained ocean observations will allow researchers to document the natural
+  variability of the ocean, and better understand the effect of climate change on
+  coastal ecosystems. The IMOS gliders will focus particularly on the major boundary
+  currents that run down the Australian coast, the Leeuwin in the west and the East
+  Australian Current (EAC). The study of these currents is critical for understanding
+  the north-south transport of freshwater, heat and biogeochemical properties. The
+  currents exert a large influence on coastal ecosystems, shipping lanes and fisheries.
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/c317b0fe-02e8-4ff9-96c9-563fd58e82ac
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Ocean Gliders - Delayed mode
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/slocum_glider_delayed_qc.parquet
+  Description: Cloud Optimised AODN dataset of Ocean Gliders - delayed mode glider
+    deployments
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- ocean currents
+- chemistry
+- ocean velocity
+UpdateFrequency: As Needed
