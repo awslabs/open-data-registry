@@ -2,10 +2,10 @@ Name: Estimating Confidence Intervals for 2020 Census Statistics Using an Approx
 Description: >-
   The 2020 Census Production Settings Demographic and Housing Characteristics (DHC) Approximate Monte Carlo (AMC) method seed Privacy Protected Microdata File (PPMF0)
   and PPMF replicates (PPMF1, PPMF2, ..., PPMF50) are a set of microdata files intended for use in estimating the magnitude of error(s) introduced by the 2020 
-  Decennial Census Disclosure Avoidance System (DAS) into the Redistricting and DHC products. 
+  Census Disclosure Avoidance System (DAS) into the 2020 Census Redistricting Data Summary File (P.L. 94-171), the Demographic and Housing Characteristics File, and the Demographic Profile. 
   <br/>
   <br/>
-  The PPMF0 was the source of the publicly released, official 2020 Decennial Census PL94 and DHC tabulations, and was created by executing the 2020 DAS TopDown Algorithm (TDA) using the confidential 
+  The PPMF0 was the source of the publicly released, official 2020 Census data products referenced above, and was created by executing the 2020 DAS TopDown Algorithm (TDA) using the confidential 
   2020 Census Edited File (CEF) as the initial input; the official location for the PPMF0 is [on the United States Census Bureau FTP server](https://www2.census.gov/programs-surveys/decennial/2020/data/privacy-protected-microdata-file/), but we also include a copy of it here for convenience. The replicates were then created by executing the 2020 DAS TDA repeatedly with the PPMF0 as its initial input. 
   <br/>
   <br/>
@@ -19,7 +19,7 @@ Description: >-
   <br/>
   <br/>
   The 2020 DHC AMC seed PPMF0 and PPMF replicates have been cleared for public dissemination by the USCB Disclosure Review Board (CBDRB-FY22-DSEP-004). 
-  The PPMF0 and PPMF replicates contain all Person and Units attributes necessary to produce the Redistricting and DHC publications for both the United States and 
+  The PPMF0 and PPMF replicates contain all Person and Units attributes necessary to produce the 2020 Census Redistricting Data Summary File (P.L. 94-171), the Demographic and Housing Characteristics File, and the Demographic Profile for both the United States and 
   Puerto Rico, and include geographic detail down to the Census Block level. They do not include attributes specific to either the Detailed DHC-A or Detailed DHC-B 
   products; in particular, data on Major Race (e.g., White Alone) is included, but data on Detailed Race (e.g., Cambodian) is not included in the PPMF0 and replicates.
 Documentation: "[AMC Replicates README (Updated 9/17/2024)](https://uscb-2020-product-releases.s3.amazonaws.com/decennial/amc/2020/mdf/2020-dhc-mdf-replicates/README.html)"
@@ -31,6 +31,7 @@ Tags:
   - production
   - official
   - decennial
+  - 2020 census
   - differential privacy
   - disclosure avoidance
   - ethnicity
