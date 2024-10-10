@@ -3,7 +3,7 @@ Description: Input data for the GEOS-Chem Chemical Transport Model, includes NAS
 Documentation: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/geos-chem-input-data-on-aws.html
 Contact: https://geoschem.github.io/support-team.html
 UpdateFrequency: New meteorological and emission data will be added when available.
-ManagedBy: "[Washington University in St. Louis](https://wustl.edu) and [Harvard University](https://www.harvard.edu/) and"
+ManagedBy: "[Washington University in St. Louis](https://wustl.edu) and [Harvard University](https://www.harvard.edu/)"
 Collabs:
   ASDI:
     Tags:
@@ -21,9 +21,11 @@ Tags:
 License: https://geoschem.github.io/license.html
 Resources:
   - Description: Top-level directory for all GEOS-Chem data.
-    ARN: unknown
+    ARN: arn:aws:s3:::geos-chem
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://s3.amazonaws.com/geos-chem/index.html)'
 DataAtWork:
   Tutorials:
     - Title: Getting started with GEOS-Chem Input Data
@@ -40,3 +42,9 @@ DataAtWork:
       AuthorURL: http://geos-chem.org/support-team
   Tools & Applications:
   Publications:
+    - Title: "Enabling Immediate Access to Earth Science Models through Cloud Computing: Application to the GEOS-Chem Model"
+      URL: https://doi.org/10.1175/BAMS-D-18-0243.1
+      AuthorName: Jiawei Zhuang et al.
+    - Title: "Enabling high-performance cloud computing for Earth science modeling on over a thousand cores: application to the GEOS-Chem atmospheric chemistry model"
+      URL: https://doi.org/10.1029/2020MS002064
+      AuthorName: Jiawei Zhuang et al.
