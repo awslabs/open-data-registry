@@ -44,6 +44,12 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
     Region: us-east-1
     Type: SNS Topic
+  - Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech
+    Type: S3 Bucket
+    Region: us-east-1
+    ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
+    Explore:
+    - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'
 DataAtWork:
   Tutorials:
   Tools & Applications:

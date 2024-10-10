@@ -1,0 +1,57 @@
+Citation: 'For data collected prior to June 2022: "Integrated Marine Observing System
+  (IMOS). (2015). Underway sensors: Enhanced measurements from Ships of Opportunity
+  (SOOP). https://doi.org/10.25845/9VR7-9G80, accessed[date-of-access]". For data
+  collected between June - October 2022: "Australian Institute of Marine Science (AIMS),
+  Integrated Marine Observing System (IMOS). (2015). Underway sensors: Enhanced measurements
+  from Ships of Opportunity (SOOP). https://doi.org/10.25845/9VR7-9G80, accessed[date-of-access]".'
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
+    Title: 'Accessing Sensors on Tropical Research Vessels: Enhanced Measurements
+      from Ships of Opportunity (SOOP)'
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: "The research vessels (RV Cape Ferguson and RV Solander) of the Australian\
+  \ Institute of Marine Science (AIMS) routinely record along-track (underway) measurements\
+  \ of near-surface water temperature, salinity, chlorophyll (fluorescence) and turbidity\
+  \ (NTU) during scientific operations in the tropical waters of northern Australia,\
+  \ particularly the Great Barrier Reef (GBR). All data records include sampling time\
+  \ (UTC), position (Latitude, Longitude) and water depth (under keel). \n\nData are\
+  \ recorded at 10 second intervals. Data are measured with a Seabird SBE38 thermometer,\
+  \ Seabird SBE21 thermosalinograph and Wetlabs ECO-FLNTU-RT (optical sensor for chlorophyll\
+  \ fluorescence and turbidity). The turbidity data (NTU) are currently regarded as\
+  \ provisional in the absence of local validation due to intermittent bubble contamination.\
+  \ The sampling intakes are located at depths of 1.9m (RV Cape Ferguson) and 2.5m\
+  \ (RV Solander).\n\nThe data is used to inform spatial patchiness of these variables\
+  \ and for ongoing validation of satellite ocean temperature and ocean colour products.\n\
+  \nThe IMOS Ships of Opportunity, Sensors on Tropical Research Vessels sub-Facility\
+  \ was discontinued in June 2022. Sea surface temperature data collected by Australian\
+  \ Institute of Marine Science research vessels continues to be provided via the\
+  \ IMOS Ships of Opportunity, Sea Surface Temperature Sensors for Australian Vessels\
+  \ sub-Facility records on the AODN Portal. The near real time sea surface temperature\
+  \ data are quality controlled by the Australian Bureau of Meteorology and uploaded\
+  \ onto the Global Telecommunication System (GTS) for global dissemination to be\
+  \ used in real time sea surface temperature analyses and climate data records. Access\
+  \ to the additional data collected by the AIMS research vessels, is provided on\
+  \ the AIMS data repository here: https://apps.aims.gov.au/metadata/view/8af21108-c535-43bf-8dab-c1f45a26088c."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/8af21108-c535-43bf-8dab-c1f45a26088c
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Ships of Opportunity - Tropical research vessels - Real time
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_trv_realtime_qc.parquet
+  Description: 'Cloud Optimised AODN dataset of Sensors on Tropical Research Vessels:
+    Enhanced Measurements from Ships of Opportunity (SOOP)'
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- chemistry
+UpdateFrequency: As Needed
