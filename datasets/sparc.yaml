@@ -1,0 +1,67 @@
+Name: "SPARC: Datasets bridging the body and the brain"
+Description: |
+  The SPARC Datasets comprise a collection of scientific data that is focused
+  on bridging the body and the brain. The datasets focus on neural connectivity,
+  organ innervation and detailed anatomical mapping of the peripheral nervous system.
+  SPARC datasets distinguish themselves from other data resources through its multi-modal
+  approach to scientific data and integrates molecular, imaging, timeseries and other
+  datatypes associated with the interaction between the peripheral nervous system and 
+  organs. SPARC data provides a unique integrated effort to develop next generation mapping
+  of anatomical and functional connectivity of the nervous system.
+Documentation: https://docs.sparc.science
+Contact: joostw@seas.upenn.edu, support@sparc.science
+ManagedBy: "[The SPARC Data Resource Center](https://sparc.science/about)"
+UpdateFrequency: Continually adding new datasets and releasing versions of datasets
+Tags:
+  - systems physiology
+  - anatomy
+  - neuroscience
+  - neurophysiology
+  - spatial mapping
+  - computational modeling
+  - bio-electronic medicine
+License: CC-BY-4.0
+Resources:
+  - Description: SPARC Public Datasets S3 Bucket
+    ARN: arn:aws:s3:::prd-sparc-discover50-use1
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: true
+    Explore: "[SPARC Datasets](https://sparc.science/data?type=dataset)"
+  - Description: SPARC Embargoed Datasets S3 Bucket
+    ARN: arn:aws:s3:::prd-sparc-embargo50-use1
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: true
+    Explore: "[SPARC Datasets](https://sparc.science/data?type=dataset)"
+DataAtWork:
+  Tutorials:
+    - Title: Downloading large scale SPARC datasets
+      URL: https://docs.sparc.science/recipes
+    - Title: Download public data, scaffolds and run computations
+      URL: https://docs.sparc.science/docs/getting-started-with-the-sparc-python-client
+    - Title: Using sparc.client for data movement in SPARC
+      URL: https://docs.sparc.science/docs/tutorial-using-sparcclient-for-data-movement-in-sparc
+  Tools & Applications:
+    - Title: The SPARC Portal
+      URL: https://sparc.science
+      AuthorName: Peter Hunter, Maryann Martone, Esra Neufeld, Joost Wagenaar
+      AuthorURL: https://sparc.science
+    - Title: The Pennsieve Data Management Platform
+      URL: https://app.pennsieve.io
+      AuthorName: Joost Wagenaar
+      AuthorURL: https://wagenaarlab.org
+    - Title: SODA Tool
+      URL: https://docs.sodaforsparc.io/
+      AuthorName: Bhavesh Patel
+      AuthorURL: https://fairdataihub.org/
+    - Title: OSPARC
+      URL: https://osparc.io/
+      AuthorName: Esra Neufeld
+      AuthorURL: https://osparc.io/
+  Publications:
+    - Title: "The SPARC DRC: Building a Resource for the Autonomic Nervous System Community"
+      URL: https://pubmed.ncbi.nlm.nih.gov/34248680/
+      AuthorName: Osanlouy M, Bandrowski A, de Bono B, Brooks D, Cassara A, Christie R, Ebrahimi N, Gillespie T, Grethe J, Guercio L, Heal M, Lin M, Kuster N, Martone M, Neufeld E, Nickerson D, Soltani E, Tappan S, Wagenaar J, Zhuang K, Hunter P
+ADXCategories:
+  - Healthcare & Life Sciences Data
