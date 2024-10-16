@@ -26,21 +26,26 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: true
-    Explore: "[SPARC Datasets](https://sparc.science/data?type=dataset)"
+    Explore:
+      - "[SPARC Datasets](https://sparc.science/data?type=dataset)"
   - Description: SPARC Embargoed Datasets S3 Bucket
     ARN: arn:aws:s3:::prd-sparc-embargo50-use1
     Region: us-east-1
     Type: S3 Bucket
     ControlledAccess: "https://docs.sparc.science/docs/embargoed-data"
-    Explore: "[SPARC Datasets](https://sparc.science/data?type=dataset)"
+    Explore:
+      - "[SPARC Datasets](https://sparc.science/data?type=dataset)"
 DataAtWork:
   Tutorials:
     - Title: Downloading large scale SPARC datasets
       URL: https://docs.sparc.science/recipes
+      AuthorName: "The SPARC Data Resource Center"
     - Title: Download public data, scaffolds and run computations
       URL: https://docs.sparc.science/docs/getting-started-with-the-sparc-python-client
+      AuthorName: "The SPARC Data Resource Center"
     - Title: Using sparc.client for data movement in SPARC
       URL: https://docs.sparc.science/docs/tutorial-using-sparcclient-for-data-movement-in-sparc
+      AuthorName: "The SPARC Data Resource Center"
   Tools & Applications:
     - Title: The SPARC Portal
       URL: https://sparc.science
