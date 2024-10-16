@@ -35,6 +35,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-ufs-gefsv13replay-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS / GEFS Replay Data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewUFS-GEFSObject
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
