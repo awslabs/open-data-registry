@@ -1,0 +1,42 @@
+Name: SocialGene RefSeq Databases
+Description: Precomputed SocialGene Neo4j graph databases of various sizes built from RefSeq genomes and MIBiG BGCs.
+Documentation: https://socialgene.github.io/precomputed_databases/2023_v0.4.1/aws/aws
+Contact: https://github.com/socialgene/socialgene.github.io/issues
+ManagedBy: University of Wisconsin-Madison
+UpdateFrequency: This database is currently what was published in our 2024 paper introducing SocialGene, but an updated database may be added in the future.
+Tags:
+  - metagenomics
+  - genomic
+  - bioinformatics
+  - microbiome
+  - chemical biology
+  - pharmaceutical
+  - graph
+  - protein
+  - amino acid
+License: Where applicable, SocialGene data is released under CC0 (https://creativecommons.org/public-domain/cc0/), some individual components of the database may have their own license (see https://socialgene.github.io/precomputed_databases/2023_v0.4.1/general)
+Citation: C. M. Clark, J. C. Kwan, Creating and leveraging bespoke large-scale knowledge graphs for comparative genomics and multi-omics drug discovery with SocialGene. bioRxivorg, www.biorxiv.org/content/10.1101/2024.08.16.608329v1 (2024).
+Resources:
+  - Description: SocialGene 2023_v0.4.1 Data and Database Dumps
+    ARN: arn:aws:s3:::socialgene-open-data
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://socialgene-open-data.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: How to use SocialGene on AWS
+      URL: http://socialgene.github.io/precomputed_databases/2023_v0.4.1/aws/aws_instructions/
+      AuthorName: Chase M. Clark
+      AuthorURL: chasemc.github.io
+      Services:
+        - EC2
+  Publications:
+    - Title: Creating and leveraging bespoke large-scale knowledge graphs for comparative genomics and multi-omics drug discovery with SocialGene.
+      URL: https://www.biorxiv.org/content/10.1101/2024.08.16.608329v1
+      AuthorName: C. M. Clark, J. C. Kwan
+  Tools & Applications:
+    - Title: socialgene on pypi.python.org - python module for creating and interacting with SocialGene Neo4j databases
+      URL: https://pypi.org/project/socialgene/
+      AuthorName: Chase M. Clark
+      AuthorURL: https://github.com/chasemc
