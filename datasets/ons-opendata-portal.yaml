@@ -11,13 +11,7 @@ Tags:
     - hydrography
     - energy
 License: CC-BY 4.0
-Resources:  
-  - Description: "Daily schedule energetic balance (PT-BR Balanço energético da programação diária)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-programacao-diaria)'
+Resources:
   - Description: "DESSEM energy balance (PT-BR Balanço de energia DESSEM)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -30,30 +24,18 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-energia-subsistema)'
-  - Description: "Weekly marginal cost of operation (PT-BR Custo Marginal de Operação (CMO) semanal)"
+  - Description: "Daily schedule energetic balance (PT-BR Balanço energético da programação diária)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/cmo-semanal)'
-  - Description: "Semi-hourly marginal cost of operation (PT-BR Custo Marginal de Operação (CMO) Semi-Horário)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/cmo-semi-horario)'
-  - Description: "Unit Variable Cost of thermal power plants (PT-BR Custo Variável Unitário (CVU) das Usinas Térmicas)"
-    ARN: arn:aws:s3:::ons-aws-prod-opendata
-    Region: sa-east-1
-    Type: S3 Bucket  
-    Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/cvu-usitermica)'
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/balanco-programacao-diaria)'
   - Description: "Installed generation capacity (PT-BR Capacidade instalada de geração)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-geracao)'  
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/capacidade-geracao)'
   - Description: "Basic network transformation capacity (PT-BR Capacidade de transformação da rede básica)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -84,30 +66,54 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/carga-energia-verificada)'
+  - Description: "Weekly marginal cost of operation (PT-BR Custo Marginal de Operação (CMO) semanal)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/cmo-semanal)'
+  - Description: "Semi-hourly marginal cost of operation (PT-BR Custo Marginal de Operação (CMO) Semi-Horário)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/cmo-semi-horario)'
+  - Description: "Contour of watersheds (PT-BR Contorno das Bacias Hidrográficas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/bacia_contorno)'
   - Description: "Hourly charge curve (PT-BR Curva de carga horária)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/curva-carga)'
-  - Description: "Power plant availability data (PT-BR Dados de Disponibilidade de Usinas)"
+  - Description: "Unit Variable Cost of thermal power plants (PT-BR Custo Variável Unitário (CVU) das Usinas Térmicas)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/disponibilidade_usina)'
-  - Description: "Reservoir hydrological data (PT-BR Dados hidrológicos de reservatório)"
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/cvu-usitermica)'
+  - Description: "Reservoir hydrological data - Daily Basis (PT-BR Dados hidrológicos de reservatório - Base Diária)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/dados-hidrologicos-res)'
-  - Description: "Fluviometric data (PT-BR Dados de grandezas fluviométricas)"
+  - Description: "Reservoir hydrological data - Hourly Basis (PT-BR Dados hidrológicos de reservatório - Base Horária)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/grandezas_fluviometricas)'
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/dados-hidrologicos-res-ho)'
+  - Description: "Power plant availability data (PT-BR Disponibilidade de Usinas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/disponibilidade_usina)'
   - Description: "Energy Exchange Data by Modality (PT-BR Dados de Intercâmbio de Energia por Modalidade)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -192,7 +198,7 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/energia-vertida-turbinavel)'
-  - Description: "Reagents control equipment (PT-BR Equipamentos de controle de reativos)"
+  - Description: "Reagents control equipment (PT-BR Equipamentos de controle de reativos da rede de operação)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
@@ -222,18 +228,48 @@ Resources:
     Type: S3 Bucket  
     Explore: 
           - '[Browse Dataset](https://dados.ons.org.br/dataset/geracao-usina-2)'
+  - Description: "Fluviometric data (PT-BR Grandezas fluviométricas)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/grandezas_fluviometricas)'
   - Description: "Import of energy in commercial mode per block (PT-BR Importação de energia na modalidade comercial por bloco)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/importacaoenergia-comercial-2)'   
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/importacaoenergia-comercial-2)'
+  - Description: "Basic Network Reliability indicator - Electric charge interrupted by disturbances (PT-BR Indicador de Confiabilidade da Rede Básica: CIPER - Carga Interrompida por Perturbações)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_confiarb_ciper)'
+  - Description: "Basic Network Reliability indicator - DREQ, FREQ (PT-BR Indicador de Confiabilidade da Rede Básica: DREQ, FREQ)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_confiarb_dreq_freq)'
+  - Description: "Basic Network Reliability indicator: Robustness - RMAL, RMCS, RRB and RRBCS (PT-BR Indicador de Confiabilidade da Rede Básica: Robustez - RMAL, RMCS, RRB and RRBCS)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_confiarb_robustez)'
+  - Description: "Basic Network Reliability indicator: SM - Severity of Disturbances (PT-BR Indicador de Confiabilidade da Rede Básica: SM - Severidade das Perturbações)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_confiarb_severidade)'
   - Description: "Transmission function availability indicator - converters (PT-BR Indicador de disponibilidade de função transmissão - conversores)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_disponibilidade_ft_conversor)'    
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/ind_disponibilidade_ft_conversor)'
   - Description: "Transmission function availability indicator - reagents control equipment (PT-BR Indicador de disponibilidade de função transmissão - equipamentos de controle de reativos)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -281,7 +317,13 @@ Resources:
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/linha-transmissao)'  
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/linha-transmissao)'
+  - Description: "Power Plant Mode of Operation (PT-BR Modalidade de Operação da Usina)"
+    ARN: arn:aws:s3:::ons-aws-prod-opendata
+    Region: sa-east-1
+    Type: S3 Bucket  
+    Explore: 
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/modalidade-usina)'
   - Description: "Price offers for import (PT-BR Ofertas de preço para importação)"
     ARN: arn:aws:s3:::ons-aws-prod-opendata
     Region: sa-east-1
@@ -299,4 +341,4 @@ Resources:
     Region: sa-east-1
     Type: S3 Bucket  
     Explore: 
-          - '[Browse Dataset](https://dados.ons.org.br/dataset/reservatorio)'          
+          - '[Browse Dataset](https://dados.ons.org.br/dataset/reservatorio)'     
