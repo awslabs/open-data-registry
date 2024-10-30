@@ -1,0 +1,31 @@
+Name: EEGDash on AWS
+Description: 
+Documentation: https://github.com/sccn/EEG-Dash-Data
+Contact: adelorme@ucsd.edu
+ManagedBy: "[Swartz Center for Computational Neuroscience](https://sccn.ucsd.edu/)"
+UpdateFrequency: 
+Tags:
+  - aws-pds
+License: 
+Resources:
+  - Description: EEGDash data
+    ARN: arn:aws:s3:::eegdash
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://eegdash.s3.amazonaws.com)'
+DataAtWork:
+  Tutorials:
+    - Title: Deep Learning on EEGDash Data example
+      URL: https://github.com/sccn/EEG-Dash-Data/blob/develop/tests/eegdash.ipynb
+      AuthorName: SCCN
+      AuthorURL: https://github.com/sccn
+  Tools & Applications:
+    - Title: eegdash on pypi.python.org - python module to query and download EEGDash data from Amazon S3
+      URL: https://test.pypi.org/project/eegdash/
+      AuthorName: Young Truong
+      AuthorURL: https://github.com/dungscout96
+  Publications:
+    - Title: 
+      URL: 
+      AuthorName: 
