@@ -1,0 +1,40 @@
+Name: WIS2 Global Cache on AWS
+Description: Global real-time Earth system data deemed by the World Meteorological Organisation (WMO) as essential for provision of services for the protection of life and property and for the well-being of all nations. Data is sourced from all WMO Member countries / territories and retained for 24-hours. Met Office and NOAA operate this Global Cache service curating and publishing the dataset on behalf of WMO. 
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: gisc-exeter@metoffice.gov.uk
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: New data added as soon as available from origin WIS2 Nodes.
+Tags:
+  - aws-pds
+  - atmosphere
+  - forecast
+  - geoscience
+  - climate
+  - earth observation
+  - hydrology
+  - meteorological
+  - model
+  - oceans
+  - weather
+License: There are no restrictions on the use of this data. Attribution of original source is requested.
+Resources:
+  - Description: Core data as defined in the [WMO Unified Data Policy (Resolution 1 (Cg-19))](https://library.wmo.int/idurl/4/58009) and the [initial Catalogue of Core Data](http://library.wmo.int/doc_num.php?explnum_id=11001#page=139). Data covers a global extent. Data is provided in WMO approved formats - GRIB, BUFR and NetCDF. Users should subscribe to receive notification messages about newly available data. Please refer to the documentation.
+    ARN: arn:aws:s3:::wis2-global-cache
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore: 
+    - '[S3 Bucket](https://wis2-global-cache.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: WIS 2.0 video for 19th World Meterological Congress
+      URL: https://vimeo.com/761382308
+      AuthorName: WMO Secretariat
+  Publications: 
+    - Title: Manual on the WMO Information System (WMO-No. 1060), Volume II, WMO Information System 2.0
+      URL: https://library.wmo.int/idurl/4/68731
+      AuthorName: World Meteorological Organisation
+    - Title: Guide to the WMO Information System (WMO-No. 1061), Volume II, WMO Information System 2.0
+      URL: https://wmo-im.github.io/wis2-guide/guide/wis2-guide-DRAFT.html
+      AuthorName: World Meteorological Organisation
+ADXCategories:
+  - Environmental Data
