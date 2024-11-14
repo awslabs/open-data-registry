@@ -1,0 +1,92 @@
+Name: SeeFar V0
+Description: A collection of multi-resolution satellite images from both public and commercial satellites. The dataset
+  is specifically curated for training geospatial foundation models.
+Documentation: coastalcarbon.ai/seefar
+Contact: James Lowman
+ManagedBy: Coastal Carbon
+UpdateFrequency: Yearly
+Tags:
+  - geospatial
+  - remote sensing
+  - satellite imagery
+  - environmental monitoring
+  - Earth observation
+  - multi-resolution imagery
+  - Coastal Carbon
+  - geospatial foundation models
+  - Landsat
+  - Sentinel
+  - Spot
+  - Satellogic
+  - NewSat
+  - GeoTIFF
+  - spectral bands
+  - Blue Green Red NIR
+  - foundation dataset
+  - training data
+  - machine learning
+  - environmental data
+  - climate change
+  - sustainable development
+  - natural resource management
+  - biodiversity
+  - carbon cycle
+  - ocean health
+  - coastal ecosystems
+  - high-resolution imagery
+  - ground sample distance
+  - global monitoring
+
+License: The SeeFar dataset includes multiple licensing terms, specific to each satellite data source:
+  - **Satellogic (Earthview)**: Creative Commons Attribution 4.0 International (CC BY 4.0) — allows for free use, 
+           sharing, and adaptation with attribution and indication of changes.
+  - **WorldStrat (Airbus)**: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) — permits non-commercial use 
+           with attribution and indication of changes.
+  - **Sentinel**: Creative Commons Attribution-Share Alike 3.0 IGO (CC BY-SA 3.0 IGO) — requires attribution, 
+           share-alike terms, and indication of any changes.
+  - **USGS Landsat**: USGS Landsat License — unrestricted use with requested data source acknowledgment.
+
+Citation: Lowman, J., Zheng, K. L., Fraser, R., The, J. V. G., & Valipour, M. (2024). SeeFar: Satellite Agnostic 
+  Multi-Resolution Dataset for Geospatial Foundation Models. arXiv preprint arXiv:2406.06776.
+
+Resources:
+  - Description: Primary SeeFar dataset containing multi-resolution satellite imagery in cloud-optimized GeoTIFF format
+  across four spectral bands.
+    ARN: arn:aws:s3:::seefar-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: https://coastalcarbon.ai/seefar
+
+DataAtWork:
+  Tutorials:
+    - Title: "Getting Started with SeeFar for Multi-Resolution Geospatial Analysis"
+      URL: https://coastalcarbon.ai/seefar/tutorials/getting-started
+      NotebookURL: https://coastalcarbon.ai/seefar/tutorials/notebook
+      AuthorName: Coastal Carbon Team
+      AuthorURL: https://www.coastalcarbon.io/team
+      Services: Amazon SageMaker, Amazon S3, AWS Lambda
+  Tools & Applications:
+    - Title: "RasterIO for Processing SeeFar's GeoTIFF Data"
+      URL: https://rasterio.readthedocs.io/
+      AuthorName: Open Source Community
+      AuthorURL: https://github.com/mapbox/rasterio
+    - Title: "KelpSentinel Platform for Satellite Data Analysis"
+      URL: https://kelpsentinel.coastalcarbon.io
+      AuthorName: Coastal Carbon Inc.
+      AuthorURL: https://www.coastalcarbon.ai/
+  Publications:
+    - Title: "SeeFar: Satellite Agnostic Multi-Resolution Dataset for Geospatial Foundation Models"
+      URL: https://arxiv.org/abs/2406.06776
+      AuthorName: James Lowman, Kelly Liu Zheng, Roydon Fraser, Jesse Van Griensven, Mojtaba Valipour
+      AuthorURL: https://www.coastalcarbon.io/team
+
+DeprecatedNotice: This dataset supersedes any previous Coastal Carbon satellite collections intended for 
+  multi-resolution geospatial analysis.
+
+ADXCategories:
+  - Earth Observation
+  - Environment and Climate
+  - Machine Learning Training Datasets
+  - Geospatial Data
+  - Remote Sensing
+  - Natural Resources
