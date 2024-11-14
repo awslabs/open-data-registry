@@ -1,6 +1,5 @@
 Name: SeeFar V0
-Description: A collection of multi-resolution satellite images from both public and commercial satellites. The dataset
-  is specifically curated for training geospatial foundation models.
+Description: "A collection of multi-resolution satellite images from both public and commercial satellites. The dataset is specifically curated for training geospatial foundation models."
 Documentation: coastalcarbon.ai/seefar
 Contact: James Lowman
 ManagedBy: Coastal Carbon
@@ -37,21 +36,17 @@ Tags:
   - ground sample distance
   - global monitoring
 
-License: The SeeFar dataset includes multiple licensing terms, specific to each satellite data source:
-  - **Satellogic (Earthview)**: Creative Commons Attribution 4.0 International (CC BY 4.0) — allows for free use, 
-           sharing, and adaptation with attribution and indication of changes.
-  - **WorldStrat (Airbus)**: Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) — permits non-commercial use 
-           with attribution and indication of changes.
-  - **Sentinel**: Creative Commons Attribution-Share Alike 3.0 IGO (CC BY-SA 3.0 IGO) — requires attribution, 
-           share-alike terms, and indication of any changes.
-  - **USGS Landsat**: USGS Landsat License — unrestricted use with requested data source acknowledgment.
+License: |
+  The SeeFar dataset includes multiple licensing terms, specific to each satellite data source:
+    - **Satellogic (Earthview)**: "Creative Commons Attribution 4.0 International (CC BY 4.0) — allows for free use, sharing, and adaptation with attribution and indication of changes."
+    - **WorldStrat (Airbus)**: "Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) — permits non-commercial use with attribution and indication of changes."
+    - **Sentinel**: "Creative Commons Attribution-Share Alike 3.0 IGO (CC BY-SA 3.0 IGO) — requires attribution, share-alike terms, and indication of any changes."
+    - **USGS Landsat**: "USGS Landsat License — unrestricted use with requested data source acknowledgment."
 
-Citation: Lowman, J., Zheng, K. L., Fraser, R., The, J. V. G., & Valipour, M. (2024). SeeFar: Satellite Agnostic 
-  Multi-Resolution Dataset for Geospatial Foundation Models. arXiv preprint arXiv:2406.06776.
+Citation: "Lowman, J., Zheng, K. L., Fraser, R., The, J. V. G., & Valipour, M. (2024). SeeFar: Satellite Agnostic Multi-Resolution Dataset for Geospatial Foundation Models. arXiv preprint arXiv:2406.06776."
 
 Resources:
-  - Description: Primary SeeFar dataset containing multi-resolution satellite imagery in cloud-optimized GeoTIFF format
-  across four spectral bands.
+  - Description: "Primary SeeFar dataset containing multi-resolution satellite imagery in cloud-optimized GeoTIFF format across four spectral bands."
     ARN: arn:aws:s3:::seefar-dataset
     Region: us-west-2
     Type: S3 Bucket
@@ -64,7 +59,7 @@ DataAtWork:
       NotebookURL: https://coastalcarbon.ai/seefar/tutorials/notebook
       AuthorName: Coastal Carbon Team
       AuthorURL: https://www.coastalcarbon.ai/team
-      Services: Amazon SageMaker, Amazon S3, AWS Lambda
+      Services: "Amazon SageMaker, Amazon S3, AWS Lambda"
   Tools & Applications:
     - Title: "RasterIO for Processing SeeFar's GeoTIFF Data"
       URL: https://rasterio.readthedocs.ai/
@@ -77,11 +72,10 @@ DataAtWork:
   Publications:
     - Title: "SeeFar: Satellite Agnostic Multi-Resolution Dataset for Geospatial Foundation Models"
       URL: https://arxiv.org/abs/2406.06776
-      AuthorName: James Lowman, Kelly Liu Zheng, Roydon Fraser, Jesse Van Griensven, Mojtaba Valipour
+      AuthorName: "James Lowman, Kelly Liu Zheng, Roydon Fraser, Jesse Van Griensven, Mojtaba Valipour"
       AuthorURL: https://www.coastalcarbon.ai/team
 
-DeprecatedNotice: This dataset supersedes any previous Coastal Carbon satellite collections intended for 
-  multi-resolution geospatial analysis.
+DeprecatedNotice: "This dataset supersedes any previous Coastal Carbon satellite collections intended for multi-resolution geospatial analysis."
 
 ADXCategories:
   - Earth Observation
