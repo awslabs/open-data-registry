@@ -1,5 +1,5 @@
 Name: Logan Unitigs and Contigs of the Sequence Read Archive (SRA) on AWS
-Description: This repository is a re-analysis of the NCBI Sequence Read Archive (SRA), December 2023 freeze, to make it more accessible. The SRA is an open access database of biological sequences, containing raw data from high-throughput DNA and RNA sequencing platforms. It is the largest database of public DNA sequences worldwide, containing a wealth of genomic diversity across all living organisms. This repository contains Logan, a set of compressed FASTA files for all individual SRA accessions, in the form of unitigs and contigs. Borrowing methods from the real of genome assembly, unitigs preserve nearly all the information present in the original sample, whereas contigs get rid of variations to increase sequence lengths. Altogether, Logan recapitulates the information present in the SRA while making it an order of magnitude more accessible due to 20-100x smaller size and higher quality genomic content.
+Description: This repository is a re-analysis of the NCBI Sequence Read Archive (SRA), December 2023 freeze, to make it more accessible. The SRA is an open access database of biological sequences, containing raw data from high-throughput DNA and RNA sequencing platforms. It is the largest database of public DNA sequences worldwide, containing a wealth of genomic diversity across all living organisms. This repository contains Logan, a set of compressed FASTA files for all individual SRA accessions, in the form of unitigs and contigs. Borrowing methods from the realm of genome assembly, unitigs preserve nearly all the information present in the original sample, whereas contigs get rid of variations to increase sequence lengths. Altogether, Logan recapitulates the information present in the SRA while making it an order of magnitude more accessible due to 20-100x smaller size and higher quality genomic content.
 Documentation: https://github.com/IndexThePlanet/Logan
 Contact: rayan.chikhi@pasteur.fr
 ManagedBy: "Institut Pasteur (https://www.pasteur.fr)"
@@ -27,8 +27,8 @@ DataAtWork:
       URL: https://github.com/IndexThePlanet/Logan/blob/main/Accessions.md
       AuthorName: Rayan Chikhi
       AuthorURL: https://github.com/IndexThePlanet
-    - Title: Search for a k-mer of interest inside an unitigs accession
-      URL: https://github.com/IndexThePlanet/Logan/blob/main/Kmer_search.md
+    - Title: Search for sequences inside unitigs or contigs
+      URL: https://github.com/IndexThePlanet/Logan/blob/main/Sequence_Search.md
       AuthorName: Rayan Chikhi
       AuthorURL: https://github.com/IndexThePlanet
     - Title: Downloading, mapping many contigs to a gene of interest 
@@ -44,7 +44,12 @@ DataAtWork:
       URL: https://openvirome.com/
       AuthorName: Artem Babaian
       AuthorURL: https://rrna.ca
+    - Title: Logan Search
+      URL: https://logan-search.org/
+      AuthorName: Pierre Peterlongo
+      AuthorURL: https://people.rennes.inria.fr/Pierre.Peterlongo/
     - Title: f2sz
       URL: https://github.com/asl/f2sz
       AuthorName: Anton Korobeynikov
       AuthorURL: https://anton.korobeynikov.info/
+
