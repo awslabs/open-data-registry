@@ -4,8 +4,12 @@ Description: The flagship Numerical Weather Prediction model developed and used 
   Please note this is a public beta and therefore a non-operational service.
 Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
 Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
-ManagedBy: "[Met Office] (https://www.metoffice.gov.uk/)"
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
 UpdateFrequency: The UKV provides hourly forecasts covering the period T+0 to T+48 hours, produced at surface level and at standard pressure levels eight times a day. With 3 hourly forecasts out to T+120. Model runs hourly, with the run times of T+54 with 03*, 15* hours extended to T+120.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
 Tags:
   - aws-pds
   - air temperature
@@ -18,7 +22,7 @@ Tags:
   - near-surface relative humidity
   - netcdf
   - weather
-License: Creative Commons Attribution-ShareAlike (CC BY-SA)
+License: "British Crown copyright 2022-2024, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Resources:
   - Description: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
     ARN: arn:aws:s3:::met-office-atmospheric-model-data

@@ -1,0 +1,41 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
+  If using data from the Ningaloo (TAN100) mooring, please add to the citation - "Department
+  of Jobs, Tourism, Science and Innovation (DJTSI), Western Australian Government".
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_ctd_delayed_qc.ipynb
+    Title: Accessing IMOS - Australian National Mooring Network (ANMN) - CTD Profiles
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_ctd_delayed_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: This collection includes conductivity-temperature-depth (CTD) profiles
+  obtained at the National Reference Stations (NRS) as part of the water sampling
+  program. The instruments used also measure dissolved oxygen, fluorescence, and turbidity.
+  The collection also includes practical salinity, water density and artificial chlorophyll
+  concentration, as computed from the measured properties. The data are processed
+  in delayed mode, with automated quality control applied. The National Reference
+  Station network is designed to provide baseline information, at timescales relevant
+  to human response, that is required to understand how large-scale, long-term change
+  and variability in the global ocean are affecting the ecosystems of Australia's
+  coastal seas. The stations are operated by the Australian National Moorings Network
+  (ANMN), a facility of the Integrated Marine Observing System (IMOS).
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/7b901002-b1dc-46c3-89f2-b4951cedca48
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: National Mooring Network - CTD profiles
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_ctd_delayed_qc.parquet
+  Description: Cloud Optimised AODN dataset of IMOS - Australian National Mooring
+    Network (ANMN) - CTD Profiles
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- chemistry
+UpdateFrequency: As Needed

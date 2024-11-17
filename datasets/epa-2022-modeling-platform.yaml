@@ -3,15 +3,28 @@ Name: >-
 Description: >-
   The data are part of the 2022 Modeling Platform used to support regulatory actions
   and technical analyses conducted by the EPA's Office of Air Quality Planning and
-  Standards. Specifically, this data is Weather Research and Forecasting Model (v4.4.2)
-  conducted at a 12-km resolution over the Continental United States (12US). Additionally,
-  MCIP-processed files and wrfcamx-processed (12US1 domain) are also available as part 
-  of this dataset to asset in the use of emissions processing and photochemical modeling. 
-  These files may be used in downstream applications to generate emissions, photochemical 
-  modeling, or dispersion modeling inputs.
+  Standards. Specifically, this data includes Weather Research and Forecasting Model (v4.4.2)
+  conducted at a 12-km resolution over the Continental United States (12US). MCIP-processed
+  files and wrfcamx-processed (12US1 domain) are also available as part of this dataset 
+  to assist in the use of emissions processing and photochemical modeling. These files 
+  may be used in downstream applications to generate emissions, photochemical 
+  modeling, or dispersion modeling inputs. Additionally, lateral boundary condition files 
+  generated using GEOS-CF at 36-km with results translated from GEOS-Chem species available 
+  in GEOS-CF to CMAQ cb6/ae7. Simulations for boundary conditions covering the northern 
+  hemisphere are also provided. These simulations were conducted using CMAQ v5.4 and GEOS-Chem
+  v14.0.1. The 2022v1 emissions are provided for a 36km grid over North America (36US3) and two 
+  12km grids (12SU1 and 12US2). See the documentation for pictures of the grids. The types 
+  of emissions data provided include point sources, nonpoint sources, mobiles sources, 
+  fires, lightning NOx, and biogenic emissions. Input files for computing biogenic emissions
+  inline within CMAQ are also provided. README text files are included at multiple levels 
+  within the directory structure to explain files at that level. For more information about 
+  the emissions, see the below documentation or the 2022v1 web page:
+  https://www.epa.gov/air-emissions-modeling/2022v1-emissions-modeling-platform
 Documentation: >-
   2022 WRF Modeling TSD: 
   https://www.epa.gov/system/files/documents/2024-03/wrf_2022_tsd.pdf. 
+  2022 Emissions Base Case:
+  https://gaftp.epa.gov/Air/emismod/2022/v1/2022v1_emissions_docn.pdf
 Contact: Misenis.Chris@epa.gov
 ManagedBy: >-
   U.S. Environmental Protection Agency, Office of Air Quality Planning and Standards,
@@ -30,8 +43,11 @@ License: >-
   protection under 17 U.S.C. § 105. More details on the U.S. Public Domain
   license are available here: http://www.usa.gov/publicdomain/label/1.0/
 Citation: >-
+  WRF Modeling:
   US EPA, 2024, "Meteorological Model Performance for Annual 2022 Simulation
   WRF v4.4.2"
+  Emissions Modeling:
+  US EPA, 2024, "Documentation of 2022 Base Year Emissions Released August 2024"
 Resources:
   - Description: >-
       The 2022 WRF output are stored as uncompressed netcdf/hdf5 formatted files in 
@@ -49,6 +65,8 @@ Resources:
       what each wrfcamx file contains, please see the README file in the wrfcamx source
       code file available from Ramboll at: 
       https://www.camx.com/getmedia/wrfcamx_v5.2.10Jan22.tgz
+      The 2022v1 emissions data are stored as uncompressed netcdf files in the /emis directory. 
+      The year 2022 CMAQ-ready emissions are provided under the folder 2022hc_cb6_22m
     ARN: 'arn:aws:s3:::epa-2022-modeling-platform'
     Region: us-east-1
     Type: S3 Bucket

@@ -1,0 +1,43 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/model_sea_level_anomaly_gridded_realtime.ipynb
+    Title: Accessing IMOS - OceanCurrent - Gridded sea level anomaly - Near real time
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/model_sea_level_anomaly_gridded_realtime.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: "Gridded (adjusted) sea level anomaly (GSLA), gridded sea level (GSL)\
+  \ and surface geostrophic velocity (UCUR,VCUR) for the Australasian region. GSLA\
+  \ is mapped using optimal interpolation of detided, de-meaned, inverse-barometer-adjusted\
+  \ altimeter and tidegauge estimates of sea level. GSL is GSLA plus an estimate of\
+  \ the departure of mean sea level from the geoid \u2013 mean sea level (over 18\
+  \ years of model time) of Ocean Forecasting Australia Model version 3 (OFAM3). The\
+  \ geostrophic velocities are derived from GSLA and the mean surface velocity from\
+  \ OFAM3. \n\n\nThe altimeter data window for input to the Delayed Mode (DM) maps\
+  \ is symmetrical about the map date. The width of the window is dependent on the\
+  \ number of altimeters flying at the time and ranges from 30 days to 14 days. The\
+  \ altimeter data window for Near Real Time (NRT) maps is asymmetrical about the\
+  \ analysis date (-21 to 4 days). For both NRT and DM, altimeter data is weighted\
+  \ by the difference between the analysis date of the map and the time of each altimeter\
+  \ observation.\n\nReferences: http://imos.aodn.org.au/oceancurrent"
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/0c9eb39c-9cbe-4c6a-8a10-5867087e703a
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: OceanCurrent - Gridded sea level anomaly - Near real time
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/model_sea_level_anomaly_gridded_realtime.zarr
+  Description: Cloud Optimised AODN dataset of IMOS - OceanCurrent - Gridded sea level
+    anomaly - Near real time
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- ocean velocity
+- ocean sea surface height
+UpdateFrequency: As Needed
