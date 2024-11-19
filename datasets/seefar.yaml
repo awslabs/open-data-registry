@@ -1,0 +1,54 @@
+Name: SeeFar V0
+Description: "A collection of multi-resolution satellite images from both public and commercial satellites. The dataset is specifically curated for training geospatial foundation models."
+Documentation: https://coastalcarbon.ai/seefar
+Contact: James Lowman
+ManagedBy: Coastal Carbon
+UpdateFrequency: Yearly
+Tags:
+  - geospatial
+  - earth observation
+  - satellite imagery
+  - climate
+  - biodiversity
+  - coastal
+  - machine learning
+  - environmental
+  - sustainability
+  - natural resource
+  - global
+  - mapping
+  - aws-pds
+
+License: |
+  The SeeFar dataset includes multiple licensing terms, specific to each satellite data source:
+    - **Satellogic (Earthview)**: "Creative Commons Attribution 4.0 International (CC BY 4.0) — allows for free use, sharing, and adaptation with attribution and indication of changes."
+    - **WorldStrat (Airbus)**: "Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0) — permits non-commercial use with attribution and indication of changes."
+    - **Sentinel**: "Creative Commons Attribution-Share Alike 3.0 IGO (CC BY-SA 3.0 IGO) — requires attribution, share-alike terms, and indication of any changes."
+    - **USGS Landsat**: "USGS Landsat License — unrestricted use with requested data source acknowledgment."
+
+Citation: "Lowman, J., Zheng, K. L., Fraser, R., The, J. V. G., & Valipour, M. (2024). SeeFar: Satellite Agnostic Multi-Resolution Dataset for Geospatial Foundation Models. arXiv preprint arXiv:2406.06776."
+
+Resources:
+  - Description: "Primary SeeFar dataset containing multi-resolution satellite imagery in cloud-optimized GeoTIFF format across four spectral bands."
+    ARN: arn:aws:s3:::seefar-dataset
+    Region: us-east-1
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: "Getting Started with SeeFar for Multi-Resolution Geospatial Analysis"
+      URL: https://coastalcarbon.ai/seefar
+      AuthorName: James Lowman - Coastal Carbon
+      AuthorURL: https://www.coastalcarbon.ai/team
+      Services:
+        - SageMaker
+        - S3
+  Publications:
+    - Title: "SeeFar: Satellite Agnostic Multi-Resolution Dataset for Geospatial Foundation Models"
+      URL: https://arxiv.org/abs/2406.06776
+      AuthorName: "Lowman, J., Zheng, K. L., Fraser, R., The, J. V. G., & Valipour, M."
+
+DeprecatedNotice: "This dataset supersedes any previous Coastal Carbon satellite collections intended for multi-resolution geospatial analysis."
+
+ADXCategories:
+  - Environmental Data
