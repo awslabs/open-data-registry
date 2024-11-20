@@ -1,0 +1,46 @@
+Name: "Emory Knee Radiograph (MRKR) dataset"
+Description: |
+  The Emory Knee Radiograph (MRKR) dataset is a large, demographically diverse collection of
+  503,261 knee radiographs from 83,011 patients, 40% of which are African American. This dataset
+  provides imaging data in DICOM format along with detailed clinical information, including patient-
+  reported pain scores, diagnostic codes, and procedural codes, which are not commonly available in
+  similar datasets. The MRKR dataset also features imaging metadata such as image laterality, view type,
+  and presence of hardware, enhancing its value for research and model development. MRKR addresses
+  significant gaps in existing datasets by offering a more representative sample for studying osteoarthritis
+  and related outcomes, particularly among minority populations, thereby providing a valuable resource
+  for clinicians and researchers.
+  Acknowledgments - We would like to thank MD.ai for assistance with image de-identification.
+Documentation: https://github.com/Emory-HITI/MRKR
+Contact: bprice9@emory.edu, bpri0002@radiology.ufl.edu, hari.trivedi@emory.edu
+ManagedBy: Health Innovation and Translational Informatics Lab at Emory University (hitilab.com)
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - health
+  - imaging
+  - biology
+  - bioinformatics
+  - life sciences
+  - csv
+  - labeled
+  - x-ray 
+License: "CC-BY-SA"
+Resources:
+  - Description: MRKR dataset and tables
+    ARN: arn:aws:s3:::emory-mrkr-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Example Notebook
+      URL: https://github.com/Emory-HITI/MRKR/blob/main/example_notebook.ipynb
+      AuthorName: Emory-HITI
+  Publications:
+    - Title: "Emory Knee Radiograph Dataset"
+      URL: https://arxiv.org/abs/2411.00866
+      AuthorName: Brandon Price, Jason Adleberg, Kaesha Thomas, Zach Zaiman, Aawez Mansuri, Beatrice Brown-Mulry, Chima Okecheukwu, Judy Gichoya, Hari Trivedi.
