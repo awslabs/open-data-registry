@@ -1,0 +1,19 @@
+Name: TON Blockchain Public Data Lake
+Description: |
+    This dataset contains raw and decoded data from the TON blockchain. 
+    The data is stored in a S3 bucket in AVRO format and allows to run large scale analytical queries using AWS Athena or AWS EMR.
+    Dataset consists of multiple tables with messages, transactions, accounts and other blockchain events (see documentation for details).
+    Each table is partitioned by date and stored in a separate folder.
+Documentation: https://github.com/re-doubt/ton-etl/blob/main/datalake/README.md
+Contact: pavel.s@ton.org
+ManagedBy: "[TON Foundation](https://ton.org/)"
+UpdateFrequency: Daily
+Tags:
+  - blockchain
+  - cryptocurrency
+License: MIT License
+Resources:
+  - Description: TON Blockchain Public Data Lake
+    ARN: arn:aws:s3:::ton-blockchain-public-datalake
+    Region: eu-central-1
+    Type: S3 Bucket
