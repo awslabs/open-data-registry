@@ -76,7 +76,12 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=egs_collab%2Fexperiment_2%2Fpassive_seismic%2F)'
-
+  - Description: '[Soda Lake Geothermal: Raw 3D and 3C Seismic-Reflection Data from 2010 Survey](https://gdr.openei.org/submissions/1655)'
+    ARN: arn:aws:s3:::gdr-data-lake/soda_lake/raw_seismic/2010
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=soda_lake%2Fraw_seismic%2F2010%2F)'
 DataAtWork:
   Tutorials:
     - Title: Dark Fiber Jupyter Notebook Tutorial
