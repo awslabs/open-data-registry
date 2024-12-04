@@ -1,14 +1,33 @@
 Name: AWS Public Blockchain Data
-Description: The AWS Public Blockchain Data provide datasets from the Bitcoin and Ethereum blockchains. The blockchain data is transformed into multiple tables as compressed Parquet files partitioned by date, to allow efficient access for most common analytics queries.
+Description: > 
+  The AWS Public Blockchain Data provides free access to blockchain datasets. Data is transformed into multiple 
+  tables as compressed Parquet files, partitioned by date, to allow efficient access for most common analytics queries.
+
+  </br></br>
+
+  <strong>Datasets</strong></br></br>
+  <table width="100%">
+  <thead>
+    <tr><th>Blockchain dataset</th><th>Maintained by</th><th>Path</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bitcoin</td>     <td>AWS</td>    <td><code>s3://aws-public-blockchain/v1.0/btc/</code></td></tr>
+    <tr><td>Ethereum</td>    <td>AWS</td>    <td><code>s3://aws-public-blockchain/v1.0/eth/</code></td></tr>
+    <tr><td>Arbitrum</td>    <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/arbitrum/</code></td></tr>
+    <tr><td>Aptos</td>       <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/aptos/</code></td></tr>
+    <tr><td>Base</td>        <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/base/</code></td></tr>
+    <tr><td>Provenance</td>  <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/provenance/</code></td></tr>
+    <tr><td>XRP Ledger</td>  <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/xrp/</code></td></tr>
+  </tbody>
+  </table>
+
 Documentation: https://github.com/aws-samples/digital-assets-examples/blob/main/analytics/
-Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+Contact: aws-blockchain-data@amazon.com
 ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
-UpdateFrequency: New data is delivered daily to the current date folders as one Parquet file per block. Intra-day data is aggregated every day at 00:30 UTC.
+UpdateFrequency: New data is delivered daily to the current date folders Parquet files.
 Tags:
-  - amazon.science
-  - bitcoin
   - blockchain
-  - ethereum
+  - web3
 License: https://github.com/aws-samples/digital-assets-examples/blob/main/LICENSE
 Resources:
   - Description: AWS Public Blockchain Data
@@ -17,6 +36,9 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Publications:
+    - Title: New datasets added to the AWS Public Blockchain Datasets — available for analytics and research
+      URL: https://repost.aws/articles/AR3gztQGeSS8CfaKNNeyYwsQ
+      AuthorName: Everton Fraga, Simon Goldberg
     - Title: Access Bitcoin and Ethereum open datasets for cross-chain analytics
       URL: https://aws.amazon.com/blogs/database/access-bitcoin-and-ethereum-open-datasets-for-cross-chain-analytics/
       AuthorName: Oliver Steffmann, Bhaskar Ravat, Sreeji Gopal, and Stefan Dicker
