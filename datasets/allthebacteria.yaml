@@ -2,17 +2,38 @@ Name: AllTheBacteria
 Description: All bacterial isolate whole-genome sequencing data from INSDC, uniformly assembled, quality-controlled, annotated, and searchable.
 Documentation: https://allthebacteria.readthedocs.io/en/latest/
 Contact: https://github.com/AllTheBacteria/AllTheBacteria/issues
-ManagedBy:
-UpdateFrequency:
+ManagedBy: "[European Bioinformatics Institute](https://www.ebi.ac.uk/)"
+UpdateFrequency: |
+  The current release is for all SRA bacterial isolate data up to August 2024. The 
+  colllection will be updated occasionally, with no fixed schedule.
 Tags:
-  -
-License:
-Citation:
+  - assembly
+  - bioinformatics
+  - fasta
+  - genomic
+  - short read sequencing
+  - whole genome sequencing
+License: "[MIT License](https://opensource.org/license/mit)"
 Resources:
-  - Description:
+  - Description: Individual, compressed genome assemblies in .fasta format in a public S3 bucket.
     ARN:
     Region:
-    Type:
+    Type: S3 Bucket
+    Explore:
+  - Description: Phylogenetically-compressed, batched xz archives of all genome assemblies in .fasta format in a public S3 bucket.
+    ARN:
+    Region:
+    Type: S3 Bucket
+    Explore:
+  - Description: Metadata for each genome assembly, including taxonomic information, in a public S3 bucket.
+    ARN:
+    Region:
+    Type: S3 Bucket
+    Explore:
+  - Description: "A [LexicMap](https://github.com/shenwei356/LexicMap) index of all genome assemblies. This can be used for efficient sequence alignment against all genomes."
+    ARN:
+    Region:
+    Type: S3 Bucket
     Explore:
 DataAtWork:
   Tutorials:
@@ -22,16 +43,10 @@ DataAtWork:
       AuthorName:
       AuthorURL:
       Services:
-  Tools & Applications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
   Publications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
-DeprecatedNotice:
+    - Title: AllTheBacteria - all bacterial genomes assembled, available and searchable
+      URL: https://doi.org/10.1101/2024.03.08.584059
+      AuthorName: Hunt M, Lima L, Anderson D, Hawkey J, Shen W, Lees J, Iqbal I
+      AuthorURL: https://researchportal.bath.ac.uk/en/persons/zamin-iqbal
 ADXCategories:
-  -    
+  - Healthcare & Life Sciences Data
