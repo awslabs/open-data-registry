@@ -1,0 +1,38 @@
+Name: Indiana Statewide Elevation Catalog
+Description: | 
+  The State of Indiana Geographic Information Office and IOT Office of Technology manage a series of digital LiDAR LAS files stored in AWS, dating back to the 2011-2013 collection and including the NRCS-funded 2016-2020 collection. These LiDAR datasets are available as uncompressed LAS files, for cloud storage and access. Each year's data is organized into a tile grid scheme covering the entire geography of Indiana, ensuring easy access and efficient processing. The tiles' naming reflects each tile's lower left coordinate, facilitating accurate data management and retrieval. The AWS storage solution ensures that these extensive datasets are readily accessible for analysis and application across various projects.
+Documentation: https://elevation.gio.in.gov/
+Contact: sscholer@iot.in.gov
+ManagedBy: Indiana Geographic Information Office 
+UpdateFrequency: The State of Indiana has another four-year cycle of collecting orthoimagery and Lidar starting in 2025 and continuing through 2028.  The collections are designated by counties in three groups that cover Indiana, South to North.  These areas are frequently referred to as Tiers in the other documentation.  For example, tier 1 (Central 3rd) extends from Harrison County in the South to Elkhart and St. Joseph County in the North, while Tier 2 consists of the counties to the eastern side of the State, and Tier 3 is those counties to the western side of the State.
+Tags:
+- lidar
+- aws-pds
+- earth observation
+- geospatial
+- imaging
+- mapping
+- natural resource
+- sustainability
+- agriculture
+License: "Access to Indiana Geographic Information Office Lidar is governed by Creative Commons 0 (CC0): https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+Resources:
+- Description: State of Indiana Elevation archive.
+  ARN: arn:aws:s3:::giselevationingov
+  Region: us-east-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: ArcGIS Online Indiana Lidar Viewer
+      URL: https://indianamap-inmap.hub.arcgis.com/maps/ff98e3834d464619bd5c8974b0038a13/about
+      AuthorName: Indiana Geographic Information Office (IGIO)
+    - Title: IGIO Elevation Opendata S3 Browser
+      URL: https://giselevationingov.s3.amazonaws.com/index.html
+      AuthorName: Indiana Geographic Information Office (IGIO)
+    
+  Publications:
+    - Title:  "Recording of 2025 - 2028 Indiana Imagery and Elevation Program Presentation"
+      URL: https://elevation.gio.in.gov/pages/resources
+      AuthorName: Indiana Geographic Information Office (IGIO) 
+
