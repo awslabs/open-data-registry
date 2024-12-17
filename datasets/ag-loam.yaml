@@ -1,0 +1,34 @@
+Name: AG-LOAM Dataset
+Description: |
+  AG-LOAM dataset has been released to facilitate the evaluation of LiDAR-based odometry algorithms in agricultural environments.
+  1) It was collected by a wheeled mobile robot at the Agricultural Experimental Station of the University of California, Riverside, during Winter 2022 and Winter 2023.
+  2) It provides LiDAR point cloud data captured using a Velodyne VLP-16 sensor, along with ground-truth trajectories obtained from an RTK-GPS system.
+  3) It consists of 18 sequences collected over three phases, covering diverse planting environments, terrain conditions, path patterns, and robot motion profiles.
+  4) It spans a total operation time of 3 hours, covers a total distance of 7.5 km, and constitutes 150 GB of data.
+Documentation: https://github.com/UCR-Robotics/AG-LOAM
+Contact: Hanzhe Teng (hteng007@ucr.edu), Konstantinos Karydis (kkarydis@ece.ucr.edu)
+ManagedBy: "[Autonomous Robots and Control Systems Lab](https://sites.google.com/view/arcs-lab)"
+UpdateFrequency: NA
+Tags:
+  - aws-pds
+  - robotics
+  - agriculture
+  - lidar
+  - odometry
+  - localization
+  - mapping
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Resources:
+  - Description: AG-LOAM Dataset sequences
+    ARN: arn:aws:s3:::ucr-robotics/ag-loam-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Source code of the LiDAR-only odometry and mapping system
+      URL: https://github.com/UCR-Robotics/AG-LOAM
+      AuthorName: Hanzhe Teng et al.
+  Publications:
+    - Title: Adaptive LiDAR Odometry and Mapping for Autonomous Agricultural Mobile Robots in Unmanned Farms
+      URL: https://arxiv.org/abs/2412.02899
+      AuthorName: Hanzhe Teng, Yipeng Wang, Dimitrios Chatziparaschis, Konstantinos Karydis
