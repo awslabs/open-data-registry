@@ -1,0 +1,45 @@
+Name: DIWASA Rainfed and Irrigated Cropland Map for Africa
+Description: A framework integrating the Budyko model has been developed to distinguish between rainfed and irrigated cropland areas across Africa. This expands on remote sensing land cover products available for agricultural water studies in Africa and thereby helps address the need for deeper insights into cropland patterns. Validation against an independent dataset revealed an overall accuracy of 73% with high precision and specificity scores. These results validate the framework’s effectiveness in identifying irrigated areas while minimizing errors in misclassifying rainfed areas as irrigated.
+Documentation: https://github.com/iwmiwaplus/ODR/tree/master/Partitioned%20Croplands
+Contact: iwmiwaplus@gmail.com
+ManagedBy: "[IWMI](https://www.iwmi.cgiar.org/)"
+UpdateFrequency: None
+Tags:
+  - cropland partitioning
+  - irrigated cropland
+  - rainfed cropland
+  - agriculture
+  - land use
+  - land cover
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: high-confidence cropland map (HCCM)
+    ARN: arn:aws:s3:::iwmi-datasets/Cropland_partition/HCCM/
+    Region: af-south-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://iwmi-datasets.s3.af-south-1.amazonaws.com/Cropland_partition/index.html)'
+  - Description: Cropland partitioning all data
+    ARN: arn:aws:s3:::iwmi-datasets/Cropland_partition/
+    Region: af-south-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://iwmi-datasets.s3.af-south-1.amazonaws.com/Cropland_partition/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Cropland percentage
+      URL: https://github.com/iwmiwaplus/ODR/tree/master/Partitioned%20Croplands/Tutorials
+      AuthorName: iwmiwaplus
+      AuthorURL: https://github.com/iwmiwaplus
+  Tools & Applications:
+    - Title: Water use in Awash basin
+      URL: https://github.com/iwmiwaplus/ODR/blob/master/Partitioned%20Croplands/Applications/Awash_cropland%20partitioning.pdf
+      AuthorName: A. Owusu, K. Akpoti, M. Leh, N. Velpuri
+      AuthorURL: https://github.com/iwmiwaplus
+  Publications:
+    - Title: A framework for disaggregating remote-sensing cropland into rainfed and irrigated classes at continental scale
+      URL: https://doi.org/10.1016/J.JAG.2023.103607
+      AuthorName: Owusu, A., Kagone, S., Leh, M., Velpuri, N. M., Gumma, M. K., Ghansah, B., Thilina-Prabhath, P., Akpoti, K., Mekonnen, K., Tinonetsana, P., & Mohammed, I.
+    - Title: Rainfed and Irrigated Cropland Areas for Africa
+      URL: https://doi.org/10.5066/P9N4R7SF
+      AuthorName: Owusu, A., Kagone, S., Leh, M., and Velpuri, N.M.

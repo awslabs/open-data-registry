@@ -1,0 +1,45 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
+    Title: Accessing IMOS - SRS - SST - L3S - Single Sensor - 1 day - day and night
+      time - Australia
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: "This is a single-sensor multi-satellite  SSTfnd product for a single\
+  \ 24 hour period, derived using observations from AVHRR instruments on all available\
+  \ NOAA polar-orbiting satellites.  It is provided as a 0.02deg x 0.02deg cylindrical\
+  \ equidistant projected map over the region 70\xB0E to 170\xB0W, 20\xB0N to 70\xB0\
+  S.  Each grid cell contains the 24 hour average of all the highest available quality\
+  \ SSTs that overlap with that cell, weighted by the area of overlap.  The diagram\
+  \ at https://help.aodn.org.au/satellite-data-product-information/ indicates where\
+  \ this product fits within the GHRSST suite of NOAA/AVHRR products. The SSTfnd is\
+  \ derived by adding a constant 0.17 degC to the SSTskin observations after rejecting\
+  \ observations with low surface wind speeds (<6m/s by day and <2m/s at night) (see\
+  \ http://www.bom.gov.au/amoj/docs/2011/beggs.pdf). Matchups with buoy SSTfnd observations\
+  \ indicate typical 2014 biases of < 0.01 degC and standard deviations of 0.6 degC.\
+  \ Refer to the IMOS SST products web page at http://imos.org.au/sstproducts.html\
+  \ and Beggs et al. (2013) at http://imos.org.au/sstdata_references.html for further\
+  \ information."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/a136eee7-a990-4c06-a4f6-915657a2464e
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Satellite - Sea surface temperature - Level 3 - Single sensor - 1 day - Day
+  and night time
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.zarr
+  Description: Cloud Optimised AODN dataset of IMOS - SRS - SST - L3S - Single Sensor
+    - 1 day - day and night time - Australia
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- satellite imagery
+UpdateFrequency: As Needed

@@ -30,6 +30,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
+  - Description: MPAS-CMAQ Input Data
+    ARN: arn:aws:s3:::mpas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)'
   - Description: CMAQ Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
@@ -102,6 +108,12 @@ DataAtWork:
       URL: https://pcluster-cmaq.readthedocs.io/en/latest/index.html#
       AuthorName: CMAS Center
       AuthorURL: https://github.com/CMASCenter/pcluster-cmaq/
+      Services:
+        - ParallelCluster
+    - Title: CMAQ on AWS HPC Workshop
+      URL: https://catalog.workshops.aws/cmaq-tutorial/en-US/
+      AuthorName: CMAS Center, U.S. EPA Office of Research and Development and AWS Workshop Studio
+      AuthorURL: https://catalog.workshops.aws/
       Services:
         - ParallelCluster
     - Title: EQUATES Benchmark
