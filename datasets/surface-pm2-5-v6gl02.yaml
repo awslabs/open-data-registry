@@ -1,0 +1,31 @@
+Name: SatPM2.5
+Description: Fine particulate matter (PM2.5) concentrations are estimated using information from satellite-, simulation- and monitor-based sources. Aerosol optical depth from multiple satellites (MODIS, VIIRS, MISR, SeaWiFS, and VIIRS) and their respective retrievals (Dark Target, Deep Blue, MAIAC) is combined with simulation (GEOS-Chem) based upon their relative uncertainties as determined using ground-based sun photometer (AERONET) observations to produce geophysical estimates that explain most of the variance in ground-based PM2.5 measurements. A subsequent statistical fusion incorporates additional information from ground-based PM2.5 measurements.
+Documentation: https://sites.wustl.edu/acag/datasets/surface-pm2-5/#V6.GL.02
+Contact: randall.martin@wustl.edu
+ManagedBy: "https://sites.wustl.edu/acag/"
+UpdateFrequency: Yearly
+Tags:
+  - atmosphere
+  - netcdf
+  - environmental
+  - air quality
+  - health
+License: Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: Satellite-Derived Fine Particulate Matter (PM2.5) concentrations from the Atmospheric Composition Analysis Group and Washington University in St. Louis, version GL06.02.02
+    ARN: arn:aws:s3:::v6.pm25.global
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://s3.us-west-2.amazonaws.com/v6.pm25.global/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Importing and Plotting the V6.GL.02.02 dataset into Matlab
+      URL: https://sites.wustl.edu/acag/importing-and-plotting-the-v6-gl-02-02-dataset-into-matlab/
+      AuthorName: Aaron van Donkelaar
+      AuthorURL: https://sites.wustl.edu/acag/people/aaron-van-donkelaar/
+  Publications:
+    - Title: Enhancing Global Estimation of Fine Particulate Matter Concentrations by Including Geophysical a Priori Information in Deep Learning
+      URL: https://pubs.acs.org/doi/full/10.1021/acsestair.3c00054
+      AuthorName: Siyuan Shen, Chi Li, Aaron van Donkelaar, Nathan Jacobs, Chenguang Wang, and Randall V. Martin
+      AuthorURL: "https://sites.wustl.edu/acag/"

@@ -1,0 +1,49 @@
+Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
+Contact: info@aodn.org.au
+DataAtWork:
+  Tutorials:
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_sst_delayed_qc.ipynb
+    Title: Accessing IMOS - SOOP Underway CO2 Measurements Research Group - delayed
+      mode data
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_sst_delayed_qc.ipynb
+  - AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Description: "The Sea Surface Temperature (SST) sub-facility produces 1-minute average data products.\ 
+  \ Observed data are 1-minute median SST values and are retrieved from the vessel once an hour.\ 
+  \ High-resolution 1-minute median data are available in the delayed mode approximately\
+  \ every 3 months, these were produced in delayed mode using visual (manual) inspection\
+  \ of the quality flags after the data had been run through the automated quality control software\
+  \ at the Bureau of Meteorology The data products are produced from data from 3 ships:\
+  \ L'Astrolabe, Xutra Buhm and Wana Buhm, within this sub-facility working in the Australian region,\
+  \ Southern Ocean and South-East Asia. \n\nL'Astrolabe is a research vessel operating in Antarctic\
+  \ and sub-Antarctic waters during the summer period (usually October through March).\
+  \ 1-minute averaged SST (from the SBE 38 temperature sensor) and thermosalinograph salinity data\
+  \ are logged on the vessel and manually retrieved by CMAR staff after the voyage is completed.\
+  \ The data are run through the Bureau of Meteorology's automated quality control system\
+  \ followed by visual inspection and adjustment, if necessary, of the quality flags.\
+  \ This data stream is temporarily discontinued (2013). An SBE 48 hull-temperature sensor\
+  \ installed on both the MV Xutra Bhum and the MV Wana Buhm, produces observations of SST\
+  \ every 10 seconds. These data are recorded into 1 minute median SST values on the vessel\
+  \ and manually retrieved by Bureau of Meteorology staff approximately monthly.\
+  \ The data are run through the Bureau of Meteorology's automated quality control system\
+  \ followed by visual inspection and adjustment, if necessary, of the quality flags.\
+  \ Both of these data streams have now been discontinued (April 2013)."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/67f0b6ea-518f-4af5-9d21-dd3c08c7cb5c
+License: http://creativecommons.org/licenses/by/4.0/
+ManagedBy: AODN
+Name: Ships of Opportunity - Sea surface temperature - 1-minute average data products
+Resources:
+- ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_sst_delayed_qc.parquet
+  Description: Cloud optimised AODN dataset of IMOS - SOOP-Sea Surface Temperature (SST) Sub-facility - 1-minute average data products
+  Region: ap-southeast-2
+  Type: S3 Bucket
+Tags:
+- oceans
+- air temperature
+- atmosphere
+UpdateFrequency: As Needed

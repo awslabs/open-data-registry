@@ -1,0 +1,40 @@
+Name: SPARTAN Data
+Description: SPARTAN (Surface PARTiculate mAtter Network) measures and provides surface ambient particulate matter (PM2.5 and PM10) concentration and the chemical composition around the world, with the purpose of connecting ground-based PM2.5 and satellite remote sensing.
+Documentation: https://www.spartan-network.org/data
+Contact: SPARTAN.PM25@gmail.com
+UpdateFrequency: New measurement or estimation products will be added when available, usually multiple times a month.
+ManagedBy: 'The [Atmospheric Composition Analysis Group](https://sites.wustl.edu/acag/)'
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
+Tags:
+  - aws-pds
+  - environmental
+  - air quality
+License: SPARTAN data is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
+Resources:
+  - Description: All data products (PM2.5, aerosol chemical components, scattering) provided by SPARTAN.
+    ARN: arn:aws:s3:::spartan-cloud
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Tutorial on using SPARTAN data on AWS
+      URL: https://spartan-cloud.readthedocs.io/en/latest/index.html
+      AuthorName: Haihui Zhu
+      AuthorURL: https://github.com/haihui-zhu
+  Tools & Applications:
+  Publications:
+    - Title: "Elemental Characterization of Ambient Particulate Matter for a Globally Distributed Monitoring Network: Methodology and Implications"
+      URL: https://pubs.acs.org/doi/10.1021/acsestair.3c00069
+      AuthorName: Xuan Liu, et al.
+    - Title: A Global-Scale Mineral Dust Equation
+      URL: https://doi.org/10.1029/2022JD036937
+      AuthorName: Xuan Liu, et al.
+    - Title: "SPARTAN: A global network to evaluate and enhance satellite-based estimates of ground-level particulate matter for global health applications"
+      URL: https://doi.org/10.5194/amt-8-505-2015
+      AuthorName: Graydon Snider, et al.
+    - Title: "Variation in global chemical composition of PM2.5: emerging results from SPARTAN"
+      URL: https://doi.org/10.5194/acp-16-9629-2016
+      AuthorName: Graydon Snider, et al.
