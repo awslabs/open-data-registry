@@ -1,0 +1,30 @@
+Name: UK National Rail Darwin Dataset
+Description: |
+  This dataset captures train movements published by the Darwin Push Port feed.
+
+  You can read more about this dataset here: https://www.nationalrail.co.uk/developers/darwin-data-feeds, along with the 
+  National Rail terms and conditions for the dataset: https://assets.nationalrail.co.uk/e8xgegruud3g/3CwdjHiP1dGYdq5a5j2dQP/007f67f4c2192df230f52f8cf55e55d1/Terms_and_Conditions.pdf.
+Documentation: https://blog.robbiea.co.uk/posts/the-darwin-dataset/
+ManagedBy: Robbie A (rail@robbiea.co.uk)
+UpdateFrequency: Approximately every 30 minutes
+Tags:
+  - railway
+  - uk
+  - darwin
+
+License: https://www.gnu.org/licenses/gpl-3.0.en.html
+Resources:
+  - Description: An S3 directory containing all service metadata, partitioned by year, month, day.
+    ARN: arn:aws:s3:::darwin-connect/services/v1
+    Region: eu-west-1
+    Type: Parquet
+  - Description: An S3 directory containing all train movement data, partitioned by year, month, day.
+    ARN: arn:aws:s3:::darwin-connect/locations/v1
+    Region: eu-west-1
+    Type: Parquet
+DataAtWork:
+  Publications:
+    - Title: Blog posts covering both the analysis of the data as well as the ingestion design & usage.
+      URL: https://blog.robbiea.co.uk
+      AuthorName: Robbie A
+      AuthorURL: https://blog.robbiea.co.uk
