@@ -13,11 +13,11 @@ Resources:
   - Description: An S3 directory containing all service metadata, partitioned by year, month, day.
     ARN: arn:aws:s3:::darwin-connect/services/v1
     Region: eu-west-1
-    Type: Parquet
+    Type: S3 Bucket
   - Description: An S3 directory containing all train movement data, partitioned by year, month, day.
     ARN: arn:aws:s3:::darwin-connect/locations/v1
     Region: eu-west-1
-    Type: Parquet
+    Type: S3 Bucket
 DataAtWork:
   Publications:
     - Title: Blog posts covering both the analysis of the data as well as the ingestion design & usage.
