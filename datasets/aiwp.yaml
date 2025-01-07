@@ -1,0 +1,100 @@
+Name: AI Weather Prediction (AIWP) Model Reforecasts
+Description: |
+  <br/>
+  <br/>
+
+  This is an archive of pure AI-based weather prediction reforecasts produced collaboratively between the Cooperative Institute for Research in the Atmosphere [(CIRA)](https://www.cira.colostate.edu/) and the NOAA Global Systems Laboratory [(NOAA-GSL)](https://gsl.noaa.gov/).
+
+  <br/>
+  <br/>
+
+  Currently, [FourCastNetv2-small](https://arxiv.org/abs/2306.03838), [Pangu-Weather](https://www.nature.com/articles/s41586-023-06185-3), and [GraphCast](https://www.science.org/doi/10.1126/science.adi2336) are included, with more models to come. Each of these models has been initialized with both NOAA [GFS](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php) (directories with no extension) and ECMWF [IFS](https://www.ecmwf.int/en/forecasts/datasets/set-i) initial conditions (directories ending in "_IFS"). The datasets are updated with near-real-time data twice per day (00Z and 12Z initializations).
+
+  <br/>
+  <br/>
+
+  FourCastNetv2-small and Pangu-Weather are available from 10/2020 to present, while GraphCast is available from 01/2022 to present. These periods are selected to avoid overlap with training and fine-tuning periods for each model. Data may be missing and is not guaranteed to be available at any given time. If there is data missing that you require, please email jacob.radford@noaa.gov.
+
+  <br/>
+  <br/>
+
+  For real-time visualizations, visit our [visualizations page](https://aiweather.cira.colostate.edu).
+
+  <br/>
+  <br/>
+
+  The directory structure is as follows\: <br/>
+  s3://noaa-oar-mlwp-data/MMMM_vNNN_III/YYYY/mmdd/MMMM_vNNN_III_YYYYmmddhh_fXXX_fYYY_ZZ.nc; where <br/>
+  MMMM = Four character model code (FOUR, PANG, or GRAP) <br/>
+  NNN = Three digit version number (currently 100 or 200) <br/>
+  YYYY = Four digit year <br/>
+  mm = Two digit month <br/>
+  dd = Two digit day <br/>
+  III = Three character initial condition system (GFS) <br/>
+  hh = Two digit initialization time (00, 06, 12, or 18) <br/>
+  XXX = Three digit first forecast hour of file (currently 000 for all files) <br/>
+  YYY = Three digit last forecast hour of file (currently 240 for all files) <br/>
+  ZZ = Two digit forecast step (currently 06 for all files) 
+  
+  <br/>
+  <br/>
+  Variables available by model\: <br/>
+
+  - FourCastNet v2-small:
+      - 10-m u wind component
+      - 10-m v wind component
+      - 100-m u wind component
+      - 100-m v wind component
+      - 2-m temperature
+      - Surface pressure
+      - Mean sea level pressure
+      - Total column integrated water vapor
+      - Geopotential at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Temperature at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - U wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - V wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Relative humidity at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+  - Pangu-Weather:
+      - 10-m u wind component
+      - 10-m v wind component
+      - 2-m temperature
+      - Mean sea level pressure
+      - Geopotential at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Temperature at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - U wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - V wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Specific humidity at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+  - GraphCast Operational:
+      - 10-m u wind component
+      - 10-m v wind component
+      - 2-m temperature
+      - Mean sea level pressure
+      - Geopotential at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Temperature at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - U wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - V wind component at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Specific humidity at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - Vertical velocity at: [1000, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 50] hPa
+      - 6-hr accumulated precipitation
+
+Documentation: https://noaa-oar-mlwp-data.s3.amazonaws.com/README.txt
+Contact: For questions regarding data availability, content, or quality, contact Dr. Jacob Radford (jacob.radford@noaa.gov). For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "Dr. Jacob Radford (jacob.radford@noaa.gov)"
+UpdateFrequency: 2 times a day, every 12 hours starting at midnight UTC
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - environmental
+  - meteorological
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: AIWP data
+    ARN: arn:aws:s3:::noaa-oar-mlwp-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-oar-mlwp-data.s3.amazonaws.com/index.html)'
