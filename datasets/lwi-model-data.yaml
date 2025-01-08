@@ -19,6 +19,7 @@ Description: >
 Contact: endmc@thewaterinstitute.org
 ManagedBy: The Water Institute
 UpdateFrequency: yearly
+Documentation: https://watershed.la.gov/modeling-program
 Tags:
   - forecast
   - bathymetry
@@ -44,15 +45,15 @@ Tags:
   - weather
   - aws-pds
 License: https://creativecommons.org/licenses/by/4.0/ with attribution to Louisiana Watershed Council
-Citation:
+Citation: "Louisiana Watershed Initiative Model Data. Louisiana Watershed Council. 2025. https://lwi.endmc.org/"
 Resources:
   - Description: Model Applications and Simulations
-    ARN:
+    ARN: arn:aws:s3:::lwi-model-data #placeholder
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Discover on ENDMC] (https://lwi.endmc.org/), the ID of the resources is the same as the path in the bucket.'
-    - '[Browse on AWS] (https://<bucketname>.s3.amazonaws.com/index.html)' #placeholder
+    - '[Browse the bucket](https://lwi-model-data.s3.amazonaws.com/index.html)'
+    - '[Disover the data and models. The ID of the resources can be used to explore the data on the AWS bucket.](https://lwi.endmc.org/)'
 DataAtWork:
   Tutorials:
     - Title: ENDMC Documentation
@@ -60,38 +61,37 @@ DataAtWork:
       AuthorName: The Water Institute
       AuthorURL: https://thewaterinstitute.org/ 
   Tools & Applications:
-    - Title: LWI ENDMC Datan and Model Catalog
+    - Title: LWI ENDMC Datan and Model Catalog.
       URL: https://lwi.endmc.org/
       AuthorName: The Water Institute
       AuthorURL: https://thewaterinstitute.org/
-    - title: HEC-HMS
+    - Title: HEC-HMS
       URL: https://www.hec.usace.army.mil/software/hec-hms/
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: HEC-HMS documentation
+    - Title: HEC-HMS documentation
       URL: https://www.hec.usace.army.mil/software/hec-hms/documentation.aspx
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: HEC-RAS
+    - Title: HEC-RAS
       URL: https://www.hec.usace.army.mil/software/hec-ras/
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: HEC-RAS documentation
+    - Title: HEC-RAS documentation
       URL: https://www.hec.usace.army.mil/software/hec-ras/documentation.aspx
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: HEC-FIA
+    - Title: HEC-FIA
       URL: https://www.hec.usace.army.mil/software/hec-fia/
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: HEC-FIA documentation
+    - Title: HEC-FIA documentation
       URL: https://www.hec.usace.army.mil/software/hec-fia/documentation.aspx
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-    - title: go-consequences
+    - Title: go-consequences
       URL: https://github.com/USACE/go-consequences
       AuthorName: United States Army Corps of Engineers
       AuthorURL: https://www.usace.army.mil/
-DeprecatedNotice:
 ADXCategories:
   - Environmental Data
