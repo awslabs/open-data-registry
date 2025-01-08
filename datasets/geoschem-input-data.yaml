@@ -1,9 +1,9 @@
 Name: GEOS-Chem Input Data
-Description: Input data for the GEOS-Chem Chemical Transport Model. Including the NASA/GMAO MERRA-2 and GEOS-FP [meteorological products](http://wiki.geos-chem.org/Overview_of_GMAO_met_data_products), the [HEMCO emission inventories](http://wiki.geos-chem.org/HEMCO_data_directories), and other small data such as [model initial conditions](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/restart-files.html).
-Documentation: https://geos-chem-cloud.readthedocs.io
+Description: Input data for the GEOS-Chem Chemical Transport Model, includes NASA/GMAO MERRA-2 and GEOS-FP [meteorological products](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#met), [chemistry input data](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#chemistry-input-data), [emissions input data](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#emis-inputs), and other smaller datasets such as model [initial conditions](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#initial-conditions-input-data>).
+Documentation: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/geos-chem-input-data-on-aws.html
 Contact: https://geoschem.github.io/support-team.html
 UpdateFrequency: New meteorological and emission data will be added when available.
-ManagedBy: "[Harvard University](https://www.harvard.edu/) and [Washington University in St. Louis](https://wustl.edu)"
+ManagedBy: "[GEOS-Chem Support Team](https://geoschem.github.io/support-team.html)"
 Collabs:
   ASDI:
     Tags:
@@ -15,28 +15,39 @@ Tags:
   - meteorological
   - environmental
   - air quality
+  - chemistry
+  - atmosphere
+  - model
 License: https://geoschem.github.io/license.html
 Resources:
   - Description: Top-level directory for all GEOS-Chem data.
-    ARN: arn:aws:s3:::gcgrid
+    ARN: arn:aws:s3:::geos-chem
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://geos-chem.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-    - Title: Tutorial on accessing GEOS-Chem data bucket in S3
-      URL: https://geos-chem-cloud.readthedocs.io/en/latest/chapter02_beginner-tutorial/use-s3.html
-      AuthorName: Jiawei Zhuang
-      AuthorURL: https://github.com/JiaweiZhuang
+    - Title: Getting started with GEOS-Chem Input Data
+      URL: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/getting-started-aws.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
+    - Title: GEOS-Chem Classic Quickstart Guide
+      URL: https://geos-chem.readthedocs.io/en/latest/getting-started/quick-start.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
+    - Title: GCHP Quickstart Guide
+      URL: https://gchp.readthedocs.io/en/latest/getting-started/quick-start.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
   Tools & Applications:
   Publications:
-    - Title: Overview of the GEOSChem-on-cloud project
-      URL: http://acmg.seas.harvard.edu/research.html
-      AuthorName: Atmospheric Chemistry Modeling Group, Harvard University
-      AuthorURL: http://acmg.seas.harvard.edu/index.html
-    - Title: Running GEOS-Chem on Cloud Computing Platforms, presented at the 8th International GEOS-Chem Meeting
-      URL: https://projects.iq.harvard.edu/files/acmg-geos/files/igc8-mon_posters_zhuang_jiawei.pdf
-      AuthorName: Jiawei Zhuang, et al.
-      AuthorURL: https://github.com/JiaweiZhuang
     - Title: "Enabling Immediate Access to Earth Science Models through Cloud Computing: Application to the GEOS-Chem Model"
       URL: https://doi.org/10.1175/BAMS-D-18-0243.1
-      AuthorName: Jiawei Zhuang, et al.
+      AuthorName: Jiawei Zhuang et al.
+    - Title: "Enabling high-performance cloud computing for Earth science modeling on over a thousand cores: application to the GEOS-Chem atmospheric chemistry model"
+      URL: https://doi.org/10.1029/2020MS002064
+      AuthorName: Jiawei Zhuang et al.
+    - Title: "Improved advection, resolution, performance, and community access in the new generation (version 13) of the high-performance GEOS-Chem global atmospheric chemistry model (GCHP)"
+      URL: https://doi.org/10.5194/gmd-15-8731-2022
+      AuthorName: Randall V. Martin et al.
