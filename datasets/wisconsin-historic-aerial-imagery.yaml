@@ -10,16 +10,21 @@ Tags:
   - mapping
   - cog
   - natural resource
+  - coastal
 License: All photographs are available for download by any user without fee or use restrictions.
 Resources:
-  - Description: Imagery in the S3 bucket is organized by state, county, and year. Two formats are provided: lossy JPEG and Cloud Optimized Geotiff (COG). Both formats have the same spatial resolution. Each file is named using a predictable structure that follows this scheme: [County]_[State]_[locational reference]_[acquisition date as YYYYMMDD].[format]. The locational reference can be a USGS Quadrangle name, USGS Quarter-Quadrangle name, or a unique photo identifier such as project_roll_frame.  Examples: Clayton_IA_Prairie_Du_Chien_19820423.jpg,  Ashland_WI_Amnicon_Point_NE_20100827.tif, Adams_WI_AIY_7_579_19371100.jpg. All geotiff images have at least a basic georeferencing applied, but users should note the georeferencing is only approximate for many images in the archive.  Users are encouraged the visit the hosted feature service for more image metadata.
+  - Description: Aerial imagery in the S3 bucket is organized by state, county, and year. Two formats are provided: lossy JPEG and Cloud Optimized Geotiff (COG). Both formats have the same spatial resolution. Each file is named using a predictable pattern: [County]_[State]_[locational reference]_[acquisition date as YYYYMMDD].[format]. The locational reference can be a USGS Quadrangle name, USGS Quarter-Quadrangle name, or a unique photo identifier such as project_roll_frame.  Examples: Clayton_IA_Prairie_Du_Chien_19820423.jpg,  Ashland_WI_Amnicon_Point_NE_20100827.tif, Adams_WI_AIY_7_579_19371100.jpg. All geotiff images have at least basic georeferencing applied, but GIS users should note the georeferencing is only approximate for many images in the archive.  Users are encouraged the visit the hosted feature service for more image metadata.
     ARN: arn:aws:s3:::wisconsin-historic-aerial-imagery
-    Region: us-east-2
+    Region: us-west-2
     Type: S3 Bucket
     Explore:  
     - "[Browse Bucket](https://wisconsin-historic-aerial-imagery.s3.amazonaws.com/index.html)"
 DataAtWork:
   Tutorials:
+    - Title: Using ArcGIS Pro and Python to Download Wisconsin Historic Aerial Imagery
+      URL: https://docs.google.com/document/d/1cNqa6q0hVlUs8hs4nbY191wWW60NW6n-ANjXI9fkutQ/edit?usp=sharing
+      AuthorName: Jim Lacy, Wisconsin State Cartographer's Office
+      AuthorURL: https://www.sco.wisc.edu/
     - Title: Wisconsin Historic Aerial Imagery Bulk Download Instructions for AWS
       URL: https://docs.google.com/document/d/15-SNCf4_ZrPrx7FcWA2sEMTrT4jdUZfi24zfrv6z56I/edit?usp=sharing
       AuthorName: Arthur H. Robinson Map Library
