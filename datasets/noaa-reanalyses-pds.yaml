@@ -1,0 +1,39 @@
+Name: NOAA NASA Joint Archive (NNJA) of Observations for Earth System Reanalysis
+Description: |
+  The NOAA NASA Joint Archive (NNJA) of Observations for Earth System Reanalysis is a curated joint observation archive containing Earth system data from 1979 to present prepared by teams at NOAA's Physical Sciences Laboratory and NASA's Global Modeling and Assimilation Office. The goal is to foster collaboration across organizations and develop the ability for direct comparison of Earth System reanalysis results. Providing a singular dataset for observation input use will allow reanalyses to be compared on their unique development qualities by removing the variation from using different observations. We anticipate that the open dataset will be of value to the wider Earth System community, including future applications outside of the original goal of reanalysis production.
+  <br/>
+  <br/>
+  The archive is hosted in an Amazon Web Services (AWS) S3 bucket with atmosphere, ice, land and ocean observations in formats including bufr, ioda, and netcdf. The general structure file structure is noaa-reanalyses-pds/observations/reanalysis/{sensor}/{source(s)}/YYYY/MM/{file format}/{data files}. Some data is reprocessed as appropriate. The dataset also includes specification of observational errors and a black/white list for historic observations which can be access via the [NNJA site](https://psl.noaa.gov/data/nnja_obs/).
+Documentation: https://psl.noaa.gov/data/nnja_obs/
+Contact: |
+  For questions regarding data content or quality, visit [the NOAA PSL NNJA](https://psl.noaa.gov/data/nnja_obs/). Or contact the team at  psl.nnja@noaa.gov<br/>
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 1 time a day
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: Open Data. There are no restrictions on the use of this data.
+Resources:
+  - Description: NNJA Observations for Earth System Reanalysis Data
+    ARN: arn:aws:s3:::noaa-reanalyses-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-reanalyses-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NNJA Observations, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNOAAReanalysesObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

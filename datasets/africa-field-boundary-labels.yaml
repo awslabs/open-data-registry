@@ -1,0 +1,45 @@
+Name: A region-wide, multi-year set of crop field boundary labels for Africa
+Description: >
+  Crop field boundaries digitized in Planet imagery collected across Africa
+  between 2017 and 2023, developed by [Farmerline](https://farmerline.co/),
+  [Spatial Collective](https://spatialcollective.com/), and the
+  [Agricultural Impacts Research Group](https://agroimpacts.info/) at
+  [Clark University](https://www.clarku.edu/), with support from the
+  [Lacuna Fund](https://lacunafund.org/)
+Documentation: "https://github.com/agroimpacts/lacunalabels/"
+Contact: airg@clarku.edu
+ManagedBy: "[The Agricultural Impacts Research Group](https://agroimpacts.info/)"
+UpdateFrequency: "Updated versions of the dataset are added as they are developed"
+Tags:
+  - agriculture
+  - machine learning
+  - land cover
+  - satellite imagery
+  - cog
+  - labeled
+License: "[Planet NICFI participant license agreement](https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf)"
+Resources:
+  - Description: Field boundary labels and corresponding Planet images
+    ARN: arn:aws:s3:::africa-field-boundary-labels
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Instructions on data access and label-making demonstration notebook
+      URL: https://github.com/agroimpacts/lacunalabels
+      NotebookURL: https://github.com/agroimpacts/lacunalabels/blob/main/notebooks/makelabels/label-chips.ipynb
+      AuthorName: Lyndon Estes
+      AuthorURL: https://github.com/ldemaz
+  Publications:
+    - Title: A region-wide, multi-year set of crop field boundary labels for Africa
+      URL: https://zenodo.org/records/11060871
+      AuthorName: Wussah et al. (2023)
+    - Title: Technical report on label develop and processing
+      URL: https://github.com/agroimpacts/lacunalabels/blob/main/docs/report/technical-report.pdf
+      AuthorName: Wussah et al. (2023)
+    - Title: High resolution, annual maps of field boundaries for smallholder-dominated croplands at national scales
+      URL: https://www.frontiersin.org/article/10.3389/frai.2021.744863
+      AuthorName: Estes et al. (2022)
+    - Title: A platform for crowdsourcing the creation of representative, accurate landcover maps
+      URL: http://www.sciencedirect.com/science/article/pii/S136481521630010X
+      AuthorName: Estes et al. (2016)
