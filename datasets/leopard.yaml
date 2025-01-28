@@ -1,0 +1,34 @@
+Name: LEarning biOchemical Prostate cAncer Recurrence from histopathology sliDes challenge (LEOPARD) Dataset
+Description: |
+    "This dataset contains the all data for the [LEarning biOchemical Prostate cAncer Recurrence from histopathology sliDes challenge or LEOPARD](https://leopard.grand-challenge.org/).Prostate cancer, impacting 1.4 million men annually, is a prevalent malignancy ([H. Sung et al., 2021](https://acsjournals.onlinelibrary.wiley.com/doi/10.3322/caac.21660)). A substantial number of these individuals undergo prostatectomy as the primary curative treatment. The efficacy of this surgery is assessed, in part, by monitoring the concentration of prostate-specific antigen (PSA) in the bloodstream. While the role of PSA in prostate cancer screening is debatable ([W. F. Clark et al., 2018;](https://jamanetwork.com/journals/jama/fullarticle/2680553) [E. A. M. Heijnsdijk et al., 2018](https://onlinelibrary.wiley.com/doi/full/10.1002/ijc.31102)), it serves as a valuable biomarker for postprostatectomy follow-up in patients. Following successful surgery, PSA concentration is typically undetectable (<0.1 ng/mL) within 4-6 weeks ([S. S. Goonewardene et al., 2014](https://wchh.onlinelibrary.wiley.com/doi/abs/10.1002/tre.407)). However, approximately 30% of patients experience biochemical recurrence, signifying the resurgence of prostate cancer cells. This recurrence serves as a prognostic indicator for progression to clinical metastases and eventual prostate cancer-related mortality ([C. L. Amling, 2014;](https://pubmed.ncbi.nlm.nih.gov/10840432/) [S. J. Freedland et al., 2005;](https://jamanetwork.com/journals/jama/fullarticle/201291) [M. Han et al., 2001;](https://www.sciencedirect.com/science/article/abs/pii/S0094014305701634?via%3Dihub) [T. Van den Broeck et al., 2001](https://www.sciencedirect.com/science/article/pii/S0302283818307528?via%3Dihub). Current clinical practices gauge the risk of biochemical recurrence by considering the International Society of Urological Pathology (ISUP) grade, PSA value at diagnosis, and TNM staging criteria ([J. I. Epstein et al., 2016](https://journals.lww.com/ajsp/abstract/2016/02000/the_2014_international_society_of_urological.10.aspx)). A recent European consensus guideline suggests categorizing patients into low-risk, intermediate-risk, and high-risk groups based on these factors ([N. Mottet et al., 2021](https://www.sciencedirect.com/science/article/abs/pii/S0302283820307697?via%3Dihub)). Notably, a high ISUP grade independently assigns a patient to the intermediate (grade 2/3) or high-risk group (grade 4/5). The Gleason growth patterns, representing morphological patterns of prostate cancer, are used to categorize cancerous tissue into ISUP grade groups ([J. I. Epstein, 2010;](https://www.auajournals.org/doi/10.1016/j.juro.2009.10.046) [P. M. Pierorazio et al., 2013;](https://bjui-journals.onlinelibrary.wiley.com/doi/10.1111/j.1464-410X.2012.11611.x) [G. J. L. H. van Leenders et al., 2020;](https://journals.lww.com/ajsp/fulltext/2020/08000/the_2019_international_society_of_urological.1.aspx) [J. I. Epstein et al., 2016](https://www.sciencedirect.com/science/article/abs/pii/S0302283815005576?via%3Dihub)). However, the ISUP grade has limitations, such as grading disagreement among pathologists ([J. I. Epstein et al., 2016](https://www.sciencedirect.com/science/article/abs/pii/S0302283815005576?via%3Dihub)) and coarse descriptors of tissue morphology. Recently, deep learning was shown ([H. Pinckaers et al., 2022](https://www.nature.com/articles/s43856-022-00126-3); [O. Eminaga et. al., 2024](https://www.nature.com/articles/s44303-023-00005-z)) to be able to predict the biochemical recurrence of prostate cancer.  Hypothesizing that deep learning could uncover finer morphological features' prognostic value, we are organizing the LEarning biOchemical Prostate cAncer Recurrence from histopathology sliDes (LEOPARD) challenge. The goal of this challenge is to yield top-performance deep learning solutions to predict the time to biochemical recurrence from H&E-stained histopathological tissue sections, i.e. based on morphological features.
+Documentation: https://leopard.grand-challenge.org/
+Contact: https://leopard.grand-challenge.org/
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: As required
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - computational pathology
+  - grand-challenge.org
+  - histopathology
+  - deep learning
+  - computer vision
+License: CC BY NC SA
+Resources:
+  - Description: H\&E stained prostatectomy whole slide images with corresponding labels of recurrence event evidence (1/0) and time to recurrence or last followup in years.
+    ARN: arn:aws:s3:::camelyon-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: LEOPARD Challenge
+      URL: https://leopard.grand-challenge.org/
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/
+    - Title: ASAP Viewer
+      URL: https://computationalpathologygroup.github.io/ASAP/
+      AuthorName: Geert Litjens
+      AuthorURL: https://www.diagnijmegen.nl/people/geert-litjens/
+  Publications:
+
