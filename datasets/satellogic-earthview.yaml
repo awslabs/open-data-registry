@@ -1,0 +1,37 @@
+Name: Satellogic EarthView dataset
+Description: Satellogic EarthView dataset includes high-resolution satellite images captured over all continents. The dataset is organized in Hive partition format and hosted by AWS. The dataset can be accessed via STAC browser or aws cli. Each item of the dataset corresponds to a specific region and date, with some of the regions revisited for additional data. The dataset provides Top-of-Atmosphere (TOA) reflectance values across four spectral bands (Red, Green, Blue, Near-Infrared) at a Ground Sample Distance (GSD) of 1 meter, accompanied by comprehensive metadata such as off-nadir angles, sun elevation, and other pertinent details. Users should note that due to an artifact in region delineation, a small number of regions present overlaps.
+Documentation: https://satellogic-earthview.s3.us-west-2.amazonaws.com/index.html
+Contact: https://www.satellogic.com/
+ManagedBy: "[Satellogic](https://www.satellogic.com)"
+UpdateFrequency: New data will be made available periodically, with annual updates expected in the future covering the same or other new regions.
+Tags:
+  - aws-pds
+  - satellite imagery
+  - earth observation
+  - image processing
+  - geospatial
+  - computer vision
+  - stac
+  - cog  
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)"
+Resources:
+  - Description: Satellogic data includes TOA RGBN COG, VISUAL RGB COG files data and metadata
+    ARN: arn:aws:s3:::satellogic-earthview
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC Catalog](https://satellogic-earthview.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/satellogic-earthview.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+DataAtWork:
+  Tutorials:
+    - Title: Explore Satellogic EarthView in SageMaker Studio Lab (SMSL)
+      URL: https://github.com/satellogic/satellogic-earthview/
+      NotebookURL: https://github.com/satellogic/satellogic-earthview/blob/main/satellogic_earthview_exploration.ipynb
+      AuthorName: Javier Marin
+      Services:
+      - SageMaker Studio Lab
+  Publications:
+    - Title: "EarthView: A Large Scale Remote Sensing Dataset for Self-Supervision"
+      URL: https://satellogic-earthview.s3.us-west-2.amazonaws.com/index.html
+      AuthorName: Velázquez, Diego and Rodríguez, Pau and Alonso, Sergio and Gonfaus, Josep M. and González, Jordi and, Richarte, Gerardo and Marín, Javier and Bengio, Yoshua and Lacoste, Alexandre
