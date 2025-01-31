@@ -1,38 +1,60 @@
-Name: NOAA U.S. Climate Normals
-Description: |
-  The U.S. Climate Normals are a large suite of data products that provide information about typical climate conditions for thousands of locations across the United States. Normals act both as a ruler to compare today’s weather and tomorrow’s forecast, and as a predictor of conditions in the near future. The official normals are calculated for a uniform 30 year period, and consist of annual/seasonal, monthly, daily, and hourly averages and statistics of temperature, precipitation, and other climatological variables from almost 15,000 U.S. weather stations. <br/><br/>
-  NCEI generates the official U.S. normals every 10 years in keeping with the needs of our user community and the requirements of the World Meteorological Organization (WMO) and National Weather Service (NWS). The 1991–2020 U.S. Climate Normals are the latest in a series of decadal normals first produced in the 1950s. These data allow travelers to pack the right clothes, farmers to plant the best crop varieties, and utilities to plan for seasonal energy usage. Many other important economic decisions that are made beyond the predictive range of standard weather forecasts are either based on or influenced by climate normals.
-Documentation: "[https://www.ncei.noaa.gov/products/us-climate-normals](https://www.ncei.noaa.gov/products/us-climate-normals); [https://www.ncei.noaa.gov/news/noaa-delivers-new-us-climate-normals](https://www.ncei.noaa.gov/news/noaa-delivers-new-us-climate-normals)"
-Contact: |
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Data is updated on 10 year cycles or when corrections are implemented. 
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - sustainability
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: U.S. Climate Normals Data
-    ARN: arn:aws:s3:::noaa-normals-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-normals-pds.s3.amazonaws.com/index.html)'
+    - climate
+Contact: 'For any questions regarding data delivery or any general questions regarding
+  the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+
+  '
 DataAtWork:
   Tutorials:
-    - Title: "Investigating environmental characteristics of US cities using publicly available ASDI datasets using SageMaker Studio Lab (SMSL)"
-      URL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook/
-      NotebookURL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook/blob/main/ASDI_Cities_Demo.ipynb
-      AuthorName: Darren Ko
-      Services:
-      - SageMaker Studio Lab    
-
+  - AuthorName: Darren Ko
+    NotebookURL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook/blob/main/ASDI_Cities_Demo.ipynb
+    Services:
+    - SageMaker Studio Lab
+    Title: Investigating environmental characteristics of US cities using publicly
+      available ASDI datasets using SageMaker Studio Lab (SMSL)
+    URL: https://github.com/aws-samples/aws-asdi-cities-smsl-notebook/
+Description: "The U.S. Climate Normals are a large suite of data products that provide\
+  \ information about typical climate conditions for thousands of locations across\
+  \ the United States. Normals act both as a ruler to compare today\u2019s weather\
+  \ and tomorrow\u2019s forecast, and as a predictor of conditions in the near future.\
+  \ The official normals are calculated for a uniform 30 year period, and consist\
+  \ of annual/seasonal, monthly, daily, and hourly averages and statistics of temperature,\
+  \ precipitation, and other climatological variables from almost 15,000 U.S. weather\
+  \ stations. <br/><br/>\nNCEI generates the official U.S. normals every 10 years\
+  \ in keeping with the needs of our user community and the requirements of the World\
+  \ Meteorological Organization (WMO) and National Weather Service (NWS). The 1991\u2013\
+  2020 U.S. Climate Normals are the latest in a series of decadal normals first produced\
+  \ in the 1950s. These data allow travelers to pack the right clothes, farmers to\
+  \ plant the best crop varieties, and utilities to plan for seasonal energy usage.\
+  \ Many other important economic decisions that are made beyond the predictive range\
+  \ of standard weather forecasts are either based on or influenced by climate normals.\n"
+Documentation: '[https://www.ncei.noaa.gov/products/us-climate-normals](https://www.ncei.noaa.gov/products/us-climate-normals);
+  [https://www.ncei.noaa.gov/news/noaa-delivers-new-us-climate-normals](https://www.ncei.noaa.gov/news/noaa-delivers-new-us-climate-normals)'
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA U.S. Climate Normals
+Resources:
+- ARN: arn:aws:s3:::noaa-normals-pds
+  Description: U.S. Climate Normals Data
+  Explore:
+  - '[Browse Bucket](https://noaa-normals-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- sustainability
+- weather
+UpdateFrequency: Data is updated on 10 year cycles or when corrections are implemented.

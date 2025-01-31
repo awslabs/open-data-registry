@@ -1,31 +1,48 @@
-Name: NOAA North American Mesoscale Forecast System (NAM)
-Description: The North American Mesoscale Forecast System (NAM) is one of the National Centers For Environmental Prediction’s (NCEP) major models for producing weather forecasts. NAM generates multiple grids (or domains) of weather forecasts over the North American continent at various horizontal resolutions. Each grid contains data for dozens of weather parameters, including temperature, precipitation, lightning, and turbulent kinetic energy. NAM uses additional numerical weather models to generate high-resolution forecasts over fixed regions, and occasionally to follow significant weather events like hurricanes.
-Documentation: https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/nam.php, https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale
-Contact: |
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Four times daily (0000, 0600, 1200, and 1800 UTC)
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: North American Mesoscale Forecast System (NAM) Data
-    ARN: arn:aws:s3:::noaa-nam-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nam-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for NAM data, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewNCEPNAMObject
-    Region: us-east-1
-    Type: SNS Topic
+    - weather
+Contact: 'For any questions regarding data delivery or any general questions regarding
+  the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
 
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+
+  '
+Description: "The North American Mesoscale Forecast System (NAM) is one of the National\
+  \ Centers For Environmental Prediction\u2019s (NCEP) major models for producing\
+  \ weather forecasts. NAM generates multiple grids (or domains) of weather forecasts\
+  \ over the North American continent at various horizontal resolutions. Each grid\
+  \ contains data for dozens of weather parameters, including temperature, precipitation,\
+  \ lightning, and turbulent kinetic energy. NAM uses additional numerical weather\
+  \ models to generate high-resolution forecasts over fixed regions, and occasionally\
+  \ to follow significant weather events like hurricanes."
+Documentation: https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/nam.php,
+  https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA North American Mesoscale Forecast System (NAM)
+Resources:
+- ARN: arn:aws:s3:::noaa-nam-pds
+  Description: North American Mesoscale Forecast System (NAM) Data
+  Explore:
+  - '[Browse Bucket](https://noaa-nam-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewNCEPNAMObject
+  Description: New data notifications for NAM data, only Lambda and SQS protocols
+    allowed
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- weather
+UpdateFrequency: Four times daily (0000, 0600, 1200, and 1800 UTC)

@@ -1,44 +1,74 @@
-Name: "NOAA S-111 Surface Water Currents Data"
-Description: >
-  S-111 is a data and metadata encoding specification that is part of the [S-100 Universal Hydrographic Data Model](https://iho.int/en/s100-project), an international standard for hydrographic data.
-  This collection of data contains surface water currents forecast guidance from [NOAA/NOS Operational Forecast Systems](https://tidesandcurrents.noaa.gov/models.html), a set of operational hydrodynamic nowcast and forecast modeling systems, for various U.S. coastal waters and the great lakes.
-  The collection also contains surface current forecast guidance output from the [NCEP Global Real-Time Ocean Forecast System (GRTOFS)](https://polar.ncep.noaa.gov/global/) for some offshore areas.
-  These datasets are encoded as HDF-5 files conforming to the S-111 specification, and are geospatially subset into individual tiles conforming to the NOAA/OCS Nautical Product Tiling Scheme, with filenames indicating the corresponding NOAA Electronic Navigational Chart (ENC) Cell Identifier.
-  
-  A full set of S-111 tiles is created for each new model run cycle, which occurs four times per day for all models except for RTOFS, which updates only once per day.
-  Files are organized using a path naming convention that includes the OFS identifier (e.g. 'cbofs' corresponding with output from the Chesapeake Bay Operational Forecast System) as well as the year, month, day, and hour corresponding with each model run initialization time.
-  Each individual S-111 (HDF-5) file contains all forecast projections from a single model run for that geographic area. In other words, a single S-111 file will contain multiple gridded arrays each containing a forecast valid at a distinct time in the future, out to the forecast horizon of the underlying modeling system.
-  All surface currents forecasts in this collection are computed at a depth of 4.5 meters below water surface, or half the water column depth, whichever is shallower.
-Documentation: https://noaa-s111-pds.s3.amazonaws.com/README.html
-Contact: |
-  For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/."
-  <br />
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Four times per day for each OFS, except Global RTOFS which updates once per day
 Collabs:
   ASDI:
     Tags:
-      - oceans
-Tags:
-  - aws-pds
-  - oceans
-  - water
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: NOAA S-111 Surface Water Currents Datasets
-    ARN: arn:aws:s3:::noaa-s111-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-s111-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA S-111 Surface Water Currents New Dataset Notification
-    ARN: arn:aws:sns:us-east-1:123901341784:NewS111Object
-    Region: us-east-1
-    Type: SNS Topic
+    - oceans
+Contact: 'For general questions or feedback about the data, please submit inquiries
+  through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/."
+
+  <br />
+
+  For any questions regarding data delivery or any general questions regarding the
+  NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
+
+  '
 DataAtWork:
   Tutorials:
-    - Title: "NOAA Precision Marine Navigation Program: Developing Next-Gen Data Svcs for the Maritime Community"
-      URL: https://www.youtube.com/watch?v=laC0Du6-x3k
-      AuthorName: NOAA
+  - AuthorName: NOAA
+    Title: 'NOAA Precision Marine Navigation Program: Developing Next-Gen Data Svcs
+      for the Maritime Community'
+    URL: https://www.youtube.com/watch?v=laC0Du6-x3k
+Description: 'S-111 is a data and metadata encoding specification that is part of
+  the [S-100 Universal Hydrographic Data Model](https://iho.int/en/s100-project),
+  an international standard for hydrographic data. This collection of data contains
+  surface water currents forecast guidance from [NOAA/NOS Operational Forecast Systems](https://tidesandcurrents.noaa.gov/models.html),
+  a set of operational hydrodynamic nowcast and forecast modeling systems, for various
+  U.S. coastal waters and the great lakes. The collection also contains surface current
+  forecast guidance output from the [NCEP Global Real-Time Ocean Forecast System (GRTOFS)](https://polar.ncep.noaa.gov/global/)
+  for some offshore areas. These datasets are encoded as HDF-5 files conforming to
+  the S-111 specification, and are geospatially subset into individual tiles conforming
+  to the NOAA/OCS Nautical Product Tiling Scheme, with filenames indicating the corresponding
+  NOAA Electronic Navigational Chart (ENC) Cell Identifier.
+
+  A full set of S-111 tiles is created for each new model run cycle, which occurs
+  four times per day for all models except for RTOFS, which updates only once per
+  day. Files are organized using a path naming convention that includes the OFS identifier
+  (e.g. ''cbofs'' corresponding with output from the Chesapeake Bay Operational Forecast
+  System) as well as the year, month, day, and hour corresponding with each model
+  run initialization time. Each individual S-111 (HDF-5) file contains all forecast
+  projections from a single model run for that geographic area. In other words, a
+  single S-111 file will contain multiple gridded arrays each containing a forecast
+  valid at a distinct time in the future, out to the forecast horizon of the underlying
+  modeling system. All surface currents forecasts in this collection are computed
+  at a depth of 4.5 meters below water surface, or half the water column depth, whichever
+  is shallower.
+
+  '
+Documentation: https://noaa-s111-pds.s3.amazonaws.com/README.html
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA S-111 Surface Water Currents Data
+Resources:
+- ARN: arn:aws:s3:::noaa-s111-pds
+  Description: NOAA S-111 Surface Water Currents Datasets
+  Explore:
+  - '[Browse Bucket](https://noaa-s111-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:123901341784:NewS111Object
+  Description: NOAA S-111 Surface Water Currents New Dataset Notification
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- oceans
+- water
+UpdateFrequency: Four times per day for each OFS, except Global RTOFS which updates
+  once per day

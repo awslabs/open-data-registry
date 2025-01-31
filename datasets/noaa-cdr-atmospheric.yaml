@@ -1,129 +1,152 @@
-Name: NOAA Atmospheric Climate Data Records
-Description: |
-  NOAA's Climate Data Records (CDRs) are robust, sustainable, and scientifically sound climate records that provide trustworthy information on how, where, and to what extent the land, oceans, atmosphere and ice sheets are changing. These datasets are thoroughly vetted time series measurements with the longevity, consistency, and continuity to assess and measure climate variability and change. NOAA CDRs are vetted using standards established by the National Research Council (NRC).<br/><br/>
-  Climate Data Records are created by merging data from surface, atmosphere, and space-based systems across decades. NOAA’s Climate Data Records provides authoritative and traceable long-term climate records. NOAA developed CDRs by applying modern data analysis methods to historical global satellite data. This process can clarify the underlying climate trends within the data and allows researchers and other users to identify economic and scientific value in these records. NCEI maintains and extends CDRs by applying the same methods to present-day and future satellite measurements.<br/><br/>
-  Atmospheric Climate Data Records are measurements of several global variables to help characterize the atmosphere at or just above the land and ocean surface as well as other upper air composition variables.
-Documentation: https://www.ncei.noaa.gov/products/climate-data-records/atmospheric
-Contact: |
-  For questions regarding the specific CDR data holdings, please contact NCEI.SAT.INFO@NOAA.GOV.<br />
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Open Data Dissemination Team (NODD) email us at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team here: nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Climate Data Records are updated independently. For update frequency for a specific CDR, please refer to the Climate Data Record website.
 Collabs:
   ASDI:
     Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - sustainability
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: Aerosol Optical Thickness
-    ARN: arn:aws:s3:::noaa-cdr-aerosol-optical-thickness-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-aerosol-optical-thickness-pds.s3.amazonaws.com/index.html)'
-  - Description: Cloud Properties ISCCP
-    ARN: arn:aws:s3:::noaa-cdr-cloud-properties-isccp-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-cloud-properties-isccp-pds.s3.amazonaws.com/index.html)'
-  - Description: Cloud Properties Polar Orbiter
-    ARN: arn:aws:s3:::noaa-cdr-cloud-properties-polar-orbiter-nasa-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-cloud-properties-polar-orbiter-nasa-pds.s3.amazonaws.com/index.html)'
-  - Description: Hydrological Properties
-    ARN: arn:aws:s3:::noaa-cdr-hydrological-properties-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-hydrological-properties-pds.s3.amazonaws.com/index.html)'
-  - Description: Ocean Heat Content
-    ARN: arn:aws:s3:::noaa-cdr-ocean-heat-content-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-ocean-heat-content-pds.s3.amazonaws.com/index.html)'
-  - Description: Ocean Heatflux
-    ARN: arn:aws:s3:::noaa-cdr-ocean-heatflux-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-ocean-heatflux-pds.s3.amazonaws.com/index.html)'
-  - Description: Ocean Nearsurface Atmos Profiles
-    ARN: arn:aws:s3:::noaa-cdr-ocean-nearsurface-atmos-profiles-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-ocean-nearsurface-atmos-profiles-pds.s3.amazonaws.com/index.html)'
-  - Description: Outgoing Longwave Radiation - Daily 
-    ARN: arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-daily-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-outgoing-longwave-radiation-daily-pds.s3.amazonaws.com/index.html)'
-  - Description: Outgoing Longwave Radiation - Monthly
-    ARN: arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-monthly-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-outgoing-longwave-radiation-monthly-pds.s3.amazonaws.com/index.html)'
-  - Description: Ozone - ESRL
-    ARN: arn:aws:s3:::noaa-cdr-ozone-esrl-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-ozone-esrl-pds.s3.amazonaws.com/index.html)'
-  - Description: CMORPH Precip
-    ARN: arn:aws:s3:::noaa-cdr-precip-cmorph-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-precip-cmorph-pds.s3.amazonaws.com/index.html)'
-  - Description: GPCP Precip Daily
-    ARN: arn:aws:s3:::noaa-cdr-precip-gpcp-daily-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/index.html)'
-  - Description: GPCP Precip Monthly
-    ARN: arn:aws:s3:::noaa-cdr-precip-gpcp-monthly-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-precip-gpcp-monthly-pds.s3.amazonaws.com/index.html)'
-  - Description: NEXRAD Precip
-    ARN: arn:aws:s3:::noaa-cdr-precip-nexrad-qpe-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-precip-nexrad-qpe-pds.s3.amazonaws.com/index.html)'
-  - Description: PERSIANN Precip
-    ARN: arn:aws:s3:::noaa-cdr-precip-persiann-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/index.html)'
-  - Description: Solar Spectral Irradiance
-    ARN: arn:aws:s3:::noaa-cdr-solar-spectral-irradiance-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-solar-spectral-irradiance-pds.s3.amazonaws.com/index.html)'
-  - Description: Total Solar Irradiance
-    ARN: arn:aws:s3:::noaa-cdr-total-solar-irradiance-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-cdr-total-solar-irradiance-pds.s3.amazonaws.com/index.html)'
+    - climate
+Contact: 'For questions regarding the specific CDR data holdings, please contact NCEI.SAT.INFO@NOAA.GOV.<br
+  />
 
-  
+  For any questions regarding data delivery not associated with this platform or any
+  general questions regarding the NOAA Open Data Dissemination Team (NODD) email us
+  at nodd@noaa.gov.
+
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NOAA
+  NODD team here: nodd@noaa.gov
+
+  '
+Description: "NOAA's Climate Data Records (CDRs) are robust, sustainable, and scientifically\
+  \ sound climate records that provide trustworthy information on how, where, and\
+  \ to what extent the land, oceans, atmosphere and ice sheets are changing. These\
+  \ datasets are thoroughly vetted time series measurements with the longevity, consistency,\
+  \ and continuity to assess and measure climate variability and change. NOAA CDRs\
+  \ are vetted using standards established by the National Research Council (NRC).<br/><br/>\n\
+  Climate Data Records are created by merging data from surface, atmosphere, and space-based\
+  \ systems across decades. NOAA\u2019s Climate Data Records provides authoritative\
+  \ and traceable long-term climate records. NOAA developed CDRs by applying modern\
+  \ data analysis methods to historical global satellite data. This process can clarify\
+  \ the underlying climate trends within the data and allows researchers and other\
+  \ users to identify economic and scientific value in these records. NCEI maintains\
+  \ and extends CDRs by applying the same methods to present-day and future satellite\
+  \ measurements.<br/><br/>\nAtmospheric Climate Data Records are measurements of\
+  \ several global variables to help characterize the atmosphere at or just above\
+  \ the land and ocean surface as well as other upper air composition variables.\n"
+Documentation: https://www.ncei.noaa.gov/products/climate-data-records/atmospheric
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
+ManagedBy: '[NOAA](http://www.noaa.gov/)'
+Name: NOAA Atmospheric Climate Data Records
+Resources:
+- ARN: arn:aws:s3:::noaa-cdr-aerosol-optical-thickness-pds
+  Description: Aerosol Optical Thickness
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-aerosol-optical-thickness-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-cloud-properties-isccp-pds
+  Description: Cloud Properties ISCCP
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-cloud-properties-isccp-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-cloud-properties-polar-orbiter-nasa-pds
+  Description: Cloud Properties Polar Orbiter
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-cloud-properties-polar-orbiter-nasa-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-hydrological-properties-pds
+  Description: Hydrological Properties
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-hydrological-properties-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-ocean-heat-content-pds
+  Description: Ocean Heat Content
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-ocean-heat-content-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-ocean-heatflux-pds
+  Description: Ocean Heatflux
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-ocean-heatflux-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-ocean-nearsurface-atmos-profiles-pds
+  Description: Ocean Nearsurface Atmos Profiles
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-ocean-nearsurface-atmos-profiles-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-daily-pds
+  Description: Outgoing Longwave Radiation - Daily
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-outgoing-longwave-radiation-daily-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-outgoing-longwave-radiation-monthly-pds
+  Description: Outgoing Longwave Radiation - Monthly
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-outgoing-longwave-radiation-monthly-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-ozone-esrl-pds
+  Description: Ozone - ESRL
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-ozone-esrl-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-precip-cmorph-pds
+  Description: CMORPH Precip
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-precip-cmorph-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-precip-gpcp-daily-pds
+  Description: GPCP Precip Daily
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-precip-gpcp-daily-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-precip-gpcp-monthly-pds
+  Description: GPCP Precip Monthly
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-precip-gpcp-monthly-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-precip-nexrad-qpe-pds
+  Description: NEXRAD Precip
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-precip-nexrad-qpe-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-precip-persiann-pds
+  Description: PERSIANN Precip
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-precip-persiann-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-solar-spectral-irradiance-pds
+  Description: Solar Spectral Irradiance
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-solar-spectral-irradiance-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::noaa-cdr-total-solar-irradiance-pds
+  Description: Total Solar Irradiance
+  Explore:
+  - '[Browse Bucket](https://noaa-cdr-total-solar-irradiance-pds.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+Tags:
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- sustainability
+- weather
+UpdateFrequency: Climate Data Records are updated independently. For update frequency
+  for a specific CDR, please refer to the Climate Data Record website.
