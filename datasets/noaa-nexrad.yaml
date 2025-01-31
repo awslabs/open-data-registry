@@ -1,113 +1,127 @@
-Name: NEXRAD on AWS
-Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
-Contact: support-level2@unidata.ucar.edu
-ManagedBy: "[Unidata](https://www.unidata.ucar.edu/)"
-UpdateFrequency: New Level II data is added as soon as it is available.
 Collabs:
   ASDI:
     Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - earth observation
-  - natural resource
-  - weather
-  - meteorological
-License: There are no restrictions on the use of this data.
-Resources:
-  - Description: NEXRAD Level II archive data
-    ARN: arn:aws:s3:::noaa-nexrad-level2
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
-  - Description: NEXRAD Level II real-time data
-    ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: NEXRAD Level III real-time select data
-    ARN: arn:aws:s3:::unidata-nexrad-level3
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://unidata-nexrad-level3.s3.amazonaws.com/index.html)'
-  - Description: "[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications) for real-time data with filterable fields"
-    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Notifications for the Level II archival bucket
-    ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Notifications for the Level III bucket
-    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
-    Region: us-east-1
-    Type: SNS Topic
+    - weather
+Contact: support-level2@unidata.ucar.edu
 DataAtWork:
-  Tutorials:
-    - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
-      URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
-      AuthorName: Ryan May
-      AuthorURL: http://dopplershift.github.io
-    - Title: Mapping Noaa Nexrad Radar Data With CARTO
-      URL: https://carto.com/blog/mapping-nexrad-radar-data/
-      AuthorName: Stuart Lynn
-      AuthorURL: https://carto.com/blog/author/stuart-lynn/
-    - Title: NEXRAD on EC2 tutorial
-      URL: https://github.com/openradar/AMS_radar_in_the_cloud
-      AuthorName: openradar
-      AuthorURL: https://github.com/openradar
-      Services:
-        - EC2
-    - Title: Get NEXRAD data from AWS, get severe reports from SPC archive, and plot a loop of them
-      URL: https://github.com/russ-schumacher/ats641_spring2022/blob/master/example_notebooks/pyart_nexrad_maps_reports.ipynb
-      AuthorName: Russ Schumacher
-      AuthorURL: https://www.atmos.colostate.edu/people/faculty/schumacher/
-    - Title: Updated introduction to S3, Boto, and NOAA Nexrad in SageMaker Studio Lab (SMSL)
-      URL: https://github.com/aws-samples/aws-nexrad-smsl-notebook/
-      NotebookURL: https://github.com/aws-samples/aws-nexrad-smsl-notebook/blob/main/Nexrad_Demo.ipynb
-      AuthorName: Chris Stoner
-      Services:
-      - SageMaker Studio Lab
-  Tools & Applications:
-    - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
-      URL: https://pypi.org/project/nexradaws/
-      AuthorName: Aaron Anderson
-      AuthorURL: https://github.com/aarande
-    - Title: WeatherPipe - Amazon EMR based analysis tool for NEXRAD data stored on Amazon S3
-      URL: https://github.com/stephenlienharrell/WeatherPipe
-      AuthorName: Stephen Lien Harrell
-      AuthorURL: https://github.com/stephenlienharrell
-    - Title: Open NEXRAD Data Access for Level 3 with Lambda@Edge
-      URL: https://github.com/zflamig/ondas-pds
-      AuthorName: Zac Flamig
-    - Title: "Into the eye of the storm: NEXRAD Level II open data"
-      URL: https://blog.mapbox.com/3d-animated-hurricane-map-from-radar-data-affaed8a3d70
-      AuthorName: Jonni Walker
   Publications:
-    - Title: "Level 2 Interface Control Document for Transfer: Build 18"
-      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620010G.pdf
-      AuthorName: NOAA ROC
-    - Title: "Level 2 Interface Control Document for Message Data Formats: Build 18"
-      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620002R.pdf
-      AuthorName: NOAA ROC
-    - Title: "Level 3 Interface Control Document for Message Data Formats: Build 18"
-      URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001X.pdf
-      AuthorName: NOAA ROC
-    - Title: Seasonal abundance and survival of North America’s migratory avifauna determined by weather radar
-      URL: https://www.nature.com/articles/s41559-018-0666-4
-      AuthorName: Adriaan M. Dokter, Andrew Farnsworth, Daniel Fink, Viviana Ruiz-Gutierrez, Wesley M. Hochachka, Frank A. La Sorte, Orin J. Robinson, Kenneth V. Rosenberg & Steve Kelling
-    - Title: Unlocking the Potential of NEXRAD Data through NOAA’s Big Data Partnership
-      URL: https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-16-0021.1
-      AuthorName: Steve Ansari and Stephen Del Greco
-    - Title: Declines in an abundant aquatic insect, the burrowing mayfly, across major North American waterways
-      URL: https://www.pnas.org/content/117/6/2987
-      AuthorName:  Phillip M. Stepanian, Sally A. Entrekin, Charlotte E. Wainwright, Djordje Mirkovic, Jennifer L. Tank, & Jeffrey F. Kelly
-    - Title: Extreme Pyroconvective Updrafts During a Megafire
-      URL: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL089001
-      AuthorName:  B. Rodriguez, N. P. Lareau, D. E. Kingsmill, & C. B. Clements
-    - Title: Observed Concentric Eyewalls of Supertyphoon Hinnamnor
-      URL: https://www.jstage.jst.go.jp/article/sola/advpub/0/advpub_2023-010/_pdf
-      AuthorName:  Sachie Kanada and Akira Nishii
+  - AuthorName: NOAA ROC
+    Title: 'Level 2 Interface Control Document for Transfer: Build 18'
+    URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620010G.pdf
+  - AuthorName: NOAA ROC
+    Title: 'Level 2 Interface Control Document for Message Data Formats: Build 18'
+    URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620002R.pdf
+  - AuthorName: NOAA ROC
+    Title: 'Level 3 Interface Control Document for Message Data Formats: Build 18'
+    URL: https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001X.pdf
+  - AuthorName: Adriaan M. Dokter, Andrew Farnsworth, Daniel Fink, Viviana Ruiz-Gutierrez,
+      Wesley M. Hochachka, Frank A. La Sorte, Orin J. Robinson, Kenneth V. Rosenberg
+      & Steve Kelling
+    Title: "Seasonal abundance and survival of North America\u2019s migratory avifauna\
+      \ determined by weather radar"
+    URL: https://www.nature.com/articles/s41559-018-0666-4
+  - AuthorName: Steve Ansari and Stephen Del Greco
+    Title: "Unlocking the Potential of NEXRAD Data through NOAA\u2019s Big Data Partnership"
+    URL: https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-16-0021.1
+  - AuthorName: Phillip M. Stepanian, Sally A. Entrekin, Charlotte E. Wainwright,
+      Djordje Mirkovic, Jennifer L. Tank, & Jeffrey F. Kelly
+    Title: Declines in an abundant aquatic insect, the burrowing mayfly, across major
+      North American waterways
+    URL: https://www.pnas.org/content/117/6/2987
+  - AuthorName: B. Rodriguez, N. P. Lareau, D. E. Kingsmill, & C. B. Clements
+    Title: Extreme Pyroconvective Updrafts During a Megafire
+    URL: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL089001
+  - AuthorName: Sachie Kanada and Akira Nishii
+    Title: Observed Concentric Eyewalls of Supertyphoon Hinnamnor
+    URL: https://www.jstage.jst.go.jp/article/sola/advpub/0/advpub_2023-010/_pdf
+  Tools & Applications:
+  - AuthorName: Aaron Anderson
+    AuthorURL: https://github.com/aarande
+    Title: nexradaws on pypi.python.org - python module to query and download Nexrad
+      data from Amazon S3
+    URL: https://pypi.org/project/nexradaws/
+  - AuthorName: Stephen Lien Harrell
+    AuthorURL: https://github.com/stephenlienharrell
+    Title: WeatherPipe - Amazon EMR based analysis tool for NEXRAD data stored on
+      Amazon S3
+    URL: https://github.com/stephenlienharrell/WeatherPipe
+  - AuthorName: Zac Flamig
+    Title: Open NEXRAD Data Access for Level 3 with Lambda@Edge
+    URL: https://github.com/zflamig/ondas-pds
+  - AuthorName: Jonni Walker
+    Title: 'Into the eye of the storm: NEXRAD Level II open data'
+    URL: https://blog.mapbox.com/3d-animated-hurricane-map-from-radar-data-affaed8a3d70
+  Tutorials:
+  - AuthorName: Ryan May
+    AuthorURL: http://dopplershift.github.io
+    Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
+    URL: http://nbviewer.jupyter.org/gist/dopplershift/356f2e14832e9b676207
+  - AuthorName: Stuart Lynn
+    AuthorURL: https://carto.com/blog/author/stuart-lynn/
+    Title: Mapping Noaa Nexrad Radar Data With CARTO
+    URL: https://carto.com/blog/mapping-nexrad-radar-data/
+  - AuthorName: openradar
+    AuthorURL: https://github.com/openradar
+    Services:
+    - EC2
+    Title: NEXRAD on EC2 tutorial
+    URL: https://github.com/openradar/AMS_radar_in_the_cloud
+  - AuthorName: Russ Schumacher
+    AuthorURL: https://www.atmos.colostate.edu/people/faculty/schumacher/
+    Title: Get NEXRAD data from AWS, get severe reports from SPC archive, and plot
+      a loop of them
+    URL: https://github.com/russ-schumacher/ats641_spring2022/blob/master/example_notebooks/pyart_nexrad_maps_reports.ipynb
+  - AuthorName: Chris Stoner
+    NotebookURL: https://github.com/aws-samples/aws-nexrad-smsl-notebook/blob/main/Nexrad_Demo.ipynb
+    Services:
+    - SageMaker Studio Lab
+    Title: Updated introduction to S3, Boto, and NOAA Nexrad in SageMaker Studio Lab
+      (SMSL)
+    URL: https://github.com/aws-samples/aws-nexrad-smsl-notebook/
+Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD)
+  network.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
+ManagedBy: '[Unidata](https://www.unidata.ucar.edu/)'
+Name: NEXRAD on AWS
+Resources:
+- ARN: arn:aws:s3:::noaa-nexrad-level2
+  Description: NEXRAD Level II archive data
+  Explore:
+  - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
+  Description: NEXRAD Level II real-time data
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:s3:::unidata-nexrad-level3
+  Description: NEXRAD Level III real-time select data
+  Explore:
+  - '[Browse Bucket](https://unidata-nexrad-level3.s3.amazonaws.com/index.html)'
+  Region: us-east-1
+  Type: S3 Bucket
+- ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
+  Description: '[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications)
+    for real-time data with filterable fields'
+  Region: us-east-1
+  Type: SNS Topic
+- ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
+  Description: Notifications for the Level II archival bucket
+  Region: us-east-1
+  Type: SNS Topic
+- ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
+  Description: Notifications for the Level III bucket
+  Region: us-east-1
+  Type: SNS Topic
+Tags:
+- aws-pds
+- agriculture
+- earth observation
+- natural resource
+- weather
+- meteorological
+UpdateFrequency: New Level II data is added as soon as it is available.
