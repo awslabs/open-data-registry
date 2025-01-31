@@ -1,23 +1,22 @@
-Name: NOAA Historical Maps and Charts
-Description: Historical Charts are not for Navigation. The collection primarily consists of historic charts and maps produced by NOAA's Coast Survey and its predecessors, especially the U.S. Coast and Geodetic Survey and the U.S. Lake Survey (previously under the Department of War). The collection also includes bathymetric maps, land sketches, Civil War battle maps, aeronautical charting from the 1930s to the 1950s, and other drawings and photographs.
-Documentation: https://historicalcharts.noaa.gov/about.php
-Contact: |
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.<br/><br/>
-  For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Periodic manual updates when historic charts are added to the collection.
-Tags:
-  - aws-pds
-  - history
-  - mapping
-  - coastal
-  - geospatial
-  - survey
-License: Open Data. There are no restrictions on the use of this data. 
-Resources:
-  - Description: NOAA Historic Chart Datasets
-    ARN: arn:aws:s3:::noaa-nos-historicalcharts-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nos-historicalcharts-pds.s3.amazonaws.com/index.html)'
+{Contact: 'For any questions regarding data delivery not associated with this platform
+    or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.<br/><br/>
+
+    For general questions or feedback about the data, please submit inquiries through
+    the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
+
+    ', Description: 'Historical Charts are not for Navigation. The collection primarily
+    consists of historic charts and maps produced by NOAA''s Coast Survey and its
+    predecessors, especially the U.S. Coast and Geodetic Survey and the U.S. Lake
+    Survey (previously under the Department of War). The collection also includes
+    bathymetric maps, land sketches, Civil War battle maps, aeronautical charting
+    from the 1930s to the 1950s, and other drawings and photographs.', Documentation: 'https://historicalcharts.noaa.gov/about.php',
+  License: 'NOAA data disseminated through NODD is made available under the "[Creative
+    Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+    which is well-known and internationally recognized. There are no restrictions
+    on the use of the data. The data are open to the public and can be used as desired.',
+  ManagedBy: '[NOAA](http://www.noaa.gov/)', Name: NOAA Historical Maps and Charts,
+  Resources: [{ARN: 'arn:aws:s3:::noaa-nos-historicalcharts-pds', Description: NOAA
+        Historic Chart Datasets, Explore: ['[Browse Bucket](https://noaa-nos-historicalcharts-pds.s3.amazonaws.com/index.html)'],
+      Region: us-east-1, Type: S3 Bucket}], Tags: [aws-pds, history, mapping, coastal,
+    geospatial, survey], UpdateFrequency: Periodic manual updates when historic charts
+    are added to the collection.}

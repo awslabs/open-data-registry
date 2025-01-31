@@ -1,52 +1,48 @@
-Name: NOAA Global Historical Climatology Network Daily (GHCN-D)
-Description: <br /> UPDATE TO GHCN PREFIXES - The NODD team is working on improving performance and access to the GHCNd data and will be implementing an updated prefix structure. For more information on the prefix changes, please see the "[READ ME on the NODD Github](https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/GHCN-D)". If you have questions, comments, or feedback, please reach out to nodd@noaa.gov with GHCN in the subject line. <br /> <br >
+{Collabs: {ASDI: {Tags: [climate]}}, Contact: 'For questions regarding data content
+    or quality, visit [the NOAA GHCN site](https://www.ncdc.noaa.gov/ghcn-daily-description).  <br
+    />
 
-  Global Historical Climatology Network - Daily is a dataset from NOAA that contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurement only. Other meteorological elements include, but are not limited to, daily maximum and minimum temperature, temperature at the time of observation, snowfall and snow depth. It is a composite of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews.  Some data are more than 175 years old. The data is in CSV format. Each file corresponds to a year from 1763 to present and is named as such.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-ghcn
-Contact: |
-  For questions regarding data content or quality, visit [the NOAA GHCN site](https://www.ncdc.noaa.gov/ghcn-daily-description).  <br />
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Daily
-Collabs:
-  ASDI:
-    Tags:
-      - climate
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: https://www.ncdc.noaa.gov/ghcnd-data-access
-Resources:
-  - Description: Project data files
-    ARN: arn:aws:s3:::noaa-ghcn-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-ghcn-pds.s3.amazonaws.com/index.html)'
-DataAtWork:
-  Tutorials:
-    - Title: Visualize over 200 years of global climate data using Amazon Athena and Amazon QuickSight
-      URL: https://aws.amazon.com/blogs/big-data/visualize-over-200-years-of-global-climate-data-using-amazon-athena-and-amazon-quicksight/
-      AuthorName: Conor Delaney
-      Services:
-        - Athena
-        - Glue
-    - Title: Calculating growing degree days using AWS Registry of Open Data
-      URL: https://aws.amazon.com/blogs/industries/calculating-growing-degree-days-using-aws-registry-of-open-data/
-      AuthorName: Karen Hildebrand and Zac Flamig
-      Services:
-        - Athena
-        - CloudFormation
-        - Glue
-    - Title: Explore & Visualize 200+ Years of Global Temperature
-      URL: https://medium.com/swlh/explore-visualize-200-years-of-global-temperature-using-apache-spark-bigquery-and-google-data-699ed8b3c67?sk=3721ca3220a75af80293ac3e4bf3f4d1
-      AuthorName: Kapil Sreedharan
-  Tools & Applications:
-  Publications:
-    - Title: "Natural and Socioeconomic Conditions Influence Tick-Borne Encephalitis Cases in Russia"
-      URL: http://www.pjoes.com/Natural-and-Socioeconomic-Conditions-Influence-nTick-Borne-Encephalitis-Cases-in,153552,0,2.html
-      AuthorName: Lantian Zhang, Linsheng Yang, Li Wang, Lijuan Gu, Hairong Li, Svetlana Malkhazova
+    For any questions regarding data delivery or any general questions regarding the
+    NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+    <br /> We also seek to identify case studies on how NOAA data is being used and
+    will be featuring those stories in joint publications and in upcoming events.
+    If you are interested in seeing your story highlighted, please share it with the
+    NODD team by emailing nodd@noaa.gov
+
+    ', DataAtWork: {Publications: [{AuthorName: 'Lantian Zhang, Linsheng Yang, Li
+          Wang, Lijuan Gu, Hairong Li, Svetlana Malkhazova', Title: Natural and Socioeconomic
+          Conditions Influence Tick-Borne Encephalitis Cases in Russia, URL: 'http://www.pjoes.com/Natural-and-Socioeconomic-Conditions-Influence-nTick-Borne-Encephalitis-Cases-in,153552,0,2.html'}],
+    Tools & Applications: null, Tutorials: [{AuthorName: Conor Delaney, Services: [
+          Athena, Glue], Title: Visualize over 200 years of global climate data using
+          Amazon Athena and Amazon QuickSight, URL: 'https://aws.amazon.com/blogs/big-data/visualize-over-200-years-of-global-climate-data-using-amazon-athena-and-amazon-quicksight/'},
+      {AuthorName: Karen Hildebrand and Zac Flamig, Services: [Athena, CloudFormation,
+          Glue], Title: Calculating growing degree days using AWS Registry of Open
+          Data, URL: 'https://aws.amazon.com/blogs/industries/calculating-growing-degree-days-using-aws-registry-of-open-data/'},
+      {AuthorName: Kapil Sreedharan, Title: Explore & Visualize 200+ Years of Global
+          Temperature, URL: 'https://medium.com/swlh/explore-visualize-200-years-of-global-temperature-using-apache-spark-bigquery-and-google-data-699ed8b3c67?sk=3721ca3220a75af80293ac3e4bf3f4d1'}]},
+  Description: '<br /> UPDATE TO GHCN PREFIXES - The NODD team is working on improving
+    performance and access to the GHCNd data and will be implementing an updated prefix
+    structure. For more information on the prefix changes, please see the "[READ ME
+    on the NODD Github](https://github.com/NOAA-Big-Data-Program/bdp-data-docs/tree/main/GHCN-D)".
+    If you have questions, comments, or feedback, please reach out to nodd@noaa.gov
+    with GHCN in the subject line. <br /> <br >
+
+    Global Historical Climatology Network - Daily is a dataset from NOAA that contains
+    daily observations over global land areas. It contains station-based measurements
+    from land-based stations worldwide, about two thirds of which are for precipitation
+    measurement only. Other meteorological elements include, but are not limited to,
+    daily maximum and minimum temperature, temperature at the time of observation,
+    snowfall and snow depth. It is a composite of climate records from numerous sources
+    that were merged together and subjected to a common suite of quality assurance
+    reviews.  Some data are more than 175 years old. The data is in CSV format. Each
+    file corresponds to a year from 1763 to present and is named as such.', Documentation: 'https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-ghcn',
+  License: 'NOAA data disseminated through NODD is made available under the "[Creative
+    Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+    which is well-known and internationally recognized. There are no restrictions
+    on the use of the data. The data are open to the public and can be used as desired.',
+  ManagedBy: '[NOAA](http://www.noaa.gov/)', Name: NOAA Global Historical Climatology
+    Network Daily (GHCN-D), Resources: [{ARN: 'arn:aws:s3:::noaa-ghcn-pds', Description: Project
+        data files, Explore: ['[Browse Bucket](https://noaa-ghcn-pds.s3.amazonaws.com/index.html)'],
+      Region: us-east-1, Type: S3 Bucket}], Tags: [aws-pds, agriculture, climate,
+    meteorological, weather], UpdateFrequency: Daily}

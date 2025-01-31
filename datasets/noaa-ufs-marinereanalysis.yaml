@@ -1,43 +1,57 @@
-Name: "NOAA Unified Forecast System (UFS) Marine Reanalysis: 1979-2019"
-Description: |
-  The NOAA UFS Marine Reanalysis is a global sea ice ocean coupled reanalysis product produced by the marine data assimilation team of the UFS Research-to-Operation (R2O) project. Underlying forecast and data assimilation systems are based on the UFS model prototype version-6 and the Next Generation Global Ocean Data Assimilation System (NG-GODAS) release of the Joint Effort for Data assimilation Integration (JEDI) Sea Ice Ocean Coupled Assimilation (SOCA). Covering the 40 year reanalysis time period from 1979 to 2019, the data atmosphere option of the UFS coupled global atmosphere ocean sea ice (DATM-MOM6-CICE6) model was applied with two atmospheric forcing data sets: CFSR from 1979 to 1999 and GEFS from 2000 to 2019. Assimilated observation data sets include extensive space-based marine observations and conventional direct measurements of in situ profile data sets.
-  <br/><br/>
-  This first UFS-marine interim reanalysis product is released to the broader weather and earth system modeling and analysis communities to obtain scientific feedback and applications for the development of the next generation operational numerical weather prediction system at the National Weather Service(NWS). The released file sets include two parts 1.) 1979 - 2019 UFS-DATM-MOM6-CICE6 model free runs and 2) 1979-2019 reanalysis cycle outputs (see descriptions embedded in each file set). Analyzed sea ice and ocean variables are ocean temperature, salinity, sea surface height, and sea ice concentration.
-  <br/><br/>
-  Acknowledgment - The UFS data assimilation and reanalysis and reforecast products produced from the UFS-R2O project are sponsored by the NWS Office of Science and Technology Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric Administration’s(NOAA) Oceanic and Atmospheric Research (OAR) Weather Program Office (WPO).
-Documentation: https://vlab.noaa.gov/web/ufs-r2o/ NWS Disclaimer https://www.weather.gov/disclaimer
-Contact: |
-  For questions regarding data content or quality, visit https://vlab.noaa.gov/web/ufs-r2o/da-rnr.
-  <br/><br/>
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br />
-  We also seek to identify case studies on how NOAA data is being used and will be featuring those
-  stories in joint publications and in upcoming events. If you are interested in seeing your story
-  highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: "The UFS-DATM-MOM6-CICE6 model free run output contains continuous files from 1979-01-01 to
-2019-08-30. Daily MOM6 and CICE6 diagnostic output files were produced for both model states
-and observations assimilated in the reanalysis experiment. In the reanalysis runs, the MOM6 and
-CICE6 models were initialized in a 24-hour analysis window centered at 12Z."
-Collabs:
-  ASDI:
-    Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
-Resources:
-  - Description: NOAA UFS Marine Reanalysis 1979-2019 data
-    ARN: arn:aws:s3:::noaa-ufs-rnrmarine-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - "[Browse Bucket](https://noaa-ufs-rnrmarine-pds.s3.amazonaws.com/index.html)"
-DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:  
+{Collabs: {ASDI: {Tags: [weather]}}, Contact: 'For questions regarding data content
+    or quality, visit https://vlab.noaa.gov/web/ufs-r2o/da-rnr.
+
+    <br/><br/>
+
+    For any questions regarding data delivery or any general questions regarding the
+    NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+    <br />
+
+    We also seek to identify case studies on how NOAA data is being used and will
+    be featuring those
+
+    stories in joint publications and in upcoming events. If you are interested in
+    seeing your story
+
+    highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+
+    ', DataAtWork: {Publications: null, Tools & Applications: null, Tutorials: null},
+  Description: "The NOAA UFS Marine Reanalysis is a global sea ice ocean coupled reanalysis\
+    \ product produced by the marine data assimilation team of the UFS Research-to-Operation\
+    \ (R2O) project. Underlying forecast and data assimilation systems are based on\
+    \ the UFS model prototype version-6 and the Next Generation Global Ocean Data\
+    \ Assimilation System (NG-GODAS) release of the Joint Effort for Data assimilation\
+    \ Integration (JEDI) Sea Ice Ocean Coupled Assimilation (SOCA). Covering the 40\
+    \ year reanalysis time period from 1979 to 2019, the data atmosphere option of\
+    \ the UFS coupled global atmosphere ocean sea ice (DATM-MOM6-CICE6) model was\
+    \ applied with two atmospheric forcing data sets: CFSR from 1979 to 1999 and GEFS\
+    \ from 2000 to 2019. Assimilated observation data sets include extensive space-based\
+    \ marine observations and conventional direct measurements of in situ profile\
+    \ data sets.\n<br/><br/>\nThis first UFS-marine interim reanalysis product is\
+    \ released to the broader weather and earth system modeling and analysis communities\
+    \ to obtain scientific feedback and applications for the development of the next\
+    \ generation operational numerical weather prediction system at the National Weather\
+    \ Service(NWS). The released file sets include two parts 1.) 1979 - 2019 UFS-DATM-MOM6-CICE6\
+    \ model free runs and 2) 1979-2019 reanalysis cycle outputs (see descriptions\
+    \ embedded in each file set). Analyzed sea ice and ocean variables are ocean temperature,\
+    \ salinity, sea surface height, and sea ice concentration.\n<br/><br/>\nAcknowledgment\
+    \ - The UFS data assimilation and reanalysis and reforecast products produced\
+    \ from the UFS-R2O project are sponsored by the NWS Office of Science and Technology\
+    \ Integration (OSTI) Modeling Program Division and the National Oceanic and Atmospheric\
+    \ Administration\u2019s(NOAA) Oceanic and Atmospheric Research (OAR) Weather Program\
+    \ Office (WPO).\n", Documentation: 'https://vlab.noaa.gov/web/ufs-r2o/ NWS Disclaimer
+    https://www.weather.gov/disclaimer', License: 'NOAA data disseminated through
+    NODD is made available under the "[Creative Commons 1.0 Universal Public Domain
+    Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+    which is well-known and internationally recognized. There are no restrictions
+    on the use of the data. The data are open to the public and can be used as desired.',
+  ManagedBy: '[NOAA](http://www.noaa.gov/)', Name: 'NOAA Unified Forecast System (UFS)
+    Marine Reanalysis: 1979-2019', Resources: [{ARN: 'arn:aws:s3:::noaa-ufs-rnrmarine-pds',
+      Description: NOAA UFS Marine Reanalysis 1979-2019 data, Explore: ['[Browse Bucket](https://noaa-ufs-rnrmarine-pds.s3.amazonaws.com/index.html)'],
+      Region: us-east-1, Type: S3 Bucket}], Tags: [aws-pds, agriculture, climate,
+    meteorological, weather], UpdateFrequency: 'The UFS-DATM-MOM6-CICE6 model free
+    run output contains continuous files from 1979-01-01 to 2019-08-30. Daily MOM6
+    and CICE6 diagnostic output files were produced for both model states and observations
+    assimilated in the reanalysis experiment. In the reanalysis runs, the MOM6 and
+    CICE6 models were initialized in a 24-hour analysis window centered at 12Z.'}

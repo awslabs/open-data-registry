@@ -1,59 +1,44 @@
-Name: NOAA National Water Model Short-Range Forecast
-Description: |
-  The National Water Model (NWM) is a water resources model that simulates and forecasts water
-  budget variables, including snowpack, evapotranspiration, soil moisture and streamflow, over
-  the entire continental United States (CONUS). The model, launched in August 2016, is designed
-  to improve the ability of NOAA to meet the needs of its stakeholders (forecasters, emergency
-  managers, reservoir operators, first responders, recreationists, farmers, barge operators, and
-  ecosystem and floodplain managers) by providing expanded accuracy, detail, and frequency of water
-  information. It is operated by NOAA’s Office of Water Prediction. This bucket contains a four-week
-  rollover of the Short Range Forecast model output and the corresponding forcing data for the
-  model. The model is forced with meteorological data from the High Resolution Rapid Refresh (HRRR)
-  and the Rapid Refresh (RAP) models. The Short Range Forecast configuration cycles hourly and produces
-  hourly deterministic forecasts of streamflow and hydrologic states out to 18 hours.
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nwm-pds
-Contact: |
-  For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
-  <br />
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Daily
-Collabs:
-  ASDI:
-    Tags:
-      - water
-Tags:
-  - aws-pds
-  - agriculture
-  - weather
-  - climate
-  - environmental
-  - disaster response
-  - agriculture
-  - transportation
-License: Open Data. There are no restrictions on the use of this data
-Resources:
-  - Description: A rolling four week archive of NWM data.
-    ARN: arn:aws:s3:::noaa-nwm-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for NWM, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech
-    Type: S3 Bucket
-    Region: us-east-1
-    ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
-    Explore:
-    - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'
-DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
-    - Title: "Harmonic Oscillator Seasonal Trend (HOST) Model for Hydrological Drought Pattern Identification and Analysis"
-      URL: https://doi.org/10.1016/j.jhydrol.2023.129514
-      AuthorName: K. Raczyński, J. Dyer
+{Collabs: {ASDI: {Tags: [water]}}, Contact: 'For questions regarding data content
+    or quality, go [here](http://water.noaa.gov/about/nwm).
+
+    <br />
+
+    For any questions regarding data delivery or any general questions regarding the
+    NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+
+    <br /> We also seek to identify case studies on how NOAA data is being used and
+    will be featuring those stories in joint publications and in upcoming events.
+    If you are interested in seeing your story highlighted, please share it with the
+    NODD team by emailing nodd@noaa.gov
+
+    ', DataAtWork: {Publications: [{AuthorName: "K. Raczy\u0144ski, J. Dyer", Title: Harmonic
+          Oscillator Seasonal Trend (HOST) Model for Hydrological Drought Pattern
+          Identification and Analysis, URL: 'https://doi.org/10.1016/j.jhydrol.2023.129514'}],
+    Tools & Applications: null, Tutorials: null}, Description: "The National Water\
+    \ Model (NWM) is a water resources model that simulates and forecasts water\n\
+    budget variables, including snowpack, evapotranspiration, soil moisture and streamflow,\
+    \ over\nthe entire continental United States (CONUS). The model, launched in August\
+    \ 2016, is designed\nto improve the ability of NOAA to meet the needs of its stakeholders\
+    \ (forecasters, emergency\nmanagers, reservoir operators, first responders, recreationists,\
+    \ farmers, barge operators, and\necosystem and floodplain managers) by providing\
+    \ expanded accuracy, detail, and frequency of water\ninformation. It is operated\
+    \ by NOAA\u2019s Office of Water Prediction. This bucket contains a four-week\n\
+    rollover of the Short Range Forecast model output and the corresponding forcing\
+    \ data for the\nmodel. The model is forced with meteorological data from the High\
+    \ Resolution Rapid Refresh (HRRR)\nand the Rapid Refresh (RAP) models. The Short\
+    \ Range Forecast configuration cycles hourly and produces\nhourly deterministic\
+    \ forecasts of streamflow and hydrologic states out to 18 hours.\n", Documentation: 'https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nwm-pds',
+  License: 'NOAA data disseminated through NODD is made available under the "[Creative
+    Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+    which is well-known and internationally recognized. There are no restrictions
+    on the use of the data. The data are open to the public and can be used as desired.',
+  ManagedBy: '[NOAA](http://www.noaa.gov/)', Name: NOAA National Water Model Short-Range
+    Forecast, Resources: [{ARN: 'arn:aws:s3:::noaa-nwm-pds', Description: A rolling
+        four week archive of NWM data., Explore: ['[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'],
+      Region: us-east-1, Type: S3 Bucket}, {ARN: 'arn:aws:sns:us-east-1:123901341784:NewNWMObject',
+      Description: 'New data notifications for NWM, only Lambda and SQS protocols
+        allowed', Region: us-east-1, Type: SNS Topic}, {ARN: 'arn:aws:s3:::noaa-nodd-kerchunk-pds',
+      Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech,
+      Explore: ['[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'],
+      Region: us-east-1, Type: S3 Bucket}], Tags: [aws-pds, agriculture, weather,
+    climate, environmental, disaster response, agriculture, transportation], UpdateFrequency: Daily}

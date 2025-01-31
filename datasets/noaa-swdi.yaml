@@ -1,32 +1,37 @@
-Name: NOAA Severe Weather Data Inventory (SWDI)
-Description: |
-  The Storm Events Database is an integrated database of severe weather events across the United States from 1950 to this year, with information about a storm event's location, azimuth, distance, impact, and severity, including the cost of damages to property and crops. It contains data documenting: The occurrence of storms and other significant weather phenomena having sufficient intensity to cause loss of life, injuries, significant property damage, and/or disruption to commerce. Rare, unusual, weather phenomena that generate media attention, such as snow flurries in South Florida or the San Diego coastal area. Other significant meteorological events, such as record maximum or minimum temperatures or precipitation that occur in connection with another event. Data about a specific event is added to the dataset within 120 days to allow time for damage assessments and other analysis.
-Documentation: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00773
-Contact: |
-  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> For general questions or feedback about the data, please submit inquiries through NOAA National Centers for Environmental Information (NCEI) at swdi.ncdc@noaa.gov
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: Monthly
-Collabs:
-  ASDI:
-    Tags:
-      - weather
-Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data. Use of the data should cite NOAA and NESDIS/NCEI as the dataset creator and the Severe Weather Data Inventory as the dataset.
-Resources:
-  - Description: NOAA Severe Weather Data Inventory Dataset (SWDI)
-    ARN: arn:aws:s3:::noaa-swdi-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - "[Browse Bucket](https://noaa-swdi-pds.s3.amazonaws.com/index.html)"
-  - Description: NOAA Severe Weather Data Inventory Dataset Notification
-    ARN: arn:aws:sns:us-east-1:123901341784:NewSWDIObject
-    Region: us-east-1
-    Type: SNS Topic
+{Collabs: {ASDI: {Tags: [weather]}}, Contact: 'For any questions regarding data delivery
+    or any general questions regarding the NOAA Open Data Dissemination (NODD) Program,
+    email the NODD Team at nodd@noaa.gov.
+
+    <br /> For general questions or feedback about the data, please submit inquiries
+    through NOAA National Centers for Environmental Information (NCEI) at swdi.ncdc@noaa.gov
+
+    <br /> We also seek to identify case studies on how NOAA data is being used and
+    will be featuring those stories in joint publications and in upcoming events.
+    If you are interested in seeing your story highlighted, please share it with the
+    NODD team by emailing nodd@noaa.gov
+
+    ', Description: 'The Storm Events Database is an integrated database of severe
+    weather events across the United States from 1950 to this year, with information
+    about a storm event''s location, azimuth, distance, impact, and severity, including
+    the cost of damages to property and crops. It contains data documenting: The occurrence
+    of storms and other significant weather phenomena having sufficient intensity
+    to cause loss of life, injuries, significant property damage, and/or disruption
+    to commerce. Rare, unusual, weather phenomena that generate media attention, such
+    as snow flurries in South Florida or the San Diego coastal area. Other significant
+    meteorological events, such as record maximum or minimum temperatures or precipitation
+    that occur in connection with another event. Data about a specific event is added
+    to the dataset within 120 days to allow time for damage assessments and other
+    analysis.
+
+    ', Documentation: 'https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00773',
+  License: 'NOAA data disseminated through NODD is made available under the "[Creative
+    Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+    which is well-known and internationally recognized. There are no restrictions
+    on the use of the data. The data are open to the public and can be used as desired.',
+  ManagedBy: '[NOAA](http://www.noaa.gov/)', Name: NOAA Severe Weather Data Inventory
+    (SWDI), Resources: [{ARN: 'arn:aws:s3:::noaa-swdi-pds', Description: NOAA Severe
+        Weather Data Inventory Dataset (SWDI), Explore: ['[Browse Bucket](https://noaa-swdi-pds.s3.amazonaws.com/index.html)'],
+      Region: us-east-1, Type: S3 Bucket}, {ARN: 'arn:aws:sns:us-east-1:123901341784:NewSWDIObject',
+      Description: NOAA Severe Weather Data Inventory Dataset Notification, Region: us-east-1,
+      Type: SNS Topic}], Tags: [aws-pds, agriculture, climate, meteorological, weather],
+  UpdateFrequency: Monthly}
