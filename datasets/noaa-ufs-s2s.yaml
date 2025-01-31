@@ -11,37 +11,46 @@ Contact: |
   For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
   <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: A Prototype is a retrospective run for the period from 2011 to 2018. The runs are initialized twice per month (1st and 15th) and the length of the forecast is 35 days with an output frequency of 6 hours.
+UpdateFrequency: A Prototype is a retrospective run for the period from 2011 to 2018.
+  The runs are initialized twice per month (1st and 15th) and the length of the forecast
+  is 35 days with an output frequency of 6 hours.
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - disaster response
-  - environmental
-  - meteorological
-  - weather
-  - oceans
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- climate
+- disaster response
+- environmental
+- meteorological
+- weather
+- oceans
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: UFS prototype files (5, 6, 7, & 8)
-    ARN: arn:aws:s3:::noaa-ufs-prototypes-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-ufs-prototypes-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for UFS Prototype, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewUfsPrototypesObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: UFS prototype files (5, 6, 7, & 8)
+  ARN: arn:aws:s3:::noaa-ufs-prototypes-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-ufs-prototypes-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for UFS Prototype, only Lambda and SQS protocols
+    allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewUfsPrototypesObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
-    Publications:
-    - Title: "Advances in Seasonal Predictions of Arctic Sea Ice With NOAA UFS"
-      URL: https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102392
-      AuthorName: Jieshun Zhu, Wanqiu Wang, Yanyun Liu, Arun Kumar, and David DeWitt
-    - Title: "The impact of tropical SST biases on the S2S precipitation forecast skill over the Contiguous United States in the UFS global coupled model"
-      URL: https://doi.org/10.1175/WAF-D-22-0162.1
-      AuthorName: Hedanqiu Bai, Bin Li, Avichal Mehra, Jessica Meixner, Shrinivas Moorthi, Sulagna Ray, Lydia Stefanova, Jiande Wang, Jun Wang, Denise Worthen, Fanglin Yang, and Cristiana Stan
+  Publications:
+  - Title: "Advances in Seasonal Predictions of Arctic Sea Ice With NOAA UFS"
+    URL: https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102392
+    AuthorName: Jieshun Zhu, Wanqiu Wang, Yanyun Liu, Arun Kumar, and David DeWitt
+  - Title: "The impact of tropical SST biases on the S2S precipitation forecast skill
+      over the Contiguous United States in the UFS global coupled model"
+    URL: https://doi.org/10.1175/WAF-D-22-0162.1
+    AuthorName: Hedanqiu Bai, Bin Li, Avichal Mehra, Jessica Meixner, Shrinivas Moorthi,
+      Sulagna Ray, Lydia Stefanova, Jiande Wang, Jun Wang, Denise Worthen, Fanglin
+      Yang, and Cristiana Stan

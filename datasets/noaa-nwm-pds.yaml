@@ -22,38 +22,42 @@ UpdateFrequency: Daily
 Collabs:
   ASDI:
     Tags:
-      - water
+    - water
 Tags:
-  - aws-pds
-  - agriculture
-  - weather
-  - climate
-  - environmental
-  - disaster response
-  - agriculture
-  - transportation
-License: Open Data. There are no restrictions on the use of this data
+- aws-pds
+- agriculture
+- weather
+- climate
+- environmental
+- disaster response
+- agriculture
+- transportation
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: A rolling four week archive of NWM data.
-    ARN: arn:aws:s3:::noaa-nwm-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for NWM, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech
-    Type: S3 Bucket
-    Region: us-east-1
-    ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
-    Explore:
-    - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'
+- Description: A rolling four week archive of NWM data.
+  ARN: arn:aws:s3:::noaa-nwm-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-nwm-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for NWM, only Lambda and SQS protocols allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
+  Region: us-east-1
+  Type: SNS Topic
+- Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech
+  Type: S3 Bucket
+  Region: us-east-1
+  ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
+  Explore:
+  - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
-    - Title: "Harmonic Oscillator Seasonal Trend (HOST) Model for Hydrological Drought Pattern Identification and Analysis"
-      URL: https://doi.org/10.1016/j.jhydrol.2023.129514
-      AuthorName: K. Raczyński, J. Dyer
+  - Title: "Harmonic Oscillator Seasonal Trend (HOST) Model for Hydrological Drought
+      Pattern Identification and Analysis"
+    URL: https://doi.org/10.1016/j.jhydrol.2023.129514
+    AuthorName: K. Raczyński, J. Dyer

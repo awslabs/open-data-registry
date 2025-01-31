@@ -32,35 +32,45 @@ Description: |
   <br/>
   <br/>
   Please note that this NOAA GraphCastGFS Model was produced using a code package released by Google DeepMind. For information on Google DeepMind, please visit their github page listed in the documentation and license sections of this page.
-Documentation: For the NOAA Product, https://graphcastgfs.readthedocs.io/en/latest/index.html and for background graphcast information, https://github.com/google-deepmind/graphcast/tree/main/graphcast
-Contact: For questions regarding data content or quality, visit [the NOAA EMC Github site](https://github.com/noaa-emc/graphcast/issues). For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+Documentation: For the NOAA Product, https://graphcastgfs.readthedocs.io/en/latest/index.html
+  and for background graphcast information, https://github.com/google-deepmind/graphcast/tree/main/graphcast
+Contact: For questions regarding data content or quality, visit [the NOAA EMC Github
+  site](https://github.com/noaa-emc/graphcast/issues). For any general questions regarding
+  the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: 4 times a day at 00Z, 06Z, 12Z and 18Z
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - disaster response
-  - environmental
-  - meteorological
-  - weather
-License: NOAA's GraphCast GFS products are released under CC0 license. The products in this bucket only contain NOAA produced products and not GraphCast code or training data. For information on the GraphCast code package, please visit the "[Google DeepMind GraphCast Github License page](https://github.com/google-deepmind/graphcast?tab=readme-ov-file#license-and-attribution)." The **weights** that are used in GraphCastGFS v2 were generated based on the pre-trained weights from GoogleDeepMind. They are released under CC BY-NC-SA 4.0 license.
+- aws-pds
+- agriculture
+- climate
+- disaster response
+- environmental
+- meteorological
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: GraphCast GFS data
-    ARN: arn:aws:s3:::noaa-nws-graphcastgfs-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nws-graphcastgfs-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GraphCast GFS, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:709902155096:NewNWSGRAPHCASTGFSObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: GraphCast GFS data
+  ARN: arn:aws:s3:::noaa-nws-graphcastgfs-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-nws-graphcastgfs-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for GraphCast GFS, only Lambda and SQS protocols
+    allowed
+  ARN: arn:aws:sns:us-east-1:709902155096:NewNWSGRAPHCASTGFSObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:

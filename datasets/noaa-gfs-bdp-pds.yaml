@@ -34,54 +34,66 @@ Description: |
   cycle  found in the directory ./gfs.yyyymmdd/hh, which are produced by the data
   assimilation systems. 
 Documentation: https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php
-Contact: For questions regarding data content or quality, visit [the NOAA GFS site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php). For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+Contact: For questions regarding data content or quality, visit [the NOAA GFS 
+  site](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php).
+  For any questions regarding data delivery or any general questions regarding the
+  NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: 4 times a day, every 6 hours starting at midnight UTC
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - disaster response
-  - environmental
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- climate
+- disaster response
+- environmental
+- meteorological
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: GFS data
-    ARN: arn:aws:s3:::noaa-gfs-bdp-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gfs-bdp-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GFS, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGFSObject
-    Region: us-east-1
-    Type: SNS Topic
-  - Description: GFS Warm Start Initial Conditions
-    ARN: arn:aws:s3:::noaa-gfs-warmstart-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gfs-warmstart-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GFS Warm Start IC, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGfsWarmStartObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: GFS data
+  ARN: arn:aws:s3:::noaa-gfs-bdp-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-gfs-bdp-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for GFS, only Lambda and SQS protocols allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewGFSObject
+  Region: us-east-1
+  Type: SNS Topic
+- Description: GFS Warm Start Initial Conditions
+  ARN: arn:aws:s3:::noaa-gfs-warmstart-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-gfs-warmstart-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for GFS Warm Start IC, only Lambda and SQS protocols
+    allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewGfsWarmStartObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
-    - Title: GFS Warm Restart Files Additional Information
-      URL: https://noaa-gfs-warmstart-pds.s3.amazonaws.com/GFS+Warm+Restart+Files.v1.pdf
-      AuthorName: Fanglin Yang
-    - Title: "Toward the Next Generation of Microwave Sounders: Benefits of a Low-Earth Orbit Hyperspectral Microwave Instrument in All- Weather Conditions using AI"
-      URL: https://doi.org/10.1109/JSTARS.2024.3356858
-      AuthorName: Eric S. Maddy
-    - Title: "Validation and Application of the Accu-Waves Operational Platform for Wave Forecasts at Ports"
-      URL: https://www.mdpi.com/2077-1312/12/2/220/pdf
-      AuthorName: Christos Makris et al.
+  - Title: GFS Warm Restart Files Additional Information
+    URL: https://noaa-gfs-warmstart-pds.s3.amazonaws.com/GFS+Warm+Restart+Files.v1.pdf
+    AuthorName: Fanglin Yang
+  - Title: "Toward the Next Generation of Microwave Sounders: Benefits of a Low-Earth
+      Orbit Hyperspectral Microwave Instrument in All- Weather Conditions using AI"
+    URL: https://doi.org/10.1109/JSTARS.2024.3356858
+    AuthorName: Eric S. Maddy
+  - Title: "Validation and Application of the Accu-Waves Operational Platform for
+      Wave Forecasts at Ports"
+    URL: https://www.mdpi.com/2077-1312/12/2/220/pdf
+    AuthorName: Christos Makris et al.

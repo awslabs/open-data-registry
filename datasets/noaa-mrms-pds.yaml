@@ -1,5 +1,5 @@
 Name: NOAA Multi-Radar/Multi-Sensor System (MRMS)
-Description:  |
+Description: |
   The MRMS system was developed to produce severe weather, transportation, and precipitation products for improved decision-making capability to improve hazardous weather forecasts and warnings, along with hydrology, aviation, and numerical weather prediction.
   <br/>
   <br/>
@@ -28,30 +28,40 @@ UpdateFrequency: Data is delivered in real-time with a 2-minute update cycle.
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: NOAA Multi-Radar/Multi-Sensor System (MRMS)
-    ARN: arn:aws:s3:::noaa-mrms-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-     - '[Browse Bucket](https://noaa-mrms-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for MRMS data, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewMRMSObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: NOAA Multi-Radar/Multi-Sensor System (MRMS)
+  ARN: arn:aws:s3:::noaa-mrms-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-mrms-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for MRMS data, only Lambda and SQS protocols
+    allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewMRMSObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
   Publications:
-    - Title: "Multi-Radar Multi-Sensor (MRMS) Quantitative Precipitation Estimation: Initial Operating Capabilities"
-      URL: https://journals.ametsoc.org/view/journals/bams/97/4/bams-d-14-00174.1.xml
-      AuthorName: Jian Zhang, Kenneth Howard, Carrie Langston, Brian Kaney, Youcun Qi, Lin Tang, Heather Grams, Yadong Wang, Stephen Cocks, Steven Martinaitis, Ami Arthur, Karen Cooper, Jeff Brogden, David Kitzmiller
-    - Title: "Multi-Radar Multi-Sensor (MRMS) Severe Weather and Aviation Products: Initial Operating Capabilities"
-      URL: https://journals.ametsoc.org/view/journals/bams/97/9/bams-d-14-00173.1.xml
-      AuthorName: Travis M. Smith, Valliappa Lakshmanan, Gregory J. Stumpf, Kiel L. Ortega, Kurt Hondl, Karen Cooper, Kristin M. Calhoun, Darrel M. Kingfield, Kevin L. Manross, Robert Toomey, Jeff Brogden
+  - Title: "Multi-Radar Multi-Sensor (MRMS) Quantitative Precipitation Estimation:
+      Initial Operating Capabilities"
+    URL: https://journals.ametsoc.org/view/journals/bams/97/4/bams-d-14-00174.1.xml
+    AuthorName: Jian Zhang, Kenneth Howard, Carrie Langston, Brian Kaney, Youcun Qi,
+      Lin Tang, Heather Grams, Yadong Wang, Stephen Cocks, Steven Martinaitis, Ami
+      Arthur, Karen Cooper, Jeff Brogden, David Kitzmiller
+  - Title: "Multi-Radar Multi-Sensor (MRMS) Severe Weather and Aviation Products:
+      Initial Operating Capabilities"
+    URL: https://journals.ametsoc.org/view/journals/bams/97/9/bams-d-14-00173.1.xml
+    AuthorName: Travis M. Smith, Valliappa Lakshmanan, Gregory J. Stumpf, Kiel L.
+      Ortega, Kurt Hondl, Karen Cooper, Kristin M. Calhoun, Darrel M. Kingfield, Kevin
+      L. Manross, Robert Toomey, Jeff Brogden

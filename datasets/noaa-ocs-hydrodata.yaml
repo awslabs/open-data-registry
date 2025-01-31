@@ -11,24 +11,27 @@ UpdateFrequency: This bucket is updated as new data source become available
 Collabs:
   ASDI:
     Tags:
-      - oceans
+    - oceans
 Tags:
-  - aws-pds
-  - earth observation
-  - model
-  - oceans
-  - bathymetry
-  - marine navigation
-  - oceans
-License: Creative Commons licenses are attached to each file and, where available, are attached to the consituent sources within the file.  The compilation is provided as a government work under CC0, but the individual sources may have copyright and limitations on use.
+- aws-pds
+- earth observation
+- model
+- oceans
+- bathymetry
+- marine navigation
+- oceans
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: NOAA Office of Coast Survey Hydrographic Survey Data
-    ARN: arn:aws:s3:::noaa-ocs-hydrodata-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://noaa-ocs-hydrodata-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA Office of Coast Survey Hydrographic Survey Data New Object Notification
-    ARN: arn:aws:sns:us-east-1:709902155096:NewOCSHYDROObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: NOAA Office of Coast Survey Hydrographic Survey Data
+  ARN: arn:aws:s3:::noaa-ocs-hydrodata-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-ocs-hydrodata-pds.s3.amazonaws.com/index.html)'
+- Description: NOAA Office of Coast Survey Hydrographic Survey Data New Object Notification
+  ARN: arn:aws:sns:us-east-1:709902155096:NewOCSHYDROObject
+  Region: us-east-1
+  Type: SNS Topic

@@ -14,46 +14,69 @@ Description: |
   <br/>
   The AQM produces hourly forecast guidance for O3 and PM2.5 out to 72 hours twice per day, starting at 0600 and 1200 UTC. Smoke guidance is available out to 51 hours from once-per-day RAP forecasts initialized at 0300 UTC, while dust guidance from HYSPLIT is available out to 48 hours from initialization times of 0600 and 1200 UTC.
 Documentation: https://vlab.noaa.gov/web/osti-modeling/air-quality
-Contact: For questions regarding data content or quality, visit the NCEP AQM Products website. For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+Contact: For questions regarding data content or quality, visit the NCEP AQM Products
+  website. For any questions regarding data delivery or any general questions regarding
+  the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and
+  will be featuring those stories in joint publications and in upcoming events. If
+  you are interested in seeing your story highlighted, please share it with the NODD
+  team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
-UpdateFrequency: 2 times per day, 0600 and 1200 UTC for O3, PM2.5, and dust; once per day, 0300 UTC for smoke 
+UpdateFrequency: 2 times per day, 0600 and 1200 UTC for O3, PM2.5, and dust; once
+  per day, 0300 UTC for smoke
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - disaster response
-  - environmental
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- climate
+- disaster response
+- environmental
+- meteorological
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: NOAA National Air Quality Forecast Capability (NAQFC) Regional Model Guidance
-    ARN: arn:aws:s3:::noaa-nws-naqfc-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nws-naqfc-pds.s3.amazonaws.com/index.html)'
+- Description: NOAA National Air Quality Forecast Capability (NAQFC) Regional Model
+    Guidance
+  ARN: arn:aws:s3:::noaa-nws-naqfc-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-nws-naqfc-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
-    - Title: "Development of the next-generation air quality prediction system in the UFS framework: Enhancing predictability of wildfire air quality impacts (2024)(Bull. Amer. Meteor. Soc. In review)"
-      URL: https://epic.noaa.gov/
-      AuthorName: Huang, J.P., I. Stajner, R. Montuoro, F. Yang, K. Wang, H.-C. Huang, C.-H. Jeon, B. Curtis, J. McQueen, H. Liu, B. Baker, D. Tong , Y. Tang, P. Campbell, G. Grell, G. Frost, R. Schwantes, S. Wang, S. Kondragunta, F. Li, and Y. Jung
-    - Title: Using VIIRS fire radiative power data to simulate biomass burning emissions, plume rise and smoke transport in a real-time air quality modeling system (Proc. 2017 IEEE Int. Geoscience and Remote Sensing Symp. (IGARSS0),Fort Worth, TX, IEEE, 2806–2808)
-      URL: https://doi.org/10.1109/IGARSS.2017.8127581
-      AuthorName: Ahmadov, R., and Coauthors
-    - Title: Development and evaluation of an advanced National Air Quality Forecasting Capability using the NOAA Global Forecast System version 16 (2022, Geosci. Model Dev., 15, 3281–3313)
-      URL: https://doi.org/10.5194/gmd-15-3281-2022
-      AuthorName: Campbell, P.C., and Coauthors
-    - Title: An empirically derived emission algorithm for wind-blown dust (J.Geophys. Res., 115, D16212)
-      URL: https://doi.org/10.1029/2009JD013167
-      AuthorName: Draxler, R. R., P. Ginoux, and A. F. Stein
-    - Title: Improving NOAA NAQFC PM2.5 predictions with a bias correction approach (2017, Wea. and Forecasting, 32(2), 407–421)
-      URL: https://doi.org/10.1175/WAF-D-16-0118.1
-      AuthorName: Huang, J., McQueen, J., Wilczak, J., Djalalova, I., Stajner, I., Shafran, P., Allured, D., Lee, P., Pan, L., Tong, D., Huang, H.-C., DiMego, G., Upadhayay, S., & Delle Monache, L
+  - Title: "Development of the next-generation air quality prediction system in the
+      UFS framework: Enhancing predictability of wildfire air quality impacts (2024)(Bull.
+      Amer. Meteor. Soc. In review)"
+    URL: https://epic.noaa.gov/
+    AuthorName: Huang, J.P., I. Stajner, R. Montuoro, F. Yang, K. Wang, H.-C. Huang,
+      C.-H. Jeon, B. Curtis, J. McQueen, H. Liu, B. Baker, D. Tong , Y. Tang, P. Campbell,
+      G. Grell, G. Frost, R. Schwantes, S. Wang, S. Kondragunta, F. Li, and Y. Jung
+  - Title: Using VIIRS fire radiative power data to simulate biomass burning emissions,
+      plume rise and smoke transport in a real-time air quality modeling system (Proc.
+      2017 IEEE Int. Geoscience and Remote Sensing Symp. (IGARSS0),Fort Worth, TX,
+      IEEE, 2806–2808)
+    URL: https://doi.org/10.1109/IGARSS.2017.8127581
+    AuthorName: Ahmadov, R., and Coauthors
+  - Title: Development and evaluation of an advanced National Air Quality Forecasting
+      Capability using the NOAA Global Forecast System version 16 (2022, Geosci. Model
+      Dev., 15, 3281–3313)
+    URL: https://doi.org/10.5194/gmd-15-3281-2022
+    AuthorName: Campbell, P.C., and Coauthors
+  - Title: An empirically derived emission algorithm for wind-blown dust (J.Geophys.
+      Res., 115, D16212)
+    URL: https://doi.org/10.1029/2009JD013167
+    AuthorName: Draxler, R. R., P. Ginoux, and A. F. Stein
+  - Title: Improving NOAA NAQFC PM2.5 predictions with a bias correction approach
+      (2017, Wea. and Forecasting, 32(2), 407–421)
+    URL: https://doi.org/10.1175/WAF-D-16-0118.1
+    AuthorName: Huang, J., McQueen, J., Wilczak, J., Djalalova, I., Stajner, I., Shafran,
+      P., Allured, D., Lee, P., Pan, L., Tong, D., Huang, H.-C., DiMego, G., Upadhayay,
+      S., & Delle Monache, L

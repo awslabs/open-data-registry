@@ -24,31 +24,33 @@ UpdateFrequency: Data is updated as new products are available.
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - environmental
-  - climate
-  - weather
-  - natural resource
-  - regulatory
-License: |
-  Open Data. There are no restrictions on the use of this data
+- aws-pds
+- agriculture
+- environmental
+- climate
+- weather
+- natural resource
+- regulatory
+License: |-
+  NOAA data disseminated through NODD is made available under the "[Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1", which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: Measurements and metadata
-    ARN: arn:aws:s3:::noaa-gsod-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-gsod-pds.s3.amazonaws.com/index.html)'
+- Description: Measurements and metadata
+  ARN: arn:aws:s3:::noaa-gsod-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-gsod-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-    - Title: "ML Demo: Predicting Air Quality w/ ASDI NOAA + OpenAQ Datasets in SageMaker Studio Lab (SMSL)"
-      URL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/
-      NotebookURL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/blob/main/aq_by_weather.ipynb
-      AuthorName: Aaron Soto
-      Services:
-      - SageMaker Studio Lab    
+  - Title: "ML Demo: Predicting Air Quality w/ ASDI NOAA + OpenAQ Datasets in SageMaker
+      Studio Lab (SMSL)"
+    URL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/
+    NotebookURL: 
+      https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/blob/main/aq_by_weather.ipynb
+    AuthorName: Aaron Soto
+    Services:
+    - SageMaker Studio Lab
   Tools & Applications:
   Publications:

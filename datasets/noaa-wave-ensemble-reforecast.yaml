@@ -30,9 +30,7 @@ Description: |
   <br/>
   <br/>
   https://www.noaa.gov/organization/information-technology/orion
-Documentation: https://github.com/NOAA-EMC/gefswaves_reforecast/wiki
-  <br/>
-  https://github.com/NOAA-EMC/gefswaves_reforecast
+Documentation: https://github.com/NOAA-EMC/gefswaves_reforecast/wiki <br/> https://github.com/NOAA-EMC/gefswaves_reforecast
 Contact: |
   For questions related to wave modeling and the ensemble reforecast available, please contact Ricardo Martins Campos, email ricardo.campos@noaa.gov.
   <br/><br/>
@@ -46,30 +44,35 @@ UpdateFrequency: Quarterly
 Collabs:
   ASDI:
     Tags:
-      - weather
+    - weather
 Tags:
-  - aws-pds
-  - agriculture
-  - climate
-  - meteorological
-  - weather
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- climate
+- meteorological
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: NOAA Wave Ensemble Reforecast Data
-    ARN: arn:aws:s3:::noaa-nws-gefswaves-reforecast-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - "[Browse Bucket](https://noaa-nws-gefswaves-reforecast-pds.s3.amazonaws.com/index.html)"
-  - Description: New data notifications for NOAA Wave Ensemble Reforecast, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:709902155096:NewWERObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: NOAA Wave Ensemble Reforecast Data
+  ARN: arn:aws:s3:::noaa-nws-gefswaves-reforecast-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - "[Browse Bucket](https://noaa-nws-gefswaves-reforecast-pds.s3.amazonaws.com/index.html)"
+- Description: New data notifications for NOAA Wave Ensemble Reforecast, only Lambda
+    and SQS protocols allowed
+  ARN: arn:aws:sns:us-east-1:709902155096:NewWERObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
-  Tutorials: 
-    - Title: Examples and scripts to support users to download, visualize, and process the WAVEWATCH III output files
-      URL: https://github.com/ricampos/gefswaves_reforecast
-      AuthorName: Ricardo Campos
-      AuthorURL: https://github.com/ricampos
+  Tutorials:
+  - Title: Examples and scripts to support users to download, visualize, and process
+      the WAVEWATCH III output files
+    URL: https://github.com/ricampos/gefswaves_reforecast
+    AuthorName: Ricardo Campos
+    AuthorURL: https://github.com/ricampos
   Tools & Applications:
-  Publications:  
+  Publications:

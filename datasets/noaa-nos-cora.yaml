@@ -25,31 +25,35 @@ Contact: |
   This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
   <br/>
   We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
-ManagedBy: "[NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)"
+ManagedBy: "[NOAA’s National Ocean Service, The Center for Operational Oceanographic
+  Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)"
 UpdateFrequency: Monthly, quarterly, and annually, depending on the dataset.
 Collabs:
   ASDI:
     Tags:
-      - water
+    - water
 Tags:
-  - aws-pds
-  - agriculture
-  - weather
-  - climate
-  - environmental
-  - disaster response
-  - agriculture
-  - transportation
-  - oceans
-License: Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- weather
+- climate
+- environmental
+- disaster response
+- agriculture
+- transportation
+- oceans
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF
-    ARN: arn:aws:s3:::noaa-nos-cora-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications
-    ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
-    Region: us-east-1
-    Type: SNS Topic  
+- Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF
+  ARN: arn:aws:s3:::noaa-nos-cora-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
+- Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications
+  ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
+  Region: us-east-1
+  Type: SNS Topic

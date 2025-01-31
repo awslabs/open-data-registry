@@ -20,25 +20,28 @@ UpdateFrequency: 15 minute-instantaneous
 Collabs:
   ASDI:
     Tags:
-      - water
+    - water
 Tags:
-  - aws-pds
-  - agriculture
-  - meteorological
-  - water
-  - weather
-License: There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- meteorological
+- water
+- weather
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: Project data files
-    ARN: arn:aws:s3:::noaa-ghe-pds
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-ghe-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for GHE, only Lambda and SQS protocols allowed
-    ARN: arn:aws:sns:us-east-1:123901341784:NewGHEObject
-    Region: us-east-1
-    Type: SNS Topic
+- Description: Project data files
+  ARN: arn:aws:s3:::noaa-ghe-pds
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-ghe-pds.s3.amazonaws.com/index.html)'
+- Description: New data notifications for GHE, only Lambda and SQS protocols allowed
+  ARN: arn:aws:sns:us-east-1:123901341784:NewGHEObject
+  Region: us-east-1
+  Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:

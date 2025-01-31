@@ -78,7 +78,8 @@ Description: |
   <br/>
   <br/>
   The development process for the six additional dataset components of the Conus AORC [i.e., specific humidity at 2m above ground (kg kg-1); downward  longwave and shortwave radiation fluxes at the surface (W m-2); terrain-level pressure (Pa); and west-east and south-north wind components at 10 m above ground (m s-1)] has  two distinct periods, based on datasets and methodology applied: 1979–2015 and 2016–present. 
-Documentation: "[Analysis of Record for Calibration: Version 1.1 Sources, Methods, and Verification](https://www.weather.gov/media/owp/operations/aorc_v1_1_methods.pdf)"
+Documentation: "[Analysis of Record for Calibration: Version 1.1 Sources, Methods,
+  and Verification](https://www.weather.gov/media/owp/operations/aorc_v1_1_methods.pdf)"
 Contact: |
   For questions regarding data content or quality, email the AORC team at aorc.info@noaa.gov.
   <br/>
@@ -90,31 +91,38 @@ UpdateFrequency: To be determined
 Collabs:
   ASDI:
     Tags:
-      - water
+    - water
 Tags:
-  - aws-pds
-  - agriculture
-  - weather
-  - climate
-  - environmental
-  - disaster response
-  - agriculture
-  - transportation
-License: CC-0 - Open Data. There are no restrictions on the use of this data.
+- aws-pds
+- agriculture
+- weather
+- climate
+- environmental
+- disaster response
+- agriculture
+- transportation
+License: NOAA data disseminated through NODD is made available under the "[Creative
+  Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1",
+  which is well-known and internationally recognized. There are no restrictions on
+  the use of the data. The data are open to the public and can be used as desired.
 Resources:
-  - Description: 1-km resolution AORC version 1.1
-    ARN: arn:aws:s3:::noaa-nws-aorc-v1-1-1km
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://noaa-nws-aorc-v1-1-1km.s3.amazonaws.com/index.html)'
+- Description: 1-km resolution AORC version 1.1
+  ARN: arn:aws:s3:::noaa-nws-aorc-v1-1-1km
+  Region: us-east-1
+  Type: S3 Bucket
+  Explore:
+  - '[Browse Bucket](https://noaa-nws-aorc-v1-1-1km.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-    - Title: Explore the AORC 1.1 dataset in Zarr
-      URL: https://nbviewer.org/github/NOAA-OWP/AORC-jupyter-notebooks/blob/master/jupyter_notebooks/AORC_Zarr_notebook.ipynb
-      AuthorName: Michael AuCoin
-      AuthorURL: 
+  - Title: Explore the AORC 1.1 dataset in Zarr
+    URL: 
+      https://nbviewer.org/github/NOAA-OWP/AORC-jupyter-notebooks/blob/master/jupyter_notebooks/AORC_Zarr_notebook.ipynb
+    AuthorName: Michael AuCoin
+    AuthorURL:
   Publications:
-    - Title: "The Office of Water Prediction's Analysis of Record for Calibration, version 1.1: Dataset description and precipitation evaluation (09 July 2023). J. Am. Water Resour. Assoc., 59 (6). 1246-1272."
-      URL: https://doi.org/10.1111/1752-1688.13143
-      AuthorName: Greg Fall, David Kitzmiller, Sandra Pavlovic, Ziya Zhang, Nathan Patrick, Michael St. Laurent, Carl Trypaluk, Wanru Wu, and Dennis Miller
+  - Title: "The Office of Water Prediction's Analysis of Record for Calibration, version
+      1.1: Dataset description and precipitation evaluation (09 July 2023). J. Am.
+      Water Resour. Assoc., 59 (6). 1246-1272."
+    URL: https://doi.org/10.1111/1752-1688.13143
+    AuthorName: Greg Fall, David Kitzmiller, Sandra Pavlovic, Ziya Zhang, Nathan Patrick,
+      Michael St. Laurent, Carl Trypaluk, Wanru Wu, and Dennis Miller
