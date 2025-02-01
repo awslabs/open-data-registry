@@ -1,0 +1,101 @@
+Name: NOAA Operational Forecast System (OFS)
+Description: |
+  ANNOUNCEMENTS: [NOS OFS Version Updates and Implementation of Upgraded Oceanographic Forecast Modeling Systems for Lakes Superior and Ontario; Effective October 25, 2022}(https://www.weather.gov/media/notification/pdf2/scn22-91_nos_loofs_lsofs_v3.pdf)
+  <br/>
+  <br/>
+  For decades, mariners in the United States have depended on NOAA's Tide Tables for the best estimate of expected water levels. These tables provide accurate predictions of the astronomical tide (i.e., the change in water level due to the gravitational effects of the moon and sun and the rotation of the Earth); however, they cannot predict water-level changes due to wind, atmospheric pressure, and river flow, which are often significant.
+  <br/>
+  <br/>
+  The National Ocean Service (NOS) has the mission and mandate to provide guidance and information to support navigation and coastal needs. To support this mission, NOS has been developing and implementing hydrodynamic model-based [Operational Forecast Systems](https://tidesandcurrents.noaa.gov/forecast_info.html). 
+  <br/>
+  <br/>
+  This forecast guidance provides oceanographic information that helps mariners safely navigate their local waters. This national network of hydrodynamic models provides users with operational nowcast and forecast guidance (out to 48 – 120 hours) on parameters such as water levels, water temperature, salinity, and currents. These forecast systems are implemented in critical ports, harbors, estuaries, Great Lakes and coastal waters of the United States, and form a national backbone of real-time data, tidal predictions, data management and operational modeling.
+  <br/>
+  <br/>
+  Nowcasts and forecasts are scientific predictions about the present and future states of water levels (and possibly currents and other relevant oceanographic variables, such as salinity and temperature) in a coastal area. These predictions rely on either observed data or forecasts from a numerical model. A nowcast incorporates recent (and often near real-time) observed meteorological, oceanographic, and/or river flow rate data. A nowcast covers the period from the recent past (e.g., the past few days) to the present, and it can make predictions for locations where observational data are not available. A forecast incorporates meteorological, oceanographic, and/or river flow rate forecasts and makes predictions for times where observational data will not be available. A forecast is usually initiated by the results of a nowcast.
+  <br/>
+  <br/>
+  OFS generally runs four times per day (every 6 hours) on NOAA's Weather and Climate Operational Supercomputing Systems (WCOSS) in a standard Coastal Ocean Modeling Framework (COMF) developed by the [Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/). COMF is a set of standards and tools for developing and maintaining NOS’s hydrodynamic model–based operational forecast systems. The goal of COMF is to provide a standard and comprehensive software infrastructure to enhance ease of use, performance, portability, and interoperability of NOS’s operational forecast systems.
+  <br/>
+  <br/>
+Documentation: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/OFS/README.md
+Contact: |
+  For questions regarding data content or quality, visit [the NOAA OFS site](https://tidesandcurrents.noaa.gov/models.html). 
+  <br />
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: 4 times a day, every 6 hours with 6-hour nowcasts (WCOFS is updated once a day with 24-hour nowcast) and 48- to 120-hour forecast guidance.
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - disaster response
+  - environmental
+  - meteorological
+  - oceans
+  - water
+  - weather
+License: NOAA data disseminated through NODD is made available under the "[Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1", which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired.
+Resources:
+  - Description: NOMADS Production OFS Data (30 day rolling retention)
+    ARN: arn:aws:s3:::noaa-ofs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-ofs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for OFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewOFSObject
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: CO-OPS Operational OFS Data (Historical Retention)
+    ARN: arn:aws:s3:::noaa-nos-ofs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-ofs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOS OFS Historical Retention, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNOSOFSObject
+    Region: us-east-1
+    Type: SNS Topic    
+DataAtWork:
+  Tools & Applications:
+    - Title: "OFS Data Aggregation and Sub-Setting"
+      URL: "https://opendap.co-ops.nos.noaa.gov/ofsdataagg/index.html"
+      AuthorName: NOAA
+  Publications:
+    - Title: "Chesapeake Bay OFS: Model Development and Skill Assessment"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/CBOFS_TechReport.pdf
+      AuthorName: NOAA
+    - Title: "Chesapeake Bay OFS Flyer"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/CBOFS_Onepager.pdf
+      AuthorName: NOAA
+    - Title: "Technical Implementation Notice for Chesapeake Bay OFS"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/NOS-TIN-CBOFS.pdf
+      AuthorName: NOAA
+    - Title: "Three-Dimensional Hydrodynamic Model Developments for a Delaware River and Bay Nowcast/Forecast System"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/DBOFS_TechReport.pdf
+      AuthorName: NOAA
+    - Title: "Skill Assessment of the Delaware River and Bay OFS (DBOFS)"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/DBOFS_TechReport_SA.pdf
+      AuthorName: NOAA
+    - Title: "Delaware Bay and River OFS Flyer"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/DBOFS_Onepager.pdf
+      AuthorName: NOAA
+    - Title: "Technical Implementation Notice for Delaware River and Bay OFS"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/NOS-TIN-DBOFS.pdf
+      AuthorName: NOAA
+    - Title: "Tampa Bay OFS: Model Development and Skill Assessment"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/TBOFS_TechReport.pdf
+      AuthorName: NOAA
+    - Title: "Tampa Bay OFS Flyer"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/TBOFS_Onepager.pdf
+      AuthorName: NOAA
+    - Title: "Technical Implementation Notice for Tampa Bay OFS"
+      URL: https://tidesandcurrents.noaa.gov/ofs/publications/NOS-TIN-TBOFS.pdf
+      AuthorName: NOAA
+      

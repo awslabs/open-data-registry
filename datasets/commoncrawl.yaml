@@ -1,0 +1,150 @@
+Name: Common Crawl
+Description: A corpus of web crawl data composed of over 50 billion web pages.
+Documentation: https://commoncrawl.org/the-data/get-started/
+Contact: https://commoncrawl.org/connect/contact-us/
+ManagedBy: "[Common Crawl](https://commoncrawl.org/)"
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - encyclopedic
+  - natural language processing
+  - internet
+  - web archive
+License: This data is available for anyone to use under the [Common Crawl Terms of Use](https://commoncrawl.org/terms-of-use/)
+Resources:
+  - Description: Crawl data (WARC and ARC format)
+    ARN: arn:aws:s3:::commoncrawl
+    Region: us-east-1
+    Type: S3 Bucket
+    AccountRequired: True
+DataAtWork:
+  Tutorials:
+    - Title: Analysing Petabytes of Websites
+      URL: http://tech.marksblogg.com/petabytes-of-website-data-spark-emr.html
+      AuthorName: Mark Litwintschik
+      Services:
+        - EMR
+    - Title: Index to WARC Files and URLs in Columnar Format
+      URL: https://commoncrawl.org/2018/03/index-to-warc-files-and-urls-in-columnar-format/
+      AuthorName: Sebastian Nagel
+      Services:
+        - Athena
+    - Title: Common Crawl Index Athena
+      URL: https://skeptric.com/common-crawl-index-athena/
+      AuthorName: Edward Ross
+      Services:
+        - Athena
+    - Title: Search the Common Crawl Using Lambda Functions
+      URL: https://github.com/andresriancho/cc-lambda
+      AuthorName: Andres Riancho
+      Services:
+        - Lambda
+    - Title: Large-scale graph mining with Spark
+      URL: https://towardsdatascience.com/large-scale-graph-mining-with-spark-750995050656
+      AuthorName: Win Suen
+      AuthorURL: https://github.com/wsuen/pygotham2018_graphmining
+    - Title: One click to download all the web pages you may want
+      URL: https://medium.com/@jaderd/one-click-to-download-exactly-the-web-pages-you-may-want-no-matter-how-many-they-are-d4834265a0a3
+      AuthorName: Jader Dias
+      Services:
+        - Athena
+        - Lambda
+  Tools & Applications:
+    - Title: "Glove: Global vectors for word representation"
+      AuthorName: Jeffrey Pennington, Richard Socher, Christopher D. Manning
+      URL: https://aclanthology.org/D14-1162.pdf
+    - Title: Learning word vectors for 157 languages
+      URL: https://www.aclweb.org/anthology/L18-1550
+      AuthorName: Facebook AI Research
+      AuthorURL: https://fasttext.cc/docs/en/crawl-vectors.html
+    - Title: Dresden Web Table Corpus (DWTC)
+      URL: https://wwwdb.inf.tu-dresden.de/research-projects/dresden-web-table-corpus/
+      AuthorName: Database Systems Group Dresden
+      AuthorURL: https://wwwdb.inf.tu-dresden.de/
+    - Title: "CCNet: Extracting high quality monolingual datasets from web crawl data"
+      URL: https://arxiv.org/abs/1911.00359
+      AuthorName: Facebook AI Research
+      AuthorURL: https://github.com/facebookresearch/cc_net
+    - Title: Search the html across 25 billion websites for passive reconnaissance using common crawl
+      AuthorName: Ryan Elkins
+      URL: https://medium.com/@brevityinmotion/search-the-html-across-25-billion-websites-for-passive-reconnaissance-using-common-crawl-7fe109250b83
+    - Title: Ransacking your password reset tokens
+      URL: https://positive.security/blog/ransack-data-exfiltration
+      AuthorName: Lukas Euler
+    - Title: "All Around The World: The Common Crawl Dataset - Attack Surface Research"
+      URL: https://labs.watchtowr.com/all-around-the-world-the-common-crawl-dataset/
+      AuthorName: Aliz Hammond
+      AuthorURL: https://labs.watchtowr.com/
+  Publications:
+    - Title: Building a Web-Scale Dependency-Parsed Corpus from CommonCrawl
+      URL: https://arxiv.org/pdf/1710.01779.pdf
+      AuthorName: Alexander Panchenko, Eugen Ruppert, Stefano Faralli, Simone Paolo Ponzetto, Chris Biemann
+    - Title: Using open data to predict market movements
+      URL: https://education.emc.com/content/dam/dell-emc/documents/en-us/2017KS_Ravinder-Using_Open_Data_to_Predict_Market_Movements.pdf
+      AuthorName: DELL EMC
+    - Title: N-gram counts and language models from the Common Crawl
+      URL: http://www.lrec-conf.org/proceedings/lrec2014/pdf/1097_Paper.pdf
+      AuthorName: Christian Buck, Kenneth Heafield, Bas van Ooyen
+      AuthorURL: http://statmt.org/ngrams/
+    - Title: Large-scale analysis of style injection by relative path overwrite
+      URL: https://doi.org/10.1145/3178876.3186090
+      AuthorName: Sajjad Arshad, Seyed Ali Mirheidari, Tobias Lauinger, Bruno Crispo, Engin Kirda, William Robertson
+    - Title: Web Data Commons - RDFa, microdata, and microformat data sets
+      URL: http://webdatacommons.org/structureddata/
+      AuthorName: Christian Bizer, Robert Meusel, Anna Primpeli
+    - Title: "C4Corpus: Multilingual Web-Size Corpus with Free License"
+      URL: http://www.lrec-conf.org/proceedings/lrec2016/pdf/388_Paper.pdf
+      AuthorName: Ivan Habernal, Omnia Zayed, Iryna Gurevych
+      AuthorURL: https://dkpro.github.io/dkpro-c4corpus/
+    - Title: Of using Common Crawl to play Family Feud
+      URL: https://fulmicoton.com/posts/commoncrawl/
+      AuthorName: Paul Masurel
+    - Title: Index fun
+      URL: https://psuter.net/2019/07/07/z-index
+      AuthorName: Philippe Suter
+    - Title: Asynchronous pipeline for processing huge corpora on medium to low resource infrastructures
+      URL: https://hal.inria.fr/hal-02148693
+      AuthorName: Pedro Javier Ortiz Suárez, Benoît Sagot, Laurent Romary
+      AuthorURL: https://oscar-corpus.com/
+    - Title: "Mapping languages: The Corpus of Global Language Use"
+      URL: https://doi.org/10.1007/s10579-020-09489-2
+      AuthorName: Jonathan Dunn
+      AuthorURL: https://www.earthlings.io/
+    - Title: "CCAligned: A Massive collection of cross-lingual web-document pairs"
+      URL: https://www.aclweb.org/anthology/2020.emnlp-main.480
+      AuthorName: Ahmed El-Kishky, Vishrav Chaudhary, Francisco Guzmán, Philipp Koehn
+      AuthorURL: http://www.statmt.org/cc-aligned/
+    - Title: "CC-News-En: A large English news corpus"
+      URL: https://doi.org/10.1145/3340531.3412762
+      AuthorName: Joel Mackenzie, Rodger Benham, Matthias Petri, Johanne R. Trippas, J. Shane Culpepper, Alistair Moffat
+    - Title: Defending against neural fake news
+      URL: http://papers.nips.cc/paper/9106-defending-against-neural-fake-news.pdf
+      AuthorName: Rowan Zellers, Ari Holtzman, Hannah Rashkin, Yonatan Bisk, Ali Farhadi, Franziska Roesner, et al
+      AuthorURL: https://rowanzellers.com/grover/
+    - Title: On the impact of publicly available news and information transfer to financial markets
+      URL: https://arxiv.org/abs/2010.12002
+      AuthorName: Metod Jazbec, Barna Pásztor, Felix Faltings, Nino Antulov-Fantulin, Petter N. Kolm
+    - Title: Language models are few-shot learners
+      URL: https://arxiv.org/abs/2005.14165
+      AuthorName: Tom B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, et al
+    - Title: "mT5: A massively multilingual pre-trained text-to-text transformer"
+      URL: https://arxiv.org/abs/2010.11934
+      AuthorName: Linting Xue, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, et al
+    - Title: "No Language Left Behind: scaling human-centered machine translation"
+      URL: https://arxiv.org/abs/2207.04672
+      AuthorName: Costa-jussà, Marta R., James Cross, Onur Çelebi, Maha Elbayad, Kenneth Heafield, Kevin Heffernan, et al
+    - Title: "LAION-5B: An open large-scale dataset for training next generation image-text models"
+      URL: https://arxiv.org/abs/2210.0840
+      AuthorName: Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade Gordon, Ross Wightman, Mehdi Cherti, et al
+    - Title: "Coyo-700m: Image-text pair dataset"
+      URL: https://github.com/kakaobrain/coyo-dataset
+      AuthorName: Minwoo Byeon, Beomhee Park, Haecheon Kim, Sungjun Lee, Woonhyuk Baek, Saehoon Kim
+    - Title: "LLaMA: open and efficient foundation language models"
+      URL: https://arxiv.org/abs/2302.13971
+      AuthorName: Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, et al
+    - Title: "Language is not all you need: aligning perception with language models"
+      URL: https://arxiv.org/abs/2302.14045
+      AuthorName: Shaohan Huang, Li Dong, Wenhui Wang, Yaru Hao, Saksham Singhal, Shuming Ma, et al
+    - Title: "Multimodal C4: an open, billion-scale corpus of images interleaved with text"
+      URL: https://arxiv.org/abs/2304.06939
+      AuthorName: Wanrong Zhu, Jack Hessel, Anas Awadalla, Samir Yitzhak Gadre, Jesse Dodge, Alex Fang, et al

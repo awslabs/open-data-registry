@@ -1,0 +1,46 @@
+Name: AWS Public Blockchain Data
+Description: > 
+  The AWS Public Blockchain Data provides free access to blockchain datasets. Data is transformed into multiple 
+  tables as compressed Parquet files, partitioned by date, to allow efficient access for most common analytics queries.
+
+  </br></br>
+
+  <strong>Datasets</strong></br></br>
+  <table width="100%">
+  <thead>
+    <tr><th>Blockchain dataset</th><th>Maintained by</th><th>Path</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bitcoin</td>     <td>AWS</td>    <td><code>s3://aws-public-blockchain/v1.0/btc/</code></td></tr>
+    <tr><td>Ethereum</td>    <td>AWS</td>    <td><code>s3://aws-public-blockchain/v1.0/eth/</code></td></tr>
+    <tr><td>Arbitrum</td>    <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/arbitrum/</code></td></tr>
+    <tr><td>Aptos</td>       <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/aptos/</code></td></tr>
+    <tr><td>Base</td>        <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/base/</code></td></tr>
+    <tr><td>Provenance</td>  <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/provenance/</code></td></tr>
+    <tr><td>XRP Ledger</td>  <td>SonarX</td> <td><code>s3://aws-public-blockchain/v1.1/sonarx/xrp/</code></td></tr>
+  </tbody>
+  </table>
+  </br>
+  For full datasets, with support and real-time updates, please visit <a href="https://sonarx.com">SonarX</a>.
+
+Documentation: https://github.com/aws-samples/digital-assets-examples/blob/main/analytics/
+Contact: aws-blockchain-data@amazon.com
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: New data is delivered daily to the current date folders Parquet files.
+Tags:
+  - blockchain
+  - web3
+License: https://github.com/aws-samples/digital-assets-examples/blob/main/LICENSE
+Resources:
+  - Description: AWS Public Blockchain Data
+    ARN: arn:aws:s3:::aws-public-blockchain
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: New datasets added to the AWS Public Blockchain Datasets — available for analytics and research
+      URL: https://repost.aws/articles/AR3gztQGeSS8CfaKNNeyYwsQ
+      AuthorName: Everton Fraga, Simon Goldberg
+    - Title: Access Bitcoin and Ethereum open datasets for cross-chain analytics
+      URL: https://aws.amazon.com/blogs/database/access-bitcoin-and-ethereum-open-datasets-for-cross-chain-analytics/
+      AuthorName: Oliver Steffmann, Bhaskar Ravat, Sreeji Gopal, and Stefan Dicker

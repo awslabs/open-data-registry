@@ -1,0 +1,106 @@
+Name: CBERS on AWS
+Description: |
+  Imagery acquired
+  by the China-Brazil Earth Resources Satellite (CBERS), 4 and 4A.
+  The
+  image files are recorded and processed by Instituto Nacional de Pesquisas
+  Espaciais (INPE) and are converted to Cloud Optimized Geotiff
+  format in order to optimize its use for cloud based applications.
+  Contains all CBERS-4 MUX, AWFI, PAN5M and
+  PAN10M scenes acquired since
+  the start of the satellite mission and is daily updated with
+  new scenes.
+  CBERS-4A MUX Level 4 (Orthorectified) scenes are being
+  ingested starting from 04-13-2021. CBERS-4A WFI Level 4 (Orthorectified)
+  scenes are being ingested starting from 10-12-2022.
+Documentation: https://github.com/fredliporace/cbers-on-aws
+Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
+ManagedBy: "[AMS Kepler](https://amskepler.com/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - geospatial
+  - imaging
+  - satellite imagery
+  - disaster response
+  - stac
+  - cog
+License: https://creativecommons.org/licenses/by-sa/3.0/
+Resources:
+  - Description: CBERS imagery (COG files, quicklooks, metadata)
+    ARN: arn:aws:s3:::brazil-eosats
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+    - '[stacindex](https://stacindex.org/catalogs/cbers)'
+  - Description: STAC static catalog
+    ARN: arn:aws:s3:::br-eo-stac-1-0-0
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new CBERS 4A quicklooks, all sensors
+    ARN: arn:aws:sns:us-west-2:599544552497:NewCB4AQuicklook
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Notifications for new CBERS 4 quicklooks, all sensors
+    ARN: arn:aws:sns:us-west-2:599544552497:NewCB4Quicklook
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Topic that receives STAC V1.0.0 items as new scenes are ingested
+    ARN: arn:aws:sns:us-west-2:769537946825:br-eo-stac-prod-stacitemtopic4BCE3141-Z8he7LYjqXFe
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
+      URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
+      AuthorName: Frederico Liporace
+      Services:
+        - SNS
+        - Lambda
+        - DynamoDB
+  Tools & Applications:
+    - Title: STAC V1.0.0 endpoint
+      URL: https://stac.amskepler.com/v100
+      AuthorName: AMS Kepler
+      AuthorURL: https://github.com/fredliporace/cbers-2-stac
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: CBERS timelapse GIF generator
+      URL: https://github.com/fredliporace/cbersgif
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+    - Title: aws-sat-api-py
+      URL: https://github.com/RemotePixel/aws-sat-api-py
+      AuthorName: Remote Pixel
+      AuthorURL: http://remotepixel.ca/
+    - Title: rio-tiler
+      URL: https://github.com/mapbox/rio-tiler
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
+    - Title: cbers-tiler
+      URL: https://github.com/mapbox/cbers-tiler
+      AuthorName: Mapbox
+      AuthorURL: https://www.mapbox.com/
+    - Title: CBERS static STAC catalog served by stac-browser
+      URL: https://cbers.stac.cloud
+      AuthorName: Radiant Earth
+      AuthorURL: https://github.com/radiantearth/stac-browser
+    - Title: Forest Monitor
+      URL: http://brazildatacube.dpi.inpe.br/forest-monitor/
+      AuthorName: Brazil Datacube, INPE
+      AuthorURL: http://brazildatacube.org/
+  Publications:
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.

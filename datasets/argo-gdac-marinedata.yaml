@@ -1,0 +1,72 @@
+Name: Argo marine floats data and metadata from Global Data Assembly Centre (Argo GDAC)
+Description: >
+  Argo is an international program to observe the interior of the ocean with a fleet of profiling floats drifting in the deep ocean currents (https://argo.ucsd.edu).
+  Argo GDAC is a dataset of 5 billion in situ ocean observations from 18.000 profiling floats (4.000 active) which started 20 years ago.
+  Argo GDAC dataset is a collection of 18.000 NetCDF files.  
+  It is a major asset for ocean and climate science, a contributor to IOCCP reports.
+Documentation: http://www.argodatamgt.org/Documentation
+Contact: codac@ifremer.fr
+ManagedBy: "[Euro-Argo](https://www.euro-argo.eu/)"
+UpdateFrequency: Data is updated daily.
+Tags:
+  - aws-pds
+  - climate
+  - oceans
+  - chemical biology
+  - chemistry
+  - datacenter
+  - digital assets
+  - geochemistry
+  - geophysics
+  - geoscience
+  - marine
+  - netcdf
+License: Open data, there are no restrictions on the use of this data. https://creativecommons.org/licenses/by/4.0/
+Citation: Argo (2023). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182
+Resources:
+  - Description: Argo GDAC data and metadata
+    ARN: arn:aws:s3:::argo-gdac-sandbox
+    Region: eu-west-3
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://argo-gdac-sandbox.s3.eu-west-3.amazonaws.com/pub/index.html#pub/)'
+DataAtWork:
+  Tutorials:
+    - Title: Outreach activities
+      URL: https://argo.ucsd.edu/outreach/
+      AuthorName: Argo program
+      AuthorURL: https://argo.ucsd.edu
+    - Title: Outreach ressources for Argo floats
+      URL: https://www.euro-argo.eu/Outreach/Outreach-material/Outreach-resources-about-Argo-floats
+      AuthorName: Euro-Argo ERIC
+      AuthorURL: https://www.euro-argo.eu
+  Tools & Applications:
+    - Title: Argo floats dashboard
+      URL: https://fleetmonitoring.euro-argo.eu
+      AuthorName: Euro-Argo ERIC
+      AuthorURL: https://www.euro-argo.eu
+    - Title: Argo data selection
+      URL: https://dataselection.euro-argo.eu
+      AuthorName: Euro-Argo ERIC
+      AuthorURL: https://www.euro-argo.eu
+  Publications:
+    - Title: Argo data bibliography
+      URL: https://argo.ucsd.edu/outreach/publications/bibliography/
+      AuthorName: Argo program
+      AuthorURL: https://argo.ucsd.edu
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+      - climate
+      - chemical biology
+      - chemistry
+      - climate
+      - datacenter
+      - digital assets
+      - geochemistry
+      - geophysics
+      - geoscience
+      - marine
+      - netcdf
+

@@ -1,0 +1,41 @@
+Name: REDASA COVID-19 Open Data
+Description: >
+  The REaltime DAta Synthesis and Analysis (REDASA) COVID-19 snapshot contains the output of the curation protocol produced by our curator community. A detailed description can be found in [our paper](https://www.jmir.org/2021/5/e25714).
+  The first S3 bucket listed in Resources contains a large collection of medical documents in text format extracted from the [CORD-19 dataset](https://registry.opendata.aws/cord-19/), plus other sources deemed relevant by the REDASA consortium. 
+  The second S3 bucket contains a series of documents surfaced by [Amazon Kendra](https://aws.amazon.com/kendra/) that were considered relevant for each medical question asked. The final S3 bucket contains the GroundTruth annotations created by our curator community.
+Documentation: https://github.com/PanSurg/redasa-sample-data/blob/master/open-data.md
+Contact: redasa-open-data@imperial.ac.uk
+ManagedBy: REDASA Consortium, Imperial College London, UK
+UpdateFrequency: Yearly updates
+Tags:
+  - aws-pds
+  - COVID-19
+  - coronavirus
+  - life sciences
+  - information retrieval
+  - natural language processing
+  - text analysis
+License: CC-BY-4.0
+Resources:
+  - Description: This is the raw data repository containing a common crawl of CORD-19 papers and other sources identified by the REDASA Project.
+    ARN: arn:aws:s3:::pansurg-curation-raw-open-data
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: For all the questions curated during the REDASA project, we created a Kendra index. The documents available in this S3 bucket were surfaced by the Kendra index as being relevant to the research medical question.
+    ARN: arn:aws:s3:::pansurg-curation-workflo-kendraqueryresults50d0eb-open-data
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: An S3 bucket that contains the final curation data in GroundTruth format
+    ARN: arn:aws:s3:::pansurg-curation-final-curations-open-data
+    Region: eu-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Curadr - Curation Platform
+      URL: https://curadr.com/
+      AuthorName: REDASA Consortium, Imperial College London
+      AuthorURL: https://www.pansurg.org/redasa/
+  Publications:
+    - Title: "Using a Secure, Continually Updating, Web Source Processing Pipeline to Support the Real-Time Data Synthesis and Analysis of Scientific Literature: Development and Validation Study"
+      URL: "https://www.jmir.org/2021/5/e25714"
+      AuthorName: Uddhav Vaghela, Simon Rabinowicz, Paris Bratsos, Guy Martin, Epameinondas Fritzilas, et al.

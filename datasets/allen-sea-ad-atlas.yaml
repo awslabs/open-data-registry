@@ -1,0 +1,50 @@
+Name: "Seattle Alzheimer's Disease Brain Cell Atlas (SEA-AD)"
+Description: |
+  The Seattle Alzheimer's Disease Brain Cell Atlas (SEA-AD) consortium strives to gain a deep molecular and cellular understanding of the early pathogenesis of Alzheimer's disease and is funded by the National Institutes on Aging (NIA U19AG060909). The SEA-AD datasets available here comprise single cell profiling (transcriptomics and epigenomics) and quantitative neuropathology. To explore gene expression and chromatin accessibility information, the single-cell profiling data includes: snRNAseq and snATAC-seq data from the SEA-AD donor cohort (aged brains which span the spectrum of Alzheimer's Disease pathology) and neurotypical reference brains. To explore key pathological proteins and cell types of interest to Alzheimer's disease, the neuropathology data includes: full resolution brightfield images, images processed and segmented in HALO image analysis software, image annotations, and quantification summary files for the relevant stains including Abeta (6E10), IBA1, a-Synuclein, GFAP, H&E-LFB, NeuN, pTau(AT8), and pTDP43.
+Documentation: https://portal.brain-map.org/explore/seattle-alzheimers-disease/seattle-alzheimers-disease-brain-cell-atlas-download?edit&language=en
+Contact: awspublicdataset@alleninstitute.org
+ManagedBy: "[Allen Institute](http://www.alleninstitute.org/)"
+UpdateFrequency: Annually
+Tags: 
+  - aws-pds
+  - biology
+  - cell biology
+  - cell imaging
+  - epigenomics
+  - gene expression
+  - histopathology 
+  - Homo sapiens
+  - imaging
+  - medicine
+  - microscopy
+  - neurobiology
+  - neuroscience
+  - single-cell transcriptomics 
+  - transcriptomics
+  - life sciences
+License: https://alleninstitute.org/legal/terms-use/
+Resources:
+  - Description: Single cell profiling (transcriptomics and epigenomics) data files in a public bucket
+    ARN: arn:aws:s3:::sea-ad-single-cell-profiling
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://sea-ad-single-cell-profiling.s3.amazonaws.com/index.html)'
+  - Description: Quantitative neuropathology (full resolution images, processed images, and quantifications) in a public bucket
+    ARN: arn:aws:s3:::sea-ad-quantitative-neuropathology
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://sea-ad-quantitative-neuropathology.s3.amazonaws.com/index.html)'
+  - Description: Spatial transcriptomics data files in a public bucket
+    ARN: arn:aws:s3:::sea-ad-spatial-transcriptomics
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://sea-ad-spatial-transcriptomics.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tools & Applications:
+    - Title: Seattle Alzheimer’s Disease Brain Cell Atlas
+      URL: http://sea-ad.org
+      AuthorName: Lein, E et al.
+      AuthorURL: www.alleninstitute.org

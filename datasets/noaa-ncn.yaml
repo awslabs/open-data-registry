@@ -1,0 +1,71 @@
+Name: NOAA Continuously Operating Reference Stations (CORS) Network (NCN)
+Description: |
+  The [NOAA Continuously Operating Reference Stations (CORS) Network (NCN)](https://geodesy.noaa.gov/CORS/), managed by NOAA/National Geodetic Survey ([NGS](https://geodesy.noaa.gov/)), provide Global Navigation Satellite System (GNSS) data, supporting three dimensional positioning, meteorology, space weather, and geophysical applications throughout the United States. The NCN is a multi-purpose, multi-agency cooperative endeavor, combining the efforts of hundreds of government, academic, and private organizations. The stations are independently owned and operated. Each agency shares their GNSS/GPS carrier phase and code range measurements and station metadata with NGS, which are analyzed and distributed free of charge.
+  NGS provides access to all NCN data collected since 9 February (040) 1994.
+  - #### Access to NCN Data and Products
+      - [NOAA-NCN on AWS](https://noaa-cors-pds.s3.amazonaws.com/index.html)
+      - [NGS server: https://geodesy.noaa.gov/corsdata/](https://geodesy.noaa.gov/corsdata/)
+      - [NGS's customized data request service (UFCORS)](https://geodesy.noaa.gov/UFCORS/)
+      - [NGS Anonymous ftp://geodesy.noaa.gov/cors/ - This service is going away on August 02, 2021!](ftp://geodesy.noaa.gov/cors/)
+  - #### NCN Data and Products
+      - **RINEX**: The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).<br/>RINEX data can be found at: *rinex/`YYYY`/`DDD`/`ssss`/*
+      - **Station logs**: 
+          - Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc..<br/>Station log files can be found at: *station_log/`ssss`.log.txt*
+          - Historical and current equipment information of all NCN stations, except those that are considered IGS stations.<br/>These data can be found at: *station_log/cumulative.station.info.cors*
+      - **Published Coordinates and Velocities**: NAD83 and ITRF coordinates and velocities of each NCN station. All published coordinates and velocities are given for the Antenna Reference Point (ARP).<br/>Published coordinate and velocity files can be found at: *coord/coord_`YY`/*<br/>In July 2019, NGS published [MYCS2](https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml)!
+      - **Time-series Plots**:
+          - *Short-term* plots show the repeatability of a site for the last 90-days with respect to the current published position, corrected for the effect of the published velocity. These plots are updated daily.<br/>Short-term plots can be found at: */Plots/`ssss`_`YY`.short.png*
+          - *Long-term* plots show the show weekly residual positions with respect to the current published coordinates from our stacked solution. Newer sites may not have a long-term plot if they were added after our Multi-year Solution Processing campaign.<br/>Long-term plots can be found at: */Plots/Longterm/`ssss`_`YY`.long.png*
+      - **Daily Broadcast Ephemeris**:
+          - Daily GPS Broadcast ephemeris can be found at: *rinex/`YYYY`/`DDD`/brdc`DDD`0.`YY`n.gz*
+          - Daily GLONASS-only Broadcast ephemeris can be found at: *rinex/`YYYY`/`DDD`/brdc`DDD`0.`YY`g.gz*
+      - **Daily final, rapid, and hourly ultra-rapid GNSS Orbit** can be found at: 
+          - Daily final and rapid GNSS Orbit can be found at: *rinex/`YYYY`/`DDD`/`AAAWWWWD`.sp3.gz*
+          - Hourly ultra-rapid GNSS Orbit can be found at: *rinex/`YYYY`/`DDD`/`AAAWWWWD`_`HH`.sp3.gz*
+      - In which:
+        - `YYYY`: 4-digit year
+        - `YY`: The last 2-digit of year
+        - `DDD`: 3-digit day of year [001,002,..366]
+        - `D`: day of week [Sun=0, Mon=1,..,Fri=6]
+        - `ssss`: 4-char station ID
+        - `h`: 1-char hour of day (a=00, b=01, c=02,..,x=23)
+        - `HH`: 2-digit hour of day (00,01,02,..,23)
+        - `WWWW`: 4-digit GPS week number
+        - `AAA`: 3-char analysis center name/type of solution, such as:
+            - igs: IGS final solution combination
+            - igl: IGS final solution combination (GLONASS-only)
+            - igr: IGS rapid solution combination
+            - igu: IGS ultra-rapid solution combination
+      
+Documentation: For more information, visit [NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)
+Contact: |
+  - For general inquiries about NCN data and products, email ✉ ngs.cors at noaa.gov
+  - For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  - We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Most data are available within 1 hour from when they were recorded at the remote site, and a few sites have a delay of 24 hours.
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
+Tags:
+  - aws-pds
+  - broadcast ephemeris
+  - Continuously Operating Reference Station (CORS)
+  - earth observation
+  - geospatial
+  - GPS
+  - GNSS
+  - mapping
+  - NOAA CORS Network (NCN)
+  - post-processing
+  - RINEX 
+  - survey
+License: NOAA data disseminated through NODD is made available under the "[Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license]https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1", which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired.
+Resources:
+  - Description: "[NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)"
+    ARN: arn:aws:s3:::noaa-cors-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - "[Browse NOAA-NCN Bucket](https://noaa-cors-pds.s3.amazonaws.com/index.html)"

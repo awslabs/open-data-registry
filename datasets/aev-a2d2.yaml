@@ -1,0 +1,40 @@
+Name: "A2D2: Audi Autonomous Driving Dataset"
+Description:
+        An open multi-sensor dataset for autonomous driving research.
+        This dataset comprises semantically segmented images, semantic
+        point clouds, and 3D bounding boxes. In addition, it contains
+        unlabelled 360 degree camera images, lidar, and bus data for
+        three sequences. We hope this dataset will further facilitate
+        active research and development in AI, computer vision, and
+        robotics for autonomous driving.
+Contact: aevdrivingdataset@audi.de
+Documentation: http://a2d2.audi
+ManagedBy: "[Audi AG](http://a2d2.audi/)"
+UpdateFrequency:
+        The dataset may be updated with additional or corrected data
+        on a need-to-update basis.
+Tags:
+        - autonomous vehicles
+        - deep learning
+        - computer vision
+        - lidar
+        - mapping
+        - machine learning
+        - robotics
+        - aws-pds
+License: https://creativecommons.org/licenses/by-nd/4.0/
+Resources:
+  - Description: http://a2d2.audi
+    ARN: arn:aws:s3:::aev-autonomous-driving-dataset
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Autonomous Driving Data Service (ADDS)
+      URL: https://github.com/aws-samples/amazon-eks-autonomous-driving-data-service
+      AuthorName: Ajay Vohra, Amazon
+      Services:
+        - EKS
+        - Redshift
+        - S3
+        - FSx

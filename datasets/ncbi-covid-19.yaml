@@ -1,0 +1,42 @@
+Name: COVID-19 Genome Sequence Dataset
+Description: This repository within the [ACTIV TRACE initiative](https://www.nih.gov/research-training/medical-research-initiatives/activ/tracking-resistance-coronavirus-evolution-trace) houses a comprehensive collection of datasets related to SARS-CoV-2. The processing of SARS-CoV-2 Sequence Read Archive (SRA) files has been optimized to identify genetic variations in viral samples. This information is then presented in the Variant Call Format (VCF). Each VCF file corresponds to the SRA parent-run's accession ID. Additionally, the data is available in the parquet format, making it easier to search and filter using the Amazon Athena Service. The SARS-CoV-2 Variant Calling Pipeline is designed to handle new data every six hours, with updates to the AWS ODP bucket occurring daily.
+Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+Contact: https://support.nlm.nih.gov/support/create-case/
+ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - coronavirus
+  - COVID-19
+  - fastq
+  - bam
+  - cram
+  - genomic
+  - genetic
+  - health
+  - life sciences
+  - MERS
+  - SARS
+  - virus
+  - STRIDES
+  - whole genome sequencing
+  - transcriptomics
+License: "[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: "Genomic sequence reads of SARS-CoV-2 and related coronaviridae, organized by NCBI accession. Files in the `sra-src` folder are in FASTQ, BAM, or CRAM format (original submission); files in the  `run` folder are in .sra format and require the [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit)"
+    ARN: arn:aws:s3:::sra-pub-sars-cov2
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Metadata for sra-pub-sars-cov2 in an Athena-queryable format
+    ARN: arn:aws:s3:::sra-pub-sars-cov2-metadata-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: Download SRA sequence data using Amazon Web Services (AWS)
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+      AuthorName: NCBI SRA
+  Publications:

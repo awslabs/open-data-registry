@@ -1,0 +1,41 @@
+Deprecated: True
+DeprecatedNotice: The provider of this dataset no longer provides this data through this mechanism. If there are any questions, please reach out to <a href="mailto:opendata@amazon.com">opendata@amazon.com</a>.
+Name: MODIS
+Description: The Moderate Resolution Imaging Spectroradiometer (MODIS) MCD43A4 Version 6 Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) dataset is produced daily using 16 days of Terra and Aqua MODIS data at 500 meter (m) resolution. The view angle effects are removed from the directional reflectances, resulting in a stable and consistent NBAR product. Data are temporally weighted to the ninth day which is reflected in the Julian date in the file name.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/modis-pds
+Contact: No contact
+ManagedBy: Not currently managed
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - agriculture
+  - geospatial
+  - satellite imagery
+  - natural resource
+  - disaster response
+License: There are no restrictions on the use of data, unless expressly identified prior to or at the time of receipt.
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::modis-pds
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-west-2:552188055668:New_MODIS_Scene
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: Sentinel Hub WMS/WMTS/WCS Service for MODIS
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground for MODIS
+      URL: https://apps.sentinel-hub.com/sentinel-playground/?source=Modis&lat=37.274052809979054&lng=-78.8818359375&zoom=7
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+  Publications:

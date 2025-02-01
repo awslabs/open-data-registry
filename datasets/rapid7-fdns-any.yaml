@@ -1,0 +1,45 @@
+Deprecated: True
+DeprecatedNotice: The provider of this dataset will no longer maintain this dataset.  We are open to talking with anyone else who might be willing to provide this dataset to the community.  Contact <a href="mailto:opendata@amazon.com">opendata@amazon.com</a>
+Name: Rapid7 FDNS ANY Dataset
+Description: |
+   This dataset has been deprecated. Please see this [Rapid7 blog post](https://www.rapid7.com/blog/post/2022/02/10/evolving-how-we-share-rapid7-research-data-2/) for details.
+Documentation: https://opendata.rapid7.com/about/
+Contact: |
+  research@rapid7.com
+ManagedBy: Not currently managed
+UpdateFrequency: |
+  Monthly
+Tags:
+  - aws-pds
+  - computer security
+  - cyber security
+  - analytics
+  - internet
+License: |
+  Non-commercial (NC) - Free for non-commercial purposes. For commercial use, contact research@rapid7.com. Full terms: https://opendata.rapid7.com/about/#terms
+Resources:
+  - Description: |
+      FDNS ANY Gzip-compressed parquet files following a HIVE partitioning model, with
+      a 90-day retention period. This dataset represents the data returned for a name
+      when an ANY query is issued. Data is partitioned by date=YYYYMM which is the
+      year-month that the FDNS ANY study was launched.
+    ARN: arn:aws:s3:::rapid7-opendata/fdns/any/v1/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |
+      New FDNS parquet dataset announcements
+    ARN: arn:aws:sns:us-east-1:740874647437:s3-event-notification-new-aws-pds-dataset
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: How to Conduct DNS Reconnaissance for $.02 Using Rapid7 Open Data and AWS
+      URL: https://blog.rapid7.com/2018/10/16/how-to-conduct-dns-reconnaissance-for-02-using-rapid7-open-data-and-aws/
+      AuthorName: Shan Sikdar at Rapid7
+      AuthorURL: https://blog.rapid7.com/author/shan/
+    - Title: Creating a Project Sonar FDNS API with AWS
+      URL: http://securityriskadvisors.com/blog/creating-a-project-sonar-fdns-api-with-aws/
+      AuthorName: Evan Perotti at SecurityRiskAdvisors
+      AuthorURL: https://twitter.com/2xxeformyshirt
+  Tools & Applications:
+  Publications:

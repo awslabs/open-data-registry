@@ -1,0 +1,59 @@
+Name: "RCM CEOS Analysis Ready Data | Données prêtes à l'analyse du CEOS pour le MCR"
+Description: "The [RADARSAT Constellation Mission (RCM)](https://www.asc-csa.gc.ca/eng/satellites/radarsat/) is Canada's third generation of Earth observation satellites. Launched on June 12, 2019, the three identical satellites work together to bring solutions to key challenges for Canadians. As part of ongoing [Open Government](https://open.canada.ca/en/about-open-government) efforts, NRCan produces a CEOS analysis ready data (ARD) of Canada landmass using a 30M Compact-Polarization standard coverage, every 12 days. RCM CEOS-ARD (POL) is the first ever polarimetric dataset approved by the committee. Previously, users were stuck ordering, downloading and processing RCM images (level 1) on their own, often with expensive software. This new dataset aims to remove these burdens with a new STAC catalog for discovery and direct download links.
+
+<br/>
+<br/>
+
+La mission de la Constellation RADARSAT (MCR) est la troisième génération de satellites d'observation de la Terre du Canada. Lancés le 12 juin 2019, les trois satellites identiques travaillent ensemble pour apporter des solutions aux principaux défis des Canadiens. Dans le cadre des efforts continus pour un gouvernement ouvert, RNCan produit des données prêtes à l'analyse CEOS (ARD) de la masse terrestre du Canada en utilisant une couverture standard de 30 m en polarisation compacte, tous les 12 jours. Les CEOS-ARD (POL) du MCR constituent le premier ensemble de données polarimétriques jamais approuvé par le comité. Auparavant, les utilisateurs étaient obligés de commander, de télécharger et de traiter eux-mêmes les images RCM (niveau 1), souvent à l'aide de logiciels coûteux. Ce nouvel ensemble de données vise à supprimer ces fardeaux avec un nouveau catalogue STAC à découvrir et à télécharger directement depuis S3."
+Documentation: https://www.asc-csa.gc.ca/eng/satellites/radarsat/
+Contact: eodms-sgdot@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
+UpdateFrequency: "The initial dataset will be Canada-wide, 30M Compact-Polarization standard coverage, every 12 days, per mission revisit frequency.
+
+<br/>
+<br/>
+
+L'ensemble de données initial couvrira l'ensemble du Canada, une couverture standard de 30 metres de polarisation compacte, tous les 12 jours, par fréquence de revisite de mission."
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - sustainability
+  - disaster response
+  - synthetic aperture radar
+  - stac
+  - ceos
+  - analysis ready data
+License: "RCM image products are available free of charge, to the broadest extent possible, in order to promote the development of innovative products and services derived from SAR data. The Government of Canada retains ownership of all RCM data and image products. Intellectual property rights to value-added products (VAPs) created from the RCM image products will remain with the creator of the VAP. Acceptable uses of RCM image products are set out in the [RCM Public User License Agreement](https://www.asc-csa.gc.ca/eng/satellites/radarsat/access-to-data/public-user-license-agreement.asp), which is provided with each RCM image product. 
+
+<br/>
+<br/>
+
+Les produits d'image de la MCR sont disponibles sans frais, le plus possible accessibles, pour encourager la mise au point de produits et services novateurs dérivés des données RSO. Le gouvernement du Canada conserve la propriété de toutes les données et de tous les produits d'image de la MCR. Les droits de propriété intellectuelle sur les produits à valeur ajoutée (PVA) créés à partir des produits d'image de la MCR demeureront la propriété du créateur du PVA. Les utilisations acceptables des produits d'image de la MCR sont énoncées dans le [contrat de licence d'utilisation](https://www.asc-csa.gc.ca/fra/satellites/radarsat/acces-aux-donnees/contrat-licence-utilisation.asp) fourni avec chaque produit d'image de la MCR"
+Resources:
+  - Description: RCM CEOS Analysis Ready Data. Données prêtes à l'analyse (DPA) du CEOS pour le MCR
+    ARN: arn:aws:s3:::rcm-ceos-ard
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[EODMS STAC for RCM CEOS ARD](https://www.eodms-sgdot.nrcan-rncan.gc.ca/stac/collections/rcm-ard/items/)'
+DataAtWork:
+  Publications:
+    - Title: Synthetic Aperture Radar (CEOS-ARD SAR)
+      URL: https://ceos.org/ard/files/PFS/SAR/v1.1/CEOS-ARD_PFS_Synthetic_Aperture_Radar_v1.1.pdf
+      AuthorName: We would like to acknowledge the important contribution of Francois Charbonneau (NRCan) and the Committee on Earth Observation Satellites (CEOS) for their work on developing the CEOS ARD Standards
+      AuthorURL: https://ceos.org/ard/
+    - Title: CEOS Analysis Ready Data
+      URL: https://ceos.org/ard/
+      AuthorName: Committee on Earth Observation Satellites (CEOS)
+      AuthorURL: https://ceos.org/
+    - Title: Sentinel-1 Global Backscatter Model (S1GBM)
+      URL: https://researchdata.tuwien.ac.at/records/n2d1v-gqb91
+      AuthorName: TU Wien Research Data
+      AuthorURL: https://researchdata.tuwien.ac.at/
+    - Title: Copernicus Global Digital Elevation Model
+      URL: https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM
+      AuthorName: European Space Agency (ESA)
+      AuthorURL: https://www.esa.int/

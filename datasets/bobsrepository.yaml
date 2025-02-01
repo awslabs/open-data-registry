@@ -1,0 +1,38 @@
+Name: Baby Open Brains (BOBs) Repository on AWS
+Description: "Manually curated and reviewed infant brain segmentations and accompanying T1w and T2w images for a range of 1-9 month old participants from the Baby Connectome Project (BCP)"
+Documentation: https://bobsrepository.readthedocs.io/en/latest/
+Contact: Eric Feczko (feczk001@umn.edu) & Sally M. Stoyell (stoye003@umn.edu)
+ManagedBy: "Masonic Institute for the Developing Brain (MIDB) Open Data Initiative"
+UpdateFrequency: "The repository is updated when: (1) all brain segmentations have undergone further rounds of manual correction, which may include refinement of existing ROIs and/or delineation of additional FreeSurfer ROIs and/or (2) new manually refined data from different age ranges and/or source studies becomes available"
+Tags:
+  - neuroimaging
+  - magnetic resonance imaging
+  - neuroscience
+  - pediatric
+  - nifti
+  - segmentation
+  - life sciences
+License: CC-By Attribution 4.0 International
+Citation: DOI 10.17605/OSF.IO/WDR78
+Resources:
+  - Description: BOBs Repository data
+    ARN: arn:aws:s3:::bobsrepository
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://bobsrepository.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Downloading BOBs Repository Data from Amazon S3 Bucket
+      URL: https://bobsrepository.readthedocs.io/en/latest/data_access/#how-to-download
+      AuthorName: Lucille A. Moore
+      AuthorURL: https://github.com/LuciMoore
+  Tools & Applications:
+    - Title: BIBsnet
+      URL: https://zenodo.org/records/10679463
+      AuthorName: Timothy J. Hendrickson et al.
+  Publications:
+    - Title: "BIBSNet: A Deep Learning Baby Image Brain Segmentation Network for MRI Scans"
+      URL: https://www.biorxiv.org/content/10.1101/2023.03.22.533696v2
+      AuthorName: Timothy J. Hendrickson et al.
+      AuthorURL: https://orcid.org/0000-0001-6862-6526

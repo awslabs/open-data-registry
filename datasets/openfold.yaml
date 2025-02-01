@@ -1,0 +1,40 @@
+Name: OpenProteinSet
+Description: Multiple sequence alignments (MSAs) for 140,000 unique [Protein Data Bank](https://www.rcsb.org/) (PDB) chains and 16,000,000 [UniClust30](https://uniclust.mmseqs.com/) clusters. Template hits are also provided for the PDB chains and 270,000 UniClust30 clusters chosen for maximal diversity and MSA depth. MSAs were generated with HHBlits (-n3) and JackHMMER against MGnify, BFD, UniRef90, and UniClust30 while templates were identified from PDB70 with HHSearch, all according to procedures outlined in the supplement to the AlphaFold 2 Nature paper, [Jumper et al. 2021](https://www.nature.com/articles/s41586-021-03819-2). We expect the database to be broadly useful to structural biologists training or validating deep learning models for protein structure prediction and related tasks. 
+Documentation: https://docs.google.com/document/d/1R90-VJSLQEbot7tgXF3zb068Y1ZJAmsckQ_t2sJTv2c/edit?usp=sharing
+Contact: https://github.com/aqlaboratory/openfold/issues
+ManagedBy: OpenFold
+UpdateFrequency: Never
+Tags:
+  - openfold
+  - msa
+  - protein
+  - protein template
+  - protein folding
+  - alphafold
+  - open source software
+  - life sciences
+  - aws-pds
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Additionally, please cite [our manuscript](https://arxiv.org/abs/2308.05326)."
+Resources:
+  - Description: A repository of MSAs and template hits.
+    ARN: arn:aws:s3:::openfold
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "OpenProteinSet: Training data for structural biology at scale"
+      URL: "https://arxiv.org/abs/2308.05326"
+      AuthorName: Ahdritz, Gustaf; Bouatta, Nazim; Kadyan, Sachin; Jarosch, Lukas; Berenberg, Daniel; Fisk, Ian, et al
+    - Title: "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+      URL: "https://biorxiv.org/content/10.1101/2022.11.20.517210"
+      AuthorName: Ahdritz, Gustaf; Bouatta, Nazim; Kadyan, Sachin; Xia, Qinghui; Gerecke, William; O'Donnell, Timothy J, et al
+  Tutorials:
+    - Title: Run inference at scale for OpenFold, a PyTorch-based protein folding ML model, using Amazon EKS
+      URL: https://aws.amazon.com/blogs/machine-learning/run-inference-at-scale-for-openfold-a-pytorch-based-protein-folding-ml-model-using-amazon-eks/
+      AuthorName: Shubha Kumbadakone, Ankur Srivastava, and Sachin Kadyan
+      Services:
+        - EKS
+        - FSx
+   
+

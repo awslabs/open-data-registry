@@ -1,0 +1,50 @@
+Name: Clinical Trial Sequencing Project - Diffuse Large B-Cell Lymphoma
+Description: |
+  The goal of the project is to identify recurrent genetic alterations (mutations, deletions,
+  amplifications, rearrangements) and/or gene expression signatures. National Cancer Institute (NCI)
+  utilized whole genome sequencing and/or whole exome sequencing in conjunction with transcriptome
+  sequencing. The samples were processed and submitted for genomic characterization using pipelines
+  and procedures established within The Cancer Genome Analysis (TCGA) project.
+Documentation: |
+  https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001175.v2.p2
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - transcriptomics
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-ctsp-phs001175-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/CTSP-DLBCL1
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: A multiprotein supercomplex controlling oncogenic signalling in lymphoma
+      URL: https://www.ncbi.nlm.nih.gov/pubmed?cmd=DetailsSearch&term=29925955[PMID]
+      AuthorName: |
+        Phelan JD, Young RM, Webster DE, Roulland S, Wright GW, Kasbekar M, Shaffer AL 3rd,
+        Ceribelli M, Wang JQ, Schmitz R, Nakagawa M, Bachy E, Huang DW, Ji Y, Chen L, Yang Y, Zhao
+        H, Yu X, Xu W, Palisoc MM, Valadez RR, Davies-Hill T, Wilson WH, Chan WC, Jaffe ES, Gascoyne
+        RD, Campo E, Rosenwald A, Ott G, Delabie J, Rimsza LM, Rodriguez FJ, Estephan F, Holdhoff M,
+        Kruhlak MJ, Hewitt SM, Thomas CJ, Pittaluga S, Oellerich T, Staudt LM
+    - Title: Genetics and Pathogenesis of Diffuse Large B Cell Lymphoma
+      URL: https://doi.org/10.1056/NEJMoa1801445
+      AuthorName: |
+        Roland Schmitz, Ph.D., George W. Wright, Ph.D., Da Wei Huang, M.D., Calvin A.  Johnson,
+        Ph.D., James D. Phelan, Ph.D., James Q. Wang, Ph.D., Sandrine Roulland, Ph.D., Monica
+        Kasbekar, Ph.D., Ryan M. Young, Ph.D., Arthur L. Shaffer, Ph.D., Daniel J. Hodson, M.D.,
+        Ph.D., Wenming Xiao, Ph.D., et al.

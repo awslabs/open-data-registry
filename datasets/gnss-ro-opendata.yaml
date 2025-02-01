@@ -1,0 +1,46 @@
+Name: "Earth Radio Occultation"
+Description: "This is an updating archive of radio occultation (RO) data using the transmitters of the Global Navigation Satellite Systems (GNSS) as generated and processed by the COSMIC DAAC (ucar), the Jet Propulsion Laboratory (jpl) of the California Institute of Technology, and the Radio Occultation Meteorology Satellite Application Facility (romsaf). The contributions for ucar and romsaf are currently active. <p> This dataset is funded by the NASA Earth Science Data Systems and the Advancing Collaborative Connections for Earth System Science (ACCESS) 2019 program."
+Documentation: "http://github.com/gnss-ro/aws-opendata"
+Contact: "Stephen Leroy (sleroy@aer.com)"
+ManagedBy: "Verisk Atmospheric and Environmental Research, Inc."
+UpdateFrequency: "The dataset is updated monthly for UCAR and ROM SAF contributions only. The update frequency for the JPL contribution is to be determined."
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - earth observation
+  - global
+  - signal processing
+  - weather
+License: "A Creative Commons open-use licence (https://www.ucar.edu/terms-of-use/data) applies to the data contributed by UCAR; the EUMETSAT Data Policy (https://www.eumetsat.int/eumetsat-data-licensing) applies to the data contributed by the ROM SAF; and a creative commons license (https://creativecommmons.org/licenses/by/4.0/legalcode) applied to the data contributed by the NASA JPL of the California Institute of Technology. The source of the data is designated in the attribute 'processing_center' and the license in the attribute 'data_use_license'."
+Resources:
+  - Description: "Three types of data exist in a directory hierarchy that includes the contributing processing center, the radio occultation mission, the file type, and the date: (1) Calibrated excess phase (calibratedPhase), a type of level 1b data product; (2) retrievals of bending angle, refractivity, dry temperature and dry pressure (refractivityRetrieval) as functions of geopotential height, a type of level 2a data product; and (3) atmospheric retrievals of pressure, temperature, and water vapor as functions of geopotential height (atmosphericRetrieval), a type of level 2b data product. In addition, a suite of JSON files containing the records that constitute of database of the contents of the archive. RO data can be queried, subsetted and downloaded using the Python API [awsgnssroutils](https://pypi.org/project/awsgnssroutils/)."
+    ARN: "arn:aws:s3:::gnss-ro-data"
+    Region: "us-east-1"
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://gnss-ro-data.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: "Tutorial Demonstrations for Working with GNSS Radio Occultation Data in AWS Open Data Registry archive"
+      URL: "http://github.com/gnss-ro/aws-opendata/tree/master/tutorials/"
+      AuthorName: "Stephen Leroy, Amy McVey, Hailing Zhang, Chi Ao"
+      AuthorURL:
+      Services:
+        - S3
+        - EC2
+        - Batch
+  Tools & Applications:
+    - Title: "Utilities for Handling Data in the AWS Open Data Registry archive of GNSS Radio Occultation Data"
+      URL: "http://github.com/gnss-ro/aws-opendata/tree/master/awsgnssroutils/"
+      AuthorName: "Stephen Leroy, Amy McVey"
+      AuthorURL: "http://www.aer.com"
+  Publications:
+    - Title: "Observing Earth's atmosphere with radio occultation measurements using the Global Positioning System"
+      URL: "doi.org/10.1029/97JD01569"
+      AuthorName: "Kursinski, E.R. et al."
+      AuthorURL:
+    - Title: "A technical description of atmospheric sounding by GPS occultation"
+      URL: "http://doi.org/10.1016/S1364-6826(01)00114-6"
+      AuthorName: "Hajj, G.A. et al."
+      AuthorURL:

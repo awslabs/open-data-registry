@@ -1,0 +1,33 @@
+Name: Voices Obscured in Complex Environmental Settings (VOiCES)
+Description: |
+  VOiCES is a speech corpus recorded in acoustically challenging settings,
+  using distant microphone recording. Speech was recorded in real rooms with various
+  acoustic features (reverb, echo, HVAC systems, outside noise, etc.). Adversarial noise,
+  either television, music, or babble, was concurrently played with clean speech.
+  Data was recorded using multiple microphones strategically placed
+  throughout the room. The corpus includes audio recordings, orthographic transcriptions,
+  and speaker labels.
+Documentation: https://voices18.github.io/
+Contact: https://github.com/voices18/utilities/issues
+UpdateFrequency: Data from two additional rooms will be added to the corpus Fall 2018.
+ManagedBy: "[In-Q-Tel](https://www.iqt.org/)"
+Tags:
+  - aws-pds
+  - machine learning
+  - automatic speech recognition
+  - speaker identification
+  - denoising
+  - speech processing
+License: Creative Commons BY 4.0 (see [here](htpps://voices.lab41.org) for more details)
+Resources:
+  - Description: wav audio files, orthographic transcriptions, and speaker ID
+    ARN: arn:aws:s3:::lab41openaudiocorpus
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Getting started with VOiCES data
+      URL: https://github.com/voices18/utilities/blob/master/Using%20VOiCES%20corpus%20tutorial.ipynb
+      AuthorName: M.A. Barrios
+  Tools & Applications:
+  Publications:

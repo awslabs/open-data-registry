@@ -1,0 +1,22 @@
+Name: OpenSurfaces
+Description: A large database of annotated surfaces created from real-world consumer photographs.
+Documentation: http://opensurfaces.cs.cornell.edu/publications/opensurfaces/
+Contact: snavely@cs.cornell.edu
+ManagedBy: Cornell University
+UpdateFrequency: Static dataset (not updated)
+Tags:
+  - computer vision
+  - aws-pds  
+License: The annotations are licensed under a Creative Commons Attribution 4.0 International License. The photos have their own licenses.
+Resources:
+  - Description: OpenSurfaces data
+    ARN: arn:aws:s3:::labelmaterial
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse data on project webpage](http://opensurfaces.cs.cornell.edu/)'
+DataAtWork:
+  Publications:
+    - Title: 'OpenSurfaces: A Richly Annotated Catalog of Surface Appearance'
+      URL: http://opensurfaces.cs.cornell.edu/publications/opensurfaces/
+      AuthorName: Sean Bell, Paul Upchurch, Noah Snavely, Kavita Bala

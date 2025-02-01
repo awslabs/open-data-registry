@@ -1,0 +1,132 @@
+Name: NASA Prediction of Worldwide Energy Resources (POWER)
+Description: |
+  NASA's goal in Earth science is to observe, understand, and model the Earth system to discover how it is changing, to better predict change, and to understand the consequences for life on Earth. The Applied Sciences Program, within the Earth Science Division of the NASA Science Mission Directorate, serves individuals and organizations around the globe by expanding and accelerating societal and economic benefits derived from Earth science, information, and technology research and development.<br/><br/>
+  The [Prediction Of Worldwide Energy Resources (POWER)](https://power.larc.nasa.gov/) Project, funded through the Applied Sciences Program at NASA Langley Research Center, gathers NASA Earth observation data and parameters related to the fields of surface solar irradiance and meteorology to serve the public in several free, easy-to-access and easy-to-use methods. POWER helps communities become resilient amid observed climate variability by improving data accessibility, aiding research in energy development, building energy efficiency, and supporting agriculture projects.<br/><br/>
+  The POWER project contains over 380 satellite-derived meteorology and solar energy Analysis Ready Data (ARD) at four temporal levels: hourly, daily, monthly, and climatology. The POWER data archive provides data at the native resolution of the source products. The data is updated nightly to maintain near real time availability (2-3 days for meteorological parameters and 5-7 days for solar). The POWER services catalog consists of a series of RESTful Application Programming Interfaces, geospatial enabled image services, and web mapping Data Access Viewer. These three service offerings support data discovery, access, and distribution to the project’s user base as ARD and as direct application inputs to decision support tools.<br/><br/>
+  The latest data version update includes hourly-based source ARD, in addition to enhanced daily, monthly, annual, and climatology data. The daily time series for meteorology is available from 1981, while solar-based parameters start in 1984. The hourly source data are from Clouds and the Earth's Radiant Energy System (CERES) and Global Modeling and Assimilation Office (GMAO), spanning from 1984 for meteorology and from 2001 for solar-based parameters. The hourly data equips users with the ARD needed to model building system energy performance, providing information directly amenable to decision support tools introducing the industry standard EnergyPlus Weather file format.<br/><br/>
+Documentation: https://power.larc.nasa.gov/docs/
+Contact: larc-power-project@mail.nasa.gov
+ManagedBy: NASA
+UpdateFrequency: | 
+  Near Real Time (NRT); as soon as source data becomes available from our source data providers. <br/><br/>
+  - Meteorological: ~2-3 days <br/>
+  - Solar ~5-7 days <br/><br/>
+  For more information see the [NASA POWER Availability Dashboards](https://power.larc.nasa.gov/dashboard/availability/)
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - agriculture
+  - air quality
+  - analytics
+  - archives
+  - atmosphere
+  - climate
+  - climate model
+  - data assimilation
+  - deep learning
+  - earth observation
+  - energy
+  - environmental
+  - forecast
+  - geoscience
+  - geospatial
+  - global
+  - netcdf
+  - history
+  - imaging
+  - industry
+  - machine learning
+  - machine translation
+  - metadata
+  - meteorological
+  - model
+  - opendap
+  - radiation
+  - satellite imagery
+  - solar
+  - statistics
+  - sustainability
+  - time series forecasting
+  - water
+  - weather
+  - zarr
+  - aws-pds
+License: There are no restrictions on the use, access, and/or download of data from the NASA POWER Project. We request that you cite the NASA POWER Project when using the data provided from NASA POWER Project. <br/><br/> [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: POWER's Zarr Analysis Ready Data (ARD) Datasets
+    ARN: arn:aws:s3:::nasa-power
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+    - "[Browse Bucket](https://nasa-power.s3.us-west-2.amazonaws.com/index.html)"
+  - Description: POWER's NetCDF Datastore
+    ARN: arn:aws:s3:::power-datastore
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+    - "[Browse Bucket](https://power-datastore.s3.us-west-2.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: Accessing and Subsetting POWER data, from AWS S3 using Python.
+      URL: https://power.larc.nasa.gov/docs/tutorials/service-data-request/aws/
+      AuthorName: The POWER Project
+    - Title: About the Prediction Of Worldwide Energy Resources (POWER) Project ArcGIS StoryMap.
+      URL: https://arcg.is/1PG5jH
+      AuthorName: The POWER Project
+  Tools & Applications:
+    - Title: POWER Data Access Viewer (DAV)
+      URL: https://power.larc.nasa.gov/data-access-viewer/
+      AuthorName: The POWER Project
+      AuthorURL: https://power.larc.nasa.gov/
+    - Title: POWER Application Programming Interface (API)
+      URL: https://power.larc.nasa.gov/api/pages/
+      AuthorName: The POWER Project
+      AuthorURL: https://power.larc.nasa.gov/
+    - Title: NASA POWER NetCDF Data Download
+      URL: https://power.larc.nasa.gov/data/
+      AuthorName: The POWER Project
+      AuthorURL: https://power.larc.nasa.gov/
+  Publications:
+    - Title: Variations in seasonal solar insolation are associated with a history of suicide attempts in bipolar I disorder
+      URL: https://doi.org/10.1186/s40345-021-00231-7
+      AuthorName: Bauer, M., and Coauthors
+    - Title: "A solar azimuth formula that renders circumstantial treatment unnecessary without compromising mathematical rigor: Mathematical setup, application and extension of a formula based on the subsolar point and atan2 function"
+      URL: https://doi.org/10.1016/j.renene.2021.03.047
+      AuthorName: Zhang, T., P. W. Stackhouse, B. Macpherson, and J. C. Mikovitz
+    - Title: Association between solar insolation and a history of suicide attempts in bipolar I disorder
+      URL: https://doi.org/10.1016/j.jpsychires.2019.03.001
+      AuthorName: Bauer M, et al., Stackhouse PW Jr., et al.
+    - Title: The Contribution of Solar Brightening to the US Maize Yield Trend
+      URL: https://doi.org/10.1038/nclimate3234
+      AuthorName: Tollenaar, T., J. Fridgen, P. Tyagi, P. W. Stackhouse Jr., and S. Kumudini
+    - Title: "Application of a global-to-beam irradiance model to the NASA GEWEX SRB dataset: An extension of the NASA Surface meteorology and Solar Energy datasets"
+      URL: https://doi.org/10.1016/j.solener.2014.09.006
+      AuthorName: Zhang, T., P. W. Stackhouse, W. S. Chandler, and D. J. Westberg
+    - Title: "Enhancing Climate Resilience at NASA Centers: A Collaboration between Science and Stewardship"
+      URL: https://doi.org/10.1175/BAMS-D-12-00169.1
+      AuthorName: Rosenzweig, C., and Coauthors
+    - Title: CEOS contributions to informing energy management and policy decision making using space-based Earth observations
+      URL: https://doi.org/10.1016/j.apenergy.2011.03.001
+      AuthorName: Eckman, R. S., and P. W. Stackhouse
+    - Title: Evaluation of Satellite-Based, Modeled-Derived Daily Solar Radiation Data for the Continental United States
+      URL: https://doi.org/10.2134/agronj2011.0038
+      AuthorName: White, J. W., G. Hoogenboom, P. W. Wilkens, P. W. Stackhouse, and J. M. Hoel
+    - Title: Modeling the potential for thermal concentrating solar power technologies
+      URL: https://doi.org/10.1016/j.enpol.2010.09.008
+      AuthorName: Zhang, Y., S. J. Smith, G. P. Kyle, and P. W. Stackhouse
+    - Title: Evaluation of NASA satellite- and assimilation model-derived long-term daily temperature data over the continental US
+      URL: https://doi.org/10.1016/j.agrformet.2008.05.017
+      AuthorName: White, J. W., G. Hoogenboom, P. W. Stackhouse, and J. M. Hoell
+    - Title: Application of Satellite Sensor Data and Models for Energy Management
+      URL: https://doi.org/10.1109/JSTARS.2008.2001142
+      AuthorName: Zell, E., J. Engel-Cox, R. Eckman, and P. Stackhouse
+    - Title: NASA Climatological Data for Renewable Energy Assessment
+      URL: https://doi.org/10.1115/1.1748466
+      AuthorName: Chandler, W. S., C. H. Whitlock, and P. W. Stackhouse
+    - Title: Global Surface Solar Energy Anomalies Including El Nino and La Nina Years.
+      URL: https://doi.org/10.1115/1.1384570
+      AuthorName: C. H., and Coauthors

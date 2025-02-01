@@ -1,0 +1,33 @@
+Name: "Golden Retriever Lifetime Study: Whole genome genotyping of Golden Retrievers on Axiom HD Arrays"
+Description:  |
+  Morris Animal Foundation’s Golden Retriever Lifetime Study is a longitudinal, prospective study following 3044 golden retrievers. The Study’s purpose is to identify the nutritional, environmental, lifestyle and genetic risk factors for cancer and other diseases. The Golden Oldie’s study enrolled an additional cohort of golden retrievers that had reached the age of 12 years or older and had not yet been diagnosed with a malignant cancer. This population can be used as a control group for conditions with high mortality in younger age. This dataset contains the data for ~1.1 million genetic markers from 3224 unique individual dogs processed using Axiom Canine Genotyping Array Sets A and B. Of the 3244 individual samples, 3024 were from the Golden Retriever Lifetime Study cohort and 200 from the Golden Oldies cohort. 
+Documentation: https://datacommons.morrisanimalfoundation.org/artisanal_dataset/151
+Contact: datacommons@morrisanimalfoundation.org  
+ManagedBy: "[Morris Animal Foundation](https://www.morrisanimalfoundation.org/)"
+UpdateFrequency: Static
+Tags:
+  - aws-pds
+  - genome
+  - genotyping
+  - golden retriever lifetime study
+  - morris animal foundation
+  - life sciences
+License: CC-BY-SA
+Resources:
+ - Description: Two zip files containing genotyping data from Axiom Array sets A and B, as well as data from the combination of both arrays.
+   ARN: arn:aws:s3:::mafgrlsgenome
+   Region: us-west-2
+   Type: S3 Bucket
+   RequesterPays: False
+DataAtWork:
+   Tutorials:
+    - Title: GRLS GWAS Tutorial
+      URL: https://morrisanimalfoundation.github.io/grGWAS/
+      AuthorName: Tamer Mansour
+   Publications: 
+     - Title: "Cohort profile: The Golden Retriever Lifetime Study (GRLS)"
+       URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0269425
+       AuthorName: Julia Labadie, Brenna Swafford, Mara DePena, Kathy Tietje, Rodney Page, Janet Patterson-Kane
+     - Title: "The Golden Retriever Lifetime Study: establishing an observational cohort study with translational relevance for human health"
+       URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4581032/
+       AuthorName: Michael K. Guy, Rodney L. Page, Wayne A. Jensen, Patricia N. Olson, J. David Haworth, Erin E. Searfoss, and Diane E. Brown

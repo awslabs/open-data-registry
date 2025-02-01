@@ -1,0 +1,61 @@
+Name: Cancer Genome Characterization Initiatives - Burkitt Lymphoma, HIV+ Cervical Cancer
+Description: >
+  The Cancer Genome Characterization Initiatives (CGCI) program supports cutting-edge genomics
+  research of adult and pediatric cancers. CGCI investigators develop and apply advanced sequencing
+  methods that examine genomes, exomes, and transcriptomes within various types of tumors. The
+  program includes Burkitt Lymphoma Genome Sequencing Project (BLGSP) project and HIV+ Tumor
+  Molecular Characterization Project - Cervical Cancer (HTMCP-CC) project.
+  
+  The dataset contains open Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression
+  Quantification, miRNA-Seq Isoform Expression Quantification, and miRNA Expression Quantification
+  data.
+
+  This dataset also contains controlled WGS/Targeted Sequencing/RNA-Seq/miRNA-Seq Aligned Reads,
+  and RNA-Seq Splice Junction Quantification
+Documentation: https://ocg.cancer.gov/programs/cgci
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - transcriptomics
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: |                                                                                  
+      Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+      Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification 
+    ARN: arn:aws:s3:::gdc-cgci-blgsp-phs000235-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |                                                                                  
+      Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+      Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification 
+    ARN: arn:aws:s3:::gdc-cgci-phs000235-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: |                                                                                  
+      WGS/Targeted Sequencing/RNA-Seq/miRNA-Seq Aligned Reads, RNA-Seq Splice Junction
+      Quantification 
+    ARN: arn:aws:s3:::gdc-cgci-phs000235-2-controlled
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000235.v14.p2
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/CGCI-BLGSP
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: |
+        Genome-wide discovery of somatic coding and noncoding mutations in pediatric endemic and
+        sporadic Burkitt lymphoma
+      URL: https://doi.org/10.1182/blood-2018-09-871418
+      AuthorName: |
+         Grande B. M., Gerhard D. S., Jiang A., Griner N. B., Abramson J. S., Alexander T. B., et al.

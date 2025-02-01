@@ -1,0 +1,20 @@
+Name: Registry of Open Data on AWS
+Description: The Registry of Open Data on AWS contains publicly available datasets that are available for access from AWS resources. Note that datasets in this registry are available via AWS resources, but they are not provided by AWS; these datasets are owned and maintained by a variety of government organizations, researchers, businesses, and individuals. This dataset contains derived forms of the data in [https://github.com/awslabs/open-data-registry](https://github.com/awslabs/open-data-registry) that have been transformed for ease of use with machine interfaces. Currently, only the [ndjson](http://ndjson.org/) form of the registry is populated here.
+Documentation: https://github.com/awslabs/open-data-registry#how-are-datasets-added-to-the-registry
+Contact: opendata@amazon.com
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: Automatically when new datasets are added
+Tags:  
+  - amazon.science
+  - json
+  - metadata
+License: "[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+Resources: 
+  - Description: Registry of Open Data on AWS
+    ARN: arn:aws:s3:::registry.opendata.aws/roda/ndjson/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: SNS topic for object create events
+    ARN: arn:aws:sns:us-east-1:652627389412:roda-object_created
+    Region: us-east-1
+    Type: SNS Topic

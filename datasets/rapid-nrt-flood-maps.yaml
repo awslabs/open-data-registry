@@ -1,0 +1,35 @@
+Name: RAPID NRT Flood Maps
+Description: Near Real-time and archival data of High-resolution (10 m) flood inundation dataset over the Contiguous United States, developed based on the Sentinel-1 SAR imagery (2016-current) archive, using an automated Radar Produced Inundation Diary (RAPID) algorithm.
+Documentation: https://github.com/QingYang6/RAPID-NRT-flood-maps-on-AWS/blob/master/README.md
+Contact: xinyi.shen@uconn.edu; qing.yang6@hotmail.com
+ManagedBy: University of Connecticut; Guangxi University
+UpdateFrequency: NRT data will be update as soon as SAR images available and done processed.
+Collabs:
+  ASDI:
+    Tags:
+      - water
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - water
+  - environmental
+  - disaster response
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Resources:
+  - Description: RAPID archive flood maps
+    ARN: arn:aws:s3:::rapid-nrt-flood-maps
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://rapid-nrt-flood-maps.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: Near Real-Time Nonobstructed Flood Inundation Mapping by Synthetic Aperture Radar
+      URL: https://doi.org/10.1016/j.rse.2018.11.008
+      AuthorName: Xinyi Shen, Emmanouil N. Anagnostou, George H. Allen, G. Robert Brakenridge, Albert J. Kettner
+    - Title: "Inundation Extent Mapping by Synthetic Aperture Radar: A Review"
+      URL: https://doi.org/10.3390/rs11070879
+      AuthorName: Xinyi Shen, Dacheng Wang, Kebiao Mao, Emmanouil Anagnostou, and Yang Hong

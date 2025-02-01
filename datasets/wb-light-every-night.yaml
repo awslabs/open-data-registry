@@ -1,0 +1,60 @@
+Name: World Bank - Light Every Night
+Description: Light Every Night - World Bank Nighttime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is published and openly available under the terms of the World Bank’s open data license.
+Documentation: https://worldbank.github.io/OpenNightLights/wb-light-every-night-readme.html
+Contact: Trevor Monroe tmonroe@worldbank.org; Benjamin P. Stewart bstewart@worldbankgroup.org; Brian Min brianmin@umich.edu; Kim Baugh kim.baugh@noaa.gov
+ManagedBy: "[World Bank Group](https://www.worldbank.org/en/home)"
+UpdateFrequency: Quarterly
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - disaster response
+  - earth observation
+  - satellite imagery
+  - aws-pds
+  - stac
+  - cog
+License: "[World Bank Open Database License (ODbL)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: Light Every Night dataset of all VIIRS DNB and DMSP-OLS nighttime satellite data
+    ARN: arn:aws:s3:::globalnightlight
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[STAC 1.0.0-beta.2 endpoint](https://stacindex.org/catalogs/world-bank-light-every-night#/)'
+DataAtWork:
+  Tutorials:
+    - Title: Open Nighttime Lights
+      URL: https://worldbank.github.io/OpenNightLights/welcome.html
+      AuthorName: Daynan Crull, Trevor Monroe
+      AuthorURL: https://worldbank.github.io/OpenNightLights/welcome.html
+  Tools & Applications:
+    - Title: Global Scale Nightlight Time Series Dataset
+      URL: https://nightlight.eoatlas.org
+      AuthorName: Alameen Najjar
+      AuthorURL: https://github.com/eoameen
+    - Title: High Resolution Electricity Access Indicators (HREA) - Settlement-level measures of electricity access, reliability, and usage.
+      URL: http://www-personal.umich.edu/~brianmin/HREA/
+      AuthorName: Brian Min, Zachary O'Keeffe
+      AuthorURL: http://www-personal.umich.edu/~brianmin/
+    - Title: Twenty Years of India Lights
+      URL: http://nightlights.io
+      AuthorName: Kwawu Mensan Gaba, Brian Min, Anand Thakker, Christopher Elvidge
+      AuthorURL: http://nightlights.io
+  Publications:
+    - Title: Nighttime lights compositing using the VIIRS day-night band - Preliminary results. Proceedings of the Asia-Pacific Advanced Network 35 (2013)70-86.
+      URL: https://journals.sfu.ca/apan/index.php/apan/article/view/8/0
+      AuthorName: Kimberly Baugh, Feng-Chi Hsu, Christopher D. Elvidge, and Mikhail Zhizhin.
+    - Title: Mainstreaming Disruptive Technologies in Energy. World Bank Report. 2019
+      URL: http://documents.worldbank.org/curated/en/305771562750007469/Mainstreaming-Disruptive-Technologies-in-Energy
+      AuthorName: Kwawu Mensan Gaba, Brian Min, Olaf Veerman, Kimberly Baugh
+    - Title: Mapping city lights with nighttime data from the DMSP Operational Linescan System. Photogrammetric Engineering and Remote Sensing, 63(6)727-734.
+      URL: https://www.asprs.org/wp-content/uploads/pers/97journal/june/1997_jun_727-734.pdf
+      AuthorName: Elvidge, C.D., Baugh, K.E., Kihn, E.A., Kroehl, H.W. and Davis, E.R.
+    - Title: Power and the Vote - Elections and Electricity in the Developing World. Cambridge. 2015.
+      URL: https://www.cambridge.org/core/books/power-and-the-vote/8091820171410B4FA557B6EBC3A5DD06
+      AuthorName: Brian Min
+    - Title: "Detection of Rural Electrification in Africa using DMSP-OLS Night Lights Imagery. International Journal of Remote Sensing"
+      URL: https://openknowledge.worldbank.org/handle/10986/16192
+      AuthorName: Brian Min, Kwawu Mensan Gaba, Ousmane Fall Sarr, Alassane Agalassou.

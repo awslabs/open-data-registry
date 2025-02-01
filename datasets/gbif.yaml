@@ -1,0 +1,77 @@
+Name: Global Biodiversity Information Facility (GBIF) Species Occurrences
+Description: The Global Biodiversity Information Facility (GBIF) is an international network and data infrastructure funded by the world's governments providing global data that document the occurrence of species. GBIF currently integrates datasets documenting over 1.6 billion species occurrences, growing daily. The GBIF occurrence dataset combines data from a wide array of sources including specimen-related data from natural history museums, observations from citizen science networks and environment recording schemes. While these data are constantly changing at GBIF.org, periodic snapshots are taken and made available on AWS.
+Documentation: "Documentation can be found [here](https://github.com/gbif/occurrence/blob/master/aws-public-data.md). You can learn more about GBIF [here](https://www.gbif.org)."
+Contact: helpdesk@gbif.org
+ManagedBy: "The Global Biodiversity Information Facility ([GBIF](https://www.gbif.org))"
+UpdateFrequency: Snapshots of GBIF are taken on a monthly basis
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
+Tags:
+  - aws-pds
+  - earth observation
+  - biodiversity
+  - bioinformatics
+  - conservation
+  - life sciences
+License: "[CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/) under the GBIF [terms of use](https://www.gbif.org/terms)."
+Citation: "In addition, include the relevant DOI found from [the table](https://www.gbif.org/occurrence-snapshots). For more information on how to cite GBIF datasets, please refer to the GBIF [citation guidelines](https://www.gbif.org/citation-guidelines)."
+Resources:
+  - Description: GBIF species occurrence data in Parquet format (af-south-1 region).
+    Explore:
+    - '[Browse bucket](https://gbif-open-data-af-south-1.s3.af-south-1.amazonaws.com/index.html)'
+    ARN: arn:aws:s3:::gbif-open-data-af-south-1
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: GBIF species occurrence data in Parquet format (ap-southeast-2 region).
+    Explore:
+    - '[Browse bucket](https://gbif-open-data-ap-southeast-2.s3.ap-southeast-2.amazonaws.com/index.html)'
+    ARN: arn:aws:s3:::gbif-open-data-ap-southeast-2
+    Region: ap-southeast-2
+    Type: S3 Bucket
+  - Description: GBIF species occurrence data in Parquet format (eu-central-1 region).
+    Explore:
+    - '[Browse bucket](https://gbif-open-data-eu-central-1.s3.eu-central-1.amazonaws.com/index.html)'
+    ARN: arn:aws:s3:::gbif-open-data-eu-central-1
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: GBIF species occurrence data in Parquet format (sa-east-1 region).
+    Explore:
+    - '[Browse bucket](https://gbif-open-data-sa-east-1.s3.sa-east-1.amazonaws.com/index.html)'
+    ARN: arn:aws:s3:::gbif-open-data-sa-east-1
+    Region: sa-east-1
+    Type: S3 Bucket
+  - Description: GBIF species occurrence data in Parquet format (us-east-1 region).
+    Explore:
+    - '[Browse bucket](https://gbif-open-data-us-east-1.s3.us-east-1.amazonaws.com/index.html)'
+    ARN: arn:aws:s3:::gbif-open-data-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: GBIF species occurrence data in Parquet format (af-south-1 region).
+    ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-af-south-1-object_created
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: GBIF species occurrence data in Parquet format (ap-southeast-2 region).
+    ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-ap-southeast-2-object_created
+    Region: ap-southeast-2
+    Type: SNS Topic
+  - Description: GBIF species occurrence data in Parquet format (eu-central-1 region).
+    ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-eu-central-1-object_created
+    Region: eu-central-1
+    Type: SNS Topic
+  - Description: GBIF species occurrence data in Parquet format (sa-east-1 region).
+    ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-sa-east-1-object_created
+    Region: sa-east-1
+    Type: SNS Topic
+  - Description: GBIF species occurrence data in Parquet format (us-east-1 region).
+    ARN: arn:aws:sns:af-south-1:288719126026:gbif-open-data-us-east-1-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: GBIF and Apache-Spark on AWS tutorial
+      URL: https://data-blog.gbif.org/post/aws-and-gbif/
+      AuthorName: John Waller
+      Services:
+        - EMR

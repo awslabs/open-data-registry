@@ -1,0 +1,54 @@
+Name: Normalized Difference Urban Index (NDUI)
+Description: NDUI is combined with cloud shadow-free Landsat Normalized
+             Difference Vegetation Index (NDVI) composite and DMSP/OLS Night Time Light (NTL)
+             to characterize global urban areas at a 30 m resolution,and it can greatly enhance urban areas,
+             which can then be easily distinguished from bare lands including fallows and deserts.
+             With the capability to delineate urban boundaries and, at the same time,
+             to present sufficient spatial details within urban areas, the  NDUI has the potential
+             for urbanization studies at regional and global scales.
+Documentation: https://github.com/yifwahaha/NDUI_work_flow/blob/master/User's%20Guide%20-%2020200314_new.pdf
+Contact: zhangqling@mail.sysu.edu.cn
+ManagedBy: Remote Sensing Big Data Intelligent Application Laboratory, School of Aeronautics and Astronautics, Sun Yat-sen University
+UpdateFrequency: Next year's NDUI is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - earth observation
+  - geospatial
+  - urban
+  - satellite imagery
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: NDUI-2000 on a global land scale
+    ARN: arn:aws:s3:::qinglinglab-ndui-2000
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: An example of using ndui data with AWS sagemaker tools
+      URL: https://github.com/yifwahaha/aws-ndui
+      Services: 
+        - EC2
+      AuthorName: Yifang Wang
+      AuthorURL: https://github.com/yifwahaha
+    - Title: Automated extraction of urban built-up areas with NDUI using Python and Google Earth Engine
+      URL: https://github.com/yifwahaha/NDUI_work_flow
+      Services: 
+        - EC2
+      AuthorName: Yifang Wang
+      AuthorURL: https://github.com/yifwahaha
+  Tools & Applications:
+    - Title: Global DMSP images Correction
+      URL: https://code.earthengine.google.com/e0488afe77caa345c3217b0ff339ccca
+      AuthorName: Yifang Wang
+      AuthorURL: https://github.com/yifwahaha
+  Publications:
+    - Title: Building a Better Urban Picture:Combining Day and Night Remote Sensing Imagery
+      URL: https://www.mdpi.com/2072-4292/7/9/11887
+      AuthorName: Qingling Zhang and Bin Li and David Thau & Rebecca Moore
+    - Title: A Robust Method to Generate a Consistent Time Series From DMSP/OLS Nighttime Light Data
+      URL: https://doi.org/10.1109/TGRS.2016.2572724
+      AuthorName: Qingling Zhang and Bhartendu Pandey and Keren C.Seto

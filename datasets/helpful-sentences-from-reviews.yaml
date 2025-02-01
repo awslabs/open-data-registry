@@ -1,0 +1,26 @@
+Name: Helpful Sentences from Reviews
+Description: A collection of sentences extracted from customer reviews labeled with their helpfulness score.
+Documentation: https://helpful-sentences-from-reviews.s3.amazonaws.com/README.md
+Contact: gkutiel@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science
+  - information retrieval
+  - natural language processing
+  - text analysis
+  - json
+License: This data is available for anyone to use under the terms of the CDLA-Sharing license, which is available [here](https://cdla.dev/sharing-1-0/)
+Resources:
+  - Description: Helpful Sentences from Reviews
+    ARN: arn:aws:s3:::helpful-sentences-from-reviews
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[train.json](https://helpful-sentences-from-reviews.s3.amazonaws.com/train.json)'
+      - '[test.json](https://helpful-sentences-from-reviews.s3.amazonaws.com/test.json)'
+DataAtWork:
+  Publications:
+    -  Title: "Identifying Helpful Sentences in Product Reviews"
+       URL: https://arxiv.org/abs/2104.09792
+       AuthorName: Iftah Gamzu et al (2021)

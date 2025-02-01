@@ -1,0 +1,16 @@
+Name: 'AI2 TabMCQ: Multiple Choice Questions aligned with the Aristo Tablestore'
+Description: 9092 crowd-sourced science questions and 68 tables of curated facts
+Documentation: https://allenai.org/data/tablestore-questions
+Contact: info@allenai.org
+ManagedBy: '[Allen Institute for AI](https://allenai.org)'
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - machine learning
+  - natural language processing
+License: '[CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)'
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::ai2-public-datasets/tablestore-questions/
+    Region: us-west-2
+    Type: S3 Bucket

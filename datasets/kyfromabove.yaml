@@ -1,0 +1,110 @@
+Name: KyFromAbove on AWS
+Description: The KyFromAbove initiative is focused on building and maintaining a current basemap for Kentucky that can meet the needs of its users at the state, federal, local, and regional level. A common basemap, including current color leaf-off aerial photography and elevation data (LiDAR), reduces the cost of developing GIS applications, promotes data sharing, and add efficiencies to many business processes. All basemap data acquired through this effort is being made available in the public domain. KyFromAbove acquires aerial imagery and LiDAR during leaf-off conditions in the Commonwealth. The imagery typically ranges from 6-inches to 3-inches in resolution and is available from the kyfromabove Amazon S3 bucket in a Cloud Optimized GeoTiff format. LiDAR data acquired by the program is USGS Quality Level 2 (QL2). Digital Elevation Models (DEMs) at a 2-foot resolution, point cloud data in an LAS format, spot elevations in a geopackage format, and contours in a geopackage format are also available from the kyfromabove Amazon S3 bucket. KyFromAbove LiDAR and imagery data resources are managed in a Kentucky-specific 5000x5000 foot grid (FIPS:1600) (EPSG:3089). More details about the program can be found at (https://kyfromabove.ky.gov/)
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/kyfromabove
+Contact: More information regarding the KyFromAbove program can be found at https://kyfromabove.ky.gov. If you have specific questions please contact - kyfromabove@ky.gov.
+ManagedBy: "[Kentucky Division of Geographic Information](https://kygeonet.ky.gov)"
+UpdateFrequency: KyFromAbove data is typically updated on an annual basis. Each year, a portion of the state is acquired with an overall update cycle of every three to four years. This update cadance is determined by both funding and the length of leaf-off conditions in a given year. This catalog currently includes imagery and LiDAR data from 2010 through 2024 for most products.
+Tags:
+  - aws-pds
+  - earth observation
+  - aerial imagery
+  - geospatial
+  - lidar
+  - elevation
+License: |
+  Public Domain with Attribution
+Resources:
+  - Description: Elevation and imagery data resources for the Commonwealth of Kentucky are organized in this bucket. Elevation data is available in Cloud Optimized GeoTIFF (COG) and Geopackage formats depending on the data type. Imagery data is also available in Cloud Optimized GeoTIFF (COG)format. A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned.
+    ARN: arn:aws:s3:::kyfromabove
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html)'
+  - Description: KyFromAbove Topographic Contours, digital elevation models, point cloud, spot elevations and the KyTopo Map Series quadrangles can be found in this bucket.
+    ARN: arn:aws:s3:::kyfromabove/elevation/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/)'
+  - Description: Topographic contours created from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage and Esri file geodatabase format. There are four data resources in this folder - 1) KyTopo contours at a 10-foot interval primarily for Western and Central Kentucky, 2) KyTopo contours at a 20-foot interval primarily for Central and Eastern Kentucky, 3) KyTopo contours at a 40-foot interval for Eastern Kentucky, and 4) KyTopo contours at a 5-foot interval for the entire Commonwealth.
+    ARN: arn:aws:s3:::kyfromabove/elevation/Contours/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/Contours/)'
+  - Description: LiDAR-derived digital elevation models (DEM) for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. There are currently three data resources in this folder - 1) Phase 1 LiDAR-derived DEMs at a 5 foot resolution, 2) Phase 2 LiDAR-derived DEMs at a 2 foot resolution, and 3) Phase 3 LiDAR-derived DEMs at a 2 foot resolution. All data has been converted to a Cloud Optimized GeoTIFF (COG) format. Phase 2 is now complete however Phase 3 efforts are still underway.
+    ARN: arn:aws:s3:::kyfromabove/elevation/DEM/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/DEM/)'    
+  - Description: There are three data resources in this folder - 1) KyTopo Map Series quadrangles in a Cloud Optimized GeoTIFF (COG) format, 2) KyTopo Map Series quadrangles with all collar information in a non-georeferenced PNG format for printing on a standard ARCH-D sized sheet, and 3) the KyTopo Map Series quadrangles tile grid in a geopackage format. The COGs were created using GDAL with JPEG compression at a 90% quality setting and the default 512x512 tile setting.
+    ARN: arn:aws:s3:::kyfromabove/elevation/KyTopoMapSeries/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/KyTopoMapSeries/)'
+  - Description: LiDAR-derived Point Cloud tiles for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. There is currently one data resource in this folder -  1) Phase 1 LiDAR-derived point clouds in LAZ format. Phase 2 is now complete however Phase 3 efforts are still underway It is our aim to provide Phase 2 and Phase 3 data in a COPC (LAZ format).
+    ARN: arn:aws:s3:::kyfromabove/elevation/PointCloud/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/PointCloud/)'
+  - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
+    ARN: arn:aws:s3:::kyfromabove/elevation/SpotElevations/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/SpotElevations/)'
+  - Description: KyFromAbove aerial imagery, both nadir and oblique views, can be found in this bucket. Phase 1 and 2 data is currently available. Phase 3 oblique imagery is available and ortho imagery will be available in early 2025.
+    ARN: arn:aws:s3:::kyfromabove/imagery/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/)'
+  - Description: KyFromAbove ortho imagery for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. Each image tile has been converted to a Cloud Optimized GeoTiff format. Phase 1 and 2 data is organized by acquisition year and is currently available for use. Phase 3 is organized by year and season,  as imagery is being acquired during the fall and spring leaf-off seasons as sun angle permits. Phase 3 ortho imagery will be available in early 2025.
+    ARN: arn:aws:s3:::kyfromabove/imagery/orthos/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False    
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/orthos/)'
+  - Description: KyFromAbove oblique imagery can be found in this folder. The four oblique views associated with each ortho image are provided in a 3-band (RGB) Cloud Optimized GeoTiff format using the default 512x512 tile setting. There are no oblique images available for Phase 1 and 2. Phase 3 data is available for the entire state. It is organized by year and season (where Season1 = Spring and Season2 = Fall) as imagery is being acquired during the fall and spring leaf-off seasons as sun angle and weather conditions permit.
+    ARN: arn:aws:s3:::kyfromabove/imagery/obliques/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/obliques/)'
+DataAtWork:
+  Tutorials:
+    - Title: KyFromAbove County Bulk Download
+      URL: https://github.com/ianhorn/kyfromabove-on-aws-examples/blob/main/examples/bulk_download_county.ipynb
+      NotebookURL: https://github.com/ianhorn/kyfromabove-on-aws-examples/blob/main/examples/bulk_download_county.ipynb
+      AuthorName: Ian Horn
+      Services:
+        - S3
+    - Title: KyFromAbove Bulk Download Area of Interest from Tile Index
+      URL: https://github.com/ianhorn/kyfromabove-on-aws-examples/blob/main/examples/clip_tiles_to_boundary.ipynb
+      NotebookURL: https://github.com/ianhorn/kyfromabove-on-aws-examples/blob/main/examples/clip_tiles_to_boundary.ipynb
+      AuthorName: Ian Horn
+      Services:
+        - S3
+  Publications:
+    - Title: A New View of Kentucky's Cities
+      URL: https://www.mydigitalpublication.com/publication/?m=16892&i=816848&view=articleBrowser&article_id=4737566&ver=html5
+      AuthorName: Kent Anness
+    - Title: KyTopo! Kentucky's New Topographic Map Series
+      URL: https://www.esri.com/about/newsroom/arcuser/kytopo-kentuckys-new-topographic-map-series/
+      AuthorName: Kent Anness
+    - Title: KyFromAbove is democratizing key data in Kentucky
+      URL: https://www.geoweeknews.com/news/kyfromabove-aerial-imagery-lidar-data-topography-elevation
+      AuthorName: Matt Collins

@@ -1,0 +1,26 @@
+Name: Pre- and post-purchase product questions
+Description: |
+  This dataset provides product related questions, including their textual content and gap, in hours, between purchase and posting time. 
+  Each question is also associated with related product details, including its id and title.
+Documentation: https://pre-post-purchase-questions.s3.amazonaws.com/README.txt
+Contact: litalku@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not currently being updated
+Tags:
+  - amazon.science
+  - natural language processing
+  - machine learning
+License: "[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+Resources:
+  - Description: S3 bucket with dataset
+    ARN: arn:aws:s3:::pre-post-purchase-questions
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - "[PrePostQuestions.csv](https://pre-post-purchase-questions.s3.amazonaws.com/PrePostQuestions.csv)"
+DataAtWork:
+  Publications:
+    - URL: https://sigir.org/sigir2021/
+      AuthorName: Lital Kuchy, David Carmel, Thomas Huet & Elad Kravi
+      Title: |
+         "Did you buy it already?", Detecting Users Purchase-State From Their Product-Related Questions

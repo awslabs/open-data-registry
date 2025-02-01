@@ -1,0 +1,37 @@
+Deprecated: True
+DeprecatedNotice: Amazon is no longer hosting this Data Lakehouse Ready dataset
+Name: Genome Aggregation Database (gnomAD) - Data Lakehouse Ready
+Description: |
+  The [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/) is a resource developed by an international coalition of investigators that aggregates and harmonizes both exome and genome data from a wide range of large-scale human sequencing projects
+  Sign up for the gnomAD mailing list [here](http://broad.io/gnomad_list). This dataset was derived from summary data from gnomAD release 3.1, available on the [Registry of Open Data on AWS](https://registry.opendata.aws/broad-gnomad/) for ready enrollment into the [Data Lake as Code](https://github.com/aws-samples/data-lake-as-code/tree/blog).
+Documentation: https://github.com/aws-samples/data-lake-as-code/tree/roda#readme
+Contact: https://github.com/aws-samples/data-lake-as-code/issues
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - biology
+  - bioinformatics
+  - biotech blueprint
+  - genomic
+  - genetic
+  - life sciences
+  - parquet
+  - population genetics
+  - vcf
+  - whole genome sequencing
+License: "[MIT](https://github.com/broadinstitute/gnomad_methods/blob/master/LICENSE); [terms of use](https://gnomad.broadinstitute.org/terms)"
+Resources:
+  - Description: Parquet representations of gnomAD summary data aggregated from gnomAD release 3.1
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/gnomad
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Sample Queries on the 1000 Genomes, gnomAD and ClinVar data Lake
+      URL: https://github.com/aws-samples/aws-genomics-datalake/blob/main/1000Genomes.ipynb
+      AuthorName: Sujaya Srinivasan
+      Services:
+          - Athena
+          - Glue
+  Tools & Applications:
+  Publications:

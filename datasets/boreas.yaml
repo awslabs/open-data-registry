@@ -1,0 +1,49 @@
+Name: Boreas Autonomous Driving Dataset
+Description: This autonomous driving dataset includes data from a 128-beam Velodyne Alpha-Prime lidar, a 5MP Blackfly camera, a 360-degree Navtech radar, and post-processed Applanix POS LV GNSS data. This dataset was collect in various weather conditions (sun, rain, snow) over the course of a year. The intended purpose of this dataset is to enable benchmarking of long-term all-weather odometry and metric localization across various sensor types. In the future, we hope to also support an object detection benchmark.
+Documentation: https://github.com/utiasASRL/pyboreas/blob/master/DATA_REFERENCE.md
+Contact: boreas@robotics.utias.utoronto.ca
+ManagedBy: "[ASRL](http://asrl.utias.utoronto.ca)"
+UpdateFrequency: New driving sequences will be added as they are collected.
+Tags:
+  - autonomous vehicles
+  - robotics
+  - computer vision
+  - lidar
+  - aws-pds
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)"
+Resources:
+  - Description: Boreas dataset
+    ARN: arn:aws:s3:::boreas
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Introduction to Visualizing Sensor Types (Jupyter notebook)
+      URL: https://github.com/utiasASRL/pyboreas/blob/master/pyboreas/tutorials/intro.ipynb
+      AuthorName: Keenan Burnett
+      Services:
+        - SageMaker
+    - Title: Project Lidar onto Camera Frames (Jupyter notebook)
+      URL: https://github.com/utiasASRL/pyboreas/blob/master/pyboreas/tutorials/lidar_camera_projection.ipynb
+      AuthorName: Keenan Burnett 
+      Services:
+        - SageMaker
+  Publications:
+    - Title: Do we need to compensate for motion distortion and doppler effects in spinning radar navigation?
+      URL: https://www.dynsyslab.org/wp-content/papercite-data/pdf/burnett-ral21.pdf
+      AuthorName: K Burnett, A P Schoellig, T D Barfoot
+    - Title: Radar odometry combining probabilistic estimation and unsupervised feature learning
+      URL: https://arxiv.org/pdf/2105.14152.pdf
+      AuthorName: K Burnett, D J Yoon, A P Schoellig, T D Barfoot
+    - Title: "Boreas: A multi-season autonomous driving dataset"
+      URL: https://arxiv.org/abs/2203.10168
+      AuthorName: K Burnett, D J Yoon, Y Wu, A Z Li, H Zhang, S Lu, J Qian, W Tseng, A Lambert, K YK Leung, A P Schoellig, Timothy D Barfoot
+    - Title: Are We Ready for Radar to Replace Lidar in All-Weather Mapping and Localization?
+      URL: https://arxiv.org/abs/2203.10174
+      AuthorName: K Burnett, Y Wu, D J Yoon, A P Schoellig, T D Barfoot
+    - Title: "Picking up speed: Continuous-time Lidar-only odometry using doppler velocity measurements"
+      URL: https://arxiv.org/abs/2209.03304
+      AuthorName: Y Wu, D J Yoon, K Burnett, S Kammel, Y Chen, H Vhavle, T D Barfoot
+    - Title: "Need for Speed: Fast Correspondence-Free Lidar Odometry Using Doppler Velocity"
+      URL: https://arxiv.org/abs/2303.06511
+      AuthorName: D J Yoon, K Burnett, J Laconte, Y Chen, H Vhavle, S Kammel, J Reuther, T D Barfoot

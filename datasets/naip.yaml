@@ -1,0 +1,56 @@
+Name: NAIP on AWS
+Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 30 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeoTiff format. More details on [NAIP](https://naip-usdaonline.hub.arcgis.com/)
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/naip
+Contact: imagerycontent@esri.com
+ManagedBy: "[Esri](https://www.esri.com/en-us/home)"
+UpdateFrequency: NAIP data is provided state by state at varying time intervals. Each year, a variable number of states are updated with an overall update cycle of every two to three years for each state. This catalog currently includes NAIP imagery from 2010 through 2023 for most products.
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - aerial imagery
+  - geospatial
+  - natural resource
+  - regulatory
+  - cog
+License: |
+  Public Domain with Attribution
+Resources:
+  - Description: The data in this bucket is 4-band (RGB + NIR) in MRF format and Cloud Optimized GeoTIFF (COG) processed by Esri. The MRF format is a cloud-optimized open data format that provides fast access to data on S3. MRF can be accessed using GDAL and most applications build using GDAL, but also directly by web applications. Data is provided as 512x512 tiles, with reduced-resolution pyramids created using 2x sampling by averaging. Finally, data compression is efficient and lossless (meaning the data values here are the same as the source). A Cloud Optimized GeoTIFF (COG) is a GeoTIFF file optimized for hosting on a HTTP file server. COG has an internal organization that enables more efficient workflows on the cloud by supporting HTTP GET range requests, where just parts of a file are requested and returned. The bucket is set as a Requester Pays bucket.
+    ARN: arn:aws:s3:::naip-analytic
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: The data in this bucket is Original Imagery in Geotiff format 4-band (RGB + NIR) uncompressed no overviews and metadata in a Requester Pays bucket
+    ARN: arn:aws:s3:::naip-source
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: The data in this bucket is 3 band RGB in Geotiff format. It is converted and managed by Esri. This imagery is provided as Cloud Optimized GeoTIFFs, has been compressed using YCbCr JPEG with quality 85. It is provided as 512x512 tiles, with pyramids created using 2x sampling by averaging. The bucket is set as a Requester Pays bucket.
+    ARN: arn:aws:s3:::naip-visualization
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+DataAtWork:
+  Tutorials:
+    - Title: Urban Tree Detection
+      URL: https://github.com/jonathanventura/urban-tree-detection
+      AuthorName: Jonathan Ventura
+  Tools & Applications:
+    - Title: VoyagerSearch showing off Batch + NAIP
+      URL: https://www.voyagersearch.com/using-aws-batch-to-generate-image-thumbnails-for-voyager
+      AuthorName: Voyager
+      AuthorURL: https://www.voyagersearch.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+  Publications:
+    - Title: Individual Tree Detection in Large-Scale Urban Environments using High-Resolution Multispectral Imagery
+      URL: https://doi.org/10.48550/arXiv.2208.10607
+      AuthorName: Jonathan Ventura, Milo Honsberger, Cameron Gonsalves, Julian Rice, Camille Pawlak, Natalie L.R. Love, Skyler Han, Viet Nguyen, Keilana Sugano, Jacqueline Doremus, G. Andrew Fricker, Jenn Yost, Matt Ritter
+      

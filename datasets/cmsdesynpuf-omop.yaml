@@ -1,0 +1,52 @@
+Name: CMS 2008-2010 Data Entrepreneurs’ Synthetic Public Use File (DE-SynPUF) in OMOP Common Data Model
+Description: |
+  DE-SynPUF is provided here as a 1,000 person (1k), 100,000 person (100k), and 2,300,000 persom (2.3m) data sets in the [OMOP Common Data Model](https://www.ohdsi.org/data-standardization/) format.  The DE-SynPUF was created with the goal of providing a realistic set of claims data in the public domain while providing the very highest degree of protection to the Medicare beneficiaries’ protected health information.  The purposes of the DE-SynPUF are to: 
+  1. allow data entrepreneurs to develop and create software and applications that may eventually be applied to actual CMS claims data;
+  2. train researchers on the use and complexity of conducting analyses with CMS claims data prior to initiating the process to obtain access to actual CMS data; and,
+  3. support safe data mining innovations that may reveal unanticipated knowledge gains while preserving beneficiary privacy.
+  The files have been designed so that programs and procedures created on the DE-SynPUF will function on CMS Limited Data Sets. The data structure of the Medicare DE-SynPUF is very similar to the CMS Limited Data Sets, but with a smaller number of variables.  The DE-SynPUF also provides a robust set of metadata on the CMS claims data that have not been previously available in the public domain.  Although the DE-SynPUF has very limited inferential research value to draw conclusions about Medicare beneficiaries due to the synthetic processes used to create the file, the Medicare DE-SynPUF does increase access to a realistic Medicare claims data file in a timely and less expensive manner to spur the innovation necessary to achieve the goals of better care for beneficiaries and improve the health of the population.
+Documentation: https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: '[Amazon Web Sevices](https://aws.amazon.com/)'
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science
+  - bioinformatics
+  - health
+  - life sciences
+  - natural language processing
+  - us
+License: https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/Downloads/SynPUF_DUG.pdf
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::synpuf-omop
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Create data science environments on AWS for health analysis using OHDSI
+      URL: https://aws.amazon.com/blogs/big-data/creating-data-science-environments-on-aws-for-health-analysis-using-ohdsi/
+      AuthorName: James Wiggins
+      Services:
+        - CloudFormation
+        - EC2
+        - RDS
+    - Title: Predict patient health outcomes using OHDSI and machine learning on AWS
+      URL: https://aws.amazon.com/blogs/industries/predict-patient-health-outcomes-using-ohdsi-and-machine-learning-on-aws/
+      AuthorName: James Wiggins
+      Services:
+        - CloudFormation
+        - EC2
+        - RDS
+    - Title: Map clinical notes to the OMOP Common Data Model and healthcare ontologies using Amazon Comprehend Medical
+      URL: https://aws.amazon.com/blogs/machine-learning/map-clinical-notes-to-the-omop-common-data-model-and-healthcare-ontologies-using-amazon-comprehend-medical/
+      AuthorName: James Wiggins
+      Services:
+        - Comprehend
+        - CloudFormation
+        - EC2
+        - RDS
+  Tools & Applications:
+    - Title: OHDSIonAWS
+      URL: https://github.com/OHDSI/OHDSIonAWS
+      AuthorName: James Wiggins

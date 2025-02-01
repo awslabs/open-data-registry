@@ -1,0 +1,25 @@
+Name: The Massively Multilingual Image Dataset (MMID)
+Description: |
+  MMID is a large-scale, massively multilingual dataset of images paired with the words they represent collected at the [University of Pennsylvania](https://upenn.edu).
+  The dataset is doubly parallel: for each language, words are stored parallel to images that represent the word, _and_ parallel to the word's translation into English (and corresponding images.)
+Documentation: https://multilingual-images.org/doc.html
+Contact: mmid-users@googlegroups.com
+ManagedBy: "[Penn NLP](https://github.com/penn-nlp)"
+UpdateFrequency: Language data is added as it is ready for distribution.
+Tags:
+  - aws-pds
+  - computer vision
+  - machine learning
+  - machine translation
+  - natural language processing
+License: See citation instructions at http://multilingual-images.org
+Resources:
+  - Description: |
+        Images for words in various languages, packaged by in .tar archives by each language.
+    ARN: arn:aws:s3:::mmid-pds
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

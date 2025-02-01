@@ -1,0 +1,22 @@
+Name: Quoref
+Description: 24K Question/Answer (QA) pairs over 4.7K paragraphs, split between train (19K QAs), development
+  (2.4K QAs) and a hidden test partition (2.5K QAs).
+Documentation: https://allenai.org/data/quoref
+Contact: info@allenai.org
+ManagedBy: '[Allen Institute for AI](https://allenai.org)'
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - machine learning
+  - natural language processing
+License: '[CC BY](https://creativecommons.org/licenses/by/4.0)'
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::ai2-public-datasets
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+    Publications:
+      - Title: "Quoref: A Reading Comprehension Dataset with Questions Requiring Coreferential Reasoning"
+        URL: https://www.semanticscholar.org/paper/Quoref%3A-A-Reading-Comprehension-Dataset-with-Dasigi-Liu/3838387ea8dd1bb8c2306be5a63c1c120075c5a2
+        AuthorName: Pradeep Dasigi, Nelson F. Liu, Ana Marasović, Noah A. Smith, Matt Gardner

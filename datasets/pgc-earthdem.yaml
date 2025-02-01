@@ -1,0 +1,48 @@
+Name: EarthDEM
+Description:  EarthDEM - 2m GSD Digital Elevation Models (DEMs) and mosaics from 2002 to the present. The EarthDEM project seeks to fill the need for high-resolution time-series elevation data in non-polar regions. The time-dependent nature of the strip DEM files allows users to perform change detection analysis and to compare observations of topography data acquired in different seasons or years. The mosaic DEM tiles are assembled from multiple strip DEMs with the intention of providing a more consistent and comprehensive product over large areas. EarthDEM data is constructed from in-track and cross-track high-resolution (~0.5 meter) imagery acquired by the Maxar constellation of optical imaging satellites. Only a portion of the worldwide EarthDEM dataset is available publicly. Federally-funded researchers may access the entire dataset via NASA CSDA's Smallsat Data Explorer (see Data at Work section).
+Documentation: https://www.pgc.umn.edu/data/earthdem/
+Contact: pgc-support@umn.edu
+ManagedBy: "[Polar Geospatial Center](https://www.pgc.umn.edu/)"
+UpdateFrequency: New DEM strips are added when allowed by licensing restrictions.  Mosaic products are added as soon as they are available.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - elevation
+  - earth observation
+  - geospatial
+  - mapping
+  - open source software
+  - satellite imagery
+  - cog
+  - stac
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "See PGC's [acknowledgement policy](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/)"
+Resources:
+  - Description: EarthDEM DEM Strips
+    ARN: arn:aws:s3:::pgc-opendata-dems/earthdem/strips/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/earthdem/strips.json)'
+      - '[Dynamic STAC API Endpoint](https://stac.pgc.umn.edu/api/v1/)'
+DataAtWork:
+  Tools & Applications:
+    - Title: GLARS Data Viewer
+      URL: https://glars.org/data/view-and-download/
+      AuthorName: Great Lakes Alliance for Remote Sensing
+    - Title: NASA CSDA SmallSat Data Explorer
+      URL: https://csdap.earthdata.nasa.gov/
+      AuthorName: NASA Commercial Smallsat Acquisition Program
+  Publications:
+    - Title: "Multi-Source EO for Dynamic Wetland Mapping and Monitoring in the Great Lakes Basin"
+      URL: https://doi.org/10.3390/rs13040599
+      AuthorName: Michael J. Battaglia, Sarah Banks, Amir Behnamian, Laura Bourgeau-Chavez, Brian Brisco, Jennifer Corcoran, Zhaohua Chen, Brian Huberty, James Klassen, Joseph Knight, Paul Morin, Kevin Murnaghan, Keith Pelletier, Lori White
+    - Title: "The surface extraction from TIN based search-space minimization (SETSM) algorithm"
+      URL: https://doi.org/10.1016/j.isprsjprs.2017.04.019
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Automated stereo-photogrammetric DEM generation at high latitudes: Surface Extraction with TIN-based Search-space Minimization (SETSM) validation and demonstration over glaciated regions"
+      URL: https://doi.org/10.1080/15481603.2015.1008621
+      AuthorName: Myoung-Jong Noh, Ian M. Howat

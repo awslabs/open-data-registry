@@ -1,0 +1,98 @@
+Name: Terrain Tiles
+Description: A global dataset providing bare-earth terrain heights, tiled for easy usage and provided on S3.
+Documentation: https://github.com/tilezen/joerd/tree/master/docs
+Contact: https://github.com/tilezen/joerd/issues
+UpdateFrequency: New data is added based on community feedback
+ManagedBy: "Mapzen, a Linux Foundation project"
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
+Tags:
+  - aws-pds
+  - agriculture
+  - elevation
+  - earth observation
+  - geospatial
+  - disaster response
+License: https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+Resources:
+  - Description: Gridded elevation tiles
+    ARN: arn:aws:s3:::elevation-tiles-prod
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Map](https://elevation-tiles-prod.s3.amazonaws.com/index.html)'
+  - Description: Gridded elevation tiles - replication in EU region
+    ARN: arn:aws:s3:::elevation-tiles-prod-eu
+    Region: eu-central-1
+    Type: S3 Bucket   
+DataAtWork:
+  Tutorials:
+    - Title: Using GDAL to Produce a Geotiff for an Area
+      URL: https://gis.stackexchange.com/questions/201831/how-to-efficiently-access-files-with-gdal-from-an-s3-bucket-using-vsis3/202608#202608
+      AuthorName: Chris Henrick
+  Tools & Applications:
+    - Title: R package for accessing Terrain Tiles
+      URL: https://cran.r-project.org/web/packages/elevatr/vignettes/introduction_to_elevatr.html
+      AuthorName: Jeffrey W. Hollister
+      AuthorURL: https://github.com/jhollist
+    - Title: Mapzen Terrain Tiles on AWS Reader
+      URL: https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_ReadersWriters/terraintilesaws/terraintilesaws.htm
+      AuthorName: Safe Software
+      AuthorURL: https://www.safe.com/
+    - Title: Sentinel Hub WMS/WMTS/WCS Service for DEM
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground for DEM
+      URL: https://apps.sentinel-hub.com/sentinel-playground/?source=DEM&lat=41.902277040963696&lng=-102.83203125&zoom=4
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: Open-Source Elevation Service
+      URL: https://elevation.racemap.com
+      AuthorName: Racemap
+      AuthorURL: https://racemap.com/
+    - Title: On The Go Map
+      URL: https://onthegomap.com/
+      AuthorName: On The Go Map
+      AuthorURL: https://onthegomap.com/
+    - Title: "PlanetUtils (GitHub): Scripts and a Docker container to download, merge, and resample terrain tiles"
+      URL: https://github.com/interline-io/planetutils
+      AuthorName: Interline Technologies
+      AuthorURL: https://www.interline.io/
+    - Title: "PODPAC: Python Library supporting TerrainTiles for analysis"
+      URL: https://podpac.org/datasets.html#terraintiles
+      AuthorName: Creare
+      AuthorURL: http://www.creare.com/
+    - Title: "Terradactile: Generate DEM and hillshade Cloud Optimized GeoTIFFs for visualization and download based on terrain tiles"
+      URL: https://terradactile.sparkgeo.com/
+      AuthorName: Sparkgeo
+      AuthorURL: https://sparkgeo.com/
+    - Title: "Customizable Terrain Tiles"
+      URL: https://clockworkmicro.com/
+      AuthorName: Clockwork Micro
+      AuthorURL: https://clockworkmicro.com/
+    - Title: "ShadeMap: Simulate sun shadows for any time and place on Earth"
+      URL: https://shademap.app/
+      AuthorName: Ted Piotrowski
+      AuthorURL: https://github.com/ted-piotrowski
+    - Title: "Download topographical map contour lines as SVGs"
+      URL: https://buntinglabs.com/tools/download-topo-map-contour-lines
+      AuthorName: Bunting Labs
+      AuthorURL: https://buntinglabs.com/
+    - Title: "Shadowmap | Sun-Powered Insights. Anywhere on Earth."
+      URL: https://app.shadowmap.org/
+      AuthorName: Shadowmap Technologies GmbH
+      AuthorURL: https://shadowmap.org
+  Publications:
+    - Title: "Landscape transformations produce favorable roosting conditions for turkey vultures and black vultures"
+      URL: https://www.nature.com/articles/s41598-021-94045-3
+      AuthorName: Jacob E. Hill, Kenneth F. Kellner, Bryan M. Kluever, Michael L. Avery, John S. Humphrey, Eric A. Tillman, Travis L. DeVault & Jerrold L. Belant
+    - Title: Interactive Visualization of 3D Terrain Data Stored in the Cloud
+      URL: https://ieeexplore.ieee.org/abstract/document/9298063
+      AuthorName: Gregory Larrick, Yun Tian, Uri Rogers, Halim Acosta, and Fangyang Shen

@@ -1,0 +1,45 @@
+Name: NA-CORDEX - North American component of the Coordinated Regional Downscaling Experiment
+Description: >
+  The NA-CORDEX dataset contains regional climate change scenario data and guidance for North America, for use in impacts, decision-making, and climate science.
+  The NA-CORDEX data archive contains output from regional climate models (RCMs) run over a domain covering most of North America using boundary conditions from global climate model (GCM) simulations in the CMIP5 archive. These simulations run from 1950–2100 with a spatial resolution of 0.22°/25km or 0.44°/50km. 
+  This AWS S3 version of the data includes selected variables converted to Zarr format from the original NetCDF. Only daily data are currently available; all daily data were mapped to the Gregorian calendar. Sub-daily data may be added later. Both raw and bias-corrected data are available.
+  Further details about this version of the dataset are available at the documentation link below.
+Documentation: https://doi.org/10.26024/9xkm-fp81
+Contact: rdahelp@ucar.edu
+ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
+UpdateFrequency: Rare. NA-CORDEX is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the data.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - land
+  - geospatial
+  - aws-pds
+  - sustainability
+  - zarr
+License: https://na-cordex.org/terms-use.html
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::ncar-na-cordex
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Jupyter Notebook and other documentation and tools
+      URL: https://github.com/NCAR/na-cordex-aws
+      AuthorName: Brian Bonnlander, Seth McGinnis (NCAR)
+    - Title: Rendered (static) version of Jupyter Notebook
+      URL: http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/plot-zarr-diagnostics.html
+      AuthorName: Brian Bonnlander (NCAR)
+    - Title: Intake-ESM Catalog
+      URL: https://ncar-na-cordex.s3-us-west-2.amazonaws.com/catalogs/aws-na-cordex.json
+      AuthorName: Brian Bonnlander (NCAR)
+  Publications:
+    - Title: The NA-CORDEX dataset, version 1.0. NCAR Climate Data Gateway, Boulder CO (2017)
+      URL: https://doi.org/10.5065/D6SJ1JCH
+      AuthorName: Mearns, Linda O., et al.

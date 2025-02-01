@@ -1,0 +1,85 @@
+Name: Amazonia EO satellite on AWS
+Description: |
+  Imagery acquired
+  by Amazonia-1 satellite.
+  The
+  image files are recorded and processed by Instituto Nacional de Pesquisas
+  Espaciais (INPE) and are converted to Cloud Optimized Geotiff
+  format in order to optimize its use for cloud based applications.
+  WFI Level 4 (Orthorectified) scenes are being
+  ingested daily starting from 08-29-2022, the complete
+  Level 4 archive will be ingested by the end of October 2022.
+Documentation: http://www.inpe.br/amazonia1
+Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
+ManagedBy: "[AMS Kepler](https://amskepler.com/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - geospatial
+  - imaging
+  - satellite imagery
+  - sustainability
+  - disaster response
+  - stac
+  - cog
+License: https://creativecommons.org/licenses/by-sa/3.0/
+Resources:
+  - Description: Amazonia 1 imagery (COG files, quicklooks, metadata)
+    ARN: arn:aws:s3:::brazil-eosats
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+    - '[stacindex](https://stacindex.org/catalogs/cbers)'
+  - Description: STAC static catalog
+    ARN: arn:aws:s3:::br-eo-stac-1-0-0
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new quicklooks
+    ARN: arn:aws:sns:us-west-2:599544552497:NewAM1Quicklook
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Topic that receives STAC V1.0.0 items as new scenes are ingested
+    ARN: arn:aws:sns:us-west-2:769537946825:br-eo-stac-prod-stacitemtopic4BCE3141-Z8he7LYjqXFe
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Keeping a SpatioTemporal Asset Catalog (STAC) Up To Date with SNS/SQS
+      URL: https://aws.amazon.com/blogs/publicsector/keeping-a-spatiotemporal-asset-catalog-stac-up-to-date-with-sns-sqs/
+      AuthorName: Frederico Liporace
+      Services:
+        - SNS
+        - Lambda
+        - DynamoDB
+    - Title: The Evolution of ASDI's Data Infrastructure
+      URL: https://developmentseed.org/blog/2023-10-20-asdi
+      AuthorName: Sean Harkins
+      Services:
+        - SNS
+        - Lambda
+        - ECR
+        - S3
+        - Athena
+  Tools & Applications:
+    - Title: STAC V1.0.0 endpoint
+      URL: https://stac.amskepler.com/v100
+      AuthorName: AMS Kepler
+      AuthorURL: https://github.com/fredliporace
+    - Title: Amazonia 1 stactools package
+      URL: https://github.com/stactools-packages/amazonia-1
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+    - Title: Amazonia 1 stactools-pipeline
+      URL: https://github.com/developmentseed/stactools-pipelines/pull/33
+      AuthorName: Frederico Liporace
+      AuthorURL: https://github.com/fredliporace
+

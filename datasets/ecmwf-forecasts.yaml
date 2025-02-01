@@ -1,0 +1,47 @@
+Name: 'ECMWF real-time forecasts'
+Description: |
+  These products are a subset of the ECMWF real-time forecast data and are made available to the public free of charge. They are based on the medium-range (high-resolution and ensemble) and seasonal forecast models. Products are available at 0.4 degrees resolution in GRIB2 format unless stated otherwise. 
+Documentation: "[User Documentation](https://confluence.ecmwf.int/display/DAC/ECMWF+open+data%3A+real-time+forecasts)"
+Contact: https://confluence.ecmwf.int/site/support
+ManagedBy: "[European Centre for Medium-Range Weather Forecasts](https://www.ecmwf.int/)"
+UpdateFrequency: "The data are released 1 hour after the [real-time dissemination schedule](https://confluence.ecmwf.int/display/DAC/Dissemination+schedule)."
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - meteorological
+  - near-surface air temperature
+  - near-surface relative humidity
+  - near-surface specific humidity
+  - precipitation
+  - weather
+License: "This ECMWF data is published under a Creative Commons Attribution 4.0 International license ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) and the [ECMWF Terms of Use](https://apps.ecmwf.int/datasets/licences/general/)"
+Citation: https://doi.org/10.21957/open-data
+Resources:
+  - Description: "Access ECMWF's open-data for real-time forecasts"
+    ARN: arn:aws:s3:::ecmwf-forecasts
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: A collection of Jupyter Notebooks that make use of the ecmwf-opendata package. This package simplifies the download of ECMWF open data.
+      URL: https://github.com/ecmwf/notebook-examples/tree/master/opencharts
+      AuthorName: ECMWF
+      AuthorURL: https://www.ecmwf.int/
+  Tools & Applications:
+    - Title: "A package to simplify the download of ECMWF open data. It implements a request-based interface to the dataset using ECMWF's MARS language to select meteorological fields, similar to the existing ecmwf-api-client Python package."
+      URL: https://github.com/ecmwf/ecmwf-opendata
+      AuthorName: ECMWF
+      AuthorURL: https://www.ecmwf.int/
+    - Title: "Herbie: A Python package to retrieve NWP data."
+      URL: https://github.com/blaylockbk/Herbie
+      AuthorName: Brian Blaylock
+      AuthorURL: https://github.com/blaylockbk
+  Publications:
+    - Title: ECMWF makes wide range of data openly available
+      URL: https://www.ecmwf.int/en/about/media-centre/news/2022/ecmwf-makes-wide-range-data-openly-available
+      AuthorName: ECMWF
+      AuthorURL: https://www.ecmwf.int/
+ADXCategories:
+  - Environmental Data
+

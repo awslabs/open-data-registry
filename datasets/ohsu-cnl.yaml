@@ -1,0 +1,34 @@
+Name: Oregon Health & Science University Chronic Neutrophilic Leukemia Dataset
+Description: |
+  The OHSU-CNL study offers the whole exome and RNA-sequencing on a cohort of 100 cases with rare
+  hematologic malignancies such as Chronic neutrophilic leukemia (CNL), atypical chronic myeloid
+  leukemia (aCML), and unclassified myelodysplastic syndrome/myeloproliferative neoplasms
+  (MDS/MPN-U). This dataset contains open RNA-Seq Gene Expression Quantification data.
+Documentation: |
+  https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001799.v1.p1
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-ohsu-cnl-phs001799-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: Genomic landscape of neutrophilic leukemias of ambiguous diagnosis
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/31366621
+      AuthorName: Zhang H, Wilmot B, Bottomly D et al.

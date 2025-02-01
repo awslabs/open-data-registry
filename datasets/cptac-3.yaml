@@ -1,0 +1,61 @@
+Name: Clinical Proteomic Tumor Analysis Consortium 3 (CPTAC-3)
+Description: |
+  The Clinical Proteomic Tumor Analysis Consortium (CPTAC) is a national effort to accelerate the
+  understanding of the molecular basis of cancer through the application of large-scale proteome and
+  genome analysis, or proteogenomics. CPTAC-3 is the Phase III of the CPTAC Initiative. The dataset
+  contains open RNA-Seq Gene Expression Quantification data.
+Documentation: https://cptac-data-portal.georgetown.edu/cptac/public?scope=Phase+III
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - transcriptomics
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-cptac-phs001287-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/CPTAC-3
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: Proteomic Data Commons
+      URL: https://pdc.esacinc.com/pdc/browse
+      AuthorName: National Cancer Institute
+      AuthorURL: https://pdc.esacinc.com/pdc
+    - Title: CPTAC Data Portal
+      URL: https://proteomics.cancer.gov/data-portal
+      AuthorName: National Cancer Institute
+      AuthorURL: https://proteomics.cancer.gov/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: http://www.cancergenomicscloud.org/
+  Publications:
+    - Title: Evaluation of NCI-7 Cell Line Panel as a Reference Material for Clinical Proteomics
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/29718670
+      AuthorName: |
+        Clark DJ, Hu Y, Bocik W, Chen L, Schnaubelt M, Roberts R, Shah P, Whiteley G, Zhang H
+    - Title: Integrated Proteogenomic Characterization of Clear Cell Renal Cell Carcinoma
+      URL: https://doi.org/10.1016/j.cell.2019.10.007
+      AuthorName: |
+        Clark DJ, Dhanasekaran SM, Petralia F, Pan J, Song X, Hu Y, da Veiga Leprevost F, Reva B,
+        Lih TM, Chang HY, Ma W, Huang C, Ricketts CJ, Chen L1, Krek A, Li Y, Rykunov D, Li QK, Chen
+        LS, Ozbek U, Vasaikar S, Wu Y, Yoo S, Chowdhury S, Wyczalkowski MA, Ji J, Schnaubelt M, Kong
+        A, Sethuraman S, Avtonomov DM, Ao M, Colaprico A, Cao S, Cho KC, Kalayci S, Ma S, Liu W,
+        Ruggles K, Calinawan A, Gümüş ZH, Geizler D, Kawaler E, Teo GC, Wen B, Zhang Y, Keegan S, Li
+        K, Chen F, Edwards N, Pierorazio PM, Chen XS, Pavlovich CP, Hakimi AA, Brominski G, Hsieh
+        JJ, Antczak A, Omelchenko T, Lubinski J, Wiznerowicz M, Linehan WM, Kinsinger CR,
+        Thiagarajan M, Boja ES, Mesri M, Hiltke T, Robles AI, Rodriguez H, Qian J, Fenyö D, Zhang B,
+        Ding L, Schadt E, Chinnaiyan AM, Zhang Z, Omenn GS, Cieslik M, Chan DW, Nesvizhskii AI, Wang
+        P, Zhang H; Clinical Proteomic Tumor Analysis Consortium

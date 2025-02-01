@@ -1,0 +1,136 @@
+Name: CMAS Data Warehouse
+Description: |
+  CMAS Data Warehouse on AWS collects and disseminates meteorology, emissions and air quality model input and output for Community Multiscale Air Quality (CMAQ) Model Applications. This dataset is available as part of the AWS Open Data Program, therefore egress fees are not charged to either the host or the person downloading the data.  This S3 bucket is maintained as a public service by the University of North Carolina's CMAS Center, the US EPA’s Office of Research and Development, and the US EPA’s Office of Air and Radiation.  Metadata and DOIs for datasets included in the CMAS Data Warehouse are available from the CMAS Dataverse site: https://dataverse.unc.edu/dataverse/cmascenter 
+Documentation: https://dataverse.unc.edu/dataverse/cmascenter
+Contact: cmas@unc.edu
+ManagedBy: "[CMAS CENTER](https://cmascenter.org/)"
+UpdateFrequency: New data is added as soon as it is available.
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
+Tags:
+  - aws-pds
+  - air quality
+  - meteorological
+  - geospatial
+  - environmental
+  - climate
+License: There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)
+Resources:
+  - Description: CMAQ Release Benchmark Data for Easy Download 
+    ARN: arn:aws:s3:::cmaq-release-benchmark-data-for-easy-download
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmaq-release-benchmark-data-for-easy-download.s3.amazonaws.com/index.html)'
+  - Description: CMAQ CONUS-2 Benchmark Data
+    ARN: arn:aws:s3:::cmas-cmaq-conus2-benchmark
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
+  - Description: MPAS-CMAQ Input Data
+    ARN: arn:aws:s3:::mpas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: CMAQ Benchmark Data
+    ARN: arn:aws:s3:::cmas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: AMET Data
+    ARN: arn:aws:s3:::cmas-amet
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)'
+  - Description: CMAS WWLLN Lightning Data
+    ARN: arn:aws:s3:::cmas-wwlln-lightning
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-wwlln-lightning.s3.amazonaws.com/index.html)'
+  - Description: EQUATES EPA’s Air QUAlity TimE Series Project Data
+    ARN: arn:aws:s3:::cmas-equates
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
+  - Description: CMAQ 2019 Modeling Platform
+    ARN: arn:aws:s3:::cmaq-2019-modeling-platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-2019-modeling-platform.s3.amazonaws.com/readme.html)'
+  - Description: CMAQ 2018 Modeling Platform
+    ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
+  - Description: 2020 Modeling Platform
+    ARN: arn:aws:s3:::2020platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2020platform.s3.amazonaws.com/index.html)'
+  - Description: 2019 Modeling Platform
+    ARN: arn:aws:s3:::2019platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://2019platform.s3.amazonaws.com/index.html)'
+  - Description: 2018v2 Modeling Platform
+    ARN: arn:aws:s3:::2018v2platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2018v2platform.s3.amazonaws.com/index.html)'
+  - Description: 2016v3 Modeling Platform
+    ARN: arn:aws:s3:::2016v3platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://2016v3platform.s3.amazonaws.com/index.html)'
+  - Description: SMOKE Test Case
+    ARN: arn:aws:s3:::cmas-smoke-testcase
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmas-smoke-testcase.s3.amazonaws.com/index.html)'
+  - Description: SMOKE 2016 Modeling Platform 
+    ARN: arn:aws:s3:::cmas-smoke-modeling-platform-2016
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://cmas-smoke-modeling-platform-2016.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Documentation for CMAQ on AWS ParallelCluster
+      URL: https://pcluster-cmaq.readthedocs.io/en/latest/index.html#
+      AuthorName: CMAS Center
+      AuthorURL: https://github.com/CMASCenter/pcluster-cmaq/
+      Services:
+        - ParallelCluster
+    - Title: CMAQ on AWS HPC Workshop
+      URL: https://catalog.workshops.aws/cmaq-tutorial/en-US/
+      AuthorName: CMAS Center, U.S. EPA Office of Research and Development and AWS Workshop Studio
+      AuthorURL: https://catalog.workshops.aws/
+      Services:
+        - ParallelCluster
+    - Title: EQUATES Benchmark
+      URL: https://github.com/lizadams/EQUATES_BENCHMARK
+      AuthorName: Liz Adams
+      AuthorURL: https://github.com/lizadams/
+    - Title: CMAQ Installation and Benchmarking Tutorial
+      URL: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/CMAQ_UG_tutorial_benchmark.md
+      AuthorName: USEPA
+      AuthorURL:  https://github.com/USEPA/CMAQ
+    - Title: AMET Documentation
+      URL: https://github.com/USEPA/AMET/blob/master/docs/README.md
+      AuthorName: USEPA
+      AuthorURL: https://www.epa.gov/cmaq/forms/contact-us-about-community-multiscale-air-quality-modeling-system

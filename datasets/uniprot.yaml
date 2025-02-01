@@ -1,0 +1,103 @@
+Name: UniProt
+Description: The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data. The UniProt databases are the UniProt Knowledgebase (UniProtKB), the UniProt Reference Clusters (UniRef), and the UniProt Archive (UniParc). The UniProt consortium and host institutions [EMBL-EBI](https://www.ebi.ac.uk), [SIB Swiss Institute of Bioinformatics](https://www.sib.swiss) and [PIR](https://proteininformationresource.org/) are committed to the long-term preservation of the [UniProt](https://www.uniprot.org) databases.
+Contact: https://www.uniprot.org/contact
+Documentation: https://www.uniprot.org/help/about
+ManagedBy: "[SIB Swiss Institute of Bioinformatics](https://sp.sib.swiss/) on behalf of the UniProt Consortium"
+UpdateFrequency: Under 1 months after a new UniProt release.
+Tags:  
+  - aws-pds
+  - chemistry
+  - protein
+  - enzyme
+  - molecule
+  - life sciences
+  - bioinformatics
+  - biology
+  - RDF
+  - graph
+  - SPARQL
+License: http://creativecommons.org/licenses/by/4.0/ 
+Resources: 
+  - Description: UniProt 2024_05 
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2024-05/ 
+    Region: eu-west-3 
+    Type: S3 Bucket 
+  - Description: UniProt 2024_03 
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2024-03/ 
+    Region: eu-west-3 
+    Type: S3 Bucket 
+  - Description: UniProt 2024_02
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2024-02/ 
+    Region: eu-west-3 
+    Type: S3 Bucket 
+  - Description: UniProt 2024_01
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2024-01/ 
+    Region: eu-west-3 
+    Type: S3 Bucket 
+  - Description: UniProt 2023_05
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2023-05/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2023_04
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2023-04/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2023_03
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2023-03/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2023_02
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2023-02/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2023_01
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2023-01/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2022_05
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2022-05/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2022_04
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2022-04/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2022_03
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2022-03/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2022_02
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2022-02/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2022_01
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2022-01/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2021_04
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2021-04/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2021_03
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2021-03/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2021_02
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2021-02/
+    Region: eu-west-3
+    Type: S3 Bucket
+  - Description: UniProt 2021_01
+    ARN: arn:aws:s3:::aws-open-data-uniprot-rdf/2021-01/
+    Region: eu-west-3
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "UniProt SPARQL"
+      URL: https://github.com/sib-swiss/sparql-training/tree/master/uniprot
+      AuthorName: Swiss-Prot Group at SIB Swiss Institute of Bioinformatics
+    - Title: "Exploring the UniProt protein knowledgebase with AWS Open Data and Amazon Neptune"
+      URL: https://aws.amazon.com/blogs/industries/exploring-the-uniprot-protein-knowledgebase-with-aws-open-data-and-amazon-neptune/
+      AuthorName: Eric Greene, Rafa Xu, Yuan Shi (AWS)
+      Services:
+        - Neptune
+

@@ -1,0 +1,30 @@
+Name: Amazon Bin Image Dataset
+Description: The Amazon Bin Image Dataset contains over 500,000 images and metadata from bins of a pod in an operating Amazon Fulfillment Center. The bin images in this dataset are captured as robot units carry pods as part of normal Amazon Fulfillment Center operations.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds
+Contact: amazon-bin-images@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science
+  - computer vision
+  - machine learning
+License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States (CC BY-NC-SA 3.0 US) https://creativecommons.org/licenses/by-nc-sa/3.0/us/
+Resources:
+  - Description: Over 500,000 bin JPEG images and corresponding JSON metadata files describing items in bins in Amazon Fulfillment Centers.
+    ARN: arn:aws:s3:::aft-vbi-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://aft-vbi-pds.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: Amazon Bin Image Dataset Challenge
+      URL: https://github.com/silverbottlep/abid_challenge
+      AuthorName: silverbottlep
+      AuthorURL: https://github.com/silverbottlep
+    - Title: Amazon Inventory Reconciliation using AI
+      URL: https://github.com/OneNow/AI-Inventory-Reconciliation
+      AuthorName: Pablo Rodriguez Bertorello, Sravan Sripada, Nutchapol Dendumrongsup
+      AuthorURL: https://github.com/pablo-tech

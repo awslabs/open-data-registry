@@ -1,0 +1,115 @@
+Name: >-
+  EPA Dynamically Downscaled Ensemble (EDDE) Version 1
+Description: >-
+  The data are a subset of the EPA Dynamically Downscaled Ensemble (EDDE), 
+  Version 1. EDDE is a collection of physics-based modeled data that represent
+  3D atmospheric conditions for historical and future periods under different
+  scenarios. The EDDE Version 1 datasets cover the contiguous United States at
+  a horizontal grid spacing of 36 kilometers at hourly increments. EDDE Version
+  1 includes simulations that have been dynamically downscaled from multiple
+  global climate models (GCMs) under both mid- and high-emission scenarios from
+  the Fifth Coupled Model Intercomparison Project (CMIP5) using the Weather
+  Research and Forecasting (WRF) model. Scenarios were downscaled from the
+  Community Earth System Model (CESM) and the Geophysical Fluid Dynamics
+  Laboratory (GFDL) Coupled Model version 3 (CM3). Simulations followed the
+  historical periods 1975-2005 (CESM only) and 1995-2005 (both CESM and CM3),
+  and Representative Concentration Pathways (RCP) 4.5 for 2025-2100 (CESM
+  only), RCP6.0 for 2025-2055 (CESM only), and RCP8.5 (both CESM and CM3).
+  Data are in Network Common Data Form (netCDF) version 4, which is used in
+  atmospheric modeling. The EDDE data in netCDF are further written to adhere
+  to principles of Climate and Forecasting System (CF) Compliance to enhance
+  portability and interoperability with data from other sources. The files are
+  self-describing with metadata included in the netCDF header. Data reference:
+  https://doi.org/10.23719/1530964
+  Some peer-reviewed publications that describe EDDE (without the name "EDDE"):
+  https://doi.org/10.1080/10962247.2021.1970048
+  https://doi.org/10.5194/acp-18-15471-2018
+  https://doi.org/10.1080/10962247.2014.996270
+  https://doi.org/10.1175/JCLI-D-15-0233.1
+  https://doi.org/10.1002/2014JD021785
+Documentation: >-
+  EDDE Version 1 can be referenced using https://doi.org/10.23719/1530964
+  Please see the Data Use Statement, technical updates, and additional background information
+  on the EDDE webpage, accessible from: https://www.epa.gov/climate-research/climate-change-tools-protect-public-health-and-environment
+  This dataset was most recently updated in January 2025.
+Contact: >-
+  spero.tanya@epa.gov; mallard.megan@epa.gov
+ManagedBy: >-
+  U.S. Environmental Protection Agency (https://www.epa.gov), Office of Research and Development,
+  Center for Environmental Measurement and Modeling, Atmospheric and
+  Environmental Systems Modeling Division
+UpdateFrequency: Quarterly
+Tags:
+  - aws-pds
+  - weather
+  - climate
+  - climate model
+  - climate projections
+  - CMIP5
+  - CMIP6
+  - us
+  - atmosphere
+  - environmental
+  - meteorological
+  - Eulerian
+  - model
+  - simulations
+  - HPC
+  - events
+  - fluid dynamics
+  - geospatial
+  - netcdf
+  - hdf5
+  - physics
+  - geoscience
+  - open source software
+  - post-processing
+  - air temperature
+  - near-surface air temperature
+  - near-surface relative humidity
+  - near-surface specific humidity
+  - precipitation
+  - radiation
+  - elevation
+  - land use
+  - land cover
+  - agriculture
+  - air quality
+  - infrastructure
+  - ecosystems
+  - floods
+  - health
+  - hydrology
+  - water
+License: >-
+  These datasets are products of the U.S. Government and are intended for public
+  access and use. Unless otherwise specified, all data produced by the U.S EPA
+  is, by default, in the public domain and are not subject to domestic copyright
+  protection under 17 U.S.C. § 105. More details on the U.S. Public Domain
+  license are available here: http://www.usa.gov/publicdomain/label/1.0/
+Citation: >-
+  US EPA, 2024, "EPA Dynamically Downscaled Ensemble (EDDE), Version 1", 
+  https://doi.org/10.23719/1530964.
+Resources:
+  - Description: >-
+      EDDE data are compressed netCDF (https://unidata.ucar.edu/software/netcdf/)
+      files that conform to Climate and Forecast (CF) metdata conventions 
+      (https://cfconventions.org). The data can be ingested, processed, and
+      visualized using standard netCDF utility routines in various programming
+      languages. Information on the model projection and grid structure is contained
+      in the header information of each netCDF file. Two timekeeping variables are
+      in the files. The variable "time" conforms to CF conventions using the "hours
+      since" construct, where the reference time is given as the initialization of
+      the simulation. The "mtime" variable is a user-readable string that aligns
+      with "time" expressed as YYYY-MM-DD_HH:MI:SS. Additional information can be
+      found at https://www.epa.gov/climate-research/climate-change-tools-protect-public-health-and-environment
+    ARN: 'arn:aws:s3:::epa-edde'
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://epa-edde.s3.amazonaws.com/index.html)'
+  - Description: Notifications for EDDE bucket
+    ARN: 'arn:aws:sns:us-east-1:127085394039:epa-edde-object_created'
+    Region: us-east-1
+    Type: SNS Topic
+

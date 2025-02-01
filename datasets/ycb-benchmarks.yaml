@@ -1,0 +1,37 @@
+Name: Yale-CMU-Berkeley (YCB) Object and Model Set
+Description: "This project primarily aims to facilitate performance benchmarking in robotics research. The dataset provides mesh models, RGB, RGB-D and point cloud images of over 80 objects. The physical objects are also available via the [YCB benchmarking project](http://www.ycbbenchmarks.com/). The data are collected by two state of the art systems: UC Berkley's scanning rig and the Google scanner. The UC Berkley's scanning rig data provide meshes generated with Poisson reconstruction, meshes generated with volumetric range image integration, textured versions of both meshes, Kinbody files for using the meshes with OpenRAVE, 600 High-resolution RGB images, 600 RGB-D images, and 600 point cloud images for each object. The Google scanner data provides 3 meshes with different resolutions (16k, 64k, and 512k polygons), textured versions of each mesh, Kinbody files for using the meshes with OpenRAVE."
+Documentation: http://www.ycbbenchmarks.com/
+Contact: bcalli@wpi.edu
+UpdateFrequency: Yearly
+ManagedBy: Yale University and Berkeley
+Tags:
+  - aws-pds
+  - robotics
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::ycb-benchmarks
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://ycb-benchmarks.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: Pre-touch sensing for sequential manipulation
+      URL: https://ieeexplore.ieee.org/abstract/document/7989594
+      AuthorName: Boling Yang, Patrick Lancaster, Joshua R. Smith
+      AuthorURL: https://sensor.cs.washington.edu/jrs.html
+    - Title: "The Closure Signature: A Functional Approach to Model Underactuated Compliant Robotic Hands"
+      URL: https://ieeexplore.ieee.org/abstract/document/8304743
+      AuthorName: Maria Pozzi, Gionata Salvietti, João Bimbo, Monica Malvezzi, Domenico Prattichizzo
+      AuthorURL: http://www.dii.unisi.it/~domenico/
+    - Title: "Label Fusion: A Pipeline for Generating Ground Truth Labels for Real RGBD Data of Cluttered Scenes"
+      URL: https://ieeexplore.ieee.org/abstract/document/8460950
+      AuthorName: Pat Marion, Peter R. Florence, Lucas Manuelli, Russ Tedrake
+      AuthorURL: https://groups.csail.mit.edu/locomotion/russt.html
+    - Title: "Benchmarking in Manipulation Research: Using the Yale-CMU-Berkeley Object and Model Set"
+      URL: https://ieeexplore.ieee.org/document/7254318
+      AuthorName: Berk Calli, Aaron Walsman, Arjun Singh, Siddhartha Srinivasa, Pieter Abbeel, Aaron M Dollar
+      AuthorURL: https://www.wpi.edu/people/faculty/bcalli

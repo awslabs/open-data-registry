@@ -1,0 +1,40 @@
+Name: Broad Genome References
+Description: Broad maintained human genome reference builds hg19/hg38 and decoy references.
+Documentation: https://s3.amazonaws.com/broad-references/broad-references-readme.html
+Contact: hensonc@broadinstitute.org
+ManagedBy: Broad Institute
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - cancer
+  - genetic
+  - genomic
+  - life sciences
+  - reference index
+  - Homo sapiens
+License:  CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Resources:
+  - Description: "This dataset includes two human genome references assembled by the Genome Reference Consortium: Hg19 and Hg38."
+    ARN: arn:aws:s3:::broad-references
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using Amazon FSx for Lustre for Genomics Workflows on AWS
+      URL: https://aws.amazon.com/blogs/storage/using-amazon-fsx-for-lustre-for-genomics-workflows-on-aws/
+      AuthorName: W. Lee Pang
+      AuthorURL: https://www.linkedin.com/in/lee-pang-a039a26/
+      Services:
+      - Batch
+      - FSx
+  Tools & Applications:
+    - Title: Genomics Workflows on AWS - Cromwell on AWS
+      URL: https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/#real-world-example-haplotypecaller
+      AuthorName: W. Lee Pang
+      AuthorURL: https://www.linkedin.com/in/lee-pang-a039a26/
+  Publications:
+    - Title: Advancing NGS quality control to enable measurement of actionable mutations in circulating tumor DNA
+      URL: https://www.cell.com/cell-reports-methods/pdf/S2667-2375(21)00165-X.pdf
+      AuthorName: Willey J. C., Morrison T. B., Austermiller B., Crawford E. E., et al (2021)

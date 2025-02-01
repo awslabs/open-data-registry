@@ -1,0 +1,103 @@
+Name: GEOGLOWS Hydrological Model Version 2
+Description: |
+  GEOGLOWS is the Group on Earth Observation's Global Water Sustainability Program. It coordinates efforts from public 
+  and private entities to make application ready river data more accessible and sustainably available to underdeveloped 
+  regions. The GEOGLOWS Hydrological Model provides a retrospective and daily forecast of global river discharge at 7 
+  million river sub-basins. The stream network is a hydrologically conditioned subset of the TDX-Hydro streams and 
+  basins data produced by the United State's National Geospatial Intelligence Agency. The daily forecast provides 3 
+  hourly average discharge in a 51 member ensemble and 15 day lead time derived from the ECMWF Integrated Forecast 
+  System (IFS). The retrospective simulation is derived from ERA5 climate reanalysis data and provides daily average 
+  streamflow beginning on 1 January 1940. New forecasts are uploaded daily and the retrospective simulation is updated 
+  weekly on Sundays to keep the lag time between 5 and 12 days.<br><br>
+  The geoglows-v2 bucket contains: (1) model configuration files used to generate the simulations, (2) the GIS streams 
+  datasets used by the model, (3) the GIS streams datasets optimized for visualizations used by Esri's Living Atlas 
+  layer, (4) several supporting table of metadata including country names, river names, hydrological properties used for
+  modeling.<br><br>
+  The geoglows-v2-forecasts bucket contains: (1) daily 15 forecasts in zarr format optimized for time series queries of 
+  all ensemble members in the prediction, (2) CSV formatted summary files optimized for producing time series animated 
+  web maps for the entire global streams dataset.<br><br>
+  The geoglows-v2-retrospective bucket contains: (1) the model retrospective outputs in (1a) zarr format optimized for 
+  time series queries of up to a few hundred rivers on demand as well as (1b) in netCDF format best for bulk downloading 
+  the dataset, (2) estimated return period flows for all 7 million million rivers (2a) in zarr format optimized for 
+  reading subsets of the dataset as well as (2b) in netCDF format best for bulk downloading. (3) The initialization files 
+  produced at the end of each incremental simulation useful for restarting the model from a specific date.
+Documentation: https://data.geoglows.org
+Contact: https://groups.google.com/g/geoglows
+ManagedBy: Riley Hales
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - hydrology
+  - hydrologic model
+  - simulations
+  - zarr
+  - hydrography
+  - geopackage
+License: "[Creative Commons BY 4 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: https://doi.org/10.1111/jfr3.12859
+Resources:
+  - Description: GEOGLOWS Version 2
+    ARN: arn:aws:s3:::geoglows-v2
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](http://geoglows-v2.s3-website-us-west-2.amazonaws.com)'
+  - Description: GEOGLOWS V2 Forecasts
+    ARN: arn:aws:s3:::geoglows-v2-forecasts
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](http://geoglows-v2-forecasts.s3-website-us-west-2.amazonaws.com)'
+  - Description: GEOGLOWS V2 Retrospective Simulation
+    ARN: arn:aws:s3:::geoglows-v2-retrospective
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](http://geoglows-v2-retrospective.s3-website-us-west-2.amazonaws.com)'
+DataAtWork:
+  Tutorials:
+    - Title: GEOGLOWS V2 Tutorials
+      URL: https://data.geoglows.org
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+    - Title: Finding River Numbers
+      URL: https://data.geoglows.org/tutorials/finding-river-numbers
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+    - Title: Access GEOGLOWS river forecast data from AWS S3
+      URL: https://data.geoglows.org/tutorials/query-forecast-data
+      NotebookURL: "https://gist.github.com/rileyhales/cba7d4ffc4c33a66427ec3101ecf9bdf#file-geoglows-forecasts-tutorial.ipynb"
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+      Services:
+        - S3
+    - Title: Access GEOGLOWS retrospective simulation data from AWS S3
+      URL: https://data.geoglows.org/tutorials/query-retro-data
+      NotebookURL: "https://gist.github.com/rileyhales/db17621515a434c84d60d8b3f5bb1f03#geoglows-retro-from-aws-s3-zarr.ipynb"
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+      Services:
+        - S3
+    - Title: Bulk Download and Query simulation netCDF Files
+      URL: https://data.geoglows.org/tutorials/download-retro-data
+      NotebookURL: "https://gist.github.com/rileyhales/01377f89817a071d699eb44b5a75d453#geoglows-retro-from-downloaded-netcdfs.ipynb"
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+      Services:
+        - S3
+  Tools & Applications:
+    - Title: GEOGLOWS Hydroviewer
+      URL: https://apps.geoglows.org/apps/geoglows-hydroviewer
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+    - Title: pygeoglows
+      URL: https://geoglows.readthedocs.io/en/latest/
+      AuthorName: Riley Hales
+      AuthorURL: https://hales.app
+  Publications:
+    - Title: Advancing global hydrologic modeling with the GEOGloWS ECMWF streamflow service
+      URL: https://doi.org/10.1111/jfr3.12859
+      AuthorName: Hales et al.
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data

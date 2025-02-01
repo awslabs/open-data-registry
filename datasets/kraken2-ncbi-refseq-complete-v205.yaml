@@ -1,0 +1,38 @@
+Name: Kraken2 NCBI RefSeq Complete V205 database on AWS
+Description: Database for use with Kraken2 (taxonomic annotation of metagenomic sequencing reads) including all NCBI RefSeq genomes available in release V205
+Documentation: https://github.com/R-Wright-1/kraken_metaphlan_comparison/wiki
+Contact: robyn.wright@dal.ca
+ManagedBy: Robyn Wright
+UpdateFrequency: This database is currently what was published in our 2023 paper comparing the performance of MetaPhlAn3 and Kraken2, but an updated database may be added in the future.
+Tags:
+  - aws-pds
+  - metagenomics
+  - microbiome
+  - benchmark
+  - bioinformatics
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Kraken2 NCBI RefSeq Complete V205 database
+    ARN: arn:aws:s3:::kraken2-ncbi-refseq-complete-v205
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://kraken2-ncbi-refseq-complete-v205.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: Using an Amazon Machine Image for analysing samples with Kraken2
+      URL: https://github.com/R-Wright-1/kraken_metaphlan_comparison/wiki/Using-an-Amazon-Machine-Image-for-analysing-samples-with-Kraken2
+      Services:
+        - EC2
+      AuthorName: Robyn Wright
+      AuthorURL: https://github.com/R-Wright-1
+  Tools & Applications:
+    - Title: Kraken2
+      URL: https://github.com/DerrickWood/kraken2/wiki/Manual
+      AuthorName: Derrick Wood, Jennifer Lu and Ben Langmead
+      AuthorURL: https://github.com/DerrickWood/
+  Publications:
+    - Title: "From defaults to databases: parameter and database choice dramatically impact the performance of metagenomic taxonomic classification tools"
+      URL: https://doi.org/10.1099/mgen.0.000949
+      AuthorName: Robyn J. Wright, Andre M. Comeau and Morgan G.I. Langille

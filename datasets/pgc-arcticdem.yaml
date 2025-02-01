@@ -1,0 +1,62 @@
+Name: ArcticDEM
+Description:  ArcticDEM - 2m GSD Digital Elevation Models (DEMs) and mosaics from 2007 to the present. The ArcticDEM project seeks to fill the need for high-resolution time-series elevation data in the Arctic. The time-dependent nature of the strip DEM files allows users to perform change detection analysis and to compare observations of topography data acquired in different seasons or years. The mosaic DEM tiles are assembled from multiple strip DEMs with the intention of providing a more consistent and comprehensive product over large areas. ArcticDEM data is constructed from in-track and cross-track high-resolution (~0.5 meter) imagery acquired by the Maxar constellation of optical imaging satellites.
+Documentation: https://www.pgc.umn.edu/data/arcticdem/
+Contact: pgc-support@umn.edu
+ManagedBy: "[Polar Geospatial Center](https://www.pgc.umn.edu/)"
+UpdateFrequency: New DEM strips are added twice yearly.  Mosaic products are added as soon as they are available.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - elevation
+  - earth observation
+  - geospatial
+  - mapping
+  - open source software
+  - satellite imagery
+  - cog
+  - stac
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "See PGC's [acknowledgement policy](https://www.pgc.umn.edu/guides/user-services/acknowledgement-policy/)"
+Resources:
+  - Description: ArcticDEM DEM Mosaics
+    ARN: arn:aws:s3:::pgc-opendata-dems/arcticdem/mosaics/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/arcticdem/mosaics.json)'
+      - '[Dynamic STAC API Endpoint](https://stac.pgc.umn.edu/api/v1/)'
+  - Description: ArcticDEM DEM Strips
+    ARN: arn:aws:s3:::pgc-opendata-dems/arcticdem/strips/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/arcticdem/strips.json)'
+      - '[Dynamic STAC API Endpoint](https://stac.pgc.umn.edu/api/v1/)'
+DataAtWork:
+  Tools & Applications:
+    - Title: ArcticDEM Explorer
+      URL: https://arcticdem.apps.pgc.umn.edu/
+      AuthorName: Polar Geospatial Center & ESRI
+    - Title: OpenTopography access to ArcticDEM
+      URL: https://doi.org/10.5069/G96Q1VFK
+      AuthorName: OpenTopography
+      AuthorURL: https://opentopography.org/
+  Publications:
+    - Title: "The surface extraction from TIN based search-space minimization (SETSM) algorithm"
+      URL: https://doi.org/10.1016/j.isprsjprs.2017.04.019
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Automated stereo-photogrammetric DEM generation at high latitudes: Surface Extraction with TIN-based Search-space Minimization (SETSM) validation and demonstration over glaciated regions"
+      URL: https://doi.org/10.1080/15481603.2015.1008621
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Automatic relative RPC image model bias compensation through hierarchical image matching for improving DEM quality"
+      URL: https://doi.org/10.1016/j.isprsjprs.2017.12.008
+      AuthorName: Myoung-Jong Noh, Ian M. Howat
+    - Title: "Dynamic ice loss from the Greenland Ice Sheet driven by sustained glacier retreat"
+      URL: https://doi.org/10.1038/s43247-020-0001-2
+      AuthorName: Michalea D. King, Ian M. Howat, Salvatore G. Candela, Myoung J. Noh, Seongsu Jeong, Brice P. Y. Noël, Michiel R. van den Broeke, Bert Wouters, Adelaide Negrete
+    - Title: "Future Evolution of Greenland's Marine-Terminating Outlet Glaciers"
+      URL: https://doi.org/10.1029/2018JF004873
+      AuthorName: Ginny A. Catania, Leigh A. Stearns, Twila A. Moon, Ellen M. Enderlin, R. H. Jackson

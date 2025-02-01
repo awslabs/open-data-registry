@@ -1,0 +1,144 @@
+Name: USGS Landsat
+Description: |
+  This joint NASA/USGS program provides the longest continuous space-based record of 
+  Earth’s land in existence. Every day, Landsat satellites provide essential information 
+  to help land managers and policy makers make wise decisions about our resources and our environment.
+  Data is provided for Landsats 1, 2, 3, 4, 5, 7, 8, and 9 (excludes Landsat 6).
+
+  As of June 28, 2023 ([announcement](https://www.usgs.gov/landsat-missions/news/changes-coming-landsats-simple-notification-service-amazon-web-service)),
+  the previous single SNS topic `arn:aws:sns:us-west-2:673253540267:public-c2-notify` was replaced with
+  three new SNS topics for different types of scenes.
+Documentation: https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access
+Contact: https://answers.usgs.gov/
+ManagedBy: "[United States Geological Survey](https://www.usgs.gov)"
+UpdateFrequency: New scenes are added daily.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - disaster response
+  - stac
+  - cog
+License: |
+  There are no restrictions on Landsat data downloaded from the USGS; it can be used or 
+  redistributed as desired. We do request that you include a [statement of the data source](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con) 
+  when citing, copying, or reprinting USGS Landsat data or images.
+Resources:
+  - Description: Scenes and metadata
+    ARN: arn:aws:s3:::usgs-landsat/collection02/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+    Explore:
+    - '[STAC Catalog](https://landsatlook.usgs.gov/stac-server/collections)'
+  - Description: New scene notifications, Level-1 and Level-2 Scenes
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-notify-v2
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: New scene notifications, Level 3 Science Products
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-level-3-tile-notify-v2
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: New scene notifications, U.S. ARD Tiles
+    ARN: arn:aws:sns:us-west-2:673253540267:public-c2-ard-tile-notify-v2
+    Region: us-west-2
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: "How to Work with Landsat and Sentinel-2 on AWS with Python"
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com/
+    - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"
+      URL: https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971
+      AuthorName: Planet
+      AuthorURL: https://www.planet.com/
+    - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
+      URL: https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
+      AuthorName: Timothy Whitehead
+    - Title: Integrate imagery from the full Landsat archive into your own apps, maps, and analysis with Landsat image services
+      URL: http://www.arcgis.com/home/group.html?id=a74dff13f1be4b2ba7264c3315c57077#overview
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Using Cloud-Optimized GeoTIFF
+      URL: http://www.acgeospatial.co.uk/cog-part-2-python/
+      AuthorName: acgeospatial
+      AuthorURL: http://www.acgeospatial.co.uk/
+    - Title: Landsat Cloud Direct Access Requester Pays Tutorial
+      URL: https://www.usgs.gov/media/files/landsat-cloud-direct-access-requester-pays-tutorial
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Landsat Data is Moving to the Cloud
+      URL: https://www.usgs.gov/media/videos/landsat-data-cloud
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Landsat in the Cloud – Supporting Current Workflows
+      URL: https://www.usgs.gov/media/videos/landsat-cloud-will-my-workflow-be-supported
+      AuthorName: USGS
+      AuthorURL: https://www.usgs.gov
+    - Title: Cloud Segmentation in Landsat-8 Images
+      URL: https://medium.com/sentinel-hub/clouds-segmentation-in-landsat-8-images-da370815235
+      AuthorName: Ingrid Grenet
+    - Title: Creating a STAC of Landsat data
+      URL: https://pystac.readthedocs.io/en/stable/tutorials/creating-a-landsat-stac.html
+      AuthorName: PySTAC Contributors
+  Tools & Applications:
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: "Aggi: the fire detecting Twitter bot"
+      URL: https://twitter.com/aggibot
+      AuthorName: Aggi
+      AuthorURL: https://twitter.com/aggibot
+    - Title: COG-Explorer - View Cloud Optimized GeoTIFF images in the browser directly from object storage
+      URL: https://geotiffjs.github.io/cog-explorer/
+      AuthorName: EOX
+      AuthorURL: https://eox.at/
+    - Title: Spectator - tracking Landsat 8, accessing the data and quick preview
+      URL: https://spectator.earth/
+      AuthorName: Spectator
+      AuthorURL: https://spectator.earth/
+    - Title: Apps for exploring and analyzing Landsat imagery on the fly
+      URL: http://www.esri.com/landing-pages/software/landsat/unlock-earths-secrets
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Development Seed Geolambda
+      URL: https://developmentseed.org/blog/2017/08/17/geolambdas/
+      AuthorName: Matthew Hanson
+      AuthorURL: https://developmentseed.org/team/matt-hanson/
+    - Title: FME Landsat-8 on AWS Reader
+      URL: https://docs.safe.com/fme/html/FME_Desktop_Documentation/FME_ReadersWriters/landsat8aws/landsat8aws.htm
+      AuthorName: Safe Software
+      AuthorURL: https://www.safe.com/
+    - Title: FME Landsat-8/Sentinel-2 File Selector
+      URL: http://demos.fmeserver.com/landsat-sentinel-selector/
+      AuthorName: Safe Software
+      AuthorURL: https://www.safe.com/
+    - Title: Sentinel Hub WMS/WMTS/WCS Service for Landsat
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground for Landsat
+      URL: https://apps.sentinel-hub.com/sentinel-playground/?source=L8
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Dynamic map tiling with Cloud-Optimized GeoTIFFs
+      URL: https://kylebarron.dev/blog/cog-mosaic/overview
+      AuthorName: Kyle Barron
+  Publications:
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.

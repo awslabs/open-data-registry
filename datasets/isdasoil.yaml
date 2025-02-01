@@ -1,0 +1,50 @@
+Name: iSDAsoil
+Description: iSDAsoil is a resource containing soil property predictions for the entire African continent, generated using machine learning. Maps for over 20 different soil properties have been created at 2 different depths (0-20 and 20-50cm).  Soil property predictions were made using machine learning coupled with remote sensing data and a training set of over 100,000 analyzed soil samples. Included in this dataset are images of predicted soil properties, model error and satellite covariates used in the mapping process.
+Documentation: https://www.isda-africa.com/isdasoil/isdasoil-on-aws/
+Contact: info@isda-africa.com
+ManagedBy: "[Innovative Solutions for Decision Agriculture (iSDA)](https://www.isda-africa.com/)"
+UpdateFrequency: Based upon the availability of new data
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
+Tags:
+ - agriculture
+ - analytics
+ - aws-pds
+ - biodiversity
+ - conservation
+ - deep learning
+ - food security
+ - geospatial
+ - machine learning
+ - satellite imagery
+License: CC-BY 4.0
+Resources:
+  - Description: iSDAsoil data and covariates
+    ARN: arn:aws:s3:::isdasoil
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse data using the STAC viewer](https://isdasoil.s3.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: iSDAsoil Python tutorial
+      URL: https://github.com/iSDA-Africa/isdasoil-tutorial
+      AuthorName: Matt Miller
+      AuthorURL: https://github.com/mmiller8878
+      Services:
+        - CloudFormation
+        - SageMaker
+  Tools & Applications:
+    - Title: iSDAsoil homepage - view soil property maps online
+      URL: https://www.isda-africa.com/isdasoil/
+      AuthorName: iSDA
+    - Title: iSDAsoil liming demo app on Observable
+      URL: https://observablehq.com/d/1c48938b8a4f5da3
+      AuthorName: Jamie Collinson
+      AuthorURL: https://jamiecollinson.com/
+  Publications:
+    - Title: African soil properties and nutrients mapped at 30 m spatial resolution using two-scale ensemble machine learning
+      URL: https://www.nature.com/articles/s41598-021-85639-y
+      AuthorName: Tomislav Hengl, Matthew A. E. Miller, Josip Križan, Keith D. Shepherd, Andrew Sila, Milan Kilibarda, Ognjen Antonijević, Luka Glušica, Achim Dobermann, Stephan M. Haefele, Steve P. McGrath, Gifty E. Acquah, Jamie Collinson, Leandro Parente, Mohammadreza Sheykhmousa, Kazuki Saito, Jean-Martial Johnson, Jordan Chamberlin, Francis B. T. Silatsa, Martin Yemefack, John Wendt, Robert A. MacMillan, Ichsani Wheeler & Jonathan Crouch

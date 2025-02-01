@@ -1,0 +1,50 @@
+Name: Africa Soil Information Service (AfSIS) Soil Chemistry
+Description: |
+    This dataset contains soil infrared spectral data and paired soil property
+    reference measurements for georeferenced soil samples that were collected
+    through the Africa Soil Information Service (AfSIS) project, which lasted
+    from 2009 through 2018. In this release, we include data collected during
+    Phase I (2009-2013.) Georeferenced samples were collected from 19 countries
+    in Sub-Saharan African using a statistically sound sampling scheme,
+    and their soil properties were analyzed using *both* conventional soil
+    testing methods and spectral methods (infrared diffuse reflectance
+    spectroscopy). The two types of data can be paired to form a training
+    dataset for machine learning, such that certain soil properties can be
+    well-predicted through less expensive spectral techniques.
+
+Documentation: https://github.com/qedsoftware/afsis-soil-chem-tutorial
+Contact: afsis@qed.ai
+ManagedBy: "[QED](https://qed.ai/)"
+UpdateFrequency: As required
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
+Tags:
+  - agriculture
+  - aws-pds
+  - environmental
+  - food security
+  - machine learning
+  - life sciences
+License: ODC Open Database License ("[ODbL](https://opendatacommons.org/licenses/odbl/summary/index.html)") version 1.0, with attribution to AfSIS
+Resources:
+  - Description: |
+        Paired wet and dry chemistry measurements for georeferenced soils
+        collected by the Africa Soil Information Service (AfSIS), stored
+        as CSV and OPUS files.
+    ARN: arn:aws:s3:::afsis
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: AfSIS Soil Chemistry - Usage Tutorial
+      URL: https://github.com/qedsoftware/afsis-soil-chem-tutorial/
+      AuthorName: QED
+      AuthorURL: https://qed.ai
+  Tools & Applications:
+  Publications:
+    - Title: Goalkeepers 2018, Soil - The Big Data Beneath Your Feet
+      URL: https://www.youtube.com/watch?v=Fb9R0CnPMkc
+      AuthorName: QED
+      AuthorURL: https://qed.ai

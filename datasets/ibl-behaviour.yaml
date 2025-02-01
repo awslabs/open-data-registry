@@ -1,0 +1,43 @@
+Name: IBL Behavioral Data on AWS
+Description: Behavioral data of mice performing a decision-making task, associated with 2020 publication of the IBL.
+Documentation: https://int-brain-lab.github.io/iblenv/dj_docs/dj_public.html
+Contact: info@internationalbrainlab.org
+ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
+UpdateFrequency: TBD
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - open source software
+  - Mus musculus
+License: CC-BY 4.0
+Resources:
+  - Description: Project data in public bucket
+    ARN: arn:aws:s3:::ibl-brain-wide-map-public
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
+      URL: https://pypi.org/project/ONE-api/
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Tutorials:
+    - Title: Download the public data via ONE
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Find data associated with a release or publication
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Loading Data
+      URL: https://int-brain-lab.github.io/iblenv/loading_examples.html#
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Publications:
+    - Title: Standardized and reproducible measurement of decision-making in mice
+      URL: https://doi.org/10.7554/eLife.63711
+      AuthorName: International Brain Laboratory et al.
+      AuthorURL: www.internationalbrainlab.com

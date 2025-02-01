@@ -1,0 +1,26 @@
+Name: Hubble Space Telescope
+Description: |
+  The Hubble Space Telescope (HST) is one of the most productive scientific instruments ever created. This dataset contains calibrated and raw data for all currently active instruments on HST: ACS, COS, STIS, WFC3, and FGS.
+Documentation: https://archive.stsci.edu/missions-and-data/hst
+Contact: archive@stsci.edu
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please see the [HST mission acknowledgement page](https://archive.stsci.edu/publishing/mission-acknowledgements#section-e10746cc-090f-423d-ba4d-c02db088f9c4) for full citation instructions. 
+UpdateFrequency: Hourly
+Tags:
+  - astronomy
+  - aws-pds
+License: Public domain. Attribution required for refereed scientific papers.
+Resources:
+  - Description: HST Mission data files
+    ARN: arn:aws:s3:::stpubdata/hst
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/hst
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

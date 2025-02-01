@@ -1,0 +1,40 @@
+Name: Indiana Statewide Digital Aerial Imagery Catalog
+Description: | 
+  The State of Indiana Geographic Information Office and IOT Office of Technology manage a series of digital orthophotography dating back to 2005.  Every year's worth of imagery is available as Cloud Optimized GeoTIFF (COG) files, original GeoTIFF, and other compressed deliverables such as ECW and MrSID.  Additionally, each imagery year is organized into a tile grid scheme covering the entire geography of Indiana.  All years of imagery are tiled from a 5,000 ft grid or sub tiles depending upon the resolution of the imagery.  The naming of the tiles reflects the lower left coordinate from the image.
+Documentation: https://imagery.gio.in.gov/
+Contact: sscholer@iot.in.gov
+ManagedBy: Indiana Geographic Information Office 
+UpdateFrequency: The State of Indiana has had a 4-year cycle collecting imagery.  The collections are designated by counties in three groups that cover Indiana, South to North.  These areas are frequently referred to as Tiers in the other documentation.  For example, tier 1 (Central 3rd) extends from Harrison County in the South to Elkhart and St. Joseph County in the North, while Tier 2 consists of the counties to the eastern side of the State, and Tier 3 is those counties to the western side of the State.
+Tags:
+- aerial imagery
+- aws-pds
+- earth observation
+- geospatial
+- imaging
+- mapping
+- cog
+- natural resource
+- sustainability
+- agriculture
+License: "Access to Indiana Geographic Information Office Orthoimagery is governed by Creative Commons 0 (CC0): https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+Resources:
+- Description: State of Indiana digital orthophotography archive.
+  ARN: arn:aws:s3:::gisimageryingov
+  Region: us-east-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: ArcGIS Online Indiana Orthoimagery Viewer
+      URL: https://indianamap-inmap.hub.arcgis.com/datasets/61d4dc991c154af49ad7c1d675182a4f/explore
+      AuthorName: Indiana Geographic Information Office (IGIO)
+    - Title: IGIO Imagery Opendata S3 Browser
+      URL: https://gisimageryingov.s3.amazonaws.com/index.html
+      AuthorName: Indiana Geographic Information Office (IGIO)
+    
+  Publications:
+    - Title:  "Recording of 2025 - 2028 Indiana Orthoimagery Program Presentation"
+      URL: https://imagery.gio.in.gov/pages/resources
+      AuthorName: Indiana Geographic Information Office (IGIO) 
+
+

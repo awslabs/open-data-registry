@@ -1,0 +1,37 @@
+Name: Sentinel-1 SLC dataset for South and Southeast Asia, Taiwan, Korea and Japan
+Description: |
+  The S1 Single Look Complex (SLC) dataset contains Synthetic Aperture Radar (SAR) data in the C-Band wavelength. The SAR sensors are installed on a two-satellite (Sentinel-1A and Sentinel-1B) constellation orbiting the Earth with a combined revisit time of six days, operated by the European Space Agency. The S1 SLC data are a Level-1 product that collects radar amplitude and phase information in all-weather, day or night conditions, which is ideal for studying natural hazards and emergency response, land applications, oil spill monitoring, sea-ice conditions, and associated climate change effects.
+Documentation: https://github.com/earthobservatory/sentinel1-opds/
+Contact: For any enquires regarding data delivery, please email ehill@ntu.edu.sg and stchin@ntu.edu.sg
+ManagedBy: "[Earth Observatory of Singapore, Nanyang Technological University](https://earthobservatory.sg)"
+UpdateFrequency: S1 SLC data for the region of interest will be updated regularly, as it becomes available on the Alaska Satellite Facility endpoint.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - disaster response
+  - satellite imagery
+  - geospatial
+  - earth observation
+  - environmental
+  - synthetic aperture radar
+License: |
+  The data usage will inherit and fully comply with the free and open data policy from ESA’s [Sentinel Data Policy](https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/TC_Sentinel_Data_31072014.pdf).
+Resources:
+  - Description: Public access to Sentinel-1 SLC IW scenes over South and Southeast Asia, Taiwan and Japan
+    ARN: arn:aws:s3:::sentinel1-slc-seasia-pds
+    Region: ap-southeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Sentinel-1 Opendataset Wiki and Tutorials
+    URL: https://github.com/earthobservatory/sentinel1-opds/wiki
+    AuthorName: Earth Observatory of Singapore
+    AuthorURL: https://earthobservatory.sg/research-group/geodesy-group-emma-hill/people
+  Tools & Applications:
+  Publications:
+  - Title: Rapid flood and damage mapping using synthetic aperture radar in response to Typhoon Hagibis, Japan
+    URL: https://www.nature.com/articles/s41597-020-0443-5
+    AuthorName: "Cheryl W. J. Tay, Sang-Ho Yun, Shi Tong Chin, Alok Bhardwaj, Jungkyo Jung & Emma M. Hill"

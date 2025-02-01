@@ -1,0 +1,46 @@
+Name: Community Earth System Model v2 Large Ensemble (CESM2 LENS)
+Description: >
+  The US National Center for Atmospheric Research partnered with the IBS Center for Climate Physics in South Korea to generate the CESM2 Large Ensemble which consists of 100 ensemble members at 1 degree spatial resolution covering the period 1850-2100 under CMIP6 historical and SSP370 future radiative forcing scenarios. Data sets from this ensemble were made downloadable via the Climate Data Gateway on June 14th, 2021.
+  
+  NCAR has copied a subset (currently ~500 TB) of CESM2 LENS data to Amazon S3 as part of the AWS Public Datasets Program. To optimize for large-scale analytics we have represented the data as ~275 Zarr stores format accessible through the Python Xarray library. Each Zarr store contains a single physical variable for a given model run type and temporal frequency (monthly, daily).
+Documentation: https://doi.org/10.26024/y48t-q717
+Contact: rdahelp@ucar.edu
+ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
+UpdateFrequency: Rare. The LENS experiment is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the AWS copy.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - oceans
+  - land
+  - ice
+  - geospatial
+  - aws-pds
+  - sustainability
+  - zarr
+License: https://www.ucar.edu/terms-of-use/data
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::ncar-cesm2-lens
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Jupyter Notebook and other documentation and tools for CESM2-LE on AWS
+      URL: https://github.com/NCAR/cesm2-le-aws
+      AuthorName: NCAR Science at Scale team
+    - Title: Rendered (static) version of Jupyter Notebook
+      URL: https://ncar.github.io/cesm2-le-aws/kay_et_al_lens2.html
+      AuthorName: Maxwell Grover, NCAR
+    - Title: Urban Climate Explorer
+      URL: https://zhonghuazheng.com/UrbanClimateExplorer/pages/about.html
+      AuthorName: Zhonghua Zheng
+  Publications:
+    - Title: "Ubiquity of human-induced changes in climate variability"
+      URL: https://doi.org/10.5194/esd-2021-50
+      AuthorName: Rodgers et al. (2021), Earth Syst. Dynam., 12, 1–19, 2021

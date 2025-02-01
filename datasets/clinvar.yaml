@@ -1,0 +1,34 @@
+Deprecated: True
+DeprecatedNotice: Amazon is no longer hosting this Data Lakehouse Ready dataset
+Name: ClinVar - Data Lakehouse Ready
+Description: ClinVar is a freely accessible, public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. ClinVar thus facilitates access to and communication about the relationships asserted between human variation and observed health status, and the history of that interpretation. ClinVar processes submissions reporting variants found in patient samples, assertions made regarding their clinical significance, information about the submitter, and other supporting data. The alleles described in submissions are mapped to reference sequences, and reported according to the HGVS standard. ClinVar then presents the data for interactive users as well as those wishing to use ClinVar in daily workflows and other local applications. ClinVar works in collaboration with interested organizations to meet the needs of the medical genetics community as efficiently and effectively as possible. This representation of ClinVar is stored in Parquet format and most easily utilized through Amazon Athena. Follow the documentation link for install instructions (< 2 minute install). 
+Documentation: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+Contact: https://github.com/aws-samples/data-lake-as-code/issues
+ManagedBy: "[Amazon Web Services](https://aws.amazon.com/)"
+UpdateFrequency: Every Sunday at 1AM UTC
+Tags:  
+  - chemistry
+  - genetic
+  - genomic
+  - life sciences
+  - biotech blueprint  
+  - parquet
+License: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_attributions.txt
+Resources: 
+  - Description: ClinVar
+    ARN: arn:aws:s3:::aws-roda-hcls-datalake/clinvar_summary_variants/
+    Region: us-east-1
+    Type: S3 Bucket  
+DataAtWork:
+  Tutorials:
+    - Title: Data Lake as Code Deployment Guide
+      URL: https://github.com/aws-samples/data-lake-as-code/blob/roda/docs/roda_install.md
+      AuthorName: AWS Biotech Blueprints Team
+      Services:
+        - Athena
+        - Glue
+        - Lake Formation
+  Publications:
+    - Title: Data Lake as Code, Featuring ChEMBL and Open Targets
+      URL: https://aws.amazon.com/blogs/startups/a-data-lake-as-code-featuring-chembl-and-opentargets/
+      AuthorName: Paul Underwood

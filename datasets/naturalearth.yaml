@@ -1,0 +1,31 @@
+Name: Natural Earth
+Description: Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software.
+Documentation: https://www.naturalearthdata.com/downloads/
+Contact: https://github.com/nvkelso/natural-earth-vector/issues
+ManagedBy: North American Cartographic Information Society (nacis.org)
+UpdateFrequency: As needed
+Collabs:
+  ASDI:
+    Tags:
+      - ecosystems
+Tags:
+  - aws-pds
+  - mapping
+  - geospatial
+  - global
+  - tiles
+  - earth observation
+  - population
+License: Public Domain. https://www.naturalearthdata.com/about/terms-of-use/
+Resources:
+  - Description: Shapefile downloads in ZIP archives
+    ARN: arn:aws:s3:::naturalearth
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Publications:
+    - Title: Natural Earth Vector (2009)
+      URL: http://shadedrelief.com/NEV/natural_earth_vector_cp64.pdf
+      AuthorName: Nathaniel Vaughn Kelso, Tom Patterson 
+      AuthorURL: http://shadedrelief.com/

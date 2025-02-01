@@ -1,0 +1,39 @@
+Name: EURO-CORDEX - European component of the Coordinated Regional Downscaling Experiment
+Description: |
+  The EURO-CORDEX dataset contains regional climate model data for Europe, for use in impacts, decision-making, and climate science. 
+  Currently, the bucket contains monthly datasets of 2m air temperature downscaled from CMIP5 global model datasets using different
+  regional climate models.
+Documentation: https://www.euro-cordex.net/060378/index.php.en
+Contact: cordex-aws@hereon.de
+ManagedBy: "[Helmholtz Centre Hereon / GERICS](https://www.climate-service-center.de)"
+UpdateFrequency: We will add more datasets on demand.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - geospatial
+  - zarr
+License: https://is-enes-data.github.io/cordex_terms_of_use.pdf
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::euro-cordex
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Jupyter Book
+      URL: https://wcrp-cordex.github.io/cordex-tutorials/aws-access.html
+      AuthorName: Lars Buntemeyer
+    - Title: Intake-ESM Catalog
+      URL: https://euro-cordex.s3.eu-central-1.amazonaws.com/catalog/CORDEX-CMIP5.json
+      AuthorName: Lars Buntemeyer
+  Publications:
+    - Title: Beyond ESGF - Regional climate model datasets in the cloud on AWS S3
+      URL: https://doi.org/10.5281/zenodo.8059419
+      AuthorName: Lars Buntemeyer

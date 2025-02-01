@@ -1,0 +1,35 @@
+Name: Allen Brain Observatory - Visual Coding AWS Public Data Set
+Description: |
+  The Allen Brain Observatory – Visual Coding is a large-scale, standardized survey of physiological activity across the mouse visual cortex, hippocampus, and thalamus. It includes datasets collected with both two-photon imaging and Neuropixels probes, two complementary techniques for measuring the activity of neurons in vivo. The two-photon imaging dataset features visually evoked calcium responses from GCaMP6-expressing neurons in a range of cortical layers, visual areas, and Cre lines. The Neuropixels dataset features spiking activity from distributed cortical and subcortical brain regions, collected under analogous conditions to the two-photon imaging experiments. We hope that experimentalists and modelers will use these comprehensive, open datasets as a testbed for theories of visual information processing.
+Documentation: https://github.com/AllenInstitute/AllenSDK/wiki/Use-the-Allen-Brain-Observatory-%E2%80%93-Visual-Coding-on-AWS
+Contact: awspublicdataset@alleninstitute.org
+ManagedBy: "[Allen Institute](http://www.alleninstitute.org/)"
+UpdateFrequency: Annually
+Tags:
+  - aws-pds
+  - neurobiology
+  - neuroimaging
+  - image processing
+  - imaging
+  - life sciences
+  - signal processing
+  - electrophysiology
+  - Mus musculus
+License: http://www.alleninstitute.org/legal/terms-use/
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::allen-brain-observatory
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: SageMaker launch template with s3fs bucket mounts
+    ARN: arn:aws:s3:::allen-brain-observatory-templates
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Use the Allen Brain Observatory – Visual Coding on AWS
+      URL: https://github.com/AllenInstitute/AllenSDK/wiki/Use-the-Allen-Brain-Observatory-%E2%80%93-Visual-Coding-on-AWS
+      AuthorName: Nika Keller, David Feng
+      AuthorURL: https://twitter.com/AllenInstitute
+  Tools & Applications:
+  Publications:

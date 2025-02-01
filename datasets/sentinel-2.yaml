@@ -1,0 +1,173 @@
+Name: Sentinel-2
+Description: |
+  The [Sentinel-2 mission](https://sentinel.esa.int/web/sentinel/missions/sentinel-2) is
+  a land monitoring constellation of two satellites that provide high resolution
+  optical imagery and provide continuity for the current SPOT and Landsat missions.
+  The mission provides a global coverage of the Earth's land surface every 5 days,
+  making the data of great use in on-going studies. L1C data are available from
+  June 2015 globally. L2A data are available from November 2016 over Europe
+  region and globally since January 2017.
+Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sentinel-hub.com/sentinel-s2-l1c/readme.html) and [Sentinel-2 L2A](https://roda.sentinel-hub.com/sentinel-s2-l2a/readme.html).
+Contact: https://forum.sentinel-hub.com/c/aws-sentinel
+ManagedBy: "[Sinergise](https://www.sinergise.com/)"
+UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - disaster response
+  - stac
+License: |
+  Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+Resources:
+  - Description: Level 1C scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
+    ARN: arn:aws:s3:::sentinel-s2-l1c
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+    Explore:
+    - '[Earth Search STAC L1C Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[Earth Search STAC Browser L1C Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-l1c)'
+    - '[STAC V1.0.0 endpoint](https://sentinel-s2-l1c-stac.s3.amazonaws.com/)'
+    - '[Earth Viewer by Element 84](https://viewer.aws.element84.com/)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Level 2A scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
+    ARN: arn:aws:s3:::sentinel-s2-l2a
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://sentinel-s2-l2a-stac.s3.amazonaws.com/)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
+    ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l2a
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Zipped archives for each L1C product with 3 day retention period, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l1c-zips
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: Zipped archives for each L2A product with 3 day retention period, in Requester Pays bucket
+    ARN: arn:aws:s3:::sentinel-s2-l2a-zips
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: New scene notifications for L1C, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
+    ARN: arn:aws:sns:eu-west-1:214830741341:NewSentinel2Product
+    Region: eu-west-1
+    Type: SNS Topic
+  - Description: New scene notifications for L2A, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/).
+    ARN: arn:aws:sns:eu-central-1:214830741341:SentinelS2L2A
+    Region: eu-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: How to Work with Landsat and Sentinel-2 on AWS with Python
+      URL: https://www.matecdev.com/posts/landsat-sentinel-aws-s3-python.html
+      AuthorName: Martin D. Maas
+      AuthorURL: https://www.matecdev.com
+    - Title: Getting Started With Geospatial Data Analysis
+      URL: https://github.com/samx18/geospatial_analysis/
+      NotebookURL: https://github.com/samx18/geospatial_analysis/blob/main/geospatial_analysis.ipynb
+      AuthorName: Sam Palani
+      AuthorURL: https://samx18.medium.com
+      Services:
+        - SageMaker Studio Lab
+    - Title: Detecting deforestation using unsupervised K-means clustering on Sentinel-2 satellite imagery and SageMaker Studio Lab (SMSL)
+      URL: https://github.com/aws-samples/aws-smsl-geospatial-analysis-deforestation/
+      NotebookURL: https://github.com/aws-samples/aws-smsl-geospatial-analysis-deforestation/blob/main/geospatial_analysis_deforestation.ipynb
+      AuthorName: Parth Patel
+      Services:
+        - SageMaker Studio Lab
+    - Title: Tutorial for using Sentinel-2 data
+      URL: https://medium.com/@anttilip/seeing-earth-from-space-from-raw-satellite-data-to-beautiful-high-resolution-images-feb522adfa3f
+      AuthorName: Antti Lipponen
+      AuthorURL: https://medium.com/@anttilip
+    - Title: Exploring the Chile wildfires with Landsat and Sentinel-2 imagery
+      URL:   https://www.gearthblog.com/blog/archives/2017/02/exploring-chile-wildfires-landsat-sentinel-2-imagery.html
+      AuthorName: Timothy Whitehead
+    - Title: Integrate imagery from the Sentinel-2 archive into your own apps, maps, and analysis with the Sentinel-2 image service
+      URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/imagery/sentinel-2-more-than-meets-the-eye/
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Learning Custom Scripts to Make Useful and Beautiful Satellite Images
+      URL: https://medium.com/sentinel-hub/create-useful-and-beautiful-satellite-images-with-custom-scripts-8ef0e6a474c6
+      AuthorName: Monja Šebela
+    - Title: Vegetation Analysis Pre/Post Lava Fire Using SentinelHub and Sentinel-2 Imagery on AWS
+      URL: https://github.com/aws-samples/aws-sentinel2-smsl-notebook
+      NotebookURL: https://github.com/aws-samples/aws-sentinel2-smsl-notebook/blob/main/geospatial_imagery_analysis.ipynb
+      AuthorName: Mike Jeffe
+      Services:
+        - SageMaker Studio Lab
+    - Title: TCS Digital Farming Generates Near Real-Time Insights on Crop Conditions for Actionable Decision Making
+      URL: https://aws.amazon.com/blogs/apn/tcs-digital-farming-generates-near-real-time-insights-on-crop-conditions-for-actionable-decision-making/
+      AuthorName: Dr. Suryakant Sawant, Mahesh Sarode, Rajoy Jose, and Kiran Killedar
+      Services:
+        - SageMaker
+        - Lambda
+  Tools & Applications:
+    - Title: Sentinel Hub WMS/WMTS/WCS Service
+      URL: http://www.sentinel-hub.com/apps/wms
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: EOS Land Viewer
+      URL: https://eos.com/landviewer/
+      AuthorName: Earth Observing System
+      AuthorURL: https://eos.com/
+    - Title: Sentinel-2 Cloudless Atlas
+      URL: https://s2maps.eu/
+      AuthorName: EOX
+      AuthorURL: https://eox.at
+    - Title: EO Browser
+      URL: http://apps.sentinel-hub.com/eo-browser/
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sentinel Playground
+      URL: http://apps.sentinel-hub.com/sentinel-playground/
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Python package for working with Sentinel-2 AWS data
+      URL: https://github.com/sentinel-hub/sentinelhub-py
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Sterling Geo Using Sentinel-2 on Amazon Web Services to Create NDVI
+      URL: https://www.youtube.com/watch?v=3tIIUr-keps
+      AuthorName: Sterling Geo
+    - Title: FME Landsat-8/Sentinel-2 File Selector
+      URL: http://demos.fmeserver.com/landsat-sentinel-selector/
+      AuthorName: Safe Software
+      AuthorURL: https://www.safe.com/
+    - Title: QGIS plugin for Sentinel-2 data
+      URL:   https://medium.com/sentinel-hub/control-sentinel-hub-from-within-qgis-2a83eb7f13db
+      AuthorName: Sinergise
+      AuthorURL: http://www.sinergise.com/
+    - Title: Spectator - tracking Sentinel 2, accessing the data and quick preview
+      URL: https://spectator.earth/
+      AuthorName: Spectator
+      AuthorURL: https://spectator.earth/
+    - Title: Use the Sentinel Explorer app to explore, visualize, and analyze the entire Sentinel-2 archive
+      URL: https://sentinel2explorer.esri.com/
+      AuthorName: Esri
+      AuthorURL: https://www.esri.com/en-us/home
+    - Title: Interactive map with AI detected fields and crops based on Sentinel-2 imagery
+      URL: https://map.onesoil.ai/
+      AuthorName: OneSoil
+      AuthorURL: https://onesoil.ai/
+  Publications:
+    - Title: Using Remote Sensing Images and Cloud Services on AWS to Improve Land Use and Cover Monitoring
+      URL: https://ieeexplore.ieee.org/abstract/document/9165649
+      AuthorName: K. R. Ferreira, et al.
+    - Title: "Coral-spawn slicks: Reflectance spectra and detection using optical satellite data"
+      URL: https://www.sciencedirect.com/science/article/pii/S0034425720304284
+      AuthorName: Hiroya Yamano, Asahi Sakuma, Saki Harii
+

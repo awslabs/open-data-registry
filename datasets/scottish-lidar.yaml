@@ -1,0 +1,51 @@
+Name: Scottish Public Sector LiDAR Dataset
+Description: This dataset is Lidar data that has been collected by the Scottish public sector and made available under the Open Government Licence. The data are available as point cloud (LAS format or in LAZ compressed format), along with the derived Digital Terrain Model (DTM) and Digital Surface Model (DSM) products as Cloud optimized GeoTIFFs (COG) or standard GeoTIFF. The dataset contains multiple subsets of data which were each commissioned and flown in response to different organisational requirements. The details of each can be found at https://remotesensingdata.gov.scot/data#/list
+Documentation: https://remotesensingdata.gov.scot/data#/list
+Contact: https://remotesensingdata.gov.scot/feedback or email Scottish Government on gi-sat@gov.scot
+ManagedBy: "[Joint Nature Conservation Committee](https://jncc.gov.uk/)"
+UpdateFrequency: New datasets have historically been added every 2-3 years but there is no guarantee that this will continue.
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
+Tags:
+  - lidar
+  - cities
+  - coastal
+  - environmental
+  - urban
+  - elevation
+  - cog
+  - aws-pds
+License: "All data is made available under the [Open Government Licence v3](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) unless otherwise stated. Currently the exception is only the phase 2 - LAZ files which are under [non-commercial government license](https://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/)."
+Resources:
+  - Description: LiDAR data (DSM, DTM and Laz)
+    ARN: arn:aws:s3:::srsp-open-data
+    Region: eu-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: LiDAR Tutorial using QGIS
+      URL: https://datasciencescotland.github.io/LiDAR-Tutorial-QGIS/
+      AuthorName: Michal Michalski
+    - Title: LiDAR Tutorial using R
+      URL: https://datasciencescotland.github.io/LiDAR-Tutorial-R/
+      AuthorName: Michal Michalski
+  Tools & Applications:
+    - Title: Scottish Remote Sensing Portal
+      URL: https://remotesensingdata.gov.scot/
+      AuthorName: Scottish Government and Joint Nature Conservation Committee (JNCC)
+      AuthorURL: https://remotesensingdata.gov.scot/about
+  Publications:
+    - Title: New light on medieval settlement in lowland Scotland
+      URL: https://github.com/DataScienceScotland/LiDAR-Tutorial-QGIS/blob/main/resources/new_light_on_medieval_settlement_in_lowl.pdf
+      AuthorName: Dave Cowley and Piers Dixon
+    - Title: Large area archaeological survey in the age of big data and machine learning
+      URL: https://github.com/DataScienceScotland/LiDAR-Tutorial-QGIS/blob/main/resources/expedite_and_upscale_large_area_archaeol.pdf
+      AuthorName: Dave Cowley, George Geddes, Łukasz Banaszek, Kirsty Millican and Iris Kramer
+    - Title: Making LiGHT Work of Large Area Survey? Developing Approaches to Rapid Archaeological Mapping and the Creation of Systematic National-scaled Heritage Data
+      URL: https://journal.caa-international.org/articles/10.5334/jcaa.49/
+      AuthorName: Dave Cowley, Łukasz Banaszek, George Geddes, Angela Gannon, Mike Middleton and Kirsty Millican
+    - Title: Towards National Archaeological Mapping. Assessing Source Data and Methodology - A Case Study from Scotland
+      URL: https://www.mdpi.com/2076-3263/8/8/272
+      AuthorName: Łukasz Banaszek, Dave Cowley and Mike Middleton

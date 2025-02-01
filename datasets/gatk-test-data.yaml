@@ -1,0 +1,30 @@
+Name: GATK Test Data
+Description: |
+  The GATK test data resource bundle is a collection of files for resequencing human genomic data with the
+  Broad Institute's [Genome Analysis Toolkit (GATK)](https://software.broadinstitute.org/gatk/).
+Documentation: https://s3.amazonaws.com/gatk-test-data/gatk-test-data-readme.html
+Contact: https://gatkforums.broadinstitute.org/gatk
+ManagedBy: Broad Institute
+UpdateFrequency: Every 3 months
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - cancer
+  - genetic
+  - genomic
+  - life sciences
+License:  CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Resources:
+  - Description: The contents of this dataset is multi-modal and includes various types of genomic data, such as CRAMs/BAMs, whole-genome sequencing (WGS) data, exome data, RNA data, etc.
+    ARN: arn:aws:s3:::gatk-test-data
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: Genomics Workflows on AWS - Cromwell on AWS
+      URL: https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/#real-world-example-haplotypecaller
+      AuthorName: W. Lee Pang
+      AuthorURL: https://www.linkedin.com/in/lee-pang-a039a26/
+  Publications:

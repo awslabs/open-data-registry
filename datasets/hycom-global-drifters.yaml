@@ -1,0 +1,60 @@
+Name: HYCOM-OceanTrack Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset
+Description: A combined dataset of simulated ocean sea surface height, near-surface velocities, and particle trajectories from a global 1/25th degree HYbrid Coordinate Ocean Model (HYCOM) 1-year run.
+Documentation: https://github.com/selipot/hycom-oceantrack
+Contact: https://github.com/selipot/hycom-oceantrack/issues
+ManagedBy: Shane Elipot
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - drifters
+  - Eulerian
+  - HYCOM   
+  - Lagrangian
+  - oceans
+  - ocean simulation
+  - ocean circulation
+  - ocean currents
+  - ocean velocity
+  - ocean sea surface height
+  - numerical particle
+License: There are no restrictions on the use of this data.
+Citation: Pending
+Resources:
+  - Description: HYCOM Eulerian and Lagrangian velocity and sea surface height
+    ARN: arn:aws:s3:::hycom-global-drifters
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://hycom-global-drifters.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: HYCOM Eulerian tutorial
+      URL: https://github.com/selipot/hycom-oceantrack/tree/main/tutorials/
+      NotebookURL: https://github.com/selipot/hycom-oceantrack/tree/main/tutorials/hycom_eulerian_tutorial.ipynb
+      AuthorName: Shane Elipot
+      AuthorURL: https://selipot.github.io
+      Services:
+    - Title: HYCOM Lagrangian tutorial
+      URL: https://github.com/selipot/hycom-oceantrack/tree/main/tutorials/
+      NotebookURL: https://github.com/selipot/hycom-oceantrack/tree/main/tutorials/hycom_lagrangian_tutorial.ipynb
+      AuthorName: Shane Elipot
+      AuthorURL: https://selipot.github.io
+      Services:  
+  Tools & Applications:
+    - Title: clouddrift
+      URL: https://github.com/Cloud-Drift/clouddrift
+      AuthorName: Shane Elipot
+      AuthorURL: https://selipot.github.io
+  Publications: 
+    - Title: An integrated dataset of near-surface Eulerian fields and Lagrangian trajectories from an ocean model
+      URL: https://doi.org/10.1038/s41597-024-03813-z
+      AuthorName: Shane Elipot
+    - Title: "HYCOM-OceanTrack: HYCOM-OceanTrack: Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset (v1.0)"
+      URL: https://doi.org/10.5281/zenodo.12796468
+      AuthorName: Shane Elipot
+    - Title: Near-Surface Oceanic Kinetic Energy Distributions From Drifter Observations and Numerical Models
+      URL: https://dx.doi.org/10.1029/2022JC018551
+      AuthorName: Brian K. Arbic
+      AuthorURL: https://arbic.earth.lsa.umich.edu
+DeprecatedNotice:
+ADXCategories:

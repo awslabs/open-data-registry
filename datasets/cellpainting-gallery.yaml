@@ -1,0 +1,107 @@
+Name: Cell Painting Gallery
+Description: |
+  The Cell Painting Gallery is a collection of image datasets created using the [Cell Painting](https://pubmed.ncbi.nlm.nih.gov/27560178/) assay. 
+  The images of cells are captured by microscopy imaging, and reveal the response of various labeled cell components to whatever treatments are tested, which can include genetic perturbations, chemicals or drugs, or different cell types. 
+  The datasets can be used for diverse applications in basic biology and pharmaceutical research, such as identifying disease-associated phenotypes, understanding disease mechanisms, and predicting a drug’s activity, toxicity, or mechanism of action ([Chandrasekaran et al 2020](https://carpenter-singh-lab.broadinstitute.org/files/anne/files/141_Chandrasekaran_NatRevDrugDiscov_2020.pdf)). 
+  This collection is maintained by the [Carpenter–Singh lab](https://carpenter-singh-lab.broadinstitute.org/) and the [Cimini lab](https://cimini-lab.broadinstitute.org/) at the [Broad Institute](https://www.broadinstitute.org/).
+  A human-friendly listing of datasets, instructions for accessing them, and other documentation is at the [corresponding GitHub page](https://github.com/broadinstitute/cellpainting-gallery) about the Gallery.
+Documentation: https://github.com/broadinstitute/cellpainting-gallery
+Contact: cellpainting@broadinstitute.org
+ManagedBy: Carpenter-Singh and Cimini Labs at the Broad Institute
+UpdateFrequency: Typically when an associated publication is posted on biorxiv
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - cancer
+  - cell biology
+  - cell imaging
+  - cell painting
+  - chemical biology
+  - computer vision
+  - csv
+  - deep learning
+  - fluorescence imaging
+  - genetic
+  - high-throughput imaging
+  - image processing
+  - image-based profiling
+  - imaging
+  - machine learning
+  - medicine
+  - microscopy
+  - organelle
+  - life sciences
+License:  CC0 1.0 Universal (CC0 1.0) Public Domain Dedication, but please do cite the corresponding publication for each dataset, as listed [here](https://github.com/broadinstitute/cellpainting-gallery#citation).
+Resources:
+  - Description: Cell Painting data, comprising fluorescence microscopy cell images (TIFF), extracted features (CSV), and associated metadata (CSV and TXT).
+    ARN: arn:aws:s3:::cellpainting-gallery
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Documentation](https://github.com/broadinstitute/cellpainting-gallery)'
+      - '[Browse Bucket](https://cellpainting-gallery.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Cell Painting wiki
+      URL: https://broad.io/cellpaintingwiki
+      AuthorName: Multiple Authors
+      AuthorURL: https://www.broadinstitute.org/imaging
+    - Title: Image-based Profiling Handbook - for processing image-based profiling datasets using CellProfiler and pycytominer
+      URL: https://cytomining.github.io/profiling-handbook/
+      AuthorName: Multiple Authors
+      AuthorURL: https://github.com/cytomining/profiling-handbook/graphs/contributors
+    - Title: Scientific Community Image Forum - for software-oriented aspects of scientific imaging including analysis, processing, and acquisition
+      URL: https://forum.image.sc
+      AuthorName: Multiple Authors
+      AuthorURL: https://openbioimageanalysis.org
+    - Title: Center for Open Bioimage Analysis (COBA) YouTube Channel - video tutorials of CellProfiler and other softwares
+      URL: https://www.youtube.com/c/COBACenterforOpenBioimageAnalysis/videos
+      AuthorName: Multiple Authors
+      AuthorURL: https://openbioimageanalysis.org
+    - Title: Image-based profiling introductory exercise - data and an exercise on exploring image-based profiles, including understanding the various data levels
+      URL: https://github.com/broadinstitute/BBBC021_Morpheus_Exercise/blob/main/MorpheusExerciseWritten.pdf
+      AuthorName: Beth Cimini
+      AuthorURL: https://github.com/broadinstitute/BBBC021_Morpheus_Exercise/graphs/contributors    
+  Tools & Applications:
+    - Title: Pycytominer - Data processing functions for profiling perturbations
+      URL: https://github.com/cytomining/pycytominer
+      AuthorName: Multiple Authors
+      AuthorURL: https://github.com/cytomining/pycytominer/graphs/contributors
+    - Title: Distributed CellProfiler - Run encapsulated docker containers with CellProfiler in the Amazon Web Services infrastructure
+      URL: https://github.com/CellProfiler/Distributed-CellProfiler
+      AuthorName: Multiple Authors
+      AuthorURL: https://github.com/CellProfiler/Distributed-CellProfiler/graphs/contributors
+    - Title: Deep Profiler - Morphological profiling using deep learning
+      URL: https://github.com/cytomining/DeepProfiler
+      AuthorName: Multiple Authors
+      AuthorURL: https://github.com/cytomining/DeepProfiler/graphs/contributors
+    - Title: Image-based Profiling Recipe
+      URL: https://github.com/cytomining/profiling-recipe
+      AuthorName: Multiple Authors
+      AuthorURL: https://github.com/cytomining/profiling-recipe/graphs/contributors
+    - Title: Accelerating Drug Discovery with high-throughput Cell Painting on AWS
+      URL: https://lifesciences-resources.awscloud.com/healthcare-life-sciences-aws-for-industries/accelerating-drug-discovery-with-high-throughput-cell-painting-on-aws
+      AuthorName: Chris Kaspar
+  Publications:
+    - Title: Cell Painting, a high-content image-based assay for morphological profiling using multiplexed fluorescent dyes
+      URL: https://pubmed.ncbi.nlm.nih.gov/27560178/
+      AuthorName: Bray M-A, Singh S, Han H, Davis CT, Borgeson B, Hartland C, Kost-Alimova M, Gustafsdottir SM, Gibson CC, & Carpenter AE
+    - Title: Systematic morphological profiling of human gene and allele function via Cell Painting
+      URL: https://elifesciences.org/content/6/e24060
+      AuthorName: Rohban MH, Singh S, Wu X, Berthet JB, Bray M-A, Shrestha Y, Varelas X, Boehm JS, & Carpenter AE
+    - Title: Morphological Profiles of RNAi-Induced Gene Knockdown Are Highly Reproducible but Dominated by Seed Effects
+      URL: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0131370
+      AuthorName: Singh S, Wu X, Ljosa V, Bray M-A, Piccioni F, Root DE, Doench JG, Boehm JS, & Carpenter AE
+    - Title: A dataset of images and morphological profiles of 30 000 small-molecule treatments using the Cell Painting assay
+      URL: https://academic.oup.com/gigascience/article/6/12/1/2865213
+      AuthorName: Bray M-A, Gustafsdottir SM, Rohban MH, Singh S, Ljosa V, Sokolnicki KL, Bittker JA, Bodycombe NE, Dancik V, Hasaka TP, Hon CS, Kemp MM, Li K, Walpita D, Wawer MJ, Golub TR, Schreiber SL, Clemons PA, Shamji AF, & Carpenter AE
+    - Title: Toward performance-diverse small-molecule libraries for cell-based phenotypic screening using multiplexed high-dimensional profiling
+      URL: http://www.pnas.org/content/111/30/10911
+      AuthorName: Wawer MJ, Li K, Gustafsdottir SM, Ljosa V, BodycombeNE, Marton MA, Sokolnicki KL, Bray M-A, Kemp MM, Winchester E, Taylor B, Grant GB, Hon CSK, Duvall JR, Wilson JA, Bittker JA, Dancik V, Narayan R, Subramanian A, Winckler W, Golub TR, Carpenter AE, Shamji AF, Schreiber SL, & Clemons PA
+    - Title: Multiplex Cytological Profiling Assay to Measure Diverse Cellular States
+      URL: http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080999
+      AuthorName: Gustafsdottir SM, Ljosa V, Sokolnicki KL, Wilson JA, Walpita D, Kemp MM, Seiler KP, Carrel HA, Golub TR, Schreiber SL, Clemons PA, Carpenter AE, and Shamji AF
+    - Title: Cell Painting predicts impact of lung cancer variants
+      URL: https://www.molbiolcell.org/doi/10.1091/mbc.E21-11-0538
+      AuthorName: Caicedo JC, Arevalo J, Piccioni F, Bray MA, Hartland CL, Wu X, Brooks AN, Berger AH, Boehm JS, Carpenter AE, & Singh S

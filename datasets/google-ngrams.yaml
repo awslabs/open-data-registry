@@ -1,0 +1,19 @@
+Name: Google Books Ngrams
+Description: N-grams are fixed size tuples of items. In this case the items are words extracted from the Google Books corpus. The n specifies the number of elements in the tuple, so a 5-gram contains five words or characters. The n-grams in this dataset were produced by passing a sliding window of the text of books and outputting a record for each new token.
+Documentation: http://books.google.com/ngrams/
+Contact: https://books.google.com/ngrams
+UpdateFrequency: Not updated
+ManagedBy: Not managed
+Tags:
+  - amazon.science
+  - natural language processing
+License: Creative Commons Attribution 3.0 Unported License
+Resources:
+  - Description: A data set containing Google Books n-gram corpora in a Hadoop friendly file format.
+    ARN: arn:aws:s3:::datasets.elasticmapreduce/ngrams/books/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:

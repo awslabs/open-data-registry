@@ -1,0 +1,36 @@
+Name: Sentinel-1 SLC dataset for Germany
+Description: |
+  The Sentinel1 Single Look Complex (SLC) unzipped dataset contains Synthetic Aperture Radar (SAR) data from the European Space Agency’s Sentinel-1 mission. Different from the zipped data provided by ESA, this dataset allows direct access to individual swaths required for a given study area, thus drastically minimizing the storage and downloading time requirements of a project. Since the data is stored on S3, users can utilize the boto3 library and s3 get_object method to read the entire content of the object into the memory for processing, without actually having to download it. The Sentinel-1 constellation consists of two satellites equipped with SAR sensors and a combined revisit time of six days. SAR imagery gets recorded regardless of weather conditions and daylight, which makes it ideally suited for monitoring land-use changes, surface deformations, land applications, oil spills, sea-ice, natural hazards, and for emergency response. In its current first stage, the dataset covers the entirety of Germany and is being updated continuously. As a next stage, the dataset will provide up-to-date coverage of the sentinel-1 SLC data over Europe.
+  This dataset is retrieved from Alaska Satellite Facility (ASF) and consists of all Sentinel1-SLC imagery from the beginning (2014) to present.
+Documentation: https://github.com/live-eo/sentinel1-slc/
+Contact: For any enquires regarding the dataset, please email OpenData at Live-EO opendata@live-eo.com
+ManagedBy: "[LiveEO](https://live-eo.com/)"
+UpdateFrequency: New Sentinel1-SLC IW data are updated regularly in an interval of 6 days, after they are available on the Alaska Satellite Facility endpoint.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - disaster response
+  - satellite imagery
+  - geospatial
+  - sustainability
+  - earth observation
+  - environmental
+  - synthetic aperture radar
+License: |
+  The data usage will inherit and fully comply with the free and open data policy from ESA. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
+Resources:
+  - Description: Public access to Sentinel-1 SLC IW scenes over Germany
+    ARN: arn:aws:s3:::sentinel1-slc
+    Region: eu-west-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Interferometric Synthetic Aperture Radar Tutorial
+    URL: https://github.com/live-eo/sentinel1-slc/blob/main/docs/tutorial_InSAR.md
+    AuthorName: LiveEO
+    AuthorURL: https://live-eo.com/
+  Tools & Applications:
+  Publications:

@@ -1,0 +1,80 @@
+Deprecated: True
+Name: Retired – UK Met Office Atmospheric Deterministic and Probabilistic Forecasts
+Description: |
+  As of the 13th July, no further Met Office forecasts or data will be available via this service. <p>
+  
+  Meteorological data reusers now have an exciting opportunity to sample, experiment and evaluate
+  Met Office atmospheric model data, whilst also experiencing a transformative method of requesting
+  data via Restful APIs on AWS.
+  
+  For information about the data see the [Met Office website](https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/discovery).
+  For examples of using the data check out the [examples repository](https://github.com/MetOffice/aws-earth-examples).
+  If you need help and support using the data please raise an issue on the examples repository.
+  
+  **Please note:** Met Office continuously improves and updates its operational forecast models.
+  Our last update became effective 04/12/2019. Please find the details [here](https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/ps43_aws).
+Documentation: https://github.com/MetOffice/aws-earth-examples
+Contact: https://www.metoffice.gov.uk/about-us/contact
+UpdateFrequency: Daily (with 24 hour delay)
+ManagedBy: "[UK Met Office](https://www.metoffice.gov.uk/)"
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - climate
+  - weather
+  - meteorological
+License: |
+  This data is made available under a [Creative Commons licence](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+  This data is free to use for non-commercial purposes under the terms of the licence. You must
+  ensure that you acknowledge the source of this data as prescribed by this licence. Data or any
+  derivatives made using the data are for internal use only and may not be distributed or otherwise
+  shared.
+Resources:
+  - Description: "[Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/ukv-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-ukv-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global Atmospheric Hi-Res Model - 10km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/global-model-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-global-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (UK) MOGREPS-UK](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/mogreps-uk-aws-parameters-november-2019.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-mogreps-uk-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/mogreps-g-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:s3:::aws-earth-mo-atmospheric-mogreps-g-prd
+    Region: eu-west-2
+    Type: S3 Bucket
+  - Description: "[Met Office UK Atmospheric Hi-Res Model (UKV) - 2km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/ukv-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-ukv-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global Atmospheric Hi-Res Model - 10km Deterministic](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/global-model-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-global-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (UK) MOGREPS-UK](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/mogreps-uk-aws-parameters-november-2019.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-uk-prd
+    Region: eu-west-2
+    Type: SNS Topic
+  - Description: "[Met Office Global and Regional Ensemble Prediction System (Global) - MOGREPS-G](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/mogreps-g-aws-parameters-nov-2019.pdf)"
+    ARN: arn:aws:sns:eu-west-2:021908831235:aws-earth-mo-atmospheric-mogreps-g-prd
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Met Office AWS Earth data - Getting Started
+      URL: https://github.com/MetOffice/aws-earth-examples/blob/master/examples/1.%20Getting%20Started.ipynb
+      AuthorName: Jacob Tomlinson
+    - Title: Met Office AWS Earth data - Subscribing to data
+      URL: https://github.com/MetOffice/aws-earth-examples/blob/master/examples/2.%20Subscribing%20to%20data.ipynb
+      AuthorName: Jacob Tomlinson
+  Tools & Applications:
+  Publications:
+DeprecatedNotice: The provider of this dataset will no longer maintain this dataset.  We are open to talking with anyone else who might be willing to provide this dataset to the community.  Contact <a href="mailto:opendata@amazon.com">opendata@amazon.com</a>

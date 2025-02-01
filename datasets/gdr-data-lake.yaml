@@ -1,0 +1,105 @@
+Name: Department of Energy’s Geothermal Data Repository (GDR) Data Lake
+Description: |
+  Data released from projects funded by the Department of Energy's Geothermal 
+  Technologies Office (DOE GTO) that are too large or complex to be conveniently 
+  accessed by traditional means. The GDR data lake aims to improve and automate 
+  access of high-value geothermal data sets, making data actionable and discoverable 
+  by researchers and industry to accelerate analysis and advance innovation. 
+  This data lake is a sister-data lake to the Department of Energy’s Open Energy Data 
+  Initiative (OEDI) Data Lake.
+
+Documentation: https://github.com/openEDI/documentation/
+Contact:  https://github.com/openEDI/documentation/issues
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency:  As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - geothermal
+License:  Creative Commons Attribution 4.0 United States License
+Resources:
+  - Description: '[Data Catalog of the Geothermal Data Repository (GDR)](https://gdr.openei.org/)'
+    ARN: arn:aws:s3:::gdr-data-lake/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake)'
+  - Description: '[EGS Collab Experiment 1: Continuous Active-Source Seismic Monitoring (CASSM) Data](https://gdr.openei.org/submissions/1368)'
+    ARN: arn:aws:s3:::gdr-data-lake/egs_collab/experiment_1/EGS_CASSM
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=egs_collab%2Fexperiment_1%2FEGS_CASSM%2F)'
+  - Description: '[Imperial Valley Dark Fiber Project Continuous DAS Data](https://gdr.openei.org/submissions/1499)'
+    ARN: arn:aws:s3:::gdr-data-lake/imperialvalleydas
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=imperialvalleydas%2F)'
+  - Description: '[Seismic Survey 2016 Data at San Emidio Nevada](https://gdr.openei.org/submissions/1395)'
+    ARN: arn:aws:s3:::gdr-data-lake/wholescale/subter_seismic/san_emidio
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=wholescale%2Fsubter_seismic%2Fsan_emidio%2F)'
+  - Description: '[WHOLESCALE: Seismic Survey Data from San Emidio Nevada 2021](https://gdr.openei.org/submissions/1478)'
+    ARN: arn:aws:s3:::gdr-data-lake/wholescale/2021_seismic
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=wholescale%2F2021_seismic%2F)'
+  - Description: '[Seismic Survey 2016 Data at Crescent Valley, Nevada](https://gdr.openei.org/submissions/1567)'
+    ARN: arn:aws:s3:::gdr-data-lake/wholescale/subter_seismic/crescent_valley
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=wholescale%2Fsubter_seismic%2Fcrescent_valley%2F)'
+  - Description: '[Utah FORGE: Neubrex Well 16B(78)-32 DAS Data - April 2024](https://gdr.openei.org/submissions/1680)'
+    ARN: arn:aws:s3:::gdr-data-lake/FORGE/DAS/Neubrex/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=FORGE%2FDAS%2FNeubrex%2F)'
+  - Description: '[EGS Collab Experiment 2: Distributed Fiber Optic Acoustic Data (DAS)](https://gdr.openei.org/submissions/1606)'
+    ARN: arn:aws:s3:::gdr-data-lake/egs_collab/experiment_2/DAS/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=egs_collab%2Fexperiment_2%2FDAS%2F)'
+  - Description: '[EGS Collab Experiment 2: Microseismic Monitoring](https://gdr.openei.org/submissions/1607)'
+    ARN: arn:aws:s3:::gdr-data-lake/egs_collab/experiment_2/passive_seismic/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=egs_collab%2Fexperiment_2%2Fpassive_seismic%2F)'
+  - Description: '[Soda Lake Geothermal: Raw 3D and 3C Seismic-Reflection Data from 2010 Survey](https://gdr.openei.org/submissions/1655)'
+    ARN: arn:aws:s3:::gdr-data-lake/soda_lake/raw_seismic/2010
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=soda_lake%2Fraw_seismic%2F2010%2F)'
+  - Description: '[EGS Collab Experiment 2: Continuous Active Source Seismic Monitoring (CASSM)](https://gdr.openei.org/submissions/1700)'
+    ARN: arn:aws:s3:::gdr-data-lake/egs_collab/experiment_2/active_seismic/CASSM
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gdr-data-lake&prefix=egs_collab%2Fexperiment_2%2Factive_seismic%2FCASSM%2F)'
+DataAtWork:
+  Tutorials:
+    - Title: Dark Fiber Jupyter Notebook Tutorial
+      URL: https://github.com/openEDI/documentation/blob/master/PoroTomo/PoroTomo_Distributed_Acoustic_Sensing_(DAS)_Data_SEGY.ipynb
+      AuthorName: A. Nayak, A. Lowney
+      AuthorURL: https://orcid.org/0000-0001-7913-7189
+  Publications:
+    - Title:  "The Geothermal Data Repository: Ten Years of Supporting the Geothermal Industry with Open Access to
+      Geothermal Data"
+      URL:  https://www.nrel.gov/docs/fy22osti/82837.pdf
+      AuthorName: J. Weers, A. Anderson, N. Taverna
+    - Title:  "The Imperial Valley Dark Fiber Project: Toward Seismic Studies Using DAS and Telecom Infrastructure for Geothermal Applications"
+      URL:  https://doi.org/10.1785/0220220072
+      AuthorName: J. Ajo-Franklin, V. Rodrigues Tribaldos, A. Nayak, et al.
+ 

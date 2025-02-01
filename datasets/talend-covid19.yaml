@@ -1,0 +1,35 @@
+Name:  COVID-19 Harmonized Data
+Description: A harmonized collection of the core data pertaining to COVID-19 reported cases by geography, in a format prepared for analysis
+Documentation: https://www.stitchdata.com/docs/integrations/saas/covid-19
+Contact: covid19.dataset@talend.com
+ManagedBy: "[Talend / Stitch](http://www.stitchdata.com/)"
+UpdateFrequency: New COVID-19 data is added twice daily
+Tags:
+  - aws-pds
+  - COVID-19
+  - coronavirus
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: COVID-19 Harmonized Dataset
+    ARN: arn:aws:s3:::covid19-harmonized-dataset
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://covid19-harmonized-dataset.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: How Talend is joining the fight against COVID-19
+      URL: https://www.talend.com/blog/2020/04/05/talend-joins-fight-against-covid-19-unlocking-data-for-health-researchers/
+      AuthorName: Thomas Bennett
+      AuthorURL: https://www.linkedin.com/in/thomasbennettw/
+  Tools & Applications:
+    - Title: Stitch COVID-19 Integration
+      URL: https://www.stitchdata.com/integrations/covid-19/
+      AuthorName: Jeff Huth
+      AuthorURL: https://github.com/jeffhuth-bytecode
+    - Title: Tap COVID-19 Python
+      URL: https://github.com/singer-io/tap-covid-19
+      AuthorName: Jeff Huth
+      AuthorURL: https://github.com/jeffhuth-bytecode
+  Publications:

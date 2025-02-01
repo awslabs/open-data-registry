@@ -1,0 +1,58 @@
+Deprecated: True
+DeprecatedNotice: The provider of this dataset no longer provides this data through this mechanism. If there are any questions, reach out through the contact mechanism listed below.
+Name: 'Cornell EAS Data Lake'
+Description: >
+  Earth & Atmospheric Sciences at Cornell University has created a public data
+  lake of climate data. The data is stored in columnar storage formats (ORC) to
+  make it straightforward to query using standard tools like Amazon
+  Athena or Apache Spark. The data itself is originally intended to be used for
+  building decision support tools for farmers and digital agriculture. The first
+  dataset is the historical NDFD / NDGD data distributed by NCEP / NOAA / NWS.
+  The NDFD (National Digital Forecast Database) and NDGD (National Digital Guidance Database)
+  contain gridded forecasts and observations at 2.5km resolution for the Contiguous
+  United States (CONUS). There are also 5km grids for several smaller US regions and
+  non-continguous territories, such as Hawaii, Guam, Puerto Rico and Alaska. NOAA
+  distributes archives of the NDFD/NDGD via its NOAA Operational Model Archive and Distribution System (NOMADS)
+  in Grib2 format. The data has been converted to ORC to optimize storage space
+  and to, more importantly, simplify data access via standard data analytics tools.
+
+Documentation: https://datalake.eas.cornell.edu/
+Contact: digitalag@cornell.edu
+ManagedBy: Not currently managed
+UpdateFrequency: Hourly
+Tags:
+  - agriculture
+  - aws-pds
+  - climate
+  - earth observation
+  - elevation
+  - environmental
+  - geospatial
+  - mapping
+  - meteorological
+  - weather
+License: https://datalake.eas.cornell.edu/license.txt
+Resources:
+  - Description: Cornell EAS Data Lake
+    ARN: arn:aws:s3:::cornell-eas-data-lake
+    Region: us-east-2
+    Type: S3 Bucket
+
+  - Description: 'Cornell EAS Data Lake Notifications. Used to send human readable information about updates to the EAS Data Lake.'
+    ARN: arn:aws:sns:us-east-2:003709786761:cornell-eas-data-lake-human
+    Region: us-east-2
+    Type: SNS Topic
+
+  - Description: 'Cornell EAS Data Lake Automation Notifications. Used to send JSON notifications to automated build pipelines and ETL jobs when the EAS Data Lake is updated.'
+    ARN: arn:aws:sns:us-east-2:003709786761:cornell-eas-data-lake
+    Region: us-east-2
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: Cornell EAS Data Lake Setup Tutorial
+      URL: https://datalake.eas.cornell.edu/tutorial.html
+      AuthorName: Marty Sullivan
+      AuthorURL: http://martysullivan.com
+  Tools & Applications:
+  Publications:

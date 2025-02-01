@@ -1,0 +1,92 @@
+Name: SpaceNet
+Description: |
+  SpaceNet, launched in August 2016 as an open innovation project offering a repository of freely available
+  imagery with co-registered map features. Before SpaceNet, computer vision researchers had minimal options
+  to obtain free, precision-labeled, and high-resolution satellite imagery. Today, SpaceNet hosts datasets
+  developed by its own team, along with data sets from projects like IARPA’s Functional Map of the World (fMoW).
+Documentation: https://spacenet.ai/
+Contact: https://spacenet.ai/contact-us/
+ManagedBy: "[SpaceNet](https://spacenet.ai/)"
+UpdateFrequency: New imagery and features are added quarterly
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - geospatial
+  - computer vision
+  - machine learning
+  - earth observation
+  - disaster response
+  - satellite imagery
+License: Various (See [here](https://spacenet.ai/datasets/) for more details)
+Resources:
+  - Description: Imagery and metadata in a S3 bucket
+    ARN: arn:aws:s3:::spacenet-dataset
+    Region: us-east-1
+    Type: S3 Bucket   
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with SpaceNet Data
+      URL: https://medium.com/the-downlinq/getting-started-with-spacenet-data-827fd2ec9f53
+      AuthorName: Adam Van Etten
+      AuthorURL: https://medium.com/@avanetten
+    - Title: Extracting buildings and roads from AWS Open Data using Amazon SageMaker
+      URL: https://aws.amazon.com/blogs/machine-learning/extracting-buildings-and-roads-from-aws-open-data-using-amazon-sagemaker/
+      AuthorName: Yunzhi Shi, Tianyu Zhang, and Xin Chen
+      Services:
+        - SageMaker
+  Tools & Applications:
+    - Title: "Solaris: an open source Python library for analyzing overhead imagery with machine learning"
+      URL: https://medium.com/the-downlinq/announcing-solaris-an-open-source-python-library-for-analyzing-overhead-imagery-with-machine-48c1489c29f7
+      AuthorName: Nick Weir
+  Publications:
+    - Title: "The SpaceNet 8 Flood Detection Challenge: Dataset and Algorithmic Baseline Release"
+      URL: https://medium.com/@SpaceNet_Project/the-spacenet-8-flood-detection-challenge-dataset-and-algorithmic-baseline-release-e0c9f5a44154
+      AuthorName: SpaceNet
+      AuthorURL: https://medium.com/@SpaceNet_Project
+    - Title: "SpaceNet 8 - The Detection of Flooded Roads and Buildings"
+      URL: https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/papers/Hansch_SpaceNet_8_-_The_Detection_of_Flooded_Roads_and_Buildings_CVPRW_2022_paper.pdf
+      AuthorName: Ronny Hansch, Jacob Arndt, Dalton Lunga, Matthew Gibb, Tyler Pedelose, Arnold Boedihardjo, Desiree Petrie, Todd M. Bacastow
+    - Title: "The SpaceNet 7 Multi-Temporal Urban Development Challenge: Dataset Release"
+      URL: https://medium.com/the-downlinq/the-spacenet-7-multi-temporal-urban-development-challenge-dataset-release-9e6e5f65c8d5
+      AuthorName: Adam Van Etten
+      AuthorURL: https://medium.com/@avanetten
+    - Title: "Deploying the SpaceNet 6 Baseline on AWS"
+      URL: https://medium.com/the-downlinq/deploying-the-spacenet-6-baseline-on-aws-c811ad82da1
+      AuthorName: Adam Van Etten and Nick Weir
+      AuthorURL: https://medium.com/@avanetten
+    - Title: "Accelerating Ukraine Intelligence Analysis with Computer Vision on Synthetic Aperture Radar Imagery"
+      URL: https://bair.berkeley.edu/blog/2022/03/21/ukraine-sar-maers/
+      AuthorName: Ritwik Gupta, Colorado Reed, Anja Rohrbach, and Trevor Darrell 
+    - Title: "SpaceNet 6: Dataset Release"
+      URL: https://medium.com/the-downlinq/spacenet-6-dataset-release-66076c8fb79b
+      AuthorName: Jake Shermeyer
+      AuthorURL: https://medium.com/@jshermeyer
+    - Title: "SpaceNet 5 Dataset Release"
+      URL: https://medium.com/the-downlinq/spacenet-5-dataset-release-80bd82d7c528
+      AuthorName: Adam Van Etten and Ryan Lewis
+      AuthorURL: https://medium.com/@avanetten
+    - Title: "Introducing the SpaceNet Off-Nadir Imagery Dataset"
+      URL: https://medium.com/the-downlinq/introducing-the-spacenet-off-nadir-imagery-and-buildings-dataset-e4a3c1cb4ce3
+      AuthorName: David Lindenbaum
+      AuthorURL: https://medium.com/@david.lindenbaum
+    - Title: "Creating Training Datasets for the SpaceNet Road Detection and Routing Challenge"
+      URL: https://medium.com/the-downlinq/creating-training-datasets-for-the-spacenet-road-detection-and-routing-challenge-6f970d413e2f
+      AuthorName: Adam Van Etten and Jake Shermeyer
+      AuthorURL: https://medium.com/@avanetten
+    - Title: "Introducing the SpaceNet Road Detection and Routing Challenge and Dataset"
+      URL: https://medium.com/the-downlinq/introducing-the-spacenet-road-detection-and-routing-challenge-and-dataset-7604de39b779
+      AuthorName: David Lindenbaum
+      AuthorURL: https://medium.com/@david.lindenbaum
+    - Title: "SpaceNet: Winning Implementations and New Imagery Release"
+      URL: https://medium.com/the-downlinq/spacenet-winning-implementations-and-new-imagery-release-55f738e14253
+      AuthorName: Todd Stavish
+      AuthorURL: https://medium.com/@toddstavish
+    - Title: "FCAU-Net for the Semantic Segmentation of Fine-Resolution Remotely Sensed Images"
+      URL: https://doi.org/10.3390/rs14010215
+      AuthorName: Xuerui Niu, Qiaolin Zeng, Xiaobo Luo and Liangfu Chen
+
+      
+    

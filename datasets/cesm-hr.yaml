@@ -1,0 +1,75 @@
+Name: CESM-HR
+Description: >-
+  This dataset provides several global fields describing the state of
+  atmosphere, ocean, land and ice from a high-resolution (0.1o for the
+  ocean/ice models 0.25o for the land/atmosphere models) numerical earth system
+  model, the Community Earth System Model (CESM, https://www.cesm.ucar.edu/).
+  Texas A&M University (TAMU) and National Center for Atmospheric Research
+  together with international partners collaboratively carried out a large set
+  of high-resolution climate simulations, including a 500-year long
+  preindustrial control simulation (PI-CTRL) described here. The CESM uses
+  dynamic equations with a climatological (observations, long-term averaged)
+  initial state of the earth system and the preindustrial greenhouse gas forcing
+  (kept constant at the 1850 conditions) for making this PI-CTRL. Compared to
+  standard low-resolution (1o) CMIP-class simulations, this high-resolution
+  simulation dataset enables researchers to explore the contribution from
+  processes at a wide range of spatial scales, from mesoscales to global scales,
+  in shaping various observed climate phenomena with better accuracy.
+Documentation: 'https://github.com/MESACLIP/cesm-hr-pi-ctrl-aws'
+Contact: ping@tamu.edu
+ManagedBy: '[TAMU](https://www.tamu.com/)'
+UpdateFrequency: >-
+  Rare. The CESM-HR PI-CTRL experiment is complete. Updates are expected only if
+  any issues with the copy of the data on the AWS is reported in the future.
+  Other experiments will be shared in the future according to the availability
+  of resources.
+Tags:
+  - aws-pds
+  - climate
+  - climate model
+  - climate projections
+  - CMIP6
+  - ocean circulation
+  - ocean currents
+  - ocean velocity
+  - ocean sea surface height
+  - ocean simulation
+License: >-
+  This dataset is created in collaboration with NCAR and the NCAR’s “Creative
+  Commons Attribution 4.0 International license” used for their CESM2 LENS data
+  product on AWS (https://www.ucar.edu/terms-of-use/data) will be applicable for
+  the CESM-HR PI-CTRL datasets too.
+Resources:
+  - Description: CESM-HR PI-CTRL data
+    ARN: 'arn:aws:s3:::cesm-hr-pi-ctrl'
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](http://pi-ctrl-bucket.s3-website.us-east-2.amazonaws.com)'
+DataAtWork:
+  Tutorials:
+    - Title: CESM-HR Tutorial
+      URL: 'https://github.com/MESACLIP/cesm-hr-pi-ctrl-aws/tree/main/Tutorials'
+      AuthorName: Jaison Kurian
+      AuthorURL: 'https://github.com/jaisonkn'
+  Tools & Applications:
+    - Title: CESM-HR Tools and Applications
+      URL: 'https://github.com/MESACLIP/cesm-hr-pi-ctrl-aws/tree/main/Tutorials'
+      AuthorName: Jaison Kurian
+      AuthorURL: 'https://github.com/jaisonkn'
+  Publications:
+    - Title: >-
+        An Unprecedented Set of High‐Resolution Earth System Simulations for
+        Understanding Multiscale Interactions in Climate Variability and Change
+      URL: 'https://doi.org/10.1029/2020MS002298'
+      AuthorName: Chang et al. (2020)
+    - Title: >-
+        Uncertain future of sustainable fisheries environment in eastern
+        boundary upwelling zones under climate change
+      URL: 'https://doi.org/10.1038/s43247-023-00681-0'
+      AuthorName: Chang et al. (2023)
+    - Title: >-
+        High-resolution modelling identifies the Bering Strait’s role in
+        amplified Arctic warming
+      URL: 'https://doi.org/10.1038/s41558-024-02008-z'
+      AuthorName: Xu et al. (2024)

@@ -1,0 +1,45 @@
+Name: Sophos/ReversingLabs 20 Million malware detection dataset
+Description: |
+  A dataset intended to support research on machine learning
+  techniques for detecting malware.  It includes metadata and EMBER-v2
+  features for approximately 10 million benign and 10 million malicious
+  Portable Executable files, with disarmed but otherwise complete
+  files for all malware samples.  All samples are labeled using Sophos
+  in-house labeling methods, have features extracted using the
+  EMBER-v2 feature set, well as metadata obtained via the pefile
+  python library, detection counts obtained via ReversingLabs
+  telemetry, and additional behavioral tags that indicate the rough
+  behavior of the samples.
+Documentation: https://github.com/sophos-ai/SOREL-20M/blob/master/README.md
+Contact: sorel-dataset@sophos.com
+ManagedBy: Sophos AI
+UpdateFrequency: At most annually
+Tags:
+  - aws-pds
+  - cyber security
+  - deep learning
+  - labeled
+  - machine learning
+License: See the [Terms of Use](https://github.com/sophos-ai/SOREL-20M/blob/master/Terms%20and%20Conditions%20of%20Use.pdf)
+Resources:
+  - Description: Sophos/ReversingLabs 20 million sample dataset
+    ARN: arn:aws:s3:::sorel-20m/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: SOREL-20M quickstart 
+      URL: https://github.com/sophos-ai/SOREL-20M#quickstart
+      AuthorName: Richard Harang
+      Services:
+        - S3
+        - EC2
+  Tools & Applications:
+    - Title: SOREL-20M dataset interface code
+      URL: https://github.com/sophos-ai/SOREL-20M
+      AuthorName: Richard Harang and Ethan M Rudd
+  Publications:
+    - Title: |
+        SOREL-20M: A Large Scale Benchmark Dataset for Malicious PE Detection
+      URL: https://arxiv.org/abs/2012.07634
+      AuthorName: Richard Harang and Ethan M Rudd

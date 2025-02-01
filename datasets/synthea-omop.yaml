@@ -1,0 +1,49 @@
+Name: Synthea synthetic patient generator data in OMOP Common Data Model
+Description: |
+  The Synthea generated data is provided here as a 1,000 person (1k), 100,000 person (100k), and 2,800,000 persom (2.8m) data sets in the [OMOP Common Data Model](https://www.ohdsi.org/data-standardization/) format.  SyntheaTM is a synthetic patient generator that models the medical history of synthetic patients. Our mission is to output high-quality synthetic, realistic but not real, patient data and associated health records covering every aspect of healthcare. The resulting data is free from cost, privacy, and security restrictions. It can be used without restriction for a variety of secondary uses in academia, research, industry, and government (although a citation would be appreciated).
+  You can read our first academic paper here: [https://doi.org/10.1093/jamia/ocx079](https://doi.org/10.1093/jamia/ocx079)
+Documentation: https://github.com/synthetichealth/synthea/wiki
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: '[Amazon Web Sevices](https://aws.amazon.com/)'
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - bioinformatics
+  - health
+  - life sciences
+  - natural language processing
+  - us
+License: https://github.com/synthetichealth/synthea/blob/master/LICENSE
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::synthea-omop
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Create data science environments on AWS for health analysis using OHDSI
+      URL: https://aws.amazon.com/blogs/big-data/creating-data-science-environments-on-aws-for-health-analysis-using-ohdsi/
+      AuthorName: James Wiggins
+      Services:
+        - CloudFormation
+        - EC2
+        - RDS
+    - Title: Predict patient health outcomes using OHDSI and machine learning on AWS
+      URL: https://aws.amazon.com/blogs/industries/predict-patient-health-outcomes-using-ohdsi-and-machine-learning-on-aws/
+      AuthorName: James Wiggins
+      Services:
+        - CloudFormation
+        - EC2
+        - RDS
+    - Title: Map clinical notes to the OMOP Common Data Model and healthcare ontologies using Amazon Comprehend Medical
+      URL: https://aws.amazon.com/blogs/machine-learning/map-clinical-notes-to-the-omop-common-data-model-and-healthcare-ontologies-using-amazon-comprehend-medical/
+      AuthorName: James Wiggins
+      Services:
+        - Comprehend
+        - CloudFormation
+        - EC2
+        - RDS
+  Tools & Applications:
+    - Title: OHDSIonAWS
+      URL: https://github.com/OHDSI/OHDSIonAWS
+      AuthorName: James Wiggins

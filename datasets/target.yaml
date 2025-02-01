@@ -1,0 +1,138 @@
+Name: Therapeutically Applicable Research to Generate Effective Treatments (TARGET)
+Description: >
+  Therapeutically Applicable Research to Generate Effective Treatments (TARGET) is the collaborative
+  effort of a large, diverse consortium of extramural and NCI investigators. The goal of the effort
+  is to accelerate molecular discoveries that drive the initiation and progression of hard-to-treat
+  childhood cancers and facilitate rapid translation of those findings into the clinic.
+  
+  TARGET projects provide comprehensive molecular characterization to determine the genetic changes
+  that drive the initiation and progression of childhood cancers.The dataset contains open Clinical
+  Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform
+  Expression Quantification, miRNA-Seq miRNA Expression Quantification data from Genomic Data
+  Commons (GDC), and open data from GDC Legacy Archive.
+Documentation: https://ocg.cancer.gov/programs/target/
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: |                                                                                  
+      Clinical Supplement, Biospecimen Supplement, RNA-Seq Gene Expression Quantification, miRNA-Seq
+      Isoform Expression Quantification, miRNA-Seq miRNA Expression Quantification, GDC Legacy      
+      Archive
+    ARN: arn:aws:s3:::gdc-target-phs000218-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: GDC Legacy Archive
+      URL: https://portal.gdc.cancer.gov/legacy-archive/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: TARGET data matrix
+      URL: https://ocg.cancer.gov/programs/target/data-matrix
+      AuthorName: National Cancer Institute
+      AuthorURL: https://ocg.cancer.gov/
+    - Title: Broad Institute FireCloud
+      URL: https://firecloud.terra.bio/
+      AuthorName: The Broad Institute of MIT & Harvard
+      AuthorURL: https://www.broadinstitute.org/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: https://docs.sevenbridges.com/docs/target-data
+    - Title: ISB Cancer Genomics Cloud
+      URL: https://isb-cgc.appspot.com/
+      AuthorName: Institute for Systems Biology
+      AuthorURL: |
+        https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/TARGET_top.html
+  Publications:
+    - Title: |
+        Genomic classification and identification of the cell of origin of pediatric mixed phenotype
+        acute leukemia
+      URL: https://doi.org/10.1038/s41586-018-0436-0
+      AuthorName: Thomas B. Alexander, Zhaohui Gu, Ilaria Iacobucci, et al.
+    - Title: |
+        The genomic landscape of pediatric and young adult T-lineage acute lymphoblastic leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=28671688
+      AuthorName: Yu Liu, John Easton, Ying Shao, et al.
+    - Title: Ancestry and pharmacogenomics of relapse in acute lymphoblastic leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/21297632
+      AuthorName: Yang JJ, Cheng C, Devidas M, et al.
+    - Title: Genomics in childhood acute myeloid leukemia comes of age
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=29315296
+      AuthorName: Brunner AM, Graubert TA.
+    - Title: |
+        The molecular landscape of pediatric acute myeloid leukemia reveals recurrent structural
+        alterations and age-specific mutational interactions
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=29227476
+      AuthorName: Bolouri H, Farrar JE, Triche T Jr, et al.
+    - Title: |
+        MicroRNA Expression-Based Model Indicates Event-Free Survival in Pediatric Acute Myeloid
+        Leukemia
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=29068783
+      AuthorName: Lim EL, Trinh DL, Ries RE, et al.
+    - Title: CSF3R mutations have a high degree of overlap with CEBPA mutations in pediatric AM
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=27143256
+      AuthorName: Maxson JE, Ries RE, Wang YC, et al.
+    - Title: TCF21 hypermethylation in genetically quiescent clear cell sarcoma of the kidney
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=26158413
+      AuthorName: Gooskens SL, Gadd S, Guidry Auvil JM, et al.
+    - Title: Genetic predisposition to neuroblastoma mediated by a LMO1 super-enhancer polymorphism
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=26560027
+      AuthorName: |
+        Oldridge DA, Wood AC, Weichert-Leahey N, Crimmins I, Sussman R, Winter C, McDaniel LD,
+        Diamond M, Hart LS, Zhu S, Durbin AD, Abraham BJ, et al.
+    - Title: Relapsed neuroblastomas show frequent RAS-MAPK pathway mutations
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=26121087
+      AuthorName: Eleveld TF, Oldridge DA, Bernard V, Koster J, et al.
+    - Title: The genetic landscape of high-risk neuroblastoma
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=23334666
+      AuthorName: |
+        Pugh TJ, Morozova O, Attiyeh EF, Asgharzadeh S, Wei JS, Auclair D, Carter SL, Cibulskis K,
+        Hanna M, Kiezun A, Kim J, Lawrence MS, Lichenstein L, et al.
+    - Title: |
+        Biomarker significance of plasma and tumor miR-21, miR-221, and miR-106a in osteosarcoma
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=29228567
+      AuthorName: Nakka M, Allen-Rhoades W, Li Y, et al.
+    - Title: |
+        Identification and analyses of extra-cranial and cranial rhabdoid tumor molecular subgroups
+        reveal tumors with cytotoxic T cell infiltration
+      URL: https://doi.org/10.1016/j.celrep.2019.10.013
+      AuthorName: Hye-Jung E. Chun, Pascal D. Johann, Katy Milne et al.
+    - Title: |
+        Genome-Wide Profiles of Extra-cranial Malignant Rhabdoid Tumors Reveal Heterogeneity and
+        Dysregulated Developmental Pathways
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=26977886
+      AuthorName: Chun HJ, Lim EL, Heravi-Moussavi A, et al.
+    - Title: |
+        A Children's Oncology Group and TARGET initiative exploring the genetic landscape of Wilms
+        tumor
+      URL: https://doi.org/10.1038/ng.3940
+      AuthorName: Gadd S, Huff V, Walz AL, et al.
+    - Title: |
+        Significance of TP53 Mutation in Wilms Tumors with Diffuse Anaplasia: A Report from the
+        Children's Oncology Group
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=27702824
+      AuthorName: Ooms AH, Gadd S, Gerhard DS, et al.
+    - Title: |
+        MLLT1 YEATS domain mutations in clinically distinctive Favourable Histology Wilms tumours
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=26635203
+      AuthorName: Perlman EJ, Gadd S, Arold ST, et al.
+    - Title: |
+        Recurrent DGCR8, DROSHA, and SIX homeodomain mutations in favorable histology Wilms tumors
+      URL: https://www.ncbi.nlm.nih.gov/pubmed/?term=25670082
+      AuthorName: Walz AL, Ooms A, Gadd S, et al.

@@ -1,0 +1,27 @@
+Name: World Bank Climate Change Knowledge Portal (CCKP)
+Description: CCKP provides open access to a comprehensive suite of climate and climate change resources derived from the latest generation of climate data archives. Products are based on a consistent and transparent approach with a systematic way of pre-processing the raw observed and model-based projection data to enable inter-comparable use across a broad range of applications. Climate products consist of basic climate variables as well as a large collection (70+) of more specialized, application-orientated variables and indices across different scenarios. Precomputed data can be extracted per specified variables, select timeframes, climate projection scenarios, across ensembles or individual models, etc. CCKP adheres to data distributions standards defined under the Coupled Model Intercomparison Project (CMIP) and its contributions to the Intergovernmental Panel on Climate Change (IPCC) Assessment Reports and latest scientific methodologies identified by the World Meteorological Organization and climate science community. Climate products are available for the following collections. Downscaled CMIP6 global 0.25-degree – 1950-2100; ERA5 global 0.25-degree – 1950-2022; CRU global 0.50-degree – 1901-2022; Population global 0.25-degree – 1995-2100 (GPW v4).
+Documentation: https://worldbank.github.io/climateknowledgeportal
+Contact: C. MacKenzie Dove cdove@worldbank.org; askclimate@worldbank.org
+ManagedBy: "[World Bank Group](https://www.worldbank.org/en/home)"
+UpdateFrequency: Semi-annually
+Tags:
+  - aws-pds
+  - climate
+  - climate model
+  - earth observation
+  - climate projections
+  - CMIP6
+  - netcdf
+License: "[World Bank Open Database License (ODbL)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: World Bank Climate Change Knowledge Portal observed and projected climate datasets
+    ARN: arn:aws:s3:::wbg-cckp 
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Publications:
+    - Title: World Bank Climate Change Knowledge Portal observed and projected climate datasets
+      URL: https://worldbank.github.io/climateknowledgeportal/
+      AuthorName: World Bank
+      AuthorURL: https://climateknowledgeportal.worldbank.org

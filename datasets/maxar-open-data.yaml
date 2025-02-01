@@ -1,0 +1,82 @@
+Name: Maxar Open Data Program
+Description: |
+  Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, 
+  monitoring of staging areas and emergency response, damage assessment, and recovery. These images are generated
+  using the [Maxar ARD](https://ard.maxar.com/docs) pipeline, tiled on an organized grid in analysis-ready
+  cloud-optimized formats.
+Documentation: https://www.maxar.com/open-data
+Contact: https://www.maxar.com/open-data
+UpdateFrequency: New data is released in response to activations. Older data may be migrated to the ARD format as needed.
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - aws-pds
+  - earth observation
+  - disaster response
+  - geospatial
+  - satellite imagery
+  - cog
+  - stac
+License: Creative Commons Attribution Non Commercial 4.0
+ManagedBy: "[Maxar](https://www.maxar.com/)"
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::maxar-opendata
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.dualstack.us-west-2.amazonaws.com/events/catalog.json)'
+    - '[STAC Catalog](https://stacindex.org/catalogs/maxar-open-data-catalog-ard-format#/)'
+DataAtWork:
+  Tutorials:
+    - Title: ARD Deliverables and File Structure
+      URL: https://ard.maxar.com/docs/ard-order-delivery/about-ard-order-delivery/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: ARD and Command Line Tools
+      URL: https://ard.maxar.com/docs/working-with-ard/command-line-tools/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: "Data Access (SDK tutorial)"
+      URL: https://ard.maxar.com/docs/sdk/sdk/data-access/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: "Visualizing Maxar Open Data with SageMaker Studio Lab"
+      URL: https://github.com/giswqs/maxar-open-data/
+      NotebookURL: https://github.com/giswqs/maxar-open-data/blob/master/examples/maxar_open_data.ipynb
+      AuthorName: Qiusheng Wu
+      AuthorURL: https://geography.utk.edu/about-us/faculty/dr-qiusheng-wu/
+      Services: 
+        - SageMaker Studio Lab
+    - Title: "Visualizing Turkey & Syria Earthquake Maxar Open Data with SageMaker Studio Lab"
+      URL: https://github.com/giswqs/maxar-open-data/
+      NotebookURL: https://github.com/giswqs/maxar-open-data/blob/master/examples/turkey_earthquake.ipynb
+      AuthorName: Qiusheng Wu
+      AuthorURL: https://geography.utk.edu/about-us/faculty/dr-qiusheng-wu/
+      Services: 
+        - SageMaker Studio Lab
+    - Title: "Maxar Open Data - Leafmap"
+      URL: https://leafmap.org/notebooks/67_maxar_open_data/
+      AuthorName: Qiusheng Wu
+      AuthorURL: https://geography.utk.edu/about-us/faculty/dr-qiusheng-wu/
+  Tools & Applications:
+    - Title: Maxar ARD SDK (max-ard)
+      URL: https://ard.maxar.com/docs/sdk/
+      AuthorName: Maxar Open Data
+      AuthorURL: https://www.maxar.com/open-data
+    - Title: MGP Xpress
+      URL: https://xpress.maxar.com/
+      AuthorName: MGP Xpress
+      AuthorURL: https://xpress-docs.maxar.com/Home.htm#
+  Publications:
+    - Title: "Using Data from Earth Observation to Support Sustainable Development Indicators: An Analysis of the Literature and Challenges for the Future"
+      URL: https://doi.org/10.3390/su14031191
+      AuthorName: Ana Andries, Stephen Morse, Richard J. Murphy, Jim Lynch, and Emma R. Woolliams
+    - Title: "Disaster, Infrastructure and Participatory Knowledge The Planetary Response Network"
+      URL: https://eprints.lancs.ac.uk/id/eprint/167032/1/Simmons_et_al_2022_CSTP_PRN_Paper_Special_Issue_Accepted_Version.pdf
+      AuthorName: Brooke Simmons, Chris Lintott, Steven Reece, et al.
+    - Title: " Machine learning remote sensing using the random forest classifier to detect the building damage caused by the Anak Krakatau Volcano tsunami"
+      URL: https://doi.org/10.1080/19475705.2022.2147455
+      AuthorName: Riantini Virtriana et al.

@@ -1,0 +1,37 @@
+Name: UK Biobank Pan-Ancestry Summary Statistics
+Description: A multi-ancestry analysis of 7,221 phenotypes using a generalized mixed model association testing framework, spanning 16,119 genome-wide association studies. We provide standard meta-analysis across all populations and with a leave-one-population-out approach for each trait. The data are provided in tsv format (per phenotype) and Hail MatrixTable (all phenotypes and variants). Metadata is provided in phenotype and variant manifests.
+Documentation: https://pan.ukbb.broadinstitute.org
+Contact: ukb.diverse.gwas@gmail.com
+ManagedBy: Analytic and Translational Genetics Unit, Massachusetts General Hospital and the Broad Institute
+UpdateFrequency: Occasional
+Tags:
+  - aws-pds
+  - genetic
+  - genome wide association study
+  - genomic
+  - life sciences
+  - population genetics
+License: CC BY-4.0 (usage may be restricted by UK Biobank, more details on the "[Downloads page](https://pan.ukbb.broadinstitute.org/downloads)")
+Resources:
+  - Description: Summary statistics from Genome Wide Association Studies (GWASes) of multiple ancestries in the UK Biobank, in TSV and Hail formats
+    ARN: arn:aws:s3:::pan-ukb-us-east-1
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Hail Tutorials
+      URL: https://hail.is/docs/0.2/tutorials-landing.html
+      AuthorName: Hail Team
+      AuthorURL: https://hail.is/
+  Tools & Applications:
+    - Title: Hail
+      URL: https://hail.is
+      AuthorName: Hail Team
+      AuthorURL: https://hail.is/
+    - Title: Hail on AWS Quick Start
+      URL: https://aws.amazon.com/quickstart/architecture/hail/
+      AuthorName: Amazon Web Services and PrivoIT
+  Publications:
+    - Title: Pan-ancestry genetic analysis of the UK Biobank
+      URL: https://pan.ukbb.broadinstitute.org/
+      AuthorName: Pan UKBB Team

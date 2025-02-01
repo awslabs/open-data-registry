@@ -1,0 +1,73 @@
+Name: USGS 3DEP LiDAR Point Clouds
+Description: The goal of the [USGS 3D Elevation Program ](https://www.usgs.gov/core-science-systems/ngp/3dep) (3DEP) is to collect elevation data in the form of light detection and ranging (LiDAR) data over the conterminous United States, Hawaii, and the U.S. territories, with data acquired over an 8-year period. This dataset provides two realizations of the 3DEP point cloud data. The first resource is a public access organization provided in [Entwine Point Tiles](https://entwine.io/entwine-point-tile.html) format, which a lossless, full-density, streamable octree based on [LASzip](https://laszip.org) (LAZ) encoding. The second resource is a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) of the original, Raw LAZ (Compressed LAS) 1.4 3DEP format, and more complete in coverage, as sources with incomplete or missing CRS, will not have an ETP tile generated.  Resource names in both buckets correspond to the USGS project names.
+Documentation: https://github.com/hobu/usgs-lidar/
+Contact: https://github.com/hobu/usgs-lidar
+ManagedBy: "[Hobu, Inc.](https://hobu.co)"
+UpdateFrequency: Periodically
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
+Tags:
+  - aws-pds
+  - agriculture
+  - elevation
+  - disaster response
+  - geospatial
+  - lidar
+  - stac
+License: US Government Public Domain https://www.usgs.gov/faqs/what-are-terms-uselicensing-map-services-and-data-national-map
+Resources:
+  - Description: Public access Entwine Point Tiles of most resources from the ``arn:aws:s3:::usgs-lidar`` bucket.
+    ARN: arn:aws:s3:::usgs-lidar-public
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[STAC Catalog](https://usgs-lidar-stac.s3-us-west-2.amazonaws.com/ept/catalog.json)'
+  - Description: A [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) Bucket of Raw LAZ 1.4 3DEP data. Data in this bucket is more complete in coverage than the EPT bucket, but it is not a complete 3DEP mirror. Some resources in this bucket also have incomplete and missing coordinate system information, which is why they might not be mirrored into the EPT bucket.
+    ARN: arn:aws:s3:::usgs-lidar
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+DataAtWork:
+  Tutorials:
+    - Title: Using Lambda Layers with USGS 3DEP LiDAR Point Clouds
+      URL: https://github.com/hobu/usgs-lidar/tree/master/lambda
+      AuthorName: Howard Butler
+      AuthorURL: https://twitter.com/howardbutler
+      Services:
+        - Lambda
+    - Title: Extracting buildings and roads from AWS Open Data using Amazon SageMaker
+      URL: https://aws.amazon.com/blogs/machine-learning/extracting-buildings-and-roads-from-aws-open-data-using-amazon-sagemaker/
+      AuthorName: Yunzhi Shi, Tianyu Zhang, and Xin Chen
+      Services:
+        - SageMaker      
+    - Title: WebGL Visualization of USGS 3DEP Lidar Point Clouds with Potree and Plasio.js
+      URL: https://usgs.entwine.io/
+      AuthorName: Connor Manning
+      AuthorURL: https://twitter.com/csmannin
+  Tools & Applications:
+    - Title: Jupyter Notebooks to enable programmatic access to cloud-hosted USGS 3D Elevation Program (3DEP) lidar data
+      URL: https://github.com/OpenTopography/OT_3DEP_Workflows
+      AuthorName: OpenTopography
+      AuthorURL: https://opentopography.org/
+    - Title: OpenTopography access to 3DEP lidar point cloud data
+      URL: https://portal.opentopography.org/datasets
+      AuthorName: OpenTopography
+      AuthorURL: https://opentopography.org/
+    - Title: Facebook Line of Sight Check
+      URL: https://www.facebook.com/isptoolbox/line-of-sight-check/
+      AuthorName: Facebook
+      AuthorURL: https://www.facebook.com/isptoolbox/
+    - Title: Equator - View, Process, and Download USGS 3DEP LiDAR data in-browser
+      URL: https://equatorstudios.com/lidar-viewer/
+      AuthorName: Equator Studios
+      AuthorURL: https://equatorstudios.com
+  Publications:
+    - Title: USGS 3DEP Lidar Point Cloud Now Available as Amazon Public Dataset
+      URL: https://www.usgs.gov/news/usgs-3dep-lidar-point-cloud-now-available-amazon-public-dataset
+      AuthorName: Department of the Interior, U.S. Geological Survey
+      AuthorURL: https://www.usgs.gov
+    - Title: Statewide USGS 3DEP Lidar Topographic Differencing Applied to Indiana, USA 
+      URL: https://www.mdpi.com/2072-4292/14/4/847/htm
+      AuthorName: Chelsea Phipps Scott, Matthew Beckley, Minh Phan, Emily Zawacki, Christopher Crosby, Viswanath Nandigam, and Ramon Arrowsmith

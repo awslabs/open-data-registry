@@ -1,0 +1,73 @@
+Name: Daylight Map Distribution of OpenStreetMap
+Description: |
+  Daylight is a complete distribution of global, open map data that’s freely available with support from community and professional mapmakers. Meta combines the work of global contributors to projects like OpenStreetMap with quality and consistency checks from Daylight mapping partners to create a free, stable, and easy-to-use street-scale global map. <br/><br/>
+  The Daylight Map Distribution contains a validated subset of the OpenStreetMap database. In addition to the standard OpenStreetMap PBF format, Daylight is available in two parquet formats that are optimized for AWS Athena including geometries (Points, LineStrings, Polygons, or MultiPolygons). First, **Daylight OSM Features** contains the nearly 1B renderable OSM features. Second, **Daylight OSM Elements** contains all of OSM, including all 7B nodes without attributes, and relations that do not contain geometries, such as turn restrictions. <br/><br/> 
+  Daylight Earth Table is a new data schema that classifies OpenStreetMap-style tags into a 3-level ontology (theme, class, subclass) and is the result of running the earth table classification over the latest release (v1.18) of the Daylight Map Distribution. The Daylight Earth Table is available as parquet files on Amazon S3. 
+Documentation: "[Project Website](https://daylightmap.org)"
+Contact: osm@fb.com
+ManagedBy: "[Meta](https://dataforgood.fb.com/)"
+UpdateFrequency: Quarterly
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+# Collabs:
+Tags:
+  - geospatial
+  - osm
+  - mapping
+  - disaster response
+  - aws-pds
+License: |
+  [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/)
+Resources:
+  - Description: Daylight OSM PBF Files
+    ARN: arn:aws:s3:::daylight-map-distribution/release/
+    Region: us-west-1
+    Type: S3 Bucket
+  - Description: New OSM PBF Notification
+    ARN: arn:aws:sns:us-west-1:632571768781:Daylight
+    Region: us-west-1
+    Type: SNS Topic
+  - Description: Daylight OSM Features (Parquet)
+    ARN: arn:aws:s3:::daylight-openstreetmap/parquet/osm_features
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Daylight OSM Elements (Parquet)
+    ARN: arn:aws:s3:::daylight-openstreetmap/parquet/osm_elements
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: New Parquet File Notification
+    ARN: arn:aws:sns:us-west-2:632571768781:Analysis_Ready_Daylight
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: Daylight Earth Table (Parquet)
+    ARN: arn:aws:s3:::daylight-openstreetmap/earth
+    Region: us-west-2
+    Type: S3 Bucket  
+DataAtWork:
+  Tutorials: 
+    - Title: Loading the Daylight Map Distribution OpenStreetMap Features into AWS Athena
+      URL: https://gist.github.com/jenningsanderson/3e42a99dcb8f760038ad8aa47ea38ce8
+      AuthorName: Jennings Anderson
+      Services:
+        - Athena
+    - Title: Querying the Daylight OpenStreetMap Distribution with Amazon Athena
+      URL: https://aws.amazon.com/blogs/publicsector/querying-daylight-openstreetmap-distribution-amazon-athena/
+      AuthorName: Jennings Anderson and Mike Jeffe
+      AuthorURL: http://jenningsanderson.com
+      Services:
+        - Athena
+    - Title: Daylight Earth Tables
+      URL: https://daylightmap.org/earth/
+      AuthorName: Daylight Contributors
+      Services:
+        - Athena
+  Tools & Applications:
+  Publications:
+    - Title: "Increasing OpenStreetMap Data Accessibility with the Analysis-Ready Daylight Distribution of OpenStreetMap: A Demonstration of Cloud-Based Assessments of Global Building Completeness"
+      URL: https://www.youtube.com/watch?v=rVBGLCFKAtw&t=161s
+      AuthorName: Jennings Anderson and Timmera Whaley Omidire
+    - Title: Daylight Earth Tables (NACIS 2022)
+      URL: https://daylightmap.org/assets/nacis_2022_daylight_earth_table.pdf
+      AuthorName: Jennings Anderson, Jonah Adkins, Jacob Wasserman

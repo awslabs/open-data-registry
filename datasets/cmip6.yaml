@@ -1,0 +1,79 @@
+Name: Coupled Model Intercomparison Project 6
+Description: |
+  The sixth phase of global coupled ocean-atmosphere general circulation model ensemble. 
+  <br /><br />
+Documentation: https://pangeo-data.github.io/pangeo-cmip6-cloud/, https://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6
+Contact: |
+  If you have any feedback on the CMIP6 data available on AWS please email sustainability-data-initiative@amazon.com. We are acepting requests for additional CMIP6 variables and/or models to be made available to AWS but cannot guarantee that your request will be fulfilled. We will prioritize requests that bring value to the largest number of users. Note that we are not providing technical support through this email account.<br/><br/>
+  We also seek to identify case studies on how CMIP6 data is being used and will be featuring those stories in future publications and events. If you are interested in seeing your story highlighted, please share it with the ASDI team here: sustainability-data-initiative@amazon.com.
+ManagedBy: "ESGF and Pangeo"
+UpdateFrequency: "Core CMIP6 datasets are added as soon as they are available."
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - agriculture
+  - atmosphere
+  - climate
+  - earth observation
+  - environmental
+  - model
+  - oceans
+  - simulations
+  - weather
+License: See [docs] (https://pangeo-data.github.io/pangeo-cmip6-cloud/licensing_citation.html) for further info
+Resources:
+  - Description: Zarr formatted data
+    ARN: arn:aws:s3:::cmip6-pds
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmip6-pds.s3.amazonaws.com/index.html#CMIP6/)'
+    - '[Data Catalog](https://cmip6-pds.s3.amazonaws.com/pangeo-cmip6.csv)'
+  - Description: Netcdf formatted data managed by the Earth System Grid Federation
+    ARN: arn:aws:s3:::esgf-world
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://esgf-world.s3.amazonaws.com/index.html)'
+    - '[Data Catalog](https://cmip6-nc.s3.amazonaws.com/esgf-world.csv.gz)'
+DataAtWork:
+  Tutorials:
+    - Title: Processing CMIP6 data in Zarr format with Dask & AWS Fargate
+      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/cmip6_zarr.ipynb
+      AuthorName: Zac Flamig
+      Services:
+        - CloudFormation
+        - Fargate
+        - SageMaker
+    - Title: Finding CMIP6 data using intake-esm and plotting time series for points
+      URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/cmip6/notebooks/cmip6_airtemperature.ipynb
+      AuthorName: Zac Flamig
+      Services:
+        - CloudFormation
+        - SageMaker
+    - Title: Getting Started with CMIP6 Data
+      URL: https://github.com/aradhakrishnanGFDL/gfdl-aws-analysis/blob/community/doc/quickstartdoc.md
+      AuthorName: Aparna Radhakrishnan
+    - Title: Comparing CMIP6 Zarr vs NetCDF Holdings
+      URL: https://nbviewer.jupyter.org/github/aradhakrishnanGFDL/gfdl-aws-analysis/blob/master/examples/a1r-CompareAWS-NCvsZarr.ipynb
+      AuthorName: Aparna Radhakrishnan
+      Services:
+        - S3
+    - Title: Analyze terabyte-scale geospatial datasets with Dask and Jupyter on AWS
+      URL: https://aws.amazon.com/blogs/publicsector/analyze-terabyte-scale-geospatial-datasets-with-dask-and-jupyter-on-aws/
+      AuthorName: Ethan Fahy and Zac Flamig
+      Services:
+        - EC2
+        - EKS
+        - S3
+        - CloudFormation
+  Publications:
+    - Title: "CMIP6 Data Informational Session Video Recording"
+      URL: https://www.youtube.com/watch?v=C0UhiiGgbWA
+      AuthorName: ASDI
+    - Title: "Special issue | Coupled Model Intercomparison Project Phase 6 (CMIP6) Experimental Design and Organization"
+      URL: https://gmd.copernicus.org/articles/special_issue590.html
+      AuthorName: V. Eyring
