@@ -1,0 +1,58 @@
+Name: Met Office Global Ocean model on a 2-year rolling archive
+Description: The Global Ocean component of the Met Office Global Coupled Atmosphere-Land-Ocean-Ice system which has been running in operations since May 2022. 
+  The system provides a global physical analysis and coupled forecast products providing 3D daily mean fields of temperature 
+  and salinity, zonal and meridional velocities; 2D daily mean fields of sea surface height, bottom temperature, mixed layer depth, 
+  sea ice fraction, sea ice thickness and sea ice zonal and meridional velocities; and instantaneous hourly fields for sea surface 
+  height, sea surface temperature and surface currents. The Met Office Global Coupled Atmosphere-Land-Ocean-Ice system is comprised of both deterministic and
+  ensemble forecasting systems both of which are coupled to an interactive ocean. Ocean and ice analysis and
+  forecast products are currently generated from the deterministic system once a day with forecast with lead time
+  out to 7 days, interpolated onto a regular latitude-longitude grid products by our Global Marine Post Processing
+  (MaPP-GL) system.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The Global Ocean model runs once daily. T+00h is the midnight prior to production, the following are produced. 
+  T-48h to T-24h best estimate; T-24h to T+00h analyses; 7 day forecast (from T+00h).
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - forecast
+  - geoscience
+  - geospatial
+  - global
+  - marine
+  - model
+  - netcdf
+  - ocean sea surface height
+  - oceans
+  - weather
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Global Ocean model on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-global-ocean-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-global-ocean-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new global ocean model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-global-ocean-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Coupled forecasting development
+      URL: https://www.metoffice.gov.uk/research/weather/ocean-forecasting/coupled-development
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: Ocean models
+      URL: https://www.metoffice.gov.uk/services/government/defence-and-security/ocean-models
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
