@@ -1,19 +1,4 @@
-Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
-  [Title], [data-access-URL], accessed [date-of-access]."'
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.ipynb
-    Title: Accessing IMOS - ACORN - Coffs Harbour HF ocean radar site (New South Wales,
-      Australia) - Delayed mode sea water velocity
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ocean Radar - Coffs Harbour site - Sea water velocity - Delayed mode
 Description: "The Coffs Harbour (COF) HF ocean radar site is located near the point\
   \ at which the East Australian Current (EAC) begins to separate from the coast.\
   \  Here the EAC is at its narrowest and swiftest: to the north it is forming from\
@@ -38,17 +23,32 @@ Description: "The Coffs Harbour (COF) HF ocean radar site is located near the po
   \ measured.  Data are also collected from which wind directions and significant\
   \ wave height can be calculated."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/85da1645-2c63-45fa-97b5-4125165b999d
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ocean Radar - Coffs Harbour site - Sea water velocity - Delayed mode
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.zarr
-  Description: Cloud Optimised AODN dataset of IMOS - ACORN - Coffs Harbour HF ocean
-    radar site (New South Wales, Australia) - Delayed mode sea water velocity
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - ocean currents
 - ocean velocity
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - ACORN - Coffs Harbour HF ocean
+    radar site (New South Wales, Australia) - Delayed mode sea water velocity
+  ARN: arn:aws:s3:::aodn-cloud-optimised/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - ACORN - Coffs Harbour HF ocean radar site (New South Wales,
+      Australia) - Delayed mode sea water velocity
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_CoffsHarbour_velocity_hourly_averaged_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
