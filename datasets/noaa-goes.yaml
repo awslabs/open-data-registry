@@ -1,17 +1,14 @@
-Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18"
+Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17, 18 & 19"
 Description: |
   <br/>
   <br/> 
-  **DATA FEED ISSUES - Due to major damage to critical infrastructure in the Asheville, NC area from Hurricane Helene, our GOES data feeds to the cloud have been impacted. We are working with local authorities and service providers in hopes that we can restore these feeds ASAP. Note that major celluar and network (fiber) infrastructure have been damaged and this may take time to adress. Thank you for your continued support.** 
+  NEW GOES-19 Data!!! GOES-19 products at the Provisional maturity level have begun streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, these data are subject to the caveat that they are "GOES-19 Preliminary, Non-Operational Data".
   <br/>
   <br/> 
   NOTICE: As of January 10th 2023, GOES-18 assumed the GOES-West position and all data files are deemed both operational and provisional, so no ‘preliminary, non-operational’ caveat is needed. GOES-17 is now offline, shifted approximately 105 degree West, where it will be in on-orbit storage. GOES-17 data will no longer flow into the GOES-17 bucket. Operational GOES-West products can be found in the GOES-18 bucket. 
   <br/>
   <br/> 
-  NEW GOES-18 Data!!! GOES-18 is now provisional and data has began streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the NOAA Open Data Dissemination Program.
-  <br/>
-  <br/> 
-  GOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous weather imagery and
+  GOES satellites (GOES-16, GOES-17, GOES-18 & GOES-19) provide continuous weather imagery and
   monitoring of meteorological and space environment data across North America.
   GOES satellites provide the kind of continuous monitoring necessary for
   intensive data analysis. They hover continuously over one position on the surface.
@@ -42,8 +39,21 @@ Tags:
   - meteorological
   - disaster response
   - satellite imagery
-License: There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. 
+  <br/>
+  <br/>
+  NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
+  - Description: GOES-19 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes19
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-goes19.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-18, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES19Object
+    Region: us-east-1
+    Type: SNS Topic
   - Description: GOES-18 imagery and metadata
     ARN: arn:aws:s3:::noaa-goes18
     Region: us-east-1
@@ -88,16 +98,16 @@ DataAtWork:
       URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
       AuthorName: Peter Schmiedeskamp
       Services:
-        - CloudFormation
-        - EC2
-        - SageMaker
+        - AWS CloudFormation
+        - Amazon EC2
+        - Amazon SageMaker
     - Title: Processing GOES-16 data with Dask & AWS Fargate
       URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/goes16_dask.ipynb
       AuthorName: Zac Flamig
       Services:
-        - CloudFormation
-        - Fargate
-        - SageMaker
+        - AWS CloudFormation
+        - AWS Fargate
+        - Amazon SageMaker
     - Title: Forecasting Hurricane Tracks with TensorFlow and data from AWS S3
       URL: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
       AuthorName: Kyle Archie
