@@ -1,0 +1,32 @@
+Name: IWMI DIWASA Green ET for Africa
+Description: Green evapotranspiration (Green ET) is the portion of ET derived from green water, which includes soil moisture and rainfall used by vegetation. It represents a key component of green water fluxes in water accounting. Green ET consists of evaporation from soil moisture in non-irrigated areas, transpiration from rainfed crops and natural vegetation, and interception losses from precipitation on vegetation. It plays a crucial role in rainfed agriculture, drought monitoring, and sustainable water management by tracking how rainfall supports plant growth.
+Documentation: https://iwmi.africageoportal.com/pages/continent-africa
+Contact: iwmiwaplus@gmail.com
+ManagedBy: "[IWMI](https://www.iwmi.org/)"
+UpdateFrequency: None
+Tags:
+  - soil moisture
+  - rainfed cropland
+  - interception loss
+  - evapotranspiration
+  - water
+License: [CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)
+Resources:
+  - Description: Monthly Green ET for Africa
+    ARN: arn:aws:s3:::iwmi-datasets/Water_accounting_plus/Africa/Rainfall_ET_M
+    Region: af-south-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://iwmi-datasets.s3.af-south-1.amazonaws.com/Cropland_partition/index.html)'
+
+DataAtWork:
+  Tutorials:
+    - Title: Analysis of IWMI’s Water Data Products through Digital Earth Africa 
+      URL: https://learn.digitalearthafrica.org/courses/course-v1:IWMI+DIWASA1+2024_10/about
+      AuthorName: A.T. Haile, E.T. Negash, K. Mubea, M. Tadesse
+      AuthorURL: https://github.com/iwmiwaplus
+  Tools & Applications:
+    - Title: Multi-Scale Water Accounting in the Volta Basin
+      URL: https://public.tableau.com/app/profile/iwmi.wa/viz/Voltabasinvertical/Merged?publish=yes
+      AuthorName: iwmiwaplus
+      AuthorURL: https://public.tableau.com/app/profile/iwmi.wa
