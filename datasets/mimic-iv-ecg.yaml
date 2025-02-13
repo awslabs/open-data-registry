@@ -1,0 +1,23 @@
+Name: 'MIMIC-IV-ECG: Diagnostic Electrocardiogram Matched Subset'
+Description: The MIMIC-IV-ECG module contains approximately 800,000 diagnostic electrocardiograms
+  across nearly 160,000 unique patients. These diagnostic ECGs use 12 leads and are
+  10 seconds in length. They are sampled at 500 Hz. This subset contains all of the
+  ECGs for patients who appear in the MIMIC-IV Clinical Database. When a cardiologist
+  report is available for a given ECG, we provide the needed information to link the
+  waveform to the report. The patients in MIMIC-IV-ECG have been matched against the
+  MIMIC-IV Clinical Database, making it possible to link to information across the
+  MIMIC-IV modules.
+Documentation: https://doi.org/10.13026/4nqg-sb35
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Open Database License v1.0
+Resources:
+- Description: https://doi.org/10.13026/4nqg-sb35
+  ARN: arn:aws:s3:::physionet-open/mimic-iv-ecg/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+  - 'Healthcare & Life Sciences Data'

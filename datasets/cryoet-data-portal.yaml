@@ -1,0 +1,51 @@
+Name:  CryoET Data Portal
+Description: Cryo-electron tomography (cryoET) is a powerful technique for visualizing 3D structures of cellular macromolecules at near atomic resolution in their native environment. Observing the inner workings of cells in context enables better understanding about the function of healthy cells and the changes associated with disease. However, the analysis of cryoET data remains a significant bottleneck, particularly the annotation of macromolecules within a set of tomograms, which often requires a laborious and time-consuming process of manual labelling that can take months to complete. Given the current success of machine learning (ML) methods for image analysis, it seems likely that ML will have a significant impact on resolving this bottleneck. The scientific community has expressed the need to encourage further ML algorithm development by providing large training sets of annotated cryoET data in standardized formats. In response to this, we (the Chan Zuckerberg Institute for Advanced Biological Imaging & Chan Zuckerberg Initiative Foundation) have established the CryoET Data Portal (https://cryoetdataportal.czscience.com/) to provide biologists and developers open access to high-quality, standardized, annotated data that can be readily used to retrain or develop new annotation models and algorithms.
+Documentation: https://chanzuckerberg.github.io/cryoet-data-portal/cryoet_data_portal_docsite_quick_start.html
+Contact: cryoetdataportal@chanzuckerberg.com
+ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
+UpdateFrequency: New releases are published on a rolling basis. Please contact the team via email for any questions.
+Tags:
+  - cryo electron tomography
+  - electron tomography
+  - cell biology
+  - structural biology
+  - machine learning
+  - segmentation
+  - czi
+  - life sciences
+License: CC0
+Resources:
+  - Description: CryoET Data Portal
+    ARN: arn:aws:s3:::cryoet-data-portal-public
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Website](https://cryoetdataportal.czscience.com/)'
+  - Description: Globally cached distribution of the CryoET Data Portal dataset
+    Region: us-west-2
+    Type: CloudFront Distribution
+    Host: https://files.cryoetdataportal.cziscience.com
+DataAtWork:
+  Tutorials:
+    - Title: Examples of working with the portal API
+      URL: https://chanzuckerberg.github.io/cryoet-data-portal/cryoet_data_portal_docsite_examples.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Predicting sample boundaries
+      URL: https://chanzuckerberg.github.io/cryoet-data-portal/tutorial_sample_boundaries.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Downloading data via the AWS CLI
+      URL: https://chanzuckerberg.github.io/cryoet-data-portal/cryoet_data_portal_docsite_aws.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Tools & Applications:
+    - Title: Python API for CryoET Data Portal
+      URL: https://chanzuckerberg.github.io/cryoet-data-portal/python-api.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Publications:
+    - Title: Cryo-ET reveals the in situ architecture of the polar tube invasion apparatus from microsporidian parasites
+      URL: https://www.biorxiv.org/content/10.1101/2024.07.13.603322v1
+      AuthorName: Mahrukh Usmani, et al.
+      AuthorURL: https://scholar.google.com/scholar?q=Mahrukh+Usmani

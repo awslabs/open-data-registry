@@ -1,0 +1,54 @@
+Name: GEOS-Chem Nested Input Data
+Description: Input data for nested-grid simulations using the GEOS-Chem Chemical Transport Model. This includes the NASA/GMAO MERRA-2 and GEOS-FP [meteorological products](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#met), the [HEMCO emission inventories](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/input-overview.html#emis-inputs), and other small data such as [model initial conditions](https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/restart-files.html).
+Documentation: https://geos-chem.readthedocs.io
+Contact: http://geos-chem.org/support-team
+UpdateFrequency: New meteorological and emission data will be added when available.
+ManagedBy: "[GEOS-Chem Support Team](https://geoschem.github.io/support-team.html)"
+Collabs:
+  ASDI:
+    Tags:
+      - air quality
+Tags:
+  - aws-pds
+  - climate
+  - weather
+  - meteorological
+  - environmental
+  - air quality
+  - chemistry
+  - atmosphere
+  - model
+License: http://geos-chem.org/license
+Resources:
+  - Description: Top-level directory for all GEOS-Chem nested-grid data.
+    ARN: arn:aws:s3:::gcgrid
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://s3.amazonaws.com/gcgrid/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: GEOS-Chem input data on AWS cloud
+      URL: https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/geos-chem-input-data-on-aws.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
+    - Title: GEOS-Chem Classic Quickstart Guide
+      URL: https://geos-chem.readthedocs.io/en/latest/getting-started/quick-start.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
+    - Title: GCHP Quickstart Guide
+      URL: https://gchp.readthedocs.io/en/latest/getting-started/quick-start.html
+      AuthorName: GEOS-Chem Support Team
+      AuthorURL: http://geos-chem.org/support-team
+  Tools & Applications:
+    - Title: Integrated Methane Inversion
+      URL: https://imi.seas.harvard.edu/
+      AuthorName: Daniel Varon et al.
+      AuthorURL: https://imi.seas.harvard.edu/people
+  Publications:
+    - Title: "Enabling Immediate Access to Earth Science Models through Cloud Computing: Application to the GEOS-Chem Model"
+      URL: https://doi.org/10.1175/BAMS-D-18-0243.1
+      AuthorName: Jiawei Zhuang et al.
+    - Title: "Enabling high-performance cloud computing for Earth science modeling on over a thousand cores: application to the GEOS-Chem atmospheric chemistry model"
+      URL: https://doi.org/10.1029/2020MS002064
+      AuthorName: Jiawei Zhuang et al.
