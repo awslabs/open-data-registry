@@ -1,18 +1,5 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
-    Title: Accessing IMOS - SRS - SST - L3S - Single Sensor - 1 day - day and night
-      time - Australia
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Satellite - Sea surface temperature - Level 3 - Single sensor - 1 day - Day
+  and night time
 Description: "This is a single-sensor multi-satellite  SSTfnd product for a single\
   \ 24 hour period, derived using observations from AVHRR instruments on all available\
   \ NOAA polar-orbiting satellites.  It is provided as a 0.02deg x 0.02deg cylindrical\
@@ -29,17 +16,31 @@ Description: "This is a single-sensor multi-satellite  SSTfnd product for a sing
   \ and Beggs et al. (2013) at http://imos.org.au/sstdata_references.html for further\
   \ information."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/a136eee7-a990-4c06-a4f6-915657a2464e
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Satellite - Sea surface temperature - Level 3 - Single sensor - 1 day - Day
-  and night time
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.zarr
-  Description: Cloud Optimised AODN dataset of IMOS - SRS - SST - L3S - Single Sensor
-    - 1 day - day and night time - Australia
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - satellite imagery
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - SST - L3S - Single Sensor
+    - 1 day - day and night time - Australia
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - SST - L3S - Single Sensor - 1 day - day and night
+      time - Australia
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3s_1day_daynighttime_single_sensor_australia.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

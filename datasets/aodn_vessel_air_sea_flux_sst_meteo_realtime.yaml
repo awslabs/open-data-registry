@@ -1,0 +1,52 @@
+Name: Ships of Opportunity - Air-sea fluxes - Meteorological and sea surface temperature
+  - Real time
+Description: 'Enhancement of Measurements on Ships of Opportunity (SOOP)-Air Sea Flux
+  sub-facility collects underway meteorological and oceanographic observations during
+  scientific and Antarctic resupply voyages in the oceans adjacent to Australia. Data
+  product is quality controlled observations. Research Vessel Real Time Air-Sea Fluxes,
+  equips the Marine National Facility (MNF) (Research Vessels Southern Surveyor and
+  Investigator), the Australian Antarctic Division (Research and Supply Vessels Aurora
+  Australis and Nuyina), and Research Vessel Tangaroa with "climate quality" meteorological
+  measurement systems, capable of providing high quality air-sea flux measurements
+  and delivered to researchers on a near real-time basis. Obtaining the full set of
+  air-sea fluxes essential for climate studies requires observations of: wind, air
+  and sea temperature, humidity, pressure, precipitation, long- and short-wave radiation.
+  The existing ship meteorological sensor sets are completed with IMOS instruments
+  and a comprehensive annual calibration program implemented. Data streams are fed
+  into existing ship data management systems, and broadcast via satellite back to
+  Australia routinely. The observations are quality controlled at the Bureau of Meteorology.
+  A daily file of 1-minute averages of the observations are generated shortly after
+  0000UTC and provided to IMOS.'
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/9436802f-ed93-4660-be50-e77c3c07bd09
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- air temperature
+- atmosphere
+- meteorological
+- precipitation
+- radiation
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SOOP-Air Sea Flux (ASF) sub-facility
+    - Meteorological and SST Observations
+  ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_air_sea_flux_sst_meteo_realtime.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SOOP-Air Sea Flux (ASF) sub-facility - Meteorological
+      and SST Observations
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_air_sea_flux_sst_meteo_realtime.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_air_sea_flux_sst_meteo_realtime.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

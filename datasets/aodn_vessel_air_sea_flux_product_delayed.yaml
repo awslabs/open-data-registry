@@ -1,0 +1,51 @@
+Name: Ships of Opportunity - Air-sea fluxes - Meteorological and flux - Real time
+Description: 'Enhancement of Measurements on Ships of Opportunity (SOOP)-Air Sea Flux
+  sub-facility collects underway meteorological and oceanographic observations during
+  scientific and Antarctic resupply voyages in the oceans adjacent to Australia. Data
+  product is quality controlled bulk air-sea fluxes and input observations. Research
+  Vessel Real Time Air-Sea Fluxes, equips the Marine National Facility (MNF) (Research
+  Vessels Southern Surveyor and Investigator), the Australian Antarctic Division (Research
+  and Supply Vessels Aurora Australis and Nuyina), and Research Vessel Tangaroa with
+  "climate quality" meteorological measurement systems, capable of providing high
+  quality air-sea flux measurements and delivered to researchers on a near real-time
+  basis. Obtaining the full set of air-sea fluxes essential for climate studies requires
+  observations of: wind, air and sea temperature, humidity, pressure, precipitation,
+  long- and short-wave radiation. The existing ship meteorological sensor sets are
+  completed with IMOS instruments and a comprehensive annual calibration program implemented.
+  Data streams are fed into existing ship data management systems, and broadcast via
+  satellite back to Australia routinely. The observations are quality controlled at
+  the Bureau of Meteorology and air-sea fluxes calculated using the COARE Bulk Flux
+  algorithm. A daily file of calculated bulk fluxes and the observations used in the
+  calculation are generated shortly after 0000UTC and provided to IMOS.'
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/07818819-2e5c-4a12-9395-0082b57b2fe8
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- air temperature
+- atmosphere
+- meteorological
+- radiation
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: 'Cloud Optimised AODN dataset of IMOS-SOOP-Air Sea Flux: Flux product
+    from the Research Vessel Tangaroa'
+  ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_air_sea_flux_product_delayed.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: 'Accessing IMOS-SOOP-Air Sea Flux: Flux product from the Research Vessel
+      Tangaroa'
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_air_sea_flux_product_delayed.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_air_sea_flux_product_delayed.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

@@ -1,0 +1,60 @@
+Name: Satellite - Ocean Colour - MODIS - 1 day - Net Primary Productivity (OC3 model
+  and Eppley-VGPM algorithm)
+Description: 'The Aqua satellite platform carries a MODIS sensor that observes sunlight
+  reflected from within the ocean surface layer at multiple wavelengths. These multi-spectral
+  measurements are used to infer the concentration of chlorophyll-a (Chl-a), most
+  typically due to phytoplankton, present in the water. Modelling is then used to
+  compute an estimate of the Net Primary Productivity (NPP).
+
+
+  The model used is based on the standard vertically generalised production model
+  (VGPM).  The VGPM is a "chlorophyll-based" model that estimates net primary production
+  from chlorophyll using a temperature-dependent description of chlorophyll-specific        photosynthetic
+  efficiency. For the VGPM, net primary production is a function of chlorophyll, available
+  light, and the photosynthetic efficiency. The only difference between the Standard
+  VGPM and the Eppley-VGPM is the temperature-dependent description of photosynthetic
+  efficiencies, with the Eppley approach using an exponential function to account
+  for variation in photosynthetic efficiencies due to photoacclimation. The similarity
+  between these models (VGPM vs E_VGPM) is described more extensively in a paper by
+  Elena-Carr et al (2006.). VGPM is a Depth Integrated Model(DIM) described by Behrenfeld
+  and Falkowski (1997), with modification due to Eppley (1972) as implemented by Antoine
+  and Morel (1996).
+
+
+  There are multiple retrieval algorithms for estimating Chl-a. These data (eppley_npp_chl_oc3)
+  use the OC3 method implemented by the NASA Ocean Biology Processing Group in the
+  SeaDAS processing software l2gen. The OC3 algorithm is described at https://oceancolor.gsfc.nasa.gov/atbd/chlor_a/
+  (and links therein). The  Eppley_NPP_chl_oc3 product (based on the IMOS chl_oc3
+  product) is experimental and was created for comparison purposes with Eppley_NPP_chl_gsm,
+  which is the recommended NPP product. It should only be used with full understanding
+  of the algorithms. If you do not know which product to use, then go with Eppley_NPP_chl_gsm.'
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/b35b829c-9149-46c6-9e25-d0fd03463280
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - MODIS - 01 day - Net Primary
+    Productivity (OC3 model and Eppley-VGPM algorithm)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_net_primary_productivity_oc3_1day_aqua.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - MODIS - 01 day - Net Primary Productivity (OC3 model
+      and Eppley-VGPM algorithm)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_net_primary_productivity_oc3_1day_aqua.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_net_primary_productivity_oc3_1day_aqua.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

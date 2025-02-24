@@ -1,0 +1,42 @@
+Name: Satellite - Sea surface temperature - Level 4 - Multi sensor - Regional Australian
+Description: "An International Group for High Resolution Sea Surface Temperature (GHRSST)\
+  \ Level 4 sea surface temperature analysis, produced daily on an operational basis\
+  \ at the Australian Bureau of Meteorology using optimal interpolation (OI) on a\
+  \ regional 1/12 degree grid over the Australian region (20N - 70S, 60E - 170W).\
+  \ This Regional Australian Multi-Sensor SST Analysis (RAMSSA) v1.0 system blends\
+  \ infra-red SST observations from the Advanced Very High Resolution Radiometer (AVHRR)\
+  \ on NOAA and METOP polar-orbiting satellites, microwave SST observations from the\
+  \ Advanced Microwave Scanning Radiometer-2 (AMSR-2) on GCOM-W, and in situ data\
+  \ from ships, and drifting and moored buoys from the Global Telecommunications System\
+  \ (GTS).  \n\nAll SST observations are filtered for those values suspected to be\
+  \ affected by diurnal warming by excluding cases which have experienced recent surface\
+  \ wind speeds of below 6 m/s during the day and less than 2 m/s during the night,\
+  \ thereby resulting in daily foundation SST estimates that are largely free of diurnal\
+  \ warming effects."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/a4170ca8-0942-4d13-bdb8-ad4718ce14bb
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - SST - L4 - RAMSSA - Australia
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_ghrsst_l4_ramssa_1day_multi_sensor_australia.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - SST - L4 - RAMSSA - Australia
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l4_ramssa_1day_multi_sensor_australia.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l4_ramssa_1day_multi_sensor_australia.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

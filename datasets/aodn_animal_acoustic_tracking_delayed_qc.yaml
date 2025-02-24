@@ -1,18 +1,4 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/receiver_animal_acoustic_tagging_delayed_qc.ipynb
-    Title: Accessing IMOS - Animal Tracking Facility - Acoustic Tracking - Quality
-      Controlled Detections (2007 - ongoing)
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/receiver_animal_acoustic_tagging_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Animal Tracking - Acoustic Telemetry - Quality controlled detections
 Description: "Since 2007, the Integrated Marine Observing System\u2019s Animal Tracking\
   \ Facility (formerly known as the Australian Animal Tracking And Monitoring System\
   \ (AATAMS)) has established a permanent array of acoustic receivers around Australia\
@@ -34,17 +20,32 @@ Description: "Since 2007, the Integrated Marine Observing System\u2019s Animal T
   \ database (up until 2017) (http://dx.doi.org/10.4225/69/5979810a7dd6f), and this\
   \ has been documented in a Scientific Data Publication (Hoenner et al. 2018)."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/541d4f15-122a-443d-ab4e-2b5feb08d6a0
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Animal Tracking - Acoustic Telemetry - Quality controlled detections
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/receiver_animal_acoustic_tagging_delayed_qc.parquet
-  Description: Cloud Optimised AODN dataset of IMOS - Animal Tracking Facility - Acoustic
-    Tracking - Quality Controlled Detections (2007 - ongoing)
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - marine mammals
-- life sciences
-UpdateFrequency: As Needed
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - Animal Tracking Facility - Acoustic
+    Tracking - Quality Controlled Detections (2007 - ongoing)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/animal_acoustic_tracking_delayed_qc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - Animal Tracking Facility - Acoustic Tracking - Quality
+      Controlled Detections (2007 - ongoing)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/animal_acoustic_tracking_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/animal_acoustic_tracking_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

@@ -1,0 +1,44 @@
+Name: Satellite - Ocean Colour -  MODIS - 1 day - Chlorophyll-a concentration (Carder
+  model)
+Description: 'The Aqua satellite platform carries a MODIS sensor that observes sunlight
+  reflected from within the ocean surface layer at multiple wavelengths. These multi-spectral
+  measurements are used to infer the concentration of chlorophyll-a (Chl-a), most
+  typically due to phytoplankton, present in the water.
+
+
+  There are multiple retrieval algorithms for estimating Chl-a. These data use the
+  Carder method implemented in the SeaDAS processing software l2gen and described
+  in Carder K. L., Chen F. R., Lee Z. P., Hawes S. K. and Cannizzaro J. P. (2003),
+  MODIS Ocean Science Team Algorithm Theoretical Basis Document, ATBD 19, Case 2 Chlorophyll
+  a, Version 7, URL: http://modis.gsfc.nasa.gov/data/atbd/atbd_mod19.pdf (accessed
+  17 March 2022).'
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/43ac4663-c8de-4eb0-9711-3da65cbecdd3
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - MODIS - 01 day - Chlorophyll-a
+    concentration (Carder model)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_chlorophylla_carder_1day_aqua.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - MODIS - 01 day - Chlorophyll-a concentration (Carder
+      model)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_chlorophylla_carder_1day_aqua.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_chlorophylla_carder_1day_aqua.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
