@@ -1,0 +1,49 @@
+Name: NOAA Unified Forecast System (UFS) Coastal Model
+Description: | 
+  The Unified Forecast System (UFS) is a community-based, coupled, comprehensive Earth Modeling System. The [UFS Coastal application](https://github.com/janahaddad/ufs-coastal-app) is a project under development by NOAA and NCAR, which supports coastal forecasting requirements based on UFS standards. The coupling infrastructure for UFS Coastal App is currently being developed based on a fork of the ufs-weather-model (UFS-WM), with additional coastal model-components including SCHISM, ADCIRC, ROMS, and FVCOM, as well as additional infrastructure to support coastal coupling of WW3 and CICE. The [model-level repository](https://github.com/oceanmodeling/ufs-weather-model) contains the model code and external submodules needed to build the UFS coastal model executable and the associated model components. 
+  <br/>
+  <br/>
+  The UFS Coastal Regression Test (RT) system is a type of testing built into the software development that ensures that changes to the model-level code and associated model-components do not break the existing functionality of the code. The number and type of tests currently in the RT system suite are evolving along with current dependencies such as UFS-WM and ESMF libraries. Currently, at least one RT case exists for each coastal model. The status and descriptions of the existing RT cases is available via the [UFS Coastal Wiki page](https://github.com/oceanmodeling/ufs-weather-model/wiki/Current-Status-of-UFS%E2%80%90Coastal-Implementation). These are currently regularly tested on NOAA/MSU Hercules platform, and to a lesser frequency on TACC/Frontera.
+  <br/>
+  <br/>
+  Each of the regression tests require a set of input data files and configuration files. The configuration files include namelist and model configuration files which can be found within the [UFS-Coastal model code repository](https://github.com/oceanmodeling/ufs-weather-model). The RT framework also includes baseline data for each configuration. When code changes are not expected to alter baseline results, regression tests will be performed against current baseline and as a result, the regression test log files are created – revealing a summary of no change within the results. If the code changes are expected to alter model results, impact to the regression tests will be specified in the pull request. The code changes and model results will be reviewed and confirmed. Once the model results are confirmed, a new baseline will be generated. In some cases, new input data will need to be added or old data will need to be replaced, these data will be put in the input data location with proper timestamp, and regression tests will be performed with the updated data sets.
+Documentation: https://oceanmodeling.github.io/ufs-coastal-app/ (under development) 
+Contact: |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. For questions regarding data content or quality, visit https://github.com/oceanmodeling/ufs-weather-model/discussions
+  <br> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](https://www.noaa.gov/)"
+UpdateFrequency: Periodically, as new data becomes available
+Collabs:
+  ASDI:
+    Tags:
+      - elevation
+Tags:
+  - aws-pds
+  - climate
+  - elevation
+  - disaster response
+  - geospatial
+  - lidar
+  - stac
+License: |
+  NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. 
+  <br/>
+  <br/>
+  NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+  <br/>
+  <br/>
+  NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+  <br/>
+  <br/>
+  The UFS Coastal license page is available at: https://github.com/oceanmodeling/ufs-coastal-app/blob/main/LICENSE.md
+Resources:
+  - Description: NOAA UFS Coastal Data
+    ARN: arn:aws:s3:::noaa-ufs-coastal-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+      - '[Browse Bucket](https://noaa-ufs-coastal-pds.s3.amazonaws.com/index.html)'
+  - Description: NOAA Coastal Lidar Dataset New Dataset Notification
+    ARN: arn:aws:sns:us-east-1:709902155096:NewUFSCoastalObject
+    Region: us-east-1
+    Type: SNS Topic
