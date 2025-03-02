@@ -1,0 +1,56 @@
+Name: Met Office Global Wave model on a 2-year rolling archive
+Description: The Met Office runs global wave forecast models to support marine safety and operational decision making. Met
+  Office configurations are developed to be run using the community wave model WAVEWATCH IIITM. The global
+  wave configuration is designed to generate accurate forecasts for open waters of the world’s oceans and larger
+  seas. The Met Office wave models are forced using wind data from the Met Office Global Atmospheric Hi-Res
+  Model. The global wave model is run to provide a five day outlook for wave characteristics defining height, period and
+  direction of waves within a given sea-state. The model uses a refined grid system in order to better represent fetch
+  in constrained sea areas and blocking effects of islands and headlands.
+  Please note this is a public beta and therefore a non-operational service.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The Global Wave model runs at 00:00, 12:00 (UTC) to T+144h, and at 06:00, 18:00 (UTC) to T+66h.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - forecast
+  - geoscience
+  - geospatial
+  - global
+  - marine
+  - model
+  - netcdf
+  - ocean sea surface height
+  - oceans
+  - weather
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Global Wave model on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-global-wave-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-global-wave-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new global wave model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-global-wave-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Coupled forecasting development
+      URL: https://www.metoffice.gov.uk/research/weather/ocean-forecasting/coupled-development
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: Ocean models
+      URL: https://www.metoffice.gov.uk/services/government/defence-and-security/ocean-models
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
