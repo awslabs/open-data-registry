@@ -1,0 +1,28 @@
+Name: FVCOM GOM3
+Description: The Finite Volume Community Ocean Model (FVCOM) was used to simulate ocean water levels, velocity, temperature and salinity over a multi-decadal period (1984-present) in the waters of the Northeast US including the Gulf of Maine.  The model was configured and run by the Dr. Changshen Chen, Director of the Marine Ecosystems Dynamics Modeling Laboratory in the School for Marine Science & Technology at the University of Massachusetts Dartmouth.  The triangular mesh has a varying horizontal resolution from several hundred meters inshore to several kilometers offshore.  The model output was saved at hourly from 2009-08-21 to 2022-06-17. 
+Documentation: https://www.umassd.edu/news/2018/charting-the-ocean-.html
+Contact: rich@opensciencecomputing.com
+ManagedBy: Open Science Computing, LLC
+UpdateFrequency: None
+Citation: 
+Tags:
+  - aws-pds
+  - oceans
+License: CC0
+Resources:
+  - Description: A collection of NetCDF files, kerchunk generated JSON files, and an Intake catalog
+    ARN: arn:aws:s3:::fvcom-gom3
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: FVCOM Explorer Notebook
+      URL: https://github.com/opensciencecomputing/fvcom
+      NotebookURL: https://github.com/opensciencecomputing/fvcom/blob/main/FVCOM_explore.ipynb
+      AuthorName: Rich Signell
+      AuthorURL: https://about.me/rich.signell
+      Services:
+  Publications:
+    - Title: An Unstructured Grid, Finite-Volume, Three-Dimensional, Primitive Equations Ocean Model: Application to Coastal Ocean and Estuaries
+      URL: https://doi.org/10.1175/1520-0426(2003)020%3C0159:AUGFVT%3E2.0.CO;2
+      AuthorName: Changsheng Chen, Hedong Liu, and Robert C. Beardsley
