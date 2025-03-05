@@ -1,0 +1,41 @@
+Name: NOAA Global Forecast System (GFS) netCDF Formatted Data
+Description: |
+  The Global Forecast System (GFS) is a weather forecast model produced by the National Centers for Environmental Prediction (NCEP). Dozens of atmospheric and land-soil variables are available through this dataset, from temperatures, winds, and precipitation to soil moisture and atmospheric ozone concentration. The GFS data files stored here can be immediately used for [OAR/ARL’s NOAA-EPA Atmosphere-Chemistry Coupler Cloud (NACC-Cloud) tool](https://www.arl.noaa.gov/research/surface-atmosphere-exchange-home/tools-and-products/nacc-nacc-cloud/), and are in a Network Common Data Form (netCDF), which is a very common format used across the scientific community. These particular GFS files contain a comprehensive number of global atmosphere/land variables at a relatively high spatiotemporal resolution (~13x13 km horizontal, vertical resolution of 127 levels, and hourly), are not only necessary for the NACC-Cloud tool to adequately drive community air quality applications (e.g., U.S. EPA’s Community Multiscale Air Quality model; https://www.epa.gov/cmaq), but can be very useful for a myriad of other applications in the Earth system modeling communities (e.g., atmosphere, hydrosphere, pedosphere, etc.). While many other data file and record formats are indeed available for Earth system and climate research (e.g., GRIB, HDF, GeoTIFF), the netCDF files here are advantageous to the larger community because of the comprehensive, high spatiotemporal information they contain, and because they are more scalable, appendable, shareable, self-describing, and community-friendly (i.e., many tools available to the community of users).  Out of the four operational GFS forecast cycles per day (at 00Z, 06Z, 12Z and 18Z) this particular netCDF dataset is updated daily (/yyyymmdd) for the 12Z cycle and includes 24-hr output for both 2D (gfs.t12z.sfcf$0hh.nc) and 3D variables (gfs.t12z.atmf$0hh.nc).
+  <br/>
+Documentation: [NACC Landing Page at NOAA-ARL](https://www.arl.noaa.gov/research/surface-atmosphere-exchange-home/tools-and-products/nacc-nacc-cloud/) , [NACC GitHub](https://github.com/noaa-oar-arl/NACC), [NACC-Cloud Link](https://nacc.arl.noaa.gov/nacc/login)
+Contact: For questions regarding data content or quality, visit [the OAR NACC site](https://www.arl.noaa.gov/research/surface-atmosphere-exchange-home/tools-and-products/nacc-nacc-cloud/) or contact rick.jiang@noaa.gov or patrick.c.campbell@noaa.gov. For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Out of the four operational GFS forecast cycles per day (at 00Z, 06Z, 12Z and 18Z) this particular netCDF dataset is updated daily (/yyyymmdd) for the 12Z cycle and includes hourly output out to 24 hours for both 2D (gfs.t12z.sfcf$0hh.nc) and 3D variables (gfs.t12z.atmf$0hh.nc).  The data is uploaded daily at ~ 1800 UTC.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+License: NOAA data disseminated through NODD are open to the public with no use restriction. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: GFS netCDF Format Data
+    ARN: arn:aws:s3:::noaa-oar-arl-nacc-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-oar-arl-nacc-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GFS netCDF, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewArlNaccObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: NOAA’s Global Forecast System Data in the Cloud for Community Air Quality Modeling. Atmosphere 2023, 14, 1110.
+      URL: https://doi.org/10.3390/atmos14071110
+      AuthorName: Campbell, P.C.; Jiang, W.; Moon, Z.; Zinn, S.; Tang, Y.
+    - Title: U.S. EPA’s application of NOAA’s GFS netCDF data on AWS and NACC-Cloud: “Expedited modeling of burn events results (EMBER): A screening-level dataset of 2023 ozone fire impacts in the US."
+      URL: https://doi.org/10.3390/atmos14071110
+      AuthorName: Simon et al.
