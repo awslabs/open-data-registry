@@ -1,0 +1,62 @@
+Name: Fruit-bat vocalizations annotated with varying context and vocal ontogenesis
+Description: "Database of Egyptian fruit bat vocalizations, continuously recorded in lab settings\
+\ in several groups simultaneously for more than a year.\
+\ The dataset includes almost 300,000 social vocalizations, a few seconds each,\ 
+\ representing the complete vocal repertoire used by the bats in the experiment period.\ 
+\ Around 90,000 vocalizations are annotated with the identity of the individuals involved in the vocal interactions, their behaviours and the context.\
+\ Data include the complete vocal ontogeny of pups, from birth to adulthood, in different conditions (e.g., isolated or in a group).\
+\ The original dataset is available in archives published in:\
+\ Prat, Yosef; Taub, Mor; Pratt, Ester; Yovel, Yossi (2017). An annotated dataset of Egyptian fruit bat vocalizations across varying contexts and during vocal ontogeny. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.3666502.v2\ 
+\ The dataset is here copied and extended with data pre-processing derivatives, to facilitate research involving AI on large bioacoustics datasets"
+" 
+Documentation: https://github.com/gg4u/FruitBat-vocalizations-open-data/tree/main
+Contact: luigi.assom@dsv.su.se
+ManagedBy: "luigi.assom@dsv.su.se"
+UpdateFrequency: No update planned on the raw data. Occasional update for data enhancements and derivative products (e.g. segmented vocalizations)
+Tags:
+  - animal communication
+  - bioacoustics
+  - animal decision making
+  - ethology
+License: Creative Commons Attribution 4.0 International License (CC BY 4.0)
+Resources: 
+  - Description: NEXRAD Level II archive data
+    ARN: arn:aws:s3:::noaa-nexrad-level2
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
+  - Description: NEXRAD Level II real-time data
+    ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "[Rich notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad#subscribing-to-nexrad-data-notifications) for real-time data with filterable fields"
+    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: Notifications for archival data
+    ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Basic Tutorial for consuming this dataset from AWS
+      URL: https://github.com/gg4u/FruitBat-vocalizations-open-data/blob/main/Tutorial.md
+      AuthorName: Luigi Assom
+      AuthorURL: https://github.com/gg4u
+    - Title: Animal Vocalization Generative Network (AVGN) (Jupyter notebooks employing also this dataset)
+      URL: https://github.com/timsainb/AVGN
+      AuthorName: Ryan May
+      AuthorURL: https://github.com/timsainb/
+  Tools & Applications:
+    - Title: Unsupervised machine learning to quantify the vocal repertoire of fruitbats, determine type of syntax and identify behavioral dependent patterns
+      URL: https://github.com/gg4u/decodingNonHumanCommunication
+      AuthorName: Luigi Assom
+      AuthorURL: https://github.com/gg4u/
+  Publications:
+    - Title: An annotated dataset of Egyptian fruit bat vocalizations across varying contexts and during vocal ontogeny
+      URL: https://www.nature.com/articles/sdata2017143
+      AuthorName: Prat, Yosef; Taub, Mor; Pratt, Ester; Yovel, Yossi
+    - Title: Decoding communication of non-human species - Unsupervised machine learning to infer syntactical and temporal patterns in fruit-bats vocalizations
+      URL: https://urn.kb.se/resolve?urn=urn:nbn:se:su:diva-223664
+      AuthorName: Luigi Assom
