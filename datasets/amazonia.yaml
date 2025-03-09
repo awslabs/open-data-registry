@@ -11,7 +11,7 @@ Description: |
   Level 4 archive will be ingested by the end of October 2022.
 Documentation: http://www.inpe.br/amazonia1
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
-ManagedBy: "[AMS Kepler](https://amskepler.com/)"
+ManagedBy: "[Frederico Liporace](https://github.com/fredliporace)"
 UpdateFrequency: Daily
 Collabs:
   ASDI:
@@ -36,7 +36,7 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+    - '[STAC V1.0.0 endpoint](https://stac.scitekno.com.br/v100)'
     - '[stacindex](https://stacindex.org/catalogs/cbers)'
   - Description: STAC static catalog
     ARN: arn:aws:s3:::br-eo-stac-1-0-0
@@ -71,8 +71,8 @@ DataAtWork:
         - Amazon Athena
   Tools & Applications:
     - Title: STAC V1.0.0 endpoint
-      URL: https://stac.amskepler.com/v100
-      AuthorName: AMS Kepler
+      URL: https://stac.scitekno.com.br/v100
+      AuthorName: Frederico Liporace
       AuthorURL: https://github.com/fredliporace
     - Title: Amazonia 1 stactools package
       URL: https://github.com/stactools-packages/amazonia-1

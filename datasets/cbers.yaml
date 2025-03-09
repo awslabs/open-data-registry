@@ -15,7 +15,7 @@ Description: |
   scenes are being ingested starting from 10-12-2022.
 Documentation: https://github.com/fredliporace/cbers-on-aws
 Contact: https://lists.osgeo.org/mailman/listinfo/cbers-pds
-ManagedBy: "[AMS Kepler](https://amskepler.com/)"
+ManagedBy: "[Frederico Liporace](https://github.com/fredliporace)"
 UpdateFrequency: Daily
 Collabs:
   ASDI:
@@ -39,7 +39,7 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
-    - '[STAC V1.0.0 endpoint](https://stac.amskepler.com/v100)'
+    - '[STAC V1.0.0 endpoint](https://stac.scitekno.com.br/v100)'
     - '[stacindex](https://stacindex.org/catalogs/cbers)'
   - Description: STAC static catalog
     ARN: arn:aws:s3:::br-eo-stac-1-0-0
@@ -69,7 +69,7 @@ DataAtWork:
         - Amazon DynamoDB
   Tools & Applications:
     - Title: STAC V1.0.0 endpoint
-      URL: https://stac.amskepler.com/v100
+      URL: https://stac.scitekno.com.br/v100
       AuthorName: AMS Kepler
       AuthorURL: https://github.com/fredliporace/cbers-2-stac
     - Title: EOS Land Viewer

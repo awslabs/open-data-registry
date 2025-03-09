@@ -1,0 +1,42 @@
+Name: NOAA Space Weather Follow-On Mission Geostationary Operational Environmental Satellite (GOES) 19
+Description: |
+  <br/>  
+  The National Oceanic and Atmospheric Administration (NOAA) Geostationary Operational Environmental Satellite 19 (GOES-19) is the fourth and final satellite in the
+  Geostationary Operational Environmental Satellites (GOES) – R Series, the Western Hemisphere’s most sophisticated weather-observing and environmental monitoring 
+  system.
+  <br/>  
+  The GOES-R Series provides advanced imagery and atmospheric measurements, real-time mapping of lightning activity, and space weather observations. As a part of the
+  Space Weather Follow On (SWFO) Mission, the GOES-19 spacecraft contains a Compact Coronagraph-1 (CCOR-1) instrument that produces 96 files per day per level in the
+  FITS format. These data are produced by the CCOR-1 instrument aboard the GOES-19 spacecraft. The instrument observes broadband optical light that is scattered from
+  coronal electrons and heliospheric dust. The spacecraft also produces daily auxiliary (telemetry and attitude) files in NetCDF4 format.
+Documentation: https://github.com/NOAA-Big-Data-Program/nodd-data-docs/tree/main/SWFO
+Contact: |
+  For questions related to specific CCOR-1 Products, please contact ncei.swx.coronagraph@noaa.gov
+  <br/>
+  For questions related to general Space Weather data, please contact ncei.info@noaa.gov
+  <br/>
+  <br/>
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: New data is added as soon as it's available
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - space weather
+  - satellite imagery
+License: NOAA data disseminated through NODD are open to the public and can be used as desired. <br/><br/> NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: GOES-19 CCOR-1 data
+    ARN: arn:aws:s3:::noaa-nesdis-swfo-ccor-1-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nesdis-swfo-ccor-1-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-19 CCOR-1 data, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:709902155096:NewSWFOCCOR1Object
+    Region: us-east-1
+    Type: SNS Topic
