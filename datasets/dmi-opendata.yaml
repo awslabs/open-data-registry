@@ -27,7 +27,8 @@ Resources:
     ARN: arn:aws:s3:::dmi-opendata
     Region: eu-north-1
     Type: S3 Bucket
-    Explore: https://dmi-opendata.s3.eu-north-1.amazonaws.com/index.html
+    Explore:
+      - https://dmi-opendata.s3.eu-north-1.amazonaws.com/index.html
 DataAtWork:
   Tutorials:
     - Title: Guide to processing forecast data with Python
@@ -35,6 +36,7 @@ DataAtWork:
       NotebookURL: https://github.com/dmidk/dmi-opendata-forecastdata-guide/blob/main/graph-2m-temperature.ipynb
       AuthorName: Danish Meteorological Institute
       AuthorURL: https://www.dmi.dk/
-      Services: Amazon S3
+      Services:
+        - Amazon S3
 ADXCategories:
   - Environmental Data
