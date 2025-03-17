@@ -1,0 +1,57 @@
+Name: AI3
+Description: >
+  The rapid advancement of computing technologies, particularly artificial intelligence (AI), has revolutionized various domains, including drug discovery. Curated datasets are crucial for developing reliable, generalizable, and accurate models for practical applications. Generating experimental data on a large scale is an expensive and arduous process. In domains such as medical diagnostics where real-life data is hard to obtain, synthetic data has been shown to be extremely valuable. We, teams from IIIT Hyderabad, Intel, AWS, and Insilico Medicine, have performed physics-based calculations (molecular dynamics simulations) on about 20,000 protein-ligand complexes. The dataset comprises molecular dynamics snapshots, binding affinities calculated using the MM-PBSA method, and individual energy components, including electrostatic and van der Waals interactions.
+
+DatasetFileFormats:
+  - 3D coordinates of the protein-ligand complexes (pdb) in tar.gz files
+  - CSV files containing the energy data
+
+DatasetUsages:
+  - ML scoring function for predicting binding affinities of given protein-ligand complexes
+  - Classification models for predicting correct binding poses of ligands
+  - Identification of cryptic binding pockets
+  - Optimization of binding features by exploiting the individual components of the energy (experimental data has only the total binding affinity)
+
+DatasetNovelty: >
+  Existing AI/ML training datasets lack dynamic data and are inherently biased. Further, binding affinity data existing in the literature are obtained from different experimental protocols. Therefore, this dataset has been uniquely created (from the same computational protocols) followed by free energy calculations with molecular dynamics (MD) simulations. The dynamic data-enriched protein-ligand coordinates can be used to effectively train convolutional neural network-based regression models for more accurate binding affinity prediction.
+
+Documentation: https://github.com/devalab/AI3
+Contact: devalab@iiit.ac.in
+ManagedBy: International Institute of Information Technology Hyderabad
+UpdateFrequency: Not updated
+
+Tags:
+  - Pharmaceutical
+  - Simulations
+  - Health
+  - Life Sciences
+  - Machine Learning
+  - Protein
+  - Molecular Dynamics
+
+License: https://www.devalab.in/AI3.html
+
+Resources:
+  - Description: Coordinates and the energetics of ~20,000 protein-ligand binding affinity datasets.
+    ARN: To be added once bucket is created
+    Region: To be added once bucket is created
+    Type: S3 bucket
+
+DataAtWork:
+  Tutorials:
+    - Description: The dataset is easy to download and can be applied based on user requirements. Further information about the protocol for creation of the dataset can be obtained from https://github.com/devalab/AI3.
+  ToolsApplications:
+    - Title: Dataset of protein-ligand complexes now available in the Registry of Open Data on AWS
+      URL: To be added once blog is published
+      AuthorName: U. Deva Priyakumar, Rakesh Srivastava, Prathit Chatterjee, Vladimir Aladinskiy, Ramanathan Sethuraman, Yusong Wang, Alex Iankoulski, Beryl Rabindran
+      AuthorURL: https://devalab.in/
+  Publications:
+    - Title: "PLAS-5k: Dataset of Protein-Ligand Affinities from Molecular Dynamics for Machine Learning Applications"
+      URL: https://www.nature.com/articles/s41597-022-01631-9
+      AuthorName: U. Deva Priyakumar
+      AuthorURL: https://devalab.in/
+    - Title: "PLAS-20k: Extended Dataset of Protein-Ligand Affinities from MD Simulations for Machine Learning Applications"
+      URL: https://www.nature.com/articles/s41597-023-02872-y
+      AuthorName: U. Deva Priyakumar
+      AuthorURL: https://devalab.in
+
