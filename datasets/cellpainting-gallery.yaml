@@ -41,6 +41,10 @@ Resources:
     Explore:
       - '[Documentation](https://github.com/broadinstitute/cellpainting-gallery)'
       - '[Browse Bucket](https://cellpainting-gallery.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new Cell Painting Gallery data
+    ARN: arn:aws:sns:us-east-1:309624411020:cellpainting-repository-object_created
+    Region: us-east-1
+    Type: SNS Topic      
 DataAtWork:
   Tutorials:
     - Title: Cell Painting wiki
