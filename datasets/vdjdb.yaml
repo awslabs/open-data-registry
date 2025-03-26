@@ -1,21 +1,25 @@
 Name: VDJdb
-Description:
-	VDJdb is a curated database of T-cell receptor (TCR) sequences with known antigen 		specificities. The primary goal of VDJdb is to facilitate access to existing information 		on T-cell receptor antigen specificities, i.e. the ability to recognize certain epitopes 		in a certain MHC contexts.
+Description: VDJdb is a curated database of T-cell receptor sequences (TCR) and cognate antigens manually collected from scientific literature. The primary goal of VDJdb is to facilitate access to existing information on TCR antigen specificity, i.e. the ability to recognize certain epitopes in certain MHC contexts.
 Documentation: https://github.com/antigenomics/vdjdb-db/blob/pyVDJdb/README.md
 Contact: mikhail.shugay@gmail.com
 ManagedBy: Immuno-sequencing Algorithms Laboratory, Pirogov Russian National Research Medical University and Institute of Bioorganic Chemistry RAS, Moscow, Russia
-UpdateFrequency: once a several months
+UpdateFrequency: quarterly to anually
 Tags:
   - bioinformatics
   - immunology
-  - t-cell
+  - adaptive immune receptor repertoire
+  - airr
+  - t-cell receptor
+  - tcr
   - antigen
-License: CC-Attribution-ND
-Citation: "[VDJdb in the pandemic era: a compendium of T cell receptors specific for SARS-CoV-2
-Nature Methods (2022)](doi:10.1038/s41592-022-01578-0)"
+  - epitope
+  - hla
+  - mhc
+License: https://creativecommons.org/licenses/by-nd/4.0/
+Citation: 'Goncharov, M., Bagaev, D., Shcherbinin, D. et al. VDJdb in the pandemic era: a compendium of T cell receptors specific for SARS-CoV-2. Nat Methods 19, 1017–1019 (2022). https://doi.org/10.1038/s41592-022-01578-0'
 Resources:
-  - Description: VDJdb database with TCR specifities collected from scientific literature in .csv format. 
-    ARN: arn:aws:s3:::vdj-db-complete-data
+  - Description: VDJdb 2025-02-21 release
+    ARN: arn:aws:s3:::aws-open-data-vdjdb-tabular/2025-02-21
     Region: us-east-1
     Type: S3 Bucket
     Explore: https://vdjdb.cdr3.net/
@@ -26,10 +30,10 @@ DataAtWork:
       AuthorName: Goncharov M. et al.
     - Title: 'VDJdb in 2019: database extension, new analysis infrastructure and a T-cell receptor motif compendium'
       URL: doi:10.1093/nar/gkz874
-      AuthorName: Bagaev D. et al
+      AuthorName: Bagaev D. et al.
     - Title: 'VDJdb: a curated database of T-cell receptor sequences with known antigen specificity'
       URL: doi:10.1093/nar/gkx760
-      AuthorName: Shugay M. et al      
+      AuthorName: Shugay M. et al.
 
 ADXCategories:
   - Healthcare & Life Sciences Data
