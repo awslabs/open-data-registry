@@ -1,23 +1,4 @@
-Citation: 'For data collected prior to June 2022: "Integrated Marine Observing System
-  (IMOS). (2015). Underway sensors: Enhanced measurements from Ships of Opportunity
-  (SOOP). https://doi.org/10.25845/9VR7-9G80, accessed[date-of-access]". For data
-  collected between June - October 2022: "Australian Institute of Marine Science (AIMS),
-  Integrated Marine Observing System (IMOS). (2015). Underway sensors: Enhanced measurements
-  from Ships of Opportunity (SOOP). https://doi.org/10.25845/9VR7-9G80, accessed[date-of-access]".'
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
-    Title: 'Accessing Sensors on Tropical Research Vessels: Enhanced Measurements
-      from Ships of Opportunity (SOOP)'
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ships of Opportunity - Tropical research vessels - Real time
 Description: "The research vessels (RV Cape Ferguson and RV Solander) of the Australian\
   \ Institute of Marine Science (AIMS) routinely record along-track (underway) measurements\
   \ of near-surface water temperature, salinity, chlorophyll (fluorescence) and turbidity\
@@ -42,16 +23,33 @@ Description: "The research vessels (RV Cape Ferguson and RV Solander) of the Aus
   \ to the additional data collected by the AIMS research vessels, is provided on\
   \ the AIMS data repository here: https://apps.aims.gov.au/metadata/view/8af21108-c535-43bf-8dab-c1f45a26088c."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/8af21108-c535-43bf-8dab-c1f45a26088c
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ships of Opportunity - Tropical research vessels - Real time
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_trv_realtime_qc.parquet
-  Description: 'Cloud Optimised AODN dataset of Sensors on Tropical Research Vessels:
-    Enhanced Measurements from Ships of Opportunity (SOOP)'
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - chemistry
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: 'Cloud Optimised AODN dataset of Sensors on Tropical Research Vessels:
+    Enhanced Measurements from Ships of Opportunity (SOOP)'
+  ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_trv_realtime_qc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: 'Accessing Sensors on Tropical Research Vessels: Enhanced Measurements
+      from Ships of Opportunity (SOOP)'
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_trv_realtime_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: For data collected prior to June
+  2022:  "IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]."
+  For data collected between June - October 2022:  "AIMS, IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
