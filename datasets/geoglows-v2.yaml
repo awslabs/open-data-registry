@@ -21,7 +21,7 @@ Description: |
   the dataset, (2) estimated return period flows for all 7 million million rivers (2a) in zarr format optimized for 
   reading subsets of the dataset as well as (2b) in netCDF format best for bulk downloading. (3) The initialization files 
   produced at the end of each incremental simulation useful for restarting the model from a specific date.
-Documentation: https://data.geoglows.org
+Documentation: https://training.geoglows.org
 Contact: https://groups.google.com/g/geoglows
 ManagedBy: Riley Hales
 UpdateFrequency: Monthly
@@ -56,38 +56,13 @@ Resources:
     - '[Browse Bucket](http://geoglows-v2-retrospective.s3-website-us-west-2.amazonaws.com)'
 DataAtWork:
   Tutorials:
-    - Title: GEOGLOWS V2 Tutorials
-      URL: https://data.geoglows.org
+    - Title: River Forecast System V2 background, training and tutorials
+      URL: https://training.geoglows.org
       AuthorName: Riley Hales
       AuthorURL: https://hales.app
-    - Title: Finding River Numbers
-      URL: https://data.geoglows.org/tutorials/finding-river-numbers
-      AuthorName: Riley Hales
-      AuthorURL: https://hales.app
-    - Title: Access GEOGLOWS river forecast data from AWS S3
-      URL: https://data.geoglows.org/tutorials/query-forecast-data
-      NotebookURL: "https://gist.github.com/rileyhales/cba7d4ffc4c33a66427ec3101ecf9bdf#file-geoglows-forecasts-tutorial.ipynb"
-      AuthorName: Riley Hales
-      AuthorURL: https://hales.app
-      Services:
-        - Amazon S3
-    - Title: Access GEOGLOWS retrospective simulation data from AWS S3
-      URL: https://data.geoglows.org/tutorials/query-retro-data
-      NotebookURL: "https://gist.github.com/rileyhales/db17621515a434c84d60d8b3f5bb1f03#geoglows-retro-from-aws-s3-zarr.ipynb"
-      AuthorName: Riley Hales
-      AuthorURL: https://hales.app
-      Services:
-        - Amazon S3
-    - Title: Bulk Download and Query simulation netCDF Files
-      URL: https://data.geoglows.org/tutorials/download-retro-data
-      NotebookURL: "https://gist.github.com/rileyhales/01377f89817a071d699eb44b5a75d453#geoglows-retro-from-downloaded-netcdfs.ipynb"
-      AuthorName: Riley Hales
-      AuthorURL: https://hales.app
-      Services:
-        - Amazon S3
   Tools & Applications:
     - Title: GEOGLOWS Hydroviewer
-      URL: https://apps.geoglows.org/apps/geoglows-hydroviewer
+      URL: https://hydroviewer.geoglows.org
       AuthorName: Riley Hales
       AuthorURL: https://hales.app
     - Title: pygeoglows
