@@ -1,5 +1,5 @@
 Name: Wisconsin Historic Aerial Imagery
-Description: This data set contains digital aerial photographs of Wisconsin dating from 1936 to present. Most of the photographs were originally acquired by the U.S. Department of Agriculture, the U.S. Geological Survey, and additional state and local government agencies. Depending on the source material, the images were scanned from contact prints or from original film rolls. Map scale, resolution, exposure type, and other image properties vary considerably based on the year of acquisition and source. 
+Description: "This data set contains digital aerial photographs of Wisconsin dating from 1936 to present. Most of the photographs were originally acquired by the U.S. Department of Agriculture, the U.S. Geological Survey, and additional state and local government agencies. Depending on the source material, the images were scanned from contact prints or from original film rolls. Map scale, resolution, exposure type, and other image properties vary considerably based on the year of acquisition and source." 
 Documentation: https://geography.wisc.edu/maplibrary/aerial-photography/
 Contact: help@sco.wisc.edu
 ManagedBy: "[University of Wisconsin-Madison Arthur H. Robinson Map Library](https://geography.wisc.edu/maplibrary/)"
@@ -11,9 +11,10 @@ Tags:
   - cog
   - natural resource
   - coastal
+  - aws-pds
 License: All photographs are available for download by any user without fee or use restrictions.
 Resources:
-  - Description: Aerial imagery in the S3 bucket is organized by state, county, and year. Two formats are provided: lossy JPEG and Cloud Optimized Geotiff (COG). Both formats have the same spatial resolution. Each file is named using a predictable pattern: [County]_[State]_[locational reference]_[acquisition date as YYYYMMDD].[format]. The locational reference can be a USGS Quadrangle name, USGS Quarter-Quadrangle name, or a unique photo identifier such as project_roll_frame.  Examples: Clayton_IA_Prairie_Du_Chien_19820423.jpg,  Ashland_WI_Amnicon_Point_NE_20100827.tif, Adams_WI_AIY_7_579_19371100.jpg. All geotiff images have at least basic georeferencing applied, but GIS users should note the georeferencing is only approximate for many images in the archive.  Users are encouraged the visit the hosted feature service for more image metadata.
+  - Description: "Aerial imagery in the S3 bucket is organized by state, county, and year. Data are provided as lossy JPEGs and Cloud Optimized Geotiffs (COG). Both formats have the same spatial resolution. Each file is named using a predictable pattern of [County]_[State]_[locational reference]_[acquisition date as YYYYMMDD].[format]. The locational reference can be a USGS Quadrangle name, USGS Quarter-Quadrangle name, or a unique photo identifier such as project_roll_frame.  Examples: Clayton_IA_Prairie_Du_Chien_19820423.jpg,  Ashland_WI_Amnicon_Point_NE_20100827.tif, Adams_WI_AIY_7_579_19371100.jpg. All geotiff images have at least basic georeferencing applied, but GIS users should note the georeferencing is only approximate for many images in the archive.  Users are encouraged the visit the hosted feature service for more image metadata."       
     ARN: arn:aws:s3:::wisconsin-historic-aerial-imagery
     Region: us-west-2
     Type: S3 Bucket
