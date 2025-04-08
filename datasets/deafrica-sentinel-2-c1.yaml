@@ -39,16 +39,16 @@ Resources:
     Region: af-south-1
     Type: S3 Bucket
   - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
-    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-scene-topic
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-l2a-c1-scene-topic
     Region: af-south-1
     Type: SNS Topic
-  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-sentinel-2 s3 bucket all object create events.
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-sentinel-2-l2a-c1 s3 bucket all object create events.
     ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-2-topic
     Region: af-south-1
     Type: SNS Topic
 DataAtWork:
   Tutorials:
-    - Title: Use Sentinel-2 data in the Open Data Cube
+    - Title: Use Sentinel-2-C1 data in the Open Data Cube
       URL: https://github.com/opendatacube/cube-in-a-box
       AuthorName: Alex Leith
     - Title: Digital Earth Africa Training
@@ -80,3 +80,6 @@ DataAtWork:
     - Title: "Introduction to DE Africa"
       URL: https://youtu.be/Wkf7N6O9jJQ
       AuthorName: Dr Fang Yuan
+    - Title: "S2 Processing"
+      URL: https://sentiwiki.copernicus.eu/web/s2-processing#S2Processing-Collection-1ProcessingBaselineS2-Processing-Collection-Processing-Baseline
+      AuthorName: Sentiwiki
