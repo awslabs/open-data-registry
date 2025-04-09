@@ -1,0 +1,67 @@
+Name: Satellite - Altimetry calibration and validation
+Description: "High precision satellite altimeter missions including TOPEX/Poseidon\
+  \ (T/P), Jason-1 and now OSTM/Jason-2, have contributed fundamental advances in\
+  \ our understanding of regional and global ocean circulation and its role in the\
+  \ Earth's climate and regional applications. These altimeter satellites essentially\
+  \ observe the height of the global oceans \u2013 as such, they have become the tool\
+  \ of choice for scientists to measure sea level rise \u2013 both at regional and\
+  \ global scales as well as giving information about ocean currents and large- and\
+  \ small-scale variability. The determination of changes in global mean sea level\
+  \ is of fundamental importance in understanding the response of the ocean to a continuing\
+  \ warming climate \u2013 both through thermal expansion of the ocean, melting of\
+  \ the major ice sheets of Greenland and Antarctica, and mountain glaciers, and redistribution\
+  \ of water over the continents and atmosphere. As with all scientific observations,\
+  \ it is vital that the measurement tool is operating within its specifications \u2013\
+  \ calibration and validation is therefore an important component in this regard.\
+  \ \n\nThis IMOS sub-facility provides the sole southern hemisphere in situ calibration\
+  \ site to provide an ongoing calibration and validation data stream directly to\
+  \ the international (NASA and CNES sponsored) Ocean Surface Topography Science Team\
+  \ (OSTST). This contribution, importantly, spans multiple altimeter missions, thus\
+  \ enabling the assimilation of multi-mission satellite data to determine ongoing\
+  \ changes in sea level with flow-on effects to other uses of this data. The OSTST\
+  \ collectively oversees the operation and calibration of the precision altimetry\
+  \ missions, and ensures each of these missions is performing as accurately as possible\
+  \ in order to meet mission objectives. The IMOS supported calibration site in Australia\
+  \ is one of four primary in situ calibration/validation sites that contribute to\
+  \ the OSTST. The remaining sites include Harvest (USA), Corsica (France), and Gavdos\
+  \ (Greece). The Australian calibration site includes two comparison points where\
+  \ in situ data is compared against the altimeter \u2013 Bass Strait and Storm Bay.\
+  \ These two locations both lie on descending (N -> S) pass 088 of the satellite\
+  \ altimeter, and thus share similar satellite orbit characteristics. The use of\
+  \ these two sites allows detailed investigation into the accuracy of the altimeter\
+  \ over two different wave climates. The average significant wave height at Storm\
+  \ Bay is approximately double that observed at the comparatively sheltered Bass\
+  \ Strait location. One of the ongoing issues with satellite altimeter missions is\
+  \ the \u201CSea-state bias\u201D correction which is related to wave shape and height.\
+  \ We plan to use the different wave climates at the two locations, coupled with\
+  \ the fact that some other things (such as orbit errors) are the same at both locations\
+  \ to improve the quality of this correction."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/78d588ed-79dd-47e2-b806-d39025194e7e
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- ocean currents
+- chemistry
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS Satellite Altimetry Calibration
+    and Validation Sub-Facility
+  ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_satellite_altimetry_calibration_validation.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS Satellite Altimetry Calibration and Validation Sub-Facility
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_satellite_altimetry_calibration_validation.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_satellite_altimetry_calibration_validation.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
