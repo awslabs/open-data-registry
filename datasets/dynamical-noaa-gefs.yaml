@@ -1,0 +1,44 @@
+Name: NOAA GEFS dynamical.org Zarr
+Description: | 
+  <p>
+  Weather forecasts from the Global Ensemble Forecast System (GEFS) model operated by NOAA NWS NCEP,
+  transformed into Zarr format by dynamical.org.
+  </p>
+
+  <p>
+  GEFS is a National Oceanic and Atmospheric Administration (NOAA) National Centers 
+  for Environmental Prediction (NCEP) weather forecast model. GEFS creates 31 separate
+  forecasts (ensemble members) to describe the range of forecast uncertainty.
+  </p>
+
+  <p>
+  The data in this archive has been reformated into Zarr version 3 format,
+  enabling rapid access to subsets of the complete dataset.
+  </p>
+Documentation: https://dynamical.org/catalog/noaa-gefs-forecast-35-day/
+Contact: feedback@dynamical.org
+ManagedBy: [dynamical.org](https://dynamical.org)
+UpdateFrequency: Daily
+Tags:
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: NOAA GEFS Zarr data
+    ARN:
+    Region:
+    Type: S3 Bucket
+    Explore:
+DataAtWork:
+  Tutorials:
+    - Title: Quickstart python notebook
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gefs-forecast-35-day.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+      Services:
+ADXCategories:
+  - Environmental Data 
