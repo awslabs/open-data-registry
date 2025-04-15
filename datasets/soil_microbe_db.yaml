@@ -1,0 +1,40 @@
+Name: SoilMicrobeDB genome database on AWS
+Description: SoilMicrobeDB is a Kraken2 genome database with extensive representation of high-quality genomes of soil organisms, including uncultured and fungal species. 
+Documentation: https://github.com/zoey-rw/SoilMicrobeDB/blob/master/AWS_conda_environment_example/tutorial.md
+Contact: zoeywerbin@gmail.com
+ManagedBy: Zoey Werbin
+UpdateFrequency: Database is associated with a 2025 publication, and may be expanded with additional genomes in the future. 
+Tags:
+  - aws-pds
+  - metagenomics
+  - microbiome
+  - soil
+  - bioinformatics
+  - life sciences
+License: There are no restrictions on the use of this data. 
+Citation: The SoilMicrobeDB includes data from multiple other publications, which we recommend citing. See Table 1 in our open-access manuscript (Werbin et al. 2025) for details.
+Resources:
+  - Description: SoilMicrobeDB, a genome reference database for soil shotgun metagenomics
+    ARN: arn:aws:s3:::kraken2-soil-microbe-database
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using SoilMicrobeDB to classify metagenomic soil samples
+      URL: https://github.com/zoey-rw/SoilMicrobeDB/blob/master/AWS_conda_environment_example/tutorial.md
+      NotebookURL:
+      AuthorName: Zoey Werbin
+      AuthorURL: https://github.com/zoey-rw
+      Services:
+  Tools & Applications:
+    - Title: SoilMicrobeDB Explorer
+      URL: https://zoeywerbin.shinyapps.io/soil_microbe_db/
+      AuthorName: Zoey Werbin
+      AuthorURL: https://github.com/zoey-rw
+  Publications:
+    - Title: Improved detection of fungi and uncultivated microorganisms in soil metagenomes using a comprehensive genome database
+      URL: https://example.com/publication-placeholder
+      AuthorName: Zoey Werbin, Winston E Anthony, Ilija Dukovski, Dylan Mankel, Daniel Segrè, Jennifer M. Bhatnagar, Marianna Felici
+      AuthorURL: https://github.com/zoey-rw
+DeprecatedNotice:
+ADXCategories:
