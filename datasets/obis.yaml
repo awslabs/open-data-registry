@@ -1,0 +1,27 @@
+Name: Ocean Biodiversity Information System (OBIS) species occurrence data
+Description: The Ocean Biodiversity Information System (OBIS) was founded in 2000 under the Census of Marine Life. It is now a programme component of the International Oceanographic Data and Information Exchange (IODE) programme of the Intergovernmental Oceanographic Commission (IOC) of UNESCO. OBIS aims to be the most comprehensive data and information gateway on the diversity, distribution and abundance of marine life to support its Member States in achieving a healthy and resilient ocean ecosystem. The OBIS network consists of over 30 regional and thematic nodes, and provides access to more than 5,000 datasets published by hundreds of organizations such as research institutions, government agencies, and citizen science platforms.
+Documentation: Documentation for this dataset is available at https://github.com/iobis/obis-open-data. More information about the OBIS data standards can be found in the OBIS manual at https://manual.obis.org.
+Contact: helpdesk@obis.org
+ManagedBy: The Ocean Biodiversity Information System (OBIS)
+UpdateFrequency: Weekly
+Tags:
+  - biodiversity
+  - marine
+  - ocean
+  - conservation
+License: https://creativecommons.org/licenses/by-nc/4.0/
+Citation: Ocean Biodiversity Information System (OBIS) OBIS Occurrence Data https://doi.org/10.25607/obis.occurrence.b89117cd.
+Resources:
+  - Description: Ocean Biodiversity Information System (OBIS) species occurrence data as GeoParquet files.
+    ARN: arn:aws:s3:::obis-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: '[Browse bucket](https://obis-open-data.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Querying OBIS occurrence data using Amazon Athena
+      URL: https://github.com/iobis/obis-open-data/blob/master/README.md#example-querying-the-dataset-using-amazon-athena
+      AuthorName: Pieter Provoost
+      AuthorURL: https://github.com/pieterprovoost
+      Services:
+        - Amazon Athena
