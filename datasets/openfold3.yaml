@@ -1,0 +1,34 @@
+Name: OpenFold3 Training Data
+Description: This dataset contains MSAs and predicted structures for 13 million long (sequence length >= 200 amino acids) monomers from the MGNIFY database. These MSAs were generated using the AF3 protocol, and were used to predict structures with AlphaFold2. This data serves as the long monomer distillation set for Openfold3, an open-source, all-atom ligand, RNA and protein structure prediction software.
+Documentation: https://github.com/aqlaboratory/openfold3-training-data-RODA/tree/main
+Contact: https://github.com/aqlaboratory/openfold3-training-data-RODA/issues
+ManagedBy: OpenFold
+UpdateFrequency: Never
+Tags:
+  - openfold3
+  - msa
+  - protein
+  - protein template
+  - protein folding
+  - alphafold3
+  - open source software
+  - life sciences
+  - aws
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Additionally, please cite [our prior manuscript](https://www.nature.com/articles/s41592-024-02272-z)."
+Resources:
+  - Description: A repository of MSAs and 3D protein structural coordinates used to train OpenFold3.
+    ARN: arn:aws:s3:::openfold3
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "OpenProteinSet: Training data for structural biology at scale"
+      URL: "https://arxiv.org/abs/2308.05326"
+      AuthorName: Ahdritz, Gustaf; Bouatta, Nazim; Kadyan, Sachin; Jarosch, Lukas; Berenberg, Daniel; Fisk, Ian, et al
+    - Title: "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+      URL: "https://www.nature.com/articles/s41592-024-02272-z"
+      AuthorName: Ahdritz, Gustaf; Bouatta, Nazim; Kadyan, Sachin; Xia, Qinghui; Gerecke, William; O'Donnell, Timothy J, et al
+
+
+
