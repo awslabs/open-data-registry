@@ -1,18 +1,4 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_co2_delayed_qc.ipynb
-    Title: Accessing IMOS - SOOP Underway CO2 Measurements Research Group - delayed
-      mode data
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_co2_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ships of Opportunity - Biogeochemical sensors - Delayed mode
 Description: "The IMOS Ship of Opportunity Underway CO2 Measurements group is a research\
   \ and data collection project working within the IMOS Ship of Opportunity Multi-Disciplinary\
   \ Underway Network sub-facility. The CO2 group sample critical regions of the Southern\
@@ -30,16 +16,31 @@ Description: "The IMOS Ship of Opportunity Underway CO2 Measurements group is a 
   \ Ltd. (NIWA) has supported the setup of underway CO2 measurements on the RV Tangaroa.\
   \ The Tangaroa covers oceans adjacent to New Zealand."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/63db5801-cc19-40ef-83b3-85ccba884cf7
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ships of Opportunity - Biogeochemical sensors - Delayed mode
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_co2_delayed_qc.parquet
-  Description: Cloud Optimised AODN dataset of IMOS - SOOP Underway CO2 Measurements
-    Research Group - delayed mode data
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - chemistry
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SOOP Underway CO2 Measurements
+    Research Group - delayed mode data
+  ARN: arn:aws:s3:::aodn-cloud-optimised/vessel_co2_delayed_qc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SOOP Underway CO2 Measurements Research Group - delayed
+      mode data
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_co2_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/vessel_co2_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
