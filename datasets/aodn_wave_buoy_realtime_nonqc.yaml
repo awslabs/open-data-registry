@@ -1,23 +1,4 @@
-Citation: Department of Transport [W.A]; State of Queensland, Department of Environment
-  and Science; Australian Bureau of Meteorology; Department of Planning and Environment
-  (DPE), New South Wales Government; Gippsland Ports; Integrated Marine Observing
-  System; University of Western Australia (UWA); Deakin University, Pilbara Ports
-  Authority, Flinders University and South Australian Research and Development Institute
-  (SARDI) [year-of-data-downloaded], Wave buoys Observations - Australia - near real-time,
-  Downloaded from [url] on [date-of-download].
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
-    Title: Accessing Wave buoys Observations - Australia - near real-time
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Wave buoys observations - Real time
 Description: "Buoys provide integral wave parameters. Buoy data from the following\
   \ organisations contribute to the National Wave Archive: Manly Hydraulics Laboratory\
   \ (part of the NSW Department of Planning and Environment (DPE), which has assumed\
@@ -47,15 +28,34 @@ Description: "Buoys provide integral wave parameters. Buoy data from the followi
   \ is updated every hour, at 40 minutes past the hour.\n\nPilbara Ports Authority\
   \ - The data is uploaded every hour, at 30 minutes past the hour."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/b299cdcd-3dee-48aa-abdd-e0fcdbb9cadc
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Wave buoys observations - Real time
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/wave_buoy_realtime_nonqc.parquet
-  Description: Cloud Optimised AODN dataset of Wave buoys Observations - Australia
-    - near real-time
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of Wave buoys Observations - Australia
+    - near real-time
+  ARN: arn:aws:s3:::aodn-cloud-optimised/wave_buoy_realtime_nonqc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing Wave buoys Observations - Australia - near real-time
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "Department of Transport [W.A];
+  State of Queensland, Department of Environment and Science; Australian Bureau of
+  Meteorology; Department of Planning and Environment (DPE), New South Wales Government;
+  Gippsland Ports; Integrated Marine Observing System; University of Western Australia
+  (UWA); Deakin University, Pilbara Ports Authority, Flinders University and South
+  Australian Research and Development Institute (SARDI) [year-of-data-download], [Title],
+  [data-access-URL], accessed [date-of-access]."'
