@@ -1,6 +1,7 @@
 Name: Global Cables
-Description: Real-time and archival data from the Global Cables system providing compreName: Global Cables
-Description: Real-time and archival data from the Global Cables system providing comprehensive Earth system data covering Climate, Hydrology, Atmosphere, Cryosphere, Copernicus, Oceans, and Space Weather.
+Description: >-
+  Real-time and archival data from the Global Cables system providing comprehensive Earth system data 
+  covering Climate, Hydrology, Atmosphere, Cryosphere, Copernicus, Oceans, and Space Weather.
 Documentation: https://developer.jma.go.jp/site/nwp/en/nwp_1.html
 Contact: jma-api@met.kishou.go.jp
 ManagedBy: "[Japan Meteorological Agency](https://www.jma.go.jp/jma/index.html)"
@@ -23,7 +24,8 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://jma-global-cables.s3.amazonaws.com/index.html)'
-  - Description: "[Rich notifications](https://github.com/wmo-jma/wis2-topic-library/) for real-time data with filterable fields"
+  - Description: >-
+      [Rich notifications](https://github.com/wmo-jma/wis2-topic-library/) for real-time data with filterable fields
     ARN: arn:aws:sns:ap-northeast-1:123456789012:NewGlobalCablesObjectFilterable
     Region: ap-northeast-1
     Type: SNS Topic
@@ -37,56 +39,6 @@ DataAtWork:
       Services:
         - Amazon S3
         - Amazon SageMaker
-  Tools & Applications:
-    - Title: WIS2 Topic Library
-      URL: https://github.com/wmo-jma/wis2-topic-library/
-      AuthorName: Japan Meteorological Agency
-      AuthorURL: https://www.jma.go.jp/jma/index.html
-  Publications:
-    - Title: Global Cables for Earth System Monitoring and Forecasting
-      URL: https://www.jma.go.jp/jma/en/Activities/
-      AuthorName: Japan Meteorological Agency
-      AuthorURL: https://www.jma.go.jp/jma/index.html
-    - Title: Applications of Global Cables Data in Weather Forecasting and Disaster Prevention
-      URL: https://www.jma.go.jp/jma/en/Publications/
-      AuthorName: Information and Communication Technology Division, JMA
-      AuthorURL: https://www.jma.go.jp/jma/index.htmlhensive Earth system data covering Climate, Hydrology, Atmosphere, Cryosphere, Copernicus, Oceans, and Space Weather.
-Documentation: https://developer.jma.go.jp/site/nwp/en/nwp_1.html
-Contact: jma-api@met.kishou.go.jp
-ManagedBy: "[Japan Meteorological Agency](https://www.jma.go.jp/jma/index.html)"
-UpdateFrequency: Data is updated with new information every 24 hours or less.
-Tags:
-  - aws-pds
-  - earth observation
-  - weather
-  - climate
-  - meteorological
-  - hydrology
-  - atmosphere
-  - oceans
-  - space weather
-License: CC0 Government work
-Resources:
-  - Description: Global Cables dataset
-    ARN: arn:aws:s3:::jma-global-cables
-    Region: ap-northeast-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://jma-global-cables.s3.amazonaws.com/index.html)'
-  - Description: "[Rich notifications](https://github.com/wmo-jma/wis2-topic-library/) for real-time data with filterable fields"
-    ARN: arn:aws:sns:ap-northeast-1:123456789012:NewGlobalCablesObjectFilterable
-    Region: ap-northeast-1
-    Type: SNS Topic
-DataAtWork:
-  Tutorials:
-    - Title: Getting Started with Global Cables
-      URL: https://github.com/wmo-jma/wis2-topic-library/
-      NotebookURL: https://github.com/wmo-jma/wis2-topic-library/example-notebook.ipynb
-      AuthorName: Japan Meteorological Agency
-      AuthorURL: https://www.jma.go.jp/jma/index.html
-      Services:
-        - S3
-        - SageMaker
   Tools & Applications:
     - Title: WIS2 Topic Library
       URL: https://github.com/wmo-jma/wis2-topic-library/
