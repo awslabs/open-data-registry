@@ -2,40 +2,54 @@ Name: Global Cables
 Description: >-
   Real-time and archival data from the Global Cables system providing comprehensive Earth system data 
   covering Climate, Hydrology, Atmosphere, Cryosphere, Copernicus, Oceans, and Space Weather.
-Documentation: https://developer.jma.go.jp/site/nwp/en/nwp_1.html///////////TBD
-Contact: wis-jma@met.kishou.go.jp///////////TBD
-ManagedBy: "[Japan Meteorological Agency](https://www.jma.go.jp/jma/index.html///////////TBD)"
-UpdateFrequency: New data added as soon as available from origin WIS2 Nodes.///////////TBD
+Documentation: https://developer.jma.go.jp/site/nwp/en/nwp_1.html
+Contact: jma-api@met.kishou.go.jp
+ManagedBy: "[Japan Meteorological Agency](https://www.jma.go.jp/jma/index.html)"
+UpdateFrequency: Data is updated with new information every 24 hours or less.
 Tags:
-  - aws-pds///////////TBD
-  - earth observation///////////TBD
-  - weather///////////TBD
-  - climate///////////TBD
-  - meteorological///////////TBD
-  - hydrology///////////TBD
-  - atmosphere///////////TBD
-  - oceans///////////TBD
-  - space weather///////////TBD
-License: CC0 Government work///////////TBD
+  - aws-pds
+  - earth observation
+  - weather
+  - climate
+  - meteorological
+  - hydrology
+  - atmosphere
+  - oceans
+  - space weather
+License: CC0 Government work
 Resources:
-  - Description: Core data as defined in the [WMO Unified Data Policy (Resolution 1 (Cg-19))](https://library.wmo.int/idurl/4/58009) and the [initial Catalogue of Core Data](http://library.wmo.int/doc_num.php?explnum_id=11001#page=139). Data covers a global extent. Data is provided in WMO approved formats - GRIB, BUFR and NetCDF. Users should subscribe to receive notification messages about newly available data. Please refer to the documentation.///////////TBD
-    ARN: arn:aws:s3:::jma-global-cables///////////TBD
-    Region: ap-northeast-1///////////TBD
+  - Description: Global Cables dataset
+    ARN: arn:aws:s3:::jma-global-cables
+    Region: ap-northeast-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://jma-global-cables.s3.amazonaws.com/index.html///////////TBD)'
+    - '[Browse Bucket](https://jma-global-cables.s3.amazonaws.com/index.html)'
+  - Description: >-
+      [Rich notifications](https://github.com/wmo-jma/wis2-topic-library/) for real-time data with filterable fields
+    ARN: arn:aws:sns:ap-northeast-1:123456789012:NewGlobalCablesObjectFilterable
+    Region: ap-northeast-1
     Type: SNS Topic
 DataAtWork:
   Tutorials:
-    - Title: Getting Started with Global Cables///////////TBD
-      URL: https://github.com/wmo-jma/wis2-topic-library////////////TBD
-      AuthorName: Japan Meteorological Agency///////////TBD
+    - Title: Getting Started with Global Cables
+      URL: https://github.com/wmo-jma/wis2-topic-library/
+      NotebookURL: https://github.com/wmo-jma/wis2-topic-library/example-notebook.ipynb
+      AuthorName: Japan Meteorological Agency
+      AuthorURL: https://www.jma.go.jp/jma/index.html
+      Services:
+        - Amazon S3
+        - Amazon SageMaker
+  Tools & Applications:
+    - Title: WIS2 Topic Library
+      URL: https://github.com/wmo-jma/wis2-topic-library/
+      AuthorName: Japan Meteorological Agency
+      AuthorURL: https://www.jma.go.jp/jma/index.html
   Publications:
-    - Title: Global Cables for Earth System Monitoring and Forecasting///////////TBD
-      URL: https://www.jma.go.jp/jma/en/Activities////////////TBD
-      AuthorName: Japan Meteorological Agency///////////TBD
-    - Title: Applications of Global Cables Data in Weather Forecasting and Disaster Prevention///////////TBD
-      URL: https://www.jma.go.jp/jma/en/Publications////////////TBD
-      AuthorName: Information and Communication Technology Division, JMA///////////TBD
-ADXCategories:
-  - Environmental Data///////////TBD
+    - Title: Global Cables for Earth System Monitoring and Forecasting
+      URL: https://www.jma.go.jp/jma/en/Activities/
+      AuthorName: Japan Meteorological Agency
+      AuthorURL: https://www.jma.go.jp/jma/index.html
+    - Title: Applications of Global Cables Data in Weather Forecasting and Disaster Prevention
+      URL: https://www.jma.go.jp/jma/en/Publications/
+      AuthorName: Information and Communication Technology Division, JMA
+      AuthorURL: https://www.jma.go.jp/jma/index.html
