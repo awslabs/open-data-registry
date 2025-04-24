@@ -1,0 +1,43 @@
+Name: Danish Meteorological Institute (DMI) Open Data Forecasts
+Description: DMI forecast data consist of various models where each model contains different set of parameters relating to a specific domain like ocean (WAM), storm flooding (DKSS) or weather (HARMONIE)
+Documentation: https://opendatadocs.dmi.govcloud.dk/en/Data/Forecast_Data
+Contact: https://opendatadocs.dmi.govcloud.dk/en/API_Status_and_Contact
+ManagedBy: "[Danish Meteorological Institute](https://www.dmi.dk/)"
+UpdateFrequency: Every hour, 3 hours or 6 hours depending on model
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - meteorological
+  - near-surface air temperature
+  - near-surface relative humidity
+  - near-surface specific humidity
+  - model
+  - ocean circulation
+  - ocean currents
+  - ocean velocity
+  - ocean sea surface height
+  - ocean simulation
+  - oceans
+  - time series forecasting
+  - weather
+License: DMI's Open Data are distributed under the [Creative Commons License CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.en)
+Resources:
+  - Description: DMI's Open Data Forecasts
+    ARN: arn:aws:s3:::dmi-opendata
+    Region: eu-north-1
+    Type: S3 Bucket
+    Explore:
+      - '[Explore dataset](https://dmi-opendata.s3.eu-north-1.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Guide to processing forecast data with Python
+      URL: https://github.com/dmidk/dmi-opendata-forecastdata-guide/
+      NotebookURL: https://github.com/dmidk/dmi-opendata-forecastdata-guide/blob/main/graph-2m-temperature.ipynb
+      AuthorName: Danish Meteorological Institute
+      AuthorURL: https://www.dmi.dk/
+      Services:
+        - Amazon S3
+ADXCategories:
+  - Environmental Data
