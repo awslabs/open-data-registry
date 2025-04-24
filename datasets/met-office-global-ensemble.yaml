@@ -1,0 +1,61 @@
+Name: Met Office Global Ensemble Prediction System (MOGREPS-G) on a 30-day rolling archive
+Description: The flagship Numerical Weather Prediction (NWP) model developed and used at the Met Office, is the Unified
+  Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office
+  runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite.
+  The global ensemble (MOGREPS-G) produces forecasts for the whole globe up to a week ahead. The projection
+  used is the Equirectangular Latitude-Longitude and the grid resolution is 20km. The forecast is updated regularly
+  with a 4-hour time delay and formatted via NetCDF.
+  Please note this is a public beta and therefore a non-operational service.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The MOGREPS-G model runs four times per day at 00, 06, 12, 18 UTC. The available time steps are provided every hour from 0 to 54 hours or from 0 to 132 hours and every 3 hours between 57 to 198 hours or from 135 to 198 hours.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - global
+  - meteorological
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Global Ensemble Prediction System (MOGREPS-G) on a 30-day rolling archive
+    ARN: arn:aws:s3:::met-office-global-ensemble-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-global-ensemble-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new global ensemble model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-global-ensemble-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: What is an ensemble forecast?
+      URL: https://www.metoffice.gov.uk/research/weather/ensemble-forecasting/what-is-an-ensemble-forecast
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
