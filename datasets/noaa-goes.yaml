@@ -1,17 +1,17 @@
-Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17 & 18"
+Name: "NOAA Geostationary Operational Environmental Satellites (GOES) 16, 17, 18 & 19"
 Description: |
   <br/>
   <br/> 
-  **DATA FEED ISSUES - Due to major damage to critical infrastructure in the Asheville, NC area from Hurricane Helene, our GOES data feeds to the cloud have been impacted. We are working with local authorities and service providers in hopes that we can restore these feeds ASAP. Note that major celluar and network (fiber) infrastructure have been damaged and this may take time to adress. Thank you for your continued support.** 
+  NEW GOES-19 Data!! On April 4, 2025 at 1500 UTC, the GOES-19 satellite will be declared the Operational GOES-East satellite. All products and services, including NODD, for GOES-East will transition to GOES-19 data at that time. GOES-19 will operate out of the GOES-East location of 75.2°W starting on April 1, 2025 and through the operational transition. Until the transition time and during the final stretch of Post Launch Product Testing (PLPT), GOES-19 products are considered non-operational regardless of their validation maturity level. Shortly following the transition of GOES-19 to GOES-East, all data distribution from GOES-16 will be turned off. GOES-16 will drift to the storage location at 104.7°W. GOES-19 data should begin flowing again on April 4th once this maneuver is complete. 
   <br/>
-  <br/> 
+  <br/>
+  NEW GOES 16 Reprocess Data!! The reprocessed GOES-16 ABI L1b data mitigates systematic data issues (including data gaps and image artifacts) seen in the Operational products, and improves the stability of both the radiometric and geometric calibration over the course of the entire mission life. These data were produced by recomputing the L1b radiance products from input raw L0 data using improved calibration algorithms and look-up tables, derived from data analysis of the NIST-traceable, on-board sources. In addition, the reprocessed data products contain enhancements to the L1b file format, including limb pixels and pixel timestamps, while maintaining compatibility with the operational products. The datasets currently available span the operational life of GOES-16 ABI, from early 2018 through the end of 2024. The Reprocessed L1b dataset shows improvement over the Operational L1b products but may still contain data gaps or discrepancies. Please provide feedback to Dan Lindsey (dan.lindsey@noaa.gov) and Gary Lin (guoqing.lin-1@nasa.gov). More information can be found in the [GOES-R ABI Reprocess User Guide](https://github.com/NOAA-Big-Data-Program/nodd-data-docs/blob/main/GOES/GOES-R_ABI_Reprocessed_L1b_User_Guide-v1.1.pdf).
+  <br/>
+  <br/>  
   NOTICE: As of January 10th 2023, GOES-18 assumed the GOES-West position and all data files are deemed both operational and provisional, so no ‘preliminary, non-operational’ caveat is needed. GOES-17 is now offline, shifted approximately 105 degree West, where it will be in on-orbit storage. GOES-17 data will no longer flow into the GOES-17 bucket. Operational GOES-West products can be found in the GOES-18 bucket. 
   <br/>
   <br/> 
-  NEW GOES-18 Data!!! GOES-18 is now provisional and data has began streaming. Data files will be available between Provisional and the Operational Declaration of the satellite, however, data will have the caveat GOES-18 Preliminary, Non-Operational Data. The exception is during the interleave period when ABI Radiances and Cloud and Moisture Imagery data will be shared operationally via the NOAA Open Data Dissemination Program.
-  <br/>
-  <br/> 
-  GOES satellites (GOES-16, GOES-17, & GOES-18) provide continuous weather imagery and
+  GOES satellites (GOES-16, GOES-17, GOES-18 & GOES-19) provide continuous weather imagery and
   monitoring of meteorological and space environment data across North America.
   GOES satellites provide the kind of continuous monitoring necessary for
   intensive data analysis. They hover continuously over one position on the surface.
@@ -20,7 +20,7 @@ Description: |
   atmospheric "triggers" for severe weather conditions such as tornadoes, flash floods,
   hailstorms, and hurricanes. When these conditions develop, the GOES satellites are able
   to monitor storm development and track their movements. SUVI products available in both NetCDF and FITS. 
-Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-goes16
+Documentation: https://github.com/NOAA-Big-Data-Program/nodd-data-docs/tree/main/GOES
 Contact:  |
   <br/>
   For questions related to specific GOES Products, please visit the "[GOES-R website](https://www.ncei.noaa.gov/products/satellite/goes-r-series)" and navigate to the Help section.
@@ -42,8 +42,18 @@ Tags:
   - meteorological
   - disaster response
   - satellite imagery
-License: There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
+  - Description: GOES-19 imagery and metadata
+    ARN: arn:aws:s3:::noaa-goes19
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-goes19.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for GOES-19, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGOES19Object
+    Region: us-east-1
+    Type: SNS Topic
   - Description: GOES-18 imagery and metadata
     ARN: arn:aws:s3:::noaa-goes18
     Region: us-east-1
@@ -88,16 +98,16 @@ DataAtWork:
       URL: https://github.com/awslabs/amazon-asdi/tree/master/examples/goes16-precip-julia
       AuthorName: Peter Schmiedeskamp
       Services:
-        - CloudFormation
-        - EC2
-        - SageMaker
+        - AWS CloudFormation
+        - Amazon EC2
+        - Amazon SageMaker
     - Title: Processing GOES-16 data with Dask & AWS Fargate
       URL: https://nbviewer.jupyter.org/github/awslabs/amazon-asdi/blob/main/examples/dask/notebooks/goes16_dask.ipynb
       AuthorName: Zac Flamig
       Services:
-        - CloudFormation
-        - Fargate
-        - SageMaker
+        - AWS CloudFormation
+        - AWS Fargate
+        - Amazon SageMaker
     - Title: Forecasting Hurricane Tracks with TensorFlow and data from AWS S3
       URL: https://github.com/M00NSH0T/Hurricanes/tree/master/2021%20update
       AuthorName: Kyle Archie

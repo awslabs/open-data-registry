@@ -1,0 +1,37 @@
+
+Name: TESS-GAIA Light Curve (TESS)
+Description: |
+  TESS-Gaia Light Curve (TGLC) is a PSF-based TESS full-frame image (FFI) light curve product. Using Gaia DR3 as priors, the team forward models the FFIs with the effective point spread function to remove contamination from nearby stars. The resulting light curves show a photometric precision closely tracking the pre-launch prediction of the noise level: TGLC's photometric precision consistently reaches ≲2% at 16th TESS magnitude even in crowded fields, demonstrating excellent decontamination and deblending power.
+Documentation: https://archive.stsci.edu/hlsp/tglc
+Contact: archive@stsci.edu
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please cite [Han & Brandt 2023](https://ui.adsabs.harvard.edu/abs/2023AJ....165...71H/abstract) when using TGLC data in published works.
+UpdateFrequency: Monthly
+Tags:
+  - astronomy
+  - aws-pds
+License: All HLSPs hosted at MAST are subject to a [CC By 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+Resources:
+  - Description: TGLC Files
+    ARN: arn:aws:s3:::stpubdata/hlsp/tglc
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/hlsp/tglc
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: TGLC in the Cloud Jupyter Notebook
+      URL: https://github.com/spacetelescope/tike_content/blob/main/content/notebooks/tglc/tglc.ipynb
+      AuthorName: MAST Staff
+  Tools & Applications:
+    - Title: TIKE - a free, Jupyter-based cloud platform to access and analyze MAST's AWS timeseries data
+      URL: https://timeseries.science.stsci.edu
+      AuthorName: MAST Staff 
+  Publications:
+    - Title: TESS-Gaia Light Curve, A PSF-based TESS FFI Light-curve Product 
+      URL: https://ui.adsabs.harvard.edu/link_gateway/2023AJ....165...71H/doi:10.3847/1538-3881/acaaa7
+      AuthorName: Han, T. and Brandt, T.
+

@@ -1,0 +1,61 @@
+Name: Wave buoys observations - Real time
+Description: "Buoys provide integral wave parameters. Buoy data from the following\
+  \ organisations contribute to the National Wave Archive: Manly Hydraulics Laboratory\
+  \ (part of the NSW Department of Planning and Environment (DPE), which has assumed\
+  \ function of the former NSW Office of Environment and Heritage (OEH)); Bureau of\
+  \ Meteorology; Western Australia Department of Transport (DOT); the Queensland Department\
+  \ of Environment and Science (DES); the Integrated Marine Observing System (IMOS);\
+  \ Gippsland Ports; the NSW Nearshore Wave Data Program from the NSW Department of\
+  \ Planning and Environment (DPE); the University of Western Australia (UWA); Deakin\
+  \ University, Pilbara Ports Authority and Flinders University and South Australian\
+  \ Research and Development Institute (SARDI). \n\nThe data from MHL, BOM, DOT, DES,\
+  \ Gippsland Ports and Pilbara Ports Authority, is gathered by the Waverider system\
+  \ developed by the Dutch company, Datawell. Some older wave data were collected\
+  \ using non-directional Waverider buoys. As technology advanced and directional\
+  \ measuring capabilities were developed in wave buoys, wave buoy networks were gradually\
+  \ upgraded to directional Waverider buoys. Therefore, some older datasets do not\
+  \ have directional information whereas newer datasets have directional information.\n\
+  \nThe data from IMOS, the NSW Nearshore Wave Data Program, DPE, UWA, Deakin, Flinders\
+  \ University and SARDI comes from Spotter Wave Buoys, developed by Sofar Ocean Technologies,\
+  \ which collect data similarly to the Waverider system.\n\nBOM, DES, DOT, MHL, IMOS\
+  \ (some) and Gippsland Ports - The wave buoy data is issued in GTS bulletins (which\
+  \ are only available for 24 hours) : IOWK01 (in BUFR format) and SWWE01 (CREX format).\
+  \ The data is collated by the Bureau into a CSV file (containing the last 24 hours\
+  \ of observations) which is updated every hour, at 5 minutes past the hour. This\
+  \ data is provided via WFS to the AODN.\nNote - The Maria Island buoy is currently\
+  \ undergoing repairs, so data is unavailable, we will update when resolved (May\
+  \ 2024).\n\nIMOS (some), DPE, UWA, Deakin, Flinders University + SARDI - The data\
+  \ is updated every hour, at 40 minutes past the hour.\n\nPilbara Ports Authority\
+  \ - The data is uploaded every hour, at 30 minutes past the hour."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/b299cdcd-3dee-48aa-abdd-e0fcdbb9cadc
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of Wave buoys Observations - Australia
+    - near real-time
+  ARN: arn:aws:s3:::aodn-cloud-optimised/wave_buoy_realtime_nonqc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing Wave buoys Observations - Australia - near real-time
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/wave_buoy_realtime_nonqc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "Department of Transport [W.A];
+  State of Queensland, Department of Environment and Science; Australian Bureau of
+  Meteorology; Department of Planning and Environment (DPE), New South Wales Government;
+  Gippsland Ports; Integrated Marine Observing System; University of Western Australia
+  (UWA); Deakin University, Pilbara Ports Authority, Flinders University and South
+  Australian Research and Development Institute (SARDI) [year-of-data-download], [Title],
+  [data-access-URL], accessed [date-of-access]."'
