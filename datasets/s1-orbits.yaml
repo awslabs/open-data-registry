@@ -1,0 +1,50 @@
+Name: Sentinel-1 Precise Orbit Determination (POD) Products
+Description: >
+  Sentinel-1 Precise Orbit Determination (POD) products contain auxiliary data on satellite position and velocity for the European Space Agency's (ESA) Sentinel-1 mission. Sentinel-1 is a C-band Synthetic Aperture Radar (SAR) satellite constellation first launched in 2014 as part of the European Union's Copernicus Earth Observation programme. POD products are a necessary auxiliary input for nearly all Sentinel-1 data processing workflows.
+  <br/><br/>
+  This dataset is a mirror of the [Sentinel-1 Orbits](https://documentation.dataspace.copernicus.eu/Data/ComplementaryData/Additional.html#sentinel-1-orbits) dataset hosted in the Copernicus Data Space Ecosystem (CDSE). New files are added within 20 minutes of their publication to CDSE. This dataset includes two types of POD files: RESORB and POEORB.
+  <ul>
+  <li>RESORB POD files are restituted orbit files generated within 180 minutes from sensing time and published multiple times per day, with accuracy requirement of 10 cm in 2D RMS, but typically below 5 cm. RESORB products from the last 90 days are included in this dataset.</li>
+  <br/>
+  <li>POEORB POD files are precise orbit files generated with a timeliness of 20 days from sensing time and published once per day, with accuracy requirement of 5 cm in 3D RMS, but typically below 1 cm. Once available, these files supersede the RESORB products, as they contain the same data with better accuracy. POEORB products are available from the entire length of the Sentinel-1 mission.</li>
+  </ul>
+  For more information on the orbit products, see the [POD Sentinel-1 Products Specification](https://sentiwiki.copernicus.eu/web/s1-processing#S1Processing-PODSentinel-1ProductsSpecificationS1-Processing-POD-Sentinel-1-Products-Specification).
+Documentation: https://s1-orbits.s3.us-west-2.amazonaws.com/README.html
+Contact: https://asf.alaska.edu/asf/contact-us/
+ManagedBy: "[The Alaska Satellite Facility (ASF)](https://asf.alaska.edu/)"
+UpdateFrequency: >
+  Updated as new data becomes available on the [Copernicus Data Space Ecosystem](https://documentation.dataspace.copernicus.eu/Data/ComplementaryData/Additional.html#sentinel-1-orbits). Typically AUX_POEORB files are published daily and AUX_RESORB files are published every other hour.
+Tags:
+  - auxiliary data
+  - disaster response
+  - earth observation
+  - earthquakes
+  - floods
+  - geophysics
+  - sentinel-1
+  - synthetic aperture radar
+License: >
+  Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://dataspace.copernicus.eu/terms-and-conditions).
+Resources:
+  - Description: Sentinel-1 Orbits bucket
+    ARN: arn:aws:s3:::s1-orbits
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[AWS S3 Explorer](https://s1-orbits.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-west-2:211125554030:s1-orbits-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: s1-orbits, A Python utility for downloading Sentinel-1 Orbit files from the Registry of Open Data on AWS
+      URL: https://pypi.org/project/s1-orbits/ 
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+    - Title: REST API for downloading Sentinel-1 Orbit files from the Registry of Open Data on AWS
+      URL: https://s1-orbits.asf.alaska.edu/ui/
+      AuthorName: Alaska Satellite Facility
+      AuthorURL: https://asf.alaska.edu/
+ADXCategories:
+  - Environmental Data

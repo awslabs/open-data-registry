@@ -1,0 +1,61 @@
+Name: OpenAerialMap on AWS
+Description: OpenAerialMap is a collection of high-resolution openly licensed satellite and aerial imagery.
+Documentation: https://docs.openaerialmap.org/
+Contact: info@openaerialmap.org
+ManagedBy: "[Humanitarian OpenStreetMap Team](https://www.hotosm.org/)"
+UpdateFrequency: New imagery is added as soon as it is uploaded by community contributors.
+Tags:
+  - satellite imagery
+  - aerial imagery
+  - earth observation
+  - disaster response
+  - cog
+License: All imagery is publicly licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network. All imagery is available to be traced in OpenStreetMap..
+Resources:
+  - Description: OpenAerialMap files and metadata
+    ARN: arn:aws:s3:::oin-hotosm
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://oin-hotosm.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: OAM User Guide
+      URL: https://docs.openaerialmap.org/browser/user-guide/
+      AuthorName: Humanitarian OpenStreetMap Team
+      AuthorURL: https://www.hotosm.org/
+    - Title: Displaying OpenAerialMap Imagery in Simple GIS Client
+      URL: https://www.youtube.com/watch?v=woDsyAQQMko
+      AuthorName: Simple GIS Software
+      AuthorURL: https://www.youtube.com/@Simplegissoftware
+    - Title: How to Segment Buildings on Drone Imagery with Fast.ai & Cloud-Native GeoData Tools
+      URL: https://medium.com/@anthropoco/how-to-segment-buildings-on-drone-imagery-with-fast-ai-cloud-native-geodata-tools-ae249612c321
+      AuthorName: Dave Luo
+      AuthorURL: https://medium.com/@anthropoco
+    - Title: Use deep learning to assess palm tree health
+      URL: https://learn.arcgis.com/en/projects/use-deep-learning-to-assess-palm-tree-health/
+      AuthorName: Julia Lenhardt
+      AuthorURL: https://www.esri.com
+  Tools & Applications:
+    - Title: OpenAerialMap API for metadata about available images and map layers.
+      URL: https://docs.openaerialmap.org/api/api/
+      AuthorName: Humanitarian OpenStreetMap Team
+      AuthorURL: https://www.hotosm.org/
+    - Title: OpenAerialMap Broswer for exploring and accessing imagery
+      URL: https://map.openaerialmap.org/
+      AuthorName: Humanitarian OpenStreetMap Team
+      AuthorURL: https://www.hotosm.org/
+    - Title: New OpenAerialMap Browser
+      URL: https://new.openaerialmap.org/
+      AuthorName: Kontur
+      AuthorURL: https://www.kontur.io/
+  Publications:
+    - Title: "OpenAerialMap: A Distributed Commons for Searching and Hosting Free Imagery"
+      URL: https://www.slideshare.net/slideshow/openaerialmap-a-distributed-commons-for-searching-and-hosting-free-imagery/52880462
+      AuthorName: Kate Chapman, Humanitarian OpenStreetMap Team
+    - Title: "Mapping a response: Using satellite images to aid humanitarian action"
+      URL: https://library.alnap.org/system/files/content/resource/files/main/alnap-hot-open-aerial-mapping-case-study-2016.pdf
+      AuthorName: ALNAP
+    - Title: "Analysing the use of OpenAerialMap images for OpenStreetMap edits."
+      URL: https://doi.org/10.1080/10095020.2024.2341747
+      AuthorName: Mandourah, Hochmair
