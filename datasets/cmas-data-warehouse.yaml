@@ -60,6 +60,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
+  - Description: CMAQ 2021 Modeling Platform
+    ARN: arn:aws:s3:::2021platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2021platform.s3.amazonaws.com/readme.html)'
   - Description: CMAQ 2019 Modeling Platform
     ARN: arn:aws:s3:::cmaq-2019-modeling-platform
     Region: us-east-1
@@ -115,13 +121,13 @@ DataAtWork:
       AuthorName: CMAS Center
       AuthorURL: https://github.com/CMASCenter/pcluster-cmaq/
       Services:
-        - ParallelCluster
+        - AWS ParallelCluster
     - Title: CMAQ on AWS HPC Workshop
       URL: https://catalog.workshops.aws/cmaq-tutorial/en-US/
       AuthorName: CMAS Center, U.S. EPA Office of Research and Development and AWS Workshop Studio
       AuthorURL: https://catalog.workshops.aws/
       Services:
-        - ParallelCluster
+        - AWS ParallelCluster
     - Title: EQUATES Benchmark
       URL: https://github.com/lizadams/EQUATES_BENCHMARK
       AuthorName: Liz Adams
