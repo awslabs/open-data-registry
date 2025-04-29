@@ -22,17 +22,10 @@ Tags:
 License: CC-BY-4.0
 Resources:
   - Description: SPARC Public Datasets S3 Bucket
-    ARN: arn:aws:s3:::prd-sparc-discover50-use1
+    ARN: arn:aws:s3:::sparc-prod-aod-discover-publish50-use1
     Region: us-east-1
     Type: S3 Bucket
-    RequesterPays: true
-    Explore:
-      - "[SPARC Datasets](https://sparc.science/data?type=dataset)"
-  - Description: SPARC Embargoed Datasets S3 Bucket
-    ARN: arn:aws:s3:::prd-sparc-embargo50-use1
-    Region: us-east-1
-    Type: S3 Bucket
-    ControlledAccess: "https://docs.sparc.science/docs/embargoed-data"
+    RequesterPays: false
     Explore:
       - "[SPARC Datasets](https://sparc.science/data?type=dataset)"
 DataAtWork:
@@ -54,7 +47,7 @@ DataAtWork:
     - Title: The Pennsieve Data Management Platform
       URL: https://app.pennsieve.io
       AuthorName: Joost Wagenaar
-      AuthorURL: https://wagenaarlab.org
+      AuthorURL: https://discover.pennsieve.io/about/team
     - Title: SODA Tool
       URL: https://docs.sodaforsparc.io/
       AuthorName: Bhavesh Patel
