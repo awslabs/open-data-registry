@@ -1,0 +1,34 @@
+Name: CHIMERA
+Description: This dataset contains the training data for the [CHIMERA - Combining HIstology, Medical imaging (radiology) and molEcular data for medical pRognosis and diAgnosis](https://chimera.grand-challenge.org/) challenge. The CHIMERA Challenge aims to advance precision medicine in cancer care by addressing the critical need for multimodal data integration. Despite significant progress in AI, integrating transcriptomics, pathology, and radiology across clinical departments remains a complex challenge. Clinicians are faced with large, heterogeneous datasets that are difficult to analyze effectively. AI has the potential to unify multimodal data, but several technical barriers remain, such as defining appropriate fusion stages and handling missing modalities.
+Documentation: https://chimera.grand-challenge.org/
+Contact: nadieh.khalili@radboudumc.nl
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: As required
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - computational pathology
+  - deep learning
+  - grand-challenge.org
+  - histopathology
+  - computer vision
+  - digital pathology
+  - medical image computing
+  - medical imaging
+  - machine learning
+License: CC BY-NC-SA 4.0  
+Resources:
+  - Description: Task 1 includes paired MRI and H&E-stained whole slide images with corresponding clinical data and biochemical recurrence information. Task 2 includes H&E slides, clinical data, and recurrence status in bladder cancer.  Task 3 includes H&E slides, RNA-seq clinical data, and recurrence status in bladder cancer. 
+    ARN: arn:aws:s3:::chimera-challenge
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: CHIMERA Challenge
+      URL: https://chimera.grand-challenge.org/
+      AuthorName: Computational Pathology Group Radboudumc, Nijmegen
+      AuthorURL: https://www.computationalpathologygroup.eu/   
+ADXCategories:
+  - Healthcare & Life Sciences Data
+  - Public Sector Data

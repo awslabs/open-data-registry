@@ -1,0 +1,30 @@
+Name: EEGDash on AWS
+Description: The EEG-DaSh data archive will establish a data-sharing resource for MEEG (EEG, MEG) data, enabling large-scale computational advancements to preserve and share scientific data from publicly funded research for machine learning and deep learning applications.
+Documentation: https://eegdash.org
+Contact: adelorme@ucsd.edu
+ManagedBy: "[Swartz Center for Computational Neuroscience](https://sccn.ucsd.edu/)"
+UpdateFrequency: About once a week.
+Tags:
+  - aws-pds
+  - life sciences
+  - machine learning
+  - neuroscience
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: EEGDash data
+    ARN: arn:aws:s3:::eegdash
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://eegdash.s3.amazonaws.com)'
+DataAtWork:
+  Tutorials:
+    - Title: Deep Learning on EEGDash Data example
+      URL: https://eegdash.org
+      AuthorName: SCCN
+      AuthorURL: https://github.com/sccn
+  Tools & Applications:
+    - Title: eegdash on pypi.python.org - Python module to query and download EEGDash data from Amazon S3
+      URL: https://pypi.org/project/eegdash/
+      AuthorName: Young Truong
+      AuthorURL: https://github.com/dungscout96
