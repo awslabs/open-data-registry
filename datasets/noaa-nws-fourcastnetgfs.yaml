@@ -6,7 +6,7 @@ Description: |
   The FourCastNetGFS system is an experimental weather forecast model built upon the pre-trained Nvidia’s FourCastNet Machine Learning Weather Prediction (MLWP) model version 2. The FourCastNet (Bonev et al, 2023) was developed by Nvidia using Adaptive Fourier Neural Operators. It uses a Fourier transform-based token-mixing scheme with the vision transformer architecture. This model is pre-trained with ECMWF’s ERA5 reanalysis data. The FourCastNetGFS takes one model state as initial condition from NCEP 0.25 degree GDAS analysis data and runs FourCastNet with weights from the pretrained FourCastNet by Nvidia. Unit conversion to the GDAS data is conducted to match the input data required by FourCastNet and to generate forecast products consistent to GFS.
   <br/>
   <br/>
-  The input data generated from the GDAS data as FourCastNet input is provided under input/ directory. Example of file names is:
+  The input data generated from the GDAS data as FourCastNet input is provided under the forecast data directory. Example of file names is:
   <br/>
   <br/>
   input_2024022000.npy
