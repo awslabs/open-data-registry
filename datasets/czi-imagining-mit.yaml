@@ -1,5 +1,5 @@
 ---
-Name: CZ Grand Challenges - Imaging data and models
+Name: CZ Grand Challenges - Imaging MIT Licensed data and models
 Description: This dataset contains a diverse range of imaging biological data
   and models. The data is sourced and curated by a team of experts at CZI and is
   made available as part of these datasets only when it is not publicly
@@ -9,23 +9,23 @@ Contact: data@chanzuckerberg.com
 ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
 UpdateFrequency: Update cadence may vary for each resource
 
-Tags:
+Tags:  
+  - microscopy
+  - cell imaging
+  - machine learning
+  - model
+  - czi
+  - imaging
   - biodiversity
   - bioinformatics
   - biology
   - biomolecular modeling
   - brain images
   - cell biology
-  - cell imaging
-  - czi
-  - imaging
-  - life sciences
-  - machine learning
-  - microscopy
-  - model
+  - life sciences  
   - protein
   - zarr
-License: license can be found in resource's documentation page
+License: "[MIT License](https://opensource.org/license/mit)"
 
 Resources:
   - Description: CELL-Diff model
@@ -36,10 +36,7 @@ Resources:
     ARN: arn:aws:s3:::czi-subcell-public
     Region: us-west-2
     Type: S3 Bucket
-  - Description: Cytoland model
-    ARN: arn:aws:s3:::czi-cytoland
-    Region: us-west-2
-    Type: S3 Bucket
+
 DataAtWork:
   Tutorials:
     - Title: Documentation for CELL-Diff
@@ -50,7 +47,7 @@ DataAtWork:
       URL: https://virtualcellmodels.cziscience.com/quickstart/cell-diff-quickstart
       AuthorName: CZI
       AuthorURL: https://github.com/chanzuckerberg/
-    - Title: Documentation for scGenePT
+    - Title: Documentation for SubCell
       URL: https://virtualcellmodels.cziscience.com/model/0193323e-ebd5-727c-bb32-87ed8f737213
       AuthorName: CZI
       AuthorURL: https://github.com/chanzuckerberg/
@@ -58,28 +55,15 @@ DataAtWork:
       URL: https://virtualcellmodels.cziscience.com/tutorial/subcell-tutorial
       AuthorName: CZI
       AuthorURL: https://github.com/chanzuckerberg/
-    - Title: Documentation for Cytoland
-      URL: https://virtualcellmodels.cziscience.com/model/01961244-1970-7851-a4b9-fdbfa2fba9b2
-      AuthorName: CZI
-      AuthorURL: https://github.com/chanzuckerberg/
-    - Title: Quickstart Tutorial for Cytoland
-      URL: https://virtualcellmodels.cziscience.com/quickstart/cytoland-quickstart
-      AuthorName: CZI
-      AuthorURL: https://github.com/chanzuckerberg/
   Publications:
-    - Title: "CELL-Diff: Unified diffusion modeling for protein sequences and
-        microscopy images"
+    - Title: 'CELL-Diff: Unified diffusion modeling for protein sequences and microscopy images'
       URL: https://www.biorxiv.org/content/10.1101/2024.10.15.618585v1
       AuthorName: Zheng Dihan, Bo Huang
-    - Title: "SubCell: Vision foundation models for microscopy capture single-cell
-        biology"
+    - Title: 'SubCell: Vision foundation models for microscopy capture single-cell biology'
       URL: https://www.biorxiv.org/content/10.1101/2024.12.06.627299v1
       AuthorName: Ankit Gupta, Zoe Wefers, Konstantin Kahnert, Jan N Hansen, William
         D. Leineweber, Anthony Cesnik, Dan Lu, Ulrika Axelsson, Frederic
         Ballllosera Navarro, Theofanis Karaletsos, Emma Lundberg
-    - Title: "Cytoland: robust virtual staining of landmark organelles"
-      URL: https://www.biorxiv.org/content/10.1101/2024.05.31.596901v3
-      AuthorName: Liu, Hirata-Miyasaki, et al.
 
 ADXCategories:
   - Healthcare & Life Sciences Data
