@@ -1,0 +1,29 @@
+Name: Indian High Court Judgments
+Description: This dataset contains judgements from the Indian High Courts, downloaded from ecourts website. It contains judgments of 25 high courts, along with raw metadata (in json format) and structured metadata (in parquet format). Judgments from the website are further compressed to optimize for size (care has been taken to not have any loss of data either in content or in visual appearance). Tar files are also made available in addition to the individual pdf files to make it easier for bulk download.
+Documentation: https://github.com/vanga/indian-high-court-judgments/blob/opendata/docs/opendata/dataset.md
+Contact: contact@dattam.in
+ManagedBy: "[Dattam Labs](https://dattam.in)"
+UpdateFrequency: Quarterly
+Tags:
+  - legal data
+License: CC-BY-4.0
+Resources:
+  - Description: S3 bucket containing the judgments
+    ARN: arn:aws:s3:::indian-high-court-judgments
+    Region: ap-south-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using AWS Athena to query the metadata
+      URL: https://github.com/vanga/indian-high-court-judgments/blob/main/opendata/tutorials/athena.md
+      AuthorName: Pradeep Vanga
+      AuthorURL: https://github.com/vanga
+      Services:
+        - Amazon Athena
+    - Title: Extracting text from judgment PDFs
+      URL: https://github.com/vanga/indian-high-court-judgments/blob/main/opendata/tutorials/README.md
+      AuthorName: Pradeep Vanga
+      AuthorURL: https://github.com/vanga
+      Services:
+        - Amazon S3
+        
