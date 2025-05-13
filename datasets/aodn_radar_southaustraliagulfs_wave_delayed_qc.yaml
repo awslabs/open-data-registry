@@ -1,18 +1,4 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_SouthAustraliaGulfs_velocity_hourly_averaged_delayed_qc.ipynb
-    Title: Accessing IMOS - ACORN - South Australia Gulfs HF ocean radar site (South
-      Australia, Australia) - Delayed mode sea water velocity
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_SouthAustraliaGulfs_velocity_hourly_averaged_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ocean Radar - South Australian gulfs site - Wave - Delayed mode
 Description: "The South Australia Gulfs (SAG) HF ocean radar system covers the area\
   \ of about 40,000 square kilometres bounded by Kangaroo Island to the east and the\
   \ Eyre Peninsula to the north.  This is a dynamic region where warm water from the\
@@ -38,19 +24,32 @@ Description: "The South Australia Gulfs (SAG) HF ocean radar system covers the a
   \  Data are also collected from which wind directions and significant wave height\
   \ can be calculated.  \n\nMost of the capital was contributed by the South Australia\
   \ Research and Development Institute."
-Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/cb2e22b5-ebb9-460b-8cff-b446fe14ea2f
-License: http://creativecommons.org/licenses/by/4.0/
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/19da2ce7-138f-4427-89de-a50c724f5f54
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ocean Radar - South Australia Gulfs site (South Australia, Australia) - Sea
-  water velocity - Delayed mode
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/radar_SouthAustraliaGulfs_velocity_hourly_averaged_delayed_qc.zarr
-  Description: Cloud Optimised AODN dataset of IMOS - ACORN - South Australia Gulfs
-    HF ocean radar site (South Australia, Australia) - Delayed mode sea water velocity
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - ocean currents
-- ocean velocity
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - ACORN - South Australia Gulfs
+    HF ocean radar site (South Australia, Australia) - Delayed mode wave
+  ARN: arn:aws:s3:::aodn-cloud-optimised/radar_SouthAustraliaGulfs_wave_delayed_qc.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - ACORN - South Australia Gulfs HF ocean radar site (South
+      Australia, Australia) - Delayed mode wave
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_SouthAustraliaGulfs_wave_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_SouthAustraliaGulfs_wave_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
