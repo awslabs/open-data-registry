@@ -1,29 +1,26 @@
 Name: NOAA Rapid Refresh Forecast System (RRFS) [Prototype]
 Description: |
-  NOTE** 3DRTMA data is being populated in the RRFS bucket under the prefix 3DRTMA and diag. The content provided supports model development. These are not yet operational NWS products and should not to be relied upon for operational purposes. This web site is not subject to 24/7 support, and thus may be unavailable during system outages.
- 
-  <br/><br/> 
-  The Rapid Refresh Forecast System (RRFS) is the National Oceanic and Atmospheric Administration’s (NOAA) next generation convection-allowing, rapidly-updated ensemble prediction system, currently scheduled for operational implementation in 2024. The operational configuration will feature a 3 km grid covering North America and include deterministic forecasts every hour out to 18 hours, with deterministic and ensemble forecasts to 60 hours four times per day at 00, 06, 12, and 18 UTC.The RRFS will provide guidance to support forecast interests including, but not limited to, aviation, severe convective weather, renewable energy, heavy precipitation, and winter weather on timescales where rapidly-updated guidance is particularly useful.<br/><br/>
+  The Rapid Refresh Forecast System (RRFS) is the National Oceanic and Atmospheric Administration’s (NOAA) next generation convection-allowing, rapidly-updated ensemble prediction system, currently scheduled for operational implementation in 2026. The operational configuration will feature a 3 km grid covering North America and include deterministic forecasts every hour out to 18 hours, with deterministic and ensemble forecasts to 60 hours four times per day at 00, 06, 12, and 18 UTC.The RRFS will provide guidance to support forecast interests including, but not limited to, aviation, severe convective weather, renewable energy, heavy precipitation, and winter weather on timescales where rapidly-updated guidance is particularly useful.<br/><br/>
 
   The RRFS is underpinned by the [Unified Forecast System (UFS)](https://ufscommunity.org/), a community-based Earth modeling initiative, and benefits from collaborative development efforts across NOAA, academia, and research institutions.<br/><br/>
 
-  This bucket provides access to real time, experimental RRFS prototype output.<br/><br/>
+  This bucket provides access to real time, experimental RRFS prototype output.  And will provide access to final retrospective output once completed.<br/><br/>
   <hr/>
   
-  The real-time RRFS prototype is experimental and evolving. It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
+  The real-time RRFS prototype is experimental and evolving. [<b> Real-time RRFS output will cease to be generated for several months beginning on ~3 December 2024.  This step is being taken to allow for final retrospective testing to be completed. </b>] It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
 
   We currently provide hourly deterministic forecasts at 3 km grid spacing out to 60 hours at 00, 06, 12, and 18 UTC, and out to 18 hours for other cycles. Output is organized by cycle date and cycle hour.
   
-  For example, `rrfs_a/rrfs_a.20230428/12/control` contains the deterministic forecast initialized at 12 UTC on 28 April 2023. Users will find two types of output in GRIB2 format. The first is:<br/><br/>
-  `rrfs.t00z.natlev.f018.conus_3km.grib2` <br/><br/>
+  For example, `rrfs_a/rrfs_a.20241201/12/control` contains the deterministic forecast initialized at 12 UTC on 01 December 2024. Users will find two types of output in GRIB2 format. The first is:<br/><br/>
+  `rrfs.t12z.natlev.f018.grib2` <br/><br/>
   
-  Meaning that this is the RRFS_A initialized at 00 UTC, covers the CONUS domain, and is the native level post-processed gridded data at hour 18.  This output is on a Lambert Conic Conformal gird at 3 km grid spacing.<br/><br/>
+  Meaning that this is the RRFS_A initialized at 12 UTC, covers the full North America domain, and is the native level post-processed gridded data at hour 18.  This output is on a rotated latitude-longitude grid at 3 km grid spacing.<br/><br/>
 
   The second output file in grib2 format is:<br/><br/>
   
-  `rrfs.t00z.prslev.f018.conus_3km.grib2` <br/><br/>
+  `rrfs.t12z.prslev.f018.conus.grib2` <br/><br/>
  
-  The “prslev” descriptor indicates that this post-processed gridded data is output on pressure levels.
+  The “prslev” descriptor indicates that this post-processed gridded data is output on pressure levels. The “conus” descriptor indicates that it covers the contiguous United States
 
   For users interested in other domains, output is provided on the full 3-km North American grid and also subset over Alaska, Hawaii, and Puerto Rico. The files are identified as follows: <br/><br/>
 
@@ -52,7 +49,7 @@ Tags:
   - climate
   - meteorological
   - weather
-License: Open Data. There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. <br/><br/> NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: Rapid Refresh Forecast System (RRFS) Data
     ARN: arn:aws:s3:::noaa-rrfs-pds 

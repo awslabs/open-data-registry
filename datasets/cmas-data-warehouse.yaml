@@ -30,6 +30,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
+  - Description: MPAS-CMAQ Input Data
+    ARN: arn:aws:s3:::mpas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)'
   - Description: CMAQ Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
@@ -54,6 +60,18 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
+  - Description: CMAQ 2021 Modeling Platform
+    ARN: arn:aws:s3:::2021platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2021platform.s3.amazonaws.com/readme.html)'
+  - Description: CMAQ 2019 Modeling Platform
+    ARN: arn:aws:s3:::cmaq-2019-modeling-platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-2019-modeling-platform.s3.amazonaws.com/readme.html)'
   - Description: CMAQ 2018 Modeling Platform
     ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
     Region: us-east-1
@@ -72,6 +90,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://2019platform.s3.amazonaws.com/index.html)'
+  - Description: 2018v2 Modeling Platform
+    ARN: arn:aws:s3:::2018v2platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2018v2platform.s3.amazonaws.com/index.html)'
   - Description: 2016v3 Modeling Platform
     ARN: arn:aws:s3:::2016v3platform
     Region: us-east-1
@@ -97,7 +121,13 @@ DataAtWork:
       AuthorName: CMAS Center
       AuthorURL: https://github.com/CMASCenter/pcluster-cmaq/
       Services:
-        - ParallelCluster
+        - AWS ParallelCluster
+    - Title: CMAQ on AWS HPC Workshop
+      URL: https://catalog.workshops.aws/cmaq-tutorial/en-US/
+      AuthorName: CMAS Center, U.S. EPA Office of Research and Development and AWS Workshop Studio
+      AuthorURL: https://catalog.workshops.aws/
+      Services:
+        - AWS ParallelCluster
     - Title: EQUATES Benchmark
       URL: https://github.com/lizadams/EQUATES_BENCHMARK
       AuthorName: Liz Adams

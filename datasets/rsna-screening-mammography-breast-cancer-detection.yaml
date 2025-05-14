@@ -1,0 +1,26 @@
+Name:  RSNA Screening Mammography Breast Cancer Detection (RSNA-SMBC) Dataset
+Description: "According to the WHO, breast cancer is the most commonly occurring cancer worldwide. In 2020 alone, there were 2.3 million new breast cancer diagnoses and 685,000 deaths. Yet breast cancer mortality in high-income countries has dropped by 40% since the 1980s when health authorities implemented regular mammography screening in age groups considered at risk. Early detection and treatment are critical to reducing cancer fatalities, and your machine learning skills could help streamline the process radiologists use to evaluate screening mammograms. Currently, early detection of breast cancer requires the expertise of highly-trained human observers, making screening mammography programs expensive to conduct. RSNA collected screening mammograms and supporting information from two sites, totaling just under 20,000 imaging studies."
+Documentation: https://github.com/RSNA/AI-Challenge-Data/wiki/RSNA-Screening-Mammography-Breast-Cancer-Detection
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - mammography
+  - breast cancer
+  - cancer
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “Brain CT Hemorrhage Dataset, Copyright RSNA, 2019” as follows: Flanders AF, et al. The RSNA Brain CT Hemorrhage Dataset [10.1148/ryai.2020190211]. Radiology: Artificial Intelligence 2020;2:3."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::screening-mammography-breast
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/3
