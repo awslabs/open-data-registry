@@ -1,0 +1,62 @@
+---
+Name: CZ Grand Challenges - Transcriptomic MIT Licensed data and models
+Description: This dataset contains a transcriptomics biological data and models.
+  The models embed transcriptomic data and facilitate transcriptomic analysis.
+  The data is sourced and curated by a team of experts at CZI and is made
+  available as part of these datasets only when it is not publicly accessible or
+  requires transformations to support model training.
+Documentation: https://virtualcellmodels.cziscience.com/models
+Contact: data@chanzuckerberg.com
+ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
+UpdateFrequency: Update cadence may vary for each resource
+
+Tags:
+  - transcriptomics
+  - machine learning
+  - model
+  - czi
+  - hdf5
+  - biodiversity
+  - biology
+  - biomolecular modeling
+  - cell biology  
+  - life sciences  
+  - protein
+License: "[MIT License](https://opensource.org/license/mit)"
+Resources:
+  - Description: scGenePT model & training data
+    ARN: arn:aws:s3:::czi-scgenept-public
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: TranscriptFormer model
+    ARN: arn:aws:s3:::czi-transcriptformer
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Documentation for scGenePT
+      URL: https://virtualcellmodels.cziscience.com/model/01936eb7-dba3-7f2e-b71a-463a7b173120
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: scGenePT Perturbation Prediction Tutorial
+      URL: https://virtualcellmodels.cziscience.com/tutorial/scgenept-tutorial
+      AuthorName: CZI
+    - Title: Documentation for Transcriptformer
+      URL: https://virtualcellmodels.cziscience.com/model/01966441-339f-77f7-aa06-f67636f865dc
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Quickstart Tutorial for Transcriptformer
+      URL: https://virtualcellmodels.cziscience.com/quickstart/transcriptformer-quickstart
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Publications:
+    - Title: "scGenePT: Is language all you need for modeling single-cell
+        perturbations?"
+      URL: https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1
+      AuthorName: Ana-Maria Istrate, Donghui Li, Theofanis Karaletsos
+    - Title: "A Cross-Species Generative Cell Atlas Across 1.5 Billion Years of
+        Evolution: The TranscriptFormer Single-cell Model"
+      URL: https://www.biorxiv.org/content/10.1101/2025.04.25.650731v1
+      AuthorName: Pearce, J. D., et. al.
+ADXCategories:
+  - Healthcare & Life Sciences Data
