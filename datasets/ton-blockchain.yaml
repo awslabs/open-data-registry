@@ -5,7 +5,7 @@ Description: |
     Dataset consists of multiple tables with messages, transactions, accounts and other blockchain events (see documentation for details).
     Each table is partitioned by date and stored in a separate folder.
 Documentation: https://github.com/re-doubt/ton-etl/blob/main/datalake/README.md
-Contact: pavel.s@ton.org
+Contact: pavel.s@ton.foundation
 ManagedBy: "[TON Foundation](https://ton.org/)"
 UpdateFrequency: Daily
 Tags:
@@ -14,6 +14,6 @@ Tags:
 License: MIT License
 Resources:
   - Description: TON Blockchain Public Data Lake
-    ARN: arn:aws:s3:::ton-blockchain-public-datalake
-    Region: eu-central-1
+    ARN: arn:aws:s3:::ton-blockchain-public-datalake-us-east-1
+    Region: eu-east-1
     Type: S3 Bucket
