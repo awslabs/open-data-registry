@@ -1,9 +1,9 @@
-Name: Slacken index collection
-Description: Compiled genomic indexes for use with Slacken (taxonomic annotation of metagenomic sequencing reads)
-Documentation: https://github.com/JNP-Solutions/Slacken
+Name: Metagenomic indexes for Slacken
+Description: Metagenomic indexes for use with the Slacken taxonomic classification tool
+Documentation: https://github.com/JNP-Solutions/Slacken/wiki/Pre%E2%80%90built-Slacken-indexes-on-Amazon-S3
 Contact: johan@jnpsolutions.io
 ManagedBy: Johan Nyström-Persson
-UpdateFrequency: These indexes are currently what was used in our 2025 publication introducing the concept of 2-step classification and comparing Kraken2 with Slacken. We intend to add a whole collection of large genomic indexes in the future.
+UpdateFrequency: These indexes are currently what was used in our 2025 publication introducing the concept of 2-step classification and comparing Kraken2 with Slacken. We aim to update the data at least once per year, resources permitting.
 Tags:
   - Slacken
   - k-mer classification
@@ -15,26 +15,21 @@ Tags:
   - Life sciences
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: Slacken NCBI RefSeq V224 prefer-complete index 
-    ARN: arn:aws:s3:::slacken-ncbi-rspc-v224
+  - Description: Metagenomic indexes for Slacken
+    ARN: arn:aws:s3:::slacken
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://slacken-ncbi-rspc-v224.s3.amazonaws.com/)'
-    Notes: The NCBI Reference Sequence genome library with only complete genome sequences/chromosomes for those taxa that have them, and draft genomes/scaffolds otherwise, as well as adapter sequences (UniVec core).
-  - Description: Slacken index built using the same genome set as the Kraken2 Standard database (https://benlangmead.github.io/aws-indexes/k2), ensuring compatibility and direct performance comparison.
-    ARN: arn:aws:s3:::slacken-ncbi-std-v224
-    Region: us-east-1
-    Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://slacken-ncbi-std-v224.s3.amazonaws.com/)'
-    Notes: The selection of genomes included in the Kraken 2 standard library. This includes complete genomes and chromosomes from archaea, viruses, bacteria, plasmids, and human, as well as adapter sequences (UniVec core).
+    - '[Browse Bucket](https://slacken.s3.amazonaws.com/)'
+  - Description: Metagenomic indexes for Slacken, a metagenomic classifier, based on NCBI RefSeq genomes.
 DataAtWork:
   Tutorials:
-    - Title: Using an Amazon Machine Image for analysing samples with Slacken
-      URL: https://github.com/JNP-Solutions/Slacken/Using-an-Amazon-Machine-Image-for-analysing-samples-with-Kraken2
+    - Title: Classifying metagenomic samples on AWS ElasticMapReduce
+      URL: https://github.com/JNP-Solutions/Slacken/wiki/Classifying-metagenomic-samples-on-AWS-Elastic-MapReduce
       Services:
         - Amazon EC2
+        - Amazon EMR
+        - Amazon S3
       AuthorName: Johan Nyström-Persson
       AuthorURL: https://github.com/jtnystrom
   Tools & Applications:
@@ -44,5 +39,5 @@ DataAtWork:
       AuthorURL: https://github.com/jtnystrom
   Publications:
     - Title: "Precise and scalable metagenomic profiling with sample-tailored minimizer libraries"
-      URL: https://www.biorxiv.org/content/10.1101/2024.12.22.629657v1
+      URL: https://www.biorxiv.org/content/10.1101/2024.12.22.629657
       AuthorName: Johan Nyström-Persson, Nishad Bapatdhar and Samik Ghosh
