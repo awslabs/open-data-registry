@@ -1,0 +1,55 @@
+Name: Open CEDA by Watershed
+Description: |
+  CEDA is a multi-regional Environmentally-Extended Input-Output (EEIO) model developed to support a wide range of environmental systems analyses—including corporate carbon accounting and sustainable spend analysis. CEDA provides unparalleled global coverage and granularity, representing 95% of the world's GDP across 148 countries and 400 sectors, enabling robust and geographically comprehensive Scope 3 greenhouse gas (GHG) measurement. 
+  Open CEDA is the publicly avaialable version of CEDA, now easy to download and available for free for all use cases. For more information please visit our website at openceda.org
+  CEDA 2024, the latest version of CEDA, uses 2022 as its base year, ensuring that emissions factors and economic data reflect the most recent global economic landscape available. To maintain accuracy and relevance, CEDA is updated annually with the latest data releases.
+  At its core, CEDA connects economic exchanges to GHG emissions by quantifying the life-cycle emissions of products and services. This is achieved through the integration of input-output tables, which represent the full supply-chain network of the global economy, with GHG emissions data. As a result, CEDA provides users with a powerful tool to assess the environmental impacts embedded in corporate value chains.
+Documentation: https://openceda.org/
+Contact: ceda-support@watershed.com
+ManagedBy: "[Watershed Technology](https://watershed.com)"
+UpdateFrequency: Annual
+Tags:
+  - aws-pds
+  - climate
+  - carbon
+  - scope 3
+  - supply chain
+  - spend-based models
+  - EEIO
+License: Creative Commons CC BY-SA
+Resources:
+  - Description: An .xlsx file containing the Open CEDA dataset
+    ARN: arn:aws:s3:::open-ceda
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Open CEDA](https://open-ceda.s3.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: For a tutoral please download the CEDA Methodology Documentation on the openceda.org website.
+      URL: https://openceda.org/
+      AuthorName: Watershed Technology
+  Publications:
+    - Title: Converting University Spending to Greenhouse Gas Emissions - A Supply Chain Carbon Footprint Analysis of UC Berkeley
+      URL: https://nature.berkeley.edu/classes/es196/projects/2012final/DoyleK_2012.pdf
+      AuthorName: Kelley L. Doyle, 2012
+    - Title: A Consumption-Based Greenhouse Gas Inventory of SanFrancisco Bay Area Neighborhoods, Cities and Counties
+      URL: https://escholarship.org/content/qt2sn7m83z/qt2sn7m83z.pdf
+      AuthorName: Christopher M. Jones &  Daniel M. Kammen, 2015
+    - Title: Are services better for climate change?
+      URL: https://pubs.acs.org/doi/10.1021/es0609351
+      AuthorName: Sangwon, Suh, 2006
+    - Title: Advancing Sustainable Materials Management - 2016 Recycling Economic Information (REI) Report
+      URL: https://www.epa.gov/sites/default/files/2016-11/documents/final_2016_rei_report.pdf
+      AuthorName: EPA, 2016
+    - Title: Greening Government Procurement - Turning Uncle Sam Into an Eco-Friendly Consumer
+      URL: https://psmag.com/environment/greening-government-procurement-turning-uncle-sam-eco-friendly-consumer-78592/
+      AuthorName: James Badham, 2014
+    - Title: Environmental Impacts of Products - Policy Relevant Information and Data Challenges
+      URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC34107
+      AuthorName: Eder P, Tukker A, Suh S
+    - Title: Environmentally extended input-output tables and models for Europe
+      URL: https://www.eurogypsum.org/wp-content/uploads/2015/05/N0533.pdf
+      AuthorName: Arnold Tukker (TNO), Gjalt Huppes, Lauran van Oers, Reinout Heijungs (CML), 2006
+ADXCategories:
+  - Environmental Data
