@@ -6,9 +6,10 @@ Description: |
   At its core, CEDA connects economic exchanges to GHG emissions by quantifying the life-cycle emissions of products and services. This is achieved through the integration of input-output tables, which represent the full supply-chain network of the global economy, with GHG emissions data. As a result, CEDA provides users with a powerful tool to assess the environmental impacts embedded in corporate value chains.
 Documentation: https://openceda.org/
 Contact: ceda-support@watershed.com
-ManagedBy: Watershed Technology
+ManagedBy: "[Watershed Technology](https://watershed.com)"
 UpdateFrequency: Annual
 Tags:
+  - aws-pds
   - climate
   - carbon
   - scope 3
@@ -21,6 +22,8 @@ Resources:
     ARN: arn:aws:s3:::open-ceda
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+      - "[Open CEDA](https://open-ceda.s3.amazonaws.com/index.html)"
 DataAtWork:
   Tutorials:
     - Title: For a tutoral please download the CEDA Methodology Documentation on the openceda.org website.
