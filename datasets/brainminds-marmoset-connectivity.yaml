@@ -1,0 +1,39 @@
+Name: Brain/MINDS Marmoset Connectivity Resource on AWS
+Description: Brain/MINDS Marmoset Connectivity Resource (BMCR) is a resource that provides access to anterograde and retrograde neuronal tracer data, made available by Brain/MINDS project. It is currently restricted to injections into the prefrontal cortex of a marmoset brain but is planned to include injections into entire cortical areas and representative subcortical brain regions.
+Documentation: https://bmcr.brainminds.jp/
+Contact: https://dataportal.brainminds.jp/contact-us
+ManagedBy: "[RIKEN Center for Brain Science](https://cbs.riken.jp)"
+UpdateFrequency: As new data become available.
+Tags:
+  - tracer
+  - neuroanatomy
+  - marmoset
+  - non-human primate
+  - prefrontal cortex
+  - neuroimaging
+  - neuroscience
+License: Creative Commons Attribution 4.0 International
+Resources:
+  - Description: NIfTI data for marmoset brains and metadata
+    ARN: arn:aws:s3:::bmcr
+    Region: ap-northeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Explorer Tutorials
+      URL: https://bmcr.brainminds.jp/#ExplorerTutorial
+      AuthorName: Henrik Skibbe
+  Tools & Applications:
+    - Title: BMCR website
+      URL: https://bmcr.brainminds.jp/
+      AuthorName: Henrik Skibbe
+    - Title: Marmoset PFC connectome
+      URL: https://dataportal.brainminds.jp/marmoset-tracer-injection
+      AuthorName: Akiya Watakabe, Henrik Skibbe and Tetsuo Yamamori
+  Publications:
+    - Title: Local and long-distance organization of prefrontal cortex circuits in the marmoset brain.
+      URL: https://doi.org/10.1016/j.neuron.2023.04.028
+      AuthorName: Watakabe A, Skibbe H, Nakae K, Abe H, Ichinohe N, Rachmadi MF, Wang J, Takaji M, Mizukami H, Woodward A, Gong R, Hata J, Van Essen DC, Okano H, Ishii S, Yamamori T.
+    - Title: The Brain/MINDS Marmoset Connectivity Resource: An open-access platform for cellular-level tracing and tractography in the primate brain
+      URL: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002158
+      AuthorName: H. Skibbe, M.F. Rachmadi, K. Nakae, C. E. Gutierrez, J. Hata, H. Tsukada, C. Poon, K. Doya, P. Majka, M. G. P. Rosa, M. Schlachter, H. Okano, T. Yamamori, S. Ishii, M. Reisert, A. Watakabe.
