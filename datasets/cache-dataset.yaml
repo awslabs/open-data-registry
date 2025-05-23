@@ -1,18 +1,21 @@
 Name: Software Cache Request Dataset on AWS
-Description: This is a dataset that contains thousands of traces, where each trace stores the requests made to software caches in a time period.  The dataset contains block cache workloads, key-value cache workloads, and object cache workloads. The dataset can be used for cache research, storage performance evaluation, and workload modeling. 
+Description: |
+  This is a dataset that contains thousands of traces, where each trace stores the requests made to software caches in a time period.
+  The dataset contains block cache workloads, key-value cache workloads, and object cache workloads. 
+  The dataset can be used for cache research, storage performance evaluation, and workload modeling.
 Documentation: https://cachetrace.com/
-Contact: Juncheng Yang 
+Contact: Juncheng Yang (juncheng@g.harvard.edu)
 ManagedBy: Harvard MADS Lab
-UpdateFrequency: New data are added as soon as they become available
+UpdateFrequency: New data are added as soon as they become available.
 Tags:
-  - Cache Requests 
-  - Computer Systems
-  - Storage Systems
-  - Performance
-License: There are no restrictions on the use of this data
+  - cache requests 
+  - computer systems
+  - storage systems
+  - performance
+License: There are no restrictions on the use of this data.
 Resources:
   - Description: CacheDatasets
-    ARN: arn:aws:s3:::cacheDatasets
+    ARN: arn:aws:s3:::cache-datasets
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
@@ -35,7 +38,7 @@ DataAtWork:
       URL: https://www.usenix.org/system/files/osdi20-yang.pdf
       AuthorName: Juncheng Yang, Yao Yue, K. V. Rashmi
       AuthorURL: https://junchengyang.com/
-    - Title: FIFO queues are all you need for cache eviction
+    - Title: "FIFO queues are all you need for cache eviction"
       URL: https://dl.acm.org/doi/abs/10.1145/3600006.3613147
       AuthorName: Juncheng Yang, Yazhuo Zhang, Ziyue Qiu, Yao Yue, K. V. Rashmi
 ADXCategories:
