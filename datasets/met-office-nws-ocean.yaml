@@ -1,0 +1,55 @@
+Name: Met Office NWS Ocean model on a 2-year rolling archive
+Description: |
+ The Northwest European continental shelf physical ocean model predicts temperature, salinity and circulation for waters surrounding the UK. 
+ Ocean physics analysis provides a 6-day forecast for the North-West European Atlantic shelf at 1.5km resolution:<br/>
+  - 33 depth levels<br/>
+  - Currents<br/>
+  - Salinity<br/>
+  - Temperature<br/>
+  - Mixing Layer Thickness
+Documentation: hhttps://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/amm15-data-product-sheet.pdf
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The NWS Ocean model runs once daily.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - forecast
+  - geoscience
+  - geospatial
+  - marine
+  - model
+  - netcdf
+  - ocean sea surface height
+  - oceans
+  - weather
+License: "British Crown copyright 2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office NWS Ocean model on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-nws-ocean-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-nws-ocean-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new NWS ocean model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-nws-ocean-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Coupled forecasting development
+      URL: https://www.metoffice.gov.uk/research/weather/ocean-forecasting/coupled-development
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: Ocean models
+      URL: https://www.metoffice.gov.uk/services/government/defence-and-security/ocean-models
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
