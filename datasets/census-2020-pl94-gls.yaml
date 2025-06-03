@@ -1,0 +1,37 @@
+Name: 2020 Redistricting Data File Least Squares Estimates
+Description: |
+  The 2020 Redistricting Data File Least Squares Estimates data product provides count estimates, and their standard deviations, for each tabulation that was published as part of the persons universe of the 2020 Redistricting Data File for the US, state, county, and tract geographic levels. These estimates are computed using the generalized least squares (GLS) estimator using as input the publicly available 2020 Census persons universe noisy measurement files for both [the Redistricting Data File](https://registry.opendata.aws/census-2020-pl94-nmf/) and [the Demographic and Housing Characteristics File](https://registry.opendata.aws/census-2020-dhc-nmf/). The algorithm used to compute this estimate is described in more detail in [Least Squares Estimation For Hierarchical Data](https://arxiv.org/abs/2404.13164). As described in more detail in this paper and the README below, the primary goal of this data product is to provide the data required to compute confidence intervals for the 2020 Census Redistricting Data File published counts that account for the uncertainty in these published counts due to the disclosure avoidance methods applied to 2020 Census tabulations. In other words, these confidence intervals do not account for other sources of error, such as those due to enumeration errors.
+  <br/>
+  <br/>
+Documentation: "[2020 Redistricting Data File Least Squares Estimates README File](https://github.com/uscensusbureau/DAS_2020_GLS_Uncertainty_Evaluation/blob/main/README.md)"
+Contact: 2020DAS@census.gov
+ManagedBy: "[United States Census Bureau](http://www.census.gov/)"
+UpdateFrequency: Not Updated
+Tags:
+  - aws-pds 
+  - census
+  - differential privacy
+  - disclosure avoidance
+  - ethnicity
+  - group quarters
+  - housing
+  - housing units
+  - noisy measurements
+  - population
+  - race
+  - redistricting
+  - voting age
+  - confidence intervals
+  - least squares
+License: CC0 1.0 Universal
+Citation: "Recommended citation: U.S. Census Bureau. 2020 Redistricting Data File Least Squares Estimates, https://registry.opendata.aws/census-2020-pls94-gls/, accessed on DATE."
+Resources:
+  - Description: 2020 Redistricting Data File Least Squares Estimates File
+    ARN: arn:aws:s3:::uscb-2020-product-releases/decennial/gls/2020/redistricting-gls-estimates
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "Census Open Data S3 Inventory"
+    ARN: arn:aws:s3:::uscb-opendata-inventory/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
