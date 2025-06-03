@@ -1,6 +1,6 @@
-Name: Canopy Tree Height maps for the Amazon Forest (mean height composite 2020-2024) by CTrees.org
+Name: Canopy Tree Height Map for the Amazon Forest (mean height composite 2020-2024) by CTrees.org
 Description: |
-  Mean canopy Tree Height for the Amazon Forest on the period 2020-2024 at 4.78 m of spatial resolution. Created using a deep learning model on high-resolution Planet imagery from the Norway's International Climate and Forest Initiative (NICFI) Satellite Data Program.
+  Mean canopy Tree Height for the Amazon Forest on the period 2020-2024 at 4.78 m of spatial resolution. Created using a deep learning model on high-resolution Planet imagery from the Norway's International Climate and Forest Initiative (NICFI) Satellite Data Program. From the original research paper https://doi.org/10.48550/arXiv.2501.10600
 Documentation: "[Project overview](https://ctrees.org/products/tree-level)"
 Contact: info@ctrees.org
 ManagedBy: "[CTrees](https://ctrees.org/)"
@@ -19,7 +19,9 @@ Tags:
   - geospatial
 License: |
   https://creativecommons.org/licenses/by/4.0/
-Citation: CTrees.org - 2025. Canopy Tree Height of the Amazon Forest. Accessed DAY MONTH YEAR.
+Citation:
+  Fabien H Wagner, Ricardo Dalagnol, Griffin Carter, Mayumi CM Hirye, Shivraj Gill, Le Bienfaiteur Sagang Takougoum, Samuel Favrichon, Michael Keller, Jean PHB Ometto, Lorena Alves, Cynthia Creze, Stephanie P George-Chacon, Shuang Li, Zhihua Liu, Adugna Mullissa, Yan Yang, Erone G Santos, Sarah R Worden, Martin Brandt, Philippe Ciais, Stephen C Hagen, Sassan Saatchi. (2005). High Resolution Tree Height Mapping of the Amazon Forest using Planet NICFI Images and LiDAR-Informed U-Net Model. arXiv. eprint 2501.10600. URL https://arxiv.org/abs/2501.10600
+  CTrees.org - 2025. Canopy Tree Height of the Amazon Forest. Accessed DAY MONTH YEAR.
 Resources:
   - Description: Cloud-optimized GeoTIFF files with names corresponding to the tiling system of the Norway's International Climate and Forest Initiative (NICFI) Satellite Data Program.
     ARN: arn:aws:s3:::ctrees-amazon-canopy-height
@@ -29,6 +31,9 @@ Resources:
       - "[Browse CTrees Bucket](https://ctrees-amazon-canopy-height.s3.us-west-2.amazonaws.com/index.html)"
 DataAtWork:
   Tutorials:
+    - Title: "How to download the CTrees Amazon Canopy Height Map"
+      URL: https://ctrees-amazon-canopy-height.s3.us-west-2.amazonaws.com/tutorial.html
+      AuthorName: Fabien H Wagner
   Tools & Applications:
   Publications:
     - Title: "Is this the largest tree in the Amazon? A Q&A with CTrees scientist Fabien Wagner"
