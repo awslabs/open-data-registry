@@ -1,0 +1,63 @@
+Name: TEEGLLTEEG - This EEG Looks Like That EEG
+Description: A comprehensive dataset of 50,697 EEG segments from 2,711 patients with expert annotations for seizures and ictal-interictal-injury continuum patterns. Includes seizures, lateralized/generalized periodic discharges, and rhythmic delta activity patterns labeled by 124 domain experts for developing interpretable deep learning models.
+Documentation: https://github.com/bdsp-core/TEEGLLTEEG
+Contact: mwestover@mgh.harvard.edu
+ManagedBy: "[Massachusetts General Hospital & Brain Data Science Platform](https://bdsp.io)"
+UpdateFrequency: Static dataset - not updated
+Tags:
+  - neurophysiology
+  - eeg
+  - electroencephalography
+  - machine learning
+  - healthcare
+  - seizure detection
+  - medical imaging
+  - brain monitoring
+  - deep learning
+  - interpretable ai
+License: "[BDSP Restricted Health Data License 1.0.0](https://bdsp.io/content/hsp/view-license/1.0/); [terms of use](https://github.com/bdsp-core/bdsp-license-and-dua/blob/main/terms-of-use.md)"
+Citation: "Barnett, A. J., Guo, S., Jing, J., Rudin, C., & Westover, M. B. (2025). TEEGLLTEEG: This EEG Looks Like That EEG (version 1.2). Brain Data Science Platform. https://doi.org/10.60508/rd3w-vr51"
+Resources:
+  - Description: "EEG segments dataset - 50,697 annotated segments"
+    ARN: "arn:aws:s3:::teegllteeg-eeg-data"  # PLACEHOLDER - doesn't exist
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+      - "[Browse Dataset](https://teegllteeg-eeg-data.s3.amazonaws.com/index.html)"
+  - Description: "Expert annotations and metadata"
+    ARN: "arn:aws:s3:::teegllteeg-annotations"  # PLACEHOLDER - doesn't exist
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+  - Description: "Pre-trained model weights and prototypes"
+    ARN: "arn:aws:s3:::teegllteeg-models"  # PLACEHOLDER - doesn't exist
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+
+DataAtWork:
+  Tutorials:
+    - Title: "Getting Started with TEEGLLTEEG Dataset"
+      URL: https://github.com/bdsp-core/TEEGLLTEEG
+      AuthorName: Alina Jade Barnett
+      AuthorURL: https://github.com/bdsp-core
+    - Title: "Interpretable EEG Classification with ProtoPMed"
+      URL: https://github.com/bdsp-core/TEEGLLTEEG/blob/main/notebooks/tutorial.ipynb
+      AuthorName: TEEGLLTEEG Team
+      AuthorURL: https://github.com/bdsp-core/TEEGLLTEEG
+  Tools & Applications:
+    - Title: "TEEGLLTEEG Model Implementation"
+      URL: https://github.com/bdsp-core/TEEGLLTEEG
+      AuthorName: BDSP Core Team
+      AuthorURL: https://github.com/bdsp-core
+  Publications:
+    - Title: "Improving Clinician Performance in Classifying EEG Patterns on the Ictal-Interictal Injury Continuum Using Interpretable Machine Learning"
+      URL: https://pubmed.ncbi.nlm.nih.gov/38872809/
+      AuthorName: "Barnett AJ, Guo Z, Jing J, et al."
+    - Title: "Development of Expert-Level Classification of Seizures and Rhythmic and Periodic Patterns During EEG Interpretation"
+      URL: https://doi.org/10.60508/rd3w-vr51
+      AuthorName: "Barnett AJ, Guo S, Jing J, Rudin C, Westover MB"
+
+ADXCategories:
+  - Healthcare & Life Sciences
