@@ -1,0 +1,98 @@
+Name: Human Cell Atlas
+
+Description: "The Human Cell Atlas (HCA) is a collaborative community of
+  international scientists. Our mission is to create comprehensive reference
+  maps of all the cells in the human body as a basis for both understanding
+  human health and diagnosing, monitoring, and treating disease. The HCA
+  registry has more than one thousand member scientists from hundreds of
+  institutions around the world. The project is steered and governed by an
+  Organizing Committee, co-chaired by Aviv Regev and Sarah Teichmann."
+
+Documentation: https://data.humancellatlas.org/
+
+Contact: https://data.humancellatlas.org/contact
+
+ManagedBy: UC Santa Cruz Genomics Institute, University of California, Santa Cruz (UCSC)
+
+UpdateFrequency: Monthly
+
+Tags:
+  - life sciences
+  - biology
+  - cell biology
+  - genome
+  - genomic
+  - transcriptomics
+  - gene expression
+  - single-cell transcriptomics
+  - cell imaging
+  - Homo sapiens
+  - Mus musculus
+
+License: https://data.humancellatlas.org/about/data-use-agreement
+
+Citation: "The URL for the HCA Data Portal, https://data.humancellatlas.org, can
+  be used as the citation for data obtained from the HCA. Alternatively, you can
+  cite: Regev A., et al. 2017. The Human Cell Atlas. Elife. Dec 5;6. pii:
+  e27041. doi: 10.7554/eLife.27041."
+
+Resources:
+  - Description: "An S3 bucket containing all publicly accessible data files in 
+      the Human Cell Atlas. The bucket layout and access procedures are 
+      documented at
+      
+      https://github.com/DataBiosphere/azul/blob/develop/docs/mirror.rst
+      
+      and metadata can be viewed at
+      
+      https://explore.data.humancellatlas.org/
+      
+      or accessed programmatically at
+      
+      https://service.azul.data.humancellatlas.org/"
+    ARN: arn:aws:s3:::humancellatlas
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+      - "[Data Browser UI](https://explore.data.humancellatlas.org/)"
+      - "[Azul REST Web Service](https://service.azul.data.humancellatlas.org/)"
+
+DataAtWork:
+  Publications:
+    - Title: "The Human Cell Atlas White Paper"
+      URL: https://arxiv.org/abs/1810.05192
+      AuthorName: "Aviv Regev, Sarah Teichmann, Orit Rozenblatt-Rosen, Michael
+        Stubbington, Kristin Ardlie, Ido Amit, Paola Arlotta, Gary Bader,
+        Christophe Benoist, Moshe Biton, Bernd Bodenmiller, Benoit Bruneau,
+        Peter Campbell, Mary Carmichael, Piero Carninci, Leslie Castelo-Soccio,
+        Menna Clatworthy, Hans Clevers, Christian Conrad, Roland Eils, Jeremy
+        Freeman, Lars Fugger, Berthold Goettgens, Daniel Graham, Anna Greka, Nir
+        Hacohen, Muzlifah Haniffa, Ingo Helbig, Robert Heuckeroth, Sekar
+        Kathiresan, Seung Kim, Allon Klein, Bartha Knoppers, Arnold Kriegstein,
+        Eric Lander, Jane Lee, Ed Lein, Sten Linnarsson, Evan Macosko, Sonya
+        MacParland, Robert Majovski, Partha Majumder, John Marioni, Ian
+        McGilvray, Miriam Merad, Musa Mhlanga, Shalin Naik, Martijn Nawijn,
+        Garry Nolan, Benedict Paten, Dana Pe'er, Anthony Philippakis, Chris
+        Ponting, Steve Quake, Jayaraj Rajagopal, Nikolaus Rajewsky, Wolf Reik,
+        Jennifer Rood, Kourosh Saeb-Parsy, Herbert Schiller, Steve Scott, Alex
+        Shalek, Ehud Shapiro, Jay Shin, Kenneth Skeldon, Michael Stratton, Jenna
+        Streicher, Henk Stunnenberg, Kai Tan, Deanne Taylor, Adrian Thorogood,
+        Ludovic Vallier, Alexander van Oudenaarden, Fiona Watt, Wilko Weicher,
+        Jonathan Weissman, Andrew Wells, Barbara Wold, Ramnik Xavier, Xiaowei
+        Zhuang, Human Cell Atlas Organizing Committee" 
+    - Title: "The network effect: studying COVID-19 pathology with the Human Cell Atlas"
+      URL: https://www.nature.com/articles/s41580-020-0267-3
+      AuthorName: "Sarah Teichmann, Aviv Regev"
+    - Title: "The Human Cell Atlas from a cell census to a unified foundation model"
+      URL: https://www.nature.com/articles/s41586-024-08338-4
+      AuthorName: "Jennifer E. Rood, Samantha Wynne, Lucia Robson, Anna
+        Hupalowska, John Randell, Sarah A. Teichmann & Aviv Regev"
+    - Title: "The Human Cell Atlas: towards a first draft atlas"
+      URL: https://www.nature.com/collections/jccbbdahji
+      AuthorName: "Various authors"
+    - Title: "The Human Cell Atlas: towards a first draft atlas"
+      URL: https://www.nature.com/immersive/d42859-024-00060-5/index.html
+      AuthorName: "Various authors"
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
