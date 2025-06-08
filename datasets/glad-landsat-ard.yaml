@@ -1,0 +1,37 @@
+Name: GLAD Landsat ARD
+Description: The Landsat Analysis Ready Data (ARD) created by the Global Land Analysis and Discovery Lab (GLAD) at the University of Maryland serves as a spatially and temporally consistent input for land cover mapping and change detection at global to local scales. The GLAD ARD represents a 16-day time series of globally consistent, tiled Landsat normalized surface reflectance from 1997 to the present operationally updated every 16 days. Only data from 2020 to present available on the AWS, older data is available through the UMD API. 
+Documentation: https://glad.umd.edu/ard/home
+Contact: potapov.peter@gmail.com
+ManagedBy: "[Global Land Analysis and Discovery Lab](https://glad.umd.edu/)"
+UpdateFrequency: New 16-day composites are added monthly.
+Tags:
+  - agriculture
+  - forestry 
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - cog
+License: The GLAD ARD imposes no restrictions on subsequent redistribution or use, provided proper citation is given following the Creative Commons Attribution License (CC BY). Suggested citation: Potapov, P., Hansen, M.C., Kommareddy, I., Kommareddy, A., Turubanova, S., Pickens, A., Adusei, B., Tyukavina A., and Ying, Q., 2020. Landsat analysis ready data for global land cover and land cover change mapping. Remote Sens. 2020, 12, 426; doi:10.3390/rs12030426
+Resources:
+  - Description: 16-day image composite tiles
+    ARN: arn:aws:s3:::glad.landsat.ard/data/tiles/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+    Explore:
+DataAtWork:
+  Tutorials:
+    - Title: "GLAD ARD Data Format"
+      URL: https://glad.umd.edu/ard/home
+      AuthorName: Peter Potapov
+      AuthorURL: https://glad.umd.edu/
+  Tools & Applications:
+    - Title: GLAD Landsat ARD Tools
+      URL: https://glad.umd.edu/ard/home#tools
+      AuthorName: Peter Potapov
+      AuthorURL: https://glad.umd.edu/
+   Publications:
+    - Title: Landsat analysis ready data for global land cover and land cover change mapping
+      URL: https://www.mdpi.com/2072-4292/12/3/426
+      AuthorName: Potapov, P., Hansen, M.C., Kommareddy, I., Kommareddy, A., Turubanova, S., Pickens, A., Adusei, B., Tyukavina A., Ying, Q.
