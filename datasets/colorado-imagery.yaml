@@ -12,8 +12,9 @@ Tags:
   - mapping 
 License: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 Resources:
-  - Description: The State of Colorado historic public aerial imagery. Currently, NAIP is available from 2005 and 2009-2021. The National Agriculture Imagery Program is a project managed by the U.S. Department of Agriculture created to collect leaf-on imagery for the United States during peak growing seasons. The files are available as GeoTIFFs. From 2005-2017 they have a one meter resolution. After that, it is a 60cm resolution.
-    Region: us-east-1
+  - Description: The State of Colorado historic public aerial imagery. Currently, NAIP is available from 2005 and 2009-2021. The National Agriculture Imagery Program is a project managed by the U.S. Department of Agriculture created to collect leaf-on imagery for the United States during peak growing seasons. The files are available as GeoTIFFs. From 2005-2017 they have a one meter resolution. After that, it is a 60cm resolution. DRAPP (Denver Regional Aerial Photgraphy Project) is available from 2010-2020. It is availble in 3, 6, and 12in resolutions (except 2012).
+    ARN: arn:aws:s3:::colorado-public-imagery
+    Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
@@ -24,6 +25,10 @@ DataAtWork:
   Tools & Applications:
     - Title: Colorado Public Imagery Dowloader
       URL: https://gis.colorado.gov/imagery/
+      AuthorName: State of Colorado OIT-GIS
+      AuthorURL: https://geodata.colorado.gov/
+    - Title: Colorado Public Imagery s3 Browser
+      URL: https://colorado-public-imagery.s3.amazonaws.com/index.html
       AuthorName: State of Colorado OIT-GIS
       AuthorURL: https://geodata.colorado.gov/
 ADXCategories:
