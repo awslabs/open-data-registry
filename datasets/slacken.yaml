@@ -1,0 +1,40 @@
+Name: Metagenomic reference libraries for Slacken
+Description: Metagenomic indexes for use with the Slacken taxonomic classification tool
+Documentation: https://github.com/JNP-Solutions/Slacken/wiki/Pre%E2%80%90built-Slacken-indexes-on-Amazon-S3
+Contact: johan@jnpsolutions.io
+ManagedBy: Johan Nyström-Persson
+UpdateFrequency: These indexes are currently what was used in our 2025 publication introducing the concept of 2-step classification and comparing Kraken2 with Slacken. We aim to update the data at least once per year, resources permitting.
+Tags:
+  - genomic
+  - metagenomics
+  - microbiome
+  - bioinformatics
+  - biology
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Metagenomic indexes for Slacken, a metagenomic classifier, based on NCBI RefSeq genomes.
+    ARN: arn:aws:s3:::slacken
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://slacken.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: Classifying metagenomic samples on AWS ElasticMapReduce
+      URL: https://github.com/JNP-Solutions/Slacken/wiki/Classifying-metagenomic-samples-on-AWS-Elastic-MapReduce
+      Services:
+        - Amazon EC2
+        - Amazon EMR
+        - Amazon S3
+      AuthorName: Johan Nyström-Persson
+      AuthorURL: https://github.com/jtnystrom
+  Tools & Applications:
+    - Title: Slacken
+      URL: https://github.com/JNP-Solutions/Slacken
+      AuthorName: Johan Nyström-Persson, Nishad Bapatdhar
+      AuthorURL: https://github.com/jtnystrom
+  Publications:
+    - Title: "Precise and scalable metagenomic profiling with sample-tailored minimizer libraries"
+      URL: https://www.biorxiv.org/content/10.1101/2024.12.22.629657
+      AuthorName: Johan Nyström-Persson, Nishad Bapatdhar and Samik Ghosh
