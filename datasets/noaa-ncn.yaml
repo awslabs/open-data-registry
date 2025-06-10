@@ -6,16 +6,12 @@ Description: |
       - [NOAA-NCN on AWS](https://noaa-cors-pds.s3.amazonaws.com/index.html)
       - [NGS server: https://geodesy.noaa.gov/corsdata/](https://geodesy.noaa.gov/corsdata/)
       - [NGS's customized data request service (UFCORS)](https://geodesy.noaa.gov/UFCORS/)
-      - [NGS Anonymous ftp://geodesy.noaa.gov/cors/ - This service is going away on August 02, 2021!](ftp://geodesy.noaa.gov/cors/)
   - #### NCN Data and Products
       - **RINEX**: The GPS/GNSS data collected at NCN stations are made available to the public by NGS in Receiver INdependent EXchange (RINEX) format. Most data are available within 1 hour (60 minutes) from when they were recorded at the remote site, and a few sites have a delay of 24 hours (1440 minutes).<br/>RINEX data can be found at: *rinex/`YYYY`/`DDD`/`ssss`/*
       - **Station logs**: 
-          - Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc..<br/>Station log files can be found at: *station_log/`ssss`.log.txt*
-          - Historical and current equipment information of all NCN stations, except those that are considered IGS stations.<br/>These data can be found at: *station_log/cumulative.station.info.cors*
-      - **Published Coordinates and Velocities**: NAD83 and ITRF coordinates and velocities of each NCN station. All published coordinates and velocities are given for the Antenna Reference Point (ARP).<br/>Published coordinate and velocity files can be found at: *coord/coord_`YY`/*<br/>In July 2019, NGS published [MYCS2](https://geodesy.noaa.gov/CORS/news/mycs2/mycs2.shtml)!
-      - **Time-series Plots**:
-          - *Short-term* plots show the repeatability of a site for the last 90-days with respect to the current published position, corrected for the effect of the published velocity. These plots are updated daily.<br/>Short-term plots can be found at: */Plots/`ssss`_`YY`.short.png*
-          - *Long-term* plots show the show weekly residual positions with respect to the current published coordinates from our stacked solution. Newer sites may not have a long-term plot if they were added after our Multi-year Solution Processing campaign.<br/>Long-term plots can be found at: */Plots/Longterm/`ssss`_`YY`.long.png*
+          - Station log files contain all the historical equipment (receiver/antenna) used at that station, approximate location, owner and operating agency, etc.. can be found at: *station_log/`ssss`.log.txt*
+          - Historical and current equipment information of **all NCN stations**, except those that are considered IGS stations, can be found at: *station_log/cumulative.station.info.cors*
+      - **Published Coordinates and Velocities**: NAD83 and ITRF coordinates and velocities of each NCN station. <br/>Published coordinate and velocity files can be found at: *coord/coord_`YY`/*<br/>NGS released [Multi-Year CORS Solutions 3 (MYCS3)](https://geodesy.noaa.gov/CORS/news/mycs3/mycs3.shtml) on June 10, 2025.      
       - **Daily Broadcast Ephemeris**:
           - Daily GPS Broadcast ephemeris can be found at: *rinex/`YYYY`/`DDD`/brdc`DDD`0.`YY`n.gz*
           - Daily GLONASS-only Broadcast ephemeris can be found at: *rinex/`YYYY`/`DDD`/brdc`DDD`0.`YY`g.gz*
@@ -61,6 +57,8 @@ Tags:
   - post-processing
   - RINEX 
   - survey
+  - MYCS
+  - Multi-Year CORS Solutions
 License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: "[NCN Data and Products](https://geodesy.noaa.gov/CORS/data.shtml)"
