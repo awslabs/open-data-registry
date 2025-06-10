@@ -1,0 +1,24 @@
+Name: NCBI SRA Gene Feature RNA-Seq counts
+Description: "The NIH Sequence Read Archive (SRA), hosted by the [National Center for Biotechnology Information (NCBI) at the National Library of Medicine (NLM) stores sequencing data and alignment information from high-throughput next-generation sequencing platforms. SRA has conducted gene expression analysis of publicly released human and mouse RNA-Seq experiments to process raw RNA-seq reads into concise formats that summarize the expression results. The un-normalized feature counts for each SRA record are available in tab-delimited (*.tsv) format. The tsv files include two columns, the gene id and count. These counts facilitate differential gene expression analyses, particularly across studies and the entirety of the SRA corpus."
+Contact: sra@ncbi.nlm.nih.gov
+Documentation: https://www.ncbi.nlm.nih.gov/geo/info/rnaseqcounts.html
+ManagedBy: NCBI at NLM
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - life sciences
+  - genetic
+  - transcriptomics
+  - RNA-Seq
+License: [NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)
+Resources:
+  - Description: "*.tsv files in a public s3 public. The files contain un-normalized feature counts for the SRA run accession listed in the file name. The scope of these records is human and mouse, bulk RNA-Seq data released in the non-controlled access portion of SRA."
+    ARN: arn:aws:s3:::sra-rnaseq-analysis
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: The Sequence Read Archive
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013647/
+      AuthorName: Leinonen et al (2011)
+      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Leinonen%20R%5BAuthor%5D&cauthor=true&cauthor_uid=21062823
