@@ -1,5 +1,5 @@
 Name: Graf Reforecast
-Description:
+Description: NVIDIA and The Weather Company (TWCo) have generated a data set of reforecasts from TWCo’s GRAF (Global high-Resolution Atmospheric Forecasting) model, a version of the National Center for Atmospheric Research (NCAR) Model for Predictions Across Scales (MPAS).  GRAF is global, but the configuration for this reforecast had a mesh refinement to ~4 km over the US, Caribbean Basin, and Europe, and 15 km elsewhere. This model was designed to run much of the computation on graphical processing units, with this development assisted by NVIDIA.  The intended 1836 reforecast cases (~5 years) will be generated with initial condition dates spanning more than 20 years, 2004-2024.  These dates of the chosen initial conditions mostly selected based on high-impact weather in the contiguous US (CONUS) and Caribbean.   Sampling in this way, we hypothesize, will span a wider range of interesting, high-impact weather scenarios than had we performed five contiguous years of once-daily reforecasts, and we will span a wider variety of interesting precipitation events while still providing many samples in non-precipitating regions with more ordinary weather. GRAF reforecasts were mostly run to +27 h lead time, 3-h for spin up plus a full diurnal cycle.   Data were saved in zarr format.   Most fields were at 15-min intervals.  Data are made publicly available to all through Amazon Web Services’ Open-Data Initiative.
 Documentation:
 Contact:
 ManagedBy: "[The Weather Company](https://www.weathercompany.com/)"
@@ -21,7 +21,6 @@ Resources:
     ARN: arn:aws:s3:::twc-graf-reforecast
     Region: us-west-2
     Type: S3 Bucket
-    Explore:
 DataAtWork:
   Tutorials:
     - Title:
