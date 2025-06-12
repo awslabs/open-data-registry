@@ -1,0 +1,31 @@
+name: pepquery-msms-library
+description: >
+  This dataset supports PepQuery2, a peptide-centric MS/MS search engine that validates novel peptides against 
+  public mass spectrometry datasets. The data includes indexed spectra from CPTAC and other studies, enabling 
+  rapid peptide validation for proteogenomics and immunopeptidomics research.
+documentation: http://pepquery.org/document.html
+contact: 
+  - wenbostar@gmail.com
+  - bing.zhang@bcm.edu
+managedBy: Baylor College of Medicine
+updateFrequency: irregular
+tags:
+  - proteomics
+  - mass spectrometry
+  - cancer
+  - CPTAC
+  - peptides
+  - bioinformatics
+license: Creative Commons Attribution 4.0 International (CC-BY 4.0)
+resources:
+  - description: Indexed MS/MS spectra for PepQuery2
+    arn: arn:aws:s3:::zhanglab-pepquery/msms_library
+    region: us-west-2
+    type: S3 Bucket
+    access: public
+    formats:
+      - binary index
+      - tsv
+      - txt
+datasetSlug: pepquery-msms-library
+
