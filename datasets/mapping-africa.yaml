@@ -1,0 +1,46 @@
+Name: High resolution, annual cropland and landcover maps for selected African countries
+Description: >
+  High resolution, annual cropland and landcover maps for selected African
+  countries developed by [Clark University](https://clarku.edu)'s
+  [Agricultural Impacts Research Group](https://agroimpacts.info/) using
+  various machine learning approaches applied to Planet imagery, including field
+  boundary and cultivated frequency maps, as well as multi-class land cover.
+Documentation: https://github.com/agroimpacts/mapping-africa
+Contact: mappingafrica@clarku.edu
+ManagedBy: "[The Agricultural Impacts Research Group](https://agroimpacts.info/)"
+UpdateFrequency: "New maps are added as developed"
+Tags:
+  - aws-pds
+  - agriculture
+  - land cover
+  - satellite imagery
+  - machine learning
+  - deep learning
+  - cog
+  - labeled
+License: "[Planet NICFI participant license agreement](https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf)"
+Resources:
+  - Description: Field boundary and land cover maps
+    ARN: arn:aws:s3:::mappingafrica
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Accessing and downloading data
+      URL: https://github.com/agroimpacts/mapping-africa
+      NotebookURL:
+      AuthorName: Rahebe Abedi
+      AuthorURL: https://github.com/Rahebe22
+  Publications:
+    - Title: "Final report-Phase 1: Creating open agricultural maps and ground truth data to better deliver farm extension services"
+      URL: https://cropanalytics.net/wp-content/uploads/2022/04/FarmerlineClark-Report-Feb-2022-002.pdf
+      AuthorName: Estes et al (2022)
+    - Title: "Final report-Phase 2: Creating next generation field boundary and crop type maps: Rigorous multi-scale groundtruth provides sustainable extension services for smallholders"
+      URL: https://cropanalytics.net/wp-content/uploads/2022/11/Farmerline-Clark-Round-2-Report-V2-Nov-8-2022.pdf
+      AuthorName: Wussah et al (2022)
+    - Title: "High resolution, annual maps of field boundaries for smallholder-dominated croplands at national scales"
+      URL: https://www.frontiersin.org/article/10.3389/frai.2021.744863
+      AuthorName: Estes et al. (2022)
+    - Title: "A super-ensemble approach to map land cover types with high resolution over data-sparse African savanna landscapes"
+      URL: https://www.sciencedirect.com/science/article/pii/S1569843222003405
+      AuthorName: Song et al. (2023)

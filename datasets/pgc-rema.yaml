@@ -2,7 +2,7 @@ Name: Reference Elevation Model of Antarctica (REMA)
 Description:  The Reference Elevation Model of Antarctica - 2m GSD Digital Elevation Models (DEMs) and mosaics from 2009 to the present. The REMA project seeks to fill the need for high-resolution time-series elevation data in the Antarctic. The time-dependent nature of the strip DEM files allows users to perform change detection analysis and to compare observations of topography data acquired in different seasons or years. The mosaic DEM tiles are assembled from multiple strip DEMs with the intention of providing a more consistent and comprehensive product over large areas. REMA data is constructed from in-track and cross-track high-resolution (~0.5 meter) imagery acquired by the Maxar constellation of optical imaging satellites.
 Documentation: https://www.pgc.umn.edu/data/rema/
 Contact: pgc-support@umn.edu
-ManagedBy: "[Polar Geospatial Center](http://www.pgc.umn.edu/)"
+ManagedBy: "[Polar Geospatial Center](https://www.pgc.umn.edu/)"
 UpdateFrequency: New DEM strips are added twice yearly.  Mosaic products are added as soon as they are available.
 Collabs:
   ASDI:
@@ -26,14 +26,20 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics.json)'
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics.json)'
+      - '[Dynamic STAC API Endpoint](https://stac.pgc.umn.edu/api/v1/)'
   - Description: REMA DEM Strips
     ARN: arn:aws:s3:::pgc-opendata-dems/rema/strips/
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips.json)'
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips.json)'
+      - '[Dynamic STAC API Guide](https://www.pgc.umn.edu/guides/stereo-derived-elevation-models/stac-access-static-and-dynamic-api/)'
 DataAtWork:
+  Tutorials:
+    - Title: PGC Dynamic STAC API Tutorial
+      URL: https://polargeospatialcenter.github.io/pgc-code-tutorials/dynamic_stac_api/web_files/stac_api_demo_workflow.html
+      AuthorName: Polar Geospatial Center
   Tools & Applications:
     - Title: REMA Explorer
       URL: https://rema.apps.pgc.umn.edu/

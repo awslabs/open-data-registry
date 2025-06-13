@@ -12,7 +12,7 @@ Description: |
   is freely available to search the archive. This dataset contains all of the scenes in the
   original Sentinel-2 Public Dataset and will grow as that does.
   L2A data are available from April 2017 over wider Europe region and globally since December 2018.
-Documentation: https://github.com/cirrus-geo/cirrus-earth-search
+Documentation: https://github.com/Element84/earth-search
 Contact: opendata@element84.com
 ManagedBy: "[Element 84](https://www.element84.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
@@ -33,6 +33,23 @@ Tags:
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
+  - Description: Collection 1 Level 2A scenes and metadata
+    ARN: arn:aws:s3:::e84-earth-search-sentinel-data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Earth Search STAC C1 L2A Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a)'
+    - '[STAC Browser C1 L2A Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a)' 
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (parquet)"
+    ARN: arn:aws:s3:::e84-earth-search-sentinel-data-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
+    ARN: arn:aws:sns:us-west-2:608149789419:cirrus-es-prod-publish
+    Region: us-west-2
+    Type: SNS Topic
   - Description: Level 2A scenes and metadata
     ARN: arn:aws:s3:::sentinel-cogs
     Region: us-west-2
@@ -70,15 +87,15 @@ DataAtWork:
       URL: https://www.linkedin.com/pulse/how-sunny-my-city-better-process-stac-sentinel2-lambda-alvaro-huarte
       AuthorName: Alvaro Huarte
       Services:
-        - Lambda
-        - SNS
+        - AWS Lambda
+        - Amazon SNS
     - Title: Transforming Geospatial Data to Cloud-Native Frameworks with Element 84 on AWS
       URL: https://aws.amazon.com/blogs/apn/transforming-geospatial-data-to-cloud-native-frameworks-with-element-84-on-aws/
       AuthorName: Matt Hanson, Imtranur Rahman, Mary-Elizabeth Morin, and Ariel Walcutt
       Services:
-        - EKS
-        - SageMaker
-        - S3
+        - Amazon EKS
+        - Amazon SageMaker
+        - Amazon S3
     - Title: Access satellite imagery using Python
       URL: https://carpentries-incubator.github.io/geospatial-python/05-access-data.html
       AuthorName: The Carpentries
@@ -86,7 +103,13 @@ DataAtWork:
       URL: https://aws.amazon.com/blogs/machine-learning/monitoring-lake-mead-drought-using-the-new-amazon-sagemaker-geospatial-capabilities/
       AuthorName: Xiong Zhou, Anirudh Viswanathan, Erran Li, Trenton Lipscomb, and Xingjian Shi 
       Services:
-      - SageMaker
+      - Amazon SageMaker
+    - Title: Using Sentinel-2 Data from the AWS Open Data Project to measure water hyacinth growth
+      URL: https://github.com/aws-samples/monitor-water-hyacinth-invasion
+      NotebookURL: https://github.com/aws-samples/monitor-water-hyacinth-invasion/blob/main/Harties.ipynb
+      AuthorName: Louise Liddell
+      Services:
+        - Amazon SageMaker Studio Lab
   Publications:
     - Title: STAC and Sentinel-2 COGs (ESIP Summer Meeting 2020)
       URL: https://docs.google.com/presentation/d/14NsKFZ3UF2Swwx_9L7sPMX9ccFUK1ruQyZXWK9Cz4L4/edit?usp=sharing

@@ -1,0 +1,49 @@
+Name: Satellite - Sea surface temperature - Level 3 - Single sensor - Himawari-8 -
+  1 day - Night time
+Description: "This is a regional GHRSST level 3 collated (L3C) dataset on 0.02-degree\
+  \ rectangular grid over the Australasian domain (70E to 190E, 70S to 20N) based\
+  \ on retrievals from the AHI imager on board Himawari-8 satellite. The Bureau of\
+  \ Meteorology (Bureau) produces Integrated Marine Observing System (IMOS) satellite\
+  \ SST products in the International Group for High Resolution SST (GHRSST) GDS2\
+  \ file formats for Himawari-8 in real time and delayed mode. This product is composed\
+  \ of reprocessed multi-swath SSTskin retrievals obtained from compositing IMOS Himawari-8\
+  \ hourly L3C files over the night (before dawn).  \nEvery 10 minutes, the Himawari-8\
+  \ full disk is processed to retrieve SSTs by using the Radiative Transfer Model\
+  \ (RTTOV12.3) and Bayesian cloud clearing method based on the ESA CCI SST code developed\
+  \ at the University of Reading. The hourly product on native grid is then produced\
+  \ by compositing over multiple swaths for the previous 1 hour. Further, L3C-01day\
+  \ SST fields on native grid are obtained by selecting the highest quality data from\
+  \ the hourly SST records with priority being given to the value the closest in time\
+  \ to the product nominal hour.  The L3C-1day night product on native grid is then\
+  \ remapped over the 0.02-degree IMOS grid to compose IMOS L3C-1day night product\
+  \ (Govekar et al., 2021,  https://www.foo.org.au/wp-content/uploads/2021/11/Govekar_FOO_2021.pdf).\
+  \   The product format is compliant with the GHRSST Data Specification (GDS) version\
+  \ 2."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/72b65fb8-84e1-4a56-b32c-7f15970903d2
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - SST - L3C - Himawari-8
+    - 1 day - night time - Australia
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_ghrsst_l3c_1day_nighttime_himawari8.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - SST - L3C - Himawari-8 - 1 day - night time - Australia
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3c_1day_nighttime_himawari8.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_ghrsst_l3c_1day_nighttime_himawari8.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
