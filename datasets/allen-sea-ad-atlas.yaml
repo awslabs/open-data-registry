@@ -30,18 +30,30 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://sea-ad-single-cell-profiling.s3.amazonaws.com/index.html)'
+  - Description: "Update notifications for s3://sea-ad-single-cell-profiling. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:us-west-2:208217671510:sea-ad-single-cell-profiling-object_created
+    Region: us-west-2
+    Type: SNS Topic
   - Description: Quantitative neuropathology (full resolution images, processed images, and quantifications) in a public bucket
     ARN: arn:aws:s3:::sea-ad-quantitative-neuropathology
     Region: us-west-2
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://sea-ad-quantitative-neuropathology.s3.amazonaws.com/index.html)'
+  - Description: "Update notifications for s3://sea-ad-quantitative-neuropathology. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:us-west-2:208217671510:sea-ad-quantitative-neuropathology-object_created
+    Region: us-west-2
+    Type: SNS Topic
   - Description: Spatial transcriptomics data files in a public bucket
     ARN: arn:aws:s3:::sea-ad-spatial-transcriptomics
     Region: us-west-2
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://sea-ad-spatial-transcriptomics.s3.amazonaws.com/index.html)'
+  - Description: "Update notifications for s3://sea-ad-spatial-transcriptomics. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:us-west-2:208217671510:sea-ad-spatial-transcriptomics-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: Seattle Alzheimer’s Disease Brain Cell Atlas

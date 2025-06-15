@@ -1,0 +1,61 @@
+Name: Met Office NWS Wave model on a 2-year rolling archive
+Description: |
+ Northwest European continental shelf regional wave model predicting sea-state and various sea and swell wave characteristics for waters surrounding the UK.
+ 
+ The Met Office runs global and regional wave forecast models to support marine safety and operational decision making.
+ Met Office configurations are developed to be run using the community wave model WAVEWATCH IIITM.
+ The global wave configuration is designed to generate accurate forecasts for open waters of the world's oceans and larger seas,
+ whilst regional configurations are run in order to improve accuracy closer to the coast.
+ The Met Office wave models are forced using wind data from the Met Office Global Atmospheric Hi-Res Model and, where
+ appropriate in regional configurations, currents from the Met Office shelf seas model.
+
+ Met Office NWS Wave (UK wave) Model 6 day forecast to provide an outlook for wave characteristics defining height, period and direction of waves within a given sea-state.
+ The model uses a refined grid system in order to better represent fetch in constrained sea areas and blocking effects of
+ islands and headlands. Data are released at the model's base resolution of 0.030303 degrees longitude by 0.0135135 degrees latitude
+ approximating to a 1.5km grid with a daily update cycle	at 00, 06, 12, 18z
+Documentation: https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/data/amm15-wave-data-product-sheet.pdf
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The model runs at 00:00, 06:00, 12:00, 18:00 (UTC) from T-48h to T+143h
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - forecast
+  - geoscience
+  - geospatial
+  - marine
+  - model
+  - netcdf
+  - ocean sea surface height
+  - oceans
+  - weather
+License: "British Crown copyright 2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office NWS Wave model on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-nws-wave-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-nws-wave-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new NWS wave model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-nws-wave-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Coupled forecasting development
+      URL: https://www.metoffice.gov.uk/research/weather/ocean-forecasting/coupled-development
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: Ocean models
+      URL: https://www.metoffice.gov.uk/services/government/defence-and-security/ocean-models
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
