@@ -1,0 +1,56 @@
+Name: New Zealand Coastal Elevation
+Description: |
+  The New Zealand Coastal Elevation dataset consists of New Zealand's publicly owned coastal digital elevation models, which are freely available to use under an open licence. The data consists of bare earth (DEM) data that traverses the coastal zone, including the seabed down to approximately 25m in depth. Data is provided as nationally consistent 1m resolution tiles derived from LiDAR surveys.
+
+  All of the coastal elevation files are [Cloud Optimised GeoTIFFs](https://www.cogeo.org/) using LERC compression for the main grid and LERC compression with lower max_z_error for the overviews. These elevation files are accompanied by [STAC metadata](https://stacspec.org/). The coastal elevation data is organised by region and survey.
+Documentation: https://github.com/linz/coastal
+Contact: hydrosurvey@linz.govt.nz
+ManagedBy: "[Toitū Te Whenua Land Information New Zealand](https://www.linz.govt.nz)"
+UpdateFrequency: New coastal elevation data will regularly be added, as part of being published to the LINZ Data Service and LINZ Basemaps.
+
+Tags:
+  - aws-pds
+  - coastal
+  - elevation
+  - lidar
+  - earth observation
+  - stac
+  - cog
+  - geospatial
+
+License: Toitū Te Whenua Land Information New Zealand is the copyright owner for the coastal elevation data that is available in this bucket. Licensed for re-use under "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)".
+Citation: Licensed by Toitū Te Whenua Land Information New Zealand for re-use under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Resources:
+  - Description: New Zealand Coastal Elevation with accompanying metadata
+    ARN: arn:aws:s3:::nz-coastal
+    Region: ap-southeast-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: Browsing the NZ elevation buckets
+      URL: https://github.com/linz/elevation/blob/master/docs/usage.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: Elevation survey naming and path conventions
+      URL: https://github.com/linz/elevation/blob/master/docs/naming.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+  Tools & Applications:
+    - Title: LINZ Basemaps
+      URL: https://basemaps.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Data Service
+      URL: https://data.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Topographic Workflows - Bulk elevation data processing with Kubernetes and Argo Workflows
+      URL: https://github.com/linz/topo-workflows
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
