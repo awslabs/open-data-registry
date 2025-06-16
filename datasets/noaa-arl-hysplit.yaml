@@ -1,0 +1,64 @@
+Name: NOAA HYSPLIT-compatible meteorological data archives
+Description: |
+  The HYSPLIT model is a complete system for computing simple air parcel trajectories, as well as complex transport, dispersion, chemical transformation, and deposition simulations. HYSPLIT continues to be one of the most extensively used atmospheric transport and dispersion models in the atmospheric sciences community. A common application is a back trajectory analysis to determine the origin of air masses and establish source-receptor relationships. HYSPLIT has also been used in a variety of simulations describing the atmospheric transport, dispersion, and deposition of pollutants and hazardous materials. Some examples of the applications include tracking and forecasting the release of radioactive material, wildfire smoke, windblown dust, pollutants from various stationary and mobile emission sources, allergens and volcanic ash.
+  <br/>
+  The National Weather Service's National Centers for Environmental Prediction (NCEP) runs a series of computer analyses and forecasts operationally. NOAA's Air Resources Laboratory (ARL) routinely uses NCEP model data for use in air quality transport and dispersion modeling calculations. In 1989 ARL began to archive some of these datasets for future research studies. ARL has in the past, or is presently archiving the following NCEP datasets that are compatible with HYSPLIT. A few datasets that are created outside NOAA are also included. HYSPLIT-compatible meteorological datasets are required to run HYSPLIT for trajectory or dispersion simulations. The HYSPLIT-compatible meteorological datasets can also be used with HYSPLIT utilities to display and/or extract meteorological data from the datasets.
+Documentation: |
+  For the description of each archive listed above, please refer to their respective README file at  https://www.ready.noaa.gov/archives.php. For information on HYSPLIT, please consult https://www.arl.noaa.gov/hysplit/.
+Contact: |
+  For questions regarding ARL HYSPLIT data content or quality, contact arl.webmaster@noaa.gov. For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br/> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: |
+  At present, the following five datasets are updated every day or every week:
+  <br/> 
+  **HRRR 3 km archive (Jun 2019 - present) - daily** 
+  **NAMS Hybrid sigma-pressure archive (2010 - present) - daily**
+  **NAM 12 km archive (May 2007 - present) - daily**
+  **GDAS one-degree archive (Dec 2004 - present) - weekly**
+  **GFS quarter-degree archive (Jun 2019 - present) - daily**
+  <br/>
+  The following two datasets are updated monthly:
+  <br/>
+  **NCEP/NCAR reanalysis archive (1948 - present) - monthly, typically around the 5th of the following month.**
+  **Weather research and forecasting model 27 km archive (1980 - present) - monthly, typically with a delay of two to three months.**
+  <br/>
+  The following datasets are no longer updated:
+  <br/>
+  **HRRR 3 km version 1 archive (Jun 2015 - Jul 2019) - frozen**
+  **GDAS half-degree archive (Sep 2007 - Jun 2019) - frozen**
+  **FNL archive (1997 - 2006) - frozen**
+  **NGM archive (Jan 1991 - Apr 1997) - frozen**
+  **NAM data assimilation system archive (2004 - 2018) - frozen**
+  **NAM(Eta) data assimilation system archive (1997 - 2004) - frozen**
+  **NARR archive (1979 - 2019) - frozen**
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - disaster response
+  - environmental
+  - meteorological
+  - weather
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: HYSPLIT-compatible meteorological data archives
+    ARN: arn:aws:s3:::noaa-oar-arl-hysplit-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-oar-arl-hysplit-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for ARL HYSPLIT, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewHYSPLITObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: HYSPLIT Basic Tutorial
+      URL: https://www.ready.noaa.gov/documents/Tutorial/html/index.html
+      AuthorName: NOAA ARL HYSPLIT

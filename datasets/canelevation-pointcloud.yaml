@@ -1,0 +1,60 @@
+Name: "CanElevation - LiDAR Point Clouds"
+Description: "The [LiDAR Point Clouds](https://open.canada.ca/data/en/dataset/7069387e-9986-4297-9f55-0288e9676947) is a product that is part of the CanElevation Series created to support the [National Elevation Data Strategy](https://natural-resources.canada.ca/maps-tools-publications/satellite-elevation-air-photos/national-elevation-data-strategy) implemented by NRCan.
+
+This product contains point clouds from various airborne LiDAR acquisition projects conducted in Canada. These airborne LiDAR acquisition projects may have been conducted by NRCan or by various partners. The LiDAR point cloud data is licensed under an [open government license](https://open.canada.ca/en/open-government-licence-canada) and has been incorporated into the National Elevation Data Strategy.
+
+Point cloud files are distributed by LiDAR acquisition project without integration between projects.
+
+The point cloud files are distributed using the compressed .LAZ / [Cloud Optimized Point Cloud (COPC)](https://copc.io/) format. The COPC open format is an octree reorganization of the data inside a .LAZ 1.4 file. It allows efficient use and visualization rendering via HTTP calls (e.g. via the web), while offering the capabilities specific to the compressed .LAZ format which is already well established in the industry. Point cloud files are therefore both downloadable for local use and viewable via URL links from a cloud computing environment.
+
+The reference system used for all point clouds in the product is NAD83(CSRS), epoch 2010. The projection used is the UTM projection with the corresponding zone. Elevations are orthometric and expressed in reference to the Canadian Geodetic Vertical Datum of 2013 (CGVD2013).
+
+
+
+Le produit [Nuages de points lidar](https://ouvert.canada.ca/data/fr/dataset/7069387e-9986-4297-9f55-0288e9676947) fait partie de la Série CanÉlévation créée pour appuyer la [Stratégie nationale de données d’élévation](https://ressources-naturelles.canada.ca/carte-outils-publications/imagerie-satellitaire-donnees-elevation-photos-aeriennes/strategie-nationale-donnees-elevation) mise en oeuvre par Ressources naturelles Canada (RNCan).
+
+Ce produit contient les nuages de points obtenus lors de divers projets d’acquisition par lidar aéroporté réalisés au Canada. Ces projets d’acquisition par lidar aéroporté peuvent avoir été réalisés par RNCan ou par divers partenaires. Les données de nuages de points lidar ont une licence de type [gouvernement ouvert](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada) et ont été intégrés à la Stratégie nationale de données d’élévation.
+
+Les fichiers de nuages de points sont distribués par projet d'acquisition et sans intégration entre les projets.
+
+Les fichiers de nuages de points sont distribués en format compressé .LAZ / [Cloud Optimized Point Cloud (COPC)](https://copc.io/). Le format ouvert COPC est une réorganisation en octree des données à l’intérieur même d’un fichier .LAZ 1.4. Il permet une utilisation et un rendu de visualisation efficace via des appels HTTP (ex : via le web), tout en offrant les capacités propres au format .LAZ compressé qui est déjà bien établi dans l’industrie. Les fichiers de nuages de points sont donc autant téléchargeables pour une utilisation locale que visualisables via des liens URL provenant d’un environnement infonuagique.
+
+Le système de référence utilisé pour tous les nuages de points du produit est le NAD83(SCRS), époque 2010. La projection utilisée est la projection UTM avec le fuseau correspondant. Les élévations sont orthométriques et exprimées par rapport au Système canadien de référence altimétrique de 2013 (CGVD2013)."
+Documentation: https://open.canada.ca/data/en/dataset/7069387e-9986-4297-9f55-0288e9676947
+Contact: geoinfo@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://www.nrcan.gc.ca/)"
+UpdateFrequency: "The dataset is updated as new LiDAR data becomes available.
+
+L'ensemble de données est mis à jour à mesure que de nouvelles données LiDAR deviennent disponibles."
+Tags:
+  - aws-pds
+  - lidar
+  - elevation
+  - geospatial
+  - floods
+  - land
+  - urban
+License: "The LiDAR Point Clouds dataset is available free of charge under the [Open Government License - Canada](https://open.canada.ca/en/open-government-licence-canada).
+
+Le jeu de données Nuages de points LiDAR est disponible gratuitement sous la [licence du gouvernement ouvert - Canada](https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada)."
+Resources:
+  - Description: LiDAR Point Clouds. Nuages de points lidar
+    ARN: arn:aws:s3:::canelevation-lidar-point-clouds
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[LiDAR Data on Open Canada](https://open.canada.ca/data/en/dataset/7069387e-9986-4297-9f55-0288e9676947)'
+
+DataAtWork:
+  Tutorials:
+    - Title: How to generate a digital elevation model (DEM) from a lidar point cloud in COPC LAZ format | Comment générer un modèle numérique d'élévation (MNE) à partir d'un nuage de point lidar en format COPC LAZ
+      URL: https://github.com/NRCan/CanElevation/blob/main/pointclouds_nuagespoints/DEM_from_COPC_lidar_EN.ipynb
+      NotebookURL: https://github.com/NRCan/CanElevation/blob/main/pointclouds_nuagespoints/DEM_from_COPC_lidar_EN.ipynb
+      AuthorName: NRCan
+    - Title: Identify projects and lidar tiles covering a region of interest | Déterminer les projets et les tuiles lidars couvrant une région d'intérêt
+      URL: https://github.com/NRCan/CanElevation/blob/main/pointclouds_nuagespoints/Get_Projects_Tiles_by_AOI_EN.ipynb
+      NotebookURL: https://github.com/NRCan/CanElevation/blob/main/pointclouds_nuagespoints/Get_Projects_Tiles_by_AOI_EN.ipynb
+      AuthorName: NRCan
+    - Title: Using the LiDAR Point Clouds - CanElevation Series product in QGIS | Utilisation du produit Nuages de points lidar - Série CanÉlévation dans QGIS
+      URL: https://github.com/jsmoreau/CanElevation/blob/main/pointclouds_nuagespoints/QGIS_interactive_EN.md
+      AuthorName: NRCan
