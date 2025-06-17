@@ -1,0 +1,51 @@
+Name: Sanborn Maps Data Package
+Description: "The dataset contains metadata records for 50,600 maps from the [Sanborn Fire Insurance Maps collection](https://www.loc.gov/collections/sanborn-maps/) and their corresponding 440,048 JPEG images. The Sanborn collection at Library of Congress includes over fifty thousand editions of fire insurance maps comprising almost seven hundred thousand individual sheets. The Library of Congress holdings represent the largest extant collection of maps produced by the Sanborn Map Company."
+Documentation: https://data.labs.loc.gov/sanborn/
+Contact: For curatorial questions about the content of the collection and formats, contact the Library of Congress Geography and Map Division at https://ask.loc.gov/map-geography. For technical questions about access, contact LC-Labs@loc.gov
+ManagedBy: "[Library of Congress](https://www.loc.gov/)"
+UpdateFrequency: As new and significant changes to the underlying digital collection occurs
+Tags:
+  - archives
+  - cities
+  - computer vision
+  - conservation
+  - culture
+  - cultural preservation
+  - demographics
+  - digital assets
+  - geospatial
+  - history
+  - housing
+  - land use
+  - mapping
+  - urban
+License: The content of the Library of Congress online Sanborn Maps Collection is in the public domain and is free to use and reuse. For more information, see https://www.loc.gov/collections/sanborn-maps/about-this-collection/rights-and-access/.
+Resources:
+  - Description: Sanborn Maps data
+    ARN: arn:aws:s3:::loc-sanborn
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket by State](https://loc-sanborn.s3.amazonaws.com/maps-by-state/index.html)'
+    - '[README](https://loc-sanborn.s3.amazonaws.com/README.html)''
+DataAtWork:
+  Tutorials:
+    - Title: README data cover sheet
+      URL: https://loc-sanborn.s3.amazonaws.com/README.html
+      AuthorName: Library of Congress
+    - Title: Sanborn Map Data Python Tutorial (Jupyter notebook)
+      URL: https://libraryofcongress.github.io/data-exploration/Data%20Packages/sanborn.html
+      AuthorName: Library of Congress
+      AuthorURL: https://github.com/LibraryOfCongress
+    - Title: "Fire Insurance Maps at the Library of Congress: A Resource Guide"
+      URL: https://guides.loc.gov/fire-insurance-maps/introduction
+      AuthorName: Julie Stoner, Reference Librarian, Geography and Map Division, Library of Congress
+  Tools & Applications:
+    - Title: Sanborn Atlas Volume Finder
+      URL: https://loc.maps.arcgis.com/apps/instant/media/index.html?appid=0cb2c04324a0413081e1b793ea18f854
+      AuthorName: Julie Stoner and Meagan Snow, Geography and Map Division, Library of Congress
+      AuthorURL: https://github.com/aarande
+  Publications:
+    - Title: Introduction to the Collection
+      URL: https://www.loc.gov/collections/sanborn-maps/articles-and-essays/introduction-to-the-collection/
+      AuthorName: Walter W. Ristow
