@@ -1,0 +1,69 @@
+Name: Planette ERA5 Archive
+Description: |
+  The ERA5 archive provides a comprehensive record of global weather and climate from 1940 to present, 
+  with multiple temporal aggregations for flexible analysis. This dataset is derived from 
+  the ECMWF/Copernicus ERA5 reanalysis and includes daily means, rolling means (7-day, 30-day, 90-day), 
+  and monthly/seasonal aggregations at 0.25°×0.25° global resolution. The Planette ERA5 archive stores 
+  this data in cloud-native format (Zarr with icechunk) for efficient access and analysis.
+
+  The dataset includes essential atmospheric variables at both surface and pressure levels, enabling a 
+  wide range of climate analyses, from daily weather patterns to long-term climate trends. Daily means 
+  are computed by averaging hourly ERA5 data, while longer temporal aggregations are derived from these 
+  daily means.
+Documentation: https://github.com/PlanetteAI/planette_era5_archive/blob/main/README.md
+Contact: aodhan.sweeney@planette.ai
+ManagedBy: Planette.ai
+UpdateFrequency: Weekly
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+      - weather
+      - forecast
+Tags:
+  - aws-pds
+  - climate
+  - weather
+  - earth observation
+License: |
+  Copernicus Licence (similar to CC-BY-4.0): You are free to share and adapt the material 
+  for any purpose, even commercially, provided that you give appropriate credit.
+  https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf
+Citation: |
+  Hersbach, H., Bell, B., Berrisford, P., et al. (2020): The ERA5 global reanalysis. 
+  Quarterly Journal of the Royal Meteorological Society, 146(730), 1999-2049. 
+  https://doi.org/10.1002/qj.3803
+
+Resources:
+  - Description: ERA5 Reanalysis Data with Multiple Temporal Aggregations (Zarr format)
+    ARN: arn:aws:s3:::planettebaikal/reanalysis/era5/
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://planettebaikal.s3.amazonaws.com/index.html#reanalysis/era5/)'
+DataAtWork:
+  Tutorials:
+    - Title: Accessing ERA5 Data with Python
+      URL: https://github.com/PlanetteAI/planette_era5_archive/blob/main/era5_archive_tutorial.ipynb
+      AuthorName: "Aodhan Sweeney-Jaramillo"
+      AuthorURL: https://github.com/AodhanSweeney
+  Tools & Applications:
+    - Title: xarray
+      URL: https://docs.xarray.dev/
+      AuthorName: xarray Developers
+    - Title: zarr-python
+      URL: https://zarr.dev/
+      AuthorName: zarr Developers
+    - Title: icechunk
+      URL: https://github.com/earth-mover/icechunk
+      AuthorName: earth-mover
+  Publications:
+    - Title: "The ERA5 global reanalysis"
+      URL: https://doi.org/10.1002/qj.3803
+      AuthorName: Hersbach, H., et al.
+    - Title: "ERA5 Documentation"
+      URL: https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation
+      AuthorName: ECMWF
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data 
