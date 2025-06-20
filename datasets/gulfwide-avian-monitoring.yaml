@@ -1,0 +1,43 @@
+---
+Name: Gulfwide Avian Colony Monitoring Survey Photos
+Description: >
+  For this project, The Water Institute (the Institute) and
+  subcontractor Colibri Ecological Consulting, LLC (Colibri) utilized
+  established methods and protocols capable of assessing changes of colonial
+  waterbird populations and their important habitats within individual states
+  and the broader northern Gulf of Mexico region. 
+  Data collection activities included:
+      Aerial Photographic Nest Surveys: Implementation of fixed-wing aircraft surveys intended to assess waterbird colonies and document associated nesting within select portions of the northern Gulf of Mexico. Additional detail is provided on the Survey Protocols page of this portal. 
+      Nest Dotting Analyses: Review and analysis of aerial photographic nest surveys (2010-2013, 2015, 2018, and 2021) with the intention of documenting the breeding population size and associated nesting for each species at each colony. Additional detail is provided on the Dotting Protocols page of this portal. 
+Documentation: https://experience.arcgis.com/experience/010503b4c64b4ff6a7f3570220a53647
+Contact: avaiandataaws@thewaterinstitute.org
+ManagedBy: "[CPRA](https://coastal.la.gov/) and [The Water
+  Institute](https://thewaterinstitute.org/)"
+UpdateFrequency: ~2 years
+Tags:
+  - biology
+  - conservation
+  - ecosystems
+  - object detection
+  - labeled
+  - environmental
+  - aws-pds
+License: Creative Commons BY-SA
+Resources:
+  - Description: >
+      High resolution(5184 x 3456) images are provided in jpg format
+      (compression quality level 98%).
+
+      The avian-monitoring folder includes the high resolution photos, the dotting process screenshots, the dotting information (birds and nest counts by species), and thumbnails of the subset of the images referenced on those dataset. Files in this subfolder have been renamed and organized to have a common naming convension across the years. 
+
+      The top level `High Resolution Images` includes all the high resolution images (even the ones not referenced in the dotting process) with their original filenames. 
+    ARN: arn:aws:s3:::twi-aviandata
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+      - "[Explore
+        dataset](https://experience.arcgis.com/experience/010503b4c64b4ff6a7f35\
+        70220a53647/page/Data-Explorer/)"
+      - "[README](https://experience.arcgis.com/experience/010503b4c64b4ff6a7f3\
+        570220a53647/page/Project-Information/)"
+      - "[Data processing notebook](https://github.com/waterinstitute/avian_data_ingestor/blob/master/doc/Metadata%20for%20DottedImages.ipynb)"

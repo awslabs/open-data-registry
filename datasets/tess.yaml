@@ -1,14 +1,15 @@
 Name: Transiting Exoplanet Survey Satellite (TESS)
 Description: |
-  The Transiting Exoplanet Survey Satellite (TESS) is a multi-year survey that will discover exoplanets in orbit around bright stars across the entire sky using high-precision photometry.  The survey will also enable a wide variety of stellar astrophysics, solar system science, and extragalactic variability studies. More information about TESS is available at [MAST](https://archive.stsci.edu/tess/) and the [TESS Science Support Center](https://heasarc.gsfc.nasa.gov/docs/tess/).
-Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
+  The Transiting Exoplanet Survey Satellite (TESS) is a multi-year survey that has discovered exoplanets in orbit around bright stars across the entire sky using high-precision photometry. The survey also enables a wide variety of stellar astrophysics, solar system science, and extragalactic variability studies. More information about TESS is available at [MAST](https://archive.stsci.edu/missions-and-data/tess) and the [TESS Science Support Center](https://heasarc.gsfc.nasa.gov/docs/tess/).
+Documentation: https://archive.stsci.edu/missions-and-data/tess
 Contact: archive@stsci.edu
 ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please see the [TESS acknowledgement page](https://archive.stsci.edu/publishing/mission-acknowledgements#section-fc68bc22-9270-4dda-bc47-07ec6ffd2d27) for full citation instructions.
 UpdateFrequency: Monthly
 Tags:
   - astronomy
   - aws-pds
-License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the TESS mission.
+License: Public domain. Attribution required for refereed scientific papers.
 Resources:
   - Description: TESS Mission data files
     ARN: arn:aws:s3:::stpubdata/tess
@@ -16,14 +17,17 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
   - Description: Notifications for new data
-    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/tess
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:
+    - Title: TIKE - a free, Jupyter-based cloud platform to access and analyze MAST's AWS TESS data
+      URL: https://timeseries.science.stsci.edu
+      AuthorName: MAST Staff 
   Publications:
-    - Title: TESS data available on AWS
-      URL: https://mast-labs.stsci.io/2018/12/tess-data-available-on-aws
-      AuthorName: Arfon Smith
-      AuthorURL: https://twitter.com/arfon
+    - Title: TESS Archive Manual
+      URL: https://outerspace.stsci.edu/display/TESS
+      AuthorName: MAST Staff
+

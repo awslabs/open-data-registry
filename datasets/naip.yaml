@@ -1,9 +1,9 @@
 Name: NAIP on AWS
-Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 60 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeoTiff format. NAIP data is delivered at the state level; every year, a number of states receive updates, with an overall update cycle of two or three years. More details on [NAIP](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/)
+Description: The National Agriculture Imagery Program (NAIP) acquires aerial imagery during the agricultural growing seasons in the continental U.S. This "leaf-on" imagery andtypically ranges from 30 centimeters to 100 centimeters in resolution and is available from the naip-analytic Amazon S3 bucket as 4-band (RGB + NIR) imagery in MRF format, on naip-source Amazon S3 bucket as 4-band (RGB + NIR) in uncompressed Raw GeoTiff format and naip-visualization as 3-band (RGB) Cloud Optimized GeoTiff format. More details on [NAIP](https://naip-usdaonline.hub.arcgis.com/)
 Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/naip
 Contact: imagerycontent@esri.com
 ManagedBy: "[Esri](https://www.esri.com/en-us/home)"
-UpdateFrequency: NAIP data is delivered at the state level and every year number of states receive updates with an overall update cycle of three years. NAIP 2019 data is available.
+UpdateFrequency: NAIP data is provided state by state at varying time intervals. Each year, a variable number of states are updated with an overall update cycle of every two to three years for each state. This catalog currently includes NAIP imagery from 2010 through 2023 for most products.
 Collabs:
   ASDI:
     Tags:
@@ -16,7 +16,6 @@ Tags:
   - geospatial
   - natural resource
   - regulatory
-  - sustainability
   - cog
 License: |
   Public Domain with Attribution
@@ -38,6 +37,9 @@ Resources:
     RequesterPays: True
 DataAtWork:
   Tutorials:
+    - Title: Urban Tree Detection
+      URL: https://github.com/jonathanventura/urban-tree-detection
+      AuthorName: Jonathan Ventura
   Tools & Applications:
     - Title: VoyagerSearch showing off Batch + NAIP
       URL: https://www.voyagersearch.com/using-aws-batch-to-generate-image-thumbnails-for-voyager
@@ -48,3 +50,7 @@ DataAtWork:
       AuthorName: Earth Observing System
       AuthorURL: https://eos.com/
   Publications:
+    - Title: Individual Tree Detection in Large-Scale Urban Environments using High-Resolution Multispectral Imagery
+      URL: https://doi.org/10.48550/arXiv.2208.10607
+      AuthorName: Jonathan Ventura, Milo Honsberger, Cameron Gonsalves, Julian Rice, Camille Pawlak, Natalie L.R. Love, Skyler Han, Viet Nguyen, Keilana Sugano, Jacqueline Doremus, G. Andrew Fricker, Jenn Yost, Matt Ritter
+      

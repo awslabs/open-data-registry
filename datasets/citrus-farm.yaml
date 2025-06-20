@@ -1,0 +1,38 @@
+Name: CitrusFarm Dataset
+Description: |
+  CitrusFarm is a multimodal agricultural robotics dataset that provides both multispectral images and navigational sensor data for localization, mapping and crop monitoring tasks. 
+  1) It was collected by a wheeled mobile robot in the Agricultural Experimental Station at the University of California Riverside in the summer of 2023. 
+  2) It offers a total of nine sensing modalities, including stereo RGB, depth, monochrome, near-infrared and thermal images, as well as wheel odometry, LiDAR, IMU and GPS-RTK data. 
+  3) It comprises seven sequences collected from three citrus tree fields, featuring various tree species at different growth stages, distinctive planting patterns, as well as varying daylight conditions. 
+  4) It spans a total operation time of 1.7 hours, covers a total distance of 7.5 km, and constitutes 1.3 TB of data.
+Documentation: https://ucr-robotics.github.io/Citrus-Farm-Dataset/
+Contact: Hanzhe Teng (hteng007@ucr.edu), Konstantinos Karydis (kkarydis@ece.ucr.edu)
+ManagedBy: "[Autonomous Robots and Control Systems Lab](https://sites.google.com/view/arcs-lab)"
+UpdateFrequency: NA
+Tags:
+  - aws-pds
+  - robotics
+  - computer vision
+  - agriculture
+  - localization
+  - mapping
+  - lidar
+  - IMU
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Resources:
+  - Description: CitrusFarm Dataset sequences
+    ARN: arn:aws:s3:::ucr-robotics/citrus-farm-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Python script to download this dataset
+      URL: https://ucr-robotics.github.io/Citrus-Farm-Dataset/download.html
+      AuthorName: Hanzhe Teng et al.
+    - Title: Python scripts used in the data collection and post-processing
+      URL: https://ucr-robotics.github.io/Citrus-Farm-Dataset/tools.html
+      AuthorName: Hanzhe Teng et al.
+  Publications:
+    - Title: Multimodal Dataset for Localization, Mapping and Crop Monitoring in Citrus Tree Farms
+      URL: https://link.springer.com/chapter/10.1007/978-3-031-47969-4_44
+      AuthorName: Hanzhe Teng, Yipeng Wang, Xiaoao Song and Konstantinos Karydis

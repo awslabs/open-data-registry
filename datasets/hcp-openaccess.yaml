@@ -1,7 +1,8 @@
 Name: "The Human Connectome Project"
-Description: The Human Connectome Project aims to provide an unparalleled compilation of neural data, an interface to graphically navigate this data and the opportunity to achieve never before realized conclusions about the living human brain.
-Documentation: http://www.humanconnectomeproject.org
+Description: The Human Connectome Project (HCP Young Adult, HCP-YA) is mapping the healthy human connectome by collecting and freely distributing neuroimaging and behavioral data on 1,200 normal young adults, aged 22-35. 
+Documentation: http://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release
 Contact: hcp-users@humanconnectome.org
+ManagedBy: '[Connectome Coordination Facility](https://www.humanconnectome.org/ccf-staff)'
 UpdateFrequency: Uncertain
 Tags:
   - aws-pds
@@ -11,17 +12,29 @@ Tags:
   - neuroimaging
   - neuroscience
   - life sciences
-License: "[HCP Data Use Agreement](http://www.humanconnectomeproject.org/wp-content/uploads/2010/01/HCP_Data_Agreement.pdf)"
+License: "[HCP Data Use Agreement](https://www.humanconnectome.org/storage/app/media/data_use_terms/DataUseTerms-HCP-Open-Access-26Apr2013.pdf)"
 Resources:
-  - Description: https://wiki.humanconnectome.org/display/PublicData/HCP+Data+Release+Updates%3A+Known+Issues+and+Planned+fixes
+  - Description: https://www.humanconnectome.org/study/hcp-young-adult/overview
     ARN: arn:aws:s3:::hcp-openaccess
     Region: us-east-1
     Type: S3 Bucket
-    ControlledAccess: https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS
+    ControlledAccess: https://wiki.humanconnectome.org/docs/How%20To%20Connect%20to%20Connectome%20Data%20via%20AWS.html
 DataAtWork:
   Tutorials:
+     - Title: "Exploring the Human Connectom"
+       URL: https://store.humanconnectome.org/courses/2019/exploring-the-human-connectome.php
+       AuthorName: The Human Connectome Project
   Tools & Applications:
+     - Title: "The Human Connectome Workbench"
+       URL: https://www.humanconnectome.org/software/connectome-workbench
+       AuthorName: The Human Connectome Project
   Publications:
      - Title: "The Human Connectome Project: A retrospective"
        URL: https://www.sciencedirect.com/science/article/pii/S1053811921008168
        AuthorName: Elam JS, Glasser MF, Harms MP, Sotiropoulos SN, Andersson JL, Burgess GC, Curtiss SW, et al.
+     - Title: "The WU-Minn Human Connectome Project: an overview."
+       URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3724347/
+       AuthorName: Van Essen DC, Smith SM, Barch DM, Behrens TEJ, Yacoub E, Ugurbil, K, and the WU-Minn HCP Consortium.
+     - Title: "The minimal preprocessing pipelines for the Human Connectome Project"
+       URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3720813/
+       AuthorName: Glasser MF, Sotiropoulos SN, Wilson JA, Coalson TS, Fischl B, Andersson JL, Xu J, Jbabdi S, et al.

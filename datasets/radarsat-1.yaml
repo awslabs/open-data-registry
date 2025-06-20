@@ -1,23 +1,31 @@
 Name: RADARSAT-1
-Description: Developed and operated by the Canadian Space Agency, it is Canada's first commercial Earth observation satellite.
+Description: "Developed and operated by the Canadian Space Agency, it is Canada's first commercial Earth observation satellite 
+
+Développé et exploité par l'Agence spatiale canadienne, il s'agit du premier satellite commercial d'observation de la Terre au Canada."
 Documentation: https://www.asc-csa.gc.ca/eng/satellites/radarsat1/what-is-radarsat1.asp
 Contact: https://www.eodms-sgdot.nrcan-rncan.gc.ca
 ManagedBy: "[Natural Resources Canada](https://nrcan.gc.ca/)"
-UpdateFrequency: The initial product release includes the 36000 products originally ordered by the Government of Canada. Products are added on an adhoc basis driven by prioritized foreign repatriation efforts and new processing orders from the raw archive.
+UpdateFrequency: "Products are added on an adhoc basis driven by prioritized foreign repatriation efforts and new processing orders from the raw archive.
+
+Les produits sont ajoutés de manière ponctuelle en fonction des efforts prioritaires de rapatriement à l'étranger et des nouvelles commandes de traitement à partir des archives brutes."
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - earth observation
   - global
   - aws-pds
   - ice
   - agriculture
-  - sustainability
   - disaster response
   - satellite imagery
   - geospatial
   - cog
+  - synthetic aperture radar
 License: "[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)"
 Resources:
-  - Description: Cloud Optimized GeoTIFF scenes and metadata in an S3 bucket
+  - Description: Cloud Optimized GeoTIFF (COG) images
     ARN: arn:aws:s3:::radarsat-r1-l1-cog
     Region: ca-central-1
     Type: S3 Bucket
@@ -65,4 +73,12 @@ DataAtWork:
       URL: https://www.harrisgeospatial.com/Software-Technology/ENVI-SARscape
       AuthorName: L3Harris Geospatial
       AuthorURL: https://www.l3harrisgeospatial.com
+    - Title: ASF Data Recipes (Tutorials)
+      URL: https://asf.alaska.edu/how-to/data-basics/data-recipe-tutorials-2
+      AuthorName: Alaska Satellite Facility - Distributed Active Archive Center
+      AuthorURL: https://asf.alaska.edu/
+    - Title: RADARSAT-1 Scripts | Scripts RADARSAT-1
+      URL: https://github.com/asc-csa/radarsat1-scripts
+      AuthorName: Canadian Space Agency - Agence spatiale canadienne
+      AuthorURL: https://github.com/asc-csa/radarsat1-scripts
   Publications:

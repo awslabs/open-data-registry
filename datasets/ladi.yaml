@@ -1,8 +1,8 @@
 Name: Low Altitude Disaster Imagery (LADI) Dataset
-Description: The Low Altitude Disaster Imagery (LADI) Dataset consists of human and machine annotated airborne images collected by the Civil Air Patrol in support of various disaster responses from 2015-2019. The initial release of LADI focuses on the Atlantic hurricane seasons and coastal states along the Atlantic Ocean and Gulf of Mexico. Annotations are included for major hurricanes of Harvey, Maria, and Florence. Two key distinctions are the low altitude, oblique perspective of the imagery and disaster-related features, which are rarely featured in computer vision benchmarks and datasets.
+Description: The Low Altitude Disaster Imagery (LADI) Dataset consists of human and machine annotated airborne images collected by the Civil Air Patrol in support of various disaster responses from 2015-2023. Two key distinctions are the low altitude, oblique perspective of the imagery and disaster-related features, which are rarely featured in computer vision benchmarks and datasets.
 Documentation: https://github.com/LADI-Dataset/ladi-overview
 Contact:  ladi-dataset-admin@mit.edu
-ManagedBy: "[MIT Beaver Works](https://beaverworks.ll.mit.edu/)"
+ManagedBy: "[MIT Lincoln Laboratory Humanitarian Assistance and Disaster Relief group](https://www.ll.mit.edu/r-d/biotechnology-and-human-systems/humanitarian-assistance-and-disaster-relief-systems)"
 UpdateFrequency: Periodically
 License: Creative Commons Attribution 4.0 International (CC BY 4.0) 
 Tags:
@@ -30,16 +30,18 @@ Resources:
     ARN: arn:aws:s3:::ladi
     Region: us-west-2
     Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://ladi.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-  - Title: LADI Tutorials
+  - Title: LADI v2 Overview
+    URL: https://github.com/LADI-Dataset/ladi-overview
+    AuthorName: Jeffrey Liu, Sam Scheele, Katherine Picchione
+    AuthorURL: https://github.com/LADI-Dataset
+  - Title: LADI v1 Tutorials
     URL: https://github.com/LADI-Dataset/ladi-tutorial
     AuthorName: Andrew Weinert, Jianyu Mao, Kiana Harris, Nae-Rong Chang, Caleb Pennell, Yiming Ren, Ryan Earley, Nadia Dimitrova
     AuthorURL: https://github.com/LADI-Dataset
   Tools & Applications:
-  - Title: NIST TRECVID 2020 - Disaster Scene Description and Indexing (DSDI)
+  - Title: "NIST TRECVID 2020 - Disaster Scene Description and Indexing (DSDI)"
     URL: https://www-nlpir.nist.gov/projects/tv2020/dsdi.html
     AuthorName: TREC Video Retrieval Evaluation (TRECVID)
   - Title: Remote Sensing for Disaster Response Course
@@ -47,6 +49,18 @@ DataAtWork:
     AuthorName: Beaver Works Summer Institute
     AuthorURL: https://beaverworks.ll.mit.edu/CMS/bw/bwsi
   Publications:
+  - Title: An overview on the evaluated video retrieval tasks at TRECVID 2022
+    URL: https://arxiv.org/abs/2306.13118
+    AuthorName: George Awad, Keith Curtis, Asad Butt, Jonathan Fiscus, Afzal Godil, Yooyoung Lee, Andrew Delgado, Eliot Godard, Lukas Diduch, Jeffrey Liu, Yvette Graham, Georges Quenot
+  - Title: Evaluating Multiple Video Understanding and Retrieval Tasks at TRECVID 2021
+    URL: https://www.nist.gov/publications/evaluating-multiple-video-understanding-and-retrieval-tasks-trecvid-2021
+    AuthorName: George Awad, Asad Butt, Keith Curtis, Jonathan G. Fiscus, Afzal A. Godil, Yooyoung Lee, Andrew Delgado, Eliot Godard, Baptiste Chocot, Lukas Diduch, Jeffrey Liu, Yvette Graham, Gareth Jones, Georges Quenot
+  - Title: "TRECVID 2020: A comprehensive campaign for evaluating video retrieval tasks across multiple application domains"
+    URL: https://arxiv.org/abs/2104.13473
+    AuthorName: George Awad, Asad A. Butt, Keith Curtis, Jonathan Fiscus, Afzal Godil, Yooyoung Lee, Andrew Delgado, Jesse Zhang, Eliot Godard, Baptiste Chocot, Lukas Diduch, Jeffrey Liu, Alan F. Smeaton, Yvette Graham, Gareth J. F. Jones, Wessel Kraaij, Georges Quenot
+  - Title: Accelerate disaster response with computer vision for satellite imagery using Amazon SageMaker and Amazon Augmented AI
+    URL: https://aws.amazon.com/blogs/machine-learning/accelerate-disaster-response-with-computer-vision-for-satellite-imagery-using-amazon-sagemaker-and-amazon-augmented-ai/
+    AuthorName: Vamshi Krishna Enabothala, Morgan Dutton, and Sandeep Verma 
   - Title: Large Scale Organization and Inference of an Imagery Dataset for Public Safety
     URL: https://doi.org/10.1109/HPEC.2019.8916437
     AuthorName: Jeffrey Liu, David Strohschein, Siddharth Samsi, Andrew Weinert

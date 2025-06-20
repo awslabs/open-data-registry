@@ -8,6 +8,10 @@ Documentation: https://github.com/openEDI/documentation/blob/master/US_Wave.md
 Contact: Levi.Kilcher@nrel.gov
 ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
 UpdateFrequency: As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
 Tags:
   - aws-pds
   - earth observation
@@ -15,7 +19,6 @@ Tags:
   - geospatial
   - meteorological
   - water
-  - sustainability
 License: https://github.com/openEDI/documentation/blob/master/US_Wave.md
 Resources:
   - Description: DOE's Water Power Technology Office's Wave Hindcast datasets
@@ -42,13 +45,13 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.0%2FAtlantic%2F)'
-  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the West Coast of the United States with 1-hour temporal resolution and direction wave specturm data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the West Coast of the United States with 1-hour temporal resolution and direction wave spectrum data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
     ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/virtual_buoy/West_Coast/
     Region: us-west-2
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.0%2Fvirtual_buoy%2FWest_Coast%2F)'
-  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the Atlantic Coast of the United States with 1-hour temporal resolution and direction wave specturm data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+  - Description: 32 Year Wave Hindcast (1979-2010) from select virtual buoys along the Atlantic Coast of the United States with 1-hour temporal resolution and direction wave spectrum data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
     ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/virtual_buoy/Atlantic/
     Region: us-west-2
     Type: S3 Bucket
@@ -66,6 +69,18 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2FUS_wave%2Fvirtual_buoy%2F)'
+  - Description: Updated version of 32 Year Wave Hindcast (1979-2010) for the Atlantic Coast of the United States at 3-hour temporal resolution and down to 200m spatial resolution in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format. Updates resolve issues with NaNs.
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.1/Atlantic/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.1%2FAtlantic%2F)'
+  - Description: 42 Year Wave Hindcast (1979-2020) from select virtual buoys along the Gulf of Mexico and Puerto Rico, with 1-hour temporal resolution and direction wave spectrum data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/Gulf_of_Mexico_and_Puerto_Rico/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.0%2FGulf_of_Mexico_and_Puerto_Rico%2F)'
 DataAtWork:
   Tutorials:
   Tools & Applications:

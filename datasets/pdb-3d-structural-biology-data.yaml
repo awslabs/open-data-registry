@@ -1,0 +1,63 @@
+Name: Protein Data Bank 3D Structural Biology Data
+Description: >
+  The "Protein Data Bank (PDB) archive" was established in 1971 as the first open-access digital data archive in biology. It is a collection of three-dimensional (3D) atomic-level structures of biological macromolecules (i.e., proteins, DNA, and RNA) and their complexes with one another and various small-molecule ligands (e.g., US FDA approved drugs, enzyme co-factors). For each PDB entry (unique identifier: 1abc or PDB_0000001abc) multiple data files contain information about the 3D atomic coordinates, sequences of biological macromolecules, information about any small molecules/ligands present in the entry, details about the structure-determination experiment, authors and publication information, experimental data, and the wwPDB validation report. Additional content stored in the archive includes documentation, summary reports, and software (among others).
+
+  The PDB is a jointly-managed core archive of the Worldwide Protein Data Bank partnership [RCSB Protein Data Bank (RCSB PDB, rcsb.org); Protein Data Bank in Europe (PDBe, pdbe.org); Protein Data Bank Japan (PDBj, pdbj.org); Electron Microscopy Data Bank (EMDB, emdb-empiar.org); and Biological Magnetic Resonance Bank (BMRB, bmrb.io)].
+
+  RCSB PDB serves as the wwPDB-designated Archive Keeper for the Protein Data Bank.
+  
+  Additional wwPDB Core Archives are as follows:
+
+  Electron Microscopy Data Bank (wwPDB-designated Archive Keeper: EMDB)
+
+  Biological Magnetic Resonance Bank (wwPDB-designated Archive Keeper: BMRB)
+Documentation: https://www.wwpdb.org/documentation/file-format
+Contact: https://www.wwpdb.org/about/contact
+ManagedBy: "[Worldwide Protein Data Bank Partnership](wwpdb.org)"
+UpdateFrequency: |
+  New and updated data files are published weekly and released on Wednesdays 0:00 UTC.
+Tags:
+  - aws-pds
+  - amino acid
+  - archives
+  - bioinformatics
+  - biomolecular modeling
+  - cell biology
+  - chemical biology
+  - COVID-19
+  - electron microscopy
+  - electron tomography
+  - enzyme
+  - life sciences
+  - molecule
+  - nuclear magnetic resonance
+  - pharmaceutical
+  - protein
+  - protein template
+  - SARS-CoV-2
+  - structural biology
+  - x-ray crystallography
+License: https://creativecommons.org/publicdomain/zero/1.0/
+Citation: For instructions on citing specific PDB entry by their Digital Object Identifier (DOI), please see https://www.wwpdb.org/about/cite-us.
+Resources:
+  - Description: |
+      Globally cached distribution of the dataset. Web frontend also available to browse the dataset and file directory.
+    Region: us-west-2
+    Type: CloudFront Distribution
+    Explore:
+      - '[Browse Dataset](https://s3.rcsb.org)'
+  - Description: |
+      Historical snapshots of archival datasets from 2005 onwards. Snapshots are generated annually and at major milestone.
+    ARN: arn:aws:s3:::pdbsnapshots
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://pdbsnapshots.s3.us-west-2.amazonaws.com/index.html)'
+DataAtWork:
+  Publications:
+    - Title: "Announcing the worldwide Protein Data Bank"
+      URL: https://doi.org/10.1038/nsb1203-980
+      AuthorName: Berman, H., Henrick, K. & Nakamura, H.
+    - Title: "Protein Data Bank: the single global archive for 3D macromolecular structure data"
+      URL: https://doi.org/10.1093/nar/gky949
+      AuthorName: wwPDB consortium

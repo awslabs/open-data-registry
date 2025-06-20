@@ -1,10 +1,10 @@
 Deprecated: True
+DeprecatedNotice: This dataset listing is deprecated in favor of [USGS-Landsat](https://registry.opendata.aws/usgs-landsat/). Please refer to [USGS cloud access mechanism](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access) for more details.
 Name: Landsat 8
 Description: |
   An ongoing collection of satellite imagery of all land on Earth produced by
   the Landsat 8 satellite.
 
-  **Note this dataset is deprecated in favor of the [USGS cloud access mechanism](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-commercial-cloud-data-access). This bucket will be deleted on July 1, 2021.**
 Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/landsat-pds
 Contact: https://lists.osgeo.org/mailman/listinfo/landsat-pds
 ManagedBy: "[Planet](https://www.planet.com/)"
@@ -20,7 +20,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
 License: |
   There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. More information on licensing and Landsat data citation is available from USGS.
@@ -31,15 +30,11 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://landsat-pds.s3.amazonaws.com/index.html)'
-    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v0/collections/landsat-8-l1-c1)'
+    - '[Earth Search STAC Catalog](https://earth-search.aws.element84.com/v1/collections/landsat-c2-l2)'
   - Description: New scene notifications
     ARN: arn:aws:sns:us-west-2:274514004127:NewSceneHTML
     Region: us-west-2
     Type: SNS Topic
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) (ORC)"
-    ARN: arn:aws:s3:::landsat-pds-inventory
-    Region: us-west-2
-    Type: S3 Bucket
 DataAtWork:
   Tutorials:
     - Title: "A Gentle Introduction to GDAL Part 4: Working with Satellite Data"

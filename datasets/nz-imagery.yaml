@@ -1,0 +1,76 @@
+Name: New Zealand Imagery
+Description: |
+  The New Zealand Imagery dataset consists of New Zealand's publicly owned aerial and satellite imagery, which is freely available to use under an open licence. The dataset ranges from the latest high-resolution aerial imagery down to 5cm in some urban areas to lower resolution satellite imagery that provides full coverage of mainland New Zealand, Chathams and other offshore islands. It also includes historical imagery that has been scanned from film, orthorectified (removing distortions) and georeferenced (correctly positioned) to create a unique and crucial record of changes to the New Zealand landscape. <br/>
+  All of the imagery files are [Cloud Optimised GeoTIFFs](https://www.cogeo.org/) using lossless WEBP compression for the main image and lossy WEBP compression for the overviews. These image files are accompanied by [STAC metadata](https://stacspec.org/). The imagery is organised by region and survey.
+Documentation: https://github.com/linz/imagery
+Contact: imagery@linz.govt.nz
+ManagedBy: "[Toitū Te Whenua Land Information New Zealand](https://www.linz.govt.nz)"
+UpdateFrequency: New imagery will regularly be added, as part of being published to the LINZ Data Service and LINZ Basemaps.
+
+Tags:
+  - aws-pds
+  - aerial imagery
+  - satellite imagery
+  - earth observation
+  - stac
+  - cog
+  - geospatial
+
+License: Toitū Te Whenua Land Information New Zealand does not own the copyright for all of the imagery that is available in this bucket. Licensors are contained in the STAC Collection file accompanying each imagery survey. Licensed for re-use under "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)".
+Citation: Licensed by (insert the licensor) for re-use under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Resources:
+  - Description: New Zealand Imagery with accompanying metadata
+    ARN: arn:aws:s3:::nz-imagery
+    Region: ap-southeast-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: Browsing the s3://nz-imagery bucket
+      URL: https://github.com/linz/imagery/blob/master/docs/usage.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: Imagery survey naming and path conventions
+      URL: https://github.com/linz/imagery/blob/master/docs/naming.md
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: "ArcGIS Workflows: NZ Imagery from a public AWS S3 bucket"
+      URL: https://storymaps.arcgis.com/collections/e6d212054d9744f399fcbed00a75ee43
+      AuthorName: Eagle Technology
+      AuthorURL: https://www.eagle.co.nz/
+
+  Tools & Applications:
+    - Title: LINZ Basemaps
+      URL: https://basemaps.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Data Service
+      URL: https://data.linz.govt.nz
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+    - Title: LINZ Topographic Workflows - Bulk imagery processing with Kubernetes and Argo Workflows
+      URL: https://github.com/linz/topo-workflows
+      AuthorName: Toitū Te Whenua Land Information New Zealand
+      AuthorURL: https://www.linz.govt.nz
+
+  Publications:
+    - Title: A Boundary Regulated Network for Accurate Roof Segmentation and Outline Extraction
+      URL: https://doi.org/10.3390/rs10081195
+      AuthorName: Guangming Wu, Zhiling Guo, Xiaodan Shi, Qi Chen, Yongwei Xu, Ryosuke Shibasaki and Xiaowei Shao
+
+    - Title: Semantic Segmentation of Urban Buildings from VHR Remote Sensing Imagery Using a Deep Convolutional Neural Network
+      URL: https://doi.org/10.3390/rs11151774
+      AuthorName: Yaning Yi, Zhijie Zhang, Wanchang Zhang, Chuanrong Zhang, Weidong Li and Tian Zhao
+
+    - Title: Deep Learning and Phenology Enhance Large-Scale Tree Species Classification in Aerial Imagery during a Biosecurity Response
+      URL: https://doi.org/10.3390/rs13091789
+      AuthorName: Grant D. Pearse, Michael S. Watt, Julia Soewarto and Alan Y. S. Tan
+
+    - Title: A Large Contextual Dataset for Classification, Detection and Counting of Cars with Deep Learning
+      URL: https://doi.org/10.1007/978-3-319-46487-9_48
+      AuthorName: T. Nathan Mundhenk, Goran Konjevod, Wesam A. Sakla & Kofi Boakye

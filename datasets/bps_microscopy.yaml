@@ -1,0 +1,30 @@
+Name: Biological and Physical Sciences (BPS) Microscopy Benchmark Training Dataset 
+Description: Fluorescence microscopy images of individual nuclei from mouse fibroblast cells, irradiated with Fe particles or X-rays with fluorescent foci indicating 53BP1 positivity, a marker of DNA damage. These are maximum intensity projections of 9-layer microscopy Z-stacks.  
+Documentation: https://docs.google.com/document/d/e/2PACX-1vTIjUPenLxVX0stErsBbK884QMJW_Ur1mqHJ9K3KIZl3klT90cxHDppsEvz5Z6Skdu13X8tzghqyWcN/pub
+Contact: lauren.m.sanders@nasa.gov
+ManagedBy: "[NASA](https://osdr.nasa.gov/)"
+UpdateFrequency: New fluorescence microscopy mouse fibroblast nuclei data is added whenever it is available.
+Tags:
+  - aws-pds
+  - fluorescence imaging
+  - genetic
+  - genetic maps
+  - microscopy
+  - GeneLab
+  - NASA SMD AI
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources: 
+  - Description: NASA BPS Microscopy Benchmark Training Data
+    ARN: arn:aws:s3:::nasa-bps-training-data/Microscopy/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+DataAtWork:
+  Publications:
+  - Title: NASA SMD AI Workshop Report
+    URL: https://science.nasa.gov/files/atoms/files/NASA%20SMD%20AI%20Workshop%2021%20(spreads)%20(1).pdf
+    AuthorName: SMD Artificial Intelligence (AI) Initiative
+  - Title: Dose, LET and Strain Dependence of Radiation-Induced 53BP1 Foci in 15 Mouse Strains Ex Vivo Introducing Novel DNA Damage Metrics
+    URL: https://doi.org/10.1667/RR15338.1
+    AuthorName: Sébastien Penninckx, Egle Cekanaviciute, Charlotte Degorre, Elodie Guiet, Louise Viger, Stéphane Lucasb, Sylvain V. Costes 

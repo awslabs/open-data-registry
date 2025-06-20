@@ -15,8 +15,8 @@ Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noa
 Contact: |
   For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
   <br />
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: Daily
 Collabs:
@@ -32,8 +32,7 @@ Tags:
   - disaster response
   - agriculture
   - transportation
-  - sustainability
-License: Open Data. There are no restrictions on the use of this data
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: A rolling four week archive of NWM data.
     ARN: arn:aws:s3:::noaa-nwm-pds
@@ -45,7 +44,16 @@ Resources:
     ARN: arn:aws:sns:us-east-1:123901341784:NewNWMObject
     Region: us-east-1
     Type: SNS Topic
+  - Description: Cloud-optimized zarr reference files managed by RPS Tetra Tech
+    Type: S3 Bucket
+    Region: us-east-1
+    ARN: arn:aws:s3:::noaa-nodd-kerchunk-pds
+    Explore:
+    - '[Browse Bucket](https://noaa-nodd-kerchunk-pds.s3.amazonaws.com/index.html#nwm/)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
+    - Title: "Harmonic Oscillator Seasonal Trend (HOST) Model for Hydrological Drought Pattern Identification and Analysis"
+      URL: https://doi.org/10.1016/j.jhydrol.2023.129514
+      AuthorName: K. Raczyński, J. Dyer

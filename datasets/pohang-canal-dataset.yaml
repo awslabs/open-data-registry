@@ -1,0 +1,34 @@
+Name: "Pohang Canal Dataset: A Multimodal Maritime Dataset for Autonomous Navigation in Restricted Waters"
+Description: This dataset presents a multi-modal maritime dataset acquired in restricted waters in Pohang, South Korea. The sensor suite is composed of three LiDARs (one 64-channel LiDAR and two 32-channel LiDARs), a marine radar, two visual cameras used as a stereo camera, an infrared camera, an omnidirectional camera with 6 directions, an AHRS, and a GPS with RTK. The dataset includes the sensor calibration parameters and SLAM-based baseline trajectory. It was acquired while navigating a 7.5 km route that includes a narrow canal area, inner and outer port areas, and a near-coastal area. The aim of this dataset is to facilitate research on autonomous surface vehicles.
+Documentation: https://sites.google.com/view/pohang-canal-dataset/home
+Contact: morin-lab@kaist.ac.kr
+ManagedBy: "[MORIN](http://morin.kaist.ac.kr)"
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - marine navigation
+  - robotics
+  - computer vision
+  - lidar
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+Citation:
+Resources:
+  - Description: Pohang Canal dataset
+    ARN: arn:aws:s3:::pohang-canal-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Ros Message Player for Pohang Dataset
+      URL: https://github.com/dhchung/rosmsg_player
+      AuthorName: Dongha Chung
+    - Title: ROS package for LiDAR to image of Pohang Canal Dataset
+      URL: https://github.com/dhchung/lidar_to_image
+      AuthorName: Dongha Chung
+  Publications:
+    - Title: "Pohang Canal Dataset: A Multimodal Maritime Dataset for Autonomous Navigation in Restricted Waters"
+      URL: https://doi.org/10.1177/02783649231191145
+      AuthorName: Dongha Chung, Jonghwi Kim, Changyu Lee, Jinwhan Kim
+ADXCategories:
+  - Environmental Data

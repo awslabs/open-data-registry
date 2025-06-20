@@ -3,24 +3,19 @@
 # Make sure we exit(1) if there is an error
 set -e
 
-for f in datasets/*
-do
-  echo $f
 
-  # Check file extension, should be .yaml
-  if [ ${f: -5} != ".yaml" ]
-  then
-  	echo Error: Exiting because file extension shoud be .yaml
-  	exit 1
-  fi
+# Check file extension, should be .yaml
+echo "Validating filenames..."
+if ls datasets | grep -vE '^[a-z 0-9\_\-]+\.yaml$'
+then
+    echo "are invalid; please ensure names end in '.yaml' and contain only lowercase letters, numbers, hyphens, or underscores."
+    exit 1
+else
+    echo "all valid!"
+fi
 
-  # Check file name is all lower case
-  if [ ${f} != ${f,,} ]
-  then
-        echo Error: Exiting because file name should be all lower case
-        exit 1
-  fi
 
-  # Apply schema
-  pykwalify -d $f -s schema.yaml -q
-done
+# Validate yaml
+echo "Validating yamls against schema..."
+ls datasets |
+    xargs -P20 -I{} bash -c "pykwalify -q -d datasets/{} -s schema.yaml && exit 0 || echo {} failed validation; exit 1"

@@ -1,0 +1,32 @@
+Name: TIGER Training
+Description: |
+    "This dataset contains the training data for the [Tumor InfiltratinG lymphocytes in breast cancER or TIGER](https://tiger.grand-challenge.org) challenge. TIGER is the first challenge on fully automated assessment of tumor-infiltrating lymphocytes (TILs) in breast cancer histopathology slides. TILs are proving to be an important biomarker in cancer patients as they can play a part in killing tumor cells, particularly in some types of breast cancer. Identifying and measuring TILs can help to better target treatments, particularly immunotherapy, and may result in lower levels of other more aggressive treatments, including chemotherapy."
+Documentation: https://tiger.grand-challenge.org/Data/
+Contact: support@grand-challenge.org
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: As required
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - computational pathology
+  - grand-challenge.org
+  - histopathology
+  - deep learning
+  - computer vision
+License: CC BY-NC 4.0
+Resources:
+  - Description: Whole slide images with corresponding annotations including tumor, stroma and tumor infiltrating lymphocytes
+    ARN: arn:aws:s3:::tiger-training
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: TIGER Challenge
+      URL: https://tiger.grand-challenge.org/
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/
+    - Title: Whole slide data - python package for working with wholeslide images and annotations files
+      URL: https://github.com/DIAGNijmegen/pathology-whole-slide-data
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/

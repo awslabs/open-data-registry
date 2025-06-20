@@ -1,10 +1,11 @@
 Name: Google Brain Genomics Sequencing Dataset for Benchmarking and Development
 Description: "To facilitate benchmarking and development, the Google Brain group has sequenced 9 human samples covering the Genome in a Bottle truth sets on different sequencing instruments, sequencing modalities (Illumina short read and Pacific BioSciences long read), sample preparation protocols, and for whole genome and whole exome capture. The original source of these data are [gs://google-brain-genomics-public](https://console.cloud.google.com/storage/browser/brain-genomics-public/research/sequencing;tab=objects?prefix=&forceOnObjectsSortingFiltering=false)."
 Documentation: https://genomics-benchmark-datasets.s3.amazonaws.com/README.txt
-Contact: genomics-benchmarking-datasets@amazon.com
+Contact: genomics-benchmark-datasets@amazon.com
 ManagedBy: Amazon Web Services
 UpdateFrequency: Occasionally as new derived files (alignment files or variant call files) are generated
 Tags:
+  - amazon.science
   - bioinformatics
   - life sciences
   - genetic
@@ -17,7 +18,7 @@ Tags:
 License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
 Resources:
   - Description: "FASTQ files for nine human samples comprising three parent-child trios at 40X 30X, and 20X coverage for whole genome sequencing and 100X, 75X, and 50X coverage for whole exome sequencing. Four samples are also sequenced with PacBio HiFi as described in Baid et al 2020. Note that this S3 bucket only contains FASTQ files; BAM and VCF files are available at [gs://google-brain-genomics-public](https://console.cloud.google.com/storage/browser/brain-genomics-public/research/sequencing;tab=objects?prefix=&forceOnObjectsSortingFiltering=false)."
-    ARN: arn:aws:s3:::genomics-benchmark-datasets/google-brain-genomics
+    ARN: arn:aws:s3:::genomics-benchmark-datasets/google-brain
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:

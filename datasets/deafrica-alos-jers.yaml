@@ -1,0 +1,74 @@
+Name: Digital Earth Africa ALOS PALSAR, ALOS-2 PALSAR-2 and JERS-1
+Description: |
+  The ALOS/PALSAR annual mosaic is a global 25 m resolution dataset that combines data from many images captured by JAXA’s PALSAR and PALSAR-2 sensors on ALOS-1 and ALOS-2 satellites respectively. This product contains radar measurement in L-band and in HH and HV polarizations. It has a spatial resolution of 25 m and is available annually for 2007 to 2010 (ALOS/PALSAR) and 2015 to 2020 (ALOS-2/PALSAR-2).
+  The JERS annual mosaic is generated from images acquired by the SAR sensor on the Japanese Earth Resources Satellite-1 (JERS-1) satellite. This product contains radar measurement in L-band and HH polarization. It has a spatial resolution of 25 m and is available for 1996.
+  This mosaic data is part of a global dataset provided by the Japan Aerospace Exploration Agency (JAXA) Earth Observation Research Center.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/ALOS_PALSAR_annual_mosaic_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: As available, generally annually.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - disaster response
+  - synthetic aperture radar
+  - deafrica
+  - stac
+  - cog
+License: |
+  Data is available for free under the [terms of use](https://earth.jaxa.jp/policy/en.html).
+Resources:
+  - Description: ALOS PALSAR ALOS-2 PALSAR-2 data
+    ARN: arn:aws:s3:::deafrica-input-datasets/alos_palsar_mosaic
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/alos_palsar_mosaic)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-input-datasets-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent contain all object creation events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-input-datasets-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (ALOS PALSAR and ALOS-2 PALSAR-2)"
+      URL: https://explorer.digitalearth.africa/products/alos_palsar_mosaic
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (JERS)"
+      URL: https://explorer.digitalearth.africa/products/jers_sar_mosaic
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan 

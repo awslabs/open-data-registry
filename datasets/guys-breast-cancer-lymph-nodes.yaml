@@ -1,0 +1,20 @@
+Name: Guy's Breast Cancer Lymph Nodes (GRAPE)
+Description: This is a retrospective dataset of 1523 H&E-stained whole slide images (WSI) of lymph nodes from breast cancer patients. The cohort consisted of 177 patients (122 LN-positive - metastasis was reported in at least 1 LN - and 55 LN-negative patients) with invasive breast carcinoma treated between 1984 and 2002 at Guy’s Hospital London, UK. Slides were scanned and digitised at 40x magnification (0.23 µm/pixel), NanoZoomer H.T2.0 2.0-HT (Hamamatsu Photonics UK, Ltd, Welwyn Garden City, UK). WSIs are in .ndpi format.
+Documentation: https://github.com/cancerbioinformatics/GRAPE
+Contact: https://github.com/cancerbioinformatics/GRAPE/issues
+ManagedBy: http://www.cancerbioinformatics.co.uk
+UpdateFrequency: New data will be added as soon as it's available
+Tags:
+  - aws-pds
+  - biology
+  - cancer
+  - life sciences
+  - breast cancer
+  - computational pathology
+  - histopathology
+License: This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+Resources:
+  - Description: H&E-stained WSI lymph node .ndpi images in a public bucket
+    ARN: arn:aws:s3:::grape-lns
+    Region: eu-north-1
+    Type: S3 Bucket

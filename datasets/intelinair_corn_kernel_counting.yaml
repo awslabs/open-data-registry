@@ -5,6 +5,7 @@ Contact: support@intelinair.com
 ManagedBy: Intelinair, Inc.
 UpdateFrequency: Periodically
 Tags:
+  - aws-pds
   - agriculture
   - computer vision
   - machine learning
@@ -13,7 +14,7 @@ Resources:
   - Description: >
       Folder contains the terms of use, paper, and zip file of data in COOC format.
       Each kernel is annotated with an instance mask and appropriate class.
-      The datset is broken into three subcomponents.  The "base" (i.e. "corn") subset contains images from a wide variety of domains such as those you might find on the internet.  The "narrow" subset contains images with a single ear as would be anticipated in the application.  The "many" dataset resembles the base dataset but has a huge number of ears and kernels in each image.
+      The dataset is broken into three subcomponents.  The "base" (i.e. "corn") subset contains images from a wide variety of domains such as those you might find on the internet.  The "narrow" subset contains images with a single ear as would be anticipated in the application.  The "many" dataset resembles the base dataset but has a huge number of ears and kernels in each image.
       Images were annotated for (healthy) kernels, diseased kernels, “incomplete” (i.e. not fully matured) kernels, barren tips (i.e where the top of the ear does not produce kernels), and “kernel areas” where on-ear kernels were166present but resolution/lighting prevented annotation. 
     ARN: arn:aws:s3:::intelinair-data-releases/corn-kernel-counting
     Region: us-east-1

@@ -1,6 +1,7 @@
+Deprecated: True
 Name: Maxar Open Data Program
 Description: |
-  Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. Also incudes crowdsourced damage assessments for major, sudden onset disasters.
+  Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. Also includes crowdsourced damage assessments for major, sudden onset disasters.
 Documentation: https://www.maxar.com/open-data
 Contact: https://www.maxar.com/open-data
 UpdateFrequency: New data is released in response to activations.
@@ -13,7 +14,6 @@ Tags:
   - disaster response
   - geospatial
   - satellite imagery
-  - sustainability
   - cog
 License: Creative Commons Attribution Non Commercial 4.0
 ManagedBy: "[Maxar](https://www.maxar.com/)"
@@ -22,7 +22,4 @@ Resources:
     Host: opendata.digitalglobe.com
     Region: us-east-1
     Type: CloudFront Distribution
-DataAtWork:
-  Tutorials:
-  Tools & Applications:
-  Publications:
+DeprecatedNotice: The CloudFront distribution has been retired but the original data is still available in S3. However beginning in 2022 the Open Data imagery was moved to the Maxar ARD pipeline that provides cloud-optimized imagery and metadata. See https://registry.opendata.aws/maxar-open-data/ for more information.

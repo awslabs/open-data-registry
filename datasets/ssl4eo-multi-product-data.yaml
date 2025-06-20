@@ -1,0 +1,27 @@
+Name: SSL4EO S12 Landsat Multi Product Dataset
+Description: This dataset combines SSL4EO-S12 and SSL4EO-L to create a multi-view dataset for multi-modal fusion using self-supervised learning for earth observation.
+Documentation: https://github.com/sunny1401/ssl4eo_multi_satellite_products
+Contact: https://github.com/sunny1401/ssl4eo_multi_satellite_products
+ManagedBy: Sankranti Joshi
+UpdateFrequency: Not updated
+Tags:
+  - satellite imagery
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Resources:
+  - Description: Satellite imagery and context from Sentinel-12 and Landsat 4-5, 7, 8-9.
+    ARN: arn:aws:s3:::ssl4eo-s12-landsat-combined
+    Region: us-west-2
+    Type: S3 Bucket
+ADXCategories:
+  - Public Sector Data
+DataAtWork:
+  Tutorials:
+  Publications:
+    - Title: SSL4EO-S12 - A Large-Scale Multi-Modal, Multi-Temporal Dataset for Self-Supervised Learning in Earth Observation
+      URL: https://ieeexplore.ieee.org/abstract/document/7989594
+      AuthorName: Yi Wang, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu
+      AuthorURL: https://scholar.google.de/citations?user=rEADuMEAAAAJ&hl=en
+    - Title: SSL4EO-L - Datasets and Foundation Models for Landsat Imagery
+      URL: https://proceedings.neurips.cc/paper_files/paper/2023/file/bbf7ee04e2aefec136ecf60e346c2e61-Paper-Datasets_and_Benchmarks.pdf
+      AuthorName: Adam J. Stewart, Nils Lehmann, Isaac A. Corley, Yi Wang, Yi-Chia Chang, Nassim Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee
+      AuthorURL: https://github.com/adamjstewart

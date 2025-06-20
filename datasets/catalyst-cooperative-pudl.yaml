@@ -1,0 +1,62 @@
+Name: Public Utility Data Liberation Project
+Description: |
+  The Public Utility Data Liberation Project (PUDL) provides analysis-ready energy system data to climate advocates,
+  researchers, policymakers, and journalists.
+  <br/>
+  <br/>
+  [PUDL](https://catalyst.coop/pudl/) is an [open source data processing pipeline](https://github.com/catalyst-cooperative/pudl)
+  that makes US energy data easier to access and use programmatically. Hundreds of gigabytes of valuable data
+  are published by US government agencies, but it's often difficult to work with.
+  PUDL takes the original spreadsheets, CSV files, and databases and turns them into a unified resource. This allows users to
+  spend more time on novel analysis and less time on data preparation.
+  <br/>
+  <br/>
+  This information allows users to explore the operating costs of individual power plants, and see how fuel costs impact
+  the viability of different types of generation.  It can highlight the competitiveness of renewable electricity in the
+  market today.  It can show how the generation mix of different utilities has evolved over time, and how the usage of
+  individual power plants has changed as fuel prices have changed and more renewable generation has been brought online.
+
+Documentation: |
+  You can download the [data directly](https://catalystcoop-pudl.readthedocs.io/en/latest/data_access.html#nightly-builds)
+  or via the [aws CLI tool](https://catalystcoop-pudl.readthedocs.io/en/latest/dev/nightly_data_builds.html#how-to-access-the-nightly-build-outputs-from-aws).
+  If you'd like a UI to explore a subset of the data you can visit [data.catalyst.coop](https://data.catalyst.coop/).
+Contact: For general questions or feedback about the data, create an GitHub issue or discussion in the [PUDL repo](https://github.com/catalyst-cooperative/pudl). We also love talking to our users during [PUDL Office Hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
+ManagedBy: "[Catalyst Cooperative](https://catalyst.coop/)"
+UpdateFrequency: |
+  The federal agencies that publish the raw data PUDL processes release new data, monthly, quarterly and yearly. 
+  PUDL is continuously improving the data and tries to release new versions of the data quarterly.
+Tags:
+  - aws-pds
+  - climate
+  - climate model
+  - energy
+  - environmental
+  - government records
+  - infrastructure
+  - open source software
+  - electricity
+  - energy modeling
+  - utilities
+
+License: The PUDL data and documentation are published under the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
+Resources:
+  - Description: All PUDL data outputs.
+    ARN: arn:aws:s3:::pudl.catalyst.coop
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: PUDL Data Access
+      URL: https://www.kaggle.com/code/catalystcooperative/01-pudl-data-access
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/01-pudl-data-access.ipynb
+    - Title: State Hourly Electricity Demand
+      URL: https://www.kaggle.com/code/catalystcooperative/02-state-hourly-electricity-demand
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/02-state-hourly-electricity-demand.ipynb
+
+ADXCategories:
+  - Environmental Data
+  - Resources Data

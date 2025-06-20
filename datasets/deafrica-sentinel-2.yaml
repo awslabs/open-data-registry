@@ -20,7 +20,6 @@ Tags:
   - satellite imagery
   - geospatial
   - natural resource
-  - sustainability
   - disaster response
   - deafrica
   - stac
@@ -35,7 +34,7 @@ Resources:
     RequesterPays: False
     Explore:
     - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s2_l2a)'
-  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
     ARN: arn:aws:s3:::deafrica-sentinel-2-inventory
     Region: af-south-1
     Type: S3 Bucket
@@ -53,7 +52,10 @@ DataAtWork:
       URL: https://github.com/opendatacube/cube-in-a-box
       AuthorName: Alex Leith
     - Title: Digital Earth Africa Training
-      URL: http://training.digitalearthafrica.org/
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Downloading and streaming data using STAC metadata
+      URL: https://docs.digitalearthafrica.org/en/latest/sandbox/notebooks/Frequently_used_code/Downloading_data_with_STAC.html 
       AuthorName: Digital Earth Africa Contributors
   Tools & Applications:
     - Title: "Digital Earth Africa Explorer"
@@ -69,7 +71,7 @@ DataAtWork:
       URL: https://sandbox.digitalearth.africa/
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Notebook Repo"
-      URL: https://github.com/digitalearthafrica
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
       AuthorName: Digital Earth Africa Contributors
     - Title: "Digital Earth Africa Geoportal"
       URL: https://www.africageoportal.com/pages/digital-earth-africa

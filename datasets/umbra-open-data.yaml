@@ -1,0 +1,25 @@
+Name: Umbra Synthetic Aperture Radar (SAR) Open Data
+Description: Umbra satellites generate the highest resolution Synthetic Aperture Radar (SAR) imagery ever offered from space, up to 16-cm resolution. SAR can capture images at night, through cloud cover, smoke and rain. SAR is unique in its abilities to monitor changes. The Open Data Program (ODP) features over twenty diverse time-series locations that are updated frequently, allowing users to experiment with SAR's capabilities. We offer single-looked spotlight mode in either 16cm, 25cm, 35cm, 50cm, or 1m resolution, and multi-looked spotlight mode. The ODP also features an assorted collection of over 250+ images and counting of various locations around the world, ranging from emergency response, to gee-whiz sites. If you have a suggestion for a new location, feedback on the dataset, or any questions, contact us at umbra.space/open-data.
+Documentation: https://help.umbra.space/product-guide
+Contact: help@umbra.space
+ManagedBy: "[Umbra](http://umbra.space/)"
+UpdateFrequency: New data is added frequently. The frequent updates enable users to analyze the time-series data to detect changes in each location. Umbra's goal is to provide the user with a deep understanding on what's possible with our data.
+Tags:
+  - aws-pds
+  - synthetic aperture radar
+  - stac
+  - satellite imagery
+  - earth observation
+  - image processing
+  - geospatial
+License: |
+  All data is provided with a Creative Commons License ([CC by 4.0](https://umbra.space/open-license)), which gives you the right to do just about anything you want with it.
+Resources:
+  - Description: Umbra Spotlight collects including GEC, SICD, SIDD, CPHD data and metadata
+    ARN: arn:aws:s3:::umbra-open-data-catalog
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse Bucket](http://umbra-open-data-catalog.s3-website.us-west-2.amazonaws.com/)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/s3.us-west-2.amazonaws.com/umbra-open-data-catalog/stac/catalog.json)'

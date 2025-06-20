@@ -3,6 +3,7 @@ Description: A global dataset providing bare-earth terrain heights, tiled for ea
 Documentation: https://github.com/tilezen/joerd/tree/master/docs
 Contact: https://github.com/tilezen/joerd/issues
 UpdateFrequency: New data is added based on community feedback
+ManagedBy: "Mapzen, a Linux Foundation project"
 Collabs:
   ASDI:
     Tags:
@@ -13,7 +14,6 @@ Tags:
   - elevation
   - earth observation
   - geospatial
-  - sustainability
   - disaster response
 License: https://github.com/tilezen/joerd/blob/master/docs/attribution.md
 Resources:
@@ -23,6 +23,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Map](https://elevation-tiles-prod.s3.amazonaws.com/index.html)'
+  - Description: Gridded elevation tiles - replication in EU region
+    ARN: arn:aws:s3:::elevation-tiles-prod-eu
+    Region: eu-central-1
+    Type: S3 Bucket   
 DataAtWork:
   Tutorials:
     - Title: Using GDAL to Produce a Geotiff for an Area
@@ -73,6 +77,18 @@ DataAtWork:
       URL: https://clockworkmicro.com/
       AuthorName: Clockwork Micro
       AuthorURL: https://clockworkmicro.com/
+    - Title: "ShadeMap: Simulate sun shadows for any time and place on Earth"
+      URL: https://shademap.app/
+      AuthorName: Ted Piotrowski
+      AuthorURL: https://github.com/ted-piotrowski
+    - Title: "Download topographical map contour lines as SVGs"
+      URL: https://buntinglabs.com/tools/download-topo-map-contour-lines
+      AuthorName: Bunting Labs
+      AuthorURL: https://buntinglabs.com/
+    - Title: "Shadowmap | Sun-Powered Insights. Anywhere on Earth."
+      URL: https://app.shadowmap.org/
+      AuthorName: Shadowmap Technologies GmbH
+      AuthorURL: https://shadowmap.org
   Publications:
     - Title: "Landscape transformations produce favorable roosting conditions for turkey vultures and black vultures"
       URL: https://www.nature.com/articles/s41598-021-94045-3

@@ -1,13 +1,17 @@
 Name: World Bank - Light Every Night
-Description: Light Every Night - World Bank Nightime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is published and openly available under the terms of the World Bank’s open data license.
+Description: Light Every Night - World Bank Nighttime Light Data – provides open access to all nightly imagery and data from the Visible Infrared Imaging Radiometer Suite Day-Night Band (VIIRS DNB) from 2012-2020 and the Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) from 1992-2013. The underlying data are sourced from the NOAA National Centers for Environmental Information (NCEI) archive. Additional processing by the University of Michigan enables access in Cloud Optimized GeoTIFF format (COG) and search using the Spatial Temporal Asset Catalog (STAC) standard. The data is published and openly available under the terms of the World Bank’s open data license.
 Documentation: https://worldbank.github.io/OpenNightLights/wb-light-every-night-readme.html
 Contact: Trevor Monroe tmonroe@worldbank.org; Benjamin P. Stewart bstewart@worldbankgroup.org; Brian Min brianmin@umich.edu; Kim Baugh kim.baugh@noaa.gov
 ManagedBy: "[World Bank Group](https://www.worldbank.org/en/home)"
 UpdateFrequency: Quarterly
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
 Tags:
   - disaster response
   - earth observation
-  - satellite imagery  
+  - satellite imagery
   - aws-pds
   - stac
   - cog
@@ -20,13 +24,17 @@ Resources:
     Explore:
     - '[STAC 1.0.0-beta.2 endpoint](https://stacindex.org/catalogs/world-bank-light-every-night#/)'
 DataAtWork:
-  Tutorials: 
+  Tutorials:
     - Title: Open Nighttime Lights
       URL: https://worldbank.github.io/OpenNightLights/welcome.html
       AuthorName: Daynan Crull, Trevor Monroe
       AuthorURL: https://worldbank.github.io/OpenNightLights/welcome.html
   Tools & Applications:
-    - Title: High Resolution Electricity Access Indicators (HREA) - Settlement-level measures of electricity access, reliability, and usage. 
+    - Title: Global Scale Nightlight Time Series Dataset
+      URL: https://nightlight.eoatlas.org
+      AuthorName: Alameen Najjar
+      AuthorURL: https://github.com/eoameen
+    - Title: High Resolution Electricity Access Indicators (HREA) - Settlement-level measures of electricity access, reliability, and usage.
       URL: http://www-personal.umich.edu/~brianmin/HREA/
       AuthorName: Brian Min, Zachary O'Keeffe
       AuthorURL: http://www-personal.umich.edu/~brianmin/
@@ -50,6 +58,3 @@ DataAtWork:
     - Title: "Detection of Rural Electrification in Africa using DMSP-OLS Night Lights Imagery. International Journal of Remote Sensing"
       URL: https://openknowledge.worldbank.org/handle/10986/16192
       AuthorName: Brian Min, Kwawu Mensan Gaba, Ousmane Fall Sarr, Alassane Agalassou.
-
-
-

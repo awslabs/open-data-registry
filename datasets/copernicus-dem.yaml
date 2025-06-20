@@ -1,8 +1,8 @@
 Name: Copernicus Digital Elevation Model (DEM)
 Description: |
-  The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs.
+  The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. We provide two instances of Copernicus DEM named GLO-30 Public and GLO-90. GLO-90 provides worldwide coverage at 90 meters. GLO-30 Public provides limited worldwide coverage at 30 meters because a small subset of tiles covering specific countries are not yet released to the public by the Copernicus Programme. Note that in both cases ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs and comes from Copernicus DEM 2021 release.
 Documentation: https://copernicus-dem-30m.s3.amazonaws.com/readme.html
-Contact: https://forum.sentinel-hub.com/
+Contact: https://forum.sentinel-hub.com/c/aws-copdem/28
 ManagedBy: "[Sinergise](https://www.sinergise.com/)"
 UpdateFrequency: None, except GLO-30 Public can be updated if the public tile list changes.
 Collabs:
@@ -16,20 +16,23 @@ Tags:
   - earth observation
   - satellite imagery
   - geospatial
-  - sustainability
   - disaster response
   - cog
 License: |
-  GLO-30 Public and GLO-90 are available on a free basis for the general public under the terms and conditions of the Licence found [here](https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf).
+  GLO-30 Public and GLO-90 are available on a free basis for the general public under the terms and conditions of the Licence found on [here](https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM).
 Resources:
-  - Description: GLO-30 Public in S3 bucket. The list of tiles covering specific countries that are not yet released to the public is available [here](https://spacedata.copernicus.eu/documents/20126/0/Non-released-tiles_GLO-30_PUBLIC_Dec.xlsx).
+  - Description: GLO-30 Public in S3 bucket. The list of tiles covering specific countries that are not yet released to the public is available [here](https://spacedata.copernicus.eu/documents/20123/121239/Non-released-tiles_GLO-30_PUBLIC_Dec+%282%29.xlsx).
     ARN: arn:aws:s3:::copernicus-dem-30m
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://copernicus-dem-30m-stac.s3.amazonaws.com/)'
   - Description: GLO-90 in S3 bucket.
     ARN: arn:aws:s3:::copernicus-dem-90m
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[STAC V1.0.0 endpoint](https://copernicus-dem-90m-stac.s3.amazonaws.com/)'
 DataAtWork:
   Tools & Applications:
     - Title: Sentinel Hub WMS/WMTS/WCS Service and Process API

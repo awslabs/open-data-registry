@@ -1,0 +1,52 @@
+Name: "CRC-SAS/SISSA historical seasonal and subseasonal forecast database"
+Description: |
+  En el marco del Sistema de Información de Sequías del Sur de Sudamérica (SISSA) se ha desarrollado una base de predicciones en escala subestacional y estacional con datos corregidos y sin corregir, con el propósito que permita estudiar predictibilidad en distintas escalas y también que sirva para alimentar modelos de sectores como agricultura e hidrología. 
+  <br/>
+  <br/>
+  La base contiene datos en escala diaria entre 2000-2019 (sin corregir) y 2010-2019 (corregidos) para diversas variables incluyendo: temperatura media, máxima y mínima, así como también lluvia, viento medio y otras variables pensadas para alimentar modelos hidrológicos y de cultivo.
+  <br/>
+  <br/>
+  La base de datos abarca toda el área del Centro Regional del Clima para el sur de sudamérica (CRC-SAS), abarcando desde Bolivia y centro-sur de Brasil hasta la Patagonia incluyendo los países miembros como Chile, Argentina, Brasil, Paraguay, Uruguay y Bolivia.
+  <br/>
+  <br/>
+  La base fue generada a partir de datos de GEFSv12 para escala subestacional ([GEFS](https://www.ncei.noaa.gov/products/weather-climate-models/global-ensemble-forecast)) y CFS2 para escala estacional ([CFS2](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00878)). Para la generación de los datos corregidos se utilizaron los datos del reanálisis de ERA5 ([ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview)).
+  <br/>
+  <br/>
+  <br/>
+  Within the framework of the Southern South American Drought Information System (SISSA), a base of sub-seasonal and seasonal scale predictions has been developed with corrected and uncorrected data, with the purpose of studying predictability at different scales and also to be used to feed models for sectors such as agriculture and hydrology.
+  <br/>
+  <br/>
+  The database contains daily scale data between 2000-2019 (uncorrected) and 2010-2019 (corrected) for several variables including: mean, maximum and minimum temperature, as well as rainfall, mean wind and other variables intended to feed hydrological and crop models.
+  <br/>
+  <br/>
+  The database covers the entire area of the Regional Climate Center for Southern South America (CRC-SAS), from Bolivia and south-central Brazil to Patagonia, including member countries such as Chile, Argentina, Brazil, Paraguay, Uruguay and Bolivia.
+  <br/>
+  <br/>
+  The base was generated from GEFSv12 data for subseasonal scale ([GEFS](https://www.ncei.noaa.gov/products/weather-climate-models/global-ensemble-forecast)) and CFS2 for seasonal scale ([CFS2](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00878)). Data from the ERA5 reanalysis ([ERA5](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview)) were used to generate the corrected data.
+Documentation: |
+  General information, tutorials and examples, contact us atl sissa-aws@smn.gob.ar
+  <br/>
+Contact: For any questions regarding the data set or any general questions, you can contact us atl sissa-aws@smn.gob.ar. We also would like to know how this data is being used.
+ManagedBy: "[SISSA](https://sissa.crc-sas.org/)"
+UpdateFrequency: Static database from 2000-2019 without correction and 2010-2019 with correction.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - earth observation
+  - natural resource
+  - weather
+  - forecast
+  - meteorological
+  - agriculture
+  - hydrology
+License: "[Creative Commons Attribution 2.5 Argentina License](https://creativecommons.org/licenses/by/2.5/ar)"
+Resources:
+  - Description: CRC-SAS/SISSA Retrospective Daily forecast database
+    ARN: arn:aws:s3:::sissa-forecast-database
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+    - "[Browse Bucket](https://s3-us-west-2.amazonaws.com/sissa-forecast-database/index.html)"

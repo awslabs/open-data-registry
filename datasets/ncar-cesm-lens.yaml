@@ -4,7 +4,7 @@ Description: >
 
      NCAR has copied a subset (currently ~70 TB) of CESM LENS data to Amazon S3 as part of the AWS Public Datasets Program. To optimize for large-scale analytics we have represented the data as ~275 Zarr stores format accessible through the Python Xarray library. Each Zarr store contains a single physical variable for a given model run type and temporal frequency (monthly, daily, 6-hourly).
 Documentation: https://doi.org/10.26024/wt24-5j82
-Contact: cisl-aws-lens@ucar.edu
+Contact: rdahelp@ucar.edu
 ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
 UpdateFrequency: Rare. The LENS experiment is complete, but we may occasionally copy additional fields from NCAR to AWS, or fix problems discovered in the AWS copy.
 Collabs:
@@ -14,14 +14,15 @@ Collabs:
 Tags:
   - climate
   - model
+  - climate model
   - atmosphere
   - oceans
   - land
   - ice
   - geospatial
-  - machine learning
   - aws-pds
   - sustainability
+  - zarr
 License: https://www.ucar.edu/terms-of-use/data
 Resources:
   - Description: Project data files
@@ -36,6 +37,9 @@ DataAtWork:
     - Title: Rendered (static) version of Jupyter Notebook
       URL: http://ncar-aws-www.s3-website-us-west-2.amazonaws.com/kay-et-al-2015.v2.html
       AuthorName: Anderson Banihirwe, NCAR
+    - Title: Urban Climate Explorer
+      URL: https://zhonghuazheng.com/UrbanClimateExplorer/pages/about.html
+      AuthorName: Zhonghua Zheng
   Tutorials:
     - Title: Analyzing large climate model ensembles in the cloud
       URL: https://medium.com/pangeo/cesm-lens-on-aws-4e2a996397a1
