@@ -1,0 +1,31 @@
+Name: NASA SOHO/LASCO2 comet challenge on AWS
+Description: |
+  The SOHO/LASCO data set (prepared for the challenge hosted in Topcoder) provided here comes from the instrument’s C2 telescope and comprises approximately 36,000 images spread across 2,950 comet observations. The human eye is a very sensitive tool and it is the only tool currently used to reliably detect new comets in SOHO data - particularly comets that are very faint and embedded in the instrument background noise. Bright comets can be easily detected in the LASCO data by relatively simple automated algorithms, but the majority of comets observed by the instrument are extremely faint, noise-level observations. Comets in SOHO/LASCO data are dynamic and morphologically diverse objects, and thus computationally highly complex to detect and track.
+Contact: ekaterina.m.verner@nasa.gov
+ManagedBy: "[NASA](http://www.nasa.gov/)"
+Documentation: https://ssa.esac.esa.int/ssa/#/pages/home
+UpdateFrequency: No updates
+Tags:
+  - aws-pds 
+  - astronomy
+  - machine learning
+  - NASA SMD AI
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: AI/ML ready data set created using NASA/SOHO/LASCO2 archive data
+    ARN: arn:aws:s3:::nasa-comets-training-data
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+  - Title: "Topcoder NASA Comet Discovery: A Recap"
+    URL: https://www.youtube.com/watch?v=E4OxTaqTP6E
+    AuthorName: TopCoder
+  - Title: Winners Selected for the NASA SOHO Comet Search with Artificial Intelligence Open-Science Challenge
+    URL: https://science.nasa.gov/science-news/winners-selected-for-the-nasa-soho-comet-search-with-artificial-intelligence-open-science-challenge
+    AuthorName: Denise Hill
+  - Title: Topcoder Challenge Finds Two New Comets For NASA 
+    URL: https://www.topcoder.com/blog/topcoder-challenge-finds-two-new-comets-for-nasa/
+    AuthorName: Annika Nagy

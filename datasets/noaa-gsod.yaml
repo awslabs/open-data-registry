@@ -18,8 +18,8 @@ Description: |
 Documentation: http://www.ncdc.noaa.gov/
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 Contact: |
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 UpdateFrequency: Data is updated as new products are available.
 Collabs:
   ASDI:
@@ -33,14 +33,15 @@ Tags:
   - weather
   - natural resource
   - regulatory
-  - sustainability
-License: |
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
   Open Data. There are no restrictions on the use of this data
 Resources:
   - Description: Measurements and metadata
     ARN: arn:aws:s3:::noaa-gsod-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-gsod-pds.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: "ML Demo: Predicting Air Quality w/ ASDI NOAA + OpenAQ Datasets in SageMaker Studio Lab (SMSL)"
@@ -48,6 +49,6 @@ DataAtWork:
       NotebookURL: https://github.com/aws-samples/aws-smsl-predict-airquality-via-weather/blob/main/aq_by_weather.ipynb
       AuthorName: Aaron Soto
       Services:
-      - SageMaker Studio Lab    
+      - Amazon SageMaker Studio Lab    
   Tools & Applications:
   Publications:

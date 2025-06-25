@@ -1,0 +1,60 @@
+Name: Northern California Earthquake Data
+Description: |
+  This dataset contains various types of digital data relating
+  to earthquakes in central and northern California. 
+  Time series data come from broadband, short period, and strong motion
+  seismic sensors, GPS, and other geophysical sensors.
+Documentation: https://ncedc.org/db/cloud.html
+Contact: stephane@berkeley.edu
+ManagedBy: "[Northern California Earthquake Data Center](https://ncedc.org)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - aws-pds
+  - earth observation
+  - earthquakes
+  - seismology
+License: |
+  NCEDC hereby grants the non-exclusive, royalty free, non-transferable, 
+  worldwide right and license to use, reproduce and publicly display in all media 
+  public data from the Northern California Seismic Network. Please cite 
+  the "NCEDC (2014), Northern California Earthquake Data Center. UC Berkeley
+  Seismological Laboratory. Dataset. doi:10.7932/NCEDC." for any research
+  publications using this data.
+Resources:
+  - Description: "Seismic waveform data (miniSEED format), metadata (FDSNStationXML format) and earthquake catalog (CSV & Hypoinverse formats)"
+    ARN: arn:aws:s3:::ncedc-pds
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with NCEDC AWS Public Dataset
+      URL: https://ncedc.org/db/cloud/getstarted-pds.html
+      AuthorName: Ellen Yu, Stephane Zuzlewski
+      AuthorURL: https://ncedc.org
+      
+  Publications:
+    - Title: "Robust Distributed Earthquake Monitoring with CISN software in Northern California"
+      URL: https://www.researchgate.net/publication/253381527_Robust_Distributed_Earthquake_Monitoring_with_CISN_software_in_Northern_California
+      AuthorName: "Doug Neuhauser; Stephane Zuzlewski; Peter Lombard; Lynn Dietz; Jim Luetgert"
+    - Title: "The Northern California Earthquake Management System: A Unified System From Realtime Monitoring to Data Distribution"
+      URL: https://www.researchgate.net/publication/252252363_The_Northern_California_Earthquake_Management_System_A_Unified_System_From_Realtime_Monitoring_to_Data_Distribution
+      AuthorName: "Doug Neuhauser; Fred Klein; Stephane Zuzlewski; Lynn Dietz; Peter Lombard"
+    - Title: "New Continuous Timeseries Data at the Northern California Earthquake Data Center"
+      URL: https://www.researchgate.net/publication/253267871_New_Continuous_Timeseries_Data_at_the_Northern_California_Earthquake_Data_Center
+      AuthorName: "Doug Neuhauser; Stephane Zuzlewski; Lind Gee; Lynn Dietz; Will Kohler"
+    - Title: "The Northern California Earthquake Data Center: Seismic and Geophysical Data for Northern California and Beyond"
+      URL: https://www.researchgate.net/publication/252836017_The_Northern_California_Earthquake_Data_Center_Seismic_and_Geophysical_Data_for_Northern_California_and_Beyond
+      AuthorName: "Doug Neuhauser; Fred Klein; Stephane Zuzlewski; Lind Gee; David Oppenheimer"
+    - Title: "Open Access to Decades of NCSN Waveforms at the Northern California Earthquake Data Center"
+      URL: https://www.researchgate.net/publication/238583165_Open_Access_to_Decades_of_NCSN_Waveforms_at_the_Northern_California_Earthquake_Data_Center
+      AuthorName: "Doug Neuhauser; Fred Klein; Stephane Zuzlewski; David Oppenheimer; Gray Jensen"
+    - Title: "Improved Data Access From the Northern California Earthquake Data Center"
+      URL: https://www.researchgate.net/publication/253823256_Improved_Data_Access_From_the_Northern_California_Earthquake_Data_Center
+      AuthorName: "Doug Neuhauser; Fred Klein; Stephane Zuzlewski; David Oppenheimer; Gray Jensen"
+    - Title: "Collaborative Projects at the Northern California Earthquake Data Center (NCEDC)"
+      URL: https://www.researchgate.net/publication/252418955_Collaborative_Projects_at_the_Northern_California_Earthquake_Data_Center_NCEDC
+      AuthorName: "Doug Neuhauser; David Oppenheimer; Stephane Zuzlewski; Lind Gee; Mark Murray"

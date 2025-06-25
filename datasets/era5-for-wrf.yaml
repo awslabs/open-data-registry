@@ -1,0 +1,26 @@
+Name: ERA5-for-WRF Open Data on AWS
+Description: ERA5 reanalysis data on AWS, preprocessed for use with the Weather Research and Forecasting (WRF) model.
+Documentation: https://github.com/moptis/era5-for-wrf/
+Contact: info@veer.eco
+ManagedBy: "[Veer Renewables](http://www.veer.eco/)"
+UpdateFrequency: Monthly.
+Tags:
+  - aws-pds
+  - weather
+  - sustainability
+  - atmosphere
+  - electricity
+  - meteorological
+  - model
+License: CC BY-SA 4.0
+Resources:
+  - Description: ERA5-for-WRF Data
+    ARN: arn:aws:s3:::era5-for-wrf
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: ERA5-for-WRF Tutorials
+      URL: https://github.com/moptis/era5-for-wrf/
+      AuthorName: Veer Renewables
+      AuthorURL: https://veer.eco

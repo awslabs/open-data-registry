@@ -1,0 +1,87 @@
+Name: Digital Earth Africa Normalised Difference Vegetation Index (NDVI) Climatology
+Description: |
+  Digital Earth Africa’s NDVI climatology product represents the long-term average baseline condition of vegetation for every Landsat pixel over the African continent. Both mean and standard deviation NDVI climatologies are available for each calender month.
+  
+  Some key features of the product are:
+
+    - NDVI climatologies were developed using harmonized Landsat 5,7,and 8 satellite imagery.
+    - Mean and standard deviation NDVI climatologies are produced for each calender month, using a temporal baseline period from 1984-2020 (inclusive)
+    - Datasets have a spatial resolution of 30 metres
+
+  
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/ndvi_climatology_ls.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: N/A.
+
+
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - disaster response
+  - earth observation
+  - geospatial
+  - natural resource
+  - agriculture
+  - satellite imagery
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Normalised Difference Vegetation Index (NDVI) Climatology
+    ARN: arn:aws:s3:::deafrica-services/ndvi_climatology_ls
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/ndvi_climatology_ls)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item    
+    ARN: arn:aws:sns:af-south-1:565417506782:deafrica-landsat-wofs
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer(Normalised Difference Vegetation Index (NDVI) Climatology)"
+      URL: https://explorer.digitalearth.africa/products/ndvi_climatology_ls
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+      
+  Publications:
+    - Title: "Mean NDVI and Anomalies"
+      URL: https://www.digitalearthafrica.org/platform-resources/services/mean-ndvi-and-anomalies
+      AuthorName: Digital Earth Africa Contributors
+
+
+

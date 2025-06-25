@@ -1,0 +1,39 @@
+Name: UK Biobank Pharma Proteomics Project (UKB-PPP)
+Description: The UKB-PPP is a collaboration between the UK Biobank (UKB) and thirteen
+  biopharmaceutical companies characterising the plasma proteomic profiles of
+  54,219 UKB participants. As part of a collaborative analysis across the
+  thirteen UKB-PPP partners, we conducted comprehensive protein quantitative
+  trait loci (pQTL) mapping of 2,923 proteins that identifies 14,287 primary
+  genetic associations, of which 85% are newly discovered, in addition to
+  ancestry-specific pQTL mapping in non-Europeans. We identify independent
+  secondary associations in 87% of cis and 30% of trans loci, expanding the
+  catalogue of genetic instruments for downstream analyses.
+Documentation: https://www.synapse.org/#!Synapse:syn51364943/
+Contact: matthias.arnold@helmholtz-munich.de
+ManagedBy: Sage Bionetworks
+UpdateFrequency: Never
+Tags:
+  - aws-pds
+  - genome wide association study
+  - population genetics
+  - life sciences
+License: '[CC BY]'
+Citation: Sun, B.B., Chiou, J., Traylor, M. et al. Plasma proteomic associations with
+  genetics and health in the UK Biobank. Nature 622, 329–338 (2023).
+  https://doi.org/10.1038/s41586-023-06592-6
+Resources:
+  - Description: Population-specific GWAS summary statistics per protein measurement, as
+      well as meta-data for annotating protein measurements and genetic
+      variants.
+    ARN: arn:aws:s3:::ukbiobank.opendata.sagebase.org
+    Region: us-east-1
+    Type: S3 Bucket
+    AccountRequired: False
+    ControlledAccess: https://doi.org/10.7303/syn51364943
+DataAtWork:
+  Publications:
+    - Title: Plasma proteomic associations with genetics and health in the UK Biobank
+      URL: https://doi.org/10.1038/s41586-023-06592-6
+      AuthorName: Sun B, Chiou J, Traylor M, Benner C, Hsu Y, Richardson T, et al
+ADXCategories:
+  - Healthcare & Life Sciences Data

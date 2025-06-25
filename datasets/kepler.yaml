@@ -1,24 +1,21 @@
 Name: Kepler Mission Data
 Description: |
-  The Kepler mission observed the brightness of more than 180,000 stars near the Cygnus constellation at a 30 minute cadence for 4 years in order to find transiting exoplanets, study variable stars, and find eclipsing binaries. More information about the Kepler mission is available at [MAST](https://archive.stsci.edu/kepler/).
-Documentation: http://astroquery.readthedocs.io/en/latest/mast/mast.html
+  The Kepler mission observed the brightness of more than 180,000 stars near the Cygnus constellation at a 30 minute cadence for 4 years in order to find transiting exoplanets, study variable stars, and find eclipsing binaries.
+Documentation: https://archive.stsci.edu/missions-and-data/kepler
 Contact: archive@stsci.edu
 ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please see the [Kepler/K2 acknowledgement page](https://archive.stsci.edu/publishing/mission-acknowledgements#section-179a61b6-6595-49fc-ae11-69695a895a1e) for full citation instructions.
 UpdateFrequency: Never
 Tags:
   - astronomy
   - aws-pds
-License: STScI herby grants the non-exclusive, royalty free, non-transferable, worldwide right and license to use, reproduce and publicly display in all media public data from the Kepler mission.
+License: Public domain. Attribution required for refereed scientific papers.
 Resources:
   - Description: Kepler Mission data files
     ARN: arn:aws:s3:::stpubdata/kepler
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
-  - Description: Notifications for new data
-    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata
-    Region: us-east-1
-    Type: SNS Topic
 DataAtWork:
   Tutorials:
   Tools & Applications:

@@ -1,0 +1,83 @@
+Name: The Singapore Nanopore Expression Data Set
+Description: "The Singapore Nanopore Expression (SG-NEx) project is an international collaboration to generate reference transcriptomes and a comprehensive benchmark data set for long read Nanopore RNA-Seq. Transcriptome profiling is done using PCR-cDNA sequencing (PCR-cDNA), amplification-free cDNA sequencing (direct cDNA), direct sequencing of native RNA (direct RNA), and short read RNA-Seq. The SG-NEx core data includes 5 of the most commonly used cell lines and it is extended with additional cell lines and samples that cover a broad range of human tissues. All core samples are sequenced with at least 3 high quality replicates. For a subset of samples spike-in RNAs are used and matched m6A profiling data is available."
+Documentation: https://github.com/GoekeLab/sg-nex-data
+Contact: "[SG-NEx team](https://github.com/GoekeLab/sg-nex-data)"
+ManagedBy: "The Genome Institute of Singapore (https://www.a-star.edu.sg/gis)"
+UpdateFrequency: Datasets will be updated periodically as additional data are generated.
+Tags:
+  - aws-pds
+  - genomic
+  - transcriptomics
+  - life sciences
+  - long read sequencing
+  - short read sequencing
+  - bioinformatics
+  - fast5
+  - fasta
+  - fastq
+  - bam
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+Citation: "In addition, please cite Chen et al. A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines. bioRxiv (2021). doi: https://doi.org/10.1101/2021.04.21.440736 when referencing the SG-NEx data in publications."
+Resources: 
+  - Description: Nanopore long read RNA Seq data and matched short read RNA-Seq from the Singapore Nanopore Expression Project (SG-NEx). The data includes raw signal data (fast5), basecalled reads (fastq), aligned reads (bam), processed data for RNA modification detection (json), reference genome annotation files (gtf and fa) and sample metadata (txt).
+    ARN: arn:aws:s3:::sg-nex-data
+    Region: ap-southeast-1
+    Type: S3 Bucket 
+    Explore: 
+    - '[Browse Bucket](http://sg-nex-data.s3-website-ap-southeast-1.amazonaws.com/)'
+  - Description: Nanopore long read RNA Seq data from the Singapore Nanopore Expression Project (SG-NEx). The data includes raw signal data (blow5), converted from raw signal data (fast5).
+    ARN: arn:aws:s3:::sg-nex-data-blow5
+    Region: ap-southeast-1
+    Type: S3 Bucket 
+    Explore: 
+    - '[Browse Bucket](http://sg-nex-data-blow5.s3-website-ap-southeast-1.amazonaws.com/)'
+DataAtWork:
+  Tutorials: 
+    - Title: Accessing the SG-NEx dataset on AWS
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/AWS_data_access_tutorial.md
+      AuthorName: Ying Chen
+    - Title: Performing transcript discovery and quantification with Bambu
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_Bambu_tutorial.md
+      AuthorName: Min Hao Ling
+    - Title: Differential RNA modification analysis tutorial with xPore
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_xPore_tutorial.md
+      AuthorName: Yu Song Chuah
+    - Title: RNA modification analysis tutorial with m6Anet
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_m6Anet_tutorial.md
+      AuthorName: Yu Song Chuah 
+    - Title: Basecalling and analysing SG-NEx samples in S/BLOW5 format
+      URL: https://github.com/GoekeLab/sg-nex-data/blob/master/docs/SG-NEx_blow5_tutorial.md
+      AuthorName: Hasindu Gamaarachchi
+  Tools & Applications:
+    - Title: "xPore: Identification of differential RNA modification from direct RNA-Seq data"
+      URL: https://github.com/GoekeLab/xpore
+      AuthorName: Ploy Pratanwanich et al. 
+    - Title: "m6Anet: Identification of m6A from a single direct RNA-Seq sample"
+      URL: https://github.com/GoekeLab/m6anet
+      AuthorName: Christopher Hendra et al. 
+    - Title: "Bambu: Transcript discovery and quantification using long read RNA-Seq data"
+      URL: https://github.com/GoekeLab/bambu
+      AuthorName: Ying Chen, Andre Sim et al. 
+    - Title: "JAFFAL: Detection of fusion genes from long read RNA-Seq data"
+      URL: https://github.com/Oshlack/JAFFA/wiki
+      AuthorName:  Nadia M Davidson et al. 
+    - Title: "nf-core/nanoseq: A nanopore DNA and RNA-Seq demultiplexing, QC, alignment and analysis pipeline"
+      URL: https://nf-co.re/nanoseq
+      AuthorName: Chelsea Sawyer et al.
+  Publications:
+    - Title: A systematic benchmark of Nanopore long read RNA sequencing for transcript level analysis in human cell lines.
+      URL: https://doi.org/10.1101/2021.04.21.440736
+      AuthorName: Ying Chen et al.
+    - Title: "Beyond sequencing: machine learning algorithms extract biology hidden in Nanopore signal data."
+      URL: https://doi.org/10.1016/j.tig.2021.09.001
+      AuthorName: Yuk Kei Wan et al.
+    - Title: Identification of differential RNA modifications from nanopore direct RNA sequencing with xPore.
+      URL:  https://doi.org/10.1038/s41587-021-00949-w
+      AuthorName: Ploy N Pratanwanich et al.
+    - Title: Detection of m6A from direct RNA sequencing using a Multiple Instance Learning framework.
+      URL:  https://doi.org/10.1101/2021.09.20.461055
+      AuthorName: Christopher Hendra et al.
+    - Title: "JAFFAL: Detecting fusion genes with long read transcriptome sequencing."
+      URL:  https://doi.org/10.1186/s13059-021-02588-5
+      AuthorName: Nadia M Davidson et al.
+

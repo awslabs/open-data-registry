@@ -1,0 +1,29 @@
+Name: "All-Sky Data | Wide-field Infrared Survey Explorer (WISE)"
+Description: 'The Wide-field Infrared Survey Explorer (WISE) was a NASA Medium Explorer satellite in low-Earth orbit that conducted an all-sky astronomical imaging survey over four infrared bands from 2010-2011. The All-Sky Release includes all data taken during the WISE full cryogenic mission phase, 7 January 2010 to 6 August 2010, in the 3.4, 4.6, 12, and 22 micron bands (i.e., W1, W2, W3, W4) that were processed with improved calibrations and reduction algorithms.'
+Documentation: https://irsa.ipac.caltech.edu/Missions/wise.html
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The All-Sky Data Release has been finalized and will not be updated.
+Tags:
+  - aws-pds
+  - astronomy
+  - imaging
+  - satellite imagery
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "If you use the All-Sky Single-exposure Image Sets, please cite the Digital Object Identifier (DOI): [10.26131/IRSA152](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA152). In addition, follow the [All-Sky acknowledgement guidelines](https://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec1_6b.html) and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Resources:
+  - Description: 'All-Sky Single-exposure Image Sets: 1,491,686 calibrated 1024x1024 pix @2.75"/pix FITS image sets for the individual 7.7 sec (W1 and W2) and 8.8 sec (W3 and W4) WISE survey exposures. Each image set consists of four intensity images, noise maps, and bit-masks indicating pixel use status, one for each WISE band.'
+    ARN: arn:aws:s3:::nasa-irsa-wise/wise/allsky
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data

@@ -1,0 +1,33 @@
+Name: Harvard-Emory ECG Database
+Description: The Harvard-Emory ECG database (HEEDB) is a large collection of 12-lead electrocardiography (ECG) recordings, prepared through a collaboration between Harvard University and Emory University investigators. 
+Documentation: More documentation can be found [here](https://doi.org/10.60508/g072-7n95)
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP Licence](https://bdsp.io/content/heedb/view-license/1.0/); [Data User Agreement:](https://bdsp.io/content/heedb/view-dua/1.0/)"
+Resources:
+  - Description: Harvard-Emory ECG Database
+    ARN: arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-ecg-accesspoint/ECG/
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/g072-7n95
+DataAtWork:
+  Tools & Applications:
+    - Title: WFDB Software Package
+      URL: https://doi.org/10.13026/gjvw-1m31
+      AuthorName: Moody, G., Pollard, T., & Moody, B. 
+      AuthorURL: https://www.physionet.org
+  Publications:
+    - Title: Harvard Electroencephalography Database
+      URL: https://doi.org/10.60508/g072-7n95
+      AuthorName: Moura Junior, V.; Reyna, M.; Hong, S.; Gupta, A.; Ghanta, M.; Sameni, R., et al. 
+

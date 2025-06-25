@@ -1,0 +1,42 @@
+Name: "EMory BrEast Imaging Dataset (EMBED)"
+Description: |
+  EMBED is a racially diverse mammography dataset containing 3.4M screening and diagnostic images from 110,000 patients collected from 2013-2020, with an
+  equal representation of black and white women. The dataset is comprised of 2D, synthetic 2D (C-view), and 3D (digital breast tomosynthesis, i.e. DBT)
+  images. It contains 60,000 annotated lesions linked to structured imaging descriptors and ground truth pathologic outcomes grouped into six severity
+  classes. This release represents 20% of the total 2D and C-view dataset and is available for research use. DBT, US, and MRI exams will be added at a
+  later date.</br></br>
+  Acknowledgements - We would like to thank Glendor, Inc and MD.ai for assistance with image de-identification.
+Documentation: https://github.com/Emory-HITI/EMBED_Open_Data
+Contact: hari.trivedi@emory.edu
+ManagedBy: Health Innovation and Translational Informatics Lab at Emory University (hitilab.com)
+UpdateFrequency: New data to be added annually
+Tags:
+  - aws-pds
+  - health
+  - cancer
+  - mammography
+  - imaging
+  - x-ray
+  - bias
+  - biology
+  - life sciences
+License: "[Custom License](https://github.com/Emory-HITI/EMBED_Open_Data/blob/main/EMBED_license.md)"
+Citation: "In addition, please cite the following publication - https://pubs.rsna.org/doi/epdf/10.1148/ryai.220047"
+Resources:
+  - Description: EMBED dataset and tables
+    ARN: arn:aws:s3:::embed-dataset-open
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://forms.gle/HwGMM6vdv3w32TKF9
+DataAtWork:
+  Tutorials:
+    - Title: Sample Notebook
+      URL: https://github.com/Emory-HITI/EMBED_Open_Data/blob/main/Sample_Notebook.ipynb
+      AuthorName: Emory-HITI
+  Publications:
+    - Title: "The EMory BrEast imaging Dataset (EMBED): A Racially Diverse, Granular Dataset of 3.4M Screening and Diagnostic Mammograms"
+      URL: https://pubs.rsna.org/doi/epdf/10.1148/ryai.220047
+      AuthorName: Jiwoong J. Jeong, Brianna L. Vey, Ananth Reddy, Thomas Kim, Thiago Santos, Ramon Correa, Raman Dutt, Marina Mosunjac, Gabriela Oprea-Ilies, Geoffrey Smith, Minjae Woo, Christopher R. McAdams, Mary S. Newell, Imon Banerjee, Judy Gichoya, Hari Trivedi
+      AuthorURL: https://scholar.google.com/citations?hl=en&user=_VYSm7YAAAAJ
+DeprecatedNotice:
+ADXCategories:

@@ -4,11 +4,13 @@ Description: |
   The images of cells are captured by microscopy imaging, and reveal the response of various labeled cell components to whatever treatments are tested, which can include genetic perturbations, chemicals or drugs, or different cell types. 
   The datasets can be used for diverse applications in basic biology and pharmaceutical research, such as identifying disease-associated phenotypes, understanding disease mechanisms, and predicting a drug’s activity, toxicity, or mechanism of action ([Chandrasekaran et al 2020](https://carpenter-singh-lab.broadinstitute.org/files/anne/files/141_Chandrasekaran_NatRevDrugDiscov_2020.pdf)). 
   This collection is maintained by the [Carpenter–Singh lab](https://carpenter-singh-lab.broadinstitute.org/) and the [Cimini lab](https://cimini-lab.broadinstitute.org/) at the [Broad Institute](https://www.broadinstitute.org/).
+  A human-friendly listing of datasets, instructions for accessing them, and other documentation is at the [corresponding GitHub page](https://github.com/broadinstitute/cellpainting-gallery) about the Gallery.
 Documentation: https://github.com/broadinstitute/cellpainting-gallery
 Contact: cellpainting@broadinstitute.org
-ManagedBy: Carpenter-Singh and Cimini Labs
+ManagedBy: Carpenter-Singh and Cimini Labs at the Broad Institute
 UpdateFrequency: Typically when an associated publication is posted on biorxiv
 Tags:
+  - aws-pds
   - bioinformatics
   - biology
   - cancer
@@ -23,17 +25,26 @@ Tags:
   - genetic
   - high-throughput imaging
   - image processing
+  - image-based profiling
   - imaging
   - machine learning
   - medicine
   - microscopy
   - organelle
+  - life sciences
 License:  CC0 1.0 Universal (CC0 1.0) Public Domain Dedication, but please do cite the corresponding publication for each dataset, as listed [here](https://github.com/broadinstitute/cellpainting-gallery#citation).
 Resources:
-  - Description: Cell Painting data, comprising fluorescence microscopy cell images (TIFF), extracted features (CSV), and associated metadata (CSV and TXT)
-    ARN: arn:aws:s3:::cellpainting-gallery/cpg
+  - Description: Cell Painting data, comprising fluorescence microscopy cell images (TIFF), extracted features (CSV), and associated metadata (CSV and TXT).
+    ARN: arn:aws:s3:::cellpainting-gallery
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+      - '[Documentation](https://github.com/broadinstitute/cellpainting-gallery)'
+      - '[Browse Bucket](https://cellpainting-gallery.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new Cell Painting Gallery data
+    ARN: arn:aws:sns:us-east-1:309624411020:cellpainting-repository-object_created
+    Region: us-east-1
+    Type: SNS Topic      
 DataAtWork:
   Tutorials:
     - Title: Cell Painting wiki
@@ -73,6 +84,9 @@ DataAtWork:
       URL: https://github.com/cytomining/profiling-recipe
       AuthorName: Multiple Authors
       AuthorURL: https://github.com/cytomining/profiling-recipe/graphs/contributors
+    - Title: Accelerating Drug Discovery with high-throughput Cell Painting on AWS
+      URL: https://lifesciences-resources.awscloud.com/healthcare-life-sciences-aws-for-industries/accelerating-drug-discovery-with-high-throughput-cell-painting-on-aws
+      AuthorName: Chris Kaspar
   Publications:
     - Title: Cell Painting, a high-content image-based assay for morphological profiling using multiplexed fluorescent dyes
       URL: https://pubmed.ncbi.nlm.nih.gov/27560178/

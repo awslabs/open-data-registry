@@ -1,0 +1,49 @@
+Name: Automated Segmentation of Intracellular Substructures in Electron Microscopy (ASEM) on AWS
+Description: The Automated Segmentation of intracellular substructures in Electron Microscopy (ASEM) project provides deep learning models trained to segment structures in 3D images of cells acquired by Focused Ion Beam Scanning Electron Microscopy (FIB-SEM). Each model is trained to detect a single type of structure (mitochondria, endoplasmic reticulum, golgi apparatus, nuclear pores, clathrin-coated pits) in cells prepared via chemically-fixation (CF) or high-pressure freezing and freeze substitution (HPFS). You can use our open source pipeline to load a model and predict a class of sub-cellular structures in naive FIB-SEM cells images. If required, a fine-tuning procedure allows a model to be trained on a small amount of additional ground truth annotations to improve a prediction on a naive dataset. Together with the trained models, we also provide the training, validation and test datasets.
+Documentation: https://open.quiltdata.com/b/asem-project
+Contact: tklab@tklab.hms.harvard.edu
+ManagedBy: Kirchhausen Lab at Harvard Medical School
+UpdateFrequency: Data is added as it becomes available
+Tags:
+  - aws-pds
+  - biology
+  - cell biology
+  - segmentation
+  - microscopy
+  - electron microscopy
+  - computer vision
+  - imaging
+  - life sciences
+License: All available datasets and models are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License
+Resources:
+  - Description: High resolution 3D cell image datasets
+    ARN: arn:aws:s3:::asem-project/datasets/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Trained ML segmentation models for use in ASEM pipeline
+    ARN: arn:aws:s3:::asem-project/models/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Data layout and how to view
+      URL: https://open.quiltdata.com/b/asem-project
+      AuthorName: kirchhausenlab
+      AuthorURL: https://github.com/kirchhausenlab
+    - Title: How to use models
+      URL: https://github.com/kirchhausenlab/incasem/blob/main/README.md
+      AuthorName: kirchhausenlab
+      AuthorURL: https://github.com/kirchhausenlab/incasem/blob/main/README.md
+  Tools & Applications:
+    - Title: ASEM Colab Notebook (Interactive Demo)
+      URL: https://colab.research.google.com/drive/1FgRKN2mM6x18S02Qe4XMyxFeFubZxaMw
+      AuthorName: Patrick Stock
+      AuthorURL: https://github.com/patrickstock
+    - Title: TK Lab Data Explorer
+      URL: http://asem-viewer-env.eba-rrnvmfwa.us-east-1.elasticbeanstalk.com/
+      AuthorName: Patrick Stock
+      AuthorURL: https://github.com/patrickstock
+  Publications:
+    - Title: Deep neural network automated segmentation of cellular structures in volume electron microscopy
+      URL: https://rupress.org/jcb/article-pdf/222/2/e202208005/1444783/jcb_202208005.pdf
+      AuthorName: Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio, Tegy John Vadakkan, Anwesha Sanyal, Elliott Somerville, Mihir Sahasrabudhe, Justin O’Connor, Martin Weigert, Tom Kirchhausen

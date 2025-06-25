@@ -1,0 +1,27 @@
+Name: Ensemble Meteorological Dataset for Planet Earth, EM-Earth 
+Description: EM-Earth provides data for precipitation, mean air temperature, air temperature range, and dew-point temperature at 0.1° spatial resolution over global land areas from 1950 to 2019. EM-Earth provides hourly/daily deterministic estimates, and daily probabilistic estimates (25 ensemble members), to meet the diverse requirements of hydrometeorological applications.
+Documentation: https://doi.org/10.20383/102.0547
+Contact: shervan.gharari@usask.ca
+ManagedBy: "[Computational Hydrology at the University of Saskatchewan](https://uofs-comphyd.github.io/)"
+UpdateFrequency: N/A
+Tags:
+  - aws-pds
+  - atmosphere
+  - netcdf
+  - near-surface air temperature
+  - precipitation
+  - meteorological
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/
+Citation: https://doi.org/10.1175/BAMS-D-21-0106.1
+Resources:
+  - Description: Ensemble Meteorological Dataset for Planet Earth, EM-Earth
+    ARN: arn:aws:s3:::emearth
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://emearth.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Publications:
+    - Title: "EM-Earth: The Ensemble Meteorological Dataset for Planet Earth"
+      URL: https://doi.org/10.1175/BAMS-D-21-0106.1
+      AuthorName: Guoqiang Tang, Martyn P. Clark & Simon Michael Papalexiou

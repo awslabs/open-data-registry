@@ -1,0 +1,63 @@
+Name: NASA Legacy Archive for Microwave Background Data Analysis (LAMBDA)
+
+Description: |
+  NASA data for cosmic microwave background (CMB) analysis is made available here by the Legacy Archive for Microwave Background Data Analysis (LAMBDA), which is a part of NASA's High Energy Astrophysics Science Archive Research Center (HEASARC). LAMBDA hosts the data archives of over 30 different CMB missions spanning 30+ years. The data archive for each mission may contain a range of data types from low-level time-ordered data to high level science-ready products such as sky maps and angular power spectra. Also provided in consistent formats are a variety of full sky maps in complementary wavebands that are useful for CMB analysis, such as maps of radio synchrotron or infrared dust emission.
+  <br/><br/>
+  Data provided here are normally stored in the generic Flexible Image Transport System ([FITS](https://heasarc.gsfc.nasa.gov/docs/heasarc/fits.html)) format common in astronomy. Sky maps are generally provided in the Hierarchical Equal-Area isoLatitude Pixelization ([HEALPix](https://healpix.sourceforge.io/)) scheme, though the older COsmic Background Explorer (COBE) data is stored in COBE Quadrilateralizated Spherical Cube pixelization ([CSC](https://lambda.gsfc.nasa.gov/product/cobe/skymap_info_new.html)). See the links for each mission for more information on the data and how to use it. LAMBDA also provides user support, both generic and mission-specific, through a helpdesk available through the website's [Feedback page](https://lambda.gsfc.nasa.gov/contact/contact.html)."
+
+Documentation: "[The LAMBDA Website](https://lambda.gsfc.nasa.gov/)"
+
+Contact: "[LAMBDA Feedback](https://lambda.gsfc.nasa.gov/contact/contact.html)"
+
+ManagedBy: "[LAMBDA](https://lambda.gsfc.nasa.gov/)"
+
+UpdateFrequency: "Various."
+
+Tags:
+  - aws-pds
+  - astronomy
+  - archives
+  - datacenter
+  - imaging
+  - satellite imagery
+
+License: There are no restrictions on the use of this data.
+Citation:
+Resources:
+  - Description: the [Wilkinson Microwave Anisotropy Probe (WMAP)](https://lambda.gsfc.nasa.gov/product/wmap/current/index.html).otal size of 2 TB.
+    ARN: arn:aws:s3:::nasa-lambda/cobe/map/dr5
+    Region: us-west-2
+    Type: S3 Bucket
+
+  - Description: The [COBE/Far-InfraRed Absolute Spectrophotometer (FIRAS)](https://lambda.gsfc.nasa.gov/product/cobe/firas_products.html).  Total size of 9.4 GB.
+    ARN: arn:aws:s3:::nasa-lambda/cobe/firas
+    Region: us-west-2
+    Type: S3 Bucket
+
+  - Description: The [COBE/Diffuse Infrared Background Experiment  (DIRBE)](https://lambda.gsfc.nasa.gov/product/cobe/dirbe_overview.html).  Total size of 95 GB.
+    ARN: arn:aws:s3:::nasa-lambda/cobe/dirbe
+    Region: us-west-2
+    Type: S3 Bucket
+
+  - Description: The [COBE/Differential Microwave Radiometer  (DMR)](https://lambda.gsfc.nasa.gov/product/cobe/dmr_overview.html).  Total size of 25 GB.
+    ARN: arn:aws:s3:::nasa-lambda/cobe/dmr
+    Region: us-west-2
+    Type: S3 Bucket
+
+ 
+DataAtWork:
+  Tutorials:
+    - Title: LAMBDA cloud access
+      URL:  https://lambda.gsfc.nasa.gov/product/aws/
+      AuthorName: NASA/LAMBDA
+      AuthorURL: https://lambda.gsfc.nasa.gov/
+  Tools & Applications:
+    - Title: LAMBDA Tools
+      URL: https://lambda.gsfc.nasa.gov/toolbox/
+      AuthorName: NASA/LAMBDA 
+      AuthorURL: https://lambda.gsfc.nasa.gov/
+  Publications:
+    - Title: CMB Experiment Bibliography
+      URL: https://lambda.gsfc.nasa.gov/papers/
+      AuthorName: Various; curated by LAMBDA 
+      AuthorURL: https://lambda.gsfc.nasa.gov/
