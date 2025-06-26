@@ -12,7 +12,7 @@ Description: |
   is freely available to search the archive. This dataset contains all of the scenes in the
   original Sentinel-2 Public Dataset and will grow as that does.
   L2A data are available from April 2017 over wider Europe region and globally since December 2018.
-Documentation: https://github.com/cirrus-geo/cirrus-earth-search
+Documentation: https://github.com/Element84/earth-search
 Contact: opendata@element84.com
 ManagedBy: "[Element 84](https://www.element84.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
@@ -33,6 +33,23 @@ Tags:
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
+  - Description: Collection 1 Level 2A scenes and metadata
+    ARN: arn:aws:s3:::e84-earth-search-sentinel-data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Earth Search STAC C1 L2A Collection](https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a)'
+    - '[STAC Browser C1 L2A Collection](https://radiantearth.github.io/stac-browser/#/external/earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a)' 
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (parquet)"
+    ARN: arn:aws:s3:::e84-earth-search-sentinel-data-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item.
+    ARN: arn:aws:sns:us-west-2:608149789419:cirrus-es-prod-publish
+    Region: us-west-2
+    Type: SNS Topic
   - Description: Level 2A scenes and metadata
     ARN: arn:aws:s3:::sentinel-cogs
     Region: us-west-2
