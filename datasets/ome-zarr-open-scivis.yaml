@@ -1,0 +1,48 @@
+Name: OME-Zarr Open SciVis Datasets
+Description: This project provides the Open SciVis Datasets in a chunked, highly-compressed, multi-scale format, encodes metadata in JSON according to the OME-Zarr specification, and hosts the datasets on AWS S3 through the AWS Open Data Program, aiming to serve as a web-based resource for the scientific visualization community to enhance reproducibility and facilitate testing and development of OME-Zarr tools.
+Documentation: https://github.com/InsightSoftwareConsortium/OMEZarrOpenSciVisDatasets
+Contact: "Matt McCormick <matt@mmmccormick.com>"
+ManagedBy: "NumFOCUS"
+UpdateFrequency: On a biannual basis we update the datasets and sync with OME-Zarr standards.
+Tags:
+  - biology
+  - image processing
+  - imaging
+  - neuroimaging
+  - neuroscience
+  - life sciences
+  - magnetic resonance imaging
+  - computed tomography
+  - volumetric imaging
+  - zarr
+License: CC-BY-4.0 unless otherwise specified
+Resources:
+  - Description: OME-Zarr Open SciVis Datasets
+    ARN: arn:aws:s3:::ome-zarr-scivis
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Read and Visualize in Python
+      URL: https://github.com/InsightSoftwareConsortium/OMEZarrOpenSciVisDatasets?tab=readme-ov-file#usage
+      AuthorName: Matt McCormick
+      AuthorURL: https://github.com/thewtex
+  Tools & Applications:
+    - Title: A list of tools and libraries with OME-Zarr support
+      URL: https://ngff.openmicroscopy.org/tools/index.html
+      AuthorName: NGFF community
+      AuthorURL: https://github.com/ome/ngff
+  Publications:
+    - Title: "OME-NGFF: a next-generation file format for expanding bioimaging data-access strategies"
+      URL: https://www.nature.com/articles/s41592-021-01326-w
+      AuthorName: Josh Moore, Chris Allan, Sébastien Besson, Jean-Marie Burel, Erin Diel, David Gault, Kevin Kozlowski, Dominik Lindner, Melissa Linkert, Trevor Manz, Will Moore, Constantin Pape, Christian Tischer & Jason R. Swedlow
+    - Title: "OME-Zarr: a cloud-optimized bioimaging file format with international community support"
+      URL: https://link.springer.com/article/10.1007/s00418-023-02209-1
+      AuthorName: Josh Moore, Daniela Basurto-Lozada, Sébastien Besson, John Bogovic, Jordão Bragantini, Eva M. Brown, Jean-Marie Burel, Xavier Casas Moreno, Gustavo de Medeiros, Erin E. Diel, David Gault, Satrajit S. Ghosh, Ilan Gold, Yaroslav O. Halchenko, Matthew Hartley, Dave Horsfall, Mark S. Keller, Mark Kittisopikul, Gabor Kovacs, Aybüke Küpcü Yoldaş, Koji Kyoda, Albane le Tournoulx de la Villegeorges, Tong Li, Prisca Liberali, Dominik Lindner, Melissa Linkert, Joel Lüthi, Jeremy Maitin-Shepard, Trevor Manz, Luca Marconato, Matthew McCormick, Merlin Lange, Khaled Mohamed, William Moore, Nils Norlin, Wei Ouyang, Bugra Özdemir, Giovanni Palla, Constantin Pape, Lucas Pelkmans, Tobias Pietzsch, Stephan Preibisch, Martin Prete, Norman Rzepka, Sameeul Samee, Nicholas Schaub, Hythem Sidky, Ahmet Can Solak, David R. Stirling, Jonathan Striebel, Christian Tischer, Daniel Toloudis, Isaac Virshup, Petr Walczysko, Alan M. Watson, Erin Weisbart, Frances Wong, Kevin A. Yamauchi, Omer Bayraktar, Beth A. Cimini, Nils Gehlenborg, Muzlifah Haniffa, Nathan Hotaling, Shuichi Onami, Loic A. Royer, Stephan Saalfeld, Oliver Stegle, Fabian J. Theis & Jason R. Swedlow
+    - Title: Open SciVis Datasets
+      URL: https://klacansky.com/open-scivis-datasets/
+      AuthorName: Pavol Klacansky
+DeprecatedNotice:
+ADXCategories:
+  - Healthcare & Life Sciences Data
+  - Manufacturing Data
