@@ -1,19 +1,4 @@
-Citation: 'IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
-  If using data from the Ningaloo (TAN100) mooring, please add to the citation - "Department
-  of Jobs, Tourism, Science and Innovation (DJTSI), Western Australian Government". '
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
-    Title: Accessing IMOS - Moorings - Hourly time-series product
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Moorings - Hourly time-series product
 Description: "Integrated Marine Observing System (IMOS) have moorings across both\
   \ it's National Mooring Network and Deep Water Moorings facilities. The National\
   \ Mooring Network facility comprises a series of national reference stations and\
@@ -34,17 +19,33 @@ Description: "Integrated Marine Observing System (IMOS) have moorings across bot
   \ instruments, water-quality monitors (WQM), acoustic Doppler current profilers\
   \ (ADCPs), and single-point current meters."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/efd8201c-1eca-412e-9ad2-0534e96cea14
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Moorings - Hourly time-series product
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_hourly_timeseries_delayed_qc.parquet
-  Description: Cloud Optimised AODN dataset of IMOS - Moorings - Hourly time-series
-    product
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - chemistry
 - ocean velocity
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - Moorings - Hourly time-series
+    product
+  ARN: arn:aws:s3:::aodn-cloud-optimised/mooring_hourly_timeseries_delayed_qc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - Moorings - Hourly time-series product
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/mooring_hourly_timeseries_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]." If using data from the Ningaloo
+  (TAN100) mooring, please add to the citation - "Department of Jobs, Tourism, Science
+  and Innovation (DJTSI), Western Australian Government". '

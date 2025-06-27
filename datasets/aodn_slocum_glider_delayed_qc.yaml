@@ -1,20 +1,4 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access].
-  If using data from gliders deployed from Onslow, Western Australia, please add to
-  the citation - "Department of Jobs, Tourism, Science and Innovation (DJTSI), Western
-  Australian Government"
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
-    Title: Accessing Ocean Gliders - delayed mode glider deployments
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ocean Gliders - Delayed mode
 Description: The Australian National Facility for Ocean Gliders (ANFOG), with IMOS/NCRIS
   funding, deploys a fleet of eight gliders around Australia. The data represented
   by this record, are presented in delayed mode. The underwater ocean glider represents
@@ -44,18 +28,34 @@ Description: The Australian National Facility for Ocean Gliders (ANFOG), with IM
   the north-south transport of freshwater, heat and biogeochemical properties. The
   currents exert a large influence on coastal ecosystems, shipping lanes and fisheries.
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/c317b0fe-02e8-4ff9-96c9-563fd58e82ac
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ocean Gliders - Delayed mode
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/slocum_glider_delayed_qc.parquet
-  Description: Cloud Optimised AODN dataset of Ocean Gliders - delayed mode glider
-    deployments
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - ocean currents
 - chemistry
 - ocean velocity
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]." If using data from gliders
+  deployed from Onslow, Western Australia, please add to the citation - "Department
+  of Jobs, Tourism, Science and Innovation (DJTSI), Western Australian Government".'
+Resources:
+- Description: Cloud Optimised AODN dataset of Ocean Gliders - delayed mode glider
+    deployments
+  ARN: arn:aws:s3:::aodn-cloud-optimised/slocum_glider_delayed_qc.parquet
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing Ocean Gliders - delayed mode glider deployments
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/slocum_glider_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised

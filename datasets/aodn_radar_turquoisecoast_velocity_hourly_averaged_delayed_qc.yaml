@@ -1,18 +1,4 @@
-Citation: IMOS [year-of-data-download], [Title], [data-access-URL], accessed [date-of-access]
-Contact: info@aodn.org.au
-DataAtWork:
-  Tutorials:
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_TurquoiseCoast_velocity_hourly_average_delayed_qc.ipynb
-    Title: Accessing IMOS - ACORN - Turquoise Coast HF ocean radar site (Western Australia,
-      Australia) - Delayed mode sea water velocity
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_TurquoiseCoast_velocity_hourly_average_delayed_qc.ipynb
-  - AuthorName: Laurent Besnard
-    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
-    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
-    Title: Accessing and search for any AODN dataset
-    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+Name: Ocean Radar - Turquoise coast site - Sea water velocity - Delayed mode
 Description: "The Turquoise Coast (TURQ) HF ocean radar system covers the area of\
   \ shelf between Seabird and Jurien Bay and is the logical continuation of major\
   \ research efforts to understand the role of the Leeuwin Current System (Leeuwin\
@@ -45,17 +31,32 @@ Description: "The Turquoise Coast (TURQ) HF ocean radar system covers the area o
   \ the TURQ and ROT systems provide continuous monitoring of the shelf from Fremantle\
   \ to Jurien Bay."
 Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/055342fc-f970-4be7-a764-8903220d42fb
-License: http://creativecommons.org/licenses/by/4.0/
+Contact: info@aodn.org.au
 ManagedBy: AODN
-Name: Ocean Radar - Turquoise coast site -Sea water velocity - Delayed mode
-Resources:
-- ARN: arn:aws:s3:::aodn-cloud-optimised/radar_TurquoiseCoast_velocity_hourly_average_delayed_qc.zarr
-  Description: Cloud Optimised AODN dataset of IMOS - ACORN - Turquoise Coast HF ocean
-    radar site (Western Australia, Australia) - Delayed mode sea water velocity
-  Region: ap-southeast-2
-  Type: S3 Bucket
+UpdateFrequency: As Needed
 Tags:
 - oceans
 - ocean currents
 - ocean velocity
-UpdateFrequency: As Needed
+License: http://creativecommons.org/licenses/by/4.0/
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - ACORN - Turquoise Coast HF ocean radar site (Western Australia,
+      Australia) - Delayed mode sea water velocity
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_TurquoiseCoast_velocity_hourly_averaged_delayed_qc.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/radar_TurquoiseCoast_velocity_hourly_averaged_delayed_qc.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - ACORN - Turquoise Coast HF ocean
+    radar site (Western Australia, Australia) - Delayed mode sea water velocity
+  ARN: arn:aws:s3:::aodn-cloud-optimised/radar_TurquoiseCoast_velocity_hourly_averaged_delayed_qc.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket

@@ -1,0 +1,43 @@
+Name: Satellite - Ocean Colour - MODIS - 1 day - Optical Water Type (Moore et al 2009
+  algorithm)
+Description: 'The Aqua satellite platform carries a MODIS sensor that observes sunlight
+  reflected from within the ocean surface layer at multiple wavelengths. These measurements
+  at discrete wavelengths represent the spectrum of light leaving the water surface,
+  and the shape of the spectrum is characteristic of the water optical properties.
+
+
+  Moore et al. (2009) applied a clustering technique to spectra to identify 8 sets
+  of discrete optical water types. This product "owt_csiro" is produced using a CSIRO
+  implementation of the Moore et al. algorithm, and testing shows that it closely
+  reproduces the results of the original Moore et al implementation in the NASA SeaDAS
+  package.  The CSIRO implementation was created because the implementation in SeaDAS
+  has not been kept up to date, and to extend the product to the VIIRS sensor.'
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/60e57a2e-f88c-4b18-a3a1-1164c6259a10
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - MODIS - 01 day - Optical
+    Water Type (Moore et al 2009 algorithm)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_optical_water_type_1day_aqua.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - MODIS - 01 day - Optical Water Type (Moore et al
+      2009 algorithm)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_optical_water_type_1day_aqua.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_optical_water_type_1day_aqua.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

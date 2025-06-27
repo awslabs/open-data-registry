@@ -1,0 +1,56 @@
+Name: Satellite - Ocean Colour - MODIS - 1 day - Net Primary Productivity (GSM model
+  and Eppley-VGPM algorithm)
+Description: "The Aqua satellite platform carries a MODIS sensor that observes sunlight\
+  \ reflected from within the ocean surface layer at multiple wavelengths. These multi-spectral\
+  \ measurements are used to infer the concentration of chlorophyll-a (Chl-a), most\
+  \ typically due to phytoplankton, present in the water. Modelling is then used to\
+  \ compute an estimate of the Net Primary Productivity (NPP).\n\nThe model used is\
+  \ based on the standard vertically generalised production model (VGPM).  The VGPM\
+  \ is a \"chlorophyll-based\" model that estimates net primary production from chlorophyll\
+  \ using a temperature-dependent description of chlorophyll-specific        photosynthetic\
+  \ efficiency. For the VGPM, net primary production is a function of chlorophyll,\
+  \ available light, and the photosynthetic efficiency. The only difference between\
+  \ the Standard VGPM and the Eppley-VGPM is the temperature-dependent description\
+  \ of photosynthetic efficiencies, with the Eppley approach using an exponential\
+  \ function to account for variation in photosynthetic efficiencies due to photoacclimation.\
+  \ The similarity between these models (VGPM vs E_VGPM) is described more extensively\
+  \ in a paper by Elena-Carr et al (2006.). VGPM is a Depth Integrated Model(DIM)\
+  \ described by Behrenfeld and Falkowski (1997), with modification due to Eppley\
+  \ (1972) as implemented by Antoine and Morel (1996).\n\nThere are multiple retrieval\
+  \ algorithms for estimating Chl-a. These data (eppley_npp_chl_gsm) use the Garver-Siegel-Maritorena\
+  \ (GSM) method implemented in the SeaDAS processing software l2gen and described\
+  \ in \u201CChapter 11, and references therein, of IOCCG Report 5, 2006, (http://ioccg.org/wp-content/uploads/2015/10/ioccg-report-05.pdf).\
+  \ This product is recommended for use in the VGPM model. The product Eppley_NPP_chl_gsm\
+  \ is experimental, in the sense that it is challenging to validate due to the scarcity\
+  \ of insitu measurments. It should only be used with caution informed by understanding\
+  \ of the algorithms."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/27cc65c0-d453-4ba3-a0d6-55e4449fee8c
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - MODIS - 01 day - Net Primary
+    Productivity (GSM model and Eppley-VGPM algorithm)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_net_primary_productivity_gsm_1day_aqua.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - MODIS - 01 day - Net Primary Productivity (GSM model
+      and Eppley-VGPM algorithm)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_net_primary_productivity_gsm_1day_aqua.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_net_primary_productivity_gsm_1day_aqua.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'

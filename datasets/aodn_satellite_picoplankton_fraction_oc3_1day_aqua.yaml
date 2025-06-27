@@ -1,0 +1,48 @@
+Name: Satellite - Ocean Colour - MODIS - 1 day - Picoplankton fraction (OC3 model
+  and Brewin et al 2012 algorithm)
+Description: "The Aqua satellite platform carries a MODIS sensor that observes sunlight\
+  \ reflected from within the ocean surface layer at multiple wavelengths. These multi-spectral\
+  \ measurements are used to infer the concentration of chlorophyll-a (Chl-a), most\
+  \ typically due to phytoplankton, present in the water. An empirical relationship\
+  \ is then used to compute an estimate of the relative abundance of three phytoplankton\
+  \ size classes (micro, nano and picoplankton). \n\nThe methods used to decompose\
+  \ chl_oc3 are described by Brewin et al in two papers in 2010 and 2012. The two\
+  \ methods, denoted Brewin2010at and Brewin2012in, used calibration data from the\
+  \ Atlantic and Indian Oceans respectively.  Users should note that these are unvalidated\
+  \ experimental products and they should familiarise themselves with the underlying\
+  \ algorithms and methodologies described in the published literature before making\
+  \ use of them.\n\nThe data are produced from the same data stream as the MODIS Chla_oci\
+  \ data set (https://catalogue-imos.aodn.org.au:443/geonetwork/srv/api/records/d7a14921-8f3f-4522-9a54-e7d1df969c8a).\
+  \ \n\nData are provided as two files per day, one with the percentage of nanoplankton,\
+  \ and one for picoplankton. The percentage of microplankton is computed as the balance\
+  \ to 100%, that is %micro = 100 - %nano - %pico."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/bc428d0b-eff7-41b9-8d4c-10e666ee1312
+Contact: FILL UP MANUALLY - CHECK DOCUMENTATION
+ManagedBy: FILL UP MANUALLY - CHECK DOCUMENTATION
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - SRS - MODIS - 01 day - Picoplankton
+    fraction (OC3 model and Brewin et al 2012 algorithm)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_picoplankton_fraction_oc3_1day_aqua.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - SRS - MODIS - 01 day - Picoplankton fraction (OC3 model
+      and Brewin et al 2012 algorithm)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_picoplankton_fraction_oc3_1day_aqua.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_picoplankton_fraction_oc3_1day_aqua.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
