@@ -1,0 +1,42 @@
+Name: Software Cache Request Dataset on AWS
+Description: This is a dataset that contains thousands of traces, where each trace stores the requests made to software caches in a time period.  The dataset contains block cache workloads, key-value cache workloads, and object cache workloads. The dataset can be used for cache research, storage performance evaluation, and workload modeling. 
+Documentation: https://cachetrace.com/
+Contact: Juncheng Yang 
+ManagedBy: Harvard MADS Lab
+UpdateFrequency: New data are added as soon as they become available
+Tags:
+  - Cache Requests 
+  - Computer Systems
+  - Storage Systems
+  - Performance
+License: There are no restrictions on the use of this data
+Resources:
+  - Description: CacheDatasets
+    ARN: arn:aws:s3:::cacheDatasets
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: How to use EC2 to run large scale cache simulations 
+      URL: 
+      AuthorName: Juncheng Yang
+      Services: EC2, S3
+  Tools & Applications:
+    - Title: "libCacheSim: a high performance library for building cache simulator"
+      URL: https://libcachesim.com/
+      AuthorName: Juncheng Yang
+      AuthorURL: https://junchengyang.com/
+    - Title: "DistComp: a distributed computation platform for running Python and Bash computation tasks on multiple nodes"
+      URL: https://github.com/1a1a11a/distComp
+      AuthorName: Juncheng Yang
+      AuthorURL: https://junchengyang.com/
+  Publications:
+    - Title: "A large scale analysis of hundreds of in-memory cache clusters at Twitter"
+      URL: https://www.usenix.org/system/files/osdi20-yang.pdf
+      AuthorName: Juncheng Yang, Yao Yue, K. V. Rashmi
+      AuthorURL: https://junchengyang.com/
+    - Title: FIFO queues are all you need for cache eviction
+      URL: https://dl.acm.org/doi/abs/10.1145/3600006.3613147
+      AuthorName: Juncheng Yang, Yazhuo Zhang, Ziyue Qiu, Yao Yue, K. V. Rashmi
+ADXCategories:
+  -    Telecommunications Data
