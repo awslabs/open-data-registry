@@ -11,9 +11,9 @@ Tags:
   - satellite imagery
   - survey
 License: https://irsa.ipac.caltech.edu/data_use_terms.html
-Citation: "If you use SPHEREx data, please follow the citation instructions provided at [FILL IN] and [https://irsa.ipac.caltech.edu/ack.html](https://irsa.ipac.caltech.edu/ack.html)."
+Citation: 'If you use SPHEREx data from the IRSA archive, please cite the appropriate Digital Object Identifier: [10.26131/IRSA629](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA629), include the following acknowledgement: "This publication makes use of data products from the Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices Explorer (SPHEREx), which is a joint project of the Jet Propulsion Laboratory and the California Institute of Technology, and is funded by the National Aeronautics and Space Administration.", and follow the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html).'
 Resources:
-  - Description: 'Linear Variable Filter (LVF) Images: Calibrated LVF images plus per-pixel status and processing flags, variance map, zodiacal model, exposure-averaged PSF, and wavelength WCS. Multi-extension FITS format.'
+  - Description: 'Spectral Images: Calibrated Spectral Images plus per-pixel status and processing flags, variance map, zodiacal model, exposure-averaged PSF, and wavelength WCS. Multi-extension FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/level2
     Region: us-east-1
     Type: S3 Bucket
@@ -25,31 +25,31 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Gain Factors: [DESCRIPTION]. YAML format.'
-    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/gain_factors
-    Region: us-east-1
-    Type: S3 Bucket
-    RequesterPays: False
-    AccountRequired: False
   - Description: 'Exposure-Averaged PSF: Wavelength-dependent point spread function (PSF) estimates on a fine positional grid across each detector. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/average_psf
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Dark Current: [DESCRIPTION]. FITS format.'
+  - Description: 'Dark Current: Per pixel dark current. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/dark
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Dichroic: [DESCRIPTION]. FITS format.'
+  - Description: 'Dichroic: Map of pixels affected by flux attenuation due to the dichroic filter. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/dichroic
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Non-functional Pixel Map: Per-exposure, per-detector bad pixel flags. FITS format.'
+  - Description: 'Gain Factors: Gain factors for each detector. YAML format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/gain_factors
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Non-functional Pixel Map: Map of permanently non-functioning pixels. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/nonfunc
     Region: us-east-1
     Type: S3 Bucket
@@ -61,13 +61,13 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Readout Noise: [DESCRIPTION]. FITS format.'
+  - Description: 'Readout Noise: Per-detector read noise maps. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/readnoise_pars
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
     AccountRequired: False
-  - Description: 'Spectral WCS Map: Detailed WCS map. FITS format.'
+  - Description: 'Spectral WCS Map: Detailed World Coordinate System (WCS) map. FITS format.'
     ARN: arn:aws:s3:::nasa-irsa-spherex/qr/spectral_wcs
     Region: us-east-1
     Type: S3 Bucket
@@ -76,6 +76,6 @@ Resources:
 DataAtWork:
   Tutorials:
     - Title: Notebook Tutorials
-      URL: https://irsa.ipac.caltech.edu/docs/notebooks/#accessing-euclid-data
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/#accessing-spherex-data
       AuthorName: Caltech/IPAC-IRSA
       AuthorURL: https://irsa.ipac.caltech.edu
