@@ -1,0 +1,33 @@
+Name: IWMI DIWASA Blue ET for Africa
+Description: Blue evapotranspiration (Blue ET) is the portion of ET derived from blue water sources, including surface water (rivers, lakes, reservoirs) and groundwater used for irrigation. It is a key component of blue water fluxes in water accounting. Blue ET consists of evaporation from irrigated fields, transpiration from irrigated crops, and water lost from artificial storage. It helps assess water productivity in irrigated agriculture, quantify consumptive water use, and support sustainable water resource management, particularly in water-scarce regions.
+Documentation: https://iwmi.africageoportal.com/pages/continent-africa
+Contact: iwmiwaplus@gmail.com
+ManagedBy: "[IWMI](https://www.iwmi.org/)"
+UpdateFrequency: None
+Tags:
+  - aws-pds
+  - surface water
+  - irrigated cropland
+  - ground water
+  - evapotranspiration
+  - water
+License: "Creative Commons open license"
+Resources:
+  - Description: Monthly Blue ET for Africa
+    ARN: arn:aws:s3:::iwmi-datasets/Water_accounting_plus/Africa/Incremental_ET_M/
+    Region: af-south-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://iwmi-datasets.s3.af-south-1.amazonaws.com/Cropland_partition/index.html)'
+
+DataAtWork:
+  Tutorials:
+    - Title: Analysis of IWMI’s Water Data Products through Digital Earth Africa 
+      URL: https://learn.digitalearthafrica.org/courses/course-v1:IWMI+DIWASA1+2024_10/about
+      AuthorName: A.T. Haile, E.T. Negash, K. Mubea, M. Tadesse
+      AuthorURL: https://github.com/iwmiwaplus
+  Tools & Applications:
+    - Title: Multi-Scale Water Accounting in the Volta Basin
+      URL: https://public.tableau.com/app/profile/iwmi.wa/viz/Voltabasinvertical/Merged?publish=yes
+      AuthorName: iwmiwaplus
+      AuthorURL: https://public.tableau.com/app/profile/iwmi.wa
