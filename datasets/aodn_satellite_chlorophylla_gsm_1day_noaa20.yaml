@@ -1,0 +1,39 @@
+Name: Satellite - Ocean Colour -  NOAA20 - 1 day - Chlorophyll-a concentration (GSM
+  model)
+Description: "The NOAA20 satellite platform carries a VIIRS sensor that observes sunlight\
+  \ reflected from within the ocean surface layer at multiple wavelengths. These multi-spectral\
+  \ measurements are used to infer the concentration of chlorophyll-a (Chl-a), most\
+  \ typically due to phytoplankton, present in the water. \n\nThere are multiple retrieval\
+  \ algorithms for estimating Chl-a. These data use the Garver-Siegel-Maritorena (GSM)\
+  \ method implemented in the SeaDAS processing software l2gen and described in \u201C\
+  Chapter 11, and references therein, of IOCCG Report 5, 2006, (http://ioccg.org/wp-content/uploads/2015/10/ioccg-report-05.pdf)."
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/ad4d6908-3a36-4991-996a-5b00ac162794
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Tags:
+- oceans
+- satellite imagery
+- biology
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - Satellite Remote Sensing - NOAA20
+    - 01 day - Chlorophyll-a concentration (GSM model)
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_chlorophylla_gsm_1day_noaa20.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS - Satellite Remote Sensing - NOAA20 - 01 day - Chlorophyll-a
+      concentration (GSM model)
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_chlorophylla_gsm_1day_noaa20.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/satellite_chlorophylla_gsm_1day_noaa20.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://nbviewer.org/github/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
