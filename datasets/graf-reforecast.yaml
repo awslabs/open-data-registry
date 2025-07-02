@@ -1,7 +1,7 @@
-Name: Graf Reforecast
-Description: NVIDIA and The Weather Company (TWCo) have generated a data set of reforecasts from TWCo’s GRAF (Global high-Resolution Atmospheric Forecasting) model, a version of the National Center for Atmospheric Research (NCAR) Model for Predictions Across Scales (MPAS).  GRAF is global, but the configuration for this reforecast had a mesh refinement to ~4 km over the US, Caribbean Basin, and Europe, and 15 km elsewhere. This model was designed to run much of the computation on graphical processing units, with this development assisted by NVIDIA.  The intended 1836 reforecast cases (~5 years) will be generated with initial condition dates spanning more than 20 years, 2004-2024.  These dates of the chosen initial conditions mostly selected based on high-impact weather in the contiguous US (CONUS) and Caribbean.   Sampling in this way, we hypothesize, will span a wider range of interesting, high-impact weather scenarios than had we performed five contiguous years of once-daily reforecasts, and we will span a wider variety of interesting precipitation events while still providing many samples in non-precipitating regions with more ordinary weather. GRAF reforecasts were mostly run to +27 h lead time, 3-h for spin up plus a full diurnal cycle.   Data were saved in zarr format.   Most fields were at 15-min intervals.  Data are made publicly available to all through Amazon Web Services’ Open-Data Initiative.
+Name: GRAF Reforecast
+Description: A zarr-formatted dataset of 1836 reforecast cases (~5 years) from The Weather Company GRAF (Global high-Resolution Atmospheric Forecasting) model, a version of the National Center for Atmospheric Research (NCAR) Model for Predictions Across Scales (MPAS).  GRAF is global, but the configuration for this reforecast had a mesh refinement to ~4 km over the US, Caribbean Basin, and Europe, and 15 km elsewhere. This model was designed to run much of its computation on graphical processing units, with this development assisted by NVIDIA.  The 1836 cases (~5 years) were generated from ECMWF reanalyses (ERA5) for initial condition dates spanning more than 20 years, 2004-2024.  These dates of the chosen initial conditions mostly selected based on high-impact weather in the contiguous US (CONUS) and Caribbean.   Sampling in this way spanned a wider range of interesting, high-impact weather scenarios than were there five contiguous years of data. GRAF reforecasts were mostly run to +27 h lead time, assuming a 3-h for spin up followed by a full diurnal cycle.   Data were saved in zarr format on the native model vertical coordinate.   Most fields were saved at 15-min intervals, though several precipitation variables were saved at 5-min cadence.  
 Documentation:
-Contact:
+Contact: Tom Hamill (tom.hamill@weather.com)
 ManagedBy: "[The Weather Company](https://www.weathercompany.com/)"
 UpdateFrequency: One time push only
 Tags:
@@ -12,8 +12,15 @@ Tags:
   - model
   - near-surface air temperature
   - near-surface relative humidity
-  - zar
+  - precipitation amount
+  - precipitation type
+  - wind speeds
+  - cloud amount
+  - visibility
+  - zarr
   - weather
+  - ERA5
+  - MPAS
 License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
 Citation:
 Resources:
@@ -21,6 +28,7 @@ Resources:
     ARN: arn:aws:s3:::twc-graf-reforecast
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
 DataAtWork:
   Tutorials:
     - Title:
@@ -29,11 +37,6 @@ DataAtWork:
       AuthorName:
       AuthorURL:
       Services:
-  Tools & Applications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
   Publications:
     - Title: Global reforecasts from MPAS “GRAF” with mesh refinement over the US and Europe
       URL: https://cesoc.net/wp-content/uploads/2024/08/GRAF-reforecast-Hamill-CESOC24.pdf
