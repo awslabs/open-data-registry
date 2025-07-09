@@ -1,0 +1,40 @@
+Name: Morphological Prediction of CPAP Associated Acute Respiratory Instability (Self Similarity)
+Description: >
+  This dataset provides the data and code accompanying the research on a self-similarity (SS) algorithm
+  developed to detect high loop gain (HLG) from standard respiratory effort signals. The SS metric
+  demonstrated strong predictive performance for CPAP failure across 2,145 split-night polysomnography (PSG)
+  recordings from MGH and external validation from home sleep apnea tests. This approach supports more
+  accurate and noninvasive phenotyping of obstructive sleep apnea (OSA) patients for precision treatment strategies.
+Documentation: https://doi.org/10.60508/2wg3-9q21
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: One-time release
+Tags:
+  - sleep
+  - apnea
+  - loop-gain
+  - polysomnography
+  - machine learning
+  - neurophysiology
+  - respiratory
+  - deep learning
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP License](https://bdsp.io/content/harvard-eeg-db/view-license/1.0/); [Data User Agreement](https://bdsp.io/content/harvard-eeg-db/view-dua/1.0/)"
+Resources:
+  - Description: Self-Similarity CPAP Prediction Dataset and Code
+    ARN: arn:aws:s3:::bdsp-cpap-selfsimilarity-data
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/2wg3-9q21
+DataAtWork:
+  Tools & Applications:
+    - Title: CPAP-Self-Similarity-Tools
+      URL: https://github.com/bdsp-core/CPAP-Self-Similarity
+      AuthorName: Brain Data Science Platform (BDSP)
+      AuthorURL: https://bdsp.io
+  Publications:
+    - Title: Morphological Prediction of CPAP Associated Acute Respiratory Instability (Self Similarity)
+      URL: https://doi.org/10.60508/2wg3-9q21
+      AuthorName: Nassi, T. E., Labarca, G., Thomas, R., & Westover, M. B.
+    - Title: Morphological Prediction of CPAP Associated Acute Respiratory Instability
+      URL: https://doi.org/10.1513/AnnalsATS.202311-979OC
+      AuthorName: Nassi, T. E., Oppersma, E., Labarca, G., Donker, D. W., Westover, M. B., & Thomas, R. J.
