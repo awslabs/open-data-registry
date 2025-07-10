@@ -1,0 +1,37 @@
+Name: Sleep Recordings from Wearable Devices in Meditators
+Description: >
+  This dataset supports a prospective cohort study evaluating the effects of advanced meditation on sleep quality
+  and brain aging. Using EEG data from Dreem headbands worn by participants before and after a 4-day silent
+  meditation retreat at the Isha Institute of Inner Sciences, researchers analyzed Brain Age Index (BAI)
+  derived from sleep EEG and compared it across meditators and control groups. The study suggests meditation
+  may contribute to healthier sleep and reduced brain aging.
+Documentation: https://doi.org/10.60508/5s8v-9886
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: One-time release
+Tags:
+  - sleep
+  - meditation
+  - eeg
+  - brain age
+  - wearable
+  - brain health
+  - deep learning
+  - neurophysiology
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP License](https://bdsp.io/content/harvard-eeg-db/view-license/1.0/); [Data User Agreement](https://bdsp.io/content/harvard-eeg-db/view-dua/1.0/)"
+Resources:
+  - Description: Sleep EEG Recordings and Analysis Code from Meditation Study
+    ARN: arn:aws:s3:::bdsp-meditation-sleep-data
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/5s8v-9886
+DataAtWork:
+  Tools & Applications:
+    - Title: Meditation Sleep Brain Age Tools
+      URL: https://github.com/bdsp-core/meditation-sleep-brain-age
+      AuthorName: Brain Data Science Platform (BDSP)
+      AuthorURL: https://bdsp.io
+  Publications:
+    - Title: Sleep Recordings from Wearable Devices in Meditators
+      URL: https://doi.org/10.60508/5s8v-9886
+      AuthorName: Banks, J., Sun, H., Thomas, R., Westover, M. B., & Subramaniam, B.
