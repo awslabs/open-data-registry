@@ -1,0 +1,81 @@
+Name: 'SPHEREx Quick Release (QR): An All-Sky Spectral Survey'
+Description: 'The Spectro-Photometer for the History of the Universe, Epoch of Reionization, and Ices Explorer (SPHEREx) is a NASA Astrophysics Medium-class Explorer (MIDEX) mission launched in March 2025. During its planned two-year mission, SPHEREx will perform the first ever all-sky spectral survey in the optical to near-infrared (0.75-5 microns). SPHEREx Quick Release (QR) is the first data release. SPHEREx data will be used to probe inflation and the early universe, trace the history of galactic light production, and investigate the origin of planetary systems and biogenic ices, in addition to contributing to many other astrophysics research topics.'
+Documentation: https://irsa.ipac.caltech.edu/Missions/spherex.html
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: SPHEREx QR is updated weekly. The data may also be presented in new ways as the products become available.
+Tags:
+  - astronomy
+  - imaging
+  - object detection
+  - satellite imagery
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: 'If you use SPHEREx data from the IRSA archive, please cite the appropriate Digital Object Identifier: [10.26131/IRSA629](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA629), include the following acknowledgement: "This publication makes use of data products from the Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices Explorer (SPHEREx), which is a joint project of the Jet Propulsion Laboratory and the California Institute of Technology, and is funded by the National Aeronautics and Space Administration.", and follow the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html).'
+Resources:
+  - Description: 'Spectral Images: Calibrated Spectral Images plus per-pixel status and processing flags, variance map, zodiacal model, exposure-averaged PSF, and wavelength WCS. Multi-extension FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/level2
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Absolute Gain Matrix: Pixel-to-pixel gain variations within a single spectral channel and relative gain differences across channels. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/abs_gain_matrix
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Exposure-Averaged PSF: Wavelength-dependent point spread function (PSF) estimates on a fine positional grid across each detector. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/average_psf
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Dark Current: Per pixel dark current. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/dark
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Dichroic: Map of pixels affected by flux attenuation due to the dichroic filter. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/dichroic
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Gain Factors: Gain factors for each detector. YAML format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/gain_factors
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Non-functional Pixel Map: Map of permanently non-functioning pixels. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/nonfunc
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Non-Linearity Correction: Corrections applied to compensate for detector non-linearity due to gain degradation. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/nonlinear_pars
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Readout Noise: Per-detector read noise maps. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/readnoise_pars
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+  - Description: 'Spectral WCS Map: Detailed World Coordinate System (WCS) map. FITS format.'
+    ARN: arn:aws:s3:::nasa-irsa-spherex/qr/spectral_wcs
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/#accessing-spherex-data
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
