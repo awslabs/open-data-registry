@@ -12,11 +12,22 @@ Tags:
   - machine learning
 License: MIT License
 Resources:
-  - Description:
-    ARN:
-    Region:
-    Type:
-    Explore:
+  - Description: "All substitution mutations from Deep Mutational Scanning (DMS) experiments."
+    ARN: arn:aws:s3:::proteingym/DMS_substitutions.parquet
+    Region: us-east-2
+    Type: S3 Object
+  - Description: "All insertion-deletion (indel) mutations from DMS experiments."
+    ARN: arn:aws:s3:::proteingym/DMS_indels.parquet
+    Region: us-east-2
+    Type: S3 Object
+  - Description: "All substitution mutations from clinical variant databases (e.g., ClinVar)."
+    ARN: arn:aws:s3:::proteingym/clinical_substitutions.parquet
+    Region: us-east-2
+    Type: S3 Object
+  - Description: "All indel mutations from clinical variant databases."
+    ARN: arn:aws:s3:::proteingym/clinical_indels.parquet
+    Region: us-east-2
+    Type: S3 Object
 DataAtWork:
   Tutorials:
     - Title: Scoring ProteinGym assays with TranceptEVE
