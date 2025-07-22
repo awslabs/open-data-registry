@@ -1,8 +1,6 @@
 Name: ProteinGym
-Description: |
-  ProteinGym is a benchmark suite for assessing the performance of protein fitness prediction and design models. 
-  It comprises a large curated collection of 200+ high-throughput experimental assays (~3M mutated sequences), 
-  as well as clinical annotations from experts about the pathogenicity of mutants in over 3k human genes.
+Description: | 
+  ProteinGym is a benchmark suite for assessing the performance of protein fitness prediction and design models. It comprises a large curated collection of 200+ high-throughput experimental assays (~3M mutated sequences), as well as clinical annotations from experts about the pathogenicity of mutants in over 3k human genes.
 Documentation: https://github.com/OATML-Markslab/ProteinGym/blob/main/README.md
 Contact: pascal_notin@hms.harvard.edu
 ManagedBy: "Harvard Medical School; University of Oxford"
@@ -16,22 +14,10 @@ Tags:
   - machine learning
 License: MIT License
 Resources:
-  - Description: "All substitution mutations from Deep Mutational Scanning (DMS) experiments."
-    ARN: arn:aws:s3:::proteingym/DMS_substitutions.parquet
+  - Description: "ProteinGym dataset including all substitution/indel mutations from Deep Mutational Scanning (DMS) experiments (DMS_substitutions.parquet / DMS_indels.parquet), and all substitution/indel mutations from clinical variant databases (clinical_substitutions.parquet / clinical_indels.parquet)."
+    ARN: arn:aws:s3:::proteingym
     Region: us-east-2
-    Type: S3 Object
-  - Description: "All insertion-deletion (indel) mutations from DMS experiments."
-    ARN: arn:aws:s3:::proteingym/DMS_indels.parquet
-    Region: us-east-2
-    Type: S3 Object
-  - Description: "All substitution mutations from clinical variant databases (e.g., ClinVar)."
-    ARN: arn:aws:s3:::proteingym/clinical_substitutions.parquet
-    Region: us-east-2
-    Type: S3 Object
-  - Description: "All indel mutations from clinical variant databases."
-    ARN: arn:aws:s3:::proteingym/clinical_indels.parquet
-    Region: us-east-2
-    Type: S3 Object
+    Type: S3 Bucket
 DataAtWork:
   Tutorials:
     - Title: Scoring ProteinGym assays with TranceptEVE
