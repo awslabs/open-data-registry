@@ -42,6 +42,12 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=dsgrid-2018-efs%2F)'
+  - Description: '[Demand-Side Grid Model (dsgrid) Building Load Profiles](https://data.openei.org/submissions/8446)'
+    ARN: arn:aws:s3:::nrel-pds-dsgrid/building/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-dsgrid&prefix=building%2F)'
 DataAtWork:
   Tutorials:
     - Title: dsgrid Documentation
