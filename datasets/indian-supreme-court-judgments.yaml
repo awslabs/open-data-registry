@@ -1,0 +1,30 @@
+Name: Indian Supreme Court Judgments
+Description: This dataset contains judgements from the Indian Supreme Court, downloaded from ecourts website. It contains judgments from 1950 to 2025, along with raw metadata (in json format) and structured metadata in parquet format. Judgments are available in both English and regional Indian languages in zip format for easier download.
+Documentation: https://github.com/vanga/indian-supreme-court-judgments/blob/main/opendata/docs/dataset.md
+Contact: contact@dattam.in
+ManagedBy: "[Dattam Labs](https://dattam.in)"
+UpdateFrequency: Bi-monthly
+Tags:
+  - legal data
+  - supreme court
+  - india
+License: CC-BY-4.0
+Resources:
+  - Description: S3 bucket containing the judgments
+    ARN: arn:aws:s3:::indian-supreme-court-judgments
+    Region: ap-south-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Using AWS Athena to query the metadata
+      URL: https://github.com/vanga/indian-supreme-court-judgments/blob/main/opendata/tutorials/ATHENA.md
+      AuthorName: Nihesh Rachakonda
+      AuthorURL: https://github.com/rnihesh
+      Services:
+        - Amazon Athena
+    - Title: Dataset Overview and Usage Examples
+      URL: https://github.com/vanga/indian-supreme-court-judgments/blob/main/opendata/tutorials/README.md
+      AuthorName: Nihesh Rachakonda
+      AuthorURL: https://github.com/rnihesh
+      Services:
+        - Amazon S3
