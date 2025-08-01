@@ -21,22 +21,38 @@ Resources:
     ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-1m/
     Region: ca-central-1
     Type: S3 Bucket
-    Explore: https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-1m
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-1m)'
+    - '[Browse Bucket](...)'
   - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 2m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 2m
     ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-2m/
     Region: ca-central-1
     Type: S3 Bucket
-    Explore: https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-2m
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-2m)'
+    - '[Browse Bucket](...)'
   - Description: Medium Resolution Digital Elevation Model (MRDEM). Modèle numérique d'élévation de moyenne résolution (MNEMR)
     ARN: arn:aws:s3:::canelevation-dem/mrdem-30/
     Region: ca-central-1
     Type: S3 Bucket
-    Explore: https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30)'
+    - '[Browse Bucket](...)'
   - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) by LiDAR acquisition project. Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) par project d'acquisition LiDAR.
     ARN: arn:aws:s3:::canelevation-dem/hrdem-lidar/
     Region: ca-central-1
     Type: S3 Bucket
-    Explore: https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar)'
+    - '[Browse Bucket](...)'
+  - Description: Notifications for Medium Resolution Digital Elevation Model (MRDEM)
+    ARN: ...
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for High Resolution Digital Elevation Model (HRDEM)
+    ARN: ...
+    Region: ca-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Cloud-Optimized Geospatial Data Access
