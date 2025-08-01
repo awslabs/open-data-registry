@@ -1,0 +1,65 @@
+Name: CanElevation - Canada Digital Elevation Models
+Description: The Canadian DEM represents the current coverage of elevation data available. This dataset includes a Digital Terrain Model (DTM), a Digital Surface Model (DSM) and other derived products. This dataset includes a 1m, 2m and 30m DEM. The 1m and 2 m products are a combination of DEM data generated from airborne LiDAR and optical digital images. The 30 m DEM integrates data from the Copernicus DEM acquired during the TanDEM-X Mission, with the DEM data derived from airborne lidar and provides a complete coverage for Canada.  
+Documentation: [Medium Resolution Digital Elevation Model - MRDEM](https://open.canada.ca/data/en/dataset/18752265-bda3-498c-a4ba-9dfe68cb98da) [High Resolution Digital Elevation Model Mosaic](https://open.canada.ca/data/en/dataset/0fe65119-e96e-4a57-8bfe-9d9245fba06b) 
+Contact: geoinfo@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://nrcan.gc.ca/)"
+UpdateFrequency: "The dataset is updated as new DEM models becomes available.
+
+L'ensemble de données est mis à jour à mesure que des nouveaux modèles numérique d'élévation deviennent disponibles."
+Tags:
+  - canada
+  - elevation
+  - geospatial
+  - stac
+  - land
+  - dsm
+  - dtm
+  - dem
+License: "[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)"
+Resources:
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 1m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 1m
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-1m/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-1m)'
+    - '[Browse Bucket](...)'
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 2m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 2m
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-2m/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-2m)'
+    - '[Browse Bucket](...)'
+  - Description: Medium Resolution Digital Elevation Model (MRDEM). Modèle numérique d'élévation de moyenne résolution (MNEMR)
+    ARN: arn:aws:s3:::canelevation-dem/mrdem-30/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30)'
+    - '[Browse Bucket](...)'
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) by LiDAR acquisition project. Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) par project d'acquisition LiDAR.
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-lidar/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar)'
+    - '[Browse Bucket](...)'
+  - Description: Notifications for Medium Resolution Digital Elevation Model (MRDEM)
+    ARN: ...
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for High Resolution Digital Elevation Model (HRDEM)
+    ARN: ...
+    Region: ca-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Cloud-Optimized Geospatial Data Access
+      URL: https://nrcan.github.io/cloud-optimized-geospatial/
+      AuthorName: NRCan
+  Publications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
