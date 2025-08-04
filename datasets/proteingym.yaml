@@ -1,0 +1,36 @@
+Name: ProteinGym
+Description: | 
+  ProteinGym is a benchmark suite for assessing the performance of protein fitness prediction and design models. It comprises a large curated collection of 200+ high-throughput experimental assays (~3M mutated sequences), as well as clinical annotations from experts about the pathogenicity of mutants in over 3k human genes.
+Documentation: https://github.com/OATML-Markslab/ProteinGym/blob/main/README.md
+Contact: pascal_notin@hms.harvard.edu
+ManagedBy: "Harvard Medical School; University of Oxford"
+UpdateFrequency: Quarterly
+Tags:
+  - aws-pds
+  - protein
+  - bioinformatics
+  - biology
+  - life sciences
+  - deep learning
+  - machine learning
+License: MIT License
+Resources:
+  - Description: "ProteinGym dataset including all substitution/indel mutations from Deep Mutational Scanning (DMS) experiments (DMS_substitutions.parquet / DMS_indels.parquet), and all substitution/indel mutations from clinical variant databases (clinical_substitutions.parquet / clinical_indels.parquet)."
+    ARN: arn:aws:s3:::proteingym
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Scoring ProteinGym assays with TranceptEVE
+      URL: https://github.com/OATML-Markslab/ProteinGym/blob/main/notebooks/TranceptEVE_example.ipynb
+      AuthorName: Daniel Ritter
+      AuthorURL: https://danieldritter.github.io/
+  Tools & Applications:
+    - Title: ProteinGym website
+      URL: https://proteingym.org/
+      AuthorName: Pascal Notin & Daniel Ritter
+  Publications:
+    - Title: "ProteinGym: Large-Scale Benchmarks for Protein Fitness Prediction and Design"
+      URL: https://papers.nips.cc/paper_files/paper/2023/hash/cac723e5ff29f65e3fcbb0739ae91bee-Abstract-Datasets_and_Benchmarks.html
+      AuthorName: "Pascal Notin, et al."
+      AuthorURL: https://www.pascalnotin.com/
