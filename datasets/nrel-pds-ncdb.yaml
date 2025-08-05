@@ -1,0 +1,60 @@
+Name: National Climate Database (NCDB)
+Description: |
+  The National Climate Database (NCDB) seeks to be the definitive source of climate 
+  data for energy applications. The goal of the NCDB is to provide unbiased high 
+  temporal and spatial resolution climate data needed for renewable energy modeling. 
+  The NCDB seeks to maintain the inherent relationship between the various parameters 
+  that are needed to model solar, wind, hydrology and load and provide data for multiple 
+  important climate scenarios.  
+
+Documentation: https://nsrdb.nrel.gov/
+Contact: Manajit.Sengupta@nrel.gov
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - earth observation
+  - energy
+  - geospatial
+  - meteorological
+  - solar
+  - climate projections
+  - CMIP5
+  - CMIP6
+License:  Creative Commons Attribution 3.0 United States License
+Resources:
+  - Description: '[National Climate Database (NCDB)](https://data.openei.org/submissions/6163)'
+    ARN: arn:aws:s3:::nrel-pds-ncdb/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-ncdb)'
+  - Description: 'NCDB CONUS 4km Hourly CONUS (2006-2100) in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format'
+    ARN: arn:aws:s3:::nrel-pds-ncdb/4km-Hourly-CONUS/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-ncdb&prefix=v3%2F4km-Hourly-CONUS%2F)'
+  - Description: '[HSDS](https://github.com/HDFGroup/hsds) NCDB Domains'
+    ARN: arn:aws:s3:::nrel-pds-hsds/nrel/ncdb/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-hsds&prefix=nrel%2Fncdb%2F)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: NCDB Website
+      URL: https://climate.nrel.gov
+      AuthorName: NREL NCDB Team
+    - Title: HSDS Examples
+      URL: https://github.com/NREL/hsds-examples
+      AuthorName: Caleb Phillips, Caroline Draxl, John Readey, Jordan Perr-Sauer, Michael Rossol
+  Publications:
+    - Title: Regridding uncertainty for statistical downscaling of solar radiation
+      URL: https://ascmo.copernicus.org/articles/9/103/2023/
+      AuthorName:  Maggie D. Bailey, Douglas Nychka, Manajit Sengupta, Aron Habte, Yu Xie, Soutir Bandyopadhyay

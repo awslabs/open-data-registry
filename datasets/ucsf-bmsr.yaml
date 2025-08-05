@@ -1,0 +1,22 @@
+Name: The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) MRI Dataset
+Description: "The University of California San Francisco Brain Metastases Stereotactic Radiosurgery (UCSF-BMSR) dataset is a public, clinical, multimodal brain MRI dataset consisting of 560 brain MRIs from 412 patients with expert annotations of 5136 brain metastases. Data consists of registered and skull stripped T1 post-contrast, T1 pre-contrast, FLAIR and subtraction (T1 pre-contrast - T1 post-contrast) images and voxelwise segmentations of enhancing brain metastases in NifTI format. "
+Documentation: https://imagingdatasets.ucsf.edu/dataset/1
+Contact: dmi-support@ucsf.edu
+ManagedBy: '[UCSF Center for Intelligent Imaging](https://intelligentimaging.ucsf.edu/)'
+UpdateFrequency: ad hoc
+Tags:
+  - aws-pds
+  - cancer
+  - life sciences
+  - magnetic resonance imaging
+  - medicine
+  - medical imaging
+  - radiology
+License: 'Custom, non-commerical, attribution, no redistribution, no re-identification.  Full license is available [here](http://d1atcui2oic5ew.cloudfront.net/terms/2a109330-9769-44af-a18b-c4be64ee26b5).'
+Citation: https://arxiv.org/abs/2304.07248
+Resources:
+ - Description: Zip archive containing NifTI files
+   ARN: arn:aws:s3:::ucsf-dmi/UCSF_BrainMetastases_v1.zip
+   Region: us-west-1
+   Type: S3 Bucket
+   ControlledAccess: https://imagingdatasets.ucsf.edu/dataset/1

@@ -1,0 +1,27 @@
+Name: Cloud to Street - Microsoft Flood and Clouds Dataset
+Description: This dataset consists of chips of Sentinel-1 and Sentinel-2 satellite data. Each Sentinel-1 chip contains a corresponding label for water and each Sentinel-2 chip contains a corresponding label for water and clouds. Data is stored in folders by a unique event identifier as the folder name. Within each event folder there are subfolders for Sentinel-1 (s1) and Sentinel-2 (s2) data. Each chip is contained in its own sub-folder with the folder name being the source image id, followed by a unique chip identifier consisting of a hyphenated set of 5 numbers. All bands of the satellite data, as well as the labels, and overview images are contained within the chip folder.
+Documentation: https://www.drivendata.org/competitions/81/detect-flood-water/
+Contact: support@cloudtostreet.info
+ManagedBy: "[Radiant Earth Foundation](https://radiant.earth/)"
+UpdateFrequency: Not updated
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - computer vision
+  - deep learning
+  - machine learning
+  - floods
+  - geospatial
+  - earth observation
+  - satellite imagery
+  - cog
+  - synthetic aperture radar
+License: CC-BY-4.0 https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: Flood and Cloud Training Dataset
+    ARN: arn:aws:s3:::radiant-mlhub/c2smsfloods
+    Region: us-west-2
+    Type: S3 Bucket

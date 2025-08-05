@@ -1,0 +1,30 @@
+Name:  RSNA Abdominal Trauma Detection (RSNA-ABT)
+Description: "Blunt force abdominal trauma is among the most common types of traumatic injury, with the most frequent cause being motor vehicle accidents. Abdominal trauma may result in damage and internal bleeding of the internal organs, including the liver, spleen, kidneys, and bowel. Detection and classification of injuries are key to effective treatment and favorable outcomes. A large proportion of patients with abdominal trauma require urgent surgery. Abdominal trauma often cannot be diagnosed clinically by physical exam, patient symptoms, or laboratory tests. Prompt diagnosis of abdominal trauma using medical imaging is thus critical to patient care. AI tools that assist and expedite diagnosis of abdominal trauma have the potential to substantially improve patient care and health outcomes in the emergency setting. To create the ground truth dataset, RSNA collected imaging data sourced from 23 sites in 14 countries on six continents, including more than 4,000 CT exams with various abdominal injuries and a roughly equal number of cases without injury."
+Documentation: https://github.com/RSNA/AI-Challenge-Data/wiki/RSNA-Abdominal-Trauma-Detection
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - computed tomography
+  - x-ray tomography
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “Brain CT Hemorrhage Dataset, Copyright RSNA, 2019” as follows: Flanders AF, et al. The RSNA Brain CT Hemorrhage Dataset [10.1148/ryai.2020190211]. Radiology: Artificial Intelligence 2020;2:3."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::abdominal-trauma-detection
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/5
+DataAtWork:
+  Publications:
+    - Title: The RSNA Abdominal Traumatic Injury CT (RATIC) Dataset
+      AuthorName: Rudie, Jeffrey D.
+      URL: https://doi.org/10.48550/arXiv.2405.19595

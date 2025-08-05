@@ -1,0 +1,39 @@
+Name: "Sea Surface Temperature Daily Analysis: European Space Agency Climate Change Initiative product version 2.1"
+Description: "Global daily-mean sea surface temperatures, presented on a 0.05° latitude-longitude grid, with gaps between available daily observations filled by statistical means, spanning late 1981 to recent time.  Suitable for large-scale oceanographic meteorological and climatological applications, such as evaluating or constraining environmental models or case-studies of marine heat wave events. Includes temperature uncertainty information and auxiliary information about land-sea fraction and sea-ice coverage. For reference and citation see: www.nature.com/articles/s41597-019-0236-x."
+Documentation: https://surftemp.github.io/sst-data-tutorials/
+Contact: https://www.reading.ac.uk/met/
+ManagedBy: "[University of Reading, Department of Meteorology](https://www.reading.ac.uk/met/)"
+UpdateFrequency: yearly
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+  - aws-pds
+  - earth observation
+  - oceans
+  - climate
+  - environmental
+  - global
+  - geospatial
+License: Creative Commons Licence by attribution (https://creativecommons.org/licenses/by/4.0/).  For attribution cite www.nature.com/articles/s41597-019-0236-x.
+Resources:
+  - Description: Global daily-mean sea surface temperatures from 1981 onwards, in Zarr format. The data/sst.zarr directory contains a zarr store chunked (50, 180, 360) along the dimensions (time, lat, lon).
+    ARN: arn:aws:s3:::surftemp-sst
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Working with surftemp-sst data - Tutorial 1 - Getting started
+      URL: https://surftemp.github.io/sst-data-tutorials#tutorial1
+      AuthorName: Niall McCarroll
+    - Title: Working with surftemp-sst data - Tutorial 2 - Analysing Marine Heatwaves
+      URL: https://surftemp.github.io/sst-data-tutorials#tutorial2
+      AuthorName: Niall McCarroll
+  Publications:
+    - Title: Satellite-based time-series of sea-surface temperature since 1981 for climate applications (2019).
+      URL: https://www.nature.com/articles/s41597-019-0236-x
+      AuthorName: Merchant, C.J., Embury, O., Bulgin, C.E., Block, T., Corlett, G.K., Fiedler, E., Good, S.A., Mittaz, J., Rayner, N.A., Berry, D., Eastwood, S., Taylor, M., Tsushima, Y., Waterfall, A., Wilson, R. and Donlon, C.
+    - Title: Adjusting for desert-dust-related biases in a climate data record of sea surface temperature (2020).
+      URL: https://www.mdpi.com/2072-4292/12/16/2554
+      AuthorName: Merchant, C.J. and Embury, O.

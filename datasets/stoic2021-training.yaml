@@ -1,0 +1,37 @@
+Name: STOIC2021 Training
+Description: The STOIC project collected Computed Tomography (CT) images of 10,735 individuals suspected of being infected with SARS-COV-2 during the first wave of the pandemic in France, from March to April 2020. For each patient in the training set, the dataset contains binary labels for COVID-19 presence, based on RT-PCR test results, and COVID-19 severity, defined as intubation or death within one month from the acquisition of the CT scan. This S3 bucket contains the training sample of the STOIC dataset as used in the STOIC2021 challenge on grand-challenge.org.
+Documentation: https://pubs.rsna.org/doi/full/10.1148/radiol.2021210384
+Contact: support@grand-challenge.org
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: The full training set was published at the release.
+Tags:
+  - aws-pds
+  - life sciences
+  - computed tomography
+  - computer vision
+  - coronavirus
+  - COVID-19
+  - grand-challenge.org
+  - imaging
+  - SARS-CoV-2
+License: CC-BY-NC 4.0
+Citation: "STOIC2021 Training was documented in Thoracic CT in COVID-19: The STOIC Project, Revel, Marie-Pierre, et al. Radiology, 2021, https://doi.org/10.1148/radiol.2021210384."
+Resources:
+  - Description: The data set contains 2000 CT scans stored as compressed .mha files. Each file corresponds to a unique patient. the reference.csv file contains the reference labels for COVID-19 presence and severity, indexed by patient ID.  
+    ARN: arn:aws:s3:::stoic2021-training
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: STOIC2021 Challenge
+      URL: https://stoic2021.grand-challenge.org/
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/
+  Publications:
+    - Title: "Study of Thoracic CT in COVID-19: The STOIC Project"
+      URL: https://pubs.rsna.org/doi/full/10.1148/radiol.2021210384
+      AuthorName: Revel MP, Boussouar S, de Margerie-Mellon C, Saab I, Lapotre T, Mompoint D, et al.
+      AuthorURL: https://www.aphp.fr/
+    - Title: "How Well Do Self-Supervised Models Transfer to Medical Imaging?"
+      URL: https://www.mdpi.com/2313-433X/8/12/320
+      AuthorName: Anton J, Castelli L, Chan MF, Outthers M, Tang WH, Cheung V, et al.

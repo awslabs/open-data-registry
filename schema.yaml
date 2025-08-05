@@ -1,4 +1,4 @@
-desc: Simple schema for ODAR compliant dataset listings
+desc: Simple schema for RODA compliant dataset listings
 extensions:
   - ext.py
 type: map
@@ -6,9 +6,15 @@ mapping:
   Deprecated:
     type: bool
     required: False
+  DeprecatedNotice:
+    type: str
+    required: False    
   Name:
     type: str
     required: True
+    range:
+      min: 5
+      max: 130
   Description:
     type: str
     required: True
@@ -19,6 +25,9 @@ mapping:
     type: str
     required: True
   ManagedBy:
+    type: str
+    required: True
+  Citation:
     type: str
     required: False
   UpdateFrequency:
@@ -44,6 +53,15 @@ mapping:
     sequence:
       - type: str
         func: ext_tags
+  ADXCategories:
+    type: seq
+    required: False
+    range:
+      min: 0
+      max: 2    
+    sequence:
+      - type: str
+        func: ext_adx_categories
   License:
     type: str
     required: True
@@ -59,9 +77,6 @@ mapping:
     type: seq
     required: True
     sequence:
-      - type: any
-        required: True
-        func: ext_valid_bucket_regions
       - type: map
         mapping:
           Description:
@@ -83,6 +98,8 @@ mapping:
             func: ext_resources
           RequesterPays:
             type: bool
+          AccountRequired:
+            type: bool            
           ControlledAccess:
             type: str
             func: ext_resources_controlled_access
@@ -92,7 +109,7 @@ mapping:
             required: False
             sequence:
               - type: str
-                func: ext_resources_explore
+                func: ext_resources_explore              
   DataAtWork:
     type: map
     required: False
@@ -109,6 +126,10 @@ mapping:
                 type: str
                 pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
+              NotebookURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?\.ipynb$
+                required: False
               AuthorName:
                 type: str
                 required: True

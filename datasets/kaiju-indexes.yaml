@@ -1,0 +1,32 @@
+Name: Indexes for Kaiju
+Description: This dataset comprises pre-built indexes for the bioinformatics software Kaiju, which is used for taxonomic classification of metagenomic sequencing data. Various indexes for different source reference databases are available.
+Documentation: https://bioinformatics-centre.github.io/kaiju/downloads.html
+Contact: https://github.com/bioinformatics-centre/kaiju/issues
+ManagedBy: "[Peter Menzel](https://github.com/pmenzel)"
+UpdateFrequency: roughly yearly
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - genomic
+  - life sciences
+  - whole genome sequencing
+  - reference index
+  - metagenomics
+  - microbiome
+License: Public Domain
+Resources:
+  - Description: This AWS S3 bucket contains pre-built indexes for Kaiju.
+    ARN: arn:aws:s3:::kaiju-idx
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+   Tutorials:
+     - Title: Quickstart Tutorial for downloading the index files and running Kaiju.
+       URL: https://github.com/bioinformatics-centre/kaiju/blob/master/Quickstart.md
+       AuthorName: Peter Menzel
+       AuthorURL: https://github.com/pmenzel
+   Publications:
+     - Title: Fast and sensitive taxonomic classification for metagenomics with Kaiju
+       URL: https://www.nature.com/articles/ncomms11257
+       AuthorName: Peter Menzel et al (2016)

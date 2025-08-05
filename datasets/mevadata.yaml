@@ -7,7 +7,7 @@ Description: |
   fields of view. The current release consists of about 328 hours
   (516GB, 4259 clips) of video data, as well as 4.6 hours (26GB) of
   UAV data. Other data includes GPS tracks of actors, camera models,
-  and a site map. We have also released annotations for 22 hours of
+  and a site map. We have also released annotations for roughly 184 hours of
   data. Further updates are planned.
 Documentation: http://mevadata.org
 Contact: mevadata@kitware.com
@@ -20,10 +20,21 @@ Tags:
   - computer vision
   - urban
   - us
+  - video
 License: http://mevadata.org/resources/MEVA-data-license.txt
 Resources:
   - Description: AVI video clips and collection site map
     ARN: arn:aws:s3:::mevadata-public-01
     Region: us-east-1
     Type: S3 Bucket
-
+DataAtWork:
+  Publications:
+    - Title: "MEVA: A Large-Scale Multiview, Multimodal Video Dataset for Activity Detection"
+      URL: https://openaccess.thecvf.com/content/WACV2021/html/Corona_MEVA_A_Large-Scale_Multiview_Multimodal_Video_Dataset_for_Activity_Detection_WACV_2021_paper.html
+      AuthorName: Kellie Corona, Katie Osterdahl, Roderic Collins, Anthony Hoogs
+    - Title: "ActEV: Activities in Extended Video"
+      URL: https://actev.nist.gov/
+      AuthorName: National Institute of Standards and Technology (NIST)
+    - Title: "TinyAction Challenge: Recognizing Real-world Low-resolution Activities in Videos"
+      URL: https://arxiv.org/abs/2107.11494
+      AuthorName: Praveen Tirupattur, Aayush J Rana, Tushar Sangam, Shruti Vyas, Yogesh S Rawat, Mubarak Shah

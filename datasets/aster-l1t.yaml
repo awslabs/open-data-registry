@@ -1,0 +1,82 @@
+Name: ASTER L1T Cloud-Optimized GeoTIFFs
+Description: |
+  The Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1
+  Precision Terrain Corrected Registered At-Sensor Radiance (AST_L1T) data contains
+  calibrated at-sensor radiance, which corresponds with the ASTER Level 1B (AST_L1B),
+  that has been geometrically corrected, and rotated to a north-up UTM projection.
+  The AST_L1T is created from a single resampling of the corresponding ASTER L1A (AST_L1A) product.
+
+  The precision terrain correction process incorporates GLS2000 digital elevation data with
+  derived ground control points (GCPs) to achieve topographic accuracy for all daytime scenes
+  where correlation statistics reach a minimum threshold. Alternate levels of correction are
+  possible (systematic terrain, systematic, or precision) for scenes acquired at night or that
+  otherwise represent a reduced quality ground image (e.g., cloud cover).
+
+  Each AST_L1T granule is converted into three different COG files based on the sensor and spatial resolution,
+  VNIR at 15m, SWIR at 30m and TIR at 90m. The metadata required to transform the digital numbers (DN) to 
+  radiance and reflectance values are also incorporated as metadata in the TIFF files.
+  The filenaming convention and the organization of bands are described
+  [here](https://github.com/awslabs/open-data-docs/tree/main/docs/aster-l1t).
+
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/aster-l1t
+Contact: opendata@descarteslabs.com
+ManagedBy: "[Descartes Labs](https://descarteslabs.com/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - mining
+  - cog
+License: |
+  There are no restrictions on the use of data, unless expressly identified prior to or at the time of receipt.
+Citation:
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::aster-l1t
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: "[New image notifications](https://github.com/awslabs/open-data-docs/tree/main/docs/aster-l1t#receive-data-notifications-with-amazon-sns)"
+    ARN: arn:aws:sns:us-west-2:526859492376:aster-l1t-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Working with ASTER L1T Visible and Near Infrared (VNIR) Data in R
+      URL: https://lpdaac.usgs.gov/documents/128/ASTER_L1T_Tutorial.html
+      AuthorName: Cole Krehbiel
+      AuthorURL: https://lpdaac.usgs.gov/
+  Tools & Applications:
+    - Title: Descartes Labs Platform
+      URL: https://descarteslabs.com/platform
+      AuthorName: Descartes Labs Inc.
+      AuthorURL: https://descarteslabs.com
+    - Title: Latitude-Longitude to Path-Row conversion
+      URL: "https://landsat.usgs.gov/landsat_acq#convertPathRow"
+      AuthorName: USGS
+      AuthorURL: https://landsat.usgs.gov
+    - Title: LatLongToWRS
+      URL: https://github.com/robintw/LatLongToWRS
+      AuthorName: Robin Wilson
+      AuthorURL: https://blog.rtwilson.com/converting-latitudelongitude-co-ordinates-to-landsat-wrs-2-pathsrows/
+  Publications:
+    - Title: ASTER L1T Product User Guide
+      URL: https://lpdaac.usgs.gov/documents/647/AST__L1T_User_Guide_V3.pdf
+      AuthorName: USGS EROS Data Center
+      AuthorURL: https://lpdaac.usgs.gov/products/ast_l1tv003/
+    - Title: ASTER L1T Algorithm Theoretical Basis
+      URL: https://lpdaac.usgs.gov/documents/1400/AST_L1T_ATBD_V1.pdf
+      AuthorName: David Meyer, Dawn Siemonsma, Barbara Brooks, and Lowell Johnson
+      AuthorURL:
+    - Title: ASTER L1T Product Specification
+      URL: https://lpdaac.usgs.gov/documents/1401/ASTER_L1T_Product_Specification_v1.pdf
+      AuthorName: USGS EROS Data Center
+

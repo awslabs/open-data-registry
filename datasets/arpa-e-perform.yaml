@@ -28,7 +28,6 @@ Tags:
   - aws-pds
   - energy
   - environmental
-  - sustainability
   - geospatial
   - model
   - solar
@@ -38,8 +37,20 @@ Resources:
     ARN: arn:aws:s3:::arpa-e-perform/
     Region: us-west-2
     Type: S3 Bucket
-  - Description: "[Forecasts and Actuals for The Electric Reliability Council of Texas (ERCOT)](https://github.com/PERFORM-Forecasts/documentation/blob/master/ERCOT.md)"
+  - Description: "[Forecasts and Actuals for The Electric Reliability Council of Texas (ERCOT)](https://github.com/PERFORM-Forecasts/documentation)"
     ARN: arn:aws:s3:::arpa-e-perform/ERCOT/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The New York Independent System Operator (NYISO)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/NYISO/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The Midcontinent Independent System Operator (MISO)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/MISO/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The Southwest Power Pool (SPP)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/SPP/
     Region: us-west-2
     Type: S3 Bucket
 

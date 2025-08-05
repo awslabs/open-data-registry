@@ -1,0 +1,68 @@
+Name: ESA WorldCover Sentinel-1 and Sentinel-2 10m Annual Composites
+Description: The WorldCover 10m Annual Composites were produced, as part of the European Space Agency (ESA) WorldCover project, from the yearly Copernicus Sentinel-1 and Sentinel-2 archives for both years 2020 and 2021. These global mosaics consists of four products composites. A Sentinel-2 RGBNIR yearly median composite for bands B02, B03, B04, B08. A Sentinel-2 SWIR yearly median composite for bands B11 and B12. A Sentinel-2 NDVI yearly percentiles composite (NDVI 90th, NDVI 50th NDVI 10th percentiles). A Sentinel-1 GAMMA0 yearly median composite for bands VV, VH and VH/VV (power scaled). Each product is delivered as a series of Cloud-Optimized GeoTIFFs (COGs) in WSG84 projection in a grid of 1 by 1 degrees and at 0.3 arc seconds resolution (approx. 10m), except for the SWIR composite which is delivered at 0.6 arc seconds (approx. 20m). The Sentinel-2 composites were produced from the L2A archive. The GAMMA0 composite was produced by pre-processing the Sentinel-1 GRD products using [GAMMA software](https://www.gamma-rs.ch/).
+Documentation: More information is available on the products' [GitHub](https://github.com/ESA-WorldCover/esa-worldcover-datasets) and on WorldCover project [website](https://esa-worldcover.org/en/data-access).
+Contact: https://esa-worldcover.org/en/contact
+ManagedBy: "[VITO](https://vito.be)"
+UpdateFrequency: Not updated.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - earth observation
+  - agriculture
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - cog
+  - disaster response
+  - mapping
+  - synthetic aperture radar
+  - land cover
+  - land use
+  - machine learning
+  - stac
+License: "CC-BY 4.0"
+Citation: "To cite the dataset in a publication please refer to the [Citation section](https://esa-worldcover.org/en/data-access)/[DOI v200](https://doi.org/10.5281/zenodo.7254221)/[DOI v100](https://doi.org/10.5281/zenodo.5571936)."
+Resources:
+  - Description: ESA WorldCover S2 composites. The bucket contains the 3 Sentinel-2 L2A annual composites for the years 2020 and 2021. A 4 bands RGBNIR yearly median composite (B02, B03, B04, B08), a 2 bands SWIR yearly median composite (B11, B12) and a 3 bands NDVI yearly percentiles composite (NDVI p90, NDVI p50, NDVI p10).
+    ARN: arn:aws:s3:::esa-worldcover-s2
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+      - '[Products Grid](https://esa-worldcover.s3.eu-central-1.amazonaws.com/esa_worldcover_grid_composites.fgb)'
+      - '[WorldCover Viewer](https://viewer.esa-worldcover.org/worldcover/?layer=WORLDCOVER_2021_S2_NDVI)'
+  - Description: ESA WorldCover S1 composites. The bucket contains 1 Sentinel-1 annual composite for the years 2020 and 2021. A 3 bands GAMMA0 yearly median composite (VV, VH, VH/VV), power scaled.
+    ARN: arn:aws:s3:::esa-worldcover-s1
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+      - '[Products Grid](https://esa-worldcover.s3.eu-central-1.amazonaws.com/esa_worldcover_grid_composites.fgb)'
+      - '[WorldCover Viewer](https://viewer.esa-worldcover.org/worldcover/?layer=WORLDCOVER_2021_S1_VVVHratio)'
+DataAtWork:
+  Tutorials:
+  - Title: Exploring the datasets
+    URL: https://github.com/ESA-WorldCover/esa-worldcover-datasets
+    AuthorName: VITO
+    AuthorURL: https://esa-worldcover.org
+  Tools & Applications:
+  - Title: WorldCover Viewer
+    URL: https://viewer.esa-worldcover.org/worldcover/
+    AuthorName: VITO
+    AuthorURL: https://esa-worldcover.org/en
+  Publications:
+  - Title: ESA WorldCover 10 m 2021 v200
+    URL: https://doi.org/10.5281/zenodo.7254221
+    AuthorName: Zanaga, D., Van De Kerchove, R.,Daems, D.,De Keersmaecker, W., Brockmann, C., Kirches, G., Wevers, J., Cartus, O., Santoro, M., Fritz, S., Lesiv, M., Herold, M., Tsendbazar, N.E., Xu, P., Ramoino, F., Arino, O.
+  - Title: Release of the 10 m WorldCover map
+    URL: https://blog.vito.be/remotesensing/release-of-the-10-m-worldcover-map
+    AuthorName: Ruben Van De Kerchove
+  - Title: ESA WorldCover 10 m 2021 v200 - Product User Manual
+    URL: https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf
+    AuthorName: VITO
+
+

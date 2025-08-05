@@ -1,0 +1,58 @@
+Name: Sup3rCC
+Description: |
+  Released to the public as part of the Department of Energy's Open Energy Data Initiative, 
+  these data represent a serially complete collection of hourly 4km wind, solar, temperature, 
+  humidity, and pressure fields for the Continental United States under climate change scenarios.
+
+  Sup3rCC is downscaled Global Climate Model (GCM) data. For example, the initial file set tagged
+  "sup3rcc_conus_mriesm20_ssp585_r1i1p1f1" is downscaled from MRI ESM 2.0 for climate change 
+  scenario SSP5 8.5 and variant label r1i1p1f1. The downscaling process is performed using a 
+  generative machine learning approach called sup3r: Super-Resolution for Renewable Energy 
+  Resource Data. The data includes both historical and future weather years, although the 
+  historical years represent the historical average climate, not true historical weather. 
+
+  The Sup3rCC data is intended to help researchers study the impact of climate change on energy 
+  systems with high levels of wind and solar power generation. Please note that all climate change 
+  data is only a representation of the *possible* future climate and contains significant 
+  uncertainty. Analysis of multiple climate change scenarios and multiple climate models can help 
+  quantify this uncertainty.
+Documentation: https://github.com/NREL/sup3r
+Contact: Grant Buster (grant.buster@nrel.gov)
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency: Annual
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - solar
+  - air temperature
+  - climate model
+License: Creative Commons Attribution 4.0 United States License
+Resources:
+  - Description: 'Sup3rCC'
+    ARN: arn:aws:s3:::nrel-pds-sup3rcc/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-sup3rcc)'
+  - Description: 'Sup3rCC - CONUS - MRI ESM 2.0 - SSP585 - r1i1p1f1'
+    ARN: arn:aws:s3:::nrel-pds-sup3rcc/conus_mriesm20_ssp585_r1i1p1f1/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-sup3rcc&prefix=conus_mriesm20_ssp585_r1i1p1f1%2F)'
+  - Description: 'Sup3rCC Generative Models'
+    ARN: arn:aws:s3:::nrel-pds-sup3rcc/models/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=nrel-pds-sup3rcc&prefix=models%2F)'
+DataAtWork:
+  Tutorials:
+    - Title: Using the Sup3rCC Data
+      URL: https://github.com/NREL/sup3r/blob/main/examples/sup3rcc/using_the_data.ipynb
+      AuthorName: Grant Buster
+      AuthorURL: https://orcid.org/0000-0001-8616-8100

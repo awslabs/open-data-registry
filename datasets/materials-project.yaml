@@ -1,0 +1,81 @@
+Name: Materials Project Data
+Description: Materials Project is an open database of computed materials properties aiming to accelerate materials science research. The resources in this OpenData dataset contain the raw, parsed, and build data products.
+Documentation: https://docs.materialsproject.org
+Contact: materialsproject@lbl.gov
+ManagedBy: "[Materials Project](https://materialsproject.org)"
+UpdateFrequency: New versions and objects added as we continuously calculate, parse and build new materials and their properties.
+Tags:
+  - aws-pds
+  - chemistry
+  - cloud computing
+  - data assimilation
+  - digital assets
+  - digital preservation
+  - energy
+  - environmental
+  - free software
+  - genome
+  - HPC
+  - information retrieval
+  - infrastructure
+  - json
+  - machine learning
+  - materials science
+  - molecular dynamics
+  - molecule
+  - open source software
+  - physics
+  - post-processing
+  - x-ray crystallography
+License: "[Materials Project Terms of Use](https://materialsproject.org/about/terms)"
+Resources:
+  - Description: Raw Data
+    ARN: arn:aws:s3:::materialsproject-raw
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Parsed Data
+    ARN: arn:aws:s3:::materialsproject-parsed
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://materialsproject-parsed.s3.amazonaws.com/index.html)'
+  - Description: Build Data
+    ARN: arn:aws:s3:::materialsproject-build
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://materialsproject-build.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with the Materials API (MAPI)
+      URL: https://docs.materialsproject.org/downloading-data/using-the-api
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+    - Title: Materials Project Data on AWS OpenData
+      URL: https://docs.materialsproject.org/downloading-data/aws-opendata
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+  Tools & Applications:
+    - Title: MP API python client
+      URL: https://pypi.org/project/mp-api/
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+    - Title: Pymatgen
+      URL: https://pymatgen.org
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+    - Title: Atomate2
+      URL: https://materialsproject.github.io/atomate2
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+    - Title: FireWorks
+      URL: https://materialsproject.github.io/fireworks
+      AuthorName: Materials Project
+      AuthorURL: https://materialsproject.org
+  Publications:
+    - Title: "The Materials Project: A materials genome approach to accelerating materials innovation"
+      URL: https://pubs.aip.org/aip/apm/article/1/1/011002/119685/Commentary-The-Materials-Project-A-materials
+      AuthorName: Jain A., Ong S.P., Hautier G., et al.
+ADXCategories:
+  - Public Sector Data
+  - Environmental Data

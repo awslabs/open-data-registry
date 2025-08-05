@@ -22,29 +22,29 @@ Tags:
 License: Creative Commons BY-SA 2.0
 Resources:
   - Description: Radiosonde Telemetry as JSON blobs of Universal Telemetry format
-    ARN: arn:aws:s3:::sondehub-open-data
+    ARN: arn:aws:s3:::sondehub-history
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket by serial number](http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#serial/)'
-      - '[Browse Bucket by date/time](http://sondehub-open-data.s3-website-us-east-1.amazonaws.com/#date/)'
+      - '[Browse Bucket by serial number](http://sondehub-history.s3-website-us-east-1.amazonaws.com/#serial/)'
+      - '[Browse Bucket by date/time](http://sondehub-history.s3-website-us-east-1.amazonaws.com/#date/)'
 DataAtWork:
   Tutorials:
     - Title: Loading example notebooks into SageMaker
       URL: https://github.com/projecthorus/pysondehub/blob/main/examples/README.md
       AuthorName: Michaela Wheeler
       Services: 
-        - SageMaker
+        - Amazon SageMaker
     - Title: Using Athena to read radiosonde data
       URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub-athena.ipynb
       AuthorName: Michaela Wheeler
       Services: 
-        - Athena
+        - Amazon Athena
     - Title: Using pysondehub to read radiosonde data
       URL: https://github.com/projecthorus/pysondehub/blob/main/examples/sondehub.ipynb
       AuthorName: Michaela Wheeler
       Services: 
-        - S3
+        - Amazon S3
   Tools & Applications:
     - Title: pysondehub
       URL: https://pypi.org/project/sondehub/

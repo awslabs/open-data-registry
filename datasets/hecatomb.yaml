@@ -1,0 +1,34 @@
+Name: Hecatomb Databases
+Description: Preprocessed databases for use with the Hecatomb pipeline for viral and phage sequence annotation.
+Documentation: https://hecatomb.readthedocs.io/en/latest/
+Contact: shandley@wustl.edu
+ManagedBy: "[Washington University in St. Louis](https://wustl.edu/)"
+UpdateFrequency: Every 6 to 12 months
+Tags:
+  - aws-pds
+  - life sciences
+  - genetic
+  - genomic
+  - metagenomics
+  - bioinformatics
+  - whole genome sequencing
+  - virus
+License: "[MIT](https://opensource.org/licenses/MIT)"
+Resources:
+  - Description: Hecatomb Database Resources
+    ARN: arn:aws:s3:::hecatombdatabases
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - "[Explore Bucket](https://hecatombdatabases.s3.us-west-2.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: The Hecatomb Tutorial
+      URL: https://hecatomb.readthedocs.io/en/latest/tutorialPt1/
+      AuthorName: Michael Roach
+      AuthorURL: https://bioinf.cc
+  Publications:
+    - Title: No Evidence Known Viruses Play a Role in the Pathogenesis of Onchocerciasis-Associated Epilepsy. An Explorative Metagenomic Case-Control Study
+      URL: https://doi.org/10.3390/pathogens10070787
+      AuthorName: Michael Roach,Adrian Cantu,Melissa Krizia Vieri,Matthew Cotten,Paul Kellam,My Phan,Lia van der Hoek,Michel Mandro,Floribert Tepage,Germain Mambandu,Gisele Musinya,Anne Laudisoit,Robert Colebunders,Robert Edwards, John L. Mokili
+      AuthorURL: https://bioinf.cc

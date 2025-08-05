@@ -1,19 +1,15 @@
-Name: NOAA Global Hydro Estimator (GHE)
+Name: NOAA Global Hydro Estimator (GHE) / Enterprise Rain Rate
 Description: |
-  Global Hydro-Estimator provides a global
-  mosaic imagery of rainfall estimates from
-  multi-geostationary satellites, which
-  currently includes GOES-16, GOES-15,
-  Meteosat-8, Meteosat-11 and Himawari-8.
-  The GHE products include: Instantaneous
-  rain rate, 1 hour, 3 hour, 6 hour, 24 hour
-  and also multi-day rainfall accumulation.
+  NOTE - The legacy on-premises version of the Global Hydroestimator (GHE) is being retired. It is being replaced by the global Enterprise Rain Rate algorithm. You can find Enterprise Rain Rate products in the new bucket listed under the Resources section. 
+  <br/>
+  <br/>
+  Global Hydro-Estimator provides a global mosaic imagery of rainfall estimates from multi-geostationary satellites, which currently includes GOES-16, GOES-15, Meteosat-8, Meteosat-11 and Himawari-8. The GHE products include: Instantaneous rain rate, 1 hour, 3 hour, 6 hour, 24 hour and also multi-day rainfall accumulation.
 Contact: |
   For questions regarding product content or
   quality, visit https://www.ospo.noaa.gov/Products/atmosphere/ghe/index.html.
   <br />
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 Documentation: https://www.ospo.noaa.gov/Products/atmosphere/ghe/index.html
 UpdateFrequency: 15 minute-instantaneous
@@ -25,12 +21,21 @@ Tags:
   - aws-pds
   - agriculture
   - meteorological
-  - sustainability
   - water
   - weather
-License: There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
-  - Description: Project data files
+  - Description: Enterprise Rain Rate Data
+    ARN: arn:aws:s3:::noaa-enterprise-rainrate-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-enterprise-rainrate-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for Enterprise Rain , only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewEntRainRateL3Object
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: GHE Project data files
     ARN: arn:aws:s3:::noaa-ghe-pds
     Region: us-east-1
     Type: S3 Bucket

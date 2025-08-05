@@ -1,30 +1,53 @@
-Name: NOAA National Water Model Reanalysis
+Name: NOAA National Water Model CONUS Retrospective Dataset
 Description: |
-  The NOAA National Water Model Reanalysis dataset contains output
-  from multi-decade retrospective simulations. These
-  simulations used observed rainfall as input and ingested other
-  required meteorological input fields from a weather reanalysis
-  dataset. The output frequency and fields available in this
-  historical NWM dataset differ from those contained in the
-  real-time forecast model. One application of this dataset is
-  to provide historical context to current real-time streamflow,
-  soil moisture and snowpack NWM conditions. The reanalysis data
-  can be used to infer flow frequencies and perform temporal analyses
-  with hourly streamflow output and 3-hourly land surface output. The
-  long-term dataset can also be used in the development of end user
-  applications which require a long baseline of data for system
-  training or verification purposes. This dataset contains output from two
-  retrospective simulations.  Currently there are two versions of the dataset:
-  A 25-year (January 1993 through December 2017) retrospective simulation using
-  version 1.2 of the National Water Model, and a 26-year (January 1993 through
-   December 2018) retrospective simulation using version 2.0
-   of the National Water Model.
-Documentation: https://docs.opendata.aws/nwm-archive/readme.html
+  The NOAA National Water Model Retrospective dataset contains input and output from multi-decade CONUS retrospective simulations. These simulations used meteorological input fields from meteorological retrospective datasets. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time operational NWM forecast model. Additionally, note that no streamflow or other data assimilation is performed within any of the NWM retrospective simulations
+  <br/>
+  <br/>
+  One application of this dataset is to provide historical context to current near real-time streamflow, soil moisture and snowpack conditions. The retrospective data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. This dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes. <br />
+  <br/>
+  <br/>
+  Details for Each Version of the NWM Retrospective Output
+  <br/>
+  <br/>
+  **CONUS Domain** - CONUS retrospective output is provided by all four versions of the NWM
+  <br/>
+  1) Version 3.0 - A 44-year (February 1979 through January 2023) retrospective simulation using version 3.0 of the National Water Model.
+  2) Version 2.1 - A 42-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
+  3) Version 2.0 - A 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model.
+  4) Version 1.2 - A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model.
+  <br/>
+  <br/>
+  **oCOUNS Domains** - Only v3.0 of the NWM Retrospective data set provides coverage of the NWM Alaska, Hawaii and Puerto Rico / US Virgin Island domains.
+  <br/>
+  <br/>
+  **CONUS Meteorological Forcing**
+  1) Versions 3.0 and 2.1:  NWM Retrospective simulations used forcing from the Office of Water Prediction Analysis of Record for Calibration (AORC) dataset.  NWM v2.1 used AORC v1.0 for 1979-2006 and AORC v1.1 for 2007-2020, while NWM v3.0 used AORC v1.1 for the full v3.0  (1979-2023 period)
+  **Important Warning** - While the metadata tag in the NWM v3.0 forcing files label the files as “v2.1”, the files are in fact v3.0 forcing files.
+  2) Versions 2.0 and 1.2 -  NWM Retrospective simulation uses forcing from the North American Land Data Assimilation System (NLDAS) dataset
+  <br/>
+  **oCONUS Meteorological Forcing**
+  1) Version 3.0 -  AORC Alaska forcing was used to drive the NWM Alaska simulation, while North American Regional Reanalysis (NARR) data along with precipitation from the Alaska Pacific River Forecast Center (APRFC) was used to drive the Hawaii retrospective simulation.  Similarly, the Puerto Rico / US Virgin Island retrospective simulation was driven by NARR data along with precipitation from the Southeast River Forecast Center.
+  <br/>
+  <br/>
+  **Formats** - NWM Retrospective data is available in two formats, NetCDF and Zarr.  The NetCDF files contain the full set of NWM output data, while the Zarr files contain a subset of NWM output fields that vary with model version.
+  <br/>
+  <br/>
+  1) NWM V3.0:  All model output and forcing input fields are available in the NetCDF format.  All model output fields along with the precipitation forcing field are available in the Zarr format.
+  2) NWM V2.1:  All model output and forcing input fields are available in the NetCDF format.  Many of the model output fields along with the precipitation forcing field are available in the Zarr format
+  3) NWM V2.0:  All model output fields are available in NetCDF format.  Model channel output including streamflow and related fields are available in Zarr format.
+  4) NWM V1.2:  All model output fields are available in NetCDF format.
+  <br/>
+  <br/>
+  A table listing the data available within each NetCDF and Zarr file is located in the '[documentation page](https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/nwm/README.md)'.  This data includes meteorological NWM forcing inputs along with NWM hydrologic and land surface outputs, and varies by version number. 
+Documentation: https://github.com/NOAA-Big-Data-Program/bdp-data-docs/blob/main/nwm/README.md
 Contact: |
-  For questions regarding data content or quality, go [here](http://water.noaa.gov/about/nwm).
-  <br />
-  For any questions regarding data delivery not associated with this platform or any general questions regarding the NOAA Big Data Program, email noaa.bdp@noaa.gov.
-  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA BDP team here: noaa.bdp@noaa.gov
+  For questions regarding data content or quality, email nws.nwc.ops@noaa.gov.
+  <br/>
+  For information on the National Water Model (NWM), go "[here](http://water.noaa.gov/about/nwm)".
+  <br/>
+  This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
+  <br/>
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
 ManagedBy: "[NOAA](http://www.noaa.gov/)"
 UpdateFrequency: No updates
 Collabs:
@@ -40,15 +63,32 @@ Tags:
   - disaster response
   - agriculture
   - transportation
-  - sustainability
 License: Open Data. There are no restrictions on the use of this data.
 Resources:
-  - Description: The complete archive of NWM data version 2.0.
-    ARN: arn:aws:s3:::noaa-nwm-retro-v2.0-pds
+  - Description: The complete archive of NWM input forcing and model output data version 3.0 in NetCDF and Zarr format.
+    ARN: arn:aws:s3:::noaa-nwm-retrospective-3-0-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/index.html)'
+    - '[Browse Bucket](https://noaa-nwm-retrospective-3-0-pds.s3.amazonaws.com/index.html)'
+  - Description: The complete archive of NWM input forcing and model output data version 2.1 in NetCDF format.
+    ARN: arn:aws:s3:::noaa-nwm-retrospective-2-1-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retrospective-2-1-pds.s3.amazonaws.com/index.html)'
+  - Description: The complete archive of NWM model output data version 2.1 in Zarr format. The NWM precipitation input forcing in Zarr format.
+    ARN: arn:aws:s3:::noaa-nwm-retrospective-2-1-zarr-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retrospective-2-1-zarr-pds.s3.amazonaws.com/index.html)'    
+  - Description: The complete archive of NWM data version 2.0.
+    ARN: arn:aws:s3:::noaa-nwm-retro-v2-0-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nwm-retro-v2-0-pds.s3.amazonaws.com/index.html)'
   - Description: The streamflow from the NWM version 2.0 in Zarr format.
     ARN: arn:aws:s3:::noaa-nwm-retro-v2-zarr-pds
     Region: us-west-2
@@ -63,11 +103,29 @@ Resources:
     - '[Browse Bucket](https://nwm-archive.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
-    - Title: Explore the National Water Model Reanalysis in Zarr
+    - Title: Explore the National Water Model V2.0 Retrospective in Zarr
       URL: https://nbviewer.jupyter.org/gist/rsignell-usgs/d3dfaf3cd3d8b39894a69b22127dfe38
       AuthorName: Rich Signell
       AuthorURL: https://www.usgs.gov/staff-profiles/richard-p-signell
+    - Title: Explore Repository of Tutorials on National Water Model V2.1 Retrospective Dataset in Zarr
+      URL: https://github.com/NCAR/rechunk_retro_nwm_v21/tree/main/notebooks
+      AuthorName: James McCreight
+      AuthorURL: https://github.com/jmccreight
+    - Title: Explore the National Water Model V2.1 Retrospective Dataset in Zarr
+      URL: https://github.com/NCAR/rechunk_retro_nwm_v21
+      AuthorName: James McCreight, Ishita Srivastava, Rich Signell
+      AuthorURL: https://github.com/jmccreight
+    - Title: Processing the 250 TB NWM dataset with Coiled, Dask, and Xarray
+      URL: https://medium.com/coiled-hq/processing-a-250-tb-dataset-with-coiled-dask-and-xarray-574370ba5bde
+      AuthorName: Sarah Johnson (Coiled)
+      AuthorURL: https://www.coiled.io/
   Publications:
+    - Title: "NOAA's National Water Model: Advancing Operational Hydrology Through Continental-scale Modeling."
+      URL: https://doi.org/10.1111/1752-1688.13184
+      AuthorName: Brian Cosgrove, David Gochis, Trey Flowers, Aubrey Dugger, Fred Ogden, Tom Graziano, Ed Clark, et al; 2024
     - Title: "Simulating storm surge and compound flooding events with a creek-to-ocean model: Importance of baroclinic effects"
-      URL: "https://doi.org/10.1016/j.ocemod.2019.101526"
+      URL: https://doi.org/10.1016/j.ocemod.2019.101526
       AuthorName: Fei Ye, et al.
+    - Title: On Strictly Enforced Mass Conservation Constraints for Modeling the Rainfall-Runoff Process
+      URL: https://doi.org/10.31223/X5BH0P
+      AuthorName: Jonathan M. Frame, Frederik Kratzert, Hoshin V. Gupta, Paul Ullrich and Grey S. Nearing

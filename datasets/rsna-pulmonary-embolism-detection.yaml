@@ -1,0 +1,30 @@
+Name:  RSNA Pulmonary Embolism Detection
+Description: "RSNA assembled this dataset in 2020 for the RSNA STR Pulmonary Embolism Detection AI Challenge (https://www.kaggle.com/c/rsna-str-pulmonary-embolism-detection/). With more than 12,000 CT pulmonary angiography (CTPA) studies contributed by five international research centers, it is the largest publicly available annotated PE dataset. RSNA collaborated with the Society of Thoracic Radiology to recruit more than 80 expert thoracic radiologists who labeled the dataset with detailed clinical annotations."
+Documentation: https://github.com/RSNA/AI-Challenge-Data
+Contact: informatics@rsna.org
+ManagedBy: '[Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - computed tomography
+  - x-ray tomography
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “RSNA-STR Pulmonary Embolism CT (RSPECT) Dataset, Copyright RSNA, 2020” as follows: E Colak, FC Kitamura, SB Hobbs, et al. The RSNA Pulmonary Embolism CT Dataset [10.1148/ryai.2021200254]. Radiology: Artificial Intelligence 2021;3:2."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::pulmonary-embolism-detection
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/1
+DataAtWork:
+  Publications:
+    - Title: The RSNA Pulmonary Embolism CT Dataset
+      URL: https://pubs.rsna.org/doi/full/10.1148/ryai.2021200254
+      AuthorName: Colak, Errol

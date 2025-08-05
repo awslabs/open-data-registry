@@ -1,0 +1,33 @@
+Name: MultiCoNER Datasets
+Description: |
+  MultiCoNER 1 is a large multilingual dataset (11 languages) for Named Entity Recognition. It is designed to represent some of the contemporary challenges in NER, including low-context scenarios (short and uncased text), syntactically complex entities such as movie titles, and long-tail entity distributions. MultiCoNER 2 is a large multilingual dataset (12 languages) for fine grained Named Entity Recognition. Its fine-grained taxonomy contains 36 NE classes, representing real-world challenges for NER, where named entities, apart from the surface form, context represents a critical role in distinguishing between the different fine-grained types (e.g. Scientist vs. Athlete). Furthermore, the test data of MultiCoNER 2 contains noisy instances, where the noise has been applied to both context tokens as well as the entity tokens. The noise includes typing errors at character level based on keyboard layouts in the the different languages.
+Documentation: https://multiconer.s3.us-west-2.amazonaws.com/readme.html
+Contact: besnikf@amazon.com
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: N/A
+Tags:
+  - natural language processing
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: MultiCoNER 1 Data files
+    ARN: arn:aws:s3:::multiconer/multiconer2022/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: MultiCoNER 2 Data files
+    ARN: arn:aws:s3:::multiconer/multiconer2023/    
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title:  "MultiCoNER: A Large-scale Multilingual Dataset for Complex Named Entity Recognition"
+      URL: https://aclanthology.org/2022.coling-1.334.pdf
+      AuthorName: Shervin Malmasi, Anjie Fang, Besnik Fetahu, Sudipta Kar, Oleg Rokhlenko
+    - Title: "GEMNET: Effective Gated Gazetteer Representations for Recognizing Complex Entities in Low-context Input"
+      URL: https://www.amazon.science/publications/gemnet-effective-gated-gazetteer-representations-for-recognizing-complex-entities-in-low-context-input
+      AuthorName: Tao Meng, Anjie Fang, Oleg Rokhlenko and Shervin Malmasi
+    - Title: "Gazetteer Enhanced Named Entity Recognition for Code-Mixed Web Queries"
+      URL: https://www.amazon.science/publications/gazetteer-enhanced-named-entity-recognition-for-code-mixed-web-queries
+      AuthorName: Besnik Fetahu, Anjie Fang, Oleg Rokhlenko and Shervin Malmasi
+    - Title: "Dynamic Gazetteer Integration in Multilingual Models for Cross-Lingual and Cross-Domain Named Entity Recognition"
+      URL: https://assets.amazon.science/95/4c/47c2afd44236ac1a05d184e7813e/dynamic-gazetteer-integration-in-multilingual-models-for-cross-lingual-and-cross-domain-named-entity-recognition.pdf
+      AuthorName: Besnik Fetahu, Anjie Fang, Oleg Rokhlenko and Shervin Malmasi      

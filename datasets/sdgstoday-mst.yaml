@@ -1,0 +1,28 @@
+Name: My School Today
+Description: This database provides estimates of walking travel time of school-aged populations to schools recorded in OpenStreetMap. Population counts of male and female students are sorted into 3 groups of travel time - under 30 minutes, 30-60 minutes, and over 60 minutes. It covers the African continent and is aggregated by first-level administrative divisions.
+Documentation: https://sdgstoday.org/dataset/my-school-today
+Contact: sdgstoday@unsdsn.org
+ManagedBy: SDSN SDGs Today
+UpdateFrequency: Monthly (weekly updates in progress)
+Tags:
+  - aws-pds
+  - education
+  - geospatial
+  - infrastructure
+  - schools
+License: This work is licensed under a Creative Commons by Attribution (CC BY 4.0) license.
+Citation: SDSN SDGs Today. Mapping School Locations. UN Sustainable Development Solutions Network. Accessed <DAY> <MONTH> <YEAR>.
+Resources:
+  - Description: Using open-source georeferenced data and satellite data products, we construct travel-time isochrones from school locations and overlay subnational population counts to construct a dataset of age-specific population counts within travel-time catchment areas in Africa. The resulting walk-time data can help support gaps in existing education data and highlight open-source methods. Our School location data is derived from OpenStreetMap, a powerful open-source data repository of georeferenced buildings, roads, amenities, and other physical features. While OpenStreetMap is vast, data quality varies by region and many schools remain missing across the globe. Please review the methodological note (bit.ly/MST-methodology) where we discuss the implications of missing data. Finally, population data is derived from WorldPop constrained Sex/Age demographic population images. The outputs are available as shapefiles.
+    ARN: arn:aws:s3:::my-school-today
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Map a School
+      URL: https://sdgstoday.org/myschooltoday
+      AuthorName: SDGs Today
+      AuthorURL: https://sdgstoday.org/
+ADXCategories:
+  - Retail, Location & Marketing Data
+  - Resources Data

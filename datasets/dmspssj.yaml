@@ -1,0 +1,28 @@
+Name: Defense Meteorology Satellite Program (DMSP) Auroral Particle Flux
+Description: The United States Air Force (USAF) Defense Meteorological Satellite Program (DMSP) SSJ precipitating particle instrument measures in-situ total flux and energy distribution of electrons and ions at low earth orbit. These precipitating particles are of interest for space weather operations and research, in part because they produce aurora during normal and very strong geomagnetic storms. This dataset contains both sensor-level raw data (as detailed in Redmon et al. 2017) and a high-level machine-learning-ready data product.
+Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/dmspssj
+Contact: delores.knipp@colorado.edu
+ManagedBy: Space Weather Technology, Research and Education Center (TREC) at University of Colorado, Boulder
+UpdateFrequency: Infrequent
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - solar
+  - space weather
+  - geospatial
+  - earth observation
+License: This data is in the '[public domain](https://creativecommons.org/publicdomain/zero/1.0/)'
+Resources: 
+  - Description: DMSP Auroral Particle Flux
+    ARN: arn:aws:s3:::dmspssj
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: 'ssj_latbin: Create and read ML-ready DMSP particle precipitation data'
+      URL: https://github.com/lkilcommons/ssj_latbin
+      AuthorName: Liam Kilcommons
+      AuthorURL: https://www.linkedin.com/in/liam-kilcommons-69187449/

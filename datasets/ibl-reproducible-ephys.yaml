@@ -1,0 +1,47 @@
+Name: IBL Neuropixels Reproducible Ephys Data on AWS
+Description: Electrophysiological recordings acquired using Neuropixels probes in different mice and labs, targeting the same brain locations (including posterior parietal cortex, hippocampus, and thalamus).
+Documentation: https://int-brain-lab.github.io/iblenv/notebooks_external/data_release_repro_ephys.html
+Contact: info@internationalbrainlab.org
+ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
+UpdateFrequency: TBD
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - open source software
+  - Mus musculus
+License: CC-BY 4.0
+Resources:
+  - Description: Project data in public bucket
+    ARN: arn:aws:s3:::ibl-brain-wide-map-public
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
+      URL: https://pypi.org/project/ONE-api/
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Data Explorer
+      URL: https://viz.internationalbrainlab.org/app
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Tutorials:
+    - Title: Download the public datasets
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Find data associated with a release or publication
+      URL: https://int-brain-lab.github.io/iblenv/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Loading Data
+      URL: https://int-brain-lab.github.io/iblenv/loading_examples.html#
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Publications:
+    - Title: Reproducibility of in-vivo electrophysiological measurements in mice
+      URL: https://doi.org/10.1101/2022.05.09.491042
+      AuthorName: International Brain Laboratory et al.
+      AuthorURL: www.internationalbrainlab.com

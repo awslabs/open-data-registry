@@ -1,0 +1,40 @@
+Name: BodyM Dataset
+Description: |
+  The first large public body measurement dataset including 8978 frontal and lateral
+  silhouettes for 2505 real subjects, paired with height, weight and 14 body
+  measurements. The following artifacts are made available for each subject.
+    - Subject Height
+    - Subject Weight
+    - Subject Gender
+    - Two black-and-white silhouette images of subject standing in frontal and side pose
+    respectively with full body in view.
+    - 14 body measurements in cm - {ankle girth, arm-length, bicep girth, calf girth,
+                                  chest girth, forearm girth, height, hip girth, leg-length,
+                                  shoulder-breadth, shoulder-to-crotch length, thigh girth,
+                                  waist girth, wrist girth}
+  
+  The data is split into 3 sets - Training, Test Set A, Test Set B. For the training and
+  Test-A sets, subjects are photographed and 3D-scanned by in a lab by technicians. For
+  the Test-B set, subjects are scanned in the lab, but photographed in a less-controlled
+  environment with diverse camera orientations and lighting conditions, to simulate
+  in-the-wild image capture. Some subjects have been photographed more than once with
+  different clothing in order to test robustness of the dataset.
+Documentation: https://adversarialbodysim.github.io/
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: Amazon
+UpdateFrequency: None
+Tags:
+  - amazon.science
+  - computer vision
+  - deep learning
+License: Creative Commons Attribution-Non Commercial 4.0 International Public License - https://creativecommons.org/licenses/by/4.0/legalcode
+Resources:
+  - Description: This S3 bucket has height, weight, gender, measurements and two silhouette images for each type of data
+    ARN: arn:aws:s3:::amazon-bodym
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: Human Body Measurement Estimation with Adversarial Augmentation
+      URL: https://www.amazon.science/publications/human-body-measurement-estimation-with-adversarial-augmentation
+      AuthorName: Nataniel Ruiz, Miriam Bellver, Timo Bolkart, Ambuj Arora, Ming C. Lin, Javier Romero and Raja Bala

@@ -1,0 +1,73 @@
+Name: Estimating Confidence Intervals for 2020 Census Statistics Using Approximate Monte Carlo Simulation (2020 Census Production Run)
+Description: >-
+  The 2020 Census Production Settings Demographic and Housing Characteristics (DHC) Approximate Monte Carlo (AMC) method seed Privacy Protected Microdata File (PPMF0)
+  and PPMF replicates (PPMF1, PPMF2, ..., PPMF50) are a set of microdata files intended for use in estimating the magnitude of error(s) introduced by the 2020 
+  Census Disclosure Avoidance System (DAS) into the 2020 Census Redistricting Data Summary File (P.L. 94-171), the Demographic and Housing Characteristics File, and the Demographic Profile. 
+  <br/>
+  <br/>
+  The PPMF0 was the source of the publicly released, official 2020 Census data products referenced above, and was created by executing the 2020 DAS TopDown Algorithm (TDA) using the confidential 
+  2020 Census Edited File (CEF) as the initial input; the official location for the PPMF0 is [on the United States Census Bureau FTP server](https://www2.census.gov/programs-surveys/decennial/2020/data/privacy-protected-microdata-file/), but we also include a copy of it here for convenience. The replicates were then created by executing the 2020 DAS TDA repeatedly with the PPMF0 as its initial input. 
+  <br/>
+  <br/>
+  Inspired by analogy to the use of bootstrap methods in non-private contexts, U.S. Census Bureau (USCB) researchers explored whether simple calculations 
+  based on comparing each PPMFi to the PPMF0 could be used to reliably estimate the scale of errors introduced by the 2020 DAS, and generally found this approach 
+  worked well.
+  <br/>
+  <br/>
+  The PPMF0 and PPMFi files contained here are provided so that external researchers can estimate properties of DAS-introduced error without privileged 
+  access to internal USCB-curated data sets; further information on the estimation methodology can be found in [Ashmead et. al 2024](https://github.com/uscensusbureau/AMC_Confidence_Intervals/blob/main/Approx_Monte_Carlo_confidence_interval_paper.pdf). 
+  <br/>
+  <br/>
+  The 2020 DHC AMC seed PPMF0 and PPMF replicates have been cleared for public dissemination by the USCB Disclosure Review Board (CBDRB-FY22-DSEP-004). 
+  The PPMF0 and PPMF replicates contain all Person and Units attributes necessary to produce the 2020 Census Redistricting Data Summary File (P.L. 94-171), the Demographic and Housing Characteristics File, and the Demographic Profile for both the United States and 
+  Puerto Rico, and include geographic detail down to the Census Block level. They do not include attributes specific to either the Detailed DHC-A or Detailed DHC-B 
+  products; in particular, data on Major Race (e.g., White Alone) is included, but data on Detailed Race (e.g., Cambodian) is not included in the PPMF0 and replicates.
+Documentation: "[AMC Replicates README (Updated 9/17/2024)](https://uscb-2020-product-releases.s3.amazonaws.com/decennial/amc/2020/mdf/2020-dhc-mdf-replicates/ppmf/README.html)"
+Contact: 2020DAS@census.gov
+ManagedBy: "[United States Census Bureau](http://www.census.gov/)"
+UpdateFrequency: Not Updated
+Tags:
+  - census
+  - decennial census
+  - 2020 census
+  - differential privacy
+  - disclosure avoidance
+  - ethnicity
+  - group quarters
+  - hispanic
+  - latino
+  - housing
+  - housing units
+  - noisy measurements
+  - population
+  - race
+  - redistricting
+  - demographic and housing characteristics file
+  - dhc
+  - voting age
+  - household type
+  - relation-to-householder
+  - age
+  - single year of age
+  - approximate monte carlo
+  - approximate monte carlo replicates
+  - microdata
+License: CC0 1.0 Universal
+Resources:
+  - Description: 2020 Census Production Settings Demographic and Housing Characteristics Approximate Monte Carlo method seed Privacy Protected Microdata File and PPMF replicates
+    ARN: arn:aws:s3:::uscb-2020-product-releases/decennial/amc/2020/mdf/2020-dhc-mdf-replicates
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "Census Open Data S3 Inventory"
+    ARN: arn:aws:s3:::uscb-opendata-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Estimating Confidence Intervals Using Approximate Monte Carlo Simulation Iterations (Jupyter Notebook)
+      URL: https://github.com/uscensusbureau/AMC_Confidence_Intervals/tree/main
+      AuthorName: Ashmead, R., Hawes, M. B., Pritts, M., Zhuravlev, P., Keller, S. A.
+  Publications:
+    - Title: An Approximate Monte Carlo Simulation Method for Estimating Uncertainty and Constructing Confidence Intervals for 2020 Census Statistics
+      URL: https://github.com/uscensusbureau/AMC_Confidence_Intervals/blob/main/Approx_Monte_Carlo_confidence_interval_paper.pdf
+      AuthorName: Ashmead, R., Hawes, M. B., Pritts, M., Zhuravlev, P., Keller, S. A.

@@ -1,0 +1,30 @@
+Name:  RSNA Intracranial Hemorrhage Detection
+Description: "RSNA assembled this dataset in 2019 for the RSNA Intracranial Hemorrhage Detection AI Challenge (https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection/). De-identified head CT studies were provided by four research institutions. A group of over 60 volunteer expert radiologists recruited by RSNA and the American Society of Neuroradiology labeled over 25,000 exams for the presence and subtype classification of acute intracranial hemorrhage."
+Documentation: https://github.com/RSNA/AI-Challenge-Data
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - computed tomography
+  - x-ray tomography
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “Brain CT Hemorrhage Dataset, Copyright RSNA, 2019” as follows: Flanders AF, et al. The RSNA Brain CT Hemorrhage Dataset [10.1148/ryai.2020190211]. Radiology: Artificial Intelligence 2020;2:3."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::intracranial-hemorrhage
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/2
+DataAtWork:
+  Publications:
+    - Title: "Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge"
+      URL: https://pubs.rsna.org/doi/10.1148/ryai.2020190211
+      AuthorName: Rudie, Jeffrey D.

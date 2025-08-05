@@ -1,0 +1,32 @@
+Name: "3DCoMPaT: Composition of Materials on Parts of 3D Things"
+Description: |
+  3D CoMPaT is a richly annotated large-scale dataset of rendered compositions of Materials on Parts of thousands of unique 3D Models.
+  This dataset primarily focuses on stylizing 3D shapes at part-level with compatible materials.
+  Each object with the applied part-material compositions is rendered from four equally spaced views as well as four randomized views.
+  We introduce a new task, called Grounded CoMPaT Recognition (GCR), to collectively recognize and ground compositions of materials on parts of 3D objects.
+  We present two variations of this task and adapt state-of-art 2D/3D deep learning methods to solve the problem as baselines for future research.
+  We hope our work will help ease future research on compositional 3D Vision.
+
+
+Documentation: https://3dcompat-dataset.org/
+Contact: mohamed.elhoseiny@kaust.edu.sa, yuchen.li@kaust.edu.sa
+ManagedBy: "[Vision-CAIR, CEMSE, KAUST](https://cemse.kaust.edu.sa/vision-cair)"
+UpdateFrequency: Continually improving 3D annotations and renderings
+Tags:
+  - aws-pds
+  - computer vision
+  - machine learning
+License: |
+  https://3dcompat-dataset.org/LICENSE
+Resources:
+  - Description: 3DCoMPaT Dataset
+    ARN: arn:aws:s3:::3dcompat-dataset
+    Region: us-west-1
+    Type: S3 Bucket
+    Explore:
+      - "[Website](https://3dcompat-dataset.org/)"
+DataAtWork:
+  Publications:
+    - Title: "3DCoMPaT: Composition of Materials on Parts of 3D Things"
+      URL: https://3dcompat-dataset.org/pdf/paper.pdf
+      AuthorName: Yuchen Li, Ujjwal Upadhyay, Habib Slim, Ahmed Abdelreheem, Arpit Prajapati, Suhail Pothigara, Peter Wonka & Mohamed Elhoseiny

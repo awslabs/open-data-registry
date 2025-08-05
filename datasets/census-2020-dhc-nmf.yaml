@@ -1,0 +1,68 @@
+Name: 2020 Census Demographic and Housing Characteristics (DHC) Noisy Measurement File
+Description: |
+  The 2020 Census Demographic and Housing Characteristics Noisy Measurement File is an intermediate output of the 2020 Census Disclosure Avoidance System (DAS) TopDown Algorithm (TDA) (as described in Abowd, J. et al [2022], and implemented in [primitives.py](https://github.com/uscensusbureau/DAS_2020_DHC_Production_Code/blob/main/das_decennial/programs/engine/primitives.py)). The 2020 Census Demographic and Housing Characteristics Noisy Measurement File includes zero-Concentrated Differentially Private (zCDP) (Bun, M. and Steinke, T [2016]) noisy measurements, implemented via the discrete Gaussian mechanism (Cannone C., et al., [2023] ), which added positive or negative integer-valued noise to each of the resulting counts. These are estimated counts of individuals and housing units included in the 2020 Census Edited File (CEF), which includes confidential data collected in the 2020 Census of Population and Housing.
+  <br/>
+  <br/>
+  The noisy measurements included in this file were subsequently post-processed by the TopDown Algorithm (TDA) to produce the Census Demographic and Housing Characteristics Summary File. In addition to the noisy measurements, constraints based on invariant calculations --- counts computed without noise --- are also included (with the exception of the state-level total populations, which can be sourced separately from data.census.gov).
+  <br/>
+  <br/>
+  The Noisy Measurement File was produced using the official “production settings,” the final set of algorithmic parameters and privacy-loss budget allocations that were used to produce the 2020 Census Redistricting Data (P.L. 94-171) Summary File and the 2020 Census Demographic and Housing Characteristics File.
+  <br/>
+  <br/>
+  The noisy measurements are produced in an early stage of the TDA. Afterward, these noisy measurements are post-processed to ensure internal and hierarchical consistency within the resulting tables. The Census Bureau has released these noisy measurements to enable data users to evaluate the impact of disclosure avoidance variability on 2020 Census data. The 2020 Census Demographic and Housing Characteristics (DHC) Noisy Measurement File has been cleared for public dissemination by the Census Bureau Disclosure Review Board (CBDRB-FY22-DSEP-004).
+  <br/>
+  <br/>
+Documentation: "[Demographic and Housing Characteristics (DHC) Noisy Measurement File (2023-10-23) README File](https://www2.census.gov/programs-surveys/decennial/2020/data/demographic-and-housing-characteristics-file/00-2020-DHC-Noisy-Measurement-File/2020_DHC_NMF_README.html)"
+Contact: 2020DAS@census.gov
+ManagedBy: "[United States Census Bureau](http://www.census.gov/)"
+UpdateFrequency: Not Updated
+Tags:
+  - aws-pds
+  - census
+  - differential privacy
+  - disclosure avoidance
+  - ethnicity
+  - group quarters
+  - housing
+  - housing units
+  - noisy measurements
+  - population
+  - race
+  - redistricting
+  - voting age
+License: CC0 1.0 Universal
+Citation:
+  Cumings-Menon, R., Ashmead, R., Kifer, D., Leclerc, P., Spence, M., Zhuravlev, P., & Abowd, J. M. (2023). 2020 Census Demographic and Housing Characteristics (DHC) Noisy Measurement File [https://registry.opendata.aws/census-2020-dhc-nmf/].
+Resources:
+  - Description: The 2020 Census Demographic and Housing Characteristics Noisy Measurement File
+    ARN: arn:aws:s3:::uscb-2020-product-releases/decennial/dhc/2020/nmf/2020-dhc-nmf
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "Census Open Data S3 Inventory"
+    ARN: arn:aws:s3:::uscb-opendata-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: The 2020 Census Disclosure Avoidance System Topdown Algorithm
+      URL: https://doi.org/10.1162/99608f92.529e3cb9
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel,
+        S., Heineck, M., Heiss, C., Johns, R., Kifer, D., Leclerc,
+        P., Machanavajjhala, A., Moran, B., Sexton, W., Spence, M.,
+        Zhuravlev, P.
+    - Title: Geographic Spines in the 2020 Census Disclosure Avoidance System
+      URL: https://doi.org/10.48550/arXiv.2203.16654
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel, S., Heineck,
+        M., Heiss, C., Johns, R., Kifer, D., Leclerc, P., Machanavajjhala,
+        A., Moran, B., Sexton, W., Spence, M., Zhuravlev, P.
+    - Title: 2020 Census Demographic and Housing Characteristics File Technical Documentation
+      URL: https://www.census.gov/programs-surveys/decennial-census/technical-documentation/complete-technical-documents.html#dhc-and-dp
+      AuthorName: U.S. Census Bureau. Note that the zCDP framework NMFs were generated in a for-internal-use-only pickled (https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.SparkContext.pickleFile.html) form as a byproduct of the use of this code. A stand-alone script was developed and used to convert these internal-use NMFs into the Parquet format used in this product (that script is not yet publicly available).
+    - Title: DAS 2020 DHC Production Code Release
+      URL: https://github.com/uscensusbureau/DAS_2020_DHC_Production_Code/tree/main
+      AuthorName: U.S. Census Bureau
+    - Title: Computing Confidence Intervals Using the 2010 Census Production Settings Redistricting Data (P.L. 94-171) Demonstration Noisy Measurement File (2023-04-03) (Jupyter notebook explaining how to calculate estimates and confidence intervals from the noisy measurement files)
+      URL: https://www2.census.gov/programs-surveys/decennial/2020/program-management/data-product-planning/2010-demonstration-data-products/04-Demonstration_Data_Products_Suite/2023-04-03/Computing_Confidence_Intervals_Using_the_2010_Census_Redistricting_NMF.html
+      AuthorName: Cumings-Menon, R., Hawes, M., and Spence, M. (2023)
