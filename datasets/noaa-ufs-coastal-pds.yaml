@@ -1,6 +1,6 @@
 Name: NOAA Unified Forecast System (UFS) Coastal Model
 Description: | 
-  The Unified Forecast System (UFS) is a community-based, coupled, comprehensive Earth Modeling System. The [UFS Coastal application](https://github.com/janahaddad/ufs-coastal-app) is a project under development by NOAA and NCAR, which supports coastal forecasting requirements based on UFS standards. The coupling infrastructure for UFS Coastal App is currently being developed based on a fork of the ufs-weather-model (UFS-WM), with additional coastal model-components including SCHISM, ADCIRC, ROMS, and FVCOM, as well as additional infrastructure to support coastal coupling of WW3 and CICE. The [model-level repository](https://github.com/oceanmodeling/ufs-weather-model) contains the model code and external submodules needed to build the UFS coastal model executable and the associated model components. 
+  The Unified Forecast System (UFS) is a community-based, coupled, comprehensive Earth Modeling System. The [UFS Coastal application](https://github.com/oceanmodeling/ufs-coastal-app) is a project under development by NOAA and NCAR, which supports coastal forecasting requirements based on UFS standards. The coupling infrastructure for UFS Coastal App is currently being developed based on a fork of the ufs-weather-model (UFS-WM), with additional coastal model-components including SCHISM, ADCIRC, ROMS, and FVCOM, as well as additional infrastructure to support coastal coupling of WW3 and CICE. The [model-level repository](https://github.com/oceanmodeling/ufs-weather-model) contains the model code and external submodules needed to build the UFS coastal model executable and the associated model components. 
   <br/>
   <br/>
   The UFS Coastal Regression Test (RT) system is a type of testing built into the software development that ensures that changes to the model-level code and associated model-components do not break the existing functionality of the code. The number and type of tests currently in the RT system suite are evolving along with current dependencies such as UFS-WM and ESMF libraries. Currently, at least one RT case exists for each coastal model. The status and descriptions of the existing RT cases is available via the [UFS Coastal Wiki page](https://github.com/oceanmodeling/ufs-weather-model/wiki/Current-Status-of-UFS%E2%80%90Coastal-Implementation). These are currently regularly tested on NOAA/MSU Hercules platform, and to a lesser frequency on TACC/Frontera.
@@ -26,6 +26,7 @@ Tags:
   - lidar
   - stac
 License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
   NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. 
   <br/>
   <br/>
@@ -34,7 +35,7 @@ License: |
   <br/>
   NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
   <br/>
-  <br/>
+  <br/> 
   The UFS Coastal license page is available at: https://github.com/oceanmodeling/ufs-coastal-app/blob/main/LICENSE.md
 Resources:
   - Description: NOAA UFS Coastal Data
