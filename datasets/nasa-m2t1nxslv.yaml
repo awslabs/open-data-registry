@@ -1,0 +1,125 @@
+Name: 'MERRA-2 tavg1_2d_slv_Nx: 2d,1-Hourly,Time-Averaged,Single-Level,Assimilation,Single-Level
+  Diagnostics 0.625 x 0.5 degree V5.12.4 (M2T1NXSLV) at GES DISC'
+Description: "M2T1NXSLV (or  tavg1_2d_slv_Nx) is an hourly time-averaged 2-dimensional
+  data collection in Modern-Era Retrospective analysis for Research and Applications
+  version 2 (MERRA-2).  This collection consists of meteorology diagnostics at popularly
+  used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850hPa,
+  500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850 hPa,
+  500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water
+  vapor (or ice water, liquid water).  The data field is time-stamped with the central
+  time of an hour starting from 00:30 UTC, e.g.: 00:30, 01:30, … , 23:30 UTC.\n\nMERRA-2
+  is the latest version of global atmospheric reanalysis for the satellite era produced
+  by NASA Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing
+  System Model (GEOS) version 5.12.4.  The dataset covers the period of 1980-present
+  with the latency of ~3 weeks after the end of a month. \n\nData Reprocessing:  Please
+  check “Records of MERRA-2 Data Reprocessing and Service Changes” linked from the
+  “Documentation” tab on this page.  Note that a reprocessed data filename is different
+  from the original file.\n\nMERRA-2 Mailing List: Sign up to receive information
+  on reprocessing of data, changing of tools and services, as well as data announcements
+  from GMAO. Contact the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov) to be
+  added to the list.\n\nQuestions: If you have a question, please read \"MERRA-2 File
+  Specification Document\",  “MERRA-2 Data Access – Quick Start Guide”, and FAQs linked
+  from the ”Documentation” tab on this page.  If that does not answer your question,
+  you may post your question to the NASA Earthdata Forum (forum.earthdata.nasa.gov)
+  or email the GES DISC Help Desk (gsfc-dl-help-disc@mail.nasa.gov).\nRead our doc
+  on how to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/VJAFPLI1CSIV
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov. Home Page: https://disc.gsfc.nasa.gov/, GLOBAL MODELING AND ASSIMILATION OFFICE: data@gmao.gsfc.nasa.gov'
+ManagedBy: NASA
+UpdateFrequency: From 1980-01-01 to Ongoing
+Tags:
+  - aws-pds
+  - agriculture
+  - air temperature
+  - atmosphere
+  - biodiversity
+  - climate
+  - coastal
+  - datacenter
+  - ecosystems
+  - global
+  - hydrology
+  - ice
+  - land
+  - metadata
+  - oceans
+  - opendap
+  - water
+  - netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MERRA-2 tavg1_2d_slv_Nx: 2d,1-Hourly,Time-Averaged,Single-Level,Assimilation,Single-Level
+      Diagnostics 0.625 x 0.5 degree V5.12.4 (M2T1NXSLV) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXSLV.5.12.4/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: The Modern-Era Retrospective Analysis for Research and Applications,
+        Version 2 (MERRA-2).
+      URL: https://doi.org/10.1175/JCLI-D-16-0758.1
+      AuthorName: Gelaro, R., W. McCarty, M. J. Suárez, R. Todling, A. Molod, L. Takacs,
+        C. A. Randles, A. Darmenov, M. G. Bosilovich, R. Reichle, et al.
+    - Title: 'Development of the GEOS-5 atmospheric general circulation model: evolution
+        from MERRA to MERRA2.'
+      URL: https://doi.org/10.5194/gmd-8-1339-2015
+      AuthorName: Molod, A., L. Takacs, M. Suarez, and J. Bacmeister
+    - Title: 'The MERRA-2 Aerosol Reanalysis, 1980 Onward. Part I: System Description
+        and Data Assimilation Evaluation.'
+      URL: https://doi.org/10.1175/JCLI-D-16-0609.1
+      AuthorName: Randles, C. A., A. M. da Silva, V. Buchard, P. R. Colarco, A. Darmenov,
+        R. Govindaraju, A. Smirnov, B. Holben, R. Ferrare, J. Hair, Y.Shinozuka, and
+        C.J. Flynn
+    - Title: 'The MERRA-2 aerosol reanalysis, 1980 onward. Part II: Evaluation and
+        case studies.'
+      URL: https://doi.org/10.1175/JCLI-D-16-0613.1
+      AuthorName: Buchard V., C. A. Randles, A. M. da Silva, A. Darmenov, P. R. Colarco,
+        R. Govindaraju, R. Ferrare, J. Hair, A. J. Beyersdorf, L. D. Ziemba, H. Yu
+    - Title: Land Surface Precipitation in MERRA-2.
+      URL: https://doi.org/10.1175/JCLI-D-16-0570.1
+      AuthorName: Reichle, R.H., Q. Liu, R.D. Koster, C.S. Draper, S.P.P. Mahanama,
+        and G.S. Partyka
+    - Title: Assessment of MERRA-2 Land Surface Hydrology Estimates.
+      URL: https://doi.org/10.1175/JCLI-D-16-0720.1
+      AuthorName: Reichle, R. H., C. S. Draper, Q. Liu, M. Girotto, S. P. P. Mahanama,
+        R. D. Koster, and G. J. M. De Lannoy
+    - Title: '2015b: MERRA-2: Initial Evaluation of the Climate'
+      AuthorName: Bosilovich, M. G., S. Akella, L. Coy, R. Cullather, C. Draper, R.
+        Gelaro, R. Kovach, Q.Liu, A. Molod, P. Norris, K. Wargan, W. Chao, R. Reichle,
+        L. Takacs, Y. Vikhliaev, S. Bloom, A. Collow, S. Firth, G. Labow, G. Partyka,
+        S. Pawson, O. Reale, S. D. Schubert, and M. Suarez
+    - Title: Data assimilation using incremental analysis updates
+      AuthorName: Bloom, S., L. Takacs, A. DaSilva, and D. Ledvina
+    - Title: Documentation and Validation of the Goddard Earth Observing System (GEOS)
+        Data Assimilation System - Version 4
+      AuthorName: Bloom, S., A. da Silva, D. Dee, M. Bosilovich, J.-D. Chern, S. Pawson,
+        S. Schubert, M. Sienkiewicz, I. Stajner, W.-W. Tan, M.-L. Wu
+    - Title: Design and implementation of components in the Earth System Modeling
+        Framework
+      URL: https://doi.org/10.1177/1094342005056120
+      AuthorName: Collins, N., G. Theurich, C. DeLuca, M. Suarez, A. Trayanov, V.
+        Balaji, P. Li, W. Yang, C. Hill, and A. da Silva
+    - Title: A catchment-based approach to modeling land surface processes in a GCM,
+        Part 1, Model Structure
+      AuthorName: Koster, R. D., M. J. Suarez, A. Ducharne, M. Stieglitz, and P. Kumar
+    - Title: 'Numerical aspects of the application of recursive filters to variational
+        statistical analysis. Part I: Spatially homogeneous and isotropic Gaussian
+        covariances'
+      AuthorName: Purser, R. J., W.-S. Wu, D. F. Parrish, and N. M. Roberts
+    - Title: 'Numerical aspects of the application of recursive filters to variational
+        statistical analysis. Part II: Spatially inhomogeneous and anisotropic general
+        covariances'
+      AuthorName: Purser, R. J., W.-S. Wu, D. F. Parrish, and N. M. Roberts
+    - Title: Three-dimensional variational analysis with spatially inhomogeneous covariances
+      AuthorName: Wu, W.-S., R.J. Purser and D.F. Parrish
+  Tutorials: 
+    - Title: How to Read and Plot NetCDF MERRA-2 Data in Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Read_and_Plot_NetCDF_MERRA-2_data_in_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.
+    - Title: How to Access GES DISC Data Using Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.

@@ -1,0 +1,42 @@
+Name: AIRS/Aqua L1B Infrared (IR) geolocated and calibrated radiances V005 (AIRIBRAD)
+  at GES DISC
+Description: |-
+  WARNING: On 2021/09/23 the EOS Aqua executed a Deep Space Maneuver (DSM). In the DSM, the spacecraft is turned such that the normal Earth field of regard is deep space.
+
+  The thermal impact of the DSM caused a shift of the centroids of spectral response functions (SRF) of about 1% of the width of the SRF, equivalent to a frequency shift of 9 parts per million. This shift is reflected in the “spectral_freq” parameter (observed frequencies) in the L1b v5 files for each 6 minute granule. The magnitude of the effect on brightness temperatures (BT) depends on the spectral gradient of each channel. Maximum BT shifts are approximately +- 0.5 K, although many channels experience far smaller BT shifts. Approximately 1803 channels have BT shifts of less than 0.1 K and 575 channels are now shifted in BT by more than 0.1 K, while 231 of these channels have BT shifts greater than 0.2 K.
+
+  Users of the L1b v5 product who are concerned that these shifts may impact their science investigations and applications are encouraged to switch to the AIRS L1c v6.7.4 product, which, among many other improvements, converts the spectra to a fixed frequency grid.          END OF WARNING.
+
+  The Atmospheric Infrared Sounder (AIRS) is a grating spectrometer (R = 1200) aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. The AIRS Infrared (IR) level 1B data set contains AIRS calibrated and geolocated radiances in milliWatts/m^2/cm^-1/steradian for 2378 infrared channels in the 3.74 to 15.4 micron region of t he spectrum. The AIRS instrument is co-aligned with AMSU-A so that successive blocks of 3 x 3 AIRS footprints are contained within one AMSU-A footprint. The AIRIBRAD_005 products are stored in files (often referred to as "granules") that contain 6 minutes of data, 90 footprints across track by 135 lines along track.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/YZEXEVN4JGGJ
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov'
+ManagedBy: NASA
+UpdateFrequency: From 2002-08-30 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - datacenter
+  - earth observation
+  - global
+  - hdf
+  - ice
+  - land
+  - metadata
+  - opendap
+  - orbit
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'AIRS/Aqua L1B Infrared (IR) geolocated and calibrated radiances
+      V005 (AIRIBRAD) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Aqua_AIRS_Level1/AIRIBRAD.005/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: How to Access GES DISC Data Using Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.

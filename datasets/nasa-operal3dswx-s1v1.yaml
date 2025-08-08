@@ -1,0 +1,48 @@
+Name: OPERA Dynamic Surface Water Extent from Sentinel-1 (Version 1)
+Description: "This dataset contains Level-3 Dynamic OPERA Surface Water Extent from
+  Sentinel-1 (DSWx-S1) product version 1.  DSWx-S1 provides near-global geographical
+  mapping of surface water extent over land at a spatial resolution of 30 meters over
+  the Military Grid reference System (MGRS) grid system, with a temporal revisit frequency
+  between 6-12 days. Using Sentinel-1 radar observations, DSWx-S1 maps open inland
+  water bodies greater than 3 hectares and 200 meters in width, irrespective of cloud
+  conditions and daylight illumination that often pose challenges to optical sensors.
+  Forward production of the DSWx-S1 data record began in Sept 2024.  Each product
+  is distributed as a set of 3 GeoTIFF (Geographic Tagged Image File Format) files
+  including water classification and associated confidence layers.\n<br><br>\nThe
+  OPERA DSWx-S1 product contains modified Copernicus Sentinel data (2024-2025).\n<br><br>\nTo
+  access the calibration/validation database for OPERA Dynamic Surface Water Extent
+  Products, please contact podaac@podaac.jpl.nasa.gov \nRead our doc on how to get
+  AWS Credentials to retrieve this data: https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/OPDSWS1-L3V1
+Contact: 'Help Desk: podaac@podaac.jpl.nasa.gov. Home Page: https://podaac.jpl.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2024-08-01 to Ongoing (Daily - < Weekly)
+Tags:
+  - aws-pds
+  - cog
+  - datacenter
+  - earth observation
+  - global
+  - land
+  - orbit
+  - radar
+  - sentinel-1
+  - surface water
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Dynamic Surface Water Extent from Sentinel-1 (Version 1).'
+    ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-S1_V1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Working with OPERA Dynamic Surface Water Extent (DSWx) Data
+      URL: https://podaac.github.io/tutorials/notebooks/datasets/OPERA_GIS_Cloud.html
+      AuthorName: Nicholas Tarpinian
+      NotebookURL: https://github.com/podaac/tutorials/blob/master/notebooks/datasets/OPERA_GIS_Cloud.ipynb
+    - Title: Generate Flood Maps without downloading OPERA DSWx-S1 products locally
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DSWx/Flood/Brazil_DSWx-S1_FloodProduct.ipynb
+      AuthorName: S. Sangha
