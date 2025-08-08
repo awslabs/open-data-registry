@@ -1,0 +1,43 @@
+Name: OPERA Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 product
+  (Version 1)
+Description: |-
+  The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) product Version 1 maps vegetation disturbance alerts that are derived from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). A vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel. The Level-3 data product also provides additional information about more general disturbance trends and auxiliary generic disturbance information as determined from the variations of the reflectance through the HLS scenes. [HLS](https://lpdaac.usgs.gov/product_search/?collections=HLS&status=Operational&view=list) data represent the highest temporal frequency data available at medium spatial resolution. The combined observations will provide greater sensitivity to land changes, whether of large magnitude/short duration or small magnitude/long duration.
+
+  The OPERA_L3_DIST-ALERT-HLS (or DIST-ALERT) data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate file. There are 19 layers contained within the DIST-ALERT product. The layers for both vegetation and generic disturbance include disturbance status, loss or anomaly, maximum loss anomaly, disturbance confidence layer, date of disturbance, count of observations with loss anomalies, days of ongoing anomalies, and day of last disturbance detection. Additional layers are vegetation cover percent, historical percent vegetation cover, and data mask. See the Product Specification Document (PSD) for a more detailed description of the individual layers provided in the DIST-ALERT product.
+
+  The OPERA_L3_DIST-ALERT-HLS product contains modified Copernicus Sentinel data (2020-2025).
+
+  Known Issues
+  * Additional usage constraints are provided under Section 5 of the Algorithm Theoretical Basis Document (ATBD).
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001
+Contact: 'Email: lpdaac@usgs.gov. Home Page: https://lpdaac.usgs.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2022-01-01 to Ongoing (Daily - < Weekly)
+Tags:
+  - aws-pds
+  - cog
+  - earth observation
+  - environmental
+  - global
+  - land
+  - land cover
+  - land use
+  - satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2
+      product (Version 1).'
+    ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ALERT-HLS_V1.001
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with OPERA DIST-ALERT-HLS Products
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DIST/DIST_ALERT/Discover/Stream_and_Viz_DIST-ALERT-folium.ipynb
+      AuthorName: R. Dhillon and M. Grace Bato
+    - Title: Getting Started with OPERA DIST Product
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DIST/DIST_ALERT/Wildfire/Intro_To_DIST.ipynb
+      AuthorName: M. Grace Bato and R. Dhillon

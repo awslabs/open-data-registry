@@ -1,0 +1,51 @@
+Name: MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061
+Description: "The Terra Moderate Resolution Imaging Spectroradiometer (MODIS) Vegetation
+  Indices (MOD13Q1) Version 6.1 data are generated every 16 days at 250 meter (m)
+  spatial resolution as a Level 3 product. The MOD13Q1 product provides two primary
+  vegetation layers. The first is the Normalized Difference Vegetation Index (NDVI)
+  which is referred to as the continuity index to the existing National Oceanic and
+  Atmospheric Administration-Advanced Very High Resolution Radiometer (NOAA-AVHRR)
+  derived NDVI. The second vegetation layer is the Enhanced Vegetation Index (EVI),
+  which has improved sensitivity over high biomass regions. The algorithm chooses
+  the best available pixel value from all the acquisitions from the 16 day period.
+  The criteria used is low clouds, low view angle, and the highest NDVI/EVI value.\n\nAlong
+  with the vegetation layers and the two quality layers, the HDF file will have MODIS
+  reflectance bands 1 (red), 2 (near-infrared), 3 (blue), and 7 (mid-infrared), as
+  well as four observation layers. \n\nKnown Issues\n* For complete information about
+  known issues please refer to the [MODIS/VIIRS Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=61).\n\nImprovements/Changes
+  from Previous Versions\n* The Version 6.1 Level-1B (L1B) products have been improved
+  by undergoing various calibration changes that include: changes to the response-versus-scan
+  angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections
+  to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections
+  to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n*
+  A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\nRead
+  our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/MODIS/MOD13Q1.061
+Contact: 'User Services: lpdaac@usgs.gov'
+ManagedBy: NASA
+UpdateFrequency: From 2000-02-18 to Ongoing (Weekly - < Monthly)
+Tags:
+  - aws-pds
+  - datacenter
+  - earth observation
+  - geospatial
+  - global
+  - hdf
+  - ice
+  - land
+  - opendap
+  - satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN Grid V061.'
+    ARN: arn:aws:s3:::lp-prod-protected/MOD13Q1.061
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Download Files from S3 Using boto3
+      URL: https://github.com/nasa/LPDAAC-Data-Resources/blob/main/python/how-tos/Earthdata_Cloud__Download_file_from_S3.ipynb
+      AuthorName: LPDAAC
+      AuthorURL: https://www.earthdata.nasa.gov/centers/lp-daac

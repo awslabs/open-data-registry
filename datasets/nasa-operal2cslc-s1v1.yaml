@@ -1,0 +1,64 @@
+Name: OPERA Coregistered Single-Look Complex from Sentinel-1 validated product (Version
+  1)
+Description: "The Observational Products for End-Users from Remote Sensing Analysis
+  (OPERA) Coregistered Single-Look Complex (CSLC) from Sentinel-1 validated product
+  consists of Single Look Complex (SLC) images which contain both amplitude and phase
+  information of the complex radar return. The amplitude is primarily determined by
+  ground surface properties (e.g., terrain slope, surface roughness, and physical
+  properties), and phase primarily represents the distance between the radar and ground
+  targets corrected for the geometrical distance between the two based on the knowledge
+  from Digital Elevation Model and platform’s position, i.e., the CSLC phase represents
+  residual geometrical distance between the sensor and target, the atmospheric propagation
+  delay and the target movements. The CSLC-S1 product is derived from Copernicus Sentinel-1A
+  and Sentinel-1B Interferometric Wide (IW) SLC data.  \n\nThe CSLC images are precisely
+  aligned or “coregistered” to a pre-defined UTM/Polar stereographic map projection
+  systems and posted at 5x10 m spacing in east and north direction, respectively.
+  \ Each CSLC-S1 product corresponds to a single S1 burst and is distributed as a
+  Hierarchical Data Format version 5 (HDF5) file following the CF-1.8 convention containing
+  both data raster layers (e.g., geocoded complex backscatter, low-resolution correction
+  look-up tables) and product metadata. OPERA CSLC-S1 products are available over
+  North America which includes the USA and U.S. Territories, Canada within 200 km
+  of the U.S. border, and all mainland countries from the southern U.S. border down
+  to and including Panama.  The OPERA CSLC-S1 product contains modified Copernicus
+  Sentinel data (2016-2025).\n\nDue to the S1 mission’s narrow orbital tube, radar-geometry
+  layers vary slightly over time for each position on the ground, and therefore are
+  considered static. These static layers are provided separately from the OPERA CLSLC-S1
+  product, as they are produced only once or a limited number of times. The static
+  layers are available in the associated OPERA Coregistered Single-Look Complex from
+  Sentinel-1 Static Layers validated product (Version 1).\nRead our doc on how to
+  get AWS Credentials to retrieve this data: https://cumulus.asf.alaska.edu/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/SNWG/OPERA_L2_CSLC-S1_V1
+Contact: 'Email: uso@asf.alaska.edu. Home Page: https://www.asf.alaska.edu/'
+ManagedBy: NASA
+UpdateFrequency: From 2014-06-15 to Ongoing
+Tags:
+  - aws-pds
+  - coastal
+  - earth observation
+  - hdf
+  - ice
+  - land
+  - metadata
+  - oceans
+  - orbit
+  - radar
+  - sentinel-1
+  - synthetic aperture radar
+  - xml
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Coregistered Single-Look Complex from Sentinel-1 validated
+      product (Version 1).'
+    ARN: arn:aws:s3:::asf-cumulus-prod-opera-products/OPERA_L2_CSLC-S1/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://cumulus.asf.alaska.edu/s3credentialsREADME
+DataAtWork:
+  Tutorials:
+    - Title: Generate inteferograms without the need to download OPERA CSLC-S1 products locally
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/CSLC/Discover/Create_Interferogram_by_Streaming_CSLC-S1.ipynb
+      AuthorName: M. Grace Bato and K. Devlin
+    - Title: Generate interferograms and map the lava flow emplacement using OPERA CSLC-S1
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/CSLC/Volcano/Map_Deformation_LavaFlow_using_CSLC-S1.ipynb
+      AuthorName: M. Grace Bato

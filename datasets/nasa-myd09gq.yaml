@@ -1,0 +1,50 @@
+Name: MODIS/Aqua Surface Reflectance Daily L2G Global 250m SIN Grid V061
+Description: "The MYD09GQ Version 6.1 product provides an estimate of the surface
+  spectral reflectance of Aqua Moderate Resolution Imaging Spectroradiometer (MODIS)
+  250 meter (m) bands 1 and 2, corrected for atmospheric conditions such as gasses,
+  aerosols, and Rayleigh scattering. Along with the 250 m bands are the Quality Assurance
+  (QA) layer and five observation layers. This product is intended to be used in conjunction
+  with the quality and viewing geometry information of the 500 m product (MYD09GA).
+  \n\nKnown Issues\n* Prior to the Aqua MODIS launch, Band 6 exhibited several anomalous
+  detectors. Band 6 performance degraded seriously after launch and presently a majority
+  of the Band 6 detectors are non-functional. Science users should read and use the
+  non-functional detector flags and decide for themselves the optimum manner to handle
+  non-functional detector \"gaps\" for their products. For complete information please
+  refer to the [MODIS Characterization Support Team (MCST) website](https://mcst.gsfc.nasa.gov/time-dependent-list-non-functional-or-noisy-detector).\n*
+  For complete information about known issues please refer to the [MODIS/VIIRS Land
+  Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Aqua&as=61).\n\nImprovments/Changes
+  from Previous Version\n* The Version 6.1 Level-1B (L1B) products have been improved
+  by undergoing various calibration changes that include: changes to the response-versus-scan
+  angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections
+  to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections
+  to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n*
+  A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\nRead
+  our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/MODIS/MYD09GQ.061
+Contact: 'User Services: lpdaac@usgs.gov'
+ManagedBy: NASA
+UpdateFrequency: From 2002-07-04 to Ongoing (Daily - < Weekly)
+Tags:
+  - aws-pds
+  - datacenter
+  - earth observation
+  - geospatial
+  - global
+  - hdf
+  - ice
+  - land
+  - opendap
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MODIS/Aqua Surface Reflectance Daily L2G Global 250m SIN Grid V061.'
+    ARN: arn:aws:s3:::lp-prod-protected/MYD09GQ.061
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Download Files from S3 Using boto3
+      URL: https://github.com/nasa/LPDAAC-Data-Resources/blob/main/python/how-tos/Earthdata_Cloud__Download_file_from_S3.ipynb
+      AuthorName: LPDAAC
+      AuthorURL: https://www.earthdata.nasa.gov/centers/lp-daac
