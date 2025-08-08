@@ -1,0 +1,72 @@
+Name: OPERA Dynamic Surface Water Extent from Harmonized Landsat Sentinel-2 product
+  (Version 1)
+Description: "This dataset contains Level-3 Dynamic OPERA surface water extent product
+  version 1.  The data are validated surface water extent observations beginning April
+  2023. Known issues and caveats on usage are described under Documentation. The input
+  dataset for generating each product is the Harmonized Landsat-8 and Sentinel-2A/B/C
+  (HLS) product version 2.0. HLS products provide surface reflectance (SR) data from
+  the Operational Land Imager (OLI) aboard the Landsat 8 satellite and the MultiSpectral
+  Instrument (MSI) aboard the Sentinel-2A/B/C satellite. The surface water extent
+  products are distributed over projected map coordinates using the Universal Transverse
+  Mercator (UTM) projection. Each UTM tile covers an area of 109.8 km × 109.8 km.
+  This area is divided into 3,660 rows and 3,660 columns at 30-m pixel spacing. Each
+  product is distributed as a set of 10 GeoTIFF (Geographic Tagged Image File Format)
+  files including water classification, associated confidence, land cover classification,
+  terrain shadow layer, cloud/cloud-shadow classification, Digital elevation model
+  (DEM), and Diagnostic layer.\n<br><br>\nThe digital elevation model (DEM) provided
+  as a layer of the DSWx-HLS product (band 10) was generated using the Copernicus
+  DEM 30-m and Copernicus DEM 90-m models provided by the European Space Agency. The
+  Copernicus DEM 30-m and Copernicus DEM 90-m were produced using Copernicus WorldDEM-30
+  © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under
+  COPERNICUS by the European Union and ESA; all rights reserved. The organizations
+  in charge of the OPERA project, the Copernicus programme, and Airbus Defence and
+  Space GmbH by law or by delegation do not assume any legal responsibility or liability,
+  whether express or implied, arising from the use of this DEM.\n<br><br>\nThe OPERA
+  DSWx-HLS product contains modified Copernicus Sentinel data (2023-2025).\n<br><br>\nTo
+  access the calibration/validation database for OPERA Dynamic Surface Water Extent
+  Products, please contact podaac@podaac.jpl.nasa.gov \nRead our doc on how to get
+  AWS Credentials to retrieve this data: https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/OPDSW-PL3V1
+Contact: 'Help Desk: podaac@podaac.jpl.nasa.gov. Home Page: https://podaac.jpl.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2023-04-04 to Ongoing (Daily - < Weekly)
+Tags:
+  - aws-pds
+  - cog
+  - datacenter
+  - earth observation
+  - ice
+  - land
+  - land cover
+  - metadata
+  - surface water
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Dynamic Surface Water Extent from Harmonized Landsat Sentinel-2
+      product (Version 1).'
+    ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: Improved Automated Detection of Subpixel-Scale Inundation—Revised Dynamic
+        Surface Water Extent (DSWE) Partial Surface Water Tests
+      URL: https://doi.org/10.3390/rs11040374
+      AuthorName: Jones, John W
+  Tutorials:
+    - Title: Working with OPERA Dynamic Surface Water Extent (DSWx) Data
+      URL: https://podaac.github.io/tutorials/notebooks/datasets/OPERA_GIS_Cloud.html
+      AuthorName: Nicholas Tarpinian
+      NotebookURL: https://github.com/podaac/tutorials/blob/master/notebooks/datasets/OPERA_GIS_Cloud.ipynb
+    - Title: Access DSWx-HLS S3
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DSWx/Discover/Access_DSWx-HLS_S3.ipynb
+      AuthorName: M. Grace Bato
+    - Title: Stream and Viz DSWx-HLS via Direct HTTPS
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DSWx/Discover/Stream_and_Viz_DSWx-HLS_viaDirectHTTPS.ipynb
+      AuthorName: M. Grace Bato
+    - Title: Getting Started with OPERA DSWx Product
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DSWx/Reservoir/Intro_to_DSWx.ipynb
+      AuthorName: K. Devlin and M. Grace Bato

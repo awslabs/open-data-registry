@@ -1,0 +1,111 @@
+Name: GPM IMERG Early Precipitation L3 1 day 0.1 degree x 0.1 degree V07 (GPM_3IMERGDE)
+  at GES DISC
+Description: "Version 07 is the current version of the data set. Older versions will
+  no longer be available and have been superseded by Version 07.\n\nThe Integrated
+  Multi-satellitE Retrievals for GPM (IMERG) IMERG is a NASA product estimating global
+  surface precipitation rates at a high resolution of 0.1° every half-hour beginning
+  2000.  It is part of the joint NASA-JAXA Global Precipitation Measurement (GPM)
+  mission, using the GPM Core Observatory satellite as the standard to combine precipitation
+  observations from an international constellation of satellites using advanced techniques.
+  \ IMERG can be used for global-scale applications as well as over regions with sparse
+  or no reliable surface observations.  The fine spatial and temporal resolution of
+  IMERG data allows them to be accumulated to the scale of the application for increased
+  skill.  IMERG has three Runs with varying latencies in response to a range of application
+  needs: rapid-response applications (Early Run, 4-h latency), same/next-day applications
+  (Late Run, 14-h latency), and post-real-time research (Final Run, 3.5-month latency).
+  \ While IMERG strives for consistency and accuracy, satellite estimates of precipitation
+  are expected to have lower skill over frozen surfaces, complex terrain, and coastal
+  zones.  As well, the changing GPM satellite constellation over time may introduce
+  artifacts that affect studies focusing on multi-year changes.\n\nThis dataset is
+  the GPM Level 3 IMERG  *Early* Daily  10 x 10 km (GPM_3IMERGDE) derived from the
+  half-hourly GPM_3IMERGHHE. The derived result represents an early (expedited) estimate
+  of the daily mean precipitation rate in mm/day. The dataset is produced by first
+  computing the mean precipitation rate in (mm/hour) in every grid cell, and then
+  multiplying the result by 24.  This minimizes the possible dry bias in versions
+  before \"07\", in the simple daily totals  for cells where less than 48 half-hourly
+  observations are valid for the day. The latter under-sampling is very rare in the
+  combined microwave-infrared (and rain gauge in the final) dataset, variable \"precipitation\",
+  \ and appears in higher latitudes. Thus, in most cases users of global \"precipitation\"
+  data will not notice any difference. This correction, however, is noticeable in
+  the high-quality microwave retrieval, variable \"MWprecipitation\", where the occurrence
+  of less than 48 valid half-hourly samples per day is very common. The counts of
+  the valid half-hourly samples per day have always been provided as a separate variable,
+  and users of daily data were advised to pay close attention to that variable and
+  use it to calculate the correct precipitation daily rates. Starting with version
+  \"07\", this is done in production to minimize possible misinterpretations of the
+  data. The counts are still provided in the data, but they are only given to gauge
+  the significance of the daily rates, and reconstruct the simple totals if someone
+  wishes to do so. \n\nThe latency of the derived Early daily product is a couple
+  of minutes after the last granule of GPM_3IMERGHHE for the UTC data day is received
+  at GES DISC. Since the target latency of GPM_3IMERGHHE is 4 hours, the daily should
+  appear about 4 hours after the closure of the UTC day. For information on the original
+  data (GPM_3IMERGHHE), please see the Documentation (Related URL). \n\nThe daily
+  mean rate (mm/day) is derived by first computing the mean precipitation rate (mm/hour)
+  in a grid cell for the data day, and then multiplying the result by 24.  Thus, for
+  every grid cell we have                \n\nPdaily_mean     = SUM{Pi * 1[Pi valid]}
+  / Pdaily_cnt  * 24, i=[1,Nf]\n\nWhere:\nPdaily_cnt = SUM{1[Pi valid]}\n\nPi              -
+  half-hourly input, in (mm/hr)\nNf              - Number of half-hourly files per
+  day, Nf=48\n1[.]            - Indicator function; 1 when Pi is valid, 0 otherwise\nPdaily_cnt
+  \     - Number of valid retrievals in a grid cell per day.\n\nGrid cells for which
+  Pdaily_cnt=0, are set to fill value in the Daily files.\nNote that Pi=0 is a valid
+  value.\n\nPdaily_cnt are provided in the data files as variables \"precipitation_cnt\"
+  and \"MWprecipitation_cnt\", for correspondingly the microwave-IR-gauge and microwave-only
+  retrievals. They are only given to gauge the significance of the daily rates, and
+  reconstruct the simple totals if someone wishes to do so. \n\nThere are various
+  ways the daily error could be estimated from the source half-hourly random error
+  (variable \"randomError\"). The daily error provided in the data files is calculated
+  in a fashion similar to the daily mean precipitation rate. First, the mean of the
+  squared half-hourly \"randomError\"  for the day is computed, and the resulting
+  (mm^2/hr) is converted to (mm^2/day). Finally, square root is taken to get the result
+  in (mm/day):\n\nPerr_daily = { SUM{ (Perr_i)^2 * 1[Perr_i valid] ) } / Ncnt_err
+  \ * 24}^0.5, i=[1,Nf]\nNcnt_err   = SUM( 1[Perr_i valid] )\n\nwhere:\nPerr_i\t\t-
+  half-hourly input, \"randomError\", (mm/hr)\nPerr_daily\t- Magnitude of the daily
+  error, (mm/day)\nNcnt_err\t\t- Number of valid half-hour error estimates\n\nAgain,
+  the sum of squared \"randomError\" can be reconstructed, and other estimates can
+  be derived using the available counts in the Daily files.\n\n\nRead our doc on how
+  to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/GPM/IMERGDE/DAY/07
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov. Home Page: https://disc.gsfc.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 1998-01-01 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - coastal
+  - datacenter
+  - global
+  - hydrology
+  - land
+  - metadata
+  - opendap
+  - netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'GPM IMERG Early Precipitation L3 1 day 0.1 degree x 0.1 degree V07
+      (GPM_3IMERGDE) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3IMERGDE.07/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: Precipitation Estimation from Remotely Sensed Imagery Using an Artificial
+        Neural Network Cloud Classification System
+      AuthorName: Hong, Y., K. L. Hsu, S. Sorooshian, and X. Gao
+    - Title: 'The TRMM Multi-satellite Precipitation Analysis: Quasi-Global, Multi-Year,
+        Combined-Sensor Precipitation Estimates at Fine Scale.'
+      AuthorName: Huffman, G. J., R. F. Adler, D. T. Bolvin, G. Gu, E. J. Nelkin,
+        K. P. Bowman, Y. Hong, E. F. Stocker, and D. B. Wolff
+    - Title: Kalman Filter Based CMORPH
+      URL: https://doi.org/10.1175/JHM-D-11-022.1
+      AuthorName: Joyce, R. J., P. Xie, and J. E. Janowiak
+    - Title: Calculation of Gridded Precipitation Data for the Global Land-Surface
+        Using In-Situ Gauge Observations
+      AuthorName: Rudolf, B., and U. Schneider
+  Tutorials: 
+   - Title: How to Access GES DISC Data Using Python
+     URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+     AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.
