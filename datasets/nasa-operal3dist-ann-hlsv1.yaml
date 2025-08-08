@@ -1,0 +1,65 @@
+Name: OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 product
+  (Version 1)
+Description: "The Observational Products for End-Users from Remote Sensing Analysis
+  ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from
+  Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001)
+  data product into an annual vegetation disturbance data product. Vegetation disturbance
+  is mapped when there is an indicated decrease in vegetation cover within an HLS
+  Version 2 pixel. The product also provides auxiliary generic disturbance information
+  as determined from the variations of the reflectance through the DIST-ALERT scenes
+  to provide information about more general disturbance trends. The DIST-ANN product
+  tracks changes at the annual scale, aggregating changes identified in the DIST-ALERT
+  product. Only confirmed disturbances from the associated year are reported together
+  with the date of initial disturbance. As confirmed disturbances are determined using
+  subsequent cloud-free observations to determine if the loss detections persist,
+  the required number of HLS scenes depends on visibility of the target. Due to this
+  dependency, summarizing the DIST-ALERT in the DIST-ANN product will have some latency
+  contingent on the algorithmic calibration and is detailed in the Algorithm Theoretical
+  Basis Document (ATBD).\n\nThe OPERA_L3_DIST-ANN-HLS (or DIST-ANN) data product is
+  provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed
+  as a separate COG. There are 21 layers contained within the DIST-ANN product: vegetation
+  disturbance status, historical vegetation cover indicator, maximum vegetation cover
+  indicator, maximum vegetation anomaly value, vegetation disturbance confidence layer,
+  date of initial vegetation disturbance, number of detected vegetation loss anomalies,
+  vegetation disturbance duration, date of last observation assessed for vegetation
+  disturbance, and several generic disturbance layers. Each product layer is gridded
+  to the same resolution and tiling system as HLS V2: 30 meter (m) and Military Grid
+  Reference System (MGRS). See the Product Specification Document (PSD) for a more
+  detailed description of the individual layers provided in the DIST-ANN product.
+  \n\nThe OPERA_L3_DIST-ANN-HLS product contains modified Copernicus Sentinel data
+  (2020-2025).\n\nKnown Issues\n* Additional usage constraints are provided under
+  Section 5 of the Algorithm Theoretical Basis Document (ATBD).\nRead our doc on how
+  to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ANN-HLS_V1.001
+Contact: 'Email: lpdaac@usgs.gov. Home Page: https://lpdaac.usgs.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2022-01-01 to Ongoing (Annual)
+Tags:
+  - aws-pds
+  - cog
+  - earth observation
+  - environmental
+  - global
+  - land
+  - land cover
+  - land use
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2
+      product (Version 1).'
+    ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ANN-HLS_V1.001
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Visualization and Exploration of OPERA DIST-ANN-HLS Product Layers
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DIST/DIST_ANN/Intro_To_DIST_ANN.ipynb
+      AuthorName: C. Speed and M. Grace Bato
+    - Title: Visualizing and Analyzing the OPERA DIST-ANN-HLS Product to Explore Land-Use Change in Brazil
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DIST/DIST_ANN/Land_Use_Change_DIST_ANN.ipynb
+      AuthorName: C. Speed and M. Grace Bato
+    - Title: Visualizing and Analyzing the OPERA DIST-ANN-HLS Product to Visualize Wildfire Impact in Northern Quebec
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DIST/DIST_ANN/Wildfires_DIST_ANN.ipynb
+      AuthorName: C. Speed and M. Grace Bato
