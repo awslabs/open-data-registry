@@ -34,6 +34,10 @@ Resources:
     ARN: arn:aws:s3:::earthscope-geophysical-data
     Region: us-east-2
     Type: S3 Bucket
+  - Description: Notifications for new EarthScope Geophysical data
+    ARN: arn:aws:sns:us-east-2:161057982967:earthscope-geophysical-data-object_created
+    Region: us-east-2
+    Type: SNS Topic
 
 DataAtWork:
   Tutorials:
