@@ -1,0 +1,45 @@
+Name: MODIS/Terra Surface Reflectance 8-Day L3 Global 500m SIN Grid V061
+Description: "The  Moderate Resolution Imaging Spectroradiometer (MODIS) Terra MOD09A1
+  Version 6.1 product provides an estimate of the surface spectral reflectance of
+  Terra MODIS Bands 1 through 7 corrected for atmospheric conditions such as gasses,
+  aerosols, and Rayleigh scattering. Along with the seven 500 meter (m) reflectance
+  bands are two quality layers and four observation bands. For each pixel, a value
+  is selected from all the acquisitions within the 8-day composite period. The criteria
+  for the pixel choice include cloud and solar zenith. When several acquisitions meet
+  the criteria the pixel with the minimum channel 3 (blue) value is used. \n\nKnown
+  Issues\n* For complete information about known issues please refer to the [MODIS/VIIRS
+  Land Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=61).\n\nImprovements/Changes
+  from Previous Versions\n* The Version 6.1 Level-1B (L1B) products have been improved
+  by undergoing various calibration changes that include: changes to the response-versus-scan
+  angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections
+  to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections
+  to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n*
+  A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\nRead
+  our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/MODIS/MOD09A1.061
+Contact: 'User Services: lpdaac@usgs.gov. Home Page: https://www.earthdata.nasa.gov/centers/lp-daac/contact'
+ManagedBy: NASA
+UpdateFrequency: From 2000-02-18 to Ongoing (Weekly - < Monthly)
+Tags:
+  - aws-pds
+  - earth observation
+  - geospatial
+  - global
+  - land
+  - opendap
+  - satellite imagery
+  - hdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MODIS/Terra Surface Reflectance 8-Day L3 Global 500m SIN Grid V061.'
+    ARN: arn:aws:s3:::lp-prod-protected/MOD09A1.061
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials:
+   - Title: Download Files from S3 Using boto3
+     URL: https://github.com/nasa/LPDAAC-Data-Resources/blob/7f58ad3abeca7f0d17637ddb812642c0120a57ab/python/how-tos/Earthdata_Cloud__Download_file_from_S3.ipynb
+     AuthorName: LPDAAC
