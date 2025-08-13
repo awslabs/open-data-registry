@@ -1,0 +1,71 @@
+Name: ENHANCE.PET 1.6k: Whole-/Total-Body [18F]FDG-PET/CT with CT-Derived Segmentations
+Description: >
+  Open, multi-center dataset of 1,597 whole-/total-body FDG-PET/CT studies with
+  130 CT-derived, expert-verified anatomical segmentations per scan (~250 GB).
+  Provided as anonymized NIfTI (PET, CT, labels) with spreadsheet metadata.
+  Designed for segmentation benchmarking, multi-organ analysis, radiomics, and PET/CT AI research.
+
+Documentation:
+  - https://github.com/ENHANCE-PET/MOOSE/blob/main/DATA_CARD.md
+Contact: Lalith.shiyam@med.uni-muenchen.de
+ManagedBy: ENHANCE.PET initiative (LMU Klinikum & partners)
+UpdateFrequency: Ad hoc (new releases aligned with additional cohort availability)
+
+Tags:
+  - medical-imaging
+  - pet
+  - ct
+  - fdg
+  - segmentation
+  - nifti
+  - oncology
+  - open-data
+  - radiomics
+  - ai-tools
+
+License: >
+  Dataset licensing per originating site:
+  - AutoPET Challenge: CC BY-NC 4.0 (non-commercial use)
+  - University Hospital Leipzig: CC BY 4.0
+  - Azienda Ospedaliero Universitaria Careggi: CC BY 4.0
+  Software (MOOSE): Apache-2.0.
+
+Citation: >
+  Ferrara D. et al. (2025). Sharing a whole-/total-body [18F]FDG-PET/CT dataset with
+  CT-derived segmentations: an ENHANCE.PET initiative. https://doi.org/10.21203/rs.3.rs-7169062/v2
+
+Resources:
+  - Description: ENHANCE.PET 1.6k dataset (hosted under AWS Open Data)
+    ARN: arn:aws:s3:::<aws-open-data-bucket>
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: s3://<aws-open-data-bucket>/
+
+DataAtWork:
+  Tutorials:
+    - Title: Dataset Organization & AWS Access (MOOSE CLI)
+      URL: https://github.com/ENHANCE-PET/MOOSE/blob/main/DATA_CARD.md
+      AuthorName: ENHANCE.PET Team
+      AuthorURL: https://enhance.pet/
+      Services: [ S3 ]
+
+  Tools & Applications:
+    - Title: MOOSE (Multi-organ objective segmentation tool)
+      URL: https://github.com/ENHANCE-PET/MOOSE
+      AuthorName: ENHANCE.PET (QIMP Team)
+      AuthorURL: https://enhance.pet/
+
+  Publications:
+    - Title: Sharing a whole-/total-body [18F]FDG-PET/CT dataset with CT-derived segmentations: an ENHANCE.PET initiative
+      URL: https://doi.org/10.21203/rs.3.rs-7169062/v2
+      AuthorName: Ferrara, D.; Pires, M.; Gutschmayer, S.; Yu, J.; Abdelhafez, Y. G.; Abenavoli, E.; Badawi, R. D.;
+        Chaudhari, A. J.; Chen, M. S.; Cherry, S. R.; Frille, A.; Geist, B. K.; Grüenert, S.; Hacker, M.;
+        Hesse, S.; Kerkhoff, T.; Linder, P.; Pappisch, J.; Pusitz, S.; Raslan, O. A.; Rausch, I.;
+        Raychaudhuri, S. P.; Sabri, O.; Schmidt, F.; Sciagrà, R.; Spencer, B.; Wang, G.; Wirtz, H.;
+        Beyer, T.; Sundar, L. K. S.
+      AuthorURL: https://orcid.org/0000-0002-8711-8081
+
+DeprecatedNotice: ""
+ADXCategories:
+  - life-sciences
+  - machine-learning
