@@ -1,0 +1,78 @@
+Name: MODIS/Terra Calibrated Radiances 5-Min L1B Swath 500m
+Description: "The MODIS/Terra Calibrated Radiances 5Min L1B Swath 500m data set contains
+  calibrated and geolocated at-aperture radiances for 7 discrete bands located in
+  the 0.45 to 2.20 micron region of the electromagnetic spectrum. These data are generated
+  from the MODIS Level 1A scans of raw radiance and in the process converted to geophysical
+  units of W/(m^2 um sr). Additional data are provided including quality flags, error
+  estimates and calibration data.\r\n\r\nVisible, shortwave infrared, and near infrared
+  measurements are only made during the daytime (except band 26), while radiances
+  for the thermal infrared region (bands 20-25, 27-36) are measured continuously.\r\n\r\nChannels
+  1 and 2 have 250 m resolution, channels 3 through 7 have 500 m resolution. However,
+  for the MODIS L1B 500 m product, the 250 m band radiance data and their associated
+  uncertainties have been aggregated to 500m resolution. Thus the entire channel data
+  set has been co-registered to the same spatial scale in the 500 m product. Separate
+  L1B products are available for the 250 m resolution channels (MOD02QKM) and 1 km
+  resolution channels (MOD021KM). For the latter product, the 250 m and 500 m channel
+  data (bands 1 through 7) have been aggregated into equivalent 1 km pixel values.\r\n
+  \           \r\nSpatial resolution for pixels at nadir is 500 km, degrading to 2.4
+  km in the along-scan direction at the scan extremes. However, thanks to the overlapping
+  of consecutive swaths and respectively pixels there, the resulting resolution at
+  the scan extremes is about 1 km. A 55 degree scanning pattern at the EOS orbit of
+  705 km results in a 2330 km orbital swath width and provides global coverage every
+  one to two days. A single MODIS Level 1B 500 m granule will contain a scene built
+  from 203 scans sampled 2708 times in the cross-track direction, corresponding to
+  approximately 5 minutes worth of data; thus 288 granules will be produced per day.
+  Since an individual MODIS scan will contain 20 along-track spatial elements for
+  the 500 m channels, the scene will be composed of (2708 x 4060) pixels, resulting
+  in a spatial coverage of (2330 km x 2040 km). Due to the MODIS scan geometry, there
+  will be increasing scan overlap beyond about 20 degrees scan angle.      \r\n\r\nTo
+  summarize, the MODIS L1B 500 m data product consists of:\r\n            \r\n1. Calibrated
+  radiances, uncertainties and number of samples for (2) 250 m reflected solar bands
+  aggregated to 500 m resolution\r\n            \r\n2. Calibrated radiances and uncertainties
+  for (5) 500 m reflected solar bands\r\n            \r\n3. Geolocation for 1km pixels,
+  that must be interpolated to get 500 m pixel locations. For the relationship of
+  1km pixels to 500m pixels, see the Geolocation ATBD https://modis.gsfc.nasa.gov/data/atbd/atbd_mod28_v3.pdf.\r\n
+  \           \r\n4. Calibration data for all channels (scale and offset) \r\n            \r\n5.
+  Comprehensive set of file-level metadata summarizing the spatial, temporal and parameter
+  attributes of the data, as well as auxiliary information pertaining to instrument
+  status and data quality characterization users requiring all geolocation and solar/satellite
+  geometry fields at 1km resolution can obtain the separate MODIS Level 1 Geolocation
+  product (MOD03) from LAADS  https://ladsweb.modaps.eosdis.nasa.gov/ . \r\n            \r\nThe
+  shortname for this product is MOD02HKM and is stored in the Earth Observing System
+  Hierarchical Data Format (HDF-EOS). A typical MOD02HKM file size is approximately
+  135 MB.\r\n            \r\nEnvironmental information derived from MODIS L1B measurements
+  will offer a comprehensive and unprecedented look at terrestrial, atmospheric, and
+  ocean phenomenology for a wide and diverse community of users throughout the world.\r\n\r\nSee
+  the MODIS Characterization Support Team webpage for more C6 product information
+  at:\r\n\r\nhttps://mcst.gsfc.nasa.gov/l1b/product-information\r\n\r\n\r\nor visit
+  Science Team homepage at:\r\nhttps://modis.gsfc.nasa.gov/data/dataprod/\nRead our
+  doc on how to get AWS Credentials to retrieve this data: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/MODIS/MOD02HKM.061
+Contact: 'MODAPS USER SUPPORT TEAM: MODAPSUSO@lists.nasa.gov. Home Page: https://modaps.modaps.eosdis.nasa.gov/, MODIS Characterization Support Team (MCST): https://mcst.gsfc.nasa.gov/contact'
+ManagedBy: NASA
+UpdateFrequency: From 2000-02-24 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - datacenter
+  - earth observation
+  - environmental
+  - global
+  - metadata
+  - opendap
+  - orbit
+  - hdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MODIS/Terra Calibrated Radiances 5-Min L1B Swath 500m.'
+    ARN: 'arn:aws:s3:::prod-lads/MOD02HKM'
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials:
+    - Title: MODIS Level 1B - Calibrated Radiances - Natural Color RGB - 500m
+      URL: https://fire.trainhub.eumetsat.int/docs/figure1_MODIS_L1B.html
+      AuthorName: EUMETSAT
