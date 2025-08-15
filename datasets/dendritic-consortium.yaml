@@ -1,5 +1,5 @@
 Name: Dendritic Consortium Multimodal Dataset
-Description: The Dendritic Consortium provides a multimodal dataset integrating calcium and voltage imaging, electrophysiology, electron microscopy, proteomics, and computational models of Baz1a pyramidal neurons in the mouse primary visual cortex (V1), and endodermal neurons in Hydra vulgaris.
+Description: The Dendritic Consortium provides a multimodal dataset integrating calcium and voltage imaging, electrophysiology, electron microscopy, proteomics, and computational models of Baz1a pyramidal neurons in the mouse primary visual cortex (V1).
 Documentation: https://github.com/jpcastanoo/aws-open-data-dendritic-consortium
 Contact: dendriticconsortium@gmail.com
 ManagedBy: Dendritic Consortium
@@ -20,10 +20,14 @@ Tags:
   - single neuron models
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: "Multimodal dataset from Baz1a pyramidal neurons in mouse V1 and endodermal neurons in Hydra vulgaris, including TIFF, ABF, MAT, CSV, PNG, PY, HOC, and SWC files."
+  - Description: "Multimodal dataset from Baz1a pyramidal neurons in mouse V1, including TIFF, ABF, MAT, CSV, PNG, PY, HOC, and SWC files."
     ARN: arn:aws:s3:::dendritic-consortium
-    Region: us-east-2
+    Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for new Dendritic Consortium data
+    ARN: arn:aws:sns:us-west-2:662855374544:dendritic-consortium-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Download and Visualize Data from the Dendritic Consortium Dataset
@@ -37,4 +41,3 @@ DataAtWork:
       AuthorURL: https://dendritic-consortium.vercel.app
 ADXCategories:
   - Healthcare & Life Sciences Data
-
