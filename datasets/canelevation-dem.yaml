@@ -29,28 +29,32 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-1m)'
-    - '[Browse Bucket](...)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-mosaic-1m)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
   - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 2m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 2m
     ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-2m/
     Region: ca-central-1
     Type: S3 Bucket
     Explore: 
     - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-2m)'
-    - '[Browse Bucket](...)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-mosaic-2m)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
   - Description: Medium Resolution Digital Elevation Model (MRDEM). Modèle numérique d'élévation de moyenne résolution (MNEMR)
     ARN: arn:aws:s3:::canelevation-dem/mrdem-30/
     Region: ca-central-1
     Type: S3 Bucket
     Explore: 
     - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30)'
-    - '[Browse Bucket](...)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/mrdem-30)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
   - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) by LiDAR acquisition project. Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) par project d'acquisition LiDAR.
     ARN: arn:aws:s3:::canelevation-dem/hrdem-lidar/
     Region: ca-central-1
     Type: S3 Bucket
     Explore: 
     - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar)'
-    - '[Browse Bucket](...)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-lidar)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
   - Description: Notifications for Canada Digital Elevation Models.
     ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-create-object
     Region: ca-central-1
@@ -80,6 +84,7 @@ DataAtWork:
     - Title: Descriptor: Medium Resolution Digital Elevation Model From Natural Resources Canada’s CanElevation Series (MRDEM-30)
       URL: https://doi.org/10.1109/IEEEDATA.2025.3576318
       AuthorName: H. McGrath et al.
+
 
 
 
