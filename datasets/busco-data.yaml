@@ -22,6 +22,10 @@ Resources:
     ARN: arn:aws:s3:::busco-data
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new BUSCO data
+    ARN: arn:aws:sns:us-east-1:622022425660:my-dataset-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: BUSCO - from QC to gene prediction and phylogenomics
