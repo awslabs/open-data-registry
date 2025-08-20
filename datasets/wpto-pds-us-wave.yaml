@@ -81,6 +81,14 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.0%2FGulf_of_Mexico_and_Puerto_Rico%2F)'
+  - Description: 42 Year Wave Hindcast (1979-2020) from select virtual buoys along the Northern Mariana Islands and Guam, with 1-hour temporal resolution and direction wave spectrum data in [HDF5](https://portal.hdfgroup.org/display/HDF5/HDF5) format
+    ARN: arn:aws:s3:::wpto-pds-us-wave/v1.0.0/CNMI_and_Guam/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=wpto-pds-us-wave&prefix=v1.0.0%2FCNMI_and_Guam%2F)'
+
+
 DataAtWork:
   Tutorials:
   Tools & Applications:
@@ -109,3 +117,4 @@ DataAtWork:
     - Title: Development and validation of a regional-scale high-resolution unstructured model for wave energy resource characterization along the US East Coast
       URL: https://doi.org/10.1016/j.renene.2019.01.020
       AuthorName: Allahdadi, M.N., Gunawan, J. Lai, R. He, V.S. Neary
+
