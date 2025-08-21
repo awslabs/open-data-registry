@@ -11,6 +11,7 @@ Tags:
   - geospatial
   - lidar
   - elevation
+  - emergency response
 License: |
   Public Domain with Attribution
 Resources:
@@ -20,6 +21,9 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
+    - '[KyFromAbove Stac-Browser](https://kygeonet.ky.gov/stac)'
+    - '[STAC V1.0.0 endpoint](https://spved5ihrl.execute-api.us-west-2.amazonaws.com/)'
+    - 'KyFromAbove Explorer'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html)'
   - Description: KyFromAbove Topographic Contours, digital elevation models, point cloud, spot elevations and the KyTopo Map Series quadrangles can be found in this bucket.
     ARN: arn:aws:s3:::kyfromabove/elevation/
@@ -41,6 +45,8 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
+    - '[KyFromAbove Stac-Browser](https://kygeonet.ky.gov/stac)'
+    - '[STAC V1.0.0 endpoint](https://spved5ihrl.execute-api.us-west-2.amazonaws.com/)'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/DEM/)'    
   - Description: There are three data resources in this folder - 1) KyTopo Map Series quadrangles in a Cloud Optimized GeoTIFF (COG) format, 2) KyTopo Map Series quadrangles with all collar information in a non-georeferenced PNG format for printing on a standard ARCH-D sized sheet, and 3) the KyTopo Map Series quadrangles tile grid in a geopackage format. The COGs were created using GDAL with JPEG compression at a 90% quality setting and the default 512x512 tile setting.
     ARN: arn:aws:s3:::kyfromabove/elevation/KyTopoMapSeries/
@@ -55,6 +61,8 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
+    - '[KyFromAbove Stac-Browser](https://kygeonet.ky.gov/stac)'
+    - '[STAC V1.0.0 endpoint](https://spved5ihrl.execute-api.us-west-2.amazonaws.com/)'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#elevation/PointCloud/)'
   - Description: The data in this bucket includes spot elevations for the entire Commonwealth of Kentucky generated from the KyFromAbove Phase 1 LiDAR-derived digital elevation model (DEM) in a geopackage format. ArcGIS was used to create this dataset. Spot elevations for Phase 2 and Phase 3 will be generated upon completion of each Phase.
     ARN: arn:aws:s3:::kyfromabove/elevation/SpotElevations/
@@ -69,13 +77,18 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
+    - '[KyFromAbove Stac-Browser](https://kygeonet.ky.gov/stac)'
+    - 'KyFromAbove Explorer [oblique-viewer](https://explore.kyfromabove.ky.gov/)'
+    - '[STAC V1.0.0 endpoint](https://spved5ihrl.execute-api.us-west-2.amazonaws.com/)'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/)'
   - Description: KyFromAbove ortho imagery for the Commonwealth of Kentucky organized in a 5000x5000 foot grid. Each image tile has been converted to a Cloud Optimized GeoTiff format. Phase 1 and 2 data is organized by acquisition year and is currently available for use. Phase 3 is organized by year and season,  as imagery is being acquired during the fall and spring leaf-off seasons as sun angle permits. Phase 3 ortho imagery will be available in early 2025.
     ARN: arn:aws:s3:::kyfromabove/imagery/orthos/
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False    
-    Explore:
+    Explore:  
+    - '[KyFromAbove Stac-Browser](https://kygeonet.ky.gov/stac)'
+    - '[STAC V1.0.0 endpoint](https://spved5ihrl.execute-api.us-west-2.amazonaws.com/)'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/orthos/)'
   - Description: KyFromAbove oblique imagery can be found in this folder. The four oblique views associated with each ortho image are provided in a 3-band (RGB) Cloud Optimized GeoTiff format using the default 512x512 tile setting. There are no oblique images available for Phase 1 and 2. Phase 3 data is available for the entire state. It is organized by year and season (where Season1 = Spring and Season2 = Fall) as imagery is being acquired during the fall and spring leaf-off seasons as sun angle and weather conditions permit.
     ARN: arn:aws:s3:::kyfromabove/imagery/obliques/
@@ -83,6 +96,7 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
     Explore:
+    - '[KyFromAbove Explorer](https://explore.kyfromabove.ky.gov/)'
     - '[Browse Bucket](https://kyfromabove.s3.us-west-2.amazonaws.com/index.html#imagery/obliques/)'
 DataAtWork:
   Tutorials:
@@ -98,6 +112,14 @@ DataAtWork:
       AuthorName: Ian Horn
       Services:
         - Amazon S3
+  Tools & Applications:
+      - Title: Kentucky From Above SpatioTemporal Asset catalog
+        URL: https://kygeonet.ky.gov/stac
+        AuthorName: Ian Horn, Ky Div. of Geographic Information
+      - Title: KyFromAbove Explorer
+        URL: https://explore.kyfromabove.ky.gov/
+        AuthorName: NV5
+        AuthorURL: https://www.nv5.com/geospatial/
   Publications:
     - Title: A New View of Kentucky's Cities
       URL: https://www.mydigitalpublication.com/publication/?m=16892&i=816848&view=articleBrowser&article_id=4737566&ver=html5
