@@ -1,0 +1,39 @@
+Name: GHRSST Level 2P Global Sea Surface Skin Temperature from the MODIS on the NASA Terra satellite (GDS2)
+Description: |-
+  NASA produces skin sea surface temperature (SST) products from the Infrared (IR) channels of the Moderate-resolution Imaging Spectroradiometer (MODIS) onboard the Terra satellite. Terra was launched by NASA on December 18, 1999, into a sun synchronous, polar orbit with a daylight descending node at 10:30 am, to study the global dynamics of the Earth atmosphere, land and oceans. The MODIS captures data in 36 spectral bands at a variety of spatial resolutions.  Two SST products can be present in these files. The first is a skin SST produced for both day and night observations, derived from the long wave IR 11 and 12 micron wavelength channels, using a modified nonlinear SST algorithm intended to provide continuity with SST derived from heritage and current NASA sensors. At night, a second SST product is produced using the mid-infrared 3.95 and 4.05 micron channels which are unique to MODIS; the SST derived from these measurements is identified as SST4. The SST4 product has lower uncertainty, but due to sun glint can only be produced at night. MODIS L2P SST data have a 1 km spatial resolution at nadir and are stored in 288 five minute granules per day. Full global coverage is obtained every two days, with coverage poleward of 32.3 degree being complete each day. The production of MODIS L2P SST files is part of the Group for High Resolution Sea Surface Temperature (GHRSST) project, and is a joint collaboration between the NASA Jet Propulsion Laboratory (JPL), the NASA Ocean Biology Processing Group (OBPG), and the Rosenstiel School of Marine and Atmospheric Science (RSMAS). Researchers at RSMAS are responsible for SST algorithm development, error statistics and quality flagging, while the OBPG, as the NASA ground data system, is responsible for the production of daily MODIS ocean products. JPL acquires MODIS ocean granules from the OBPG and reformats them to the GHRSST L2P netCDF specification with complete metadata and ancillary variables, and distributes the data as the official Physical Oceanography Data Archive (PO.DAAC) for SST.  The R2019.0 supersedes the previous R2014.0 datasets which can be found at  https://doi.org/10.5067/GHMDT-2PJ02
+  Read our doc on how to get AWS Credentials to retrieve this data: https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/GHMDT-2PJ19
+Contact: 'Help Desk: podaac@podaac.jpl.nasa.gov. Home Page: https://podaac.jpl.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2000-02-24 to Ongoing (Hourly - < Daily)
+Tags:
+  - aws-pds
+  - atmosphere
+  - datacenter
+  - earth observation
+  - global
+  - land
+  - marine
+  - metadata
+  - oceans
+  - orbit
+  - netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'GHRSST Level 2P Global Sea Surface Skin Temperature from the Moderate
+      Resolution Imaging Spectroradiometer (MODIS) on the NASA Terra satellite (GDS2).'
+    ARN: arn:aws:s3:::podaac-ops-cumulus-protected/MODIS_T-JPL-L2P-v2019.0/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: A decade of sea surface temperature from MODIS
+      URL: http://dx.doi.org/10.1016/j.rse.2015.04.023
+      AuthorName: Kilpatrick, K.A., Podestá, G., Walsh, S., Williams, E., Halliwell,
+        V., Szczodrak, M., Brown, O.B., Minnett, P.J., & Evans, R.
+  Tutorials:
+   - Title: Direct S3 Access tutorial
+     URL: https://github.com/podaac/tutorials/blob/3d2ac9cb3626b656802638f864631a68beb11823/notebooks/s3/S3-Access.ipynb#L33
+     AuthorName: PODAAC
