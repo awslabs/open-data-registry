@@ -1,0 +1,29 @@
+Name: State of Colorado Elevation Data
+Description: The State of Colorado has gathered public historical elevation data.
+Documentation: https://docs.google.com/document/d/1HMO-d4cCrBvFa2F6-N3lhP6rkezlvBmSUFA5S8t_ekQ/edit?usp=sharing
+Contact: oit_gis@state.co.us
+ManagedBy: State of Colorado Governor's Office of Information Technology (OIT) GIS team
+UpdateFrequency: Periodically
+Tags:
+  - aws-pds
+  - geospatial
+  - imaging
+  - mapping 
+License: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Resources:
+  - Description: 
+    ARN: arn:aws:s3:::colorado-public-elevation-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Colorado AWS Open Data Elevation Data Guide
+      URL: https://docs.google.com/document/d/1pAHZB6SgSE4QTawEbSnIIHpxVCTBg-IjQ6X9KJP28BM/edit?usp=sharing
+      AuthorName: State of Colorado OIT-GIS
+      AuthorURL: https://geodata.colorado.gov/ 
+    - Title: Colorado Public Elevation Data s3 Browser
+      URL: https://colorado-public-elevation-data.s3.amazonaws.com/index.html
+      AuthorName: State of Colorado OIT-GIS
+      AuthorURL: https://geodata.colorado.gov/
+ADXCategories:
+  - Public Sector Data
