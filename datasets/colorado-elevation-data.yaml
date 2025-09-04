@@ -11,10 +11,14 @@ Tags:
   - mapping 
 License: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 Resources:
-  - Description: 
+  - Description: Colorado Elevation Data (LiDAR)
     ARN: arn:aws:s3:::colorado-public-elevation-data
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for new Colorado Elevation data
+    ARN: arn:aws:sns:us-west-2:180294215083:colorado-public-elevation-data-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Colorado AWS Open Data Elevation Data Guide
