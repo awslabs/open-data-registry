@@ -1,6 +1,6 @@
-Name: IBL Behavioral Data on AWS
-Description: Behavioral data of mice performing a decision-making task, associated with 2020 publication of the IBL.
-Documentation: https://docs.internationalbrainlab.org/notebooks_external/2021_data_release_behavior.html
+Name: IBL Neuropixels Brainwide Map on AWS
+Description: Electrophysiological recordings of mouse brain activity acquired during a decision making task in multiple autism mice models.
+Documentation: https://docs.internationalbrainlab.org/notebooks_external/2025_data_release_autism_noel.html
 Contact: info@internationalbrainlab.org
 ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
 UpdateFrequency: TBD
@@ -11,6 +11,7 @@ Tags:
   - neurophysiology
   - open source software
   - Mus musculus
+  - autism
 License: CC-BY 4.0
 Resources:
   - Description: Project data in public bucket
@@ -18,16 +19,10 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
-  Tools & Applications:
-    - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
-      URL: https://pypi.org/project/ONE-api/
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
   Tutorials:
-    - Title: Exploring the IBL behavior data
-      URL: https://colab.research.google.com/drive/14OtLUEiyhrPTPsXetg8VQrTk1CLhBCW5#scrollTo=c6OU9gI9G775
-      AuthorName: IBL Data Architecture Working Group
-      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Intermediate Datasets and Analysis Code
+      URL: https://osf.io/fap2s/ and https://osf.io/fap2s/wiki/home/
+      AuthorName: Noel et al.
     - Title: Download the public data via ONE
       URL: https://docs.internationalbrainlab.org/notebooks_external/data_download.html
       AuthorName: IBL Data Architecture Working Group
@@ -41,7 +36,6 @@ DataAtWork:
       AuthorName: IBL Data Architecture Working Group
       AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
   Publications:
-    - Title: Standardized and reproducible measurement of decision-making in mice
-      URL: https://doi.org/10.7554/eLife.63711
-      AuthorName: International Brain Laboratory et al.
-      AuthorURL: www.internationalbrainlab.com
+    - Title: A common computational and neural anomaly across mouse models of autism
+      URL: https://doi.org/10.1038/s41593-025-01965-8
+      AuthorName: Noel et al.
