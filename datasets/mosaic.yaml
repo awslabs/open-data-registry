@@ -1,0 +1,28 @@
+Name: Meta-Organized Stimuli And fMRI Imaging data for Computational modeling (MOSAIC)
+Description: This extensible dataset, MOSAIC, aggregates individual functional magnetic resonance imaging (fMRI) datasets by leveraging a shared preprocessing pipeline and stimulus curation procedure. This dataset aggregation procedure achieves the scale necessary for neural network training and the diversity needed for generalizable results.
+Documentation: https://github.com/blahner/mosaic-preprocessing
+Contact: blahner@mit.edu
+ManagedBy: Massachusetts Institute of Technology, Georgia Tech
+UpdateFrequency: New data is uploaded as researchers preprocess their fMRI data according to MOSAIC format and submit.
+Tags:
+  - fMRI
+  - Vision
+  - Image
+  - Video
+License: CC BY 4.0
+Citation:
+Resources:
+  - Description: HDF5 files containing preprocessed fMRI data
+    ARN: arn:aws:account::042585258830:account
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://042585258830:account.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Load HDF5 file (Jupyter notebook)
+      URL: https://github.com/blahner/mosaic-preprocessing/blob/main/src/fmriDatasetPreparation/create_hdf5/load_hdf5.ipynb
+      NotebookURL: https://github.com/blahner/mosaic-preprocessing/blob/main/src/fmriDatasetPreparation/create_hdf5/load_hdf5.ipynb
+      AuthorName: Benjamin Lahner
+ADXCategories:
+  - Healthcare & Life Sciences Data
