@@ -1,0 +1,43 @@
+Name: DeepDrug Protein Embeddings Bank (DPEB)
+Description: DPEB is a multimodal database of human protein embeddings integrating four biologically complementary representations—AlphaFold2, BioEmbeddings, ESM-2, and ProtVec—designed for enhanced protein-protein interaction prediction and functional classification.
+Documentation: https://github.com/deepdrugai/DPEB
+Contact: https://github.com/deepdrugai/DPEB/issues
+ManagedBy: "Louisiana State University"
+UpdateFrequency: Initial release; maintained for at least 2 years with updates planned based on new embedding models and protein coverage.
+Tags:
+  - bioinformatics
+  - protein
+  - structural-biology
+  - machine-learning
+  - graph-neural-networks
+License: MIT
+Citation: "Sajol MSI et al. DeepDrug Protein Embeddings Bank (DPEB) was accessed on [DATE] at https://registry.opendata.aws/dpeb"
+Resources:
+  - Description: Multimodal human protein embeddings (AlphaFold2, BioEmbeddings, ESM-2, ProtVec) with JSONL-formatted metadata containing FASTA, UniProt IDs, and embeddings.
+    ARN: arn:aws:s3:::deepdrug-dpeb-human-protein-embeddings
+    Region: us-cst-1
+    Type: S3 Bucket
+    Explore:
+      - "https://github.com/deepdrugai/DPEB"
+DataAtWork:
+  Tutorials:
+    - Title: Aggregating and Clustering AlphaFold2 Embeddings from DPEB
+      URL: https://github.com/deepdrugai/DPEB/tree/main
+      NotebookURL: https://github.com/deepdrugai/DPEB/tree/main/tutorial
+      AuthorName: Md. Saiful Islam Sajol
+      AuthorURL: https://github.com/deepdrugai
+      Services: EC2
+
+  Tools & Applications:
+    - Title: DPEB Explorer Tool
+      URL: https://github.com/deepdrugai/DPEB
+      AuthorName: DeepDrug Lab
+      AuthorURL: https://github.com/deepdrugai
+  Publications:
+    - Title: A Multimodal Human Protein Embeddings Database: DeepDrug Protein Embeddings Bank (DPEB)
+      URL: https://doi.org/10.XXXX/nar.dpeb2025
+      AuthorName: Sajol MSI, Rajasekaran M, Bess A, Alvin C, Mukhopadhyay S
+      AuthorURL: https://github.com/deepdrugai/DPEB
+ADXCategories:
+  - Life Sciences
+  - Artificial Intelligence
