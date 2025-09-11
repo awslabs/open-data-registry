@@ -18,6 +18,10 @@ Resources:
     Type: S3 Bucket
     Explore:
       - https://huggingface.co/datasets/EssentialAI/essential-web-v1.0
+  - Description: Notifications for new Essential-Web v1.0 data
+    ARN: arn:aws:sns:us-west-2:021391128517:essential-web-v10-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Publications:
     - Title: 'Essential-Web v1.0: 24T tokens of organized web data'
