@@ -25,7 +25,7 @@ Tags:
   - transcriptomics
 License: "[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
 Resources:
-  - Description: "Genomic sequence reads of SARS-CoV-2 and related coronaviridae, organized by NCBI accession. Files in the `sra-src` folder are in FASTQ, BAM, or CRAM format (original submission); files in the  `run` folder are in .sra format and require the [SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit)"
+  - Description: "Genetic variations of SARS-CoV-2 in VCF format, organized by NCBI accession. Each VCF file corresponds to the SRA parent-run's accession ID. Files in the vcf folder are in VCF and can be read by any program that accepts *.vcf files or can read tabular data."
     ARN: arn:aws:s3:::sra-pub-sars-cov2
     Region: us-east-1
     Type: S3 Bucket
