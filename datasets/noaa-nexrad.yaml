@@ -1,5 +1,12 @@
 Name: NEXRAD on AWS
-Description: Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
+Description: |
+  Real-time and archival data from the Next Generation Weather Radar (NEXRAD) network.
+  <br>
+  <h4>Update</h4>
+  The NEXRAD Level II archive data is moving to a new bucket: <code>unidata-nexrad-level2</code> 
+  and SNS topic: <code>arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive</code>. The old
+  bucket and SNS topic are now deprecated and will no longer be available starting September 1, 2025.
+  <br><br>
 Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad
 Contact: support-level2@unidata.ucar.edu
 ManagedBy: "[Unidata](https://www.unidata.ucar.edu/)"
@@ -15,14 +22,14 @@ Tags:
   - natural resource
   - weather
   - meteorological
-License: NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. <br/><br/> NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: NEXRAD Level II archive data
-    ARN: arn:aws:s3:::noaa-nexrad-level2
+    ARN: arn:aws:s3:::unidata-nexrad-level2
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://noaa-nexrad-level2.s3.amazonaws.com/index.html)'
+    - '[Browse Bucket](https://unidata-nexrad-level2.s3.amazonaws.com/index.html)'
   - Description: NEXRAD Level II real-time data
     ARN: arn:aws:s3:::unidata-nexrad-level2-chunks
     Region: us-east-1
@@ -37,12 +44,20 @@ Resources:
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2ObjectFilterable
     Region: us-east-1
     Type: SNS Topic
-  - Description: Notifications for the Level II archival bucket
-    ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
+  - Description: Notifications for the new Level II archival bucket
+    ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive
     Region: us-east-1
     Type: SNS Topic
   - Description: Notifications for the Level III bucket
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: "*OLD NEXRAD Level II archive bucket* which is now <b>Deprecated</b>. It is recommended to move to the new bucket: unidata-nexrad-level2 and SNS topic: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive"
+    ARN: arn:aws:s3:::noaa-nexrad-level2
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "Notifications for the *OLD Level II archival bucket*  which is now <b>Deprecated</b>. It is recommended to move to the new bucket: unidata-nexrad-level2 and SNS topic: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive"
+    ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:

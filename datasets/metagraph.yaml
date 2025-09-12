@@ -1,0 +1,62 @@
+Name: MetaGraph Sequence Indexes
+Description: |
+  The MetaGraph Sequence Indexes dataset comprises full-text searchable index files for raw sequencing data hosted in major public repositories. These include the European Nucleotide Archive (ENA) managed by the European Bioinformatics Institute (EMBL-EBI), the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI), and the DNA Data Bank of Japan (DDBJ) Sequence Read Archive (DRA).
+
+  All index files can be used with the MetaGraph framework for sequence search. Indexes can be jointly used for aggregated search in the cloud or can be individually downloaded for search using local hardware. 
+Documentation: |
+  Documentation of the dataset available under https://github.com/ratschlab/metagraph-open-data
+  Documentation of the MetaGraph framework is available under https://metagraph.ethz.ch/
+Contact: "Please open an issue under https://github.com/ratschlab/metagraph-open-data/issues"
+ManagedBy: "[Biomedical Informatics Lab, ETH Zurich, Switzerland](https://bmi.inf.ethz.ch)"
+UpdateFrequency: Continuously as new sequencing data becomes available.
+Tags:
+  - biodiversity
+  - bioinformatics
+  - biology
+  - analysis ready data
+  - fasta
+  - genome
+  - genomic
+  - graph
+  - information retrieval
+  - life sciences
+  - medicine
+  - metagenomics
+  - microbiome
+  - transcriptomics
+  - whole exome sequencing
+  - whole genome sequencing
+License: "[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+Citation: "Karasikov M, Mustafa H, Danciu D, Zimmermann M, Barber C, Raetsch G, Kahles A. Indexing All Life’s Known Biological Sequences. Preprint (2024). doi: [10.1101/2020.10.01.322164](https://www.biorxiv.org/content/10.1101/2020.10.01.322164v4)" 
+Resources:
+  - Description: MetaGraph Sequence Indexes
+    ARN: arn:aws:s3:::metagraph
+    Region: eu-west-1
+    Type: S3 Bucket
+    Explore: 
+      - "[Content Browser](https://metagraph.s3-eu-west-1.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: Usage within AWS
+      URL: https://github.com/ratschlab/metagraph-open-data?tab=readme-ov-file#usage-within-aws
+      AuthorName: Oleksandr Kulkov
+      AuthorURL: https://bmi.inf.ethz.ch/people/person/oleksandr-kulkov
+      Services:
+        - AWS CloudFormation
+        - AWS Step Functions
+        - AWS Lambda
+        - AWS Batch
+        - Amazon S3
+        - Amazon SNS
+  Tools & Applications:
+    - Title: CloudFormation stack with a Step Function for dataset queries via AWS Batch
+      URL: https://github.com/ratschlab/metagraph-open-data
+      AuthorName: Oleksandr Kulkov
+      AuthorURL: https://bmi.inf.ethz.ch/people/person/oleksandr-kulkov
+  Publications:
+    - Title: A global metagenomic map of urban microbiomes and antimicrobial resistance
+      URL: https://www.cell.com/cell/fulltext/S0092-8674(21)00585-7
+      AuthorName: Danko D, Bezdan D, Afshin EE, Ahsanuddin S, Bhattacharya C, Butler DJ, Chng KE, Donnellan D, Hecht J, Jackson K, Kuchin K, Karasikov M, Lyons A, Mak L, Meleshko D, Mustafa H, et al.
+ADXCategories:
+  - Healthcare & Life Sciences Data
+  - Resources Data
