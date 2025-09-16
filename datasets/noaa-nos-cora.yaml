@@ -2,44 +2,46 @@ Name: "NOAA's Coastal Ocean Reanalysis (CORA) Dataset: 1979-2022"
 
 Description: |
   NOAA's [Coastal Ocean Reanalysis (CORA)](https://tidesandcurrents.noaa.gov/cora.html) for the Gulf, East Coast/Atlantic, and Caribbean (GEC) is produced using verified hourly water levels from the National Ocean Service’s [Center of Operational Oceanographic Products & Services](https://tidesandcurrents.noaa.gov/) (CO-OPS).  [ADvanced CIRCulation Model (ADCIRC)](https://www.erdc.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/476698/advanced-circulation-model/) and [Simulating WAves Nearshore (SWAN)](https://www.tudelft.nl/en/ceg/about-faculty/departments/hydraulic-engineering/sections/environmental-fluid-mechanics/research/swan) models are coupled to model coastal water levels and nearshore waves. Hourly water level observations are used for data assimilation and validation to improve the accuracy of modeled water levels and wave datasets.
+  <br><br>
+  <b>Additional Details:</b><br>
+  Metadata associated with model domain and time span:
+  - Timeseries - 1979 to 2022
+  - Size - Approx. 44.6 TB
+  - Domain - Lat 5.8 to 45.8 ; Long -98.0 to -53.8  
+  - Nodes - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048) 
+  - Grid cells - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048)
+  - Spatial Resolution:
+    - Centroids: 300-400 meters 
+    - Gridded: 500 meters
+    - Projection: 1983 Contiguous USA Albers projection (EPSG:5070)
+  <br><br>
   
-  Additional Details: |
-  Metadata associated with model domain and time span. 
-    . Timeseries - 1979 to 2022
-    . Size - Approx. 44.6 TB
-    . Domain - Lat 5.8 to 45.8 ; Long -98.0 to -53.8  
-    . Nodes - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048) 
-    . Grid cells - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048)
-    . Spatial Resolution:
-        . Centroids: 300-400 meters 
-        . Gridded: 500 meters
-        . Projection: 1983 Contiguous USA Albers projection (EPSG:5070)
+  <b>Datasets:</b><br>
+  Water level and wave datasets resulting from the computation, assimilation, validation, and optimization reanalysis datasets. All products are available in NetCDF (.nc) format:
+  - fort.63.nc - Water level elevation
+  - fort.73.nc - Atmospheric pressure at sea level
+  - fort.74.nc - Wind Velocity - 10 m elevation
+  - maxele.63.nc - Maximum water elevation
+  - swan_DIR.63.nc - Spectral mean wave direction
+  - swan_TMM10.63.nc - Spectral mean wave period
+  - swan_TPS.63.nc - Spectral  peak wave period
+  - swan_HS.63.nc - Spectral zeroth moment wave height
+  - swan_HS_max.63.nc - Maximum spectral zeroth moment wave height
+  <br><br>
 
-  Datasets: |
-  Water level and wave datasets resulting from the computation, assimilation, validation, and optimization reanalysis datasets. All products are available in NetCDF (.nc) format
-    . fort.63.nc - Water level elevation
-    . fort.73.nc - Atmospheric pressure at sea level
-    . fort.74.nc - Wind Velocity - 10 m elevation
-    . maxele.63.nc - Maximum water elevation
-    . swan_DIR.63.nc - Spectral mean wave direction
-    . swan_TMM10.63.nc - Spectral mean wave period
-    . swan_TPS.63.nc - Spectral  peak wave period
-    . swan_HS.63.nc - Spectral zeroth moment wave height
-    . swan_HS_max.63.nc - Maximum spectral zeroth moment wave height
-
-  Derived Products: |
-  Datasets resulting from the computation, modeling, or other processing using existing/collected data. All products are available in NetCDF (.nc) format
-    . CORA-V1.1-fort.63: Hourly water levels 
-    . CORA-V1.1-swan_DIR.63: Hourly mean wave direction 
-    . CORA-V1.1-swan_TPS.63: Hourly peak wave periods 
-    . CORA-V1.1-swan_HS.63: Hourly significant wave heights 
-    . CORA-V1.1-Grid: Hourly water levels interpolated from model nodes to uniform 500-meter resolution grid 
+  <b>Derived Products:</b><br>
+  Datasets resulting from the computation, modeling, or other processing using existing/collected data. All products are available in NetCDF (.nc) format:
+  - CORA-V1.1-fort.63: Hourly water levels 
+  - CORA-V1.1-swan_DIR.63: Hourly mean wave direction 
+  - CORA-V1.1-swan_TPS.63: Hourly peak wave periods 
+  - CORA-V1.1-swan_HS.63: Hourly significant wave heights 
+  - CORA-V1.1-Grid: Hourly water levels interpolated from model nodes to uniform 500-meter resolution grid 
+  <br><br>
 
 Documentation: |
-    . ["NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)"](https://doi.org/10.25923/5ypp-4e84)
+  [NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)](https://doi.org/10.25923/5ypp-4e84)
 
-UpdateFrequency:
-    . Product dependent. At minimum, annually.
+UpdateFrequency: Product dependent. At minimum, annually.
 
 License: |
   NOAA data disseminated through NODD are open to the public and can be used as desired.
@@ -47,8 +49,7 @@ License: |
   NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 
 ManagedBy: |
-    . [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)
-    . See all datasets managed by: [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://registry.opendata.aws/collab/noaa/)
+  [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)
 
 Contact: |
   For questions regarding data content or quality, email CO-OPS.UserServices@noaa.gov
