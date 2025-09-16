@@ -42,10 +42,6 @@ License: |
 
   NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 
-Documentation: |
-    . [NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean](https://repository.library.noaa.gov/view/noaa/66833)
-    . [Assessment of water levels from 43 years of NOAA’s Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coasts](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2024.1381228/full?utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Marine_Science&id=1381228)
-
 ManagedBy: |
     . [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)
     . See all datasets managed by: [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://registry.opendata.aws/collab/noaa/)
@@ -81,8 +77,25 @@ Resources:
     ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
     Region: us-east-1
     Type: SNS Topic
+
 DataAtWork:
-  Usage Examples:
-    - Tutorials: Python-based Jupyter notebooks to access, analyze, visualize, and transform CORA datasets are available in the [CORA GitHub Repository](https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/tree/main?tab=readme-ov-file).
-    - Maps: [CORA-GEC Maximum Water Level Elevation Nodes, CORA-GEC 500 Meter Grid](https://noaa.maps.arcgis.com/apps/mapviewer/index.html?webmap=92321613d16f400894b9b7330ae2fab4)
-    - Use cases: https://tidesandcurrents.noaa.gov/cora.html#usecase
+  Tutorials:
+    - Title: Using Python to Access Coastal Ocean Reanalysis (CORA) Data 
+      URL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA
+      AuthorName: NOAA's Center for Operational Oceanographic Products and Services 
+      AuthorURL: https://tidesandcurrents.noaa.gov/
+
+  Tools & Applications:
+    - Title: Coastal Ocean Reanalysis Use cases
+      URL: https://tidesandcurrents.noaa.gov/cora.html#usecase
+      AuthorName: NOAA's Center for Operational Oceanographic Products and Services 
+      AuthorURL: https://tidesandcurrents.noaa.gov/
+  
+  Publications:
+    - Title: NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)
+      URL: https://doi.org/10.25923/5ypp-4e84 
+      AuthorName: Keeney, Analise; Dusek, Gregory; Callahan, John; Ratcliff, John; Jima, Tigist; Brooks, William; Marcy, Doug; Blanton, Brian; Tilson, Jeffrey; Asher, Taylor G.; Leuttich, Richard A.; Widlansky, Matthew J.; Rose, Linta; Morse, Cheryl; Haddad, Jana; & Waring, Blake
+
+    - Title: Assessment of water levels from 43 years of NOAA’s Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coasts
+      URL: https://doi.org/10.3389/fmars.2024.1381228  
+      AuthorName: Rose, Linta; Widlansky, Matthew J.; Feng, Xue; Thompson, Thompson; Asher, Taylor G.; Dusek, Gregory; Blanton, Blanton; Luettich, Richard A. Jr.; Callahan, John; Brooks, William; Keeney, Analise; Haddad, Jana; Sweet, William; Genz, Ayesha; Hovenga, Paige; Marra, John & Tilson, Jeffrey
