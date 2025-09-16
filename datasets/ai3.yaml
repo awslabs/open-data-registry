@@ -1,12 +1,10 @@
 Name: AI3
 Description: >
   The rapid advancement of computing technologies, particularly artificial intelligence (AI), has revolutionized various domains, including drug discovery. Curated datasets are crucial for developing reliable, generalizable, and accurate models for practical applications. Generating experimental data on a large scale is an expensive and arduous process. In domains such as medical diagnostics where real-life data is hard to obtain, synthetic data has been shown to be extremely valuable. We, teams from IIIT Hyderabad, Intel, AWS, and Insilico Medicine, have performed physics-based calculations (molecular dynamics simulations) on about 20,000 protein-ligand complexes. The dataset comprises molecular dynamics snapshots, binding affinities calculated using the MM-PBSA method, and individual energy components, including electrostatic and van der Waals interactions. DatasetFileFormats essentially incorporate i. 3D coordinates of the protein-ligand complexes (pdb) in tar.gz files, and ii. CSV files containing the energy data. DatasetUsages are on i. ML scoring function for predicting binding affinities of given protein-ligand complexes, ii. Classification models for predicting correct binding poses of ligands, iii. identification of cryptic binding pockets, and iv. optimization of binding features by exploiting the individual components of the energy (experimental data has only the total binding affinity). Further, the novelty of the dataset highlights the fact that existing AI/ML training datasets lack dynamic data and are inherently biased. Further, binding affinity data existing in the literature are obtained from different experimental protocols. Therefore, this dataset has been uniquely created (from the same computational protocols) followed by free energy calculations with molecular dynamics (MD) simulations. The dynamic data-enriched protein-ligand coordinates can be used to effectively train convolutional neural network-based regression models for more accurate binding affinity prediction.
-
 Documentation: https://github.com/devalab/AI3
 Contact: devalab@iiit.ac.in
 ManagedBy: International Institute of Information Technology Hyderabad
 UpdateFrequency: Not updated
-
 Tags:
   - pharmaceutical
   - simulations
@@ -15,15 +13,13 @@ Tags:
   - machine learning
   - protein
   - molecular dynamics
-
+  - aws-pds
 License: https://devalab.in/AI3.html
-
 Resources:
   - Description: ai3data bucket includes coordinates and the energetics of ~20,000 protein-ligand binding affinity datasets. The subfolders of ai3data bucket consist of Version 1, Version2 and Version 3. Version1 contains the total Size of 10.4 GiB (Initial structure of the protein-ligand complex and the average binding affinities along with average energy components). Version2 contains the total Size of 1.2 TiB (Five trajectories of protein-ligand complex (200 snapshots in all) and the closest two water molecules for each of the protein-ligand complex, and the time series of the binding affinities along with average energy components). Version3 contains the total Size of 10.7 TiB (Five trajectories of completely solvated protein-ligand complex (200 snapshots in all), and the time series of binding affinities along with average energy components).
     ARN: arn:aws:s3:::ai3data
     Region: us-east-1
     Type: S3 Bucket
-
 DataAtWork:
   Tutorials:
     - Title: "AI3: Protein-Ligand Binding Affinity Dataset"
@@ -39,4 +35,3 @@ DataAtWork:
       URL: https://www.nature.com/articles/s41597-023-02872-y
       AuthorName: U. Deva Priyakumar
       AuthorURL: https://devalab.in
-
