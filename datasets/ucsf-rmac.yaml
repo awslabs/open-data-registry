@@ -20,6 +20,10 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore: https://s3.console.aws.amazon.com/s3/buckets/ucsf-rmac-dataset
+  - Description: Notifications for new Renal Mass CT data
+    ARN: arn:aws:sns:us-west-1:905542596225:ucsf-dmi-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Label Exploration Tutorial
