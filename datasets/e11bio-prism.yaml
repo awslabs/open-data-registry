@@ -1,0 +1,61 @@
+Name: E11bio PRISM
+Description: |
+  This dataset was generated using E11.bio's PRISM technology (Protein Reconstruction and Identification through Multiplexing),
+  a platform that combines viral barcoding, expansion microscopy, and iterative immunolabeling for large-scale neuronal reconstruction.
+
+  Neurons in the mouse hippocampal CA3 were transduced with a library of adeno-associated viruses (AAVs)
+  encoding diverse “protein bits”—small epitope tags that act as combinatorial barcodes. 
+  Tissue was then processed with an expansion microscopy protocol, physically enlarging the sample ~5×
+  to achieve an effective voxel size of ~35 × 35 × 80 nm.
+  Across multiple cycles of staining, imaging, and antibody stripping, the same expanded tissue was repeatedly labeled,
+  enabling iterative immunostaining for dozens of molecular targets.
+
+  The dataset includes:
+  1) Light microscopy data of multiplexed brain tissue
+  2) Segmentations of cell morphology and protein expression in the tissue
+  3) Files for faster visualization of the data (e.g. precomputed format)
+  4) Additional supporting files (e.g. model predictions, manual annotations etc.)
+Documentation: https://github.com/e11bio/e11-open-data
+Contact: hello@e11.bio
+ManagedBy: "[E11.bio](https://e11.bio)"
+UpdateFrequency: As required
+Tags:
+  - bioinformatics
+  - biology
+  - brain images
+  - cell imaging
+  - computer vision
+  - fluorescence imaging
+  - high-throughput imaging
+  - image processing
+  - imaging
+  - ion channels
+  - life sciences
+  - machine learning
+  - microscopy
+  - morphological reconstructions
+  - Mus musculus
+  - neurobiology
+  - neuroimaging
+  - neuroscience
+  - protein
+  - segmentation
+  - zarr
+License: https://e11.bio/terms-of-use
+Resources:
+  - Description: Data files in a public bucket
+    ARN: arn:aws:s3:::e11bio-prism
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: E11.Bio PRISM OpenData
+      URL: https://github.com/e11bio/e11-open-data
+      NotebookURL:
+      AuthorName: Arlo Sheridan & Johan Winnubst
+      AuthorURL: https://e11.bio/team
+  Tools & Applications:
+    - Title: Volara 
+      URL: https://github.com/e11bio/volara
+      AuthorName: Arlo Sheridan & Will Patton
+      AuthorURL: https://e11.bio/team
