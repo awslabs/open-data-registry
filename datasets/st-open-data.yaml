@@ -20,6 +20,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](http://st-vvhr-opendata.s3-website.us-west-2.amazonaws.com/)'
+  - Description: Notifications for new SpaceEye-T VVHR EO Open data
+    ARN: arn:aws:sns:us-west-2:348881531141:st-vvhr-opendata-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Publications:
     - Title: "SpaceEye-T Data Manual"
