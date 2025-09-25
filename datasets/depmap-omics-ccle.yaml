@@ -1,0 +1,64 @@
+Name: The Cancer Dependency Map (DepMap) Cancer Cell Line Encyclopedia (CCLE) Dataset
+Description: This dataset consists of whole genome sequencing (WGS), whole exome sequencing (WES), and RNA sequencing files generated from ~1000 cancer cell lines described in Ghandi et al., 2019.
+Documentation: https://github.com/broadinstitute/depmap-omics-ccle
+Contact: https://forum.depmap.org
+ManagedBy: "[Cancer Data Science](https://cancerdatascience.org/), [Broad Institute](https://www.broadinstitute.org/)"
+UpdateFrequency: occasionally (as additional sequencings are generated for publicly-releasible CCLE models)
+Tags:
+  - aws-pds
+  - bam
+  - biology
+  - bioinformatics
+  - cancer
+  - genetic
+  - genomic
+  - Homo sapiens
+  - life sciences
+  - short read sequencing
+  - transcriptomics
+  - whole exome sequencing
+  - whole genome sequencing
+License: https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/accessing-data/using-genomic-data
+Citation: Ghandi, Huang, Jané-Valbuena et al. Next-generation characterization of the Cancer Cell Line Encyclopedia. Nature 569, 503–508 (2019). https://doi.org/10.1038/s41586-019-1186-3
+Resources:
+  - Description: CRAM/BAM files (and their corresponding CRAI/BAI indexes) for RNA, WES, and WGS samples released by The Cancer Dependency Map (DepMap) as part of the Cancer Cell Line Encyclopedia (CCLE) project
+    ARN: arn:aws:s3:::depmap-omics-ccle
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: DepMap Omics CCLE data on the AWS Open Data Registry
+      URL: https://github.com/broadinstitute/depmap-omics-ccle
+  Tools & Applications:
+    - Title: The Cancer Dependency Map (DepMap)
+      URL: https://depmap.org
+    - Title: Cancer Cell Line Encyclopedia (CCLE)
+      URL: https://sites.broadinstitute.org/ccle
+  Publications:
+    - Title: Next-generation characterization of the Cancer Cell Line Encyclopedia
+      URL: https://www.nature.com/articles/s41586-019-1186-3
+      AuthorName: Ghandi, Huang, Jané-Valbuena et al.
+    - Title: The present and future of the Cancer Dependency Map
+      URL: https://www.nature.com/articles/s41568-024-00763-x
+      AuthorName: Arafeh, Shibue, Dempster et al.
+      AuthorURL: https://depmap.org
+    - Title: Partial gene suppression improves identification of cancer vulnerabilities when CRISPR-Cas9 knockout is pan-lethal
+      URL: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03020-w
+      AuthorName: Krill-Burger, Dempster, Borah et al.
+    - Title: Genetic dependencies associated with transcription factor activities in human cancer cell lines
+      URL: https://www.sciencedirect.com/science/article/pii/S2211124724005035
+      AuthorName: Thatikonda, Supper, Wachter et al.
+    - Title: Bridging the gap between cancer cell line models and tumours using gene expression data
+      URL: https://www.nature.com/articles/s41416-021-01359-0
+      AuthorName: Noorbakhsh, Vazquez & McFarland
+    - Title: Integrated cross-study datasets of genetic dependencies in cancer
+      URL: https://www.nature.com/articles/s41467-021-21898-7
+      AuthorName: Pacini, Dempster, Boyle et al.
+    - Title: Machine learning multi-omics analysis reveals cancer driver dysregulation in pan-cancer cell lines compared to primary tumors
+      URL: https://www.nature.com/articles/s42003-022-04075-4
+      AuthorName: Sanders, Chandra, Zebarjadi et al.
+    - Title: "The Network Zoo: a multilingual package for the inference and analysis of gene regulatory networks"
+      URL: https://link.springer.com/article/10.1186/s13059-023-02877-1
+      AuthorName: Ben Guebila, Wang, Lopes-Ramos et al.
+ADXCategories:
+  - Healthcare & Life Sciences Data
