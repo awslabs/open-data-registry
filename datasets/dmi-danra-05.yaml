@@ -1,0 +1,49 @@
+Name: Danish Meteorological Institute (DMI) Reanalysis dataset v0.5
+Description: DANRA is a high-resolution meteorological reanalysis dataset for Denmark and Northwestern Europe covering the period September 1990 to December 2023
+Documentation: https://dmidk.github.io/danradocs/intro.html
+Contact: https://www.dmi.dk/kontakt
+ManagedBy: "[Danish Meteorological Institute](https://www.dmi.dk/)"
+UpdateFrequency: Not updated
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+      - weather
+Tags:
+  - air temperature
+  - atmosphere
+  - geospatial
+  - global
+  - land
+  - meteorological
+  - near-surface air temperature
+  - near-surface relative humidity
+  - near-surface specific humidity
+  - model
+  - water
+  - weather
+  - zarr
+License: DMI Reanalysis dataset v0.5 is distributed under the [Creative Commons License CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.en)
+Resources:
+  - Description: DMI's Open Data Forecasts
+    ARN: arn:aws:s3:::dmi-opendata
+    Region: eu-north-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Looking at distributions
+      URL: https://dmidk.github.io/danradocs/notebooks/distributions.html
+      NotebookURL: https://dmidk.github.io/danradocs/_sources/notebooks/distributions.ipynb
+      AuthorName: Danish Meteorological Institute
+      AuthorURL: https://www.dmi.dk/
+      Services:
+        - Amazon S3
+    - Title: DANRA figures
+      URL: https://dmidk.github.io/danradocs/notebooks/paper-figures.html
+      NotebookURL: https://dmidk.github.io/danradocs/_sources/notebooks/paper-figures.ipynb
+      AuthorName: Danish Meteorological Institute
+      AuthorURL: https://www.dmi.dk/
+      Services:
+        - Amazon S3
+ADXCategories:
+  - Environmental Data
