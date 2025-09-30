@@ -25,6 +25,10 @@ Resources:
     ARN: arn:aws:s3:::depmap-omics-ccle
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new depmap-omics-ccle data
+    ARN: arn:aws:sns:us-east-1:019511184952:depmap-omics-ccle-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: DepMap Omics CCLE data on the AWS Open Data Registry
