@@ -1,0 +1,33 @@
+Name: SpaceEye-T VVHR EO Open Data
+Description: |
+  SpaceEye-T satellite collects the highest resolution optical imagery among the commercial satellites, 25 cm resolution. The Open Data features various satellite images around the world for end users to experience the power of VVHR optical data.
+Documentation: https://www.si-imaging.com/page/72?sca=SpaceEye-T
+Contact: https://www.si-imaging.com
+UpdateFrequency: The dataset is frequently updated. The frequent updates include the time-series data for regular monitoring, and the data for disaster management. SI Imaging wants to provide the user expierence on what is possible with VVHR optical satellite data. If you have a suggestion for a new location, feedback on the dataset, or any questions, contact us.
+Tags:
+  - aws-pds
+  - satellite imagery
+  - earth observation
+  - disaster response
+  - geospatial
+  - image processing
+License: Creative Commons Attribution-NonCommercial 4.0 International
+ManagedBy: "[SI Imaging Services](https://www.si-imaging.com/)"
+Resources:
+  - Description: SpaceEye-T Imagery Collection
+    ARN: arn:aws:s3:::st-vvhr-opendata
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](http://st-vvhr-opendata.s3-website.us-west-2.amazonaws.com/)'
+  - Description: Notifications for new SpaceEye-T VVHR EO Open data
+    ARN: arn:aws:sns:us-west-2:348881531141:st-vvhr-opendata-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: "SpaceEye-T Data Manual"
+      URL: https://www.si-imaging.com/page/72?sca=SpaceEye-T
+      AuthorName: SI-Imaging Services
+ADXCategories: 
+  - Resources Data
