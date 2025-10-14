@@ -1,0 +1,49 @@
+Name: ASKAP Radio Telescope
+Description: | 
+
+   ASKAP is the CSIRO’s newest radio telescope. It is situated at the Inyarrimanha Ilgari Bundara, the CSIRO Murchison Radio-astronomy Observatory on Wajarri Yamaji Country in the Murchison region of Western Australia, about 800 km north of Perth. 
+  
+   ASKAP consists of 36 12m dishes, spread-out as far as 6km apart. It uses a new technology called Phased Array Feeds (PAFs), which allows it to see more of the sky at once. This novel technology allows ASKAP to achieve extremely high survey speed, making it one of the best instruments in the world for mapping the sky at radio wavelengths. 
+
+   Initial dataset available - The Rapid ASKAP Continuum Survey (RACS)
+
+   RACS is the first large-area survey completed with ASKAP. This survey is revolutionary as the entire sky was observed in a matter of weeks, doing what previously took telescopes years to do. RACS initially covered the whole sky at 890 MHz (RACS-Low), and has since expanded to ASKAP’s other bands (1.4 and 1.7 GHz). RACS also covers the sky in multiple epochs, with a second epoch of RACS-Low and RACS-Mid obtained and processed.  
+
+   RACS provides astronomers with a unique opportunity to study the radio sky and radio populations, in particular supermassive blackholes (active galactic nuclei) and their role in galaxy evolution. The multi-epoch approach also allows a study of the transient sky and testing and verification of calibration methods. The large area allows for cosmological studies, such as a search for anisotropy in the galaxy population, or cosmic dipole. 
+
+Documentation: https://www.atnf.csiro.au/facilities/askap-radio-telescope/
+Contact: atnf-datasup@csiro.au
+ManagedBy: "[Australia Telescope National Facility, CSIRO](http://www.atnf.csiro.au/)"
+Citation: Please see the [ATNF acknowledgement page](https://www.atnf.csiro.au/resources/publications/atnf-publication-acknowledgement-statements/) for full citation instructions. 
+UpdateFrequency: Roughly quarterly
+Tags:
+  - aws-pds
+  - astronomy
+  - archives
+License: CC-BY-4.0. Attribution required for refereed scientific papers.
+Resources:
+  - Description: The Rapid ASKAP Continuum Survey (RACS) Public Data Releases
+    ARN: arn:aws:s3:::askap/racs
+    Region: ap-southeast-2
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new Rapid ASKAP Continuum Survey (RACS) data
+    ARN: arn:aws:sns:ap-southeast-2:336305517014:racs-low1-object_created
+    Region: sp-southeast-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: CSIRO ASKAP Science Data Archive User Guide
+      URL: https://research.csiro.au/casda/casda-user-guide/
+      AuthorName: CSIRO, ATNF
+    - Title: Rapid Askap Continuum Survey (RACS) Home Page
+      URL: https://research.csiro.au/racs/
+      AuthorName: CSIRO, ATNF
+  Tools & Applications:
+  Publications:
+    - Title: ASKAP Publication List
+      URL: https://www.atnf.csiro.au/facilities/askap-radio-telescope/publications/
+      AuthorName: various, list maintained by CSIRO, ATNF
+    - Title: ASKAP System Description paper
+      URL: https://doi.org/10.1017/pasa.2021.1
+      AuthorName: Hotan, A. et al. 
