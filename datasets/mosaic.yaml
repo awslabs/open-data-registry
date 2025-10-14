@@ -1,6 +1,6 @@
 Name: Meta-Organized Stimuli And fMRI Imaging data for Computational modeling (MOSAIC)
 Description: This extensible dataset, MOSAIC, aggregates individual functional magnetic resonance imaging (fMRI) datasets by leveraging a shared preprocessing pipeline and stimulus curation procedure. This dataset aggregation procedure achieves the scale necessary for neural network training and the diversity needed for generalizable results.
-Documentation: https://github.com/blahner/mosaic-preprocessing
+Documentation: https://blahner.github.io/MOSAICfmri/
 Contact: blahner@mit.edu
 ManagedBy: Massachusetts Institute of Technology, Georgia Tech
 UpdateFrequency: New data is uploaded as researchers preprocess their fMRI data according to MOSAIC format and submit.
@@ -16,13 +16,27 @@ License: CC BY 4.0
 Citation:
 Resources:
   - Description: HDF5 files containing preprocessed fMRI data
-    ARN: arn:aws:s3:::mosaic-fmri
-    Region: us-east-1
+    ARN: arn:aws:s3:::mosaicfmri
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://mosaic-fmri.s3.amazonaws.com/index.html)'
+    - '[Browse Bucket](https://mosaicfmri.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
+    - Title: Preprocess fMRI datasets with MOSAIC shared pipeline
+      URL: https://github.com/blahner/mosaic-preprocessing
+      AuthorName: Benjamin Lahner
+    - Title: MOSAIC Python package (mosaic-dataset)
+      URL: https://pypi.org/project/mosaic-dataset/
+      AuthorName: Mayukh Deb
+    - Title: Download MOSAIC data, visualize fMRI responses, load and run brain-optimized models (Jupyter notebook)
+      URL: https://github.com/murtylab/mosaic-dataset/blob/master/examples/mosaic-starter.ipynb
+      NotebookURL: https://github.com/murtylab/mosaic-dataset/blob/master/examples/mosaic-starter.ipynb
+      AuthorName: Mayukh Deb
+    - Title: Run a synthetic localizer experiment using MOSAIC's brain-optimized models (Jupyter notebook)
+      URL: https://github.com/murtylab/mosaic-dataset/blob/master/examples/mosaic_synthetic_localizer.ipynb
+      NotebookURL: https://github.com/murtylab/mosaic-dataset/blob/master/examples/mosaic_synthetic_localizer.ipynb
+      AuthorName: Benjamin Lahner
     - Title: Load HDF5 file (Jupyter notebook)
       URL: https://github.com/blahner/mosaic-preprocessing/blob/main/src/fmriDatasetPreparation/create_hdf5/load_hdf5.ipynb
       NotebookURL: https://github.com/blahner/mosaic-preprocessing/blob/main/src/fmriDatasetPreparation/create_hdf5/load_hdf5.ipynb
