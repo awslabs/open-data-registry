@@ -1,0 +1,46 @@
+Name: Rain over Africa
+Description: The Rain over Africa (RoA) dataset consists of spaceborn estimates of precipitation of Rain over Africa using only geostationary imagery and obtained through a convolutional and quantile regression neural network. The dataset also contains some uncertainty estimates. 
+Documentation: https://github.com/SEE-GEO/roa
+Contact: https://github.com/SEE-GEO/roa
+ManagedBy: "[Geoscience and Remote Sensing at Chalmers University of Technology](https://www.chalmers.se/en/departments/see/research/geo)"
+UpdateFrequency: At most, yearly
+Tags:
+  - agriculture
+  - analysis ready data
+  - atmosphere
+  - aws-pds
+  - climate
+  - deep learning
+  - earth observation
+  - geophysics
+  - geoscience
+  - hydrology
+  - machine learning
+  - precipitation
+  - satellite imagery
+  - weather
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Please refer to https://github.com/SEE-GEO/roa#5-how-to-cite for instructions on how to cite the RoA data."
+Resources:
+  - Description: RoA expected rain rate and quantiles at levels 16% and 84% in Zarr format
+    ARN: arn:aws:s3:::roa
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Reading RoA data
+      URL: https://github.com/SEE-GEO/roa?tab=readme-ov-file#22-reading-roa-data
+      AuthorName: Adrià Amell
+      Services: Amazon S3
+    - Title: How to use the data
+      URL: https://github.com/SEE-GEO/roa?tab=readme-ov-file#3-how-to-use-the-data
+      AuthorName: Adrià Amell
+      Services: Amazon S3
+  Publications:
+    - Title: Probabilistic near real-time retrievals of Rain over Africa using deep learning
+      URL: https://doi.org/10.1029/2025JD044595
+      AuthorName: Adrià Amell, Lilian Hee, Simon Pfreundschuh, and Patrick Eriksson
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
