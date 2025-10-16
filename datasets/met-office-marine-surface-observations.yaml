@@ -1,0 +1,37 @@
+Name: Met Office Marine Surface Observations on a 2-year rolling archive
+Description: Observations collected from autonomous marine observing systems placed on moored buoys, light vessels and both manual observations reported by ships crew and also automatic observations collected from autonomous marine observing systems placed on ships.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: Data is updated hourly for a time period T-2h to T-1h. For example, at 14:00 data will arrive for observations collected between 12:00 - 12:59.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - atmosphere
+  - geospatial
+  - observations
+  - csv
+  - precipitation
+  - weather
+  - marine
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Marine Surface Observations on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-marine-surface-observations
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-marine-surface-observations.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new marine surface observations data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-marine-surface-observations-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Marine Observations Blog
+      URL: https://www.metoffice.gov.uk/blog/2025/how-does-the-met-office-take-ocean-observations
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
