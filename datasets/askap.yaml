@@ -23,12 +23,12 @@ Tags:
 License: CC-BY-4.0. Attribution required for refereed scientific papers.
 Resources:
   - Description: The Rapid ASKAP Continuum Survey (RACS) Public Data Releases
-    ARN: arn:aws:s3:::askap/racs
+    ARN: arn:aws:s3:::askap-odp/racs-low1/
     Region: ap-southeast-2
     Type: S3 Bucket
     RequesterPays: False
-  - Description: Notifications for new Rapid ASKAP Continuum Survey (RACS) data
-    ARN: arn:aws:sns:ap-southeast-2:336305517014:racs-low1-object_created
+  - Description: Notifications for ASKAP data
+    ARN: arn:aws:sns:ap-southeast-2:336305517014:askap-odp-object_created
     Region: sp-southeast-2
     Type: SNS Topic
 DataAtWork:
