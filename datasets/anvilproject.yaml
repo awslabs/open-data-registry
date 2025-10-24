@@ -1,0 +1,225 @@
+Name: NHGRI AnVIL Project
+
+Description: "The NHGRI Analysis, Visualization, and Informatics Lab-space
+  (AnVIL) Project (https://anvilproject.org/) is the National Human Genome
+  Research Institute's cloud-based platform for genomic data sharing and
+  analysis. AnVIL hosts widely used human genome reference datasets generated
+  through NHGRI-funded research. AnVIL on Open Data on AWS provides public
+  access to open-access datasets available through AnVIL. The project is a
+  collaborative effort involving NHGRI, the Broad Institute, Johns Hopkins
+  University, the University of California Santa Cruz, Vanderbilt University
+  Medical Center, Brigham and Women's Hospital, the Carnegie Institution for
+  Science, the City University of New York, the Fred Hutchinson Cancer Research
+  Center, Harvard University, Oregon Health & Science University, Massachusetts
+  General Hospital, Moffitt Cancer Center, Penn State University, and Washington
+  University."
+
+Documentation: "https://explore.anvilproject.org/datasets"
+
+Contact: "https://anvilproject.org/help"
+
+ManagedBy: "The AnVIL Project, and UC Santa Cruz Genomics Institute, University
+  of California, Santa Cruz (UCSC)"
+
+UpdateFrequency: Quarterly
+
+Tags:
+  - life sciences
+  - biology
+  - genome
+  - genomic
+  - gene expression
+  - Homo sapiens
+
+License: "https://anvilproject.org/faq/data-security"
+
+Citation: "Schatz MC, Philippakis AA, Afgan E, Banks E, Carey VJ, Carroll RJ, et
+  al. [Inverting the model of genomics data sharing with the NHGRI Genomic Data
+  Science Analysis, Visualization, and Informatics Lab-space
+  (AnVIL)](https://www.cell.com/cell-genomics/fulltext/S2666-979X(21)00106-3).
+  Cell Genomics. 2022;2. doi:10.1016/j.xgen.2021.100085"
+
+Resources:
+  - Description: "An S3 bucket containing all publicly accessible data files in 
+      The AnVIL Project. The bucket layout and access procedures are documented 
+      at
+
+      https://github.com/DataBiosphere/azul/blob/develop/docs/mirror.rst
+
+      and metadata can be viewed at
+
+      https://explore.anvilproject.org/datasets
+
+      or accessed programmatically at
+
+      https://service.explore.anvilproject.org/"
+    ARN: arn:aws:s3:::anvilproject
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - "[Data Browser UI](https://explore.anvilproject.org/datasets)"
+      - "[Azul REST Web Service](https://service.explore.anvilproject.org/)"
+  - Description: "Notifications for new NHGRI AnVIL data"
+    ARN: arn:aws:sns:us-east-1:160936121715:anvilproject-object_created
+    Region: us-east-1
+    Type: SNS Topic
+
+DataAtWork:
+  Publications:
+    - Title: "Inverting the model of genomics data sharing with the NHGRI
+        Genomic Data Science Analysis, Visualization, and Informatics Lab-space
+        (AnVIL)"
+      URL: "https://doi.org/10.1016/j.xgen.2021.100085"
+      AuthorName: "Michael C. Schatz, Anthony A. Philippakis, Enis Afgan, Eric
+        Banks, Vincent J. Carey, Robert J. Carroll, Alessandro Culotti, Kyle
+        Ellrott, Jeremy Goecks, Robert L. Grossman, Ira M. Hall, Kasper D.
+        Hansen, Jonathan Lawson, Jeffrey T. Leek, Anne O’Donnell Luria, Stephen
+        Mosher, Martin Morgan, Anton Nekrutenko, Brian D. O’Connor, Kevin
+        Osborn, Benedict Paten, Candace Patterson, Frederick J. Tan, Casey
+        Overby Taylor, Jennifer Vessio, Levi Waldron, Ting Wang, Kristin
+        Wuichet, AnVIL Team"
+    - Title: "Beyond the Human Genome Project: The Age of Complete Human Genome
+        Sequences and Pangenome References"
+      URL: "https://doi.org/10.1146/annurev-genom-021623-081639"
+      AuthorName: "Dylan J. Taylor, Jordan M. Eizenga, Qiuhui Li, Arun Das,
+        Katharine M. Jenike, Eimear E. Kenny, Karen H. Miga, Jean Monlong, Rajiv
+        C. McCoy, Benedict Paten, and Michael C. Schatz"
+    - Title: "CNPI: Rapid Analyses of Human Copy Number Data"
+      URL: "https://doi.org/10.1016/j.jmb.2025.169313"
+      AuthorName: "Jack Ustanik, Tychele N. Turner"
+    - Title: "The Galaxy platform for accessible, reproducible, and
+        collaborative data analyses: 2024 update"
+      URL: "https://doi.org/10.1093/nar/gkae410"
+      AuthorName: "The Galaxy Community"
+    - Title: "The complete sequence of a human Y chromosome"
+      URL: "https://doi.org/10.1038/s41586-023-06457-y"
+      AuthorName: "Arang Rhie, Sergey Nurk, Monika Cechova, Savannah J. Hoyt,
+        Dylan J. Taylor, Nicolas Altemose, Paul W. Hook, Sergey Koren, Mikko
+        Rautiainen, Ivan A. Alexandrov, Jamie Allen, Mobin Asri, Andrey V.
+        Bzikadze, Nae-Chyun Chen, Chen-Shan Chin, Mark Diekhans, Paul Flicek,
+        Giulio Formenti, Arkarachai Fungtammasan, Carlos Garcia Giron, Erik
+        Garrison, Ariel Gershman, Jennifer L. Gerton, Patrick G. S. Grady,
+        Andrea Guarracino, Leanne Haggerty, Reza Halabian, Nancy F. Hansen,
+        Robert Harris, Gabrielle A. Hartley, William T. Harvey, Marina Haukness,
+        Jakob Heinz, Thibaut Hourlier, Robert M. Hubley, Sarah E. Hunt, Stephen
+        Hwang, Miten Jain, Rupesh K. Kesharwani, Alexandra P. Lewis, Heng Li,
+        Glennis A. Logsdon, Julian K. Lucas, Wojciech Makalowski, Christopher
+        Markovic, Fergal J. Martin, Ann M. Mc Cartney, Rajiv C. McCoy, Jennifer
+        McDaniel, Brandy M. McNulty, Paul Medvedev, Alla Mikheenko, Katherine M.
+        Munson, Terence D. Murphy, Hugh E. Olsen, Nathan D. Olson, Luis F.
+        Paulin, David Porubsky, Tamara Potapova, Fedor Ryabov, Steven L.
+        Salzberg, Michael E. G. Sauria, Fritz J. Sedlazeck, Kishwar Shafin,
+        Valery A. Shepelev, Alaina Shumate, Jessica M. Storer, Likhitha
+        Surapaneni, Angela M. Taravella Oill, Françoise Thibaud-Nissen, Winston
+        Timp, Marta Tomaszkiewicz, Mitchell R. Vollger, Brian P. Walenz, Allison
+        C. Watwood, Matthias H. Weissensteiner, Aaron M. Wenger, Melissa A.
+        Wilson, Samantha Zarate, Yiming Zhu, Justin
+        M. Zook, Evan E. Eichler, Rachel J. O’Neill, Michael C. Schatz, Karen H.
+        Miga, Kateryna D. Makova, Adam M. Phillippy"
+    - Title: "Approaching complete genomes, transcriptomes and epi-omes with
+        accurate long-read sequencing"
+      URL: "https://doi.org/10.1038/s41592-022-01716-8"
+      AuthorName: "Sam Kovaka, Shujun Ou, Katharine M. Jenike, Michael C.
+      Schatz"
+    - Title: "The complete sequence and comparative analysis of ape sex
+        chromosomes"
+      URL: "https://doi.org/10.1038/s41586-024-07473-2"
+      AuthorName: "Kateryna D. Makova, Brandon D. Pickett, Robert S. Harris,
+        Gabrielle A. Hartley, Monika Cechova, Karol Pal, Sergey Nurk, DongAhn
+        Yoo, Qiuhui Li, Prajna Hebbar, Barbara C. McGrath, Francesca Antonacci,
+        Margaux Aubel, Arjun Biddanda, Matthew Borchers, Erich Bornberg-Bauer,
+        Gerard G. Bouffard, Shelise Y. Brooks, Lucia Carbone, Laura Carrel,
+        Andrew Carroll, Pi-Chuan Chang, Chen-Shan Chin, Daniel E. Cook, Sarah J.
+        C. Craig, Luciana de Gennaro, Mark Diekhans, Amalia Dutra, Gage H.
+        Garcia, Patrick G. S. Grady, Richard E. Green, Diana Haddad, Pille
+        Hallast, William T. Harvey, Glenn Hickey, David A. Hillis, Savannah J.
+        Hoyt, Hyeonsoo Jeong, Kaivan Kamali, Sergei L. Kosakovsky Pond, Troy
+        M. LaPolice, Charles Lee, Alexandra P. Lewis, Yong-Hwee E. Loh,
+        Patrick Masterson, Kelly M. McGarvey, Rajiv C. McCoy, Paul Medvedev,
+        Karen H. Miga, Katherine M. Munson, Evgenia Pak, Benedict Paten,
+        Brendan J. Pinto, Tamara Potapova, Arang Rhie, Joana L. Rocha, Fedor
+        Ryabov, Oliver A. Ryder, Samuel Sacco, Kishwar Shafin, Valery A.
+        Shepelev, Viviane Slon, Steven J. Solar, Jessica M. Storer, Peter H.
+        Sudmant, Sweetalana, Alex Sweeten, Michael G. Tassia, Françoise
+        Thibaud-Nissen, Mario Ventura, Melissa A. Wilson, Alice C. Young,
+        Huiqing Zeng, Xinru Zhang, Zachary A. Szpiech, Christian D. Huber,
+        Jennifer L. Gerton, Soojin V. Yi, Michael C. Schatz, Ivan A.
+        Alexandrov, Sergey Koren, Rachel J. O’Neill, Evan E. Eichler, Adam M.
+        Phillippy"
+    - Title: "Scalable Nanopore sequencing of human genomes provides a
+        comprehensive view of haplotype-resolved variation and methylation"
+      URL: "https://doi.org/10.1038/s41592-023-01993-x"
+      AuthorName: "Mikhail Kolmogorov, Kimberley J. Billingsley, Mira Mastoras,
+        Melissa Meredith, Jean Monlong, Ryan Lorig-Roach, Mobin Asri, Pilar
+        Alvarez Jerez, Laksh Malik, Ramita Dewan, Xylena Reed, Rylee M. Genner,
+        Kensuke Daida, Sairam Behera, Kishwar Shafin, Trevor Pesout, Jeshuwin
+        Prabakaran, Paolo Carnevali, Jianzhi Yang, Arang Rhie, Sonja W. Scholz,
+        Bryan J. Traynor, Karen H. Miga, Miten Jain, Winston Timp, Adam M.
+        Phillippy, Mark Chaisson, Fritz J. Sedlazeck, Cornelis Blauwendraat,
+        Benedict Paten"
+    - Title: "The Human Pangenome Project: a global resource to map genomic
+        diversity"
+      URL: "https://doi.org/10.1038/s41586-022-04601-8"
+      AuthorName: "Ting Wang, Lucinda Antonacci-Fulton, Kerstin Howe, Heather A.
+        Lawson, Julian K. Lucas, Adam M. Phillippy, Alice B. Popejoy, Mobin
+        Asri, Caryn Carson, Mark J. P. Chaisson, Xian Chang, Robert Cook-Deegan,
+        Adam L. Felsenfeld, Robert S. Fulton, Erik P. Garrison, Nanibaa’ A.
+        Garrison, Tina A. Graves-Lindsay, Hanlee Ji, Eimear E. Kenny, Barbara A.
+        Koenig, Daofeng Li, Tobias Marschall, Joshua F. McMichael, Adam M.
+        Novak, Deepak Purushotham, Valerie A. Schneider, Baergen I. Schultz,
+        Michael W. Smith, Heidi J. Sofia, Tsachy Weissman, Paul Flicek, Heng Li,
+        Karen H. Miga, Benedict Paten, Erich D. Jarvis, Ira M. Hall, Evan E.
+        Eichler, David Haussler, the Human Pangenome Reference Consortium"
+    - Title: "Deciphering the impact of genomic variation on function"
+      URL: "https://doi.org/10.1038/s41586-024-07510-0"
+      AuthorName: "IGVF Consortium"
+    - Title: "A complete reference genome improves analysis of human genetic variation"
+      URL: "https://doi.org/10.1126/science.abl3533"
+      AuthorName: "Sergey Aganezov, Stephanie M. Yan, Daniela C. Soto, Melanie
+        Kirsche, Samantha Zarate, Pavel Avdeyev, Dylan J. Taylor, Kishwar
+        Shafin, Alaina Shumate, Chunlin Xiao, Justin Wagner, Jennifer McDaniel,
+        Nathan D. Olson, Michael E. G. Sauria, Mitchell R. Vollger, Arang Rhie,
+        Melissa Meredith, Skylar Martin, Joyce Lee, Sergey Koren, Jeffrey A.
+        Rosenfeld, Benedict Paten, Ryan Layer, Chen-Shan Chin, Fritz J.
+        Sedlazeck, Nancy F. Hansen, Danny E. Miller, Adam M. Phillippy, Karen H.
+        Miga, Rajiv C. McCoy, Megan Y. Dennis, Justin M. Zook, Michael C.
+        Schatz"
+    - Title: "Jasmine and Iris: population-scale structural variant comparison
+        and analysis"
+      URL: "https://doi.org/10.1038/s41592-022-01753-3"
+      AuthorName: "Melanie Kirsche, Gautam Prabhu, Rachel Sherman, Bohan Ni,
+        Alexis Battle, Sergey Aganezov, Michael C. Schatz"
+    - Title: "A draft human pangenome reference"
+      URL: "https://www.nature.com/articles/s41586-023-05896-x"
+      AuthorName: "Wen-Wei Liao, Mobin Asri, Jana Ebler, Daniel Doerr, Marina
+        Haukness, Glenn Hickey, Shuangjia Lu, Julian K. Lucas, Jean Monlong,
+        Haley J. Abel, Silvia Buonaiuto, Xian H. Chang, Haoyu Cheng, Justin Chu,
+        Vincenza Colonna, Jordan M. Eizenga, Xiaowen Feng, Christian Fischer,
+        Robert S. Fulton, Shilpa Garg, Cristian Groza, Andrea Guarracino,
+        William T. Harvey, Simon Heumos, Kerstin Howe, Miten Jain, Tsung-Yu Lu,
+        Charles Markello, Fergal J. Martin, Matthew W. Mitchell, Katherine M.
+        Munson, Moses Njagi Mwaniki, Adam M. Novak, Hugh E. Olsen, Trevor
+        Pesout, David Porubsky, Pjotr Prins, Jonas A. Sibbesen, Jouni Sirén,
+        Chad Tomlinson, Flavia Villani, Mitchell R. Vollger, Lucinda L.
+        Antonacci-Fulton, Gunjan Baid, Carl A. Baker, Anastasiya Belyaeva,
+        Konstantinos Billis, Andrew Carroll, Pi-Chuan Chang, Sarah Cody, Daniel
+        E. Cook, Robert M. Cook-Deegan, Omar E. Cornejo, Mark Diekhans, Peter
+        Ebert, Susan Fairley, Olivier Fedrigo, Adam L. Felsenfeld, Giulio
+        Formenti, Adam Frankish, Yan Gao, Nanibaa’ A. Garrison, Carlos Garcia
+        Giron, Richard E. Green, Leanne Haggerty, Kendra Hoekzema, Thibaut
+        Hourlier, Hanlee P. Ji, Eimear E. Kenny, Barbara A. Koenig, Alexey
+        Kolesnikov, Jan O. Korbel, Jennifer Kordosky, Sergey Koren, HoJoon Lee,
+        Alexandra P. Lewis, Hugo Magalhães, Santiago Marco-Sola, Pierre Marijon,
+        Ann McCartney, Jennifer McDaniel, Jacquelyn Mountcastle, Maria
+        Nattestad, Sergey Nurk, Nathan D. Olson, Alice B. Popejoy, Daniela Puiu,
+        Mikko Rautiainen, Allison A. Regier, Arang Rhie, Samuel Sacco, Ashley D.
+        Sanders, Valerie A. Schneider, Baergen I. Schultz, Kishwar Shafin,
+        Michael W. Smith, Heidi J. Sofia, Ahmad N. Abou Tayoun, Françoise
+        Thibaud-Nissen, Francesca Floriana Tricomi, Justin Wagner, Brian Walenz,
+        Jonathan M. D. Wood, Aleksey V. Zimin, Guillaume Bourque, Mark J. P.
+        Chaisson, Paul Flicek, Adam M. Phillippy, Justin M. Zook, Evan E.
+        Eichler, David Haussler, Ting Wang, Erich D. Jarvis, Karen H. Miga, Erik
+        Garrison, Tobias Marschall, Ira M. Hall, Heng Li, Benedict Paten"
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
