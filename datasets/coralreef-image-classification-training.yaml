@@ -1,0 +1,48 @@
+Name: Community coral reef image classification training data
+Description: "Community-sourced repository of coral reef image classification training data, including continually updated confirmed annotations from [MERMAID](https://datamermaid.org/)"
+Documentation: https://github.com/data-mermaid/image-classification-open-data
+Contact: contact@datamermaid.org
+ManagedBy: "[MERMAID](https://datamermaid.org/)"
+UpdateFrequency: Each partner organization updates on their own cadence. MERMAID updates once per day.
+Tags:
+  - aws-pds
+  - coastal
+  - conservation
+  - coral reef
+  - csv
+  - global
+  - machine learning
+  - marine
+  - parquet
+  - survey
+License: "[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+Resources:
+  - Description: "The coral-reef-training AWS S3 bucket provides a single, open, well-structured, growing, community-sourced repository of coral reef image classification training data. Hosted at s3://coral-reef-training, this bucket supports global efforts in coral reef conservation through standardized, machine-learning-ready imagery and annotations.
+
+The bucket serves as the image storage backend for MERMAID’s image classification workflows and to distribute confirmed and scrubbed MERMAID coral reef image data, but it also provides a shared location where partners including CoralNet can contribute to and benefit from collective ML model development, each according to its own data structures and policies. Data in the bucket is free and open for public access; only contributing organizations have write access to their own data prefixes.
+
+By centralizing and standardizing coral reef image data, this initiative accelerates collaboration across scientific, conservation, and machine learning communities and facilitates the creation of a common, evolving image classification model for coral reefs worldwide."
+    ARN: arn:aws:s3:::coral-reef-training
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - "[Browse Bucket](https://coral-reef-training.s3.amazonaws.com/index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: MERMAID Image Classification Open Data Tutorial - Python version
+      URL: https://data-mermaid.github.io/image-classification-open-data/image-classification-open-data-tutorial_Python.html
+      AuthorName: Domazetoski V, Caldwell I
+      AuthorURL: https://github.com/ViktorDomazetoski, https://github.com/ircaldwell
+    - Title: MERMAID Image Classification Open Data Tutorial - R version
+      URL: https://data-mermaid.github.io/image-classification-open-data/image-classification-open-data-tutorial_R.html
+      AuthorName: Caldwell I
+      AuthorURL: https://github.com/ircaldwell
+  Tools & Applications:
+    - Title: MERMAID Collect
+      URL: https://app.datamermaid.org/
+      AuthorName: MERMAID
+      AuthorURL: https://datamermaid.org/
+    - Title: MERMAID Explore
+      URL: https://explore.datamermaid.org/
+      AuthorName: MERMAID
+      AuthorURL: https://datamermaid.org/

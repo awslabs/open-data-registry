@@ -1,0 +1,94 @@
+Name: "CanElevation - Canada Digital Elevation Models"
+Description: |
+  The Canadian DEM represents the current coverage of elevation data available. This dataset includes a Digital Terrain Model (DTM), a Digital Surface Model (DSM) and other derived products. This dataset includes a 1m, 2m and 30m DEM. The 1m and 2 m products are a combination of DEM data generated from airborne LiDAR and optical digital images. The 30 m DEM integrates data from the Copernicus DEM acquired during the TanDEM-X Mission, with the DEM data derived from airborne lidar and provides a complete coverage for Canada. 
+  <br/>
+  <br/>
+  Le modèle numérique d’élévation (MNE) canadien représente la couverture actuelle des données d’élévation disponibles. Ce jeu de données comprend un Modèle Numérique de Terrain (MNT), un Modèle Numérique de Surface (MNS) et d’autres produits dérivés. Ce jeu de données propose des MNE de résolution 1 m, 2 m et 30 m. Les produits 1 m et 2 m sont issus d’une combinaison de données MNE générées à partir de LiDAR aéroporté et d’images numériques optiques. Le MNE de 30 m intègre des données provenant du MNE Copernicus acquis lors de la mission TanDEM-X, ainsi que les données MNE issues du LiDAR aéroporté, ce qui permet d’assurer une couverture complète du Canada. 
+Documentation: "[Medium Resolution Digital Elevation Model - MRDEM](https://open.canada.ca/data/en/dataset/18752265-bda3-498c-a4ba-9dfe68cb98da) [High Resolution Digital Elevation Model Mosaic](https://open.canada.ca/data/en/dataset/0fe65119-e96e-4a57-8bfe-9d9245fba06b) "
+Contact: geoinfo@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://nrcan.gc.ca/)"
+UpdateFrequency: |
+  The dataset is updated as new DEM models becomes available.
+  <br/>
+  L'ensemble de données est mis à jour à mesure que des nouveaux modèles numérique d'élévation deviennent disponibles.
+Tags:
+  - aws-pds
+  - canada
+  - elevation
+  - geospatial
+  - stac
+  - land
+  - dsm
+  - dtm
+  - dem
+License: "[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)"
+Resources:
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 1m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 1m
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-1m/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-1m)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-mosaic-1m)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) at 2m / Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) à 2m
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-mosaic-2m/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-mosaic-2m)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-mosaic-2m)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
+  - Description: Medium Resolution Digital Elevation Model (MRDEM). Modèle numérique d'élévation de moyenne résolution (MNEMR)
+    ARN: arn:aws:s3:::canelevation-dem/mrdem-30/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=mrdem-30)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/mrdem-30)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
+  - Description: Mosaic of High Resolution Digital Elevation Model (HRDEM) by LiDAR acquisition project. Mosaïque de Modèle numérique d'élévation de haute résolution (MNEHR) par project d'acquisition LiDAR.
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-lidar/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-lidar)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
+  - Description: Notifications for Canada Digital Elevation Models.
+    ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-create-object
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for mosaic of High Resolution Digital Elevation Model (HRDEM) at 1m.
+    ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-hrdem-mosaic-1m-create-object
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for mosaic of High Resolution Digital Elevation Model (HRDEM) at 2m.
+    ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-hrdem-mosaic-2m-create-object
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for Medium Resolution Digital Elevation Model (MRDEM).
+    ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-mrdem-30-create-object
+    Region: ca-central-1
+    Type: SNS Topic
+  - Description: Notifications for High Resolution Digital Elevation Model (HRDEM) by LiDAR acquisition project.
+    ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-hrdem-lidar-create-object
+    Region: ca-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Cloud-Optimized Geospatial Data Access
+      URL: https://nrcan.github.io/cloud-optimized-geospatial/
+      AuthorName: NRCan
+  Publications:
+    - Title: "Descriptor: Medium Resolution Digital Elevation Model From Natural Resources Canada’s CanElevation Series (MRDEM-30)"
+      URL: https://doi.org/10.1109/IEEEDATA.2025.3576318
+      AuthorName: H. McGrath et al.
+
+
+
+
+
+
+
+

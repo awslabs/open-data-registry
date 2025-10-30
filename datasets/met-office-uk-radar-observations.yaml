@@ -1,0 +1,38 @@
+Name: Met Office UK Radar Observations on a 2-year rolling archive
+Description: The United Kingdom Composite, Surface Rain Rate Estimate is an international radar composite produced by Met Office (UK). 
+  This is a composite, radar reflectivity derived, surface rain rate estimate product in HDF5 code from stations covering the United Kingdom.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: Four images per hour (every 15 minutes). The data is available within 20 minutes of the validity time of the product. 
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - atmosphere
+  - geospatial
+  - h5
+  - hdf5
+  - precipitation
+  - radar
+  - weather
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office UK Radar Observations on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-radar-obs-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-radar-obs-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new radar observations data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-radar-obs-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Radar
+      URL: https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/library-and-archive/library/publications/factsheets/factsheet_15-weather-radar-2020_2023.pdf
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
