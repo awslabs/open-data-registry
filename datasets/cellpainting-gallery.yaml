@@ -31,6 +31,7 @@ Tags:
   - medicine
   - microscopy
   - organelle
+  - life sciences
 License:  CC0 1.0 Universal (CC0 1.0) Public Domain Dedication, but please do cite the corresponding publication for each dataset, as listed [here](https://github.com/broadinstitute/cellpainting-gallery#citation).
 Resources:
   - Description: Cell Painting data, comprising fluorescence microscopy cell images (TIFF), extracted features (CSV), and associated metadata (CSV and TXT).
@@ -40,6 +41,10 @@ Resources:
     Explore:
       - '[Documentation](https://github.com/broadinstitute/cellpainting-gallery)'
       - '[Browse Bucket](https://cellpainting-gallery.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new Cell Painting Gallery data
+    ARN: arn:aws:sns:us-east-1:309624411020:cellpainting-repository-object_created
+    Region: us-east-1
+    Type: SNS Topic      
 DataAtWork:
   Tutorials:
     - Title: Cell Painting wiki

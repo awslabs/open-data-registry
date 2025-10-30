@@ -30,6 +30,12 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
+  - Description: MPAS-CMAQ Input Data
+    ARN: arn:aws:s3:::mpas-cmaq
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)'
   - Description: CMAQ Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
@@ -54,6 +60,44 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
+  - Description: Community Multiscale Air Quality (CMAQ) 2019 3D Gridded and Column data from the EPA's Air Quality Time Series (EQUATES) Project
+    ARN: arn:aws:s3:::epa-equates-v1
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://epa-equates-v1.s3.amazonaws.com/index.html)'
+    - '[EPA CMAQ 2019 3D Gridded and Column data from EQUATES Project](https://aws.amazon.com/marketplace/pp/prodview-kziefcewnxcxe?sr=0-5&ref_=beagle&applicationId=AWSMPContessa)'
+  - Description: CMAQ 2023 12US4 CRACMM3 Modeling Platform
+    ARN: arn:aws:s3::::::cmaq-12us4-cracmm3-modeling-platform-2023
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-12us4-cracmm3-modeling-platform-2023.s3.amazonaws.com/index.html)'
+  - Description: CMAQ Model Versions 5.5 CRACMM2 Input Data (2022r1) -- 12/22/2021 - 12/31/2022 12km CONUS
+    ARN:  arn:aws:s3::::::cmaq-12us1-cracmm2-modeling-platform-2022
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-12us1-cracmm2-modeling-platform-2022.s3.amazonaws.com/index.html)'
+  - Description: EPA 2022 Modeling Platform
+    ARN: arn:aws:s3:::epa-2022-modeling-platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://epa-2022-modeling-platform.s3.amazonaws.com/index.html)'
+    - '[OAQPS 2022 Modeling Platform](https://registry.opendata.aws/epa-2022-modeling-platform/)'
+  - Description: CMAQ 2021 Modeling Platform
+    ARN: arn:aws:s3:::2021platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://2021platform.s3.amazonaws.com/index.html)'
+  - Description: CMAQ 2019 Modeling Platform
+    ARN: arn:aws:s3:::cmaq-2019-modeling-platform
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-2019-modeling-platform.s3.amazonaws.com/index.html)'
   - Description: CMAQ 2018 Modeling Platform
     ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
     Region: us-east-1
@@ -103,7 +147,13 @@ DataAtWork:
       AuthorName: CMAS Center
       AuthorURL: https://github.com/CMASCenter/pcluster-cmaq/
       Services:
-        - ParallelCluster
+        - AWS ParallelCluster
+    - Title: CMAQ on AWS HPC Workshop
+      URL: https://catalog.workshops.aws/cmaq-tutorial/en-US/
+      AuthorName: CMAS Center, U.S. EPA Office of Research and Development and AWS Workshop Studio
+      AuthorURL: https://catalog.workshops.aws/
+      Services:
+        - AWS ParallelCluster
     - Title: EQUATES Benchmark
       URL: https://github.com/lizadams/EQUATES_BENCHMARK
       AuthorName: Liz Adams

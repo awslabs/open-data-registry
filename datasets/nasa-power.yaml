@@ -1,10 +1,9 @@
 Name: NASA Prediction of Worldwide Energy Resources (POWER)
 Description: |
-  NASA's goal in Earth science is to observe, understand, and model the Earth system to discover how it is changing, to better predict change, and to understand the consequences for life on Earth. The Applied Sciences Program serves NASA and Society by expanding and accelerating the realization of societal and economic benefits from Earth science, information, and technology research and development. <br/><br/>
-  The NASA [Prediction Of Worldwide Energy Resources (POWER)](https://power.larc.nasa.gov/) Project, a NASA Applied Sciences program, improves the accessibility and usage NASA Earth Observations (EO) supporting community research in three focus areas: 1) renewable energy development, 2) building energy efficiency, and 3) agroclimatology applications. POWER can help communities be resilient amid observed climate variability through the easy access of solar and meteorological data via a variety of access methods. <br/><br/>
-  The latest POWER version includes hourly-based source Analysis Ready Data (ARD), in addition to enhanced daily, monthly, annual, and climatology ARD. The daily time-series spans 40 years for meteorology available from 1981 and solar-based parameters start in 1984. The hourly source data are from Clouds and the Earth's Radiant Energy System (CERES) and Global Modeling and Assimilation Office (GMAO), spanning 20 years from 2001. The hourly data will provide users the ARD needed to model the energy performance of building systems, providing information directly amenable to decision support tools introducing the industry standard EPW (EnergyPlus Weather file). <br/><br/> 
-  POWER also provides parameters at daily, monthly, annual, and user-defined time periods, spanning from 1984 through to within a week of real time. Additionally, POWER provides are user-defined analytic capabilities, including custom climatologies and climatological-based reports for parameter anomalies, ASHRAE® compatible climate design condition statistics, and building climate zones. <br/><br/>
-  The ARD and climate analytics will be readily accessible through POWER's integrated services suite, including the [Data Access Viewer (DAV)](https://power.larc.nasa.gov/data-access-viewer/). The DAV has recently been improved to incorporate updated parameter groupings, new analytical capabilities, and the new data formats.  POWER also provides a complete [API (Application Programming Interface)](https://power.larc.nasa.gov/api/pages/) that allows uses to obtain all the parameters in the DAV plus additional parameters for larger repetitive orders or from within the user\'s own analytic tools. <br/><br/>
+  NASA's goal in Earth science is to observe, understand, and model the Earth system to discover how it is changing, to better predict change, and to understand the consequences for life on Earth. The Applied Sciences Program, within the Earth Science Division of the NASA Science Mission Directorate, serves individuals and organizations around the globe by expanding and accelerating societal and economic benefits derived from Earth science, information, and technology research and development.<br/><br/>
+  The [Prediction Of Worldwide Energy Resources (POWER)](https://power.larc.nasa.gov/) Project, funded through the Applied Sciences Program at NASA Langley Research Center, gathers NASA Earth observation data and parameters related to the fields of surface solar irradiance and meteorology to serve the public in several free, easy-to-access and easy-to-use methods. POWER helps communities become resilient amid observed climate variability by improving data accessibility, aiding research in energy development, building energy efficiency, and supporting agriculture projects.<br/><br/>
+  The POWER project contains over 380 satellite-derived meteorology and solar energy Analysis Ready Data (ARD) at four temporal levels: hourly, daily, monthly, and climatology. The POWER data archive provides data at the native resolution of the source products. The data is updated nightly to maintain near real time availability (2-3 days for meteorological parameters and 5-7 days for solar). The POWER services catalog consists of a series of RESTful Application Programming Interfaces, geospatial enabled image services, and web mapping Data Access Viewer. These three service offerings support data discovery, access, and distribution to the project’s user base as ARD and as direct application inputs to decision support tools.<br/><br/>
+  The latest data version update includes hourly-based source ARD, in addition to enhanced daily, monthly, annual, and climatology data. The daily time series for meteorology is available from 1981, while solar-based parameters start in 1984. The hourly source data are from Clouds and the Earth's Radiant Energy System (CERES) and Global Modeling and Assimilation Office (GMAO), spanning from 1984 for meteorology and from 2001 for solar-based parameters. The hourly data equips users with the ARD needed to model building system energy performance, providing information directly amenable to decision support tools introducing the industry standard EnergyPlus Weather file format.<br/><br/>
 Documentation: https://power.larc.nasa.gov/docs/
 Contact: larc-power-project@mail.nasa.gov
 ManagedBy: NASA
@@ -54,15 +53,15 @@ Tags:
   - weather
   - zarr
   - aws-pds
-License: There are no restrictions on the use, access, and/or download of data from the NASA POWER Project. We request that you cite the NASA POWER Project when using the data provided from NASA POWER Project. <br/><br/> [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
+License: There are no restrictions on the use, access, and/or download of data from the NASA POWER Project. We request that you cite the NASA POWER Project when using the data provided from NASA POWER Project. <br/><br/> [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 Resources:
   - Description: POWER's Zarr Analysis Ready Data (ARD) Datasets
-    ARN: arn:aws:s3:::power-analysis-ready-datastore
+    ARN: arn:aws:s3:::nasa-power
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: false
     Explore:
-    - "[Browse Bucket](https://power-analysis-ready-datastore.s3.us-west-2.amazonaws.com/index.html)"
+    - "[Browse Bucket](https://nasa-power.s3.us-west-2.amazonaws.com/index.html)"
   - Description: POWER's NetCDF Datastore
     ARN: arn:aws:s3:::power-datastore
     Region: us-west-2

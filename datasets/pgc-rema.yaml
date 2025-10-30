@@ -26,14 +26,20 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics.json)'
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/mosaics.json)'
+      - '[Dynamic STAC API Endpoint](https://stac.pgc.umn.edu/api/v1/)'
   - Description: REMA DEM Strips
     ARN: arn:aws:s3:::pgc-opendata-dems/rema/strips/
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips.json)'
+      - '[Browse Static STAC Catalog](https://polargeospatialcenter.github.io/stac-browser/#/external/pgc-opendata-dems.s3.us-west-2.amazonaws.com/rema/strips.json)'
+      - '[Dynamic STAC API Guide](https://www.pgc.umn.edu/guides/stereo-derived-elevation-models/stac-access-static-and-dynamic-api/)'
 DataAtWork:
+  Tutorials:
+    - Title: PGC Dynamic STAC API Tutorial
+      URL: https://polargeospatialcenter.github.io/pgc-code-tutorials/dynamic_stac_api/web_files/stac_api_demo_workflow.html
+      AuthorName: Polar Geospatial Center
   Tools & Applications:
     - Title: REMA Explorer
       URL: https://rema.apps.pgc.umn.edu/
