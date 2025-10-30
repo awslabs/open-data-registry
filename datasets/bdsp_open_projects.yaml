@@ -1,0 +1,34 @@
+Name: Brain Data Science Database 1
+Description: This collection unifies multiple brain datasets spanning critical care, sleep medicine, cardiopulmonary health, infectious diseases, and other aspects of clinical neuroscience. It includes a variety of types of clinical neuroscience data including electroencephalography (EEG) and polysomnography (PSG) recordings, and supporting data to enable research in diverse areas of clinical neuroscience such as epilepsy, delirium, coma, and sleep medicine. All data is de-identified and includes code to reproduce results in accompanying research publications. The data is available for non-commercial research use and is open access.
+Documentation: https://bdsp.io/about/database/#open
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: "[Open Data Commons Attribution License v1.0](https://bdsp.io/content/rhofbas/view-license/1.0/)"
+Citation: Refer to individual project citations in documentation
+Resources:
+  - Description: Assessing Risk of Health Outcomes From Brain Activity in Sleep
+    ARN: aws s3 ls s3://arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-open-access-point/
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: https://bdsp.io/content/rhofbas/1.0/
+ - Description: The Human Burst Suppression Electroencephalogram of Deep Hypothermia
+    ARN: aws s3 ls s3://arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-open-access-point/
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: https://bdsp.io/content/dhypothermia/1.0/
+  
+  - Description: Visual EEG-Based Grading of Delirium Severity and Associations with Clinical Outcomes (VE-CAM-S)
+    ARN: aws s3 ls s3://arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-open-access-point/
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: https://bdsp.io/content/ve-cam-s/1.0/
