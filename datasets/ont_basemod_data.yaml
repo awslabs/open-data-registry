@@ -1,0 +1,37 @@
+Name: ONT Methylation Benchmarking Datasets
+Description: ONT Methylation Benchmarking Datasets are generated to benchmark existing methylation-calling tools on the Oxford Nanopore sequencing platform using their recent R10.4.1 flowcell chemistry. It spans a diverse range of species, including bacteria (E. coli, H. pylori J99, H. pylori 26695, A. variabilis, T. denticola), plants (Rice, Arabidopsis), and mammals (mouse, human).In addition, the dataset includes EMSeq data for E. coli, plant, and mouse samples, which can serve as ground truth for methylation studies. It also provides unmethylated whole-genome amplified (WGA) DNA for H. pylori 26695 and a dam- dcm- double mutant (DM) of E. coli that lacks canonical 5mC and 6mA methylation. These variants, together with their wild-type counterparts, offer value for both training and benchmarking DNA methylation calling models.
+Documentation: https://github.com/SowpatiLab/ont-basemod-benchmark-data/blob/main/documentation.md
+Contact: "onkar.ccmb@csir.res.in; tej.ccmb@csir.res.in"
+ManagedBy: "[CSIR-Centre for Cellular and Molecular Biology](https://www.ccmb.res.in/)"
+UpdateFrequency: Datasets will be updated periodically as additional data is generated.
+Tags:
+  - aws-pds
+  - life sciences
+  - genomic
+  - long read sequencing
+  - bioinformatics
+  - epigenomics
+  - benchmark
+  - bam
+License: "[MIT License](https://opensource.org/license/mit)"
+Citation: "Please cite Kulkarni et al. Comprehensive benchmarking of tools for nanopore-based detection of DNA methylation. bioRxiv (2024). doi: https://doi.org/10.1101/2024.11.09.622763 when referencing the ONT methylation benchmarking datasets in publications."
+Resources:
+  - Description: ONT Methylation Benchmarking Datasets
+    ARN: arn:aws:s3:::ont-basemod-benchmark-data
+    Region: ap-south-1
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://ont-basemod-benchmark-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for object created
+    ARN: arn:aws:sns:ap-south-1:767415906609:ont-basemod-benchmark-data-object_created
+    Region: ap-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Methylation calling using ONT methylation benchmarking dataset
+      URL: https://github.com/SowpatiLab/ont-basemod-benchmark-data/blob/main/tutorial.md
+      AuthorName: Onkar Kulkarni
+  Publications:
+    - Title: Comprehensive benchmarking of tools for nanopore-based detection of DNA methylation
+      URL: https://www.biorxiv.org/content/10.1101/2024.11.09.622763v1
+      AuthorName: Kulkarni et al.
