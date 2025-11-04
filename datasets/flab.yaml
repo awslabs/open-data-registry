@@ -1,0 +1,35 @@
+Name: FLAb: Fitness Landscapes for Antibodies
+Description: FLAb is the largest publicly available therapeutic antibody dataset designed to train and benchmark protein AI models. It provides open-access, high-quality developability data on diverse therapeutic properties, including expression, thermostability, immunogenicity, aggregation, polyreactivity, binding affinity, and pharmacokinetics. 
+Documentation: https://github.com/Graylab/FLAb/blob/main/README.md
+Contact: mchungy1@jhu.edu
+ManagedBy: "[Jeffrey Gray Lab, Johns Hopkins University](https://graylab.jhu.edu/)"
+UpdateFrequency: Any new public release of antibody developabilty data is deposited into FLAb
+Tags:
+  - Protein language models
+  - Protein design
+  - Antibody engineering
+  - Therapeueutic antibodies
+  - Developability
+  - Machine learning
+  - Clinical stage therapeutics
+  - Biophysics
+License: https://creativecommons.org/licenses/by/4.0/
+Citation: "FLAb was accessed on [DATE] at registry.opendata.aws/flab"
+Resources:
+  - Description: Antibody developabiltiy data in CSV format
+    ARN: arn:aws:s3:::graylab-flab
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: FLAb tutorial: Benchmarking a protein language model for antibody expression prediction
+      NotebookURL: https://github.com/Graylab/FLAb/blob/main/examples/FLAb_ZeroShotExample_IgLM_Expression.ipynb
+      AuthorName: Michael Chungyoun
+      AuthorURL: https://www.linkedin.com/in/mfc12/
+  Publications:
+    - Title: FLAb: Benchmarking deep learning methods for antibody fitness prediction
+      URL: https://doi.org/10.1101/2024.01.13.575504
+      AuthorName: Michael Chungyoun and Jeffrey J. Gray
+      AuthorURL: https://www.linkedin.com/in/mfc12/
+ADXCategories:
+  - Healthcare & Life Sciences Data
