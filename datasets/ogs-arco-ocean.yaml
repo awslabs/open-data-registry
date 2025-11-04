@@ -23,6 +23,10 @@ Resources:
     ARN: arn:aws:s3:::ogs-arco-ocean
     Region: eu-south-1
     Type: S3 Bucket
+  - Description: Notifications for new ARCO-OCEAN data
+    ARN: arn:aws:sns:eu-south-1:985149164500:ogs-arco-ocean-object_created
+    Region: eu-south-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Computing the Oceanic El Nino Index (ONI) with Xarray and ARCO-OCEAN
