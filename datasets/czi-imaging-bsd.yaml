@@ -1,0 +1,51 @@
+---
+Name: CZ Grand Challenges - Imaging BSD licensed data and models
+Description: This dataset contains a diverse range of imaging biological data
+  and models. The data is sourced and curated by a team of experts at CZI and is
+  made available as part of these datasets only when it is not publicly
+  accessible or requires transformations to support model training.
+Documentation: https://virtualcellmodels.cziscience.com/models
+Contact: data@chanzuckerberg.com
+ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
+UpdateFrequency: Update cadence may vary for each resource
+
+Tags:
+  - microscopy
+  - cell imaging
+  - machine learning
+  - model
+  - czi
+  - imaging
+  - biodiversity
+  - bioinformatics
+  - biology
+  - biomolecular modeling
+  - brain images
+  - cell biology
+  - life sciences  
+  - protein
+  - zarr
+License: "[BSD-3-Clause License](https://opensource.org/license/bsd-3-clause)"
+
+Resources: 
+  - Description: Cytoland model
+    ARN: arn:aws:s3:::czi-cytoland
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:    
+    - Title: Documentation for Cytoland
+      URL: https://virtualcellmodels.cziscience.com/model/01961244-1970-7851-a4b9-fdbfa2fba9b2
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Quickstart Tutorial for Cytoland
+      URL: https://virtualcellmodels.cziscience.com/quickstart/cytoland-quickstart
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Publications:    
+    - Title: 'Cytoland: robust virtual staining of landmark organelles'
+      URL: https://www.biorxiv.org/content/10.1101/2024.05.31.596901v3
+      AuthorName: Liu, Hirata-Miyasaki, et al.
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
