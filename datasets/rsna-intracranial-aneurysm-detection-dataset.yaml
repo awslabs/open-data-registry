@@ -1,0 +1,23 @@
+Name:  RSNA Intracranial Aneurysm Detection Dataset (RSNA-ICA)
+Description: "The Radiological Society of North America Intracranial Aneurysm Detection (RSNA-ICA) dataset is a collection of over 4,000 CT brain scans annotated by a cohort of over 40 volunteer radiologists from RSNA and the American Society of Neuroradiology to show the presence and location of intracranial aneurysms. It also includes a set of about 200 imaging studies that are annotated with AI-generated segmentations highlighting abnormalities. The imaging data was provided by 18 institutions. Initially compiled in 2025 for the RSNA Intracranial Aneurysm Detection AI Challenge hosted on Kaggle competition platform (https://www.kaggle.com/competitions/rsna-intracranial-aneurysm-detection), it represents the largest publicly available collection of its kind. Additional information on the dataset and how to make use of it is provided in a forthcoming Data Resource Publication listed below, as well as on the Kaggle competition website, which also provides access to models developed during the competition."
+Documentation: https://github.com/RSNA/AI-Challenge-Data/wiki/RSNA-Intracranial-Aneurysm-Detection-Dataset
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “Radiological Society of North America Intracranial Aneurysm Detection (RSNA-ICA) Dataset, July 2025” [https://doi.org/10.1148/dataset.ica.2025]."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::intracranial-aneurysm-detection
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/7
