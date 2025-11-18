@@ -1,0 +1,32 @@
+Name: Biological and Physical Sciences (BPS) RNA Sequencing Benchmark Training Dataset
+Description: RNA sequencing data from spaceflown and control mouse liver samples, sourced from NASA GeneLab and augmented with generative adversarial network.
+Documentation: https://docs.google.com/document/d/e/2PACX-1vSvHfRYav25TVSJfQE2MvEKJIM7LUnpmAyRQlrkamgwiWb9nKYNlSYu3_KvHmzUYkNQNbfpoB27t4oQ/pub
+Contact: lauren.m.sanders@nasa.gov
+ManagedBy: "[NASA](https://osdr.nasa.gov/)"
+UpdateFrequency: New spaceflight liver RNA sequencing data is added whenever it is available.
+Tags: 
+  - aws-pds
+  - space biology
+  - gene expression
+  - genetic
+  - genetic maps
+  - GeneLab
+  - NASA SMD AI
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: NASA BPS RNA Sequencing Benchmark Training Data
+    ARN: arn:aws:s3:::nasa-bps-training-data/RNAsequencing/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+DataAtWork:
+  Publications:
+    - Title: NASA SMD AI Workshop Report
+      URL: https://science.nasa.gov/files/atoms/files/NASA%20SMD%20AI%20Workshop%2021%20(spreads)%20(1).pdf
+      AuthorName: SMD Artificial Intelligence (AI) Initiative
+    - Title: Adversarial generation of gene expression data 
+      URL: https://doi.org/10.1093/bioinformatics/btab035
+      AuthorName: Ramon Viñas, Helena Andrés-Terré, Pietro Liò, Kevin Bryson
+
+

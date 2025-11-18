@@ -1,0 +1,40 @@
+Name: Exceptional Responders Initiative
+Description: "The Exceptional Responders Initiative is a pilot study to investigate the underlying molecular factors driving exceptional treatment responses of cancer patients to drug therapies. Study researchers will examine molecular profiles of tumors from patients either enrolled in a clinical trial for an investigational drug(s) and who achieved an exceptional response relative to other trial participants, or who achieved an exceptional response to a non-investigational chemotherapy. An exceptional response is defined as achievement of either a complete response or a partial response for at least 6 months duration in a trial or treatment where the overall response rate is < 10%. The hope is to discover underlying molecular features that can be further investigated and may eventually predict benefit from a given drug or class of drugs for a particular patient.
+	
+  This pilot project will successfully characterize approximately 100 cases of tumor tissue and, when available, case-matched germline DNA. All samples will undergo whole exome sequencing, and cases with sufficient nucleic acids will undergo additional analyses (e.g. whole genome sequencing, mRNA-sequencing, mi RNA sequencing, promoter methylation analysis, SNP etc). Each case will be annotated with demographic and clinical information, along with follow-up information minimally sufficient to correlate molecular profiles with response. Both retrospective and prospective collections will be considered. The project will also accept sequencing data and clinical data from patients who have had sequencing performed outside of this project. All data will be de-identified and placed in a controlled access database so other investigators may use them for additional insights.
+
+  Clinically annotated tissue specimens meeting the criteria will be provided by groups participating in the Exceptional Cases Initiative to a Biospecimen Core Resource (BCR), which will perform quality control on the tissues, and will use a standard operating procedure to isolate nucleic acids. The nucleic acids will be shipped to a sequencing center to perform whole exome sequencing and analysis. These findings will be made available to the broader cancer research community in a controlled access database."
+Documentation: https://ftp.ncbi.nlm.nih.gov/dbgap/studies/phs001145/phs001145.v1.p1
+Contact: support@nci-gdc.datacommons.io
+ManagedBy: “[Center for Translational Data Science at The University of Chicago] (https://ctds.uchicago.edu/)”
+UpdateFrequency: Genomic Data Commons is the source of truth for this dataset and it offers monthly releases, although this particular dataset may not be updated at every release
+Tags:
+  - aws-pds
+  - STRIDES
+  - cancer
+  - life sciences
+  - genomic
+  - whole genome sequencing
+  - whole exome sequencing
+  - transcriptomics
+  - epigenomics
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: Sequencing Reads, Transcriptome Profiling, Simple Nucleotide Variation, Copy Number Variation, DNA Methylation, Clinical, Biospecimen, WXS, RNA-Seq, Targeted Sequencing
+    ARN: arn:aws:s3:::gdc-exceptional-responders-er-phs001145-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: GDC Legacy Archive
+      URL: https://portal.gdc.cancer.gov/legacy-archive/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: "The Exceptional Responders Initiative: Feasibility of a National Cancer Institute Pilot Study"
+      URL: https://doi.org/10.1093/jnci/djaa061
+      AuthorName: Barbara A. Conley, Lou Staudt, et al.

@@ -1,0 +1,90 @@
+Name: Digital Earth Africa CHIRPS Rainfall
+Description: |
+  Digital Earth Africa (DE Africa) provides free and open access to a copy of the Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) monthly and daily products over Africa. The CHIRPS rainfall maps are produced and provided by the Climate Hazards Center in collaboration with the US Geological Survey, and use both rain gauge and satellite observations.
+  The CHIRPS-2.0 Africa Monthly dataset is regularly indexed to DE Africa from the CHIRPS monthly data. The CHIRPS-2.0 Africa Daily dataset is likewise indexed from the CHIRPS daily data. Both products have been converted to cloud-opitmized GeoTIFFs, and can be accessed through DE Africa’s Open Data Cube. This means the full archive of CHIRPS daily and monthly rainfall can be easily used for inspection or analysis across DE Africa platforms, including the user-interactive DE Africa Map.
+  For more information on the dataset, see the [CHIRPS website](https://www.chc.ucsb.edu/data/chirps).
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/CHIRPS_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: Monthly.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - earth observation
+  - food security
+  - geospatial
+  - meteorological
+  - satellite imagery
+  - sustainability
+  - deafrica
+  - stac
+  - cog
+License: |
+    To the extent possible under the law, Pete Peterson has waived all copyright and related or neighboring rights to CHIRPS. CHIRPS data is in the public domain as registered with Creative Commons.
+Resources:
+  - Description: CHIRPS daily rainfall
+    ARN: arn:aws:s3:::deafrica-input-datasets/rainfall_chirps_daily
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/rainfall_chirps_daily)'
+  - Description: CHIRPS monthly rainfall
+    ARN: arn:aws:s3:::deafrica-input-datasets/rainfall_chirps_monthly
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/rainfall_chirps_monthly)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-input-datasets-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent contain all object creation events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-input-datasets-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Rainfall - Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS)"
+      URL: https://docs.digitalearthafrica.org/en/latest/sandbox/notebooks/Datasets/Rainfall_CHIRPS.html
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (CHIRPS daily rainfall)"
+      URL: https://explorer.digitalearth.africa/products/rainfall_chirps_daily
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (CHIRPS monthly rainfall)"
+      URL: https://explorer.digitalearth.africa/products/rainfall_chirps_monthly
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan
+    - Title: "The climate hazards infrared precipitation with stations—a new environmental record for monitoring extremes"
+      URL: https://www.nature.com/articles/sdata201566
+      AuthorName: Chris Funk, Pete Peterson, Martin Landsfeld, Diego Pedreros, James Verdin, Shraddhanand Shukla, Gregory Husak, James Rowland, Laura Harrison, Andrew Hoell and Joel Michaelsen 
+
+    

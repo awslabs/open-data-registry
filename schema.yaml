@@ -1,4 +1,4 @@
-desc: Simple schema for ODAR compliant dataset listings
+desc: Simple schema for RODA compliant dataset listings
 extensions:
   - ext.py
 type: map
@@ -6,9 +6,15 @@ mapping:
   Deprecated:
     type: bool
     required: False
+  DeprecatedNotice:
+    type: str
+    required: False    
   Name:
     type: str
     required: True
+    range:
+      min: 5
+      max: 130
   Description:
     type: str
     required: True
@@ -20,19 +26,53 @@ mapping:
     required: True
   ManagedBy:
     type: str
+    required: True
+  Citation:
+    type: str
     required: False
   UpdateFrequency:
     type: str
     required: True
+  Collabs:
+    type: map
+    required: False
+    mapping:
+      ASDI:
+        type: map
+        required: False
+        mapping:
+          Tags:
+            type: seq
+            required: False
+            sequence:
+              - type: str
+                func: ext_tags
   Tags:
     type: seq
     required: True
     sequence:
       - type: str
         func: ext_tags
+  ADXCategories:
+    type: seq
+    required: False
+    range:
+      min: 0
+      max: 2    
+    sequence:
+      - type: str
+        func: ext_adx_categories
   License:
     type: str
     required: True
+  RegistryEntryAdded:
+    type: str
+    required: True
+    pattern: ^\d{4}-\d{2}-\d{2}$
+  RegistryEntryLastModified:
+    type: str
+    required: True
+    pattern: ^\d{4}-\d{2}-\d{2}$
   Resources:
     type: seq
     required: True
@@ -44,20 +84,32 @@ mapping:
             required: True
           ARN:
             type: str
-            pattern: ^arn:aws:.+:.*:.*:.+$
+            func: ext_resources_arn
           Host:
             type: str
-            pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+            func: ext_resources_host
           Region:
             type: str
             required: True
-            pattern: ^.+-.+-.+$
+            pattern: ^.{2}-.+-\d$
           Type:
             type: str
             required: True
             func: ext_resources
           RequesterPays:
             type: bool
+          AccountRequired:
+            type: bool            
+          ControlledAccess:
+            type: str
+            func: ext_resources_controlled_access
+            required: False
+          Explore:
+            type: seq
+            required: False
+            sequence:
+              - type: str
+                func: ext_resources_explore              
   DataAtWork:
     type: map
     required: False
@@ -72,15 +124,25 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
+              NotebookURL:
+                type: str
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?\.ipynb$
+                required: False
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: False
+              Services:
+                type: seq
+                required: False
+                sequence:
+                  - type: str
+                    func: ext_services
       Tools & Applications:
         type: seq
         sequence:
@@ -91,14 +153,14 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: False
       Publications:
         type: seq
@@ -110,12 +172,12 @@ mapping:
                 required: True
               URL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: True
               AuthorName:
                 type: str
                 required: True
               AuthorURL:
                 type: str
-                pattern: ^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})(\/.*)*\/?$
+                pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
                 required: False

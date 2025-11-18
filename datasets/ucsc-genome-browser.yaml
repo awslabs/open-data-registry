@@ -1,0 +1,19 @@
+Name: UCSC Genome Browser Sequence and Annotations
+Description: "The UCSC Genome Browser is an online graphical viewer for genomes, a genome browser, hosted by the University of California, Santa Cruz (UCSC). The interactive website offers access to genome sequence data from a variety of vertebrate and invertebrate species and major model organisms, integrated with a large collection of aligned annotations. This dataset is a copy of the MySQL tables in MyISAM binary and tab-sep format and all binary files in custom formats, sometimes referred as 'gbdb'-files. Data from the UCSC Genome Browser is free and open for use by anyone. However, every genome annotation track has been created by an academic research group, or, in a few cases, by commercial companies. Please acknowledge them by citing them. The information can be found by going to https://genome.ucsc.edu, selecting the respective genome assembly and clicking on the data track. At the end of the documentation, we provide a list of references and acknowledgements."
+Documentation: https://hgdownload.soe.ucsc.edu/downloads.html
+Contact: https://genome.ucsc.edu/contacts.html
+ManagedBy:  University of California Santa Cruz Genome Institute
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - genetic
+  - genomic
+  - life sciences
+  - bioinformatics
+  - biology
+License: "[Public domain, some tracks require attribution](https://genome.ucsc.edu/license/)"
+Resources:
+  - Description: https://genome.ucsc.edu/FAQ/FAQformat.html
+    ARN: arn:aws:s3:::genome-browser
+    Region: us-east-1
+    Type: S3 Bucket

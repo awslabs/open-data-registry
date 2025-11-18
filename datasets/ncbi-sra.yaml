@@ -1,0 +1,69 @@
+Name: NIH NCBI Sequence Read Archive (SRA) on AWS
+Description:  "The Sequence Read Archive (SRA), produced by the [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/) at the [National Library of Medicine (NLM)](http://nlm.nih.gov/) at the [National Institutes of Health (NIH)](http://www.nih.gov/), stores raw DNA sequencing data and alignment information from high-throughput sequencing platforms. The SRA provides open access to these biological sequence data to support the research community's efforts to enhance reproducibility and make new discoveries by comparing data sets. Buckets in this registry contain public SRA data in the original (user submitted) format from select high value and newly-released studies as well as all public-access SRA formatted ETL+BQS data. Also included is all SRA metadata that can be leveraged for attribute-based data discovery."
+Contact: sra@ncbi.nlm.nih.gov
+Documentation: https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/
+ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - life sciences
+  - genetic
+  - genomic
+  - whole genome sequencing
+  - whole exome sequencing
+  - transcriptomics
+  - fastq
+  - bam
+  - cram
+  - STRIDES
+License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket. This is the first of two S3 buckets for source submissions from sequencing methodologies such as PacBio, Oxford Nanopore Technologies, and 10X Genomics.
+    ARN: arn:aws:s3:::sra-pub-src-1
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: .bam, .cram, and .fastq files in a public S3 bucket. This is the second of two S3 buckets for source submissions from sequencing methodologies such as PacBio, Oxford Nanopore Technologies, and 10X Genomics.
+    ARN: arn:aws:s3:::sra-pub-src-2
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: ".sra files in a public S3 bucket. This bucket contains all open access SRA submissions in the SRA Normalized format with full base quality scores. The SRA Toolkit will be required to convert these objects into FASTQ or SAM files. Note that this bucket is updated on a daily basis, however, there may be a one to two day lag between accessions being findable via the [SRA Search](https://www.ncbi.nlm.nih.gov/sra/advanced) and being accessible in this S3 bucket."
+    ARN: arn:aws:s3:::sra-pub-run-odp
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: ".sra files in a controlled-access S3 bucket. This bucket contains controlled-access dbGaP submissions in the SRA Normalized format with full base quality scores. The SRA Toolkit will be required to convert these objects into FASTQ or SAM files. Note that this bucket is updated on a daily basis, however, there may be a one to two day lag between accessions being findable via the [SRA Search](https://www.ncbi.nlm.nih.gov/sra/advanced) and being accessible in this S3 bucket."
+    ARN: arn:aws:s3:::sra-ca-run-odp
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login
+  - Description: "Metadata files for the Sequence Read Archive, ready to load into [AWS Glue](https://aws.amazon.com/glue/) and query with [Amazon Athena](https://aws.amazon.com/athena/)."
+    ARN: arn:aws:s3:::sra-pub-metadata-us-east-1/sra/metadata
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: "Update notifications for s3://sra-pub-run-odp. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:us-east-1:867126678632:sra-pub-run-odp-objects
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: SRA in the Cloud
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+    - Title: Access SRA data using Amazon Web Services (AWS)
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-aws-download/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+    - Title: Get started with the SRA and Amazon Athena
+      URL: https://www.ncbi.nlm.nih.gov/sra/docs/sra-athena/
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Tools & Applications:
+    - Title: SRA Toolkit
+      URL: https://github.com/ncbi/sra-tools
+      AuthorName: NCBI SRA
+      AuthorURL: https://www.ncbi.nlm.nih.gov/sra/
+  Publications:
+    - Title: The Sequence Read Archive
+      URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3013647/
+      AuthorName: Leinonen et al (2011)
+      AuthorURL: https://www.ncbi.nlm.nih.gov/pubmed/?term=Leinonen%20R%5BAuthor%5D&cauthor=true&cauthor_uid=21062823

@@ -1,0 +1,29 @@
+Name: Boltz-1 Training Data
+Description: |
+  This is the data used to train the Boltz-1 model. It contains the following datasets:
+    - Our pre-processed version of the Protein Data Bank
+    - Our pre-processed version of the multiple sequence alignment data for each protein chain
+    - The raw multiple sequence alginment data.
+    - A pre-computed symmetry file for symmetry correction during training
+Documentation: https://github.com/jwohlwend/boltz/blob/main/docs/training.md
+Contact: jwohlwend@csail.mit.edu
+ManagedBy: MIT CSAIL - Regina Barzilay Group
+UpdateFrequency: None
+Tags:
+  - deep learning
+  - protein folding
+  - molecular docking
+  - open source software
+  - life sciences
+License: MIT License
+Resources:
+  - Description: S3 Bucket containing the Boltz-1 data
+    ARN: arn:aws:s3:::boltz1
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "Boltz-1: Democratizing Biomolecular Interaction Modeling"
+      URL: https://www.biorxiv.org/content/10.1101/2024.11.19.624167v1.full.pdf
+      AuthorName: J Wohlwend, G Corso, S Passaro, M Reveiz, K Leidal, W Swiderski, T Portnoi, I Chinn, J Silterra, T Jaakkola, R Barzilay
+

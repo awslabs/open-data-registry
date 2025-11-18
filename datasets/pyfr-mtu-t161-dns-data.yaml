@@ -1,0 +1,23 @@
+Name: High-Order Accurate Direct Numerical Simulation of Flow over a MTU-T161 Low Pressure Turbine Blade
+Description: The archive comprises snapshot, point-probe, and time-average data produced via a high-fidelity computational simulation of turbulent air flow over a low pressure turbine blade, which is an important component in a jet engine. The simulation was undertaken using the open source PyFR flow solver on over 5000 Nvidia K20X GPUs of the Titan supercomputer at Oak Ridge National Laboratory under an INCITE award from the US DOE. The data can be used to develop an enhanced understanding of the complex three-dimensional unsteady air flow patterns over turbine blades in jet engines. This could in turn lead to design of greener more fuel efficient aircraft. It could also be used to train a next-generation of Reynolds Averaged Navier-Stokes turbulence models via a machine learning approach, which would have broad applicability to a wide range of science and engineering problems.
+Documentation: http://pyfr-mtu-t161-dns-data.s3-website-us-west-2.amazonaws.com/
+Contact: info@pyfr.org
+ManagedBy: http://www.pyfr.org
+UpdateFrequency: Periodically
+Tags:
+  - aws-pds  
+  - computational fluid dynamics
+  - low-pressure turbine
+  - green aviation
+  - turbulence
+License: CC BY 2.0
+Resources:
+  - Description: Data files
+    ARN: arn:aws:s3:::pyfr-mtu-t161-dns-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: High-Order Accurate Direct Numerical Simulation of Flow over a MTU-T161 Low Pressure Turbine Blade
+      URL: https://doi.org/10.1016/j.compfluid.2021.104989
+      AuthorName: A. S. Iyer, Y. Abe, B. C. Vermeire, P. Bechlars, R. D. Baier, A. Jameson, F. D. Witherden, and P. E. Vincent

@@ -1,0 +1,47 @@
+Name: PALSAR-2 ScanSAR CARD4L (L2.2)
+Description: |
+  The 25 m PALSAR-2 ScanSAR is normalized backscatter data of PALSAR-2 broad area observation mode with observation width of 350 km.
+    The SAR imagery was ortho-rectificatied and slope corrected using the ALOS World 3D - 30 m (AW3D30) Digital Surface Model.
+    Polarization data are stored as 16-bit digital numbers (DN).
+    The DN values can be converted to gamma naught values in decibel unit (dB) using the following equation:
+    γ0 = 10*log10(DN2) - 83.0 dB
+    CARD4L stands for CEOS Analysis Ready Data for Land (Level 2.2) data are ortho-rectified and radiometrically terrain-corrected.
+    This dataset is compatible with the [Committee on Earth Observation (CEOS)](https://ceos.org/) [Analysis Ready Data for LAND (CARD4L)](https://ceos.org/ard/files/PFS/NRB/v5.5/CARD4L-PFS_NRB_v5.5.pdf) standard.<br/><br/>
+    
+Documentation: https://www.eorc.jaxa.jp/ALOS/en/dataset/palsar2_l22_e.htm
+Contact: aproject@jaxa.jp
+ManagedBy: "[JAXA](https://www.jaxa.jp/)"
+UpdateFrequency: Every month after 42 days observed 
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - disaster response
+  - synthetic aperture radar
+  - deafrica
+  - stac
+  - cog
+License: |
+  Data is available for free under the [terms of use](https://earth.jaxa.jp/policy/en.html).
+Resources:
+  - Description: PALSAR-2 ScanSAR CARD4L
+    ARN: arn:aws:s3:::jaxaalos2/palsar2/L2.2/Africa/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False   
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  Publications:
+    - Title: "ALOS series Open and Free Data"
+      URL: https://www.eorc.jaxa.jp/ALOS/en/dataset/alos_open_and_free_e.htm
+      AuthorName: JAXA EORC
+

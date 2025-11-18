@@ -1,0 +1,45 @@
+Name: NASA / USGS Lunar Orbiter Laser Altimeter Cloud Optimized Point Cloud 
+Description: |
+  The lunar orbiter laser altimeter (LOLA) has collected and released almost 7 billion individual laser altimeter returns from the lunar surface. This dataset includes individual altimetry returns scraped from the Planetary Data System (PDS) LOLA Reduced Data Record (RDR) Query Tool, V2.0. Data are organized in 15˚ x 15˚ (longitude/latitude) sections, compressed and encoded into the Cloud Optimized Point Cloud (COPC) file format, and collected into a Spatio-Temporal Asset Catalog (STAC) collection for query and analysis. The data are in latitude, longitude, and radius (X, Y, Z) format with the proper IAU 2015 30100 well-known text projection string. These data are in the -180 to 180, center longitude 0 domain. Users of this data set are encouraged to use the Point Data Abstract Library (PDAL) STAC driver to query at the collection level or the COPC driver to query individual COPC tiles within the dataset. Queries of these data using bounding boxes, buffered points, or other geometries should use the -180 to 180 longitude domain (converting from 0-360, clone 180 as needed).
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/moon/lola/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: Intermittent as new LOLA RDR data are released and processing capabilities become available.
+Tags:
+  - aws-pds
+  - planetary
+  - elevation
+  - lidar
+  - stac
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P9V5JIWH
+Resources:
+  - Description: Lunar Orbiter Laser Altimeter (LOLA) Reduced Data Record (RDR) point cloud in Cloud Optimized Point Cloud (COPC) format.
+    ARN: arn:aws:s3:::astrogeo-ard/moon/lro/lola/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/api/collections/lunar_orbiter_laser_altimeter)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors
+    - Title: Point Data Abstraction Library (PDAL)
+      URL: https://pdal.io/
+      AuthorName: PDAL Contributors
+      AuthorURL: https://github.com/PDAL/PDAL

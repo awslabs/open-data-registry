@@ -1,0 +1,58 @@
+Name: 2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File
+Description: |
+  The 2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File (NMF) is an intermediate output of the 2020 Census Disclosure Avoidance System (DAS) TopDown Algorithm (TDA) (as described in Abowd, J. et al [2022] https://doi.org/10.1162/99608f92.529e3cb9, and implemented in the [DAS 2020 Redistricting Production Code](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code)). The NMF was generated using [the Census Bureau's implementation](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code/blob/289ee463936a6f0efcf2e378abe410ec01d0e140/source/programs/engine/primitives.py#L183) of the [Discrete Gaussian Mechanism](https://arxiv.org/abs/2004.00010), calibrated to satisfy [zero-Concentrated Differential Privacy](https://arxiv.org/abs/1605.02065) with [bounded neighbors](https://dl.acm.org/doi/10.1145/1989323.1989345).
+  <br/>
+    <br/>
+  The NMF values, called **noisy measurements** are the output of applying the Discrete Gaussian Mechanism to counts from the 2020 Census Edited File (CEF). They are generally inconsistent with one another (for example, in a county composed of two tracts, the noisy measurement for the county's total population may not equal the sum of the noisy measurements of the two tracts' total population), and frequently negative (especially when the population being measured was small), but are integer-valued. The NMF was later post-processed as part of the DAS code to take the form of microdata and to satisfy various constraints. The NMF documented here contains both the noisy measurements themselves as well as the data needed to represent the DAS constraints; thus, the NMF could be used to reproduce the steps taken by the DAS code to produce microdata from the noisy measurements by applying [the production code base](https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code/blob/289ee463936a6f0efcf2e378abe410ec01d0e140/source/).
+  <br/>
+  <br/>
+  The 2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File includes zero-Concentrated Differentially Private (zCDP) (Bun, M. and Steinke, T [2016]) noisy measurements, implemented via the discrete Gaussian mechanism. These are estimated counts of individuals and housing units included in the 2020 Census Edited File (CEF), which includes confidential data initially collected in the 2020 Census of Population and Housing. The noisy measurements included in this file were subsequently post-processed by the TopDown Algorithm (TDA) to produce the [2020 Census Redistricting Data (P.L. 94-171) Summary File](https://www.census.gov/programs-surveys/decennial-census/about/rdo/summary-files.html).
+  <br/>
+  <br/>
+  The NMF provides estimates of counts of persons in the CEF by various characteristics and combinations of characteristics including their reported race and ethnicity, whether they were of voting age, whether they resided in a housing unit or one of 7 group quarters types, and their census block of residence after the addition of discrete Gaussian noise (with the scale parameter determined by the privacy-loss budget allocation for that particular query under zCDP). Noisy measurements of the counts of occupied and vacant housing units by census block are also included. Lastly, data on constraints--information into which no noise was infused by the Disclosure Avoidance System (DAS) and used by the TDA to post-process the noisy measurements into the 2020 Census Redistricting Data (P.L. 94-171) Summary File --are provided.
+Documentation:
+  "[2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File README File](https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/00-2020-Redistricting-Noisy-Measurement-File/2020%20Redistricting%20NMF%202023-06-15%20README.html)"
+Contact: 2020DAS@census.gov
+ManagedBy: "[United States Census Bureau](http://www.census.gov/)"
+UpdateFrequency: Not Updated
+Tags:
+  - aws-pds
+  - census
+  - differential privacy
+  - disclosure avoidance
+  - ethnicity
+  - group quarters
+  - housing
+  - housing units
+  - noisy measurements
+  - population
+  - race
+  - redistricting
+  - voting age
+License: CC0 1.0 Universal
+Citation:
+  Abowd, J. M., Ashmead, R., Cumings-Menon, R., Garfinkel, S., Heineck, M., Heiss, C., Johns, R., Kifer, D., Leclerc, P., Machanavajjhala, A., Moran, B., Sexton, W., Spence, M., & Zhuravlev, P. (2023). 2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File [https://registry.opendata.aws/census-2020-pl94-nmf/].
+Resources:
+  - Description: The 2020 Census Redistricting Data (P.L. 94-171) Noisy Measurement File
+    ARN: arn:aws:s3:::uscb-2020-product-releases/decennial/redistricting/2020/nmf/2020-pl94-nmf-state-partitioned
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "Census Open Data S3 Inventory"
+    ARN: arn:aws:s3:::uscb-opendata-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: The 2020 Census Disclosure Avoidance System Topdown Algorithm
+      URL: https://doi.org/10.1162/99608f92.529e3cb9
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel,
+        S., Heineck, M., Heiss, C., Johns, R., Kifer, D., Leclerc,
+        P., Machanavajjhala, A., Moran, B., Sexton, W., Spence, M.,
+        Zhuravlev, P.
+    - Title: Geographic Spines in the 2020 Census Disclosure Avoidance System
+      URL: https://doi.org/10.48550/arXiv.2203.16654
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel, S., Heineck,
+        M., Heiss, C., Johns, R., Kifer, D., Leclerc, P., Machanavajjhala,
+        A., Moran, B., Sexton, W., Spence, M., Zhuravlev, P.

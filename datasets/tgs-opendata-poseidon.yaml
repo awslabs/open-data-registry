@@ -1,0 +1,38 @@
+Name: Poseidon 3D Seismic, Australia
+Description: |
+  Near, mid, far, full stack (with AGC) imaged 3D seismic data. We also include the decimated
+  stacking velocity field. The dataset is used in oil and gas exploration. Survey size is
+  approximately 2,900 km2.
+
+  Coordinate system used is: GDA94 / MGA Zone 51 Petrel, 700004
+
+  Datasets are converted to open-source MDIO format (v1 specification).
+
+  Original SEG-Y files are licensed as CC BY 3.0 AU and are downloaded from
+  [Google Drive](https://drive.google.com/drive/folders/0B7brcf-eGK8Cbk9ueHA0QUU4Zjg?resourcekey=0-njGYrj9ZlE751Oi1-89sOg)
+  accessed via [SEG Open Data Wiki](https://wiki.seg.org/wiki/Open_data). The datasets are available
+  courtesy of ConocoPhillips and Geoscience Australia. Raw data can be requested from Geoscience
+  Australia's [NOPIMS](https://nopims.dmp.wa.gov.au/Nopims/) systems.
+Documentation: TBD
+Contact: |
+  For any questions regarding the datasets and MDIO, email the TGS Open Data Team at opendata@tgs.com.
+ManagedBy: "[TGS](https://www.tgs.com)"
+UpdateFrequency: Dataset is static.
+Tags:
+  - seismology
+  - geophysics
+  - exploration
+License: CC BY 4.0
+Resources:
+  - Description: Poseidon 3D Seismic MDIO volumes and Reports
+    ARN: arn:aws:s3:::tgs-opendata-poseidon
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://tgs-opendata-poseidon.s3.amazonaws.com/index.html)"
+DataAtWork:
+  Tools & Applications:
+    - Title: MDIO
+      URL: https://mdio.dev
+      AuthorName: TGS
+      AuthorURL: https://www.tgs.com

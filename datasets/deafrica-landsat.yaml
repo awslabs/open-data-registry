@@ -1,0 +1,92 @@
+Name: Digital Earth Africa Landsat Collection 2 Level 2
+Description: |
+  Digital Earth Africa (DE Africa) provides free and open access to a copy of Landsat Collection 2 Level-2 products over Africa. These products are produced and provided by the United States Geological Survey (USGS).
+  The Landsat series of Earth Observation satellites, jointly led by USGS and NASA, have been continuously acquiring images of the Earth’s land surface since 1972. DE Africa provides data from Landsat 5, 7 and 8 satellites, including historical observations dating back to late 1980s and regularly updated new acquisitions.
+  New Level-2 Landsat 7 and Landsat 8 data are available after 15 to 27 days from acquisition. See Landsat Collection 2 Generation Timeline for details.
+  USGS Landsat Collection 2 was released early 2021 and offers improved processing, geometric accuracy, and radiometric calibration compared to previous Collection 1 products. The Level-2 products are endorsed by the Committee on Earth Observation Satellites (CEOS) to be Analysis Ready Data for Land (CARD4L)-compliant. This internationally recognized certification ensures these products have been processed to a minimum set of requirements and organized into a form that allows immediate analysis with a minimum of additional user effort and interoperability both through time and with other datasets.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_SR_specs.html https://docs.digitalearthafrica.org/en/latest/data_specs/Landsat_C2_ST_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New Landsat data are added regularly, usually within a few hours of them being available in the usgs-landsat bucket.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - disaster response
+  - deafrica
+  - stac
+  - cog
+License: |
+  There are no restrictions on Landsat data downloaded from the USGS; it can be used or 
+  redistributed as desired. USGS request that you include a [statement of the data source](https://www.usgs.gov/centers/eros/data-citation?qt-science_support_page_related_con=0#qt-science_support_page_related_con) 
+  when citing, copying, or reprinting USGS Landsat data or images.
+Resources:
+  - Description: Landsat scenes and metadata
+    ARN: arn:aws:s3:::deafrica-landsat
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files"
+    ARN: arn:aws:s3:::deafrica-landsat-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC ST and SR record for each new Item    
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-scene-topic
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by deafrica-landsat s3 bucket all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-landsat-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (LS8 Surface Reflectance)"
+      URL: https://explorer.digitalearth.africa/products/ls8_sr
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (LS8 Surface Temperature)"
+      URL: https://explorer.digitalearth.africa/products/ls8_st
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (LS7 Surface Reflectance)"
+      URL: https://explorer.digitalearth.africa/products/ls7_sr
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (LS7 Surface Temperature)"
+      URL: https://explorer.digitalearth.africa/products/ls7_st
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (LS5 Surface Reflectance)"
+      URL: https://explorer.digitalearth.africa/products/ls5_sr
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer (LS5 Surface Temperature)"
+      URL: https://explorer.digitalearth.africa/products/ls5_st
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: ESRI
+  Publications:
+    - Title: "Introduction to DE Africa"
+      URL: https://youtu.be/Wkf7N6O9jJQ
+      AuthorName: Dr Fang Yuan 

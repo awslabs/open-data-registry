@@ -1,0 +1,72 @@
+Name: Clinical Proteomic Tumor Analysis Consortium 2 (CPTAC-2)
+Description: |
+  The Clinical Proteomic Tumor Analysis Consortium (CPTAC) is a national effort to accelerate the
+  understanding of the molecular basis of cancer through the application of large-scale proteome and
+  genome analysis, or proteogenomics. CPTAC-2 is the Phase II of the CPTAC Initiative (2011-2016).
+  Datasets contain open RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression
+  Quantification, and miRNA Expression Quantification data.
+Documentation: https://cptac-data-portal.georgetown.edu/cptac/public?scope=Phase+II+%2525
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - transcriptomics
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: |
+      RNA-Seq Gene Expression Quantification, miRNA-Seq Isoform Expression Quantification, miRNA-Seq
+      miRNA Expression Quantification
+    ARN: arn:aws:s3:::gdc-cptac-2-phs000892-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/CPTAC-2
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+    - Title: Proteomic Data Commons
+      URL: https://pdc.esacinc.com/pdc/browse
+      AuthorName: National Cancer Institute
+      AuthorURL: https://pdc.esacinc.com/pdc
+    - Title: CPTAC Data Portal
+      URL: https://proteomics.cancer.gov/data-portal
+      AuthorName: National Cancer Institute
+      AuthorURL: https://proteomics.cancer.gov/
+    - Title: Cancer Genomics Cloud
+      URL: https://cgc-accounts.sbgenomics.com/
+      AuthorName: Seven Bridges
+      AuthorURL: http://www.cancergenomicscloud.org/
+  Publications:
+    - Title: Integrated Proteogenomic Characterization of Human High-Grade Serous Ovarian Cancer
+      URL: https://doi.org/10.1016/j.cell.2016.05.069
+      AuthorName: |
+        Hui Zhang, Tao Liu, Zhen Zhang, Samuel H. Payne, Bai Zhang, Jason E. McDermott, Jian-Ying
+        Zhou, Vladislav A. Petyuk, Li Chen, Debjit Ray, Shisheng Sun, Feng Yang, Lijun Chen, Jing
+        Wang, Punit Shah, Seong Won Cha, Paul Aiyetan, Sunghee Woo, Yuan Tian, Marina A. Gritsenko,
+        Therese R. Clauss, Caitlin Choi, Matthew E. Monroe, Stefani Thomas, Song Nie, Chaochao Wu,
+        Ronald J. Moore, Kun-Hsing Yu, David L. Tabb, David Fenyö, Vineet Bafna, Yue Wang, Henry
+        Rodriguez, Emily S. Boja, Tara Hiltke, Robert C. Rivers, Lori Sokoll, Heng Zhu, Ie-Ming
+        Shih, Leslie Cope, Akhilesh Pandey, Bing Zhang, Michael P. Snyder, Douglas A. Levine,
+        Richard D. Smith, Daniel W. Chan, Karin D. Rodland, the CPTAC Investigators
+    - Title: Proteogenomic Analysis of Human Colon Cancer Reveals New Therapeutic Opportunities
+      URL: https://doi.org/10.1016/j.cell.2019.03.030
+      AuthorName: |
+        Suhas Vasaikar, Chen Huang, Xiaojing Wang. Vladislav A. Petyuk, Sara R. Savage, Bo Wen,
+        Yongchao Dou, Yun Zhang, Zhiao Shi, Osama A. Arshad, Marina A. Gritsenko, Lisa J. Zimmerman,
+        Jason E. McDermott, Therese R. Clauss, Ronald J. Moore, Rui Zhao, Matthew E. Monroe, Yi-Ting
+        Wang, Matthew C. Chambers, Robbert J.C. Slebos, Ken S. Lau, Qianxing Mo, Li Ding, Matthew
+        Ellis, Mathangi Thiagarajan, Christopher R. Kinsinger, Henry Rodriguez, Richard D. Smith,
+        Karin D. Rodland, Daniel C. Liebler, Tao Liu, Bing Zhang, Clinical Proteomic Tumor Analysis
+        Consortium
+    - Title: |
+        Proteomic analysis of colon and rectal carcinoma using standard and customized databases
+      URL: https://doi.org/10.1038/sdata.2015.22
+      AuthorName: Slebos RJ, Wang X, Wang X, Zhang B, Tabb DL, Liebler DC

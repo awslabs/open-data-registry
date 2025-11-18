@@ -1,0 +1,48 @@
+Name: Orcasound - bioacoustic data for marine conservation
+Description: Live-streamed and archived audio data (~2018-present) from underwater microphones (hydrophones) containing marine biological signals as well as ambient ocean noise. Hydrophone placement and passive acoustic monitoring effort prioritizes detection of orca sounds (calls, clicks, whistles) and potentially harmful noise. Geographic focus is on the US/Canada critical habitat of Southern Resident killer whales (northern CA to central BC) with initial focus on inland waters of WA. In addition to the raw lossy or lossless compressed data, we provide a growing archive of annotated bioacoustic bouts.
+Documentation: https://github.com/orcasound/orcadata/wiki
+Contact: info@orcasound.net
+ManagedBy: Orcasound
+UpdateFrequency: Typical latency is 10-120 seconds
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
+Tags:
+  - aws-pds
+  - biodiversity
+  - biology
+  - coastal
+  - conservation
+  - deep learning
+  - ecosystems
+  - environmental
+  - geospatial
+  - labeled
+  - machine learning
+  - mapping
+  - oceans
+  - open source software
+  - signal processing
+License: https://creativecommons.org/licenses/by-nc-sa/4.0/ 
+Resources:
+  - Description: Live-streamed orca audio data (HLS)
+    ARN: arn:aws:s3:::streaming-orcasound-net
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Archived lossless orca audio data (FLAC)
+    ARN: arn:aws:s3:::archive-orcasound-net
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Labeled audio data for ML model development
+    ARN: arn:aws:s3:::acoustic-sandbox
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Github for our open source projects
+      URL: https://www.github.com/orcasound
+      AuthorName: Orcasound open source community
+      AuthorURL: https://www.orcasound.net/support/#hack
+
+    

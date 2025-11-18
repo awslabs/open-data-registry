@@ -1,0 +1,49 @@
+Name: "CAM6 Data Assimilation Research Testbed (DART) Reanalysis: Cloud-Optimized Dataset"
+Description: >
+  This is a cloud-hosted subset of the CAM6+DART (Community Atmosphere Model version 6 Data Assimilation Research Testbed) Reanalysis dataset. These data products are designed to facilitate a broad variety of research using the NCAR CESM 2.1 (National Center for Atmospheric Research's Community Earth System Model version 2.1), including model evaluation, ensemble hindcasting, data assimilation experiments, and sensitivity studies. They come from an 80 member ensemble reanalysis of the global troposphere and stratosphere using DART and CAM6. The data products represent states of the atmosphere consistent with observations from 2011 through 2019 at 1 degree horizontal resolution and weekly frequency. Each ensemble member is an equally likely description of the atmosphere, and is also consistent with dynamics and physics of CAM6. The dataset also contains corresponding land surface values at 6-hourly frequency.  This dataset is a reformatting, with no change to numerical values, of data from the "CAM6 Data Assimilation Research Testbed (DART) Reanalysis", [DOI:10.5065/JG1E-8525](https://doi.org/10.5065/JG1E-8525).
+Documentation: https://doi.org/10.26024/sprq-2d04
+Contact: rdahelp@ucar.edu
+ManagedBy: "[National Center for Atmospheric Research](https://ncar.ucar.edu/)"
+UpdateFrequency: Rare.  Additional variables or years outside of 2011-2019 may be added in the future.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - atmosphere
+  - land
+  - climate
+  - climate model
+  - data assimilation
+  - forecast
+  - meteorological
+  - weather
+  - geoscience
+  - geospatial
+  - aws-pds
+  - zarr
+License: https://www.ucar.edu/terms-of-use/data
+Resources:
+  - Description: Project data files
+    ARN: arn:aws:s3:::ncar-dart-cam6
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Jupyter Notebook and other documentation and tools for DART Reanalysis on AWS
+      URL: https://github.com/NCAR/ncar-dart-cam6
+      AuthorName: NCAR Science at Scale team
+    - Title: Rendered (static) version of Jupyter Notebook
+      URL: https://ncar-dart-cam6.s3-us-west-2.amazonaws.com/examples/plot-ensemble-values.html
+      AuthorName: Brian Bonnlander, NCAR
+    - Title: Intake-ESM Catalog
+      URL: https://ncar-dart-cam6.s3-us-west-2.amazonaws.com/catalogs/aws-dart-cam6.json
+      AuthorName: Brian Bonnlander, NCAR 
+  Tutorials:
+    - Title: Analyzing large climate model ensembles in the cloud
+      URL: https://medium.com/pangeo/cesm-lens-on-aws-4e2a996397a1
+      AuthorName: Joe Hamman, NCAR
+  Publications:
+    - Title: A new CAM6 + DART reanalysis with surface forcing from CAM6 to other CESM models
+      URL: https://doi.org/10.1038/s41598-021-92927-0
+      AuthorName: Raeder, K., Hoar, T.J., El Gharamti, M. et al (2021)
