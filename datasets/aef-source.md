@@ -5,6 +5,7 @@ Contact: https://cloudnativegeo.org/join
 ManagedBy: "[Source Cooperative](https://source.coop/)"
 UpdateFrequency: As new data versions become available
 Tags:
+  - aws-pds
   - machine learning
   - satellite imagery
   - aerial imagery
