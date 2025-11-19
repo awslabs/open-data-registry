@@ -1,0 +1,45 @@
+Name: ICEYE Synthetic Aperture Radar (SAR) Open Dataset
+Description: |
+  ICEYE operates the world’s largest constellation of synthetic aperture radar (SAR) satellites, delivering unmatched access to persistent, high-resolution Earth observation data regardless of time of day or weather conditions. The ICEYE Open Dataset makes a curated selection of SAR imagery publicly available to promote research, innovation, and education in the geospatial community. ICEYE’s constellation enables rapid revisit rates and flexible imaging modes, unlocking insights into natural disasters, climate monitoring, infrastructure, and more.
+
+  Learn more at [www.iceye.com](https://www.iceye.com).
+Documentation: Documentation is available at the [ICEYE website](https://www.iceye.com) and the [ICEYE Product Documentation](sar.iceye.com).
+Contact: customer@iceye.com
+ManagedBy: "[ICEYE](https://www.iceye.com)"
+UpdateFrequency: New data is added frequently.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - synthetic aperture radar
+  - stac
+  - earth observation
+  - satellite imagery
+  - image processing
+  - geospatial
+  - computer vision
+  - disaster response
+License: |
+  The data is provided under the Creative Commons License [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which gives the user the right to share, copy, and redistribute the material in any medium or format, as well as adapt, remix, transform, and build upon the material for any purpose, even commercially, as long as appropriate credit is given to the original creator.
+Resources:
+  - Description: ICEYE Open SAR Data
+    ARN: arn:aws:s3:::iceye-open-data-catalog
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[Browse bucket](http://iceye-open-data-catalog.s3-website-us-west-2.amazonaws.com)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/iceye-open-data-catalog.s3-us-west-2.amazonaws.com/catalog.json)'
+  - Description: Notification for new ICEYE Open SAR Data
+    ARN: arn:aws:sns:us-west-2:058264311954:iceye-open-data-catalog-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: ICEYE Product Documentation
+      URL: sar.iceye.com
+      AuthorName: ICEYE
+      AuthorURL: https://www.iceye.com
+      
