@@ -20,6 +20,10 @@ Resources:
     ARN: arn:aws:s3:::colorado-public-imagery
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for real-time data updates
+    ARN: arn:aws:sns:us-west-2:180294215083:colorado-public-imagery-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Colorado AWS Open Imagery Guide
