@@ -1,0 +1,31 @@
+name: Test Dataset Validation
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Needed for git log in add_metadata.sh
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Add metadata
+      run: bash _scripts/add_metadata.sh
+    
+    - name: Run tests
+      run: bash _scripts/test.sh
