@@ -1,0 +1,44 @@
+Name: NUVIEW - Multi-State Geospatial Data
+Description: |
+  NUVIEW hosts and manages a unified collection of geospatial datasets from multiple U.S. states and agencies
+  (LiDAR, orthophoto imagery, DEM/DSM, and derivative products). Data are organized in a
+  single S3 bucket with a logical sub-folder hierarchy: `/state_or_agency_product_type/acqusition_project_name/...`. All assets
+  are cloud-optimized (COG GeoTIFFs, COPC (Cloud Optimized Point Cloud) LAZ point clouds, etc.) and available under open licenses.
+Documentation: Documentation is available for this data at the [s22s/nuview-state-opendata GitHub repository](https://github.com/s22s/nuview-state-opendata) maintained by NUVIEW.
+Contact: support@nuview.space
+ManagedBy: "[NUVIEW](https://nuview.space/)"
+UpdateFrequency: Project-based updates.
+Tags:
+  - geospatial
+  - satellite imagery
+  - natural resource
+  - sustainability
+  - disaster response
+  - digital elevation model
+  - lidar
+License: CC0 "Public Domain" (or state/agency-specific open data licenses)
+Resources:
+  - Description: Imagery
+    ARN: arn:aws:s3:::nuview-state-opendata
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: True
+  - Description: New data notifications
+    ARN: arn:aws:sns:us-west-2:{TBA}:nuview-state-opendata-events
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to Know a Dataset - NUVIEW State Open Data
+      URL: https://github.com/s22s/nuview-state-opendata/
+      NotebookURL: https://github.com/s22s/nuview-state-opendata/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: NUVIEW, Inc.
+      AuthorURL: https://nuview.space
+  Tools & Applications:
+    - Title: NUVIEW Geospatial Platform for Alaska
+      URL: https://alaska.nuview.space/
+      AuthorName: NUVIEW, Inc.
+      AuthorURL: https://nuview.space
+ADXCategories:
+  - Environmental Data
+  - Public Sector Data
