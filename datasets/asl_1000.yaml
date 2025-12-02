@@ -5,28 +5,6 @@ This dataset provides a high-fidelity collection of American Sign Language (ASL)
 
 The annotations for this dataset were generated using an automated data pipeline to pre-annotate keyframes from the source videos. As a final, critical step, all automated annotations were subsequently reviewed and meticulously corrected by human labellers to ensure the highest level of accuracy and reliability, making it suitable for training production-grade machine learning models.
 
-Annotation Methodology:
-The annotations for this dataset were generated through a comprehensive process, combining automated extraction with human review to ensure the highest quality and accuracy. The specific steps in this process are described below.
-Keyframe Extraction: Raw source videos were processed to extract the most meaningful frames. This step utilized motion analysis (optical flow) and active region detection to identify frames with significant signing activity, which were then refined based on image sharpness.
-Automated Landmark Extraction: Each extracted keyframe was processed by an automated pipeline using Google's MediaPipe to generate a baseline set of annotations:
-Pose Landmarks: 33 full-body pose landmarks were extracted, with a focus on the upper body and scores for visibility and presence.
-Hand Landmarks: 21 high-accuracy landmarks were detected for both the left and right hand, including confidence scores.
-Face Landmarks: A detailed face mesh of 468+ landmarks was extracted where applicable, including 52 blend shape coefficients and 3D transformation matrices.
-Format Conversion and Ingestion: The extracted landmark data was converted into the SuperAnnotate JSON format and ingested into a human annotation workflow.
-Human Verification and Correction: A team of trained human labellers reviewed every keyframe and all associated landmarks. They corrected any errors from the automated detection, improved landmark precision, and ensured temporal consistency.
-
-Dataset Contents and Format:
-The dataset is structured to provide maximum flexibility, from raw media to fully processed annotations. The dataset includes:
-Raw Videos: The original source videos
-Extracted Keyframes: The raw, individual image frames, extracted by the pipeline's motion analysis step.
-Annotation Files: JSON files for body, face, and hand landmarks.
-
-Potential Applications:
-This dataset is ideal for a variety of tasks, including:
-ASL Recognition and Translation: Training models to understand and translate signed language.
-Gesture and Behavior Analysis: Studying the nuances of human motion and communication.
-Avatar and Animation: Driving realistic 3D avatars and animations using the pose, hand, and facial expression data.
-
 Contact: trustworthyaiprojects@nvidia.com
 ManagedBy: See all datasets managed by NVIDIA Corporation
 UpdateFrequency: New data is added as soon as it is available.
@@ -34,7 +12,7 @@ License: Please see the NVIDIA Dataset License
 DataAtWork:
   Tutorials:
     - Title: NVIDIA Trustworthy AI GitHub
-      URL: https://github.com/NVIDIA/Trustworthy-AI
+      URL: https://github.com/NVIDIA/Trustworthy-AI/blob/main/ASL%20Developer%20Community/notebooks/asl_data_pipeline.ipynb
 Resources:
   - Description: ASL 1000 Data
     ARN: arn:aws:s3:::trustworthyaiproduct
