@@ -1,0 +1,51 @@
+Name: NOAA GFS
+Description: |
+  <div>
+    <p>
+      The Global Forecast System (GFS) is a National Oceanic and Atmospheric
+      Administration (NOAA) National Centers for Environmental Prediction
+      (NCEP) weather forecast model that generates data for dozens of
+      atmospheric and land-soil variables, including temperatures, winds,
+      precipitation, soil moisture, and atmospheric ozone concentration. The
+      system couples four separate models (atmosphere, ocean model, land/soil
+      model, and sea ice) that work together to depict weather conditions.
+      </p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/noaa-gfs-forecast/">NOAA GFS forecast</a> - Weather forecasts from the Global Forecast System (GFS) operated by NOAA NWS NCEP.</li>
+    </ul>
+  </div>
+Documentation: https://dynamical.org/catalog/gfs/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA GFS forecast: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA GFS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-gfs
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-gfs.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-gfs-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: NOAA GFS forecast python quickstart notebook
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-forecast-icechunk.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-forecast-icechunk.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
