@@ -26,6 +26,10 @@ Resources:
     ARN: arn:aws:s3:::igvf-public
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for new IGVF data
+    ARN: arn:aws:sns:us-west-2:407227577691:igvf-public-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title:Load AnnData files from IGVF into scanpy and view the UMAPs
