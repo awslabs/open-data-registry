@@ -55,6 +55,14 @@ Resources:
     - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-lidar)'
     - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-lidar)'
     - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
+  - Description: High-Resolution Digital Elevation Model (HRDEM) generated from optical stereo imagery for Northern Canada / Modèle numérique d'élévation haute résolution (MNEHR) généré à partir de couple stéréo d'imagerie optique pour le nord du Canada
+    ARN: arn:aws:s3:::canelevation-dem/hrdem-arcticdem/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog](https://datacube.services.geo.ca/stac/api/search?collections=hrdem-arcticdem)'
+    - '[STAC Browser by Radiant Earth](https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/collections/hrdem-arcticdem)'
+    - '[Browse Bucket](https://canelevation-dem.s3.ca-central-1.amazonaws.com/index.html)'
   - Description: Notifications for Canada Digital Elevation Models.
     ARN: arn:aws:sns:ca-central-1:675987781521:canelevation-dem-create-object
     Region: ca-central-1
@@ -84,11 +92,3 @@ DataAtWork:
     - Title: "Descriptor: Medium Resolution Digital Elevation Model From Natural Resources Canada’s CanElevation Series (MRDEM-30)"
       URL: https://doi.org/10.1109/IEEEDATA.2025.3576318
       AuthorName: H. McGrath et al.
-
-
-
-
-
-
-
-

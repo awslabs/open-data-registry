@@ -1,0 +1,51 @@
+Name: ECMWF IFS ENS
+Description: |
+  <div>
+    <p>
+       The Integrated Forecasting System (IFS) is a global forecast model developed 
+       by ECMWF. ENS is an ensemble configuration of IFS, containing 51 ensemble members.
+       IFS consists of a numerical model of the Earth system, which includes
+       an atmospheric model at its heart, coupled with models of other Earth system 
+       components such as the ocean. The data assimilation system combines 
+       the latest weather observations with a recent forecast to obtain the best 
+       possible estimate of the current state of the Earth system.
+      </p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/ecmwf-ifs-ens-forecast-15-day-0-25-degree/">ECMWF IFS ENS Forecast, 15 day, 0.25 degree</a> - Ensemble weather forecasts from the ECMWF Integrated Forecasting System (IFS).</li>
+    </ul>
+  </div>
+Documentation: https://dynamical.org/catalog/models/ecmwf-ifs-ens/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "ECMWF IFS ENS Forecast, 15 day, 0.25 degree: Forecasts initialized every 24 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: ECMWF IFS ENS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-ecmwf-ifs-ens
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-ecmwf-ifs-ens.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-ecmwf-ifs-ens-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: ECMWF IFS ENS Forecast, 15 day, 0.25 degree python quickstart notebook
+      URL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-ifs-ens-forecast-15-day-0-25-degree-icechunk.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-ifs-ens-forecast-15-day-0-25-degree-icechunk.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
