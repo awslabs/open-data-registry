@@ -27,10 +27,12 @@ Tags:
 License: Most Alliance data is available under CC0 1.0 Universal (Public Domain Dedication). Some datasets may use CC-BY 4.0 (attribution required). Full details at https://www.alliancegenome.org/terms-of-use
 Citation: Alliance of Genome Resources Consortium. Alliance of Genome Resources Portal - unified model organism research platform. Nucleic Acids Research (2023). https://doi.org/10.1093/nar/gkac1003
 Resources:
-  - Description: Alliance-wide integrated datasets including disease associations, gene expression, molecular and genetic interactions, orthology relationships, and gene descriptions across all Alliance organisms. Data organized by release version (8.3.0, 8.2.0, etc.) and data type. Includes combined data files and organism-specific collections for FB (FlyBase/Drosophila), MGI (Mouse), RGD (Rat), SGD (Yeast), WB (Worm), XBXL/XBXT (Xenopus), ZFIN (Zebrafish), and HUMAN reference data. Files are available in TSV, JSON, and specialized formats (PSI-MI TAB for interactions, VCF for variants).
-    ARN: arn:aws:s3:::mod-datadumps
+  - Description: Alliance-wide integrated datasets including disease associations, gene expression, molecular and genetic interactions, orthology relationships, gene descriptions, and variants across all Alliance organisms. Data is organized by release version (8.3.0/, 8.2.0/, etc.), then by data type, with organism-specific collections for FB (FlyBase/Drosophila), MGI (Mouse), RGD (Rat), SGD (Yeast), WB (Worm), XBXL/XBXT (Xenopus), ZFIN (Zebrafish), and HUMAN reference data. Available in TSV, JSON, and VCF formats.
+    ARN: arn:aws:s3:::alliance-genome-downloads
     Region: us-east-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://alliance-genome-downloads.s3.amazonaws.com/)'
   - Description: FlyBase-specific data for Drosophila melanogaster and related species, including gene annotations, GO annotations, expression data (bulk RNA-Seq, single-cell RNA-Seq), disease associations, phenotypes, interactions, orthologs, genome sequences (FASTA), and genome annotations (GFF3/GTF). Data organized by release (current/, FB2025_04/, etc.) with precomputed analysis files and complete Chado XML database dumps. Publicly accessible via HTTPS for direct download without AWS credentials.
     ARN: arn:aws:s3:::s3ftp.flybase.org
     Region: us-east-1
