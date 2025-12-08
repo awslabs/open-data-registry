@@ -22,3 +22,9 @@ Resources:
     ARN: arn:aws:s3:::nasa-surya-bench
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for Surya bench data
+    ARN: arn:aws:sns:us-west-2:614929158106:nasa-surya-bench-object_created
+    Region: us-west-2
+    Type: SNS Topic
+    Explore:
+    - '[Browse Bucket](http://nasa-surya-bench.s3.amazonaws.com/index.html)'
