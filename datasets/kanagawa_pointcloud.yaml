@@ -22,10 +22,10 @@ Resources:
     ARN: arn:aws:s3:::kanagawa-pointcloud
     Region: ap-northeast-1
     Type: S3 Bucket
-- Description: Notifications for new kanagawa-pointcloud data
-  ARN: arn:aws:sns:ap-northeast-1:895319340027:kanagawa-pointcloud_created
-  Region: ap-northeast-1
-  Type: SNS Topic
+  - Description: Notifications for new kanagawa-pointcloud data
+    ARN: arn:aws:sns:ap-northeast-1:895319340027:kanagawa-pointcloud_created
+    Region: ap-northeast-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Tutorial of handling LAS format point cloud data
