@@ -22,10 +22,10 @@ Resources:
     ARN: arn:aws:s3:::japan-pointcloud
     Region: ap-northeast-1
     Type: S3 Bucket
-- Description: Notifications for new japan-pointcloud data
-  ARN: arn:aws:sns:ap-northeast-1:250546175908:japan-pointcloud-object_created
-  Region: ap-northeast-1
-  Type: SNS Topic
+  - Description: Notifications for new japan-pointcloud data
+    ARN: arn:aws:sns:ap-northeast-1:250546175908:japan-pointcloud-object_created
+    Region: ap-northeast-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Tutorial of handling LAS format point cloud data
