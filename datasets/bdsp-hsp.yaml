@@ -1,0 +1,137 @@
+Name: The Human Sleep Project
+Description: The Human Sleep Project (HSP) sleep physiology dataset is a growing collection of clinical polysomnography (PSG) recordings. Beginning with PSG recordings from from ~15K patients evaluated at the Massachusetts General Hospital, the HSP will grow over the coming years to include data from >200K patients, as well as people evaluated outside of the clinical setting. This data is being used to develop CAISR (Complete AI Sleep Report), a collection of deep neural networks,  rule-based algorithms, and signal processing approaches designed to provide better-than-human detection of conventional PSG scoring metrics, including sleep stages, arousals, apnea and hypopnea events and their subtypes, and periodic limb movements. Beyond conventional scoring, the HSP dataset is intended to support research seeking to identify "hidden" information within the brain's activity during sleep that can be used to directly measure brain health. These brain health indicators include measures of risk for common neurologic diseases, including cerebrovascular disease, and Alzheimer's disease and related neurodegenerative diseases of aging; and indicators of response to therapies, including lifestyle interventions (e.g. diet, meditation, exercise) and pharmacologic interventions. These data are shared via the BDSP (Brain Data Science Platform, a resource developed by an international coalition of investigators that aggregates and harmonizes a wide range of large-scale human clinical neuroscience data to support research aimed at improving diagnosis, treatment, and prevention of neurologic disease, and promotion of brain health. The summary data provided here are released for the benefit of the wider scientific community without restriction on use.
+Documentation: More documentation can be found [here](https://doi.org/10.60508/r0t9-5r24)
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: "[BDSP Restricted Health Data License 1.0.0](https://bdsp.io/content/hsp/view-license/1.0/); [terms of use](https://github.com/bdsp-core/bdsp-license-and-dua/blob/main/terms-of-use.md)"
+Resources:
+  - Description: The Human Sleep Project (HSP) sleep physiology dataset is a growing collection of clinical polysomnography (PSG) recordings. Beginning with PSG recordings from from ~19K patients evaluated at the Massachusetts General Hospital, the HSP will grow over the coming years to include data from >200K patients, as well as people evaluated outside of the clinical setting.
+    ARN: arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-psg-access-point/PSG/
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/r0t9-5r24
+DataAtWork:
+  Tools & Applications:
+    - Title: The Human Sleep Project
+      URL: https://doi.org/10.60508/r0t9-5r24
+      AuthorName: Westover MB, Moura Junior V, Thomas R, Cash S, Nasiri S, Sun H, et al. 
+      AuthorURL: https://bdsp.io
+  Publications: 
+    - Title:  "Power Law versus Exponential State Transition Dynamics:  Application to Sleep-Wake Architecture. PLoSONE  5(12):  e14204. Dec. 2, 2010. PMCID: PMC2996311." 
+      URL: https://pubmed.ncbi.nlm.nih.gov/21151998/
+      AuthorName: Chu-Shore J, Westover MB, Bianchi MT
+    - Title: "Classification algorithms for predicting sleepiness and sleep apnea severity. Journal of Sleep Research. 2012 Feb;21(1):101-12. PMCID: PMC3698244."
+      URL: https://pubmed.ncbi.nlm.nih.gov/21752133/
+      AuthorName: Eiseman NA, Westover MB, Mietus JE, Thomas RJ, Bianchi MT
+    - Title: "Emergence of stable functional networks in long-term human EEG. The Journal of Neuroscience, Feb 2012; 32(8): 2703-2713. PMCID: PMC3361717."
+      URL: https://pubmed.ncbi.nlm.nih.gov/22357854/
+      AuthorName: Chu-Shore C, Kramer MA,  Pathmanathan J, Bianchi MT, Westover MB,  Wizon L, et al.
+    - Title: "The Impact of Body Posture and Sleep Stages on Sleep Apnea Severity in Adults.  Journal of Clinical Sleep Medicine. 2012 Dec 15;8(6):655-66A. PMCID: PMC3501662."
+      URL: https://pubmed.ncbi.nlm.nih.gov/23243399/
+      AuthorName: Eiseman NA, Westover MB, Ellenbogen JM, Bianchi MT
+    - Title: "Data-Driven Modeling of Sleep States from EEG.  Proceedings of the International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC'12). 2012;2012:5090-3. PMCID: PMC6788787."
+      URL: https://pubmed.ncbi.nlm.nih.gov/23367073/ 
+      AuthorName: Van Esbroeck A, Westover MB
+    - Title: "Insomnia and morning motor vehicle accidents: A decision analysis of the risk of hypnotics versus the risk of untreated insomnia. Journal of Clinical Psychopharmacology. 2014 Jun;34(3):400-402. PMCID: PMC6794095."
+      URL: https://pubmed.ncbi.nlm.nih.gov/24743722/
+      AuthorName: Bianchi MT, Westover MB. 
+    - Title: "Automated Sleep Apnea Quantification Based on Respiratory Movement. International Journal of Medical Sciences 2014; 11(8):796-802. PMCID: PMC4057486."
+      URL: https://pubmed.ncbi.nlm.nih.gov/24936142/
+      AuthorName: Bianchi MT, Lipoma T, Darling C, Alameddine Y, Westover MB.
+    - Title: "Applications of a Capacitor-Based Respiratory Position Sensing Device: Implications for Radiation Therapy. Austin Journal of Medical Oncology 2014;1(2). PMCID: PMC6956860."
+      URL: https://pubmed.ncbi.nlm.nih.gov/31934681/
+      AuthorName: Weng Y, Westover MB, Speier C, Sharp G, Bianchi MT, Westover KD. 
+    - Title: "The Challenge of Undiagnosed Sleep Apnea in Low-Risk Populations: A Decision Analysis. Military Medicine 2014 Aug;179(8S):47-54. PMCID: PMC6788752."
+      URL: https://pubmed.ncbi.nlm.nih.gov/25102549/
+      AuthorName:  Bianchi MT, Hershman S, Bahadoran M, Ferguson M, Westover MB. 
+    - Title: "A cost-effectiveness analysis of nasal surgery to increase CPAP compliance in sleep apnea patients with nasal obstruction. The Laryngoscope. 2017 Apr;127(4):977-983. PMCID: PMC5483184."
+      URL: https://pubmed.ncbi.nlm.nih.gov/27653626/
+      AuthorName: Kempfle J, Westover MB, Bianchi MT.  
+    - Title: "Decision modeling in sleep apnea: the critical roles of pre-test probability, cost of untreated OSA, and time horizon.  Journal of Clinical Sleep Medicine. 2016 Mar;12(3):409-418.  PMCID: PMC4773629."
+      URL: https://pubmed.ncbi.nlm.nih.gov/26518699/
+      AuthorName: Moro M, Westover MB,  Kelly J, Bianchi MT. 
+    - Title: "Alternative remedies for insomnia: a proposed method for personalized therapeutic trials. Nature and Science of Sleep. 2017;9:97-108. PMCID: PMC5364017."
+      URL: https://pubmed.ncbi.nlm.nih.gov/28360539/
+      AuthorName: Romero K, Goparaju B, Russo K, Westover MB, Bianchi MT. 
+    - Title: "Large-Scale Automated Sleep Staging. Sleep. 2017 Oct 1;40(10). doi: 10.1093/sleep/zsx139. PMCID: PMC6251659."
+      URL: https://pubmed.ncbi.nlm.nih.gov/29029305/
+      AuthorName: Sun H, Jian J, Goparaju B, Huang GB, Sourina O, Bianchi MT, et al.
+    - Title: "Expert-level Sleep Scoring with Deep Neural Networks. Journal of the American Medical Informatics Association (JAMIA). 2018 Dec 1;25(12):1643-1650. PMCID: PMC6289549."
+      URL: https://pubmed.ncbi.nlm.nih.gov/30445569/
+      AuthorName: Biswal S, Kulas J, Sun H, Goparaju B, Westover MB*, Bianchi MT*, et al.
+    - Title: "A Systematic Review and Meta-Analysis Examining the Impact of Sleep Disturbance on Postoperative Delirium. Critical Care Medicine. 2018 Dec;46(12):e1204-e1212. PMCID: PMC6274586."
+      URL: https://pubmed.ncbi.nlm.nih.gov/30222634/
+      AuthorName: Fadayomi AB, Ibala R, Bilotta F, Westover MB, Akeju O. 
+    - Title: "Brain Age from the Electroencephalogram of Sleep. Neurobiol Aging. 2019 Feb;74:112-120. PMCID: PMC6478501."
+      URL: https://pubmed.ncbi.nlm.nih.gov/30448611/
+      AuthorName: Sun H, Paixao L, Oliva JT, Goparaju B, Carvalho DZ, van Leeuwen KG, et al. 
+    - Title: "Excess Brain Age Reflected in the Electroencephalogram of Sleep Predicts Reduced Life Expectancy. Neurobiology of Aging. 2019 Dec 23. pii: S0197-4580(19)30443-9. doi: 10.1016/j.neurobiolaging.2019.12.015. PMCID: PMC7085452."
+      URL: https://pubmed.ncbi.nlm.nih.gov/31932049/
+      AuthorName: Paixao L, Sikka P, Sun H, Jain A, Hogan J, Thomas RJ, et al. 
+    - Title: "Effects of cholinergic neuromodulation on thalamocortical rhythms during NREM sleep: a model study. Frontiers in Computational Neuroscience. 2020 Jan 23;13:100. doi: 10.3389/fncom.2019.00100. eCollection 2019. PMCID: PMC6990259."
+      URL: https://pubmed.ncbi.nlm.nih.gov/32038215/
+      AuthorName: Li Q, Song JL, Li SH, Westover MB, Zhang R. 
+    - Title: "Artificial Intelligence in Sleep Medicine: An American Academy of Sleep Medicine Position Statement. Journal of Clinical Sleep Medicine. 2020 Feb 5. doi: 10.5664/jcsm.8288. PMCID: PMC7161449."
+      URL: https://pubmed.ncbi.nlm.nih.gov/32022674/
+      AuthorName: Goldstein CA, Berry RB, Kent DT, Kristo DA, Seixas AA, Redline S, et al.
+    - Title: "Artificial intelligence in sleep medicine: Background and implications for clinicians. Journal of Clinical Sleep Medicine. 2020 Feb 17. doi: 10.5664/jcsm.8388. PMCID: PMC7161463."
+      URL: https://pubmed.ncbi.nlm.nih.gov/32065113/
+      AuthorName: Goldstein CA, Berry RB, Kent DT, Kristo DA, Seixas AA, Redline S, et al. 
+    - Title: "Sleep Staging from Electrocardiography and Respiration with Deep Learning. SLEEP. Sleep. 2020 Jul 13;43(7):zsz306. doi: 10.1093/sleep/zsz306. PMCID: PMC7355395."
+      URL: https://pubmed.ncbi.nlm.nih.gov/31863111/
+      AuthorName: Sun H, Ganglberger W, Panneerselvam E, Leone MJ, Quadri SA, Goparaju B, et al. 
+    - Title: "Sleep EEG-based Brain Age Index is a Biomarker for Dementia. JAMA Network Open. 2020 Sep 1;3(9):e2017357. doi: 10.1001/jamanetworkopen.2020.17357. PMID: 32986106; PMCID: PMC7522697."
+      URL: https://pubmed.ncbi.nlm.nih.gov/32986106/
+      AuthorName: Ye E, Sun H, Leone MJ, Paixao L, Thomas RJ, Lam AD, et al. 
+    - Title: "Expert-level automated sleep staging of long-term scalp EEG recordings using deep learning. SLEEP. June 2020;zsaa112. doi:10.1093/sleep/zsaa112. PMCID: PMC7686563."
+      URL: https://pubmed.ncbi.nlm.nih.gov/32478820/
+      AuthorName: Jaoude MA, Sun H, Pellerin KR, Pavlova M, Sarkis RA, Cash SS, et al. 
+    - Title: "Night-to-Night Variability of Sleep Electroencephalography-Based Brain Age Measurements. Clinical Neurophysiology. 2020 Oct 29;132(1):1-12. doi: 10.1016/j.clinph.2020.09.029. Epub ahead of print. PMCID: PMC7855943."
+      URL: https://pubmed.ncbi.nlm.nih.gov/33248430/
+      AuthorName: Hogan J, Sun H, Thomas RT, Westover MB. 
+    - Title: "Focal sleep spindle deficits reveal focal thalamocortical dysfunction and predict cognitive deficits in childhood epilepsy with centrotemporal spikes. Journal of Neuroscience. 2021 Jan 14:JN-RM-2009-20. doi: 10.1523/JNEUROSCI.2009-20.2020. Epub ahead of print. PMCID: PMC8115887."
+      URL: https://pubmed.ncbi.nlm.nih.gov/33468567/
+      AuthorName: Kramer M, Stoyell S, Chinappen D, Ostrowski L, Spencer E, Morgan A, et al.
+    - Title: "Computational Evidence for a Competitive Thalamocortical Model of Spikes and Spindle Activity in Rolandic Epilepsy. Front Comput Neurosci. 2021 Jun 18;15:680549. doi: 10.3389/fncom.2021.680549. PMCID: PMC8249809."
+      URL: https://pubmed.ncbi.nlm.nih.gov/34220477/
+      AuthorName: Li Q, Westover MB, Zhang R, Chu CJ. 
+    - Title: "HIV Increases Sleep-based Brain Age Despite Antiretroviral Therapy. SLEEP. 2021 Mar 30:zsab058. doi: 10.1093/sleep/zsab058. Epub ahead of print. PMCID: PMC8361332."
+      URL: https://pubmed.ncbi.nlm.nih.gov/33783511/
+      AuthorName: Leone MJ*, Sun H*, Boutros CL, Liu L, Ye E, Sullivan L, et al.
+    - Title: "Algorithm for automatic detection of self-similarity and prediction of residual central respiratory events during continuous positive airway pressure. Sleep. 2021 Apr 9;44(4):zsaa215. doi: 10.1093/sleep/zsaa215. PMCID: PMC8631077."
+      URL: https://pubmed.ncbi.nlm.nih.gov/33057718/ 
+      AuthorName: Oppersma E, Ganglberger W, Sun H, Thomas RJ*, Westover MB*
+    - Title: "Sleep Apnea and Respiratory Anomaly Detection from a Wearable Band and Oxygen Saturation. Sleep and Breathing. 2021 Aug 18. doi: 10.1007/s11325-021-02465-2. Online ahead of print. PMCID: PMC8854446."
+      URL: https://pubmed.ncbi.nlm.nih.gov/34409545/
+      AuthorName: Ganglberger W, Bucklin AA, Tesh R, Cardoso MDS, Sun H, Leone M, , et al.
+    - Title: "Optimal Spindle Detection Parameters for Predicting Cognitive Performance. Sleep. 2022 Jan 4:zsac001. doi: 10.1093/sleep/zsac001. Epub ahead of print. PMCID: PMC8996023."
+      URL: https://pubmed.ncbi.nlm.nih.gov/34984446/
+      AuthorName: Adra N, Sun H, Ganglberger W, Ye EM, Dümmer LW, Tesh RA, et al.
+    - Title: "Automated Scoring of Respiratory Events in Sleep with a Single Effort Belt and Deep Neural Networks. IEEE Transactions on Biomedical Engineering. 2021 Dec 20;PP. doi: 10.1109/TBME.2021.3136753. Epub ahead of print. PMCID: PMC9119908."
+      URL: https://pubmed.ncbi.nlm.nih.gov/34928786/
+      AuthorName: Nassi TE, Ganglberger W, Sun H, Bucklin AA, Biswal S, van Putten MJAM, et al.
+    - Title: "Age estimation from sleep studies using deep learning predicts life expectancy. NPJ Digit Med. 2022 Jul 22;5(1):103. doi: 10.1038/s41746-022-00630-9. PMCID: PMC9307657."
+      URL: https://pubmed.ncbi.nlm.nih.gov/35869169/
+      AuthorName: Brink-Kjaer A, Leary EB, Sun H, Westover MB, Stone KL, Peppard PE, et al.
+    - Title: "How Machine Learning is Powering Neuroimaging to Improve Brain Health. Neuroinformatics. 2022 Mar 28:10.1007/s12021-022-09572-9. doi: 10.1007/s12021-022-09572-9. Epub ahead of print. PMID: 35347570; PMCID: PMC9515245."
+      URL: https://pubmed.ncbi.nlm.nih.gov/35347570/
+      AuthorName: Singh NM, Harrod JB, Subramanian S, Robinson M, Chang K, Cetin-Karayumak S, et al.
+    - Title: "High prevalence of sleep-disordered breathing in the intensive care unit - a cross-sectional study. Sleep Breath. 2022 Aug 16. doi: 10.1007/s11325-022-02698-9. Epub ahead of print. PMID: 35971023."
+      URL: https://pubmed.ncbi.nlm.nih.gov/35971023/
+      AuthorName: Bucklin AA, Ganglberger W, Quadri SA, Tesh RA, Adra N, Da Silva Cardoso M, et al.
+    - Title: "Dementia Detection from Brain Activity During Sleep. Sleep. Nov 30:zsac286. doi: 10.1093/sleep/zsac286. Epub ahead of print. PMID: 36448766.*"
+      URL: https://pubmed.ncbi.nlm.nih.gov/36448766/
+      AuthorName: Ye E*, Sun H*, Krishnamurthy PV, Adra N, Ganglberger W, Thomas RJ, et al. 
+    - Title: "The sleep and wake electroencephalogram over the lifespan. Neurobiol Aging. 2023 Jan 19;124:60-70. doi: 10.1016/j.neurobiolaging.2023.01.006. Epub ahead of print. PMID: 36739622."
+      URL: https://pubmed.ncbi.nlm.nih.gov/36739622/
+      AuthorName: Sun H, Ye E, Paixao L, Ganglberger W, Chu CJ, Zhang C, et al.

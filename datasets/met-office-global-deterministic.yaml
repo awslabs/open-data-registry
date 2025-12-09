@@ -1,0 +1,51 @@
+Name: Met Office Global Deterministic 10km on a 2-year rolling archive
+Description: The flagship Numerical Weather Prediction model developed and used at the Met Office, is the Unified Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite. Uncovering 2 years' worth of historical data, updated regularly with a time delay.
+  The Global deterministic model is a global configuration of the Met Office Unified Models providing the most accurate short range deterministic forecast by any national meteorological service covering a six-day period. It can produce selected hourly data covering the first 48 hours at surface level and at standard pressure levels twice a day. The model’s initial state is kept close to the real atmosphere using hybrid 4D-Var data assimilation. Formatted via NetCDF.
+  Please note this is a public beta and therefore a non-operational service.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The Global Deterministic available time steps are provided every hour from 0 to 54 hours, every 3 hours between 57 to 144 hours and every 6 hours between 150 to 168 hours. Full runs (up to 168 hours) - 00:00, 12:00. Shortened runs (up to 66 hours) - 06:00, 18:00.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Global Deterministic 10km on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-atmospheric-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-atmospheric-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new atmospheric model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-atmospheric-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html

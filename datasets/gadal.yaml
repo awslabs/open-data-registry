@@ -1,0 +1,25 @@
+Name: Grid Algorithms and Data Analytics Library (GADAL)
+Description: |
+  The aim of this project is to create an easy-to-use platform where various types of analytics can be performed on a wide range of electrical grid datasets. The aim is to establish an open-source library of algorithms that universities, national labs and other developers can contribute to which can be used on both open-source and proprietary grid data to improve the analysis of electrical distribution systems for the grid modeling community. OEDI Systems Integration (SI) is a grid algorithms and data analytics API created to standardize how data is sent between different modules that are run as part of a co-simulation.
+Documentation: https://github.com/openEDI/GADAL
+Contact:  https://github.com/openEDI/GADAL/issues
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency:  As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - environmental
+  - sustainability
+  - model
+License:  Creative Commons Attribution 3.0 United States License
+Resources:
+  - Description: "[Sample IEEE123 Bus system for OEDI SI](https://data.openei.org/submissions/5773)"
+    ARN: arn:aws:s3:::gadal/gadal_ieee123/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=gadal&prefix=gadal_ieee123%2F)'

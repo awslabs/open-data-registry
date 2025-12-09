@@ -1,0 +1,30 @@
+Name:  RSNA Cervical Spine Fracture Detection (RSNA-CSF) Dataset
+Description: "Over 1.5 million spine fractures occur annually in the United States alone resulting in over 17,730 spinal cord injuries annually. The most common site of spine fracture is the cervical spine. There has been a rise in the incidence of spinal fractures in the elderly and in this population, fractures can be more difficult to detect on imaging due to degenerative disease and osteoporosis. Imaging diagnosis of adult spine fractures is now almost exclusively performed with computed tomography (CT). Quickly detecting and determining the location of any vertebral fractures is essential to prevent neurologic deterioration and paralysis after trauma. RSNA has teamed with the American Society of Neuroradiology (ASNR) and the American Society of Spine Radiology (ASSR) to create this ground truth dataset, collecting imaging data from twelve sites on six continents, including approximately 2,000 CT studies. Spine radiology specialists from the ASNR and ASSR provided expert image level annotations these studies to indicate the presence, vertebral level and location of any cervical spine fractures."
+Documentation: https://github.com/RSNA/AI-Challenge-Data/wiki/RSNA-Cervical-Spine-Fracture-Detection
+Contact: informatics@rsna.org
+ManagedBy: "[Radiological Society of North America](https://www.rsna.org/)"
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - computed tomography
+  - x-ray tomography
+  - life sciences
+License: "You may access and use these de-identified imaging datasets and annotations (“the data”) for non-commercial purposes only, including academic research and education, as long as you agree to abide by the following provisions: Not to make any attempt to identify or contact any individual(s) who may be the subjects of the data. If you share or re-distribute the data in any form, include a citation to the “Brain CT Hemorrhage Dataset, Copyright RSNA, 2019” as follows: Flanders AF, et al. The RSNA Brain CT Hemorrhage Dataset [10.1148/ryai.2020190211]. Radiology: Artificial Intelligence 2020;2:3."
+Resources:
+  - Description: Zip archive containing DCM and CSV files
+    ARN: arn:aws:s3:::cervical-spine-fracture
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/4
+DataAtWork:
+  Publications:
+    - Title: The RSNA Cervical Spine Fracture CT Dataset
+      URL: https://pubs.rsna.org/doi/full/10.1148/ryai.230034
+      AuthorName: Ming, Hui Lin

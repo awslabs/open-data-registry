@@ -1,0 +1,41 @@
+Name: NASA / USGS Released HiRISE Digital Terrain Models
+Description: |
+    These data are digital terrain models (DTMs) created by multiple different institutions and released to the Planetary Data System (PDS) by the University of Arizona. The data are processed from the Planetary Data System (PDS) stored JP2 files, map projected, and converted to Cloud Optimized GeoTiffs (COGs) for efficient remote data access. These data are controlled to the Mars Orbiter Laser Altimeter (MOLA). Therefore, they are a proxy for the geodetic coordinate reference frame. These data are not guaranteed to co-register with an uncontrolled products (e.g., the uncontrolled High Resolution Science Imaging Experiment (HiRISE) Reduced Data Record (RDR) data). Data are released using simple cylindrical (planetocentric positive East, center longitude 0, -180 - 180 longitude domain) or a pole centered polar stereographic projection. Data are projected to the appropriate IAU Well-known Text v2 (WKT2) represented projection.
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/mars/hirise_dtms/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: HiRISE DTMs will be updated as new releases are made by the University of Arizona to the Planetary Data System.
+Tags:
+  - aws-pds
+  - planetary
+  - satellite imagery
+  - stac
+  - cog
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P9VQTS7V
+Resources:
+  - Description: Scenes and metadata
+    ARN: arn:aws:s3:::astrogeo-ard/mars/mro/hirise/controlled/dtm
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/api/collections/mro_hirise_socet_dtms)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors

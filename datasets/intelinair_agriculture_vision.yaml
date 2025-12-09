@@ -1,0 +1,58 @@
+Name: AgricultureVision
+Description: >
+  Agriculture-Vision aims to be a publicly available large-scale aerial agricultural image dataset that is high-resolution, multi-band, and with multiple types of patterns annotated by agronomy experts. 
+  The original dataset affiliated with the 2020 CVPR paper includes 94,986 512x512images sampled from 3,432 farmlands with nine types of annotations: double plant, drydown, endrow, nutrient deficiency, planter skip, storm damage, water, waterway and weed cluster. 
+  All of these patterns have substantial impacts on field conditions and the final yield. These farmland images were captured between 2017 and 2019 across multiple growing seasons in numerous farming locations in the US. 
+  Each field image contains four color channels: Near-infrared (NIR), Red, Green and Blue.  We first randomly split the 3,432 farmland images with a 6/2/2 train/val/test ratio. We then assign each sampled image to the split of the farmland image they are cropped from. This guarantees that no cropped images from the same farmland will appear in multiple splits in the final dataset. 
+  The generated (supervised) Agriculture-Vision dataset thus contains 56,944/18,334/19,708 train/val/test images.
+
+  Additionally, we continue to grow this dataset.  In 2021 as a part of the [Prize Challenge at CVPR](https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021), we have added sequences of full-field imagery across 52 fields to promote the use of weakly supervised methods.
+Documentation: https://arxiv.org/abs/2001.01306
+Contact: support@intelinair.com
+ManagedBy: Intelinair, Inc.
+UpdateFrequency: Periodically
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
+Tags:
+  - aws-pds
+  - aerial imagery
+  - agriculture
+  - computer vision
+  - deep learning
+  - machine learning
+License: Provided in the bucket.
+Resources:
+  - Description: Original dataset affiliated with the 2020 CVPR paper.  Dataset provided as a series of tar.gz files with data for each year and an associated json file dscribing the train/validation/test split.
+    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_paper_2020
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: >
+      Dataset affiliated with the 2021 CVPR Agricutlure Vision Workshop.  
+      This includes both the supervised and additional raw imagery.  The supervised portion is split train-val-test.  
+      The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.
+      This is the high-resolution-only subset of cvpr_challenge_2021_full.
+    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: >
+      Dataset affiliated with the 2021 CVPR Agricutlure Vision Workshop.
+      This includes both the supervised and additional raw imagery, both high-resolution (10cm/pixel) and low-resolution (sentinel-1 10m/pixel) imagery.  
+      The supervised portion is split train-val-test.  The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.  
+      High-resolution images are named <MMDDYY>_<channel_high>.tif
+      Low-resolution images are named <MMDDYY>_gamma0_<polarization>_low.tif.
+    ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_challenge_2021_full
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Publications:
+    - Title: "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis"
+      URL: https://arxiv.org/abs/2001.01306
+      AuthorName: Mang Tik Chiu, Xingqian Xu, Yunchao Wei, Zilong Huang, Alexander Schwing, Robert Brunner, Hrant Khachatrian, Hovnatan Karapetyan, Ivan Dozier, Greg Rose, David Wilson, Adrian Tudor, Naira Hovakimyan, Thomas S. Huang, Honghui Shi
+    - Title: The 2nd International Workshop and Prize Challenge on Agriculture-Vision, Challenges & Opportunities for Computer Vision in Agricutlure
+      URL: https://www.agriculture-vision.com/
+      AuthorName: Humphrey Shi, Naira Hovakimyan, Jennifer Hobbs, Ed Delp, Melba Crawford, Zhen Li, David Clifford, Jim Yuan, Mang Tik Chiu, Xingqian Xu

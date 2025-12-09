@@ -1,0 +1,50 @@
+Name: Catalina Sky Survey (CSS) subset data on AWS
+Description: Raw data that discovers Near Earth Objects (NEOs) which potentially could impact Earth
+Documentation: https://sbn.psi.edu/pds/resource/css.html
+Contact: pds-operator@jpl.nasa.gov
+ManagedBy: "[Planetary Data Systems Small Bodies Node (SBN)](https://sbn.psi.edu/pds/support/)"
+UpdateFrequency: CSS data are delivered nightly into the PDS archive starting with the night of Jan. 20, 2022. Earlier data will also be delivered into the archive on an irregular schedule.
+Tags:
+  - aws-pds
+  - planetary
+  - astronomy
+  - object detection
+  - survey
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Catalina Sky Survey Raw Data
+    ARN: arn:aws:s3:::pds-css-archive
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse archive](https://sbnarchive.psi.edu/pds4/surveys/gbo.ast.catalina.survey/data_raw/V06/2023/23Jul15/)'
+DataAtWork:
+  Tools & Applications:
+    - Title: PDS4 Viewer
+      URL: https://sbnwiki.astro.umd.edu/wiki/PDS4_Viewer
+      AuthorName: Small Bodies Node of the NASA Planetary Data System group at the University of Maryland.
+    - Title: Transform Tool
+      URL: https://nasa-pds.github.io/transform/
+      AuthorName: Planetary Data System (PDS) Engineering Node
+    - Title: FITS image compression programs (fpack & funpack)
+      URL: https://heasarc.gsfc.nasa.gov/fitsio/fpack/
+      AuthorName: Rob Seaman (NOAO), William Pence (NASA/GSFC), Rick White (STScI).
+    - Title: "CATCH (Comet-Asteroid Telescopic Catalog Hub) service: A moving-target search tool for large astronomical data sets, such as time-domain or near-Earth object surveys."
+      URL: https://catch.astro.umd.edu/about
+      AuthorName: CATCH service is built and operated by the Small Bodies Node of the NASA Planetary Data System group at the University of Maryland.
+    - Title: Astropy
+      URL: https://docs.astropy.org/en/stable/install.html
+      AuthorName: The Astropy Developers
+  Publications:
+    - Title: Overview of Catalina Sky Survey PDS Archive
+      URL: https://sbnarchive.psi.edu/pds4/surveys/gbo.ast.catalina.survey/document/CSS_bundle_overview_v11.pdf
+      AuthorName: R. Seaman, C. Neese, J. Stone, E. Christensen
+    - Title: Catalina Sky Survey Operations and Processing
+      URL: https://sbnarchive.psi.edu/pds4/surveys/gbo.ast.catalina.survey/document/CSS_operations_v8.pdf
+      AuthorName: R. Seaman, E. Christensen, A. Gibbs, S. Larson, F. Shelly
+    - Title: Catalina Sky Survey Telescopes and Instrumentation
+      URL: https://sbnarchive.psi.edu/pds4/surveys/gbo.ast.catalina.survey/document/CSS_telescopes_v6.pdf
+      AuthorName: R. Seaman, E. Christensen, A. Gibbs, S. Larson, F. Shelly
+    - Title: History of the Catalina Sky Survey
+      URL: https://sbnarchive.psi.edu/pds4/surveys/gbo.ast.catalina.survey/document/CSS_history_v6.pdf
+      AuthorName: S. Larson, edited by R. Seaman

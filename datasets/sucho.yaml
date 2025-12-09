@@ -1,0 +1,22 @@
+Name: SUCHO Ukrainian Cultural Heritage Web Archives
+Description: |
+  The dataset contains web archives of Open Access collections of digitised cultural heritage from more than 3,000+ websites of Ukrainian cultural institutions, such as museums, libraries or archives. The web archives have been produced by SUCHO, which is a volunteer group of more than 1,300 international cultural heritage professionals – librarians, archivists, researchers, programmers - who have joined forces to save as much digitised cultural heritage during the 2022 invasion of Ukraine before the servers hosting them get destroyed, damaged or go offline for any other reason. The web archives were created using the tools of the Webrecorder Open Source project in the open WACZ format: https://webrecorder.github.io/wacz-spec/1.1.1/. WACZ files are zipped containers of WARC (Web Archive Format) files enriched with metadata, which can contain several crawls in a single file. The file sizes can range from a few MBs to several TBs.
+Documentation: https://www.sucho.org/tutorials
+Contact: info@sucho.org
+ManagedBy: Saving Ukrainian Cultural Heritage Online (SUCHO)
+UpdateFrequency: Periodically
+Tags:
+  - ukraine
+  - internet
+  - cultural preservation
+  - aws-pds
+  
+License: Public Domain (CC0)
+Resources:
+  - Description: WACZ archives
+    ARN: arn:aws:s3:::sucho-opendata
+    Region: eu-central-1
+    Type: S3 Bucket    
+DataAtWork:
+  Tutorials:
+  Tools & Applications:

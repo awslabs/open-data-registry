@@ -1,0 +1,36 @@
+Name: NASA Space Biology Open Science Data Repository (OSDR)
+Description: |
+  NASA’s Space Biology Open Science Data Repository (OSDR) introduces a one-stop site where users can explore and contribute a variety of NASA open science biological data. This site consolidates data from the Ames Life Sciences Data Archive (ALSDA) and GeneLab and includes information about the broader NASA Open Science and Open Data initiatives, all at one centralized location. Our mission is to maximize the utilization of the valuable biological research resources and enable new discoveries.<br/><br/>
+  OSDR introduces access to data generated from spaceflight and space relevant experiments that explore the biological response of terrestrial biology through the AWS Open Data Registry page. The ALSDA is the official repository of non-human science data spanning a broad range of biological levels involving data from tissues, organs, whole organisms, physiology, and behavior. GeneLab is an open science repository hosting multiple types of ‘omics including transcriptomics, metagenomics, epigenomics, proteomics, and metabolomics data. Studies comprise of data from model organisms including microbes, plants, fruit flies, rodents, as well as human cell culture, ground study, and commercial astronaut data. In addition, the data repository includes metadata searches across several external omics database.<br/><br/>
+Documentation: https://osdr.nasa.gov/bio/repo
+Contact: https://osdr.nasa.gov/bio/help/contact.html
+ManagedBy: NASA
+UpdateFrequency: New research data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - GeneLab
+  - genomic
+  - imaging
+  - life sciences
+  - space biology 
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: Biological research data from spaceflight and space relevant experiments
+    ARN: arn:aws:s3:::nasa-osdr
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - "[Browse Bucket](http://nasa-osdr.s3-website-us-west-2.amazonaws.com)"
+DataAtWork:
+  Publications:
+    - Title: "NASA GeneLab: interfaces for the exploration of space omics data"
+      URL: https://academic.oup.com/nar/article/49/D1/D1515/5932845
+      AuthorName: Daniel C Berrios, Jonathan Galazka, Kirill Grigorev, Samrawit Gebre, Sylvain V Costes
+    - Title: "Advancing the Integration of Biosciences Data Sharing to Further Enable Space Exploration"
+      URL: https://www.sciencedirect.com/science/article/pii/S2211124720314303
+      AuthorName: Ryan T. Scott, Kirill Grigorev, Graham Mackintosh, Samrawit G. Gebre, Christopher E. Mason, Martha E. Del Alto, Sylvain V. Costes
+    - Title: "GeneLab: Omics database for spaceflight experiments"
+      URL: https://academic.oup.com/bioinformatics/article/35/10/1753/513406
+      AuthorName: Shayoni Ray, Samrawit Gebre, Homer Fogle, Daniel C Berrios, Peter B Tran, Jonathan M Galazka, Sylvain V Costes

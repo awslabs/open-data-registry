@@ -1,0 +1,60 @@
+Name: 2010 Census Production Settings Redistricting Data (P.L. 94-171) Demonstration Noisy Measurement File
+Description: |
+   The 2010 Census Production Settings Redistricting Data (P.L. 94-171) Demonstration Noisy Measurement File (2023-04-03) is an intermediate output of the 2020 Census Disclosure Avoidance System (DAS) TopDown Algorithm (TDA) (as described in Abowd, J. et al [2022] https://doi.org/10.1162/99608f92.529e3cb9 , and implemented in https://github.com/uscensusbureau/DAS_2020_Redistricting_Production_Code). The NMF was produced using the official “production settings,” the final set of algorithmic parameters and privacy-loss budget allocations, that were used to produce the 2020 Census Redistricting Data (P.L. 94-171) Summary File and the 2020 Census Demographic and Housing Characteristics File.
+   <br/>
+   <br/>
+   The NMF consists of the full set of privacy-protected statistical queries (counts of individuals or housing units with particular combinations of characteristics) of confidential 2010 Census data relating to the redistricting data portion of the 2010 Demonstration Data Products Suite – Redistricting and Demographic and Housing Characteristics File – Production Settings (2023-04-03). These statistical queries, called “noisy measurements” were produced under the zero-Concentrated Differential Privacy framework (Bun, M. and Steinke, T [2016] https://arxiv.org/abs/1605.02065; see also Dwork C. and Roth, A. [2014] https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf) implemented via the discrete Gaussian mechanism (Cannone C., et al., [2023] https://arxiv.org/abs/2004.00010), which added positive or negative integer-valued noise to each of the resulting counts. The noisy measurements are an intermediate stage of the TDA prior to the post-processing the TDA then performs to ensure internal and hierarchical consistency within the resulting tables. The Census Bureau has released these 2010 Census demonstration data to enable data users to evaluate the expected impact of disclosure avoidance variability on 2020 Census data. The 2010 Census Production Settings Redistricting Data (P.L.94-171) Demonstration Noisy Measurement File (2023-04-03) has been cleared for public dissemination by the Census Bureau Disclosure Review Board (CBDRB-FY22-DSEP-004).
+   <br/>
+   <br/>
+   The data includes zero-Concentrated Differentially Private (zCDP) (Bun, M. and Steinke, T [2016]) noisy measurements, implemented via the discrete Gaussian mechanism. These are estimated counts of individuals and housing units included in the 2010 Census Edited File (CEF), which includes confidential data initially collected in the 2010 Census of Population and Housing. The noisy measurements included in this file were subsequently post-processed by the TopDown Algorithm (TDA) to produce the 2010 Census Production Settings Privacy-Protected Microdata File - Redistricting (P.L. 94-171) and Demographic and Housing Characteristics File (2023-04-03) (https://www2.census.gov/programs-surveys/decennial/2020/program-management/data-product-planning/2010-demonstration-data-products/04-Demonstration_Data_Products_Suite/2023-04-03/). As these 2010 Census demonstration data are intended to support study of the design and expected impacts of the 2020 Disclosure Avoidance System, the 2010 CEF records were pre-processed before application of the zCDP framework. This pre-processing converted the 2010 CEF records into the input-file format, response codes, and tabulation categories used for the 2020 Census, which differ in substantive ways from the format, response codes, and tabulation categories originally used for the 2010 Census.
+   <br/>
+   <br/>
+   The NMF provides estimates of counts of persons in the CEF by various characteristics and combinations of characteristics including their reported race and ethnicity, whether they were of voting age, whether they resided in a housing unit or one of 7 group quarters types, and their census block of residence after the addition of discrete Gaussian noise (with the scale parameter determined by the privacy-loss budget allocation for that particular query under zCDP). Noisy measurements of the counts of occupied and vacant housing units by census block are also included. Lastly, data on constraints—information into which no noise was infused by the Disclosure Avoidance System (DAS) and used by the TDA to post-process the noisy measurements into the 2010 Census Production Settings Privacy-Protected Microdata File - Redistricting (P.L. 94-171) and Demographic and Housing Characteristics File (2023-04-03) —are provided.
+Documentation:
+  "[2010 Census Production Settings Redistricting Data (P.L. 94-171) Demonstration Noisy Measurement File (2023-04-03) README File](https://www2.census.gov/programs-surveys/decennial/2020/program-management/data-product-planning/2010-demonstration-data-products/04-Demonstration_Data_Products_Suite/2023-04-03/2010%20Redistricting%20NMF%202023-11-10_1.pdf)"
+Contact: 2020DAS@census.gov
+ManagedBy: "[United States Census Bureau](http://www.census.gov/)"
+UpdateFrequency: "Last updated November 10, 2023: Modifications to identifiers within the parquet metadata used to support internal tracking of source data."
+Tags:
+  - aws-pds
+  - census
+  - differential privacy
+  - disclosure avoidance
+  - ethnicity
+  - group quarters
+  - hispanic
+  - latino
+  - housing
+  - housing units
+  - noisy measurements
+  - population
+  - race
+  - redistricting
+  - voting age
+License: CC0 1.0 Universal
+Citation:
+  Abowd, J. M., Ashmead, R., Cumings-Menon, R., Garfinkel, S., Heineck, M., Heiss, C., Johns, R., Kifer, D., Leclerc, P., Machanavajjhala, A., Moran, B., Sexton, W., Spence, M., & Zhuravlev, P. (2023). 2010 Census Production Settings Redistricting Data (P.L. 94-171) Demonstration Noisy Measurement File [https://registry.opendata.aws/census-2010-pl94-nmf/].
+Resources:
+  - Description: The 2010 Census Redistricting Data (P.L. 94-171) Noisy Measurement File
+    ARN: arn:aws:s3:::uscb-2020-product-releases/decennial/redistricting/2010/nmf/2010-pl94-nmf-state-partitioned
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "Census Open Data S3 Inventory"
+    ARN: arn:aws:s3:::uscb-opendata-inventory
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: The 2020 Census Disclosure Avoidance System Topdown Algorithm
+      URL: https://doi.org/10.1162/99608f92.529e3cb9
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel,
+        S., Heineck, M., Heiss, C., Johns, R., Kifer, D., Leclerc,
+        P., Machanavajjhala, A., Moran, B., Sexton, W., Spence, M.,
+        Zhuravlev, P.
+    - Title: Geographic Spines in the 2020 Census Disclosure Avoidance System
+      URL: https://doi.org/10.48550/arXiv.2203.16654
+      AuthorName:
+        Abowd, J., Ashmead, R., Cumings-Menon, R., Garfinkel, S., Heineck,
+        M., Heiss, C., Johns, R., Kifer, D., Leclerc, P., Machanavajjhala,
+        A., Moran, B., Sexton, W., Spence, M., Zhuravlev, P.

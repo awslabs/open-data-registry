@@ -1,0 +1,46 @@
+Name: OpenCRAVAT
+Description: |
+  OpenCRAVAT is a module variant annotation tool developed by KarchinLab at Johns Hopkins.
+  This dataset is a mirror of the OpenCRAVAT store available at https://store.opencravat.org.
+  You can configure OpenCRAVAT to use this mirror by editing the "cravat-system.yml" file.
+  The path to this file is in the first output line of the command "oc config system". In that file,
+  change the value of "store_url" to "https://opencravat-store-aws.s3.amazonaws.com".
+
+Documentation: https://open-cravat.readthedocs.io
+Contact: support@opencravat.org
+ManagedBy: KarchinLab, Potomac IT Group
+UpdateFrequency: |
+  Data is mirrored daily. Update frequencies of individual annotators depend on the update schedule
+  of the source data.
+Tags:
+  - aws-pds
+  - genetic
+  - genomic
+  - life sciences
+  - variant annotation
+  - sqlite
+  - tertiary analysis
+License: |
+  License varies per-annotator. Commercial users must check the "commercial_warning" field 
+  in the module_name.yml file of each annotator.
+Citation: |
+  Pagel KA, Kim R, Moad K, Busby B, Zheng L, Tokheim C, Ryan M, Karchin R. (2020) Integrated informatics analysis of cancer-related variants. JCO CCI Mar;4:310-317. doi: 10.1200/CCI.19.00132.
+Resources:
+  - Description: OpenCRAVAT Store US
+    ARN: arn:aws:s3:::opencravat-store-aws
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: OpenCRAVAT Store EU
+    ARN: arn:aws:s3:::opencravat-store-eu-west-2
+    Region: eu-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Changing the OpenCRAVAT store url
+      URL: https://open-cravat.readthedocs.io/en/latest/AWS-OpenData.html
+      AuthorName: Kyle Moad
+  Tools & Applications:
+    - Title: OpenCRAVAT
+      URL: https://opencravat.org
+      AuthorName: Karchinlab
+      AuthorURL: https://karchinlab.org

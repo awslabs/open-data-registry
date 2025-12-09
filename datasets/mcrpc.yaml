@@ -1,0 +1,33 @@
+Name: Genomic Characterization of Metastatic Castration Resistant Prostate Cancer
+Description: |
+  Biopsies of castration resistant prostate cancer metastases were subjected to whole genome sequencing (WGS), along with RNA-sequencing (RNA-Seq). The overarching goal of the study is to illuminate molecular mechanisms of acquired resistance to therapeutic agents, and particularly androgen signaling inhibitors, in the treatment of metastatic castration resistant prostate cancer (mCRPC). This study is made available on AWS via the NIH STRIDES Initiative.
+Documentation: https://isb-cancer-genomics-cloud.readthedocs.io/en/latest/sections/data/WCDT_about.html
+Contact: support@nci-gdc.datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases, although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - genomic
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy: https://gdc.cancer.gov/access-data/data-access-policies"
+Citation: dbGaP accession phs001648.v2.p1
+Resources:
+  - Description: |
+      Whole Genome Sequencing, RNA Sequencing
+    ARN: arn:aws:s3:::gdc-wcdt-mcrpc-phs001648-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/
+  Publications:
+    - Title: "Genomic characterization of metastatic castration-resistant prostate cancer patients undergoing PSMA radioligand therapy: A single-center experience"
+      URL: https://doi.org/10.1002/pros.24450
+      AuthorName: Swayamjeet Satapathy, Chandan K Das, et al.

@@ -1,0 +1,62 @@
+Name: ARPA-E PERFORM Forecast data
+Description: |
+  The ARPA-E PERFORM Program is an ARPA-E funded program that aim to use
+  time-coincident power and load seeks to develop innovative management systems
+  that represent the relative delivery risk of each asset and balance the
+  collective risk of all assets across the grid. A risk-driven paradigm allows
+  operators to: (i) fully understand the true likelihood of maintaining a
+  supply-demand balance and system reliability, (ii) optimally manage the system,
+  and (iii) assess the true value of essential reliability services. This
+  paradigm shift is critical for all power systems and is essential for grids
+  with high levels of stochastic resources. Projects will propose methods to
+  quantify and manage risk at the asset level and at the system level.
+
+  In support of the ARPA-E PERFORM project, NREL has produced a set of
+  time-coincident load, wind, and solar generation profiles, including actual and
+  forecasting time series. Both actuals and forecasts are provided in form of
+  time-series with high temporal and spatial fidelity. Both deterministic and
+  probabilistic forecasts are contained in the dataset.
+Documentation: https://github.com/PERFORM-Forecasts/documentation
+Contact:  https://github.com/openEDI/PERFORM-Forecasts/documentation/issues
+ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+UpdateFrequency:  As needed
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - environmental
+  - geospatial
+  - model
+  - solar
+License:  Creative Commons Attribution 3.0 United States License
+Resources:
+  - Description: ARPA-E PERFORM Forecast data
+    ARN: arn:aws:s3:::arpa-e-perform/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The Electric Reliability Council of Texas (ERCOT)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/ERCOT/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The New York Independent System Operator (NYISO)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/NYISO/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The Midcontinent Independent System Operator (MISO)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/MISO/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: "[Forecasts and Actuals for The Southwest Power Pool (SPP)](https://github.com/PERFORM-Forecasts/documentation)"
+    ARN: arn:aws:s3:::arpa-e-perform/SPP/
+    Region: us-west-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tools & Applications:
+    - Title: "ARPA-E PERFORM"
+      URL: https://arpa-e.energy.gov/technologies/programs/perform
+      AuthorName: ARPA-E
+      AuthorURL: https://arpa-e.energy.gov

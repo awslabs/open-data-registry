@@ -1,0 +1,37 @@
+Name: Human Cancer Models Initiative (HCMI) Cancer Model Development Center
+Description: |
+  The Human Cancer Models Initiative (HCMI) is an international consortium that is generating novel,
+  next-generation, tumor-derived culture models annotated with genomic and clinical data.
+  HCMI-developed models and related data are available as a community resource. The NCI is
+  contributing to the initiative by supporting four Cancer Model Development Centers (CMDCs).  CMDCs
+  are tasked with producing next-generation cancer models from clinical samples. The cancer models
+  include tumor types that are rare, originate from patients from underrepresented populations, lack
+  precision therapy, or lack cancer model tools. Throughout the development process, the CMDCs
+  utilize stringent internal QC measures to ensure both clinical and molecular integrity. These
+  models are then annotated with clinical and genomic data and are available as a community
+  resource.
+Documentation: https://ocg.cancer.gov/programs/hcmi/nci-cancer-model-development
+Contact: dcf-support@datacommons.io
+ManagedBy: "[Center for Translational Data Science at The University of Chicago](https://ctds.uchicago.edu/)"
+UpdateFrequency: |
+  Genomic Data Commons (GDC) is source of truth for this dataset; GDC offers monthly data releases,
+  although this dataset may not be updated at every release.
+Tags:
+  - aws-pds
+  - cancer
+  - genomic
+  - life sciences
+  - whole genome sequencing
+  - STRIDES
+License: "NIH Genomic Data Sharing Policy https://gdc.cancer.gov/access-data/data-access-policies"
+Resources:
+  - Description: Biospecimen Supplement, RNA-Seq Gene Expression Quantification
+    ARN: arn:aws:s3:::gdc-hcmi-cmdc-phs001486-2-open
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: Genomic Data Commons
+      URL: https://portal.gdc.cancer.gov/projects/HCMI-CMDC
+      AuthorName: National Cancer Institute
+      AuthorURL: https://gdc.cancer.gov/

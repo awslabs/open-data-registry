@@ -1,0 +1,34 @@
+Name: recount3
+Description: |
+    recount3 is an online resource consisting of RNA-seq gene, exon, and exon-exon junction counts as well as coverage bigWig files for 8,679 and 10,088 different studies for human and mouse respectively. It is the third generation of the ReCount project and part of recount.bio. recount2 is also included for historical purposes. The pipeline used to generate the data in recount3 (but not recount2) is available [here](https://github.com/langmead-lab/monorail-external).
+Documentation: https://rna.recount.bio/
+Contact: https://rna.recount.bio/docs/how-to-ask-for-help.html
+ManagedBy:  Johns Hopkins University
+UpdateFrequency: Not currently updated
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - cancer
+  - csv
+  - gene expression
+  - genetic
+  - genomic
+  - Homo sapiens
+  - life sciences
+  - Mus musculus
+  - neuroscience
+  - transcriptomics
+License: "[recount3 is Public Domain, recount2 is CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)"
+Citation: "Additionally, please cite Wilks, C., Zheng, S.C., Chen, F.Y. et al. recount3: summaries and queries for large-scale RNA-seq expression and splicing. Genome Biol 22, 323 (2021). https://doi.org/10.1186/s13059-021-02533-6 if referencing the recount3 data or the Monorail software in a publication. If referencing recount2 data, please use this citation: Collado-Torres, L., Nellore, A., Kammers, K. et al. Reproducible RNA-seq analysis using recount2. Nat Biotechnol 35, 319–321 (2017). https://doi.org/10.1038/nbt.3838."
+Resources:
+  - Description: https://rna.recount.bio/docs/
+    ARN: arn:aws:s3:::recount-opendata
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+    Tutorials:
+        - Title: recount3 quick start guide
+          URL: https://www.bioconductor.org/packages/devel/bioc/vignettes/recount3/inst/doc/recount3-quickstart.html
+          AuthorName: Leonardo Collado-Torres
+          AuthorURL: https://lcolladotor.github.io/

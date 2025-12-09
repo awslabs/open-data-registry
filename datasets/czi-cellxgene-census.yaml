@@ -1,0 +1,116 @@
+Name: CZ CELLxGENE Discover Census
+Description: |
+  CZ CELLxGENE Discover ([cellxgene.cziscience.com](https://cellxgene.cziscience.com/)) is a free-to-use platform for the exploration, analysis, and retrieval of single-cell data. CZ CELLxGENE Discover hosts the largest aggregation of standardized single-cell data from the major human and mouse tissues, with modalities that include gene expression, chromatin accessibility, DNA methylation, and spatial transcriptomics.
+  This year, CZ CELLxGENE Discover has made available all of its human and mouse RNA single-cell data through Census (https://chanzuckerberg.github.io/cellxgene-census/) – a free-to-use service with an API and data that allows for querying its single-cell data corpus directly from Python or R. 
+  The API uses a new technology, TileDB-SOMA, that allows for efficient and low-latency querying. The data are fully standardized and hosted publicly for free access, and they are composed by a count matrix of tens of millions of cells (observations) by >60 k genes (features) accompanied by standard cell metadata variables (e.g. cell type, tissue, sequencing technology, donor id, etc)  and gene metadata that includes GENCODE-based IDs and gene names. While these data are built from hundreds of datasets, the APIs enable convenient cell- and gene-based filtering to obtain any slice of interest in a matter of seconds. All data can be quickly transformed to NumPy, Pandas, Anndata, Seurat, or R base objects. We created data loaders for the data to be directly used by PyTorch for modeling at scale.
+  In addition, all the source dataset files in H5AD format are also available for retrieval. 
+Documentation: https://chanzuckerberg.github.io/cellxgene-census/
+Contact: cellxgene@chanzuckerberg.com
+ManagedBy: "[Chan Zuckerberg Initiative Foundation](http://www.chanzuckerberg.com/)"
+UpdateFrequency: New releases are published weekly. Long-term supported (LTS) releases are published every 6 months.
+Tags:
+  - aws-pds
+  - single-cell transcriptomics
+  - transcriptomics
+  - cell biology
+  - bioinformatics
+  - life sciences
+License: CC BY license
+Resources:
+  - Description: CZ CELLxGENE Discover Census Data
+    ARN: arn:aws:s3:::cellxgene-census-public-us-west-2/cell-census
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Computing on the cell by gene matrix using online (incremental) algorithms
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_compute_over_X.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_compute_over_X.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Genes measured in each cell (dataset presence matrix)
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_dataset_presence.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_dataset_presence.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Exploring the Census Datasets table
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_datasets.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_datasets.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Understanding and filtering out duplicate cells
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_duplicated_cells.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_duplicated_cells.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Querying data using the gget cellxgene module
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_gget_demo.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_gget_demo.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Querying and fetching the single-cell data and cell/gene metadata.
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_query_extract.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_query_extract.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Exploring pre-calculated summary cell counts
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/api_demo/census_summary_cell_counts.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/api_demo/census_summary_cell_counts.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Learning about the CZ CELLxGENE Census
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/analysis_demo/comp_bio_census_info.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/analysis_demo/comp_bio_census_info.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Integrating multi-dataset slices of data
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/analysis_demo/comp_bio_data_integration_scvi.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/analysis_demo/comp_bio_data_integration_scvi.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Exploring all data from a tissue
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/analysis_demo/comp_bio_explore_and_load_lung_data.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/analysis_demo/comp_bio_explore_and_load_lung_data.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Normalizing full-length gene sequencing data
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/analysis_demo/comp_bio_normalizing_full_gene_sequencing.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/analysis_demo/comp_bio_normalizing_full_gene_sequencing.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Summarizing cell and gene metadata
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/analysis_demo/comp_bio_summarize_axis_query.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/analysis_demo/comp_bio_summarize_axis_query.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Experimental Highly Variable Genes API
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/experimental/highly_variable_genes.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/experimental/highly_variable_genes.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Out-of-core (incremental) mean and variance calculation
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/experimental/mean_variance.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/experimental/mean_variance.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Training a PyTorch Model
+      URL: https://chanzuckerberg.github.io/cellxgene-census/notebooks/experimental/pytorch.html
+      NotebookURL: https://github.com/chanzuckerberg/cellxgene-census/blob/main/api/python/notebooks/experimental/pytorch.ipynb
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Tools & Applications:
+    - Title: Census Python API
+      URL: https://chanzuckerberg.github.io/cellxgene-census/python-api.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+    - Title: Census R API
+      URL: https://chanzuckerberg.github.io/cellxgene-census/r/index.html
+      AuthorName: CZI
+      AuthorURL: https://github.com/chanzuckerberg/
+  Publications:
+    - Title: "CZ CELLxGENE Discover: A single-cell data platform for scalable exploration, analysis and modeling of aggregated data"
+      URL: https://www.biorxiv.org/content/10.1101/2023.10.30.563174v1
+      AuthorName: CZI Single-Cell Biology et al.
+    - Title: "scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI."
+      URL: https://www.biorxiv.org/content/10.1101/2023.04.30.538439v2
+      AuthorName: Haotian Cui, et al.

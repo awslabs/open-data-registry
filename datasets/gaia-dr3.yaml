@@ -1,0 +1,27 @@
+
+Name: Gaia DR3 
+Description: |
+  [Gaia DR3 data](https://www.cosmos.esa.int/web/gaia/dr3) were originally released by the European Space Agency in December 2020. This [HATS](https://hats.readthedocs.io/en/stable)-formatted catalog was produced by the LSST Interdisciplinary Network for Collaboration and Computing. The GAIA HATS Datasets are specifically designed for efficient spatial cross-matching with other HATS-format catalogs, whether within the same archive or across distributed archive data centers. This enables astronomers to perform complex analyses, such as identifying correlations or overlaps between datasets from different surveys. Users can leverage [LSDB (Large-Scale Database)](https://docs.lsdb.io/en/latest/), a scalable spatial analysis library, to execute precise, high-performance operations like cone searches or cross-matching. 
+Documentation: https://docs.lsdb.io/en/latest/index.html
+Contact: archive@stsci.edu
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please see [the LSDB citation page](https://docs.lsdb.io/en/latest/citation.html) if using LSDB for an academic publication. Please also [cite the Gaia team](https://gea.esac.esa.int/archive/documentation/GDR3/Miscellaneous/sec_credit_and_citation_instructions/).
+UpdateFrequency: Never
+Tags:
+  - astronomy
+License: Attribution required.
+Resources:
+  - Description: Gaia DR3 HATS-Formatted Files
+    ARN: arn:aws:s3:::stpubdata/gaia
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/gaia
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Dark Energy Survey / Gaia DR3 Crossmatch
+      URL: https://docs.lsdb.io/en/stable/tutorials/pre_executed/des-gaia.html
+      AuthorName: LSDB Collaboration

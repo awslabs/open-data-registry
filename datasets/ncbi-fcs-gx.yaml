@@ -1,0 +1,25 @@
+Name: GX database for NCBI Foreign Contamination Screen (FCS) Tool Suite
+Description: Sequence database used by FCS-GX (Foreign Contamination Screen - Genome Cross-species aligner) to detect contamination from foreign organisms in genome sequences.
+Documentation: https://github.com/ncbi/fcs/wiki/FCS-GX
+Contact: https://support.nlm.nih.gov/support/create-case/
+ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
+UpdateFrequency: Yearly
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - contamination
+  - fasta
+  - genome
+  - assembly
+  - genetic
+  - health
+  - life sciences
+  - whole genome sequencing
+License: "[NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: FCS-GX database
+    ARN: arn:aws:s3:::ncbi-fcs-gx
+    Region: us-east-1
+    Type: S3 Bucket
+    

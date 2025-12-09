@@ -1,0 +1,83 @@
+Name: PubSeq - Public Sequence Resource
+Description: COVID-19 PubSeq is a free and open online bioinformatics public sequence resource with on-the-fly analysis of sequenced SARS-CoV-2 samples that allows for a quick turnaround in identification of new virus strains. PubSeq allows anyone to upload sequence material in the form of FASTA or FASTQ files with accompanying metadata through the web interface or REST API.
+Documentation: https://covid19.genenetwork.org/about
+Contact: https://covid19.genenetwork.org/contact
+ManagedBy: "[UTHSC GeneNetwork](https://covid19.genenetwork.org/)"
+UpdateFrequency: Rolling dataset.
+Tags:
+  - aws-pds
+  - bam
+  - bioinformatics
+  - biology
+  - coronavirus
+  - COVID-19
+  - fasta
+  - fastq
+  - fast5
+  - genetic
+  - genomic
+  - health
+  - json
+  - life sciences
+  - long read sequencing
+  - open source software
+  - MERS
+  - metadata
+  - medicine
+  - RDF
+  - SARS
+  - SARS-CoV-2
+  - SPARQL
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) unless otherwise specified.
+Resources:
+  - Description: PubSeq submitted datasets (FASTA and JSON metadata)
+    ARN: arn:aws:s3:::pubseq-datasets
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://pubseq-datasets.s3.amazonaws.com/)'
+  - Description: Pubseq output data (Arvados Keep)
+    ARN: arn:aws:s3:::pubseq-output-data
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Arvados download](https://covid19.genenetwork.org/download)'
+DataAtWork:
+  Tutorials:
+    - Title: PubSeq FAQ
+      URL: https://covid19.genenetwork.org/about
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: PubSeq Documentation
+      URL: https://covid19.genenetwork.org/blog
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: Query metadata
+      URL: https://covid19.genenetwork.org/blog?id=using-covid-19-pubseq-part1
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: Submitting a sequence
+      URL: https://covid19.genenetwork.org/blog?id=using-covid-19-pubseq-part3
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: REST API
+      URL: https://covid19.genenetwork.org/apidoc
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+  Tools & Applications:
+    - Title: Source code for website
+      URL: https://github.com/pubseq/bh20-seq-resource/tree/master/bh20simplewebuploader
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: Source code for CWL workflows
+      URL: https://github.com/pubseq/bh20-seq-resource/tree/master/workflows
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+    - Title: Source code for (meta)data uploader
+      URL: https://github.com/pubseq/bh20-seq-resource/tree/master/bh20sequploader
+      AuthorName: PubSeq development team
+      AuthorURL: https://github.com/pubseq
+  Publications:
+    - Title: Transmission of Severe Acute Respiratory Syndrome Coronavirus 2 during Border Quarantine and Air Travel, New Zealand (Aotearoa)
+      URL: https://wwwnc.cdc.gov/eid/article/27/5/21-0514_article
+      AuthorName: Eichler, N. et al.

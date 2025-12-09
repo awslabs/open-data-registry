@@ -1,0 +1,45 @@
+Name: CAncer MEtastases in LYmph nOdes challeNge (CAMELYON) Dataset
+Description: |
+    "This dataset contains the all data for the [CAncer MEtastases in LYmph nOdes challeNge or CAMELYON](https://camelyon17.grand-challenge.org). CAMELYON was the first challenge using whole-slide images in computational pathology and aimed to help pathologists identify breast cancer metastases in sentinel lymph nodes. Lymph node metastases are extremely important to find, as they indicate that the cancer is no longer localized and systemic treatment might be warranted. Searching for these metastases in H&E-stained tissue is difficult and time-consuming and AI algorithms can play a role in helping make this faster and more accurate.
+Documentation: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/
+Contact: https://camelyon17.grand-challenge.org/
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: As required
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - computational pathology
+  - grand-challenge.org
+  - histopathology
+  - deep learning
+  - computer vision
+License: CC0
+Resources:
+  - Description: Whole slide images with corresponding annotations including tumor, stroma and tumor infiltrating lymphocytes
+    ARN: arn:aws:s3:::camelyon-dataset
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: CAMELYON Challenge
+      URL: https://camelyon17.grand-challenge.org/
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/
+    - Title: ASAP Viewer
+      URL: https://computationalpathologygroup.github.io/ASAP/
+      AuthorName: Geert Litjens
+      AuthorURL: https://www.diagnijmegen.nl/people/geert-litjens/
+  Publications:
+    - Title: "1399 H&E-stained sentinel lymph node sections of breast cancer patients: the CAMELYON dataset"
+      URL: https://academic.oup.com/gigascience/article/7/6/giy065/5026175
+      AuthorName: Geert Litjens, et al.
+      AuthorURL: https://www.diagnijmegen.nl/people/geert-litjens/
+    - Title: "From Detection of Individual Metastases to Classification of Lymph Node Status at the Patient Level: The CAMELYON17 Challenge"
+      URL: https://ieeexplore.ieee.org/document/8447230/
+      AuthorName: Peter Bandi, et al.
+      AuthorURL: https://www.diagnijmegen.nl/people/peter-bandi/
+    - Title: "Diagnostic Assessment of Deep Learning Algorithms for Detection of Lymph Node Metastases in Women With Breast Cancer"
+      URL: https://jamanetwork.com/journals/jama/fullarticle/2665774
+      AuthorName: Babak Ehteshami Bejnordi, et al.
+      AuthorURL: https://www.linkedin.com/in/babakint

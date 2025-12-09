@@ -1,0 +1,74 @@
+Name: Digital Earth Africa Cropland Extent Map (2019)
+Description: |
+  Digital Earth Africa's cropland extent map (2019) shows the estimated location of croplands in Africa for the period January to December 2019. Cropland is defined as: "a piece of land of minimum 0.01 ha (a single 10m x 10m pixel) that is sowed/planted and harvest-able at least once within the 12 months after the sowing/planting date." This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation. 
+  This provisional cropland extent map has a resolution of 10m, and was built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent map was produced using extensive training data from regions across Africa, coupled with a Random Forest machine learning model. The continental service contains maps built separately for eight Agro-Ecological Zones (AEZs). For a detailed exploration of the methods used to produce the cropland extent map, read the Jupyter Notebooks in DE Africa’s crop-mask GitHub repository.
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: To be defined.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - earth observation
+  - food security
+  - geospatial
+  - satellite imagery
+  - sustainability
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Cropland extent map 2019
+    ARN: arn:aws:s3:::deafrica-services/crop_mask
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/crop_mask)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (Cropland Extent Map)"
+      URL: https://explorer.digitalearth.africa/products/crop_mask
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+  Publications:
+    - Title: "Cropland Extent is now available for the entire African continent"
+      URL: https://www.digitalearthafrica.org/media-center/blog/cropland-extent-now-available-entire-african-continent
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Co-Production of a 10-m Cropland Extent Map for Continental Africa using Sentinel-2, Cloud Computing, and the Open-Data-Cube"
+      URL: https://agu2021fallmeeting-agu.ipostersessions.com/Default.aspx?s=BA-E4-89-84-15-50-25-89-AE-A8-EF-C5-32-7D-19-EE
+      AuthorName: Chad Burton, Fang Yuan, Chong Ee-Faye, Meghan Halabisky, David Ongo, Fatou Mar, Victor Addabor, Bako Mamane and Sena Adimou  
+
+    

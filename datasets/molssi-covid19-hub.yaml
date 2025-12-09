@@ -1,0 +1,32 @@
+Name: COVID-19 Molecular Structure and Therapeutics Hub
+Description: |
+  Aggregating critical information to accelerate drug discovery for the molecular modeling and simulation community.
+  A community-driven data repository and curation service for molecular structures, models, therapeutics, and
+  simulations related to computational research related to therapeutic opportunities for COVID-19
+  (caused by the SARS-CoV-2 coronavirus).
+Documentation: https://covid.molssi.org/
+Contact: info@molssi.org
+ManagedBy: "[Molecular Sciences Software Institute (MolSSI)](https://molssi.org/) and [BioExcel](https://bioexcel.eu/)"
+UpdateFrequency: Data contributions come from external researchers and groups at a roughly weekly cadence.
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - coronavirus
+  - COVID-19
+  - life sciences
+  - molecular docking
+  - pharmaceutical
+License: |
+  Most data will be in an open license provided by the contributing individual(s). Neither MolSSI nor BioExcel
+  hold the license(s) for data in the data set unless explicitly noted.
+Resources:
+  - Description: |
+      Data storage of for the MolSSI and BioExcel COVID-19 Hub. Includes atomistic structures (often as PDB),
+      refined models (as PDB or higher resolution molecular file types), simulations (file types a function of the
+      simulation program, usually compressed as zip or tarball), drug databases of conformers and tautomers
+      (primarily compressed mol2 files), and any additional supporting files necessary to reproduce or process the data
+      included in the the compressed package (e.g. simulation inputs).
+    ARN: arn:aws:s3:::molssi-bioexcel-covid-19-structure-therapeutics-hub
+    Region: us-east-1
+    Type: S3 Bucket

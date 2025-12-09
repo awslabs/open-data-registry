@@ -1,0 +1,46 @@
+Name: Opioid Industry Documents Archive (OIDA) Data on AWS
+Description: The OIDA Data on AWS contain the metadata, documents, and extracted text for all of the documents in the UCSF-JHU Opioid Industry Documents Archive, a growing corpus of internal corporate records and other documents arising from the opioid industry.
+Documentation: https://opioid-industry-documents-archive-dataset-bucket.s3.amazonaws.com/index.html
+Contact: opioidarchive@jh.edu
+ManagedBy: Johns Hopkins University
+UpdateFrequency: monthly
+Tags:
+  - aws-pds
+  - archives
+  - text analysis
+  - txt
+  - pharmaceutical
+  - life sciences
+License: https://www.industrydocuments.ucsf.edu/opioids/help/copyright/
+Citation:
+
+Resources:
+  - Description: Raw data from the Opioid Industry Documents Archive (OIDA), including documents in various file formats (PDF, Excel, PowerPoint, etc.), OCR or other extracted text from these files, and corresponding metadata for each document.
+    ARN: arn:aws:s3:::opioid-industry-documents-archive-dataset-bucket
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+
+# This section is optional, and I suggest leaving it blank, with the plan to develop this over time at https://opioid-industry-documents-archive-dataset-bucket.s3.amazonaws.com/index.html , which we'll be able to update at any point.
+# DataAtWork:
+#   Tutorials:
+#     - Title:
+#       URL:
+#       NotebookURL:
+#       AuthorName:
+#       AuthorURL:
+#       Services:
+#   Tools & Applications:
+#     - Title:
+#       URL:
+#       AuthorName:
+#       AuthorURL:
+#   Publications:
+#     - Title:
+#       URL:
+#       AuthorName:
+#       AuthorURL:
+
+DeprecatedNotice:
+ADXCategories:
+  - Healthcare & Life Sciences Data

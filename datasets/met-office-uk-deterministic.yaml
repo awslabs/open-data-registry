@@ -1,0 +1,51 @@
+Name: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
+Description: The flagship Numerical Weather Prediction model developed and used at the Met Office, is the Unified Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite. Uncovering 2 years' worth of historical data, updated regularly with a time delay.
+  The UK deterministic model is a post processed regional downscaled configuration of the Unified Model, covering the UK and Ireland, with a resolution of approximately 0.018 degrees. The United Kingdom domain is a 1,096km x 1,408km (2km resolution grid). Formatted via NetCDF.
+  Please note this is a public beta and therefore a non-operational service.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: The UKV provides hourly forecasts covering the period T+0 to T+48 hours, produced at surface level and at standard pressure levels eight times a day. With 3 hourly forecasts out to T+120. Model runs hourly, with the run times of T+54 with 03*, 15* hours extended to T+120.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-atmospheric-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-atmospheric-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new atmospheric model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-atmospheric-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
