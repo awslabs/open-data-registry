@@ -8,7 +8,7 @@ Description: |
   analysis and advance innovation.
 Documentation: https://github.com/openEDI/documentation/
 Contact:  https://github.com/openEDI/documentation/issues
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+ManagedBy: '[National Laboratory of the Rockies](https://www.nrel.gov/)'
 UpdateFrequency:  As needed
 Collabs:
   ASDI:
@@ -120,6 +120,24 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=buildings-bench)'  
+  - Description: "[Super-Resolution for Renewable Resource Data and Urban Heat Islands (Sup3rUHI)](https://data.openei.org/submissions/6220)"
+    ARN: arn:aws:s3:::oedi-data-lake/sup3ruhi/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=sup3ruhi%2F&limit=50)' 
+  - Description: "[Buildings Sector Scenarios (BSS)](https://data.openei.org/submissions/8558)"
+    ARN: arn:aws:s3:::oedi-data-lake/building-sector-scenarios/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=buildings-sector-scenarios%2F&limit=50)' 
+  - Description: "[U.S. Agrivoltaic Irradiance Database](https://data.openei.org/submissions/8568)"
+    ARN: arn:aws:s3:::oedi-data-lake/inspire/agrivoltaics_irradiance/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=oedi-data-lake&prefix=inspire%2Fagrivoltaics_irradiance%2F&limit=50)' 
 DataAtWork:
   Tools & Applications:
     - Title: "Tracking the Sun Tool"
