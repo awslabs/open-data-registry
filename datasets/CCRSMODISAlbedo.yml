@@ -1,13 +1,11 @@
 Name: CCRS MODIS albedo over Canada at 250-m resolution and 10-day intervals on AWS | Albédo CCRS MODIS au-dessus du Canada à une résolution de 250 m et à intervalles de 10 jours sur AWS
-Description: |
-            Times series of 10-day spectral and broadband albedo products derived at 250-m spatial resolution over Canadian territory and neighboring areas produced at the Canada Centre for Remote Sensing (CCRS) since February 2000 using MODIS L1B C6.1 swath imagery as input. The imagery for all spectral bands was downscaled and re-projected into the Lambert Conformal Conic (LCC) projection at 250-m spatial resolution.  The area size is 5,700 km x 4,800 km (22,800 pixel x 19,200 lines).
+Description: Times series of 10-day spectral and broadband albedo products derived at 250-m spatial resolution over Canadian territory and neighboring areas produced at the Canada Centre for Remote Sensing (CCRS) since February 2000 using MODIS L1B C6.1 swath imagery as input. The imagery for all spectral bands was downscaled and re-projected into the Lambert Conformal Conic (LCC) projection at 250-m spatial resolution.  The area size is 5,700 km x 4,800 km (22,800 pixel x 19,200 lines).
             Séries temporelles de produits d’albédo spectral et à large bande générés à des intervalles de 10 jours avec une résolution spatiale de 250 m, couvrant le territoire canadien et les régions voisines. Ces produits sont élaborés par le Centre canadien de télédétection (CCT) depuis février 2000 à partir des images MODIS L1B C6.1. Les images de toutes les bandes spectrales ont été rééchantillonnées et reprojetées en projection conforme de Lambert (LCC) à une résolution spatiale de 250 m. La zone couverte est d’environ 5 700 km par 4 800 km (22 800 pixels par 19 200 lignes).
 Documentation: https://data.eodms-sgdot.nrcan-rncan.gc.ca/public/CCRS/Trishchenko_MODIS_Albedo
 Contact: alexander.trichtchenko@nrcan-rncan.gc.ca
 ManagedBy: Canada Centre for Remote Sensing (CCRS), Canada Centre for Mapping and Earth Observation (CCMEO), Department of Natural Resources Canada (NRCan) https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-remote-sensing https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-mapping-earth-observation
-UpdateFrequency: |
-            Semi-annually, until the end of MODIS operations
-            Deux fois par an, jusqu'à la fin des opérations MODIS
+UpdateFrequency: Semi-annually, until the end of MODIS operations
+                 Deux fois par an, jusqu'à la fin des opérations MODIS
 Tags:
   - aws-pds 
   - analysis ready data
@@ -19,22 +17,22 @@ Tags:
 License: Creative Commons Licence. Creative Commons BY 4.0 https://creativecommons.org/licenses/by/4.0/
 Citation: Trishchenko, Alexander P. 2025. CCRS MODIS albedo over Canada at 250-m resolution and 10-day intervals. 
 Resources:
-  - Description: 
-    ARN: 
-    Region: 
-    Type: 
-    RequesterPays (Optional):  
-    AccountRequired (Optional): 
-    ControlledAccess (Optional): 
-    Explore (Optional): 
+  - Description: CCRS MODIS Albedo, Cloud Optimized GeoTIFF (COG) images
+    ARN: arn:aws:s3:::ccrs-modis-albedo
+    Region: ca-central-1
+    Type: S3 Bucket    
+  - Description:  Notifications for new CCRS MODIS Albedo data
+    ARN: arn:aws:sns:ca-central-1:675987781521:ccrs-modis-albedo-object_created
+    Region: ca-central-1
+    Type: SNS Topic   
 DataAtWork:
   Tutorials:
-    - Title: Get To Know A Dataset - MCCRS MODIS Albedo at 250-m resolution and 10-day intervals
-      URL: https://github.com/****/get-to-know-a-dataset-MYDATASET.ipynb
+    - Title: Get To Know A Dataset - CCRS MODIS Albedo at 250-m resolution and 10-day intervals
+      URL: https://github.com/OpsCCRS/AWS-Open-Data-Registry-Preparation/blob/main/CCRSMODISAlbedo/get-to-know-a-dataset-CCRSMODISAlbedo.ipynb
       Services: 
       AuthorName: Alexander Trichtchenko
       AuthorURL: https://profils-profiles.science.gc.ca/en/profile/alexander-p-trishchenko
-      NotebookURL (Optional): https://github.com/****/get-to-know-a-dataset-MYDATASET.ipynb   
+      NotebookURL (Optional): https://github.com/OpsCCRS/AWS-Open-Data-Registry-Preparation/blob/main/CCRSMODISAlbedo/get-to-know-a-dataset-CCRSMODISAlbedo.ipynb   
   Publications:
     - Title: Boreal lichen woodlands: a possible negative feedback to climate change in eastern North America
       URL: https://doi.org/10.1016/j.agrformet.2010.12.013
@@ -102,4 +100,4 @@ DataAtWork:
     - Title: Probability of the annual minimum snow and ice (MSI) presence over Canada
       URL:https://open.canada.ca/data/en/dataset/808b84a1-6356-4103-a8e9-db46d5c20fcf 
       AuthorName: Trishchenko, Alexander P.                                              
-
+          
