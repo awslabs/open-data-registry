@@ -1,0 +1,41 @@
+Name: Satellite - Nighttime AusTemp - Degree Heating Days DHD grids for the Australian Maritime Region
+Description: >-
+  This dataset contains the summer Degree Heating Days (DHD) from the 1st of December
+  to the 30th of April since 2012, which is calculated by accumulating the daily
+  positive Sea Surface Temperature anomalies (SSTa). The SSTa is calculated by
+  comparing the current SST to long-term averages (1993-2003, the "CSIRO Legacy
+  climatology" or 2002-2011, the "IMOS climatology"). The magnitude of the DHD
+  correlates well with past coral bleaching events. In cases where SST 
+  cannot be calculated due to cloud cover, the grid cell is left blank (white 
+  in web plots, transparent in Google Earth) to indicate missing data.
+Documentation: https://catalogue-imos.aodn.org.au/geonetwork/srv/eng/catalog.search#/metadata/e1f2476a-b801-4a1f-9fbe-727b4f76f726
+Contact: info@aodn.org.au
+ManagedBy: AODN
+UpdateFrequency: As Needed
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+- oceans
+- satellite imagery
+License: http://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Cloud Optimised AODN dataset of IMOS - Nighttime AusTemp - Degree Heating Days DHD grids for the Australian Maritime Region
+  ARN: arn:aws:s3:::aodn-cloud-optimised/satellite_austemp_degree-heating-day_australia.zarr
+  Region: ap-southeast-2
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Accessing IMOS Nighttime AusTemp - Degree Heating Days DHD grids for the Australian Maritime Region  
+    URL: https://github.com/aodn/imos-user-code-library/blob/master/Python/notebooks/imos_austemp_dhd.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/imos-user-code-library/blob/master/Python/notebooks/imos_austemp_dhd.ipynb
+    AuthorName: Leo Li
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+  - Title: Accessing and search for any AODN dataset
+    URL: https://github.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    NotebookURL: https://githubtocolab.com/aodn/aodn_cloud_optimised/blob/main/notebooks/GetAodnData.ipynb
+    AuthorName: Laurent Besnard
+    AuthorURL: https://github.com/aodn/aodn_cloud_optimised
+Citation: 'The citation in a list of references is: "IMOS [year-of-data-download],
+  [Title], [data-access-URL], accessed [date-of-access]."'
