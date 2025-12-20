@@ -1,0 +1,72 @@
+Name: FoMo - A Multi-Season Dataset for Robot Navigation in Forêt Montmorency
+Description: >
+  The FoMo dataset is a multi-season collection recorded in a boreal forest environment,
+  featuring deep snow, off-road terrain, steep slopes, and highly variable weather.
+  It provides synchronized multi-modal sensor data—including two lidars (RoboSense and
+  Leishen), an FMCW radar (Navtech), stereo and monocular cameras, dual IMUs, wheel
+  odometry, power data, calibration sequences, and precise ground-truth trajectories
+  via GNSS-PPK fusion.
+  
+  Designed to support research on robust robot autonomy under adverse conditions, FoMo
+  includes repeated traversals of six trajectories of varying complexity for long-term
+  SLAM and odometry evaluation, as well as rich metadata such as one-minute weather
+  station measurements.
+  
+  The dataset and its benchmarks are intended to challenge state-of-the-art SLAM,
+  localization, traversability analysis, and multi-season robotics research.
+Documentation: https://fomo.norlab.ulaval.ca/overview
+Contact: dataset@norlab.ulaval.ca
+ManagedBy: "[Norlab, Université Laval](https://norlab.ulaval.ca)"
+UpdateFrequency: This dataset is complete and should not be updated or modified.
+Tags:
+  - aws-pds
+  - robotics
+  - autonomous vehicles
+  - localization
+  - mapping
+  - perception
+  - benchmark
+  - lidar
+  - radar
+  - camera
+  - IMU
+  - GNSS
+  - RINEX
+  - computer vision
+  - signal processing
+  - environmental
+  - geospatial
+  - meteorological
+  - extreme weather
+License: >
+  Creative Commons Attribution 4.0 International (CC BY 4.0).
+  See https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: >
+      Primary S3 bucket containing the full FoMo dataset: lidar scans, radar images, stereo &
+      monocular camera frames, audio, IMU logs, odometry, GNSS-PPK trajectories, calibration sequences,
+      metadata files, and ROS2/mcap-compatible exports.
+    ARN: "To be done after Step 5"
+    Region: ""
+    Type: S3 Bucket
+    Explore:
+      - "To be done after Step 5"
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset - FoMo
+      URL: "To be done after Step 5"
+      NotebookURL: "To be done after Step 5"
+      AuthorName: Norlab, Université Laval
+      AuthorURL: https://norlab.ulaval.ca
+  Tools & Applications:
+    - Title: FoMo SDK (Rust & Python)
+      URL: https://github.com/norlab-ulaval/fomo-sdk
+      AuthorName: Norlab, Université Laval
+      AuthorURL: https://norlab.ulaval.ca
+  Publications:
+    - Title: Toward teach and repeat across seasonal deep snow accumulation (FoMo introduction paper)
+      URL: https://arxiv.org/abs/2505.01339
+      AuthorName: Boxan et al.
+ADXCategories:
+  - Environmental Data
+  - Automotive Data
