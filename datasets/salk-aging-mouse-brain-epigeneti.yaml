@@ -16,18 +16,14 @@ Tags:
   - cram
   - aws-pds
 License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
-
 Resources:
   - Description: Aging mouse brain epigenomics dataset
     ARN: arn:aws:s3:::salk-aging-mouse-brain-epigenetics
     Region: us-west-2
     Type: S3 Bucket
-
-Notifications:
   - Description: Dataset update notifications
     ARN: arn:aws:sns:us-west-2:855738613743:salk-aging-mouse-brain-epigenetics-updates
     Type: SNS Topic
-
 DataAtWork:
   Publications:
     - Title: Cell-type-specific transposable element demethylation and TAD remodeling in the aging mouse brain
