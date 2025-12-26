@@ -65,7 +65,16 @@ Resources:
     Region: us-east-1
     Type: S3 Bucket
     ControlledAccess: https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs004194
-
+  - Description: >
+      Amazon SNS topic that publishes notifications when public access data is added for this dataset.
+    ARN: arn:aws:sns:us-east-1:874962955096:smaht-open-data-public-object_created
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: |
+      Amazon SNS topic that publishes notifications when new controlled access data is added for this dataset.
+    ARN: arn:aws:sns:us-east-1:874962955096:smaht-open-data-protected-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: Somatic Mosaicism across Human Tissues Data Portal
