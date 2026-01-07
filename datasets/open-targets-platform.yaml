@@ -17,11 +17,16 @@ Tags:
 License: https://creativecommons.org/publicdomain/zero/1.0/
 Resources:
   - Description: OpenTargets Release Data
-    ARN:
-    Region:
+    ARN: arn:aws:s3:::open-targets-public-data-releases
+    Region: eu-west-1
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: Platform datasets on AWS
+      URL: https://platform-docs.opentargets.org/data-access/platform-datasets-on-aws
+      NotebookURL: https://colab.research.google.com/github/opentargets/notebooks/blob/main/notebooks/reading_data_from_aws.ipynb
+      AuthorName: Daniel Suveges
+      AuthorURL: https://www.ebi.ac.uk/people/person/daniel-suveges/
     - Title: Autoimmune colocalisations
       URL: https://github.com/opentargets/notebooks
       NotebookURL: https://github.com/opentargets/notebooks/blob/main/notebooks/autoimmune_colocalisations.ipynb
