@@ -1,20 +1,27 @@
 Name: Met Office Global and Regional Ensemble Prediction System - UK (MOGREPS-UK) on a 30-day rolling archive
-Description: The flagship Numerical Weather Prediction (NWP) model developed and used at the Met Office, is the Unified Model, 
- the same model is used for both weather and climate prediction. For weather forecasting the Met Office runs several configurations of 
- the Unified Model as part of its operational Numerical Weather Prediction suite. 
+Description: | 
+ THIS DATASET IS CHANGING
+ Files uploaded from late January 2026 onward will contain changes including:
+ - precision changes
+ - new parameters
+ - changes to existing parameters e.g. adding vertical levels and timesteps
+ - the height_asl_on_pressure_levels parameter will be replaced by geopotential_height_on_pressure_levels
+ 
+ Please check your systems are prepared for these changes.
 
- The regional ensemble (MOGREPS-UK) produces forecasts for an area covering the UK for the next five days. 
+ A numerical weather prediction model that produces forecasts for the UK for the next 5 days. Parameters including temperature, pressure, wind, humidity, etc. are forecast at grid points separated by about 2.2 km, and the model has multiple vertical levels. The data is available as NetCDF files. It's offered on a free, unsupported basis, so we don’t recommend using it for any critical business purposes.
 
- In the UK ensemble the model parameters (temperature, pressure, wind, humidity, etc.) are forecast at grid points 
- separated by about 2.2 km, and the model has 70 vertical levels. 
+ Met Office Global and Regional Ensemble Prediction System - UK (MOGREPS-UK) is a UK configuration of the Unified Model, which is the Met Office's flagship Numerical Weather Prediction model.
+ 
+ The archive contains 30 days of data. The data is typically available approximately 10-11 hours after the model run time.
+ 
+ For most parameters, timesteps are provided every hour from 0 to 126 hours
 
- The UK ensemble covers a limited area, so the global ensemble provides information on the weather entering the UK model domain through the boundaries. 
-
- Please note this is a public beta and therefore a non-operational service.
+UpdateFrequency: The MOGREPS-UK model runs 24 times per day.
+License: "British Crown copyright 2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
-Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
-UpdateFrequency: The MOGREPS-UK model runs 24 times per day. The available time steps are provided every hour from 0 to 126 hours.
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST). As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 Collabs:
   ASDI:
     Tags:
@@ -33,7 +40,6 @@ Tags:
   - near-surface relative humidity
   - netcdf
   - weather
-License: "British Crown copyright 2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Resources:
   - Description: Met Office Global and Regional Ensemble Prediction System - UK (MOGREPS-UK) on a 30-day rolling archive
     ARN: arn:aws:s3:::met-office-uk-ensemble-model-data
