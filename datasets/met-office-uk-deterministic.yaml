@@ -1,11 +1,34 @@
 Name: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
-Description: The flagship Numerical Weather Prediction model developed and used at the Met Office, is the Unified Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite. Uncovering 2 years' worth of historical data, updated regularly with a time delay.
-  The UK deterministic model is a post processed regional downscaled configuration of the Unified Model, covering the UK and Ireland, with a resolution of approximately 0.018 degrees. The United Kingdom domain is a 1,096km x 1,408km (2km resolution grid). Formatted via NetCDF.
-  Please note this is a public beta and therefore a non-operational service.
+Description: |
+ THIS DATASET IS CHANGING
+ Files uploaded from late January 2026 onward will contain changes including:
+ - precision changes
+ - new parameters
+ - changes to existing parameters e.g. adding vertical levels and timesteps
+ - the height_asl_on_pressure_levels parameter will be replaced by geopotential_height_on_pressure_levels
+ 
+ Please check your systems are prepared for these changes.
+
+ A high-resolution gridded weather forecast for the UK, with a resolution of 0.018 degrees, projected on to a 2km horizontal grid. The data is available as NetCDF files. It's offered on a free, unsupported basis, so we don’t recommend using it for any critical business purposes.
+ 
+ Based on the Met Office UKV model, which is a deterministic, numerical weather prediction model for the UK and Ireland. It is a UK configuration of the Unified Model, which is the Met Office’s flagship Numerical Weather Prediction model.
+ 
+ The archive contains data from the past two years. The data is typically available approximately 3 to 6 hours after the model run time.
+ 
+ The following timesteps are available:
+ - every hour from 0 to 54 hours (for most parameters)
+ - every 3 hours from 57 to 120 hours
+ 
+ For some parameters, data is available for multiple vertical height or pressure levels through the atmosphere.
+UpdateFrequency: |
+  There are three lengths of model run, each with its own update frequency:
+  - Nowcast: forecasts the next 12 hours and runs at 0100, 0200, 0400, 0500, 0700, 0800, 1000, 1100, 1300, 1400, 1600, 1700, 1900, 2000, 2200 and 2300 UTC.
+  - Short: forecasts the next 54 hours and runs at 0000, 0600, 0900, 1200, 1800 and 2100 UTC.
+  - Medium: forecasts the next 120 hours and runs at 0300 and 1500 UTC.
+License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
-Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
-UpdateFrequency: The UKV provides hourly forecasts covering the period T+0 to T+48 hours, produced at surface level and at standard pressure levels eight times a day. With 3 hourly forecasts out to T+120. Model runs hourly, with the run times of T+54 with 03*, 15* hours extended to T+120.
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 Collabs:
   ASDI:
     Tags:
@@ -22,7 +45,6 @@ Tags:
   - near-surface relative humidity
   - netcdf
   - weather
-License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Resources:
   - Description: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
     ARN: arn:aws:s3:::met-office-atmospheric-model-data
