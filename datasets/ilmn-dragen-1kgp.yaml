@@ -1,17 +1,20 @@
-Name: "1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5, 3.7, 4.0, and 4.2"
+Name: "1000 Genomes Phase 3 Reanalysis with DRAGEN 3.5, 3.7, 4.0, 4.2, and 4.4"
 Description: |
-  This dataset contains alignment files and small variant (includes single nucleotide variants (SNV) and indels), copy number variant (CNV), short tandem repeat (*i.e.*, repeat expansion; STR), structural variant (SV) and other variant call files from the 1000 Genomes Project (1KGP) Phase 3 dataset (n=3,202) using Illumina DRAGEN v3.5.7b, v3.7.6, v4.0.3, and v4.2.7 software.
+  This dataset contains alignment files and small variant (includes single nucleotide variants (SNV) and indels), copy number variant (CNV), short tandem repeat (*i.e.*, repeat expansion; STR), structural variant (SV) and other variant call files from the 1000 Genomes Project (1KGP) Phase 3 dataset (n=3,202) using Illumina DRAGEN v3.5.7b, v3.7.6, v4.0.3, v4.2.7, v4.4.7 software.
   All DRAGEN analyses were performed in the cloud using the Illumina Connected Analytics bioinformatics platform powered by Amazon Web Services (see ['Data solution empowering population genomics'](https://www.illumina.com/science/genomics-research/articles/data-solution-empowering-population-genomics-research.html) for more information).
-  The v3.7.6 and v4.2.7 datasets include results from trio small variant, *de novo* structural variant and *de novo* copy number variant calls on 602 trio families comprised of members from the 1KGP Phase 3 dataset.
+  The v3.7.6, v4.2.7, and v4.4.7 datasets include results from trio small variant, *de novo* structural variant, and *de novo* copy number variant calls on 602 trio families comprised of members from the 1KGP Phase 3 dataset.
   Trio repeat expansion calling was included in the v3.7.6 dataset only.
-  Joint cohort analysis was also performed on the entire 1KGP sample dataset (n=3,202) for the v3.7.6, v4.0.3, and v4.2.7 reanalyses using DRAGEN GVCF Genotyper v3.8.3, v4.2.0, and v4.2.7, respectively (see ['Genotyping variants at population scale using DRAGEN gVCF Genotyper'](https://www.illumina.com/science/genomics-research/articles/gVCF-Genotyper.html)).
+  Joint cohort analysis was also performed on the entire 1KGP sample dataset (n=3,202) for the v3.7.6, v4.0.3, and v4.2.7 reanalyses using [DRAGEN Iterative gVCF Genotyper](https://www.illumina.com/products/by-type/informatics-products/dragen-secondary-analysis/iterative-GVCF-genotyper.html) v3.8.3, v4.2.0, and v4.2.7, respectively (see ['Genotyping variants at population scale using DRAGEN gVCF Genotyper'](https://www.illumina.com/science/genomics-research/articles/gVCF-Genotyper.html)).
   Improvements and new features in the v3.7.6 individual samples analyses include *CYP2D6* variant calling and joint detection (see ['DRAGEN 3.7 User Guide'](https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/dragen-bio-it/Illumina-DRAGEN-Bio-IT-Platform-User-Guide-1000000141465-00.pdf) for details on these features) and use of graph-based hg19 and hg38 reference hash tables (see ['DRAGEN Wins at PrecisionFDA Truth Challenge V2 Showcase Accuracy Gains from Alt-aware Mapping and Graph Reference Genomes'](https://www.illumina.com/science/genomics-research/dragen-wins-precisionfda-challenge-showcase-accuracy-gains.html) and ['Demystifying the versions of GRCh38/hg38 reference genomes, how they are used in DRAGEN and their impact on accuracy'](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html) for details).
   The DRAGEN v4.0.3 dataset features improved small variant calling accuracy due to utilization of a newly integrated machine learning functionality with an updated graph based reference for difficult to map regions (see ['DRAGEN Sets New Standard for Data Accuracy in PrecisionFDA Benchmark Data. Optimizing Variant Calling Performance with Illumina Machine Learning and DRAGEN Graph'](https://www.illumina.com/science/genomics-research/articles/dragen-shines-again-precisionfda-truth-challenge-v2.html)); accuracy and runtime improvements in the SV caller; new targeted callers including *CYP2B6*, *GBA*, *SMN* and a Star Allele PGx caller; and an expanded catalog for use with Expansion Hunter STR caller (see 'DRAGEN v4.0.3 Software Release Notes' for details on these and other new features and improvements).
-  DRAGEN v4.2 offers significant accuracy improvements in small variant, CNV, and SV calling, includes new targeted callers (*HBA*, *LPA*, *RH*, *CYP21A2*, *SMN* silent carrier variant), and supports Star Allele calling for five additional pharmacogenes (*BCHE*, *ABCG2*, *NAT2*, *F5*, *UGT2B17*).
+  DRAGEN v4.2 offers significant accuracy improvements in small variant, CNV, and SV calling, includes new targeted callers (*HBA*, *LPA*, *RH*, *CYP21A2*, *SMN* silent carrier variant), and supports Star Allele calling for five additional pharmacogenes (*BCHE*, *ABCG2*, *NAT2*, *F5*, and *UGT2B17*).
   See ['DRAGEN v4.2.4 Software Release Notes'](https://support.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/release-notes/200040845_02_DRAGEN-4.2-Customer-Release-Notes.pdf) for details about these and other new features and improvements for v4.2.
+  DRAGEN v4.4 boosts the speed and accuracy of all callers via the official release of an optimized pangenome graph reference.
+  Namely, SV calling accuracy is substantially increased via the implementation of a multigenome mapper capable of exploiting the power of a pangenome reference.
+  See ['DRAGEN v4.4.4 Software Release Notes'](https://www.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/release-notes/200068065_00_DRAGEN-4_4_4-Customer-Release-Notes.pdf) for further details and previews of other new features and enhancements for v4.4.
   Starting with the v4.0.3 reanalysis, annotation using the Illumina Annotation Engine (Nirvana) was included as part of the analysis (see ['Nirvana Documentation'](https://illumina.github.io/NirvanaDocumentation/) for more information).
-  In both the v4.0.3 and v4.2.7 datasets, annotation was performed on the merged small variant VCF generated by the DRAGEN GVCF Genotyper for the entire 1KGP cohort.
-  For v4.2.7, annotation was also performed on the CNV, SV, and STR VCFs for the entire cohort.
+  For the v4.0.3, v4.2.7, and v4.4.7 datasets, annotation was performed on the merged small variant VCF generated by the DRAGEN Iterative gVCF Genotyper for the entire 1KGP cohort.
+  For v4.2.7 and v4.4.7, annotation was also performed on the CNV, SV, and STR VCFs for the entire cohort.
   For these, individual VCFs generated by the DRAGEN CNV, SV, or STR caller for all samples in the cohort were merged into one VCF prior to performing annotation.
 Contact: "[Illumina, Inc.](mailto:support@illumina.com)"
 Documentation: "[DRAGEN Support Resources](https://support.illumina.com/sequencing/sequencing_software/dragen-bio-it-platform.html)"
@@ -23,14 +26,16 @@ Tags:
   - bioinformatics
   - biology
   - cram
-  - genetic
-  - genomic
+  - genetics
+  - genomics
   - genotyping
   - life sciences
   - machine learning
   - population genetics
   - short read sequencing
+  - copy number variation
   - structural variation
+  - short tandem repeats
   - tertiary analysis
   - variant annotation
   - whole genome sequencing
@@ -54,6 +59,10 @@ Resources:
     Type: S3 Bucket
   - Description: CRAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, cyp2b6-tsv, cyp2d6-tsv, gba-tsv, smn-tsv, star-allele-tsv, hla-tsv, gvcf, json, metrics and other supporting files from DRAGEN v4.2.7 analyses and Nirvana Annotation in a public S3 bucket.
     ARN: arn:aws:s3:::1000genomes-dragen-v4-2-7
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: CRAM, SNV-vcf, SNV-gvcf, STR-vcf, STR-bam, SV-vcf, ROH-vcf, CNV-vcf, CNV-bw, cyp2b6-tsv, cyp2d6-tsv, gba-tsv, smn-tsv, star-allele-tsv, hla-tsv, gvcf, json, metrics and other supporting files from DRAGEN v4.4.7 analyses and Nirvana Annotation in a public S3 bucket.
+    ARN: arn:aws:s3:::1000genomes-dragen-v4-4-7
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
@@ -105,6 +114,18 @@ DataAtWork:
       AuthorURL: https://www.illumina.com/
     - Title: "Illumina DRAGEN Bio-IT Platform v4.2 Online Help"
       URL: https://support-docs.illumina.com/SW/dragen_v42/Content/SW/FrontPages/DRAGEN.htm
+      AuthorName: Illumina Inc.
+      AuthorURL: https://www.illumina.com/
+    - Title: "DRAGEN v4.4.4 Software Release Notes"
+      URL: "https://www.illumina.com/content/dam/illumina-support/documents/downloads/software/dragen/release-notes/200068065_00_DRAGEN-4_4_4-Customer-Release-Notes.pdf"
+      AuthorName: Illumina Inc.
+      AuthorURL: https://www.illumina.com/
+    - Title: "Illumina DRAGEN v4.4 Software User Guide"
+      URL: "https://help.dragen.illumina.com/product-guide/dragen-v4.4"
+      AuthorName: Illumina Inc.
+      AuthorURL: https://www.illumina.com/
+    - Title: "DRAGEN Iterative gVCF Genotyper"
+      URL: "https://www.illumina.com/products/by-type/informatics-products/dragen-secondary-analysis/iterative-GVCF-genotyper.html"
       AuthorName: Illumina Inc.
       AuthorURL: https://www.illumina.com/
     - Title: "Nirvana Documentation"
