@@ -1,0 +1,43 @@
+Name: Vesuvius Challenge - CT Scans of Herculaneum Papyri
+Description: |
+  Reconstructed micro-CT volumes of carbonized Herculaneum papyri produced for the
+  Vesuvius Challenge. The scanned library of scrolls survived the volcanic eruption
+  of Vesuvius in 79 AD and is the only "intact" library coming from ancient times.
+  Volumetric reconstructions are distributed as OME-Zarr multiscale datasets to support
+  virtual unwrapping, segmentation, and text recovery research on ancient scrolls.
+  Reading these scrolls could change forever our knowledge of Roman History.
+Documentation: https://scrollprize.org/data # TODO: to update
+Contact: https://scrollprize.org/
+ManagedBy: "[Vesuvius Challenge](https://scrollprize.org/)"
+UpdateFrequency: As new papyri are scanned and reconstructed.
+Tags:
+  - aws-pds
+  - cultural preservation
+  - digital preservation
+  - history
+  - computed tomography
+  - x-ray microtomography
+  - x-ray tomography
+  - x-ray
+  - imaging
+  - image processing
+  - volumetric imaging
+  - zarr
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+Resources:
+  - Description: OME-Zarr multiscale micro-CT reconstructions of Herculaneum papyri with associated metadata.
+    ARN: arn:aws:s3:::TBD # TODO: to update
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Scroll Prize Tutorials (general; dataset-specific updates pending) # TODO: UPDATE
+      URL: https://scrollprize.org/tutorial
+      AuthorName: Vesuvius Challenge Team
+      AuthorURL: https://scrollprize.org/
+  Tools & Applications:
+    - Title: Vesuvius Challenge Monorepository (villa)
+      URL: https://github.com/ScrollPrize/villa
+      AuthorName: Vesuvius Challenge Team
+      AuthorURL: https://github.com/ScrollPrize
+  Publications:
