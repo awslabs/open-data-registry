@@ -1,0 +1,39 @@
+Name: uk-metoffice-global-deterministic-nwp-wis2
+Description: This dataset is to support the WIS2 program. AWS already support a global cache for core data which is typically observational data (Building the WIS 2.0 global weather cache on AWS | Amazon Web Services). However, forecast datasets (especially high resolution datasets) are not eligible for the WIS2 cache and therefore not classed as recommended data. This dataset is to support the WMO WIPPS program - WMO Integrated Processing and Prediction System (WIPPS)  . Currently forecast model output datasets get transmitted via legacy FTP to National Centres that use the UK models from output of our Super Computer. WIPPS is a WMO initiative to support other centre's around the world who do not have the ability to run there own models or wish to compare output against ours. We hope to make these valuable datasets via the AWS registry and the WIS2 notification services to help other centers and countries around the world to "stay safe" from future weather events.
+Documentation: https://codes.wmo.int/grib2
+Contact: paul.nelson@metoffice.gov.uk
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: Every 6 hours
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - atmosphere
+  - forecast
+  - geoscience
+  - climate
+  - earth observation
+  - hydrology
+  - meteorological
+  - model
+  - oceans
+  - weather
+License: Users are granted free and unrestricted access to this data, without charge and with no conditions on use. Users are requested to attribute the producer of this data. WMO Unified Data Policy (Resolution 1 (Cg-Ext 2021)).
+Resources:
+  - Description: Met Office atmospheric global model data
+    ARN: arn:aws:s3:::uk-metoffice-global-deterministic-nwp-wis2
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://uk-metoffice-global-deterministic-nwp-wis2.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications of new Met Office atmospheric global model data
+    ARN: arn:aws:sns:eu-west-2:211648629506:uk-metoffice-global-deterministic-nwp-wis2-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Decoding data from WMO binary formats
+      URL: https://training.wis2box.wis.wmo.int/practical-sessions/decoding-data/
+      AuthorName: World Meteorological Organization (WMO)
