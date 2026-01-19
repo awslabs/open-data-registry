@@ -1,53 +1,92 @@
 Name: Public Utility Data Liberation Project
 Description: |
-  The Public Utility Data Liberation Project (PUDL) provides analysis-ready energy system data to climate advocates,
-  researchers, policymakers, and journalists.
-  <br/>
-  <br/>
-  [PUDL](https://catalyst.coop/pudl/) is an [open source data processing pipeline](https://github.com/catalyst-cooperative/pudl)
-  that makes US energy data easier to access and use programmatically. Hundreds of gigabytes of valuable data
-  are published by US government agencies, but it's often difficult to work with.
-  PUDL takes the original spreadsheets, CSV files, and databases and turns them into a unified resource. This allows users to
-  spend more time on novel analysis and less time on data preparation.
-  <br/>
-  <br/>
-  This information allows users to explore the operating costs of individual power plants, and see how fuel costs impact
-  the viability of different types of generation.  It can highlight the competitiveness of renewable electricity in the
-  market today.  It can show how the generation mix of different utilities has evolved over time, and how the usage of
-  individual power plants has changed as fuel prices have changed and more renewable generation has been brought online.
-
-Documentation: |
-  You can download the [data directly](https://catalystcoop-pudl.readthedocs.io/en/latest/data_access.html#nightly-builds)
-  or via the [aws CLI tool](https://catalystcoop-pudl.readthedocs.io/en/latest/dev/nightly_data_builds.html#how-to-access-the-nightly-build-outputs-from-aws).
-  If you'd like a UI to explore a subset of the data you can visit [data.catalyst.coop](https://data.catalyst.coop/).
-Contact: For general questions or feedback about the data, create an GitHub issue or discussion in the [PUDL repo](https://github.com/catalyst-cooperative/pudl). We also love talking to our users during [PUDL Office Hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
+  The Public Utility Data Liberation Project (PUDL) provides analysis-ready U.S. energy
+  system data in bulk for programmatic use. Sources include the U.S. Energy
+  Information Administration (EIA), the Environmental Protection Agency (EPA), the
+  Federal Energy Regulatory Commission (FERC), the Pipeline and Hazardous Materials
+  Safety Administration (PHMSA), the Securities and Exchange Commission (SEC).  The
+  primary focus is on the electricity sector, with additional data on the natural gas
+  system and energy company financial reporting.
+Documentation: https://catalystcoop-pudl.readthedocs.io/en/latest/
+Contact: |
+  Create a [GitHub discussion](https://github.com/orgs/catalyst-cooperative/discussions).
+  Sign up for [office hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
+  Email us at [hello@catalyst.coop](mailto:hello@catalyst.coop).
 ManagedBy: "[Catalyst Cooperative](https://catalyst.coop/)"
 UpdateFrequency: |
-  The federal agencies that publish the raw data PUDL processes release new data, monthly, quarterly and yearly. 
-  PUDL is continuously improving the data and tries to release new versions of the data quarterly.
+  New outputs published nightly as part of our continuous integration process.
+  New data is integrated on a rolling basis as it is published by the original sources.
+  Agencies typically release data monthly, quarterly, or yearly.
+  New versioned releases of PUDL are published and archived at least once per quarter.
 Collabs:
   ASDI:
     Tags:
       - energy
 Tags:
   - aws-pds
-  - climate
-  - climate model
-  - energy
-  - environmental
-  - government records
-  - infrastructure
-  - open source software
+  - carbon
+  - dsm
+  - economics
   - electricity
+  - energy
   - energy modeling
+  - environmental
+  - geospatial
+  - geothermal
+  - government records
+  - industry
+  - industrial
+  - infrastructure
+  - market data
+  - parquet
+  - regulatory
+  - solar
+  - sqlite
+  - time series forecasting
   - utilities
-
-License: The PUDL data and documentation are published under the [Creative Commons Attribution License v4.0](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0).
+  - batteries
+  - coal
+  - duckdb
+  - emissions
+  - EIA
+  - electric grid
+  - energy efficiency
+  - energy information administration
+  - energy storage
+  - environmental protection agency
+  - EPA
+  - federal energy regulatory commission
+  - FERC
+  - greenhouse gas
+  - hydroelectric
+  - methane
+  - natural gas
+  - oil
+  - ownership
+  - photovoltaics
+  - pipeline
+  - pollution
+  - transmission
+  - us
+  - wind
+License: "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (Creative Commons Attribution 4.0 International License)."
 Resources:
-  - Description: All PUDL data outputs.
-    ARN: arn:aws:s3:::pudl.catalyst.coop
+  - Description: PUDL Nightly Build Outputs
+    ARN: arn:aws:s3:::pudl.catalyst.coop/nightly
     Region: us-west-2
     Type: S3 Bucket
+    Explore:
+      - https://data.catalyst.coop/
+  - Description: PUDL Stable Release Outputs
+    ARN: arn:aws:s3:::pudl.catalyst.coop/stable
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: FERC Electric Quarterly Reports (EQR)
+    ARN: arn:aws:s3:::pudl.catalyst.coop/ferceqr
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - https://data.catalyst.coop/
 DataAtWork:
   Tutorials:
     - Title: PUDL Data Access
@@ -60,7 +99,26 @@ DataAtWork:
       AuthorName: Catalyst Cooperative
       AuthorURL: https://catalyst.coop/
       NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/02-state-hourly-electricity-demand.ipynb
-
+    - Title: EIA-930 Sanity Checks
+      URL: https://www.kaggle.com/code/catalystcooperative/03-eia-930-sanity-checks
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/03-eia930-sanity-checks.ipynb
+    - Title: Renewable Generation Profiles
+      URL: https://www.kaggle.com/code/catalystcooperative/04-renewable-generation-profiles
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/04-renewable-generation-profiles.ipynb
+    - Title: FERC-714 Electricity Demand Forecast Biases
+      URL: https://www.kaggle.com/code/catalystcooperative/05-ferc-714-electricity-demand-forecast-biases
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/05-ferc714-electricity-demand-forecast-biases.ipynb
+    - Title: PUDL Imputed Electricity Demand
+      URL: https://www.kaggle.com/code/catalystcooperative/06-pudl-imputed-electricity-demand
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/06-pudl-imputed-demand.ipynb
 ADXCategories:
   - Environmental Data
   - Resources Data
