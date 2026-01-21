@@ -1,7 +1,7 @@
 Name: NOAA EAGLE (Experimental AI Global and Limited-Area Ensemble) Global Deterministic and Ensemble Forecasts
 Description: |
   <h4>Update</h4>
-  Effective on December 17, 2025, the <a href="https://www.weather.gov/media/notification/pdf_2025/scn25-89_AIGFS_AIGEFS_and_HGEFS.pdf">NOAA/NWS National Centers for Environmental Prediction (NCEP) implemented three new models</a>: the Artificial Intelligence Global Forecast System (AIGFS), the Artificial Intelligence Global Ensemble Forecast System (AIGEFS), and the Hybrid Global Ensemble Forecast System (HGEFS). The AIGFS/AIGEFS are the operational replacement for EAGLE SOLO/Ensemble. <b>The EAGLE SOLO/Ensemble forecasts hosted here are based on the GraphCastGFS described below<b>. Please note that <b>this<b> bucket for EAGLE SOLO/Ensemble will continue hosting experimental forecasts to support ongoing development of EAGLE global weather, sub-seasonal to seasonal (S2S) forecast models once they are ready.
+  Effective on December 17, 2025, the <a href="https://www.weather.gov/media/notification/pdf_2025/scn25-89_AIGFS_AIGEFS_and_HGEFS.pdf">NOAA/NWS National Centers for Environmental Prediction (NCEP) implemented three new models</a>: the Artificial Intelligence Global Forecast System (AIGFS), the Artificial Intelligence Global Ensemble Forecast System (AIGEFS), and the Hybrid Global Ensemble Forecast System (HGEFS). The AIGFS/AIGEFS are the operational replacement for EAGLE SOLO/Ensemble. <b>The EAGLE SOLO/Ensemble forecasts hosted here are based on the GraphCastGFS described below</b>. Please note that <b>this</b> bucket for EAGLE SOLO/Ensemble will continue hosting experimental forecasts to support ongoing development of EAGLE <b>global weather, sub-seasonal to seasonal (S2S) forecast models</b> once they are ready.
   <br/>
   <br/>
   The EAGLE SOLO/ensemble forecasts are generated from GraphCast Global Forecast System (GraphCastGFS). GraphCastGFS is an experimental system set up by the National Centers for Environmental Prediction (NCEP) to produce medium range global forecasts. It is built upon Google DeepMind’s pre-trained GraphCast, a Machine Learning Weather Prediction (MLWP) model. The horizontal resolution is a 0.25 degree latitude-longitude grid (about 28 km). The model runs 4 times a day at 00Z, 06Z, 12Z and 18Z cycles. Major atmospheric and surface fields including temperature, wind components, geopotential height, specific humidity, and vertical velocity, are available. The products are 6 hourly forecasts up to 16 days. The data format is GRIB2.
@@ -10,34 +10,36 @@ Description: |
   The GraphCastGFS system is an experimental weather forecast model built upon the pre-trained Google DeepMind’s GraphCast Machine Learning Weather Prediction (MLWP) model. The GraphCast model is implemented as a message-passing graph neural network (GNN) architecture with “encoder-processor-decoder” configuration. It uses an icosahedron grid with multiscale edges and has around 37 million parameters. This model is pre-trained with ECMWF’s ERA5 reanalysis data. The GraphCastGFSl takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs GraphCast (37 levels) and GraphCast_operational (13 levels) with a pre-trained model provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent with GFS from GraphCastGFS’ native forecast data.
   <br/>
   <br/>
-  <b>Model upgrade information:<b>
-  <b>The GraphCastGFS version 1.0<b> takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs 37-level GraphCast and 13-level GraphCast-operational with a pre-trained model provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent with GFS from GraphCastGFS’ native forecast data. The forecast has been uploaded to the bucket since 12Z on February 5, 2024. 
+  <b>Model upgrade information:</b>
   <br/>
   <br/>
-  <b>The GraphCastGFS version 2.0<b> made several changes from the GraphCastGFS version 1.0, including: 1) The 37-level model is removed due to the storage restriction and limited accuracy. 2) The 13-level GraphCast ML model was fine-tuned with NCEP’s GDAS analysis data as inputs and ECMWF’s ERA5 data as ground truth. The new weights created from the training are used to create global forecasts. For more details, please refer to NOAA NCEP official note 520 and 522. GraphCastGFS version 2.0 is the base of the EAGLE SOLO/ensemble, whose operational counterparts are AIGFS/AIGEFS v1.0. The EAGLE SOLO version 1.0 forecasts started from 06Z April 24, 2024 and ended at 18Z on December 18, 2025. The EAGLE ensemble version 1.0 forecasts started from 00Z April 29, 2025 and ended at 18Z on December 17, 2025.
+  <b>The GraphCastGFS version 1.0</b> takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs 37-level GraphCast and 13-level GraphCast-operational with a pre-trained model provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent with GFS from GraphCastGFS’ native forecast data. The forecast has been uploaded to the bucket since 12Z on February 5, 2024. 
+  <br/>
+  <br/>
+  <b>The GraphCastGFS version 2.0</b> made several changes from the GraphCastGFS version 1.0, including: 1) The 37-level model is removed due to the storage restriction and limited accuracy. 2) The 13-level GraphCast ML model was fine-tuned with NCEP’s GDAS analysis data as inputs and ECMWF’s ERA5 data as ground truth. The new weights created from the training are used to create global forecasts. For more details, please refer to NOAA NCEP official note 520 and 522. GraphCastGFS version 2.0 is the base of the EAGLE SOLO/ensemble, whose operational counterparts are AIGFS/AIGEFS v1.0. The EAGLE SOLO version 1.0 forecasts started from 06Z April 24, 2024 and ended at 18Z on December 18, 2025. The EAGLE ensemble version 1.0 forecasts started from 00Z April 29, 2025 and ended at 18Z on December 17, 2025.
+  <br/>
   <br/>
   Innovations have since been made separately for AIGFS and AIGEFS. To distinguish the two systems, the future development for AIGFS and AIGEFS will be versioned as AIGFSdevX.Y and AIGEFSdevX.Y with experimental forecasts hosted in this bucket.
   <br/>
   <br/>
-  <b>AIGFSdev2.1<b> updated loss function in GraphCast from grid-point mean square error to spectral harmonic based mean square error. The loss scaling is also updated for most of the variables. The forecasts started from 00Z Dec 19, 2025 under graphcast.YYYYMMDD/cyc/forecast_13_levels. Additional feature updates will go to EAGLE SOLO test, whose forecast will be under  graphcast.YYYYMMDD/cyc/forecast_13_levels_test. 
+  <b>AIGFSdev2.1</b> updated loss function in GraphCast from grid-point mean square error to spectral harmonic based mean square error. The loss scaling is also updated for most of the variables. The forecasts started from 00Z Dec 19, 2025 under graphcast.YYYYMMDD/cyc/forecast_13_levels. Additional feature updates will go to EAGLE SOLO test, whose forecast will be under  graphcast.YYYYMMDD/cyc/forecast_13_levels_test. 
   <br/>
   <br/>
-  <b>Data information:<b>
-  <br/>
-  <br/>
-  graphcastgfs.t00z.pgrb2.0p25.f006
+  <b>Data information:</b>
   <br/>
   <br/>
   The input data generated from the GDAS data is provided under the input/ directory. An example of file names is shown below:
   <br/>
   <br/>
-  <a href="http://source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc">source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc"
+  source-gdas_date-2024022000_res-0.25_levels-13_steps-2.nc
   <br/>
   <br/>
   The EAGLE SOLO forecast files are under forecasts_13_levels/. There are 128 files (including grib2 index files) under each directory covering 16-day forecasts. An example of a file name is listed below:
   <br/>
   <br/>
   graphcastgfs.t00z.pgrb2.0p25.f006
+  <br/>
+  <br/>
   graphcastgfs.t00z.pgrb2.0p25.f006.idx
   <br/>
   <br/>
@@ -45,6 +47,8 @@ Description: |
   <br/>
   <br/>
   pmlgefsc00.t00z.pgrb2.0p25.f006
+  <br/>
+  <br/>
   pmlgefsc00.t00z.pgrb2.0p25.f006.idx
   <br/>
   <br/>
