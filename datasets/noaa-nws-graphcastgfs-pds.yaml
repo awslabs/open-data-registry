@@ -7,9 +7,6 @@ Description: |
   The EAGLE SOLO/ensemble forecasts are generated from GraphCast Global Forecast System (GraphCastGFS). GraphCastGFS is an experimental system set up by the National Centers for Environmental Prediction (NCEP) to produce medium range global forecasts. It is built upon Google DeepMind’s pre-trained GraphCast, a Machine Learning Weather Prediction (MLWP) model. The horizontal resolution is a 0.25 degree latitude-longitude grid (about 28 km). The model runs 4 times a day at 00Z, 06Z, 12Z and 18Z cycles. Major atmospheric and surface fields including temperature, wind components, geopotential height, specific humidity, and vertical velocity, are available. The products are 6 hourly forecasts up to 16 days. The data format is GRIB2.
   <br/>
   <br/>
-  The GraphCastGFS system is an experimental weather forecast model built upon the pre-trained Google DeepMind’s GraphCast Machine Learning Weather Prediction (MLWP) model. The GraphCast model is implemented as a message-passing graph neural network (GNN) architecture with “encoder-processor-decoder” configuration. It uses an icosahedron grid with multiscale edges and has around 37 million parameters. This model is pre-trained with ECMWF’s ERA5 reanalysis data. The GraphCastGFSl takes two model states as initial conditions (current and 6-hr previous states) from NCEP 0.25 degree GDAS analysis data and runs GraphCast (37 levels) and GraphCast_operational (13 levels) with a pre-trained model provided by GraphCast. Unit conversion to the GDAS data is conducted to match the input data required by GraphCast and to generate forecast products consistent with GFS from GraphCastGFS’ native forecast data.
-  <br/>
-  <br/>
   <b>Model upgrade information:</b>
   <br/>
   <br/>
@@ -86,3 +83,4 @@ DataAtWork:
   Tutorials:
   Tools & Applications:
   Publications:
+
