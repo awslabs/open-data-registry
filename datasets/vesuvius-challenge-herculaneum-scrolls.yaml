@@ -1,0 +1,52 @@
+Name: Vesuvius Challenge - CT Scans of Herculaneum Papyri
+Description: |
+  This dataset contains reconstructed micro-CT volumes of carbonized Herculaneum papyri
+  produced as part of the Vesuvius Challenge. The scanned scroll library survived the
+  eruption of Mount Vesuvius in AD 79. It is the only intact library known to have
+  survived from antiquity.
+  The volumetric reconstructions are distributed as OME-Zarr multiscale datasets to support
+  research in virtual unwrapping, segmentation, and text recovery of ancient scrolls.
+  Deciphering these scrolls could forever change our understanding of Roman history.
+Documentation: https://github.com/ScrollPrize/open-data
+Contact: https://scrollprize.org/
+ManagedBy: "[Vesuvius Challenge](https://scrollprize.org/)"
+UpdateFrequency: As additional papyri are scanned and reconstructed.
+Tags:
+  - aws-pds
+  - cultural preservation
+  - digital preservation
+  - history
+  - computed tomography
+  - x-ray microtomography
+  - x-ray tomography
+  - x-ray
+  - imaging
+  - image processing
+  - volumetric imaging
+  - zarr
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+Resources:
+  - Description: OME-Zarr multiscale micro-CT reconstructions of Herculaneum papyri with associated metadata.
+    ARN: arn:aws:s3:::vesuvius-challenge-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for new CT scans of Herculaneum papyri data
+    ARN: arn:aws:sns:us-east-1:597423010625:vesuvius-challenge-open-data-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know a Dataset: Vesuvius Challenge - CT Scans of Herculaneum Papyri"
+      URL: https://github.com/ScrollPrize/open-data/blob/main/examples/get-to-know-a-dataset.ipynb
+      AuthorName: Vesuvius Challenge Team
+      AuthorURL: https://scrollprize.org/
+    - Title: Vesuvius Challenge - Tutorials
+      URL: https://scrollprize.org/tutorial
+      AuthorName: Vesuvius Challenge Team
+      AuthorURL: https://scrollprize.org/
+  Tools & Applications:
+    - Title: Vesuvius Challenge Monorepository (villa)
+      URL: https://github.com/ScrollPrize/villa
+      AuthorName: Vesuvius Challenge Team
+      AuthorURL: https://github.com/ScrollPrize
+  Publications:
