@@ -30,6 +30,10 @@ Resources:
     ARN: arn:aws:s3:::vesuvius-challenge-open-data
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new CT scans of Herculaneum papyri data
+    ARN: arn:aws:sns:us-east-1:597423010625:vesuvius-challenge-open-data-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know a Dataset: Vesuvius Challenge - CT Scans of Herculaneum Papyri"
