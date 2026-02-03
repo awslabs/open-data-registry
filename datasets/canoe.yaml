@@ -1,37 +1,29 @@
-Name:
-Description:
-Documentation:
-Contact:
-ManagedBy:
-UpdateFrequency:
+Name: CANOE (Canadian Aquatic Navigation for Observation of the Environment) Dataset
+Description: This autonomous navigation dataset includes data from a 360-degree Navtech radar, a 128-beam Ouster OS1 lidar with integrated IMU, a Teledyne Bumblebee stereo camera, Oculus M3000d imaging sonar, motor inputs, and GNSS. This dataset was collected on a lake and reservoir in Ontario, Canada. The intended purpose of this dataset is to enable the development and benchmarking of autonomous navigation algorithms in aquatic environments. In the future, we hope to release localization and odometry benchmarks.
+Documentation: https://github.com/utiasASRL/pycanoe/blob/main/DATA_REFERENCE.md
+Contact: canoe@robotics.utias.utoronto.ca
+ManagedBy: "[Autonomous Space Robotics Laboratory (ASRL)](http://asrl.utias.utoronto.ca)"
+UpdateFrequency: New sequences will be added as they are collected.
 Tags:
-  -
-License:
+  - autonomous vehicles
+  - robotics 
+  - computer vision
+  - lidar
+  - radar
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)"
 Citation:
 Resources:
-  - Description:
-    ARN:
-    Region:
-    Type:
-    Explore:
+  - Description: Canoe dataset
+    ARN: arn:aws:s3:::canoe
+    Region: ????
+    Type: S3 Bucket
 DataAtWork:
   Tutorials:
-    - Title:
-      URL:
-      NotebookURL:
-      AuthorName:
-      AuthorURL:
-      Services:
-  Tools & Applications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
-  Publications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
+    - Title: Get to Know a Dataset: Canoe
+      URL: https://github.com/utiasASRL/pycanoe/blob/main/tutorials/get-to-know-dataset-canoe.ipynb
+      NotebookURL: https://github.com/utiasASRL/pycanoe/blob/main/tutorials/get-to-know-dataset-canoe.ipynb
+      AuthorName: Mia Thomas
 DeprecatedNotice:
 ADXCategories:
-  -    
+  - Automotive Data
+  - Environmental Data
