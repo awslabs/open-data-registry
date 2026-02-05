@@ -11,12 +11,24 @@ Tags:
   - neuroscience
 License: There are no restrictions on the use of this data.
 Resources:
-  - Description: EEGDash data
-    ARN: arn:aws:s3:::eegdash
+  - Description: EEGDash/NEMAR data
+    ARN: arn:aws:s3:::nemar
     Region: us-east-2
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://eegdash.s3.amazonaws.com)'
+    - '[Browse Bucket](https://nemar.s3.amazonaws.com)'
+  - Description: NM Datasets
+    ARN: arn:aws:s3:::nmdatasets
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://nmdatasets.s3.amazonaws.com)'
+  - Description: NM Privileged data
+    ARN: arn:aws:s3:::nmpriviledged
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://nmpriviledged.s3.amazonaws.com)'
 DataAtWork:
   Tutorials:
     - Title: Deep Learning on EEGDash Data example
@@ -26,5 +38,5 @@ DataAtWork:
   Tools & Applications:
     - Title: eegdash on pypi.python.org - Python module to query and download EEGDash data from Amazon S3
       URL: https://pypi.org/project/eegdash/
-      AuthorName: Young Truong
-      AuthorURL: https://github.com/dungscout96
+      AuthorName: Arnaud Delorme
+      AuthorURL: https://github.com/arnodelorme
