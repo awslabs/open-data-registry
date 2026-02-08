@@ -9,7 +9,7 @@ Description: |
   region and globally since January 2017.
 Documentation: Documentation is available for [Sentinel-2 L1C](https://roda.sentinel-hub.com/sentinel-s2-l1c/readme.html) and [Sentinel-2 L2A](https://roda.sentinel-hub.com/sentinel-s2-l2a/readme.html).
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
-ManagedBy: "[Sinergise](https://www.sinergise.com/)"
+ManagedBy: "[Element 84](https://www.element84.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
 Collabs:
   ASDI:
@@ -41,11 +41,11 @@ Resources:
     ARN: arn:aws:s3:::sentinel-inventory/sentinel-s2-l1c
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: Level 2A scenes and metadata, in [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
+  - Description: Level 2A scenes and metadata, in S3 bucket
     ARN: arn:aws:s3:::sentinel-s2-l2a
     Region: eu-central-1
     Type: S3 Bucket
-    RequesterPays: True
+    RequesterPays: False
     Explore:
       - '[STAC V1.0.0 endpoint](https://sentinel-s2-l2a-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L2A (ORC and CSV)"
@@ -132,10 +132,10 @@ DataAtWork:
       URL: http://apps.sentinel-hub.com/eo-browser/
       AuthorName: Sinergise
       AuthorURL: http://www.sinergise.com/
-    - Title: Sentinel Playground
-      URL: http://apps.sentinel-hub.com/sentinel-playground/
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
+    - Title: Planet Insights Platform
+      URL: https://insights.planet.com/
+      AuthorName: Planet
+      AuthorURL: http://www.planet.com/
     - Title: Python package for working with Sentinel-2 AWS data
       URL: https://github.com/sentinel-hub/sentinelhub-py
       AuthorName: Sinergise
