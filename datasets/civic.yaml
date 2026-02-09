@@ -2,7 +2,7 @@ Name: CIViC (Clinical Interpretation of Variants in Cancer)
 Description: Precision medicine refers to the use of prevention and treatment strategies that are tailored to the unique features of each individual and their disease. In the context of cancer this might involve the identification of specific mutations shown to predict response to a targeted therapy. The biomedical literature describing these associations is large and growing rapidly. Currently these interpretations exist largely in private or encumbered databases resulting in extensive repetition of effort. Realizing precision medicine will require this information to be centralized, debated and interpreted for application in the clinic. CIViC is an open access, open source, community-driven web resource for Clinical Interpretation of Variants in Cancer. Our goal is to enable precision medicine by providing an educational forum for dissemination of knowledge and active discussion of the clinical significance of cancer genome alterations.
 Documentation: https://docs.civicdb.org/
 Contact: help@civicdb.org
-ManagedBy: The McDonnell Genome Institute at Washington University School of Medicine
+ManagedBy: The Griffith Lab at Washington University School of Medicine
 UpdateFrequency: First of each month
 Tags:
   - aws-pds
@@ -10,15 +10,46 @@ Tags:
   - genomic
   - life sciences
   - vcf
+  - cancer
 License: "[CC0](https://creativecommons.org/publicdomain/zero/1.0/)"
 Resources:
-  - Description: Monthly CIViC data dumps including gene, variant, assertion, and evidence tables. 
+  - Description: Monthly CIViC data dumps including feature, variant, assertion, and evidence tables.
     ARN: arn:aws:s3:::civic-aws-opendata
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for monthly CIViC data availability.
+    ARN: arn:aws:sns:us-west-2:182652044697:civic-aws-opendata-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Publications:
     - Title: CIViC is a community knowledgebase for expert crowdsourcing the clinical interpretation of variants in cancer
       URL: https://www.nature.com/articles/ng.3774
-      AuthorName: Malachi Griffith
+      AuthorName: Malachi Griffith et al.
+      AuthorURL: https://griffithlab.org/
+    - Title: A community approach to the cancer-variant-interpretation bottleneck
+      URL: https://www.nature.com/articles/s43018-022-00379-w
+      AuthorName: Kilannin Krysiak et al.
+      AuthorURL: https://griffithlab.org/
+    - Title: "CIViCdb 2022: evolution of an open-access cancer variant interpretation knowledgebase"
+      URL: https://academic.oup.com/nar/article/51/D1/D1230/6827107
+      AuthorName: Kilannin Krysiak et al.
+      AuthorURL: https://griffithlab.org/
+    - Title: Standard operating procedure for curation and clinical interpretation of variants in cancer
+      URL: https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-019-0687-x
+      AuthorName: Arpad M Danos et al.
+      AuthorURL: https://griffithlab.org/
+    - Title: "CIViCpy: A Python Software Development and Analysis Toolkit for the CIViC Knowledgebase"
+      URL: https://ascopubs.org/doi/pdf/10.1200/CCI.19.00127
+      AuthorName: Alex H Wagner et al.
+      AuthorURL: https://www.nationwidechildrens.org/specialties/institute-for-genomic-medicine/research-labs/wagner-lab
+  Tools & Applications:
+    - Title: CIViCpy - an analysis toolkit and SDK for extracting and analyzing knowledge from the CIViC knowledgebase
+      URL: https://docs.civicpy.org/
+      AuthorName: The CIViCpy Team
+      AuthorURL: https://github.com/griffithlab/civicpy/graphs/contributors
+  Tutorials:
+    - Title: Introduction to Clinical Interpretation of Somatic Cancer Variants
+      URL: https://course.civicdb.org/
+      AuthorName: The Griffith Lab
       AuthorURL: https://griffithlab.org/

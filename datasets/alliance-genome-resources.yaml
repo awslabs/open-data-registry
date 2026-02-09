@@ -1,0 +1,85 @@
+Name: Alliance of Genome Resources
+Description: The Alliance of Genome Resources is a consortium that integrates genomic, genetic, and molecular data from leading model organism databases including Drosophila melanogaster, Caenorhabditis elegans, Danio rerio (zebrafish), Mus musculus (mouse), Rattus norvegicus (rat), Saccharomyces cerevisiae (yeast), Xenopus laevis and Xenopus tropicalis (frogs), and human reference data. The Alliance provides comprehensive datasets including gene annotations, disease associations, expression data (bulk and single-cell RNA-Seq), protein and genetic interactions, orthology relationships, variants and alleles, and complete genome sequences with annotations. Data is organized into Alliance-wide integrated datasets and organism-specific collections, supporting comparative genomics, disease modeling, and functional genomics research.
+Documentation: https://github.com/alliance-genome/agr_open_data
+Contact: help@alliancegenome.org
+ManagedBy: Alliance of Genome Resources Consortium
+UpdateFrequency: Quarterly releases (every ~3 months)
+Tags:
+  - aws-pds
+  - genomic
+  - bioinformatics
+  - biology
+  - gene expression
+  - life sciences
+  - genetic
+  - genome
+  - Drosophila melanogaster
+  - Caenorhabditis elegans
+  - Danio rerio
+  - Mus musculus
+  - Rattus norvegicus
+  - Homo sapiens
+  - transcriptomics
+  - protein
+  - vcf
+  - fasta
+License: Most Alliance data is available under CC0 1.0 Universal (Public Domain Dedication). Some datasets may use CC-BY 4.0 (attribution required). Full details at https://www.alliancegenome.org/terms-of-use
+Citation: Alliance of Genome Resources Consortium. Alliance of Genome Resources Portal - unified model organism research platform. Nucleic Acids Research (2023). https://doi.org/10.1093/nar/gkac1003
+Resources:
+  - Description: Alliance-wide integrated datasets including disease associations, gene expression, molecular and genetic interactions, orthology relationships, gene descriptions, and variants across all Alliance organisms. Data is organized by release version (8.3.0/, 8.2.0/, etc.), then by data type, with organism-specific collections for FB (FlyBase/Drosophila), MGI (Mouse), RGD (Rat), SGD (Yeast), WB (Worm), XBXL/XBXT (Xenopus), ZFIN (Zebrafish), and HUMAN reference data. Available in TSV, JSON, and VCF formats.
+    ARN: arn:aws:s3:::alliance-genome-downloads
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://alliance-genome-downloads.s3.amazonaws.com/)'
+  - Description: FlyBase-specific data for Drosophila melanogaster and related species, including gene annotations, GO annotations, expression data (bulk RNA-Seq, single-cell RNA-Seq), disease associations, phenotypes, interactions, orthologs, genome sequences (FASTA), and genome annotations (GFF3/GTF). Data organized by release (current/, FB2025_04/, etc.) with precomputed analysis files and complete Chado XML database dumps. Publicly accessible via HTTPS for direct download without AWS credentials.
+    ARN: arn:aws:s3:::s3ftp.flybase.org
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse via HTTPS](https://s3ftp.flybase.org/releases/current/)'
+DataAtWork:
+  Tutorials:
+    - Title: Alliance of Genome Resources AWS Data Access Tutorials
+      URL: https://github.com/alliance-genome/agr_open_data/blob/main/TUTORIAL.md
+      AuthorName: Alliance of Genome Resources Consortium
+      AuthorURL: https://www.alliancegenome.org
+  Tools & Applications:
+    - Title: Alliance of Genome Resources Portal
+      URL: https://www.alliancegenome.org
+      AuthorName: Alliance of Genome Resources Consortium
+      AuthorURL: https://www.alliancegenome.org
+    - Title: FlyBase - Drosophila Database
+      URL: https://flybase.org
+      AuthorName: FlyBase Consortium
+      AuthorURL: https://flybase.org
+    - Title: WormBase - C. elegans Database
+      URL: https://www.wormbase.org
+      AuthorName: WormBase Consortium
+      AuthorURL: https://www.wormbase.org
+    - Title: ZFIN - Zebrafish Database
+      URL: https://zfin.org
+      AuthorName: ZFIN
+      AuthorURL: https://zfin.org
+    - Title: MGI - Mouse Genome Database
+      URL: http://www.informatics.jax.org
+      AuthorName: MGI
+      AuthorURL: http://www.informatics.jax.org
+    - Title: RGD - Rat Genome Database
+      URL: https://rgd.mcw.edu
+      AuthorName: RGD
+      AuthorURL: https://rgd.mcw.edu
+    - Title: SGD - Saccharomyces Genome Database
+      URL: https://www.yeastgenome.org
+      AuthorName: SGD
+      AuthorURL: https://www.yeastgenome.org
+    - Title: Xenbase - Xenopus Database
+      URL: http://www.xenbase.org
+      AuthorName: Xenbase
+      AuthorURL: http://www.xenbase.org
+  Publications:
+    - Title: Alliance of Genome Resources Portal - unified model organism research platform
+      URL: https://doi.org/10.1093/nar/gkac1003
+      AuthorName: Alliance of Genome Resources Consortium
+ADXCategories:
+  - Healthcare & Life Sciences Data

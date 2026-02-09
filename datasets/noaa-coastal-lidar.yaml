@@ -1,9 +1,9 @@
 Name: NOAA Coastal Lidar Data
-Description: Lidar (light detection and ranging) is a technology that can measure the 3-dimentional location of objects, including the solid earth surface. The data consists of a point cloud of the positions of solid objects that reflected a laser pulse, typically from an airborne platform. In addition to the position, each point may also be attributed by the type of object it reflected from, the intensity of the reflection, and other system dependent metadata. The NOAA Coastal Lidar Data is a collection of lidar projects from many different sources and agencies, geographically focused on the coastal areas of the United States of America. The data is provided in Entwine Point Tiles (https://entwine.io) format, which is a lossless streamable octree of the point cloud. Datasets are maintained in their original projects and care should be taken when merging projects. The coordinate reference system for the data is The NAD83(2011) UTM zone appropriate for the center of each data set and the orthometric datum appropriate for that area (for example, NAVD88 in the mainland United States, PRVD02 in Puerto Rico, or GUVD03 in Guam). The geoid model used is reflected in the data set resource name. 
-Documentation: https://coast.noaa.gov/digitalcoast/data/coastallidar.html  and   https://coast.noaa.gov/digitalcoast/data/jalbtcx.html
+Description: Lidar (light detection and ranging) is a technology that can measure the 3-dimentional location of objects, including the solid earth surface. The data consists of a point cloud of the positions of solid objects that reflected a laser pulse, typically from an airborne platform. In addition to the position, each point may also be attributed by the type of object it reflected from, the intensity of the reflection, and other system dependent metadata. The NOAA Coastal Lidar Data is a collection of lidar projects from many different sources and agencies, geographically focused on the coastal areas of the United States of America. The data is provided in Entwine Point Tiles (EPT; https://entwine.io) format, which is a lossless streamable octree of the point cloud, and in LAZ format. Datasets are maintained in their original projects and care should be taken when merging projects. The coordinate reference system for the data is The NAD83(2011) UTM zone appropriate for the center of each data set for EPT and geographic coordinates for LAZ. Vertically they are in the orthometric datum appropriate for that area (for example, NAVD88 in the mainland United States, PRVD02 in Puerto Rico, or GUVD03 in Guam). The geoid model used is reflected in the data set resource name. <br>The data are organized under directories entwine and laz for the EPT and LAZ versions respectively. Some datasets are not in EPT format, either because the dataset is already in EPT on the USGS public lidar site, they failed to build or their content does not work well in EPT format. Topobathy lidar datasets using the topobathy domain profile do not translate well to EPT format. 
+Documentation: https://coast.noaa.gov/digitalcoast/data/coastallidar.html and https://coast.noaa.gov/digitalcoast/data/jalbtcx.html. A table providing the dataset names and links is at https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/laz/index.html
 Contact: For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov. For general questions or feedback about the data, please submit inquiries through the NOAA Office for Coastal Management Contact Form https://coast.noaa.gov/contactform/. 
-  </ br> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
-ManagedBy: "[NOAA](http://www.noaa.gov/)"
+  <br> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](https://www.noaa.gov/)"
 UpdateFrequency: Periodically, as new data becomes available
 Collabs:
   ASDI:
@@ -16,12 +16,18 @@ Tags:
   - disaster response
   - geospatial
   - lidar
-License: Open Data. There are no restrictions on the use of this data.
+  - stac
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.
+  <br/>
+  <br/>
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: NOAA Coastal Lidar Dataset
     ARN: arn:aws:s3:::noaa-nos-coastal-lidar-pds
     Region: us-east-1
     Type: S3 Bucket
+    Explore: 
+      - '[STAC V1.0.0 endpoint](https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/entwine/stac/catalog.json)'
   - Description: NOAA Coastal Lidar Dataset New Dataset Notification
     ARN: arn:aws:sns:us-east-1:709902155096:NewCoastalLidarObject
     Region: us-east-1

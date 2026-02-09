@@ -1,0 +1,32 @@
+Name: James Webb Space Telescope (JWST)
+Description: |
+  The James Webb Space Telescope (JWST) is the world's next flagship infrared observatory led by NASA with its partners, ESA (European Space Agency), and CSA (Canadian Space Agency). JWST offers scientists the opportunity to observe galaxy evolution, the formation of stars and planets, exoplanetary systems, and our own solar system, in ways never before possible.
+Documentation: https://archive.stsci.edu/missions-and-data/jwst
+Contact: archive@stsci.edu
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please see the [JWST mission acknowledgement page](https://archive.stsci.edu/publishing/mission-acknowledgements#section-6e75d209-e28f-4808-9289-881e83c379f7) for full citation instructions.
+UpdateFrequency: Hourly
+Tags:
+  - astronomy
+  - aws-pds
+License: Public domain. Attribution required for refereed scientific papers.
+Resources:
+  - Description: JWST Public Data files
+    ARN: arn:aws:s3:::stpubdata/jwst
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/jwst
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with JWST Data (JDox)
+      URL: https://jwst-docs.stsci.edu/getting-started-with-jwst-data
+      AuthorName: STScI
+    - Title: MAST Archive Manual for JWST Data
+      URL: https://outerspace.stsci.edu/display/MASTDOCS/JWST+Archive+Manual
+      AuthorName: MAST, STScI
+  Tools & Applications:
+  Publications:

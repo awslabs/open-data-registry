@@ -1,32 +1,61 @@
-Name: NOAA's Coastal Ocean Reanalysis (CORA) Dataset
+Name: "NOAA's Coastal Ocean Reanalysis (CORA) Dataset: 1979-2022"
+
 Description: |
-  NOAA's Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coast (GEC) is produced using verified hourly water levels from the Center of Operational Oceanographic Products & Services (CO-OPS), through hydrodynamic modeling from Advanced Circulation "[ADCIRC](https://adcirc.org/)" and Simulating WAves Nearshore "[SWAN](https://swanmodel.sourceforge.io/)" models. Data are assimilated, processed, corrected, and processed again before quality assurance and skill assessment with additional verified tide station-based observations.
-  <br/>
-  <br/>
-  Details for CORA Dataset
-  <br/>
-  <br/>
-  **Timeseries** - 1979 to 2022
-  <br/>
-  **Size** - Approx. 20.5TB
-  <br/>
-  **Domain** - Lat 5.8 to 45.8 ; Long -98.0 to -53.8
-  <br/>
-  **Nodes** - 1813443 centroids, 3564104 elements 
-  <br/>
-  **Grid cells** - Currently apporximately 505
-  <br/>
-  **Spatial Resolution** - 500m, 1983 Contiguous USA Albers projection (EPSG:5070)
-  <br/>
-Documentation: https://tidesandcurrents.noaa.gov/
+  NOAA's [Coastal Ocean Reanalysis (CORA)](https://tidesandcurrents.noaa.gov/cora.html) for the Gulf, East Coast/Atlantic, and Caribbean (GEC) is produced using verified hourly water levels from the National Ocean Service’s [Center of Operational Oceanographic Products & Services](https://tidesandcurrents.noaa.gov/) (CO-OPS).  [ADvanced CIRCulation Model (ADCIRC)](https://www.erdc.usace.army.mil/Media/Fact-Sheets/Fact-Sheet-Article-View/Article/476698/advanced-circulation-model/) and [Simulating WAves Nearshore (SWAN)](https://www.tudelft.nl/en/ceg/about-faculty/departments/hydraulic-engineering/sections/environmental-fluid-mechanics/research/swan) models are coupled to model coastal water levels and nearshore waves. Hourly water level observations are used for data assimilation and validation to improve the accuracy of modeled water levels and wave datasets.
+  <br><br>
+  <b>Additional Details:</b><br>
+  Metadata associated with model domain and time span:
+  - Timeseries - 1979 to 2022
+  - Size - Approx. 44.6 TB
+  - Domain - Lat 5.8 to 45.8 ; Long -98.0 to -53.8  
+  - Nodes - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048) 
+  - Grid cells - [CORA Metadata Library](https://www.fisheries.noaa.gov/inport/item/75048)
+  - Spatial Resolution:
+    - Centroids: 300-400 meters 
+    - Gridded: 500 meters
+    - Projection: 1983 Contiguous USA Albers projection (EPSG:5070)
+  <br><br>
+  
+  <b>Datasets:</b><br>
+  Water level and wave datasets resulting from the computation, assimilation, validation, and optimization reanalysis datasets. All products are available in NetCDF (.nc) format:
+  - fort.63.nc - Water level elevation
+  - fort.73.nc - Atmospheric pressure at sea level
+  - fort.74.nc - Wind Velocity - 10 m elevation
+  - maxele.63.nc - Maximum water elevation
+  - swan_DIR.63.nc - Spectral mean wave direction
+  - swan_TMM10.63.nc - Spectral mean wave period
+  - swan_TPS.63.nc - Spectral  peak wave period
+  - swan_HS.63.nc - Spectral zeroth moment wave height
+  - swan_HS_max.63.nc - Maximum spectral zeroth moment wave height
+  <br><br>
+
+  <b>Derived Products:</b><br>
+  Datasets resulting from the computation, modeling, or other processing using existing/collected data. All products are available in NetCDF (.nc) format:
+  - CORA-V1.1-fort.63: Hourly water levels 
+  - CORA-V1.1-swan_DIR.63: Hourly mean wave direction 
+  - CORA-V1.1-swan_TPS.63: Hourly peak wave periods 
+  - CORA-V1.1-swan_HS.63: Hourly significant wave heights 
+  - CORA-V1.1-Grid: Hourly water levels interpolated from model nodes to uniform 500-meter resolution grid 
+  <br><br>
+
+Documentation: |
+  [NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)](https://doi.org/10.25923/5ypp-4e84)
+
+UpdateFrequency: Product dependent. At minimum, annually.
+
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.
+
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+
+ManagedBy: |
+  [NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)
+
 Contact: |
   For questions regarding data content or quality, email CO-OPS.UserServices@noaa.gov
-  <br/>
   This data is made available to the public through the NOAA Open Data Dissemination (NODD) Program. For questions regarding this program, email nodd@noaa.gov.
-  <br/>
-  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at NODD@NOAA.GOV.
-ManagedBy: "[NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)"
-UpdateFrequency: Monthly, quarterly, and annually, depending on the dataset.
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at nodd@noaa.gov.
+
 Collabs:
   ASDI:
     Tags:
@@ -41,15 +70,37 @@ Tags:
   - agriculture
   - transportation
   - oceans
-License: Open Data. There are no restrictions on the use of this data.
+
 Resources:
-  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF
+  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF"
     ARN: arn:aws:s3:::noaa-nos-cora-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
-  - Description: NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications
+  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications"
     ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
     Region: us-east-1
-    Type: SNS Topic  
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: "Using Python to Access Coastal Ocean Reanalysis (CORA) Data"
+      URL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA
+      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+      AuthorURL: https://tidesandcurrents.noaa.gov/
+
+  Tools & Applications:
+    - Title: Coastal Ocean Reanalysis Use cases
+      URL: https://tidesandcurrents.noaa.gov/cora.html#usecase
+      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+      AuthorURL: https://tidesandcurrents.noaa.gov/
+  
+  Publications:
+    - Title: "NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)"
+      URL: https://doi.org/10.25923/5ypp-4e84 
+      AuthorName: Keeney, Analise; Dusek, Gregory; Callahan, John; Ratcliff, John; Jima, Tigist; Brooks, William; Marcy, Doug; Blanton, Brian; Tilson, Jeffrey; Asher, Taylor G.; Leuttich, Richard A.; Widlansky, Matthew J.; Rose, Linta; Morse, Cheryl; Haddad, Jana; & Waring, Blake
+
+    - Title: "Assessment of water levels from 43 years of NOAA’s Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coasts"
+      URL: https://doi.org/10.3389/fmars.2024.1381228  
+      AuthorName: Rose, Linta; Widlansky, Matthew J.; Feng, Xue; Thompson, Thompson; Asher, Taylor G.; Dusek, Gregory; Blanton, Blanton; Luettich, Richard A. Jr.; Callahan, John; Brooks, William; Keeney, Analise; Haddad, Jana; Sweet, William; Genz, Ayesha; Hovenga, Paige; Marra, John & Tilson, Jeffrey
