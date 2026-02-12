@@ -7,7 +7,7 @@ Description: |
   This data lake is a sister-data lake to the Department of Energy’s Open Energy Data Initiative (OEDI) data lake. 
 Documentation: https://github.com/openEDI/documentation/
 Contact:  https://github.com/openEDI/documentation/issues
-ManagedBy: '[National Renewable Energy Laboratory](https://www.nrel.gov/)'
+ManagedBy: '[National Laboratory of the Rockies](https://www.nrel.gov/)'
 UpdateFrequency:  As needed
 Collabs:
   ASDI:
@@ -44,6 +44,18 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=umsli%2F)'
+  - Description: "[High Resolution Tidal Hindcast (US Tidal) Dataset](https://mhkdr.openei.org/submissions/632)"
+    ARN: arn:aws:s3:::marine-energy-data/us-tidal/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=us-tidal%2F)'
+  - Description: "[Water Velocity and Turbulence Data from Sequim Bay, WA, 2016 - 2025](https://mhkdr.openei.org/submissions/662)"
+    ARN: arn:aws:s3:::marine-energy-data/primre/sequim-tidal-resource-deployments/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=primre%2Fsequim-tidal-resource-deployments%2F)'
 DataAtWork:
   Tools & Applications:
   Publications:
