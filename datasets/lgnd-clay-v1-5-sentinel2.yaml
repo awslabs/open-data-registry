@@ -19,6 +19,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a)'
+  - Description: "Notifications for new data as it arrives"
+    ARN: arn:aws:sns:us-west-2:417712557820:source_coop-clay-lgnd-clay-v1-5-sentinel-2-l2a_new-object 
+    Region: us-west-2
+    Type: SNS Topic
 ADXCategories:
   - Environmental Data 
 
