@@ -2,7 +2,7 @@ Name: Sentinel-1
 Description: "[Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1) is a pair of European radar imaging (SAR) satellites launched in 2014 and 2016. Its 6 days revisit cycle and ability to observe through clouds makes it perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications. This dataset represents the global Sentinel-1 GRD archive, from beginning to the present, converted to [cloud-optimized GeoTIFF format](https://www.cogeo.org/)."
 Documentation: https://roda.sentinel-hub.com/sentinel-s1-l1c/GRD/readme.html
 Contact: https://forum.sentinel-hub.com/c/aws-sentinel
-ManagedBy: "[Sinergise](https://www.sinergise.com/)"
+ManagedBy: "[Element 84](http://www.element84.com/)"
 UpdateFrequency: New Sentinel data are added regularly, usually within few hours after they are available on Copernicus OpenHub.
 Collabs:
   ASDI:
@@ -20,11 +20,11 @@ Tags:
 License: |
   Access to Sentinel data is free, full and open for the broad Regional, National, European and International user community. View [Terms and Conditions](https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions).
 Resources:
-  - Description: GRD in a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) S3 bucket
+  - Description: Sentinel-1 GRD S3 bucket
     ARN: arn:aws:s3:::sentinel-s1-l1c
     Region: eu-central-1
     Type: S3 Bucket
-    RequesterPays: True
+    RequesterPays: False
     Explore:
       - '[STAC V1.0.0 endpoint](https://sentinel-s1-l1c-stac.s3.amazonaws.com/)'
   - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents) files for L1C (ORC and CSV)"
@@ -38,10 +38,6 @@ Resources:
 DataAtWork:
   Tutorials:
   Tools & Applications:
-    - Title: Sentinel Playground
-      URL: https://apps.sentinel-hub.com/sentinel-playground/?baseWmsUrl=services.sentinel-hub.com&instanceID=a7c04225-b861-452d-ac89-7765352cd855&source=S2&lat=40.98676619345964&lng=28.89301300048828&zoom=13&preset=IW_VV&layers=B04,B03,B02&maxcc=20&gain=1.0&gamma=1.0&time=2015-01-01%7C2018-01-16&atmFilter=&showDates=false
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
     - Title: Sentinel Hub WMS/WMTS/WCS Service by Sinergise
       URL: http://www.sentinel-hub.com/apps/wms
       AuthorName: Sinergise
@@ -50,8 +46,8 @@ DataAtWork:
       URL: https://eos.com/landviewer/
       AuthorName: Earth Observing System
       AuthorURL: https://eos.com/
-    - Title: EO Browser
-      URL: http://apps.sentinel-hub.com/eo-browser/
-      AuthorName: Sinergise
-      AuthorURL: http://www.sinergise.com/
+    - Title: Planet Insights Platform
+      URL: https://insights.planet.com/
+      AuthorName: Planet
+      AuthorURL: http://www.planet.com/
   Publications:
