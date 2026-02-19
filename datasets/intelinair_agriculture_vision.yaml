@@ -24,13 +24,13 @@ Tags:
   - machine learning
 License: Provided in the bucket.
 Resources:
-  - Description: Original dataset affiliated with the 2020 CVPR paper.  Dataset provided as a series of tar.gz files with data for each year and an associated json file dscribing the train/validation/test split.
+  - Description: Original dataset affiliated with the 2020 CVPR paper.  Dataset provided as a series of tar.gz files with data for each year and an associated json file describing the train/validation/test split.
     ARN: arn:aws:s3:::intelinair-data-releases/agriculture-vision/cvpr_paper_2020
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
   - Description: >
-      Dataset affiliated with the 2021 CVPR Agricutlure Vision Workshop.  
+      Dataset affiliated with the 2021 CVPR Agriculture Vision Workshop.  
       This includes both the supervised and additional raw imagery.  The supervised portion is split train-val-test.  
       The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.
       This is the high-resolution-only subset of cvpr_challenge_2021_full.
@@ -39,7 +39,7 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
   - Description: >
-      Dataset affiliated with the 2021 CVPR Agricutlure Vision Workshop.
+      Dataset affiliated with the 2021 CVPR Agriculture Vision Workshop.
       This includes both the supervised and additional raw imagery, both high-resolution (10cm/pixel) and low-resolution (sentinel-1 10m/pixel) imagery.  
       The supervised portion is split train-val-test.  The full-field imagery is given as a series of folders where each folder corresponds to a field, and the images contained are named according to the date of collection.  
       High-resolution images are named <MMDDYY>_<channel_high>.tif
@@ -53,6 +53,6 @@ DataAtWork:
     - Title: "Agriculture-Vision: A Large Aerial Image Database for Agricultural Pattern Analysis"
       URL: https://arxiv.org/abs/2001.01306
       AuthorName: Mang Tik Chiu, Xingqian Xu, Yunchao Wei, Zilong Huang, Alexander Schwing, Robert Brunner, Hrant Khachatrian, Hovnatan Karapetyan, Ivan Dozier, Greg Rose, David Wilson, Adrian Tudor, Naira Hovakimyan, Thomas S. Huang, Honghui Shi
-    - Title: The 2nd International Workshop and Prize Challenge on Agriculture-Vision, Challenges & Opportunities for Computer Vision in Agricutlure
+    - Title: The 2nd International Workshop and Prize Challenge on Agriculture-Vision, Challenges & Opportunities for Computer Vision in Agriculture
       URL: https://www.agriculture-vision.com/
       AuthorName: Humphrey Shi, Naira Hovakimyan, Jennifer Hobbs, Ed Delp, Melba Crawford, Zhen Li, David Clifford, Jim Yuan, Mang Tik Chiu, Xingqian Xu
