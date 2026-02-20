@@ -1,0 +1,121 @@
+Name: Digital Earth Africa Sentinel-5P TROPOMI Level-2
+Description: |
+  Sentinel-5P is an Earth observation satellite launched in 2017 and operated by the European Space Agency under the Copernicus Programme. It was developed as a precursor mission to the future Sentinel-5 satellite to ensure continuity of atmospheric composition observations following earlier European missions such as SCIAMACHY, GOME, and GOME-2. The core objective of Sentinel-5P is to provide near-real-time, global measurements of atmospheric composition and air quality, supporting scientific research, environmental monitoring, and policy implementation related to air pollution, climate change, ozone depletion, and human health. Its datasets enable scientists to track pollutants and trace gases spatially and temporally across the globe with continuous daily coverage. Level-2 products represent geophysical variables derived from calibrated radiance measurements and converted into physically meaningful atmospheric quantities. These products describe key atmospheric components—trace gases, aerosols, and cloud properties—that are essential for applications in air-quality monitoring, weather forecasting, and climate-system analysis.
+
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Sentinel-5P_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New data are added regularly, usually within a few hours of them being available.
+
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - air quality
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Sentinel-5p TROPOMI Level 2 UV Aerosol Index
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-aer-ai/Sentinel-5p/TROPOMI/TROPO_L2_AI/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_aer_ai)'
+    - Description: Sentinel-5p TROPOMI Level 2 Methane (CH4) total column
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-ch4/Sentinel-5p/TROPOMI/TROPO_L2_CH4/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_ch4)'
+    - Description: Sentinel-5p TROPOMI Level 2 Cloud fraction, albedo, top pressure
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-cloud/Sentinel-5p/TROPOMI/TROPO_L2_CLOUD/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_cloud)'
+    - Description: Sentinel-5p TROPOMI Level 2 Carbon Monoxide (CO) total column
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-co/Sentinel-5p/TROPOMI/TROPO_L2_CO/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_co)'
+    - Description: Sentinel-5p TROPOMI Level 2 Formaldehyde (HCHO) total column
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-hcho/Sentinel-5p/TROPOMI/TROPO_L2_HCHO/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_hcho)'
+    - Description: Sentinel-5p TROPOMI Level 2 Nitrogen Dioxide (NO2), total and tropospheric columns
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-no2/Sentinel-5p/TROPOMI/TROPO_L2_NO2/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_no2)'
+    - Description: Sentinel-5p TROPOMI Level 2 Ozone (O3) total column
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-o3/Sentinel-5p/TROPOMI/TROPO_L2_O3/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_o3)'
+    - Description: Sentinel-5p TROPOMI Level 2 Sulfur Dioxide (SO2) total column
+    ARN: arn:aws:s3::://deafrica-sentinel-5p-so2/Sentinel-5p/TROPOMI/TROPO_L2_SO2/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s5p_tropomi_l2_so2)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item    
+    ARN: arn:aws:sns:af-south-1:deafrica-sentinel-5p-**
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to Know a Dataset: [DE Africa Sentinel 5P TROPOMI Level-2]
+      URL: https://github.com/digitalearthafrica/open-data-examples/tree/main/open-data-examples/DEafrica_sentinel_5p
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer"
+      URL: https://explorer.digitalearth.africa/products/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
