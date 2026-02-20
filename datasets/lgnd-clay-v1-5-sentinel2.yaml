@@ -1,0 +1,30 @@
+Name: LGND Clay v1.5 Sentinel-2
+Description: A global dataset of Clay v1.5 embeddings for Sentinel2.  
+Documentation: https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a
+Contact: contact@madewithclay.org
+ManagedBy: "[Source Cooperative](https://source.coop/)"
+UpdateFrequency: As new data versions become available
+Tags:
+  - aws-pds
+  - satellite imagery
+  - earth observation
+  - machine learning
+  - imaging
+  - computer vision
+License: Creative Commons Attribution 4.0 International License
+Citation: "Clay v1.5 Sentinel-2. Source Cooperative. https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a"
+Resources:
+  - Description: Clay v1.5 Sentinel-2
+    ARN: arn:aws:s3:::us-west-2.opendata.source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://source.coop/clay/lgnd-clay-v1-5-sentinel-2-l2a)'
+  - Description: "Notifications for new data as it arrives"
+    ARN: arn:aws:sns:us-west-2:417712557820:source_coop-clay-lgnd-clay-v1-5-sentinel-2-l2a_new-object 
+    Region: us-west-2
+    Type: SNS Topic
+ADXCategories:
+  - Environmental Data 
+
+
