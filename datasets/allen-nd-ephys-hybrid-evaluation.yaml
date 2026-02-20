@@ -1,0 +1,31 @@
+Name: Allen Institute for Neural Dynamics - Extracellular Electrophysiology Hybrid Evaluation Benchmark
+Description: Evaluation of spike sorting methods is a challenging task, as it requires both ground-truth data and a variety of sorting algorithms to compare against. This dataset contains a set of hybrid data specifically designed for benchmarking spike sorting methods.
+Documentation: https://allenneuraldynamics.github.io/data.html#aind-benchmark-dataephys-hybrid-evaluation
+Contact: aindopendata@alleninstitute.org
+ManagedBy: "[Allen Institute](http://neuraldynamics.alleninstitute.org/)"
+UpdateFrequency: Weekly
+Tags:
+  - aws-pds
+  - neurobiology
+  - life sciences
+  - signal processing
+  - electrophysiology
+  - Mus musculus
+License: CC-BY-4.0
+Resources:
+  - Description: Project data files in a public bucket
+    ARN: arn:aws:s3:::aind-benchmark-data/ephys-hybrid-evaluation
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: AIND ephys hybrid evaluation benchmark data
+      URL: https://allenneuraldynamics.github.io/data.html#aind-benchmark-dataephys-hybrid-evaluation
+      AuthorName: David Feng, Alessio Buccino
+      AuthorURL: https://twitter.com/AllenInstitute
+  Tools & Applications:
+  Publications:
+    - Title: Efficient and reproducible pipelines for spike sorting large-scale electrophysiology data
+      URL: TODO
+      AuthorName: Alessio P. Buccino, Arjun Sridhar, David Feng, Karel Svoboda, Joshua H. Siegle.
+      AuthorURL: http://neuraldynamics.alleninstitute.org/
