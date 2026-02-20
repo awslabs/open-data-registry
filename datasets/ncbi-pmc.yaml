@@ -1,14 +1,15 @@
-Name: NIH NCBI PubMed Central (PMC) Article Datasets - Full-Text Biomedical and Life Sciences Journal Articles on AWS 
-Description: "PubMed Central® (PMC) is a free full-text archive of biomedical and life sciences journal article at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM). The PubMed Central (PMC) Article Datasets include full-text articles archived in PMC and made available under license terms that allow for text mining and other types of secondary analysis and reuse. The articles are organized on AWS based on general license type:<br/><br/>
+Name: NIH NLM NCBI PubMed Central (PMC) Article Datasets - Full-Text Biomedical and Life Sciences Journal Articles on AWS 
+Description: "PubMed Central® (PMC) is a free full-text archive of biomedical and life sciences journal article at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM). The PubMed Central (PMC) Article Datasets include full-text articles archived in PMC and made available under license terms that allow for text mining and other types of secondary analysis and reuse. The articles are organized on AWS based on PMCID and version number:<br/><br/>
 
-The PMC Open Access (OA) Subset, which includes all articles in PMC with a machine-readable Creative Commons license<br/><br/>
-The Author Manuscript Dataset, which includes all articles collected under a funder policy in PMC and made available in machine-readable formats for text mining<br/><br/>
+The PMC Open Access (OA) Subset, which includes all articles in PMC that are available for reuse based on terms specified by the publisher. The majority of available articles have machine-readable Creative Commons license<br/><br/>
+The Author Manuscript Dataset, which includes all articles collected under a funder policy in PMC and made available in machine-readable formats for text mining. NOTEL Author manuscripts with Creative Commons licenses are also part of the PMC Open Access Subset.<br/><br/>
+The Historical OCR Dataset, which includes historical articles, published in the 18th, 19th, and 20th centuries, scanned as part of an NLM digitization project, that have Creative Commons licenses. NOTE: These articles are also part of the PMC Open Access Subset.<br/><br/>
 
-These datasets collectively span more than half of PMC’s total collection of full-text articles. PMC enables access to these datasets to expand the impact of open access and publicly-funded research; enable greater machine learning across the spectrum of scientific research; reach new audiences; and open new doors for discovery. The bucket in this registry contains individual articles in NISO Z39.96-2015 JATS XML format as well as in plain text as extracted from the XML. The bucket is updated daily with new and updated articles. Also included are file lists that include metadata for articles in each dataset."
+These datasets collectively span more than half of PMC's total collection of full-text articles. PMC enables access to these datasets to expand the impact of open access and publicly-funded research; enable greater machine learning across the spectrum of scientific research; reach new audiences; and open new doors for discovery. The bucket in this registry contains individual article versions in NISO Z39.96-2015 JATS XML format as well as in plain text as extracted from the XML and the full article PDF. Media files and supplementary material files are also available for all open access articles. The bucket is updated continuously with new and updated articles. Also includes JSON metadata objects for each article version and a CVS inventory file."
 Contact: pubmedcentral@ncbi.nlm.nih.gov
 Documentation: https://www.ncbi.nlm.nih.gov/pmc/tools/pmcaws
 ManagedBy: "[National Library of Medicine (NLM)](http://nlm.nih.gov/)"
-UpdateFrequency: Daily
+UpdateFrequency: Continuous - article versions are updated continuously. Updates include - the addition of new article versions; the update of one or more objects belonging to an existing article version; in rare cases, the removal of an article version
 Tags:
   - aws-pds
   - life sciences
@@ -18,7 +19,7 @@ Tags:
   - csv
 License: "[PMC Copyright](https://www.ncbi.nlm.nih.gov/pmc/about/copyright/)"
 Resources:
-  - Description: .xml and .txt files with the full-text of articles; .txt and .csv file lists for metadata; all located in a public S3 bucket 
+  - Description: .xml, .txt, and PDF files with the full-text of articles; media and supplementary materials files; all located in a public S3 bucket 
     ARN: arn:aws:s3:::pmc-oa-opendata 
     Region: us-east-1
     Type: S3 Bucket
