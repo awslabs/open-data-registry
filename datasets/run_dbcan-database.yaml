@@ -1,0 +1,32 @@
+Name: run_dbcan CAZyme and CGC annotation database on AWS
+Description: Database for use with run_dbcan (CAZyme and CGC annotation), including CAZyme, Transporter, Transcription factor, Signaling Transduction Protein, Sulfatase, Peptidase, and Polysaccharide utilization Loci.
+Documentation: https://run-dbcan.readthedocs.io/en/latest/
+Contact: xzhang55@huskers.unl.edu; hyi@stjude.org; yyin@unl.edu
+ManagedBy: Xinpeng Zhang; Haidong Yi; Yanbin Yin
+UpdateFrequency: This database will update annually and usually in July/August. 
+Tags:
+  - aws-pds
+  - metagenomics
+  - microbiome
+  - benchmark
+  - bioinformatics
+  - life sciences
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: run_dbcan CAZyme and CGC annotation database
+    ARN: arn:aws:s3:::dbcan
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket] (https://dbcan.s3.us-west-2.amazonaws.com/)
+DataAtWork:
+  Tutorials: https://run-dbcan.readthedocs.io/en/latest/
+  Tools & Applications:
+    - Title: run_dbcan
+      URL: https://run-dbcan.readthedocs.io/en/latest/
+      AuthorName: Xinpeng Zhang; Haidong Yi; Jinfang Zheng; Le Huang; Qiwei Ge; Yanbin Yin
+      AuthorURL: https://github.com/bcb-unl/run_dbcan
+  Publications:
+    - Title: "dbCAN3: automated carbohydrate-active enzyme and substrate annotation"
+      URL: https://doi.org/10.1093/nar/gkad328
+      AuthorName: Jinfang Zheng, Qiwei Ge, Yuchen Yan, Xinpeng Zhang, Le Huang, Yanbin Yin Author Notes
