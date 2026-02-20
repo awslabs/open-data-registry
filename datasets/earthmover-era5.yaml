@@ -1,0 +1,71 @@
+Name: ERA5 Cloud Optimized (Zarr + Icechunk)
+ShortDescription: >
+  A cloud-optimized version of the NSF NCAR Curated ERA5 dataset. Provided in Zarr + Icechunk,
+  this version enables efficient, scalable access to global reanalysis data for weather, climate,
+  and ML/AI applications. Managed by Earthmover.
+Description: >
+  This dataset is a cloud-optimized reformat of the NSF NCAR Curated ECMWF Reanalysis 5 (ERA5).  
+  While the NCAR-hosted dataset is provided in CF-compliant NetCDF4 files, this version has been  
+  restructured into Zarr format with Icechunk indexing, making it highly scalable and performant  
+  for cloud-native workloads. This enables efficient, chunked access to time series and spatial  
+  subsets without requiring full file downloads.  
+
+  ERA5 itself is produced using high-resolution forecasts (HRES) at 31 km resolution and a 62 km  
+  resolution ten-member 4D-Var ensemble of data assimilation (EDA) in CY41r2 of ECMWF’s Integrated  
+  Forecast System (IFS) with 137 hybrid sigma-pressure levels up to 0.01 hPa. Atmospheric data are  
+  interpolated to 37 pressure levels, with surface and single-level parameters (e.g., precipitation,  
+  2 m temperature, radiation fluxes, soil and ocean-wave model fields). Data are generally available  
+  at hourly frequency, consisting of analyses and short (12-hour) forecasts initialized at 06 and 18 UTC.  
+
+  ERA5 products are widely used for ML/AI training, climate and weather research, and applications  
+  such as renewable energy siting.  
+
+Documentation: https://doi.org/10.5065/BH6N-5N20
+Contact: hello@earthmover.io
+ManagedBy: "[Earthmover](https://earthmover.io)"
+UpdateFrequency: Monthly, with a 3-4 month lag from realtime
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - climate
+  - model
+  - atmosphere
+  - land
+  - data assimilation
+  - forecast
+  - meteorological
+  - weather
+  - geoscience
+  - geospatial
+  - aws-pds
+  - zarr
+  - icechunk
+License: https://www.ucar.edu/terms-of-use/data
+Citation: >
+  European Centre for Medium-Range Weather Forecasts. 2019, updated monthly.  
+  ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid).  
+  Research Data Archive at the National Center for Atmospheric Research,  
+  Computational and Information Systems Laboratory.  
+  https://doi.org/10.5065/BH6N-5N20.
+Resources:
+  - Description: ERA5 Zarr + Icechunk Data (Cloud-Optimized)
+    ARN: arn:aws:s3:::earthmover-icechunk-era5
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - TODO
+  - Description: Notifications for the ERA5 Zarr + Icechunk dataset
+    ARN: arn:aws:sns:us-east-1:871265417473:earthmover-icechunk-era5-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: The ERA5 global reanalysis
+      URL: https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803
+      AuthorName: Hersbach et al 2020
+      AuthorURL: https://orcid.org/0000-0001-5330-7071
+ADXCategories:
+  - Environmental Data
