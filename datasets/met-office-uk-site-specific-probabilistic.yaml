@@ -1,0 +1,52 @@
+Name: Met Office UK Site-Specific Blended Probabilistic Forecast on a 2-year rolling archive 
+Description: We have developed a new blended probabilistic forecast system that takes outputs from our Numerical Weather Prediction (NWP) models. 
+ This system blends multiple gridded forecasts using a probabilistic approach to produce a set of percentile forecasts for a range of surface weather variables.
+ It also calculates a “most likely” weather type, out to a range of seven days, to produce site-specific forecasts.
+ It is recommended for users who want to access site-specific forecasts in a probabilistic way, with the flexibility to select what data they need for their specific use.
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: This is a dynamic dataset continuously updated by blending multiple data sources. Please refer to the specific documentation for the details.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office UK Site-Specific Blended Probabilistic Forecast on a 2-year rolling archive 
+    ARN: arn:aws:s3:::met-office-uk-site-specific-blended-probabilistic-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-uk-site-specific-blended-probabilistic-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new UK Site-Specific Blended Probabilistic Forecast Data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-uk-site-specific-blended-probabilistic-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: IMPROVER Metadata
+      URL: https://improver.readthedocs.io/en/latest/metadata/Introduction.html#looking-at-an-example
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
