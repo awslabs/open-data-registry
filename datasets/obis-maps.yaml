@@ -1,0 +1,37 @@
+Name: Ocean Biodiversity Information System (OBIS) species distribution models
+Description: This dataset provides access to species distribution models (SDMs) for marine species, initially developed as part of the MPA Europe project (https://mpaeurope.eu/). SDMs are statistical models used to predict the potential geographic distribution of a species based on the relationship between observed species occurrence records and environmental predictors. The models were built using marine occurrence data from the Ocean Biodiversity Information System (OBIS) and the Global Biodiversity Information Facility (GBIF), together with environmental data from Bio-ORACLE v3.0 (Assis et al. 2024, DOI:10.1111/geb.13813).
+Documentation: Documentation for this dataset is available at https://github.com/iobis/mpaeu_sdm and https://iobis.github.io/mpaeu_docs. An application to explore the species distribution models is available at https://shiny.obis.org/distmaps/. SDMs have uncertainties and limitations, and users are advised to review the documentation before using the data.
+Contact: helpdesk@obis.org
+ManagedBy: The Ocean Biodiversity Information System (OBIS)
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
+Tags:
+  - biodiversity
+  - coastal
+  - oceans
+  - conservation
+  - ecosystems
+  - environmental
+  - geospatial
+  - water
+  - life sciences
+  - climate
+  - sdm
+License: https://creativecommons.org/licenses/by-nc/4.0/
+Citation: Ocean Biodiversity information System (OBIS). (2024). Species distribution dashboard for MPA Europe. (version 0.1.0). https://shiny.obis.org/distmaps. Zenodo. https://doi.org/10.5281/zenodo.14524781.
+Resources:
+  - Description: Marine species distribution models, with predictions for the current and future period (2050 and 2100) across five Shared Socioeconomic Pathways Scenarios (SSP) stored as cloud-optimized GeoTIFFs (COG).
+    ARN: arn:aws:s3:::obis-maps
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://obis-maps.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Accessing OBIS species distribution models on AWS
+      URL: https://github.com/iobis/mpaeu_sdm/blob/main/notebooks/access_sdm_aws.ipynb
+      AuthorName: Silas Principe
+      AuthorURL: https://github.com/silasprincipe
