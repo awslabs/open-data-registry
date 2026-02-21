@@ -1,0 +1,43 @@
+Name: Digital Earth Pacific Mangroves Extent and Density (AMMI)
+Description: |
+  Mangrove extents and classifications were based on Automatic Mangrove Mapping Index (AMMI) approaches as applied in Suyarso and Avianto (2022). Canopy density categories of 5-20 are scaled for visualisation of percentage thresholds representing increasing canopy density. These processes are applied to the Sentinel-2 Geometric Median and Median Absolute Deviations (GeoMAD) alpha annual product. Sea and elevation masks are applied to reduce false positives. Elevation mask of 40m was applied to account for the relative tidal influence of brackish wetlands in areas like the Gulf Region of PNG.grove categories between
+  2016 and 2022 were analysed.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
+Tags:
+  - earth observation
+  - environmental
+  - climate
+  - geoscience
+  - geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: Data access
+    ARN: arn:aws:s3:::dep-public-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: "Digital Earth Pacific Map"
+      URL: https://maps.digitalearthpacific.org/#share=s-ux1MvvWAfZueW286xCPv
+      AuthorName: Digital Earth Pacific Contributors
+    - Title: "Digital Earth Pacific Data Browser"
+      URL: https://data.digitalearthpacific.org/
+      AuthorName: Digital Earth Pacific Contributors
+    - Title: "Digital Earth Pacific STAC Catalogue"
+      URL: https://stac-browser.digitalearthpacific.org/
+      AuthorName: Digital Earth Pacific Contributors
+  Publications:
+    - Title: Digital Earth Pacific Open Data Access Documentation
+      URL: https://digitalearthpacific.github.io/data-access/
+      AuthorName: digitalearthpacific
+      AuthorURL: https://github.com/digitalearthpacific
