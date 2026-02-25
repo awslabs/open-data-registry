@@ -1,13 +1,26 @@
 Name: Distributed Archives for Neurophysiology Data Integration (DANDI)
-Description: >
-  DANDI is a public archive of neurophysiology datasets, including raw and processed data, 
-  and associated software containers. Datasets are shared according to a Creative Commons 
-  CC0 or CC-BY licenses. The data archive provides a broad range of cellular neurophysiology data. 
-  This includes electrode and optical recordings, and associated imaging data using a 
-  set of community standards: [NWB:N - NWB:Neurophysiology](https://www.nwb.org/nwb-neurophysiology/),
-  [BIDS - Brain Imaging Data Structure](https://bids.neuroimaging.io/), and 
-  [NIDM - Neuro Imaging Data Model](http://nidm.nidash.org/). Development of DANDI is 
-  supported by the National Institute of Mental Health.
+Description: |
+  DANDI is a public archive of neurophysiology datasets, including raw and processed data,
+  and associated software containers. Datasets are shared according to Creative Commons
+  CC0 or CC-BY licenses. This US BRAIN Initiative supported archive provides a broad range
+  of cellular neurophysiology data including intracellular and extracellular electrophysiology,
+  optophysiology, calcium imaging, fiber photometry, behavioral time-series, and images from
+  immunostaining experiments, from over 20 species.
+
+  Data is organized using community standards:
+  [NWB - Neurodata Without Borders](https://www.nwb.org/nwb-neurophysiology/),
+  [BIDS - Brain Imaging Data Structure](https://bids.neuroimaging.io/),
+  [NGFF - Next Generation File Format](https://ngff.openmicroscopy.org/) for Zarr-based imaging data, and
+  [NIDM - Neuro Imaging Data Model](http://nidm.nidash.org/).
+
+  The S3 bucket is organized as follows:
+  - **dandisets/** - Metadata and manifests for each Dandiset version; manifests reference keys
+    under blobs/ or zarrs/ for actual data. See [DANDI schema](https://github.com/dandi/schema/)
+    for manifest format specifications.
+  - **blobs/** - Deduplicated binary data (NWB files) indexed by content hash.
+  - **zarrs/** - Zarr arrays for large imaging datasets.
+
+  Development of DANDI is supported by the National Institute of Mental Health.
 Documentation: https://dandiarchive.org
 Contact: '[DANDI Archive Help Desk](https://github.com/dandi/helpdesk/issues/new/choose)'
 ManagedBy: '[DANDI Archive](https://about.dandiarchive.org/team)'
@@ -15,13 +28,15 @@ UpdateFrequency: New datasets deposited every month
 Tags:
   - aws-pds
   - biology
+  - calcium imaging
   - cell imaging
-  - electrophysiology  
+  - electrophysiology
+  - hdf5
   - life sciences
-  - infrastructure
-  - neuroimaging 
+  - neuroimaging
   - neurophysiology
   - neuroscience
+  - zarr
 License: CC0, CC-BY
 Resources:
   - Description: All datasets
@@ -30,16 +45,54 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: DANDI User Guide - Downloading and Using Data
+      URL: https://docs.dandiarchive.org/user-guide-using/using/
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
+    - Title: DANDI Example Notebooks
+      URL: https://dandi.github.io/example-notebooks/
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
   Tools & Applications:
     - Title: DANDI Web Interface
       URL: https://dandiarchive.org/
       AuthorName: DANDI Project
       AuthorURL: https://dandiarchive.org/
-    - Title: DANDI Shell Interface
+    - Title: DANDI CLI and Python API
       URL: https://github.com/dandi/dandi-cli
       AuthorName: DANDI Project
       AuthorURL: https://dandiarchive.org/
-    - Title: DANDI JupyterHub Interface
+    - Title: DANDI JupyterHub
       URL: https://hub.dandiarchive.org/
       AuthorName: DANDI Project
       AuthorURL: https://dandiarchive.org/
+    - Title: DANDI API
+      URL: https://api.dandiarchive.org/swagger/
+      AuthorName: DANDI Project
+      AuthorURL: https://dandiarchive.org/
+    - Title: Neurosift - Interactive NWB Viewer
+      URL: https://neurosift.app/
+      AuthorName: Flatiron Institute
+      AuthorURL: https://www.simonsfoundation.org/flatiron/
+    - Title: NWB Explorer
+      URL: https://nwbexplorer.opensourcebrain.org/
+      AuthorName: Open Source Brain
+      AuthorURL: https://metacell.us/
+    - Title: Neuroglancer
+      URL: https://github.com/google/neuroglancer
+      AuthorName: Google
+      AuthorURL: https://google.github.io/neuroglancer/
+    - Title: ITK/VTK Viewer for OME-Zarr
+      URL: https://kitware.github.io/itk-vtk-viewer/
+      AuthorName: Kitware
+      AuthorURL: https://www.kitware.com/
+  Publications:
+    - Title: "Neurosift: DANDI exploration and NWB visualization in the browser"
+      URL: https://joss.theoj.org/papers/10.21105/joss.06590
+      AuthorName: Magland J, Soules J, Baker C, Dichter B
+    - Title: "Facilitating analysis of open neurophysiology data on the DANDI Archive using large language model tools"
+      URL: https://www.nature.com/articles/s41597-025-06285-x
+      AuthorName: Magland JF, Ly R, Rübel O, Dichter B
+    - Title: "A comparison of neuroelectrophysiology databases"
+      URL: https://www.nature.com/articles/s41597-023-02614-0
+      AuthorName: Subash P, Gray A, Bhattacharyya B, et al.
