@@ -12,12 +12,13 @@ Description: |
     <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
     <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
     <ul>
+      <li><a href="https://dynamical.org/catalog/noaa-gfs-analysis/">NOAA GFS analysis</a> - Weather analysis from the Global Forecast System (GFS) operated by NOAA NWS NCEP.</li>
       <li><a href="https://dynamical.org/catalog/noaa-gfs-forecast/">NOAA GFS forecast</a> - Weather forecasts from the Global Forecast System (GFS) operated by NOAA NWS NCEP.</li>
     </ul>
 Documentation: https://dynamical.org/catalog/models/noaa-gfs/
 Contact: feedback@dynamical.org
 ManagedBy: "[dynamical.org](https://dynamical.org)"
-UpdateFrequency: "NOAA GFS forecast: Forecasts initialized every 6 hours"
+UpdateFrequency: "NOAA GFS analysis: 1 hour; NOAA GFS forecast: Forecasts initialized every 6 hours"
 Tags:
   - aws-pds
   - weather
@@ -40,6 +41,11 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: NOAA GFS analysis python quickstart notebook
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-analysis-icechunk.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-analysis-icechunk.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
     - Title: NOAA GFS forecast python quickstart notebook
       URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-forecast-icechunk.ipynb
       NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs-forecast-icechunk.ipynb
