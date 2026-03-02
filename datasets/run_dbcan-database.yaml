@@ -19,6 +19,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket] (https://dbcan.s3.us-west-2.amazonaws.com/)
+    - Description: Notifications for new dbcan data
+  ARN: arn:aws:sns:us-west-2:770494479040:dbcan-object_created
+  Region: us-west-2
+  Type: SNS Topic
 DataAtWork:
   Tutorials: https://run-dbcan.readthedocs.io/en/latest/
   Tools & Applications:
