@@ -1,0 +1,28 @@
+Name: IGP Waste Management Data
+Description: This dataset includes detailed information about waste management sites, their locations, capacities, emissions, and other relevant attributes around the Indian Gangetic Plain.
+Documentation: https://github.com/APAD2024/APAD-Asset-Data/blob/main/Asset%20Data/IGP/Asset_Data_IGP/Waste/Readme.md
+Contact: https://github.com/APAD2024/APAD-Asset-Data/issues
+
+ManagedBy: APAD
+UpdateFrequency: as needed
+Collabs:
+  ASDI:
+    Tags:
+      - dumpsites
+      
+Tags:
+  - air quality
+  - dumpsites
+  - meteorological
+  - environmental
+License: http://opendatacommons.org/licenses/by/1.0/
+Resources:
+  - Description: Asset level data - Waste_Management_Sites_IGP
+    ARN: arn:aws:s3:::assetdata-igp/asset_igp_csvs/waste.csv
+    Region: ap-southeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Analyzing Waste Management Data 
+      URL: https://github.com/APAD2024/APAD-Asset-Data/blob/main/Asset%20Data/IGP/Asset_Data_IGP/Waste/waste.csv
+      AuthorName: APAD
