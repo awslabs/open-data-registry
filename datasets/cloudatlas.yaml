@@ -1,0 +1,41 @@
+Name: CLOUDATLAS, Cloud-native, Large-scale, Open, Ubiquitously Accessible Cryo-Electron-Tomography Dataset and ATLAS for integrative structural systems biology. 
+Description: CLOUDATLAS establishes a cloud-native, large-scale, and collaborative framework for molecular systems biology using cryo-electron tomography (cryo-ET). It enables data, metadata, and computational environments to be shared as they are generated, transforming cryo-ET from an archive-based discipline into a real-time, open, and collaborative research. Raw tilt-series and experimental metadata are streamed directly from microscopes to Amazon S3 and processed using cloud infrastructure, making the entire workflow accessible without needing local downloads or specialized hardware. In contrast to archival repositories such as EMPIAR or the Cryo-ET Data Portal, which provide static datasets only after publication, CLOUDATLAS implements an "open-as-you-go" model: researchers can collaborate immediately after data acquisition, benchmark new algorithms on live datasets, and reproduce results immediately through versioned, containerized workflows. This approach embodies the FAIR principles (Findable, Accessible, Interoperable, and Reusable) from the moment of data collection, lowering barriers to entry and fostering a global ecosystem for method development, education, and discovery in structural systems biology.
+Documentation: tbd
+Contact: tbd
+UpdateFrequency: Real-time streaming during active projects. Periodic curated releases of already existing datasets ready for cloud-native collaborative research.
+Tags:
+  - life-sciences
+  - structural-biology
+  - molecular-systems-biology
+  - electron-microscopy
+  - cryo-electron-tomography
+  - tomography
+  - microscopy
+  - machine-learning
+  - FAIR-data
+  - open-science
+License: CC0
+Resources:
+  - Description: Primary S3 bucket hosting cloud-native cryo-ET data, metadata, and derived results ready for cloud-native collaborative research.
+    ARN: arn:aws:s3:::cloudatlas
+    Region: TBD
+    Type: S3 Bucket
+    Explore:
+      - "[Project overview](tbd)"
+      - "[Getting started guide](tbd)"
+DataAtWork:
+  Tutorials:
+    - Title: Running cloud-based reconstruction and subtomogram averaging
+      URL: tbd
+      AuthorName: tbd
+  Tools & Applications:
+    - Title: Reproducible cryo-ET workflows with containerized environments
+      URL: tbd
+      AuthorName: tbd
+  Publications:
+    - Title: EMPIAR-11830, In situ cryo-ET dataset of Chlamydomonas reinhardtii prepared using cryo-plasmaFIB milling
+      URL: https://www.ebi.ac.uk/empiar/EMPIAR-11830/
+      AuthorName: Kelley, Khavnekar, Righetto et.al
+     - Title: Towards community-driven visual proteomics with large-scale cryo-electron tomography of Chlamydomonas reinhardtii
+      URL: https://www.biorxiv.org/content/10.1101/2024.12.28.630444v1
+      AuthorName: Kelley, Khavnekar, Righetto et.al
