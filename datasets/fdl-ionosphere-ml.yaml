@@ -1,0 +1,40 @@
+Name: Machine Learning Ready Dataset for Ionospheric Forecasting Models
+Description: This dataset is machine learning ready to enable the development of ionospheric forecasting models and includes preprocessed and cleaned TEC data from Madrigal, Google Android, and JPLD sources, as well as solar and geomagnetic driver data from OMNI-Web, Celestrak, Space Environment Technologies, and SDO-FM embeddings of the SDO dataset. It supports both sparse and dense TEC modeling frameworks, such as IonCast and IonoPy. This research is the result of the Frontier Development Lab, Heliolab a partnership between NASA, Trillium Technologies Inc. (USA), Google Cloud, NVIDIA and Pasteur Labs, Contract No. 80GSFC23CA040. For a full description of the dataset, refer to the paper.
+Documentation: 'https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere '
+Contact: linnea@wolniewicz.com
+ManagedBy: '[Frontier Development Lab](https://frontierdevelopmentlab.org/)'
+Tags:
+  - machine learning
+  - space weather
+License: There are no restrictions on the use of this data.
+Citation: Wolniewicz, Linnea M., et al. "Connecting the Dots A Machine Learning Ready Dataset for Ionospheric Forecasting Models." arXiv, Nov. 2025, https://doi.org/10.48550/arXiv.2511.15743.
+Resources:
+  - Description: Preprocessed data files including Madrigal and Google Android datasets (for sparse TEC models), JPLD data (for dense TEC models), and solar and geomagnetic driver data (OMNI-Web, Celestrak, Space Environment Technologies, and SDO-FM). The data files from each source are available in their respective folders (data has already been preprocessed and cleaned for machine learning applications).
+    ARN: arn:aws:s3:::nasa-radiant-data/helioai-datasets/ionosphere-data-public/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Dataset Use Example
+      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/dataset_use_example.py
+      AuthorName: Wolniewicz, Linnea
+  Tools & Applications:
+    - Title: Data Preprocessing Scripts
+      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/datasets/
+      AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
+    - Title: PyTorch Datasets and Dataloaders
+      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/data_preprocessing/
+      AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
+    - Title: Event Cataloging and Exclusion Tools
+      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/events/
+      AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
+  Publications:
+    - Title: 'Connecting the Dots: A Machine Learning Ready Dataset for Ionospheric Forecasting Models'
+      URL: https://doi.org/10.48550/arXiv.2511.15743
+      AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Poduval, B., Verkhoglyadova, O., Guhathakurta, M., Berger, T. E., Güneş Baydin, A., & Soboczenski, F.
+    - Title: 'IonCast: A Deep Learning Framework for Forecasting Ionospheric Dynamics'
+      URL: https://doi.org/10.48550/arXiv.2511.15004
+      AuthorName: Kelebek, H. S., Wolniewicz, L. M., Vergalla, M. D., Mestici, S., Acciarini, G., Poduval, B., Verkhoglyadova, O., Guhathakurta, M., Berger, T. E., Soboczenski, F., & Güneş Baydin, A.
+    - Title: Forecasting the Ionosphere from Sparse GNSS Data with Temporal-Fusion Transformers
+      URL: https://doi.org/10.48550/arXiv.2509.00631
+      AuthorName: Acciarini, G., Mestici, S., Kelebek, H., Wolniewicz, L., Vergalla, M., Guhathakurta, M., Rebbapragada, U., Poduval, B., Baydin, A. G., & Soboczenski, F.
