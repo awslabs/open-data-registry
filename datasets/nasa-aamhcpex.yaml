@@ -1,0 +1,20 @@
+Name: AAMH CPEX
+Description: The AAMH CPEX dataset contains products obtained from the MetOp-A, MetOp-B, NOAA-18, and NOAA-19 satellites. These data were collected in support of the NASA Convective Processes Experiment (CPEX) field campaign. The CPEX field campaign took place in the North Atlantic-Gulf of America-Caribbean Sea region from 25 May to 25 June 2017. CPEX conducted a total of sixteen DC-8 missions from 27 May to 24 June. The CPEX campaign collected data to help explain convective storm initiation, organization, growth, and dissipation in the North Atlantic-Gulf of America-Caribbean Oceanic region during...
+Documentation: https://cmr.earthdata.nasa.gov/search/concepts/C2645106424-GHRC_DAAC.html
+Contact: https://ghrc.nsstc.nasa.gov/home/contact
+ManagedBy: "[NASA Global Hydrology Resource Center DAAC](https://ghrc.nsstc.nasa.gov/)"
+UpdateFrequency: Irregular updates as new data becomes available
+Tags:
+- aws-pds
+- analysis ready data
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: AAMH CPEX data files
+  ARN: arn:aws:s3:::ghrc-cumulus-prod-protected/aamhcpex
+  Region: us-east-1
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ghrc.nsstc.nasa.gov/s3credentials
+ADXCategories:
+- Environment
