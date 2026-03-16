@@ -12,12 +12,12 @@ Description: >
   SLAM and odometry evaluation, as well as rich metadata such as one-minute weather
   station measurements.
   
-  The dataset and its benchmarks are intended to challenge state-of-the-art SLAM,
+  The dataset is intended to challenge state-of-the-art SLAM,
   localization, traversability analysis, and multi-season robotics research.
 Documentation: https://fomo.norlab.ulaval.ca/overview
 Contact: dataset@norlab.ulaval.ca
 ManagedBy: "[Norlab, Université Laval](https://norlab.ulaval.ca)"
-UpdateFrequency: This dataset is complete and should not be updated or modified.
+UpdateFrequency: The dataset is considered complete and stable. Minor updates or corrections may occur, but they are expected to be infrequent.
 Tags:
   - aws-pds
   - robotics
@@ -43,23 +43,22 @@ License: >
   See https://creativecommons.org/licenses/by/4.0/
 Resources:
   - Description: >
-      Primary S3 bucket containing the full FoMo dataset: lidar scans, radar images, stereo &
-      monocular camera frames, audio, IMU logs, odometry, GNSS-PPK trajectories, calibration sequences,
-      metadata files, and ROS2/mcap-compatible exports.
+Primary S3 bucket containing the full FoMo dataset. Data are structured by deployment and trajectory folders, 
+each containing lidar scans, radar images, stereo and monocular camera frames, audio, IMU logs, odometry, GNSS-PPK trajectories, 
+calibration sequences, metadata files, and ROS2/mcap-compatible exports.
     ARN: "arn:aws:s3:::fomo-dataset"
     Region: "US West (Oregon) us-west-2"
     Type: S3 Bucket
-    Explore:
-      - "To be done after Step 5"
+    Explore: https://us-west-2.console.aws.amazon.com/s3/buckets/fomo-dataset
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset - FoMo
-      URL: "To be done after Step 5"
-      NotebookURL: "To be done after Step 5"
+      URL: https://github.com/norlab-ulaval/fomo-dataset-tutorials
+      NotebookURL: https://github.com/norlab-ulaval/fomo-dataset-tutorials/blob/main/get_to_know_fomo-dataset.ipynb
       AuthorName: Norlab, Université Laval
       AuthorURL: https://norlab.ulaval.ca
   Tools & Applications:
-    - Title: FoMo Dataset Webiste
+    - Title: FoMo Dataset Website
       URL: https://fomo.norlab.ulaval.ca/
       AuthorName: Norlab, Université Laval
       AuthorURL: https://norlab.ulaval.ca
@@ -70,7 +69,7 @@ DataAtWork:
       AuthorURL: https://norlab.ulaval.ca
   Publications:
     - Title: Toward teach and repeat across seasonal deep snow accumulation (FoMo introduction paper)
-      URL: https://arxiv.org/abs/2505.01339
+      URL: https://arxiv.org/abs/2603.08433
       AuthorName: Boxan et al.
 ADXCategories:
   - Environmental Data
