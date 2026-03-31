@@ -1,6 +1,6 @@
 Name: Machine Learning Ready Dataset for Ionospheric Forecasting Models
 Description: This dataset is machine learning ready to enable the development of ionospheric forecasting models and includes preprocessed and cleaned TEC data from Madrigal, Google Android, and JPLD sources, as well as solar and geomagnetic driver data from OMNI-Web, Celestrak, Space Environment Technologies, and SDO-FM embeddings of the SDO dataset. It supports both sparse and dense TEC modeling frameworks, such as IonCast and IonoPy. This research is the result of the Frontier Development Lab, Heliolab a partnership between NASA, Trillium Technologies Inc. (USA), Google Cloud, NVIDIA and Pasteur Labs, Contract No. 80GSFC23CA040. For a full description of the dataset, refer to the paper.
-Documentation: 'https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere '
+Documentation: https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere-dataset
 Contact: linnea@wolniewicz.com
 ManagedBy: '[Frontier Development Lab](https://frontierdevelopmentlab.org/)'
 Tags:
@@ -9,24 +9,22 @@ Tags:
 License: There are no restrictions on the use of this data.
 Citation: Wolniewicz, Linnea M., et al. "Connecting the Dots A Machine Learning Ready Dataset for Ionospheric Forecasting Models." arXiv, Nov. 2025, https://doi.org/10.48550/arXiv.2511.15743.
 Resources:
-  - Description: Preprocessed data files including Madrigal and Google Android datasets (for sparse TEC models), JPLD data (for dense TEC models), and solar and geomagnetic driver data (OMNI-Web, Celestrak, Space Environment Technologies, and SDO-FM). The data files from each source are available in their respective folders (data has already been preprocessed and cleaned for machine learning applications).
+  - Description: Preprocessed data files including Madrigal and Google Android datasets (for sparse TEC models), JPLD data (for dense TEC models), and solar and geomagnetic driver data (OMNI-Web, Celestrak, Space Environment Technologies, and SDO-FM). The data files from each source are available in their respective folders (data has already been preprocessed and cleaned for machine learning applications). To see preprocessing steps, please refer to our publications, related GitHub repository used to train ML models (https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere/tree/main/scripts/data_processing), or contact the authors.
     ARN: arn:aws:s3:::nasa-radiant-data/helioai-datasets/ionosphere-data-public/
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
-    - Title: Dataset Use Example
-      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/dataset_use_example.py
-      AuthorName: Wolniewicz, Linnea
+    - Title: Dataset Use Example Notebook
+      URL: https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere-dataset/blob/main/dataset_example_colab.ipynb
+      AuthorName: Wolniewicz, L., Fawcett, W., and Spiewak, R.
+      NotebookURL: https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere-dataset/blob/main/dataset_example_colab.ipynb
   Tools & Applications:
-    - Title: Data Preprocessing Scripts
-      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/datasets/
-      AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
-    - Title: PyTorch Datasets and Dataloaders
-      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/data_preprocessing/
+    - Title: Data Loaders and Sequence Alignment Classes
+      URL: https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere-dataset/scripts/datasets/
       AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
     - Title: Event Cataloging and Exclusion Tools
-      URL: https://nasa-radiant-data.s3.amazonaws.com/helioai-datasets/ionosphere-data-public/scripts/events/
+      URL: https://github.com/FrontierDevelopmentLab/2025-HL-Ionosphere-dataset/scripts/events/
       AuthorName: Wolniewicz, L. M., Kelebek, H. S., Mestici, S., Vergalla, M. D., Acciarini, G., Güneş Baydin, A., & Soboczenski, F.
   Publications:
     - Title: 'Connecting the Dots: A Machine Learning Ready Dataset for Ionospheric Forecasting Models'
