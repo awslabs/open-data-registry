@@ -1,0 +1,34 @@
+Name: LongBench - cross-platform reference dataset profiling cancer cell lines with bulk and single-cell approaches
+Description: >
+  LongBench is a comprehensive benchmark dataset of the latest long-read transcriptomics technologies from Oxford Nanopore (ON) and Pacific Biosciences, alongside a comparison with next-generation sequencing from Illumina. We generated bulk and single-cell libraries from lung cancer cell lines which include different cancer subtypes to capture real biological variation. To further compare and assess sequencing platform performance, Sequins and SIRVs (Set 4) synthetic spike-ins have been included.
+Documentation: https://github.com/mritchielab/LongBench.io
+Contact: mritchie@wehi.edu.au
+ManagedBy: Richie Lab, Walter and Eliza Hall Institute of Medical Research
+UpdateFrequency: New data will be added as soon as they are available.
+Tags:
+  - benchmark
+  - long read sequencing
+  - single-cell transcriptomics
+  - short read sequencing
+  - bioinformatics
+  - fastq
+  - bam
+  - vcf
+  - cancer
+  - life sciences
+  - aws-pds
+License: CC BY-4.0
+Resources:
+  - Description: Bulk, single-cell, and single-nucleus RNA-seq data from the LongBench project, covering eight human lung cancer cell lines. Bulk sequencing (FASTQ) was performed on ONT PCR-cDNA, ONT direct RNA (including pod5 files for RNA modification analysis), PacBio Kinnex, and Illumina platforms. Single-cell and single-nucleus sequencing (FASTQ) was performed on ONT PCR-cDNA, PacBio Kinnex, and Illumina platforms. Aligned reads (BAM), variant calls (VCF), and processed gene expression data are also provided, along with reference genome annotations (GTF and FASTA).
+    ARN: arn:aws:s3:::longbench-data
+    Region: ap-southeast-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: Benchmarking long-read DE gene and transcript analysis with edgeR
+      URL: https://mritchielab.github.io/LongBench.io/bulk-de-benchmarking/
+      AuthorName: Yupei You
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
