@@ -1,0 +1,55 @@
+Name: "JISAO’s Seasonal Coastal Ocean Prediction of the Ecosystem (J-SCOPE)"
+Description: |
+   J-SCOPE (JISAO’s Seasonal Coastal Ocean Prediction of the Ecosystem) is funded by NOAA and presented by NANOOS. This project aims to provide experimental seasonal forecasts (six to nine months) of upper ocean properties, based on operational simulations by NOAA's Climate Forecast System (CFS) model, and dynamical downscaling with a high-resolution version of the Regional Ocean Model System (ROMS) that includes a state-of-the-art biogeochemical module. Forecasts of specific oceanic properties crucial to the nearshore and coastal marine ecosystem such as upwelling, pH, mixed layer depth, oxygen concentration and plankton distributions are anticipated with updates on a monthly basis. For more information about the forecast system, please read [Siedlecki et al. 2016](https://www.nature.com/articles/srep27203).The Regional Ocean Modeling System (ROMS; Rutgers version 3) is configured for the Washington and Oregon coasts after [Giddings et al](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013JC009622). More information about ROMS can be found [here](https://www.myroms.org/). The Cascadia domain was developed by the Coastal Modeling Group at the UW is roughly 1.5 km in resolution. More information about the model physics can be found [here](https://scripps.ucsd.edu/iod). Our implementation of ROMS includes 17 rivers forced with daily river discharge and temperature data from the USGS gauging stations and an Environment Canada gauging station for the Fraser River as described by [Giddings et al](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2013JC009622). Tides are included. Water entering the domain at the southern and western boundaries is supplied by CFS. Empirical relationships were derived relating nutrients and oxygen to salinity from the observations of Connolly et al (2010) as described by [Davis et al](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JC010248) and [Siedlecki et al](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JC010254). The rivers enter the domain with constant saturated values of oxygen and a seasonal cycle for nutrients from a climatology of USGS gauging stations data described by [Davis et al](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014JC010248). In the hindcast simulations, the rivers are based on observed streamflows, but in the re-forecast and forecast runs, the rivers are forced using a climatology of local river discharge data over seven years (2000-2007).
+   <br><br>
+   The forecast system predicts the sea-surface temperature (SST), chlorophyll stock, dissolved oxygen concentration, carbon variables, and sardine as well as hake habitat. Each forecast is composed of three model runs that make up an ensemble. Each model run is initialized at a different time within the initialization month (for April, for example, April 6, April 15, April 25), and has complementary forcing files from the large scale model, [CFS](https://www.nanoos.org/products/j-scope/about_the_model.php). J-SCOPE produces January, April, and September initialized forecasts annually.
+   <br><br>
+   The details of the wind forcing for each model run can be found on the California Current Indicators tab. For each of the predicted quantities listed above, we report the ensemble average anomaly as well as the relative uncertainty within the ensemble, which is defined as the standard deviation of the ensemble divided by the mean of the ensemble and is reported as a percentage of the mean. All of these quantities are reported as monthly averaged anomalies from our April-initialized reforecast [climatology](https://www.nanoos.org/products/j-scope/climatology.php?climatology=apr_init), which spans 2009-2017. An anomaly is an indication of how different conditions are to what they have been in the past. For more information about anomalies, please see the [NANOOS Climatology App](https://nvs.nanoos.org/AveragesAnomalies). These predicted quantities are key indicators for the [California Current Integrated Ecosystem Assessment report](https://www.integratedecosystemassessment.noaa.gov/regions/california-current).
+   <br><br>
+   J-SCOPE has also been run as a re-forecast and a hindcast each spanning 1998 to present and also rely on CFS forcing. The re-forecasts extend to 2013 when the true forecasts began.  The historical output is available daily while the re-forecasts and forecasts are available as monthly averages. The historical simulation is used to evaluate the Year-in Review and is released after the year is over in the early part of the following year. 
+   <br><br>
+Documentation: https://www.nanoos.org/products/j-scope/home.php
+Contact:  |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Quarterly. Updated in February, May and October with January, April, and September initialized forecast products respectively. We also do a year in review when the historical fields will be available and this is typically in January or February of the year following its occurrence.
+Collabs:
+  ASDI:
+    Tags:
+      - water  
+Tags:
+  - aws-pds
+  - climate
+  - coastal
+  - chemistry
+  - marine
+  - oceans
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.
+  <br/>
+  <br/>
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: "JISAO’s Seasonal Coastal Ocean Prediction of the Ecosystem (J-SCOPE)"
+    ARN: arn:aws:s3:::noaa-j-scope-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-j-scope-pds.s3.amazonaws.com/index.html)'
+  - Description: "J-SCOPE Dataset Notifications"
+    ARN: arn:aws:sns:us-east-1:123901341784:NewJSCOPEObject
+    Region: us-east-1
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: "J-SCOPE About the Model"
+      URL: https://www.nanoos.org/products/j-scope/about_the_model.php
+      AuthorName: "NOAA J_SCOPE" 
+      AuthorURL: https://www.nanoos.org/products/j-scope/home.php
+
+  Tools & Applications:
+  Publications:
+    - Title: "J-SCOPE Peer Reviewed Publications"
+      URL: https://www.nanoos.org/products/j-scope/publications.php
+      AuthorName: Multiple publications listed in the above link
