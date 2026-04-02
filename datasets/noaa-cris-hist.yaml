@@ -1,0 +1,40 @@
+Name: NOAA nClimGrid and Livneh Gridded Historical Climate Observation Thresholds
+Description: |
+  Livneh and nClimGrid are gridded observed historical climatology data that were used in the LOCA2 and STAR-ESDM downscaling process of global climate models as part of the 5th National Climate Assessment. The original Livneh and nClimGrid daily temperature and precipitation observations have been converted to a series of decision-relevant thresholds as part of the [(U.S. Climate Resilience Information System (CRIS))](https://cris.climate.gov/pages/about). These thresholds, such as days with extreme heat or precipitation, have been calculated to match the future projections from LOCA2 and STAR, also available in CRIS.
+Documentation: |
+  For information, please consult https://cris.climate.gov/pages/about-the-data.
+Contact: |
+  For any questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: |
+  None
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - environmental
+  - meteorological
+  - weather
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: nClimGrid and Livneh Gridded Historical Observation Thresholds
+    ARN: arn:aws:s3:::noaa-cris-hist-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-cris-hist-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for nClimGride and Livneh Gridded Historical Observation Thresholds, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-west-2:123901341784:NewCRIS-HISTObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: U.S. CRIS Resources
+      URL: https://cris.climate.gov/pages/developers
+      AuthorName: U.S. CRIS
