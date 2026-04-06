@@ -31,12 +31,16 @@ Resources:
   - Description: Global Canopy Height maps. GeoTIFF files and Geojson files with observation date
     ARN: arn:aws:s3:::dataforgood-fb-data/forests/v2/global/dinov3_global_chm_v2_ml3/
     Region: us-east-1
-    Type: S3 Bucket    
+    Type: S3 Bucket
+  - Description: Notifications for new Version 2 High Resolution Canopy Height Maps by WRI and Meta data
+    ARN: arn:aws:sns:us-east-1:632571768781:dataforgood-fb-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset - CHMv2
       URL: https://github.com/facebookresearch/dinov3/blob/main/notebooks/chmv2_dataset_exploration.ipynb
-      NotebookURL: https://github.com/facebookresearch/dinov3/blob/main/notebooks/chmv2_dataset_exploration.ipynb
+      NotebookURL: https://github.com/facebookresearch/dinov3/blob/main/notebooks/chmv2-get_to_know_a_dataset.ipynb
       AuthorName: Meta
   Tools & Applications:
     - Title: Global Canopy Height on Earth Engine
