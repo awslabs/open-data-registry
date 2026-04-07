@@ -1,0 +1,47 @@
+Name: Met Office UK Land Surface Observations
+Description: |+ 
+ Land surface weather observations for 31 parameters from over 250 locations across the Met Office UK land observation network. The data is available as CSV files. You can use it to monitor the latest weather affecting a specific location so you can plan for your business or operations.
+ <br><br>
+ The observations are produced every minute and transmitted to the Amazon Registry of Open Data every hour. They’re available for a rolling 7-day period (168 hours).
+ <br>
+ All locations in the observation network are within the bounding box:
+  - -15 (West)
+  - 48 (South)
+  - 5 (East)
+  - 62 (North)
+ On average they are about 40km apart, distributed uniformly to detect as many weather features as possible.
+ <br><br>
+ 31 meteorological parameters are measured across the observation network. But not all locations record all parameters. Check the documentation for the full list of parameters.
+UpdateFrequency: 60 minutes of new data for all locations is ingested into the Amazon Registry of Open Data every hour. For example, at 12:00 new data will arrive for observations collected between 10:00-1100. This is due to the quality checks required to verify data for public consumption.
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST). As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - atmosphere
+  - geospatial
+  - csv
+  - precipitation
+  - weather
+Resources:
+  - Description: Met Office UK Land Surface Observations
+    ARN: arn:aws:s3:::met-office-land-observations-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-land-observations-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new UK land surface observations data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-land-observations-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: UK Land Surface Observations Usage Examples
+      URL: https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/services/data/met-office-uk-land-surface-observations-asdi-pdf-document-2.0.pdf
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
