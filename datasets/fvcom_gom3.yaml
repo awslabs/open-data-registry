@@ -11,9 +11,13 @@ Tags:
 License: CC0
 Resources:
   - Description: A collection of NetCDF files, kerchunk-generated Parquet reference files, and an Intake catalog
-    ARN: arn:aws:s3:::fvcom-gom3
+    ARN: arn:aws:s3:::umassd-fvcom
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new UMASSD-FVCOM-GOM3 data
+    ARN: arn:aws:sns:us-east-1:273354670095:umassd-fvcom-object-creation
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: FVCOM Explorer Notebook
