@@ -1,0 +1,32 @@
+Name: LAION-fMRI
+Description: LAION-fMRI is one of the largest and most comprehensive high-resolution imaging datasets of brain responses to visually-presented photographs which we built to uncover how the human brain sees and understands the world. Five participants viewed over 25,000 unique natural images in 165 hours across 165 sessions, capturing hundreds of thousands of brain responses every second with an ultra-high-field 7-Tesla MRI scanner. This extraordinary scale means results can be replicated across individuals and generalized across a very broad range of visual experiences, overcoming critical barriers that previous datasets simply could not. The images span everything from everyday photographs (sampled from 120 million image-text pairs) to abstract shapes and visual illusions, ensuring the dataset covers the full breadth of human visual experience. Every image was measured multiple times, delivering exceptional signal quality and setting new standards for the field. Beyond functional brain scans, the dataset includes rich complementary data (eye-tracking, behavioral responses, detailed maps of each participant's visual brain architecture, and cutting-edge white matter fiber tracking), making it possibly the most deeply characterized neuroimaging resources assembled to date. LAION-fMRI provides the foundation for building next-generation AI vision models grounded in real human brain data, fundamentally bridging the gap between biological and artificial intelligence.
+Documentation: https://laion-fmri.hebartlab.com
+Contact: hebart@cbs.mpg.de
+ManagedBy: "[Hebart Lab](https://hebartlab.com)"
+UpdateFrequency: Infrequent. The dataset is intended to be static after publication; updates will only occur for corrections or minor additions.
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neuroimaging
+  - brain images
+  - imaging
+  - magnetic resonance imaging
+  - nifti
+  - machine learning
+  - deep learning
+  - computer vision
+License: "LAION-fMRI Data Use Agreement \u2014 see the [documentation site](https://laion-fmri.hebartlab.com) for terms of use. (Placeholder: link to the formal DUA will be added before release.)"
+Resources:
+  - Description: "BIDS-organized 7T fMRI data (NIfTI) with derivatives including preprocessed data, ROIs, single-trial beta estimates from GLMsingle, retinotopy maps, functional localizers, and precision diffusion MRI tractography."
+    Region: us-east-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: LAION-fMRI documentation, tutorial and example code
+      URL: https://github.com/ViCCo-Group/LAION-fMRI
+      NotebookURL: https://github.com/ViCCo-Group/LAION-fMRI/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: ViCCo Group
+      AuthorURL: https://github.com/ViCCo-Group
+ADXCategories:
+  - Healthcare & Life Sciences Data
