@@ -1,0 +1,46 @@
+Name: Interhemispheric Cortex Connectivity Microscopy Dataset
+Description: >-
+  This dataset contains high-resolution ExA-SPIM (Expansion-Assisted Selective
+  Plane Illumination Microscopy) light-sheet imaging data of interhemispheric
+  cortical connectivity in the mouse brain. Whole-brain volumes are acquired at
+  near-isotropic sub-micron resolution following tissue expansion and clearing,
+  enabling visualization and reconstruction of individual callosal projection
+  neurons and their axonal arbors spanning both hemispheres. Data is stored in
+  OME-Zarr format for efficient cloud-based access and multiscale visualization.
+Documentation: https://github.com/florenthaiss/open-data-examples/tree/main/interhemispheric-cortex-connectivity
+Contact: florent.haiss@pasteur.fr
+ManagedBy: "[Institut Pasteur](https://www.pasteur.fr)"
+UpdateFrequency: Periodically as new specimens are imaged
+Tags:
+  - aws-pds
+  - image processing
+  - imaging
+  - life sciences
+  - microscopy
+  - Mus musculus
+  - neurobiology
+  - neuroimaging
+  - neuroscience
+License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+Citation: >-
+  Neural Circuit Dynamics and Decision Making Laboratory, Institut Pasteur - Mouse Neuroanatomy Data was accessed on DATE from https://registry.opendata.aws/interhemispheric-cortex-connectivity
+Resources:
+  - Description: >-
+      ExA-SPIM light-sheet microscopy volumes of mouse brains in OME-Zarr
+      format, with sidecar JSON metadata files describing subjects, acquisition
+      parameters, and processing provenance. Organized as a flat list of data
+      assets following AIND-style naming conventions.
+    ARN: arn:aws:s3:::[BUCKET-NAME-TBD]
+    Region: eu-west-3
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "TBD"
+      URL: https://github.com/florenthaiss/open-data-examples/blob/main/interhemispheric-cortex-connectivity/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/florenthaiss/open-data-examples/blob/main/interhemispheric-cortex-connectivity/get-to-know-a-dataset.ipynb
+      AuthorName: Florent Haiss
+      AuthorURL: https://github.com/florenthaiss
+  Tools & Applications: []
+  Publications: []
+ADXCategories:
+  - Healthcare & Life Sciences
