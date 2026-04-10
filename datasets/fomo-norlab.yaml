@@ -46,9 +46,10 @@ Resources:
       each containing lidar scans, radar images, stereo and monocular camera frames, audio, IMU logs, odometry, GNSS-PPK trajectories, 
       calibration sequences, metadata files, and ROS2/mcap-compatible exports.
     ARN: "arn:aws:s3:::fomo-dataset"
-    Region: "US West (Oregon) us-west-2"
+    Region: us-west-2
     Type: S3 Bucket
-    Explore: https://us-west-2.console.aws.amazon.com/s3/buckets/fomo-dataset
+    Explore: 
+    - '[Browse Bucket](https://fomo-dataset.s3.amazonaws.com/)'
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset - FoMo
