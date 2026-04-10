@@ -1,5 +1,5 @@
 Name: NEXRAD ARCO - Analysis-Ready Cloud-Optimized Weather Radar
-Description: NEXRAD Level II weather radar data converted to FAIR-compliant, analysis-ready cloud-optimized (ARCO) format using Zarr v3 and Icechunk. Hierarchically organized by Volume Coverage Pattern (VCP) and sweep, enabling instant time-series access to polarimetric variables (DBZH, ZDR, RHOHV, PHIDP, VELOCITY) without downloading individual files. Currently includes KLOT (Chicago, IL) with continuous updates.
+Description: NEXRAD Level II weather radar data converted to FAIR-compliant, analysis-ready cloud-optimized (ARCO) format using Zarr v3 and Icechunk V2. Hierarchically organized by Volume Coverage Pattern (VCP) and sweep, enabling instant time-series access to polarimetric variables (DBZH, ZDR, RHOHV, PHIDP, VELOCITY) without downloading individual files. Currently includes KLOT (Chicago, IL) with continuous updates.
 Documentation: https://atmoscale.github.io/radar-datatree/
 Contact: contact@atmoscale.ai
 ManagedBy: "[Atmoscale](https://atmoscale.ai/)"
@@ -15,10 +15,14 @@ License: NOAA data disseminated through NODD are open to the public and can be u
 RegistryEntryAdded: "2026-02-09"
 RegistryEntryLastModified: "2026-02-10"
 Resources:
-  - Description: NEXRAD ARCO data in Zarr v3 / Icechunk format
-    ARN: arn:aws:s3:::TBD-nexrad-arco
+  - Description: NEXRAD ARCO data in Zarr v3 / Icechunk V2 format
+    ARN: arn:aws:s3:::nexrad-arco
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new NEXRAD ARCO objects
+    ARN: arn:aws:sns:us-east-1:475554723765:nexrad-arco-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: NEXRAD-ARCO"
