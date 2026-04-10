@@ -1,0 +1,48 @@
+Name: "NOAA S-104 Water Level Data"
+Description: |
+  S-104 is a data and metadata encoding specification that is part of the [S-100 Universal Hydrographic Data Model](https://iho.int/en/s-100-universal-hydrographic-data-model), an international standard for hydrographic data. This collection of data contains water level forecast guidance from [NOAA's Global Surge and Tide Operational Forecast System 2-D (STOFS-2D-Global)](https://polar.ncep.noaa.gov/estofs/), an operational hydrodynamic nowcast and forecast modeling system for global water level conditions. These datasets are encoded as HDF-5 files conforming to the S-104 specification, and are geospatially subset into individual tiles conforming to the NOAA/OCS Nautical Product Tiling Scheme, with filenames indicating the corresponding NOAA Electronic Navigational Chart (ENC) Cell Identifier. A set of prototype S-104 tiles has been created for the Charleston, SC area for a select model run cycle. Each individual S-104 (HDF-5) file contains all forecast projections from a single model run for that geographic area. A single S-104 file will contain multiple gridded arrays each containing a forecast valid at a distinct time in the future, out to the forecast horizon of STOFS-2D-Global, which is 180 hours or 7.5 days. The water level forecast guidance includes the combined effects of storm surge (sub-tidal) and tides (astronomical tide predictions).
+Documentation: |
+  https://noaa-s104-pds.s3.amazonaws.com/README.html
+UpdateFrequency: |
+  Static
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+ManagedBy: |
+  "[NOAA](http://www.noaa.gov/)"
+Contact: |
+  For any data delivery issues, please contact the NOAA Open Data Dissemination Team at: nodd@noaa.gov. For general questions or feedback about the data, please submit inquiries through the NOAA Office of Coast Survey (OCS) ASSIST Tool at https://www.nauticalcharts.noaa.gov/customer-service/assist/.
+  We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NOAA NODD team at nodd@noaa.gov.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - marine navigation
+  - hydrography
+  - oceans
+  - coastal
+  - water
+
+Resources:
+  - Description: "NOAA S-104 Water Level for Surface Navigation Datasets"
+    ARN: arn:aws:s3:::noaa-s104-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-s104-pds.s3.amazonaws.com/index.html)'
+  - Description: "NOAA S-104 Water Level for Surface Navigation Datasets"
+    ARN: arn:aws:sns:us-east-1:123901341784:NewS104Object
+    Region: us-east-1
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: "NOAA Precision Marine Navigation Program: Developing Next-Gen Data Svcs for the Maritime Community"
+      URL: https://www.youtube.com/watch?v=laC0Du6-x3k
+      AuthorName: NOAA
+    - Title: "NOAA nowCOAST"
+      URL: https://nowcoast.noaa.gov/
+      AuthorName: NOAA
+  

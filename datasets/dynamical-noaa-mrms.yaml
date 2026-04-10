@@ -1,0 +1,48 @@
+Name: NOAA MRMS - dynamical.org Icechunk Zarr
+Description: |
+    <p>
+      The NOAA Multi-Radar/Multi-Sensor System (MRMS) integrates data from
+      multiple radars and radar networks, surface observations, numerical
+      weather prediction (NWP) models, and climatology to generate seamless,
+      high spatio-temporal resolution mosaics at low latency focused on hail,
+      wind, tornado, quantitative precipitation estimations, convection, icing,
+      and turbulence.
+      </p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/noaa-mrms-conus-analysis-hourly/">NOAA MRMS CONUS analysis, hourly</a> - Hourly precipitation analysis from the Multi-Radar Multi-Sensor (MRMS) system operated by NOAA NWS NCEP.</li>
+    </ul>
+Documentation: https://dynamical.org/catalog/models/noaa-mrms/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA MRMS CONUS analysis, hourly: 1 hour"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA MRMS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-mrms
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-mrms.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-mrms-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: NOAA MRMS CONUS analysis, hourly python quickstart notebook
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-mrms-conus-analysis-hourly-icechunk.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-mrms-conus-analysis-hourly-icechunk.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
