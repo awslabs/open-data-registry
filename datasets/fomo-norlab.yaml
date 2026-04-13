@@ -1,0 +1,75 @@
+Name: FoMo - A Multi-Season Dataset for Robot Navigation in Forêt Montmorency
+Description: >
+  The FoMo dataset is a multi-season collection recorded in a boreal forest environment,
+  featuring deep snow, off-road terrain, steep slopes, and highly variable weather.
+  It provides synchronized multi-modal sensor data—including two lidars (RoboSense and
+  Leishen), an FMCW radar (Navtech), stereo and monocular cameras, dual IMUs, wheel
+  odometry, power data, calibration sequences, and precise ground-truth trajectories
+  via GNSS-PPK fusion.
+  
+  Designed to support research on robust robot autonomy under adverse conditions, FoMo
+  includes repeated traversals of six trajectories of varying complexity for long-term
+  SLAM and odometry evaluation, as well as rich metadata such as one-minute weather
+  station measurements.
+  
+  The dataset is intended to challenge state-of-the-art SLAM,
+  localization, traversability analysis, and multi-season robotics research.
+Documentation: https://fomo.norlab.ulaval.ca/overview
+Contact: dataset@norlab.ulaval.ca
+ManagedBy: "[Norlab, Université Laval](https://norlab.ulaval.ca)"
+UpdateFrequency: The dataset is considered complete and stable. Minor updates or corrections may occur, but they are expected to be infrequent.
+Tags:
+  - aws-pds
+  - robotics
+  - autonomous vehicles
+  - localization
+  - mapping
+  - perception
+  - benchmark
+  - lidar
+  - radar
+  - IMU
+  - GNSS
+  - RINEX
+  - computer vision
+  - signal processing
+  - environmental
+  - geospatial
+  - meteorological
+  - extreme weather
+License: >
+  Creative Commons Attribution 4.0 International (CC BY 4.0).
+  See https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: >
+      Primary S3 bucket containing the full FoMo dataset. Data are structured by deployment and trajectory folders, 
+      each containing lidar scans, radar images, stereo and monocular camera frames, audio, IMU logs, odometry, GNSS-PPK trajectories, 
+      calibration sequences, metadata files, and ROS2/mcap-compatible exports.
+    ARN: "arn:aws:s3:::fomo-dataset"
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: 
+    - '[Browse Bucket](https://fomo-dataset.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset - FoMo
+      URL: https://github.com/norlab-ulaval/fomo-dataset-tutorials
+      NotebookURL: https://github.com/norlab-ulaval/fomo-dataset-tutorials/blob/main/get_to_know_fomo-dataset.ipynb
+      AuthorName: Norlab, Université Laval
+      AuthorURL: https://norlab.ulaval.ca
+  Tools & Applications:
+    - Title: FoMo Dataset Website
+      URL: https://fomo.norlab.ulaval.ca/
+      AuthorName: Norlab, Université Laval
+      AuthorURL: https://norlab.ulaval.ca
+    - Title: FoMo SDK (Rust & Python)
+      URL: https://github.com/norlab-ulaval/fomo-sdk
+      AuthorName: Norlab, Université Laval
+      AuthorURL: https://norlab.ulaval.ca
+  Publications:
+    - Title: Toward teach and repeat across seasonal deep snow accumulation (FoMo introduction paper)
+      URL: https://arxiv.org/abs/2603.08433
+      AuthorName: Boxan et al.
+ADXCategories:
+  - Environmental Data
+  - Automotive Data
