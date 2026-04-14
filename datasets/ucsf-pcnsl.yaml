@@ -27,9 +27,13 @@ License: https://creativecommons.org/licenses/by/4.0/
 Citation:
 Resources:
   - Description: UCSF PCNSL MRI Data on S3
-    ARN:
-    Region:
+    ARN: arn:aws:s3:::ucsf-dmi/pcnsl-dataset_v1.0.zip
+    Region: us-west-1
     Type: S3 Bucket
+  - Description: Notifications for new PCNSL MRI data
+    ARN: arn:aws:sns:us-west-1:905542596225:ucsf-dmi-object_created
+    Region: us-west-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: PCNSL Data Access Tutorial
