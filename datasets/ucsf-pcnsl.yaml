@@ -13,16 +13,12 @@ Tags:
   - aws-pds
   - cancer
   - life sciences
-  - MRI
+  - magnetic resonance imaging
   - medicine
   - medical imaging
   - radiology
-  - neurology
-  - brain
-  - BIDS
-  - lymphoma
-  - central nervous system lymphoma
-  - primary central nervous system lymphoma
+  - neuroimaging
+  - brain images
 License: https://creativecommons.org/licenses/by/4.0/
 Citation:
 Resources:
@@ -30,6 +26,7 @@ Resources:
     ARN: arn:aws:s3:::ucsf-dmi/pcnsl-dataset_v1.0.zip
     Region: us-west-1
     Type: S3 Bucket
+    ControlledAccess: https://imagingdatasets.ucsf.edu/dataset/4
   - Description: Notifications for new PCNSL MRI data
     ARN: arn:aws:sns:us-west-1:905542596225:ucsf-dmi-object_created
     Region: us-west-1
