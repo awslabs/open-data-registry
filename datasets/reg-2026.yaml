@@ -1,0 +1,52 @@
+Name: Pathologist Reasoning-Guided Report Generation (REG2026) Dataset
+
+Description: "This dataset contains the data for the Pathologist Reasoning-Guided Report Generation challenge (REG2026), a computational pathology benchmark for pathology report generation from hematoxylin and eosin (H&E)-stained whole-slide images (WSIs) with paired Chain-of-Thought (CoT) data. Participants are tasked with generating pathology reports based on WSIs, and their models are evaluated not only on report generation but also on the reasoning process underlying report generation. WSIs have been preprocessed to anonymize patient information and retain only 20x magnification images. The dataset is sourced from multiple institutions across Korea, Türkiye, Japan, India, and Germany. Pathology reports are structured texts derived from actual pathological diagnostic records and include fields such as organ, procedure, histologic type, and histologic grade. Reports are standardized according to the College of American Pathologists (CAP) protocol, and diagnoses follow the histologic type and subtype nomenclature defined by the WHO Classification of Tumours. CoT data consists of a series of question-answer pairs constructed based on the actual pathology report writing process, where each pair is linked to a logically subsequent question and the sequence concludes with a final report-producing question. The dataset comprises about 12,000 cases spanning 7 organs and a broad range of diagnostic categories, including malignant, pre-malignant, benign, and non-neoplastic entities. Under the current challenge setup, the dataset is divided into Training, Test Phase 1, and Test Phase 2 splits, and the exact number of cases may change during the challenge."
+
+Documentation: https://miccaireg2026.grand-challenge.org
+Contact: mailto:vanitasahn@gmail.com
+ManagedBy: Korea University
+UpdateFrequency: No regular updates are planned after the initial release.
+
+Tags:
+  - aws-pds
+  - life sciences
+  - computational pathology
+  - digital pathology
+  - histopathology
+  - pathology
+  - medical imaging
+  - imaging
+  - machine learning
+  - deep learning
+  - computer vision
+  - benchmark
+  - natural language processing
+  - reasoning
+  - chain-of-thought
+
+License: CC BY-NC-SA
+
+Resources:
+  - Description: "De-identified H&E-stained pathology whole-slide images (WSIs) paired with Chain-of-Thought (CoT) data for reasoning-guided pathology report generation. WSIs are provided as TIFF files and have been preprocessed to anonymize patient information while retaining only 20x magnification images. The pathology reports and CoT data are provided as JSON objects. The dataset spans 7 organs and includes a diverse range of diagnostic categories, including malignant, pre-malignant, benign, and non-neoplastic entities."
+    ARN:
+    Region:
+    Type: S3 Bucket
+
+DataAtWork:
+  Tools & Applications:
+    - Title: Pathologist Reasoning-Guided Report Generation Challenge
+      URL: https://miccaireg2026.grand-challenge.org
+      AuthorName: PathfinderLab
+      AuthorURL: https://github.com/PathfinderLab
+    - Title: REG2026 dataset description
+      URL: https://github.com/Haasha/REG2026-Grand-Challenge-Pages/blob/main/data_description.md
+      AuthorName: PathfinderLab
+      AuthorURL: https://github.com/PathfinderLab
+    - Title: REG2026 tutorial notebook
+      URL: https://github.com/Haasha/REG2026-Grand-Challenge-Pages/blob/main/tutorials/REG2026_tutorial.ipynb
+      AuthorName: PathfinderLab
+      AuthorURL: https://github.com/PathfinderLab
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
+  - Public Sector Data
