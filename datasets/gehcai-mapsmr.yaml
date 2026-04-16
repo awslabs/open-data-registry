@@ -9,19 +9,19 @@ ManagedBy: '[GE Healthcare](https://www.gehealthcare.com)'
 UpdateFrequency: Not updated
 Tags:
   - machine learning
-  - organ localization
-  - MRI
-  - Foundation models
+  - life sciences
+  - magnetic resonance imaging
+  - aws-pds
+  - medical imaging
 License: '[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)'
 Citation: Yang, Zhijian, et al. "Decipher-MR: a vision-language foundation model for 3D MRI representations." npj Digital Medicine (2026).
+Resources:
+  - Description: Missing organ data files in s3
+    ARN: arn:aws:s3:::gehcai-mapsmr
+    Region: us-west-2
+    Type: S3 Bucket
 DataAtWork:
   Publications:
     - Title: "Decipher-MR: a vision-language foundation model for 3D MRI representations"
       URL: https://www.nature.com/articles/s41746-026-02596-4
       AuthorName: Zhijian Yang, Noel DSouza, Istvan Megyeri, Xiaojian Xu, Amin Honarmandi Shandiz, Farzin Haddadpour, Krisztian Koos, Laszlo Rusko, Emanuele Valeriano, Bharadwaj Swaminathan, Lei Wu, Parminder Bhatia, Taha Kass-Hout, Erhan Bas
-
-Resources:
-  - Description: Missing organ data files in s3
-    ARN: arn:aws:account::926776802611:account
-    Region: us-west-2
-    Type: S3 Bucket
