@@ -4,19 +4,23 @@ Description: |
 
   The RRFS is underpinned by the [Unified Forecast System (UFS)](https://ufscommunity.org/), a community-based Earth modeling initiative, and benefits from collaborative development efforts across NOAA, academia, and research institutions.<br/><br/>
 
-  This bucket provides access to real time, experimental RRFS prototype output.  And will provide access to final retrospective output once completed.<br/><br/>
+  This bucket provides access to a real time, pre-implementation RRFS prototype.  It also hosts some final retrospective parallel output used in the evaluation of RRFSv1<br/><br/>
   <hr/>
   
-  The real-time RRFS prototype is experimental and evolving. It is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
+  The real-time RRFS output is not under 24x7 monitoring and is not operational. Output may be delayed or missing. Outputs will change. When significant changes to output take place, this description will be updated.<br/><br/>
 
   We currently provide hourly deterministic forecasts at 3 km grid spacing out to 84 hours at 00, 06, 12, and 18 UTC, and out to 18 hours for other cycles. Output is organized by cycle date and cycle hour.
+
+  We are now dividing what is provided in this bucket into a fuller set of products (intended primarily for model developers of RRFSv2 using this data to initialize their forecasts), and a more limited set of products that will approximate what we'll be able to provide operationally over NOMADS.  
+  
+  The fuller set of data is under the rrfs_a/ subdirectory:
   
   For example, `rrfs_a/rrfs.20260114/12` contains the deterministic forecast initialized at 12 UTC on 14 January 2026. Users will find two primary types of output in GRIB2 format. The first is:<br/><br/>
   `rrfs.t12z.natlev.3km.f018.na.grib2` <br/><br/>
   
   Meaning that this is the RRFS initialized at 12 UTC, covers the full North America domain, and is the native level post-processed gridded data at hour 18.  This output is on a rotated latitude-longitude grid at 3 km grid spacing.<br/><br/>
 
-  The second output file in grib2 format is:<br/><br/>
+  A second output file in grib2 format is:<br/><br/>
   
   `rrfs.t12z.prslev.3km.f018.conus.grib2` <br/><br/>
  
@@ -33,6 +37,11 @@ Description: |
 
   We also provide prototype RRFSv1 ensemble output and products. Output is available for 00, 06, 12, and 18 UTC cycles, and is organized by cycle date and cycle hour. For example, `rrfs_a/rrfsens.20260115/00/m001` contains the forecast from member 1, and `rrfs_a/refs.20260115/00/enspost_timelag` contains the combined ensemble products.
 
+  The set of files that will be available operationally over NOMADS (and which most users should use rather than the rrfs_a/ products) is under the rrfs_public/ subdirectory:
+
+  Most naming conventions listed above for rrfs_a apply here as well.  However, it will not include full North America domain output, and only provides hourly output to 60 h (with 3 h resolution beyond that).  Also, only the 00/03/06/09/12/15/18/21 UTC cycles are provided.  Individual ensemble forecast members are not included, but the combined ensemble products are.  However, the combined ensemble products are under rrfs_public/refs.20260304/12/ensprod/ types of directories, which will better match the operational directory structure name.  
+
+  Final retrospective parallel output is under the retro_output_final/ directory, with spring (May 2024), summer (July 2023), and winter (~Jan 8 to Feb 8, 2024) output available.
 Documentation: https://vlab.noaa.gov/web/ufs-r2o
 Contact: |
   For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
