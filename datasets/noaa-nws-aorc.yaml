@@ -1,5 +1,12 @@
 Name: NOAA Analysis of Record for Calibration (AORC) Dataset
 Description: |
+  <h4>Update</h4>
+  Announcements:
+  <br/>
+  <br/>
+  April 2, 2026: The Office of Water Prediction (OWP) has identified some brittle components of the AORC data processing pipelines that, by our estimations, have resulted in 0.04% of all available rows being incorrectly masked. We've resolved the issue and we are currently regenerating the Zarr files to ensure a complete record. We will post an updated announcement once the corrected data is posted.
+  <br/>
+  <br/>
   The Analysis Of Record for Calibration (AORC) is a gridded record of near-surface  weather conditions covering the continental United States and Alaska and their  hydrologically contributing areas. It is defined on a latitude/longitude spatial grid with a mesh length of 30 arc seconds (~800 m), and a temporal resolution of one hour.  Elements include hourly total precipitation, temperature, specific humidity, terrain-level  pressure, downward longwave and shortwave radiation, and west-east and south-north wind components. It spans the period from 1979 across the Continental U.S. (CONUS) and from 1981 across Alaska, to the near-present (at all locations). This suite of eight variables is sufficient to drive most land-surface and hydrologic models and is used as input to the National Water Model (NWM) retrospective simulation. While the native AORC process generates netCDF output, the data is post-processed to create a cloud optimized Zarr formatted equivalent for dissemination using cloud technology and infrastructure.
   <br/>
   <br/>
