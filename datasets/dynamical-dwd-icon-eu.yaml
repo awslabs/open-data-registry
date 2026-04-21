@@ -1,0 +1,46 @@
+Name: DWD ICON-EU - dynamical.org Icechunk Zarr
+Description: |
+    <p>
+      ICON-EU is a regional weather forecast model operated by
+      Deutscher Wetterdienst (DWD), Germany's national meteorological service.
+      ICON-EU is a nested configuration of DWD's global ICON (Icosahedral
+      Non-hydrostatic) model that provides high-resolution forecasts over Europe.
+      </p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/dwd-icon-eu-forecast-5-day/">DWD ICON-EU Forecast, 5 Day</a> - High-resolution weather forecasts for Europe from the ICON-EU model operated by Deutscher Wetterdienst (DWD).</li>
+    </ul>
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "DWD ICON-EU Forecast, 5 Day: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: DWD ICON-EU Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-dwd-icon-eu
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-dwd-icon-eu.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-dwd-icon-eu-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: DWD ICON-EU Forecast, 5 Day python quickstart notebook
+      URL: https://github.com/dynamical-org/notebooks/blob/main/dwd-icon-eu-forecast-5-day-icechunk.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/dwd-icon-eu-forecast-5-day-icechunk.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
