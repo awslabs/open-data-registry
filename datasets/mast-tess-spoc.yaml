@@ -1,0 +1,34 @@
+Name: TESS-SPOC
+Description: |
+  The data products for the TESS-SPOC FFI targets are the same as for the [TESS](https://archive.stsci.edu/missions-and-data/tess)
+  two-minute cadence targets: calibrated target pixel files, simple aperture photometry (SAP) flux time series, presearch data conditioning
+  corrected (PDCSAP) flux time series, and cotrending basis vectors (CBV). Since TESS-SPOC relies on FFIs, data are sampled at the FFI cadence.
+Contact: archive@stsci.edu
+Documentation: https://archive.stsci.edu/hlsp/tess-spoc
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: Please cite [Caldwell et. al 2020](https://ui.adsabs.harvard.edu/abs/2020RNAAS...4..201C/abstract) when using TESS-SPOC data in published works.
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - astronomy
+License: All HLSPs hosted at MAST are subject to a [CC By 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+Resources:
+  - Description: TESS-SPOC files
+    ARN: arn:aws:s3:::stpubdata/mast/hlsp/tess-spoc
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/mast/hlsp/tess-spoc
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "TIKE: a free, Jupyter-based cloud platform to access and analyze MAST's AWS timeseries data"
+    URL: https://timeseries.science.stsci.edu
+    AuthorName: MAST Staff
+  Publications: 
+    - Title: TESS Science Processing Operations Center FFI Target List Products
+      URL: https://ui.adsabs.harvard.edu/link_gateway/2020RNAAS...4..201C/doi:10.3847/2515-5172/abc9b3
+      AuthorName: Caldwell et. al
