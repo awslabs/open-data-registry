@@ -1,0 +1,29 @@
+Name: GHRSST NOAA/STAR GOES-17 ABI L2P America Region SST v2.71 dataset in GDS2
+Description: GOES-17 (G17) is the second satellite in the US NOAA's GOES-R series. It was launched on 1 Mar 2018 in an interim position at 89.5-deg W for initial Cal/Val, moved to its nominal position at 137.2-deg W in Nov 2018, and declared NOAA operational GOES-West satellite on 12 Feb 2019. Advanced Baseline Imager (ABI) is a 16 channel sensor, of which five (3.9, 8.4, 10.3, 11.2, 12.3 um) are suitable for SST. From altitude 35,800km, G17/ABI maps SST in a Full Disk (FD) area from 163E-77W and 60S-60N, with spatial resolution 2km/nadir to 15km/VZA 67-deg, and 10-min temporal sampling.
+Documentation: https://cmr.earthdata.nasa.gov/search/concepts/C2036877626-POCLOUD.html
+Contact: https://podaac.jpl.nasa.gov/contact
+ManagedBy: "[NASA Physical Oceanography Distributed Active Archive Center](https://podaac.jpl.nasa.gov/)"
+UpdateFrequency: Daily
+Tags:
+- aws-pds
+- earth observation
+- analysis ready data
+- satellite imagery
+- wind speeds
+- cloud amount
+- ocean circulation
+- ocean currents
+- ocean velocity
+- ocean sea surface height
+- ocean simulation
+- surface water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: GHRSST NOAA/STAR GOES-17 ABI L2P America Region SST v2.71 dataset in GDS2 data files
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/ABI_G17-STAR-L2P-v2.71
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+ADXCategories:
+- Environment
