@@ -1,0 +1,47 @@
+Name: OpenFold3 Training Data
+Description: | 
+  This dataset contains MSAs and predicted structures used to train  OpenFold3 preview, an open-source, all-atom ligand, RNA and protein structure prediction software. This includes - 
+    - PDB - 245k structures and alignments from the RCSB Protein Data Bank - https://www.rcsb.org/
+    - Long monomer distillation set - ~13 million long (sequence length >= 200 amino acids) monomers from the MGNIFY database - https://www.ebi.ac.uk/metagenomics/.
+    - Short monomer distillation set - 400k short (sequence length < 200 amino acid) monomers from the MGNIFY database - https://www.ebi.ac.uk/metagenomics/.
+    - Disordered set - AF2-predicted structures for unresolved segments missing from the PDB
+    - RNA - OF3p2-predicted RNA monomer structures generated from a clustered version of RFAM (current version)
+  For the distillation sets MSAs were generated using the AF3 protocol, and were used to predict structures with AlphaFold2, more details can be found in our whitepaper - https://portal.openfold.omsf.io/reports/of3p2_technical_report.pdf
+  For a full description and an interactive data explorer, please visit https://portal.openfold.omsf.io/datasets
+Documentation: https://portal.openfold.omsf.io/datasets
+Contact: https://github.com/aqlaboratory/openfold-3/issues
+ManagedBy: OpenFold Consortium
+UpdateFrequency: Never
+Tags:
+  - openfold
+  - msa
+  - protein
+  - protein template
+  - protein folding
+  - open source software
+  - life sciences
+  - aws-pds
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Additionally, please cite [our repository](https://doi.org/10.5281/zenodo.19001000) and [our prior manuscript](https://www.nature.com/articles/s41592-024-02272-z)."
+Resources:
+  - Description: A repository of MSAs and 3D protein structural coordinates used to train OpenFold3.
+    ARN: arn:aws:s3:::openfold3-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Deploying OpenFold3 with NVIDIA NIMs on Brev & AWS EC2
+      URL: https://www.youtube.com/watch?v=7fVsDWfbr7w
+      AuthorName: Glòria Macià
+      AuthorURL: https://www.linkedin.com/in/gloriamacia/
+    - Title: Looking at an OpenFold3 MSA in a Browser-Based Notebook on Scigantic
+      URL: https://scigantic.com/archive/4c0256e9-c213-5aac-957b-bbd5c52439a6/sample
+      AuthorName: Scigantic
+      AuthorURL: https://scigantic.com
+  Publications:
+    - Title: OpenFold3-preview2 Technical Report
+      URL: https://portal.openfold.omsf.io/reports/of3p2_technical_report.pdf
+      AuthorName: The OpenFold3 Team
+    - Title: "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+      URL: https://www.nature.com/articles/s41592-024-02272-z
+      AuthorName: Ahdritz, Gustaf; Bouatta, Nazim; Kadyan, Sachin; Xia, Qinghui; Gerecke, William; O'Donnell, Timothy J, et al
