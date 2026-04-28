@@ -1,14 +1,7 @@
 Name: ECMWF AIFS Single - dynamical.org Icechunk Zarr
 Description: |
-    <p>
-      The Artificial Intelligence Forecasting System (AIFS) is a data driven forecast
-      model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF).
-      This is the non-ensemble configuration of AIFS that produces a single forecast trace.
-      AIFS is trained on ECMWF's ERA5 re-analysis and ECMWF's operational numerical
-      weather prediction (NWP) analyses.
-      </p>
+    <p>The Artificial Intelligence Forecasting System (AIFS) is a data driven forecast model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF). This is the non-ensemble configuration of AIFS that produces a single forecast trace. AIFS is trained on ECMWF's ERA5 re-analysis and ECMWF's operational numerical weather prediction (NWP) analyses.</p>
     <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
-    <p>When Icechunk 2.0 is released, these datasets will be updated correspondingly, and updated client libraries will be required for access. To be notified of dataset updates, subscribe to the <a href='https://dynamical.org/updates/'>mailing list</a>.</p>
     <ul>
       <li><a href="https://dynamical.org/catalog/ecmwf-aifs-single-forecast/">ECMWF AIFS Single forecast</a> - Weather forecasts from the ECMWF Artificial Intelligence Forecasting System (AIFS) Single model.</li>
     </ul>
@@ -38,9 +31,14 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
-    - Title: ECMWF AIFS Single forecast python quickstart notebook
-      URL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-single-forecast-icechunk.ipynb
-      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-single-forecast-icechunk.ipynb
+    - Title: "ECMWF AIFS Single forecast — Quickstart"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-single-forecast.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-single-forecast.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+    - Title: "ECMWF AIFS Single forecast — Heating degree days: GFS vs AIFS"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs+ecmwf-aifs-hdd.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-gfs+ecmwf-aifs-hdd.ipynb
       AuthorName: dynamical.org
       AuthorURL: https://dynamical.org
 ADXCategories:
