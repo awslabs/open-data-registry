@@ -1,0 +1,44 @@
+Name: Genoxus Annotation
+Description: 
+  Genoxus Annotation is a harmonized and curated collection of human genetic variant databases designed to support accurate and salable variant annotation. Variant annotation following genetic testing such as whole genome sequencing (WGS) or whole exome sequencing (WES) is a critical step in identifying and interpreting disease-associated genetic factors. As sequencing technologies continue to generate large volumes of
+  genomic data, robust and well-structured annotation resources are essential for translating raw variant calls into clinically meaningful insights.
+  
+  Genoxus Annotation v1.0 integrates data from NCBI ClinVar. ClinVar provides curated information on the clinical significance of a broad spectrum of genetic variants including single nucleotide variants (SNVs), insertions (INS), deletions (DEL), INDELs, copy number variations (CNVs), and structural variants (SVs) along with their associated diseases and traits. 
+  
+  GWAS catalog complements ClinVar by focusing primarily on SNVs identified through genome wide association studies, linking common variants to complex diseases and phenotype traits. (GWAS data is planned in a future release.) By harmonizing variant representations, standardizing disease terminology, and consolidating evidence across sources, Genoxus Annotation provides a unified framework that streamlines variant interpretation for research and clinical applications.
+
+Documentation: https://genoxuslabs.com/genoxusannotation/
+Contact: https://genoxuslabs.com/contact/
+ManagedBy: Genoxus Labs
+UpdateFrequency: Annually and as needed
+Tags:
+  - genetic
+  - genomic
+  - life sciences
+  - whole genome sequencing
+  - whole exome sequencing
+  - variant annotation
+  - aws-pds
+License: "[Creative Commons BY 4 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: https://genoxuslabs.com/genoxusannotation/
+    ARN: arn:aws:s3:::genoxus-annotation-release
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for new depmap-omics-ccle data
+    ARN: arn:aws:sns:us-west-2:918792379224:Genoxus-Annotation-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to Know a Dataset - Genoxus Annotation
+      URL: https://github.com/davidmaigenoxus/Genoxus-Annotation/blob/main/GenoxusTutorial.ipynb
+      AuthorName: David Mai @ Genoxus Labs
+      AuthorURL: https://github.com/davidmaigenoxus
+  Tools & Applications:
+    - Title: Genoxus Annotation 
+      URL: https://github.com/davidmaigenoxus/Genoxus-Annotation
+      AuthorName: David Mai @ Genoxus Labs
+      AuthorURL: https://github.com/davidmaigenoxus
+ADXCategories:
+  - Healthcare & Life Sciences Data
