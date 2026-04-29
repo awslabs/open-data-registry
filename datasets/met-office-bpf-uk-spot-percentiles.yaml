@@ -1,0 +1,156 @@
+Name: Met Office Blended Probabilistic Forecast – UK Spot Percentiles
+Description: |
+  This product provides percentile weather forecasts for 7,213 sites (or spots) across the United Kingdom, Ireland and parts of Western Europe. It is produced by the Met Office IMPROVER Blended Probabilistic Forecast system. It is available in NetCDF format. 
+  <br><br>
+
+  Blended Probabilistic Forecast data is derived from the Met Office's operational NWP (Numerical Weather Prediction) ensembles and nowcasts. To give more reliable predictions, these are then blended and calibrated using the IMPROVER pipeline, and verified using spread–skill and reliability checks. 
+  <br><br>
+
+  This is 1 of 8 Blended Probabilistic Forecast products published by the Met Office on the Registry of Open Data on AWS. Data is available for the Global and UK domains, as gridded and spot (site-specific), and represented as percentiles and probabilities. 
+  <br><br>
+
+  This info is correct as of April 2026, but some things (like the number of sites, parameters and timesteps) may change in future. 
+  <br><br>
+
+  <b>How percentiles work</b>
+  <br>
+  Ensemble forecasts show a range of possible weather outcomes. However, some users may find it more useful to see ensemble forecasts presented as percentiles, particularly when they want to see where each member of an ensemble sits within the full range of possible outcomes. 
+  <br><br>
+
+  Percentiles are generated from an ensemble forecast by first sorting all the members of that ensemble, for example from the coldest temperature to the warmest. To then identify a particular percentile forecast (e.g. the 10th percentile), we find the temperature at which 10% of the ensemble members predict colder conditions. As only 10% of the ensemble members are predicting a lower temperature than the 10th percentile forecast, this indicates that it is giving a relatively low forecast of temperature. Similarly, 90% of ensemble members would predict a lower temperature than the 90th percentile forecast, indicating that it is giving a relatively high forecast of temperature. 
+  <br><br>
+
+  <b>Precipitation percentiles should be used cautiously</b>
+  <br>
+  Precipitation percentiles are potentially useful for experts. But we don't recommend that most people use them, as they are hard to interpret. 
+  <br><br>
+
+  Precipitation is spatially noisy (i.e. it can vary a lot over small distances), especially when it is showery. This means that the individual ensemble forecasts that the percentiles are generated from are likely to have their heaviest precipitation positioned in different places. As a result, a high percentile (e.g. 95th) will pick up the high values from all those different locations and make it appear that heavy rain could occur over a wider area than is physically plausible. In other words, the spatial extent of the precipitation when using a high percentile is not physically realistic. High percentiles can be very useful for finding out what the values at the higher end may be, but not how they are spatially organised. 
+  <br><br>
+
+  Likewise, the spatial extent of the precipitation will be greatly reduced for the lower percentiles. If there are differences between the ensemble forecasts about where it will rain or not, it is possible that a low percentile precipitation field may show zero precipitation everywhere. Again, that is potentially misleading because it suggests it might be dry everywhere, which is not what the individual forecasts are necessarily saying. It is better to view different percentile maps together (5th, 50th, 95th) to get a more informative impression. 
+  <br><br>
+
+  Even the 50th percentile can be misleading as, by definition, it will never include the highest predicted values. Nor is there any guarantee that the peaks in the 50th percentile grid will align with the peaks in the 95th percentile grid. 
+  <br><br>
+
+  <b>How spot data works</b>
+  <br>
+  Spot data is derived by extracting site‑specific forecasts from post‑processed gridded forecasts. 
+  <br><br>
+
+  IMPROVER operates on two domains: 
+  - the UK domain, which primarily covers the region around the United Kingdom, Ireland and parts of Western Europe 
+  - the Global domain, which covers the whole world 
+  <br><br>
+
+  Within each domain, IMPROVER post-processes most forecasts on a grid, though the resolution of this grid differs between the two domains. Site-specific forecasts are drawn from these grids at the end of the post-processing chains.  
+  <br><br>
+
+  <b>UK domain sites</b>
+  <br>
+  There are 7,213 forecast sites in the UK domain. IMPROVER calculates forecasts for these sites from UK domain gridded forecasts. These gridded forecasts are generated from a lead-time-dependent blend of up to 4 forecasting models: an extrapolation nowcast (MONOW), UKV, MOGREPS-UK, and MOGREPS-G. The blend can also involve multiple cycles of a model at different lead times. 
+  <br><br>
+
+  <b>Parameters and timesteps</b>
+  <br>
+  There are 61 weather parameters available including:  
+  - Cloud
+  - Temperature
+  - Pressure
+  - Humidity
+  - Visibility
+  - Precipitation rate and accumulations
+  - UV
+  - Wind  
+  <br><br>
+
+  For most parameters, the following timesteps are available: 
+  - Every hour from 0 to 120 hours 
+  - Every 3 hours from 123 to 186 hours 
+  <br><br>
+
+  However, timesteps vary significantly for some parameters. Check the [parameter documentation](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/csv/data/blended-probabilistic-forecast-parameter-catalogue.xlsx) for more details. 
+  <br><br>
+
+  <b>Latency</b>
+  <br>
+  Data is made available shortly after the model blend time. 
+  <br><br>
+
+  <b>Archive length</b>
+  <br>
+  Data is available for the past 30 days. 
+  <br><br>
+
+  <b>Business needs</b>  
+  <br>
+  This product supports risk-based decision-making by providing uncertainty ranges rather than single deterministic values. Typical uses include: 
+  - assessing uncertainty for operational planning
+  - evaluating weather-related risk thresholds
+  - deriving deterministic products (e.g. 50th percentile) from probabilistic outputs 
+  <br><br>
+
+  Spot forecasts provide information about weather diagnostics at single sites. By using a time series of these forecasts, you can determine how a weather diagnostic is expected to evolve at a particular location. This is ideal for users if you are not moving spatially and are instead interested in how conditions are evolving at your location. This is the kind of time-series information you see in the Met Office app when you look at a forecast for your home address.
+  <br><br>
+
+  Gridded forecasts show how a diagnostic varies spatially across a domain at a given time. By using a time series of gridded fields, you can determine how a weather diagnostic is expected to evolve across a geographic area. So you may find them more useful if you need to consider moving spatially. This kind of product is very familiar from television broadcast weather forecasts. Gridded Blended Probabilistic Forecasts are also available as percentiles and probabilities for both the UK and Global domains. 
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+Contact: |
+  Please email our Service Desk at: servicedesk@metoffice.gov.uk and let them know which dataset you are using and that it’s from the Registry of Open Data on AWS.
+  <br><br>
+  Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+UpdateFrequency: |
+  The data is continuously updated by blending multiple sources. The latest version is what was available at the latest blend time.
+  <br><br>
+  We check for new model data every 15 minutes and include it in the blend as it becomes available. For the first 5 days of the forecast, we include data from models that run 24 updates per day. Beyond day 5, we get new model data every 6 hours. 
+  <br><br>
+  This means that the data comes through as a continuous stream of rolling updates, rather than a coherent set of data from a single model run. Instead of waiting for a complete set of data, it's best to simply take the latest version of each timestep and parameter available at the moment you refresh. Some elements may update frequently while others won't change as regularly, and that’s expected.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+License: "This product is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Resources:
+  - Description: Met Office Blended Probabilistic Forecast – UK Spot Percentiles
+    ARN: arn:aws:s3:::met-office-uk-spot-percentiles
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-uk-spot-percentiles.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new Met Office Blended Probabilistic Forecast – UK Spot Percentiles Data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-uk-spot-percentiles-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: Introduction - IMPROVER Documentation
+      URL: https://improver.readthedocs.io/en/latest/metadata/Introduction.html
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
