@@ -72,94 +72,81 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: Level-1A altimetry data (GLAH01) include the transmitted and received waveform from the altimeter. Each data granule has an associated browse product.
+- Description: "GLAH01 v033 - Level-1A altimetry data (GLAH01) include the transmitted and received waveform from the altimeter. Each data granule has an associated browse product."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH01/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH01 v033
-- Description: GLAH02 Level-1A atmospheric data include the normalized relative backscatter for the 532 nm and 1064 nm channels, and low-level instrument corrections such as laser energy (1064 nm and 532 nm), photon coincidence (532 nm), and detector gain correction (1064 nm). Each data granule has an associated browse product.
+- Description: "GLAH02 v033 - GLAH02 Level-1A atmospheric data include the normalized relative backscatter for the 532 nm and 1064 nm channels, and low-level instrument corrections such as laser energy (1064 nm and 532 nm), photon coincidence (532 nm), and detector gain correction (1064 nm). Each data granule has an associated browse product."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH02/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH02 v033
-- Description: Level-1A global engineering data (GLAH03) include satellite housekeeping data used to calibrate data values for GLA01 and GLA02.
+- Description: "GLAH03 v033 - Level-1A global engineering data (GLAH03) include satellite housekeeping data used to calibrate data values for GLA01 and GLA02."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH03/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH03 v033
-- Description: Level-1A global laser pointing data (GLAH04) contain two orbits of attitude data from the spacecraft star tracker, instrument star tracker, gyro, and laser reference system, and other spacecraft attitude data required to calculate precise laser pointing.
+- Description: "GLAH04 v033 - Level-1A global laser pointing data (GLAH04) contain two orbits of attitude data from the spacecraft star tracker, instrument star tracker, gyro, and laser reference system, and other spacecraft attitude data required to calculate precise laser pointing."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH04/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH04 v033
-- Description: GLAH07 Level-1B global backscatter data are provided at full instrument resolution. The product includes full 532 nm (41.1 to -1.0 km) and 1064 nm (20 to -1 km) calibrated attenuated backscatter profiles at 5 times per second, and from 10 to -1 km, at 40 times per second for both channels.
+- Description: "GLAH07 v033 - GLAH07 Level-1B global backscatter data are provided at full instrument resolution. The product includes full 532 nm (41.1 to -1.0 km) and 1064 nm (20 to -1 km) calibrated attenuated backscatter profiles at 5 times per second, and from 10 to -1 km, at 40 times per second for both channels."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH07/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH07 v033
-- Description: GLAH06 Level-1B Global Elevation is a product that is analogous to the geodetic data records distributed for radar altimetry missions. It contains elevations previously corrected for tides, atmospheric delays, and surface characteristics within the footprint.
+- Description: "GLAH06 v034 - GLAH06 Level-1B Global Elevation is a product that is analogous to the geodetic data records distributed for radar altimetry missions. It contains elevations previously corrected for tides, atmospheric delays, and surface characteristics within the footprint."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH06/034
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH06 v034
-- Description: GLAH05 Level-1B waveform parameterization data include output parameters from the waveform characterization procedure and other parameters required to calculate surface slope and relief characteristics. GLAH05 contains parameterizations of both the transmitted and received pulses and other characteristics from which elevation and footprint-scale roughness and slope are calculated.
+- Description: "GLAH05 v034 - GLAH05 Level-1B waveform parameterization data include output parameters from the waveform characterization procedure and other parameters required to calculate surface slope and relief characteristics. GLAH05 contains parameterizations of both the transmitted and received pulses and other characteristics from which elevation and footprint-scale roughness and slope are calculated."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH05/034
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH05 v034
-- Description: GLAH10 Level-2 aerosol vertical structure data contain the attenuation-corrected cloud and aerosol backscatter and extinction profiles at a 4 sec sampling rate for aerosols and a 1 sec rate for clouds. Each data granule has an associated browse product.
+- Description: "GLAH10 v033 - GLAH10 Level-2 aerosol vertical structure data contain the attenuation-corrected cloud and aerosol backscatter and extinction profiles at a 4 sec sampling rate for aerosols and a 1 sec rate for clouds. Each data granule has an associated browse product."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH10/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH10 v033
-- Description: GLAH06 is used in conjunction with GLAH05 to create the Level-2 altimetry products. Level-2 altimetry data provide surface elevations for ice sheets (GLAH12), sea ice (GLAH13), land (GLAH14), and oceans (GLAH15).
+- Description: "GLAH12 v034 - GLAH06 is used in conjunction with GLAH05 to create the Level-2 altimetry products. Level-2 altimetry data provide surface elevations for ice sheets (GLAH12), sea ice (GLAH13), land (GLAH14), and oceans (GLAH15)."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH12/034
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH12 v034
-- Description: GLAH09 Level-2 cloud heights for multi-layer clouds contain cloud layer top and bottom height data at sampling rates of 4 sec, 1 sec, 5 Hz, and 40 Hz. Each data granule has an associated browse product.
+- Description: "GLAH09 v033 - GLAH09 Level-2 cloud heights for multi-layer clouds contain cloud layer top and bottom height data at sampling rates of 4 sec, 1 sec, 5 Hz, and 40 Hz. Each data granule has an associated browse product."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH09/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH09 v033
-- Description: GLAH08 Level-2 planetary boundary layer (PBL) and elevated aerosol layer heights data contains PBL heights, ground detection heights, and top and bottom heights of elevated aerosols from -1.5 km to 20.5 km (4 sec sampling rate) and from 20.5 km to 41 km (20 sec sampling rate). Each data granule has an associated browse product.
+- Description: "GLAH08 v033 - GLAH08 Level-2 planetary boundary layer (PBL) and elevated aerosol layer heights data contains PBL heights, ground detection heights, and top and bottom heights of elevated aerosols from -1.5 km to 20.5 km (4 sec sampling rate) and from 20.5 km to 41 km (20 sec sampling rate). Each data granule has an associated browse product."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH08/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH08 v033
-- Description: GLAH11 Level-2 thin cloud/aerosol optical depths data contain thin cloud and aerosol optical depths. A thin cloud is one that does not completely attenuate the lidar signal return, which generally corresponds to clouds with optical depths less than about 2.0.
+- Description: "GLAH11 v033 - GLAH11 Level-2 thin cloud/aerosol optical depths data contain thin cloud and aerosol optical depths. A thin cloud is one that does not completely attenuate the lidar signal return, which generally corresponds to clouds with optical depths less than about 2.0."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/GLAS/GLAH11/033
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: GLAH11 v033
-- Description: This data set consists of an enhanced resolution digital elevation model (DEM) for the Greenland Ice Sheet. It was constructed by combining ASTER and SPOT 5 DEMs over the ice sheet periphery and margin with AVHRR photoclinometry for the interior and far north, and calibrating the data to approximate mean ICESat/GLAS elevations from 2003 to 2009.
+- Description: "NSIDC-0645 v1 - This data set consists of an enhanced resolution digital elevation model (DEM) for the Greenland Ice Sheet. It was constructed by combining ASTER and SPOT 5 DEMs over the ice sheet periphery and margin with AVHRR photoclinometry for the interior and far north, and calibrating the data to approximate mean ICESat/GLAS elevations from 2003 to 2009."
   ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/MEASURES/NSIDC-0645/1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
-  Name: NSIDC-0645 v1

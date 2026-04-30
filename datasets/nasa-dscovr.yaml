@@ -63,73 +63,63 @@ Tags:
 - weather
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: 'Deep Space Climate Observatory (DSCOVR) DSCOVR National Institute of Standards and Technology Advanced Radiometer (NISTAR) was explicitly designed to measure the global daytime radiation budget for an entire hemisphere using active cavity radiometers for three channels: total (0.2 - 100 um), SW (0.2 - 4.0 um), and near-infrared (0.7 - 4.0 um). To derive the Earth Radiation Budget (ERB) from NISTAR measurements, the Short Wave (SW) radiances need to be unfiltered first before they can be subtracted from the total to yield the Long Wave (LW) (4 - 100 um) radiances.'
+- Description: "DSCOVR_NISTAR_L2_FLX v01 - Deep Space Climate Observatory (DSCOVR) DSCOVR National Institute of Standards and Technology Advanced Radiometer (NISTAR) was explicitly designed to measure the global daytime radiation budget for an entire hemisphere using active cavity radiometers for three channels: total (0.2 - 100 um), SW (0.2 - 4.0 um), and near-infrared (0.7 - 4.0 um). To derive the Earth Radiation Budget (ERB) from NISTAR measurements, the Short Wave (SW) radiances need to be unfiltered first before they can be subtracted from the total to yield the Long Wave (LW) (4 - 100 um) radiances."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_NISTAR_L2_FLX_01
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_NISTAR_L2_FLX v01
-- Description: DSCOVR_NISTAR_L1A is the Deep Space Climate Observatory (DSCOVR) National Institute of Standards & Technology Advanced Radiometer (NISTAR) Level 1A Radiance, Version 3 data product. NISTAR is a 4-band radiometer onboard THE National Oceanic and Atmospheric Administration's (NOAA) DSCOVR spacecraft located at the Earth-Sun Lagrange-1 (L-1) point, from which vantage it continuously measures the reflected and emitted radiances of the sunlit face of the Earth.
+- Description: "DSCOVR_NISTAR_L1A v3 - DSCOVR_NISTAR_L1A is the Deep Space Climate Observatory (DSCOVR) National Institute of Standards & Technology Advanced Radiometer (NISTAR) Level 1A Radiance, Version 3 data product. NISTAR is a 4-band radiometer onboard THE National Oceanic and Atmospheric Administration's (NOAA) DSCOVR spacecraft located at the Earth-Sun Lagrange-1 (L-1) point, from which vantage it continuously measures the reflected and emitted radiances of the sunlit face of the Earth."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_NISTAR_L1A_3
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_NISTAR_L1A v3
-- Description: Robust cloud products are critical for the Deep Space Climate Observatory (DSCOVR) to contribute significantly to climate studies. Building on our team’s track record in cloud detection, cloud property retrieval, oxygen band exploitation, and DSCOVR-related studies, we propose to develop a suite of algorithms for generating the operational Earth Polychromatic Imaging Camera (EPIC) cloud mask, cloud height, and cloud optical thickness products.
+- Description: "DSCOVR_EPIC_L2_O3SO2AI v02 - Robust cloud products are critical for the Deep Space Climate Observatory (DSCOVR) to contribute significantly to climate studies. Building on our team’s track record in cloud detection, cloud property retrieval, oxygen band exploitation, and DSCOVR-related studies, we propose to develop a suite of algorithms for generating the operational Earth Polychromatic Imaging Camera (EPIC) cloud mask, cloud height, and cloud optical thickness products."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_O3SO2AI_02
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L2_O3SO2AI v02
-- Description: The Deep Space Climate Observatory (DSCOVR) mission's Earth Polychromatic Imaging Camera (EPIC) Level 1A miscellaneous data products capture unique images of the Moon transiting across the Earth's disk, dark space or Jupiter from the spacecraft's position at Lagrange point L1. These specialized observations, stored in HDF5 format, contain calibrated radiance measurements across 10 spectral bands ranging from 317 nm (ultraviolet) to 780 nm (near-infrared).
+- Description: "DSCOVR_EPIC_L1A_MISC vV1 - The Deep Space Climate Observatory (DSCOVR) mission's Earth Polychromatic Imaging Camera (EPIC) Level 1A miscellaneous data products capture unique images of the Moon transiting across the Earth's disk, dark space or Jupiter from the spacecraft's position at Lagrange point L1. These specialized observations, stored in HDF5 format, contain calibrated radiance measurements across 10 spectral bands ranging from 317 nm (ultraviolet) to 780 nm (near-infrared)."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L1A_MISC_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L1A_MISC vV1
-- Description: DSCOVR_EPIC_L2_TO3_v03 is Level2 Total Ozone derived from the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) using Level 1b version 3 inputs and version 3 ozone retrieval algorithm. The measurements from four EPIC UV (ultraviolet) channels derive the global distributions of total ozone over the entire sunlit portion of the Earth.
+- Description: "DSCOVR_EPIC_L2_TO3 v03 - DSCOVR_EPIC_L2_TO3_v03 is Level2 Total Ozone derived from the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) using Level 1b version 3 inputs and version 3 ozone retrieval algorithm. The measurements from four EPIC UV (ultraviolet) channels derive the global distributions of total ozone over the entire sunlit portion of the Earth."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_TO3_03
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L2_TO3 v03
-- Description: DSCOVR_EPIC_L3_PAR_01 is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean PAR at the ice-free ocean surface.
+- Description: "DSCOVR_EPIC_L3_PAR v01 - DSCOVR_EPIC_L3_PAR_01 is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean PAR at the ice-free ocean surface."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L3_PAR_01
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L3_PAR v01
-- Description: DSCOVR_EPIC_L3_PAR-image_01 is a view image showing data from DSCOVR_EPIC_L3_PAR, which is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean PAR at the ice-free ocean surface.
+- Description: "DSCOVR_EPIC_L3_PAR-IMAGE v01 - DSCOVR_EPIC_L3_PAR-image_01 is a view image showing data from DSCOVR_EPIC_L3_PAR, which is the Deep Space Climate Observatory (DSCOVR) Earth Polychromatic Imaging Camera (EPIC) Level 3 photosynthetically available radiation (PAR) version 1 data product. The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean PAR at the ice-free ocean surface."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L3_PAR-IMAGE_01
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L3_PAR-IMAGE v01
-- Description: EPIC Ocean Surface PAR The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean photosynthetically available radiation (PAR) at the ice-free ocean surface. PAR is defined as the quantum energy flux from the Sun in the 400-700 nm range.
+- Description: "DSCOVR_EPIC_L3_PAR v02 - EPIC Ocean Surface PAR The EPIC observations of the Earth’s surface lit by the Sun made 13 times during the day in spectral bands centered on 443, 551, and 680 nm are used to estimate daily mean photosynthetically available radiation (PAR) at the ice-free ocean surface. PAR is defined as the quantum energy flux from the Sun in the 400-700 nm range."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L3_PAR_02
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L3_PAR v02
-- Description: In DSCOVR_EPIC_L2_composite_01, cloud property retrievals from multiple imagers on low Earth orbit (LEO) satellites (including MODIS, VIIRS, and AVHRR) and geostationary (GEO) satellites (including GOES-13 and -15, METEOSAT-7 and -10, MTSAT-2, and Himawari-8) are used to generate the composite. Based on the Ceres cloud detection and retrieval system, all cloud properties were determined using a standard set of algorithms, the Satellite ClOud and Radiation Property Retrieval System (SatCORPS).
+- Description: "DSCOVR_EPIC_L2_COMPOSITE v01 - In DSCOVR_EPIC_L2_composite_01, cloud property retrievals from multiple imagers on low Earth orbit (LEO) satellites (including MODIS, VIIRS, and AVHRR) and geostationary (GEO) satellites (including GOES-13 and -15, METEOSAT-7 and -10, MTSAT-2, and Himawari-8) are used to generate the composite. Based on the Ceres cloud detection and retrieval system, all cloud properties were determined using a standard set of algorithms, the Satellite ClOud and Radiation Property Retrieval System (SatCORPS)."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_COMPOSITE_01
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L2_COMPOSITE v01
-- Description: DSOCVR EPIC_L2 MAIAC-Daily_01 contains plots of data generated from DSCOVR_EPIC_L2_MAIAC_03, the DSCOVR EPIC L2 Multi-Angle Implementation of Atmospheric Correction (MAIAC) Version 03 data product. Data collection for this product is ongoing.
+- Description: "DSCOVR_EPIC_L2_MAIAC-DAILY v01 - DSOCVR EPIC_L2 MAIAC-Daily_01 contains plots of data generated from DSCOVR_EPIC_L2_MAIAC_03, the DSCOVR EPIC L2 Multi-Angle Implementation of Atmospheric Correction (MAIAC) Version 03 data product. Data collection for this product is ongoing."
   ARN: arn:aws:s3:::asdc-prod-protected/DSCOVR/DSCOVR_EPIC_L2_MAIAC-DAILY_01
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
-  Name: DSCOVR_EPIC_L2_MAIAC-DAILY v01

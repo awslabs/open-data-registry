@@ -45,45 +45,39 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: This dataset contains Level-3 Dynamic OPERA surface water extent product version 1. The data are validated surface water extent observations beginning April 2023.
+- Description: "OPERA_L3_DSWX-HLS_V1 v1.0 - This dataset contains Level-3 Dynamic OPERA surface water extent product version 1. The data are validated surface water extent observations beginning April 2023."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: OPERA_L3_DSWX-HLS_V1 v1.0
-- Description: This dataset contains Level-3 Dynamic OPERA Surface Water Extent from Sentinel-1 (DSWx-S1) product version 1. DSWx-S1 provides near-global geographical mapping of surface water extent over land at a spatial resolution of 30 meters over the Military Grid reference System (MGRS) grid system, with a temporal revisit frequency between 6-12 days.
+- Description: "OPERA_L3_DSWX-S1_V1 v1.0 - This dataset contains Level-3 Dynamic OPERA Surface Water Extent from Sentinel-1 (DSWx-S1) product version 1. DSWx-S1 provides near-global geographical mapping of surface water extent over land at a spatial resolution of 30 meters over the Military Grid reference System (MGRS) grid system, with a temporal revisit frequency between 6-12 days."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-S1_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: OPERA_L3_DSWX-S1_V1 v1.0
-- Description: This dataset contains the calibration/validation (CalVal) database for the OPERA DSWx-S1 product. The CalVal database is a zip file of an Amazon Web Services S3 bucket containing classification items that enable algorithm calibration and validation of OPERA products.
+- Description: "OPERA_DSWX-S1_CALVAL_V1 v1 - This dataset contains the calibration/validation (CalVal) database for the OPERA DSWx-S1 product. The CalVal database is a zip file of an Amazon Web Services S3 bucket containing classification items that enable algorithm calibration and validation of OPERA products."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_DSWX-S1_CALVAL_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: OPERA_DSWX-S1_CALVAL_V1 v1
-- Description: The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) product Version 1 maps vegetation disturbance alerts that are derived from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). A vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel.
+- Description: "OPERA_L3_DIST-ALERT-HLS_V1 v1 - The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) product Version 1 maps vegetation disturbance alerts that are derived from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). A vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel."
   ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ALERT-HLS_V1.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: OPERA_L3_DIST-ALERT-HLS_V1 v1
-- Description: The OPERA_L3_DIST-ALERT-HLS Version 0 data product was decommissioned on April 25, 2025. Users are encouraged to use the [OPERA_L3_DIST-ALERT-HLS V1](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product which was released on March 14, 2024, and has achieved stage 1 validation.
+- Description: "OPERA_L3_DIST-ALERT-HLS_PROVISIONAL_V0 v0 - The OPERA_L3_DIST-ALERT-HLS Version 0 data product was decommissioned on April 25, 2025. Users are encouraged to use the [OPERA_L3_DIST-ALERT-HLS V1](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product which was released on March 14, 2024, and has achieved stage 1 validation."
   ARN: arn:aws:s3:::lp-protected/OPERA_DIST-ALERT-HLS_PROVISIONAL_V0.000
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: OPERA_L3_DIST-ALERT-HLS_PROVISIONAL_V0 v0
-- Description: The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product into an annual vegetation disturbance data product. Vegetation disturbance is mapped when there is an indicated decrease in vegetation cover within an HLS Version 2 pixel.
+- Description: "OPERA_L3_DIST-ANN-HLS_V1 v1 - The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product into an annual vegetation disturbance data product. Vegetation disturbance is mapped when there is an indicated decrease in vegetation cover within an HLS Version 2 pixel."
   ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ANN-HLS_V1.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: OPERA_L3_DIST-ANN-HLS_V1 v1

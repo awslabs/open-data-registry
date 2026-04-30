@@ -46,52 +46,45 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: This dataset contains the Global Mean Sea Level (GMSL) trend generated from the Integrated Multi-Mission Ocean Altimeter Data for Climate Research Version 5.2. The GMSL trend is a 1-dimensional time series of globally averaged Sea Surface Height Anomalies (SSHA) from TOPEX/Poseidon, Jason-1, OSTM/Jason-2, Jason-3, and Sentinel-6A that covers September 1992 to present with a lag of up to 4 months.
+- Description: "MERGED_TP_J1_OSTM_OST_GMSL_ASCII_V52 v5.2 - This dataset contains the Global Mean Sea Level (GMSL) trend generated from the Integrated Multi-Mission Ocean Altimeter Data for Climate Research Version 5.2. The GMSL trend is a 1-dimensional time series of globally averaged Sea Surface Height Anomalies (SSHA) from TOPEX/Poseidon, Jason-1, OSTM/Jason-2, Jason-3, and Sentinel-6A that covers September 1992 to present with a lag of up to 4 months."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/MERGED_TP_J1_OSTM_OST_GMSL_ASCII_V52
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: MERGED_TP_J1_OSTM_OST_GMSL_ASCII_V52 v5.2
-- Description: The NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset produced by NASA provide observations of sea surface height, or sea level, anomaly measured using radar altimeter satellites in the reference mission orbit. These include TOPEX/Poseidon, the Jason series, and Sentinel-6.
+- Description: "NASA_SSH_REF_ALONGTRACK_V1 v1 - The NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset produced by NASA provide observations of sea surface height, or sea level, anomaly measured using radar altimeter satellites in the reference mission orbit. These include TOPEX/Poseidon, the Jason series, and Sentinel-6."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_REF_ALONGTRACK_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_REF_ALONGTRACK_V1 v1
-- Description: This file contains an indicator for the El Nino-Southern Oscillation (ENSO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1.
+- Description: "NASA_SSH_ENSO_INDICATOR v1 - This file contains an indicator for the El Nino-Southern Oscillation (ENSO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_ENSO_INDICATOR
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_ENSO_INDICATOR v1
-- Description: This file contains a time series of globally-averaged sea level change, or "global mean sea level" (GMSL) in units of centimeters. The estimate is based on satellite observations of sea surface height anomaly, measured by reference radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6.
+- Description: "NASA_SSH_GMSL_INDICATOR v1 - This file contains a time series of globally-averaged sea level change, or \"global mean sea level\" (GMSL) in units of centimeters. The estimate is based on satellite observations of sea surface height anomaly, measured by reference radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_GMSL_INDICATOR
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_GMSL_INDICATOR v1
-- Description: This file contains an indicator for the Indian Ocean Dipole (IOD), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1.
+- Description: "NASA_SSH_IOD_INDICATOR v1 - This file contains an indicator for the Indian Ocean Dipole (IOD), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_IOD_INDICATOR
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_IOD_INDICATOR v1
-- Description: This file contains an indicator for the Pacific Decadal Oscillation (PDO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1.
+- Description: "NASA_SSH_PDO_INDICATOR v1 - This file contains an indicator for the Pacific Decadal Oscillation (PDO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_PDO_INDICATOR
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_PDO_INDICATOR v1
-- Description: The NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 dataset produced by NASA provides 2-D maps of sea surface height, or sea level, anomaly once every 7 days. The grids are based on observations of sea surface height from the radar altimeter satellites in the reference mission orbits, including TOPEX/Poseidon, the Jason series, and Sentinel-6.
+- Description: "NASA_SSH_REF_SIMPLE_GRID_V1 v1 - The NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 dataset produced by NASA provides 2-D maps of sea surface height, or sea level, anomaly once every 7 days. The grids are based on observations of sea surface height from the radar altimeter satellites in the reference mission orbits, including TOPEX/Poseidon, the Jason series, and Sentinel-6."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_REF_SIMPLE_GRID_V1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NASA_SSH_REF_SIMPLE_GRID_V1 v1

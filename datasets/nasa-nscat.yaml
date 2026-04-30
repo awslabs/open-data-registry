@@ -45,52 +45,45 @@ Tags:
 - precipitation
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: The NASA Scatterometer (NSCAT) Level 2.5 high-resolution reduced MGDR contains only wind vector data (sigma-0 is excluded) in 25 km wind vector cell (WVC) swaths which contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction).
+- Description: "NSCAT_W25_RMGDR_V2 v2 - The NASA Scatterometer (NSCAT) Level 2.5 high-resolution reduced MGDR contains only wind vector data (sigma-0 is excluded) in 25 km wind vector cell (WVC) swaths which contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction)."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_W25_RMGDR_V2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_W25_RMGDR_V2 v2
-- Description: The NASA Scatterometer (NSCAT) Level 2.5 high-resolution merged ocean wind vectors and sigma-0 in 25 km wind vector cell (WVC) swaths contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction).
+- Description: "NSCAT_25KM_MGDR_V2 v2 - The NASA Scatterometer (NSCAT) Level 2.5 high-resolution merged ocean wind vectors and sigma-0 in 25 km wind vector cell (WVC) swaths contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction)."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_25KM_MGDR_V2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_25KM_MGDR_V2 v2
-- Description: The NASA Scatterometer (NSCAT) Level 1.7 ocean sigma-0 referenced to 50 km wind vector cells (WVC) contains daily backscatter (sigma-0) data from ascending and descending passes. Rain flagging information is not included.
+- Description: "NSCAT_LEVEL_1.7_V2 v2 - The NASA Scatterometer (NSCAT) Level 1.7 ocean sigma-0 referenced to 50 km wind vector cells (WVC) contains daily backscatter (sigma-0) data from ascending and descending passes. Rain flagging information is not included."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_LEVEL_1.7_V2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_LEVEL_1.7_V2 v2
-- Description: This dataset contains the NASA Scatterometer (NSCAT) Level 2 ocean wind vector ambiguity overlay files for the NSCAT MGDR version 2 dataset, referenced for 25 km wind vector cells (WVC). The dataset is derived from the results of a study which used a 2-D variational analysis method (VAM) to select a wind solution from the NSCAT ambiguous winds (Hoffman et al.
+- Description: "NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL v2 - This dataset contains the NASA Scatterometer (NSCAT) Level 2 ocean wind vector ambiguity overlay files for the NSCAT MGDR version 2 dataset, referenced for 25 km wind vector cells (WVC). The dataset is derived from the results of a study which used a 2-D variational analysis method (VAM) to select a wind solution from the NSCAT ambiguous winds (Hoffman et al."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_AER_HOFFMAN_L2_OW_WIND_VECTOR_AMBIGUITY_REMOVAL v2
-- Description: The NASA Scatterometer (NSCAT) Level 2 ocean wind vectors in 50 km wind vector cell (WVC) swaths contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction).
+- Description: "NSCAT_LEVEL_2_V2 v2 - The NASA Scatterometer (NSCAT) Level 2 ocean wind vectors in 50 km wind vector cell (WVC) swaths contain daily data from ascending and descending passes. Wind vectors are accurate to within 2 m/s (vector speed) and 20 degrees (vector direction)."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_LEVEL_2_V2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_LEVEL_2_V2 v2
-- Description: This dataset provides browse images of the NASA Scatterometer (NSCAT) Level 3 daily gridded ocean wind vectors, which are provided at 0.5 degree spatial resolution for ascending and descending passes; wind vectors are averaged at points where adjacent passes overlap. This is the most up-to-date version, which designates the final phase of calibration, validation and science data processing, which was completed in November of 1998, on behalf of the JPL NSCAT Project; wind vectors are processed using the NSCAT-2 geophysical model function.
+- Description: "NSCAT_LEVEL_3_BROWSE_IMAGES v2 - This dataset provides browse images of the NASA Scatterometer (NSCAT) Level 3 daily gridded ocean wind vectors, which are provided at 0.5 degree spatial resolution for ascending and descending passes; wind vectors are averaged at points where adjacent passes overlap. This is the most up-to-date version, which designates the final phase of calibration, validation and science data processing, which was completed in November of 1998, on behalf of the JPL NSCAT Project; wind vectors are processed using the NSCAT-2 geophysical model function."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_LEVEL_3_BROWSE_IMAGES
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_LEVEL_3_BROWSE_IMAGES v2
-- Description: The NASA Scatterometer (NSCAT) Level 3 daily gridded ocean wind vectors are provided at 0.5 degree spatial resolution for ascending and descending passes; wind vectors are averaged at points where adjacent passes overlap. Wind vectors are not considered valid in rain contaminated regions; rain flags and precipitation information are not provided.
+- Description: "NSCAT_LEVEL_3_V2 v2 - The NASA Scatterometer (NSCAT) Level 3 daily gridded ocean wind vectors are provided at 0.5 degree spatial resolution for ascending and descending passes; wind vectors are averaged at points where adjacent passes overlap. Wind vectors are not considered valid in rain contaminated regions; rain flags and precipitation information are not provided."
   ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NSCAT_LEVEL_3_V2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
-  Name: NSCAT_LEVEL_3_V2 v2

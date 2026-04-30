@@ -433,717 +433,615 @@ Tags:
 - weather
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: M2_TMAX_PM25 is a value-added product derived from the MERRA-2 aerosol monthly product M2TMNXAER_5.12.4 (or tavgM_2d_aer_Nx). The surface concentration of fine particulate matter (PM2.5) is calculated as the sum of individual aerosol components (organic carbon, black carbon, sulfate, sea salt, and dust) (Buchard et al., 2017) and is recast from the native MERRA-2 model grid.
+- Description: "M2_TMAX_PM25 v1 - M2_TMAX_PM25 is a value-added product derived from the MERRA-2 aerosol monthly product M2TMNXAER_5.12.4 (or tavgM_2d_aer_Nx). The surface concentration of fine particulate matter (PM2.5) is calculated as the sum of individual aerosol components (organic carbon, black carbon, sulfate, sea salt, and dust) (Buchard et al., 2017) and is recast from the native MERRA-2 model grid."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2_TMAX_PM25.1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2_TMAX_PM25 v1
-- Description: M2C0NXASM (or const_2d_asm_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant model parameters, such as the fraction of lake, land, and ocean within a model grid cell.
+- Description: "M2C0NXASM v5.12.4 - M2C0NXASM (or const_2d_asm_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant model parameters, such as the fraction of lake, land, and ocean within a model grid cell."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2C0NXASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2C0NXASM v5.12.4
-- Description: M2C0NXCTM (or const_2d_ctm_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant model parameters for usage by the chemistry transport model (CTM), such as the fraction of lake, land, ice, or ocean within a model grid cell.
+- Description: "M2C0NXCTM v5.12.4 - M2C0NXCTM (or const_2d_ctm_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant model parameters for usage by the chemistry transport model (CTM), such as the fraction of lake, land, ice, or ocean within a model grid cell."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2C0NXCTM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2C0NXCTM v5.12.4
-- Description: M2C0NXLND (or const_2d_lnd_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant land surface parameters, such as thickness of the predefined soil layers, soil porosity, and soil wilting point.
+- Description: "M2C0NXLND v5.12.4 - M2C0NXLND (or const_2d_lnd_Nx) is a data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of 2-dimensional constant land surface parameters, such as thickness of the predefined soil layers, soil porosity, and soil wilting point."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2C0NXLND.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2C0NXLND v5.12.4
-- Description: M2I1NXASM (or inst1_2d_asm_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water.
+- Description: "M2I1NXASM v5.12.4 - M2I1NXASM (or inst1_2d_asm_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I1NXASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I1NXASM v5.12.4
-- Description: M2I1NXINT (or inst1_2d_int_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor).
+- Description: "M2I1NXINT v5.12.4 - M2I1NXINT (or inst1_2d_int_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I1NXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I1NXINT v5.12.4
-- Description: M2I1NXLFO (or inst1_2d_lfo_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer.
+- Description: "M2I1NXLFO v5.12.4 - M2I1NXLFO (or inst1_2d_lfo_Nx) is an instantaneous 2-dimensional hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I1NXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I1NXLFO v5.12.4
-- Description: M2I3NXGAS (or inst3_3d_gas_Nx) is an instantaneous 2-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment.
+- Description: "M2I3NXGAS v5.12.4 - M2I3NXGAS (or inst3_3d_gas_Nx) is an instantaneous 2-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NXGAS.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NXGAS v5.12.4
-- Description: M2I3NVAER (or inst3_3d_aer_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of aerosol mixing ratio parameters at 72 model layers, such as dust, sulphur dioxide, sea salt, black carbon, and organic carbon.
+- Description: "M2I3NVAER v5.12.4 - M2I3NVAER (or inst3_3d_aer_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of aerosol mixing ratio parameters at 72 model layers, such as dust, sulphur dioxide, sea salt, black carbon, and organic carbon."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NVAER.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NVAER v5.12.4
-- Description: M2I3NPASM (or inst3_3d_asm_Np) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height.
+- Description: "M2I3NPASM v5.12.4 - M2I3NPASM (or inst3_3d_asm_Np) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NPASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NPASM v5.12.4
-- Description: M2I3NVASM (or inst3_3d_asm_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 72 model layers, such as temperature, wind components, vertical pressure velocity, water vapor, and layer height.
+- Description: "M2I3NVASM v5.12.4 - M2I3NVASM (or inst3_3d_asm_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 72 model layers, such as temperature, wind components, vertical pressure velocity, water vapor, and layer height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NVASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NVASM v5.12.4
-- Description: M2I3NVCHM (or inst3_3d_chm_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of carbon monoxide and ozone mixing ratio at 72 model layers.
+- Description: "M2I3NVCHM v5.12.4 - M2I3NVCHM (or inst3_3d_chm_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of carbon monoxide and ozone mixing ratio at 72 model layers."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NVCHM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NVCHM v5.12.4
-- Description: M2I3NVGAS (or inst3_3d_gas_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of aerosol mixing ratio analysis increments at 72 model layers, such as mixing ratio analysis increments of black carbon, dust, organic carbon, sea salt, and sulfate.
+- Description: "M2I3NVGAS v5.12.4 - M2I3NVGAS (or inst3_3d_gas_Nv) is an instantaneous 3-dimensional 3-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of aerosol mixing ratio analysis increments at 72 model layers, such as mixing ratio analysis increments of black carbon, dust, organic carbon, sea salt, and sulfate."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I3NVGAS.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I3NVGAS v5.12.4
-- Description: M2I6NPANA (or inst6_3d_ana_Np) is an instantaneous 3-dimensional 6-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height.
+- Description: "M2I6NPANA v5.12.4 - M2I6NPANA (or inst6_3d_ana_Np) is an instantaneous 3-dimensional 6-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I6NPANA.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I6NPANA v5.12.4
-- Description: M2I6NVANA (or inst6_3d_ana_Nv) is an instantaneous 3-dimensional 6-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analized meteorological fields at 72 model layers, such as temperature, wind components,specific humidity, and layer pressure thickness.
+- Description: "M2I6NVANA v5.12.4 - M2I6NVANA (or inst6_3d_ana_Nv) is an instantaneous 3-dimensional 6-hourly data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analized meteorological fields at 72 model layers, such as temperature, wind components,specific humidity, and layer pressure thickness."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2I6NVANA.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2I6NVANA v5.12.4
-- Description: M2IMNXASM (or instM_2d_asm_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water.
+- Description: "M2IMNXASM v5.12.4 - M2IMNXASM (or instM_2d_asm_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNXASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNXASM v5.12.4
-- Description: M2IMNXGAS (or instM_3d_gas_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment.
+- Description: "M2IMNXGAS v5.12.4 - M2IMNXGAS (or instM_3d_gas_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNXGAS.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNXGAS v5.12.4
-- Description: M2IMNXINT (or instM_2d_int_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor).
+- Description: "M2IMNXINT v5.12.4 - M2IMNXINT (or instM_2d_int_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNXINT v5.12.4
-- Description: M2IMNXLFO (or instM_2d_lfo_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer.
+- Description: "M2IMNXLFO v5.12.4 - M2IMNXLFO (or instM_2d_lfo_Nx) is an instantaneous 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNXLFO v5.12.4
-- Description: M2IMNPANA (or instM_3d_ana_Np) is an instantaneous 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height.
+- Description: "M2IMNPANA v5.12.4 - M2IMNPANA (or instM_3d_ana_Np) is an instantaneous 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNPANA.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNPANA v5.12.4
-- Description: M2IMNPASM (or instM_3d_asm_Np) is an instantaneous 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height.
+- Description: "M2IMNPASM v5.12.4 - M2IMNPASM (or instM_3d_asm_Np) is an instantaneous 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2IMNPASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IMNPASM v5.12.4
-- Description: M2IUNXASM (or instU_2d_asm_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water.
+- Description: "M2IUNXASM v5.12.4 - M2IUNXASM (or instU_2d_asm_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological diagnostic parameters at the single levels, such as temperature at 2-meter and 10-meter; wind components at 2-meter, 10-meter, and 50-meter; surface pressure, and total precipitable water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNXASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNXASM v5.12.4
-- Description: M2IUNXGAS (or instU_3d_gas_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment.
+- Description: "M2IUNXGAS v5.12.4 - M2IUNXGAS (or instU_3d_gas_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilation of aerosol optical depth analysis and aerosol optical depth analysis increment."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNXGAS.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNXGAS v5.12.4
-- Description: M2IUNXINT (or instU_2d_int_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor).
+- Description: "M2IUNXINT v5.12.4 - M2IUNXINT (or instU_2d_int_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically integrated diagnostics, such as kinetic energy, virtual potential temperature, and total precipitable water (or ice, liquid, and vapor)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNXINT v5.12.4
-- Description: M2IUNXLFO (or instU_2d_lfo_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer.
+- Description: "M2IUNXLFO v5.12.4 - M2IUNXLFO (or instU_2d_lfo_Nx) is an instantaneous 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as height, specific humidity, wind, and air temperature of the model surface layer."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNXLFO v5.12.4
-- Description: M2IUNPANA (or instU_3d_ana_Np) is an instantaneous 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height.
+- Description: "M2IUNPANA v5.12.4 - M2IUNPANA (or instU_3d_ana_Np) is an instantaneous 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of analyzed meteorological fields at 42 pressure levels, such as temperature, wind components, specific humidity, ozone mixing ratio, and geopotential height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNPANA.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNPANA v5.12.4
-- Description: M2IUNPASM (or instU_3d_asm_Np) is an instantaneous 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height.
+- Description: "M2IUNPASM v5.12.4 - M2IUNPASM (or instU_3d_asm_Np) is an instantaneous 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 42 pressure levels, such as temperature, wind components, vertical pressure velocity, water vapor, ozone mass mixing ratio, and layer height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2IUNPASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2IUNPASM v5.12.4
-- Description: M2SDNXSLV (or statD_2d_slv_Nx) is a 2-dimensional daily data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of daily statistics, such as daily mean (or daily minimum and maximum) air temperature at 2-meter, and maximum precipitation rate during the period.
+- Description: "M2SDNXSLV v5.12.4 - M2SDNXSLV (or statD_2d_slv_Nx) is a 2-dimensional daily data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of daily statistics, such as daily mean (or daily minimum and maximum) air temperature at 2-meter, and maximum precipitation rate during the period."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2SDNXSLV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SDNXSLV v5.12.4
-- Description: M2SMNXEDI (or statM_2d_edi_Nx) is a 2-dimensional monthly data collection for extreme detection indices derived from daily Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets within each month. V2 of this extreme detection indices data collection is computed based on the 1991-2020 climatology, covering the time period from January 1980 to present.
+- Description: "M2SMNXEDI v2 - M2SMNXEDI (or statM_2d_edi_Nx) is a 2-dimensional monthly data collection for extreme detection indices derived from daily Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets within each month. V2 of this extreme detection indices data collection is computed based on the 1991-2020 climatology, covering the time period from January 1980 to present."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2SMNXEDI.2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SMNXEDI v2
-- Description: M2SMNXEDI (or statM_2d_edi_Nx) is a 2-dimensional monthly data collection for extreme detection indices derived from daily Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets within each month. V1, the original version of this extreme detection indices data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022.
+- Description: "M2SMNXEDI v1 - M2SMNXEDI (or statM_2d_edi_Nx) is a 2-dimensional monthly data collection for extreme detection indices derived from daily Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets within each month. V1, the original version of this extreme detection indices data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2SMNXEDI.1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SMNXEDI v1
-- Description: M2SMNXPCT (or statM_2d_pct_Nx) is a 2-dimensional monthly data collection for percentile statistics derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this percentile data collection is computed based on the 1991-2020 climatology, covering the time period from January 1980 to present.
+- Description: "M2SMNXPCT v2 - M2SMNXPCT (or statM_2d_pct_Nx) is a 2-dimensional monthly data collection for percentile statistics derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this percentile data collection is computed based on the 1991-2020 climatology, covering the time period from January 1980 to present."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2SMNXPCT.2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SMNXPCT v2
-- Description: M2SMNXPCT (or statM_2d_pct_Nx) is a 2-dimensional monthly data collection for percentile statistics derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V1, the original version of this percentile data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022.
+- Description: "M2SMNXPCT v1 - M2SMNXPCT (or statM_2d_pct_Nx) is a 2-dimensional monthly data collection for percentile statistics derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V1, the original version of this percentile data collection, is computed based on the 1981-2010 climatology, covering the period from January 1980 to December 2022."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2SMNXPCT.1
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SMNXPCT v1
-- Description: M2SMNXSLV (or statM_2d_slv_Nx) is a 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of monthly mean of daily statistics, such as daily mean (or daily minimum and maximum) air temperature at 2-meter, and maximum precipitation rate during the period.
+- Description: "M2SMNXSLV v5.12.4 - M2SMNXSLV (or statM_2d_slv_Nx) is a 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of monthly mean of daily statistics, such as daily mean (or daily minimum and maximum) air temperature at 2-meter, and maximum precipitation rate during the period."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2SMNXSLV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2SMNXSLV v5.12.4
-- Description: M2T1NXADG (or tavg1_2d_adg_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging.
+- Description: "M2T1NXADG v5.12.4 - M2T1NXADG (or tavg1_2d_adg_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXADG.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXADG v5.12.4
-- Description: M2T1NXAER (or tavg1_2d_aer_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm.
+- Description: "M2T1NXAER v5.12.4 - M2T1NXAER (or tavg1_2d_aer_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXAER.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXAER v5.12.4
-- Description: M2T1NXCHM (or tavg1_2d_chm_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone.
+- Description: "M2T1NXCHM v5.12.4 - M2T1NXCHM (or tavg1_2d_chm_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXCHM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXCHM v5.12.4
-- Description: M2T1NXCSP (or tavg1_2d_csp_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean.
+- Description: "M2T1NXCSP v5.12.4 - M2T1NXCSP (or tavg1_2d_csp_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXCSP.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXCSP v5.12.4
-- Description: M2T1NXFLX (or tavg1_2d_flx_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence.
+- Description: "M2T1NXFLX v5.12.4 - M2T1NXFLX (or tavg1_2d_flx_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXFLX.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXFLX v5.12.4
-- Description: M2T1NXINT (or tavg1_2d_int_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically Integrated diagnostics of water and energy, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency.
+- Description: "M2T1NXINT v5.12.4 - M2T1NXINT (or tavg1_2d_int_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertically Integrated diagnostics of water and energy, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXINT v5.12.4
-- Description: M2T1NXLFO (or tavg1_2d_lfo_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface.
+- Description: "M2T1NXLFO v5.12.4 - M2T1NXLFO (or tavg1_2d_lfo_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXLFO v5.12.4
-- Description: M2T1NXLND (or tavg1_2d_lnd_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers.
+- Description: "M2T1NXLND v5.12.4 - M2T1NXLND (or tavg1_2d_lnd_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXLND.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXLND v5.12.4
-- Description: M2T1NXOCN (or tavg1_2d_ocn_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux.
+- Description: "M2T1NXOCN v5.12.4 - M2T1NXOCN (or tavg1_2d_ocn_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXOCN.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXOCN v5.12.4
-- Description: M2T1NXRAD (or tavg1_2d_rad_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e.
+- Description: "M2T1NXRAD v5.12.4 - M2T1NXRAD (or tavg1_2d_rad_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXRAD v5.12.4
-- Description: M2T1NXSLV (or tavg1_2d_slv_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850 hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water).
+- Description: "M2T1NXSLV v5.12.4 - M2T1NXSLV (or tavg1_2d_slv_Nx) is an hourly time-averaged 2-dimensional data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850 hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T1NXSLV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T1NXSLV v5.12.4
-- Description: M2T3NXGLC (or tavg3_2d_glc_Nx) is a 2-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification.
+- Description: "M2T3NXGLC v5.12.4 - M2T3NXGLC (or tavg3_2d_glc_Nx) is a 2-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NXGLC.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NXGLC v5.12.4
-- Description: M2T3NVASM (or tavg3_3d_asm_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 72 model layers, such as air temperature, wind components, vertical pressure velocity, water vapor, and layer height.
+- Description: "M2T3NVASM v5.12.4 - M2T3NVASM (or tavg3_3d_asm_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of meteorological parameters at 72 model layers, such as air temperature, wind components, vertical pressure velocity, water vapor, and layer height."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NVASM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NVASM v5.12.4
-- Description: M2T3NPCLD (or tavg3_3d_cld_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on the 42 pressure levels, such as updraft areal fraction, cloud fraction for radiation , in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water.
+- Description: "M2T3NPCLD v5.12.4 - M2T3NPCLD (or tavg3_3d_cld_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on the 42 pressure levels, such as updraft areal fraction, cloud fraction for radiation , in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPCLD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPCLD v5.12.4
-- Description: M2T3NVCLD (or tavg3_3d_cld_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics at 72 model layers, such as cloud fraction for radiation, pressure thickness, in cloud cloud ice (or liquid) for radiation, and relative humidity.
+- Description: "M2T3NVCLD v5.12.4 - M2T3NVCLD (or tavg3_3d_cld_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics at 72 model layers, such as cloud fraction for radiation, pressure thickness, in cloud cloud ice (or liquid) for radiation, and relative humidity."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NVCLD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NVCLD v5.12.4
-- Description: M2T3NEMST (or tavg3_3d_mst_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moisture processes diagnostics at the 73 model layer edges.
+- Description: "M2T3NEMST v5.12.4 - M2T3NEMST (or tavg3_3d_mst_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moisture processes diagnostics at the 73 model layer edges."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NEMST.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NEMST v5.12.4
-- Description: M2T3NPMST (or tavg3_3d_mst_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation.
+- Description: "M2T3NPMST v5.12.4 - M2T3NPMST (or tavg3_3d_mst_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPMST.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPMST v5.12.4
-- Description: M2T3NVMST (or tavg3_3d_mst_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated moist processes diagnostics at 72 model layers, such as convective rainwater source, large scale rainwater source, evap subl of convective precipitation, and evap subl of non convective precipitation.
+- Description: "M2T3NVMST v5.12.4 - M2T3NVMST (or tavg3_3d_mst_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated moist processes diagnostics at 72 model layers, such as convective rainwater source, large scale rainwater source, evap subl of convective precipitation, and evap subl of non convective precipitation."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NVMST.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NVMST v5.12.4
-- Description: M2T3NENAV (or tavg3_3d_nav_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertical coordinates of the 73 model layer edges.
+- Description: "M2T3NENAV v5.12.4 - M2T3NENAV (or tavg3_3d_nav_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of vertical coordinates of the 73 model layer edges."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NENAV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NENAV v5.12.4
-- Description: M2T3NPODT (or tavg3_3d_odt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics.
+- Description: "M2T3NPODT v5.12.4 - M2T3NPODT (or tavg3_3d_odt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPODT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPODT v5.12.4
-- Description: M2T3NPQDT (or tavg3_3d_qdt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist.
+- Description: "M2T3NPQDT v5.12.4 - M2T3NPQDT (or tavg3_3d_qdt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPQDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPQDT v5.12.4
-- Description: M2T3NPRAD (or tavg3_3d_rad_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave).
+- Description: "M2T3NPRAD v5.12.4 - M2T3NPRAD (or tavg3_3d_rad_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPRAD v5.12.4
-- Description: M2T3NVRAD (or tavg3_3d_rad_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated radiation diagnostics at 72 model layers, such as air temperature tendency due to longwave and air temperature tendency due to shortwave.
+- Description: "M2T3NVRAD v5.12.4 - M2T3NVRAD (or tavg3_3d_rad_Nv) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated radiation diagnostics at 72 model layers, such as air temperature tendency due to longwave and air temperature tendency due to shortwave."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NVRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NVRAD v5.12.4
-- Description: M2T3NPTDT (or tavg3_3d_tdt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics).
+- Description: "M2T3NPTDT v5.12.4 - M2T3NPTDT (or tavg3_3d_tdt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPTDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPTDT v5.12.4
-- Description: M2T3NETRB (or tavg3_3d_trb_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated turbulence diagnostics at the 73 model layer edges.
+- Description: "M2T3NETRB v5.12.4 - M2T3NETRB (or tavg3_3d_trb_Ne) is a 3-dimensional 3-hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated turbulence diagnostics at the 73 model layer edges."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NETRB.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NETRB v5.12.4
-- Description: M2T3NPTRB (or tavg3_3d_trb_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis.
+- Description: "M2T3NPTRB v5.12.4 - M2T3NPTRB (or tavg3_3d_trb_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPTRB.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPTRB v5.12.4
-- Description: M2T3NPUDT (or tavg3_3d_udt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence.
+- Description: "M2T3NPUDT v5.12.4 - M2T3NPUDT (or tavg3_3d_udt_Np) is a 3-dimensional 3-hourly time averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2/M2T3NPUDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2T3NPUDT v5.12.4
-- Description: M2TCNXLTM (or tavgC_2d_ltm_Nx) is a 2-dimensional monthly data collection for climatological long term mean and standard deviation representing the interannual variability on a monthly timescale, derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this data collection is calculated with data from January 1991 to December 2020.
+- Description: "M2TCNXLTM v2 - M2TCNXLTM (or tavgC_2d_ltm_Nx) is a 2-dimensional monthly data collection for climatological long term mean and standard deviation representing the interannual variability on a monthly timescale, derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this data collection is calculated with data from January 1991 to December 2020."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2TCNXLTM.2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TCNXLTM v2
-- Description: M2TCNPLTM (or tavgC_3d_ltm_Np) is a 3-dimensional monthly data collection for climatological long term mean and standard deviation representing the interannual variability on a monthly timescale, derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this data collection is calculated with data from January 1991 to December 2020.
+- Description: "M2TCNPLTM v2 - M2TCNPLTM (or tavgC_3d_ltm_Np) is a 3-dimensional monthly data collection for climatological long term mean and standard deviation representing the interannual variability on a monthly timescale, derived from monthly Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) datasets. V2 of this data collection is calculated with data from January 1991 to December 2020."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_CLIM/M2TCNPLTM.2
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TCNPLTM v2
-- Description: M2TMNXADG (or tavgM_2d_adg_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging.
+- Description: "M2TMNXADG v5.12.4 - M2TMNXADG (or tavgM_2d_adg_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXADG.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXADG v5.12.4
-- Description: M2TMNXAER (or tavgM_2d_aer_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm.
+- Description: "M2TMNXAER v5.12.4 - M2TMNXAER (or tavgM_2d_aer_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXAER.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXAER v5.12.4
-- Description: M2TMNXCHM (or tavgM_2d_chm_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone.
+- Description: "M2TMNXCHM v5.12.4 - M2TMNXCHM (or tavgM_2d_chm_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXCHM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXCHM v5.12.4
-- Description: M2TMNXCSP (or tavgM_2d_csp_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean.
+- Description: "M2TMNXCSP v5.12.4 - M2TMNXCSP (or tavgM_2d_csp_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXCSP.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXCSP v5.12.4
-- Description: M2TMNXFLX (or tavgM_2d_flx_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence.
+- Description: "M2TMNXFLX v5.12.4 - M2TMNXFLX (or tavgM_2d_flx_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXFLX.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXFLX v5.12.4
-- Description: M2TMNXGLC (or tavgM_2d_glc_Nx) is a 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification.
+- Description: "M2TMNXGLC v5.12.4 - M2TMNXGLC (or tavgM_2d_glc_Nx) is a 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXGLC.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXGLC v5.12.4
-- Description: M2TMNXINT (or tavgM_2d_int_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of water and energy related vertically Integrated diagnostics, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency.
+- Description: "M2TMNXINT v5.12.4 - M2TMNXINT (or tavgM_2d_int_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of water and energy related vertically Integrated diagnostics, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXINT v5.12.4
-- Description: M2TMNXLFO (or tavgM_2d_lfo_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface.
+- Description: "M2TMNXLFO v5.12.4 - M2TMNXLFO (or tavgM_2d_lfo_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXLFO v5.12.4
-- Description: M2TMNXLND (or tavgM_2d_lnd_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers.
+- Description: "M2TMNXLND v5.12.4 - M2TMNXLND (or tavgM_2d_lnd_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXLND.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXLND v5.12.4
-- Description: M2TMNXOCN (or tavgM_2d_ocn_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux.
+- Description: "M2TMNXOCN v5.12.4 - M2TMNXOCN (or tavgM_2d_ocn_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXOCN.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXOCN v5.12.4
-- Description: M2TMNXRAD (or tavgM_2d_rad_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e.
+- Description: "M2TMNXRAD v5.12.4 - M2TMNXRAD (or tavgM_2d_rad_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXRAD v5.12.4
-- Description: M2TMNXSLV (or tavgM_2d_slv_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water).
+- Description: "M2TMNXSLV v5.12.4 - M2TMNXSLV (or tavgM_2d_slv_Nx) is a time-averaged 2-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNXSLV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNXSLV v5.12.4
-- Description: M2TMNPCLD (or tavgM_3d_cld_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on 42 the pressure levels, such as updraft areal fraction, cloud fraction for radiation, in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water.
+- Description: "M2TMNPCLD v5.12.4 - M2TMNPCLD (or tavgM_3d_cld_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on 42 the pressure levels, such as updraft areal fraction, cloud fraction for radiation, in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPCLD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPCLD v5.12.4
-- Description: M2TMNPMST (or tavgM_3d_mst_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation.
+- Description: "M2TMNPMST v5.12.4 - M2TMNPMST (or tavgM_3d_mst_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPMST.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPMST v5.12.4
-- Description: M2TMNPODT (or tavgM_3d_odt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics.
+- Description: "M2TMNPODT v5.12.4 - M2TMNPODT (or tavgM_3d_odt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPODT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPODT v5.12.4
-- Description: M2TMNPQDT (or tavgM_3d_qdt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist.
+- Description: "M2TMNPQDT v5.12.4 - M2TMNPQDT (or tavgM_3d_qdt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPQDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPQDT v5.12.4
-- Description: M2TMNPRAD (or tavgM_3d_rad_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave).
+- Description: "M2TMNPRAD v5.12.4 - M2TMNPRAD (or tavgM_3d_rad_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPRAD v5.12.4
-- Description: M2TMNPTDT (or tavgM_3d_tdt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics).
+- Description: "M2TMNPTDT v5.12.4 - M2TMNPTDT (or tavgM_3d_tdt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPTDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPTDT v5.12.4
-- Description: M2TMNPTRB (or tavgM_3d_trb_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis.
+- Description: "M2TMNPTRB v5.12.4 - M2TMNPTRB (or tavgM_3d_trb_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPTRB.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPTRB v5.12.4
-- Description: M2TMNPUDT (or tavgM_3d_udt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence.
+- Description: "M2TMNPUDT v5.12.4 - M2TMNPUDT (or tavgM_3d_udt_Np) is a 3-dimensional monthly mean data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_MONTHLY/M2TMNPUDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TMNPUDT v5.12.4
-- Description: M2TUNXADG (or tavgU_2d_adg_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging.
+- Description: "M2TUNXADG v5.12.4 - M2TUNXADG (or tavgU_2d_adg_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics (extended), such as dry and wet deposition of each aerosol component, dust emission and sedimentation for each sized bin, and organic carbon convective scavenging."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXADG.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXADG v5.12.4
-- Description: M2TUNXAER (or tavgU_2d_aer_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm.
+- Description: "M2TUNXAER v5.12.4 - M2TUNXAER (or tavgU_2d_aer_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated aerosol diagnostics, such as column mass density of aerosol components (black carbon, dust, sea salt, sulfate, and organic carbon), surface mass concentration of aerosol components, and total extinction (and scattering ) aerosol optical thickness (AOT) at 550 nm."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXAER.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXAER v5.12.4
-- Description: M2TUNXCHM (or tavgU_2d_chm_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone.
+- Description: "M2TUNXCHM v5.12.4 - M2TUNXCHM (or tavgU_2d_chm_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated carbon monoxide and ozone diagnostics, such as properties of carbon monoxide (column burden, emission, chemical production, and surface concentration), and total column ozone."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXCHM.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXCHM v5.12.4
-- Description: M2TUNXCSP (or tavgU_2d_csp_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean.
+- Description: "M2TUNXCSP v5.12.4 - M2TUNXCSP (or tavgU_2d_csp_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of parameters from CFMIP Observations Simulator Package(COSP), such as ISCCP total cloud area fraction, MODIS cloud fraction water (ice) mean, MODIS cloud fraction low (mid,high) mean, modis cloud particle size water (ice) mean."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXCSP.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXCSP v5.12.4
-- Description: M2TUNXFLX (or tavgU_2d_flx_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence.
+- Description: "M2TUNXFLX v5.12.4 - M2TUNXFLX (or tavgU_2d_flx_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated surface flux diagnostics, such as total precipitation, bias corrected total precipitation, surface air temperature, surface specific humidity, surface wind speed, and evaporation from turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXFLX.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXFLX v5.12.4
-- Description: M2TUNXGLC (or tavgU_2d_glc_Nx) is a 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification.
+- Description: "M2TUNXGLC v5.12.4 - M2TUNXGLC (or tavgU_2d_glc_Nx) is a 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilated land ice surface diagnostics at the single levels, such as fractional area of glaciated surface snow cover, snow mass over glaciated surface, snow depth over glaciated surface, and total snow mass residual due to densification."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXGLC.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXGLC v5.12.4
-- Description: M2TUNXINT (or tavgU_2d_int_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of water and energy related vertically Integrated diagnostics, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency.
+- Description: "M2TUNXINT v5.12.4 - M2TUNXINT (or tavgU_2d_int_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of water and energy related vertically Integrated diagnostics, such as autoconversion loss of cloud water, convective source of cloud ice (water), eastward (nothward) flux of atmospheric ice (liquid, vapor), total potential energy tendency, vertically integrated potential energy tendency, and vertically integrated kinetic energy tendency."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXINT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXINT v5.12.4
-- Description: M2TUNXLFO (or tavgU_2d_lfo_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface.
+- Description: "M2TUNXLFO v5.12.4 - M2TUNXLFO (or tavgU_2d_lfo_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface forcing parameters, such as bias corrected precipitation, shortwave and longwave radiation at surface."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXLFO.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXLFO v5.12.4
-- Description: M2TUNXLND (or tavgU_2d_lnd_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers.
+- Description: "M2TUNXLND v5.12.4 - M2TUNXLND (or tavgU_2d_lnd_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of land surface diagnostics, such as baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature at six layers."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXLND.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXLND v5.12.4
-- Description: M2TUNXOCN (or tavgU_2d_ocn_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux.
+- Description: "M2TUNXOCN v5.12.4 - M2TUNXOCN (or tavgU_2d_ocn_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of ocean surface diagnostics, such as open water skin temperature (sea surface temperature), open water latent energy flux, open water upward sensible heat flux, and open water net downward longwave ( or shortwave ) flux."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXOCN.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXOCN v5.12.4
-- Description: M2TUNXRAD (or tavgU_2d_rad_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e.
+- Description: "M2TUNXRAD v5.12.4 - M2TUNXRAD (or tavgU_2d_rad_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of radiation diagnostics, such as surface albedo, cloud area fraction, in cloud optical thickness, surface incoming shortwave flux (i.e."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXRAD v5.12.4
-- Description: M2TUNXSLV (or tavgU_2d_slv_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850 hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water).
+- Description: "M2TUNXSLV v5.12.4 - M2TUNXSLV (or tavgU_2d_slv_Nx) is a time-averaged 2-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of meteorology diagnostics at popularly used vertical levels, such as air temperature at 2-meter (or at 10-meter, 850 hPa, 500 hPa, 250hPa), wind components at 50-meter (or at 2-meter, 10-meter, 850hPa, 500hPa, 250 hPa), sea level pressure, surface pressure, and total precipitable water vapor (or ice water, liquid water)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNXSLV.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNXSLV v5.12.4
-- Description: M2TUNPCLD (or tavgU_3d_cld_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on 42 the pressure levels, such as updraft areal fraction, cloud fraction for radiation, in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water.
+- Description: "M2TUNPCLD v5.12.4 - M2TUNPCLD (or tavgU_3d_cld_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of cloud diagnostics on 42 the pressure levels, such as updraft areal fraction, cloud fraction for radiation, in-cloud cloud liquid (or ice) for radiation, and mass fraction of cloud liquid (or ice) water."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPCLD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPCLD v5.12.4
-- Description: M2TUNPMST (or tavgU_3d_mst_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation.
+- Description: "M2TUNPMST v5.12.4 - M2TUNPMST (or tavgU_3d_mst_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist processes diagnostics on the 42 pressure levels, such as convective rainwater source, 3D flux of ice convective (or nonconvective) precipitation, and 3D flux of liquid convective (or nonconvective) precipitation."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPMST.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPMST v5.12.4
-- Description: M2TUNPODT (or tavgU_3d_odt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics.
+- Description: "M2TUNPODT v5.12.4 - M2TUNPODT (or tavgU_3d_odt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of ozone tendencies on the 42 pressure levels, such as total ozone analysis tendency, tendency of odd oxygen mixing ratio due to chemistry, tendency of odd oxygen due to moist processes, and tendency of ozone due to dynamics."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPODT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPODT v5.12.4
-- Description: M2TUNPQDT (or tavgU_3d_qdt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist.
+- Description: "M2TUNPQDT v5.12.4 - M2TUNPQDT (or tavgU_3d_qdt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of moist tendencies on the 42 pressure levels, such as tendency of ice (or liquid) water due to dynamics, total ice (or liquid) water tendency due to moist, total specific humidity analysis tendency, and specific humidity tendency due to moist."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPQDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPQDT v5.12.4
-- Description: M2TUNPRAD (or tavgU_3d_rad_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave).
+- Description: "M2TUNPRAD v5.12.4 - M2TUNPRAD (or tavgU_3d_rad_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of radiation diagnostics on 42 pressure levels, such as cloud fraction for radiation, and air temperature tendency due to longwave (or shortwave)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPRAD.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPRAD v5.12.4
-- Description: M2TUNPTDT (or tavgU_3d_tdt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics).
+- Description: "M2TUNPTDT v5.12.4 - M2TUNPTDT (or tavgU_3d_tdt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of air temperature tendencies on 42 pressure levels, such as total temperature analysis tendency, and tendency of air temperature due to dynamics (or friction, moisture, radiation, and physics)."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPTDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPTDT v5.12.4
-- Description: M2TUNPTRB (or tavgU_3d_trb_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis.
+- Description: "M2TUNPTRB v5.12.4 - M2TUNPTRB (or tavgU_3d_trb_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of turbulence diagnostics on 42 pressure levels, such as total scalar diffusivity, total momentum diffusivity, momentum diffusivity from Louis, and Richardson number from Louis."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPTRB.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPTRB v5.12.4
-- Description: M2TUNPUDT (or tavgU_3d_udt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence.
+- Description: "M2TUNPUDT v5.12.4 - M2TUNPUDT (or tavgU_3d_udt_Np) is a 3-dimensional monthly diurnal means data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). This collection consists of assimilations of wind tendencies on 42 pressure levels, such as total eastward (or northward) wind analysis tendency, tendency of eastward (or northward) wind due to dynamics, and tendency of eastward (or northward) wind due to turbulence."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERRA2_DIURNAL/M2TUNPUDT.5.12.4
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: M2TUNPUDT v5.12.4

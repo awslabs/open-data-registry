@@ -87,115 +87,99 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved [GEDI01_B Version 2](https://doi.org/10.5067/GEDI/GEDI01_B.002) data product.
+- Description: "GEDI01_B v001 - GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved [GEDI01_B Version 2](https://doi.org/10.5067/GEDI/GEDI01_B.002) data product."
   ARN: arn:aws:s3:::lp-prod-protected/GEDI01_B.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: GEDI01_B v001
-- Description: The Global Ecosystem Dynamics Investigation ([GEDI](https://gedi.umd.edu/)) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth’s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth.
+- Description: "GEDI01_B v002 - The Global Ecosystem Dynamics Investigation ([GEDI](https://gedi.umd.edu/)) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth’s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth."
   ARN: arn:aws:s3:::lp-prod-protected/GEDI01_B.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: GEDI01_B v002
-- Description: GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved [GEDI02_A Version 2](https://doi.org/10.5067/GEDI/GEDI02_A.002) data product.
+- Description: "GEDI02_A v001 - GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved [GEDI02_A Version 2](https://doi.org/10.5067/GEDI/GEDI02_A.002) data product."
   ARN: arn:aws:s3:::lp-prod-protected/GEDI02_A.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: GEDI02_A v001
-- Description: GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved GEDI02_B Version 2 (https://doi.org/10.5067/GEDI/GEDI02_B.002) data product.
+- Description: "GEDI02_B v001 - GEDI Version 1 data products were decommissioned on February 15, 2022. Users are advised to use the improved GEDI02_B Version 2 (https://doi.org/10.5067/GEDI/GEDI02_B.002) data product."
   ARN: arn:aws:s3:::lp-prod-protected/GEDI02_B.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: GEDI02_B v001
-- Description: This dataset provides Global Ecosystem Dynamics Investigation (GEDI) Level 3 (L3) gridded mean canopy height, standard deviation of canopy height, mean ground elevation, standard deviation of ground elevation and counts of laser footprints per 1 km x 1 km grid cells globally within -52 and 52 degrees latitude. L3 gridded products can be used to characterize important carbon and water cycling processes, biodiversity, habitat and can also be of immense value for climate modeling, forest management, snow and glacier monitoring, and the generation of digital elevation models.
+- Description: "GEDI_L3_Land_Surface_Metrics_1865 v1 - This dataset provides Global Ecosystem Dynamics Investigation (GEDI) Level 3 (L3) gridded mean canopy height, standard deviation of canopy height, mean ground elevation, standard deviation of ground elevation and counts of laser footprints per 1 km x 1 km grid cells globally within -52 and 52 degrees latitude. L3 gridded products can be used to characterize important carbon and water cycling processes, biodiversity, habitat and can also be of immense value for climate modeling, forest management, snow and glacier monitoring, and the generation of digital elevation models."
   ARN: arn:aws:s3:::gedi-l3-land-surface-metrics-1865
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L3_Land_Surface_Metrics_1865 v1
-- Description: This dataset provides Global Ecosystem Dynamics Investigation (GEDI) Level 3 (L3) gridded mean canopy height, standard deviation of canopy height, mean ground elevation, standard deviation of ground elevation, and counts of laser footprints per 1-km x 1-km grid cells globally within -52 and 52 degrees latitude. These L3 gridded products were derived from Level 2 (L2) geolocated laser footprint return profile metrics from the GEDI instrument onboard the International Space Station (ISS).
+- Description: "GEDI_L3_LandSurface_Metrics_V2_1952 v2 - This dataset provides Global Ecosystem Dynamics Investigation (GEDI) Level 3 (L3) gridded mean canopy height, standard deviation of canopy height, mean ground elevation, standard deviation of ground elevation, and counts of laser footprints per 1-km x 1-km grid cells globally within -52 and 52 degrees latitude. These L3 gridded products were derived from Level 2 (L2) geolocated laser footprint return profile metrics from the GEDI instrument onboard the International Space Station (ISS)."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L3_LandSurface_Metrics_V2/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L3_LandSurface_Metrics_V2_1952 v2
-- Description: This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. The footprints are located within the global latitude band observed by the International Space Station (ISS), nominally 51.6 degrees N and S and reported for the mission weeks 19, 32, 34 and 38 (a.k.a.
+- Description: "GEDI_L4A_AGB_Density_GW_2028 v1.1 - This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. The footprints are located within the global latitude band observed by the International Space Station (ISS), nominally 51.6 degrees N and S and reported for the mission weeks 19, 32, 34 and 38 (a.k.a."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4A_AGB_Density_GW/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4A_AGB_Density_GW_2028 v1.1
-- Description: This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. The footprints are located within the global latitude band observed by the International Space Station (ISS), nominally 51.6 degrees N and S and reported for the period 2019-04-18 to 2020-09-02.
+- Description: "GEDI_L4A_AGB_Density_1907 v1 - This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. The footprints are located within the global latitude band observed by the International Space Station (ISS), nominally 51.6 degrees N and S and reported for the period 2019-04-18 to 2020-09-02."
   ARN: arn:aws:s3:::gedi-l4a-agb-density-1907
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4A_AGB_Density_1907 v1
-- Description: This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) Version 2 predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. In this version, the granules are in sub-orbits.
+- Description: "GEDI_L4A_AGB_Density_V2_1986 v2 - This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) Version 2 predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. In this version, the granules are in sub-orbits."
   ARN: arn:aws:s3:::gedi-l4a-agb-density-v2-1986
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4A_AGB_Density_V2_1986 v2
-- Description: This dataset provides country-level estimates of land surface mean aboveground biomass density (AGBD), total aboveground biomass (AGB) stocks, and the associated standard errors of the mean calculated using different versions of the Global Ecosystem Dynamics Investigation (GEDI) Level-4B (L4B) product. The GEDI L4B product provides gridded (1 km x 1 km) estimates of AGBD within the GEDI orbital extent (between 51.6 degrees N and 51.6 degrees S).
+- Description: "GEDI_L4B_Country_Biomass_2321 v1 - This dataset provides country-level estimates of land surface mean aboveground biomass density (AGBD), total aboveground biomass (AGB) stocks, and the associated standard errors of the mean calculated using different versions of the Global Ecosystem Dynamics Investigation (GEDI) Level-4B (L4B) product. The GEDI L4B product provides gridded (1 km x 1 km) estimates of AGBD within the GEDI orbital extent (between 51.6 degrees N and 51.6 degrees S)."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4B_Country_Biomass/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4B_Country_Biomass_2321 v1
-- Description: This Global Ecosystem Dynamics Investigation (GEDI) L4B product provides 1 km x 1 km (1 km, hereafter) estimates of mean aboveground biomass density (AGBD) based on observations from mission week 19 starting on 2019-04-18 to mission week 138 ending on 2021-08-04. The GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction, and the L4B product uses the sample present within the borders of each 1 km cell to statistically infer mean AGBD.
+- Description: "GEDI_L4B_Gridded_Biomass_2017 v2 - This Global Ecosystem Dynamics Investigation (GEDI) L4B product provides 1 km x 1 km (1 km, hereafter) estimates of mean aboveground biomass density (AGBD) based on observations from mission week 19 starting on 2019-04-18 to mission week 138 ending on 2021-08-04. The GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction, and the L4B product uses the sample present within the borders of each 1 km cell to statistically infer mean AGBD."
   ARN: arn:aws:s3:::gedi-l4b-gridded-biomass-2017
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.uat.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4B_Gridded_Biomass_2017 v2
-- Description: This Global Ecosystem Dynamics Investigation (GEDI) L4B product provides 1 km x 1 km (1 km, hereafter) estimates of mean aboveground biomass density (AGBD) based on observations from mission week 19 starting on 2019-04-18 to mission week 223 ending on 2023-03-16. The GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction, and the L4B product uses the sample present within the borders of each 1 km cell to statistically infer mean AGBD.
+- Description: "GEDI_L4B_Gridded_Biomass_V2_1_2299 v2.1 - This Global Ecosystem Dynamics Investigation (GEDI) L4B product provides 1 km x 1 km (1 km, hereafter) estimates of mean aboveground biomass density (AGBD) based on observations from mission week 19 starting on 2019-04-18 to mission week 223 ending on 2023-03-16. The GEDI L4A Footprint Biomass product converts each high-quality waveform to an AGBD prediction, and the L4B product uses the sample present within the borders of each 1 km cell to statistically infer mean AGBD."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4B_Gridded_Biomass_V2_1/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4B_Gridded_Biomass_V2_1_2299 v2.1
-- Description: This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4C (L4C) Version 2 predictions of the Waveform Structural Complexity Index (WSCI) and estimates of prediction intervals for each footprint estimate at 95% confidence. In this version, the granules are in sub-orbits.
+- Description: "GEDI_L4C_WSCI_2338 v2 - This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4C (L4C) Version 2 predictions of the Waveform Structural Complexity Index (WSCI) and estimates of prediction intervals for each footprint estimate at 95% confidence. In this version, the granules are in sub-orbits."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4C_WSCI/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4C_WSCI_2338 v2
-- Description: This dataset consists of gridded average estimates of Waveform Structural Complexity Index (WSCI) at 1-km resolution on a nearly global scale derived from the Global Ecosystem Dynamics Investigation (GEDI) Level 4C (L4C) footprint-level WSCI data covering the observations starting on 2019-04-18 to 2023-03-17. Mean WSCI values were computed from high quality GEDI shots over the land surface, according to the quality flags available in the GEDI L4C dataset.
+- Description: "GEDI_L4C_WSCI_Gridded_2470 v2 - This dataset consists of gridded average estimates of Waveform Structural Complexity Index (WSCI) at 1-km resolution on a nearly global scale derived from the Global Ecosystem Dynamics Investigation (GEDI) Level 4C (L4C) footprint-level WSCI data covering the observations starting on 2019-04-18 to 2023-03-17. Mean WSCI values were computed from high quality GEDI shots over the land surface, according to the quality flags available in the GEDI L4C dataset."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4C_WSCI_Gridded/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4C_WSCI_Gridded_2470 v2
-- Description: This Global Ecosystem Dynamics Investigation (GEDI) L4D product provides a 30-m spatial elaboration of the mission's sample of footprint-level L2A V002, L2B V002, and L4A Version 2.1 products. A nearest neighbor algorithm was used with Landsat time series data to impute high-quality GEDI shots identified using a combination of metrics.
+- Description: "GEDI_L4D_Imputed_Waveforms_2455 v2 - This Global Ecosystem Dynamics Investigation (GEDI) L4D product provides a 30-m spatial elaboration of the mission's sample of footprint-level L2A V002, L2B V002, and L4A Version 2.1 products. A nearest neighbor algorithm was used with Landsat time series data to impute high-quality GEDI shots identified using a combination of metrics."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4D_Imputed_Waveforms/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_L4D_Imputed_Waveforms_2455 v2
-- Description: This dataset includes interpolated cumulative waveforms, with uncertainties, over national forest inventory (FIA) field plots across the contiguous United States. The predicted waveforms are for the Global Ecosystem Dynamics Investigation (GEDI) instrument, which produces high resolution laser ranging observations of the 3D structure of the Earth.
+- Description: "GEDI_FIA_LIDAR_Models_Forests_2417 v1 - This dataset includes interpolated cumulative waveforms, with uncertainties, over national forest inventory (FIA) field plots across the contiguous United States. The predicted waveforms are for the Global Ecosystem Dynamics Investigation (GEDI) instrument, which produces high resolution laser ranging observations of the 3D structure of the Earth."
   ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_FIA_LIDAR_Models_Forests/data
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
-  Name: GEDI_FIA_LIDAR_Models_Forests_2417 v1

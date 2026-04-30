@@ -67,87 +67,75 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: This is a subset of AMSR-E rain rate product along CloudSat field of view track. The goal of the subset is to select and return AMSR-E data that are within -100 km across the CloudSat track.
+- Description: "AMSRERR_CPR v002 - This is a subset of AMSR-E rain rate product along CloudSat field of view track. The goal of the subset is to select and return AMSR-E data that are within -100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/AMSRE/AMSRERR_CPR.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: AMSRERR_CPR v002
-- Description: This is the narrow-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the narrow-swath subset is to select and return MODIS data that are within +-5 km across the CloudSat track.
+- Description: "MAC04S0 v002 - This is the narrow-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the narrow-swath subset is to select and return MODIS data that are within +-5 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAC/MAC04S0.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: MAC04S0 v002
-- Description: This is the wide-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the wide-swath subset is to select and return MODIS data that are within +-100 km across the CloudSat track.
+- Description: "MAC04S1 v002 - This is the wide-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the wide-swath subset is to select and return MODIS data that are within +-100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAC/MAC04S1.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: MAC04S1 v002
-- Description: This is the MODIS/Aqua subset along MLS field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track.
+- Description: "MAM04S0 v002 - This is the MODIS/Aqua subset along MLS field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAM/MAM04S0.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: MAM04S0 v002
-- Description: This is the MODIS/Aqua subset along the Microwave Limb Sounder (MLS) field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track.
+- Description: "MAM03S0 v002 - This is the MODIS/Aqua subset along the Microwave Limb Sounder (MLS) field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAM/MAM03S0.002
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: MAM03S0 v002
-- Description: This the OMI/Aura Cloud Pressure and Fraction (O2-O2 Absorption) subset along CloudSat track, for the purposes of the A-Train mission. The original product uses the DOAS technique method.
+- Description: "OMCLDO2_CPR v003 - This the OMI/Aura Cloud Pressure and Fraction (O2-O2 Absorption) subset along CloudSat track, for the purposes of the A-Train mission. The original product uses the DOAS technique method."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMCLDO2_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMCLDO2_CPR v003
-- Description: This is the OMI/Aura Cloud Pressure and Fraction (Raman Scattering) subset along CloudSat tracks, for the purposes of the A-Train mission. The original data product uses the Rotational Raman Scattering method.
+- Description: "OMCLDRR_CPR v003 - This is the OMI/Aura Cloud Pressure and Fraction (Raman Scattering) subset along CloudSat tracks, for the purposes of the A-Train mission. The original data product uses the Rotational Raman Scattering method."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMCLDRR_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMCLDRR_CPR v003
-- Description: This is a CloudSat-collocated subset of the original OMI product OMAERUV, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track.
+- Description: "OMAERUV_CPR v003 - This is a CloudSat-collocated subset of the original OMI product OMAERUV, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMAERUV_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMAERUV_CPR v003
-- Description: This is a CloudSat-collocated subset of the original product OMNO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track.
+- Description: "OMNO2_CPR v003 - This is a CloudSat-collocated subset of the original product OMNO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMNO2_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMNO2_CPR v003
-- Description: This is a CloudSat-collocated subset of the original product OMTO3, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track.
+- Description: "OMTO3_CPR v003 - This is a CloudSat-collocated subset of the original product OMTO3, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMTO3_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMTO3_CPR v003
-- Description: This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track.
+- Description: "OMSO2_CPR v003 - This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMSO2_CPR.003
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: OMSO2_CPR v003
-- Description: This is the POLDER/Parasol Level-2 Radiation Budget Subset, collocated with the CloudSat track. The subset is processed at the A-Train Data Depot of the GES DISC, NASA.
+- Description: "PARASOLRB_CPR v001 - This is the POLDER/Parasol Level-2 Radiation Budget Subset, collocated with the CloudSat track. The subset is processed at the A-Train Data Depot of the GES DISC, NASA."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/PARASOL/PARASOLRB_CPR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: PARASOLRB_CPR v001

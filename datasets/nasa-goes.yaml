@@ -112,164 +112,141 @@ Tags:
 - satellite imagery
 License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
 Resources:
-- Description: The ABI G16 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid product, short-name AERDB_D3_ABI_G16, derived from the L2 (AERDB_L2_ABI_G16) input data, each D3 ABI/GOES-16 product is produced daily at 1 x 1-degree horizontal resolution. In general, in this daily L3 (identified in the short-name as D3) aggregated product, each data field represents the arithmetic mean of all cells whose latitude and longitude places them within the bounds of each grid element.
+- Description: "AERDB_D3_ABI_G16 v1 - The ABI G16 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid product, short-name AERDB_D3_ABI_G16, derived from the L2 (AERDB_L2_ABI_G16) input data, each D3 ABI/GOES-16 product is produced daily at 1 x 1-degree horizontal resolution. In general, in this daily L3 (identified in the short-name as D3) aggregated product, each data field represents the arithmetic mean of all cells whose latitude and longitude places them within the bounds of each grid element."
   ARN: arn:aws:s3:::prod-lads/AERDB_D3_ABI_G16
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_D3_ABI_G16 v1
-- Description: The ABI G16 Deep Blue L3 Monthly Aerosol Data, 1 x 1 degree grid product, short-name AERDB_M3_ABI_G16, derived by aggregating the L3 daily (AERDB_D3_ABI_G16) input data, each M3 ABI/GOES-16 product is produced monthly at 1 x 1-degree horizontal resolution. This monthly L3 (identified in the short-name as M3) product’s statistics that include mean and standard deviation of the daily means are derived from the arithmetic mean values of the L3 daily product.
+- Description: "AERDB_M3_ABI_G16 v1 - The ABI G16 Deep Blue L3 Monthly Aerosol Data, 1 x 1 degree grid product, short-name AERDB_M3_ABI_G16, derived by aggregating the L3 daily (AERDB_D3_ABI_G16) input data, each M3 ABI/GOES-16 product is produced monthly at 1 x 1-degree horizontal resolution. This monthly L3 (identified in the short-name as M3) product’s statistics that include mean and standard deviation of the daily means are derived from the arithmetic mean values of the L3 daily product."
   ARN: arn:aws:s3:::prod-lads/AERDB_M3_ABI_G16
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_M3_ABI_G16 v1
-- Description: The ABI G17 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid product, short-name AERDB_D3_ABI_G17, derived from the L2 (AERDB_L2_ABI_G17) input data, each D3 ABI/GOES-17 product is produced daily at 1 x 1-degree horizontal resolution. In general, in this daily L3 (identified in the short-name as D3) aggregated product, each data field represents the arithmetic mean of all cells whose latitude and longitude places them within the bounds of each grid element.
+- Description: "AERDB_D3_ABI_G17 v1 - The ABI G17 Deep Blue L3 Daily Aerosol Data, 1 x 1 degree grid product, short-name AERDB_D3_ABI_G17, derived from the L2 (AERDB_L2_ABI_G17) input data, each D3 ABI/GOES-17 product is produced daily at 1 x 1-degree horizontal resolution. In general, in this daily L3 (identified in the short-name as D3) aggregated product, each data field represents the arithmetic mean of all cells whose latitude and longitude places them within the bounds of each grid element."
   ARN: arn:aws:s3:::prod-lads/AERDB_D3_ABI_G17
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_D3_ABI_G17 v1
-- Description: The ABI G17 Deep Blue L3 Monthly Aerosol Data, 1 x 1 degree grid product, short-name AERDB_M3_ABI_G17, derived by aggregating the L3 daily (AERDB_D3_ABI_G17) input data, each M3 ABI/GOES-17 product is produced monthly at 1 x 1-degree horizontal resolution. This monthly L3 (identified in the shortname as M3) product’s statistics that include mean and standard deviation of the daily means are derived from the arithmetic mean values of the L3 daily product.
+- Description: "AERDB_M3_ABI_G17 v1 - The ABI G17 Deep Blue L3 Monthly Aerosol Data, 1 x 1 degree grid product, short-name AERDB_M3_ABI_G17, derived by aggregating the L3 daily (AERDB_D3_ABI_G17) input data, each M3 ABI/GOES-17 product is produced monthly at 1 x 1-degree horizontal resolution. This monthly L3 (identified in the shortname as M3) product’s statistics that include mean and standard deviation of the daily means are derived from the arithmetic mean values of the L3 daily product."
   ARN: arn:aws:s3:::prod-lads/AERDB_M3_ABI_G17
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_M3_ABI_G17 v1
-- Description: The GEO-LEO Merged Deep Blue Aerosol 0.25x0.25 degree Gridded L2 product, short-name AERDB_L2G_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength, derived from seven merged GEO-LEO AOT layers (G16-ABI, G17-ABI, H08-AHI, SNPP-VIIRS, NOAA20-VIIRS, Terra MODIS and Aqua MODIS) and from each of the individual (three GEO and four LEO) instrument sources. Each L2G aggregated datafile is spatially comprised of a 0.25˚ x 0.25˚ horizontal grid that exists for every 30 minutes.
+- Description: "AERDB_L2G_GEOLEO_Merged v1 - The GEO-LEO Merged Deep Blue Aerosol 0.25x0.25 degree Gridded L2 product, short-name AERDB_L2G_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength, derived from seven merged GEO-LEO AOT layers (G16-ABI, G17-ABI, H08-AHI, SNPP-VIIRS, NOAA20-VIIRS, Terra MODIS and Aqua MODIS) and from each of the individual (three GEO and four LEO) instrument sources. Each L2G aggregated datafile is spatially comprised of a 0.25˚ x 0.25˚ horizontal grid that exists for every 30 minutes."
   ARN: arn:aws:s3:::prod-lads/AERDB_L2G_GEOLEO_Merged
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_L2G_GEOLEO_Merged v1
-- Description: The GEO-LEO Merged Deep Blue Aerosol Daily 1 x 1 degree Gridded L3 product, short-name AERDB_D3_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength that are composited from the L2G product (AERDB_L2G_GEOLEO_Merged) using best-estimate AOT values. Please note that while the individual standalone gridded data layer for each instrument is calculated as the arithmetic mean, the merged AOT layer is derived via an error-weighted average approach.
+- Description: "AERDB_D3_GEOLEO_Merged v1 - The GEO-LEO Merged Deep Blue Aerosol Daily 1 x 1 degree Gridded L3 product, short-name AERDB_D3_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength that are composited from the L2G product (AERDB_L2G_GEOLEO_Merged) using best-estimate AOT values. Please note that while the individual standalone gridded data layer for each instrument is calculated as the arithmetic mean, the merged AOT layer is derived via an error-weighted average approach."
   ARN: arn:aws:s3:::prod-lads/AERDB_D3_GEOLEO_Merged
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_D3_GEOLEO_Merged v1
-- Description: The GEO-LEO Merged Deep Blue Aerosol Monthly 1 x 1 degree Gridded L3 product, short-name AERDB_M3_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength that are composited from the L3 daily product (AERDB_D3_GEOLEO_Merged). Please note that while the individual standalone gridded data layer for each instrument is calculated as the arithmetic mean, the merged AOT layer is derived via an error-weighted average approach.
+- Description: "AERDB_M3_GEOLEO_Merged v1 - The GEO-LEO Merged Deep Blue Aerosol Monthly 1 x 1 degree Gridded L3 product, short-name AERDB_M3_GEOLEO_Merged contains gridded Aerosol Optical Thickness (AOT) at 550 nm reference wavelength that are composited from the L3 daily product (AERDB_D3_GEOLEO_Merged). Please note that while the individual standalone gridded data layer for each instrument is calculated as the arithmetic mean, the merged AOT layer is derived via an error-weighted average approach."
   ARN: arn:aws:s3:::prod-lads/AERDB_M3_GEOLEO_Merged
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_M3_GEOLEO_Merged v1
-- Description: The ABI G16 Deep Blue Aerosol 10-Min L2 Full Disk product, short-name AERDB_L2_ABI_G16 is produced every 30 minutes and contains full-disk observation data. The L2 data products comprise 10 x 10 native GEO pixels.
+- Description: "AERDB_L2_ABI_G16 v1 - The ABI G16 Deep Blue Aerosol 10-Min L2 Full Disk product, short-name AERDB_L2_ABI_G16 is produced every 30 minutes and contains full-disk observation data. The L2 data products comprise 10 x 10 native GEO pixels."
   ARN: arn:aws:s3:::prod-lads/AERDB_L2_ABI_G16
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_L2_ABI_G16 v1
-- Description: The ABI G17 Deep Blue Aerosol 10-Min L2 Full Disk product, short-name AERDB_L2_ABI_G17 is produced every 30 minutes and contains full-disk observation data. The L2 data products comprise 10 x 10 native GEO pixels.
+- Description: "AERDB_L2_ABI_G17 v1 - The ABI G17 Deep Blue Aerosol 10-Min L2 Full Disk product, short-name AERDB_L2_ABI_G17 is produced every 30 minutes and contains full-disk observation data. The L2 data products comprise 10 x 10 native GEO pixels."
   ARN: arn:aws:s3:::prod-lads/AERDB_L2_ABI_G17
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
-  Name: AERDB_L2_ABI_G17 v1
-- Description: VISSRGOES1IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the first Geostationary Operational Environmental Satellite (GOES-1). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES1IMIR v001 - VISSRGOES1IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the first Geostationary Operational Environmental Satellite (GOES-1). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES1IMIR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES1IMIR v001
-- Description: VISSRGOES1IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the first Geostationary Operational Environmental Satellite (GOES-1). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES1IMVIS v001 - VISSRGOES1IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the first Geostationary Operational Environmental Satellite (GOES-1). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES1IMVIS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES1IMVIS v001
-- Description: VISSRGOES2IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the second Geostationary Operational Environmental Satellite (GOES-2). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES2IMIR v001 - VISSRGOES2IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the second Geostationary Operational Environmental Satellite (GOES-2). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES2IMIR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES2IMIR v001
-- Description: VISSRGOES2IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the second Geostationary Operational Environmental Satellite (GOES-2). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES2IMVIS v001 - VISSRGOES2IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the second Geostationary Operational Environmental Satellite (GOES-2). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES2IMVIS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES2IMVIS v001
-- Description: VISSRGOES3IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the third Geostationary Operational Environmental Satellite (GOES-3). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES3IMIR v001 - VISSRGOES3IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the third Geostationary Operational Environmental Satellite (GOES-3). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES3IMIR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES3IMIR v001
-- Description: VISSRGOES3IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the third Geostationary Operational Environmental Satellite (GOES-3). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRGOES3IMVIS v001 - VISSRGOES3IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the third Geostationary Operational Environmental Satellite (GOES-3). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOES/VISSRGOES3IMVIS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRGOES3IMVIS v001
-- Description: VISSRSMS1IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the first Synchronous Meteorological Satellite (SMS-1). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRSMS1IMIR v001 - VISSRSMS1IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the first Synchronous Meteorological Satellite (SMS-1). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS1IMIR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS1IMIR v001
-- Description: VISSRSMS1L1AOIPS is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Atmospheric and Oceanographic Image Processing System (AOIPS) data product from the first Synchronous Meteorological Satellite (SMS-1). There are typically three data files for a scene of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively.
+- Description: "VISSRSMS1L1AOIPS v001 - VISSRSMS1L1AOIPS is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Atmospheric and Oceanographic Image Processing System (AOIPS) data product from the first Synchronous Meteorological Satellite (SMS-1). There are typically three data files for a scene of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS1L1AOIPS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS1L1AOIPS v001
-- Description: VISSRSMS1L1EHT is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Experimenter History Tape (EHT) data product from the first Synchronous Meteorological Satellite (SMS-1). Each data file contains a segment of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively.
+- Description: "VISSRSMS1L1EHT v001 - VISSRSMS1L1EHT is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Experimenter History Tape (EHT) data product from the first Synchronous Meteorological Satellite (SMS-1). Each data file contains a segment of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS1L1EHT.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS1L1EHT v001
-- Description: VISSRSMS1IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the first Synchronous Meteorological Satellite (SMS-1). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRSMS1IMVIS v001 - VISSRSMS1IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the first Synchronous Meteorological Satellite (SMS-1). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS1IMVIS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS1IMVIS v001
-- Description: VISSRSMS2IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the second Synchronous Meteorological Satellite (SMS-2). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRSMS2IMIR v001 - VISSRSMS2IMIR is the Visible Infrared Spin-Scan Radiometer (VISSR) Infrared Imagery on 70mm Film data product from the second Synchronous Meteorological Satellite (SMS-2). This set of IR imagery (10.5 to 12.5 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS2IMIR.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS2IMIR v001
-- Description: VISSRSMS2L1AOIPS is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Atmospheric and Oceanographic Image Processing System (AOIPS) data product from the second Synchronous Meteorological Satellite (SMS-2). There are typically three data files for a scene of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively.
+- Description: "VISSRSMS2L1AOIPS v001 - VISSRSMS2L1AOIPS is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Atmospheric and Oceanographic Image Processing System (AOIPS) data product from the second Synchronous Meteorological Satellite (SMS-2). There are typically three data files for a scene of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS2L1AOIPS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS2L1AOIPS v001
-- Description: VISSRSMS2L1EHT is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Experimenter History Tape (EHT) data product from the second Synchronous Meteorological Satellite (SMS-2). Each data file contains a segment of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively.
+- Description: "VISSRSMS2L1EHT v001 - VISSRSMS2L1EHT is the Visible Infrared Spin-Scan Radiometer (VISSR) Level 1 Experimenter History Tape (EHT) data product from the second Synchronous Meteorological Satellite (SMS-2). Each data file contains a segment of the Earth with radiances that were measured in the visible (0.55 to 0.70 micrometer) and/or IR (10.5 to 12.6 micrometer) wavelengths with a spatial resolution of 0.9 and 8 km, respectively."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS2L1EHT.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS2L1EHT v001
-- Description: VISSRSMS2IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the second Synchronous Meteorological Satellite (SMS-2). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files.
+- Description: "VISSRSMS2IMVIS v001 - VISSRSMS2IMVIS is the Visible Infrared Spin-Scan Radiometer (VISSR) Visible Imagery on 70mm Film data product from the second Synchronous Meteorological Satellite (SMS-2). This set of visible imagery (0.55 to 0.70 micrometer) was originally produced on commercial image-generation equipment from digital tapes and was made available on 70-mm film, from which they were later scanned to digital TIFF image files."
   ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMS/VISSRSMS2IMVIS.001
   Region: us-west-2
   Type: S3 Bucket
   RequesterPays: false
   ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
-  Name: VISSRSMS2IMVIS v001
