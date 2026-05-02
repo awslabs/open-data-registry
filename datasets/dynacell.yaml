@@ -1,0 +1,68 @@
+Name: DynaCell
+Description: |
+  DynaCell is a dynamic 3D live-cell imaging benchmark for virtual staining and cell profiling.
+  The dataset pairs label-free transmitted-light volumes (phase-reconstructed from multi-angle
+  illumination) with fluorescence ground truth for four organelles (nucleus, cell membrane,
+  endoplasmic reticulum, mitochondria) across three viral perturbation conditions
+  (uninfected, Zika-infected, Dengue-infected).
+
+  The v1 release contains two components:
+  (1) A549 human lung adenocarcinoma cells acquired on the Mantis correlative label-free and
+  light-sheet fluorescence microscope at CZ Biohub San Francisco (24 OZX stores, 262 FOVs,
+  ~407 GB), split into train and test sets across 4 organelle markers and 3 conditions.
+  (2) WTC-11 hiPSC cells from the Allen Institute hiPSC single-cell image dataset, reprocessed
+  as paired label-free and confocal fluorescence volumes (iPSC data to be added).
+
+  All data are stored as RFC-9 zipped OME-Zarr (.ozx) archives following OME-NGFF v0.5,
+  readable with iohub (https://github.com/czbiohub-sf/iohub).
+Documentation: https://github.com/czbiohub-sf/dynacell
+Contact: shalin.mehta@czbiohub.org
+ManagedBy: "[Chan Zuckerberg Biohub San Francisco](https://www.czbiohub.org/)"
+UpdateFrequency: Updated as new perturbation conditions and organelle targets are added.
+Tags:
+  - aws-pds
+  - biology
+  - cell biology
+  - life sciences
+  - imaging
+  - cell imaging
+  - fluorescence imaging
+  - microscopy
+  - label-free microscopy
+  - virtual staining
+  - machine learning
+  - benchmark
+  - computer vision
+  - OME-Zarr
+  - 3D time-lapse
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: |
+      DynaCell v1 release: paired label-free and fluorescence 3D+time volumes
+      in RFC-9 zipped OME-Zarr (.ozx) format. Contains biohub-a549 (train/test
+      splits, 4 markers x 3 conditions = 24 stores) and aics-ipsc datasets,
+      plus metadata (Croissant JSON-LD), trained model checkpoints, and
+      reviewer-accessible demo samples.
+    ARN: arn:aws:s3:::dynacell
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: VisCy — training, prediction, and evaluation pipelines for DynaCell
+      URL: https://github.com/mehta-lab/VisCy
+      AuthorName: Mehta Lab
+      AuthorURL: https://www.czbiohub.org/imaging
+    - Title: iohub — OME-Zarr and OZX I/O library
+      URL: https://github.com/czbiohub-sf/iohub
+      AuthorName: Chan Zuckerberg Biohub
+      AuthorURL: https://www.czbiohub.org
+    - Title: waveorder — phase reconstruction from label-free microscopy
+      URL: https://github.com/mehta-lab/waveorder
+      AuthorName: Mehta Lab
+      AuthorURL: https://www.czbiohub.org/imaging
+  Publications:
+    - Title: "DynaCell: A Dynamic 3D Live-Cell Imaging Benchmark for Virtual Staining and Cell Profiling"
+      URL: https://github.com/czbiohub-sf/dynacell
+      AuthorName: Shalin B. Mehta, Bo Huang, et al.
+      AuthorURL: https://www.czbiohub.org/imaging
