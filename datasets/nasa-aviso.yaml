@@ -1,0 +1,28 @@
+Name: NASA AVISO Project
+Description: |
+  This dataset contains absolute dynamic topography (similar to sea level but with respect to the geoid) binned and averaged monthly on 1 degree grids. The coverage is from October 1992 to December 2010. These data were provided by AVISO (French space agency data provider) to support the CMIP5 (Coupled Model Intercomparison Project Phase 5) under the World Climate Research Program (WCRP) and was first made available via the JPL Earth System Grid. The dynamic topography are derived from sea surface height measured by several satellites including Envisat, TOPEX/Poseidon, Jason-1 and OSTM/Jason-2, and referenced to the geoid. Along with this dataset, two additional ancillary data files are included in the same directory which contain the number of observations and standard error co-located on the same 1 degree grids.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "AVISO_L4_DYN_TOPO_1DEG_1MO v1 - This dataset contains absolute dynamic topography (similar to sea level but with respect to the geoid) binned and averaged monthly on 1 degree grids. The coverage is from October 1992 to December 2010."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/AVISO_L4_DYN_TOPO_1DEG_1MO
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

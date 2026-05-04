@@ -1,0 +1,174 @@
+Name: NASA NLDAS Project
+Description: |
+  This data set contains thirty-eight fields simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format is netCDF (converted from the GRIB format). Mosaic was developed by Koster and Suarez (1994, 1996) to account for subgrid vegetation variability with a tile approach. Each vegetation tile carries its own energy and water balance and soil moisture and temperature. Each tile has three soil layers, with the first two in the root zone. In NLDAS, Mosaic is configured to support a maximum of 10 tiles per grid cell with a 5% cutoff that ignores vegetation classes covering less than 5% of the cell. Additionally in NLDAS, all tiles of Mosaic in a grid cell have a predominant soil type and three soil layers with fixed thickness values of 10, 30, and 160 cm (hence constant rooting depth of 40 cm and constant total column depth of 200 cm). Details about the NLDAS-2 configuration of the Mosaic LSM can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_MOS0125_M
+  This data set contains thirty-seven fields simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is monthly. The file format is netCDF (converted from the GRIB format). The NLDAS-2 monthly Mosaic model data, containing thirty-seven fields, were generated from the NLDAS-2 hourly Mosaic model data, as monthly accumulation for rainfall, snowfall, subsurface runoff, surface runoff, total evapotranspiration, and snow melt, and monthly average for other variables. Monthly period of each month is from 00Z at start of the month to 23:59Z at end of the month, except the first month (Jan. 1979) that starts from 00Z 02 Jan 1979. Details about the NLDAS-2 configuration of the Mosaic LSM can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_MOS0125_MC
+  This monthly climatology data set contains a series of land surface parameters simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing. The temporal resolution is monthly, ranging from January to December. The NLDAS-2 monthly climatology data are the monthly data averaged over forty years (1981 - 2020). The file format is netCDF. The previous version of this dataset (NLDAS_MC 002) was a 30-year average and was stored in GRIB file format. A brief description about the NLDAS-2 hourly and monthly Mosaic LSM data can be found from the NLDAS_MOS0125_H_2.0 and NLDAS_MOS0125_M_2.0 landing pages. Details about the NLDAS-2 configuration of the Mosaic LSM can be found in Xia et al. (2012). For more information, please see the README Document.
+  <br>
+
+  #### NLDAS_NOAH0125_H
+  This data set contains fifty-three fields simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format is netCDF (converted from the GRIB format). The Noah model was developed as the land component of the NOAA NCEP mesoscale Eta model [Betts et al. (1997); Chen et al. (1997); Ek et al. (2003)]. As used in NLDAS-2, recent modifications were made to Noah's cold-season [Livneh et al. (2010)] and warm-season [Wei et al. (2012)] parameterizations. Noah serves as the land component in the evolving Weather Research and Forecasting (WRF) regional atmospheric model, the NOAA NCEP coupled Climate Forecast System (CFS), and the Global Forecast System (GFS). The model simulates the soil freeze-thaw process and its impact on soil heating/cooling and transpiration, following Koren et al. (1999). The model has four soil layers with spatially invariant thicknesses of 10, 30, 60, and 100 cm. The first three layers form the root zone in non-forested regions, with the fourth layer included in forested regions. Details about the NLDAS-2 configuration of the Noah LSM can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_NOAH0125_M
+  This data set contains fifty-two fields simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is monthly. The file format is netCDF (converted from the GRIB format). The NLDAS-2 monthly Noah model data, containing fifty-two fields, were generated from the NLDAS-2 hourly Noah model data, as monthly accumulation for rainfall, snowfall, subsurface runoff, surface runoff, total evapotranspiration, snow melt, and monthly averages for other variables. The monthly period of each month is from 00Z at start of the month to 23:59Z at end of the month, with the exception of the very first month in the data set (Jan 1979) which starts at 00Z 02 Jan 1979. Also for the first month (Jan 1979), because the variables listed as instantaneous in the README file do not have valid data exactly on 00Z 02 Jan 1979, and this one hour is not included in the average for this month only. Details about the NLDAS-2 configuration of the Noah LSM can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_NOAH0125_MC
+  This monthly climatology data set contains a series of land surface parameters simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing. The temporal resolution is monthly, ranging from January to December. The NLDAS-2 monthly climatology data are the monthly data averaged over forty years (1981 - 2020). The file format is netCDF. The previous version of this dataset (NLDAS_MC 002) was a 30-year average and was stored in GRIB file format. A brief description about the NLDAS-2 hourly and monthly Noah LSM data can be found from the dataset landing pages for NLDAS_NOAH0125_H_2.0 and NLDAS_NOAH0125_M_2.0. Details about the NLDAS-2 configuration of the Noah LSM can be found in Xia et al. (2012). For more information, please see the README Document.
+  <br>
+
+  #### NLDAS_FORA0125_H
+  This data set contains the primary forcing hourly data "File A" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format is netCDF (converted from the GRIB data files). The non-precipitation land surface forcing fields for NLDAS-2 are derived from the analysis fields of the NCEP North American Regional Reanalysis (NARR). NARR analysis fields are 32-km spatial resolution and 3-hourly temporal frequency. Those NARR fields that are utilized to generate NLDAS-2 forcing fields are spatially interpolated to the finer resolution of the NLDAS 1/8th-degree grid and then temporally disaggregated to the NLDAS hourly frequency. Additionally, the fields of surface pressure, surface downward longwave radiation, near-surface air temperature, and near-surface specific humidity are adjusted vertically to account for the vertical difference between the NARR and NLDAS fields of terrain height. This vertical adjustment applies the traditional vertical lapse rate of 6.5 K/km for air temperature. The details of the spatial interpolation, temporal disaggregation, and vertical adjustment are presented by Cosgrove et al. (2003). The surface downward shortwave radiation field in "File A" is a bias-corrected field wherein a bias-correction algorithm was applied to the NARR surface downward shortwave radiation. This bias correction utilizes five years (1996-2000) of the hourly 1/8th-degree GOES-based surface downward shortwave radiation fields derived by Pinker et al. (2003). The potential evaporation field in "File A" is that computed in NARR using the modified Penman scheme of Mahrt and Ek (1984). The precipitation field in "File A" is not the NARR precipitation forcing, but is rather a product of a temporal disaggregation of a gauge-only CPC analysis of daily precipitation, performed directly on the NLDAS grid and including an orographic adjustment based on the widely-applied PRISM climatology. The precipitation is temporally disaggregated into hourly fields by deriving hourly disaggregation weights from either WSR-88D Doppler radar-based precipitation estimates, 8-km CMORPH hourly precipitation analyses, or NARR-simulated precipitation (based on availability, in order). The latter fields from radar, CMORPH, and NARR are used only to derive disaggregation weights and do not change the daily total precipitation. The field in "File A" that gives the fraction of total precipitation that is convective is an estimate derived from the following two NARR precipitation fields (which are provided in "File B"): NARR total precipitation and NARR convective precipitation (the latter is less than or equal to the NARR total precipitation and can be zero). The Convective Available Potential Energy (CAPE) is the final variable in the forcing data set, also interpolated from NARR. The hourly land surface forcing fields for NLDAS-2 are grouped into two files, "File A" and "File B". "File A" is the primary (default) forcing file and contains eleven meteorological forcing fields. Details about the generation of the NLDAS-2.0 forcing datasets can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_FORA0125_M
+  This data product contains the monthly primary forcing data "File A" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is monthly. The file format is netCDF (converted from the GRIB data files). The NLDAS-2 monthly primary forcing data were generated from the NLDAS-2 hourly primary forcing data, as monthly accumulation for total precipitation, convective precipitation, and potential evaporation, and monthly average for other variables. The convective precipitation monthly total is the hourly convective fraction multiplied by the hourly precipitation (both from the NLDAS-2 "File A" files), and then summed over all hours of the month. Monthly period of each month is from 00Z at start of the month to 23:59Z at end of the month. The one exception to this is the first month (Jan. 1979) that starts from 00Z 02 Jan 1979, except for the monthly accumulated precipitation and convective precipitation that both start from 12Z 01 Jan 1979. The monthly land surface forcing fields for NLDAS-2 are grouped into two files, "File A" and "File B". "File A" is the primary (default) forcing file and contains eleven meteorological forcing fields. Details about the generation of the NLDAS-2.0 forcing datasets can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_FORA0125_MC
+  This data set contains the monthly climatology data of the primary forcing data for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing. The temporal resolution is monthly, ranging from January to December. The NLDAS-2 monthly climatology data are the NLDAS-2 monthly data averaged over forty years (1981 - 2020). The file format is netCDF. The previous version of this dataset (NLDAS_MC 002) was a 30-year average and was stored in GRIB file format. A brief description about the NLDAS-2 hourly and monthly primary forcing data can be found from the NLDAS_FORA0125_H_2.0 and NLDAS_FORA0125_M_2.0 landing pages. Details about the generation of the NLDAS-2 forcing datasets can be found in Xia et al. (2012). For more information, please see the README Document.
+  <br>
+
+  #### NLDAS_FORB0125_H
+  This data set contains the secondary forcing hourly data "File B" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format isnetCDF (converted from the GRIB data files). The non-precipitation land surface forcing fields for NLDAS-2 are derived from the analysis fields of the NCEP North American Regional Reanalysis (NARR). NARR analysis fields are 32-km spatial resolution and 3-hourly temporal frequency. Those NARR fields that are utilized to generate NLDAS-2 forcing fields are spatially interpolated to the finer resolution of the NLDAS 1/8th-degree grid and then temporally disaggregated to the NLDAS hourly frequency. NLDAS-2 is providing a second forcing file, "File B", in which the surface temperature, humidity, and wind fields are represented not at 2-meters and 10-meters above the height of the NLDAS terrain, but rather at the same height above the NLDAS terrain as the height above the NARR terrain of the lowest prognostic level of the NARR assimilation system (namely, the same height above the model terrain as the lowest prognostic level of the mesoscale Eta model, which is the assimilating model in NARR). The surface downward surface radiation field in "File B" is taken directly from NARR, without any bias correction. The precipitation and convective precipitation fields in "File B" are also taken directly from NARR, and are used to calculate the convective fraction provided in "File A". The aerodynamic conductance is "File B" is also taken from NARR. The hourly land surface forcing fields for NLDAS-2 are grouped into two files, "File A" and "File B". "File B" is the secondary (optional) forcing file and contains ten meteorological forcing fields. Details about the generation of the NLDAS-2 forcing datasets can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_FORB0125_M
+  This data set contains the monthly secondary forcing data "File B" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is monthly. The file format is netCDF (converted from the GRIB format). The NLDAS-2 monthly secondary forcing data were generated from the NLDAS-2 hourly secondary forcing data, as monthly accumulation for precipitation and convective precipitation and monthly average for other variables. Monthly period of each month is from 00Z at start of the month to 23:59Z at end of the month. The one exception to this is the first month (Jan. 1979) that starts from 00Z 02 Jan 1979, except for the monthly accumulated precipitation and convective precipitation that both start from 12Z 01 Jan 1979. The monthly land surface forcing fields for NLDAS-2 are grouped into two files, "File A" and "File B". "File B" is the secondary (optional) forcing file and contains ten meteorological forcing fields. Details about the generation of the NLDAS-2.0 forcing datasets can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_FORB0125_MC
+  This data set contains the monthly climatology (MC) data of the secondary forcing data for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing. The temporal resolution is monthly, ranging from January to December. The NLDAS-2 monthly climatology data are the NLDAS-2 monthly data averaged over forty years (1981 - 2020). The file format is netCDF. The previous version of this dataset (NLDAS_MC 002) was a 30-year average and was stored in GRIB file format. A brief description about the NLDAS-2 hourly and monthly secondary forcing data can be found from the NLDAS_FORB0125_H_2.0 and NLDAS_FORB0125_M_2.0 landing pages. Details about the generation of the NLDAS-2 forcing datasets can be found in Xia et al. (2012). For more information, please see the README Document.
+  <br>
+
+  #### NLDAS_VIC0125_H
+  This data set contains forty-four fields simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present. The temporal resolution is hourly. The file format is netCDF (converted from the GRIB format). The VIC model was developed at the University of Washington and Princeton University as a macroscale, semi-distributed, grid-based, hydrologic model [Liang et al., 1994; Wood et al., 1997]. The full water and energy balance modes of VIC were used for NLDAS-2. VIC uses three soil layers, with thicknesses that vary spatially. The root zone depends on the vegetation type and its root distribution, and can span all three soil layers. The VIC model includes a two-layer energy balance snow model [Cherkauer et al., 2003]. Details about the NLDAS-2 configuration of the VIC LSM can be found in Xia et al. (2012). The version of the VIC model for the NLDAS-2 VIC data available from the NASA GES DISC is VIC-4.0.3; this version of the VIC model is the same as used in Sheffield et al. (2003).
+  <br>
+
+  #### NLDAS_VIC0125_M
+  This data set contains forty-three fields simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from January 1979 to present. The temporal resolution is monthly. The file format is netCDF (converted from GRIB format). The NLDAS-2 monthly Noah model data were generated from the NLDAS-2 hourly Noah model data, as monthly accumulation for rainfall, snowfall, subsurface runoff, surface runoff, total evapotranspiration, snow melt, and monthly averages for other variables. Each monthly period is from 00Z at start of the month to 23:59Z at end of the month, with the exception of the very first month in the data set (January 1979), which starts at 00Z 02 January 1979. Also, for the first month (January 1979), since the variables listed as instantaneous in the README file do not have valid data exactly on 00Z 02 January 1979, this one hour is not included in the average for this one month. Details about the NLDAS-2 configuration of the VIC LSM can be found in Xia et al. (2012).
+  <br>
+
+  #### NLDAS_VIC0125_MC
+  This data set contains a series of land surface parameters simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing. The temporal resolution is monthly, ranging from January to December. The NLDAS-2 monthly climatology data are the NLDAS-2 monthly data averaged over forty years (1981 - 2020). The file format is netCDF. The previous version of this dataset (NLDAS_MC 002) was a 30-year average and was stored in GRIB file format. A brief description about the NLDAS-2 hourly and monthly VIC LSM data can be found from the NLDAS_VIC0125_H_2.0 and NLDAS_VIC0125_M_2.0 landing pages. Details about the NLDAS-2 configuration of the VIC LSM can be found in Xia et al. (2012). The version of the VIC model for the NLDAS-2 VIC data available from the NASA GES DISC is VIC-4.0.3; this version of the VIC model is the same as used in Sheffield et al. (2003). For more information, please see the README Document.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://ldas.gsfc.nasa.gov/nldas/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- ice
+- netcdf
+- precipitation
+- radar
+- satellite imagery
+- soil moisture
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NLDAS_MOS0125_H v2.0 - This data set contains thirty-eight fields simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_MOS0125_H.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_MOS0125_M v2.0 - This data set contains thirty-seven fields simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_MOS0125_M.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_MOS0125_MC v2.0 - This monthly climatology data set contains a series of land surface parameters simulated from the Mosaic land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_MOS0125_MC.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_NOAH0125_H v2.0 - This data set contains fifty-three fields simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_NOAH0125_H.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_NOAH0125_M v2.0 - This data set contains fifty-two fields simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_NOAH0125_M.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_NOAH0125_MC v2.0 - This monthly climatology data set contains a series of land surface parameters simulated from the Noah land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_NOAH0125_MC.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORA0125_H v2.0 - This data set contains the primary forcing hourly data \"File A\" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORA0125_H.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORA0125_M v2.0 - This data product contains the monthly primary forcing data \"File A\" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORA0125_M.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORA0125_MC v2.0 - This data set contains the monthly climatology data of the primary forcing data for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORA0125_MC.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORB0125_H v2.0 - This data set contains the secondary forcing hourly data \"File B\" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORB0125_H.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORB0125_M v2.0 - This data set contains the monthly secondary forcing data \"File B\" for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORB0125_M.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_FORB0125_MC v2.0 - This data set contains the monthly climatology (MC) data of the secondary forcing data for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_FORB0125_MC.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_VIC0125_H v2.0 - This data set contains forty-four fields simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from Jan 1979 to the present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_VIC0125_H.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_VIC0125_M v2.0 - This data set contains forty-three fields simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing and range from January 1979 to present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_VIC0125_M.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NLDAS_VIC0125_MC v2.0 - This data set contains a series of land surface parameters simulated from the VIC land-surface model (LSM) for Phase 2 of the North American Land Data Assimilation System (NLDAS-2). The data are in 1/8th degree grid spacing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NLDAS/NLDAS_VIC0125_MC.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
