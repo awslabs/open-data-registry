@@ -1,0 +1,76 @@
+Name: NASA BioSCape Project
+Description: |
+  BioSCape
+  <br>
+
+  #### BioSCape_EstuaryVegHabitats_2441
+  This dataset provides vegetation information for 64 coastal wetland plots and coastal wetland extent maps for three habitat classes in 84 estuaries in South Africa. The vegetation plot data include vegetation species occurrence, percent cover, salinity, representative vegetation heights, porewater salinity, and ground temperature. In situ plot data were collected between October 27 and November 10, 2023, in Swartvlei Estuary, Wilderness Lakes, Knynsa Estuary, and Langebaan Lagoon within lands administered by the South African National Parks. The habitat extent maps were created for 84 estuaries across the Greater Cape Floristic Region. The classification is a single point in time representing the growing season when the plot data were collected (December 2023-January 2024). The habitat extent data were created with PlanetScope satellite classified with a U-Net semantic segmentation algorithm. The habitats classified are salt marsh, submerged aquatic vegetation, and reeds & sedges. Plot and habitat data were collected and created to inform analysis of the imaging spectroscopy and LiDAR data collected as part of the BioSCape field campaign. The data are provided in cloud optimized GeoTIFF, comma separated values, and geopackage formats.
+  <br>
+
+  #### BioSCape_VegPlots_Berg_Eerste_2425
+  This dataset contains vegetation plot survey data collected at 36 sites across the Berg and Eerste River catchments in the Western Cape, South Africa collected during 2022 and again in 2023 during the 2023 BioSCape Field Collection season. Sampling protocols were designed by the BioSCape Leadership team for use by multiple teams to generate standardized and comparable vegetation plot data across sites. Each plot was circular, 10 m in diameter, and representative of the vegetation community. Species were identified at each 1-m mark along the N-S and W-E transects, totaling 42 identifications per plot. Fractional ground cover of the plot, fractional vegetation dominance, and rarefaction counts for each plot were recorded at all plots from 2023. Data from 2022 have fractional ground cover of the NE quadrant and fractional vegetation dominance. These data are provided in comma separated values (CSV) format. The boundaries of the patches where the vegetation plots were located were recorded as polygons in included Keyhole Markup Language (KML) files.
+  <br>
+
+  #### BioSCape_AVNG_L2B_BRDF_GCFR_2385
+  This dataset holds corrected surface reflectance (L2B) from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument flown on a NASA Gulfstream III aircraft during the Biodiversity Survey of the Cape (BioSCape) project. AVIRIS-NG imagery was acquired in October - November 2023 over the Greater Cape Floristic Region (GCFR), South Africa. BioSCape is a multi-agency, NASA-led research project that integrates airborne imaging spectroscopy and lidar with a suite of measurements of biodiversity. L2B surface reflectance was derived from L1B radiance data in 425 bands, and this enhanced L2B product includes topographic, glint, and bidirectional reflectance distribution function (BRDF) corrections. Data were georeferenced and projected into UTM coordinates. These files hold the original native ancillary information relevant to the image, as well as the ancillary masks used in the creation and parameterization of the topography, glint, and BRDF corrections applied to enhance these image products. The data are provided in netCDF format.
+  <br>
+
+  #### BioSCape_ANG_V02_L3_RFL_Mosaic_2427
+  This dataset holds mosaics of resampled surface reflectance from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument for Biodiversity Survey of the Cape (BioSCape) project. AVIRIS-NG imagery was acquired in October - November 2023 over the Greater Cape Floristic Region (GCFR), South Africa. L2B surface reflectance data from these AVIRIS-NG collections were resampled to 5-m spatial resolution and mosaiced into a regular tile system of 807 tiles. A given tile includes multiple AVIRIS-NG scenes from multiple flight lines spanning multiple days. BioSCape is a multi-agency, NASA-led research project that integrates airborne imaging spectroscopy and lidar with a suite of measurements of biodiversity. The dataset includes surface reflectance with uncertainty for each tile in netCDF format along with an RGB quicklook image in TIFF format. A spatial index of mosaic grid ties is included in GeoJSON format.
+  <br>
+
+  #### Acoustic_Data_Cape_Floristic_2372
+  This dataset holds in situ sound recordings from sites in Greater Cape Floristic Region (GCFR), South Africa from June to December 2023. The recordings were collected as part of the Biodiversity Survey of the Cape (BioSCape) project, a multi-agency, NASA-led research project that integrates airborne imaging spectroscopy and lidar with a suite of measurements of biodiversity. BioSoundSCape is a BioSCape subproject seeking to relate ground-based measures of bioacoustic diversity to remote imagery. AudioMoth recorders were deployed at sites for 4 to 10 days of data collection (median = 7), and programmed to record 1 min of every 10, thus providing temporal sampling through day and night. Each recording was saved in a waveform audio file format with 16-bit digitization depth and a 48 kHz sampling rate. The recordings contain a wide range of environmental sounds such as biophony (e.g., birds, frogs, insects), anthropophony (e.g,. automobiles, airplanes) and geophony (e.g,. wind, rain). Sampling locations were stratified with respect to elevation, broad land use/land cover types, and time since wildfire disturbance. Most sites were within protected fynbos and Afromontane forest ecosystems. There were 505 sites in the wet season and 489 sites in the dry season, with most sites co-located between seasons. All sites were located within AVIRIS-NG hyperspectral acquisitions and 61% of sites were in LVIS lidar acquisitions. The dataset includes site information in tabular form and photographs of field sites.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://bioscape.io/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+- land cover
+- lidar
+- netcdf
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "BioSCape_EstuaryVegHabitats_2441 v1 - This dataset provides vegetation information for 64 coastal wetland plots and coastal wetland extent maps for three habitat classes in 84 estuaries in South Africa. The vegetation plot data include vegetation species occurrence, percent cover, salinity, representative vegetation heights, porewater salinity, and ground temperature."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/bioscape/BioSCape_EstuaryVegHabitats/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BioSCape_VegPlots_Berg_Eerste_2425 v1 - This dataset contains vegetation plot survey data collected at 36 sites across the Berg and Eerste River catchments in the Western Cape, South Africa collected during 2022 and again in 2023 during the 2023 BioSCape Field Collection season. Sampling protocols were designed by the BioSCape Leadership team for use by multiple teams to generate standardized and comparable vegetation plot data across sites."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/bioscape/BioSCape_VegPlots_Berg_Eerste/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BioSCape_AVNG_L2B_BRDF_GCFR_2385 v1 - This dataset holds corrected surface reflectance (L2B) from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument flown on a NASA Gulfstream III aircraft during the Biodiversity Survey of the Cape (BioSCape) project. AVIRIS-NG imagery was acquired in October - November 2023 over the Greater Cape Floristic Region (GCFR), South Africa."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/bioscape/BioSCape_AVNG_L2B_BRDF_GCFR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BioSCape_ANG_V02_L3_RFL_Mosaic_2427 v2 - This dataset holds mosaics of resampled surface reflectance from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument for Biodiversity Survey of the Cape (BioSCape) project. AVIRIS-NG imagery was acquired in October - November 2023 over the Greater Cape Floristic Region (GCFR), South Africa."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/bioscape/BioSCape_ANG_V02_L3_RFL_Mosaic/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Acoustic_Data_Cape_Floristic_2372 v1 - This dataset holds in situ sound recordings from sites in Greater Cape Floristic Region (GCFR), South Africa from June to December 2023. The recordings were collected as part of the Biodiversity Survey of the Cape (BioSCape) project, a multi-agency, NASA-led research project that integrates airborne imaging spectroscopy and lidar with a suite of measurements of biodiversity."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/bioscape/Acoustic_Data_Cape_Floristic/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
