@@ -1,6 +1,6 @@
 Name: SatPM2.5
 Description: Fine particulate matter (PM2.5) concentrations are estimated using information from satellite-, simulation- and monitor-based sources. Aerosol optical depth from multiple satellites (MODIS, VIIRS, MISR, SeaWiFS, and VIIRS) and their respective retrievals (Dark Target, Deep Blue, MAIAC) is combined with simulation (GEOS-Chem) based upon their relative uncertainties as determined using ground-based sun photometer (AERONET) observations to produce geophysical estimates that explain most of the variance in ground-based PM2.5 measurements. A subsequent statistical fusion incorporates additional information from ground-based PM2.5 measurements.
-Documentation: https://sites.wustl.edu/acag/datasets/surface-pm2-5/#V6.GL.03
+Documentation: https://www.satpm.org/v6-gl-03
 Contact: support@satpm.org
 ManagedBy: "https://satpm.org"
 UpdateFrequency: Yearly
@@ -18,7 +18,7 @@ Tags:
 License: Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/)
 Resources:
   - Description: Satellite-Derived Fine Particulate Matter (PM2.5) concentrations from the Atmospheric Composition Analysis Group and Washington University in St. Louis, version GL06.03
-    ARN: arn:aws:s3:::v6.gl.03
+    ARN: arn:aws:s3:::satpmdata/
     Region: us-east-1
     Type: S3 Bucket
     Explore:
