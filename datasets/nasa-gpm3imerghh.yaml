@@ -1,0 +1,73 @@
+Name: GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07 (GPM_3IMERGHH) at GES DISC
+Description: |-
+  Version 07B is the current version of the IMERG data sets. Older versions will no longer be available and have been superseded by Version 07.
+
+  The Integrated Multi-satellitE Retrievals for GPM (IMERG) is the unified U.S. algorithm that provides the multi-satellite precipitation product for the U.S. GPM team.
+
+  The precipitation estimates from the various precipitation-relevant satellite passive microwave (PMW) sensors comprising the GPM constellation are computed using the 2021 version of the Goddard Profiling Algorithm (GPROF2021), then gridded, intercalibrated to the GPM Combined Ku Radar-Radiometer Algorithm (CORRA) product, and merged into half-hourly 0.1°x0.1° (roughly 10x10 km) fields. Note that CORRA is adjusted to the monthly Global Precipitation Climatology Project (GPCP) Satellite-Gauge (SG) product over high-latitude ocean to correct known biases.
+
+  The half-hourly intercalibrated merged PMW estimates are then input to both a Morphing-Kalman Filter (KF) Lagrangian time interpolation scheme based on work by the Climate Prediction Center (CPC) and the Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks (PERSIANN) Dynamic Infrared–Rain Rate (PDIR) re-calibration scheme. In parallel, CPC assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to PPS for input to the PERSIANN-CCS algorithm (supported by an asynchronous re-calibration cycle) which are then input to the KF morphing (quasi-Lagrangian time interpolation) scheme.
+
+  The KF morphing (supported by an asynchronous KF weights updating cycle) uses the PMW and IR estimates to create half-hourly estimates. Motion vectors for the morphing are computed by maximizing the pattern correlation of successive hours within each of the precipitation (PRECTOT), total precipitable liquid water (TQL), and vertically integrated vapor (TQV) data fields provided by the Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) and Goddard Earth Observing System model Version 5 (GEOS-5) Forward Processing (FP) for the post-real-time (Final) Run and the near-real-time (Early and Late) Runs, respectively. The vectors from PRECTOT are chosen if available, else from TQL, if available, else from TQV. The KF uses the morphed data as the “forecast” and the IR estimates as the “observations”, with weighting that depends on the time interval(s) away from the microwave overpass time. The IR becomes important after about ±90 minutes away from the overpass time. Variable averaging in the KF is accounted for in a routine (Scheme for Histogram Adjustment with Ranked Precipitation Estimates in the Neighborhood, or SHARPEN) that compares the local histogram of KF morphed precipitation to the local histogram of forward- and backward-morphed microwave data and the IR.
+
+  The IMERG system is run twice in near-real time:
+
+  "Early" multi-satellite product ~4 hr after observation time using only forward morphing and
+  "Late" multi-satellite product ~14 hr after observation time, using both forward and backward morphing
+  and once after the monthly gauge analysis is received:
+
+  "Final", satellite-gauge product ~4 months after the observation month, using both forward and backward morphing and including monthly gauge analyses.
+
+  In V07, the near-real-time Early and Late half-hourly estimates have a monthly climatological concluding calibration based on averaging the concluding calibrations computed in the Final, while in the post-real-time Final Run the multi-satellite half-hourly estimates are adjusted so that they sum to the Final Run monthly satellite-gauge combination. In all cases the output contains multiple fields that provide information on the input data, selected intermediate fields, and estimation quality. In general, the complete calibrated precipitation, precipitation, is the data field of choice for most users.
+
+  Briefly describing the Final Run, the input precipitation estimates computed from the various satellite passive microwave sensors are intercalibrated to the CORRA product (because it is presumed to be the best snapshot TRMM/GPM estimate after adjustment to the monthly GPCP SG), then "forward/backward morphed" and combined with microwave precipitation-calibrated geo-IR fields, and adjusted with seasonal GPCP SG surface precipitation data to provide half-hourly and monthly precipitation estimates on a 0.1°x0.1° (roughly 10x10 km) grid over the globe. Precipitation phase is a diagnostic variable computed using analyses of surface temperature, humidity, and pressure. The current period of record is June 2000 to the present (delayed by about 4 months).
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/GPM/IMERG/3B-HH/07
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov'
+ManagedBy: NASA
+UpdateFrequency: From 1998-01-01 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - datacenter
+  - forecast
+  - global
+  - hdf
+  - hydrology
+  - land
+  - metadata
+  - opendap
+  - radar
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree
+      V07 (GPM_3IMERGHH) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3IMERGHH.07/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: Precipitation Estimation from Remotely Sensed Imagery Using an Artificial
+        Neural Network Cloud Classification System
+      URL: https://doi.org/10.1175/JAM2173.1
+      AuthorName: Hong, Y., K. L. Hsu, S. Sorooshian, and X. Gao
+    - Title: Kalman Filter Based CMORPH
+      URL: https://doi.org/10.1175/JHM-D-11-022.1
+      AuthorName: Joyce, R. J., P. Xie, and J. E. Janowiak
+    - Title: Calculation of Gridded Precipitation Data for the Global Land-Surface
+        Using In-Situ Gauge Observations
+      URL: https://www.researchgate.net/profile/Udo-Schneider-4/publication/253114707_Calculation_of_Gridded_Precipitation_Data_for_the_Global_Land-Surface_using_in-situ_Gauge_Observations/links/0deec53bbcb3a0e220000000/Calculation-of-Gridded-Precipitation-Data-for-the-Global-Land-Surface-using-in-situ-Gauge-Observations.pdf
+      AuthorName: Rudolf, B., and U. Schneider
+  Tutorials:
+    - Title: How to Read IMERG Data Using Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Read_IMERG_Data_Using_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.
+    - Title: How to Access GES DISC Data Using Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.
