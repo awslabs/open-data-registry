@@ -1,0 +1,38 @@
+Name: Met Office UK Marine Observations
+Description: |+ 
+ Marine surface weather observations for 32 parameters from 69 locations across the Met Office marine observation network. Observations are available for a rolling 7-day period (168 hours). The data is available as CSV files.<br><br>
+ The data comes from moored buoys, light vessels and ships with automatic weather stations onboard. Buoys and light vessels are static and you can view their locations on the [Met Office Marine Observations page](https://weather.metoffice.gov.uk/specialist-forecasts/coast-and-sea/observations). You can use the data to monitor the latest weather affecting a specific marine location so you can plan for your business or operations.<br><br>
+ [Join the Met Office research panel](https://forms.office.com/Pages/ResponsePage.aspx?id=YYHxF9cgRkeH_VD-PjtmGdxioYGoFbFIkZuB_q8Fb3VUQkoxRVQzTFdUMzNMVzczWVM5VTc3QTY3MC4u) to help us understand how people interact with weather and climate data, uncover challenges and explore opportunities. 
+UpdateFrequency: Every hour, at 15 minutes past the hour, we retrieve a single set of parameter values for each location. For example, at 12:15 new data is retrieved for observations collected between 11:00 and 12:00. This is due to the quality checks required to verify data for public consumption and global network latency.
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST). As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - atmosphere
+  - geospatial
+  - csv
+  - precipitation
+  - weather
+Resources:
+  - Description: Met Office UK Marine Observations
+    ARN: arn:aws:s3:::met-office-marine-observations-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-marine-observations-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new UK marine observations data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-marine-observations-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: UK Marine Observations Usage Examples
+      URL: https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/services/data/pdf-documentation_met-office-uk-marine-observations-on-asdi.pdf
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/

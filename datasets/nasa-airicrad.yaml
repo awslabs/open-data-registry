@@ -1,0 +1,56 @@
+Name: AIRS/Aqua L1C Infrared (IR) resampled and corrected radiances V6.7 (AIRICRAD) at GES DISC
+Description: |-
+  The Atmospheric Infrared Sounder (AIRS) is a grating spectrometer (R = 1200) aboard the second Earth Observing System (EOS) polar-orbiting platform, EOS Aqua. In combination with the Advanced Microwave Sounding Unit (AMSU) and the Humidity Sounder for Brazil (HSB), AIRS constitutes an innovative atmospheric sounding group of visible, infrared, and microwave sensors. The AIRS Infrared (IR) level 1C data set contains AIRS infrared calibrated and geolocated radiances in W/m2/micron/ster. This data set is generated from AIRS level 1B data. The spectral coverage of L1C data is from 3.74 to 15.4 mm. The nominal spectral resolution lambda / delta lambda = 1200. The spectrum is sampled twice per spectral resolution element in a total of 2645 spectral channels. A day of AIRS data is divided into 240 granules (scenes) each of 6-minute duration. For the AIRS IR measurements, an individual granule contains 135 pixels across-track and 90 along-track pixels; there are total of 135 x 90 = 12,150 pixels per granule. AIRS employs a 49.5 degree crosstrack scanning with a 1.1 degree instantaneous field of view (IFOV) to provide twice daily coverage of essentially the entire globe in a 1:30 PM sun synchronous orbit with the 13.5 x 13.5 km2 spatial resolution at nadir. The L1C swath products are derived from the L1B swath products. The primary purpose of the level 1C is to generate the spectra of radiances without spectral gaps caused by the instrument design and bad spectral points. The AIRS L1C data can be used for comparative (with other IR measurements) studies and for weather-climate research.
+
+  This is the latest version of this collection. The DOIs assigned to previous versions, which are no longer available, now direct
+  to this page. For this collection the switchover occurred on June 1, 2020.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/VWD3DRC07UEN
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov. Home Page: https://disc.gsfc.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 2002-08-30 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - datacenter
+  - earth observation
+  - global
+  - metadata
+  - opendap
+  - orbit
+  - hdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'AIRS/Aqua L1C Infrared (IR) resampled and corrected radiances V6.7
+      (AIRICRAD) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Aqua_AIRS_Level1/AIRICRAD.6.7/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications:
+    - Title: AIRS version 6.6 and version 7 level-1C products
+      URL: https://doi.org/10.1117/12.2529400
+      AuthorName: Evan M. Manning, L. Larrabee Strow, and Hartmut H. Aumann
+    - Title: AIRS Level-1C and applications to cross-calibration with MODIS and CrIS
+      URL: https://doi.org/10.1117/12.2061967
+      AuthorName: Evan M. Manning, Hartmut H. Aumann, and Ali Behrangi
+    - Title: Validation of the Atmospheric Infrared Sounder radiative transfer algorithm
+      URL: https://doi.org/10.1029/2005JD006146
+      AuthorName: Strow, L.L, Hannon, S.E, De-Souza Machado, S., Motteler, H.E., and
+        Tobin, D.C.
+    - Title: Radiometric Stability Validation of 17 Years of AIRS Data Using Sea Surface
+        Temperatures.
+      URL: https://doi.org/10.1029/2019GL085098
+      AuthorName: Aumann, H.H. Brogerg, S.,Manning, E., and Pagaino, T.
+    - Title: Updates to the absolute radiometric accuracy of the AIRS on Aqua
+      URL: https://doi.org/10.1117/12.2324605
+      AuthorName: Pagano, T.S., Aumann, H.H., Broberg, S., Manning, E., Overoye, K.,
+        and Weiler, M.
+  Tutorials: 
+    - Title: How to Access GES DISC Data Using Python
+      URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+      AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.
