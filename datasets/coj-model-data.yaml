@@ -1,0 +1,89 @@
+Name: City of Jacksonville Compound Flood Model Data
+Description: |
+  Geographic (land cover, land elevation, etc.), meteorologic (precipitation, wind, etc.), hydrodynamic (water surface elevations), and built environment (floodwalls, structures, culverts) data used as inputs to and
+  outputs from numerical modeling software for the prediction of flood risk in probabilistic frameworks. The input data was collected from open sources, such as from the National Oceanographic and Atmospheric Administration (NOAA), US Army Corps of Engineers (USACE) or the
+  United States Geological Survey (USGS). The format of these input data is modified to suit the needs of the modeling program and software, and then used to predict flooding in Duval County across a range of scenarios. The modeling software used to predict
+  flooding which utilizes and creates this data is freely available from the United States Army Corps of Engineers Hydrologic Engineering Center’s River Analysis System (HEC-RAS). The data stored is not all in the format needed by the modeling program and software. This data has been optimized for efficient cloud storage and dissemination. The data can be repurposed for inputs to the modeling program and software after download.
+
+  **This data is made public by the City of Jacksonville for the benefit of its citizens.**
+  
+  This flood prediction data can be used by federal, state, and local decision makers as well as private citizens to assess the flood risk they face and make sound science-based decisions for response and adaptation.
+Contact: endmc@thewaterinstitute.org
+ManagedBy: The Water Institute
+UpdateFrequency: intermittent
+Documentation: https://www.jacksonville.gov/departments/planning-department/resilience
+Tags:
+  - forecast
+  - bathymetry
+  - climate
+  - coastal
+  - disaster response
+  - elevation
+  - floods
+  - geospatial
+  - hydrologic model
+  - hydrology
+  - infrastructure
+  - land cover
+  - land use
+  - mapping
+  - meteorological
+  - model
+  - open source software
+  - precipitation
+  - simulations
+  - sustainability
+  - water
+  - weather
+  - aws-pds
+License: https://creativecommons.org/licenses/by/4.0/ with attribution to City of Jacksonville
+Citation: "City of Jacksonville Compound Flood Model Data. 2026. https://jacksonville.endmc.org/"
+Resources:
+  - Description: Model Applications and Simulations
+    ARN: arn:aws:s3:::coj-model-data #placeholder
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse the bucket](https://coj-model-data.s3.amazonaws.com/index.html)'
+    - '[Disover the data and models. The ID of the resources can be used to explore the data on the AWS bucket.](https://jacksonville.endmc.org/)'
+DataAtWork:
+  Tutorials:
+    - Title: ENDMC Documentation
+      URL: https://jacksonville.endmc.org/help/help_index
+      AuthorName: The Water Institute
+      AuthorURL: https://thewaterinstitute.org/ 
+  Tools & Applications:
+    - Title: City of Jacksonville ENDMC Data and Model Catalog.
+      URL: https://jacksonville.endmc.org/
+      AuthorName: The Water Institute
+      AuthorURL: https://thewaterinstitute.org/
+    - Title: HEC-HMS
+      URL: https://www.hec.usace.army.mil/software/hec-hms/
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: HEC-HMS documentation
+      URL: https://www.hec.usace.army.mil/software/hec-hms/documentation.aspx
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: HEC-RAS
+      URL: https://www.hec.usace.army.mil/software/hec-ras/
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: HEC-RAS documentation
+      URL: https://www.hec.usace.army.mil/software/hec-ras/documentation.aspx
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: HEC-FIA
+      URL: https://www.hec.usace.army.mil/software/hec-fia/
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: HEC-FIA documentation
+      URL: https://www.hec.usace.army.mil/software/hec-fia/documentation.aspx
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+    - Title: go-consequences
+      URL: https://github.com/USACE/go-consequences
+      AuthorName: United States Army Corps of Engineers
+      AuthorURL: https://www.usace.army.mil/
+ADXCategories:
+  - Environmental Data
