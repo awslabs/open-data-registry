@@ -40,12 +40,16 @@ License: https://creativecommons.org/licenses/by/4.0/ with attribution to City o
 Citation: "City of Jacksonville Compound Flood Model Data. 2026. https://jacksonville.endmc.org/"
 Resources:
   - Description: Model Applications and Simulations
-    ARN: arn:aws:s3:::coj-model-data #placeholder
+    ARN: arn:aws:s3:::coj-model-data
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse the bucket](https://coj-model-data.s3.amazonaws.com/index.html)'
     - '[Disover the data and models. The ID of the resources can be used to explore the data on the AWS bucket.](https://jacksonville.endmc.org/)'
+  - Description: "Update notifications for s3://coj-model-data. This SNS topic receives notifications when new data is added to the S3 bucket."
+    ARN: arn:aws:sns:us-east-1:017109258064:coj-model-data-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get to Know a Dataset: City of Jacksonville Compound Flood Model Data"
