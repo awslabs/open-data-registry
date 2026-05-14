@@ -1,0 +1,56 @@
+Name: BrainWideBench - IBL Benchmark for Neural Foundation Models in Neuroscience
+Description: >
+  BrainWideBench is a large-scale, multi-task benchmark for evaluating neural foundation models,
+  derived from the International Brain Laboratory (IBL) Brainwide Map dataset. It contains
+  preprocessed Neuropixels recordings from 139 mice spanning 276 brain regions during a
+  standardized visual decision-making task. The benchmark is organized around three complementary
+  task suites: behavioral decoding (TS1), neural activity prediction (TS2), and brain region
+  identification (TS3). Data are processed into a standardized format using the torch_brain library
+  and include spike-sorted neural recordings, behavioral signals (wheel movements, paw kinematics,
+  whisker motion energy, lick detection), trial structure, stimulus parameters, and anatomical
+  annotations. A strict animal-level train/evaluation split separates 126 pretraining animals
+  (423 sessions) from 13 held-out evaluation animals (29 sessions), enabling reproducible
+  evaluation of across-animal generalization.
+Documentation: https://torch-brain.readthedocs.io/en/latest/
+Contact: info@internationalbrainlab.org
+ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
+UpdateFrequency: As needed with benchmark releases
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - open source software
+  - machine learning
+  - benchmark
+  - Mus musculus
+License: CC-BY 4.0
+Resources:
+  - Description: >
+      Preprocessed benchmark data in HDF5 format, including spike-sorted neural recordings,
+      behavioral signals, anatomical region labels, and quality-control metadata for all
+      sessions. Organized by animal and session.
+    ARN: arn:aws:s3:::brain-wide-bench
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://brain-wide-bench.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tools & Applications:
+    - Title: torch_brain - Python library for loading and processing the BrainWideBench data
+      URL: https://torch-brain.readthedocs.io/en/latest/
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: ONE-api on pypi.python.org - Python API to query and download IBL neurophysiology data
+      URL: https://pypi.org/project/ONE-api/
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Publications:
+    - Title: "BrainWideBench: A large-scale, multi-task benchmark for foundation models in neuroscience"
+      URL: https://TBD
+      AuthorName: International Brain Laboratory et al.
+      AuthorURL: https://www.internationalbrainlab.com
+    - Title: A brain-wide map of neural activity during complex behaviour
+      URL: https://doi.org/10.1038/s41586-025-09235-0
+      AuthorName: International Brain Laboratory et al.
+      AuthorURL: https://www.internationalbrainlab.com
