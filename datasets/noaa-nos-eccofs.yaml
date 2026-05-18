@@ -52,12 +52,12 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nos-eccofs-pds.s3.amazonaws.com/index.html)'
-  - Description: "East Coast Community Ocean Forecast System (ECCOFS)"
+  - Description: "New data notifications for ECCOFS, only Lambda and SQS protocols allowed"
     ARN: arn:aws:sns:us-east-1:709902155096:NewECCOFSObject
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: ROMS model outputs in AWS can be readily visualized and analyzed in Python using the xroms tools. 
-      URL: arn:aws:sns:us-east-1:709902155096:NewECCOFSObject
+      URL: https://github.com/xoceanmodel/xroms
       AuthorName: "XROMS" 
