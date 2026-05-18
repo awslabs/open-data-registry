@@ -1,0 +1,72 @@
+Name: UK National Rail Darwin Normalised Dataset
+
+Description: >-
+  A normalised, analysis-ready dataset of every train service on the UK rail network,
+  derived from the National Rail Darwin Push Port feed. Each row represents one service
+  (approximately 30,000 per day), with pre-aggregated delay metrics, cancellation status,
+  passenger loading, and a nested array of per-station stop times. Data is stored as
+  Hive-partitioned Apache Parquet (Snappy-compressed), partitioned by service date
+  (year/month/day). Fields include origin/destination, TOC (train operating company),
+  scheduled and actual arrival/departure times per stop, delay minutes (average, max,
+  per-stop), cancellation reason codes, and loading percentages. Queryable directly via
+  AWS Athena or any Parquet-compatible tool. Updated daily with the previous day's services.
+  Data available from January 2025 onwards. Source data is published by National Rail under
+  their <a href="https://assets.nationalrail.co.uk/e8xgegruud3g/3CwdjHiP1dGYdq5a5j2dQP/007f67f4c2192df230f52f8cf55e55d1/Terms_and_Conditions.pdf">Darwin Data Feeds Terms and Conditions</a>.
+
+Documentation: https://blog.robbiea.co.uk/posts/the-darwin-normalised-dataset/
+
+Contact: rail@robbiea.co.uk
+
+ManagedBy: "[Robbie A](https://blog.robbiea.co.uk)"
+
+UpdateFrequency: Daily
+
+License: >-
+  This derived dataset is licensed under
+  <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>.
+  The underlying data originates from the National Rail Darwin Push Port feed,
+  subject to National Rail's
+  <a href="https://assets.nationalrail.co.uk/e8xgegruud3g/3CwdjHiP1dGYdq5a5j2dQP/007f67f4c2192df230f52f8cf55e55d1/Terms_and_Conditions.pdf">Terms and Conditions</a>.
+
+Tags:
+  - aws-pds
+  - transportation
+  - parquet
+
+RegistryEntryAdded: "2026-05-18"
+RegistryEntryLastModified: "2026-05-18"
+
+ADXCategories:
+  - Transportation and Logistics
+
+Resources:
+  - Description: >-
+      Hive-partitioned Parquet files containing one row per UK rail service, partitioned
+      by service date (year/month/day). Approximately 30,000 rows per day, ~280 MiB total.
+      Schema includes service identifiers (rid, toc, train_id), route information
+      (origin/destination TIPLOCs), cancellation status and reason, delay metrics
+      (origin, destination, average, max), passenger loading percentages, and a nested
+      stops array with per-station scheduled/actual times.
+    ARN: arn:aws:s3:::darwin-connect/normalised/v1
+    Region: eu-west-1
+    Type: S3 Bucket
+    RequesterPays: true
+    Explore:
+      - "[Browse S3 (Requester Pays)](https://s3.console.aws.amazon.com/s3/buckets/darwin-connect?prefix=normalised/v1/)"
+
+DataAtWork:
+  Tutorials:
+    - Title: The Darwin Dataset — collecting and analysing UK rail data
+      URL: https://blog.robbiea.co.uk/posts/the-darwin-dataset/
+      AuthorName: Robbie A
+      AuthorURL: https://blog.robbiea.co.uk
+  Tools & Applications:
+    - Title: Darwin Storage — ingestion pipeline and analysis tools
+      URL: https://github.com/iiAnderson/darwin-storage
+      AuthorName: Robbie A
+      AuthorURL: https://blog.robbiea.co.uk
+  Publications:
+    - Title: UK rail performance analysis and visualisations
+      URL: https://blog.robbiea.co.uk
+      AuthorName: Robbie A
+      AuthorURL: https://blog.robbiea.co.uk
