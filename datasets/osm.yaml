@@ -1,9 +1,9 @@
 Name: OpenStreetMap on AWS
-Description: OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3.
+Description: OSM is a free, editable map of the world, created and maintained by volunteers. Regular OSM data archives are made available in Amazon S3 in both standard formats (OSM PBF, XML) and cloud-native formats optimized for analytics workloads.
 Documentation: https://github.com/awslabs/open-data-docs/tree/main/docs/osm-pds
-Contact: https://github.com/mojodna/osm-pds-pipelines/issues
-UpdateFrequency: Data is updated weekly
-ManagedBy: Pacific Atlas
+Contact: https://planet.osm.org (OSMF-managed data), https://github.com/mojodna/osm-pds-pipelines/issues (cloud-native versions)
+UpdateFrequency: Data is updated minutely/hourly/daily (changes) and weekly (snapshots)
+ManagedBy: OpenStreetMap Foundation (OSMF) and Pacific Atlas
 Collabs:
   ASDI:
     Tags:
@@ -16,11 +16,27 @@ Tags:
   - disaster response
 License: https://www.openstreetmap.org/copyright
 Resources:
-  - Description: Imagery and metadata
+  - Description: OSMF-managed planet and history PBFs, changeset and discussion XML, and OsmChange (XML) replication files (primary)
+    ARN: arn:aws:s3:::osm-planet-eu-central-1
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: OSMF-managed planet and history PBFs, changeset and discussion XML, and OsmChange (XML) replication files (replicated)
+    ARN: arn:aws:s3:::osm-planet-us-west-2
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: SNS topic for OSMF-managed S3 event notifications (eu-central-1 bucket)
+    ARN: arn:aws:sns:eu-central-1:630658470130:osm-planet-eu-central-1-notifications
+    Region: eu-central-1
+    Type: SNS Topic
+  - Description: SNS topic for OSMF-managed S3 event notifications (us-west-2 bucket)
+    ARN: arn:aws:sns:us-west-2:630658470130:osm-planet-us-west-2-notifications
+    Region: us-west-2
+    Type: SNS Topic
+  - Description: OSM planet snapshots, history, and changesets in cloud-native formats optimized for analytics workloads
     ARN: arn:aws:s3:::osm-pds
     Region: us-east-1
     Type: S3 Bucket
-  - Description: New data notifications
+  - Description: SNS topic for cloud-native data notifications
     ARN: arn:aws:sns:us-east-1:800218804198:New_File
     Region: us-east-1
     Type: SNS Topic

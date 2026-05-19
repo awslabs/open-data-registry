@@ -1,0 +1,32 @@
+Name: GEDI L4A Footprint Level Aboveground Biomass Density, Version 2.1
+Description: |-
+  This dataset contains Global Ecosystem Dynamics Investigation (GEDI) Level 4A (L4A) Version 2 predictions of the aboveground biomass density (AGBD; in Mg/ha) and estimates of the prediction standard error within each sampled geolocated laser footprint. In this version, the granules are in sub-orbits. The algorithm setting group selection used for GEDI02_A Version 2 has been modified for Evergreen Broadleaf Trees in South America to reduce false positive errors resulting from the selection of waveform modes above ground elevation as the lowest mode. The footprints are located within the global latitude band observed by the International Space Station (ISS), nominally 51.6 degrees N and S and reported for the period 2019-04-18 to 2024-11-27. No acquisitions occurred while the GEDI instrument was in storage on the International Space Station (ISS) from March 2023 to April 2024. The GEDI instrument consists of three lasers producing a total of eight beam ground transects, which instantaneously sample eight ~25 m footprints spaced approximately every 60 m along-track. The GEDI beam transects are spaced approximately 600 m apart on the Earth's surface in the cross-track direction, for an across-track width of ~4.2 km. Footprint AGBD was derived from parametric models that relate simulated GEDI Level 2A (L2A) waveform relative height (RH) metrics to field plot estimates of AGBD. Height metrics from simulated waveforms associated with field estimates of AGBD from multiple regions and plant functional types (PFTs) were compiled to generate a calibration dataset for models representing the combinations of world regions and PFTs (i.e., deciduous broadleaf trees, evergreen broadleaf trees, evergreen needleleaf trees, deciduous needleleaf trees, and the combination of grasslands, shrubs, and woodlands). For each of the eight beams, additional data are reported with the AGBD estimates, including the associated uncertainty metrics, quality flags, model inputs, and other information about the GEDI L2A waveform for this selected algorithm setting group. Model inputs include the scaled and transformed GEDI L2A RH metrics, footprint geolocation variables and land cover input data including PFTs and the world region identifiers. Additional model outputs include the AGBD predictions for each of the six GEDI L2A algorithm setting groups with AGBD in natural and transformed units and associated prediction uncertainty for each GEDI L2A algorithm setting group. Providing these ancillary data products will allow users to evaluate and select alternative algorithm setting groups. Also provided are outputs of parameters and variables from the L4A models used to generate AGBD predictions that are required as input to the GEDI04_B algorithm to generate 1-km gridded products.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.3334/ORNLDAAC/2056
+Contact: 'ORNL DAAC User Services Office: uso@daac.ornl.gov.'
+ManagedBy: NASA
+UpdateFrequency: From 2019-04-17 to 2024-11-27
+Tags:
+  - aws-pds
+  - earth observation
+  - ecosystems
+  - global
+  - land
+  - land cover
+  - lidar
+  - opendap
+  - hdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'GEDI L4A Footprint Level Aboveground Biomass Density, Version 2.1.'
+    ARN: arn:aws:s3:::ornl-cumulus-prod-protected/gedi/GEDI_L4A_AGB_Density_V2_1/data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials: 
+   - Title: Searching and Downloading GEDI L4A Dataset
+     URL: https://github.com/ornldaac/gedi_tutorials/blob/main/notebooks/gedi_l4a_search_download.ipynb
+     AuthorName: Rupesh Shrestha

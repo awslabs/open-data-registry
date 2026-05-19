@@ -1,0 +1,39 @@
+Name: NASA Landslide Project Project
+Description: |
+  The Landslide Hazard Assessment for Situational Awareness (LHASA) model identifies locations with high potential for landslide occurrence at a daily temporal resolution. LHASA combines satellite‐based precipitation estimates with a landslide susceptibility map derived from information on slope, geology, road networks, fault zones, and forest loss. When rainfall is considered to be extreme and susceptibility values are moderate to very high, a “nowcast” is issued to indicate the times and places where landslides are more probable. Although the model could be run every half hour, this archive contains a daily record derived from a retrospective model run and spatial coverage is from 60°N to 60°S .
+  <br>
+
+  #### Global_Landslide_Nowcast
+  The Global Landslide Nowcast addresses the need for real-time situational awareness of landslide hazard. The Landslide Hazard Assessment for Situational Awareness model (LHASA) combines satellite rainfall estimates from the Global Precipitation Measurement mission (GPM) with soil moisture estimates from the Soil Moisture Active Passive (SMAP) satellite and other factors to produce a map of locations where rainfall-triggered landslide activity is probable. Due to the latency of the rainfall data, the nowcast is a near-real time product with a minimum latency of 5 hours. Although the model could be run every half hour, this archive contains a daily record derived from a retrospective model run. The Global Landslide Nowcast version 2.0.0 retains replaces the heuristic decision tree from version 1.0 with a machine learning model. Instead of merging all factors other than precipitation into a susceptibility map, LHASA 2.0 takes in each variable as a separate input layer. The most important change is the replacement of the categorical nowcast with a probabilistic output. This will enable users to adjust the threshold to suit their specific application and geographic location.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://landslides.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- precipitation
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "Global_Landslide_Nowcast v1.1 - The Landslide Hazard Assessment for Situational Awareness (LHASA) model identifies locations with high potential for landslide occurrence at a daily temporal resolution. LHASA combines satellite‐based precipitation estimates with a landslide susceptibility map derived from information on slope, geology, road networks, fault zones, and forest loss."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Landslide/Global_Landslide_Nowcast.1.1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "Global_Landslide_Nowcast v2.0.0 - The Global Landslide Nowcast addresses the need for real-time situational awareness of landslide hazard. The Landslide Hazard Assessment for Situational Awareness model (LHASA) combines satellite rainfall estimates from the Global Precipitation Measurement mission (GPM) with soil moisture estimates from the Soil Moisture Active Passive (SMAP) satellite and other factors to produce a map of locations where rainfall-triggered landslide activity is probable."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Landslide/Global_Landslide_Nowcast.2.0.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
