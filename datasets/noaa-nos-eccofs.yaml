@@ -1,0 +1,63 @@
+Name: "East Coast Community Ocean Forecast System (ECCOFS)"
+Description: |
+   The East Coast Community Ocean Forecast System (ECCOFS) is a data assimilating ocean analysis and forecast system being developed by Rutgers University, the University of California Santa Cruz, Fathom Science Inc., and the National Ocean Service (NOS) of NOAA for transition to operations at NCEP in 2028. The ECCOFS domain spans the eastern seaboard of North America and Intra-Americas Seas from the Grand Banks of Newfoundland in the north to the mouth of the Orinoco River, Venezuela, in the south. ECCOFS will complement the existing WCOFS (West Coast Operational Forecast System) to achieve complete forecast coverage of U.S. territorial seas adjacent to the 48 contiguous states and Puerto Rico. Each day ECCOFS generates an ocean analysis using the Regional Ocean Modeling System (ROMS) 4-Dimensional Variational (4D-Var) data assimilation (DA) system constrained by ocean observations. The forecast resolution is 3 km in the horizontal at 50 vertical terrain-following levels. A more detailed overview is presented [here](https://github.com/myroms/roms_eccofs/wiki/Overview). 
+   <br><br>
+   The meteorological forcing data are marine boundary layer conditions (air temperature, humidity, pressure), net shortwave radiation, and downward longwave radiation at 1-hourly intervals from the NWS High Resolution Rapid Refresh (HRRR) 4-km, 48-hour forecast for the northwest Atlantic Ocean and western Caribbean Sea. In regions beyond the HRRR domain, and in forecast days 3 to 5, the NWS GFS (Global Forecast System) forecast is adopted.
+   <br><br>
+   Sub-tidal frequency open boundary conditions are drawn from the Copernicus Marine Service Global Ocean Physics Analysis and Forecast (GLOBAL_ANALYSISFORECAST_PHY_001_024). These data are augmented by boundary harmonic barotropic tidal forcing from the Oregon State University TPXO analysis (12 harmonic constituents, adjusted for the 18.6-year nodal cycle). Luni-solar gravitational tide generating forces for 7 constituents are imposed in the ECCOFS domain interior.
+   <br><br>
+   Daily average forecast river discharge data from the Global Flood Awareness System (GloFAS) river routing model of ECMWF precipitation set freshwaiter inflows at 93 rivers where annual mean discharge exceeds 50 m3/s. More details on the forward model configuration are presented [here](https://github.com/myroms/roms_eccofs/wiki/Modeling-System-Configuration#Forward-Model-and-Forcing).
+   <br><br>
+   Observations presently assimilated include satellite sea level and temperature, and in situ temperature and salinity from moorings, drifters, profiling floats, autonomous underwater vehicles, ships of opportunity, and sensors affixed to fishing gear. When fully configured, ECCOFS will also assimilate satellite salinity, ocean surface currents measured by land-based high-frequency radars, and temperature data from animal tags.
+   <br><br>
+   Recognizing that oceanic conditions that can be meaningfully constrained by existing observing networks have length scales much greater than the forecast model resolution of 3 km, ECCOFS employs a Mixed Resolution assimilation approach wherein the ocean forecast is computed on the 3-km grid, but the iterations of the Tangent Linear (TL) and Adjoint (AD) model inner loops of 4D-Var are computed on a lower resolution (6-km) grid that demands less time for execution.  The control variables of the assimilation are the initial conditions (at day 0 minus 3) and time varying boundary conditions (over 3 days). More details on the assimilation methodology are presented [here](https://github.com/myroms/roms_eccofs/wiki/Modeling-System-Configuration#data-assimilation-methodology). 
+   <br><br>
+Documentation: |
+   The configuration of ROMS for ECCOFS is documented at (https://github.com/myroms/roms_eccofs).
+   <br><br>
+   A description of the configuration is detailed at (https://github.com/myroms/roms_eccofs/wiki/Overview).
+   <br><br>
+   The latest ECCOFS forecast outputs can be browsed at (https://eccofs.fathomscience.com).
+Contact:  |
+  For enquiries about the ECCOFS system configuration or to express interest in ECCOFS based applications, see the [Contact Us](https://github.com/myroms/roms_eccofs/wiki/Contact) page at the ECCOFS Wiki. For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: |
+  An ECCOFS 4D-Var analysis is conducted every 24 hours, assimilating observations aggregated for the preceding 3 days, and this provides the basis of a new 5-day ocean forecast.
+  <br><br>
+  Outputs saved in this data archive are daily average sea level, and ocean temperature, salinity and velocity on the full ROMS curvilinear, terrain-following coordinate grid.
+  <br><br>
+Collabs:
+  ASDI:
+    Tags:
+      -  weather
+Tags:
+  - aws-pds
+  - oceans
+  - weather
+  - environmental
+  - coastal
+  - forecast
+  - marine
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.
+  <br/>
+  <br/>
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+  <br><br>
+  When using the NMME data, please cite the BAMS article describing the project (Kirtman et al. 2014) and in the acknowledgements please note that the NMME project and data dissemination is supported by NOAA, NSF, NASA and DOE. Please also acknowledge the help of NCEP, IRI and NCAR personnel in creating, updating and maintaining the NMME archive. Thank you.
+Resources:
+  - Description: "East Coast Community Ocean Forecast System (ECCOFS)"
+    ARN: arn:aws:s3:::noaa-nos-eccofs-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-eccofs-pds.s3.amazonaws.com/index.html)'
+  - Description: "ECCOFS Dataset Notifications"
+    ARN: arn:aws:sns:us-east-1:709902155096:NewECCOFSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: ROMS model outputs in AWS can be readily visualized and analyzed in Python using the xroms tools. 
+      URL: https://github.com/xoceanmodel/xroms
+      AuthorName: "XROMS" 
