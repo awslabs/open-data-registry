@@ -39,12 +39,9 @@ Tags:
   - coastal
   - forecast
   - marine
-License: NOAA data disseminated through NODD are open to the public and can be used as desired.
-  <br/>
-  <br/>
-  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired. NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
   <br><br>
-  When using the NMME data, please cite the BAMS article describing the project (Kirtman et al. 2014) and in the acknowledgements please note that the NMME project and data dissemination is supported by NOAA, NSF, NASA and DOE. Please also acknowledge the help of NCEP, IRI and NCAR personnel in creating, updating and maintaining the NMME archive. Thank you.
 Resources:
   - Description: "East Coast Community Ocean Forecast System (ECCOFS)"
     ARN: arn:aws:s3:::noaa-nos-eccofs-pds
@@ -52,7 +49,7 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nos-eccofs-pds.s3.amazonaws.com/index.html)'
-  - Description: "ECCOFS Dataset Notifications"
+  - Description: "New data notifications for ECCOFS, only Lambda and SQS protocols allowed"
     ARN: arn:aws:sns:us-east-1:709902155096:NewECCOFSObject
     Region: us-east-1
     Type: SNS Topic
