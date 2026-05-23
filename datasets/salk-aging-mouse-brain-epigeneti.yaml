@@ -1,0 +1,33 @@
+Name: Aging Mouse Brain Epigenetic
+Description: "Aging is a major risk factor for neurodegenerative diseases, yet underlying epigenetic mechanisms remain unclear. Here, we generated a comprehensive single-nucleus cell atlas of brain aging across multiple brain regions, comprising 132,551 single-cell methylomes and 72,666 joint chromatin conformation-methylome nuclei. Integration with companion transcriptomic and chromatin accessibility data yielded a cross-modality taxonomy of 36 major cell types."
+Contact: ecker@salk.edu
+Documentation: https://doi.org/10.1101/2025.04.21.648266
+ManagedBy: "[Salk Institute](http://www.salk.edu)" 
+UpdateFrequency: Never
+Tags:
+  - life sciences
+  - genetic
+  - genomic
+  - whole genome sequencing
+  - whole exome sequencing
+  - transcriptomics
+  - fastq
+  - bam
+  - cram
+  - aws-pds
+License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: Aging mouse brain epigenomics dataset
+    ARN: arn:aws:s3:::salk-aging-mouse-brain-epigenetics
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Dataset update notifications
+    ARN: arn:aws:sns:us-west-2:855738613743:salk-aging-mouse-brain-epigenetics-updates
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Publications:
+    - Title: Cell-type-specific transposable element demethylation and TAD remodeling in the aging mouse brain
+      URL: https://doi.org/10.1101/2025.04.21.648266
+      AuthorName: Zeng, Q., Wei, T., Klein, A., Bartlett, A., Liu, H., Nery, J.R., Castanon, R., Osteen, J., Johnson, N.D., Wang, W., Ding, W., Chen, H., Altshul, J., Kenworthy, M., Valadon, C., Owens, W., Wu, Z., Amaral, M.L., Song, Báez-Becerra, T.a.t.i.a.n.a., Cho, S., Chen, C., Willier, J., Cao, S., Rink, J., Lee, J., Barcoma, A., Arzavala, J., Emerson, N., Lu, Y.R., Ren, B., Behrens, M.a.r.g.a.r.i.t.a., Ecker, J.R. 
+      AuthorURL: https://www.salk.edu/scientist/joseph-ecker/

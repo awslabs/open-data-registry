@@ -1,0 +1,73 @@
+Name: NASA Hydroclimatology Project
+Description: |
+  The Global Monthly River Discharge Data Set (RivDIS) contains monthly averaged discharge measurements for 1,018 stations located throughout the world from 1807-1991. The period of record varies widely from station to station with a mean of 21.5 years. The data are derived from the published UNESCO archives for river discharge, and checked against information obtained from the Global Runoff Center in Koblenz, Germany through the U.S. National Geophysical Data Center in Boulder, Colorado.
+  <br>
+
+  #### Sahel_Water_Bodies_1269
+  This data set provides an estimate of the spatial and temporal extent of surface water at 250-m resolution over nine years (2003-2011) for the African Sahel region (10-20 degrees N) using imagery from the Moderate-resolution Imaging Spectroradiometer (MODIS). Water bodies were identified by a spectral analysis of MODIS vegetation indices with the aim to improve existing regional to global mapping products. This data set can be used to enhance the understanding of Earth system processes, and to support global change studies, agricultural planning, and disease prevention. These data provide a gridded (250-m) estimate of the number of years (during 2003-2011) that a pixel was covered by water. The data are presented in a single netCDF (.nc) file.
+  <br>
+
+  #### HCDN_810
+  Time series of monthly minimum and maximum temperature, precipitation, and potential evapotranspiration were derived for 1,469 watersheds in the conterminous United States for which stream flow measurements were also available from the national streamflow database, termed the Hydro-Climatic Data Network (HCDN), developed by Slack et al. (1993a,b). Monthly climate estimates were derived for the years 1951-1990. The climate characteristic estimates of temperature and precipitation were estimated using the PRISM (Daly et al. 1994, 1997) climate analysis system as described in Vogel, et al. 1999. Estimates of monthly potential evaporation were obtained using a method introduced by Hargreaves and Samani (1982) which is based on monthly time series of average minimum and maximum temperature data along with extraterrestrial solar radiation. Extraterrestrial solar radiation was estimated for each basin by computing the solar radiation over 0.1 degree grids using the method introduced by Duffie and Beckman (1980) and then summing those estimates for each river basin. This process is described in Sankarasubramanian, et al. (2001). Revision Notes: This data set has been revised to update the number of watersheds included in the data set and to updated the units for the potential evapotranspiration variable. Please see the Data Set Revisions section of this document for detailed information.
+  <br>
+
+  #### PAD_935
+  The Peace-Athabasca Delta (PAD) is a large boreal wetland located in northeastern Alberta, Canada at the confluence of the Peace and Athabasca Rivers with Lake Athabasca (Figures 1 and 2). A Ramsar Convention wetland and UNESCO World Heritage Site, it is among the world's most ecologically significant wetlands. This data set contains four comma-delimited ASCII files, two of which contain water surface elevation site and measurement information and two contain water quality and ancillary parameter location and measurement data for 120 sites within the PAD. Data archived include water surface elevation and water quality parameters measured at points throughout the Delta during summers 2006 and 2007. These data sets were originally collected to improve understanding of hydrologic recharge processes in low-relief environments and to provide ground-based measurements to validate satellite observations of inundation and sediment transport. All work was supported by the NASA Terrestrial Hydrology Program under grant NNG06GE05G to the Department of Geography, University of California-Los Angeles, Los Angeles, California.
+  <br>
+
+  #### PAD_2011_1133
+  The Peace-Athabasca Delta (PAD) is a hydrologically complex and ecologically diverse freshwater delta formed by the confluence of the Peace, Athabasca, and Birch Rivers near the western end of Lake Athabasca. This data set includes 3 comma-delimited ASCII files: one containing water quality data and site characteristics from June and July 2010, a second containing water quality data and site characteristics for June and July 2011, and a third containing spectral reflectance of the water surface for 2011. The 2010 data file has measurements from 62 unique sites, the majority of which were revisited in 2011. Both of the 2011 data files have measurements from 99 unique sites visited 1-4 times.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- elevation
+- hydrology
+- ice
+- netcdf
+- precipitation
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "rivdis_199 v1 - The Global Monthly River Discharge Data Set (RivDIS) contains monthly averaged discharge measurements for 1,018 stations located throughout the world from 1807-1991. The period of record varies widely from station to station with a mean of 21.5 years."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_hydroclimatology/rivdis/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Sahel_Water_Bodies_1269 v1 - This data set provides an estimate of the spatial and temporal extent of surface water at 250-m resolution over nine years (2003-2011) for the African Sahel region (10-20 degrees N) using imagery from the Moderate-resolution Imaging Spectroradiometer (MODIS). Water bodies were identified by a spectral analysis of MODIS vegetation indices with the aim to improve existing regional to global mapping products."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_hydroclimatology/Sahel_Water_Bodies/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "HCDN_810 v1 - Time series of monthly minimum and maximum temperature, precipitation, and potential evapotranspiration were derived for 1,469 watersheds in the conterminous United States for which stream flow measurements were also available from the national streamflow database, termed the Hydro-Climatic Data Network (HCDN), developed by Slack et al. (1993a,b)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_hydroclimatology/HCDN/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PAD_935 v1 - The Peace-Athabasca Delta (PAD) is a large boreal wetland located in northeastern Alberta, Canada at the confluence of the Peace and Athabasca Rivers with Lake Athabasca (Figures 1 and 2). A Ramsar Convention wetland and UNESCO World Heritage Site, it is among the world's most ecologically significant wetlands."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_hydroclimatology/PAD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PAD_2011_1133 v2 - The Peace-Athabasca Delta (PAD) is a hydrologically complex and ecologically diverse freshwater delta formed by the confluence of the Peace, Athabasca, and Birch Rivers near the western end of Lake Athabasca. This data set includes 3 comma-delimited ASCII files: one containing water quality data and site characteristics from June and July 2010, a second containing water quality data and site characteristics for June and July 2011, and a third containing spectral reflectance of the water surface for 2011."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_hydroclimatology/PAD_2011/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
