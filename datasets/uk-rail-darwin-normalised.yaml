@@ -53,6 +53,10 @@ Resources:
     RequesterPays: true
     Explore:
       - "[Browse S3 (Requester Pays)](https://s3.console.aws.amazon.com/s3/buckets/darwin-connect?prefix=normalised/v1/)"
+  - Description: Notifications for new UK rail normalised data
+    ARN: arn:aws:sns:eu-west-1:599858559997:darwin-connect-normalised-object-created
+    Region: eu-west-1
+    Type: SNS Topic
 
 DataAtWork:
   Tutorials:
