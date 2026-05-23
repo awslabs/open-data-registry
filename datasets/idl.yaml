@@ -5,7 +5,7 @@ Description: >-
   growing corpus of internal corporate records and other documents arising from
   the tobacco, opioids, chemical, drug, food, fossil fuel industries.
 Documentation: >-
-  [TODO: link to readme file once it's uploaded]
+  https://ucsf-idl-dataset.s3.amazonaws.com/index.html
 Contact:  industrydocuments@ucsf.edu
 ManagedBy: University of California, San Francisco (UCSF)
 UpdateFrequency: monthly
@@ -28,8 +28,8 @@ Resources:
       documents in various file formats (PDF, Excel, PowerPoint, etc.), OCR or
       other extracted text from these files, and corresponding metadata for each
       document.
-    ARN: '[TODO: put bucket ARN]'
-    Region: [TODO: put bucket region]
+    ARN: arn:aws:s3:::ucsf-idl-dataset
+    Region: us-east-1
     Type: S3 Bucket
     Explore: null
 DeprecatedNotice: null
