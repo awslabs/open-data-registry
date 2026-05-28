@@ -1,0 +1,28 @@
+Name: StockTwits Data
+Description: We introduce the first publicly available comprehensive data set of posts on a social media platform: StockTwits. StockTwits is a financial social media platform where more than 7 million active users discuss financial markets and investing strategies across 550 million posts since 2008. We provide a complete record of all StockTwits posts up to 2022, including the poster's anonymous ID, the text and timestamp of the message, and whether the user tagged their own post as optimistic (``bullish'') or pessimistic (``bearish''). We study the temporal dynamics of this data set, analyzing it at both the ticker-level and the user-level to illustrate this data set's value. We show how to use this data set to (1) measure individual users' predictive accuracy, and (2) discover heterogeneity in how well sentiment predicts stock price movement.
+Documentation: https://github.com/Jaxingjili/StockTwits-Data-Processing-and-Analysis
+Contact: aaronkaufman@nyu.edu
+ManagedBy: "[Aaron Kaufman](https://www.aaronrkaufman.com/)"
+UpdateFrequency: New data added approximately yearly.
+Tags:
+  - social media
+  - finance
+  - economics
+  - networks
+License: There are no restrictions on the use of this data. Attribution of original source is requested.
+Resources:
+  - Description: Core data consist of almost half a billion messages posted on social media, including the author's handle, the message's raw text, the message's timestamp, and an optional sentiment tag. Please refer to the documentation.
+    ARN: arn:aws:s3:::stocktwits-nyu
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Tutorial for Using StockTwits Data
+      URL: https://github.com/Jaxingjili/StockTwits-Data-Processing-and-Analysis/blob/main/E_tutorial_for_using_data.ipynb
+      AuthorName: Nasser Alansari and Xingji Li
+  Publications: 
+    - Title: StockTwits: Comprehensive records of a financial social media platform from 2008 to 2022
+      URL: https://www.dropbox.com/scl/fi/bv2ufoamn25xgki55wuyi/StockTwits_paper.pdf?rlkey=7ux1hg2a752pgaiop4mipci4i&dl=0
+      AuthorName: Xingji Li, Aaron R. Kaufman, and Nasser Alansari
+ADXCategories:
+  - Financial Data
