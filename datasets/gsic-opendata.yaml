@@ -1,0 +1,51 @@
+Name: Geospatial Information Center
+Description: |
+  This dataset curates and distributes, in an AWS-friendly manner, only those publicly available datasets registered on the Geospatial Information Center (front.geospatial.jp) that explicitly specify a Creative Commons (CC) license.
+  The collection includes a wide range of geospatial data types useful for analysis and application development, such as 3D city/building models (e.g., CityGML), elevation and terrain data (e.g., DEM), vector datasets for administrative boundaries, land use, and facilities, and disaster-related geospatial data (e.g., hazard information and damage scenarios).
+Documentation: https://github.com/aigidjp/opendata-gsic/blob/main/README.md
+Contact: gsic-admin@aigid.jp
+ManagedBy: "[AIGID](https://aigid.jp/)"
+UpdateFrequency: New datasets and updates are added as they become available in the Geospatial Information Center.
+Tags:
+  - aws-pds
+  - cities
+  - civic
+  - csv
+  - dem
+  - disaster response
+  - dsm
+  - dtm
+  - elevation
+  - geospatial
+  - geopackage
+  - hazard
+  - infrastructure
+  - japanese
+  - json
+  - land
+  - land use
+  - lidar
+  - mapping
+  - metadata
+  - tiff
+  - tiles
+  - transportation
+  - urban
+  - xml
+License: "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+Resources:
+  - Description: Geospatial Information Center
+    ARN: arn:aws:s3:::gsic-opendata
+    Region: ap-northeast-1
+    Type: S3 Bucket
+  - Description: Notifications for the Geospatial Information Center
+    ARN: arn:aws:sns:ap-northeast-1:TODO:TODO
+    Region: ap-northeast-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to Know a Dataset:[Geospatial Information Center]
+      URL: https://github.com/aigidjp/opendata-gsic/blob/main/tutorials/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/aigidjp/opendata-gsic/blob/main/tutorials/get-to-know-a-dataset.ipynb
+      AuthorName: AIGID
+      AuthorURL: https://aigid.jp/
