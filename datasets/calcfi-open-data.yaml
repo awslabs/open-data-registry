@@ -1,0 +1,152 @@
+Name: CalcFi Open Data
+Description: |
+  117,956 observations across 34 free CC-BY financial and macroeconomic time
+  series mirrored verbatim from US and international primary sources: Federal
+  Reserve Bank of St. Louis (FRED), US Bureau of Labor Statistics (BLS),
+  Freddie Mac, US Treasury, Bureau of Economic Analysis (BEA), World Bank,
+  Board of Governors of the Federal Reserve System, Federal Deposit Insurance
+  Corporation (FDIC), and US Energy Information Administration (EIA).
+
+  Series include 30-year and 15-year fixed mortgage rates (Freddie Mac PMMS),
+  2- and 10-year US Treasury constant-maturity yields, the Effective Federal
+  Funds Rate, the Consumer Price Index for All Urban Consumers (CPI-U),
+  Personal Consumption Expenditures (PCE) inflation, civilian unemployment
+  rate, labor-force participation, average hourly earnings, WTI and Brent
+  crude oil spot prices, US regular gasoline retail prices, USD/EUR, USD/GBP
+  and USD/JPY exchange rates, copper and corn commodity prices, US and
+  Eurozone GDP per capita, credit-card APR, personal-loan and auto-loan
+  rates, world inflation and unemployment, and snapshot cryptocurrency and
+  FDIC deposit rates.
+
+  Each series ships with a Frictionless Data Package (datapackage.json)
+  descriptor including the canonical primary-source URL, license, retrieval
+  timestamp, and a typed CSV schema. Primary-source provenance is preserved
+  verbatim in CSV comment headers (# Source:, # Primary URL:, # License:,
+  # Retrieved:). All data is licensed CC BY 4.0.
+
+  Five permanent dataset DOIs are deposited at Figshare
+  (10.6084/m9.figshare.32332290), Zenodo CERN (10.5281/zenodo.20302283), OSF
+  (10.17605/OSF.IO/PUMKT), Kaggle (10.34740/kaggle/dsv/16356447), and
+  Mendeley Data. A companion methodology paper is under review at SSRN.
+
+  Used as the open-data layer behind calcfi.app, a free personal-finance
+  calculator platform with 300+ tools cited to primary sources.
+
+Documentation: https://calcfidata.readthedocs.io/
+
+Contact: jere.salmisto@gmail.com
+
+ManagedBy: '[Jere Salmisto](https://orcid.org/0009-0000-0916-8684)'
+
+UpdateFrequency: |
+  Refreshed daily at 06:00 UTC via GitHub Actions; per-series cadence
+  inherits from the primary publisher (daily for Treasury yields, FX, oil
+  spot prices, Fed Funds; weekly for Freddie Mac PMMS and EIA gasoline;
+  monthly for CPI, PCE, BLS employment; quarterly for consumer credit;
+  annual for World Bank series).
+
+Collabs:
+  ASDI:
+    Tags:
+      - disasters
+
+Tags:
+  - aws-pds
+  - finance
+  - economics
+  - macroeconomics
+  - time series
+  - mortgage
+  - treasury
+  - cpi
+  - inflation
+  - federal reserve
+  - bls
+  - world bank
+  - public domain
+  - csv
+  - cc-by
+
+License: |
+  All data is licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  Attribution requested to CalcFi (https://calcfi.app) and the named primary
+  source for each series. Primary-source terms also apply (most are US
+  federal data in the public domain).
+
+Resources:
+  - Description: Full 34-series CSV bundle with Frictionless Data Package descriptors per series, plus a pre-built SQLite database (15 MB) and a ZIP bundle.
+    ARN: arn:aws:s3:::calcfi-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse on AWS](https://calcfi-open-data.s3.us-east-1.amazonaws.com/index.html)'
+      - '[Datasets directory](https://calcfi-open-data.s3.us-east-1.amazonaws.com/datasets.html)'
+      - '[JSON catalog](https://calcfi-open-data.s3.us-east-1.amazonaws.com/datasets/INDEX.json)'
+      - '[SQLite database](https://calcfi-open-data.s3.us-east-1.amazonaws.com/calcfi-open-data.db)'
+      - '[ZIP bundle](https://calcfi-open-data.s3.us-east-1.amazonaws.com/datasets.zip)'
+      - '[Sitemap](https://calcfi-open-data.s3.us-east-1.amazonaws.com/sitemap.xml)'
+      - '[Hugging Face mirror](https://huggingface.co/datasets/iizy/calcfi-open-data)'
+      - '[GitLab mirror](https://gitlab.com/jere.salmisto/calcfi-open-data)'
+      - '[GitHub mirror](https://github.com/jeresalmisto/calcfi-open-data)'
+
+  - Description: Queryable SQL endpoint (Datasette) with 5 pre-built named queries (series_coverage, latest_per_series, mortgage_treasury_spread, inflation_cpi_vs_pce, yield_curve_2s10s).
+    ARN: ''
+    Region: ''
+    Type: HTTPS
+    Explore:
+      - '[Live Datasette](https://calcfi-open-data.vercel.app/)'
+
+  - Description: Google BigQuery Public Dataset via Analytics Hub listing.
+    ARN: ''
+    Region: ''
+    Type: HTTPS
+    Explore:
+      - '[BigQuery Analytics Hub](https://console.cloud.google.com/bigquery/analytics-hub/discovery/projects/1099067620437/locations/us/dataExchanges/calcfi_open_data_exchange/listings/calcfi_open_data)'
+
+DataAtWork:
+  Tutorials:
+    - Title: Read the Docs - install + quick start + full API reference
+      URL: https://calcfidata.readthedocs.io/
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: Python quickstart (calcfidata package)
+      URL: https://pypi.org/project/calcfidata/
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+  Tools & Applications:
+    - Title: calcfidata Python package on PyPI
+      URL: https://pypi.org/project/calcfidata/
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: calcfidata on Anaconda.org
+      URL: https://anaconda.org/jeresalmisto/calcfidata
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: calcfidata on npm (Node/JS/TS client)
+      URL: https://www.npmjs.com/package/calcfidata
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: Go module (gitlab.com/jere.salmisto/calcfi-open-data/go) on pkg.go.dev
+      URL: https://pkg.go.dev/gitlab.com/jere.salmisto/calcfi-open-data/go
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: Datasette live SQL interface
+      URL: https://calcfi-open-data.vercel.app/
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: dbt package (hub.getdbt.com)
+      URL: https://github.com/jeresalmisto/dbt-calcfi-open-data
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+    - Title: 10 interactive Hugging Face Spaces (Gradio)
+      URL: https://huggingface.co/iizy
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+  Publications:
+    - Title: 'CalcFi Open Data: Methodology, k-Anonymized Aggregates from a Free Personal-Finance Calculator Platform (working paper)'
+      URL: https://calcfi-open-data-4a2bc1.gitlab.io/methodology.html
+      AuthorName: Jere Salmisto
+      AuthorURL: https://orcid.org/0009-0000-0916-8684
+
+ADXCategories:
+  - Financial Services Data
