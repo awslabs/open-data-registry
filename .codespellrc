@@ -1,0 +1,7 @@
+[codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = .git*,.codespellrc
+check-hidden = true
+# ignore lines with non-english umlauts etc, ACRONYMS, urls and arn: uris, some names
+ignore-regex = (AuthorName|Contact):.*|.*[àéūçã].*|\b[A-Z]+\b|\b(https?://|arn:aws:s3:::)\S+|\\n|\b(Ponting|Hart)\b
+# ignore-words-list =
