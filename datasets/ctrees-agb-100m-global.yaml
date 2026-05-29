@@ -1,0 +1,63 @@
+Name: Global aboveground biomass (AGB), 100m by CTrees.org
+Description: |
+  CTrees' global aboveground biomass (AGB) estimates, annually for 2000-2025 at a standard spatial resolution of 100 meters.
+Documentation: "[Project
+  overview](https://app.earthmover.io/marketplace/69e00e1c21faca8bf36879d2)"
+Contact: info@ctrees.org
+ManagedBy: "[CTrees](https://ctrees.org/)"
+UpdateFrequency: Annual
+Tags:
+  - aws-pds
+  - cog
+  - zarr
+  - earth observation
+  - land cover
+  - deep learning
+  - satellite imagery
+  - image processing
+  - environmental
+  - conservation
+  - geospatial
+License: |
+  https://creativecommons.org/licenses/by/4.0/
+Citation: "@misc{https://doi.org/10.82924/7vmb-zv66, doi = {10.82924/7VMB-ZV66},
+  url = {https://app.earthmover.io/marketplace/69e00e1c21faca8bf36879d2}, author
+  = {Yang, Yan and Saatchi, Sassan and Kwon, Nicholas and Liu, Z and Lin, Wen
+  Tao and Dalagnol, Ricardo and Takougoum Sagang, Le Bienfaiteur and Li,
+  Shuang}, keywords = {FOS: Earth and related environmental sciences}, title =
+  {CTrees Global Aboveground Biomass}, publisher = {Earthmover PBC (United
+  States)}, year = {2026}, copyright = {Creative Commons Attribution 4.0
+  International} }"
+Resources:
+  - Description: IceChunk Repository with global AGB Density at 100m resolution from CTrees.org.
+    ARN: arn:aws:s3:::ctrees-agb-100m-global/agb_100m_global/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Access Via Github Repo](https://github.com/ctrees-products/open-data-examples/blob/main/CTrees_Above_Ground_Biomass_Data_Access.ipynb)"
+      - "[Access Via
+        Earthmover](https://app.earthmover.io/marketplace/69e00e1c21faca8bf3687\
+        9d2)"
+  - Description:
+      Cloud-optimized GeoTIFF files for global AGB Density and Uncertainty at 100m
+      resolution from CTrees.org.
+    ARN: arn:aws:s3:::ctrees-agb-100m-global/cogs/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse CTrees
+        Bucket](https://ctrees-agb-100m-global.s3.us-west-2.amazonaws.com/cogs/\
+        index.html)"
+DataAtWork:
+  Tutorials:
+    - Title: "CTrees - Above Ground Biomass Data Access.ipynb"
+      URL: https://github.com/ctrees-products/open-data-examples/blob/main/CTrees_Above_Ground_Biomass_Data_Access.ipynb
+      AuthorName: Naomi Provost
+  Tools & Applications:
+  Publications:
+    - Title:
+        "Webinar | From Snapshot to System: Building a Global Aboveground Biomass
+        Monitoring Framework"
+      URL: youtube.com/watch?v=DBg88wAXKIo
+    - Title: "Preprint | From Snapshot Maps to Continuous Monitoring of Global Forest Carbon at 100 m Resolution (2000-2025)"
+      URL: https://eartharxiv.org/repository/view/12941/
