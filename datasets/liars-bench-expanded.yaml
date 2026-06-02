@@ -1,9 +1,9 @@
-Name: "Liar's Bench Expanded: LLM Activations for On-Policy Deception Detection"
+Name: "Liars' Bench Expanded: LLM Activations for On-Policy Deception Detection"
 
 Description: >
-  This dataset expands Liar's Bench (Kretschmar et al., 2025; arXiv:2511.16035), a benchmark of
+  This dataset expands Liars' Bench (Kretschmar et al., 2025; arXiv:2511.16035), a benchmark of
   labeled honest and deceptive outputs from large language models (LLMs), with pre-computed
-  internal activations from the models that generated each example. The original Liar's Bench
+  internal activations from the models that generated each example. The original Liars' Bench
   contains 72,863 labeled examples across seven datasets and four open-weight models, capturing
   on-policy lies — statements that appear to contradict the model's own internal beliefs as
   established in control contexts. This expanded dataset pairs each transcript with residual-stream
@@ -22,7 +22,7 @@ Documentation: >
 Contact: >
   Post questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) 
   using the AWS Open Data tag, or open an issue at [GitHub](https://github.com/ndif-team/liars-bench-expanded/issues).
-  You can also email us at info@ndif.us or info@cadenzalabs.org with "Liar's Bench Expanded" in the subject line.
+  You can also email us at info@ndif.us or info@cadenzalabs.org with "Liars' Bench Expanded" in the subject line.
 
 ManagedBy: "[National Deep Inference Fabric (NDIF), Northeastern University](https://ndif.us) and [Cadenza Labs](https://cadenzalabs.org/)"
 
@@ -44,8 +44,8 @@ License: >
   Creative Commons Attribution 4.0 International (CC-BY 4.0)
 
 Citation: >
-  "Liar's Bench Expanded was accessed on [DATE] at registry.opendata.aws/liars-bench-expanded.
-  When using this dataset, please also cite the original Liar's Bench benchmark:
+  "Liars' Bench Expanded was accessed on [DATE] at registry.opendata.aws/liars-bench-expanded.
+  When using this dataset, please also cite the original Liars' Bench benchmark:
   Kretschmar et al. (2025), arXiv:2511.16035."
 
 Resources:
@@ -61,7 +61,7 @@ Resources:
       (generator_model, source_dataset, year) tuple using Hive-safe slugs, e.g.,
       `qwen-2.5-72b-instruct_wmdp-bio-2026` (slashes and HuggingFace org prefixes stripped).
       Record-level metadata is stored in Parquet alongside each activation array, preserving
-      the original Liar's Bench schema and adding expansion fields. Core fields present for
+      the original Liars' Bench schema and adding expansion fields. Core fields present for
       all records: index, model, messages (list of {content, role}), deceptive, canary,
       captured_model, num_layers, hidden_size, n_response_tokens, seq_len. Optional fields
       carried through from source configs where present: temperature (convincing-game,
@@ -85,13 +85,9 @@ Resources:
 
 DataAtWork:
   Tutorials:
-    - Title: "Get To Know A Dataset: Liar's Bench Expanded"
-      URL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/get-to-know-a-dataset.ipynb
-      NotebookURL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/get-to-know-a-dataset.ipynb
-      AuthorName: National Deep Inference Fabric (NDIF)
-      AuthorURL: https://ndif.us
-    - Title: "Training Probes with Liar's Bench Expanded Activations"
-      URL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/training-probes.ipynb
+    - Title: "Get To Know A Dataset: Liars' Bench Expanded"
+      URL: https://github.com/ndif-team/liars-bench-expanded/blob/main/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/ndif-team/liars-bench-expanded/blob/main/get-to-know-a-dataset.ipynb
       AuthorName: National Deep Inference Fabric (NDIF)
       AuthorURL: https://ndif.us
 
@@ -102,7 +98,7 @@ DataAtWork:
       AuthorURL: https://ndif.us
 
   Publications:
-    - Title: "Liar's Bench: A Benchmark for Evaluating LLM Deception"
+    - Title: "Liars' Bench: A Benchmark for Evaluating LLM Deception"
       URL: https://arxiv.org/abs/2511.16035
       AuthorName: Kretschmar et al.
     - Title: "NNsight and NDIF: Democratizing Access to Foundation Model Internals"
