@@ -1,0 +1,70 @@
+Name: CCRS MODIS Clear-Sky Composites over Canada | Composites MODIS sous ciel dégagé du CCT couvrant le Canada 
+Description:
+            The MODIS Clear-Sky TOA Composites dataset over Canada consists of 10-day composite time series at 250m resolution, produced by CCRS since February 2000. It includes clear-sky composites for MODIS bands B1–B7, primarily for land applications, with separate forward (FRW) and backward (BKW) scattering products for each period. All imagery is downscaled and reprojected to Lambert Conformal Conic over a 5,700 × 4,800km area. The processing system was developed by CCRS to maximize the quality of MODIS L1B swath imagery at northern latitudes.
+            Le jeu de données MODIS de réflectance au sommet de l’atmosphère (TOA) en ciel clair couvrant le Canada, produit par le CCT depuis février 2000, consiste en des séries temporelles de composites sur 10 jours à une résolution de 250 m. Il comprend des composites en ciel clair pour les bandes MODIS B1 à B7, principalement destinés aux applications terrestres, avec des produits distincts de diffusion vers l’avant (FRW) et vers l’arrière (BKW) pour chaque période. Toutes les images sont rééchantillonnées et reprojetées en projection conique conforme de Lambert sur une zone de 5700 × 4800 km. Le système de traitement a été développé par le CCT afin d’optimiser la qualité des images en fauchée MODIS L1B aux latitudes nordiques.
+Documentation: https://data.eodms-sgdot.nrcan-rncan.gc.ca/public/CCRS/Trishchenko_MODIS_Albedo
+Contact: alexander.trichtchenko@nrcan-rncan.gc.ca
+ManagedBy: Canada Centre for Remote Sensing (CCRS), Canada Centre for Mapping and Earth Observation (CCMEO), Department of Natural Resources Canada (NRCan) https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-remote-sensing https://natural-resources.canada.ca/science-data/science-research/research-centres/canada-centre-mapping-earth-observation
+UpdateFrequency:
+          Semi-annually, until the end of MODIS operations
+          Deux fois par an, jusqu'à la fin des opérations MODIS
+Tags:
+  - aws-pds 
+  - analysis ready data  
+  - cog
+  - earth observation
+  - satellite imagery
+License: Creative Commons Licence. Creative Commons BY 4.0 https://creativecommons.org/licenses/by/4.0/
+Citation: Trishchenko, Alexander P. 2026. CCRS MODIS Clear-Sky Composites over Canada at 250-m resolution 
+Resources:
+  - Description: CCRS MODIS Clear-Sky Composites, Cloud Optimized GeoTIFF (COG) images
+    ARN: arn:aws:s3:::ccrs-modis-composite
+    Region: ca-central-1
+    Type: S3 Bucket    
+  - Description: Notifications for new CCRS MODIS Clear-Sky Composites data
+    ARN: arn:aws:sns:ca-central-1:675987781521:ccrs-modis-composite-object_created
+    Region: ca-central-1
+    Type: SNS Topic   
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset - CCRS MODIS Clear-Sky Composites over Canada
+      URL: https://github.com/OpsCCRS/AWS-Open-Data-Registry-Preparation/blob/main/CCRSMODISComposite/get-to-know-a-dataset-CCRSMODISComposite.ipynb
+      AuthorName: Alexander Trishchenko      
+      NotebookURL: https://github.com/OpsCCRS/AWS-Open-Data-Registry-Preparation/blob/main/CCRSMODISComposite/get-to-know-a-dataset-CCRSMODISComposite.ipynb   
+  Publications:     
+    - Title: Boreal lichen woodlands:a possible negative feedback to climate change in eastern North America
+      URL: https://doi.org/10.1016/j.agrformet.2010.12.013
+      AuthorName: Bernier, P.Y., Desjardins, R.L., Karimi-Zindashty, Y., Worth, D., Beaudoin, A., Luo, Y., Wang, S.
+    - Title: Detection of North American land cover change between 2005 and 2010 with 250m MODIS data
+      URL: https://www.researchgate.net/publication/286156544_Detection_of_North_American_land_cover_change_between_2005_and_2010_with_250m_MODIS_Data
+      AuthorName: Colditz, R.R., Pouliot, D., Llamas, R.M., Homer, C., Latifovic, R., Ressl, R.A., Tovar, C.M., Hern�ndez, A.V., Richardson, K.
+    - Title: Annual mapping of large Forest disturbances across Canada's forests using 250 m MODIS imagery from 2000 to 2011
+      URL: https://doi.org/10.1139/cjfr-2014-0229
+      AuthorName: Guindon, L., Bernier, P.Y., Beaudoin, A., Pouliot, D., Villemaire, P., Hall, R.J., Latifovic, R., St-Amant, R.    
+    - Title: Influence of two management practices in the Canadian Prairies on radiative forcing
+      URL:  https://doi.org/10.1016/j.scitotenv.2020.142701
+      AuthorName: Liu, J., Worth, D.E., Desjardins, R.L., Haak, D., McConkey, B., Cerkowniak, D.
+    - Title: Implementation and Evaluation of Concurrent Gradient Search Method for Reprojection of MODIS Level 1B Imagery
+      URL: https://doi.org/10.1109/TGRS.2008.916633
+      AuthorName: Khlopenkov, K.V., and Trishchenko, A.P.
+    - Title: Developing clear-sky, cloud and cloud shadow mask for producing clear-sky composites at 250-meter spatial resolution for the seven MODIS land bands over Canada and North America
+      URL: https://doi.org/10.1016/j.rse.2008.06.010
+      AuthorName: Luo, Y., Trishchenko, A.P., Khlopenkov, K.V.       
+    - Title: Climate impacts of radiative forcing driven by agricultural land-use and land-cover changes in northern Canada
+      URL: https://doi.org/10.1016/j.jenvman.2025.128201
+      AuthorName: Pashanejad, E., Liu, J., Shrestha, B., Hannam, K., Bittman, S., Desjardins, R., Daneshfar, B., Trishchenko, A.P.
+    - Title: A raster version of the circumpolar Arctic vegetation map (CAVM)
+      URL: https://doi.org/10.1016/J.RSE.2019.111297
+      AuthorName: Raynolds, M.K., Walker, D.A., Balser, A., Bay, C., Campbell, M., Cherosov, M.M., Daniëls, F.J.A., Eidesen, P.B., Ermokhina, K.A., Frost, G.V., Jedrzejek, B., Jorgenson, M.T., Kennedy, B.E., Kholod, S.S., Lavrinenko, I.A., Lavrinenko, O.V., Magnússon, B., Matveyeva, N.V., Metúsalemsson, S., Nilsen, L., Olthof, I., Pospelov, I.N., Pospelova, E.B., Pouliot, D., Razzhivin, V., Schaepman-Strub, G., ˇSibík, J., Telyatnikov, M.Y., Troeva, E.
+    - Title: Cumulative changes in minimum snow/ice extent over Canada and Northern USA for 2000-2023
+      URL: https://doi.org/10.1080/07038992.2024.2371359
+      AuthorName: Trishchenko, A.P., Ungureanu, C. 
+    - Title: Landfast ice properties over the Beaufort Sea region in 2000-2019 from MODIS and Canadian Ice Service data
+      URL: https://doi.org/10.1139/cjes-2021-0011
+      AuthorName: Trishchenko, A.P., Kostylev, V.E., Luo, Y., Ungureanu, C., Whalen, D., Li, J.
+    - Title: Landfast ice mapping using MODIS clear-sky composites:application for the Banks Island coastline in Beaufort Sea and comparison with Canadian Ice Service data
+      URL: https://doi.org/10.1080/07038992.2021.1909466
+      AuthorName: Trishchenko, A.P., Luo, Y. 
+    - Title: A method for downscaling MODIS land channels to 250-m spatial resolution using adaptive regression and normalization
+      URL: https://doi.org/10.1117/12.689157
+      AuthorName: Trishchenko, A.P., Luo, Y., Khlopenkov, K.V.
