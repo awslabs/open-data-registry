@@ -1,0 +1,114 @@
+Name: "Liar's Bench Expanded: LLM Activations for On-Policy Deception Detection"
+
+Description: >
+  This dataset expands Liar's Bench (Kretschmar et al., 2025; arXiv:2511.16035), a benchmark of
+  labeled honest and deceptive outputs from large language models (LLMs), with pre-computed
+  internal activations from the models that generated each example. The original Liar's Bench
+  contains 72,863 labeled examples across seven datasets and four open-weight models, capturing
+  on-policy lies — statements that appear to contradict the model's own internal beliefs as
+  established in control contexts. This expanded dataset pairs each transcript with residual-stream
+  activation tensors extracted at inference time via the National Deep Inference Fabric (NDIF),
+  enabling white-box lie detection research. New model organisms and deception scenarios
+  are contributed by red teams from a structured competition co-organized by Schmidt Sciences,
+  NDIF, and Cadenza Labs. Activations are organized by model, dataset, split, record, and layer
+  to support parallelized probe training across transformer layers. Each record stores the
+  residual-stream activation at the response-token position (one vector per layer per record).
+  Teams can query activations directly from S3 for probe training on publicly available
+  validation data.
+
+Documentation: >
+  https://github.com/ndif-team/liars-bench-expanded
+
+Contact: >
+  Post questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) 
+  using the AWS Open Data tag, or open an issue at [GitHub](https://github.com/ndif-team/liars-bench-expanded/issues).
+  You can also email us at info@ndif.us or info@cadenzalabs.org with "Liar's Bench Expanded" in the subject line.
+
+ManagedBy: "[National Deep Inference Fabric (NDIF), Northeastern University](https://ndif.us) and [Cadenza Labs](https://cadenzalabs.org/)"
+
+UpdateFrequency: >
+  New model organisms and deception datasets are added following each competition cycle.
+  The initial release covers the Summer 2026 hackathon cohort; subsequent releases are
+  planned annually as new red-team submissions are evaluated and incorporated.
+
+Tags:
+  - aws-pds
+  - machine learning
+  - deep learning
+  - natural language processing
+  - artificial intelligence
+  - labeled
+  - benchmark data
+
+License: >
+  Creative Commons Attribution 4.0 International (CC-BY 4.0)
+
+Citation: >
+  "Liar's Bench Expanded was accessed on [DATE] at registry.opendata.aws/liars-bench-expanded.
+  When using this dataset, please also cite the original Liar's Bench benchmark:
+  Kretschmar et al. (2025), arXiv:2511.16035."
+
+Resources:
+  - Description: >
+      Residual-stream LLM activation tensors at the response-token position, paired with
+      deception labels and transcript metadata. Each record captures a single token's
+      activations across all layers of the captured model (shape per record: n_layers ×
+      hidden_dim). Activations are stored as Zarr v3 arrays (shape: n_records × n_layers ×
+      hidden_dim, dtype float16, chunks 1000×1×4096) partitioned by the model whose
+      internals were captured (captured_model) and the competition scenario. This chunking
+      enables efficient layer-slice reads directly from S3 for probe training without
+      downloading the full array (~19 GB total). Scenario names encode the
+      (generator_model, source_dataset, year) tuple using Hive-safe slugs, e.g.,
+      `qwen-2.5-72b-instruct_wmdp-bio-2026` (slashes and HuggingFace org prefixes stripped).
+      Record-level metadata is stored in Parquet alongside each activation array, preserving
+      the original Liar's Bench schema and adding expansion fields. Core fields present for
+      all records: index, model, messages (list of {content, role}), deceptive, canary,
+      captured_model, num_layers, hidden_size, n_response_tokens, seq_len. Optional fields
+      carried through from source configs where present: temperature (convincing-game,
+      gender-secret, harm-pressure-*), meta (convincing-game, gender-secret), dataset and
+      dataset_index (harm-pressure-*, instructed-deception). Null for configs where absent. Structured as:
+        s3://[bucket-name]/
+          README.txt
+          metadata/
+            captured_model=[model-name]/
+              scenario=[scenario-name]-[year]/
+                split=[split-name]/
+                  records.parquet
+          data/
+            captured_model=[model-name]/
+              scenario=[scenario-name]-[year]/
+                split=[split-name]/
+                  activations.zarr/
+    ARN: "arn:aws:s3:::[To be completed after AWS account creation]"
+    Region: us-east-1
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Liar's Bench Expanded"
+      URL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/get-to-know-a-dataset.ipynb
+      AuthorName: National Deep Inference Fabric (NDIF)
+      AuthorURL: https://ndif.us
+    - Title: "Training Probes with Liar's Bench Expanded Activations"
+      URL: https://github.com/ndif-team/open-data-examples/blob/main/liars-bench-expanded/training-probes.ipynb
+      AuthorName: National Deep Inference Fabric (NDIF)
+      AuthorURL: https://ndif.us
+
+  Tools & Applications:
+    - Title: "NNsight — Open-source library for inspecting and intervening on LLM internals"
+      URL: https://nnsight.net
+      AuthorName: National Deep Inference Fabric (NDIF)
+      AuthorURL: https://ndif.us
+
+  Publications:
+    - Title: "Liar's Bench: A Benchmark for Evaluating LLM Deception"
+      URL: https://arxiv.org/abs/2511.16035
+      AuthorName: Kretschmar et al.
+    - Title: "NNsight and NDIF: Democratizing Access to Foundation Model Internals"
+      URL: https://openreview.net/forum?id=MxbEiFRf39
+      AuthorName: Fiotto-Kauffman et al.
+      AuthorURL: https://ndif.us
+
+ADXCategories:
+  - Software & Developer Tools
