@@ -1,0 +1,28 @@
+Name: NASA MULTI-TASTE Project
+Description: |
+  The Medium Resolution Imaging Spectrometer (MERIS) is one of 10 sensors deployed in March of 2002 on board the polar-orbiting Envisat-1 environmental research satellite by the European Space Agency (ESA). The MERIS instrument is a moderate-resolution wide field-of-view push-broom imaging spectroradiometer capable of sensing in the 390 nm to 1040 nm spectral range. Being a programmable instrument, it had the unique capability of selectively adjusting the width and location of its 15 bands through ground command. The instrument has a 68.5-degree field of view and a swath width of 1150 meters, providing a global coverage every 3 days at 300 m resolution. Communication with the Envisat-1 satellite was lost suddenly on the 8th of April, 2012, just weeks after celebrating its 10th year in orbit. All attempts to re-establish contact were unsuccessful, and the end of the mission was declared on May 9th, 2012. The 4th reprocessing cycle, in 2020, has produced both the full-resolution and reduced-resolution L1 and L2 MERIS products. EN1_MDSI_MER_FRS_1P is the short-name for the MERIS Level-1 full resolution, full swath, geolocated and calibrated top-of-atmosphere (TOA) radiance product. This product contains the TOA upwelling spectral radiance measurements. The in-band reference irradiances for the 15 MERIS bands are computed by averaging the in-band solar irradiance for each pixel. Each pixel’s in-band solar irradiance is computed by integrating the reference solar spectrum with the band-pass of each pixel. The Level-1 product contains 22 data files: 15 files contain radiances for each band (one band per file) along with associated error estimates, and 7 annotation data files. It also includes a Manifest file that provides metadata information describing the product.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "EN1_MDSI_MER_FRS_1P v4 - The Medium Resolution Imaging Spectrometer (MERIS) is one of 10 sensors deployed in March of 2002 on board the polar-orbiting Envisat-1 environmental research satellite by the European Space Agency (ESA). The MERIS instrument is a moderate-resolution wide field-of-view push-broom imaging spectroradiometer capable of sensing in the 390 nm to 1040 nm spectral range."
+  ARN: arn:aws:s3:::prod-lads/EN1_MDSI_MER_FRS_1P
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials

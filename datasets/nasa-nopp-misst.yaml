@@ -1,0 +1,30 @@
+Name: NASA NOPP_MISST Project
+Description: |
+  The Saildrone Arctic 2019 dataset presents a unique collection of high-quality, near real-time, multivariate surface ocean, and atmospheric observations obtained through the deployment of Saildrone, an innovative wind and solar-powered uncrewed surface vehicle (USV). Saildrone is capable of extended missions lasting up to 12 months, covering vast distances at typical speeds of 3-5 knots and operates autonomously, relying solely on wind propulsion, while its navigation can be remotely guided from land. The 2019 Saildrone Arctic campaign featured six Saildrone USVs (jointly funded by NOAA and NASA) deployed during a 150-day cruise in the Bering and Chukchi Seas, spanning from 14 May 2019 to 11 October 2019. The primary mission objective for 2019 was to gather comprehensive atmospheric and oceanographic data in Alaskan arctic waters, which could lead to significant improvements in modeling of diurnal warming and understanding of the marginal ice zones. Additionally, these new data will provide additional Arctic SST observations to benefit SST algorithm development and validation, and for studies of air- sea-ice interactions. Please see the cruise report: https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/insitu/open/L2/saildrone/docs/Saildrone_2019_Arctic_Cruise_Report.pdf <p> During the Arctic campaign, NASA-funded Saildrones SD-1036 and SD-1037 undertook transects in the Chukchi Sea, approaching the sea ice edge to measure air-sea heat and momentum fluxes in the ocean near sea ice and to validate satellite sea-surface temperature measurements in the Arctic. Each Saildrone was equipped with a suite of instruments to measure various parameters, including air temperature, relative humidity, barometric pressure, surface skin temperature, wind speed and direction, wave height and period, seawater temperature and salinity, chlorophyll fluorescence, and dissolved oxygen. Additionally, both vehicles utilized 300 kHz acoustic Doppler current profilers (ADCP) to measure near-surface currents. Seven temperature data loggers positioned vertically along the hull enhanced understanding of thermal variability near the ocean surface.<p> The Saildrone Arctic 2019 dataset, part of the Multi-sensor Improved Sea-Surface Temperature (MISST) project, encompasses three netCDF format files for each deployed Saildrone. The first file integrates saildrone platform telemetry and surface observational data at 1-minute temporal resolution including key parameters such as air temperature, sea surface skin, and bulk temperatures, salinity, oxygen and chlorophyll-a concentrations, barometric pressure, and wind speed and direction. The second file focuses on ADCP current vector data, providing depth-resolved information to 100m at 2m intervals and binned temporally at 5-minute resolution. The third file includes temperature logger measurements at various depths at 1-minute resolution. This project, funded by NASA through the National Ocean Partnership Program (NOPP), demonstrates a commitment to advancing scientific understanding of the Arctic environment through innovative and autonomous observational technologies.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- netcdf
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SAILDRONE_ARCTIC v1.0 - The Saildrone Arctic 2019 dataset presents a unique collection of high-quality, near real-time, multivariate surface ocean, and atmospheric observations obtained through the deployment of Saildrone, an innovative wind and solar-powered uncrewed surface vehicle (USV). Saildrone is capable of extended missions lasting up to 12 months, covering vast distances at typical speeds of 3-5 knots and operates autonomously, relying solely on wind propulsion, while its navigation can be remotely guided from land."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SAILDRONE_ARCTIC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
