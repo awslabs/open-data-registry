@@ -1,0 +1,750 @@
+Name: NASA Delta-X Project
+Description: |
+  This dataset contains estimates of forest aboveground biomass (AGB) across the Atchafalaya and Terrebonne Basins, Louisiana, US. AGB was derived from AVIRIS-NG surface reflectance and UAVSAR products. L2B BRDF-adjusted surface reflectance was produced after applying atmospheric correction to L2 Hemispherical-Directional surface reflectance from NASA's AVIRIS-NG instrument. A polarimetric decomposition of the UAVSAR Level 1 (L1) Single Look Complex (SLC) stack product was used. To estimate AGB, local pixel reflectance spectra and radar scattering component pixels coincident with in situ forest AGB plot data from Summer 2015 and Fall 2021 were used to generate a machine learning-based regression model. This model was then scaled to the AVIRIS-NG and UAVSAR mosaic data, in accordance with vegetation type, to map forest AGB across the Atchafalaya and Terrebonne Basins. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### DeltaX_L3_AVIRIS-NG_Veg_Types_2352
+  This dataset provides maps of vegetation types for the Atchafalaya and Terrebonne basins in coastal Louisiana, U.S., derived from NASA's Next Generation Airborne Visible Infrared Imaging Spectrometer (AVIRIS-NG) imagery acquired during spring and fall of 2021 for the Delta-X campaign. Vegetation types were classified from Level-2B BRDF-adjusted surface reflectance. Local pixel reflectance spectra coincident with herbaceous vegetation field samples and vegetation plot data from Louisiana's Coastwide Reference Monitoring System were used to generate a machine learning-based model to classify vegetation types. This model was then applied to the AVIRIS-NG mosaic imagery to map vegetation types across the Atchafalaya and Terrebonne Basins. The data are provided in cloud optimized GeoTIFF (COG) format.
+  <br>
+
+  #### DeltaX_AGB_AGN_V2_2237
+  This dataset contains total aboveground biomass (AGB) and necromass (AGN), and total carbon, total nitrogen, and total phosphorus content of aboveground biomass (AGB) and necromass (AGN) samples collected from herbaceous wetlands in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana during 2021. Field measurements were conducted at three sites in the Atchafalaya basin and three sites in the Terrebonne basin. Five of the sites are adjacent to sites from the Coastwide Reference Monitoring System (CRMS). The other site is located in Wax Lake Delta (WLD) without appropriate adjacent CRMS sites. All AGB and AGN plant material within each plot was clipped at soil level, stored in plastic bags, and transported to the laboratory for further analyses. Herbaceous wetland sites in both basins were chosen to represent a salinity gradient including freshwater, brackish, and saline ecosystems. These data cover the period 2021-03-19 to 2021-03-31 (spring) and 2021-08-19 to 2021-08-27 (fall).
+  <br>
+
+  #### DeltaX_Vegetation_Structure_V2_2240
+  This dataset provides mean stem diameter, mean height, dominant species, hydrogeomorphic zone (HGM), and stem density for vegetation in herbaceous wetlands collected in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana. The data were collected between 2021-03-21 to 2021-03-31 during the Delta-X Spring 2021 deployment, and from 2021-08-19 to 2021-08-27 during the Fall deployment. Field measurements were conducted at six sites in the Atchafalaya (N = 3) and Terrebonne (N = 3) basins. Five of the sites were adjacent to sites from the Coastwide Reference Monitoring System (CRMS), and the other site was in the Wax Lake Delta (WLD) without appropriate adjacent CRMS sites. Sites in both basins were chosen to represent a salinity gradient including freshwater, brackish, and saline ecosystems. At each herbaceous wetland site, duplicate sampling stations (30 m apart) were established parallel to the wetland edge at 25 and 50 m within the intertidal zone to capture within site variability in vegetation dynamics and soil properties. The data are provided in comma-separated values (.csv) format.
+  <br>
+
+  #### DeltaX_ADCP_Measurements_V2_2081
+  This dataset provides river discharge measurements collected at selected locations in the Atchafalaya and Terrebonne Basins within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Delta-X 2021 field efforts from 2021-03-25 to 2021-04-11 (spring) and 2021-08-16 to 2021-09-25 (fall). Channel surveys were conducted with a Teledyne RiverPro acoustic doppler current profiler (ADCP) or a Sontek M9 RiverSurveyor ADCP on selected wide channels (>100 m wide) and a few selected narrow channels (approximately 10 m wide) near the Delta-X intensive study sites. River discharge was measured on cross-channel transects. Reported data include bathymetry, discharge (m3 s-1), and flow velocity.
+  <br>
+
+  #### DeltaX_L2_AirSWOT_WaterElev_V3_2350
+  This dataset contains Level 2 (L2) AirSWOT geocoded products, including estimated water surface elevation. The AirSWOT instrument is a Ka-band interferometer and for this study is flown on the King Air B200 platform. Data were collected during the DeltaX airborne campaign over the Atchafalaya and Terrebonne basins of the Mississippi River Delta, Louisiana, USA. Flights occurred during the Delta-X Spring 2021 deployment from 2021-03-26 to 2021-04-18 and the Delta-X Fall 2021 deployment from 2021-08-21 to 2021-09-12. AirSWOT is capable of producing high resolution (3.6 m) digital elevation models over land and water bodies using near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data. The instrument includes six antennas that form multiple baseline pairs for along-track and across-track interferometry. AirSWOT elevation data are useful for calibrating elevation and slopes along the main channels, as well as tying observations to open ocean tidal conditions and is an airborne calibration and validation instrument for the Surface Water and Ocean Topography (SWOT) satellite. This Version 3 dataset provides updated data files due to an updated Calumet survey that changed the water level by 0.138 m. This resulted in all the AirSWOT water levels changing by that same amount. For these L2 products, only the estimated water surface elevation in respect to the WGS84 ellipsoid surface, and estimated height above the NAVD88 (GEOID12B) vertical datum files changed. Note that data acquired on September 1 and September 5, 2021 do not meet the expected MAE in-situ comparison and should be used with caution. This dataset contains cloud optimized GeoTIFF rasters in UTM map coordinates for each flight line. In addition, a text file provides basic metadata, including flight line ID, start and end UTC times of data acquisition, processor version number, and the date and time of different processing stages.
+  <br>
+
+  #### DeltaX_L3_AirSWOT_WaterElev_V2_2349
+  This dataset contains water surface elevations at selected point locations generated from the AirSWOT data collected during the Spring and Fall 2021 Delta-X deployments over the Atchafalaya and Terrebonne basins in Louisiana, USA. AirSWOT uses near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data. The Level 3 (L3) data were created by masking land areas out of the AirSWOT Level 2 products, then filtering and averaging to the AirSWOT heights to produce water surface elevations at selected points throughout the scene. The AirSWOT elevation data are useful for calibrating elevation and slopes along the main channels, as well as tying observations to open ocean tidal conditions. AirSWOT performance in the floodplain was limited by the presence of vegetation and the very small slope characteristic of two dimensional floodplain discharge. Therefore, the bulk of the AirSWOT data collections were targeted at the larger channels, since the channel discharge provides the necessary boundary conditions for potential overflow to islands and floodplains. The data are provided in comma-separated values (CSV) format.
+  <br>
+
+  #### DeltaX_L1b_AirSWOT_1996
+  This dataset contains AirSWOT interferogram products collected during the 2021 Delta-X Campaign over the Atchafalaya and Terrebonne Basins of the Mississippi River Delta, Louisiana, USA from 2021-03-26 to 2021-04-18 (Spring) and 2021-08-21 to 2021-09-12 (Fall). AirSWOT uses near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data. AirSWOT elevation data is useful for calibrating elevation and slopes along the main channels, as well as tying observations to open ocean tidal conditions. The AirSWOT Level 1B (L1B) data products represent interferogram data in the radar coordinate system, not in georeferenced map coordinates. This is an earlier stage of data processing which is used to generate the later Level 2 and Level 3 data products which will contain georeferenced water heights and water height profiles for river channels in each basin. The data are provided in binary and text file formats.
+  <br>
+
+  #### DeltaX_ANUGA_Hydrodynamics_MRD_2310
+  This dataset comprises the primary inputs and outputs from the ANUGA hydrodynamic model for spring 2021 (2021-03-20 to 2021-04-04). These dates align with the 2021 Delta-X Spring Campaign. Data cover the Atchafalaya and Terrebonne basins of the Mississippi River Delta in southern Louisiana, USA. ANUGA is a 2D depth-integrated hydrodynamic model which uses the Finite Volume Method (FVM) to numerically solve the shallow water momentum and continuity equations for fluid flow in broad-scale geophysical systems. The inputs consist of a modified digital elevation (DEM) model, a spatial classification of the friction coefficient modified, and the model's unstructured grid with boundary condition locations. The model's outputs include two weeks of predictions of water levels and mean horizontal velocities at each mesh node at a 30-minute time step. Outputs are provided in NetCDF format, and inputs are provided in GeoTIFF and comma separated values (CSV) format. Also included are MP4 videos (.mp4) that provide visual summaries of the outputs.
+  <br>
+
+  #### DeltaX_L2A_AVIRIS-NG_BRDF_V3_2355
+  This data provides AVIRIS-NG Bidirectional Reflectance Distribution Function (BRDF) and sunglint-corrected surface spectral reflectance images over the Atchafalaya and Terrebonne basins of the Mississippi River Delta (MRD) of coastal Louisiana, USA. Flights were acquired during the Spring and Fall 2021 deployments of the Delta-X campaign. The imagery was acquired by the Airborne Visible/Infrared Imaging Spectrometer - Next Generation (AVIRIS-NG) from 2021-03-27 to 2021-04-06 and 2021-08-18 to 2021-09-25. Reflectance data are provided for each flight line. In addition, ten files of mosaicked flight lines, by time period and over four locations (labeled Terre, Atcha, TerreEast, and Bara), are included. Data are provided as binary ENVI image and header files. Only land pixels were corrected; mask files for the mosaic file coverage showing presence/absence of water and clouds are also included. For the Delta-X mission, these data serve to better understand rates of soil erosion, accretion, and creation in the delta system, with the goal of building better models of how river deltas will behave under relative sea level rise.
+  <br>
+
+  #### DeltaX_L1_AVIRIS_Radiance_1987
+  This dataset provides Level 1B (L1B) radiance products from NASA's Airborne Visible Infrared Imaging Spectrometer- Next Generation (AVIRIS-NG) instrument acquired over the Atchafalaya and Terrebonne basins of the Mississippi River Delta, Louisiana, USA during two deployments; spring and fall of 2021. All flights were flown on a Dynamic Aviation King Air B200. There are a combined 200 total flight lines for the spring and fall 2021 deployments; spring 2021 had 75 flight lines, fall 2021 had 175 flight lines. AVIRIS-NG measures reflected radiance at 5-nanometer (nm) intervals in the visible to shortwave infrared spectral range between 380 and 2510 nm. Level 1B data are orthorectified calibrated radiance values in units of spectral radiance in which raw digital numbers (DNs) are translated to units of radiant intensity measured at the sensor. Measurements are radiometrically and geometrically calibrated and provided at approximately 5-meter spatial resolution, dependent on aircraft altitude. Additional flight line files include band information of observational geometry and illumination parameters, as well as geographic pixel locations and elevation. These L1B data are provided in ENVI file format. AVIRIS-NG Cal/Val, Level 2 and Level 3 products for the Pre-Delta-X and Delta-X missions are provided in related datasets.
+  <br>
+
+  #### DeltaX_L2_AVIRIS_Reflectance_1988
+  This dataset provides Level 2 (L2) atmospherically corrected surface reflectance data acquired from NASA's Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) over regions of interest in the Atchafalaya and Terrebonne basins on the southern coast of Louisiana, United States. Data were collected as part of the Delta-X Spring and Fall 2021 deployments that occurred from 2021-03-27 to 2021-04-06 and from 2021-08-18 to 2021-08-25. Additionally, L2 data from flights flown specifically to capture the Significant Event of Hurricane Ida are provided. This includes 56 files from flights conducted following Hurricane Ida from 2021-09-23 to 2021-09-25. Hurricane Ida made landfall over this region on 2021-08-29. AVIRIS-NG is a pushbroom spectral mapping system with a high signal-to-noise ratio (SNR) designed for high performance imaging spectroscopy. AVIRIS-NG measures the wavelength range from 380 nm to 2510 nm with 5-nm sampling resolution. For this dataset, spatial resolution varies from 3.8-5.4 meters. For this campaign, the AVIRIS-NG instrument was deployed on the Dynamic Aviation King Air B200 platform. This dataset represents one part of a multisensor airborne sampling campaign conducted by different aircraft teams for the Delta-X Campaign. Data are provided in ENVI file format.
+  <br>
+
+  #### DeltaX_L2B_AVIRIS-NG_FracCover_2407
+  This dataset provides estimates of fractional vegetation cover across the Atchafalaya and Terrebonne basins. Atmospheric correction was applied to a L2B BRDF-adjusted surface reflectance product from AVIRIS-NG imagery to produce L2 Hemispherical-Directional surface reflectance. A spectral library was compiled using in situ spectra in the USGS Spectral Library (v7) to represent green vegetation, non-photosynthetic vegetation, and soil. Linear spectral unmixing was then applied to mosaics of AVIRIS-NG reflectance using these spectra to estimate the fractional composition (scaled 0-1) of each endmember type for all terrestrial pixels. In addition to the AVIRIS-NG imagery and in situ field spectra, this analysis incorporated field images collected using a GoPro digital camera coincident with the AVIRIS-NG flight lines.
+  <br>
+
+  #### DeltaX_L3_AVIRIS-NG_AGB_V3_2409
+  This dataset includes high-resolution (~5 m) gridded estimates of aboveground biomass (AGB), aboveground necromass (AGN), and aboveground net primary productivity (ANPP) for herbaceous vegetation in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in coastal Louisiana, USA, for the fall and spring seasons of 2021. AGB, AGN and ANPP were estimated from Bidirectional Reflectance Distribution Function (BRDF)-adjusted surface reflectance products from NASA's Airborne Visible Infrared Imaging Spectrometer - Next Generation (AVIRIS-NG) acquired over the study area in April and August 2021. The BRDF-adjusted reflectance was derived from hemispherical-directional surface reflectance with atmospheric correction. Local pixel reflectance spectra coincident with herbaceous vegetation AGB field samples from both Spring and Fall 2021 collections were used to generate a machine learning-based regression model to estimate AGB. This model was then scaled to the AVIRIS-NG mosaic imagery in accordance with vegetation type to map herbaceous AGB across the Atchafalaya and Terrebonne Basins. The AGN field data, separated from the AGB samples, were also used in conjunction with AVIRIS-NG-derived fractional coverage to derive AGN maps again employing machine learning. The AGB and AGN products were used together to map ANPP across the Atchafalaya and Terrebonne Basins. The data are provided in cloud optimized GeoTIFF (COG) format. This Version 3 dataset replaces the files provided in Version 2.
+  <br>
+
+  #### DeltaX_AVIRIS-NG_L3_BGB_2456
+  This dataset contains high-resolution (~5 m) gridded estimates of belowground biomass (BGB) in the Atchafalaya and Terrebonne basins of southern Louisiana, U.S., in August 2021. The Level 3 (L3) AVIRIS-NG-derived herbaceous aboveground biomass (AGB) and necromass (AGN) Version 3 products were used to predict the BGB. The AGB estimates were derived from the L2B BRDF-adjusted surface reflectance product, following atmospheric correction to produce L2 Hemispherical-Directional surface reflectance. An Ordinary Least Squares Regression (OLSR) model was derived, trained on field sample measurements (n=40) of aboveground biomass (AGB), aboveground necromass (AGN), and the natural logarithm-transformed total nitrogen (N). This dataset constitutes all available field samples where AGB, AGN, total N, and BGB were measured concurrently. Belowground biomass is an essential component of organic accretion but cannot be directly measured by airborne instruments. This model infers BGB from its relationships with aboveground plant mass and foliar N concentrations. This model was applied to landscape-scale maps derived from AVIRIS-NG data to estimate BGB for the August 2021 peak biomass collection period. The data are provided in cloud optimized GeoTIFF (COG) format.
+  <br>
+
+  #### DeltaX_L3_AVIRIS-NG_Water_V3_2152
+  This dataset includes estimates of total suspended solids (TSS) concentration and turbidity for waters of the Atchafalaya River and Terrebonne Basins of the Mississippi River Delta (MRD) in coastal Louisiana. Estimates were derived from Level 2 (L2) BRDF-corrected imagery from NASA's Next Generation Airborne Visible Infrared Imaging Spectrometer (AVIRIS-NG). AVIRIS-NG imagery was collected from March 27-April 6 (spring) and August 20-25 (fall), 2021, as part of the 2021 Delta-X campaign. Algorithms for TSS and turbidity estimation were developed using in-situ remote-sensing reflectance measured at field sampling stations paired with in-situ measures of turbidity from a water quality probe and TSS from water samples. Using the in-situ data, a partial least squares regression (PLSR) model was developed for each AVIRIS-NG wavelength. A subset of the in-situ data, collected during relatively clear AVIRIS-NG overflights, was held out to validate the PLSR model. The PLSR algorithm was then applied to AVIRIS-NG imagery to retrieve TSS and turbidity across the study area. The measurement units for TSS and turbidity estimates are mg L-1 and Formazin Nephelometric Units (FNU), respectively, and the spatial resolution is 3.8 to 5.4 m as determined by the AVIRIS-NG imagery. The dataset includes binary cloud and water masks. These data quantify the mesoscale (i.e., on the order of 1 ha) patterns of soil accretion that control land loss and gain and predict the resilience of deltaic floodplains under projected relative sea-level rise. Gridded estimates are provided in netCDF format, and regression coefficients are included in a comma-separated values (CSV) file. This is Version 3 of this dataset. All previously released data were updated to the latest available versions.
+  <br>
+
+  #### DeltaX_Sediment_Grain_Size_V3_2379
+  This dataset includes sediment concentration and grain size distribution measurements from suspended and bed sediment samples collected in the Atchafalaya River and Terrebonne Basins as part of the Delta-X Spring campaign between March 25 and April 2, 2021, and the Delta-X Fall campaign between August 17 and 22, 2021. In addition, ten samples were collected during a field campaign in October 2019. Samples were collected in the main channels and the interior of Mike Island in the Wax Lake Delta, Louisiana and at site CRMS0421 inside the Terrebonne Basin. Sediment samples were collected from a boat using a Van Dorn sampler (for suspended sediment samples) or a Ponar bed sampler (for bed samples). Suspended sediment samples were collected from a boat drifting at approximately the same velocity as the water flow. One sample was collected per drift. Bed samples were collected in a similar fashion. Data include measurements of sediment grain size distribution, total sediment concentration, water temperature, flow velocity, salinity, and depth. This Version 3 updates Version 2 to include data from more samples and reprocessed laser diffraction grain size distributions with optimized sediment optical properties. The data is provided in comma separated values (CSV) format.
+  <br>
+
+  #### DeltaX_BGB_BGN_V2_2238
+  This dataset contains total belowground biomass (BGB) and necromass (BGN), and total carbon, total nitrogen, and total phosphorus content of samples collected from herbaceous wetlands in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in southeastern coastal Louisiana, U.S., during March and August 2021. The data were collected during the Delta-X Spring and Fall deployments. Field measurements were conducted at three sites in the Atchafalaya basin and three sites in the Terrebonne basin. Five of the sites are adjacent to sites from the Coastwide Reference Monitoring System (CRMS). The other site is located in Wax Lake Delta (WLD) without appropriate adjacent CRMS sites. Herbaceous wetland sites in both basins were chosen to represent a salinity gradient including freshwater, brackish, and saline ecosystems. Root biomass samples were collected using a gouge soil auger.
+  <br>
+
+  #### DeltaX_ANUGA_AtchafalayaBasin_2306
+  This dataset provides ANUGA hydrodynamic modeling results and input run-scripts for the Atchafalaya basin in the Mississippi River Delta in southern Louisiana, USA, during three windows of time corresponding to the Delta-X and Pre-Delta-X field campaigns in fall 2016, spring 2021, and fall 2021. ANUGA is a 2D depth-integrated hydrodynamic model which uses the Finite Volume Method (FVM) to numerically solve the shallow water momentum and continuity equations for fluid flow in broad-scale geophysical systems. Each iteration of the model was extensively calibrated using a database of in-situ and remotely-sensed observations, including about 54 water level gauges, numerous water surface profiles collected by AirSWOT or lidar, and water level change measurements derived from UAVSAR. The model was forced using observational data collected from NOAA and USGS, and the model mesh was specifically designed to capture channel-island connectivity using high-resolution Planet Labs imagery spanning over a decade. In total, over a month of simulation outputs are included in this dataset, covering different seasons and hydrological conditions in the Atchafalaya and Wax Lake Delta systems. These model outputs can be leveraged with other Delta-X datasets to provide contextual information about water levels or flow velocities at different times or locations within the Atchafalaya basin, and the model codes provided can be used to simulate additional time periods for further analysis in this region. Model outputs are presented in NetCDF (.nc) format and run-scripts are in Python (.py) or contained in compressed (.zip) file format.
+  <br>
+
+  #### DeltaX_Delft3D_Atchafalaya_MRD_2302
+  This dataset contains the Delft3D model of the Atchafalaya Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall campaigns in 2021 and include hydrodynamics, waves, and sediment transport. Bottom friction was calibrated using AirSWOT water elevation data, while sediment parameters were calibrated using AVIRIS-NG Total Suspended Solids (TSS) data. All files required to run the simulations are included. Model output of water levels, velocity, and depth-averaged sediment concentration are provided for both campaigns as netCDF files. The dataset includes a netCDF file containing the annual inorganic mass accumulation rates derived from simulations.
+  <br>
+
+  #### DeltaX_Delft3D_Terrebonne_MRD_2301
+  This dataset contains the Delft3D model of the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall campaigns in 2021 and include hydrodynamics, waves, and sediment transport. Bottom friction was calibrated using AirSWOT water elevation data, while sediment parameters were calibrated using AVIRIS-NG Total Suspended Solids (TSS) data. All files required to run the simulations are included. The model's output of water levels, velocity, and depth-averaged sediment concentrations are provided for both campaigns as netCDF files. The dataset includes a netCDF file containing the annual inorganic mass accumulation rates derived through a storms analysis and modelling.
+  <br>
+
+  #### DeltaX_Delft3D_FM_HydroModel_2464
+  This dataset contains Delft3D Flexible Mesh (FM) hydrodynamic model setup and results for the Atchafalaya and Terrebonne basins in coastal Louisiana, U.S.. The model domain spans from Bayou Lafourche in eastern Terrebonne Bay, encompasses Atchafalaya Bay, and extends westward to Vermilion Bay. Separate simulations were conducted for spring and fall, each covering a 31-day period. Both simulations were calibrated and validated using Delta-X airborne remote sensing data and in situ measurements. The dataset includes the full set of hydrodynamic model input files for each seasonal simulation, along with a netCDF output file for each model run. Using the provided input files, users can reproduce the simulations and obtain results identical to those in the output netCDF files included in this dataset.
+  <br>
+
+  #### DeltaX_Delft3D_FM_Hydroperiod_2421
+  This dataset provides the weighted average hydroperiod derived from two Delft3D FM model simulations representing the low discharge (fall 2021) and high discharge (spring 2021) seasons. Each model was run for 31 days, excluding a 1-day warm-up period from the analysis. The weights for each model were derived from the long-term probability density function (PDF) of the Atchafalaya River discharge. Hydroperiod, which quantifies the frequency of inundation at each model grid cell, is computed by analyzing the water level time series and identifying periods when the water depth does not exceed the model-defined wet/dry threshold of 5 cm.
+  <br>
+
+  #### DeltaX_Delft3D_FM_Salinity_2420
+  This dataset provides the weighted averaged salinity derived from two Delft3D Flexible Mesh (FM) model simulations representing the low discharge (fall 2021) and high discharge (spring 2021) seasons. The weights for each model were determined using the probability density function of the Atchafalaya River discharge. Each model was run for 31 days, excluding a 1-day warm-up period from the analysis. Salinity is calculated by applying a weighted average to the salinity values at each grid cell in the final time step of each simulation. The data are provided in netCDF format.
+  <br>
+
+  #### DeltaX_Delft3D_294_Terrebonne_2303
+  This dataset contains the Delft3D model of the intensive site 294 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport. All files required to run the simulations are included. The model's output of water velocity and depth-averaged sediment concentrations are provided for both deployments. The dataset includes annual inorganic mass accumulation rates derived through modelling intra-annual variability in water levels and suspended sediment concentrations. The data are provided in netCDF format.
+  <br>
+
+  #### DeltaX_Delft3D_322_Terrebonne_2312
+  This dataset contains the Delft3D model of the intensive site 322 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport. All files required to run the simulations are included. The model's output of water velocity and depth-averaged sediment concentrations are provided for both deployments. The dataset includes annual inorganic mass accumulation rates derived through modelling intra-annual variability in water levels and suspended sediment concentrations. The data are provided in netCDF and ENVI formats.
+  <br>
+
+  #### DeltaX_Delft3D_396_Terrebonne_2314
+  This dataset contains the Delft3D model of the intensive site 396 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport. All files required to run the simulations are included. The model's output of water velocity and depth-averaged sediment concentrations are provided for both deployments. The dataset includes annual inorganic mass accumulation rates derived through modelling intra-annual variability in water levels and suspended sediment concentrations. The data are provided in netCDF format.
+  <br>
+
+  #### DeltaX_Delft3D_399_Terrebonne_2313
+  This dataset contains the Delft3D model of the intensive site 399 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport. All files required to run the simulations are included. The model's output of water velocity and depth-averaged sediment concentrations are provided for both deployments. The dataset includes annual inorganic mass accumulation rates derived through modelling intra-annual variability in water levels and suspended sediment concentrations. The data are provided in netCDF format.
+  <br>
+
+  #### DeltaX_Delft3D_421_Terrebonne_2304
+  This dataset contains the Delft3D model of the intensive site 421 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport. All files required to run the simulations are included. The model's output of water velocity and depth-averaged sediment concentrations are provided for both deployments. The dataset includes annual inorganic mass accumulation rates derived through modelling intra-annual variability in water levels and suspended sediment concentrations. The data are provided in netCDF format.
+  <br>
+
+  #### DeltaX_DEM_MRD_LA_2181
+  This dataset provides an updated digital elevation model (DEM) for the Atchafalaya and Terrebonne basins in coastal Louisiana, USA. The DEM is updated from the Pre-Delta-X DEM and extended to the full Delta-X study area. This DEM was developed from multiple data sources, including sonar data collected during Pre-Delta-X and Delta-X campaigns, bathymetric data from the Coastal Protection and Restoration Authority System-Wide Assessment and Monitoring System (CPRA SWAMP), and NOAA, and topography from the National Elevation Dataset and LiDAR from US Geological Survey (USGS). The provided data layers include the DEM, a binary water/land mask, data source flags, and eight layers with analysis weighting factors for each pixel. Elevation values are provided in meters with respect to the North American Vertical Datum of 1988 (NAVD88). The weighting factors indicate how each data source contributed to this multisource DEM. The data are provided in cloud-optimized GeoTIFF (CoG) format.
+  <br>
+
+  #### DeltaX_Ecogeomorphic_Products_2108
+  This product delineates the Mississippi River Delta (MRD) landscape into distinct ecogeomorphic cells, which are small contiguous areas of land with similar ecological and geomorphological characteristics. The study area is the Atchafalaya and Terrebonne basins of the MRD in southern Louisiana, U.S., which was the focus of NASA's 2021 Delta-X campaign. Each ecogeomorphic cell is a small homogeneous area of similar vegetation and elevation (or bathymetry). A "cell" typically consists of a cluster of contiguous pixels in a raster image, although cells of single pixels are present. The elevation was derived from the USGS Digital Elevation Model, and the vegetation was characterized by its spectral signature as measured by near infrared (NIR) reflectance and normalized difference vegetation index (NDVI). NIR and NDVI were computed from Sentinel-2 images acquired January through September 2021. The data are provided in shapefile and GeoTIFF formats. The vector shapefiles contain the distinct ecogeomorphic cells as polygons with unique labels (i.e., ID number). A raster image of these ecogeomorphic cells provided wherein the pixel values are the polygon labels from the shapefiles. The GeoTIFFs hold the mean and standard deviations of bathymetry, NIR, and NDVI spectral indices within each ecogeomorphic region (polygon). The raster data are provided with a spatial resolution of 0.000045 degrees (approximately 5 meters).
+  <br>
+
+  #### DeltaX_Feldspar_Sediment_V4_2381
+  This dataset provides elevation, hydrogeomorphic zone classification, soil carbon content, bulk density, organic matter content, and sediment accretion measurements collected at feldspar stations established near Louisiana's Coastwide Reference Monitoring Systems (CRMS) sites and on Mike Island in Wax Lake Delta (WLD). Feldspar stations were established to capture recent sediment deposition rates across hydrogeomorphic zones defined as discrete surface elevation ranges relative to NAVD88 (e.g., subtidal < -0.04 m, intertidal -0.04 m to 0.30 m, and supratidal > 0.30 m). Hydrogeomorphic zones classification was based on marsh surface elevation measurements acquired in November - December 2020 using a RTK GPS (Trible R12, using Geoid 18). Between two and four feldspar stations were deployed approximately 25 and 50 meters from a main channel to represent existing hydrogeomorphic zones in brackish and saline emergent marsh vegetation, brackish and saline ponds within emergent marshes, tidal freshwater emergent marshes, and forested swamps. Cryocore technique was used to determine recent sediment deposition. Soil samples were collected to determine organic and inorganic fractions and organic carbon content. The data cover the Delta-X field studies conducted from Fall 2020 through Fall 2023. The first feldspar markers were deployed in October of 2019. The data are provided in comma-separated values (CSV) format.
+  <br>
+
+  #### DeltaX_Foliar_Stable_Isotopes_2194
+  This dataset contains foliar tissue C and N bulk isotopic signatures (delta 13C, delta 15N) of dominant wetland herbaceous species collected at six sites in the Atchafalaya (N = 3) and Terrebonne (N = 3) basins in coastal Louisiana. Five of the sites are from the Coastwide Reference Monitoring System (CRMS) and one site is the Mike Island Site in the Wax Lake Delta (WLD). For the herbaceous wetland sites, Aboveground biomass (AGB) was harvested inside duplicate plots (0.25 m2), located 5 m apart at each sampling station. All plant material within each plot was clipped at soil level, stored in plastic bags, and transported to the laboratory for further analyses. In the lab, plant tissue (foliar) C and N bulk isotopic signatures were analyzed for two dominant plant species from each site using a Thermo Scientific Delta V Plus CF-IRMS coupled to a Carlo-Erba 1108 elemental analyzer via a ConFlo IV interface (Thermo Fisher Scientific, Waltham, MA, USA). The data were collected during 2021-08-19 to 2021-08-27 during the Delta-X Fall 2021 deployment.
+  <br>
+
+  #### DeltaX_Particle_Size_LISST_V2_2077
+  This dataset provides in situ measurements of beam attenuation coefficient at 670 nm, average suspended particle size, particle size distribution, and water temperature in surface waters (~0.5 m) of the Atchafalaya and Terrebonne Basins on the southern coast of Louisiana. The field studies were conducted in the Spring and Fall in support of the Delta-X mission and include measurements made in 2021 during March 25 - April 22 and August 14 - September 24. Measurements were made using the Sequoia Scientific Laser In-Situ Scattering and Transmissometer instrument (LISST-200X) in multiple channels of varying width (from a few meters to >100m), near Delta-X intensive study sites and in open bays and lakes and at a few locations in the nearshore Gulf of Mexico. The data are provided in comma-separated (CSV) format.
+  <br>
+
+  #### DeltaX_Insitu_WQ_Indicators_V2_2080
+  This dataset provides in situ measurements of water temperature (degrees C), salinity (PSU), turbidity (FNU), and chlorophyll-a fluorescence (RFU) in surface of the Atchafalaya River and Terrebonne Basins during the Spring (2021-03-25 to 2021-04-22) and Fall (2021-08-14 to 2021-09-24) field efforts by the Delta-X project. Field sampling was paused on August 25 and resumed on September 13, 2021, due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study site. Water quality changes caused by the hurricane were expected to be minimal. Measurements were collected in multiple channels of varying width (from a few meters to >100 m), near Delta-X intensive study sites, in open bays and lakes, and at a few locations in the nearshore Gulf of Mexico using either a YSI ProDSS water quality probe or a YSI EXO3 water quality probe.
+  <br>
+
+  #### DeltaX_Insitu_Reflectance_V3_2153
+  This dataset includes above water measurements of remote-sensing reflectance measured in situ at field sampling stations during the Delta-X 2021 field efforts. Measurements were collected in the Atchafalaya River and Terrebonne Basins on the southern coast of Louisiana from 2021-03-25 to 2021-04-22 (spring) and from 2021-08-14 to 2021-09-24 (fall). Field sampling was paused on 2021-08-25 and resumed on 2021-09-13 due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study site. Water quality changes caused by the hurricane were expected to be minimal. Reflectance was measured near-simultaneously with collection of field samples and in-water sediment parameters in multiple channels of varying width (from a few meters to >100 m), near Delta-X intensive study sites, in open bays and lakes, and at a few locations in the nearshore Gulf of Mexico. For each in situ collection, a handheld Portable SpectroRadiometer (PSR-1100f, Spectral Evolution) was used to measure radiance from: (a) a highly reflective (>99% reflectance) Lambertian Spectralon panel (b) from the sky, measured at 40 degrees from the solar zenith and at 135 degrees from the sun azimuthal plane, (c) from the water, measured at 40 degrees from nadir and at 135 degrees from the sun azimuthal plane. These measurements were used to calculate remote-sensing reflectance and the water-leaving radiance relative to downwelling irradiance, including a correction for the influence of reflected skylight. In Version 3, the data files with this dataset replace and update the data files in Version 2. A minor update was made to the code used to calculate the remote sensing reflectance (Rrs). These data are provided in comma-separated values (.csv) format.
+  <br>
+
+  #### DeltaX_H2O_Surface_Elevation_2086
+  This dataset contains in situ water level measurements collected at 49 different locations across the Atchafalaya and Terrebonne basins in the Mississippi River Delta (MRD) floodplain, and 49 files with the in situ measurements from raw water level converted to absolute water surface elevation with respect to NAVD88 (GEOID12B). There were 65 sites included in the study, however, data from 16 of the sites were corrupted, unretrievable from the instrument or the instrument was lost during deployment. Additionally, it contains water surface elevations collected by GNSS mounted to a boat while underway, and a summary file with site information for all 65 sites. Relative water level measurements were recorded every 15-20 minutes using commercial pressure transducers (Levelogger, Solinst) to measure water depth. Water surface elevation was determined by measuring an absolute height conversion at each sensor location using AirSWOT or a survey-grade global navigation satellite system (GNSS). These water level measurements calibrate and validate the Delta-X campaign's remote sensing observations and hydrodynamic models. The data are provided in comma separated values (CSV) and JPEG image formats.
+  <br>
+
+  #### DeltaX_Island_Channel_Model_2106
+  This dataset includes model code and output for a model that simulates changes in islands and small water channels of river delta systems in response to dynamics of sediment deposit, erosion, and changing water levels. Simulations demonstrate developmental cycles of secondary channels and how sediment dynamics can allow islands to build land vertically to keep pace with rising sea levels rather than passively drowning. The model was applied to the Mississippi River Delta as part of NASA's Delta-X project. Simulations were run for other river deltas, including the Amazon, Brahmputra, Danube, Magdalena, Nile, Orinoco, Parana, Rhine-Meuse, and Rhone rivers. The model code is provided in text format for MATLAB software. Files demonstrating initial model conditions and outputs are provided in binary MATLAB as well as NetCDF version 4 format.
+  <br>
+
+  #### DeltaX_TotalSubsidenceRate_MRD_2307
+  This dataset provides estimates of land subsidence rates for the Delta-X domain area within the Atchafalaya and Terrebonne basins for 2021. The study area is a portion of the Mississippi River Delta in coastal Louisiana, U.S. The total subsidence is calculated as the sum of deep and shallow vertical elevation change rates. The deep subsidence rate is based on information from the Coastal Protection and Restoration Authority (CPRA) of Louisiana, documented in the Phase-4 subsidence trend report prepared for and provided by CPRA (2022). The shallow subsidence is calculated for the Delta-X study area by interpolation of publicly available data provided by CPRA for their coast-wide estimation of shallow subsidence in the 2023 Coastal Master Plan. The total subsidence rates and the estimated uncertainty in the total subsidence rates are provided as separate files in cloud optimized GeoTIFF (COG) format at 30-m (0.0003 decimal degrees) resolution.
+  <br>
+
+  #### DeltaX_LandAccretion_WLD_2309
+  This dataset provides the Matlab sediment transport and land accretion model at Wax Lake Delta (WLD), Atchafalaya Basin, in coastal Louisiana. The data include the Matlab scripts that solve the advection and Exner equations to simulate the suspended sediment transport and accretion at WLD. The model requires modeled flow information from a separate ANUGA hydrodynamic model as inputs. For this study, ANUGA modeled flow information from the Delta-X Spring and Fall 2021 campaigns were used as inputs. The ANUGA output files are converted to variables used by this Matlab model using pre-processing tools. The main code calculates suspended sediment fluxes and accretion rates of mud and sand as a function of space and time. The cumulative sediment accretion from each campaign was then used to estimate an annualized land accretion map using a weighted-average formula presented. The final product, the one-yr upscaled land accretion map, is archived as a separate dataset.
+  <br>
+
+  #### DeltaX_LandAccretionMap_WLD_2308
+  This dataset provides sediment transport and land accretion model results at Wax Lake Delta (WLD), Atchafalaya Basin, in coastal Louisiana, USA. Data were simulated over the Delta-X Spring 2021 (2021-03-21 to 2021-04-03) and Fall 2021 (2021-08-14 to 2021-08-27) campaigns and the results are presented as annualized land accretion rate map. The model results for these two short-term campaigns are used to calculate the 1-year upscale land accretion rate at WLD in post-processing, which is also provided in this dataset. Model results for these two short-term campaigns were derived using inputs from an ANUGA hydrodynamic model. The Matlab sediment transport and land accretion model used to derive these data employs sediment transport theory that models floc behavior using a non-cohesive sediment transport framework. Data are presented in NetCDF (.nc) format.
+  <br>
+
+  #### DeltaX_MarshAccretion_NUMAR_2354
+  This dataset provides input data and model code to run the Marsh Accretion Rates (NUMAR) process model used to predict soil accretion rates and chemical properties for marsh sites in the Mississippi River Delta. NUMAR is a modification of the NUMAN model by Chen and Twilley (1999) that was developed for mangrove environments. This dataset provides Python code, input data in comma separated values (CSV) format, and documentation for installing and running the model in Portable Document Format (PDF).
+  <br>
+
+  #### DeltaX_NUMAR_Soil_Accretion_2368
+  This dataset holds modeled estimates of soil accretion for the Atchafalaya and Terrebonne basins in the Mississippi River Delta of coastal Louisiana, U.S. Soil accretion was predicted from 2021-2100 using the Numerical Understanding of Marsh Accretion Resilience (NUMAR) model. This process-based model is an adaptation of the NUMAN model that was modified for marsh environments. The input parameters were aggregated within ecogeomorphic cells, areas of similar vegetation and elevation. The dataset includes spatially explicit input values, description of important parameters, and a shapefile of model outputs.
+  <br>
+
+  #### DeltaX_Insitu_POC_2073
+  This dataset provides measurements of particulate organic carbon (POC) concentrations made on water samples collected during 2021 in surface waters of the Atchafalaya River and Terrebonne Basins, portions of the Mississippi River Delta in coastal Louisiana. Water samples were collected at ~0.5 m depth from surface during the spring (2021-03-25 to 2021-04-22) and fall (2021-08-14 to 2021-09-24) field efforts. Field sampling was paused on August 25 and resumed on September 13 due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study sites. Water quality changes in this dataset caused by the hurricane are expected to be minimal. Samples were collected in multiple channels of varying width (from a few meters to >100 m) near Delta-X intensive study sites, in open bays and lakes, and a few locations in the nearshore Gulf of Mexico. For each sample, the water sample volume was filtered (in triplicate) through 25-mm glass microfiber (GF/F) filters to retain the suspended particles. The amount of organic carbon retained on each filter was measured using an elemental carbon, hydrogen and nitrogen (CHN) analyzer and normalized by the volume of sample water filtered. The reported values in this dataset include the mean and standard deviation of POC measurements from three replicate samples collected at each site.
+  <br>
+
+  #### DeltaX_RTK_Elevation_2071
+  This dataset provides real-time kinematic (RTK) GPS elevation measurements, along with horizontal and vertical precision errors, obtained along transects near Louisiana's Coastwide Reference Monitoring Systems (CRMS) sites and on Mike Island in Wax Lake Delta (WLD). The data were collected during the Delta-X Spring Campaign from 2021-03-24 to 2021-04-02. The data are provided in comma-separated values (CSV) format.
+  <br>
+
+  #### DeltaX_BG_Root_Stable_Isotopes_2193
+  This dataset contains carbon-13 (13C) and nitrogen-15 (15N) isotopic signatures of belowground root biomass samples from herbaceous wetlands in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in coastal Louisiana, U.S., during August 2021. The data were collected during the Delta-X Fall deployment. Field measurements were conducted at three sites in the Atchafalaya basin and three sites in the Terrebonne basin. Five of the sites are adjacent to sites from the Coastwide Reference Monitoring System (CRMS). The other site is located in Wax Lake Delta (WLD) without appropriate adjacent CRMS sites. Herbaceous wetland sites in both basins were chosen to represent a salinity gradient including freshwater, brackish, and saline ecosystems. Root biomass samples were collected using a gouge soil auger. Bulk isotopic signatures in living fine roots were measured with a mass spectrometer coupled to an elemental analyzer.
+  <br>
+
+  #### DeltaX_Sediment_Core_GrainSize_2382
+  This dataset provides grain size distribution measurements collected from sediment core samples on Mike Island in the Wax Lake Delta, Louisiana, as part of the Delta-X Spring campaign in March, 2021,and the Fall campaign during August, 2021. The data are for March 26 and 29, and August 18 and 24. Sediment cores were collected using a piston core, then volume-based grain size distribution for each sample was measured using a laser diffraction particle size analyzer. The data are provided in comma separated values (CSV) format.
+  <br>
+
+  #### DeltaX_Cs137_SoilAccretionRate_2380
+  This dataset holds measurements of Cesium-137 (137Cs) activity sampled from sites in the Atchafalaya and Terrebonne Basins on the southern coast of Louisiana, USA. Sediment cores were taken to validate modeled estimates of soil accretion rates. The NUMAR model was designed to predict soil properties and corresponding accretion rates in marsh environments. This study explored whether the probabilistic outcomes generated by the model align with accretion rates determined through field-based measurements using 137Cs activity. The model's probabilistic simulations were conducted for active and inactive basins, encompassing fresh, brackish, and saline sites. Aliquots of approximately 5-9 g of finely ground dry sediment were placed into vials of known geometry for direct gamma counting of 137Cs using high-purity Germanium (Ge) well detectors. The 137Cs dating technique is based on detecting the specific core section in which the radioactive isotope 137Cs peak activity occurs across a vertical soil profile. This peak corresponds to the peak fallout in 1963 deposited during the atmospheric nuclear testing and provides a timeline reference for estimating soil accumulation rates, sediment deposition, and marsh accretion. Therefore, to validate the NUMAR accretion results, 137Cs activity was measured at different core sections across a vertical soil profile to determine the peak corresponding to the peak fallout in 1963 due to atmospheric nuclear testing and estimate soil accretion rates. The data are provided in comma separated values (CSV) format.
+  <br>
+
+  #### DeltaX_Herb_WetlandSoil_V3_2239
+  This dataset contains properties of soil core samples for herbaceous wetlands collected in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana for the period 2021-03-21 to 2021-04-02 and on 2021-08-19. Field measurements were conducted at six sites in the Atchafalaya (N = 3) and Terrebonne (N = 3) basins. Five sites were adjacent to sites from the Coastwide Reference Monitoring System (CRMS). The other site is in the Wax Lake Delta (WLD) without appropriate adjacent CRMS sites. Herbaceous wetland sites in both basins were chosen to represent a salinity gradient including freshwater, brackish and saline ecosystems. Soil properties include bulk density, organic matter content, total densities of carbon, nitrogen, phosphorus, along with 13C and 15N isotopic signatures. The data are provided in comma-separated values (.csv) format.
+  <br>
+
+  #### DeltaX_Sonar_Bathymetry_2085
+  This dataset includes bathymetry data for water channels in a portion of the Mississippi River Delta (MRD) of coastal Louisiana. The data were collected using sonar during field efforts of the Delta-X Campaign taking place during 2021. In situ continuous surveys of channel bathymetry were conducted in the Atchafalaya and Terrebonne basins using either a Lowrance HDS-Live Fish Finder with Active Imaging 3-in-1 Transducer or a SonarMite Echo Sounder mounted on the side or back of the research boat. The sounder depth observations were delineated by the date, time, and location. These bathymetry measurements were used to generate a digital elevation model (DEM) through interpolation with ancillary DEMs. The data are provided in comma-separated values (CSV) format. A map of data collection routes is provided in compressed keyhole markup language (KMZ).
+  <br>
+
+  #### DeltaX_TSS_Concentration_V2_2075
+  This dataset provides measurements of total suspended solids concentrations (TSS) of surface waters in the Atchafalaya River and Terrebonne Basins during the spring (2021-03-25 to 2021-04-22) and fall (2021-08-14 to 2021-09-24) field efforts by the Delta-X project. Field sampling was paused on August 25 and resumed on September 13, 2021, due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study site. Water quality changes caused by the hurricane were expected to be minimal. Samples were collected from ~0.5 m of surface in multiple channels of varying width (from a few meters to >100 m), near Delta-X intensive study sites, in open bays and lakes, and at few locations in the nearshore Gulf of Mexico. For each collection, the water sample volume was filtered, and the suspended particles retained on the filter were weighed after drying. The TSS concentration was calculated as the difference of the filter weight (before and after filtration) divided by the volume filtered.
+  <br>
+
+  #### DeltaX_Turbidity_Data_V4_2241
+  This dataset provides turbidity measurements with co-located water and air pressure and temperature measurements in portions of the Mississippi River Delta, coastal Louisiana, US. Data were collected at five sites in Atchafalaya River Basin in Spring (2021-03-24 to 2021-04-02) and eight sites in the Atchafalaya River and Terrebonne Basins in Fall 2021 (2021-08-16 to 2021-08-27). In order to sample various hydrodynamic conditions, sensors were deployed at island edges, island interior, and other portions of wetlands. Sensors recorded turbidity, absolute pressure, and temperature. The Delta-X mission is a 5-year NASA Earth Venture Suborbital-3 mission to study the Mississippi River Delta in the United States, which is growing and sinking in different areas. River deltas and their wetlands are drowning as a result of sea level rise and reduced sediment inputs. The Delta-X mission will determine which parts will survive and continue to grow, and which parts will be lost. Delta-X begins with airborne and in situ data acquisition and carries through data analysis, model integration, and validation to predict the extent and spatial patterns of future deltaic land loss or gain. The data are provided in comma-separated values (CSV) files.
+  <br>
+
+  #### DeltaX_L1_UAVSAR_SLC_Stack_1984
+  This dataset contains UAVSAR Level 1 (L1) Single Look Complex (SLC) stack products for Delta-X flight lines acquired during 2021-03-27 to 2021-04-18 (spring) and 2021-09-03 to 2021-09-13 (fall). The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign. The study area includes the Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Repeat pass interferometric synthetic aperture (InSAR) data are a standard UAVSAR product delivered by the UAVSAR processing team. These repeat pass SLC stack co-registered time series data were used as the underlying data for higher level data products. These higher level products provide a time series of water level changes and address a goal of the Delta-X campaign to measure water-level changes throughout wetlands. Data quality was assessed by comparing water elevation estimates with data from in situ water level gauges throughout the study area. These L1 data contain slant range single look complex (SLC), latitude/longitude/height, look vector, doppler, and metadata files. The data are provided in SLC stack format (.slc) with associated annotation (.ann), latitude-longitude-height (.llh), look vector (.lkv), and Doppler centroid-slant range (.dop) files. The single look complex (SLC) stacks are in the HH, HV, VH, and VV polarizations. The same area was sampled at approximately 30-minute intervals. The SLCs are not corrected for residual baseline (BU).
+  <br>
+
+  #### DeltaX_L1B_UAVSAR_WaterLevels_1979
+  This dataset contains UAVSAR Level 1B (L1B) interferometric products for Delta-X flight lines acquired during the 2021 Spring (2021-03-27 to 2021-04-18) and Fall (2021-09-03 to 2021-09-13) deployments. The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign. The study area includes the Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Repeat pass interferometric synthetic aperture (InSAR) data are a standard UAVSAR product delivered by the UAVSAR processing team. For this dataset, a set of nearest-neighbor (NN), NN+1, and NN+2 co-registered VV-polarization interferograms were generated from the quad-polarization SLC stack level-1 (L1) product using a combination of the InSAR Scientific Computing Environment (ISCE), the statistical-cost, network-flow algorithm for phase unwrapping (SNAPHU), and previously developed python code. Data quality was assessed by comparing water elevation estimates with data from in situ water level gauges throughout the study area. The data are provided in non-georeferenced ENVI file format and include interferometric amplitude, wrapped interferometric phase, interferometric coherence, and unwrapped interferometric phase products. Geometry files for each flight line per field campaign with latitude, longitude, height and incidence angle information are also included. The goal of this campaign was to measure water-level changes throughout wetlands, and these data may be used to generate time series of water levels. The data are provided in ENVI format.
+  <br>
+
+  #### DeltaX_L2_UAVSAR_WaterLevels_2057
+  This dataset contains georeferenced UAVSAR Level 2 (L2) interferometric products for Delta-X flight lines acquired during the spring (2021-03-27 to 2021-04-18) and fall (2021-09-03 to 2021-09-13) deployments. This dataset provides water-level change observations throughout wetlands of the Atchafalaya and Terrebonne Basins, in Southern Louisiana, USA, within the Mississippi River Delta (MRD), and it may be used to generate time series analysis. The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign. Water surface elevations were measured on multiple flights at 30-minute intervals. Data quality was assessed by comparing water elevation estimates with data from in situ water level gauges throughout the study area. The data include interferogram phase, interferogram amplitude, unwrapped interferogram phase, and coherence products. A series of quality assurance masks of troposphere-induced phase delay regions were generated for all SAR acquisition dates using a weather feature matching algorithm. Geometry files for each flight line per field campaign with latitude, longitude, height and incidence angle information are also included. The data are provided in ENVI format.
+  <br>
+
+  #### DeltaX_UAVSAR_L3_ChannelMap_V2_2344
+  This dataset provides gridded estimates of water channels for the Atchafalaya and Terrebonne basins of the Mississippi River Delta in Louisiana, U.S.A. The data show channels with open water that are as narrow as 10 m. These channel estimates were generated from the Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR) Level 1B interferometric products in radar coordinates acquired in the Spring and Fall Delta-X deployments of 2021, which have a spatial resolution of approximately 6 m. UAVSAR is a polarimetric L-band synthetic aperture radar (SAR) flown on the NASA Gulfstream-III aircraft. The data are provided in cloud-optimized GeoTIFF format. The channel estimates can be used to define open water paths in hydrodynamic models and to evaluate model performance.
+  <br>
+
+  #### DeltaX_L3_UAVSAR_WaterLevels_2058
+  This dataset contains georeferenced InSAR-derived water level change maps for Delta-X flight lines acquired during the spring (2021-03-27 to 2021-04-18) and fall (2021-09-03 to 2021-09-13) deployments. Water-level change observations are provided throughout wetlands of the Atchafalaya and Terrebonne Basins, in Southern Louisiana, USA, within the Mississippi River Delta (MRD). The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign. Water surface elevations were measured on multiple flights at 30-minute intervals. There are three types of gridded products available: temporalcoherence (which provide an index measuring quality of phase unwrapping ranging from 0 (poor) to 1 (correctly unwrapped)), waterlevelchange in centimeters (which provide cumulative changes in water levels at approximately 30-minute intervals), and waterlevelchange_ramp in centimeters (which provide a 2-dimensional linear trend in water-level estimates not related to changing water levels). The water-level change maps were estimated using the phase unwrapping corrected interferograms generated for nearest-neighbor (NN), NN+1, and NN+2 pairs for data acquired within a single flight (one day). This analysis was done for all flight lines. Water level changes are relative to the first sampling flight for that study area. Data quality was assessed by comparing water elevation estimates with data from in situ water level gauges throughout the study area. A series of quality assurance masks of troposphere-induced phase delay regions were generated for all SAR acquisition dates using a weather feature matching algorithm.
+  <br>
+
+  #### PreDeltaX_L3_AVIRIS_Biomass_1821
+  This dataset includes aboveground biomass (AGB) and vegetation of herbaceous and forest wetland at 5.4 m resolution across the Wax Lake Delta (WLD) in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Vegetation classes were derived from Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) imagery acquired over the Atchafalaya Basin and the Terrebonne Basin in October 2016 in combination with a digital elevation model. The AVIRIS-NG surface reflectance data were also combined with L-band Uninhabited Airborne Vehicle Synthetic Aperture Radar (UAVSAR) HV backscatter and scattering component values from coincident vegetation sample sites to develop and test AGB models for emergent herbaceous and forested wetland vegetation. This study used the integrated airborne data from AVIRIS-NG and UAVSAR to assess the instruments' unique capabilities in combination for estimating AGB in coastal deltaic wetlands. The 5.4 m resolution vegetation classification map for the WLD study area was then used to apply the best models to estimate AGB across the WLD.
+  <br>
+
+  #### PreDeltaX_L3_AVIRIS_Sediment_1822
+  This dataset includes total suspended solids (TSS) at the water surface across the Atchafalaya and Terrebonne Basins in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. AVIRIS-NG, the Next Generation Airborne Visible to Infrared Imaging Spectrometer, acquired data over the study area in 2015 and 2016. The remote imageries were combined with coincident field measurements to develop and validate spatially explicit estimates at 3.7-5.4 m resolution of the concentration (mg/L) of TSS.
+  <br>
+
+  #### PreDeltaX_Sonar_Bathymetry_1807
+  This dataset provides water depths and water surface elevations collected during bathymetric surveys of the main channel of the Wax Lake Delta within the Mississippi River Delta (MRD) floodplain of coastal Louisiana, USA. The measurements were made during the Pre-Delta-X Campaign in Fall 2016. The in situ continuous (1 Hz) surveys of channel bathymetry were conducted using a SonarMite Hydrolite Single Beam Echo Sounder mounted on the side of the research boat. The sounder was located directly beneath the Septentrio global navigation satellite system (GNSS) antenna, about 30 cm below the water surface. The sounder depth observations were integrated with the GNSS location and elevation data into one data file per day for October 16-20. These bathymetry measurements were used to generate a merged digital elevation model (DEM) through interpolation with ancillary DEMs to expand the existing wetland DEM to include channels. The merged DEM product is distributed in GeoTIFF format.
+  <br>
+
+  #### PreDeltaX_UAVSAR_SLC_1816
+  This Level 1 (L1) dataset includes single look complex (SLC) stack products and co-registered interferograms in the HH (horizontal transmit and horizontal receive) polarization for the Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. The data were collected in October 2016 by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III aircraft as part of the Pre-Delta-X campaign. A single study region, flight line "gulfco_12011", was sampled six times at approximately 30-minute intervals to monitor changing water levels. The SLC stack product is a standard UAVSAR product delivered by the UAVSAR processing team. The L1 interferograms were generated from the SLC stacks.
+  <br>
+
+  #### PreDeltaX_L2_AirSWOT_1818
+  This dataset provides water surface elevations over the Wax Lake Delta in the Atchafalaya Basin in coastal Louisiana, USA, in May 2015. These Level 2 (L2) data were collected by AirSWOT, an airborne instrument employing near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data at 3.6 m resolution. Along with elevation estimates, the dataset includes measures of estimation errors, sensitivity, incidence angle, backscatter, and interferometric correlation. For this application, in situ water level data were added into the AirSWOT phase calibration procedure. These L2 data consist of a set of rasters in Universal Transverse Mercator (UTM) map coordinates for each of the 39 AirSWOT flight lines. These elevation data were later used for calculating elevation and slopes along the main channels in this wetland system, as well as tying observations to ocean tidal conditions.
+  <br>
+
+  #### PreDeltaX_L2_AVIRIS_SR_1826
+  This Level 2 (L2) dataset provides surface spectral reflectance data acquired over the Atchafalaya and Terrebonne basins of the Mississippi River Delta (MRD) of coastal Louisiana, USA, in 2015-2016. The data include georectified images with Lambertian-equivalent surface reflectance and composite mosaics with adjustments for Bidirectional Reflectance Distribution Function (BRDF) effects. The imagery was acquired by the Airborne Visible/Infrared Imaging Spectrometer - Next Generation (AVIRIS-NG), as part of the Pre-Delta-X campaign.
+  <br>
+
+  #### PreDeltaX_L3_AirSWOT_WL_1819
+  This dataset contains water level profiles generated from the AirSWOT data collected in the Atchafalaya Basin in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Part of the Pre-Delta-X Campaign, AirSWOT used near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and uncertainty in May 2015. This Level 3 (L3) AirSWOT dataset is in the form of numerous profiles of water level along the Wax Lake Outlet.
+  <br>
+
+  #### PreDeltaX_ASO_LiDAR_WaterLevel_1820
+  This dataset contains lidar-derived water surface elevation profiles for river channels between Wax Lake, in the Atchafalaya River Basin of the Mississippi River Delta, and the Gulf of Mexico. The provided elevation profiles (i.e., water levels) were estimated using remotely sensed lidar data in combination with in situ field measurements of water levels for elevation calibration and to quantify uncertainty in estimates. The lidar data were collected during the Fall 2016 Pre-Delta-X Campaign using an Airborne Snow Observatory (ASO) lidar instrument. The results are time-specific water levels measured as elevation in meters with respect to the North American Vertical Datum 1988 (NAVD 88) geoid (or orthometric height) and the World Geodetic System 1984 (WGS 84) ellipsoidal surface (or ellipsoidal/GPS height) along the water channels in this drainage system.
+  <br>
+
+  #### PreDeltaX_ADCP_Measurements_1806
+  This dataset provides river discharge measurements collected at selected locations across the Atchafalaya River Basin, within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign on October 15 to 20, 2016. Seventy-five channel surveys were conducted with a SonTek RiverSurveyor M9 acoustic doppler current profiler (ADCP) on selected wide channels (~100 m) and a few selected (~10 m) narrow channels. ADCP data provide near-instantaneous estimates of river discharge across the sampled channels. Sites coincided with AirSWOT swaths in the Atchafalaya River Basin and water level measurement locations. This in situ dataset was used to calibrate and validate Delta-X hydrodynamic models.
+  <br>
+
+  #### PreDeltaX_Insitu_Reflectance_1804
+  This dataset provides measurements of in situ remote-sensing reflectance (Rrs; per steradian) of surface water across Atchafalaya Basin, southern coastal Louisiana, USA within Mississippi River Delta (MRD) floodplain. The in situ spectral reflectance measurements were made during the Pre-Delta-X campaign in Fall 2016 (October 14 to 2). Hand-held spectrometer measurements were collected from a boat at 35 locations selected to represent a range of suspended sediment concentrations and properties from a variety of hydrodynamic and physical settings typically encountered across the Atchafalaya basin. These 35 spectral reflectance measurements were collected at 24 unique sites that coincide with measurements of total suspended solids (TSS). The data serves two main purposes, to ground-truth the remote-sensing reflectance derived from NASA's Airborne Visible-Infrared Imaging Spectrometer - Next Generation (AVIRIS-NG) instrument, and to calibrate and validate algorithms for the retrieval of TSS from AVIRIS-NG.
+  <br>
+
+  #### PreDeltaX_TSS_Concentration_1802
+  This dataset contains the total suspended solids (TSS) concentration of in situ water samples collected at selected sites across the Atchafalaya and Terrebonne Basins within the Mississippi River Delta (MRD) floodplain of coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign in Spring 2015 and Fall 2016. The sampling sites spanned large and small channels at locations chosen to cover a representative range of suspended sediment concentrations from a variety of hydrodynamic and physical settings typically encountered across the basins. Water samples were collected by bottle just beneath the surface and stored on ice until filtering. The TSS concentration was calculated as the difference of the filter weight (before and after filtration) divided by the volume of sample filtered. Both TSS and in situ spectral reflectance measurements were collected at some sampling sites. Pre-Delta-X sampling focused on surface waters, where the TSS data are used as inputs for hydrodynamic models for sediment transport and to calibrate the model to convert AVIRIS-NG spectral reflectance measurements into TSS.
+  <br>
+
+  #### PreDeltaX_UAVSARChannelMaps_V2_2366
+  This dataset provides spatial data on water channels in the estuary of the Atchafalaya Basin of the Mississippi River Delta of coastal Louisiana. These Level-3 (L3) channel maps were developed from interferograms derived from Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR) data collected on 2016-10-16 (low tides) and 2016-10-17 (high tides). The channel maps define open water paths in hydrodynamic models and are used to evaluate model performance. This is version 2 of this dataset. Data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### PreDeltaX_UAVSAR_WaterLevel_1823
+  This dataset contains five maps of cumulative changes in water levels at 30-minute intervals over a 150-minute period on 2016-10-16 in the Atchafalaya Basin in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Water surface elevations were measured on six flights at 30-minute intervals, with the Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar (SAR) flown on the NASA Gulfstream-III aircraft. The five georeferenced maps at 6 m resolution show the cumulative change of water levels (cm) every 30 minutes relative to the first sampling flight. These Level 3 maps were generated using the InSAR time series Small Baseline Subsets (SBAS) algorithm implemented in the Generic InSAR Analysis Toolbox (GIAnT) toolbox and served to evaluate and compare hydrodynamic models.
+  <br>
+
+  #### PreDeltaX_Vegetation_Structure_1805
+  This dataset provides vegetation species, height, stem density and diameter, and species aboveground biomass (AGB) measurements collected at herbaceous and forested wetland sites across the Atchafalaya and Terrebonne basins within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign in Spring 2015 and Fall 2015. Vegetation height and density and diameter data are only provided for forested Atchafalaya sites during the spring collections. At the nine herbaceous wetland sites, a transect was established perpendicular to the wetland edge with replicate sample plots (0.25 m2, 5 m apart) located at 50, 100, and 150 m from the wetland edge to capture the range of vegetation structure, zonation, and composition. AGB was harvested inside the duplicate plots at each sampling location. At the six forested wetland sites, duplicate circular plots (10 m radius, 50 m apart) were established inside the forest approximately 30 m from the wetland edge. All trees with a diameter at breast height (DBH at 1.3 m) > 2.5 cm were measured within each plot and identified to species. The height of trees was measured with a laser range finder. AGB was estimated using species-specific allometric equations. Measurements were used to generate marsh and forested wetland coverage and biomass in response to seasonality within both basins. The data will be used to calibrate remote sensing data (e.g., UAVSAR, AVIRIS-NG) and hydrodynamics and sediment transport models.
+  <br>
+
+  #### PreDeltaX_Water_Level_Data_1801
+  This dataset provides absolute water level elevations derived for 10 locations across the Wax Lake Delta, Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Field measurements were made during the Pre-Delta-X campaign on October 13-20, 2016. Relative water level measurements were recorded every five minutes during a one-week period using in situ pressure transducers (Solinst) to measure water surface elevation change with millimeter accuracy. The Solinst system combines a total pressure transducer (TPT) and a temperature detector. Once underwater, the TPT measures the sum of the atmosphere and water pressure above the sensor. Atmospheric pressure fluctuations must be accounted for to obtain the height of the water column above the TPT. An absolute elevation correction was applied to the water level data using an iterative approach with the USGS Calumet Station water level height and Airborne Snow Observatory (ASO) lidar water level profiles. These Pre-Delta-X water level measurements served to calibrate and validate the campaign's remote sensing observations and hydrodynamic models.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://deltax.jpl.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- cog
+- earth observation
+- elevation
+- ice
+- land cover
+- lidar
+- netcdf
+- oceans
+- radar
+- satellite imagery
+- stac
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "DeltaX_AVIRIS-NG_UAVSAR_L3_AGB_2410 v1 - This dataset contains estimates of forest aboveground biomass (AGB) across the Atchafalaya and Terrebonne Basins, Louisiana, US. AGB was derived from AVIRIS-NG surface reflectance and UAVSAR products."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_AVIRIS-NG_UAVSAR_L3_AGB/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L3_AVIRIS-NG_Veg_Types_2352 v1 - This dataset provides maps of vegetation types for the Atchafalaya and Terrebonne basins in coastal Louisiana, U.S., derived from NASA's Next Generation Airborne Visible Infrared Imaging Spectrometer (AVIRIS-NG) imagery acquired during spring and fall of 2021 for the Delta-X campaign. Vegetation types were classified from Level-2B BRDF-adjusted surface reflectance."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L3_AVIRIS-NG_Veg_Types/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_AGB_AGN_V2_2237 v2 - This dataset contains total aboveground biomass (AGB) and necromass (AGN), and total carbon, total nitrogen, and total phosphorus content of aboveground biomass (AGB) and necromass (AGN) samples collected from herbaceous wetlands in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana during 2021. Field measurements were conducted at three sites in the Atchafalaya basin and three sites in the Terrebonne basin."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_AGB_AGN_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Vegetation_Structure_V2_2240 v2 - This dataset provides mean stem diameter, mean height, dominant species, hydrogeomorphic zone (HGM), and stem density for vegetation in herbaceous wetlands collected in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana. The data were collected between 2021-03-21 to 2021-03-31 during the Delta-X Spring 2021 deployment, and from 2021-08-19 to 2021-08-27 during the Fall deployment."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Vegetation_Structure_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_ADCP_Measurements_V2_2081 v2 - This dataset provides river discharge measurements collected at selected locations in the Atchafalaya and Terrebonne Basins within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Delta-X 2021 field efforts from 2021-03-25 to 2021-04-11 (spring) and 2021-08-16 to 2021-09-25 (fall)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_ADCP_Measurements_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L2_AirSWOT_WaterElev_V3_2350 v3 - This dataset contains Level 2 (L2) AirSWOT geocoded products, including estimated water surface elevation. The AirSWOT instrument is a Ka-band interferometer and for this study is flown on the King Air B200 platform."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L2_AirSWOT_WaterElev_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L3_AirSWOT_WaterElev_V2_2349 v2 - This dataset contains water surface elevations at selected point locations generated from the AirSWOT data collected during the Spring and Fall 2021 Delta-X deployments over the Atchafalaya and Terrebonne basins in Louisiana, USA. AirSWOT uses near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L3_AirSWOT_WaterElev_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L1b_AirSWOT_1996 v1.1 - This dataset contains AirSWOT interferogram products collected during the 2021 Delta-X Campaign over the Atchafalaya and Terrebonne Basins of the Mississippi River Delta, Louisiana, USA from 2021-03-26 to 2021-04-18 (Spring) and 2021-08-21 to 2021-09-12 (Fall). AirSWOT uses near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L1b_AirSWOT/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_ANUGA_Hydrodynamics_MRD_2310 v1 - This dataset comprises the primary inputs and outputs from the ANUGA hydrodynamic model for spring 2021 (2021-03-20 to 2021-04-04). These dates align with the 2021 Delta-X Spring Campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_ANUGA_Hydrodynamics_MRD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L2A_AVIRIS-NG_BRDF_V3_2355 v3 - This data provides AVIRIS-NG Bidirectional Reflectance Distribution Function (BRDF) and sunglint-corrected surface spectral reflectance images over the Atchafalaya and Terrebonne basins of the Mississippi River Delta (MRD) of coastal Louisiana, USA. Flights were acquired during the Spring and Fall 2021 deployments of the Delta-X campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L2A_AVIRIS-NG_BRDF_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L1_AVIRIS_Radiance_1987 v1 - This dataset provides Level 1B (L1B) radiance products from NASA's Airborne Visible Infrared Imaging Spectrometer- Next Generation (AVIRIS-NG) instrument acquired over the Atchafalaya and Terrebonne basins of the Mississippi River Delta, Louisiana, USA during two deployments; spring and fall of 2021. All flights were flown on a Dynamic Aviation King Air B200."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L1_AVIRIS_Radiance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L2_AVIRIS_Reflectance_1988 v1 - This dataset provides Level 2 (L2) atmospherically corrected surface reflectance data acquired from NASA's Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) over regions of interest in the Atchafalaya and Terrebonne basins on the southern coast of Louisiana, United States. Data were collected as part of the Delta-X Spring and Fall 2021 deployments that occurred from 2021-03-27 to 2021-04-06 and from 2021-08-18 to 2021-08-25."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L2_AVIRIS_Reflectance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L2B_AVIRIS-NG_FracCover_2407 v1 - This dataset provides estimates of fractional vegetation cover across the Atchafalaya and Terrebonne basins. Atmospheric correction was applied to a L2B BRDF-adjusted surface reflectance product from AVIRIS-NG imagery to produce L2 Hemispherical-Directional surface reflectance."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L2B_AVIRIS-NG_FracCover/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L3_AVIRIS-NG_AGB_V3_2409 v3 - This dataset includes high-resolution (~5 m) gridded estimates of aboveground biomass (AGB), aboveground necromass (AGN), and aboveground net primary productivity (ANPP) for herbaceous vegetation in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in coastal Louisiana, USA, for the fall and spring seasons of 2021. AGB, AGN and ANPP were estimated from Bidirectional Reflectance Distribution Function (BRDF)-adjusted surface reflectance products from NASA's Airborne Visible Infrared Imaging Spectrometer - Next Generation (AVIRIS-NG) acquired over the study area in April and..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L3_AVIRIS-NG_AGB_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_AVIRIS-NG_L3_BGB_2456 v1 - This dataset contains high-resolution (~5 m) gridded estimates of belowground biomass (BGB) in the Atchafalaya and Terrebonne basins of southern Louisiana, U.S., in August 2021. The Level 3 (L3) AVIRIS-NG-derived herbaceous aboveground biomass (AGB) and necromass (AGN) Version 3 products were used to predict the BGB."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_AVIRIS-NG_L3_BGB/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L3_AVIRIS-NG_Water_V3_2152 v3 - This dataset includes estimates of total suspended solids (TSS) concentration and turbidity for waters of the Atchafalaya River and Terrebonne Basins of the Mississippi River Delta (MRD) in coastal Louisiana. Estimates were derived from Level 2 (L2) BRDF-corrected imagery from NASA's Next Generation Airborne Visible Infrared Imaging Spectrometer (AVIRIS-NG)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L3_AVIRIS-NG_Water_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Sediment_Grain_Size_V3_2379 v3 - This dataset includes sediment concentration and grain size distribution measurements from suspended and bed sediment samples collected in the Atchafalaya River and Terrebonne Basins as part of the Delta-X Spring campaign between March 25 and April 2, 2021, and the Delta-X Fall campaign between August 17 and 22, 2021. In addition, ten samples were collected during a field campaign in October 2019."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Sediment_Grain_Size_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_BGB_BGN_V2_2238 v2 - This dataset contains total belowground biomass (BGB) and necromass (BGN), and total carbon, total nitrogen, and total phosphorus content of samples collected from herbaceous wetlands in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in southeastern coastal Louisiana, U.S., during March and August 2021. The data were collected during the Delta-X Spring and Fall deployments."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_BGB_BGN_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_ANUGA_AtchafalayaBasin_2306 v1 - This dataset provides ANUGA hydrodynamic modeling results and input run-scripts for the Atchafalaya basin in the Mississippi River Delta in southern Louisiana, USA, during three windows of time corresponding to the Delta-X and Pre-Delta-X field campaigns in fall 2016, spring 2021, and fall 2021. ANUGA is a 2D depth-integrated hydrodynamic model which uses the Finite Volume Method (FVM) to numerically solve the shallow water momentum and continuity equations for fluid flow in broad-scale geophysical systems."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_ANUGA_AtchafalayaBasin/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_Atchafalaya_MRD_2302 v1 - This dataset contains the Delft3D model of the Atchafalaya Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall campaigns in 2021 and include hydrodynamics, waves, and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_Atchafalaya_MRD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_Terrebonne_MRD_2301 v1 - This dataset contains the Delft3D model of the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall campaigns in 2021 and include hydrodynamics, waves, and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_Terrebonne_MRD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_FM_HydroModel_2464 v1 - This dataset contains Delft3D Flexible Mesh (FM) hydrodynamic model setup and results for the Atchafalaya and Terrebonne basins in coastal Louisiana, U.S.. The model domain spans from Bayou Lafourche in eastern Terrebonne Bay, encompasses Atchafalaya Bay, and extends westward to Vermilion Bay."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_FM_HydroModel/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_FM_Hydroperiod_2421 v1 - This dataset provides the weighted average hydroperiod derived from two Delft3D FM model simulations representing the low discharge (fall 2021) and high discharge (spring 2021) seasons. Each model was run for 31 days, excluding a 1-day warm-up period from the analysis."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_FM_Hydroperiod/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_FM_Salinity_2420 v1 - This dataset provides the weighted averaged salinity derived from two Delft3D Flexible Mesh (FM) model simulations representing the low discharge (fall 2021) and high discharge (spring 2021) seasons. The weights for each model were determined using the probability density function of the Atchafalaya River discharge."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_FM_Salinity/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_294_Terrebonne_2303 v1 - This dataset contains the Delft3D model of the intensive site 294 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_294_Terrebonne/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_322_Terrebonne_2312 v1 - This dataset contains the Delft3D model of the intensive site 322 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_322_Terrebonne/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_396_Terrebonne_2314 v1 - This dataset contains the Delft3D model of the intensive site 396 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_396_Terrebonne/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_399_Terrebonne_2313 v1 - This dataset contains the Delft3D model of the intensive site 399 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_399_Terrebonne/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Delft3D_421_Terrebonne_2304 v1 - This dataset contains the Delft3D model of the intensive site 421 in the Terrebonne Basin along the Mississippi River Delta (MRD) in coastal Louisiana. Simulations cover the Delta-X Spring and Fall deployments in 2021 and include hydrodynamics and sediment transport."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Delft3D_421_Terrebonne/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_DEM_MRD_LA_2181 v1 - This dataset provides an updated digital elevation model (DEM) for the Atchafalaya and Terrebonne basins in coastal Louisiana, USA. The DEM is updated from the Pre-Delta-X DEM and extended to the full Delta-X study area."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_DEM_MRD_LA/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Ecogeomorphic_Products_2108 v1 - This product delineates the Mississippi River Delta (MRD) landscape into distinct ecogeomorphic cells, which are small contiguous areas of land with similar ecological and geomorphological characteristics. The study area is the Atchafalaya and Terrebonne basins of the MRD in southern Louisiana, U.S., which was the focus of NASA's 2021 Delta-X campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Ecogeomorphic_Products/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Feldspar_Sediment_V4_2381 v4 - This dataset provides elevation, hydrogeomorphic zone classification, soil carbon content, bulk density, organic matter content, and sediment accretion measurements collected at feldspar stations established near Louisiana's Coastwide Reference Monitoring Systems (CRMS) sites and on Mike Island in Wax Lake Delta (WLD). Feldspar stations were established to capture recent sediment deposition rates across hydrogeomorphic zones defined as discrete surface elevation ranges relative to NAVD88 (e.g., subtidal < -0.04 m, intertidal -0.04 m to 0.30 m, and supratidal > 0.30 m)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Feldspar_Sediment_V4/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Foliar_Stable_Isotopes_2194 v1 - This dataset contains foliar tissue C and N bulk isotopic signatures (delta 13C, delta 15N) of dominant wetland herbaceous species collected at six sites in the Atchafalaya (N = 3) and Terrebonne (N = 3) basins in coastal Louisiana. Five of the sites are from the Coastwide Reference Monitoring System (CRMS) and one site is the Mike Island Site in the Wax Lake Delta (WLD)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Foliar_Stable_Isotopes/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Particle_Size_LISST_V2_2077 v2 - This dataset provides in situ measurements of beam attenuation coefficient at 670 nm, average suspended particle size, particle size distribution, and water temperature in surface waters (~0.5 m) of the Atchafalaya and Terrebonne Basins on the southern coast of Louisiana. The field studies were conducted in the Spring and Fall in support of the Delta-X mission and include measurements made in 2021 during March 25 - April 22 and August 14 - September 24."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Particle_Size_LISST_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Insitu_WQ_Indicators_V2_2080 v2 - This dataset provides in situ measurements of water temperature (degrees C), salinity (PSU), turbidity (FNU), and chlorophyll-a fluorescence (RFU) in surface of the Atchafalaya River and Terrebonne Basins during the Spring (2021-03-25 to 2021-04-22) and Fall (2021-08-14 to 2021-09-24) field efforts by the Delta-X project. Field sampling was paused on August 25 and resumed on September 13, 2021, due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study site."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Insitu_WQ_Indicators_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Insitu_Reflectance_V3_2153 v3 - This dataset includes above water measurements of remote-sensing reflectance measured in situ at field sampling stations during the Delta-X 2021 field efforts. Measurements were collected in the Atchafalaya River and Terrebonne Basins on the southern coast of Louisiana from 2021-03-25 to 2021-04-22 (spring) and from 2021-08-14 to 2021-09-24 (fall)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Insitu_Reflectance_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_H2O_Surface_Elevation_2086 v1 - This dataset contains in situ water level measurements collected at 49 different locations across the Atchafalaya and Terrebonne basins in the Mississippi River Delta (MRD) floodplain, and 49 files with the in situ measurements from raw water level converted to absolute water surface elevation with respect to NAVD88 (GEOID12B). There were 65 sites included in the study, however, data from 16 of the sites were corrupted, unretrievable from the instrument or the instrument was lost during deployment."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_H2O_Surface_Elevation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Island_Channel_Model_2106 v1 - This dataset includes model code and output for a model that simulates changes in islands and small water channels of river delta systems in response to dynamics of sediment deposit, erosion, and changing water levels. Simulations demonstrate developmental cycles of secondary channels and how sediment dynamics can allow islands to build land vertically to keep pace with rising sea levels rather than passively drowning."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Island_Channel_Model/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_TotalSubsidenceRate_MRD_2307 v1 - This dataset provides estimates of land subsidence rates for the Delta-X domain area within the Atchafalaya and Terrebonne basins for 2021. The study area is a portion of the Mississippi River Delta in coastal Louisiana, U.S."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_TotalSubsidenceRate_MRD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_LandAccretion_WLD_2309 v1 - This dataset provides the Matlab sediment transport and land accretion model at Wax Lake Delta (WLD), Atchafalaya Basin, in coastal Louisiana. The data include the Matlab scripts that solve the advection and Exner equations to simulate the suspended sediment transport and accretion at WLD."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_LandAccretion_WLD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_LandAccretionMap_WLD_2308 v1 - This dataset provides sediment transport and land accretion model results at Wax Lake Delta (WLD), Atchafalaya Basin, in coastal Louisiana, USA. Data were simulated over the Delta-X Spring 2021 (2021-03-21 to 2021-04-03) and Fall 2021 (2021-08-14 to 2021-08-27) campaigns and the results are presented as annualized land accretion rate map."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_LandAccretionMap_WLD/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_MarshAccretion_NUMAR_2354 v1 - This dataset provides input data and model code to run the Marsh Accretion Rates (NUMAR) process model used to predict soil accretion rates and chemical properties for marsh sites in the Mississippi River Delta. NUMAR is a modification of the NUMAN model by Chen and Twilley (1999) that was developed for mangrove environments."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_MarshAccretion_NUMAR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_NUMAR_Soil_Accretion_2368 v1 - This dataset holds modeled estimates of soil accretion for the Atchafalaya and Terrebonne basins in the Mississippi River Delta of coastal Louisiana, U.S. Soil accretion was predicted from 2021-2100 using the Numerical Understanding of Marsh Accretion Resilience (NUMAR) model."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_NUMAR_Soil_Accretion/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Insitu_POC_2073 v1 - This dataset provides measurements of particulate organic carbon (POC) concentrations made on water samples collected during 2021 in surface waters of the Atchafalaya River and Terrebonne Basins, portions of the Mississippi River Delta in coastal Louisiana. Water samples were collected at ~0.5 m depth from surface during the spring (2021-03-25 to 2021-04-22) and fall (2021-08-14 to 2021-09-24) field efforts."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Insitu_POC/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_RTK_Elevation_2071 v1 - This dataset provides real-time kinematic (RTK) GPS elevation measurements, along with horizontal and vertical precision errors, obtained along transects near Louisiana's Coastwide Reference Monitoring Systems (CRMS) sites and on Mike Island in Wax Lake Delta (WLD). The data were collected during the Delta-X Spring Campaign from 2021-03-24 to 2021-04-02."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_RTK_Elevation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_BG_Root_Stable_Isotopes_2193 v1 - This dataset contains carbon-13 (13C) and nitrogen-15 (15N) isotopic signatures of belowground root biomass samples from herbaceous wetlands in the Atchafalaya and Terrebonne basins of the Mississippi River Delta in coastal Louisiana, U.S., during August 2021. The data were collected during the Delta-X Fall deployment."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_BG_Root_Stable_Isotopes/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Sediment_Core_GrainSize_2382 v1 - This dataset provides grain size distribution measurements collected from sediment core samples on Mike Island in the Wax Lake Delta, Louisiana, as part of the Delta-X Spring campaign in March, 2021,and the Fall campaign during August, 2021. The data are for March 26 and 29, and August 18 and 24."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Sediment_Core_GrainSize/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Cs137_SoilAccretionRate_2380 v1 - This dataset holds measurements of Cesium-137 (137Cs) activity sampled from sites in the Atchafalaya and Terrebonne Basins on the southern coast of Louisiana, USA. Sediment cores were taken to validate modeled estimates of soil accretion rates."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Cs137_SoilAccretionRate/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Herb_WetlandSoil_V3_2239 v3 - This dataset contains properties of soil core samples for herbaceous wetlands collected in the Atchafalaya and Terrebonne basins in southeastern coastal Louisiana for the period 2021-03-21 to 2021-04-02 and on 2021-08-19. Field measurements were conducted at six sites in the Atchafalaya (N = 3) and Terrebonne (N = 3) basins."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Herb_WetlandSoil_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Sonar_Bathymetry_2085 v1 - This dataset includes bathymetry data for water channels in a portion of the Mississippi River Delta (MRD) of coastal Louisiana. The data were collected using sonar during field efforts of the Delta-X Campaign taking place during 2021."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Sonar_Bathymetry/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_TSS_Concentration_V2_2075 v2 - This dataset provides measurements of total suspended solids concentrations (TSS) of surface waters in the Atchafalaya River and Terrebonne Basins during the spring (2021-03-25 to 2021-04-22) and fall (2021-08-14 to 2021-09-24) field efforts by the Delta-X project. Field sampling was paused on August 25 and resumed on September 13, 2021, due to the landfall of Hurricane Ida on 2021-08-26 approximately 70 km east of the study site."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_TSS_Concentration_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_Turbidity_Data_V4_2241 v4 - This dataset provides turbidity measurements with co-located water and air pressure and temperature measurements in portions of the Mississippi River Delta, coastal Louisiana, US. Data were collected at five sites in Atchafalaya River Basin in Spring (2021-03-24 to 2021-04-02) and eight sites in the Atchafalaya River and Terrebonne Basins in Fall 2021 (2021-08-16 to 2021-08-27)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_Turbidity_Data_V4/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L1_UAVSAR_SLC_Stack_1984 v1.1 - This dataset contains UAVSAR Level 1 (L1) Single Look Complex (SLC) stack products for Delta-X flight lines acquired during 2021-03-27 to 2021-04-18 (spring) and 2021-09-03 to 2021-09-13 (fall). The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L1_UAVSAR_SLC_Stack/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L1B_UAVSAR_WaterLevels_1979 v1.1 - This dataset contains UAVSAR Level 1B (L1B) interferometric products for Delta-X flight lines acquired during the 2021 Spring (2021-03-27 to 2021-04-18) and Fall (2021-09-03 to 2021-09-13) deployments. The data were collected by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III (C20) aircraft as part of the Delta-X campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L1B_UAVSAR_WaterLevels/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L2_UAVSAR_WaterLevels_2057 v1.1 - This dataset contains georeferenced UAVSAR Level 2 (L2) interferometric products for Delta-X flight lines acquired during the spring (2021-03-27 to 2021-04-18) and fall (2021-09-03 to 2021-09-13) deployments. This dataset provides water-level change observations throughout wetlands of the Atchafalaya and Terrebonne Basins, in Southern Louisiana, USA, within the Mississippi River Delta (MRD), and it may be used to generate time series analysis."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L2_UAVSAR_WaterLevels/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_UAVSAR_L3_ChannelMap_V2_2344 v2 - This dataset provides gridded estimates of water channels for the Atchafalaya and Terrebonne basins of the Mississippi River Delta in Louisiana, U.S.A. The data show channels with open water that are as narrow as 10 m."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_UAVSAR_L3_ChannelMap_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "DeltaX_L3_UAVSAR_WaterLevels_2058 v1.1 - This dataset contains georeferenced InSAR-derived water level change maps for Delta-X flight lines acquired during the spring (2021-03-27 to 2021-04-18) and fall (2021-09-03 to 2021-09-13) deployments. Water-level change observations are provided throughout wetlands of the Atchafalaya and Terrebonne Basins, in Southern Louisiana, USA, within the Mississippi River Delta (MRD)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/DeltaX_L3_UAVSAR_WaterLevels/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_L3_AVIRIS_Biomass_1821 v1 - This dataset includes aboveground biomass (AGB) and vegetation of herbaceous and forest wetland at 5.4 m resolution across the Wax Lake Delta (WLD) in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Vegetation classes were derived from Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) imagery acquired over the Atchafalaya Basin and the Terrebonne Basin in October 2016 in combination with a digital elevation model."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_L3_AVIRIS_Biomass/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_L3_AVIRIS_Sediment_1822 v1 - This dataset includes total suspended solids (TSS) at the water surface across the Atchafalaya and Terrebonne Basins in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. AVIRIS-NG, the Next Generation Airborne Visible to Infrared Imaging Spectrometer, acquired data over the study area in 2015 and 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_L3_AVIRIS_Sediment/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_Sonar_Bathymetry_1807 v1 - This dataset provides water depths and water surface elevations collected during bathymetric surveys of the main channel of the Wax Lake Delta within the Mississippi River Delta (MRD) floodplain of coastal Louisiana, USA. The measurements were made during the Pre-Delta-X Campaign in Fall 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_Sonar_Bathymetry/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_UAVSAR_SLC_1816 v1 - This Level 1 (L1) dataset includes single look complex (SLC) stack products and co-registered interferograms in the HH (horizontal transmit and horizontal receive) polarization for the Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. The data were collected in October 2016 by Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar flown on the NASA Gulfstream-III aircraft as part of the Pre-Delta-X campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_UAVSAR_SLC/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_L2_AirSWOT_1818 v1 - This dataset provides water surface elevations over the Wax Lake Delta in the Atchafalaya Basin in coastal Louisiana, USA, in May 2015. These Level 2 (L2) data were collected by AirSWOT, an airborne instrument employing near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and produce continuous gridded elevation data at 3.6 m resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_L2_AirSWOT/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_L2_AVIRIS_SR_1826 v1 - This Level 2 (L2) dataset provides surface spectral reflectance data acquired over the Atchafalaya and Terrebonne basins of the Mississippi River Delta (MRD) of coastal Louisiana, USA, in 2015-2016. The data include georectified images with Lambertian-equivalent surface reflectance and composite mosaics with adjustments for Bidirectional Reflectance Distribution Function (BRDF) effects."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_L2_AVIRIS_SR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_L3_AirSWOT_WL_1819 v1 - This dataset contains water level profiles generated from the AirSWOT data collected in the Atchafalaya Basin in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Part of the Pre-Delta-X Campaign, AirSWOT used near-nadir wide-swath Ka-band radar interferometry to measure water-surface elevation and uncertainty in May 2015."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_L3_AirSWOT_WL/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_ASO_LiDAR_WaterLevel_1820 v1 - This dataset contains lidar-derived water surface elevation profiles for river channels between Wax Lake, in the Atchafalaya River Basin of the Mississippi River Delta, and the Gulf of Mexico. The provided elevation profiles (i.e., water levels) were estimated using remotely sensed lidar data in combination with in situ field measurements of water levels for elevation calibration and to quantify uncertainty in estimates."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_ASO_LiDAR_WaterLevel/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_ADCP_Measurements_1806 v1 - This dataset provides river discharge measurements collected at selected locations across the Atchafalaya River Basin, within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign on October 15 to 20, 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_ADCP_Measurements/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_Insitu_Reflectance_1804 v1 - This dataset provides measurements of in situ remote-sensing reflectance (Rrs; per steradian) of surface water across Atchafalaya Basin, southern coastal Louisiana, USA within Mississippi River Delta (MRD) floodplain. The in situ spectral reflectance measurements were made during the Pre-Delta-X campaign in Fall 2016 (October 14 to 2)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_Insitu_Reflectance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_TSS_Concentration_1802 v1 - This dataset contains the total suspended solids (TSS) concentration of in situ water samples collected at selected sites across the Atchafalaya and Terrebonne Basins within the Mississippi River Delta (MRD) floodplain of coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign in Spring 2015 and Fall 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_TSS_Concentration/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_UAVSARChannelMaps_V2_2366 v2 - This dataset provides spatial data on water channels in the estuary of the Atchafalaya Basin of the Mississippi River Delta of coastal Louisiana. These Level-3 (L3) channel maps were developed from interferograms derived from Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR) data collected on 2016-10-16 (low tides) and 2016-10-17 (high tides)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_UAVSARChannelMaps_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_UAVSAR_WaterLevel_1823 v1 - This dataset contains five maps of cumulative changes in water levels at 30-minute intervals over a 150-minute period on 2016-10-16 in the Atchafalaya Basin in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Water surface elevations were measured on six flights at 30-minute intervals, with the Uninhabited Aerial Vehicle Synthetic Aperture Radar (UAVSAR), a polarimetric L-band synthetic aperture radar (SAR) flown on the NASA Gulfstream-III aircraft."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_UAVSAR_WaterLevel/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_Vegetation_Structure_1805 v1 - This dataset provides vegetation species, height, stem density and diameter, and species aboveground biomass (AGB) measurements collected at herbaceous and forested wetland sites across the Atchafalaya and Terrebonne basins within the Mississippi River Delta (MRD) floodplain in coastal Louisiana, USA. The measurements were made during the Pre-Delta-X campaign in Spring 2015 and Fall 2015."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_Vegetation_Structure/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PreDeltaX_Water_Level_Data_1801 v1 - This dataset provides absolute water level elevations derived for 10 locations across the Wax Lake Delta, Atchafalaya Basin, in Southern Louisiana, USA, within the Mississippi River Delta (MRD) floodplain. Field measurements were made during the Pre-Delta-X campaign on October 13-20, 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/deltax/PreDeltaX_Water_Level_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
