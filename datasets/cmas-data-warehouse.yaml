@@ -134,6 +134,10 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://2016v3platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2016v3 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2016v3platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: SMOKE Test Case
     ARN: arn:aws:s3:::cmas-smoke-testcase
     Region: us-east-1
