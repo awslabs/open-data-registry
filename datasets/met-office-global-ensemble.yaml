@@ -1,15 +1,29 @@
 Name: Met Office Global Ensemble Prediction System (MOGREPS-G) on a 30-day rolling archive
-Description: The flagship Numerical Weather Prediction (NWP) model developed and used at the Met Office, is the Unified
-  Model, the same model is used for both weather and climate prediction. For weather forecasting the Met Office
-  runs several configurations of the Unified Model as part of its operational Numerical Weather Prediction suite.
-  The global ensemble (MOGREPS-G) produces forecasts for the whole globe up to a week ahead. The projection
-  used is the Equirectangular Latitude-Longitude and the grid resolution is 20km. The forecast is updated regularly
-  with a time delay and formatted via NetCDF.
-  Please note this is a public beta and therefore a non-operational service.
+Description: |
+ THIS DATASET IS CHANGING<br><br>
+
+ Files uploaded from late January 2026 onward will contain changes including:
+ - precision changes
+ - new parameters
+ - changes to existing parameters e.g. adding vertical levels and timesteps
+ - the height_asl_on_pressure_levels parameter will be replaced by geopotential_height_on_pressure_levels<br><br>
+ 
+ Please check your systems are prepared for these changes.<br><br>
+
+ A numerical weather prediction model that produces forecasts for the whole globe up to a week ahead. The projection used is the Equirectangular Latitude-Longitude and the grid resolution is 20km. The data is available as NetCDF files. It's offered on a free, unsupported basis, so we don’t recommend using it for any critical business purposes.<br><br>
+ 
+ Met Office Global Ensemble Prediction System (MOGREPS-G) is a global configuration of the Unified Model, which is the Met Office's flagship Numerical Weather Prediction model.<br><br>
+ 
+ The archive contains 30 days of data. The data is typically available approximately 10-11 hours after the model run time.<br><br>
+ 
+ The following timesteps are available:
+ - Every hour from 0 to 54 hours or from 0 to 132 hours (depending on the parameter)
+ - Every 3 hours between 57 to 198 hours or from 135 to 198 hours (depending on the parameter) for data prior to late January 2026. Data produced after this run out to 246 hours.
+UpdateFrequency: The MOGREPS-G model runs four times per day at 00:00, 06:00, 12:00 and 18:00 UTC.
+License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
-Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
-UpdateFrequency: The MOGREPS-G model runs four times per day at 00, 06, 12, 18 UTC. The available time steps are provided every hour from 0 to 54 hours or from 0 to 132 hours and every 3 hours between 57 to 198 hours or from 135 to 198 hours.
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
 Collabs:
   ASDI:
     Tags:
@@ -28,7 +42,6 @@ Tags:
   - near-surface relative humidity
   - netcdf
   - weather
-License: "British Crown copyright 2024-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
 Resources:
   - Description: Met Office Global Ensemble Prediction System (MOGREPS-G) on a 30-day rolling archive
     ARN: arn:aws:s3:::met-office-global-ensemble-model-data

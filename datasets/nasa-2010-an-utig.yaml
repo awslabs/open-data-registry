@@ -1,0 +1,40 @@
+Name: NASA 2010_AN_UTIG Project
+Description: |
+  This data set contains geolocated surface elevation measurements captured over Antarctica using the Sigma Space Mapping Photon Counting Lidar and Riegl Laser Altimeter. The data were collected by scientists working on the International Collaborative Exploration of the Cryosphere through Airborne Profiling (ICECAP) project, which was funded by the National Science Foundation (NSF), the Antarctic Climate and Ecosystems Collaborative Research Center, and the Natural Environment Research Council (NERC) with additional support from NASA Operation IceBridge.
+  <br>
+
+  #### ILSNP1B
+  This data set contains nadir photon counting data captured over Antarctica using the Sigma Space photon counting lidar. Position and orientation data are included. The data were collected by scientists working on the International Collaborative Exploration of the Cryosphere through Airborne Profiling (ICECAP) project, which was funded by the National Science Foundation (NSF), the Antarctic Climate and Ecosystems Collaborative Research Center, and the Natural Environment Research Council (NERC) with additional support from NASA Operation IceBridge.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/ilsnp4/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- elevation
+- ice
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ILSNP4 v1 - This data set contains geolocated surface elevation measurements captured over Antarctica using the Sigma Space Mapping Photon Counting Lidar and Riegl Laser Altimeter. The data were collected by scientists working on the International Collaborative Exploration of the Cryosphere through Airborne Profiling (ICECAP) project, which was funded by the National Science Foundation (NSF), the Antarctic Climate and Ecosystems Collaborative Research Center, and the Natural Environment Research Council (NERC) with additional support from NASA Operation IceBridge."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILSNP4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILSNP1B v1 - This data set contains nadir photon counting data captured over Antarctica using the Sigma Space photon counting lidar. Position and orientation data are included."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILSNP1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
