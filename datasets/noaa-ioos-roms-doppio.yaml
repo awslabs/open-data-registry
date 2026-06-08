@@ -1,0 +1,85 @@
+Name: 'NOAA IOOS MARACOOS Regional Ocean Modeling System (ROMS) "Doppio" Data Assimilative Reanalysis'
+
+Description: |
+  This dataset, identified as Doppio Analysis Version 3 Release 3 (DopAnV3R3-ini2007) initialized January 2007, comprises outputs from a Regional Ocean Modeling System (ROMS) data assimilative reanalysis of ocean circulation in the Mid-Atlantic Bight and Gulf of Maine for 2007-2024.
+  <br><br>
+  A multi-year reanalysis (2007-2024) of circulation in the coastal ocean and adjacent deep sea of the northeast U.S. continental shelf has been computed using the Regional Ocean Modeling System (ROMS) with four-dimensional variational (4D-Var) data assimilation (DA) of observations from satellites, land-based ocean surface current measuring radar, and all available in situ observations from the MARACOOS (maracoos.org) and NERACOOS (neracoos.org) regional associations of the U.S. Integrated Ocean Observing System (IOOS). The reanalysis downscales open boundary information from the Copernicus Marine Service global analysis. The dynamic model is forced by regional meteorological analyses, observed daily river discharges, and harmonic tides that augment the open boundary conditions. The analysis covers the period 2-Jan-2007 to 31-Dec-2024 on a 7-km horizontal grid with 40 vertical terrain-following s-coordinate levels. Ocean state variables computed are sea level, velocity, temperature, and salinity. Air-sea fluxes of heat and momentum are included.
+  <br><br>
+  The ROMS 4D-Var DA configuration and its performance in comparison to observations (both assimilated and independent) are described by Wilkin et al. (2022). The underlying ROMS ocean circulation model configuration is described by López et al (2020). Wilkin et al. (2022) also compare this analysis to Copernicus and the U.S. Navy Global Ocean Forecast System (GOFS) HYCOM model.
+  <br><br>
+  All ROMS model outputs here are in netCDF format and the data and metadata follow CF-1.4 conventions for the description of coordinates and variables. The reanalysis results are provided on the model’s native 3-D grid in terrain-following coordinates aggregated into three collections with individual files containing 3 days of model output.
+  <br><br>
+  - His: 1-hourly snapshots of the ocean state “history” (sea level and 3-D velocity, temperature and salinity) for 02-Jan-2007 01:00 through 31-Dec-2024 00:00
+  - Flx: 1-hourly snapshots of surface air-sea flux forcing (wind stress and net heat flux) from the posterior reanalysis for 02-Jan-2007 01:00 through 31-Dec-2024 00:00
+  - Avg: Daily averages for 02-Jan-2007 12:00 through 30-Dec-2024 12:00
+  <br><br>
+  In addition to access here in the Registry of Open Data in AWS, Rutgers University operates a THREDDS (Thematic Real-time Environmental Distributed Data Services) web service at https://tds.marine.rutgers.edu/thredds/roms/doppio/catalog.html that supports geospatial and temporal sub-setting. Access protocols supported are OPeNDAP, WMS and netCDF subsetting. That collection includes: 
+  <br><br>
+  - monthly averages for 17-Jan-2007 through 15-Dec-2021
+  - yearly averages for 2007 through 2021
+  - monthly ensemble averages
+  <br><br>
+  The observations that were assimilated, after quality control and the formation of super-observations as described by Wilkin et al. (2022), can be accessed via an ERDDAP service at https://tds.marine.rutgers.edu/erddap/tabledap/DOPPIO_REANALYSIS_Ver3_OBS.graph. The dataset includes observation type and provenance fields (documented in the ERDDAP metadata) that allow sub-selection by data types (temperate, salinity, velocity, etc.) or observing platform (e.g., Jason altimeter satellite, AVHRR SST, IOOS gliders, etc.). The ERDDAP catalog includes outputs of the DA system in observation space; namely, prior and posterior model errors, and the Copernicus and GOFS values interpolated to the observation position. An observation scale field flags data that were rejected by 4D-Var QC.
+
+Documentation: |
+  - López, A. G., J. L. Wilkin and J. C. Levin, (2020) Doppio – a ROMS (v3.6)-based circulation model for the Mid-Atlantic Bight and Gulf of Maine: configuration and comparison to integrated coastal observing network observations, Geosci. Model Dev., 13, 3709–3729, doi: 10.5194/gmd-13-3709-2020
+  - Wilkin, J., J. Levin, A. Moore, H. Arango, A. López and E. Hunter, (2022), A data-assimilative model reanalysis of the U.S. Mid Atlantic Bight and Gulf of Maine: Configuration and comparison to observations and global ocean models, Progress in Oceanography, 209, 102919, https://doi.org/10.1016/j.pocean.2022.102919
+  - Wilkin, J., and J. Levin (2022), Outputs from a Regional Ocean Modeling System (ROMS) data assimilative reanalysis (version DopAnV3R3-ini2007) of ocean circulation in the Mid-Atlantic Bight and Gulf of Maine for 2007-2021. SEANOE. https://doi.org/10.17882/89673 
+
+UpdateFrequency: |
+  This is a static reanalysis data set. A near-real-time version of the Doppio analysis and forecast system is operated by the Rutgers University Ocean Modeling Group for MARACOOS. 
+
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired.
+
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+
+ManagedBy: |
+  "[NOAA](http://www.noaa.gov/)"
+
+Contact: |
+  For enquiries about details of the Doppio V3R3 reanalysis configuration or to express interest in Doppio based applications, contact Dr. John Wilkin, Rutgers University Ocean Modeling Group, by emailing jwilkin@rutgers.edu.
+  <br><br>
+  For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br><br>
+  We also seek to identify case studies on how NOAA data are being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+  <br><br>
+  
+Collabs:
+  ASDI:
+    Tags:
+      - water
+Tags:
+  - aws-pds
+  - coastal
+  - environmental
+  - oceans
+  - marine
+
+Resources:
+  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF"
+    ARN: arn:aws:s3:::noaa-nos-cora-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
+  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications"
+    ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
+    Region: us-east-1
+    Type: SNS Topic
+
+DataAtWork:
+
+  Tools & Applications:
+    - Title: ROMS model outputs in AWS can be readily visualized and analyzed in Python using the xroms tools
+      URL: https://github.com/xoceanmodel/xroms
+      AuthorName: "XROMS" 
+  
+  Publications:
+    - Title: "A data-assimilative model reanalysis of the U.S. Mid Atlantic Bight and Gulf of Maine: Configuration and comparison to observations and global ocean models"
+      URL: https://doi.org/10.1016/j.pocean.2022.102919
+      AuthorName: Wilkin, J., Levin, J., Moore, A., Arango, H., López, A., and Hunter, E.
+
+    - Title: " Outputs from a Regional Ocean Modeling System (ROMS) data assimilative reanalysis (version DopAnV3R3-ini2007) of ocean circulation in the Mid-Atlantic Bight and Gulf of Maine for 2007-2021"
+      URL:  https://doi.org/10.17882/89673   
+      AuthorName: Wilkin, J. and Levin, J.
