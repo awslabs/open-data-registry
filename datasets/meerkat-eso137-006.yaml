@@ -47,6 +47,10 @@ Resources:
     RequesterPays: False
     Explore:
       - '[Browse dataset](https://ratt-public-data.s3.af-south-1.amazonaws.com/index.html#ESO137/)'
+  - Description: "Update notifications for s3://ratt-public-data. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:af-south-1:666850927229:ratt-public-data-object_created
+    Region: af-south-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: MeerKAT ESO 137-006"
