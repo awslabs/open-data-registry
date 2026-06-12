@@ -39,18 +39,18 @@ Citation: >-
                  (EMBER) Datasets for 2021, 2022, 2024, and 2025", 454R26002
 Resources:
   - Description: >-
-The data are organized into four yearly folders (2021 data, 2022 data, 2024 data, and 2025 data) each with the same directory structure. Each yearly folder has the following directory structure:
-  $YYYY (four digit year)
-   CMAQ
-    Emissions
-     Anthropogenic
-     fires
-    Inputs
-     ICBC
-     MCIP
-    Outputs
-   Emissions Input files
-    Emissions are split into two main directories ("anthropogenic" and "fires")
+      The data are organized into four yearly folders (2021 data, 2022 data, 2024 data, and 2025 data) each with the same directory structure. Each yearly folder has the following directory structure:
+      $YYYY (four digit year)
+       CMAQ
+        Emissions
+         Anthropogenic
+         fires
+        Inputs
+         ICBC
+         MCIP
+        Outputs
+       Emissions Input files
+        Emissions are split into two main directories ("anthropogenic" and "fires")
      Anthropogenic - This directory includes all anthropogenic emissions. These emissions
      are used in the base simulation as well as both zero out simulations. Since the same 
      set of anthropogenic emissions are used for 2021 and 2022 simulations, the emissions
@@ -81,27 +81,27 @@ The data are organized into four yearly folders (2021 data, 2022 data, 2024 data
       ptfire_mexona (2024 and 2025) - wildland and agricultural fires in Mexico
       ptfire-rx - prescribed fires in the United States
       ptfire-wild - wildfires in the United States
-    File description - Each folder contains CMAQ emissions input files for a different emissions sector. 
-    Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Point source 
-    sectors include “inln_mole” files with information on emissions magnitudes and “stack_groups” 
-    files with information on the emissions location/stack characteristics. Gridded sectors include 
-    only “emis_mole” files with gridded emissions magnitudes.
-  Meteorological Input Files-
-   Meteorological CMAQ input files can be found in the $YYYY/MCAQ/inputs/MCIP directories. 
-   Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Files are 
-   provided for every day of the simulation. Descriptions of the file types and variables can 
-   be found at https://github.com/USEPA/CMAQ/tree/main/PREP/mcip.
-  Initial and Boundary Condition Files-
-   Initial and boundary condition files can be found in $YYYY/MCAQ/inputs/ICBC directories. 
-   Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Initial 
-   conditions are provided for April 1 of each simulation year. Boundary condition files are 
-   provided for every day of the simulation. Descriptions of the file types and variables 
-   can be found at https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and 
-   https://github.com/USEPA/CMAQ/tree/main/PREP/icon.
-  Gridded Model Output Files-
-   For each simulation year, gridded daily layer-1 model outputs are provided for three 
-   simulations- the base simulation, the zero fires simulation, and the zero Canada and Mexico 
-   fires simulation. The location and names of the simulations for each year are provided below
+        File description - Each folder contains CMAQ emissions input files for a different emissions sector. 
+        Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Point source 
+        sectors include “inln_mole” files with information on emissions magnitudes and “stack_groups” 
+        files with information on the emissions location/stack characteristics. Gridded sectors include 
+       only “emis_mole” files with gridded emissions magnitudes.
+      Meteorological Input Files-
+       Meteorological CMAQ input files can be found in the $YYYY/MCAQ/inputs/MCIP directories. 
+       Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Files are 
+       provided for every day of the simulation. Descriptions of the file types and variables can 
+       be found at https://github.com/USEPA/CMAQ/tree/main/PREP/mcip.
+      Initial and Boundary Condition Files-
+       Initial and boundary condition files can be found in $YYYY/MCAQ/inputs/ICBC directories. 
+       Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Initial 
+       conditions are provided for April 1 of each simulation year. Boundary condition files are 
+       provided for every day of the simulation. Descriptions of the file types and variables 
+       can be found at https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and 
+       https://github.com/USEPA/CMAQ/tree/main/PREP/icon.
+      Gridded Model Output Files-
+       For each simulation year, gridded daily layer-1 model outputs are provided for three 
+       simulations- the base simulation, the zero fires simulation, and the zero Canada and Mexico 
+       fires simulation. The location and names of the simulations for each year are provided below
     2021- 2021/CMAQ/outputs/
      Base simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.basecase2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
      Zero Fires Simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
@@ -124,11 +124,11 @@ The data are organized into four yearly folders (2021 data, 2022 data, 2024 data
      O3_MDA8- maximum daily 8-hour ozone concentrations
      ATOTIJ_AVG- 24-hour average total PM2.5 concentrations
 
-ARN: 'arn:aws:s3:::epa-ember'
-Region: us-east-1
-Type: S3 Bucket
-Explore:
-  - '[Browse Bucket](https://epa-ember.s3.amazonaws.com/index.html)'
+    ARN: 'arn:aws:s3:::epa-ember'
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://epa-ember.s3.amazonaws.com/index.html)'
   - Description: Notification for the Ember bucket
     ARN: 'arn:aws:sns:us-east-1:127085394039:ember-object_created'
     Region: us-east-1
