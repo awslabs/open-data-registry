@@ -81,11 +81,11 @@ Resources:
 
       ### Meteorological input files
 
-      Found in `$YYYY/CMAQ/inputs/MCIP`, provided for every day of the simulation. File type and variable descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/mcip
+      Found in `$YYYY/CMAQ/inputs/MCIP`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures, provided for every day of the simulation. File type and variable descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/mcip
 
       ### Initial and boundary condition files
 
-      Found in `$YYYY/CMAQ/inputs/ICBC`. Initial conditions are provided for April 1 of each simulation year; boundary condition files are provided for every day of the simulation. Descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and https://github.com/USEPA/CMAQ/tree/main/PREP/icon
+      Found in `$YYYY/CMAQ/inputs/ICBC`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures. Initial conditions are provided for April 1 of each simulation year; boundary condition files are provided for every day of the simulation. Descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and https://github.com/USEPA/CMAQ/tree/main/PREP/icon
 
       ### Gridded model output files
 
@@ -113,7 +113,7 @@ Resources:
         Zero CA/MX fires:      hr2day_merged_2025.EMBER_noCA-MXfires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
       ```
 
-      Each output file contains daily gridded concentrations from layer 1 of the model simulation, with the following variables:
+      Each output file is a NetCDF version 3 formatted file using I/O API (IOAPI) data structures, containing daily gridded concentrations from layer 1 of the model simulation, with the following variables:
 
       - `O3_MDA8` — maximum daily 8-hour ozone concentrations
       - `ATOTIJ_AVG` — 24-hour average total PM2.5 concentrations
