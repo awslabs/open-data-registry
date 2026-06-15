@@ -32,8 +32,10 @@ License: >-
   under 17 U.S.C. § 105. More details on the U.S. Public Domain license are available
   here: http://www.usa.gov/publicdomain/label/1.0/
 Citation: >-
-  TSD: US EPA, 2026, "Development of the Expedited Modeling of Burn Events Results
-  (EMBER) Datasets for 2021, 2022, 2024, and 2025", 454R26002
+  EMBER Modeling Files was accessed on DATE from
+  https://registry.opendata.aws/epa-ember. US EPA, 2026, "Development of the
+  Expedited Modeling of Burn Events Results (EMBER) Datasets for 2021, 2022, 2024,
+  and 2025", 454R26002
 Resources:
   - Description: |
       The data are organized into four yearly folders (`2021 data`, `2022 data`, `2024 data`, and `2025 data`), each with the same directory structure:
@@ -56,7 +58,9 @@ Resources:
 
       Emissions are split into two main directories, **Anthropogenic** and **Fires**.
 
-      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations. The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except `ptegu`; non-`ptegu` files are only provided in the 2024 directory (with a README pointer). Subfolders:
+      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations.
+
+      The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there). Subfolders:
 
       - `Beis_inline` — auxiliary files needed to run CMAQ with online biogenic emissions calculations
       - `merged_nobeis_norwc` — gridded emissions: all gridded sources except residential wood combustion and biogenic sources
