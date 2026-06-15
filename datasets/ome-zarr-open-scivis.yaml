@@ -1,7 +1,7 @@
 Name: OME-Zarr Open SciVis Datasets
 Description: This project provides the Open SciVis Datasets in a chunked, highly-compressed, multi-scale format, encodes metadata in JSON according to the OME-Zarr specification, and hosts the datasets on AWS S3 through the AWS Open Data Program, aiming to serve as a web-based resource for the scientific visualization community to enhance reproducibility and facilitate testing and development of OME-Zarr tools.
 Documentation: https://github.com/InsightSoftwareConsortium/OMEZarrOpenSciVisDatasets
-Contact: "Matt McCormick <matt@mmmccormick.com>"
+Contact: "Matt McCormick <matt@fideus.io>"
 ManagedBy: "NumFOCUS"
 UpdateFrequency: On a biannual basis we update the datasets and sync with OME-Zarr standards.
 Tags:
@@ -15,7 +15,9 @@ Tags:
   - computed tomography
   - volumetric imaging
   - zarr
+  - aws-pds
 License: CC-BY-4.0 unless otherwise specified
+Citation: McCormick, M. (2025). OME-Zarr Open SciVis Datasets (v2025.10.31). Zenodo. https://doi.org/10.5281/zenodo.17495294
 Resources:
   - Description: OME-Zarr Open SciVis Datasets
     ARN: arn:aws:s3:::ome-zarr-scivis
@@ -27,6 +29,10 @@ DataAtWork:
       URL: https://github.com/InsightSoftwareConsortium/OMEZarrOpenSciVisDatasets?tab=readme-ov-file#usage
       AuthorName: Matt McCormick
       AuthorURL: https://github.com/thewtex
+    - Title: Explore OME-Zarr Open SciVis Datasets in a Browser-Based Notebook on Scigantic
+      URL: https://scigantic.com/archive/c7122f2c-4639-5864-b063-61af7d973461/sample
+      AuthorName: Scigantic
+      AuthorURL: https://scigantic.com/
   Tools & Applications:
     - Title: A list of tools and libraries with OME-Zarr support
       URL: https://ngff.openmicroscopy.org/tools/index.html
@@ -45,4 +51,3 @@ DataAtWork:
 DeprecatedNotice:
 ADXCategories:
   - Healthcare & Life Sciences Data
-  - Manufacturing Data

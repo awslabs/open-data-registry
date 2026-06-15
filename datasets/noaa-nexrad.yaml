@@ -52,14 +52,6 @@ Resources:
     ARN: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel3Object
     Region: us-east-1
     Type: SNS Topic
-  - Description: "*OLD NEXRAD Level II archive bucket* which is now <b>Deprecated</b>. It is recommended to move to the new bucket: unidata-nexrad-level2 and SNS topic: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive"
-    ARN: arn:aws:s3:::noaa-nexrad-level2
-    Region: us-east-1
-    Type: S3 Bucket
-  - Description: "Notifications for the *OLD Level II archival bucket*  which is now <b>Deprecated</b>. It is recommended to move to the new bucket: unidata-nexrad-level2 and SNS topic: arn:aws:sns:us-east-1:684042711724:NewNEXRADLevel2Archive"
-    ARN: arn:aws:sns:us-east-1:811054952067:NewNEXRADLevel2Archive
-    Region: us-east-1
-    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Using Python to Access NCEI Archived NEXRAD Level 2 Data (Jupyter notebook)
@@ -86,6 +78,10 @@ DataAtWork:
       AuthorName: Chris Stoner
       Services:
       - Amazon SageMaker Studio Lab
+    - Title: Explore NEXRAD in a Browser-Based Notebook with Scigantic
+      URL: https://scigantic.com/archive/b2c6e420-9855-55ce-af73-f8e41a24278e/sample
+      AuthorName: Scigantic
+      AuthorURL: https://scigantic.com
   Tools & Applications:
     - Title: nexradaws on pypi.python.org - python module to query and download Nexrad data from Amazon S3
       URL: https://pypi.org/project/nexradaws/

@@ -16,6 +16,11 @@ Tags:
   - geospatial
   - environmental
   - climate
+  - model
+  - netcdf
+  - open source software
+  - MPAS
+  - cloud computing
 License: There are no restrictions on the use of this data. US EPA License (https://pasteur.epa.gov/license/sciencehub-license.html)
 Resources:
   - Description: CMAQ Release Benchmark Data for Easy Download 
@@ -24,42 +29,70 @@ Resources:
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmaq-release-benchmark-data-for-easy-download.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ Release Benchmark Data for Easy Download 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-release-benchmark-data-for-easy-download-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: CMAQ CONUS-2 Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq-conus2-benchmark
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq-conus2-benchmark.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ CONUS-2 Benchmark Data 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-cmaq-conus2-benchmark-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: MPAS-CMAQ Input Data
     ARN: arn:aws:s3:::mpas-cmaq
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://mpas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in MPAS-CMAQ Input Data
+    ARN: arn:aws:sns:us-east-1:703786580975:mpas-cmaq-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: CMAQ Benchmark Data
     ARN: arn:aws:s3:::cmas-cmaq
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-cmaq.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ Benchmark Data
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-cmaq-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: AMET Data
     ARN: arn:aws:s3:::cmas-amet
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-amet.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in AMET Data
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-amet-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: CMAS WWLLN Lightning Data
     ARN: arn:aws:s3:::cmas-wwlln-lightning
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-wwlln-lightning.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAS WWLLN Lightning Data 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-wwlln-lightning-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: EQUATES EPA’s Air QUAlity TimE Series Project Data
     ARN: arn:aws:s3:::cmas-equates
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-equates.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in EQUATES EPA’s Air QUAlity TimE Series Project Data
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-equates-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: Community Multiscale Air Quality (CMAQ) 2019 3D Gridded and Column data from the EPA's Air Quality Time Series (EQUATES) Project
     ARN: arn:aws:s3:::epa-equates-v1
     Region: us-east-1
@@ -68,11 +101,35 @@ Resources:
     - '[Browse Bucket](https://epa-equates-v1.s3.amazonaws.com/index.html)'
     - '[EPA CMAQ 2019 3D Gridded and Column data from EQUATES Project](https://aws.amazon.com/marketplace/pp/prodview-kziefcewnxcxe?sr=0-5&ref_=beagle&applicationId=AWSMPContessa)'
   - Description: CMAQ 2023 12US4 CRACMM3 Modeling Platform
-    ARN: arn:aws:s3::::::cmaq-12us4-cracmm3-modeling-platform-2023
+    ARN: arn:aws:s3:::cmaq-12us4-cracmm3-modeling-platform-2023
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmaq-12us4-cracmm3-modeling-platform-2023.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ 2023 12US4 CRACMM3 Modeling Platform 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-12us4-cracmm3-modeling-platform-2023-object_created
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: CMAQ Model Versions 5.5 CRACMM2 Input Data (2022r1) -- 12/22/2021 - 12/31/2022 12km CONUS
+    ARN:  arn:aws:s3:::cmaq-12us1-cracmm2-modeling-platform-2022
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-12us1-cracmm2-modeling-platform-2022.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ Model Versions 5.5 CRACMM2 Input Data (2022r1) -- 12/22/2021 - 12/31/2022 12km CONUS 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-12us1-cracmm2-modeling-platform-2022-object_created
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: CMAQ Model Versions 5.5 CRACMM1-2 Input Data -- 12/22/2019 - 12/31/2020 12km CONUS
+    ARN:  arn:aws:s3:::cmaq-12us1-cracmm1-modeling-platform-2020
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-12us1-cracmm1-modeling-platform-2020.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ Model Versions 5.5 CRACMM1-2 Input Data
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-12us1-cracmm1-modeling-platform-2020-object_created 
+    Region: us-east-1
+    Type: SNS Topic
   - Description: EPA 2022 Modeling Platform
     ARN: arn:aws:s3:::epa-2022-modeling-platform
     Region: us-east-1
@@ -86,54 +143,90 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://2021platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2021platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2021platform-object_created
+    Region: us-east-1
+    Type: SNS Topic 
   - Description: CMAQ 2019 Modeling Platform
     ARN: arn:aws:s3:::cmaq-2019-modeling-platform
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmaq-2019-modeling-platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ 2019 Modeling Platform 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-2019-modeling-platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: CMAQ 2018 Modeling Platform
     ARN: arn:aws:s3:::cmas-cmaq-modeling-platform-2018
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmas-cmaq-modeling-platform-2018.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ 2018 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-cmaq-modeling-platform-2018-object_created
+    Region: us-east-1
+    Type: SNS Topic 
   - Description: 2020 Modeling Platform
     ARN: arn:aws:s3:::2020platform
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://2020platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2020 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2020platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: 2019 Modeling Platform
     ARN: arn:aws:s3:::2019platform
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://2019platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2019platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2019platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: 2018v2 Modeling Platform
     ARN: arn:aws:s3:::2018v2platform
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://2018v2platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2018v2 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2018v2platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: 2016v3 Modeling Platform
     ARN: arn:aws:s3:::2016v3platform
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://2016v3platform.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in 2016v3 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:2016v3platform-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: SMOKE Test Case
     ARN: arn:aws:s3:::cmas-smoke-testcase
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://cmas-smoke-testcase.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in SMOKE Test Case
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-smoke-testcase-object_created 
+    Region: us-east-1
+    Type: SNS Topic
   - Description: SMOKE 2016 Modeling Platform 
     ARN: arn:aws:s3:::cmas-smoke-modeling-platform-2016
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
     - '[Browse Bucket](https://cmas-smoke-modeling-platform-2016.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in SMOKE 2016 Modeling Platform
+    ARN: arn:aws:sns:us-east-1:703786580975:cmas-smoke-modeling-platform-2016-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Documentation for CMAQ on AWS ParallelCluster

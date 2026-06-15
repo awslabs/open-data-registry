@@ -1,0 +1,73 @@
+Name: NASA COMEX Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### COMEX_AMOG_Mobile_Air_Surveys_2387
+  This dataset provides AutoMObile trace Gas Surveyor (AMOG) in situ relevant datasets collected during the CO2 and Methane EXperiment (COMEX) field campaign and afterwards. COMEX was conducted in the summer and fall 2014 to study strong methane, CH4, sources in S. California including animal husbandry, fossil fuel industrial (FFI) production, petroleum refining, landfills, and natural geological formations. The AMOG Surveyor is a mobile air quality laboratory built into a passenger car. AMOG Surveyor uses an asynchronous logging system based on a NMEA tagging protocol, termed a tagstream. Analyzers provide data at rates from 5 Hz to 0.016 Hz. Tagstream data are timestamped based on the time of the analyzer measurement, which does not take into account the air sample travel time in sample tubes and analyzers, termed layback time. This dataset contains Level 0 (L0) and Level 1 (L1) data. L0 data were analyzed and sensor data interpolated to a uniform timebase of 5 Hz, correcting for the layback time, the time of flight for air samples in the sample tube and analyzers. L1 data include true winds (corrected for vehicle velocity), with filtering of outliers, non-physical data, and gap filling. The data files are in HDF-5 (.h5) format.
+  <br>
+
+  #### COMEX_AVIRIS_Classic_Flights_2343
+  This dataset lists flight lines and provides data access links and contextual flight information for a subset of the AVIRIS-Classic Facility Instrument Collection that are associated with the CO2 and MEthane eXperiment (COMEX) Project. The COMEX Project was carried out May through September, 2014. AVIRIS-Classic Facility Instrument data are otherwise not replicated in this dataset. The COMEX Project utilized several measurement capabilities including the AVIRIS-Classic airborne facility instrument data to demonstrate that methane emissions associated with fossil fuel production activities in the Los Angeles, California area were of sufficient magnitude and size for space-based observations. These lists of the associated COMEX flights from the AVIRIS-Classic Facility Instrument provide flight lines and access information for the Level 1B Calibrated Radiance data and the Level 2 Calibrated Reflectance data.
+  <br>
+
+  #### COMEX_AVIRIS_NG_Flights_2342
+  This dataset lists flight lines and provides data access links and contextual flight information for a subset of the AVIRIS-NG Facility Instrument Collection that are associated with the CO2 and MEthane eXperiment (COMEX) Project. The COMEX Project was carried out May through September, 2014. AVIRIS-NG Facility Instrument data are otherwise not replicated in this dataset. The COMEX Project utilized several measurement capabilities including the AVIRIS-NG airborne facility instrument data to demonstrate that methane emissions associated with fossil fuel production activities in the Los Angeles, California area were of sufficient magnitude and size for space-based observations. These lists of the associated COMEX flights from the AVIRIS-NG Facility Instrument provide flight lines and access information for the Level 1B Calibrated Radiance data and the Level 2 Calibrated Reflectance data.
+  <br>
+
+  #### COMEX_AJAX_CO2_CH4_2347
+  This dataset provides information to access NASA Earthdata published flight data and flight information collected by the Alpha Jet Atmospheric eXperiment (AJAX) and associated with the COMEX project in 2014-2015. The file lists information for COMEX-related datasets that has been subsetted from AJAX collections archived through NASA's Atmospheric Science Data Center. AJAX data are not otherwise replicated in this dataset. AJAX is a partnership between NASA's Ames Research Center and H211, L.L.C., which conducted in-situ measurements over California, Nevada, and the coastal Pacific in support of satellite validation. During COMEX data collection, a Picarro greenhouse gas (GHG) sensor was mounted on an Alpha Jet, a tactical strike fighter developed by Dassault-Breguet and Dornier through a German-French NATO collaboration. The GHG sensor made repeat measurements in California and Nevada. In situ data included measurements of CO2, CH4, and H2O at 2 Hz or CH4 and H2O at 10 Hz with a strategy of characterizing atmospheric structure over ocean and land, and vertical profiles to at least 5000 m. Ancillary data, including O3, formaldehyde, and meteorological profiles, were also collected. This dataset provides filenames, spatiotemporal bounds, and download URLs for accessing these in situ data. This information is provided in comma separated values (CSV) format.
+  <br>
+
+  #### COMEX_LongwaveInfrared_Imagery_2331
+  This dataset provides calibrated at-sensor radiance, retrieved surface brightness temperature, and adaptive coherence estimator (ACE) detection imagery of methane, and a limited number of auxiliary gases collected with the Aerospace Corporation's Mako airborne longwave-IR hyperspectral imager flown during July 22-25, 2014 over a variety of methane generating sites in southern and central California (CA), U.S. These sites included animal husbandry and oil/gas production facilities. Specific study areas included the Coal Oil Point marine seep field off of Goleta, CA, the Kern River oil field complex at Bakersfield, CA, and the extensive stockyards in Chino, CA. The Kern River complex was acquired at 1-m ground sampling distance (GSD), while the other study areas were at 2-m GSD. Levels 1-3 data include single whisk data cubes (L1); at-sensor radiance and sensor performance (L2); surface brightness temperature and ACE detections for specific gases (L3). The data were collected in support of the NASA/ESA COMEX (CO2 and Methane EXperiment) campaign. The data are provided in ENVI and comma separated values (CSV) formats. Quicklook images are included for flight lines and molecule specific detections.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/COMEX/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- hdf
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "COMEX_AMOG_Mobile_Air_Surveys_2387 v1 - This dataset provides AutoMObile trace Gas Surveyor (AMOG) in situ relevant datasets collected during the CO2 and Methane EXperiment (COMEX) field campaign and afterwards. COMEX was conducted in the summer and fall 2014 to study strong methane, CH4, sources in S."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/comex/COMEX_AMOG_Mobile_Air_Surveys/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "COMEX_AVIRIS_Classic_Flights_2343 v1 - This dataset lists flight lines and provides data access links and contextual flight information for a subset of the AVIRIS-Classic Facility Instrument Collection that are associated with the CO2 and MEthane eXperiment (COMEX) Project. The COMEX Project was carried out May through September, 2014."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/comex/COMEX_AVIRIS_Classic_Flights/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "COMEX_AVIRIS_NG_Flights_2342 v1 - This dataset lists flight lines and provides data access links and contextual flight information for a subset of the AVIRIS-NG Facility Instrument Collection that are associated with the CO2 and MEthane eXperiment (COMEX) Project. The COMEX Project was carried out May through September, 2014."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/comex/COMEX_AVIRIS_NG_Flights/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "COMEX_AJAX_CO2_CH4_2347 v1 - This dataset provides information to access NASA Earthdata published flight data and flight information collected by the Alpha Jet Atmospheric eXperiment (AJAX) and associated with the COMEX project in 2014-2015. The file lists information for COMEX-related datasets that has been subsetted from AJAX collections archived through NASA's Atmospheric Science Data Center."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/comex/COMEX_AJAX_CO2_CH4/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "COMEX_LongwaveInfrared_Imagery_2331 v1 - This dataset provides calibrated at-sensor radiance, retrieved surface brightness temperature, and adaptive coherence estimator (ACE) detection imagery of methane, and a limited number of auxiliary gases collected with the Aerospace Corporation's Mako airborne longwave-IR hyperspectral imager flown during July 22-25, 2014 over a variety of methane generating sites in southern and central California (CA), U.S. These sites included animal husbandry and oil/gas production facilities."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/comex/COMEX_LongwaveInfrared_Imagery/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

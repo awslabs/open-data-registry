@@ -1,0 +1,31 @@
+Name: NASA WLDAS Project
+Description: |
+  The Western Land Data Assimilation System (WLDAS), developed at Goddard Space Flight Center (GSFC) and funded by the NASA Western Water Applications Office, provides water managers and stakeholders in the western United States with a long-term record of near-surface hydrology for use in drought assessment and water resources planning. WLDAS leverages advanced capabilities in land surface modeling and data assimilation to furnish a system that is customized for stakeholders’ needs in the region. WLDAS uses NASA’s Land Information System (LIS) to configure and drive the Noah Multiparameterization (Noah-MP) Land Surface Model (LSM) version 3.6 to simulate land surface states and fluxes. WLDAS uses meteorological observables from the North American Land Data Assimilation System (NLDAS-2) including precipitation, incoming shortwave and longwave radiation, near surface air temperature, humidity, wind speed, and surface pressure along with parameters such as vegetation class, soil texture, and elevation as inputs to a model that simulates land surface energy and water budget processes. Outputs of the model include soil moisture, snow depth and snow water equivalent, evapotranspiration, soil temperature, as well as derived quantities such as groundwater recharge and anomalies of the state variables.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://ldas.gsfc.nasa.gov/wldas/wldas-project-goals
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- hydrology
+- ice
+- precipitation
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "WLDAS_NOAHMP001_DA1 vD1.0 - The Western Land Data Assimilation System (WLDAS), developed at Goddard Space Flight Center (GSFC) and funded by the NASA Western Water Applications Office, provides water managers and stakeholders in the western United States with a long-term record of near-surface hydrology for use in drought assessment and water resources planning. WLDAS leverages advanced capabilities in land surface modeling and data assimilation to furnish a system that is customized for stakeholders’ needs in the region."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WLDAS/WLDAS_NOAHMP001_DA1.D1.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
