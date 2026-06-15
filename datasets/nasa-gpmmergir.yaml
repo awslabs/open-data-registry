@@ -1,0 +1,80 @@
+Name: NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR) at GES DISC
+Description: "These data originate from NOAA/NCEP.\n\nThe NOAA Climate Prediction
+  Center/NCEP/NWS is making the data available originally in binary format, in a weekly
+  rotating archive. The NASA GES DISC is acquiring the binary files as they become
+  available, converts them into CF (Climate and Forecast) -convention compliant netCDF-4
+  format, and stores the product in a permanent archive. The original record started
+  from February, 2000, but in June, 2025 it was extended back to January, 1998.\n\nThe
+  leading edge of data availability is delayed by about 24 hours from real-time to
+  abide by international data exchange agreements between NOAA and EUMETSAT (the METEOSAT
+  data providers).\n\nThe data contain globally-merged (60°S-60°N) 4-km pixel-resolution
+  IR brightness temperature data (equivalent blackbody temps), merged from the European,
+  Japanese, and U.S. geostationary satellites over the period of record (GOES-8/9/10/11/12/13/14/15/16/17/18/19,
+  METEOSAT-5/7/8/9/10/11, and GMS-5/MTSat-1R/2/Himawari-8/9).\n\nThe global geo-IR
+  are dynamically calibrated to GOES East, using a 35 day trailing inter-calibration
+  using time/space-matched IR Tb’s at the mid-point between sub-satellite positions.
+  \ In the event of duplicate data in a grid box, the value with the smaller zenith
+  angle is taken. The data have been corrected for \"zenith angle dependence\", in
+  which IR temperatures for locations far from satellite nadir are erroneously cold
+  due to a combination of geometric effects and radiometric path extinction effects
+  (Joyce et al. 2001). Finally, the data are re-navigated for parallax, which shifts
+  the geo-location of the GEO-IR footprints to approximately account for the cloud
+  tops that the IR “sees” being displaced away from their actual geographic location
+  when viewed along a slanted path. These corrections allow for the merging of the
+  IR data from the various GEO-satellites with greatly reduced discontinuities at
+  GEO-satellite data boundaries. In the event of duplicate data in a grid box, the
+  value with the smaller zenith angle is taken.\n\nThe NASA GES DISC is curating these
+  data in a self-documenting, CF-compliant, netCDF-4 format, which allows a broad
+  range of applications to access the data directly, without the need to cope with
+  the original binary data format. In addition to the direct download of netCDF-4
+  data, the GES DISC provides data download in binary, ASCII, and netCDF-3 formats
+  using the OPeNDAP interface.\n\nSimilarities with the original\n-----------------------------\nAs
+  in the original binaries, every netCDF-4 file covers one hour, and contains two
+  half-hourly grids, at 4-km grid cell resolution. \n\nDifferences from the original\n-----------------------------\n1.
+  The data in the netCDF-4 files are already converted to real (float) values of Brightness
+  Temperatures in Kelvin. There is no need to further scale these data. The netCDF-4
+  format is machine-independent and users need not worry about the endian-ness of
+  their machines. \n\n2. To meet the requirements of collection spatial metadata,
+  the grid is re-ordered from the original and now goes from -180 (West) to 180 (East).
+  It is also starting from -60 (South).\n\nThe data and time units are reflected in
+  the corresponding \"units\" attributes, and grid dimensions are described by longitude
+  (\"lon\"), latitude (\"lat\") and \"time\" vectors. Thus, any CF-compliant tool
+  should automatically understand the setup in the data files and the starting time
+  for each half-hourly grid. Even without such tools, simple \"ncdump\" or \"h5dump\"
+  command line tools will easily disclose the netCDF-4 files configuration.\n\nAcknowledgements\n------------------\nThe
+  creation of the original data at NOAA/NCEP is supported by funding from the NOAA
+  Office of Global Programs for the Global Precipitation Climatology Project (GPCP)
+  and by NASA via the Tropical Rainfall Measuring Mission (TRMM). \n\nThe permanent
+  archive at GES DISC is supported by NASA's HQ Earth Science Data Systems (ESDS)
+  Program. \n\n\n\nRead our doc on how to get AWS Credentials to retrieve this data:
+  https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/P4HZB9N27EKU
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov. Home Page: https://disc.gsfc.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 1998-01-01 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - datacenter
+  - forecast
+  - global
+  - metadata
+  - opendap
+  - netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'NCEP/CPC L3 Half Hourly 4km Global (60S - 60N) Merged IR V1 (GPM_MERGIR)
+      at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERGED_IR/GPM_MERGIR.1/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials: 
+   - Title: How to Access GES DISC Data Using Python
+     URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+     AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.

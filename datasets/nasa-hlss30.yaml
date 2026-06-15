@@ -1,0 +1,189 @@
+Name: HLS Sentinel-2 Multi-spectral Instrument Surface Reflectance Daily Global 30m v2.0
+Description: "The Harmonized Landsat Sentinel-2 (HLS) project provides consistent
+  surface reflectance data from the Operational Land Imager (OLI) aboard the joint
+  NASA/USGS Landsat 8 satellite and the Multi-Spectral Instrument (MSI) aboard Europe’s
+  Copernicus Sentinel-2A, Sentinel-2B, and Sentinel-2C satellites. The combined measurement
+  enables global observations of the land every 2–3 days at 30-meter (m) spatial resolution.
+  The HLS project uses a set of algorithms to obtain seamless products from OLI and
+  MSI that include atmospheric correction, cloud and cloud-shadow masking, spatial
+  co-registration and common gridding, illumination and view angle normalization,
+  and spectral bandpass adjustment. \n\nThe HLSS30 product provides 30-m Nadir Bidirectional
+  Reflectance Distribution Function (BRDF)-Adjusted Reflectance (NBAR) and is derived
+  from Sentinel-2A, Sentinel-2B, and Sentinel-2C MSI data products. The HLSS30 and
+  [HLSL30](https://doi.org/10.5067/HLS/HLSL30.002) products are gridded to the same
+  resolution and Military Grid Reference System ([MGRS](https://hls.gsfc.nasa.gov/products-description/tiling-system/))
+  tiling system and thus are “stackable” for time series analysis.\n\nThe HLSS30 product
+  is provided in Cloud Optimized GeoTIFF (COG) format, and each band is distributed
+  as a separate COG. There are 13 bands included in the HLSS30 product along with
+  four angle bands and a quality assessment (QA) band. See the User Guide for a more
+  detailed description of the individual bands provided in the HLSS30 product.\n\nKnown
+  Issues\n\n* Unrealistically high aerosol and low surface reflectance over bright
+  areas: The atmospheric correction over bright targets occasionally retrieves unrealistically
+  high aerosol and thus makes the surface reflectance too low. High aerosol retrievals,
+  both false high aerosol and realistically high aerosol, are masked when quality
+  bits 6 and 7 are both set to 1 (see Table 9 in the [User Guide](https://lpdaac.usgs.gov/documents/1698/HLS_User_Guide_V2.pdf));
+  the corresponding spectral data should be discarded from analysis.\n\n* Issues over
+  high latitudes: For scenes greater than or equal to 80 degrees north, multiple overpasses
+  can be gridded into a single MGRS tile resulting in an L30 granule with data sensed
+  at two different times. In this same area, it is also possible that Landsat overpasses
+  that should be gridded into a single MGRS tile are actually written as separate
+  data files. Finally, for scenes with a latitude greater than or equal to 65 degrees
+  north, ascending Landsat scenes may have a slightly higher error in the BRDF correction
+  because the algorithm is calibrated using descending scenes.\n\n* Fmask omission
+  errors: There are known issues regarding the Fmask band of this data product that
+  impacts HLSL30 data prior to April of 2022. The HLS Fmask data band may have omission
+  errors in water detection for cases where water detection using spectral data alone
+  is difficult, and omission and commission errors in cloud shadow detection for areas
+  with great topographic relief. This issue does not impact other bands in the dataset.\n\n*
+  Inconsistent snow surface reflectance between Landsat and Sentinel-2: The HLS snow
+  surface reflectance can be highly inconsistent between Landsat and Sentinel-2. When
+  assessed on same-day acquisitions from Landsat and Sentinel-2, Landsat reflectance
+  is generally higher than Sentinel-2 reflectance in the visible bands.\n\n* Unrealistically
+  high snow surface reflectance in the visible bands: By design, the Land Surface
+  Reflectance Code (LaSRC) atmospheric correction does not attempt aerosol retrieval
+  over snow; instead, a default aerosol optical thickness (AOT) is used to drive the
+  snow surface reflectance. If the snow detection fails, the full LaSRC is used in
+  both AOT retrieval and surface reflectance derivation over snow, which produces
+  surface reflectance values as high as 1.6 in the visible bands. This is a common
+  problem for spring images at high latitudes.\n\n* Unrealistically low surface reflectance
+  surrounding snow/ice: Related to the above, the AOT retrieval over snow/ice is generally
+  too high. When this artificially high AOT is used to derive the surface reflectance
+  of the neighboring non-snow pixels, very low surface reflectance will result. These
+  pixels will appear very dark in the visible bands. If the surface reflectance value
+  of a pixel is below -0.2, a NO_DATA value of -9999 is used. In Figure 1, the pixels
+  in front of the glaciers have surface reflectance values that are too low.  \n\n*
+  Unrealistically low reflectance surrounding clouds: Like for snow, the HLS atmospheric
+  correction does not attempt aerosol retrieval over clouds and a default AOT is used
+  instead. But if the cloud detection fails, an artificially high AOT will be retrieved
+  over clouds. If the high AOT is used to derive the surface reflectance of the neighboring
+  cloud-free pixels, very low surface reflectance values will result. If the surface
+  reflectance value of a pixel is below -0.2, a NO_DATA value of -9999 is used. \n\n*
+  Unusually low reflectance around other bright land targets: While the HLS atmospheric
+  correction retrieves AOT over non-cloud, non-snow bright pixels, the retrieved AOT
+  over bright targets can be unrealistically high in some cases, similar to cloud
+  or snow. If this unrealistically high AOT is used to derive the surface reflectance
+  of the neighboring pixels, very low surface reflectance values can result as shown
+  in Figure 2. If the surface reflectance value of a pixel is below -0.2, a NO_DATA
+  value of -9999 is used. These types of bright targets are mostly man-made, such
+  as buildings, parking lots, and roads.  \n\n* Dark plumes over water: The HLS atmospheric
+  correction does not attempt aerosol retrieval over water. For water pixels, the
+  AOT retrieved from the nearest land pixels is used to derive the surface reflectance,
+  but if the retrieval is incorrect, e.g. from a cloud pixel, this high AOT will create
+  dark stripes over water, as shown in Figure 3. This happens more often over large
+  water bodies, such as lakes and bays, than over narrow rivers.  \n\n* Landsat WRS-2
+  Path/Row boundary in L30 reflectance: HLS performs atmospheric correction on Landsat
+  Level 1 images in the original Worldwide Reference System 2 (WRS2) path/row before
+  the derived surface reflectance is reprojected into Military Grid Reference System
+  (MGRS) tiles. If a WRS-2 Landsat image is very cloudy, the AOT from a few remaining
+  clear pixels might be used for the atmospheric correction of the entire image. The
+  AOT that is used can be quite different from the value for the adjacent row in the
+  same path, which results in an artificial abrupt change from one row to the next,
+  as shown in Figure 4. This occurrence is very rare.  \n \n* Landsat WRS2 path/row
+  boundary in cloud masks: The cloud mask algorithm Fmask creates mask labels by applying
+  thresholds to the histograms of some metrics for each path/row independently. If
+  two adjacent rows in the same path have distinct distributions within the metrics,
+  abrupt changes in masking patterns can appear across the row boundary, as shown
+  in Figure 5. This occurrence is very rare.  \n\n* Fmask configuration was deficient
+  for 2-3 months in 2021: The HLS installation of Fmask failed to include auxiliary
+  digital elevation model (DEM) and European Space Agency (ESA) Global Surface Water
+  Occurrence data for a 2-3 month run in 2021. This impacted the masking results over
+  water and in mountainous regions. \n\n* The reflectance “scale_factor” and “offset”
+  for some L30 and S30 bands were not set: The HLS reflectance scaling factor is 0.0001
+  and offset is 0. However, this information was not set in the Cloud Optimized GeoTIFF
+  (COG) files of some bands for a small number of granules. The lack of this information
+  creates a problem for automatic conversion of the reflectance data, requiring explicit
+  scaling in applications. The problem has been corrected, but the affected granules
+  have not been reprocessed. \n\n* Incomplete map projection information: For a time,
+  HLS imagery was produced with an incomplete coordinate reference system (CRS). The
+  metadata contains the Universal Transverse Mercator (UTM) zone and coordinates necessary
+  to geolocate pixels within the image but might not be in a standard form, especially
+  for granules produced early in the HLS mission. As a result, an error will occur
+  in certain image processing packages due to the incomplete CRS. The simplest solution
+  is to update to the latest version of Geospatial Data Abstraction Library (GDAL)
+  and/or rasterio, which use the available information without error. \n\n* False
+  northing of 10^7 for the L30 angle data: The L30 and S30 products do not use a false
+  northing for the UTM projection, and the angle data are supposed to follow the same
+  convention. However, the L30 angle data incorrectly uses a false northing of 10^7.
+  There is no problem with the angle data itself, but the false northing needs to
+  be set to 0 for it to be aligned with the reflectance.\n\n* L30 from Landsat L1GT
+  scenes: Landsat L1GT scenes were not intended for HLS due to their poor geolocation.
+  However, some scenes made it through screening for a short period of HLS production.
+  L1GT L30 scenes mainly consist of extensive cloud or snow that can be eliminated
+  using the Fmask quality bits layer. Users can also identify an L1GT-originated L30
+  granule by examining the HLS cmr.xml metadata file.\n\n* The UTC dates in the L30/S30
+  filenames may not be the local dates: UTC dates are used by ESA and the U.S. Geological
+  Survey (USGS) in naming their Level 1 images, and HLS processing retains this information
+  to name the L30 and S30 products. Landsat and Sentinel-2 overpass eastern Australia
+  and New Zealand around 10AM local solar time, but this area is in either UTC+10:00
+  or +11:00 zone; therefore, the UTC time for some orbits is in fact near the end
+  of the preceding UTC day. For example, HLS.S30.T59HQS.2016117T221552.v2.0 was acquired
+  in the 22nd hour of day 117 of year 2016 in UTC, but the time was 10:15:52 of day
+  118 locally. Approximately 100 minutes later HLS.S30.T56JML.2016117T235252.v2.0
+  was acquired in the next orbit in eastern Australia.  \n\n     This issue also occurs
+  for Landsat. For example, HLS.L30.T59HQS.2016117T221209.v2.0 was acquired on the
+  same day as the first S30 example given above, but both on day 118 of 2016 locally.
+  Adding to the confusion for L30, in the same region, Landsat 8 and 9 can each overpass
+  once in one of the two adjacent WRS-2 Paths (91/92/93) over a two-day period on
+  a local calendar, but based on UTC time, the two overpasses can appear to be on
+  the same day. For example, in the following seemingly same-day pair, the second
+  L30 is actually for day 168 locally:  \n     HLS.L30.T55GCN.2023167T000407.v2.0
+  \ \n     HLS.L30.T55GCN.2023167T235747.v2.0  \n     Bear in mind, the date peculiarity
+  for the data occurs when the overpass time is during the late hours of a UTC day.
+  \ \n\n* The atmospheric ancillary data from the wrong date was used for LaSRC: Related
+  to the above, for eastern Australia and New Zealand, L30 and S30 surface reflectance
+  on certain days was created using the atmospheric ancillary data from a date that
+  was one day too early. The exact geographic extent of the affected HLS products
+  and the impact on the surface reflectance quality are under investigation. Practice
+  caution when using data with overpass times during the late hours of a UTC day.\n\n*
+  Duplicates in L30: The Landsat 9 acquisitions from October 2021 to March 2023 in
+  Landsat Collection 2 were reprocessed by USGS in March 2023. This reprocessing updated
+  the overpass time by a fraction of a second for some scenes. Since HLS uses overpass
+  time as part of the L30 filename, the older L30 granules were not automatically
+  overwritten due to the different filenames. For example, the first L30 granule in
+  the following pair originated from an older version of L1TP of Landsat 9 with the
+  second granule originating from the reprocessed version.  \nHLS.L30.T11SLC.2022166T182646.v2.0
+  \ \nHLS.L30.T11SLC.2022166T182645.v2.0  \nThere are other causes of duplicate L30
+  granules, but the overall number of duplicates is very small.\n\n* Poor Geolocation:
+  A large amount of granules that were processed for May through July 2023 were created
+  with L1GT input scenes which were deemed undesirable due to a poor geolocation issue.
+  These granules were removed from the archive. (see the full list of removed [granules](https://lpdaac.usgs.gov/documents/2161/L30_L1GT_granules_May_July_2023.csv))\n\nImprovements/Changes
+  from Previous Versions\n\n* Aerosol QA bits from the USGS Land Surface Reflectance
+  Code (LaSRC) model output have been added into the Function of Mask (Fmask) data
+  layer. The added two bits indicate the aerosol levels: high, medium, low, and climatology
+  aerosol.\nRead our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/HLS/HLSS30.002
+Contact: 'User Services: lpdaac@usgs.gov'
+ManagedBy: NASA
+UpdateFrequency: From 2015-11-28 to Ongoing
+Tags:
+  - aws-pds
+  - cog
+  - datacenter
+  - earth observation
+  - geospatial
+  - global
+  - hdf
+  - ice
+  - land
+  - metadata
+  - orbit
+  - satellite imagery
+  - stac
+  - surface water
+  - tiles
+  - water
+  - xml
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'HLS Sentinel-2 Multi-spectral Instrument Surface Reflectance Daily
+      Global 30m v2.0.'
+    ARN: arn:aws:s3:::lp-prod-protected/HLSS30.020
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with Cloud-Native HLS Data in Python
+      URL: https://github.com/nasa/HLS-Data-Resources/blob/main/python/tutorials/HLS_Tutorial.ipynb
+      AuthorName: Mahsa Jami, Erik A. Bolch, Cole K. Krehbiel, Aaron M. Friesz, Brianna M. Lind

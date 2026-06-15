@@ -1,0 +1,28 @@
+Name: NASA GEOS-3 Project
+Description: |
+  These data consist of Geos-3 altimeter measurements produced by NOAA/NODC/Laboratory for Satellite Altimetry. The dataset contains 5,006,956 altimetric sea surface heights and supporting information such as sea state, wind speed, Schwiderski ocean tide height, and Cartwright solid-tide height. Corrections for altimeter bias, wet and dry troposheric delays, and electromagnetic bias are not included. The corrections in this dataset (tides and even orbit height) are old and not very accurate. This dataset should only be used by those with an expertise in altimetry. Measurements are compressed to a rate of 1 per second using a trim mean filter. Data values are written in binary format.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GEOS-3_ALT_GDR v1 - These data consist of Geos-3 altimeter measurements produced by NOAA/NODC/Laboratory for Satellite Altimetry. The dataset contains 5,006,956 altimetric sea surface heights and supporting information such as sea state, wind speed, Schwiderski ocean tide height, and Cartwright solid-tide height."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/GEOS-3_ALT_GDR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

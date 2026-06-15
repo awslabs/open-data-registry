@@ -1,0 +1,48 @@
+Name: OPERA Surface Displacement from Sentinel-1 validated product (Version 1)
+Description: "The Level-3 OPERA Sentinel-1 Surface Displacement (DISP) product is
+  generated through interferometric time-series analysis of Level-2 Coregistered Sentinel-1
+  Single Look Complex (CSLC) datasets. Using a hybrid Persistent Scatterer (PS) and
+  Distributed Scatterer (DS) approach, this product quantifies Earth's surface displacement
+  in the radar line-of-sight. The DISP products enable the detection of anthropogenic
+  and natural surface changes, including subsidence, tectonic deformation, and landslides.
+  \n\nThe OPERA DISP suite comprises complementary datasets derived from Sentinel-1
+  and NISAR inputs, designated as DISP-S1 and DISP-NI, respectively. Each product,
+  created per acquisition, adheres to a consistent structure, HDF5 file format, file-naming
+  convention, and a 30 m spatial posting. This collection specifically includes DISP-S1
+  products, derived from Sentinel-1 data. \n\nDISP-S1 products provide spatial coverage
+  across North America, encompassing the United States, U.S. territories within 200
+  km of the U.S. border, Canada, and mainland countries from the southern U.S. border
+  to Panama. These products are generated from Sentinel-1 Interferometric Wide (IW)
+  swath mode acquisitions starting in mid-2016. \n\nThe OPERA DISP-S1 product contains
+  modified Copernicus Sentinel data (2016-2025).\nRead our doc on how to get AWS Credentials
+  to retrieve this data: https://cumulus.asf.alaska.edu/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/SNWG/OPL3DISPS1-V1
+Contact: 'Email: uso@asf.alaska.edu. Home Page: https://www.asf.alaska.edu/'
+ManagedBy: NASA
+UpdateFrequency: From 2016-07-01 to Ongoing
+Tags:
+  - aws-pds
+  - earth observation
+  - land
+  - metadata
+  - netcdf
+  - orbit
+  - radar
+  - sentinel-1
+  - synthetic aperture radar
+  - xml
+  - zarr
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'OPERA Surface Displacement from Sentinel-1 validated product (Version
+      1).'
+    ARN: arn:aws:s3:::asf-cumulus-prod-opera-products/OPERA_L3_DISP-S1_V1/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://cumulus.asf.alaska.edu/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Inspect DISP-S1 Layers
+      URL: https://github.com/OPERA-Cal-Val/OPERA_Applications/blob/main/DISP/Timeseries/opera_disp/inspect_DISP-S1_layers.ipynb
+      AuthorName: M. Grace Bato
