@@ -20,7 +20,7 @@ Description: |
   readable with iohub (https://github.com/czbiohub-sf/iohub). Machine-readable metadata
   (Croissant JSON-LD with Responsible AI fields, per the NeurIPS Datasets & Benchmarks
   track) is published at s3://dynacell/v1/metadata/croissant.json.
-Documentation: https://github.com/mehta-lab/VisCy/tree/modular-viscy-staging/applications/dynacell
+Documentation: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
 Contact: shalin.mehta@biohub.org
 ManagedBy: "[Biohub](https://www.biohub.org/)"
 UpdateFrequency: As needed - v1 (A549) is frozen; future releases will expand the dataset.
@@ -39,7 +39,7 @@ Tags:
   - zarr
 License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 RegistryEntryAdded: "2026-05-04"
-RegistryEntryLastModified: "2026-05-04"
+RegistryEntryLastModified: "2026-06-15"
 Resources:
   - Description: |
       DynaCell v1 release: paired label-free and fluorescence 3D+time volumes
@@ -52,9 +52,17 @@ Resources:
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: "Get to know DynaCell v1 — loading and exploring the dataset"
+      URL: https://github.com/mehta-lab/VisCy/blob/dynacell-models/applications/dynacell/examples/notebooks/get-to-know-dynacell-dataset.ipynb
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
   Tools & Applications:
+    - Title: DynaCell virtual-staining demo (interactive Hugging Face Space)
+      URL: https://huggingface.co/spaces/biohub/dynacell
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
     - Title: VisCy — training, prediction, and evaluation pipelines for DynaCell
-      URL: https://github.com/mehta-lab/VisCy/tree/modular-viscy-staging/applications/dynacell
+      URL: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
       AuthorName: Computational Imaging Group at Biohub
       AuthorURL: https://www.biohub.org/comp-micro
     - Title: iohub — OME-Zarr and OZX I/O library
@@ -67,6 +75,6 @@ DataAtWork:
       AuthorURL: https://www.biohub.org/comp-micro
   Publications:
     - Title: "DynaCell: an Evaluation Framework for Dynamic 3D Virtual Staining of Live Cells"
-      URL: https://github.com/mehta-lab/VisCy/tree/modular-viscy-staging/applications/dynacell
+      URL: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
       AuthorName: Kalinin, Zheng, Theodoro, Ivanov, Hirata-Miyasaki, Lee, Liu, Varra, Chandler, Pradeep, Liu, Leonetti, Arias, Huang, Mehta
       AuthorURL: https://www.biohub.org/comp-micro
