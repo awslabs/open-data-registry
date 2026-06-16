@@ -1,0 +1,31 @@
+Name: Multi-Anatomy Post-Surgical Magnetic Resonance Dataset (MAPSMR)
+Description: The MAPSMR dataset is a multi-organ, post-surgical MRI benchmark dataset 
+  focused on organ absence and altered anatomy after common abdominal and pelvic surgeries. 
+  The dataset includes cases such as cholecystectomy, prostatectomy, nephrectomy, colectomy, hepatectomy, 
+  and related procedures, with annotations identifying surgically absent organs and post-treatment anatomical changes. 
+Documentation: https://github.com/fastestimator/gehcai-mapsmr
+Contact: AIFoundationModels@gehealthcare.com
+ManagedBy: '[GE Healthcare](https://www.gehealthcare.com)'
+UpdateFrequency: Not updated
+Tags:
+  - machine learning
+  - life sciences
+  - magnetic resonance imaging
+  - aws-pds
+  - medical imaging
+License: '[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)'
+Citation: Yang, Zhijian, et al. Decipher-MR - a vision-language foundation model for 3D MRI representations. npj Digital Medicine (2026).
+Resources:
+  - Description: Missing organ data files in s3
+    ARN: arn:aws:s3:::gehcai-mapsmr
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Get to know a dataset - GEHCAI-MAPSMR
+      URL: https://github.com/fastestimator/gehcai-mapsmr/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: https://github.com/fastestimator
+  Publications:
+    - Title: "Decipher-MR: a vision-language foundation model for 3D MRI representations"
+      URL: https://www.nature.com/articles/s41746-026-02596-4
+      AuthorName: Zhijian Yang, Noel DSouza, Istvan Megyeri, Xiaojian Xu, Amin Honarmandi Shandiz, Farzin Haddadpour, Krisztian Koos, Laszlo Rusko, Emanuele Valeriano, Bharadwaj Swaminathan, Lei Wu, Parminder Bhatia, Taha Kass-Hout, Erhan Bas

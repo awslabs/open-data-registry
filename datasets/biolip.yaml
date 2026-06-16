@@ -1,0 +1,38 @@
+Name: BioLiP
+Description: BioLiP is a semi-manually curated database for high-quality, biologically relevant ligand-protein binding interactions. The structure data are collected primarily from the Protein Data Bank (PDB), with biological insights mined from literature and other specific databases. BioLiP aims to construct the most comprehensive and accurate database for serving the needs of ligand-protein docking, virtual ligand screening and protein function annotation.
+Documentation: https://zhanggroup.org/BioLiP
+Contact: zhanglab@zhanggroup.org
+ManagedBy: "[Zhang Lab](https://zhanggroup.org/)"
+UpdateFrequency: No regular schedule; updated upon availability of major dataset revisions
+Tags:
+  - protein
+  - structural biology
+  - molecular docking
+  - bioinformatics
+  - molecule
+  - life sciences
+  - chemistry
+License: No explicit license stated (publicly available for academic and research use).
+Citation: "Chengxin Zhang, Xi Zhang, Peter L Freddolino, and Yang Zhang. BioLiP2: an updated structure database for biologically relevent ligand-protein interactions, Nucleic Acids Research, gkad630 (2023)."
+Resources:
+  - Description: BioLiP dataset
+    ARN: arn:aws:s3:::biolip
+    Region: ap-southeast-1
+    Type: S3 Bucket
+  - Description: BioLiP interaction structures
+    ARN: arn:aws:s3:::biolip/weekly
+    Region: ap-southeast-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: BioLiP API usage
+      URL: https://zhanggroup.org/BioLiP/help.html
+      AuthorName: Zhang Lab
+  Publications:
+    - Title: "BioLiP2: an updated structure database for biologically relevant ligand-protein interactions"
+      URL: https://academic.oup.com/nar/article/52/D1/D404/7233921
+      AuthorName: Chengxin Zhang, Xi Zhang, Peter L Freddolino, and Yang Zhang
+    - Title: "BioLiP: a semi-manually curated database for biologically relevant ligand-protein interactions"
+      URL: https://academic.oup.com/nar/article/41/D1/D1096/1074898
+      AuthorName: Jianyi Yang, Ambrish Roy, and Yang Zhang
+

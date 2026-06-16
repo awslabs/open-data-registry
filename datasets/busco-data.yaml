@@ -1,0 +1,48 @@
+Name: BUSCO Datasets
+Description: Lineage datasets for use with BUSCO software package. Each dataset contains HMM profiles for clade specific, universal, single-copy marker genes. Datasets are available across archaea, bacteria, eukaryota and virus domains. The repository also includes necessary data files for phylogenetic placement of an input assembly.
+Documentation: https://busco.ezlab.org/busco_userguide.html#lineage-datasets
+Contact: https://gitlab.com/ezlab/busco/-/issues
+ManagedBy: Computational Evolutionary Genomics Group, University of Geneva
+UpdateFrequency: New datasets are released to correspond with updates in OrthoDB versions. Maintenance updates occur a few times a year if necessary to fix any bugs or update metadata.
+Tags:
+  - assembly
+  - bacteria
+  - bioinformatics
+  - genomic
+  - life sciences
+  - metagenomics
+  - open source software
+  - protein
+  - virus
+  - aws-pds
+License: The BUSCO datasets are licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. Any use of these datasets for analyses in a publication or product must include the citation of the corresponding paper - https://doi.org/10.1093/molbev/msab199
+Citation:
+Resources:
+  - Description: BUSCO datasets and companion files for use with BUSCO pipeline
+    ARN: arn:aws:s3:::busco-data
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for new BUSCO data
+    ARN: arn:aws:sns:us-east-1:622022425660:my-dataset-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: BUSCO - from QC to gene prediction and phylogenomics
+      URL: https://www.youtube.com/watch?v=9SjVY3BT8JU
+      AuthorName: Matthew Berkeley
+      AuthorURL: https://github.com/berkelem
+      Services:
+  Publications:
+    - Title: OrthoDB and BUSCO update - annotation of orthologs with wider sampling of genomes.
+      URL: https://academic.oup.com/nar/article/53/D1/D516/7899526?login=true
+      AuthorName: Fredrik Tegenfeldt, Dmitry Kuznetsov, Mosè Manni, Matthew Berkeley, Evgeny M Zdobnov, Evgenia V Kriventseva
+    - Title: BUSCO Update - Novel and Streamlined Workflows along with Broader and Deeper Phylogenetic Coverage for Scoring of Eukaryotic, Prokaryotic, and Viral Genomes.
+      URL: https://academic.oup.com/mbe/article/38/10/4647/6329644?login=true
+      AuthorName: Mosè Manni, Matthew R Berkeley, Mathieu Seppey, Felipe A Simão, Evgeny M Zdobnov
+    - Title: BUSCO - assessing genomic data quality and beyond.
+      URL: https://currentprotocols.onlinelibrary.wiley.com/doi/full/10.1002/cpz1.323
+      AuthorName: Mosè Manni, Matthew R. Berkeley, Mathieu Seppey, Evgeny M. Zdobnov
+DeprecatedNotice:
+ADXCategories:
+  - Healthcare & Life Sciences Data
