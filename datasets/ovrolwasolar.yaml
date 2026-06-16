@@ -38,6 +38,10 @@ Resources:
     ARN: arn:aws:s3:::REPLACE-WITH-BUCKET-NAME
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new OVRO LWA Solar Observation data
+    ARN: arn:aws:sns:us-east-1:REPLACE-WITH-ACCOUNT:REPLACE-WITH-SNS
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Reading and Plotting OVRO-LWA Spectral Image HDF Data
