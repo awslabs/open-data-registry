@@ -1,0 +1,40 @@
+Name: NASA landsat-7 Project
+Description: |
+  This data set, part of the NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, provides a complete 15 m resolution image mosaic of the Greenland ice sheet, derived from USGS Landsat 7 ETM+ imagery and Canadian Space Agency's (CSA) RADARSAT-1 imagery from the years 1999 to 2002. Additional bands (some at 30 m resolution) are provided for each tile in the mosaic and are useful for understanding surface properties, such as snow grain size, bedrock outcrops, mapping layering in the snow, and blue ice or lake-filled regions, during the spring and summer months. The panchromatic (band 8) mosaic provides the highest-resolution view of the ice sheet surface at 15 m, resolving topographic features, large crevasses, and other geophysical structures. See <a href="http://nsidc.org/data/measures/gimp">Greenland Ice Mapping Project (GIMP)</a> for related data.
+  <br>
+
+  #### NSIDC-0714
+  This data set, part of the NASA Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, provides a complete land ice and ocean classification mask for the Greenland ice sheet, that was mapped using a combination of USGS Landsat 7 ETM+ panchromatic band imagery, and the Canadian Space Agency's (CSA) RADARSAT-1 Synthetic Aperture Radar (SAR) amplitude images. See <a href="http://nsidc.org/data/measures/gimp">Greenland Ice Mapping Project (GIMP)</a> for related data.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/landsat-7
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- oceans
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NSIDC-0713 v1 - This data set, part of the NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, provides a complete 15 m resolution image mosaic of the Greenland ice sheet, derived from USGS Landsat 7 ETM+ imagery and Canadian Space Agency's (CSA) RADARSAT-1 imagery from the years 1999 to 2002. Additional bands (some at 30 m resolution) are provided for each tile in the mosaic and are useful for understanding surface properties, such as snow grain size, bedrock outcrops, mapping layering in the snow, and blue ice or lake-filled regions, during the spring and summer m..."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/MEASURES/NSIDC-0713/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NSIDC-0714 v1 - This data set, part of the NASA Making Earth System Data Records for Use in Research Environments (MEaSUREs) program, provides a complete land ice and ocean classification mask for the Greenland ice sheet, that was mapped using a combination of USGS Landsat 7 ETM+ panchromatic band imagery, and the Canadian Space Agency's (CSA) RADARSAT-1 Synthetic Aperture Radar (SAR) amplitude images. See <a href=\"http://nsidc.org/data/measures/gimp\">Greenland Ice Mapping Project (GIMP)</a> for related data."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/MEASURES/NSIDC-0714/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
