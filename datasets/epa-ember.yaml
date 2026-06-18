@@ -1,22 +1,20 @@
-Name: >-
-  EMBER Modeling Files 
+Name: EMBER Modeling Files
 Description: >-
-  These data are being released to support states in wildfire Exceptional Events demonstrations. 
-  EPA released fire impacts modeling data for the 2023 fire season called the Expedited Modeling
-  of Burn Events Results (EMBER) in December 2024. EPA has updated the EMBER Dataset Tool on the 
-  EPA website to include summary tables and graphics four new years of EMBER data: 2021, 2022, 
-  2024, and 2025. As part of the effort to update the EMBER data, we are posting the full model
-  input and output files publicly here to aid state, local, and Tribal air agencies in constructing
-  any potential Exceptional Events demonstrations.
-  For more information about EMBER, see the following web page:
+  These data are being released to support states in wildfire Exceptional Events
+  demonstrations. EPA released fire impacts modeling data for the 2023 fire season
+  called the Expedited Modeling of Burn Events Results (EMBER) in December 2024. EPA
+  has updated the EMBER Dataset Tool on the EPA website to include summary tables and
+  graphics four new years of EMBER data: 2021, 2022, 2024, and 2025. As part of the
+  effort to update the EMBER data, we are posting the full model input and output files
+  publicly here to aid state, local, and Tribal air agencies in constructing any
+  potential Exceptional Events demonstrations. For more information about EMBER, see
+  the following web page:
   https://www.epa.gov/air-quality-analysis/expedited-modeling-burn-events-results-ember
 Documentation: >-
-  Dataset Description for 2023: 
+  Dataset Description for 2023:
   https://www.sciencedirect.com/science/article/pii/S2352340924011703
-
 Contact: Simon.Heather@epa.gov
-ManagedBy:
-  U.S. Environmental Protection Agency (https://www.epa.gov)
+ManagedBy: "[U.S. Environmental Protection Agency](https://www.epa.gov)"
 UpdateFrequency: As needed
 Collabs:
   ASDI:
@@ -29,107 +27,109 @@ Tags:
   - environmental
 License: >-
   These datasets are products of the U.S. Government and are intended for public
-  access and use. Unless otherwise specified, all data produced by the U.S EPA
-  is, by default, in the public domain and are not subject to domestic copyright
-  protection under 17 U.S.C. § 105. More details on the U.S. Public Domain
-  license are available here: http://www.usa.gov/publicdomain/label/1.0/
+  access and use. Unless otherwise specified, all data produced by the U.S EPA is, by
+  default, in the public domain and are not subject to domestic copyright protection
+  under 17 U.S.C. § 105. More details on the U.S. Public Domain license are available
+  here: http://www.usa.gov/publicdomain/label/1.0/
 Citation: >-
-  TSD:
-  US EPA, 2026, "Development of the Expedited Modeling of Burn Events Results 
-                 (EMBER) Datasets for 2021, 2022, 2024, and 2025", 454R26002
+  EMBER Modeling Files was accessed on DATE from
+  https://registry.opendata.aws/epa-ember. US EPA, 2026, "Development of the
+  Expedited Modeling of Burn Events Results (EMBER) Datasets for 2021, 2022, 2024,
+  and 2025", 454R26002
 Resources:
   - Description: |
-      The data are organized into four yearly folders (2021 data, 2022 data, 2024 data, and 2025 data) each with the same directory structure. Each yearly folder has the following directory structure:
-      $YYYY (four digit year)
-       CMAQ
-        Emissions
-         Anthropogenic
-         fires
-        Inputs
-         ICBC
-         MCIP
-        Outputs
-       Emissions Input files
-        Emissions are split into two main directories ("anthropogenic" and "fires")
-       Anthropogenic - This directory includes all anthropogenic emissions. These emissions
-       are used in the base simulation as well as both zero out simulations. Since the same 
-       set of anthropogenic emissions are used for 2021 and 2022 simulations, the emissions
-       files are only provided in the 2021 directory. The 2022 directory includes a README 
-       file directing the user to the 2021 anthropogenic emissions directory. Similarly, the 
-       same set of anthropogenic emissions are used for 2024 and 2025 simulations for all 
-       sectors except for ptegu. The emissions files other than ptegu are only provided in 
-       the 2024 directory. The 2024 directory includes a README file directing the user to 
-       the 2024 anthropogenic emissions directory for emissions from sources other than ptegu 
-       sources. The following subfolders can be found under the anthropogenic emissions folders -
-        Beis_inline - auxiliary files needed to run the CMAQ model with online biogenic emissions calculations
-        merged_nobeis_norwc - gridded emissions files – all gridded emissions sources except 
-       residential wood combustion and biogenic emissions sources
-        rwc - gridded emissions files - residential wood combustion 
-        pt_oilgas  point source emissions files – oil and gas exploration and production activities
-        ptegu - point source emissions files – electric generating units
-        cmv_c3 or cmv_c3_36 - point source emissions files for large ocean-going c3 class commercial ships 
-        cmv_c1c2 or cmv_c3_36 - point source emissions files for smaller c1 and c2 class commercial ships 
-        othpt or canmex_point - point source emissions files for point sources located in Mexico and Canada 
-        ptagfire (2024 only) - point source emissions files for agricultural burning sources
-        ptnonipm (2021 and 2024) and ptnonipm_hr (2024 only) - point source emissions files for 
-         all point source emissions not included in one of the other point source categories. 
-        The ptnonipm_hr emissions come from sources with hourly CEMS data.
-       Fires - This directory includes day-specific fire emissions from each simulation year. 
-       The following subfolders can be found the fire emissions folders -
-        ptfire_othna (2021 and 2022) - wildland and agricultural fires in Canada and Mexico
-        ptfire-canada (2024 and 2025) - wildfires in Canada
-        ptfire_mexona (2024 and 2025) - wildland and agricultural fires in Mexico
-        ptfire-rx - prescribed fires in the United States
-        ptfire-wild - wildfires in the United States
-        File description - Each folder contains CMAQ emissions input files for a different emissions sector. 
-        Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Point source 
-        sectors include “inln_mole” files with information on emissions magnitudes and “stack_groups” 
-        files with information on the emissions location/stack characteristics. Gridded sectors include 
-         only “emis_mole” files with gridded emissions magnitudes.
-        Meteorological Input Files-
-         Meteorological CMAQ input files can be found in the $YYYY/MCAQ/inputs/MCIP directories. 
-         Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Files are 
-         provided for every day of the simulation. Descriptions of the file types and variables can 
-         be found at https://github.com/USEPA/CMAQ/tree/main/PREP/mcip.
-        Initial and Boundary Condition Files-
-         Initial and boundary condition files can be found in $YYYY/MCAQ/inputs/ICBC directories. 
-         Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Initial 
-         conditions are provided for April 1 of each simulation year. Boundary condition files are 
-         provided for every day of the simulation. Descriptions of the file types and variables 
-         can be found at https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and 
-         https://github.com/USEPA/CMAQ/tree/main/PREP/icon.
-        Gridded Model Output Files-
-         For each simulation year, gridded daily layer-1 model outputs are provided for three 
-         simulations- the base simulation, the zero fires simulation, and the zero Canada and Mexico 
-         fires simulation. The location and names of the simulations for each year are provided below
-      2021- 2021/CMAQ/outputs/
-       Base simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.basecase2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
-       Zero Fires Simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
-       Zero Canada and Mexico fires simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noCN-MXfires2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
-      2022- 2022/CMAQ/outputs/
-       Base simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.basecase2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
-       Zero Fires Simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
-       Zero Canada and Mexico fires simulation- HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noCN-MXfires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
-      2024- 2024/CMAQ/outputs/
-       Base simulation- hr2day_merged_2024.2024basecase_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-       Zero Fires Simulation- hr2day_merged_2024.EMBER_noFires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-       Zero Canada and Mexico fires simulation- hr2day_merged_2024.EMBER_noCA-MXfires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-      2025- 2025/CMAQ/outputs/
-       Base simulation- hr2day_merged_2025.2025basecase_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-       Zero Fires Simulation- hr2day_merged_2025.EMBER_noFires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-       Zero Canada and Mexico fires simulation- hr2day_merged_2025.EMBER_noCA-MXfires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
-      Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI). Each file 
-      includes daily gridded concentrations from layer 1 of the model simulation. Each file includes
-      the following variables- 
-       O3_MDA8- maximum daily 8-hour ozone concentrations
-       ATOTIJ_AVG- 24-hour average total PM2.5 concentrations
+      The data are organized into four yearly folders (`2021 data`, `2022 data`, `2024 data`, and `2025 data`), each with the same directory structure:
 
+      ```
+      $YYYY (four digit year)
+      └── CMAQ
+          ├── Emissions
+          │   ├── Anthropogenic
+          │   └── fires
+          ├── Inputs
+          │   ├── ICBC
+          │   └── MCIP
+          └── Outputs
+      ```
+
+      All files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures.
+
+      #### Emissions input files
+
+      Emissions are split into two main directories, **Anthropogenic** and **Fires**.<br>
+      <br>
+
+      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations. The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there).
+      <br><br>
+      Subfolders:
+      <br>
+      - `Beis_inline` — auxiliary files needed to run CMAQ with online biogenic emissions calculations
+      - `merged_nobeis_norwc` — gridded emissions: all gridded sources except residential wood combustion and biogenic sources
+      - `rwc` — gridded emissions: residential wood combustion
+      - `pt_oilgas` — point source emissions: oil and gas exploration and production
+      - `ptegu` — point source emissions: electric generating units
+      - `cmv_c3` or `cmv_c3_36` — point source emissions: large ocean-going C3 class commercial ships
+      - `cmv_c1c2` or `cmv_c3_36` — point source emissions: smaller C1 and C2 class commercial ships
+      - `othpt` or `canmex_point` — point source emissions: sources located in Mexico and Canada
+      - `ptagfire` (2024 only) — point source emissions: agricultural burning sources
+      - `ptnonipm` (2021 and 2024) and `ptnonipm_hr` (2024 only) — point source emissions not included in another category; `ptnonipm_hr` comes from sources with hourly CEMS data
+
+      **Fires** includes day-specific fire emissions for each simulation year.
+      <br><br>
+      Subfolders:
+      <br>
+      - `ptfire_othna` (2021 and 2022) — wildland and agricultural fires in Canada and Mexico
+      - `ptfire-canada` (2024 and 2025) — wildfires in Canada
+      - `ptfire_mexona` (2024 and 2025) — wildland and agricultural fires in Mexico
+      - `ptfire-rx` — prescribed fires in the United States
+      - `ptfire-wild` — wildfires in the United States
+
+      Point source sectors include `inln_mole` files (emissions magnitudes) and `stack_groups` files (emissions location/stack characteristics). Gridded sectors include only `emis_mole` files (gridded emissions magnitudes).
+
+      #### Meteorological input files
+
+      Found in `$YYYY/CMAQ/inputs/MCIP`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures, provided for every day of the simulation. File type and variable descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/mcip
+
+      #### Initial and boundary condition files
+
+      Found in `$YYYY/CMAQ/inputs/ICBC`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures. Initial conditions are provided for April 1 of each simulation year; boundary condition files are provided for every day of the simulation. Descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and https://github.com/USEPA/CMAQ/tree/main/PREP/icon
+
+      #### Gridded model output files
+
+      For each simulation year, gridded daily layer-1 model outputs are provided for three simulations (base, zero fires, and zero Canada and Mexico fires) under `$YYYY/CMAQ/outputs/`:
+
+      ```
+      2021/CMAQ/outputs/
+        Base:                  HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.basecase2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
+        Zero fires:            HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
+        Zero CA/MX fires:      HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noCN-MXfires2021_2021_O3_PM25_01Apr2021to30Sep2021.nc
+
+      2022/CMAQ/outputs/
+        Base:                  HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.basecase2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
+        Zero fires:            HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
+        Zero CA/MX fires:      HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noCN-MXfires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
+
+      2024/CMAQ/outputs/
+        Base:                  hr2day_merged_2024.2024basecase_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+        Zero fires:            hr2day_merged_2024.EMBER_noFires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+        Zero CA/MX fires:      hr2day_merged_2024.EMBER_noCA-MXfires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+
+      2025/CMAQ/outputs/
+        Base:                  hr2day_merged_2025.2025basecase_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+        Zero fires:            hr2day_merged_2025.EMBER_noFires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+        Zero CA/MX fires:      hr2day_merged_2025.EMBER_noCA-MXfires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
+      ```
+
+      Each output file is a NetCDF version 3 formatted file using I/O API (IOAPI) data structures, containing daily gridded concentrations from layer 1 of the model simulation, with the following variables:
+
+      - `O3_MDA8` — maximum daily 8-hour ozone concentrations
+      - `ATOTIJ_AVG` — 24-hour average total PM2.5 concentrations
     ARN: arn:aws:s3:::epa-ember
     Region: us-east-1
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://epa-ember.s3.amazonaws.com/index.html)'
   - Description: Notification for the Ember bucket
-    ARN: arn:aws:sns:us-east-1:127085394039:ember-object_created
+    ARN: arn:aws:sns:us-east-1:127085394039:epa-ember-object_created
     Region: us-east-1
     Type: SNS Topic
