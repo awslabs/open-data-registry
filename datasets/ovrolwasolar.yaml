@@ -3,14 +3,15 @@ Description: >
   This dataset contains long-term low-frequency solar radio imaging spectroscopy
   observations from the Owens Valley Radio Observatory Long Wavelength Array
   (OVRO-LWA). The data are produced from solar radio interferometric observations
-  and stored in HDF5 format, with metadata describing the observation time,
-  frequency coverage, imaging products, and other relevant parameters. The dataset
-  provides dynamic, imaging-based measurements of solar radio emission at low
-  frequencies, which are closely connected to solar coronal activity, solar radio
-  bursts, and space weather phenomena. These observations support studies of
-  solar eruptions, particle acceleration, coronal plasma properties, radio wave
-  propagation, and machine learning applications for solar radio burst detection,
-  event classification, anomaly detection, and space weather prediction.
+  and distributed as HDF5 spectral image products and FITS all-day spectrogram
+  products, with metadata describing the observation time, frequency coverage,
+  imaging products, and other relevant parameters. The dataset provides dynamic,
+  imaging-based measurements of solar radio emission at low frequencies, which are
+  closely connected to solar coronal activity, solar radio bursts, and space weather
+  phenomena. These observations support studies of solar eruptions, particle
+  acceleration, coronal plasma properties, radio wave propagation, and machine
+  learning applications for solar radio burst detection, event classification,
+  anomaly detection, and space weather prediction.
 Documentation: https://ovsa.njit.edu/lwa/
 Contact: Peijin Zhang <peijin.zhang@njit.edu>
 ManagedBy: New Jersey Institute of Technology
@@ -29,14 +30,15 @@ License: Creative Commons Attribution 4.0 International, CC BY 4.0
 Citation: >
   Please cite the dataset documentation and associated OVRO-LWA solar observation
   publications when using this dataset. The dataset was accessed from the Registry
-  of Open Data on AWS.
+  of Open Data on AWS at https://registry.opendata.aws/ovrolwasolar.
 Resources:
   - Description: >
-      Long-term low-frequency solar radio imaging spectroscopy observations in
-      HDF5 format. The dataset currently contains approximately 12 TB and grows
-      by approximately 9 TB per year.
-    ARN: arn:aws:s3:::REPLACE-WITH-BUCKET-NAME
-    Region: us-east-1
+      Long-term low-frequency solar radio imaging spectroscopy observations.
+      Spectral image products are published under `image_hdf/YYYY/MM/DD/` and
+      all-day spectrogram products under `spec_fits/YYYY/`. The dataset currently
+      contains approximately 12 TB and grows by approximately 9 TB per year.
+    ARN: arn:aws:s3:::ovro-lwa-solar
+    Region: us-west-2
     Type: S3 Bucket
   - Description: Notifications for new OVRO LWA Solar Observation data
     ARN: DRAFT
@@ -44,19 +46,25 @@ Resources:
     Type: SNS Topic
 DataAtWork:
   Tutorials:
+    - Title: "Get To Know a Dataset: OVRO LWA Solar Observation"
+      URL: https://github.com/peijin94/open-data-examples/blob/main/ovro-lwa-solar-observation/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/peijin94/open-data-examples/blob/main/ovro-lwa-solar-observation/get-to-know-a-dataset.ipynb
+      AuthorName: Peijin Zhang, New Jersey Institute of Technology
+      Services:
+        - Amazon S3
     - Title: Reading and Plotting OVRO-LWA Spectral Image HDF Data
       URL: https://github.com/ovro-eovsa/lwa-solar-util/blob/main/notebook/image_plot_hdf.ipynb
       NotebookURL: https://github.com/ovro-eovsa/lwa-solar-util/blob/main/notebook/image_plot_hdf.ipynb
-      AuthorName: New Jersey Institute of Technology
+      AuthorName: Peijin Zhang, New Jersey Institute of Technology
       Services:
         - Amazon S3
   Tools & Applications:
     - Title: OVRO LWA Solar Data Portal
       URL: https://ovsa.njit.edu/lwa/
-      AuthorName: New Jersey Institute of Technology
+      AuthorName: CSTR, New Jersey Institute of Technology
   Publications:
     - Title: OVRO-LWA Solar Data Products
       URL: https://www.ovsa.njit.edu/wiki/index.php/OVRO-LWA_Solar_Data_Products
-      AuthorName: New Jersey Institute of Technology
+      AuthorName: CSTR, New Jersey Institute of Technology
 ADXCategories:
   - Public Sector Data
