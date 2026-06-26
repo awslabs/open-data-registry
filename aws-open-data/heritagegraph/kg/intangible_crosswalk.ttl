@@ -1,0 +1,101 @@
+@prefix hg: <https://cair-nepal.org/heritagegraph/> .
+@prefix hgsrc: <https://data.cair-nepal.org/heritagegraph/source/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/dance-lakhe> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/dance-lakhe> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/dance-navadurga> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/dance-navadurga> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-bisket-jatra> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-bisket-jatra> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-gai-jatra> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-gai-jatra> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-ghode-jatra> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-ghode-jatra> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-indra-jatra> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-indra-jatra> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-rato-machhindranath> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-rato-machhindranath> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/festival-seto-machhindranath> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/festival-seto-machhindranath> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/kumari-ghar> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/kumari-ghar> .
+
+<https://data.cair-nepal.org/heritagegraph/id/assertion/intangible/pashupati-complex> hg:asserts_about_entity <https://data.cair-nepal.org/heritagegraph/id/intangible/pashupati-complex> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/caste-jyapu> owl:sameAs wd:Q6733422 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/caste-vajracharya> owl:sameAs wd:Q7908941 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-bhairava> a hg:Deity ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-indra> a hg:Deity ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-navadurga> a hg:Deity ;
+    owl:sameAs wd:Q2671565 ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-seto-machhindranath> a hg:Deity ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-buddhist> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/guthi-sansthan> owl:sameAs wd:Q65395190 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/royal-kumari-office> owl:sameAs wd:Q1064555 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/syncretic-karunamaya> a hg:SyncreticRelationship ;
+    rdfs:label "Avalokiteshvara identified with Matsyendranath (Karunamaya)" ;
+    prov:wasDerivedFrom hgsrc:cair-curated-intangible ;
+    hg:assigned_equivalent <https://data.cair-nepal.org/heritagegraph/id/intangible/deity-matsyendranath> ;
+    hg:assigned_to_deity <https://data.cair-nepal.org/heritagegraph/id/intangible/deity-avalokiteshvara> ;
+    hg:syncretic_type hg:Equivalence .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/syncretic-kumari-taleju> a hg:SyncreticRelationship ;
+    rdfs:label "Hindu goddess Taleju embodied in a Buddhist Shakya Kumari" ;
+    prov:wasDerivedFrom hgsrc:cair-curated-intangible ;
+    hg:assigned_to_deity <https://data.cair-nepal.org/heritagegraph/id/intangible/deity-taleju> ;
+    hg:syncretic_type hg:Identification .
+
+<https://data.cair-nepal.org/heritagegraph/id/place/intangible/bungamati> owl:sameAs wd:Q2608296 .
+
+<https://data.cair-nepal.org/heritagegraph/id/place/intangible/kathmandu-durbar> owl:sameAs wd:Q6122177 .
+
+<https://data.cair-nepal.org/heritagegraph/id/place/intangible/patan-durbar> owl:sameAs wd:Q7144236 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-avalokiteshvara> a hg:Deity ;
+    owl:sameAs wd:Q193849 ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-buddhist>,
+        <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-newar-syncretic> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-matsyendranath> a hg:Deity ;
+    owl:sameAs wd:Q1420753 ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu>,
+        <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-newar-syncretic> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/deity-taleju> a hg:Deity ;
+    owl:sameAs wd:Q9355345 ;
+    hg:has_religious_tradition <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu>,
+        <https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-newar-syncretic> .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/festival-bisket-jatra> owl:sameAs wd:Q20704257 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/festival-gai-jatra> owl:sameAs wd:Q40887536 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/festival-ghode-jatra> owl:sameAs wd:Q106855753 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/festival-indra-jatra> owl:sameAs wd:Q301339 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/pashupati-complex> owl:sameAs wd:Q1814492 .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-buddhist> a hg:ReligiousTradition ;
+    rdfs:label "Buddhist (Newar Vajrayana) tradition" .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-newar-syncretic> a hg:ReligiousTradition ;
+    rdfs:label "Newar syncretic tradition" .
+
+<https://data.cair-nepal.org/heritagegraph/id/intangible/tradition-hindu> a hg:ReligiousTradition ;
+    rdfs:label "Hindu tradition" .
+

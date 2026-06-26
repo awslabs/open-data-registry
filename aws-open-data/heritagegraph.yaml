@@ -1,0 +1,70 @@
+# Registry of Open Data on AWS — dataset metadata
+# Validated against https://github.com/awslabs/open-data-registry (schema.yaml + tags.yaml)
+#
+# CONFIRM BEFORE SUBMITTING (placeholders in [brackets]):
+#   - the S3 bucket name and AWS Region
+Name: HeritageGraph - Knowledge Graph of Nepal's Cultural Heritage
+Description: |
+  HeritageGraph is an RDF knowledge graph of Nepal's tangible and intangible
+  cultural heritage, built on the CIDOC-CRM-aligned HeritageGraph ontology
+  (https://cairnepal.github.io/heritagegraphontology/) and populated from trusted
+  open sources. It contains ~7,850 tangible heritage entities (temples, stupas,
+  monasteries, traditional stone water spouts / dhunge dhara, monuments) with
+  coordinates, dates and images, plus a curated intangible-heritage layer
+  (festivals and chariot festivals, masked dances, Guthi institutions, the
+  Living-Goddess Kumari lifecycle, caste ritual roles, deities and syncretic
+  relationships). Every entity carries machine-readable provenance (source,
+  confidence and epistemic stance) and, where available, owl:sameAs links to
+  Wikidata and OpenStreetMap. Data is published as RDF 1.1 Turtle in separate
+  named graphs per source so each can be used under its own license, and is
+  validated against the published SHACL shapes. No synthetic data is used.
+Documentation: https://cairnepal.github.io/heritagegraphontology/
+Contact: info@cair-nepal.org
+ManagedBy: "[CAIR-Nepal - Center for Artificial Intelligence Research, Nepal](https://cair-nepal.org)"
+Citation: "CAIR-Nepal (2026). HeritageGraph: A Knowledge Graph of Nepal's Cultural Heritage. https://cairnepal.github.io/heritagegraphontology/"
+UpdateFrequency: Updated when source datasets are refreshed or coverage is extended (roughly quarterly).
+RegistryEntryAdded: "2026-06-25"
+RegistryEntryLastModified: "2026-06-25"
+Tags:
+  - geospatial
+  - cultural preservation
+  - culture
+  - history
+  - graph
+  - mapping
+  - metadata
+License: |
+  This dataset combines sources published under different open licenses, kept in
+  separate named-graph files so each can be used under its own terms:
+    - kg/wikidata.ttl   : CC0 1.0 (public domain)  https://creativecommons.org/publicdomain/zero/1.0/
+    - kg/osm.ttl        : ODbL 1.0 (share-alike, attribution "(c) OpenStreetMap contributors")  https://opendatacommons.org/licenses/odbl/1-0/
+    - kg/unesco.ttl     : UNESCO World Heritage Centre factual data (attribution)
+    - kg/intangible.ttl : CC BY 4.0  https://creativecommons.org/licenses/by/4.0/
+    - kg/crosswalk.ttl and kg/intangible_crosswalk.ttl : mixed provenance; each
+      link inherits the license of the source it references.
+  The schema (ontology/) is CC BY 4.0. Any database derived from the combined
+  graph that includes the OpenStreetMap layer is subject to ODbL. See
+  heritagegraph/LICENSE.txt for full terms.
+Resources:
+  - Description: HeritageGraph knowledge graph (RDF Turtle named graphs), ontology, SHACL shapes and examples, under the s3://[BUCKET_NAME]/heritagegraph/ prefix.
+    ARN: arn:aws:s3:::[BUCKET_NAME]
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get to Know the HeritageGraph KG"
+      URL: "https://github.com/CAIRNepal/heritagegraphontology/blob/main/aws-open-data/get-to-know-the-heritagegraph-kg.ipynb"
+      AuthorName: CAIR-Nepal
+      AuthorURL: https://cair-nepal.org
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: "HeritageGraph ontology, SHACL shapes and SPARQL competency questions"
+      URL: "https://cairnepal.github.io/heritagegraphontology/"
+      AuthorName: CAIR-Nepal
+      AuthorURL: https://cair-nepal.org
+  Publications:
+    - Title: "HeritageGraph: A CIDOC-CRM-aligned ontology for the cultural heritage of Nepal"
+      URL: "https://github.com/CAIRNepal/heritagegraphontology"
+      AuthorName: CAIR-Nepal
+      AuthorURL: https://cair-nepal.org
