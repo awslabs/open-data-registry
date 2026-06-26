@@ -1,0 +1,74 @@
+Name: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
+Description: |
+ THIS DATASET IS CHANGING<br><br>
+ 
+ Files uploaded from late January 2026 onward will contain changes including:
+ - precision changes
+ - new parameters
+ - changes to existing parameters e.g. adding vertical levels and timesteps
+ - the height_asl_on_pressure_levels parameter will be replaced by geopotential_height_on_pressure_levels<br><br>
+ 
+ Please check your systems are prepared for these changes.<br><br>
+
+ A high-resolution gridded weather forecast for the UK, with a resolution of 0.018 degrees, projected on to a 2km horizontal grid. The data is available as NetCDF files. It's offered on a free, unsupported basis, so we don’t recommend using it for any critical business purposes.<br><br>
+ 
+ Based on the Met Office UKV model, which is a deterministic, numerical weather prediction model for the UK and Ireland. It is a UK configuration of the Unified Model, which is the Met Office’s flagship Numerical Weather Prediction model.<br><br>
+ 
+ The archive contains data from the past two years. The data is typically available approximately 3 to 6 hours after the model run time.<br><br>
+ 
+ The following timesteps are available:
+ - every hour from 0 to 54 hours (for most parameters)
+ - every 3 hours from 57 to 120 hours<br><br>
+ 
+ For some parameters, data is available for multiple vertical height or pressure levels through the atmosphere.
+UpdateFrequency: |
+  There are three lengths of model run, each with its own update frequency:
+  - Nowcast: forecasts the next 12 hours and runs at 0100, 0200, 0400, 0500, 0700, 0800, 1000, 1100, 1300, 1400, 1600, 1700, 1900, 2000, 2200 and 2300 UTC.
+  - Short: forecasts the next 54 hours and runs at 0000, 0600, 0900, 1200, 1800 and 2100 UTC.
+  - Medium: forecasts the next 120 hours and runs at 0300 and 1500 UTC.
+License: "British Crown copyright 2023-2025, the Met Office, is licensed under [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)"
+Documentation: https://www.metoffice.gov.uk/services/data/external-data-channels
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk/)"
+Contact: servicedesk@metoffice.gov.uk. Service desk is only available Mon – Fri, 09:00 until 17:00 UTC (-1 hour during BST).  As a non-operational service we aim to respond to any service support enquiries within 3-5 business days.
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - air temperature
+  - atmosphere
+  - forecast
+  - geoscience
+  - geospatial
+  - model
+  - near-surface air temperature
+  - near-surface relative humidity
+  - netcdf
+  - weather
+Resources:
+  - Description: Met Office UK Deterministic (UKV)2km on a 2-year rolling archive
+    ARN: arn:aws:s3:::met-office-atmospheric-model-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse bucket](https://met-office-atmospheric-model-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new atmospheric model data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-atmospheric-model-data-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Numerical weather prediction models
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/weather-forecasting
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+    - Title: The Met Office Unified Model
+      URL: https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk/
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html

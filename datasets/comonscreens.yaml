@@ -1,0 +1,28 @@
+Name: Common Screens
+Description: A corpus of web screenshot and metadata data composed of over 70 million websites.
+Documentation: https://commonscreens.com/?page_id=1492
+Contact: admin@commonscreens.com
+ManagedBy: "[Common Screens](https://commonscreens.com/)"
+UpdateFrequency: Monthly
+Tags:
+  - aws-pds
+  - encyclopedic
+  - natural language processing
+  - internet
+License:  "[Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: Common Screens (jpeg and csv format)
+    ARN: arn:aws:s3:::common-screens
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Cloudfront CDN distribution for hotlinking screenshots
+    Host: dqh5x5k6xg3n1.cloudfront.net
+    Region: us-west-2
+    Type: CloudFront Distribution    
+DataAtWork:
+  Tutorials:
+    - Title: IAB Text Classification
+      URL: https://commonscreens.com/?page_id=2512
+      AuthorName: Common Screens
+  Tools & Applications:
+  Publications:

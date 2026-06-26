@@ -1,0 +1,56 @@
+Name: DE Africa Waterbodies Monitoring Service
+Description: |
+  The Digital Earth Africa continental Waterbodies Monitoring Service identifies more than 700,000 water bodies from over three decades of satellite observations. This service maps persistent and seasonal water bodies and the change in their water surface area over time. Mapped water bodies may include, but are not limited to, lakes, ponds, man-made reservoirs, wetlands, and segments of some river systems.On a local, regional, and continental scale, this service helps improve our understanding of surface water dynamics and water availability and can be used for monitoring water bodies such as wetlands, lakes and dams in remote and/or inaccessible locations.
+  
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Waterbodies_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: Single historical extent derived from the full temporal range.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - disaster response
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - water
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: DE Africa Waterbodies
+    ARN: arn:aws:s3:::deafrica-services/waterbodies
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/waterbodies)'
+DataAtWork:
+    Tutorials:
+    - Title: "Digital Earth Africa Training"
+      URL: http://learn.digitalearthafrica.org
+      AuthorName: Digital Earth Africa Contributors
+    Tools & Applications:
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+    Publications:
+    - Title: "Waterbodies Monitoring Service"
+      URL: https://www.digitalearthafrica.org/node/601
+      AuthorName: Digital Earth Africa Contributors

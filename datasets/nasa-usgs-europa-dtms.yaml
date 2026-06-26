@@ -1,0 +1,41 @@
+Name: NASA / USGS Controlled Europa DTMs
+Description: |
+    Knowledge of a planetary surface’s topography is necessary to understand its geology and enable landed mission operations. The Solid State Imager (SSI) on board NASA’s Galileo spacecraft acquired more than 700 images of Jupiter’s moon Europa. Although moderate- and high-resolution coverage is extremely limited, repeat coverage of a small number of sites enables the creation of digital terrain models (DTMs) via stereophotogrammetry. Here we provide stereo-derived DTMs of five sites on Europa. The sites are the bright band Agenor Linea, the crater Cilix, the crater Pwyll, pits and chaos adjacent to Rhadamanthys Linea, and ridged plains near Yelland Linea. We generated the DTMs using BAE’s SOCET SET® software and each was manually edited to correct identifiable errors from the automated stereo matching process. Additionally, we used the recently updated image pointing information provided by the U.S. Geological Survey (Bland, et al., 2021), which ties the DTMs to an existing horizontal datum and enables the DTMs to easily be used in coordination with that globally controlled image set. The DTMs are of the highest quality achievable with Galileo data and are therefore suitable for most scientific analysis. However, there are inherent uncertainties in the DTMs including horizontal resolutions that are typically 1–2 km (~10x the image pixel scale) and expected vertical precision (the root mean square (RMS) uncertainty in a point elevation) of 10s–100s of m. The DTMs and their uncertainties are discussed in detail in the documentation.
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/jupiter/europa/europa_controlled_usgs_dtms/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: HiRISE data will be updated as new releases are made to the Planetary Data System.
+Tags:
+  - aws-pds
+  - planetary
+  - satellite imagery
+  - stac
+  - cog
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P99HX1H3
+Resources:
+  - Description: Scenes and metadata
+    ARN: arn:aws:s3:::astrogeo-ard/jupiter/europa/galileo_voyager/usgs_controlled_dtms/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/api/collections/galileo_usgs_photogrammetrically_controlled_dtms?.language=en)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors

@@ -1,0 +1,68 @@
+Name: Steinegger Lab Datasets
+Description: |
+  The Steinegger Lab Dataset comprises biological databases and resources critical for protein sequence and structure analysis, developed to support ColabFold, MMseqs2, and Foldseek/Foldcomp—three high-performance computational tools widely used in bioinformatics.
+ 
+  The MMseqs2 dataset serves as the backbone for our fast structure prediction tool, ColabFold, and includes UniRef30, BFD, and the ColabFold environmental databases.
+  These datasets are specifically designed for the rapid generation of multiple sequence alignments (MSAs), which are essential for high-accuracy structure prediction.
+  Beyond MSA generation, these resources allow for fast taxonomy annotations and functional annotation, supporting a wide range of bioinformatics applications.
+ 
+  The Foldseek dataset includes preprocessed databases such as the AlphaFold Database (AFDB), PDB, SwissProt, and CATH, specifically designed for protein structure similarity searches.
+  These datasets encompass the majority of both experimental and predicted structural resources, supporting analyses for monomers and multimers alike.
+Documentation: |
+  For the MMseqs2/ColabFold dataset, please see https://colabfold.mmseqs.com
+  For the Foldseek dataset, please see https://search.foldseek.com
+Contact: "martin.steinegger@snu.ac.kr"
+ManagedBy: "[Steinegger Lab, Seoul National University](https://steineggerlab.com)"
+UpdateFrequency: Occasionally, where new data is available
+Tags:
+  - open source software
+  - protein
+  - protein folding
+  - bioinformatics
+  - metagenomics
+  - life sciences
+  - aws-pds
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Citation: |
+  If you’re using MMseqs2, please cite:
+  “Steinegger M and Söding J. MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets. Nature Biotechnology (2017), doi: [10.1038/nbt.3988](https://www.nature.com/articles/nbt.3988)
+  If you're using Foldseek, please cite:
+  "van Kempen M, Kim S, Tumescheit C, Mirdita M, Lee J, Gilchrist CLM, Söding J, and Steinegger M. Fast and accurate protein structure search with Foldseek. Nature Biotechnology (2023), doi:[10.1038/s41587-023-01773-0](https://www.nature.com/articles/s41587-023-01773-0)"
+  If you're using ColabFold, please cite:
+  "Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S and Steinegger M. ColabFold: Making protein folding accessible to all. Nature Methods (2022) doi: [10.1038/s41592-022-01488-1](https://www.nature.com/articles/s41592-022-01488-1)"
+Resources:
+  - Description: Steinegger Lab Datasets
+    ARN: arn:aws:s3:::steineggerlab
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets"
+      URL: "https://www.nature.com/articles/nbt.3988"
+      AuthorName: "Steinegger M and Söding J"
+    - Title: "Fast and accurate protein structure search with Foldseek"
+      URL: "https://www.nature.com/articles/s41587-023-01773-0"
+      AuthorName: "van Kempen M, Kim S, Tumescheit C, Mirdita M, Lee J, Gilchrist CLM, et al."
+    - Title: "ColabFold: Making protein folding accessible to all"
+      URL: "https://www.nature.com/articles/s41592-022-01488-1"
+      AuthorName: "Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S and Steinegger M"
+  Tools & Applications:
+    - Title: "ColabFold Google Colab Notebook"
+      URL: "https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb"
+      AuthorName: "Ovchinnikov S, Mirdita M and Steinegger M"
+    - Title: "Run ColabFold on your local computer"
+      URL: "https://github.com/YoshitakaMo/localcolabfold"
+      AuthorName: "Moriwaki Y"
+    - Title: "Foldseek Search Server"
+      URL: "https://search.foldseek.com/search"
+      AuthorName: "van Kempen M, Kim S, Tumescheit C, Mirdita M, Lee J, Gilchrist CLM, et al."
+  Tutorials:
+    - Title: "ColabFold Tutorial"
+      URL: "https://docs.google.com/presentation/d/1mnffk23ev2QMDzGZ5w1skXEadTe54l8-Uei6ACce8eI"
+      AuthorName: "Ovchinnikov S, Mirdita M and Steinegger M"
+    - Title: "ColabFold User Guide"
+      URL: "https://github.com/sokrypton/ColabFold/wiki"
+      AuthorName: "Mirdita M and Ovchinnikov S"
+    - Title: "Foldseek User Guide"
+      URL: "https://github.com/steineggerlab/foldseek/wiki"
+      AuthorName: "Mirdita M and Steinegger M"

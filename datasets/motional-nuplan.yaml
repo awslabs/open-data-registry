@@ -1,0 +1,71 @@
+Name: nuPlan
+Description: nuPlan is the world's first large-scale planning benchmark for autonomous driving.
+Documentation: https://nuplan.org
+Contact: https://nuplan.org
+ManagedBy: "[Motional, Inc.](https://motional.com)"
+UpdateFrequency: Finalized
+Tags:
+  - aws-pds
+  - autonomous vehicles
+  - lidar
+  - robotics
+  - transportation
+  - urban
+License: "[Commercial](https://www.nuscenes.org/terms-of-use)"
+Resources:
+  - Description: |
+      Globally cached distribution of the nuPlan Dataset. Web frontend is available to browse the dataset.
+    Host: https://d1qinkmu0ju04f.cloudfront.net
+    Region: ap-northeast-1
+    Type: CloudFront Distribution
+  - Description: |
+      nuPlan Dataset
+    ARN: arn:aws:s3:::motional-nuplan
+    Region: ap-northeast-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://motional-nuplan.s3.ap-northeast-1.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: nuPlan Framework
+      URL: https://colab.research.google.com/github/motional/nuplan-devkit/
+      NotebookURL: https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_framework.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuPlan Planner Tutorial
+      URL: https://colab.research.google.com/github/motional/nuplan-devkit/
+      NotebookURL: https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_planner_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuPlan Advacned Model Training
+      URL: https://colab.research.google.com/github/motional/nuplan-devkit/
+      NotebookURL: https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_advanced_model_training.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuPlan Scenario Visualization
+      URL: https://colab.research.google.com/github/motional/nuplan-devkit/
+      NotebookURL: https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_scenario_visualization.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+    - Title: nuPlan Sensor Data Tutorial
+      URL: https://colab.research.google.com/github/motional/nuplan-devkit/
+      NotebookURL: https://github.com/motional/nuplan-devkit/blob/master/tutorials/nuplan_sensor_data_tutorial.ipynb
+      AuthorName: Motional
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title: nuPlan devkit
+      URL: https://github.com/motional/nuplan-devkit
+      AuthorName: Motional
+      AuthorURL:
+  Publications:
+    - Title: "NuPlan: A closed-loop ML-based planning benchmark for autonomous vehicles"
+      URL: https://arxiv.org/abs/2106.11810
+      AuthorName: Holger Caesar, Juraj Kabzan, Kok Seang Tan, Whye Kit Fong, Eric Wolff, Alex Lang, Luke Fletcher, Oscar Beijbom, Sammy Omari
+      AuthorURL:
+ADXCategories:
+  - Automotive Data

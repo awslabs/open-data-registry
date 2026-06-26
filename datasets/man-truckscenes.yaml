@@ -1,0 +1,67 @@
+Name: MAN TruckScenes
+Description: 
+  A large scale multimodal dataset for Autonomous Trucking.
+  Sensor data was recorded with a heavy truck from MAN equipped with 6 lidars, 6 radars, 4 cameras and a high-precision GNSS.
+  MAN TruckScenes allows the research community to come into contact with truck-specific challenges, such as trailer occlusions, novel sensor perspectives, and terminal environments for the first time.
+
+  It comprises more than 740 scenes of 20s each within a multitude of different environmental conditions.
+  Bounding boxes are available for 27 object classes, 15 attributes, and a range of more than 230m.
+  The scenes are tagged according to 34 distinct scene tags, and all objects are tracked throughout the scene to promote a wide range of applications.
+Documentation: https://www.man.eu/truckscenes
+Contact: truckscenes@man.eu
+ManagedBy: "[MAN Truck and Bus SE](https://www.man.eu)"
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - autonomous vehicles
+  - radar
+  - lidar
+  - IMU
+  - GPS
+  - computer vision
+  - machine learning
+  - deep learning
+  - perception
+  - object detection
+  - object tracking
+  - transportation
+  - logistics
+  - robotics
+License: "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+Resources:
+  - Description: MAN TruckScenes mini
+    ARN: arn:aws:s3:::man-truckscenes/release/mini/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: MAN TruckScenes trainval
+    ARN: arn:aws:s3:::man-truckscenes/release/trainval/
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: MAN TruckScenes test
+    ARN: arn:aws:s3:::man-truckscenes/release/test/
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: TruckScenes devkit tutorial
+      URL: https://github.com/TUMFTM/truckscenes-devkit/tree/main
+      NotebookURL: https://github.com/TUMFTM/truckscenes-devkit/blob/main/tutorials/truckscenes_tutorial.ipynb
+      AuthorName: Felix Fent, Fabian Kuttenreich, Florian Ruch, Farija Rizwin
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title: TruckScenes devkit
+      URL: https://github.com/TUMFTM/truckscenes-devkit
+      AuthorName: Felix Fent, Fabian Kuttenreich, Florian Ruch, Farija Rizwin
+      AuthorURL:
+    - Title: PyPi package
+      URL: https://pypi.org/project/truckscenes-devkit/
+      AuthorName: Felix Fent, Fabian Kuttenreich, Florian Ruch, Farija Rizwin
+      AuthorURL:
+  Publications:
+    - Title: "MANTruckScenes: A multimodal dataset for autonomous trucking in diverse conditions"
+      URL: https://arxiv.org/pdf/2407.07462
+      AuthorName: Felix Fent, Fabian Kuttenreich, Florian Ruch, Farija Rizwin, et al
+      AuthorURL:
+ADXCategories:
+  - Automotive Data
+  - Environmental Data

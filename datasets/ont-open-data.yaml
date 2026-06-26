@@ -6,9 +6,9 @@ Description: >
     benchmarks 3) Development of tools and methods. The data deposited
     showcases DNA sequences from a representative subset of sequencing
     chemistries. The datasets correspond to publicly-available reference
-    samples (e.g. GM24385 as reference human). Raw data are provided with
-    metadata and scripts to describe sample and data provenance.
-Documentation: https://labs.epi2me.io/category/data-releases/
+    samples (e.g. Genome In A Bottle reference cell lines). Raw data are
+    provided with metadata and scripts to describe sample and data provenance.
+Documentation: https://labs.epi2me.io/dataindex/
 Contact: support@nanoporetech.com
 ManagedBy: Oxford Nanopore Technologies
 UpdateFrequency: >
@@ -39,17 +39,58 @@ Resources:
     Type: S3 Bucket
     RequesterPays: False
   - Description: >
-      Nanopore sequencing data of the Genome in a Bottle sample GM24385.
-      Multiple PromethION flowcells using both the R9.4.1 and R10.3 nanopores.
+      Nanopore sequencing data of the Genome in a Bottle samples NA24385,
+      NA24149, and NA24143 (HG002-HG004) using the LSK114 sequencing chemistry.      
       The direct sequencer output is included, raw signal data stored in 
       .fast5 files and basecalled data in .fastq file. Additional secondary
       analyses are included, notably alignments of sequence data to the 
-      reference genome are provided along with statistics derived from these.
+      reference genome and variant calls are provided along with statistics
+      derived from these.
+      
+      The following cell lines/DNA samples were obtained from the NIGMS Human
+      Genetic Cell Repository at the Coriell Institute for Medical Research:
+      NA24385, NA24149, and NA24143.
+    ARN: arn:aws:s3:::ont-open-data/giab_lsk114_2022.12
+    Region: eu-west-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: >
+      Using nanopore sequencing, researchers have directly identified DNA and RNA
+      base modifications at nucleotide resolution, including 5-methylycytosine,
+      5-hydroxymethylcytosine, N6-methyladenosine, 5-bromodeoxyuridine in DAN; and
+      N6-methyladenosine in RNA, with detection of other natural or synthetic epigenetic modifications
+      possible through training basecalling algorithms. One of the most widespread
+      genomic modifications is 5-methylcytosine (5mC), which most frequently occurs
+      at  dinucleotides. Compared to whole-genome bisulfite sequencing, the
+      traditional method of 5mC detection, nanopore technology can offer many
+      advantages
       
       The following cell lines/DNA samples were obtained from the NIGMS Human
       Genetic Cell Repository at the Coriell Institute for Medical Research:
       GM24385.
-    ARN: arn:aws:s3:::ont-open-data/gm24385_2020.09
+    ARN: arn:aws:s3:::ont-open-data/gm24385_mod_2021.09/extra_analysis/bonito_remora
+    Region: eu-west-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: >
+      CpG dinucleotides frequently occur in high-density clusters called CpG islands
+      (CGI) and >60% of human genes have their promoters embedded within CGIs.
+      Determining the methylation status of cytosines within CpGs is of substantial
+      biological interest: alterations in methylation patterns within promoters is
+      associated with changes in gene expression and disease states such as cancer.
+      Exploring methylation differences between tumour samples and normal samples can
+      help to elucidate mechanisms associated with tumour formation and development.
+      Nanopore sequencing enables direct detection of methylated cytosines (e.g. at
+      CpG sites), without the need for bisulfite conversion.
+
+      Oxford Nanopore’s Adaptive Sampling offers a flexible method to enrich regions
+      of interest (e.g. CGIs) by depleting off-target regions during the sequencing
+      run itself with no upfront sample manipulation. Here we
+      introduce Reduced Representation Methylation Sequencing (RRMS) to target 310 Mb of the
+      human genome including regions which are highly enriched for CpGs including
+      ~28,000 CpG islands, ~50,600 shores and ~42,700 shelves as well as ~21,600
+      promoter regions.
+    ARN: arn:aws:s3:::ont-open-data/rrms_2022.07
     Region: eu-west-1
     Type: S3 Bucket
     RequesterPays: False

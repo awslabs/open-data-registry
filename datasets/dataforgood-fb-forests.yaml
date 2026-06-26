@@ -1,0 +1,67 @@
+Name: High Resolution Canopy Height Maps by WRI and Meta
+Description: |
+  Global and regional Canopy Height Maps (CHM). Created using machine learning models on high-resolution worldwide Maxar satellite imagery. 
+Documentation: https://github.com/facebookresearch/HighResCanopyHeight
+Contact: dataforgood@meta.com
+ManagedBy: "[Meta](https://dataforgood.fb.com/)"
+UpdateFrequency: TBD
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - cog
+  - earth observation
+  - climate
+  - land cover
+  - agriculture
+  - machine learning
+  - aerial imagery
+  - satellite imagery
+  - image processing
+  - geospatial
+License: |
+  https://creativecommons.org/licenses/by/4.0/
+Citation:
+  Meta and World Resources Institude (WRI) - 2024. High Resolution
+  Canopy Height Maps (CHM). Source imagery for CHM © 2016 [Maxar](https://www.maxar.com/products/imagery-basemaps).
+  Accessed DAY MONTH YEAR.
+Resources:
+  - Description: Global Canopy Height maps. GeoTIFF files and Geojson files with observation date
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/alsgedi_global_v6_float/
+    Region: us-east-1
+    Type: S3 Bucket  
+  - Description: California Canopy Height maps. GeoTIFF files and Geojson files with observation date
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/California/
+    Region: us-east-1
+    Type: S3 Bucket  
+  - Description: Sao Paulo Canopy Height maps. GeoTIFF files and Geojson files with observation date
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/sao_paulo/
+    Region: us-east-1
+    Type: S3 Bucket 
+  - Description: Sub Saharan Africa Height maps. GeoTIFF files and Geojson files with observation date
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/subsaharan_africa/
+    Region: us-east-1
+    Type: S3 Bucket 
+  - Description: Model weights
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v1/models/
+    Region: us-east-1
+    Type: S3 Bucket   
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: Global Canopy Height on Earth Engine
+      URL: https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+      AuthorName: Meta and WRI
+  Publications:
+    - Title: "Using Artificial Intelligence to Map the Earth’s Forests"
+      URL: https://sustainability.fb.com/blog/2024/04/22/using-artificial-intelligence-to-map-the-earths-forests/
+      AuthorName: Jamie Tolan, Camille Couprie, John Brandt, Justine Spore, Tobias Tiecke, Tracy Johns and Patrick Nease
+    - Title: "Every tree counts: Large-scale mapping of canopy height at the resolution of individual trees"
+      URL: https://research.facebook.com/blog/2023/4/every-tree-counts-large-scale-mapping-of-canopy-height-at-the-resolution-of-individual-trees/
+      AuthorName: Jamie Tolan, Camille Couprie, and Tracy Johns
+    - Title: Sub-meter resolution canopy height maps using self-supervised learning and a vision transformer trained on Aerial and GEDI Lidar
+      URL: https://www.sciencedirect.com/science/article/pii/S003442572300439X
+      AuthorName: Jamie Tolan, Hung-I Yang, Ben Nosarzewski, Guillaume Couairon, Huy Vo, John Brandt, Justine Spore, Sayantan Majumdar, Daniel Haziza, Janaki Vamaraju, Theo Moutakanni, Piotr Bojanowski, Tracy Johns, Brian White, Tobias Tiecke, Camille Couprie
+ 

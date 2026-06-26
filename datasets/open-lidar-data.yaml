@@ -1,0 +1,41 @@
+Name: Collection of open nation-scale LiDAR datasets
+Description: |
+  The goal of this project is to collect all publicly available large scale LiDAR datasets and archive them in an
+  uniform fashion for easy access and use. Initial efforts to collect the datasets are concentrated on Europe and will
+  be in future expanded to USA and other regions, striving for global coverage. Every dataset includes files in original
+  data format and translated to COPC format. For faster browsing, we include an overview file that includes a small
+  subset of data points from every dataset file in a single COPC file.
+Documentation: https://github.com/flai-ai/open-lidar-data
+Contact: info@flai.ai
+ManagedBy: "[Flai](https://flai.ai/)"
+UpdateFrequency: When new open dataset is published.
+Tags:
+  - aws-pds
+  - lidar
+  - earth observation
+  - geoscience
+  - geospatial
+  - land cover
+  - mapping
+  - survey
+License: The exact version of the licence depends on LiDAR dataset and is not the same for all datasets. Look for license.pdf file in the used dataset.
+Citation: Original publisher of the data should be cited.
+Resources:
+  - Description: Open LiDAR datasets
+    ARN: arn:aws:s3:::open-lidar-data
+    Region: eu-central-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: How to download data with FlaiHub
+      URL: https://github.com/flai-ai/open-lidar-data/blob/main/tutorials%2Fhow-to-download-data-with-flai-hub.md
+      AuthorName: Flai
+      AuthorURL: https://flai.ai/
+  Tools & Applications:
+    - Title: FlaiHub - web application for accessing, browsing and processing open LiDAR datasets
+      URL: https://hub.flai.ai/
+      AuthorName: Flai
+      AuthorURL: https://flai.ai/
+ADXCategories:
+  - Public Sector Data
+  - Environmental Data

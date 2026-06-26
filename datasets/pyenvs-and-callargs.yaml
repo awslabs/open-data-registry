@@ -1,0 +1,29 @@
+Name: PyEnvs and CallArgs
+Description: |
+  PyEnvs is a collection of 2814 permissively licensed Python packages along with their isolated development environments. Paired with a program analyzer (e.g. Jedi Language Server), it supports querying for project-related information. 
+  
+  CallArgs is a dataset built on top of PyEnvs for function call argument completion. It provides function definition, implementation, and usage information for each function call instance.
+
+Documentation: https://github.com/amazon-research/function-call-argument-completion
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: Amazon
+UpdateFrequency: None Planned
+Tags:
+  - machine learning
+  - code completion
+License: |
+  Please note that while we are providing this aggregation of code snippets unlicensed, each package that makes up the broader dataset may have and often does have its own license. Individual licenses can be found in the source code for the respective packages.
+Resources:
+  - Description: PyEnvs
+    ARN: arn:aws:s3:::pyenvs-and-callargs/pyenvs/
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: CallArgs
+    ARN: arn:aws:s3:::pyenvs-and-callargs/callargs/
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "Better Context Makes Better Code Language Models: A Case Study on Function Call Argument Completion"
+      URL: https://arxiv.org/abs/2306.03438
+      AuthorName: Hengzhi Pei, Jinman Zhao, Leonard Lausen, Sheng Zha, George Karypis

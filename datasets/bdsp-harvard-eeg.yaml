@@ -1,0 +1,33 @@
+Name: Harvard Electroencephalography Database
+Description: The Harvard EEG Database will encompass data gathered from four hospitals affiliated with Harvard University:Massachusetts General Hospital (MGH), Brigham and Women's Hospital (BWH), Beth Israel Deaconess Medical Center (BIDMC), and Boston Children's Hospital (BCH).  
+Documentation: More documentation can be found [here](https://doi.org/10.60508/cw6j-s785)
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP Licence](https://bdsp.io/content/harvard-eeg-db/view-license/1.0/); [Data User Agreement:](https://bdsp.io/content/harvard-eeg-db/view-dua/1.0/)"
+Resources:
+  - Description: Harvard Electroencephalography Database
+    ARN: arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-eeg-access-point/EEG
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/7651-3337
+DataAtWork:
+  Tools & Applications:
+    - Title: Harvard-EEG-Database-Tools
+      URL: https://github.com/bdsp-core/Harvard-EEG-Database-Tools
+      AuthorName: Brain Data Science Platform (BDSP)
+      AuthorURL: https://bdsp.io
+  Publications:
+    - Title: Harvard Electroencephalography Database
+      URL: https://doi.org/10.60508/7651-3337
+      AuthorName: Zafar, S., Loddenkemper, T., Lee, J. W., Cole, A., Goldenholz, D., Peters, J., et al. 
+

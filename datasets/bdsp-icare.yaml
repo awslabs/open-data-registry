@@ -1,0 +1,36 @@
+Name: I-CARE:International Cardiac Arrest REsearch consortium Electroencephalography Database
+Description: The International Cardiac Arrest REsearch consortium (I-CARE) Database includes baseline clinical information and continuous electroencephalography (EEG) recordings from 1,020 comatose patients with a diagnosis of cardiac arrest who were admitted to an intensive care unit from seven academic hospitals in the U.S. and Europe. Patients were monitored with 18 bipolar EEG channels over hours to days for the diagnosis of seizures and for neurological prognostication. Long-term neurological function was determined using the Cerebral Performance Category scale.
+Documentation: More documentation can be found [here](https://doi.org/10.60508/xwye-v214)
+Contact: contact@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP Licence](https://bdsp.io/content/bdsp-icare/view-license/1.0/); [Data User Agreement:](https://bdsp.io/content/bdsp-icare/view-dua/1.0/)"
+Resources:
+  - Description: This database consists of clinical and EEG data from adult patients with out-of-hospital or in-hospital cardiac arrest who had return of heart function (i.e., return of spontaneous circulation [ROSC]) but remained comatose - defined as inability to follow verbal commands and a Glasgow Coma Score inferior or equal to 8. The initial database release contains data from 607 patients - this is the public training set for the 2023 PhysioNet Challenge. This database release does not contain data from the remaining 413 patients that we are retaining as the hidden validation and test sets for the Challenge. Algorithms developed using the I-CARE training set can be submitted to the Brain Data Science Platform (BDSP) team for evaluation using the held-out dataset (bdsp.io).
+    ARN: arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-icare-access-point/ICARE_train/
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/xwye-v214
+DataAtWork:
+  Tools & Applications:
+    - Title: WFDB Software Package
+      URL: https://doi.org/10.13026/gjvw-1m31
+      AuthorName: Moody, G., Pollard, T., & Moody, B. 
+      AuthorURL: https://www.physionet.org
+  Publications:
+    - Title: I-CARE:International Cardiac Arrest REsearch consortium Electroencephalography Database
+      URL: https://doi.org/10.60508/xwye-v214
+      AuthorName: Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, et al. 
+    - Title: The International Cardiac Arrest Research (I-CARE) Consortium Electroencephalography Database
+      URL: https://doi.org/10.1101/2023.08.28.23294672
+      AuthorName: Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, et al. 
+

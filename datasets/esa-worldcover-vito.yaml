@@ -1,0 +1,94 @@
+Name: ESA WorldCover 
+Description: The European Space Agency (ESA) WorldCover product provides global land cover maps for 2020 & 2021 at 10 m resolution based on Copernicus Sentinel-1 and Sentinel-2 data. The WorldCover product comes with 11 land cover classes and has been generated in the framework of the ESA WorldCover project, part of the 5th Earth Observation Envelope Programme (EOEP-5) of the European Space Agency. A first version of the product (v100), containing the 2020 map was released in October 2021. The 2021 map was released in October 2022 using an improved algorithm (v200). The WorldCover 2020 and 2021 maps were generated with different algorithm versions and therefore changes between the maps should be treated with caution as these contain both real land cover changes as well as changes due to the used algorithms.
+
+Documentation: Documentation is available [here](https://esa-worldcover.org/en/data-access).
+Contact: https://esa-worldcover.org/en/contact
+ManagedBy: "[VITO](https://vito.be)"
+UpdateFrequency: Yearly.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - earth observation
+  - agriculture
+  - satellite imagery
+  - geospatial
+  - natural resource
+  - sustainability
+  - cog
+  - disaster response
+  - mapping
+  - synthetic aperture radar
+  - land cover
+  - land use
+  - machine learning
+  - stac
+License: "CC-BY 4.0"
+Citation: "To cite the dataset in a publication please refer to the [Citation section](https://esa-worldcover.org/en/data-access)/[DOI v200](https://doi.org/10.5281/zenodo.7254221)/[DOI v100](https://doi.org/10.5281/zenodo.5571936)."
+Resources:
+  - Description: ESA WorldCover in a S3 bucket
+    ARN: arn:aws:s3:::esa-worldcover
+    Region: eu-central-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC endpoint](https://services.terrascope.be/stac/)'
+DataAtWork:
+  Tutorials:
+  - Title: Exploring the dataset (STAC API examples)
+    URL: https://github.com/ESA-WorldCover/esa-worldcover-datasets
+    AuthorName: VITO
+    AuthorURL: https://esa-worldcover.org
+  - Title: Global Fire Spread Prediction System
+    URL: https://github.com/SatelliteVu/SatelliteVu-AWS-Disaster-Response-Hackathon
+    AuthorName: SatelliteVu
+    AuthorURL: https://www.satellitevu.com/
+  Tools & Applications:
+  - Title: WorldCover Viewer
+    URL: https://viewer.esa-worldcover.org/worldcover/
+    AuthorName: VITO
+    AuthorURL: https://esa-worldcover.org/en
+  - Title: TerraScope Viewer
+    URL: https://viewer.terrascope.be/
+    AuthorName: TerraScope
+    AuthorURL: https://terrascope.be/en/about-us
+  - Title: ESA Viewer 2020
+    URL: https://worldcover2020.esa.int/viewer
+    AuthorName: ESA
+    AuthorURL: https://worldcover2020.esa.int/
+  - Title: ESA Viewer 2021
+    URL: https://worldcover2021.esa.int/viewer
+    AuthorName: ESA
+    AuthorURL: https://worldcover2021.esa.int/
+  - Title: WorldCover GEE App
+    URL: https://vitorsveg.users.earthengine.app/view/worldcover
+    AuthorName: VITO
+    AuthorURL: https://esa-worldcover.org  
+  Publications:
+  - Title: ESA WorldCover 10 m 2020 v100
+    URL: https://doi.org/10.5281/zenodo.5571936
+    AuthorName: Zanaga, D., Van De Kerchove, R., De Keersmaecker, W., Souverijns, N., Brockmann, C., Quast, R., Wevers, J., Grosu, A., Paccini, A., Vergnaud, S., Cartus, O., Santoro, M., Fritz, S., Georgieva, I., Lesiv, M., Carter, S., Herold, M., Li, Linlin, Tsendbazar, N.E., Ramoino, F., Arino, O., 2021.
+  - Title: ESA WorldCover 10 m 2021 v200
+    URL: https://doi.org/10.5281/zenodo.7254221
+    AuthorName: Zanaga, D., Van De Kerchove, R.,Daems, D.,De Keersmaecker, W., Brockmann, C., Kirches, G., Wevers, J., Cartus, O., Santoro, M., Fritz, S., Lesiv, M., Herold, M., Tsendbazar, N.E., Xu, P., Ramoino, F., Arino, O.
+  - Title: Release of the 10 m WorldCover map
+    URL: https://blog.vito.be/remotesensing/release-of-the-10-m-worldcover-map
+    AuthorName: Ruben Van De Kerchove
+  - Title: ESA WorldCover 10 m 2020 v100 - Product User Manual
+    URL: https://esa-worldcover.s3.eu-central-1.amazonaws.com/v100/2020/docs/WorldCover_PUM_V1.0.pdf
+    AuthorName: VITO
+  - Title: ESA WorldCover 10 m 2021 v200 - Product User Manual
+    URL: https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf
+    AuthorName: VITO
+  - Title: WorldCover taking it to the next level
+    URL: https://blog.vito.be/remotesensing/worldcover2021
+    AuthorName: Ruben Van De Kerchove
+  - Title: "Fusing GEDI with earth observation data for large area aboveground biomass mapping"
+    URL: https://doi.org/10.1016/j.jag.2022.103108
+    AuthorName: Yuri Shendryk
+  - Title: "The world's most populated and greenest megacities (and how we found out)"
+    URL: https://www.esri.com/arcgis-blog/products/arcgis-living-atlas/mapping/worlds-greenest-megacities/
+    AuthorName: Michael Dangermond, Emily Meriam
+

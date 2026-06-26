@@ -53,6 +53,15 @@ mapping:
     sequence:
       - type: str
         func: ext_tags
+  ADXCategories:
+    type: seq
+    required: False
+    range:
+      min: 0
+      max: 2    
+    sequence:
+      - type: str
+        func: ext_adx_categories
   License:
     type: str
     required: True

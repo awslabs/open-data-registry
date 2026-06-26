@@ -1,0 +1,88 @@
+Name: Public Utility Data Liberation Project
+Description: |
+  The Public Utility Data Liberation Project (PUDL) provides analysis-ready U.S. energy
+  system data in bulk for programmatic use. Sources include the U.S. Energy
+  Information Administration (EIA), the Environmental Protection Agency (EPA), the
+  Federal Energy Regulatory Commission (FERC), the Pipeline and Hazardous Materials
+  Safety Administration (PHMSA), the Securities and Exchange Commission (SEC).  The
+  primary focus is on the electricity sector, with additional data on the natural gas
+  system and energy company financial reporting.
+Documentation: https://catalystcoop-pudl.readthedocs.io/en/latest/
+Contact: |
+  Create a [GitHub discussion](https://github.com/orgs/catalyst-cooperative/discussions).
+  Sign up for [office hours](https://calend.ly/catalyst-cooperative/pudl-office-hours).
+  Email us at [hello@catalyst.coop](mailto:hello@catalyst.coop).
+ManagedBy: "[Catalyst Cooperative](https://catalyst.coop/)"
+UpdateFrequency: |
+  New outputs published nightly as part of our continuous integration process.
+  New data is integrated on a rolling basis as it is published by the original sources.
+  Agencies typically release data monthly, quarterly, or yearly.
+  New versioned releases of PUDL are published and archived at least once per quarter.
+Tags:
+  - aws-pds
+  - economics
+  - electricity
+  - energy
+  - energy modeling
+  - environmental
+  - geospatial
+  - government records
+  - industry
+  - industrial
+  - infrastructure
+  - market data
+  - parquet
+  - regulatory
+  - solar
+  - sqlite
+  - utilities
+  - us
+License: "[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (Creative Commons Attribution 4.0 International License)."
+Resources:
+  - Description: PUDL Nightly Build Outputs
+    ARN: arn:aws:s3:::pudl.catalyst.coop/nightly
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: PUDL Stable Release Outputs
+    ARN: arn:aws:s3:::pudl.catalyst.coop/stable
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: FERC Electric Quarterly Reports (EQR)
+    ARN: arn:aws:s3:::pudl.catalyst.coop/ferceqr
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: PUDL Data Access
+      URL: https://www.kaggle.com/code/catalystcooperative/01-pudl-data-access
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/01-pudl-data-access.ipynb
+    - Title: State Hourly Electricity Demand
+      URL: https://www.kaggle.com/code/catalystcooperative/02-state-hourly-electricity-demand
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/02-state-hourly-electricity-demand.ipynb
+    - Title: EIA-930 Sanity Checks
+      URL: https://www.kaggle.com/code/catalystcooperative/03-eia-930-sanity-checks
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/03-eia930-sanity-checks.ipynb
+    - Title: Renewable Generation Profiles
+      URL: https://www.kaggle.com/code/catalystcooperative/04-renewable-generation-profiles
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/04-renewable-generation-profiles.ipynb
+    - Title: FERC-714 Electricity Demand Forecast Biases
+      URL: https://www.kaggle.com/code/catalystcooperative/05-ferc-714-electricity-demand-forecast-biases
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/05-ferc714-electricity-demand-forecast-biases.ipynb
+    - Title: PUDL Imputed Electricity Demand
+      URL: https://www.kaggle.com/code/catalystcooperative/06-pudl-imputed-electricity-demand
+      AuthorName: Catalyst Cooperative
+      AuthorURL: https://catalyst.coop/
+      NotebookURL: https://github.com/catalyst-cooperative/pudl-examples/blob/main/06-pudl-imputed-demand.ipynb
+ADXCategories:
+  - Environmental Data
+  - Resources Data

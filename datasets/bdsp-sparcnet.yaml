@@ -1,0 +1,35 @@
+Name: SPaRCNet data:Seizures, Rhythmic and Periodic Patterns in ICU Electroencephalography
+Description: The IIIC dataset includes  50,697 labeled EEG samples from 2,711 patients' and 6,095 EEGs that were annotated by physician experts from 18 institutions. These samples were used to train SPaRCNet (Seizures, Periodic and Rhythmic Continuum patterns Deep Neural Network), a computer program that classifies IIIC events with an accuracy matching clinical experts. 
+Documentation: More documentation can be found [here](https://doi.org/10.60508/cw6j-s785)
+Contact: admin@bdsp.io
+ManagedBy: "[Brain Data Science Platform](https://bdsp.io/)"
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - aws-pds
+  - neurophysiology
+  - medicine
+  - machine learning
+  - neuroscience
+  - deep learning
+  - life sciences
+  - bioinformatics
+License: BDSP Restricted Health Data License 1.0.0 "[BDSP Licence](https://bdsp.io/content/bdsp-sparcnet/view-license/1.1/); [Data User Agreement:](https://bdsp.io/content/bdsp-sparcnet/view-dua/1.1/)"
+Resources:
+  - Description: ICU EEG Dataset
+    ARN: arn:aws:s3:us-east-1:184438910517:accesspoint/bdsp-sparcnet-access-point
+    Region: us-east-1
+    Type: S3 Bucket
+    ControlledAccess: https://doi.org/10.60508/cw6j-s785
+DataAtWork:
+  Tools & Applications:
+    - Title: IIIC-SPaRCNet Github Repository
+      URL: https://github.com/bdsp-core/ICU_EEG_Neuro_Prognosis
+      AuthorName: Brain Data Science Platform (BDSP)
+      AuthorURL: https://bdsp.io
+  Publications:
+    - Title: SPaRCNet data:Seizures, Rhythmic and Periodic Patterns in ICU Electroencephalography
+      URL: https://doi.org/10.60508/cw6j-s785
+      AuthorName: Jing, J., Ge, W., Struck, A. F., Fernandes, M., Hong, S., An, S., et al. 
+    - Title: Development of Expert-Level Classification of Seizures and Rhythmic and Periodic Patterns During EEG Interpretation
+      URL: https://pubmed.ncbi.nlm.nih.gov/36878708/
+      AuthorName: Jing J, Ge W, Hong S, Fernandes MB, Lin Z, Yang C et al., et al.

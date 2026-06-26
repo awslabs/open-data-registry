@@ -1,0 +1,42 @@
+Name: NASA / USGS Mars Reconnaissance Orbiter (MRO) Context Camera (CTX) Targeted DTMs
+Description: |
+  As of March, 2023 the Mars Reconnaissance Orbiter (MRO) High Resolution Science Experiment (HiRISE) sensor has collected more than 5000 targeted stereopairs. During HiRISE acquisition, the Context Camera (CTX) also collects lower resolution, higher spatial extent context images. These CTX acquisitions are also targeted stereopairs. This data set contains targeted CTX DTMs and orthoimages, created using the NASA Ames Stereopipeline. These data have been created using relatively controlled CTX images that have been globally bundle adjusted using the USGS Integrated System for Imagers and Spectrometers (ISIS) jigsaw application. Relative control at global scale reduces common issues such as spacecraft jitter in the resulting DTMs. DTMs were aligned as part of 26 different groupings to the ultimate MOLA product using an iterative pc_align approach. Therefore, all DTMs and orthoimages are absolutely controlled to MOLA, a proxy product for the Mars geodetic coordinate reference frame.
+Documentation: https://stac.astrogeology.usgs.gov/docs/data/mars/ctxdtms/
+Contact: https://answers.usgs.gov/
+ManagedBy: "[NASA](https://www.nasa.gov)"
+UpdateFrequency: Updated as new stereoapirs are processed
+Tags:
+  - aws-pds
+  - planetary
+  - satellite imagery
+  - elevation
+  - stac
+  - cog
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+Citation: https://doi.org/10.5066/P9JKVWR3
+Resources:
+  - Description: DTMs, orthoimages, error images, and quality assurance metrics
+    ARN: arn:aws:s3:::astrogeo-ard/mars/mro/ctx/controlled/usgs/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC Catalog](https://stac.astrogeology.usgs.gov/browser-dev/#/collections/mro_ctx_controlled_usgs_dtms)'
+DataAtWork:
+  Tutorials:
+    - Title: "Discovering and Downloading Data via the Command Line"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/cli/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Discovering and Downloading Data with Python"
+      URL: https://stac.astrogeology.usgs.gov/docs/tutorials/basicpython/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+    - Title: "Querying for Data in an ROI and Loading it into QGIS"
+      URL: https://stac.astrogeology.usgs.gov/docs/examples/to_qgis/
+      AuthorName: J. Laura
+      AuthorURL: https://astrogeology.usgs.gov
+  Tools & Applications:
+    - Title: PySTAC Client
+      URL: https://github.com/stac-utils/pystac-client
+      AuthorName: PySTAC-Client Contributors
+      AuthorURL: https://github.com/stac-utils/pystac-client/graphs/contributors

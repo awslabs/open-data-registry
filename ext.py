@@ -10,6 +10,8 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 tags = yaml.safe_load(open("tags.yaml"))
 tags.append("aws-pds")
 
+adx_categories = yaml.safe_load(open("adx_categories.yaml"))
+
 resources = yaml.safe_load(open("resources.yaml"))
 services = yaml.safe_load(open("services.yaml"))
 
@@ -47,6 +49,15 @@ def ext_tags(value, rule_obj, path):
 
     # If we're here, all tags were ok
     return True
+
+# Check if provided ADX categories are in adx_categories.yaml
+def ext_adx_categories(value, rule_obj, path):
+    if value not in adx_categories:
+        print("Invalid ADX category!", value)
+        return False
+
+    # If we're here, all categories were ok
+    return True    
 
 
 # Check if provided resources are in resources.yaml

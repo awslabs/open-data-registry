@@ -1,16 +1,18 @@
 Name: Allen Cell Imaging Collections
 Description: |
-  This bucket contains multiple datasets (as Quilt packages) created by the
-  Allen Institute for Cell Science (AICS). The imaging data in this bucket contains
-  either of the following:
+  This bucket contains multiple datasets (as Quilt packages) created by the Allen Institute for Cell Science. The types of data included in this bucket are listed below:
 
-  1) field of view images from glass plates
-  2) cell membrane, DNA, and structure segmentations
-  3) cell membrane, DNA and structure contours
-  4) machine learning imaging predictions of the previously listed modalities.
+  1) Field of view or cropped images of cells
+  2) Segmentations of structures in the images (e.g., boundaries of cells, DNA, other intracellular structures, etc.)
+  3) Processed versions of the above images and segmentations
+  4) Machine learning predictions and labels of the data listed above
+  5) Models trained on the previously listed data
+  6) Additional supporting non-image data related to the above listed data types (e.g., gene expression data, whole genome sequencing data, features derived from the images or model predictions, metadata)
+  7) Simulation, analysis, and visualization data of in silico cell structures, cells, and cell populations
 
-  In addition, many of the datasets include CSVs that contain feature sets
-  related to that data.
+  External funding:
+
+  The generation of some datasets was supported by the National Human Genome Research Institute of the National Institutes under Award Number UM1HG011593. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
 Documentation: https://open.quiltdata.com/b/allencell
 Contact: cells@alleninstitute.org
 ManagedBy: "[Allen Institute for Cell Science](https://www.allencell.org)"
@@ -71,11 +73,47 @@ DataAtWork:
       AuthorName: Chengxiang Qiu and William Noble
       AuthorURL: https://noble.gs.washington.edu/
   Publications:
+    - Title: Colony context and size-dependent compensation mechanisms give rise to variations in nuclear growth trajectories
+      URL: https://doi.org/10.1101/2024.06.28.601071
+      AuthorName: Julie C. Dixon*, Christopher L. Frick*, Chantelle L. Leveille*, Philip Garrison, Peyton A. Lee, Saurabh S. Mogre, Benjamin Morris, Nivedita Nivedita, Ritvik Vasan, Jianxu Chen, Cameron L. Fraser, Clare R. Gamlin, Leigh K. Harris, Melissa C. Hendershott, Graham T. Johnson, Kyle N. Klein, Sandra A. Oluoch, Derek J. Thirstrup, M. Filip Sluzewski, Lyndsay Wilhelm, Ruian Yang, Daniel M. Toloudis, Matheus P. Viana, Julie A. Theriot & Susanne M. Rafelski
+      AuthorURL: https://alleninstitute.org/about/team/
+    - Title: Interpretable representation learning for 3D multi-piece intracellular structures using point clouds
+      URL: https://doi.org/10.1101/2024.07.25.605164
+      AuthorName: Ritvik Vasan, Alexandra J. Ferrante, Antoine Borensztejn, Christopher L. Frick, Nathalie Gaudreault, Saurabh S. Mogre, Benjamin Morris, Guilherme G. Pires, Susanne M. Rafelski, Julie A. Theriot & Matheus P. Viana
+      AuthorURL: https://alleninstitute.org/about/team/
+    - Title: 4D hybrid model interrogates agent-level rules and parameters driving hiPS cell colony dynamics
+      URL: https://doi.org/10.1101/2024.08.12.607546
+      AuthorName: Jessica S. Yu, Blair Lyons, Susanne Rafelski, Julie A. Theriot, Neda Bagheri & Graham T. Johnson
+      AuthorURL: https://alleninstitute.org/about/team/
+    - Title: A human induced pluripotent stem (hiPS) cell model for the holistic study of epithelial to mesenchymal transitions (EMTs)
+      URL: https://doi.org/10.1101/2024.08.16.608353
+      AuthorName:  Caroline Hookway*, Antoine Borensztejn*, Leigh K. Harris*, Sara Carlson, Gokhan Dalgin, Suraj Mishra, Nivedita Nivedita, Ellen M. Adams, Tiffany Barszczewski, Julie C. Dixon, Jacqueline H. Edmonds, Erik A. Ehlers, Alexandra J. Ferrante, Margaret A. Fuqua, Philip Garrison, Janani Gopalan, Benjamin W. Gregor, Maxwell J. Hedayati, Kyle N. Klein, Chantelle L. Leveille, Sean L. Meharry, Haley S. Morris, Gouthamrajan Nadarajan, Sandra A. Oluoch, Serge E. Parent, Amber Phan, Brock Roberts, Emmanuel E. Sanchez, M. Filip Sluzewski, Lev S. Snyder, Derek J. Thirstrup, John Paul Thottam, Julia R. Torvi, Gaea Turman, Matheus P. Viana, Lyndsay Wilhelm, Chamari S. Wijesooriya, Jie Yao, Julie A. Theriot, Susanne M. Rafelski & Ruwanthi N. Gunawardane
+      AuthorURL: https://alleninstitute.org/about/team/
     - Title: Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy
-      URL: https://www.nature.com/articles/s41592-018-0111-2
+      URL: https://doi.org/10.1038/s41592-018-0111-2
       AuthorName: Chawin Ounkomol, Sharmishtaa Seshamani, Mary M. Maleckar, Forrest Collman & Gregory R. Johnson
       AuthorURL: https://alleninstitute.org/about/team/
-    - Title: "Robust integrated intracellular organization of the human iPS cell: where, how much, and how variable?"
-      URL: https://www.biorxiv.org/content/10.1101/2020.12.08.415562v1
-      AuthorName: Matheus P. Viana, Jianxu Chen*, Theo A. Knijnenburg*, Ritvik Vasan*, Calysta Yan*... Allen Institute for Cell Science... Graham T. Johnson, Ruwanthi N. Gunawardane, Nathalie Gaudreault, Julie A. Theriot, Susanne M. Rafelski
+    - Title: Integrated intracellular organization and its variations in human iPS cells
+      URL: https://doi.org/10.1038/s41586-022-05563-7
+      AuthorName: Matheus P. Viana, Jianxu Chen*, Theo A. Knijnenburg*, Ritvik Vasan*, Calysta Yan*... Allen Institute for Cell Science... Graham T. Johnson, Ruwanthi N. Gunawardane, Nathalie Gaudreault, Julie A. Theriot & Susanne M. Rafelski
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: Automated human induced pluripotent stem cell culture and sample preparation for 3D live-cell microscopy
+      URL: https://doi.org/10.1038/s41596-023-00912-w
+      AuthorName: Benjamin W. Gregor*, Mackenzie E. Coston*, Ellen M. Adams, Joy Arakaki, Antoine Borensztejn, Thao P. Do, Margaret A. Fuqua, Amanda Haupt, Melissa C. Hendershott, Winnie Leung, Irina A. Mueller, Aditya Nath, Angelique M. Nelson, Susanne M. Rafelski, Emmanuel E. Sanchez, Madison J. Swain-Bowden, W. Joyce Tang, Derek J. Thirstrup, Winfried Wiegraebe, Brian P. Whitney, Calysta Yan, Ruwanthi N. Gunawardane & Nathalie Gaudreault
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: "Cell states beyond transcriptomics: Integrating structural organization and gene expression in hiPSC-derived cardiomyocytes"
+      URL: https://doi.org/10.1016/j.cels.2021.05.001
+      AuthorName: Kaytlyn A. Gerbin*, Tanya Grancharova*, Rory M. Donovan-Maiye*, Melissa C. Hendershott*, Helen G. Anderson, Jackson M. Brown, Jianxu Chen, Stephanie Q. Dinh, Jamie L. Gehring, Gregory R. Johnson, HyeonWoo Lee, Aditya Nath, Angelique M. Nelson, M. Filip Sluzewski, Matheus P. Viana, Calysta Yan, Rebecca J. Zaunbrecher, Kimberly R. Cordes Metzler, Nathalie Gaudreault, Theo A. Knijnenburg, Susanne M. Rafelski, Julie A. Theriot & Ruwanthi N. Gunawardane
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: A comprehensive analysis of gene expression changes in a high replicate and open-source dataset of differentiating hiPSC-derived cardiomyocytes
+      URL: https://doi.org/10.1038/s41598-021-94732-1
+      AuthorName: Tanya Grancharova*, Kaytlyn A. Gerbin*, Alexander B. Rosenberg, Charles M. Roco, Joy E.Arakaki , Colette M. DeLizo, Stephanie Q. Dinh, Rory M. Donovan-Maiye, Matthew Hirano, Angelique M. Nelson, Joyce Tang, Julie A. Theriot, Calysta Yan, Vilas Menon, Sean P. Palecek, Georg Seelig & Ruwanthi N. Gunawardane
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: A deep generative model of 3D single-cell organization
+      URL: https://doi.org/10.1371/journal.pcbi.1009155
+      AuthorName: Rory M. Donovan-Maiye, Jackson M. Brown, Caleb K. Chan, Liya Ding, Calysta Yan, Nathalie Gaudreault, Julie A. Theriot, Mary M. Maleckar, Theo A. Knijnenburg & Gregory R. Johnson
+      AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/
+    - Title: Systematic gene tagging using CRISPR/Cas9 in human stem cells to illuminate cell organization
+      URL: https://doi.org/10.1091/mbc.e17-03-0209
+      AuthorName: Brock Roberts*, Amanda Haupt*, Andrew Tucker, Tanya Grancharova, Joy Arakaki, Margaret A. Fuqua, Angelique Nelson, Caroline Hookway, Susan A. Ludmann, Irina A. Mueller, Ruian Yang, Rick Horwitz, Susanne M. Rafelski & Ruwanthi N. Gunawardane
       AuthorURL: https://www.alleninstitute.org/what-we-do/cell-science/about/team/

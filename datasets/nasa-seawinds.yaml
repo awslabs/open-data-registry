@@ -1,0 +1,31 @@
+Name: NASA SEAWINDS Project
+Description: |
+  The WindSat Polarimetric Radiometer, launched on January 6, 2003 aboard the Department of Defense Coriolis satellite, was designed to measure the ocean surface wind vector from space. It developed by the Naval Research Laboratory (NRL) Remote Sensing Division and the Naval Center for Space Technology for the U.S. Navy and the National Polar-orbiting Operational Environmental Satellite System (NPOESS) Integrated Program Office (IPO). The dataset contains the Level 1C WindSat Top of the Atmosphere (TOA) TB processed by RSS. The WindSat radiances are turned into TOA TB after correction for hot and cold calibration anomalies, receiver non-linearities, sensor pointing errors, antenna cross-polarization contamination, spillover, Faraday rotation and polarization alignment. The data are resampled on a fixed regular 0.125 deg Earth grid using Backus-Gilbert Optimum Interpolation. The sampling is done separately for fore and aft looks. The 10.7, 18.7, 23.8, 37.0 GHz channels are resampled to the 10.7 GHz spatial resolution. The 6.8 GHz channels are given at their native spatial resolution. The 10.7, 18.7, 23.8, 37.0 GHz channels are absolutely calibrated using the GMI sensor as calibration reference. The 6.8 GHz channels are calibrated using the open ocean with the RSS ocean emission model and the Amazon rain forest as calibration targets. The Faraday rotation angle (FRA) and geometric polarization basis rotation angle (PRA) were added in the last run.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- earth observation
+- ice
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "RSS_WindSat_L1C_TB_V08.0 v8.0 - The WindSat Polarimetric Radiometer, launched on January 6, 2003 aboard the Department of Defense Coriolis satellite, was designed to measure the ocean surface wind vector from space. It developed by the Naval Research Laboratory (NRL) Remote Sensing Division and the Naval Center for Space Technology for the U.S."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/RSS_WindSat_L1C_TB_V08.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

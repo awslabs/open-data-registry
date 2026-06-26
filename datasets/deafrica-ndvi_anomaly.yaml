@@ -1,0 +1,80 @@
+Name: Digital Earth Africa Monthly Normalised Difference Vegetation Index (NDVI) Anomaly
+Description: |
+  Digital Earth Africa’s Monthly NDVI Anomaly service provides estimate of vegetation condition, for each caldendar month, against the long-term baseline condition measured for the month from 1984 to 2020 in the NDVI Climatology.
+
+    A standardised anomaly is calculated by subtracting the long-term mean from an observation of interest and then dividing the result by the long-term standard deviation. Positive NDVI anomaly values indicate vegetation is greener than average conditions, and are usually due to increased rainfall in a region. Negative values indicate additional plant stress relative to the long-term average. The NDVI anomaly service is therefore effective for understanding the extent, intensity and impact of a drought.Abrupt and significant negative anomalies may also be caused by fire disturbance.
+  
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/NDVI_Anomaly_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: From September 2022, the Monthly NDVI Anomaly is generated as a low latency product, i.e. anomaly for a month is generated on the 5th day of the following month. This ensures data is available shortly after the end of a month and all Landat 9 and Sentinel-2 observations are included. Not all landsat 8 observations for the month will be used, because the Landsat 8 Surface Refelectance product from USGS has a latency of over 2 weeks ([see Landsat Collection 2 Generation Timeline (https://www.usgs.gov/media/images/landsat-collection-2-generation-timeline)).
+
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - disaster response
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Monthly Normalised Difference Vegetation Index (NDVI) Anomaly
+    ARN: arn:aws:s3:::deafrica-services/ndvi_anomaly
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/ndvi_anomaly)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: New scene notifications, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message contains entire STAC record for each new Item    
+    ARN: arn:aws:sns:af-south-1:565417506782:deafrica-landsat-wofs
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (Monthly Normalised Difference Vegetation Index (NDVI) Anomaly)"
+      URL: https://explorer.digitalearth.africa/products/ndvi_anomaly
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
+      
+  Publications:
+    - Title: "Digital Earth Africa releases new Rolling Monthly GeoMAD continental service"
+      URL: https://www.digitalearthafrica.org/media-center/blog/digital-earth-africa-releases-new-rolling-monthly-geomad-continental-service
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Mean NDVI and Anomalies"
+      URL: https://www.digitalearthafrica.org/platform-resources/services/mean-ndvi-and-anomalies
+      AuthorName: Digital Earth Africa Contributors

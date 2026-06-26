@@ -1,0 +1,24 @@
+Name: Phrase Clustering Dataset (PCD)
+Description: |
+  This dataset is part of the paper "McPhraSy: Multi-Context Phrase Similarity and Clustering" by DN Cohen et al (2022). The purpose of PCD is to evaluate the quality of semantic-based clustering of noun phrases. The phrases were collected from the [Amazon Review Dataset] (https://nijianmo.github.io/amazon/).
+Documentation: https://amazon-phrase-clustering.s3.amazonaws.com/readme.md
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: Not updated
+Tags:
+  - amazon.science  
+  - natural language processing  
+  - json  
+License: This data is available for anyone to use under the terms of the CDLA-permissive license, which is available [here](https://cdla.dev/permissive-1-0/)
+Resources:
+  - Description: Phsrase Clustering Dataset (PCD)
+    ARN: arn:aws:s3:::amazon-phrase-clustering
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:  
+      - '[phrase-clustering-dataset.json](https://amazon-phrase-clustering.s3.amazonaws.com/phrase-clustering-dataset.json)'      
+DataAtWork:
+  Publications:
+    - Title: "McPhraSy: Multi context phrase similarity and clustering"
+      URL: https://www.amazon.science/publications/mcphrasy-multi-context-phrase-similarity-and-clustering
+      AuthorName: Amir DN Cohen, Hila Gonen, Ori Shapira, Ran Levy, and Yoav Goldberg 

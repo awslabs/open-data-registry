@@ -1,0 +1,31 @@
+Name: "NEOWISE Reactivation Data | Near-Earth Object Wide-field Infrared Survey Explorer (NEOWISE)"
+Description: The Near-Earth Object Wide-field Infrared Survey Explorer (NEOWISE) is a NASA Medium-class Explorer satellite in low-Earth orbit conducting an all-sky astronomical imaging survey over two infrared bands. The NEOWISE Reactivation mission began in 2013 when the original WISE satellite was brought out of hibernation to learn more about the population of near-Earth objects and comets that could pose an impact hazard to the Earth. The data is also used to study a wide range of astrophysical phenomena in the time domain including brown dwarfs, supernovae and active galactic nuclei.
+Documentation: https://irsa.ipac.caltech.edu/Missions/wise.html
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The NEOWISE-R dataset is updated annually. The data may also be presented in new ways as the products become available.
+Tags:
+  - aws-pds
+  - astronomy
+  - imaging
+  - object detection
+  - parquet
+  - satellite imagery
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "If you use the NEOWISE-R Single-exposure Image Sets, please cite the Digital Object Identifier (DOI): [10.26131/IRSA147](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA147). If you use the NEOWISE-R Single-exposure Source Table, please cite the Digital Object Identifier (DOI): [10.26131/IRSA144](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA144). In addition, follow the [NEOWISE acknowledgement guidelines](https://wise2.ipac.caltech.edu/docs/release/neowise/expsup/sec1_6b.html) and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Resources:
+  - Description: 'The Single-exposure Image Sets consist of more than 20 million calibrated 1016x1016 pix @2.75"/pix FITS image sets for the individual 7.7 sec NEOWISE survey exposures in the W1 and W2 bands (centered at 3.4 and 4.6 microns). Each image set consists of two intensity images, noise maps, and bit-masks indicating pixel use status, one for each band. The Single-exposure Source Table contains time-tagged fluxes, positions and measurement information for more than 150 billion source detections extracted from the Single-exposure images. It is available in Apache Parquet format, partitioned by HEALPix order 5. Additional presentations of this data may be added when available.'
+    ARN: arn:aws:s3:::nasa-irsa-wise/wise/neowiser
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data

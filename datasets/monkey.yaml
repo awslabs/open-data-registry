@@ -1,0 +1,52 @@
+Name: MONKEY
+Description: This dataset contains the training data for the [Machine learning for Optimal detection of iNflammatory cells in the KidnEY or MONKEY](https://monkey.grand-challenge.org/) challenge. The MONKEY challenge focuses on the automated detection and classification of inflammatory cells, specifically monocytes and lymphocytes, in kidney transplant biopsies using Periodic acid-Schiff (PAS) stained whole-slide images (WSI). It contains 80 WSI, collected from 4 different pathology institutes, with annotated regions of interest. For each WSI up to 3 different PAS scans and one IHC slide scan are available. This dataset and challenge support the development of AI models that can aid in the diagnostic process, reduce pathologists’ workload, and improve patient outcomes in renal transplantation.
+Documentation: https://monkey.grand-challenge.org/
+Contact: linda.studer@radboudumc.nl
+ManagedBy: Radboud University Medical Center
+UpdateFrequency: As required
+Tags:
+  - aws-pds
+  - life sciences
+  - cancer
+  - computational pathology
+  - deep learning
+  - grand-challenge.org
+  - histopathology
+  - computer vision
+  - digital pathology
+  - medical image computing
+  - medical imaging
+  - classification
+  - imaging
+  - machine learning
+License: CC BY-NC-SA 4.0  
+Resources:
+  - Description: PAS- and IHC-stained whole slide images with corresponding dot annotaions for inflammatory cells (monocytes and lymphocytes) in regions of interest.
+    ARN: arn:aws:s3:::monkey-training
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: MONKEY Challenge
+      URL: https://monkey.grand-challenge.org/
+      AuthorName: Computational Pathology Group Radboudumc, Nijmegen
+      AuthorURL: https://www.computationalpathologygroup.eu/
+    - Title: Structured description of the MONKEY Challenge
+      URL: https://zenodo.org/records/13794656
+      AuthorName: Linda Studer, Dominique van Midden, Fazael Ayatollahi, Jeroen van der Laak
+      AuthorURL: https://www.computationalpathologygroup.eu/
+    - Title: MONKEY challenge tutorials
+      URL: https://github.com/computationalpathologygroup/monkey-challenge
+      AuthorName: Computational Pathology Group Radboudumc, Nijmegen
+      AuthorURL: https://www.computationalpathologygroup.eu/
+    - Title: Whole slide data - python package for working with wholeslide images and annotations files
+      URL: https://github.com/DIAGNijmegen/pathology-whole-slide-data
+      AuthorName: Diagnostic Image Analysis Group, Radboudumc, Nijmegen
+      AuthorURL: https://www.diagnijmegen.nl/
+    - Title: ASAP Viewer
+      URL: https://computationalpathologygroup.github.io/ASAP/
+      AuthorName: Geert Litjens
+      AuthorURL: https://www.diagnijmegen.nl/people/geert-litjens/
+ADXCategories:
+  - Healthcare & Life Sciences Data
+  - Public Sector Data

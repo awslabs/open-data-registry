@@ -1,0 +1,31 @@
+Name: Allen Institute for Brain Science - Synaptic Physiology Public Data Set
+Description: |
+  This is a large-scale survey that describes the physiology (strength, kinetics, and short term plasticity) of thousands of synapses from patch clamp experiments in mouse visual cortex and human middle temporal gyrus.  
+Documentation: https://portal.brain-map.org/explore/connectivity/synaptic-physiology
+Contact: synapticphysiology@alleninstitute.org
+ManagedBy: "[Allen Institute](http://www.alleninstitute.org/)"
+UpdateFrequency: Finalized
+Tags:
+  - aws-pds
+  - neurobiology
+  - life sciences
+  - signal processing
+  - electrophysiology
+  - Mus musculus
+  - Homo sapiens
+License: http://www.alleninstitute.org/legal/terms-use/
+Resources:
+  - Description: Database files used by aisynphys package
+    ARN: arn:aws:s3:::allen-synphys
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: aisynphys python package for accessing synaptic physiology data
+      URL: https://github.com/AllenInstitute/aisynphys
+      AuthorName: Campagnola L., Seeman S., et al.
+  Publications:
+    - Title: Local connectivity and synaptic dynamics in mouse and human neocortex
+      URL: https://pubmed.ncbi.nlm.nih.gov/35271334/
+      AuthorName: Campagnola L., Seeman S., et al.

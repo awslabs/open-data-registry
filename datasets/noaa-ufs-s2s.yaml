@@ -23,11 +23,12 @@ Tags:
   - disaster response
   - environmental
   - meteorological
-  - sustainability
   - weather
   - oceans
-
-License: Open Data. There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.
+  <br/>
+  <br/>
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: UFS prototype files (5, 6, 7, & 8)
     ARN: arn:aws:s3:::noaa-ufs-prototypes-pds
@@ -35,3 +36,15 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-ufs-prototypes-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for UFS Prototype, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewUfsPrototypesObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+    Publications:
+    - Title: "Advances in Seasonal Predictions of Arctic Sea Ice With NOAA UFS"
+      URL: https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102392
+      AuthorName: Jieshun Zhu, Wanqiu Wang, Yanyun Liu, Arun Kumar, and David DeWitt
+    - Title: "The impact of tropical SST biases on the S2S precipitation forecast skill over the Contiguous United States in the UFS global coupled model"
+      URL: https://doi.org/10.1175/WAF-D-22-0162.1
+      AuthorName: Hedanqiu Bai, Bin Li, Avichal Mehra, Jessica Meixner, Shrinivas Moorthi, Sulagna Ray, Lydia Stefanova, Jiande Wang, Jun Wang, Denise Worthen, Fanglin Yang, and Cristiana Stan

@@ -1,0 +1,18 @@
+Name: Amazon Seller Contact Intent Sequence
+Description: When sellers need help from Amazon, such as how to create a listing, they often reach out to Amazon seller support through email, chat or phone. For each contact, we assign an intent so that we can manage the request more easily. The data we present in this release includes 548k contacts with 118 intents from 70k sellers sampled from recent years. There are 3 columns. 1. De-identified seller id - seller_id_anon; 2. Noisy inter-arrival time in the unit of hour between contacts - interarrival_time_hr_noisy; 3. An integer that represents the contact intent - contact_intent. Note that, to balance the need between data anonymization and usefulness, we randomly perturbed the interarrival time in an intricate way such that the temporal pattern are preserved and seller identity are anonymized to the largest extent. We also note that for each seller_id_anon, the interarrival_time_hr_noisy are already arranged in chonological order, the first contact_intent_id_anon is always the origin when sellers begin to sell with us and the interarrival_time_hr_noisy for each seller_id_anon are all relative with respect to the previous contact. A straightforward use case of the data is to predict the next timestamp and intent of a user given the user's history.
+Documentation: https://ascis.s3.us-west-2.amazonaws.com/README.md
+Contact: Post any questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) and use the `AWS Open Data` tag.
+ManagedBy: "[Amazon](https://www.amazon.com/)"
+UpdateFrequency: None
+Tags:
+  - amazon.science
+  - machine learning
+  - temporal point process
+  - Hawkes Process
+License: https://cdla.dev/permissive-1-0/
+Citation: "In addition, please cite the authors Li Dong, Matthew C. Spencer (2023)."
+Resources:
+  - Description: Amazon customer support contact intent sequence from sellers in an S3 bucket.
+    ARN: arn:aws:s3:::ascis
+    Region: us-west-2
+    Type: S3 Bucket

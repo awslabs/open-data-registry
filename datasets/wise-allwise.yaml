@@ -1,0 +1,31 @@
+Name: "AllWISE Data | Wide-field Infrared Survey Explorer (WISE)"
+Description: The Wide-field Infrared Survey Explorer (WISE) was a NASA Medium Explorer satellite in low-Earth orbit that conducted an all-sky astronomical imaging survey over four infrared bands from 2010-2011. The AllWISE Data Release combines data from all cryogenic and post-cryogenic survey phases and provides a comprehensive view of the mid-infrared sky. The Images Atlas includes 18,240 FITS image sets at 3.4, 4.6, 12 and 22 microns. The Source Catalog contains position, apparent motion, and flux information for over 747 million objects detected on the Atlas Images.
+Documentation: https://irsa.ipac.caltech.edu/Missions/wise.html
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The AllWISE Data Release has been finalized and will not be updated. However, the data may be presented in new ways as the products become available.
+Tags:
+  - aws-pds
+  - astronomy
+  - imaging
+  - object detection
+  - parquet
+  - satellite imagery
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "If you use the AllWISE Images Atlas, please cite the Digital Object Identifier (DOI): [10.26131/IRSA153](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA153). If you use the AllWISE Source Catalog, please cite the Digital Object Identifier (DOI): [10.26131/IRSA1](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA1). In addition, follow the [AllWISE acknowledgement guidelines](https://wise2.ipac.caltech.edu/docs/release/allwise/expsup/sec1_6b.html) and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Resources:
+  - Description: The AllWISE Images Atlas includes 18,240 4-band (3.4, 4.6, 12, 22 microns) calibrated 1.56 deg x1.56 deg FITS images, depth-of-coverage and noise maps, and image metadata produced by coadding nearly 7.9 million single-exposure images from all survey phases. The AllWISE Source Catalog contains accurate positions, apparent motion measurements, four-band fluxes and flux variability statistics for over 747 million objects detected on the deep, coadded Atlas Images. It is available in Apache Parquet, partitioned by HEALPix order 5. Additional presentations of this data may be added when available.
+    ARN: arn:aws:s3:::nasa-irsa-wise/wise/allwise
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data

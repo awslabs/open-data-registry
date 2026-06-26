@@ -1,0 +1,42 @@
+Name: SENTINEL-1A_SLC
+Description: |-
+  Sentinel-1A slant-range product
+  Read our doc on how to get AWS Credentials to retrieve this data: https://sentinel1.asf.alaska.edu/s3credentialsREADME
+Documentation: https://webdocs.asf.alaska.edu/Sentinel-1/Sentinel-1-User-Guide.pdf
+Contact: 'Email: uso@asf.alaska.edu. Home Page: https://www.asf.alaska.edu/'
+ManagedBy: NASA
+UpdateFrequency: From 2014-04-03 to Ongoing
+Tags:
+  - aws-pds
+  - coastal
+  - earthquakes
+  - ecosystems
+  - ice
+  - land
+  - land cover
+  - land use
+  - metadata
+  - oceans
+  - orbit
+  - radar
+  - sentinel-1
+  - stac
+  - surface water
+  - synthetic aperture radar
+  - tiff
+  - urban
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'SENTINEL-1A_SLC.'
+    ARN: arn:aws:s3:::asf-ngap2w-p-s1-slc-7b420b89
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://sentinel1.asf.alaska.edu/s3credentials
+DataAtWork:
+  Tutorials:
+  - Title: Interferometric Synthetic Aperture Radar Tutorial
+    URL: https://github.com/live-eo/sentinel1-slc/blob/main/docs/tutorial_InSAR.md
+    AuthorName: LiveEO
+    AuthorURL: https://live-eo.com/

@@ -1,0 +1,29 @@
+Name: "Unblurred Coadds of the Wide-field Infrared Survey Explorer (unWISE)"
+Description: "unWISE is a reprocessing of Wide-field Infrared Survey Explorer (WISE) data which preserves the native angular resolution and is optimized for forced photometry. WISE was a NASA satellite producing all-sky imaging in four infrared bands centered at 3.4, 4.6, 12 and 22 microns (W1, W2, W3, and W4) starting in 2010 until the coolant was exhausted in 2011. It was reactivated in 2013 as NEOWISE and continued imaging in W1 and W2 until 2024."
+Documentation: https://irsa.ipac.caltech.edu/data/WISE/unWISE/overview.html
+Contact: https://irsa.ipac.caltech.edu/docs/help_desk.html
+ManagedBy: "NASA/IPAC Infrared Science Archive ([IRSA](https://irsa.ipac.caltech.edu)) at Caltech"
+UpdateFrequency: The unWISE dataset is updated periodically to include new data released by NEOWISE. The data may also be presented in new ways as the products become available.
+Tags:
+  - aws-pds
+  - astronomy
+  - object detection
+  - parquet
+  - survey
+License: https://irsa.ipac.caltech.edu/data_use_terms.html
+Citation: "If you use the unWISE Time-Domain Catalog, please cite the dataset Digital Object Identifier (DOI): [10.26131/IRSA580](https://www.ipac.caltech.edu/doi/irsa/10.26131/IRSA580). In addition, follow the [unWISE acknowledgement guidelines](https://irsa.ipac.caltech.edu/data/WISE/unWISE/overview.html) and the [IRSA acknowledgement guidelines](https://irsa.ipac.caltech.edu/ack.html)."
+Resources:
+  - Description: "The unWISE Time-Domain Catalog is based on 'time-resolved' coadds, each of which stacks together the WISE/NEOWISE exposures from one (biannual) sky pass. It includes 43 billion total detections in W1 and W2. It is available in Apache Parquet, partitioned by HEALPix order 5."
+    ARN: arn:aws:s3:::nasa-irsa-wise/unwise/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    AccountRequired: False
+DataAtWork:
+  Tutorials:
+    - Title: Notebook Tutorials
+      URL: https://irsa.ipac.caltech.edu/docs/notebooks/
+      AuthorName: Caltech/IPAC-IRSA
+      AuthorURL: https://irsa.ipac.caltech.edu
+ADXCategories:
+  - Public Sector Data

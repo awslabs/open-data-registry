@@ -1,0 +1,40 @@
+Name: Gretel Synthetic Safety Alignment Dataset
+Description: A comprehensive dataset designed for aligning language models with safety and ethical guidelines. Contains 8,361 curated triplets of prompts, responses, and safe responses across various risk categories. Each entry includes safety scores, judge reasoning, and harm probability assessments, making it valuable for model alignment, testing, and benchmarking.
+Documentation: https://huggingface.co/datasets/gretelai/gretel-safety-alignment-en-v1
+Contact: https://gretel.ai/discord
+ManagedBy: "[Gretel.ai](https://gretel.ai)"
+UpdateFrequency: Static dataset, version 1.0 (Released December 2024)
+Tags:
+  - machine learning
+  - natural language processing
+  - ai safety
+  - synthetic data
+License: Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+Citation: "@dataset{gretelai_gretel-safety-alignment-en-v1, title = {Gretel Synthetic Safety Alignment Dataset}, year = {2024}, month = {12}, publisher = {Gretel}, url = {https://huggingface.co/datasets/gretelai/gretel-safety-alignment-en-v1}}"
+Resources:
+  - Description: The dataset is available as three files - train with 6,000 records, validation with 1,200 records, and test with 1,161 records. Each file is in parquet format and contains 14 columns including prompts, responses, safety scores, and probability assessments. Generated using Apache 2.0 licensed models including ibm-granite/granite-3.0-8b, Qwen2.5-7B, and Mistral-Nemo-Instruct-2407.
+    ARN: arn:aws:s3:::gretel-datasets-public/gretel-synthetic-safety-alignment-en-v1
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://gretel-datasets-public.s3.amazonaws.com/gretel-synthetic-safety-alignment-en-v1/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Getting Started with the Gretel Safety Alignment Dataset
+      URL: https://huggingface.co/datasets/gretelai/gretel-safety-alignment-en-v1
+      AuthorName: Gretel.ai
+      AuthorURL: https://gretel.ai
+      Services: []
+    - Title: Building Datasets to Enable Safer AI Responses
+      URL: https://gretel.ai/blog/gretel-open-synthetic-safety-dataset
+      AuthorName: Gretel.ai
+      AuthorURL: https://gretel.ai
+      Services: []
+  Tools & Applications:
+    - Title: Gretel Navigator Data Designer
+      URL: https://gretel.ai/blog/build-high-quality-datasets-for-ai-using-gretel-navigator
+      AuthorName: Gretel.ai
+      AuthorURL: https://gretel.ai
+ADXCategories:
+  - Financial Services Data
+  - Media & Entertainment Data

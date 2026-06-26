@@ -37,11 +37,13 @@ Tags:
   - disaster response
   - environmental
   - meteorological
-  - sustainability
   - oceans
   - water
   - weather
-License: Open Data. There are no restrictions on the use of this data.
+License: NOAA data disseminated through NODD are open to the public and can be used as desired.
+  <br/>
+  <br/>
+  NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
   - Description: NOMADS Production OFS Data (30 day rolling retention)
     ARN: arn:aws:s3:::noaa-ofs-pds
@@ -59,6 +61,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nos-ofs-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for NOS OFS Historical Retention, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewNOSOFSObject
+    Region: us-east-1
+    Type: SNS Topic    
 DataAtWork:
   Tools & Applications:
     - Title: "OFS Data Aggregation and Sub-Setting"
