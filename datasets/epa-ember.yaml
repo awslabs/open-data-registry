@@ -54,14 +54,15 @@ Resources:
 
       All files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures.
 
-      ### Emissions input files
+      #### Emissions input files
 
-      Emissions are split into two main directories, **Anthropogenic** and **Fires**.
+      Emissions are split into two main directories, **Anthropogenic** and **Fires**.<br>
+      <br>
 
-      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations.
-
-      The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there). Subfolders:
-
+      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations. The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there).
+      <br><br>
+      Subfolders:
+      <br>
       - `Beis_inline` — auxiliary files needed to run CMAQ with online biogenic emissions calculations
       - `merged_nobeis_norwc` — gridded emissions: all gridded sources except residential wood combustion and biogenic sources
       - `rwc` — gridded emissions: residential wood combustion
@@ -73,8 +74,10 @@ Resources:
       - `ptagfire` (2024 only) — point source emissions: agricultural burning sources
       - `ptnonipm` (2021 and 2024) and `ptnonipm_hr` (2024 only) — point source emissions not included in another category; `ptnonipm_hr` comes from sources with hourly CEMS data
 
-      **Fires** includes day-specific fire emissions for each simulation year. Subfolders:
-
+      **Fires** includes day-specific fire emissions for each simulation year.
+      <br><br>
+      Subfolders:
+      <br>
       - `ptfire_othna` (2021 and 2022) — wildland and agricultural fires in Canada and Mexico
       - `ptfire-canada` (2024 and 2025) — wildfires in Canada
       - `ptfire_mexona` (2024 and 2025) — wildland and agricultural fires in Mexico
@@ -83,15 +86,15 @@ Resources:
 
       Point source sectors include `inln_mole` files (emissions magnitudes) and `stack_groups` files (emissions location/stack characteristics). Gridded sectors include only `emis_mole` files (gridded emissions magnitudes).
 
-      ### Meteorological input files
+      #### Meteorological input files
 
       Found in `$YYYY/CMAQ/inputs/MCIP`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures, provided for every day of the simulation. File type and variable descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/mcip
 
-      ### Initial and boundary condition files
+      #### Initial and boundary condition files
 
       Found in `$YYYY/CMAQ/inputs/ICBC`. Files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures. Initial conditions are provided for April 1 of each simulation year; boundary condition files are provided for every day of the simulation. Descriptions: https://github.com/USEPA/CMAQ/tree/main/PREP/bcon and https://github.com/USEPA/CMAQ/tree/main/PREP/icon
 
-      ### Gridded model output files
+      #### Gridded model output files
 
       For each simulation year, gridded daily layer-1 model outputs are provided for three simulations (base, zero fires, and zero Canada and Mexico fires) under `$YYYY/CMAQ/outputs/`:
 
