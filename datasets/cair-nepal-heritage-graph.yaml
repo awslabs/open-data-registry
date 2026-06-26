@@ -1,5 +1,6 @@
 Name: "HeritageGraph: Open Knowledge Graph Dataset for Cultural Heritage"
-Description: HeritageGraph is a large-scale open cultural heritage knowledge graph dataset designed to represent and connect cultural heritage information across countries, civilizations, institutions, and collections. The dataset currently focuses on Nepalese cultural heritage and is being extended to include heritage resources from other countries such as Türkiye through international collaborations. HeritageGraph represents cultural entities such as monuments, archaeological sites, artifacts, manuscripts, traditions, historical events, organizations, places, and people, together with their semantic relationships. These data are cleaned, normalized, linked to the HeritageGraph ontology, and published as structured knowledge graph resources using semantic web standards. The dataset integrates multimodal information. It supports cultural preservation, digital humanities research, knowledge discovery, education, semantic search, graph analytics, heritage visualization, question answering, digital preservation, and AI-driven applications such as retrieval-augmented generation, graph machine learning, and cultural heritage assistants.
+Description: |
+  HeritageGraph is an RDF knowledge graph of Nepal's tangible and intangible cultural heritage,   built on the CIDOC-CRM-aligned HeritageGraph ontology (https://cairnepal.github.io/heritagegraphontology/) and populated from trusted open sources. It contains ~7,850 tangible heritage entities (temples, stupas, monasteries, traditional stone water spouts / dhunge dhara, monuments) with coordinates, dates and images, plus a curated intangible-heritage layer (festivals and chariot festivals, masked dances, Guthi institutions, the Living-Goddess Kumari lifecycle, caste ritual roles, deities and syncretic relationships). Every entity carries machine-readable provenance (source, confidence and epistemic stance) and, where available, owl:sameAs links to Wikidata and OpenStreetMap. Data is published as RDF 1.1 Turtle in separate named graphs per source so each can be used under its own license, and is validated against the published SHACL shapes. No synthetic data is used.
 Documentation: Documentation can be found at <a href="https://github.com/CAIRNepal/heritagegraph-aws-open-data">our GitHub repository</a>.
 Contact: info@cair-nepal.org
 ManagedBy: "[CAIR-Nepal](https://www.cair-nepal.org/)"
@@ -42,5 +43,7 @@ DataAtWork:
     AuthorName: Niraj Karki, Nabin Oli, Anu Sapkota, Semih Yumusak, Tek Raj Chhetri 
   Explore: 
     - '[HeritageGraph Platform](https://heritagegraph.cair-nepal.org/)' 
+ADXCategories: 
+  - Resources Data
     
   
