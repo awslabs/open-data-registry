@@ -1,0 +1,47 @@
+Name: Vantor Open Data Program
+Description: |
+  Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, 
+  monitoring of staging areas and emergency response, damage assessment, and recovery. These images are generated
+  as full-strip COGs instead of the tiling system used by the previous Maxar Open Data images.
+Documentation: https://www.vantor.com
+Contact: https://vantor.com
+UpdateFrequency: New data is released in response to activations. Older data may be migrated to match this format as needed.
+Collabs:
+  ASDI:
+    Tags:
+      - disaster response
+Tags:
+  - earth observation
+  - disaster response
+  - geospatial
+  - satellite imagery
+  - sustainability
+  - cog
+  - stac
+License: Creative Commons Attribution Non Commercial 4.0
+ManagedBy: "[Vantor](https://www.vantor.com/)"
+Resources:
+  - Description: Imagery and metadata
+    ARN: arn:aws:s3:::vantor-opendata
+    Region: us-east-1
+    Type: S3 Bucket
+    AccountRequired: no
+    Explore:
+    - '[Radiant Earth STAC Catalog](https://radiantearth.github.io/stac-browser/#/external/vantor-opendata.s3.amazonaws.com/events/catalog.json)'
+    - '[Developemt Seed STAC Map](https://developmentseed.org/stac-map/?href=https%3A%2F%2Fvantor-opendata.s3.amazonaws.com%2Fevents%2Fcatalog.json)'
+DataAtWork:
+  Tools & Applications:
+    - Title: Vantor Open Data QGIS Plugin
+      URL: https://plugins.qgis.org/plugins/vantor/
+      AuthorName: Qiusheng Wu
+      AuthorURL: https://gishub.org/
+  Publications:
+    - Title: Seeing a Better World from Space
+      URL: https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1124&context=purduegisday
+      AuthorName: Carly Sakumura
+    - Title: "Using Data from Earth Observation to Support Sustainable Development Indicators: An Analysis of the Literature and Challenges for the Future"
+      URL: https://doi.org/10.3390/su14031191
+      AuthorName: Ana Andries, Stephen Morse, Richard J. Murphy, Jim Lynch, and Emma R. Woolliams
+    - Title: "Disaster, Infrastructure and Participatory Knowledge The Planetary Response Network"
+      URL: https://eprints.lancs.ac.uk/id/eprint/167032/1/Simmons_et_al_2022_CSTP_PRN_Paper_Special_Issue_Accepted_Version.pdf
+      AuthorName: Brooke Simmons, Chris Lintott, Steven Reece, et al.
