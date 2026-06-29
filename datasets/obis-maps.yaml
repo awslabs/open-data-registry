@@ -29,6 +29,10 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse bucket](https://obis-maps.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new Marine species distribution models, with predictions for the current and future period (2050 and 2100) across five Shared Socioeconomic Pathways Scenarios (SSP) stored as cloud-optimized GeoTIFFs (COG) data
+    ARN: arn:aws:sns:us-east-1:686255951379:map_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Accessing OBIS species distribution models on AWS
