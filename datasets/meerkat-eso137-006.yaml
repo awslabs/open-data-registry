@@ -1,0 +1,67 @@
+Name: MeerKAT Radio Observations of ESO 137-006
+Description: |
+  MeerKAT radio telescope visibility data for the radio galaxy ESO 137-006, located in the
+  Norma galaxy cluster (Abell 3627) at a distance of approximately 70 megaparsecs. The
+  observations cover two frequency bands (980–1080 MHz and 1356–1440 MHz) and comprise
+  14 hours of on-target integration time taken in May 2019 using all 64 MeerKAT antennas.
+  These data led to the discovery of multiple collimated synchrotron threads (CSTs) — narrow,
+  thread-like structures of radio emission connecting the galaxy's radio lobes — a configuration
+  not previously observed in radio galaxies (Ramatsoku et al. 2020, A&A 636, L1).
+
+  The data are stored in Zarr format, implementing the CASA Measurement Set v2 data model.
+  They are cloud-native and can be accessed directly from S3 using the dask-ms Python library
+  without prior download. The dataset consists of three Measurement Sets: one primary
+  calibrator and two target-field observations. Each target dataset is about 1.1TB compressed
+  (~3TB uncompressed).
+
+  A key community challenge associated with this dataset is performing distributed radio
+  interferometric imaging (gridding, FFT, deconvolution) at scale directly on cloud storage —
+  a workflow directly relevant to future Square Kilometre Array (SKA) pipelines.
+Documentation: https://github.com/ratt-ru/ratt-public-open-data-tutorial/blob/main/documentation.md
+Contact: sperkins@sarao.ac.za
+ManagedBy: "[South African Radio Astronomy Observatory (SARAO)](https://www.sarao.ac.za)"
+UpdateFrequency: Not updated
+Tags:
+  - aws-pds
+  - astronomy
+  - archives
+  - imaging
+  - survey
+  - zarr
+  - signal processing
+License: |
+  Creative Commons Attribution 4.0 International (CC BY 4.0).
+  Attribution required for refereed scientific publications — please cite
+  Ramatsoku et al. (2020), A&A 636, L1, https://doi.org/10.1051/0004-6361/202037800.
+Citation: "Ramatsoku, M. et al. (2020). Collimated synchrotron threads linking the radio lobes of ESO 137-006. Astronomy & Astrophysics, 636, L1. https://doi.org/10.1051/0004-6361/202037800"
+Resources:
+  - Description: |
+      MeerKAT Measurement Sets for ESO 137-006 in Zarr format. Includes one primary
+      calibrator dataset (ms1_primary.zarr) and two target-field datasets
+      (ms1_target.zarr, ms2_target.zarr). Each Measurement Set contains raw and
+      calibrated visibilities, flags, weights, UVW coordinates, and antenna/timing
+      metadata, stored as chunked Zarr arrays accessible via dask-ms.
+    ARN: arn:aws:s3:::ratt-public-data/ESO137
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+      - '[Browse dataset](https://ratt-public-data.s3.af-south-1.amazonaws.com/index.html#ESO137/)'
+  - Description: "Update notifications for s3://ratt-public-data. Users can subscribe to this SNS topic with [AWS Lambda](https://aws.amazon.com/lambda/) or [AWS Simple Queue Service](https://aws.amazon.com/sqs/)."
+    ARN: arn:aws:sns:af-south-1:666850927229:ratt-public-data-object_created
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: MeerKAT ESO 137-006"
+      URL: https://github.com/ratt-ru/ratt-public-open-data-tutorial/blob/main/get-to-know-the-eso137-006-dataset.ipynb
+      NotebookURL: https://github.com/ratt-ru/ratt-public-open-data-tutorial/blob/main/get-to-know-the-eso137-006-dataset.ipynb
+      AuthorName: Simon Perkins
+      AuthorURL: https://github.com/ratt-ru
+  Publications:
+    - Title: "Collimated synchrotron threads linking the radio lobes of ESO 137-006"
+      URL: https://doi.org/10.1051/0004-6361/202037800
+      AuthorName: Ramatsoku, M. et al.
+      AuthorURL: https://www.aanda.org/articles/aa/full_html/2020/04/aa37800-20/aa37800-20.html
+RegistryEntryAdded: "2026-05-19"
+RegistryEntryLastModified: "2026-05-19"
