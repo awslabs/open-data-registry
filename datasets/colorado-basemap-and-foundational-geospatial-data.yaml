@@ -1,0 +1,32 @@
+Name: State of Colorado Basemap and Foundational Geospatial Data
+Description: The State of Colorado has gathered foundational geospatial datasets and created a statewide basemap
+Documentation: https://docs.google.com/document/d/1lkoULpFQtO5NqVtt-y_0HSNc5LK-3K8Yqz1ZGk2nGig/edit?usp=sharing
+Contact: oit_gis@state.co.us
+ManagedBy: State of Colorado Governor's Office of Information Technology (OIT) GIS team
+UpdateFrequency: Periodically
+Tags:
+  - aws-pds
+  - geospatial
+  - mapping 
+License: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Resources:
+  - Description: Colorado Basemap and Foundational Geospatial Data
+    ARN: arn:aws:s3:::colorado-public-geospatial-data
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for new Colorado basemap and foundational geospatial data
+    ARN: arn:aws:sns:us-west-2:180294215083:colorado-public-geospatial-data-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Colorado AWS Open Data Basemap and Foundational Geospatial Data Guide
+      URL: https://docs.google.com/document/d/19KTe_RXxvcWaA7r7_4LSKsoH2DB0xP1fVkbj9bdxG0Q/edit?usp=sharing
+      AuthorName: State of Colorado OIT-GIS
+      AuthorURL: https://geodata.colorado.gov/ 
+    - Title: Colorado Public Basemap and Foundational Geospatial Data s3 Browser
+      URL: https://colorado-public-geospatial-data.s3.us-west-2.amazonaws.com/index.html
+      AuthorName: State of Colorado OIT-GIS
+      AuthorURL: https://geodata.colorado.gov/
+ADXCategories:
+  - Public Sector Data
