@@ -23,19 +23,27 @@ Tags:
   - neuroscience
 License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
 Citation: >-
-  Neural Circuit Dynamics and Decision Making Laboratory, Institut Pasteur - Mouse Neuroanatomy Data was accessed on DATE from https://registry.opendata.aws/interhemispheric-cortex-connectivity
+  Neural Circuit Dynamics and Decision Making Laboratory, Institut Pasteur -
+  Mouse Neuroanatomy Data.
 Resources:
   - Description: >-
       ExA-SPIM light-sheet microscopy volumes of mouse brains in OME-Zarr
       format, with sidecar JSON metadata files describing subjects, acquisition
       parameters, and processing provenance. Organized as a flat list of data
       assets following AIND-style naming conventions.
-    ARN: arn:aws:s3:::[BUCKET-NAME-TBD]
+    ARN: arn:aws:s3:::haisslab
     Region: eu-west-3
     Type: S3 Bucket
+  - Description: >-
+      Notifications published whenever new objects are added to the dataset
+      bucket. Subscribe to receive alerts as new specimens are imaged and
+      uploaded.
+    ARN: arn:aws:sns:eu-west-3:253260001075:haisslab-object_created
+    Region: eu-west-3
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
-    - Title: "TBD"
+    - Title: Get to know the Interhemispheric Cortex Connectivity dataset
       URL: https://github.com/florenthaiss/open-data-examples/blob/main/interhemispheric-cortex-connectivity/get-to-know-a-dataset.ipynb
       NotebookURL: https://github.com/florenthaiss/open-data-examples/blob/main/interhemispheric-cortex-connectivity/get-to-know-a-dataset.ipynb
       AuthorName: Florent Haiss
@@ -43,4 +51,4 @@ DataAtWork:
   Tools & Applications: []
   Publications: []
 ADXCategories:
-  - Healthcare & Life Sciences
+  - Healthcare & Life Sciences Data
