@@ -1,0 +1,40 @@
+Name: ECMWF AIFS ENS - dynamical.org Icechunk Zarr
+Description: |
+    <p>The Artificial Intelligence Forecasting System (AIFS) is a data driven forecast model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF). AIFS-ENS is the ensemble configuration of AIFS, containing 51 ensemble members. AIFS is trained on ECMWF's ERA5 re-analysis and ECMWF's operational numerical weather prediction (NWP) analyses.</p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/ecmwf-aifs-ens-forecast/">ECMWF AIFS ENS forecast</a> - Ensemble weather forecasts from the ECMWF Artificial Intelligence Forecasting System (AIFS) ENS model.</li>
+    </ul>
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "ECMWF AIFS ENS forecast: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: ECMWF AIFS ENS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-ecmwf-aifs-ens
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-ecmwf-aifs-ens.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-ecmwf-aifs-ens-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "ECMWF AIFS ENS forecast — Quickstart"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-ens-forecast.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ecmwf-aifs-ens-forecast.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
