@@ -1,0 +1,28 @@
+Name: Mihop database
+Description: Comprehensive clinical metagenomic database encompassing bacteria, archaea, viruses and pathogenic eukaryotes including helminths
+Documentation: 
+Contact: https://github.com/mjsull/Mihop_database_download
+ManagedBy: "[Q-PHIRE genomics](https://www.health.qld.gov.au/public-health/forensic-and-scientific-services/testing-analysis/disease-investigation-and-analysis/q-phire-genomics)"
+UpdateFrequency: |
+  The current verson is built on documented databases from 2025. The 
+  colllection will be updated occasionally, with no fixed schedule.
+Tags:
+  - metagenomics
+  - bacteria
+  - bioinformatics
+  - fasta
+  - genomic
+  - life sciences
+  - microbial genomics
+  - short read sequencing
+  - whole genome sequencing
+  - pathogen detection
+License: "[MIT License](https://opensource.org/license/mit)"
+Resources:
+  - Description: Individual, compressed genome assemblies in .fasta format in a public S3 bucket.
+    ARN: arn:aws:s3:::allthebacteria-assemblies
+    Region: au-southeast-2
+    Type: S3 Bucket
+    Explore:
+ADXCategories:
+  - Healthcare & Life Sciences Data
