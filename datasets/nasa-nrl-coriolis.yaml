@@ -1,0 +1,49 @@
+Name: NASA NRL Coriolis Project
+Description: |
+  WindSat/Coriolis surface soil moisture (LPRM) L2 V001 is a Level 2 (swath) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM). Each swath is packaged with associated geolocation fields. The data set covers the period from February 2003 to July 2012. The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from the WindSat's Ka-band (37.0 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the WindSat brightness temperatures (sdrLowRes) product, archived at the Goddard Earth Sciences Data and Information Services Center (GES DISC).
+  <br>
+
+  #### LPRM_WINDSAT_DY_SOILM3
+  WindSat/Coriolis surface soil moisture (LPRM) L3 1 day 25 km x 25 km daytime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM). There are two files per day, one ascending (daytime) and one descending (nighttime), archived as two different products. This document is for the daytime product. The data set covers the period from February 2003 to July 2012. The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from the WindSat's Ka-band (37.0 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the WindSat brightness temperatures (sdrLowRes) product, daytime passes, as processed using LPRM (i.e., LPRM/WindSat/Coriolis L2 product, LPRM_WINDSAT_SOILM2_V001).
+  <br>
+
+  #### LPRM_WINDSAT_NT_SOILM3
+  WindSat/Coriolis surface soil moisture (LPRM) L3 1 day 25 km x 25 km nighttime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM). There are two files per day, one ascending (daytime) and one descending (nighttime), archived as two different products. This document is for the nighttime product. The data set covers the period from February 2003 to July 2012. The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from the WindSat's Ka-band (37.0 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the WindSat brightness temperatures (sdrLowRes) product, nighttime passes, as processed using LPRM (i.e., LPRM/WindSat/Coriolis L2 product, LPRM_WINDSAT_SOILM2_V001).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://disc.gsfc.nasa.gov/datacollection/LPRM_WINDSAT_SOILM2_001.html
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "LPRM_WINDSAT_SOILM2 v001 - WindSat/Coriolis surface soil moisture (LPRM) L2 V001 is a Level 2 (swath) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_WINDSAT_SOILM2.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "LPRM_WINDSAT_DY_SOILM3 v001 - WindSat/Coriolis surface soil moisture (LPRM) L3 1 day 25 km x 25 km daytime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_WINDSAT_DY_SOILM3.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "LPRM_WINDSAT_NT_SOILM3 v001 - WindSat/Coriolis surface soil moisture (LPRM) L3 1 day 25 km x 25 km nighttime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from polarimetric microwave radiometer data from WindSat, onboard the Naval Research Laboratory's Coriolis satellite, using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_WINDSAT_NT_SOILM3.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
