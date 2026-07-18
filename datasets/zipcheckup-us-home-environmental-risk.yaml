@@ -1,0 +1,52 @@
+Name: US Home Environmental Risk Compilation (ZipCheckup Open Data)
+Description: |
+  A normalized, address- and ZIP-level compilation of US public environmental
+  health records: machine-parsed Consumer Confidence Reports (drinking water
+  contaminant tables, including PFAS, for 9,700+ water systems, 2023-2024),
+  lead service line records aggregated from 94 state and utility inventories
+  (18.4M address-level records), a ZIP-level summary layer covering 41,000+
+  ZIP codes across 17 environmental risk categories, and companion layers
+  built from EPA SDWIS, UCMR5, FEMA NRI, USGS, CDC, and Census sources.
+  All records are machine-readable, carry per-record source provenance
+  (source document URL, legal authority, parse/refresh date), and are
+  reproducible from cited public documents. CSV, JSON, and Parquet formats;
+  Parquet mirrors of the large collections are provided for Amazon Athena
+  and columnar workflows.
+Documentation: https://github.com/artakulov/open-data-examples/blob/main/us-home-environmental-risk-compilation/DATA-DICTIONARY.md
+Contact: contact@zipcheckup.com
+ManagedBy: "[ZipCheckup](https://zipcheckup.com)"
+UpdateFrequency: Core layers are updated daily via an automated pipeline; the parsed CCR corpus follows the annual Consumer Confidence Report cycle; the lead service line compilation is refreshed as source inventories update. Versioned archival snapshots are published to Zenodo.
+Citation: Akulov, A. (2026). ZipCheckup U.S. Environmental Safety Data by ZIP Code [Data set]. Zenodo. https://doi.org/10.5281/zenodo.19427201
+Tags:
+  - aws-pds
+  - environmental
+  - water
+  - geospatial
+  - sustainability
+  - disaster response
+  - united states
+  - census
+  - json
+  - csv
+  - parquet
+License: |
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: "ZIP summary layer (41,000+ ZIP codes, 17 risk categories), parsed CCR corpus (9,700+ water systems, JSON per PWSID + consolidated Parquet), lead service line address compilation (18.4M records, JSON per ZIP + consolidated Parquet), and companion layers. Bucket created during AWS Open Data Program onboarding; name pending final confirmation."
+    ARN: arn:aws:s3:::zipcheckup-open-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: US Home Environmental Risk Compilation"
+      URL: https://github.com/artakulov/open-data-examples/blob/main/us-home-environmental-risk-compilation/get-to-know-a-dataset.ipynb
+      AuthorName: Artem Akulov
+      AuthorURL: https://zipcheckup.com
+  Tools & Applications:
+    - Title: ZipCheckup - Home Safety Profile by ZIP code
+      URL: https://zipcheckup.com
+      AuthorName: ZipCheckup
+  Publications:
+    - Title: "Public comment on EPA docket EPA-HQ-OW-2025-0654: PFAS occurrence documented in utilities' own Consumer Confidence Reports (511 systems with quantified detections)"
+      URL: https://www.regulations.gov/docket/EPA-HQ-OW-2025-0654
+      AuthorName: Artem Akulov
