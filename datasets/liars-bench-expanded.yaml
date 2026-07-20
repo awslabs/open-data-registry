@@ -1,20 +1,20 @@
-Name: "Liars' Bench Expanded: LLM Activations for On-Policy Deception Detection"
+Name: "Liar's Bench Expanded: LLM Activations for On-Policy Deception Detection"
 
 Description: >
-  This dataset expands Liars' Bench (Kretschmar et al., 2025; arXiv:2511.16035), a benchmark of
+  This dataset expands Liar's Bench (Kretschmar et al., 2025; arXiv:2511.16035), a benchmark of
   labeled honest and deceptive outputs from large language models (LLMs), with pre-computed
-  internal activations from the models that generated each example. The original Liars' Bench
-  contains 72,863 labeled examples across seven datasets and four open-weight models, capturing
-  on-policy lies — statements that appear to contradict the model's own internal beliefs as
-  established in control contexts. This expanded dataset pairs each transcript with residual-stream
-  activation tensors extracted at inference time via the National Deep Inference Fabric (NDIF),
-  enabling white-box lie detection research. New model organisms and deception scenarios
-  are contributed by red teams from a structured competition co-organized by Schmidt Sciences,
-  NDIF, and Cadenza Labs. Activations are organized by model, dataset, split, record, and layer
-  to support parallelized probe training across transformer layers. Each record stores the
-  residual-stream activation at the response-token position (one vector per layer per record).
-  Teams can query activations directly from S3 for probe training on publicly available
-  validation data.
+  internal activations for competition development examples. The original Liar's Bench contains
+  72,863 labeled examples across seven datasets and four open-weight models, capturing on-policy
+  lies — statements that appear to contradict the model's own internal beliefs as established in
+  control contexts. This expanded dataset pairs each transcript with residual-stream activation
+  tensors extracted at inference time via the National Deep Inference Fabric (NDIF), enabling
+  white-box lie detection research. New model organisms and deception scenarios are contributed by
+  red teams from a structured competition co-organized by Schmidt Sciences, NDIF, and Cadenza Labs.
+  The S3 bucket stores metadata tables separately from activation files. Each metadata row is one
+  example/conversation and has an `index` value; that `index` maps to the activation folder under
+  `data/<dataset>/<split>/<index>/`. The numeric activation folders are not self-describing, so
+  users should start from the metadata Parquet files to identify the dataset, split, model, LoRA,
+  label, prompt, and response for each example.
 
 Documentation: >
   https://github.com/ndif-team/liars-bench-expanded
@@ -22,7 +22,7 @@ Documentation: >
 Contact: >
   Post questions to [re:Post](https://repost.aws/tags/questions/TApd0Wl5P8S9O6riTWmh-cGw/aws-open-data) 
   using the AWS Open Data tag, or open an issue at [GitHub](https://github.com/ndif-team/liars-bench-expanded/issues).
-  You can also email us at info@ndif.us or info@cadenzalabs.org with "Liars' Bench Expanded" in the subject line.
+  You can also email us at info@ndif.us or info@cadenzalabs.org with "Liar's Bench Expanded" in the subject line.
 
 ManagedBy: "[National Deep Inference Fabric (NDIF), Northeastern University](https://ndif.us) and [Cadenza Labs](https://cadenzalabs.org/)"
 
@@ -44,48 +44,50 @@ License: >
   Creative Commons Attribution 4.0 International (CC-BY 4.0)
 
 Citation: >
-  "Liars' Bench Expanded was accessed on [DATE] at registry.opendata.aws/liars-bench-expanded.
-  When using this dataset, please also cite the original Liars' Bench benchmark:
+  "Liar's Bench Expanded was accessed on [DATE] at registry.opendata.aws/liars-bench-expanded.
+  When using this dataset, please also cite the original Liar's Bench benchmark:
   Kretschmar et al. (2025), arXiv:2511.16035."
 
 Resources:
   - Description: >
-      Residual-stream LLM activation tensors at the response-token position, paired with
-      deception labels and transcript metadata. Each record captures a single token's
-      activations across all layers of the captured model (shape per record: n_layers ×
-      hidden_dim). Activations are stored as Zarr v3 arrays (shape: n_records × n_layers ×
-      hidden_dim, dtype float16, chunks 1000×1×4096) partitioned by the model whose
-      internals were captured (captured_model) and the competition scenario. This chunking
-      enables efficient layer-slice reads directly from S3 for probe training without
-      downloading the full array (~19 GB total). Scenario names encode the
-      (generator_model, source_dataset, year) tuple using Hive-safe slugs, e.g.,
-      `qwen-2.5-72b-instruct_wmdp-bio-2026` (slashes and HuggingFace org prefixes stripped).
-      Record-level metadata is stored in Parquet alongside each activation array, preserving
-      the original Liars' Bench schema and adding expansion fields. Core fields present for
-      all records: index, model, messages (list of {content, role}), deceptive, canary,
-      captured_model, num_layers, hidden_size, n_response_tokens, seq_len. Optional fields
-      carried through from source configs where present: temperature (convincing-game,
-      gender-secret, harm-pressure-*), meta (convincing-game, gender-secret), dataset and
-      dataset_index (harm-pressure-*, instructed-deception). Null for configs where absent. Structured as:
-        s3://[bucket-name]/
-          README.txt
+      Residual-stream LLM activation tensors paired with deception labels and transcript metadata.
+      The bucket is public and can be read anonymously. Metadata is stored as Parquet files under
+      `metadata/<dataset>/<split>/`. Each metadata row is one example/conversation and includes
+      fields such as `index`, `dataset`, `split`, `captured`, `model`, `lora`, `deceptive`,
+      `temperature`, `messages`, `n_tokens`, `n_layers`, `hidden_dim`, `layers`, and `error`.
+      Some shape columns in metadata may be incomplete for older uploads; for activation shape and
+      token count, read the record's `_complete.json` file. Activations are stored under
+      `data/<dataset>/<split>/<index>/`, where `<index>` is the metadata row's `index` value. Each
+      record folder contains `_complete.json` and one numbered subfolder per token position:
+      `<token_pos>/activations.safetensors`. Each safetensors file contains one tensor named
+      `activations` with shape `(n_layers, hidden_dim)` and dtype float16 for that token position.
+      A full record is therefore represented conceptually as `(n_tokens, n_layers, hidden_dim)` by
+      stacking its token-position files. Current development data includes `instructed-deception`
+      and `varied-deception` under the `dev` split, with Qwen, Gemma, and Nemotron model/LoRA
+      combinations described in the metadata tables. Structured as:
+        s3://liars-bench-expanded/
           metadata/
-            captured_model=[model-name]/
-              scenario=[scenario-name]-[year]/
-                split=[split-name]/
-                  records.parquet
+            instructed-deception/
+              dev/
+                records.parquet
+                records-nemotron.parquet
+            varied-deception/
+              dev/
+                records.parquet
           data/
-            captured_model=[model-name]/
-              scenario=[scenario-name]-[year]/
-                split=[split-name]/
-                  activations.zarr/
-    ARN: "arn:aws:s3:::[To be completed after AWS account creation]"
+            <dataset>/
+              <split>/
+                <index>/
+                  _complete.json
+                  <token_pos>/
+                    activations.safetensors
+    ARN: "arn:aws:s3:::liars-bench-expanded"
     Region: us-east-1
     Type: S3 Bucket
 
 DataAtWork:
   Tutorials:
-    - Title: "Get To Know A Dataset: Liars' Bench Expanded"
+    - Title: "Get To Know A Dataset: Liar's Bench Expanded"
       URL: https://github.com/ndif-team/liars-bench-expanded/blob/main/get-to-know-a-dataset.ipynb
       NotebookURL: https://github.com/ndif-team/liars-bench-expanded/blob/main/get-to-know-a-dataset.ipynb
       AuthorName: National Deep Inference Fabric (NDIF)
@@ -98,7 +100,7 @@ DataAtWork:
       AuthorURL: https://ndif.us
 
   Publications:
-    - Title: "Liars' Bench: A Benchmark for Evaluating LLM Deception"
+    - Title: "Liar's Bench: A Benchmark for Evaluating LLM Deception"
       URL: https://arxiv.org/abs/2511.16035
       AuthorName: Kretschmar et al.
     - Title: "NNsight and NDIF: Democratizing Access to Foundation Model Internals"
