@@ -1,0 +1,51 @@
+Name: "Aerial Imagery of Canada"
+Description: |
+    Recent and historical high-resolution aerial imagery of Canada in Cloud Optimized Geotiff (COG) format. This dataset groups aerial imagery from the Government of Canada from different sources, including time series from the National Air Photo Library (NAPL) in the "napl" sub-bucket and prefix, and aerial orthophoto mosaics from Parks Canada in the "parks-canada" sub-bucket with park name as the prefix.
+    <br/>
+    The NAPL of Natural Resources Canada archives over 6 million aerial photographs covering all of Canada, some of which date back to the 1920s. The NAPL mosaics are created using the best spatial resolution available for each time period, which means that the orthophotos composing a NAPL time series are not necessarily co-registered. 
+    Use cases include vegetation analysis, change detection using time series, land-use monitoring, and more. This dataset can be used to help communities understand climate change, enhance emergency management and response, and support sustainable resource development. 
+    <br/>
+    <br/>
+    Imageries aériennes haute résolution récentes et historiques du Canada en format Cloud Optimized Geotiff (COG). Cet ensemble de données regroupe des images aériennes du Canada provenant de différentes sources, notamment les séries temporelles de la Photothèque nationale de l'air (PNA) dans le sous-répertoire et le préfixe « napl », et les mosaïques d'orthophotographies aériennes de Parcs Canada dans le sous-répertoire « parks-canada », ayant pour préfixe le nom du parc.
+    <br/>
+    La PNA de Ressources naturelles Canada conserve plus de 6 millions de photographies aériennes couvrant l’ensemble du Canada, dont certaines remontent aux années 1920. Les mosaïques de la PNA sont réalisées à partir de la meilleure résolution spatiale disponible pour chaque période, ce qui signifie que les orthophotos composant une série temporelle de la PNA ne sont pas nécessairement corégistrées.
+    Les cas d'utilisation comprennent l'analyse de la végétation, la détection des changements à partir de séries temporelles, le suivi de l'utilisation des terres, etc. Cet ensemble de données peut aider les communautés locales à évaluer les impacts des changements climatiques, à améliorer la gestion et la réponse aux situations d'urgence, et à soutenir le développement durable des ressources.
+Documentation: "[National Air Photo Library / Photothèque nationale de l'air](https://ressources-naturelles.canada.ca/carte-outils-publications/imagerie-satellitaire-donnees-elevation-photos-aeriennes/photographies-aeriennes/phototheque-nationale-lair)"
+Contact: geoinfo@nrcan-rncan.gc.ca
+ManagedBy: "[Natural Resources Canada](https://nrcan.gc.ca/)"
+UpdateFrequency: |
+    The dataset is updated as new aerial imagery gets processed.
+    <br/>
+    L'ensemble de données est mis à jour à mesure du traitement de nouvelles images aériennes.
+Tags:
+  - aerial Imagery
+  - canada
+  - cog
+  - stac
+License: "[Open Government License (OGL)](https://open.canada.ca/en/open-government-licence-canada)"
+Citation:
+Resources:
+  - Description: RGB-NIR aerial orthophoto imagery mosaic covering the full extent of Banff National Park, Ya
+Ha Tinda Ranch, and a 1 km buffer at 15 cm, collected on August 21st to 23rd, 2025 / Mosaique d'orthophoto aérienne RVB-PIR couvrant l’ensemble du parc national Banff, le
+ranch Ya Ha Tinda ainsi qu’une zone tampon de 1 km à une résolution de 15cm, aquise du 21 au 23 août 2025
+    ARN: arn:aws:s3:::aerial-imagery-canada/national-parks/banff/
+    Region: ca-central-1
+    Type: S3 Bucket
+    Explore: 
+    - '[STAC catalog]()'
+    - '[STAC Browser by Radiant Earth]()'
+    - '[Browse Bucket]()'
+  - Description: Notifications for RGB-NIR aerial orthophoto imagery mosaic of Banff National Park, Ya Ha Tinda Ranch.
+    ARN: arn:aws:sns:ca-central-1:
+    Region: ca-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Cloud-Optimized Geospatial Data Access
+      URL: https://nrcan.github.io/cloud-optimized-geospatial/
+      AuthorName: NRCan
+    - Title: Get To Know a Dataset: Aerial Imagery of Canada / Apprendre à connaitre un jeu de données : Imagerie Aerienne du Canada (Bilingual) 
+      URL: https://github.com/NRCan/cloud-optimized-geospatial/blob/e4d4b9aff18466eded26facc3a87b5317dacdd12/how-to-guides/notebook/open-data-examples/get-to-know-a-dataset.ipynb
+DeprecatedNotice:
+ADXCategories:
+  -    
