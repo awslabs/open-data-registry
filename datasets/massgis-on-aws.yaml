@@ -1,0 +1,50 @@
+# Draft registry entry for the MassGIS_on_AWS dataset.
+
+Name: MassGIS on AWS
+Description: >-
+  MassGIS on AWS is a collection of Massachusetts geospatial data maintained by
+  MassGIS, including multi-vintage color orthoimagery, statewide LiDAR
+  point-cloud acquisitions, LiDAR-derived rasters, and selected vector layers.
+  The collection is intended for cloud-native analysis and will provide
+  Cloud-Optimized GeoTIFF and Entwine Point Tile objects alongside other
+  documented GIS formats. Recent aerial imagery is 4-band RGB-infrared
+  imagery at 15 cm resolution in NAD 1983 (2011) UTM
+  Zones 18N and 19N.
+Documentation: https://www.mass.gov/info-details/massgis-data-layers
+Contact: massgismail@mass.gov
+ManagedBy: "[MassGIS](https://www.mass.gov/orgs/massgis-bureau-of-geographic-information)"
+UpdateFrequency: >-
+  New orthoimagery vintages are expected approximately biennially. LiDAR
+  acquisitions and derived products will be added as they become available,
+  generally on a multi-year cycle; vector layers may be updated independently.
+Tags:
+  - aerial imagery
+  - earth observation
+  - elevation
+  - environmental
+  - geospatial
+  - lidar
+  - gis
+License: >-
+  There are no restrictions on the use of these data. Users should cite MassGIS
+  and review the documentation for product-specific notes and limitations.
+Citation: >-
+  MassGIS would appreciate acknowledgement for products derived from these
+  data.
+Resources:
+  - Description: >-
+      MassGIS geospatial data organized by product type, vintage,
+      acquisition/project area, spatial tile, and format. Initial content is
+      planned to include 2025 four-band orthoimagery in Cloud-Optimized GeoTIFF
+      format, multi-vintage QL1 LiDAR point clouds in Entwine Point Tile format,
+      LiDAR-derived raster products in Cloud-Optimized GeoTIFF format, and
+      selected vector data. The production bucket name will replace the draft
+      ARN below before the pull request is taken out of draft status.
+    ARN: arn:aws:s3:::REPLACE_WITH_OFFICIAL_MASSGIS_BUCKET_NAME
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+    AccountRequired: false
+ADXCategories:
+  - Environmental Data
+  - Public Sector Data
