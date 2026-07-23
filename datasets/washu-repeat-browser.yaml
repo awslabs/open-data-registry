@@ -1,0 +1,67 @@
+# AWS Open Data Registry draft.
+# CC BY 4.0 is confirmed for the complete collection.
+# Before final submission: confirm public bucket access and test the tutorial
+# against the uploaded AWS data.
+
+Name: WashU Repeat Browser genomic and epigenomic profiles
+Description: >-
+  The WashU Repeat Browser dataset provides processed genomic and epigenomic
+  profiles for studying repetitive elements in human (hg38) and mouse (mm10).
+  It contains 8,774 indexed entries spanning CAGE, epigenomic, conservation,
+  transcription-factor and repeat-overlap resources in CSV, BigWig and Zarr
+  formats. The data support genome-wide, repeat-family and consensus-level
+  analysis in Repeat Browser and standard bioinformatics tools.
+Documentation: https://github.com/twlab/Repeat-Browser/blob/main/WashU_Repeat_Browser_AWS/README.md
+Contact: "Daofeng Li (dli23@wustl.edu); Jiawei Shen (jiaweishen@wustl.edu)"
+ManagedBy: "[Ting Wang Laboratory, Department of Genetics, Washington University in St. Louis](https://wang.wustl.edu/)"
+UpdateFrequency: The collection is updated irregularly as new supported public datasets and processed profiles become available.
+Tags:
+  - aws-pds
+  - life sciences
+  - bioinformatics
+  - genomic
+  - epigenomics
+  - Homo sapiens
+  - Mus musculus
+  - csv
+  - zarr
+License: "Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/"
+Citation: >-
+  Please cite Shen J, Cheng S, Purushotham D, Zhuo X, Du AY, Zhang W,
+  Li D, Wang T. Exploring the epigenome profiles of repetitive elements with
+  the WashU Repeat Browser. Genome Research. 2025.
+  https://doi.org/10.1101/gr.279764.124
+RegistryEntryAdded: "2026-07-23"
+RegistryEntryLastModified: "2026-07-23"
+Resources:
+  - Description: Public S3 bucket containing the WashU Repeat Browser dataset.
+    ARN: arn:aws:s3:::washu-repeat-browser
+    Region: us-east-2
+    Type: S3 Bucket
+    RequesterPays: false
+    AccountRequired: false
+DataAtWork:
+  Tutorials:
+    - Title: "Get to Know a Dataset: WashU Repeat Browser"
+      URL: https://github.com/twlab/Repeat-Browser/blob/main/WashU_Repeat_Browser_AWS/get-to-know-washu-repeat-browser.ipynb
+      NotebookURL: https://github.com/twlab/Repeat-Browser/blob/main/WashU_Repeat_Browser_AWS/get-to-know-washu-repeat-browser.ipynb
+      AuthorName: Ting Wang Laboratory
+      AuthorURL: https://wang.wustl.edu/
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: WashU Repeat Browser
+      URL: https://repeatbrowser.org/
+      AuthorName: Ting Wang Laboratory
+      AuthorURL: https://wang.wustl.edu/
+    - Title: WashU Repeat Browser data-processing workflows
+      URL: https://github.com/twlab/Repeat-Browser_data_processing
+      AuthorName: Ting Wang Laboratory
+      AuthorURL: https://wang.wustl.edu/
+  Publications:
+    - Title: Exploring the epigenome profiles of repetitive elements with the WashU Repeat Browser
+      URL: https://doi.org/10.1101/gr.279764.124
+      AuthorName: Shen J, Cheng S, Purushotham D, Zhuo X, Du AY, Zhang W, et al.
+      AuthorURL: https://pubmed.ncbi.nlm.nih.gov/39984199/
+ADXCategories:
+  - Healthcare & Life Sciences Data
