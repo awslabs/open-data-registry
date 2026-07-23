@@ -1,0 +1,49 @@
+---
+Name: elDORS (v1) Database
+Description: | 
+  The elDORS (elevalted Database of RNA Sequences) database provides a massive-scale, 
+  updated repository of RNA sequence data curated from diverse genomic, non-coding RNA, 
+  and metagenomic sources. Following a rigorous hierarchical redundancy removal workflow, 
+  the dataset features two distinct tiers: the baseline elDORS_raw database (elDORS_raw_v1) containing 
+  1.91 billion sequences, and a clustered and optimized elDORS version (elDORS_v1) containing 1.32 billion sequences 
+  (clustered at 80% sequence identity and 80% overlap, keeping sequences between 10 and 4096 nucleotides). 
+  To bypass severe network bottlenecks, the database is distributed in raw chunked formats, 
+  compressed archives, and pre-indexed pipeline builds optimized for immediate drop-in compatibility 
+  with deep RNA alignment tools like rMSA and the RNAcmap3-elDORS pipeline.
+
+Documentation: https://github.com/duttan710/open-data-examples/blob/main/elDORS_v1_Documentation.md
+Contact: https://github.com/duttan710/open-data-examples/issues
+ManagedBy: "[Nivedita Dutta, Quentin Vicens at Vices Lab, Department of Biology and Biochemistry, University of Houston]"
+UpdateFrequency: Static / Versioned Release (v1.0)
+Tags:
+  - bioinformatics
+  - rna
+  - rna-structure
+  - genomics
+  - metagenomics
+  - multiple-sequence-alignment
+  - structural-biology
+  - rna-language-model-training
+License: "CC BY 4.0"
+Citation: Dutta, N., & Vicens, Q. (2026). elDORS: An elevated Database of RNA Sequences. [PREPRINT] bioRxiv. [https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1](https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1)
+Resources:
+  - Description: |
+      The complete elDORS v1 S3 bucket organized into four distinct database formats:
+      1. Raw Sequence Distribution (/elDORS_v1_raw) - 1.2 TB baseline unclustered FASTA format sequence database.
+      2. Compressed Archive (/GZIPPED_elDORS_v1) - elDORS (clustered at 80% identity, 80% sequence overlap, and filtering for length (10 to 4096), the optimized database contains 1.32 billion sequences (582 GB unzipped FASTA), 170 GB sequence-aware ~9GB chunks 
+      3. rMSA-Optimized Build (/rMSA_optimized_elDORS) - 1.0 TB uncompressed FASTA and BLAST format files optimized for using the database with rMSA ().
+      4. RNAcmap3-Optimized Build (/RNAcmap3_optimized_elDORS) - 861 GB multi-volume BLAST and FASTA format files optimized for RNAcmap3-elDORS split-strategy pipeline.
+    ARN: arn:aws:s3:::<PENDING-AWS-BUCKET-NAME>
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://<PENDING-AWS-BUCKET-NAME>.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Get to Know the elDORS (v1) Database
+      URL: https://github.com/duttan710/elDORS-aws-opendata/blob/main/elDORS_v1_Database/get-to-know-a-dataset.ipynb
+      AuthorName: Nivedita Dutta, Vicens Lab
+  Publications:
+    - Title: "elDORS: An elevated Database of RNA Sequences" 
+      URL: https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1
+      AuthorName: Nivedita Dutta, Quentin Vicens
