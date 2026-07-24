@@ -1,0 +1,98 @@
+Name: Artemis and Image Safari Agricultural Imaging Dataset
+Description: >
+  Artemis and Image Safari are complementary large-scale agricultural imaging
+  datasets containing approximately 7.5 million field images (7,469,220) from
+  smallholder and phenotyping farming systems across 18 crop species in 11
+  countries spanning sub-Saharan Africa, Latin America, and the United States.
+  Artemis (1,387,665 images) pairs imagery with linked agronomic, genotypic,
+  and environmental metadata across four crops and four countries. Image
+  Safari (6,081,555 images) captures diversity across 18 crops and nine
+  countries. A subset of 42,981 images includes organ-level annotations in
+  standard and benchmark tracks. The datasets combine crop imagery, structured
+  metadata, and benchmark annotations to support agricultural foundation
+  models, plant disease detection, growth stage recognition, and
+  cross-environment generalisation research.
+
+Documentation: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md
+
+Contact: alliance-data-helpdesk@cgiar.org
+
+ManagedBy: "[Alliance of Bioversity International and CIAT](https://alliancebioversityciat.org/)"
+
+UpdateFrequency: >
+  New imagery collected during annual field campaigns is reviewed, annotated, and
+  added to the dataset approximately once per year. Annotation updates and quality
+  corrections are versioned and documented in CHANGELOG.md.
+
+Tags:
+  - aws-pds
+  - agriculture
+  - computer vision
+  - machine learning
+  - deep learning
+  - image processing
+  - imaging
+  - geospatial
+  - sustainability
+  - life sciences
+  - labeled
+  - food security
+
+License: >
+  Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0).
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+Citation: >
+  Artemis and Image Safari Agricultural Imaging Dataset was accessed on [DATE] at
+  registry.opendata.aws/artemis-image-safari. Please also cite the associated data
+  descriptor: [PAPER_DOI_URL]
+
+Resources:
+  - Description: >
+      Artemis structured phenotyping images (1,387,665 images, four crops:
+      common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic,
+      and environmental metadata. Field images (JPEG, original acquisition
+      resolution), semantic segmentation masks (PNG), and object-level
+      annotations (COCO JSON) organised by crop species, collection site, and
+      acquisition date. Parquet and CSV metadata tables under each crop
+      directory's metadata/ subtree.
+    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/Artemis
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#Artemis/)'
+  - Description: >
+      Image Safari diversity-driven crop images (6,081,555 images, 18 crops)
+      across nine countries in sub-Saharan Africa. Field images (JPEG, original
+      acquisition resolution), semantic segmentation masks (PNG), and
+      object-level annotations (COCO JSON) organised by crop species,
+      collection site, and acquisition date. Parquet and CSV metadata tables
+      under each crop directory's metadata/ subtree.
+    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/ImageSafari
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#ImageSafari/)'
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Artemis and Image Safari"
+      URL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
+      NotebookURL: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/get-to-know-a-dataset-imagesafari_artemis.ipynb
+      AuthorName: "Alliance of Bioversity International and CIAT"
+      AuthorURL: https://alliancebioversityciat.org/
+      Services:
+        - Amazon S3
+        - Amazon SageMaker
+        - AWS Glue
+        - Amazon Athena
+
+  Publications:
+    - Title: >
+        Artemis and Image Safari: Large imagery datasets targeting crop species and smallholder farming systems in the global south
+      URL: [PAPER_DOI_URL]
+      AuthorName: "Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi A., et al."
+
+ADXCategories:
+  - Environmental Data
+  - Machine Learning & Artificial Intelligence
