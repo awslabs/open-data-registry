@@ -1,6 +1,13 @@
-Name: NOAA nClimGrid and Livneh Gridded Historical Climate Observation Thresholds
+Name: NOAA Climate Resilience Information System CONUS Thresholds 
 Description: |
-  Livneh and nClimGrid are gridded observed historical climatology data that were used in the LOCA2 and STAR-ESDM downscaling process of global climate models as part of the 5th National Climate Assessment. The original Livneh and nClimGrid daily temperature and precipitation observations have been converted to a series of decision-relevant thresholds as part of the [(U.S. Climate Resilience Information System (CRIS))](https://cris.climate.gov/pages/about). These thresholds, such as days with extreme heat or precipitation, have been calculated to match the future projections from LOCA2 and STAR, also available in CRIS.
+  The Climate Resilience Information System (CRIS) provides a variety of historical observations and future projections of a variety of decision-relevant thresholds of temperature and precipitation. 
+  <br><br>
+  LOCA2 and STAR-ESDM are two downscaled climate projection datasets covering the Contiguous United States (CONUS) chosen for inclusion in the 5th U.S. National Climate Assessment. These datasets include 16 models along with a weighted ensemble for the scenarios SSP2-4.5, SSP3-7.0 and SSP5-8.5. The precipitation and temperature variables were processed into thresholds by the NOAA Technical Support Unit. 
+  <br><br>
+  Livneh and nClimGrid are gridded observed historical climatology data that were used in the LOCA2 and STAR-ESDM downscaling process. The original Livneh and nClimGrid daily temperature and precipitation observations have been converted to the same series of thresholds as LOCA2 and STAR. 
+  <br><br>
+  Details on thresholds, models, scenarios, time, and processing methodologies can be found at https://cris.climate.gov/pages/about-the-data
+  <br><br>
 Documentation: |
   For information, please consult https://cris.climate.gov/pages/about-the-data.
 Contact: |
@@ -23,13 +30,23 @@ Tags:
 License: |
   NOAA data disseminated through NODD are open to the public and can be used as desired.<br/> <br/>NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
+  - Description: LOCA2 and STAR-ESDM
+    ARN: arn:aws:s3:::noaa-cris-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-cris-pds.s3.us-west-2.amazonaws.com/index.html)'
+  - Description: New data notifications for LOCA2 and STAR-ESDM, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-west-2:123901341784:NewCRISObject
+    Region: us-east-1
+    Type: SNS Topic
   - Description: nClimGrid and Livneh Gridded Historical Observation Thresholds
     ARN: arn:aws:s3:::noaa-cris-hist-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-cris-hist-pds.s3.amazonaws.com/index.html)'
-  - Description: New data notifications for nClimGride and Livneh Gridded Historical Observation Thresholds, only Lambda and SQS protocols allowed
+  - Description: New data notifications for nClimGrid and Livneh Gridded Historical Observation Thresholds, only Lambda and SQS protocols allowed
     ARN: arn:aws:sns:us-west-2:123901341784:NewCRIS-HISTObject
     Region: us-east-1
     Type: SNS Topic
