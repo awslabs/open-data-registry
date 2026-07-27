@@ -45,6 +45,21 @@ Resources:
     Type: S3 Bucket
     RequesterPays: false
     AccountRequired: false
+  - Description: >-
+      SNS topic for object creation notifications associated with the MassGIS
+      Open Data bucket. The production topic ARN created by the AWS Open Data
+      CloudFormation template will replace the placeholder ARN before the pull
+      request is taken out of draft status.
+    ARN: arn:aws:sns:us-east-1:REPLACE_WITH_AWS_ACCOUNT_ID:REPLACE_WITH_OFFICIAL_MASSGIS_TOPIC_NAME
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset - MassGIS on AWS
+      URL: https://github.com/MassGIS/tutorials/blob/main/get-to-know-a-dataset-massgis-on-aws.ipynb
+      NotebookURL: https://raw.githubusercontent.com/MassGIS/tutorials/main/get-to-know-a-dataset-massgis-on-aws.ipynb
+      AuthorName: MassGIS
+      AuthorURL: https://www.mass.gov/orgs/massgis-bureau-of-geographic-information
 ADXCategories:
   - Environmental Data
   - Public Sector Data
