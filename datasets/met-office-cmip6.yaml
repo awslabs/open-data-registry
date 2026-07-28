@@ -1,0 +1,50 @@
+Name: Met Office Global DCPP hindcast data from CMIP6
+Description: |
+ This product provides global climate hindcast data on the native grids of the HadGEM3-GC31-MM model. The atmospheric and land surface data is presented on an N216 lat-lon grid (432 x 324 longitude/latitudes, 0.833 x 0.556 degrees). The ocean and sea ice data is presented on the ORCA025 tripolar grid (primarily 0.25 degrees; 1440 x 1205 longitude/latitudes).
+
+ The data consists of model output from the Hadley Centre Global Environment Model in the Global Coupled configuration 3.1 (HadGEM3-GC3.1), as part of the Decadal Climate Prediction Project  dcppA-hindcast experiment within the sixth Coupled Model Intercomparison Project (CMIP6).
+
+ The hindcasts (climate simulations initialised from historical data at a specified point in time) start in 1960 through to 2015. Each is typically 10 years long with 10 ensemble members for each start date.[EW2.1][EW2.2] An ensemble of simulations was run, using different initial conditions for each member, to allow users of the data to understand and quantify levels of uncertainty.
+
+ This data has previously been published to [ESGF]( https://esgf-ui.ceda.ac.uk/search?project=CMIP6&activeFacets=%7B%22institution_id%22%3A%22MOHC%22%2C%22activity_id%22%3A%22DCPP%22%2C%22experiment_id%22%3A%22dcppA-hindcast%22%7D) as part of CMIP6 and is presented here in an optimised netCDF format through application of the [CMIP7 repacking tools](https://github.com/NCAS-CMS/cmip7_repack).
+
+ Variables included are documented on the github wiki. ( https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/wiki) This also includes a table describing associated metadata.
+
+Documentation: "(https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast)"
+Contact: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - oceans
+  - land
+  - ice
+  - geospatial
+  - aws-pds
+  - sustainability
+  - CMIP6
+License: CMIP6 data included is licensed under CC-BY 4.0 (see [here](https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html).  
+Citation: |
+ Hermanson, Leon (2020). MOHC HadGEM3-GC31-MM model output prepared for CMIP6 DCPP dcppA-hindcast. Version YYYYMMDD[1]. Distributed via ASDI, equivalent to ESGF data published via doi:[10.22033/ESGF/CMIP6.5892](http://doi.org/10.22033/ESGF/CMIP6.5892)
+
+ [1] please use the version number corresponding to the data
+Resources: 
+  - Description: CMIP6 standards-compliant netCDF data 
+    ARN: arn:aws:s3:::met-office-cmip6
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-cmip6.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Examples coming soon
+      URL: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/tree/main/examples/get-to-know-met-office-dcpp-data.ipynb 
+      NotebookURL: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/tree/main/examples/get-to-know-met-office-dcpp-data.ipynb
+      AuthorName: matthew-mizielinski
+      AuthorURL: https://github.com/matthew-mizielinski
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
