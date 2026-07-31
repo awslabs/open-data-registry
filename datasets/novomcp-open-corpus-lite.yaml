@@ -1,0 +1,37 @@
+Name: NovoMCP Open Corpus (lite)
+Description: >-
+  122,454,458 PubChem compounds with RDKit physicochemical descriptors,
+  ~30 ADMET/toxicity predictions (NovoMCP models, trained on the public
+  Therapeutics Data Commons benchmark), and PAINS structural-alert flags. One row
+  per PubChem CID, stored as Apache Parquet (Snappy) for direct in-place querying
+  (Athena, DuckDB, PyArrow, pandas). Computed properties and model predictions for
+  research use — not experimental measurements or regulatory determinations.
+Documentation: https://github.com/NovoMCP/open-data-examples/tree/main/novomcp-open-corpus-lite
+Contact: https://github.com/NovoMCP/novomcp/issues
+ManagedBy: "[NovoMCP](https://github.com/NovoMCP)"
+UpdateFrequency: Static release; refreshed periodically as models improve (versioned).
+Tags:
+  - chemistry
+  - life sciences
+  - machine learning
+License: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: Parquet shards (1409 files, 27.4 GB, 122,454,458 rows x 59 columns)
+    ARN: arn:aws:s3:::novomcp-open-corpus/novomcp-open-corpus-lite/
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: NovoMCP Open Corpus (lite)"
+      URL: https://github.com/NovoMCP/open-data-examples/blob/main/novomcp-open-corpus-lite/get-to-know-a-dataset.ipynb
+      AuthorName: Ari Harrison, NovoMCP
+      AuthorURL: https://github.com/NovoMCP
+  Tools & Applications:
+    - Title: NovoMCP engine (open computational-chemistry engine that produced this corpus)
+      URL: https://github.com/NovoMCP/novomcp
+    - Title: Kaggle mirror
+      URL: https://www.kaggle.com/datasets/novomcp/novomcp-corpus-lite-122m
+  Publications:
+    - Title: "NovoMCP Open Corpus (lite): 122M compounds (Zenodo record, DOI)"
+      URL: https://doi.org/10.5281/zenodo.21710895
+      AuthorName: Ari Harrison, NovoMCP
