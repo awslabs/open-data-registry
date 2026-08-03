@@ -16,6 +16,20 @@ Description: |
     - Projection: 1983 Contiguous USA Albers projection (EPSG:5070)
   <br><br>
   
+  <b>NOTICE: Upcoming AWS S3 Directory Restructuring:</b><br>
+  Water level and wave datasets resulting from the computation, assimilation, validation, and optimization reanalysis datasets. All products are available in NetCDF (.nc) format:
+  - Effective Date: May - September, 2026
+  
+  - Changes: CORA datasets are being restructured within NOAA’s [S3 Directory Catalogs](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html) to support the addition of new domains, derived data, and product application. Before this point, datasets were stored by version to support prototyping. As production and application evolve, this change supports a more stable long-term infrastructure. 
+  
+  - CORA Datasets will be rearranged by 
+      - Domain: CORA-GEC, CORA-Pac, etc. 
+      - Format:  Native grid, centroid, and 500m grid, etc. 
+      - Origin: Direct model output or a datasets derived from model outputs (E.g. Shoreline datasets, derived daily and monthly maximums, high tide flood predictions, etc.)
+  
+  - Impacts: The CORA_V1.1_intake.yml file will be updated for new file paths for use with GitHub Repository Notebooks, and/or hard-coded data paths should be updated to reflect new structure.
+  <br><br>
+  
   <b>Datasets:</b><br>
   Water level and wave datasets resulting from the computation, assimilation, validation, and optimization reanalysis datasets. All products are available in NetCDF (.nc) format:
   - fort.63.nc - Water level elevation
