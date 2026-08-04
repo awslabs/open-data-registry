@@ -4,12 +4,14 @@ Description:
         This dataset comprises semantically segmented images, semantic
         point clouds, and 3D bounding boxes. In addition, it contains
         unlabelled 360 degree camera images, lidar, and bus data for
-        three sequences. We hope this dataset will further facilitate
+        three sequences. The dataset supports learning tasks such as
+        semantic segmentation, 3D object detection, SLAM, and depth
+        estimation. We hope this dataset will further facilitate
         active research and development in AI, computer vision, and
         robotics for autonomous driving.
-Contact: aevdrivingdataset@audi.de
-Documentation: http://a2d2.audi
-ManagedBy: "[Audi AG](http://a2d2.audi/)"
+Contact: a2d2-dataset@googlegroups.com
+Documentation: https://a2d2-dataset.github.io
+ManagedBy: Mentar Mahmudi, Jakob Geyer, Lorenz Hauswald
 UpdateFrequency:
         The dataset may be updated with additional or corrected data
         on a need-to-update basis.
@@ -24,12 +26,19 @@ Tags:
         - aws-pds
 License: https://creativecommons.org/licenses/by-nd/4.0/
 Resources:
-  - Description: http://a2d2.audi
+  - Description: Original distribution as tar archives
     ARN: arn:aws:s3:::aev-autonomous-driving-dataset
+    Region: eu-central-1
+    Type: S3 Bucket
+  - Description: Extracted per-file mirror of the dataset
+    ARN: arn:aws:s3:::audi-autonomous-driving-dataset
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
+    - Title: A2D2 Python tutorial notebook
+      URL: https://nbviewer.org/urls/aev-autonomous-driving-dataset.s3.eu-central-1.amazonaws.com/tutorial.ipynb
+      AuthorName: A2D2 Team, Audi Electronics Venture GmbH
     - Title: Autonomous Driving Data Service (ADDS)
       URL: https://github.com/aws-samples/amazon-eks-autonomous-driving-data-service
       AuthorName: Ajay Vohra, Amazon

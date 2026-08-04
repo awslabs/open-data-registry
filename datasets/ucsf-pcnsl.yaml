@@ -1,0 +1,43 @@
+Name: UCSF Primary Central Nervous System Lymphoma MRI Dataset
+Description: >
+  This BIDS-formatted dataset provides multimodal brain MRI data from 150 patients with primary
+  central nervous system lymphoma (PCNSL), including T1-weighted, contrast-enhanced T1-weighted,
+  FLAIR, and ADC sequences. The dataset includes expert-annotated
+  lesion segmentations with radiomic features, along with anonymized clinical data including
+  demographics, diagnosis history, and medications.
+Documentation: https://github.com/rauschecker-sugrue-labs/UCSF-PCNSL
+Contact: "[Andreas Rauschecker](andreas.rauschecker@ucsf.edu)"
+ManagedBy: "[BRAIN Lab](https://brainlab.ucsf.edu/)"
+UpdateFrequency: ad hoc
+Tags:
+  - aws-pds
+  - cancer
+  - life sciences
+  - magnetic resonance imaging
+  - medicine
+  - medical imaging
+  - radiology
+  - neuroimaging
+  - brain images
+License: https://creativecommons.org/licenses/by/4.0/
+Citation:
+Resources:
+  - Description: UCSF PCNSL MRI Data on S3
+    ARN: arn:aws:s3:::ucsf-dmi/pcnsl-dataset_v1.0.zip
+    Region: us-west-1
+    Type: S3 Bucket
+    ControlledAccess: https://imagingdatasets.ucsf.edu/dataset/4
+  - Description: Notifications for new PCNSL MRI data
+    ARN: arn:aws:sns:us-west-1:905542596225:ucsf-dmi-object_created
+    Region: us-west-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: PCNSL Data Access Tutorial
+      URL: https://github.com/rauschecker-sugrue-labs/UCSF-PCNSL
+      AuthorName: Michael Francis Romano
+      AuthorURL: https://scholar.google.com/citations?user=WeaMpL0AAAAJ&hl=en
+      NotebookURL: https://github.com/rauschecker-sugrue-labs/UCSF-PCNSL/blob/main/get-to-know-a-dataset-pcnsl.ipynb
+DeprecatedNotice:
+ADXCategories:
+  - Healthcare & Life Sciences Data

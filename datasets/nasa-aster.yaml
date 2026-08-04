@@ -1,0 +1,28 @@
+Name: NASA aster Project
+Description: |
+  This dataset contains a simulated rasterized water surface elevation and inundation-extent product to be provided by the Surface Water and Ocean Topography (SWOT) mission. SWOT will provide a global coverage but this simulated subset focuses on the North America continent. This is a derived product through resampling the upstream dataset L2_HR_PIXC_V1 and L2_HR_PIXCVEC_V1 onto a uniform grid over the North America continent. A uniform grid is superimposed onto the pixel cloud from the source products, and all pixel-cloud samples within each grid cell are aggregated to produce a single value per raster cell. The raster data are produced geographically fixed tiles at resolutions of 100 m and 250 m in a Universal Transverse Mercator projection grid. Note that this is a simulated SWOT product and not suited for any scientific exploration.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/data/instruments/aster
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SWOT_SIMULATED_NA_CONTINENT_L2_HR_RASTER_V1 v1.0 - This dataset contains a simulated rasterized water surface elevation and inundation-extent product to be provided by the Surface Water and Ocean Topography (SWOT) mission. SWOT will provide a global coverage but this simulated subset focuses on the North America continent."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SWOT_SIMULATED_NA_CONTINENT_L2_HR_RASTER_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

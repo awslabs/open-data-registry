@@ -1,0 +1,89 @@
+Name: NASA LANCE Project
+Description: |
+  ATL13QL is the quick look version of ATL13 and is based on the same algorithms that generate the ATL13 final data products. Once final ATL13 files are available, the corresponding ATL13QL files are removed. ATL13QL provides along-track surface water products for inland water bodies, defined as lakes, reservoirs, bays, estuaries, rivers, and a 7 km near-shore buffer. Data parameters include surface water height statistics and related parameters including significant wave height, transect slope, subsurface signal attenuation, and shallow water bathymetry. Water surface heights are provided as both orthometric height and height referencing the WGS84 ellipsoid.
+  <br>
+
+  #### ATL09QL
+  ATL09QL is the quick look version of ATL09 and is based on the same algorithms that generate the ATL09 final data products. Once final ATL09 files are available, the corresponding ATL09QL files are removed. ATL09QL contains calibrated, attenuated backscatter profiles (CAB), layer-integrated attenuated backscatter, blowing snow, and other parameters including cloud and aerosol layer height and atmospheric characteristics. The data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory.
+  <br>
+
+  #### ATL08QL
+  ATL08QL is the quick look version of ATL08 and is based on the same algorithms that generate the ATL08 final data products. Once final ATL08 files are available, the corresponding ATL08QL files are removed. ATL08QL contains along-track estimates of terrain height, canopy height, and canopy cover, as well as beam and reference parameters. Data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory.
+  <br>
+
+  #### ATL10QL
+  ATL10QL is the quick look version of ATL10 and is based on the same algorithms that generate the ATL10 final data products. Once final ATL10 files are available, the corresponding ATL10QL files are removed. ATL10 contains along-track sea ice freeboard calculated for 10 km swath segments. The data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory.
+  <br>
+
+  #### ATL07QL
+  ATL07QL is the quick look version of ATL07 and is based on the same algorithms that generate the ATL07 final data products. Once final ATL07 files are available, the corresponding ATL07QL files are removed. ATL07 contains along-track sea surface height and sea ice height for segments of variable lengths for all beams as well as fixed 10-meter segments for strong beams. Heights are also computed using the DDA-Bifurcation algorithm for strong beams. The data were acquired by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the ICESat-2 observatory.
+  <br>
+
+  #### SPL1BTB_NRT
+  This Near Real-Time (NRT) data set corresponds to the standard SMAP L1B Radiometer Half-Orbit Time-Ordered Brightness Temperatures (SPL1BTB) product. The data provide calibrated estimates of time-ordered geolocated brightness temperature data measured by the Soil Moisture Active Passive (SMAP) passive microwave radiometer, the SMAP L-band radiometer. These Near Real-Time data are available within three hours of satellite observation. The data are created using the latest available ancillary data and spacecraft and antenna attitude data to reduce latency. The SMAP satellite orbits Earth every two to three days, providing half-orbit, ascending and descending, coverage from 86.4°S to 86.4°N in swaths 1000 km across. Data are stored for approximately two to three weeks. Thus, at any given time, users have access to at least fourteen consecutive days of Near Real-Time data through the NSIDC DAAC. Users deciding between the NRT and standard SMAP products should consider the immediacy of their needs versus the quality of the data required. Near real-time data are provided for operational needs whereas standard products meet the quality needs of scientific research. If latency is not a primary concern, users are encouraged to use the standard science product, SPL1BTB (<a href="https://doi.org/10.5067/ZHHBN1KQLI20">https://doi.org/10.5067/ZHHBN1KQLI20</a>).
+  <br>
+
+  #### SPL2SMP_NRT
+  This Near Real-Time (NRT) data set corresponds to the standard SMAP L2 Radiometer Half-Orbit 36 km EASE-Grid Soil Moisture (SPL2SMP) product. The data provide estimates of global land surface conditions measured by the Soil Moisture Active Passive (SMAP) passive microwave radiometer, the SMAP L-band radiometer. These Near Real-Time data are available within three hours of satellite observation. The data are created using the latest available ancillary data and spacecraft and antenna attitude data to reduce latency. The SMAP satellite orbits Earth every two to three days, providing half-orbit, ascending and descending, coverage from 86.4°S to 86.4°N in swaths 1000 km across. Data are stored for approximately two to three weeks. Thus, at any given time, users have access to at least fourteen consecutive days of Near Real-Time data through the NSIDC DAAC. Users deciding between the NRT and standard SMAP products should consider the immediacy of their needs versus the quality of the data required. Near real-time data are provided for operational needs whereas standard products meet the quality needs of scientific research. If latency is not a primary concern, users are encouraged to use the standard science product SPL2SMP (<a href="https://doi.org/10.5067/LPJ8F0TAK6E0">https://doi.org/10.5067/LPJ8F0TAK6E0</a>).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/data/projects/lance
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ATL13QL v007 - ATL13QL is the quick look version of ATL13 and is based on the same algorithms that generate the ATL13 final data products. Once final ATL13 files are available, the corresponding ATL13QL files are removed."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL13QL/007
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ATL09QL v007 - ATL09QL is the quick look version of ATL09 and is based on the same algorithms that generate the ATL09 final data products. Once final ATL09 files are available, the corresponding ATL09QL files are removed."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL09QL/007
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ATL08QL v007 - ATL08QL is the quick look version of ATL08 and is based on the same algorithms that generate the ATL08 final data products. Once final ATL08 files are available, the corresponding ATL08QL files are removed."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL08QL/007
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ATL10QL v007 - ATL10QL is the quick look version of ATL10 and is based on the same algorithms that generate the ATL10 final data products. Once final ATL10 files are available, the corresponding ATL10QL files are removed."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL10QL/007
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ATL07QL v007 - ATL07QL is the quick look version of ATL07 and is based on the same algorithms that generate the ATL07 final data products. Once final ATL07 files are available, the corresponding ATL07QL files are removed."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL07QL/007
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL1BTB_NRT v105 - This Near Real-Time (NRT) data set corresponds to the standard SMAP L1B Radiometer Half-Orbit Time-Ordered Brightness Temperatures (SPL1BTB) product. The data provide calibrated estimates of time-ordered geolocated brightness temperature data measured by the Soil Moisture Active Passive (SMAP) passive microwave radiometer, the SMAP L-band radiometer."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL1BTB_NRT/105
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL2SMP_NRT v107 - This Near Real-Time (NRT) data set corresponds to the standard SMAP L2 Radiometer Half-Orbit 36 km EASE-Grid Soil Moisture (SPL2SMP) product. The data provide estimates of global land surface conditions measured by the Soil Moisture Active Passive (SMAP) passive microwave radiometer, the SMAP L-band radiometer."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL2SMP_NRT/107
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

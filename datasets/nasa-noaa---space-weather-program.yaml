@@ -1,0 +1,184 @@
+Name: NASA NOAA - SPACE WEATHER PROGRAM Project
+Description: |
+  The Long-Term Data Record (LTDR) produces, validates, and distributes a global land surface climate data record (CDR) that uses both mature and well-tested algorithms in concert with the best-available polar-orbiting satellite data from past to the present. The CDR is critically important to studying global climate change. The LTDR project is unique in that it serves as a bridge that connects data derived from the NOAA Advanced Very High Resolution Radiometer (AVHRR), the EOS Moderate resolution Imaging Spectroradiometer (MODIS), the Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared Imaging Radiometer Suite (VIIRS), and Joint Polar Satellite System (JPSS) VIIRS missions. The LTDR draws from the following eight AVHRR missions: NOAA-7, NOAA-9, NOAA-11, NOAA-14, NOAA-16, NOAA-18, NOAA-19, and MetOp-B. Currently, the project generates a daily surface reflectance product as the fundamental climate data record (FCDR) and derives daily Normalized Differential Vegetation Index (NDVI) and Leaf-Area Index/fraction of absorbed Photosynthetically Active Radiation (LAI/fPAR) as two thematic CDRs (TCDR). LAI/fPAR was developed as an experimental product. The NOAA-07 AVHRR Atmospherically Corrected Normalized Difference Vegetation Index (NDVI) Daily L3 Global 0.05 Deg CMG, short-name N07_AVH13C1 is generated from GIMMS Advanced Processing System (GAPS) BRDF-corrected Surface Reflectance product (N07_AVH01C1). The N07_AVH13C1 product is available in HDF4 file format.
+  <br>
+
+  #### AERDT_L2_VIIRS_NOAA20
+  The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) dark target (DT) aerosol product provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean, and spectral AOT and their size parameters over oceans every 6 minutes, globally. The VIIRS incarnation of the DT aerosol product is based on the same DT algorithm that was developed and used to derive products from the Terra and Aqua missions’ Moderate Imaging Spectroradiometer (MODIS) instruments. Two separate and distinct DT algorithms exist. One helps retrieve aerosol information over ocean (dark in visible and longer wavelengths), while the second aids retrievals over vegetated/dark-soiled land (dark in the visible wavelengths). This orbit-level product (Short-name: AERDT_L2_VIIRS_NOAA20) has an at-nadir resolution of 6 km x 6 km, and progressively increases away from nadir given the sensor’s scanning geometry and Earth’s curvature. Viewed differently, this product’s resolution accommodates 8 x 8 native VIIRS moderate-resolution (M-band) pixels that nominally have ~750 m horizontal pixel size. Hence, the Level-2 Dark Target Aerosol Optical Thickness data product incorporates 64 (750 m) pixels over a 6-minute acquisition. Version 2.1 constitutes the latest collection of the NOAA-20 VIIRS L2 Dark Target Aerosol product and contains improvements over its previous collection (v2.0). For more information consult LAADS product description page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDT_L2_VIIRS_NOAA20 Or, Dark Target aerosol team Page at: https://darktarget.gsfc.nasa.gov/
+  <br>
+
+  #### FSNRAD_L2_VIIRS_CRIS_NOAA20
+  The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with the High Resolution Infrared Radiation Sounder (HIRS) and the Moderate resolution Imaging Spectroradiometer (MODIS) and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution). These spectral bands are similar to the MODIS spectral bands. The fusion radiances, and look-up tables required to compute the related brightness temperatures, are stored in compressed NetCDF4 files of 6-minutes duration. This L2 NOAA-20 VIIRS+CrIS product release relates to Version-2.0 (v2.0) collection, which has undergone some improvements over its previous version. In the v2.0 Fusion product, scanlines are checked for quality instead of the entire input granule as was done in the previous version of this product. Such a process has helped salvage and use granules with continuous blocks of good data with good calibration. The v2.0 product also includes a couple of improvements to the VIIRS-CrIS collocation. The first relates to how VIIRS scan sync loss events are addressed while the other correctly characterizes VIIRS pixels that should have been identified as falling within a CrIS Field-of-View. A final improvement in the v2.0 product attempts to correct an artifact detected over warm, dry surfaces in the water vapor channels that are derived using the MODIS Band-27 and -28 response functions that apparently manifest signs of surface features that should not exist for these channels. Check the User Guide for further details on these improvements. The L2 VIIRS+CrIS Fusion product has a horizontal pixel size of 750 m, which is the native VIIRS moderate-resolution (M) band pixel-size. Consult the VIIRS+CrIS Fusion product User Guide (https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/viirs/VIIRSCrISFusionUserGuidev1.11.pdf) for additional information regarding this product’s algorithm, file format, global and data-field attributes, quality control flags, etc.
+  <br>
+
+  #### AERDT_L2_VIIRS_NOAA21
+  The NOAA-21 Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) dark target (DT) aerosol product provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean, and spectral AOT and their size parameters over oceans every 6 minutes, globally. The VIIRS incarnation of the DT aerosol product is based on the same DT algorithm that was developed and used to derive products from the Terra and Aqua missions’ Moderate Imaging Spectroradiometer (MODIS) instruments. Two separate and distinct DT algorithms exist. One helps retrieve aerosol information over ocean (dark in visible and longer wavelengths), while the second aids retrievals over vegetated/dark-soiled land (dark in the visible wavelengths). This orbit-level product (Short-name: AERDT_L2_VIIRS_NOAA21) has an at-nadir resolution of 6 km x 6 km, and progressively increases away from nadir given the sensor’s scanning geometry and Earth’s curvature. Viewed differently, this product’s resolution accommodates 8 x 8 native VIIRS moderate-resolution (M-band) pixels that nominally have ~750 m horizontal pixel size. Hence, the Level-2 Dark Target Aerosol Optical Thickness data product incorporates 64 (750 m) pixels over a 6-minute acquisition. Version 2.1 constitutes the first collection of the L2 Dark Target Aerosol product derived from the NOAA-21 VIIRS observations. For more information consult LAADS product description page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDT_L2_VIIRS_NOAA21 Or, Dark Target aerosol team Page at: https://darktarget.gsfc.nasa.gov/
+  <br>
+
+  #### FSNRAD_L2_VIIRS_CRIS_SNPP
+  The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with HIRS and MODIS and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution). These spectral bands are similar to the MODIS spectral bands. This L2 SNPP VIIRS+CrIS product release relates to Version-2.0 (v2.0) collection, which has undergone some improvements over its previous version. In the v2.0 Fusion product, scanlines are checked for quality instead of the entire input granule as was done in the previous version of this product. Such a process has helped salvage and use granules with continuous blocks of good data with good calibration. The v2.0 product also includes a couple of improvements to the VIIRS-CrIS collocation. The first relates to how VIIRS scan sync loss events are addressed while the other correctly characterizes VIIRS pixels that should have been identified as falling within a CrIS Field-of-View. A final improvement in the v2.0 product attempts to correct an artifact detected over warm, dry surfaces in the water vapor channels that are derived using the MODIS Band-27 and -28 response functions that apparently manifest signs of surface features that should not exist for these channels. Check the User Guide for further details on these improvements. The fusion radiances, and look-up tables required to compute the related brightness temperatures, are stored in compressed NetCDF4 files of 6-minutes duration. The L2 VIIRS+CRiS Fusion product has a horizontal pixel size of 750m, which is the native VIIRS moderate-resolution (M) band pixel-size. Consult the VIIRS+CRiS Fusion product User Guide for additional information regarding this product’s algorithm, file format, global and data-field attributes, quality control flags, etc.
+  <br>
+
+  #### VJ104ANC
+  The VIIRS/JPSS1 Aerosol Daily L3 Global 0.05 Deg CMG, Short-name VJ104ANC product provides VIIRS aerosol, air temperature, ozone and water vapor data at 0.05-degree resolution. This product is based on a Climate Modeling Grid (CMG) for the purpose of being used in climate simulation models. This is derived by using a weighted average of the best quality observation form only daytime data from Level 2 product, VJ104_L2. This daily product record starts from January 5th, 2018. This L3 daily product, in HDF5 file format , contains 5 Science Data Set (SDS) layers.
+  <br>
+
+  #### CLDMSK_L2_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Mask and Spectral Test Results 6-Min L2 Swath 750m product Mask is one of three continuity products designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDMSK_L2_VIIRS_NOAA20 is the shortname for the NOAA-20 VIIRS incarnation of the Cloud Mask continuity product derived from the MODIS-VIIRS cloud mask (MVCM) algorithm, which itself is based on the MODIS (MOD35) algorithm. MVCM describes a continuity algorithm that is central to both MODIS data (from Terra and Aqua missions) and VIIRS data (from Suomi National Polar-orbiting Partnership (SNPP) and Joint Polar Satellite System missions). Please bear in mind that the term MVCM does not appear as an attribute within the product’s metadata. Implemented to consistently handle MODIS and VIIRS inputs, the NOAA-20 VIIRS collection-1 products use calibration-adjusted NASA VIIRS L1B as inputs. The nominal spatial resolution of the NOAA-20 VIIRS L2 Cloud mask is 750 meters. For more information consult Product Page at: https://cimss.ssec.wisc.edu/MVCM/
+  <br>
+
+  #### CLDPROP_L2_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Properties 6-min L2 Swath 750m product is a continuity product similar to its counterpart product from the Suomi National Polar-orbiting Partnership (SNPP) VIIRS. Judiciously leveraging a common set of spectral channels, they help sustain the long-term records of both MODIS and VIIRS heritages. A commonly applicable algorithm to both MODIS and VIIRS inputs is the hallmark of this continuity approach. CLDPROP_L2_VIIRS_NOAA20 is the shortname for the NOAA20 VIIRS incarnation of the orbital swath-based Cloud Properties continuity product. For more information, visit product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/CLDPROP_L2_VIIRS_NOAA20
+  <br>
+
+  #### CLDPROPCOSP_D3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Properties COSP Level 3 daily, 1x1 degree grid product is a new L3 CLDPROP COSP Cloud product with short-name CLDPROPCOSP_D3_VIIRS_NOAA20. It contains VIIRS NOAA-20 cloud mask, cloud top, and cloud optical retrieval data over daily timeframe. It provides a set of custom cloud-related parameters for better comparison with climate model output. The “COSP” acronym in the short-name stands for Cloud Feedback Model Intercomparison Project (CFMIP) Observation Simulator Package. Provided in netCDF4 format, it contains 32 aggregated science data sets (SDS/parameters). Consult the CLDPROPCOSP User Guide for details regarding how the L3 daily statistics are computed, and to learn more about the gridding and sampling protocols specific to this product and a number of other topics germane to the user community. The collection of this product starts from February 17, 2018 and includes 365 granules each calendar year.
+  <br>
+
+  #### CLDPROPCOSP_M3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Properties COSP Level 3 monthly, 1x1 degree grid product is a new L3 CLDPROP COSP Cloud product with short-name CLDPROPCOSP_M3_VIIRS_NOAA20. It contains VIIRS SNPP cloud mask, cloud top, and cloud optical retrieval data over monthly timeframe. It provides a set of custom cloud-related parameters for better comparison with climate model output. The “COSP” acronym in the short-name stands for Cloud Feedback Model Intercomparison Project (CFMIP) Observation Simulator Package. Provided in netCDF4 format, it contains 32 aggregated science data sets (SDS/parameters). Consult the CLDPROPCOSP User Guide for details regarding how the L3 monthly statistics are computed, and to learn more about the gridding and sampling protocols specific to this product and a number of other topics germane to the user community. The collection of this product starts from March 1, 2018 and includes 12 granules each calendar year.
+  <br>
+
+  #### CLDPROP_M3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Properties Level 3 monthly, 1x1 degree grid product, shortname CLDPROP_M3_VIIRS_NOAA20, is a continuity product designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDPROP is used to represent Cloud Properties, which includes both Cloud-Optical Property (COP) and Cloud-Top Property parameters. This product ensures continuity of approach through a common algorithm that is applicable to both MODIS and VIIRS data by leveraging only those spectral channels that are common to both instruments. For more information, visit product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/CLDPROP_M3_VIIRS_NOAA20
+  <br>
+
+  #### AERDB_L2_VIIRS_NOAA20
+  The VIIRS/NOAA20 Deep Blue Aerosol L2 6-Min Swath 6 km product from the Visible Infrared Imaging Radiometer Suite (VIIRS) determines atmospheric aerosol loading for daytime cloud-free snow-free scenes. This orbit-level product (Short-name: AERDB_L2_VIIRS_ NOAA20) has an at-nadir resolution of 6 km x 6 km, and progressively increases away from nadir given the sensor’s scanning geometry and Earth’s curvature. Viewed differently, this product’s resolution accommodates 8 x 8 native VIIRS moderate-resolution (M-band) pixels that nominally have ~750 m horizontal pixel size. The L2 Deep Blue AOT data products, at 550 nm reference wavelengths, are derived from particular VIIRS bands using two primary AOT retrieval algorithms: Deep Blue algorithm over land, and the Satellite Ocean Aerosol Retrieval (SOAR) algorithm over ocean. Although this product is called Deep Blue based on retrievals for the land algorithm, the data includes over-water retrievals as well. The Deep Blue algorithm draws its heritage from previous applications to retrieve AOT from Sea‐viewing Wide Field‐of‐view Sensor (SeaWiFS) over both land and ocean and Moderate Resolution Imaging Spectroradiometer (MODIS) measurements over land. This L2 description pertains to the VIIRS Deep Blue Aerosol Version 2.0 (V2.0) product, whose record starts from February 17, 2018. The L2 netCDF product, acquired every 6 minutes, contains 55 Science Data Set (SDS) layers. The V2.0 VIIRS deep blue aerosol products are available from both NOAA20 and SNPP platforms. Significant changes have been made to the V2.0 Deep Blue/SOAR algorithms to further improve the data quality. A number of other improvements and changes have been added that can be found from Product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDB_L2_VIIRS_NOAA20 Consult the VIIR Deep Blue product user guide for additional information regarding the global attributes, data field attributes, quality flags, software to handle and use these data products, etc., at: https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Deep_Blue_Aerosol_User_Guide_v2.pdf
+  <br>
+
+  #### AERDB_D3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Deep Blue Level 3 daily aerosol data, 1x1 degree grid, Short-name AERDB_D3_VIIRS_NOAA20 product is derived from the Version-2.0 (V2.0) L2 6-minute swath-based products (AERDB_L2_VIIRS_NOAA20), and is provided in a 1x1 degree horizontal resolution grid. Each data field, in most cases, represents the arithmetic mean of all the cells whose latitude and longitude coordinates positions them within each grid element’s bounding limits. Other measures like standard deviation are also provided. This aggregated product is derived only using the best-estimate, QA-filtered retrievals. Using only cells that were measured on the day of interest, the algorithm requires at least three retrieved measurements to render a given grid as valid on any given day. This daily product record starts from January 5th, 2018. This L3 daily product, in netCDF, contains 45 Science Data Set (SDS) layers. For more information about the product and Science Data Set (SDS) layers, consult product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDB_D3_VIIRS_NOAA20 Or Consult Deep Blue aerosol team Page at: https://deepblue.gsfc.nasa.gov
+  <br>
+
+  #### AERDB_M3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Deep Blue Level 3 monthly aerosol data, 1x1 degree grid, Short-name AERDB_M3_VIIRS_NOAA20 product is derived from the Version-2.0 (V2.0) daily L3 gridded products (AERDB_D3_VIIRS_NOAA20), and is provided in a 1 x 1 degree horizontal resolution grid. Arithmetic mean values from the daily L3 gridded products also provide the basis to derive a complement of statistics for the monthly aggregated products. To exclude poorly sampled grid elements, the algorithm requires at least 3 valid days’ worth of data to render a given monthly grid element as valid. This monthly product record starts from January 5th, 2018. This L3 monthly product, in netCDF format, contains 45 Science Data Set (SDS) layers that are named identical to the SDSs in the daily L3 product. For more information about the product and Science Data Set (SDS) layers, consult product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/AERDB_M3_VIIRS_NOAA20 Or Consult Deep Blue aerosol team Page at: https://deepblue.gsfc.nasa.gov
+  <br>
+
+  #### CLDMSK_L2_VIIRS_NOAA21
+  The National Oceanic and Atmospheric Administration (NOAA-21) Visible Infrared Imaging Radiometer Suite (VIIRS) NASA Level-2 (L2) Cloud Mask (VIIRS/NOAA21 Cloud Mask and Spectral Test Results 6-Min L2 Swath 750m) product is one of four continuity products designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDMSK_L2_VIIRS_NOAA21 is the short-name for the NOAA-21 VIIRS incarnation of the Cloud Mask continuity product derived from the MODIS-VIIRS cloud mask (MVCM) algorithm, which itself is based on the MODIS (MOD35) algorithm. The MVCM describes a continuity algorithm that is central to both MODIS data (from Terra and Aqua missions) and VIIRS data (from Suomi National Polar-orbiting Partnership (SNPP) and Joint Polar Satellite System missions). Please bear in mind that the term MVCM does not appear as an attribute within the product’s metadata. Implemented to consistently handle MODIS and VIIRS inputs, the NOAA-21 VIIRS collection-1 products use calibration-adjusted NASA VIIRS L1B as inputs. The nominal spatial resolution of the NOAA-21 VIIRS L2 Cloud mask is 750 meters. The L2 netCDF product is acquired and processed every 6 minutes. For more information consult Product Page at: https://cimss.ssec.wisc.edu/MVCM/
+  <br>
+
+  #### CLDPROP_D3_VIIRS_NOAA20
+  The VIIRS/NOAA20 Cloud Properties Level 3 daily, 1x1 degree grid product, shortname CLDPROP_D3_VIIRS_NOAA20, is a continuity product designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. The Cloud Properties in this product includes both Cloud-Optical Property (COP) and Cloud-Top Property parameters. This product ensures continuity of approach through a common algorithm that is applicable to both MODIS and VIIRS data by leveraging only those spectral channels that are common to both instruments. For more information, visit product page at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/CLDPROP_D3_VIIRS_NOAA20
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- hdf
+- hdf5
+- ice
+- netcdf
+- oceans
+- satellite imagery
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "N07_AVH13C1 v6 - The Long-Term Data Record (LTDR) produces, validates, and distributes a global land surface climate data record (CDR) that uses both mature and well-tested algorithms in concert with the best-available polar-orbiting satellite data from past to the present. The CDR is critically important to studying global climate change."
+  ARN: arn:aws:s3:::prod-lads/N07_AVH13C1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "AERDT_L2_VIIRS_NOAA20 v2.1 - The NOAA-20 Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) dark target (DT) aerosol product provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean, and spectral AOT and their size parameters over oceans every 6 minutes, globally. The VIIRS incarnation of the DT aerosol product is based on the same DT algorithm that was developed and used to derive products from the Terra and Aqua missions’ Moderate Imaging Spectroradiometer (MODIS) instruments."
+  ARN: arn:aws:s3:::prod-lads/AERDT_L2_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "FSNRAD_L2_VIIRS_CRIS_NOAA20 v2 - The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with the High Resolution Infrared Radiation Sounder (HIRS) and the Moderate resolution Imaging Spectroradiometer (MODIS) and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution)."
+  ARN: arn:aws:s3:::prod-lads/FSNRAD_L2_VIIRS_CRIS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "AERDT_L2_VIIRS_NOAA21 v2.1 - The NOAA-21 Visible Infrared Imaging Radiometer Suite (VIIRS) NASA standard Level-2 (L2) dark target (DT) aerosol product provides satellite-derived measurements of Aerosol Optical Thickness (AOT) and their properties over land and ocean, and spectral AOT and their size parameters over oceans every 6 minutes, globally. The VIIRS incarnation of the DT aerosol product is based on the same DT algorithm that was developed and used to derive products from the Terra and Aqua missions’ Moderate Imaging Spectroradiometer (MODIS) instruments."
+  ARN: arn:aws:s3:::prod-lads/AERDT_L2_VIIRS_NOAA21
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "FSNRAD_L2_VIIRS_CRIS_SNPP v2 - The VIIRS-CrIS Data Fusion Level-2 Product is designed to facilitate improved continuity in derived cloud and moisture products realized with HIRS and MODIS and to continue other applications that require IR absorption spectral bands. Based on data fusion with VIIRS (Visible Infrared Imaging Radiometer Suite) and CrIS (Cross-track Infrared Sounder), infrared (IR) absorption band radiances for VIIRS are constructed at 750m spatial resolution (i.e., M-band resolution)."
+  ARN: arn:aws:s3:::prod-lads/FSNRAD_L2_VIIRS_CRIS_SNPP
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "VJ104ANC v2 - The VIIRS/JPSS1 Aerosol Daily L3 Global 0.05 Deg CMG, Short-name VJ104ANC product provides VIIRS aerosol, air temperature, ozone and water vapor data at 0.05-degree resolution. This product is based on a Climate Modeling Grid (CMG) for the purpose of being used in climate simulation models."
+  ARN: arn:aws:s3:::prod-lads/VJ104ANC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDMSK_L2_VIIRS_NOAA20 v1 - The VIIRS/NOAA20 Cloud Mask and Spectral Test Results 6-Min L2 Swath 750m product Mask is one of three continuity products designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDMSK_L2_VIIRS_NOAA20 is the shortname for the NOAA-20 VIIRS incarnation of the Cloud Mask continuity product derived from the MODIS-VIIRS cloud mask (MVCM) algorithm, which itself is based on the MODIS (MOD35) algorithm."
+  ARN: arn:aws:s3:::prod-lads/CLDMSK_L2_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDPROP_L2_VIIRS_NOAA20 v1.1 - The VIIRS/NOAA20 Cloud Properties 6-min L2 Swath 750m product is a continuity product similar to its counterpart product from the Suomi National Polar-orbiting Partnership (SNPP) VIIRS. Judiciously leveraging a common set of spectral channels, they help sustain the long-term records of both MODIS and VIIRS heritages."
+  ARN: arn:aws:s3:::prod-lads/CLDPROP_L2_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDPROPCOSP_D3_VIIRS_NOAA20 v1.1 - The VIIRS/NOAA20 Cloud Properties COSP Level 3 daily, 1x1 degree grid product is a new L3 CLDPROP COSP Cloud product with short-name CLDPROPCOSP_D3_VIIRS_NOAA20. It contains VIIRS NOAA-20 cloud mask, cloud top, and cloud optical retrieval data over daily timeframe."
+  ARN: arn:aws:s3:::prod-lads/CLDPROPCOSP_D3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDPROPCOSP_M3_VIIRS_NOAA20 v1.1 - The VIIRS/NOAA20 Cloud Properties COSP Level 3 monthly, 1x1 degree grid product is a new L3 CLDPROP COSP Cloud product with short-name CLDPROPCOSP_M3_VIIRS_NOAA20. It contains VIIRS SNPP cloud mask, cloud top, and cloud optical retrieval data over monthly timeframe."
+  ARN: arn:aws:s3:::prod-lads/CLDPROPCOSP_M3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDPROP_M3_VIIRS_NOAA20 v1.1 - The VIIRS/NOAA20 Cloud Properties Level 3 monthly, 1x1 degree grid product, shortname CLDPROP_M3_VIIRS_NOAA20, is a continuity product designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDPROP is used to represent Cloud Properties, which includes both Cloud-Optical Property (COP) and Cloud-Top Property parameters."
+  ARN: arn:aws:s3:::prod-lads/CLDPROP_M3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "AERDB_L2_VIIRS_NOAA20 v2 - The VIIRS/NOAA20 Deep Blue Aerosol L2 6-Min Swath 6 km product from the Visible Infrared Imaging Radiometer Suite (VIIRS) determines atmospheric aerosol loading for daytime cloud-free snow-free scenes. This orbit-level product (Short-name: AERDB_L2_VIIRS_ NOAA20) has an at-nadir resolution of 6 km x 6 km, and progressively increases away from nadir given the sensor’s scanning geometry and Earth’s curvature."
+  ARN: arn:aws:s3:::prod-lads/AERDB_L2_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "AERDB_D3_VIIRS_NOAA20 v2 - The VIIRS/NOAA20 Deep Blue Level 3 daily aerosol data, 1x1 degree grid, Short-name AERDB_D3_VIIRS_NOAA20 product is derived from the Version-2.0 (V2.0) L2 6-minute swath-based products (AERDB_L2_VIIRS_NOAA20), and is provided in a 1x1 degree horizontal resolution grid. Each data field, in most cases, represents the arithmetic mean of all the cells whose latitude and longitude coordinates positions them within each grid element’s bounding limits."
+  ARN: arn:aws:s3:::prod-lads/AERDB_D3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "AERDB_M3_VIIRS_NOAA20 v2 - The VIIRS/NOAA20 Deep Blue Level 3 monthly aerosol data, 1x1 degree grid, Short-name AERDB_M3_VIIRS_NOAA20 product is derived from the Version-2.0 (V2.0) daily L3 gridded products (AERDB_D3_VIIRS_NOAA20), and is provided in a 1 x 1 degree horizontal resolution grid. Arithmetic mean values from the daily L3 gridded products also provide the basis to derive a complement of statistics for the monthly aggregated products."
+  ARN: arn:aws:s3:::prod-lads/AERDB_M3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDMSK_L2_VIIRS_NOAA21 v1 - The National Oceanic and Atmospheric Administration (NOAA-21) Visible Infrared Imaging Radiometer Suite (VIIRS) NASA Level-2 (L2) Cloud Mask (VIIRS/NOAA21 Cloud Mask and Spectral Test Results 6-Min L2 Swath 750m) product is one of four continuity products designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. CLDMSK_L2_VIIRS_NOAA21 is the short-name for the NOAA-21 VIIRS incarnation of the Cloud Mask continuity product derived from the MODIS-VIIRS cloud mask (MVCM) algorithm, which itself is based on the MODIS (MOD35) alg..."
+  ARN: arn:aws:s3:::prod-lads/CLDMSK_L2_VIIRS_NOAA21
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "CLDPROP_D3_VIIRS_NOAA20 v1.1 - The VIIRS/NOAA20 Cloud Properties Level 3 daily, 1x1 degree grid product, shortname CLDPROP_D3_VIIRS_NOAA20, is a continuity product designed to sustain the long-term records of both Moderate Resolution Imaging Spectroradiometer (MODIS) and VIIRS heritages. The Cloud Properties in this product includes both Cloud-Optical Property (COP) and Cloud-Top Property parameters."
+  ARN: arn:aws:s3:::prod-lads/CLDPROP_D3_VIIRS_NOAA20
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials

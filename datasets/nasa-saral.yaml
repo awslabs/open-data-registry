@@ -1,0 +1,28 @@
+Name: NASA SARAL Project
+Description: |
+  These data are near-real-time (NRT) (within 7-9 hours of measurement) sea surface height anomalies (SSHA) from the AltiKa altimeter onboard the Satellite with ARgos and ALtiKa (SARAL). SARAL is a French(CNES)/Indian(SARAL) collaborative mission to measure sea surface height using the Ka-band AltiKa altimeter and was launched February 25, 2013. The major difference between these data and the Operational Geophysical Data Record (OGDR) data produced by the project is that the orbit from SARAL has been adjusted using SSHA differences with those from the OSTM/Jason-2 GPS-OGDR-SSHA product at inter-satellite crossover locations. This produces a more accurate NRT orbit altitude for SARAL with accuracy of 1.5 cm (RMS), taking advantage of the 1 cm (radial RMS) accuracy of the GPS-based orbit used for the OSTM/Jason-2 GPS-OGDR-SSHA product. This dataset also contains all data from the project (reduced) OGDR, and improved altimeter wind speeds and sea state bias correction. More information on the SARAL mission can be found at: http://www.aviso.oceanobs.com/en/missions/current-missions/saral.html
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ALTIKA_SARAL_L2_OST_XOGDR vf - These data are near-real-time (NRT) (within 7-9 hours of measurement) sea surface height anomalies (SSHA) from the AltiKa altimeter onboard the Satellite with ARgos and ALtiKa (SARAL). SARAL is a French(CNES)/Indian(SARAL) collaborative mission to measure sea surface height using the Ka-band AltiKa altimeter and was launched February 25, 2013."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/ALTIKA_SARAL_L2_OST_XOGDR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
