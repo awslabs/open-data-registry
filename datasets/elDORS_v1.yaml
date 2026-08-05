@@ -1,7 +1,7 @@
 ---
 Name: elDORS (v1) Database
 Description: | 
-  The elDORS (elevalted Database of RNA Sequences) database provides a massive-scale, 
+  The elDORS (elevated Database Of RNA Sequences) database provides a massive-scale, 
   updated repository of RNA sequence data curated from diverse genomic, non-coding RNA, 
   and metagenomic sources. Following a rigorous hierarchical redundancy removal workflow, 
   the dataset features two distinct tiers: the baseline elDORS_raw database (elDORS_raw_v1) containing 
@@ -25,7 +25,7 @@ Tags:
   - structural-biology
   - rna-language-model-training
 License: "CC BY 4.0"
-Citation: Dutta, N., & Vicens, Q. (2026). elDORS: An elevated Database of RNA Sequences. [PREPRINT] bioRxiv. [https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1](https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1)
+Citation: Dutta, N., & Vicens, Q. (2026). elDORS: An elevated Database Of RNA Sequences. [PREPRINT] bioRxiv. [https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1](https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1)
 Resources:
   - Description: |
       The complete elDORS v1 S3 bucket organized into four distinct database formats:
@@ -33,17 +33,17 @@ Resources:
       2. Compressed Archive (/GZIPPED_elDORS_v1) - elDORS (clustered at 80% identity, 80% sequence overlap, and filtering for length (10 to 4096), the optimized database contains 1.32 billion sequences (582 GB unzipped FASTA), 170 GB sequence-aware ~9GB chunks 
       3. rMSA-Optimized Build (/rMSA_optimized_elDORS) - 1.0 TB uncompressed FASTA and BLAST format files optimized for using the database with rMSA ().
       4. RNAcmap3-Optimized Build (/RNAcmap3_optimized_elDORS) - 861 GB multi-volume BLAST and FASTA format files optimized for RNAcmap3-elDORS split-strategy pipeline.
-    ARN: arn:aws:s3:::<PENDING-AWS-BUCKET-NAME>
+    ARN: arn:aws:s3:::eldors-v1-database
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket](https://<PENDING-AWS-BUCKET-NAME>.s3.amazonaws.com/index.html)'
+      - '[Browse Bucket](https://eldors-v1-database.s3.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: Get to Know the elDORS (v1) Database
       URL: https://github.com/duttan710/elDORS-aws-opendata/blob/main/elDORS_v1_Database/get-to-know-a-dataset.ipynb
       AuthorName: Nivedita Dutta, Vicens Lab
   Publications:
-    - Title: "elDORS: An elevated Database of RNA Sequences" 
+    - Title: "elDORS: An elevated Database Of RNA Sequences" 
       URL: https://www.biorxiv.org/content/10.64898/2026.07.10.737016v1
       AuthorName: Nivedita Dutta, Quentin Vicens
