@@ -1,0 +1,64 @@
+Name: Planette ECMWF IFS S2S Forecast Data
+Description: |
+The ECMWF IFS S2S forecast dataset provides global, daily, probabilistic forecasts of the Earth system, enabling users to assess the likelihood of future climate states. These forecasts are particularly valuable for studying slowly evolving climate patterns.
+
+This dataset is derived from the ECMWF Data Store and includes IFS hindcasts (2006-2025) and forecasts (2026-present) at 1.5°x1.5° global resolution.
+
+The planette ECMWF IFS archive stores this data in cloud native format for easy access and analysis using Zarr format with icechunk for efficient cloud access.
+Documentation: https://github.com/PlanetteAI/planette_ifs_archive/blob/main/README.md
+Contact: kyle.rasch@planette.ai
+ManagedBy: Planette.ai
+UpdateFrequency: Monthly
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+      - weather
+      - forecast
+Tags:
+  - aws-pds
+  - climate
+  - weather
+  - earth observation
+License: |
+  This data is published under a Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+Citation: |
+  European Center for Medium-range Weather Forecast, (2026): S2S global sub-seasonal to seasonal ensemble real-time forecasts from multiple NWP centres since 2015. ECMWF Data Store.
+  https://ecds.ecmwf.int/datasets/s2s-reforecasts?tab=overview
+Resources:
+  - Description: ECMWF IFS Hindcasts and Forecasts (Zarr format)
+    ARN: 
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+  - '[Browse Dataset]()'
+  - Description: 
+    ARN: 
+    Region: us-east-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset: IFS
+      URL: https://github.com/PlanetteAI/planette_ifs_archive/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: "Kyle Rasch"
+      AuthorURL: https://github.com/kyle-rasch
+  Tools & Applications:
+    - Title: xarray
+      URL: https://docs.xarray.dev/
+      AuthorName: xarray Developers
+    - Title: zarr-python
+      URL: https://zarr.dev/
+      AuthorName: zarr Developers
+    - Title: icechunk
+      URL: https://github.com/earth-mover/icechunk
+      AuthorName: earth-mover
+  Publications:
+    - Title: "The Sub-seasonal to Seasonal (S2S) Prediction Project Database."
+      URL: https://doi.org/10.1175/BAMS-D-16-0017.1
+      AuthorName: Vitart et al. 
+    - Title: "ECMWF S2S Forecasts Documentation"
+      URL: https://ecds.ecmwf.int/datasets/s2s-reforecasts?tab=documentation
+      AuthorName: European Centre for Medium-Range Weather Forecasts
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data 
