@@ -1,0 +1,39 @@
+Name: French Business Establishments Survival Rates (SIRENE-derived, commune & NAF level)
+Description: |
+  Survival rates of French business establishments at the municipality (commune)
+  and detailed activity-code (NAF sub-class) level, a granularity the French
+  national statistics institute (INSEE) does not publish (its enterprise survival
+  statistics stop at the regional level). Derived from seven open territorial
+  extracts of the SIRENE register (French national business register): survival
+  cohorts 2014-2021 for the Aix-Marseille-Provence metropolis, Ile-de-France
+  region, Nantes Metropole and Pays de la Loire region (144 communes, identical
+  cohorts, 3- and 5-year horizons, upper-bound caveats quantified), plus
+  active-stock structure (age brackets, non-employer share, top activities) for
+  the Lyon metropolis, Mulhouse agglomeration and Rennes Metropole. Methodology,
+  reproducible API queries and 54 reproducibility checks are published on the
+  documentation page.
+Documentation: https://lescreavores.fr/observatoire-survie-etablissements/
+Contact: contact@lescreavores.fr
+ManagedBy: "[Les Creavores](https://lescreavores.fr)"
+UpdateFrequency: Annually, following SIRENE source updates on territorial open data portals
+Tags:
+  - aws-pds
+  - economics
+  - demographics
+  - socioeconomic
+License: |
+  Etalab Open License 2.0 (Licence Ouverte), same as the source datasets.
+  https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+Resources:
+  - Description: Survival rates per commune (CSV), per NAF sub-class (CSV), by employer status (CSV), and active stock structure (CSV), with README and license
+    ARN: arn:aws:s3:::statetakehome-open-data/fr-sirene-establishment-survival
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials: []
+  Tools & Applications:
+    - Title: Observatoire de la survie des etablissements (interactive explorer, 144 communes x 25 NAF sub-classes)
+      URL: https://lescreavores.fr/observatoire-survie-etablissements/
+      AuthorName: Les Creavores
+      AuthorURL: https://lescreavores.fr
+  Publications: []
