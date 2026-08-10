@@ -1,0 +1,38 @@
+Name: TGen Pangenomics Open Data
+Description: Pangenome graphs, whole-genome alignments, variants, and annotations built from publicly available genome assemblies across multiple species. The dataset includes genome sequences (FASTA), sequencing reads (FASTQ), pangenome graphs (GFA), pangenome alignments (PAF, TPA, 1ALN), genome annotations (BED, GFF, GTF), and genome variants (VCF).
+Documentation: https://github.com/AndreaGuarracino/open-data-examples
+Contact: https://github.com/AndreaGuarracino/open-data-examples/issues
+ManagedBy: '[Translational Genomics Research Institute (TGen)](https://www.tgen.org/)'
+UpdateFrequency: New data is added as new pangenome projects are completed.
+Tags:
+  - aws-pds
+  - genomic
+  - genetic
+  - life sciences
+  - bioinformatics
+  - graph
+  - fasta
+  - fastq
+  - vcf
+License: '[Creative Commons Attribution 4.0 International (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: Pangenome graphs, alignments, variants, and annotations
+    ARN: arn:aws:s3:::tgen-pangenomics
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: 'Get To Know A Dataset: TGen Pangenomics Open Data'
+      URL: https://github.com/AndreaGuarracino/open-data-examples/blob/main/tgen-pangenomics/get-to-know-a-dataset.ipynb
+      AuthorName: Andrea Guarracino
+  Tools & Applications:
+    - Title: PGGB (PanGenome Graph Builder)
+      URL: https://github.com/pangenome/pggb
+      AuthorName: Pangenome community
+    - Title: ODGI (Optimized Dynamic Genome/Graph Implementation)
+      URL: https://github.com/pangenome/odgi
+      AuthorName: Pangenome community
+  Publications:
+    - Title: 'Building pangenome graphs'
+      URL: https://doi.org/10.1038/s41592-024-02430-3
+      AuthorName: Garrison et al. (2024)
