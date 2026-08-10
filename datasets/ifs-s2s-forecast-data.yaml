@@ -1,10 +1,8 @@
-Name: Planette ECMWF IFS S2S Forecast Data
+Name: Planette ECMWF IFS S2S Reforecast Data
 Description: |
-The ECMWF IFS S2S forecast dataset provides global, daily, probabilistic forecasts of the Earth system, enabling users to assess the likelihood of future climate states. These forecasts are particularly valuable for studying slowly evolving climate patterns.
+  Global IFS-CY49R1 S2S reforecasts: 10-member ensemble, 46-day lead, 1.5° atmosphere/surface and 1° ocean, 2006–2025.
 
-This dataset is derived from the ECMWF Data Store and includes IFS hindcasts (2006-2025) and forecasts (2026-present) at 1.5°x1.5° global resolution.
-
-The planette ECMWF IFS archive stores this data in cloud native format for easy access and analysis using Zarr format with icechunk for efficient cloud access.
+  This dataset is derived from the ECMWF Data Store (S2S on-the-fly reforecasts) and published by Planette as a single cloud-native Icechunk/Zarr data cube at s3://planette-ifs-46-day/reforecasts for efficient analysis with xarray.
 Documentation: https://github.com/PlanetteAI/planette_ifs_archive/blob/main/README.md
 Contact: kyle.rasch@planette.ai
 ManagedBy: Planette.ai
@@ -23,23 +21,19 @@ Tags:
 License: |
   This data is published under a Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
 Citation: |
-  European Center for Medium-range Weather Forecast, (2026): S2S global sub-seasonal to seasonal ensemble real-time forecasts from multiple NWP centres since 2015. ECMWF Data Store.
+  European Centre for Medium-Range Weather Forecasts (2026): S2S global sub-seasonal to seasonal ensemble real-time forecasts from multiple NWP centres since 2015. ECMWF Data Store.
   https://ecds.ecmwf.int/datasets/s2s-reforecasts?tab=overview
 Resources:
-  - Description: ECMWF IFS Hindcasts and Forecasts (Zarr format)
-    ARN: 
+  - Description: ECMWF IFS Hindcasts (Zarr format)
+    ARN: arn:aws:s3:::planette-ifs-46-day
     Region: us-east-2
     Type: S3 Bucket
     Explore:
-  - '[Browse Dataset]()'
-  - Description: 
-    ARN: 
-    Region: us-east-2
-    Type: SNS Topic
+    - '[Browse Dataset]()'
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: IFS
-      URL: https://github.com/PlanetteAI/planette_ifs_archive/blob/main/get-to-know-a-dataset.ipynb
+      URL: https://github.com/PlanetteAI/planette_ifs_archive/blob/main/Get_To_Know_A_Dataset:IFS.ipynb
       AuthorName: "Kyle Rasch"
       AuthorURL: https://github.com/kyle-rasch
   Tools & Applications:
@@ -56,9 +50,9 @@ DataAtWork:
     - Title: "The Sub-seasonal to Seasonal (S2S) Prediction Project Database."
       URL: https://doi.org/10.1175/BAMS-D-16-0017.1
       AuthorName: Vitart et al. 
-    - Title: "ECMWF S2S Forecasts Documentation"
+    - Title: "ECMWF S2S Reforecasts Documentation"
       URL: https://ecds.ecmwf.int/datasets/s2s-reforecasts?tab=documentation
       AuthorName: European Centre for Medium-Range Weather Forecasts
 DeprecatedNotice:
 ADXCategories:
-  - Environmental Data 
+  - Environmental Data
