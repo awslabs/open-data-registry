@@ -13,12 +13,15 @@ Description: |
   - Flx: 1-hourly snapshots of surface air-sea flux forcing (wind stress and net heat flux) from the posterior reanalysis for 02-Jan-2007 01:00 through 31-Dec-2024 00:00
   - Avg: Daily averages for 02-Jan-2007 12:00 through 30-Dec-2024 12:00
   <br><br>
+  
   In addition to access here in the Registry of Open Data in AWS, Rutgers University operates a THREDDS (Thematic Real-time Environmental Distributed Data Services) web service at https://tds.marine.rutgers.edu/thredds/roms/doppio/catalog.html that supports geospatial and temporal sub-setting. Access protocols supported are OPeNDAP, WMS and netCDF subsetting. That collection includes: 
+  
   <br><br>
   - monthly averages for 17-Jan-2007 through 15-Dec-2021
   - yearly averages for 2007 through 2021
   - monthly ensemble averages
   <br><br>
+  
   The observations that were assimilated, after quality control and the formation of super-observations as described by Wilkin et al. (2022), can be accessed via an ERDDAP service at https://tds.marine.rutgers.edu/erddap/tabledap/DOPPIO_REANALYSIS_Ver3_OBS.graph. The dataset includes observation type and provenance fields (documented in the ERDDAP metadata) that allow sub-selection by data types (temperate, salinity, velocity, etc.) or observing platform (e.g., Jason altimeter satellite, AVHRR SST, IOOS gliders, etc.). The ERDDAP catalog includes outputs of the DA system in observation space; namely, prior and posterior model errors, and the Copernicus and GOFS values interpolated to the observation position. An observation scale field flags data that were rejected by 4D-Var QC.
 
 Documentation: |
@@ -57,14 +60,14 @@ Tags:
   - marine
 
 Resources:
-  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset NetCDF"
-    ARN: arn:aws:s3:::noaa-nos-cora-pds
+  - Description: "NOAA’s ROMS 'Doppio' Data Assimilative Reanalysis"
+    ARN: arn:aws:s3:::noaa-ioos-roms-doppio-v3-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
-  - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications"
-    ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
+    - '[Browse Bucket](https://noaa-ioos-roms-doppio-v3-pds.s3.amazonaws.com/index.html)'
+  - Description: "New data notifications for ROMS 'Doppio', only Lambda and SQS protocols allowed"
+    ARN: arn:aws:sns:us-east-1:709902155096:NewIOOSRomsDoppioV3Object
     Region: us-east-1
     Type: SNS Topic
 
