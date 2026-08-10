@@ -14,11 +14,14 @@ Tags:
 License: "[Creative Commons Attribution 4.0 International]() https://creativecommons.org/licenses/by/4.0/)"
 Citation:
 Resources:
-  - Description:
-    ARN: TBC
+  - Description: BARPA S3 bucket
+    ARN: arn:aws:s3:::bom-opendata-climate/BARPA/
     Region: ap-southeast-2
     Type: S3 Bucket
-    Explore: TBC
+  - Description: Notification of new data in the bom-opendata-climate bucket
+    ARN: arn:aws:sns:ap-southeast-2:314272288789:bom-opendata-climate-object_created
+    Region: ap-southeast-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset BARPA
@@ -26,17 +29,5 @@ DataAtWork:
       NotebookURL: https://github.com/xcastagn/open-data-examples/blob/master/get-to-know-a-dataset-barpa.ipynb
       AuthorName: Australian Bureau of Meteorology
       AuthorURL: https://www.bom.gov.au/
-      Services:
-  Tools & Applications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
-  Publications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
-DeprecatedNotice:
 ADXCategories:
   - Environmental Data
