@@ -1,0 +1,68 @@
+Name: HESTIA Aggregated Agri-food Life Cycle Assessment (LCA) Data
+Description: |
+  National and global weighted averages of the environmental impacts of agricultural and food
+  production, aggregated from the farm-level cycles published on the HESTIA platform.
+
+  Each release is a self-contained snapshot in JSON-LD: validated aggregated impact assessments with
+  the cycles they describe, those cycles' sites, and every glossary term and bibliographic source any
+  of them reference, so a release resolves without leaving the bucket. Alongside it sits a flat
+  Parquet mirror of the mid-point and end-point indicators, for querying without parsing JSON-LD, and
+  an index mapping product to country to year to aggregation.
+
+  The 2025-05-01 release covers 70 products across 37 countries, spanning 1990-2025, with 54
+  indicators computed under 18 characterisation models (ReCiPe, LC-Impact, Environmental Footprint
+  and others). Releases are added here once they are freely available to everyone.
+Documentation: https://www.hestia.earth/guide/guide-accessing-data-aws-open-data
+Contact: community@hestia.earth
+ManagedBy: "[HESTIA](https://www.hestia.earth/), University of Oxford"
+UpdateFrequency: >-
+  With each HESTIA data release, roughly two to three per year. A release is added here 182 days
+  after its version date, once it is freely available to everyone.
+Collabs: {}
+# Every value below is from tags.yaml in this repository, which is a closed vocabulary. "life cycle
+# assessment", "food" and "emissions" are not in it — the nearest allowed terms are used instead.
+Tags:
+  - aws-pds
+  - agriculture
+  - food security
+  - sustainability
+  - climate
+  - carbon
+  - environmental
+  - life sciences
+  - json
+  - parquet
+License: |
+  Creative Commons Attribution 4.0 International (CC-BY 4.0).
+  https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: Aggregated agri-food LCA data as JSON-LD and Parquet, one folder per release.
+    ARN: arn:aws:s3:::hestia-aggregated-data
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Bucket layout and how to find data](https://www.hestia.earth/guide/guide-accessing-data-aws-open-data)'
+      - '[Browse Bucket](https://hestia-aggregated-data.s3.eu-west-2.amazonaws.com/index.html)'
+  - Description: >-
+      New object notifications, SQS and Lambda protocols only. A release is uploaded object by
+      object and its manifest is written last, so an event for
+      data/jsonld/releases/<version>/manifest.json means that release is complete.
+    ARN: arn:aws:sns:eu-west-2:568256617230:hestia-aggregated-data-object-created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to know the HESTIA aggregated agri-food LCA dataset
+      URL: https://github.com/hestia-earth/hestia-aws-open-data/blob/main/get-to-know-hestia-aggregated-data.ipynb
+      NotebookURL: https://github.com/hestia-earth/hestia-aws-open-data/blob/main/get-to-know-hestia-aggregated-data.ipynb
+      AuthorName: HESTIA
+      AuthorURL: https://www.hestia.earth/
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: HESTIA platform
+      URL: https://www.hestia.earth/
+      AuthorName: HESTIA
+      AuthorURL: https://www.hestia.earth/
+ADXCategories:
+  - Environmental Data
