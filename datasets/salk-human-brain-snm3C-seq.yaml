@@ -1,0 +1,48 @@
+Name: Human Brain snm3C-seq
+Description: The human brain comprises hundreds of epigenomically distinct cell types whose identity is governed by DNA methylation and the three-dimensional folding of the genome, yet these two regulatory layers have rarely been measured jointly across its full anatomical breadth. While transcriptomic censuses have resolved the cellular diversity of the human brain and single-cell methylation and 3D-genome atlases have been generated for the whole mouse brain, a comprehensive joint methylome and 3D-genome atlas of the entire human brain, including subcortical, cerebellar, and brainstem structures that remain underrepresented in existing resources, has been lacking. This gap limits the functional interpretation of non-coding risk variants for neurological and psychiatric disorders, which requires maps that assign regulatory elements to specific cell types, resolve the enhancer-promoter contacts through which distal variants act, and situate these features within disease-relevant anatomical regions. Here we present a multimodal single-cell epigenomic and 3D-genome atlas of the whole human brain, using single-nucleus methyl-3C sequencing (snm3C-seq) to simultaneously profile DNA methylation and chromatin conformation across 12 adult donors. Harmonized to the [HMBA/BICAN] consensus taxonomy and integrated with matched RNA-seq, ATAC-seq, histone-modification, and MERFISH spatial data, this atlas provides a foundational framework for interpreting non-coding genetic variation and for dissecting the cell-type-specific regulatory basis of human brain function and disease.
+Documentation: https://github.com/DingWB/human_brain_snm3C-seq
+Contact: ecker@salk.edu
+ManagedBy: "[Salk Institute](http://www.salk.edu)" 
+UpdateFrequency: New data is added as soon as it is available.
+Tags:
+  - life sciences
+  - genetic
+  - genomic
+  - whole genome sequencing
+  - Whole genome bisulfite sequencing
+  - transcriptomics
+  - fastq
+  - bam
+  - cram
+  - aws-pds
+  - czip
+  - hic
+  - methylation
+  - 3D genome
+License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
+Resources:
+  - Description: Human basal ganglia snm3c-seq dataset
+    ARN: arn:aws:s3:::salk-human-brain-snm3c-seq
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Dataset update notifications
+    ARN: arn:aws:sns:us-west-2:855738613743:salk-human-brain-snm3c-seq-updates
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Github repository
+      URL: https://github.com/DingWB/human_brain_snm3c-seq
+      NotebookURL: https://github.com/DingWB/human_brain_snm3C-seq/blob/main/notebooks/about_datasets.ipynb
+      Services: EC2
+      AuthorName: Wubin Ding
+      AuthorURL: https://github.com/DingWB
+  Tools & Applications:
+    - Title: cytozip, a index-free, chunk-compressed storage for scalable single-cell DNA methylation analysis
+      URL: https://github.com/DingWB/cytozip
+      AuthorName: Wubin Ding
+      AuthorURL: https://github.com/DingWB
+  Publications:
+    - Title: A Multimodal Single-Cell Epigenomic and 3D Genome Atlas of the Human Basal Ganglia
+      URL: https://www.biorxiv.org/content/10.64898/2026.02.12.705594
+      AuthorName: Wubin Ding, Amit Klein, Cindy Tatiana Baez-Becerra, Jonathan A. Rink, Anna Bartlett, Ruoxuan Wang, Qiurui Zeng, Rosa Gomez Castanon, Joseph R. Nery, Emma Osgood, William Owens, Alaina Petrella, Chumo Chen, Andrea Saldana Acerbo, Ariana S. Barcoma, Jiayi Liu, Kaitlyn G. Russo, Kyle W. Knutson, Carissa K. Young, Jackson K. Willier, Cesar Barragan, Jessica Arzavala, Silvia Cho, Jordan Altshul, Derek Chan, Eshaan Soma, Jammy Luo, Manya Jain, Sarah Velazquez, Guha V. Sundaram, Austin C. Manning, Yareli Sanchez, Aleksandra Bikkina, Yuanyuan Fu, Kaushik Komandur, Ethan Doan, Shuai Fu, Carolyn O’Connor, Michelle Liem, Mikayla V. Marrin, Cynthia Rose, Shane N. Alt, Jillian Berry, Joseph Colin Kern, Eric Boone, Wei Tian, Huamin Chen, Yang Xie, Yue Wu, Manoj Hariharan, Kai Li, Lei Chang, Nelson Johansen, Wenjin Zhang, Zoey Zhao, Jesus Flores, Chu-Yi Tai, Jacqueline Olness, Natalie Schenker-Ahmed, Xiao-Ping Liu, Quan Zhu, Brian E. Kalmbach, Rebecca D. Hodge, Trygve E. Bakken, Ed S. Lein, Daofeng Li, Ting Wang, Xiangmin Xu, Bing Ren, Maria Margarita Behrens, Joseph R. Ecker
