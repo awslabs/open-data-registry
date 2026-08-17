@@ -1,0 +1,46 @@
+Name: NASA IMERG - dynamical.org Icechunk Zarr
+Description: |
+    <p>The Integrated Multi-satellitE Retrievals for GPM (IMERG) is a NASA algorithm that merges precipitation estimates from the constellation of passive microwave satellites in the Global Precipitation Measurement (GPM) mission with microwave-calibrated infrared estimates, monthly gauge analyses, and other sources to produce a global, gridded, half-hourly precipitation record. IMERG intercalibrates, merges, and interpolates these inputs onto a 0.1 degree grid spanning the TRMM and GPM satellite eras.</p>
+    <p>These datasets have been translated to cloud-optimized Icechunk Zarr format by <a href="https://dynamical.org">dynamical.org</a>.</p>
+    <ul>
+      <li><a href="https://dynamical.org/catalog/nasa-imerg-analysis-early/">NASA IMERG analysis, early</a> - Global half-hourly precipitation from NASA GPM IMERG Early Run, version 07.</li>
+      <li><a href="https://dynamical.org/catalog/nasa-imerg-analysis-late/">NASA IMERG analysis, late</a> - Global half-hourly precipitation from NASA GPM IMERG Late Run, version 07.</li>
+    </ul>
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NASA IMERG analysis, early: 30 minutes; NASA IMERG analysis, late: 30 minutes"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NASA IMERG Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-nasa-imerg
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-nasa-imerg.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-nasa-imerg-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "NASA IMERG analysis, early — Quickstart"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/nasa-imerg-analysis-early.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/nasa-imerg-analysis-early.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+    - Title: "NASA IMERG analysis, late — Quickstart"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/nasa-imerg-analysis-late.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/nasa-imerg-analysis-late.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
