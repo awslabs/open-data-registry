@@ -1,16 +1,21 @@
 Name: Bureau of meteorology Atmospheric Regional Projections for Australia (BARPA)
-Description: BARPA is a high resolution climate simulations and projections over Australia and its surrounding regions developed by the Australian Bureau of Meteorology, downscaling global projections and global reanalysis (ERA5) using ACCESS as a limited-area dynamical coupled atmosphere-land model - Unified Model (UM) and JULES, spanning 1960 to 2100. <br/ ><br /> BARPA includes':' <br /> BARPA-R, a moderate-scale climate downscaling system based on a horizontal grid spacing of 0.154 degrees (around 17 km). The model is nested inside a global climate model simulation or a global reanalysis. The modelling domain is cropped over 88.0355 to 207.9275 degrees in longitude and -53.5755 to 13.632 degrees in latitude. The model is forced by the sub-daily atmospheric circulation and sea surface temperature from the global climate models (or global reanalyses). <br /> BARPA-C, a convective-scale climate downscaling system based on a horizontal grid spacing of 0.04 degrees (around 4.4 km). The model is nested inside the BARPA-R simulation. The modelling domain covers 107.02 to 160.90 degrees in longitude and -46.69 to -4.01 degrees in longitude.  <br /> BARPA-R Regional Projections, seven priority CMIP6 climate models were chosen for BARPA downscaling based on their performance, data availability, and ability to represent the range of projected Australian rainfall and temperature outcomes, including ACCESS-CM2, ACCESS-ESM1-5, NorESM2-MM, EC-Earth3, CESM2, CMCC-ESM2, MPI-ESM1-2-HR.<br /><br />Use for climate research and beyond, such as training of machine learning models for weather.
+Description: BARPA Projections contains a moderate-resolution (BARPA-R) and a kilometre-scale (BARPA-C) regional climate projections over Australia and surrounding regions. The current collections are developed based on CMIP6 global climate projections. It consists of an ensemble of historical and future climate model fields. It can be used for climate research, impact modelling, developing climatology products, and future likelihood products, driving downstream impact modelling (e.g., hydrological, coastal, and fire), for case studies and stress testing of environments, infrastructure and assets under different future scenarios.<br/ >BARPA includes:<br/ >BARPA-R (Regional) Product':' BARPA-R is a moderate-resolution (17 km) regional climate projections over Australia and the surrounding regions including parts of southeast Asia and New Zealand. The data set includes hourly, 3-hourly, daily and monthly data for temperature, moisture, wind and flux variables at sub-surface, surface, and pressure levels, and heights above surface. The vertical levels include 1000, 950, 925, 850, 700, 600, 500, 400, 300, 250, 200, 150, 100, 70, 50, 30, 20, 10 hPa pressure levels (18) and 10, 50, 100, 150, 200, 250 and 1500 metre above surface.<br/ >BARPA-R Convective Parameters Product':' This BARPA-R based dataset includes 3-hourly data for a collection of convective parameters over Australia. These are diagnostics used to characterise environments favourable for thunderstorms and their associated hazards (heavy rainfall, large hail, damaging wind gusts, and tornadoes). These include':' parcel-based indices such as convective available potential energy (CAPE) and convective inhibition (CIN) for surface-based, mixed-layer (ML), and most-unstable (MU) parcels; thermodynamic parameters such as bulk wind difference (BWD); and composite parameters such as derecho composite (DCP), significant tornado parameter (STP). Daily and monthly mean and maximum values are also available for surface-based CAPE and CIN.<br/ >BARPA-C (Convective-Scale) Product':' BARPA-C is a kilometre-scale (4.4 km) regional climate projection, over Australia. The data set includes 20-minute, hourly, 3-hourly, daily and monthly data for temperature, moisture, wind and flux variables at sub-surface, surface, and pressure levels , and heights above surface. There are additional variables unique to convection-permitting models, namely number of lightning flash, updraft helicity, column-maximum updraft, and derived radar reflectivity. The vertical levels include 1000, 975, 950, 925, 900, 850, 800, 750, 700, 600, 500, 400, 300, 250, 200, 150, 100, 70, 50, 30, 20, 10 hPa pressure levels (22) and 50, 100, 150, 200, 250 and 1500 metre above surface.<br/ >CORDEX-CMIP6-BARPA-R Product':' This dataset is a subset of BARPA-R modelling variables are regridded for CMIP6-CORDEX standard grid AUS-20i. These variables belong to the CMIP6-CORDEX ATMOS CORE variables. They include hourly, daily and monthly data for surface and near-surface variables for pressure, temperature, moisture, wind, precipitation and radiation. The BARPA-R model is registered with source_id BARPA-R1-NN for CORDEX-CMIP6.
+
 Documentation: "[BARPA](https://opus.nci.org.au/spaces/NDP/pages/264241161/BOM+BARPA+py18)"
 Contact: data_governance_office@bom.gov.au
 ManagedBy: "[Bureau of Meteorology](https://www.bom.gov.au/)"
 UpdateFrequency: When needed
 Tags:
-  - climate model
-  - australia
-  - climate simulation
-  - climate projections
+  - Australia
+  - climate-model
+  - climate-simulation
+  - climate-projections
   - meteorology
-  - meteorological data
+  - meteorological-data
+  - weather
+  - atmospheric-science 
+  - hydrology 
+  - environmental-data
 License: "[Creative Commons Attribution 4.0 International]() https://creativecommons.org/licenses/by/4.0/)"
 Citation:
 Resources:
