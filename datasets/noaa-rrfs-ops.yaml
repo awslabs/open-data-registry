@@ -1,0 +1,48 @@
+Name: "NOAA Rapid Refresh Forecast System (RRFS) and RRFS Ensemble Forecast System (REFS) [Operational]"
+Description: |
+  #### Update
+
+  Version 1 of the RRFS and REFS are scheduled to be implemented on October 6th, 2026 per the following [Service Change Notice](https://www.weather.gov/media/notification/pdf_2026/scn26-048_RRFS_and_REFS_Implementation.aab.pdf). Please note that upon the start of the pre-implementation parallel phase, August 12th, 2026, the RRFS/REFS [prototype data feed](https://noaa-rrfs-pds.s3.amazonaws.com/index.html) will no longer be updated.
+  <br/><br/>
+  Users will be able to access the operational data through this bucket or through the feeds noted in the Service Change Notice to receive the RRFS and REFS outputs. Note that the files, filenames, and directory structures in this bucket will align with those described in the Service Change Notice.
+  <br/><br/>
+  Please check back here and monitor [NWS's Service Change Notices](https://www.weather.gov/notification/) for the latest updates as the implementation date nears.
+
+  ---
+  The Rapid Refresh Forecast System (RRFS) is the National Oceanic and Atmospheric Administration’s (NOAA) next generation high-resolution, rapidly-updated deterministic (RRFS) and ensemble prediction system (RRFS Ensemble Forecast System; REFS). The RRFSfeatures a 3 km grid covering North America and includes deterministic forecasts every hour out to 18 hours, with deterministic forecasts to 84 hours and ensemble forecasts to 60 hours four times per day at 00, 06, 12, and 18 UTC. The RRFS and REFS provide guidance to support forecast interests including, but not limited to, aviation, severe convective weather, energy, heavy precipitation, and winter weather on timescales where rapidly-updated guidance is particularly useful.
+  <br/><br/>
+  The RRFS is underpinned by the [Unified Forecast System (UFS)](https://ufs.epic.noaa.gov/), a community-based Earth modeling initiative, and benefits from collaborative development efforts across NOAA, academia, and research institutions.
+ 
+Documentation: https://www.nco.ncep.noaa.gov/pmb/products/rrfs/
+Contact: |
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - weather
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. <br/><br/> NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: Rapid Refresh Forecast System (RRFS) Data
+    ARN: arn:aws:s3:::noaa-rrfs-ops-pds 
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://noaa-rrfs-ops-pds.s3.amazonaws.com/index.html)'
+  - Description: New data notifications for RRFS, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewRRFSObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: "RRFS Products Inventory"
+      URL: https://www.nco.ncep.noaa.gov/pmb/products/rrfs/
+      AuthorName: NWS Central Operations
