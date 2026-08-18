@@ -1,0 +1,141 @@
+Name: NASA ATDD Project
+Description: |
+  This is a subset of AMSR-E rain rate product along CloudSat field of view track. The goal of the subset is to select and return AMSR-E data that are within -100 km across the CloudSat track. Thus resultant subset swath is 45 pixels cross-track. Apart from that, all efforts are made to preserve the original HDF-EOS formatting of the source full-sized data. The Advanced Microwave Scanning Radiometer - Earth Observing System (AMSR-E) instrument on the NASA EOS Aqua satellite provides global passive microwave measurements of terrestrial, oceanic, and atmospheric variables for the investigation of water and energy cycles. The original, full-sized, product is Level-2B swath product (AE_Rain), and it contains instantaneous measurements of rain rate and rain type (convective vs. stratiform), generated from Level-2A brightness temperatures (AE_L2A). The Goddard Space Flight Center (GSFC) Profiling algorithm determines rain rate and type over ocean areas, and a Modified GSFC Profiling algorithm over land. Data are stored in HDF-EOS (HDF4) format, and are available from 18 June 2002 until the AMSR-E instrument was turned off due to antenna problems in October 2011.
+  <br>
+
+  #### MAC04S0
+  This is the narrow-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the narrow-swath subset is to select and return MODIS data that are within +-5 km across the CloudSat track. I.e. the resultant MODIS subset swath is sought to be about 10 km cross-track.However, the original MYD04_L2 has 10-km pixels. Thus, MAC04S0 cross-track width is 2 pixels, the closest on either side of CloudSat track, and the resultant cross-track swath width is about 20 km.Along-track, all MODIS pixels from the original product are preserved. In the stardard product, the MODIS level-2 atmospheric aerosol product provides retrieved ambient aerosol optical properties (e.g., optical thickness and size distribution), mass concentration, look-up table derived reflected and transmitted fluxes, as well as quality assurance and other ancillary parameters, globally over ocean and near globally over land. (The shortname for this product is MAC04S0).
+  <br>
+
+  #### MAC04S1
+  This is the wide-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the wide-swath subset is to select and return MODIS data that are within +-100 km across the CloudSat track. I.e. the resultant MODIS subset swath is sought to be about 200 km cross-track. However, the original MYD04_L2 has 10-km pixels. Thus, MAC04S1 cross-track width is 21 pixels, and the resultant cross-track swath width is about 200 km. Along-track, all MODIS pixels from the original product are preserved. In the standard product, the MODIS level-2 atmospheric aerosol product provides retrieved ambient aerosol optical properties (e.g., optical thickness and size distribution), mass concentration, look-up table derived reflected and transmitted fluxes, as well as quality assurance and other ancillary parameters, globally over ocean and near globally over land. (The shortname for this product is MAC04S1).
+  <br>
+
+  #### MAM04S0
+  This is the MODIS/Aqua subset along MLS field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track. I.e. the resultant MODIS subset swath is sought to be about 200 km cross-track. However, the original MYD04_L2 has 10-km pixels. Thus, MAM04S0 cross-track width is 21 pixels, and the resultant cross-track swath width is about 200 km. Along-track, all MODIS pixels from the original product are preserved. In the stardard product, the MODIS level-2 atmospheric aerosol product provides retrieved ambient aerosol optical properties (e.g., optical thickness and size distribution), mass concentration, look-up table derived reflected and transmitted fluxes, as well as quality assurance and other ancillary parameters, globally over ocean and near globally over land. (The shortname for this product is MAM04S0).
+  <br>
+
+  #### MAM03S0
+  This is the MODIS/Aqua subset along the Microwave Limb Sounder (MLS) field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track. I.e. the resultant MODIS subset swath is about 200 km cross-track. Thus, MAM03S0 cross-track width is 201 pixels. Along-track, all MODIS pixels from the original product are preserved. In the standard product, geolocation fields are calculated for each 1 km MODIS Instantaneous Field of Views (IFOV) for all orbits daily. The locations and ancillary information corresponds to the intersection of the centers of each IFOV from 10 detectors in an ideal 1 km band on the Earth's surface. A digital terrain model is used to model the Earth's surface. The main inputs are the spacecraft attitude and orbit, the instrument telemetry and the digital elevation model. The geolocation fields include geodetic Latitude, Longitude, surface height above geoid, solar zenith and azimuth angles, satellite zenith and azimuth angles, and a land/sea mask for each 1 km sample. Additional information is included in the header to enable the calculation of the approximate location of the center of the detectors of any of the 36 MODIS bands. This product is used as input by a large number of subsequent MODIS products, particularly the products produced by the Land team. (The shortname for this product is MAM03S0).
+  <br>
+
+  #### OMCLDO2_CPR
+  This the OMI/Aura Cloud Pressure and Fraction (O2-O2 Absorption) subset along CloudSat track, for the purposes of the A-Train mission. The original product uses the DOAS technique method. This level-2 global cloud product at the pixel resolution (13x24 km2 at nadir) is based on the spectral fitting of O2-O2 absorption band at 477 nm using DOAS technique. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track. This product contains cloud pressure, cloud fraction, slant column O2-O2 and O3, ring coefficients, uncertainties in derived parameters, terrain and geolocation information, solar and satellite viewing angles, and quality flags. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this Level-2 OMI cloud pressure and fraction (O2-O2 absorption) subset along CloudSat track product is OMCLDO2_CPR)
+  <br>
+
+  #### OMCLDRR_CPR
+  This is the OMI/Aura Cloud Pressure and Fraction (Raman Scattering) subset along CloudSat tracks, for the purposes of the A-Train mission. The original data product uses the Rotational Raman Scattering method. This level-2 global cloud product provides effective cloud pressure and effective cloud fraction that is based on the least square fitting of the Ring spectrum (filling-in of Fraunhofer lines in the range 392 to 398 nm due to rotational Raman scattering). The goal of this subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track. This product also contains many ancillary and derived parameters, terrain and geolocation information, solar and satellite viewing angles, and quality flags. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this Level-2 OMI cloud pressure and fraction subset along CloudSat tracks product is OMCLDRR_CPR)
+  <br>
+
+  #### OMAERUV_CPR
+  This is a CloudSat-collocated subset of the original OMI product OMAERUV, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track of CloudSat. This product also contains many ancillary and derived parameters, terrain and geolocation information, solar and satellite viewing angles, and quality flags. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this CloudSat-collocated OMI Level 2 near-UV aerosol subset is OMAERUV_CPR_003)
+  <br>
+
+  #### OMNO2_CPR
+  This is a CloudSat-collocated subset of the original product OMNO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track of CloudSat. This product also contains many ancillary and derived parameters, terrain and geolocation information, solar and satellite viewing angles, and quality flags. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this CloudSat-collocated OMI Level 2 NO2 subset is OMNO2_CPR_V003)
+  <br>
+
+  #### OMTO3_CPR
+  This is a CloudSat-collocated subset of the original product OMTO3, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track of CloudSat. This product also contains many ancillary and derived parameters, terrain and geolocation information, solar and satellite viewing angles, and quality flags. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this CloudSat-collocated OMI Level 2 Total Ozone Column subset is OMTO3_CPR_V003)
+  <br>
+
+  #### OMSO2_CPR
+  This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track. The resultant OMI subset swath is sought to be about 200 km cross-track of CloudSat. Even though collocated with CloudSat, this subset can serve many other A-Train applications. (The shortname for this CloudSat-collocated subset of the original product OMSO2 Product is OMSO2_CPR_V003) This document describes the original OMI SO2 product (OMSO2) produced from global mode UV measurements of the Ozone Monitoring Instrument (OMI). OMI was launched on July 15, 2004 on the EOS Aura satellite, which is in a sun-synchronous ascending polar orbit with 1:45pm local equator crossing time. The data collection started on August 17, 2004 (orbit 482) and continues to this day with only minor data gaps. The minimum SO2 mass detectable by OMI is about two orders of magnitude smaller than the detection threshold of the legacy Total Ozone Mapping Spectrometer (TOMS) SO2 data (1978-2005) [Krueger et al 1995]. This is due to smaller OMI footprint and the use of wavelengths better optimized for separating O3 from SO2. The product file, called a data granule, covers the sunlit portion of the orbit with an approximately 2600 km wide swath containing 60 pixels per viewing line. During normal operations, 14 or 15 granules are produced daily, providing fully contiguous coverage of the globe. Currently, OMSO2 products are not produced when OMI goes into the "zoom mode" for one day every 452 orbits (~32 days). For each OMI pixel we provide 4 different estimates of the column density of SO2 in Dobson Units (1DU=2.69x10^16 molecules/cm2) obtained by making different assumptions about the vertical distribution of the SO2. However, it is important to note that in most cases the precise vertical distribution of SO2 is unimportant. The users can use either the SO2 plume height, or the center of mass altitude (CMA) derived from SO2 vertical distribution, to interpolate between the 4 values: 1)Planetary Boundary Layer (PBL) SO2 column (ColumnAmountSO2_PBL), corresponding to CMA of 0.9 km. 2)Lower tropospheric SO2 column (ColumnAmountSO2_TRL), corresponding to CMA of 2.5 km. 3)Middle tropospheric SO2 column, (ColumnAmountSO2_TRM), usually produced by volcanic degassing, corresponding to CMA of 7.5 km, 4)Upper tropospheric and Stratospheric SO2 column (ColumnAmountSO2_STL), usually produced by explosive volcanic eruption, corresponding to CMA of 17 km. The accuracy and precision of the derived SO2 columns vary significantly with the SO2 CMA and column amount, observational geometry, and slant column ozone. OMI becomes more sensitive to SO2 above clouds and snow/ice, and less sensitive to SO2 below clouds. Preliminary error estimates are discussed below (see Data Quality Assessment). OMSO2 files are stored in EOS Hierarchical Data Format (HDF-EOS5). Each file contains data from the day lit portion of an orbit (53 minutes). There are approximately 14 orbits per day. The maximum file size for the OMSO2 data product is about 9 Mbytes.
+  <br>
+
+  #### PARASOLRB_CPR
+  This is the POLDER/Parasol Level-2 Radiation Budget Subset, collocated with the CloudSat track. The subset is processed at the A-Train Data Depot of the GES DISC, NASA. The algorithm first converts the original POLDER binary data, which is Level-2 but nevertheless in a sinusoidal grid, into HDF4 format, and thus stores the full-sized data in HDF4. Then, it calculates the CloudSat ground track coordinates, and proceeds to extract the closest POLDER grid cells. Along with the extraction, the algorithm re-orders the subset grid cells in a line-by-line fashion, so that the output subset is in array format and resembles a swath. This array has a cross-track dimension of 11 columns. That makes about 200-km-wide coverage. All original parameters are preserved in the subset. As it is collocated with CloudSat, the subset is automatically collocated with CALIPSO as well.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/about/competitive-programs/access/a-train-data-depot
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- hdf
+- ice
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "AMSRERR_CPR v002 - This is a subset of AMSR-E rain rate product along CloudSat field of view track. The goal of the subset is to select and return AMSR-E data that are within -100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/AMSRE/AMSRERR_CPR.002
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MAC04S0 v002 - This is the narrow-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the narrow-swath subset is to select and return MODIS data that are within +-5 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAC/MAC04S0.002
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MAC04S1 v002 - This is the wide-swath MODIS/Aqua subset along CloudSat field of view track. The goal of the wide-swath subset is to select and return MODIS data that are within +-100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAC/MAC04S1.002
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MAM04S0 v002 - This is the MODIS/Aqua subset along MLS field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAM/MAM04S0.002
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MAM03S0 v002 - This is the MODIS/Aqua subset along the Microwave Limb Sounder (MLS) field of view track. The goal of the subset is to select and return MODIS data that are within +-100 km across the MLS track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MAM/MAM03S0.002
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMCLDO2_CPR v003 - This the OMI/Aura Cloud Pressure and Fraction (O2-O2 Absorption) subset along CloudSat track, for the purposes of the A-Train mission. The original product uses the DOAS technique method."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMCLDO2_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMCLDRR_CPR v003 - This is the OMI/Aura Cloud Pressure and Fraction (Raman Scattering) subset along CloudSat tracks, for the purposes of the A-Train mission. The original data product uses the Rotational Raman Scattering method."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMCLDRR_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMAERUV_CPR v003 - This is a CloudSat-collocated subset of the original OMI product OMAERUV, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMAERUV_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMNO2_CPR v003 - This is a CloudSat-collocated subset of the original product OMNO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMNO2_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMTO3_CPR v003 - This is a CloudSat-collocated subset of the original product OMTO3, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMTO3_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OMSO2_CPR v003 - This is a CloudSat-collocated subset of the original product OMSO2, for the purposes of the A-Train mission. The goal of the subset is to select and return OMI data that are within +/-100 km across the CloudSat track."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OMI/OMSO2_CPR.003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "PARASOLRB_CPR v001 - This is the POLDER/Parasol Level-2 Radiation Budget Subset, collocated with the CloudSat track. The subset is processed at the A-Train Data Depot of the GES DISC, NASA."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/PARASOL/PARASOLRB_CPR.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

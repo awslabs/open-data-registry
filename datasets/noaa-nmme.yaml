@@ -32,7 +32,7 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://noaa-nmme-pds.s3.amazonaws.com/index.html)'
-  - Description: "North American Multi-Model Ensemble (NMME)"
+  - Description: "New data notifications for NMME, only Lambda and SQS protocols allowed)"
     ARN: arn:aws:sns:us-east-1:123901341784:NewNMMEObject
     Region: us-east-1
     Type: SNS Topic

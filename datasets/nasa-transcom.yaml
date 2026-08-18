@@ -1,0 +1,40 @@
+Name: NASA TransCom Project
+Description: |
+  The Atmospheric Tracer Transport Model Intercomparison Project (TransCom) was created to quantify and diagnose the uncertainty in inversion calculations of the global carbon budget that results from errors in simulated atmospheric transport, the choice of measured atmospheric carbon dioxide data used, and the inversion methodology employed. Under the third phase of TransCom (TransCom 3), surface-atmosphere CO2 fluxes were estimated from an intercomparison of 16 different atmospheric tracer transport models and model variants in order to assess the contribution of uncertainties in transport to the uncertainties in flux estimates for annual mean, seasonal cycle, and interannual inversions (referred to as Level 1, 2, and 3 experiments, respectively). This data set provides the model output and inversion results for the TransCom 3, Level I annual mean inversion experiments. Annual mean CO2 concentration data (GLOBALVIEW-CO2, 2000) were used to estimate CO2 sources. The annual average fluxes were estimated for the 1992-1996 period using each of the 16 transport models and a common inversion set-up (Gurney et al., 2002). Methodological choices for this control inversion were selected on the basis of knowledge gained from a wide range of sensitivity tests (Law et al., 2003). Gurney et al. (2003) present results from the control inversion for individual models as well as results from a number of sensitivity tests related to the specification of prior flux information. Additional information about the experimental protocol and results is provided in the companion files and the TransCom project web site (http://www.purdue.edu/transcom/index.php). The results of the Level 1 experiments presented here are grouped into two broad categories: forward simulation fields and response functions (model output) and estimated fluxes (inversion results).
+  <br>
+
+  #### level_2_seasonal_co2_1198
+  This data set provides model outputs and seasonal mean CO2 fluxes from the Atmospheric Carbon Cycle Inversion Intercomparison (TransCom 3), Level 2 inversion experiment. Inversion methods can be used to estimate surface CO2 fluxes from atmospheric CO2 concentration measurements, given an atmospheric transport model to relate the two. This Level 2 experiment inverted for the spatial and temporal pattern of the residual CO2 sources and sinks. There were 12 atmospheric tracer transport models utilized in this experiment. The data inverted were mean CO2 concentration data from 75 sites from the GLOBALVIEW-CO2 2000 data set for the period 1990-1996. The seasonal inversion consists of a 3 year forward simulation (365 days per year) containing 4 presubtracted tracers, 11 SF6 tracers, and 22 CO2 tracers (11 terrestrial, 11 oceanic) (Gurney et al., 2000). Carbon fluxes were estimated for each month of an average year determined as the mean of the 1992-1996 time period from an intercomparison of 12 different atmospheric tracer transport models. This data set provides input data, model output data,the cyclo inversion code, a basis function map, and estimated fluxes.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- ice
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "level_1_annual_co2_895 v1 - The Atmospheric Tracer Transport Model Intercomparison Project (TransCom) was created to quantify and diagnose the uncertainty in inversion calculations of the global carbon budget that results from errors in simulated atmospheric transport, the choice of measured atmospheric carbon dioxide data used, and the inversion methodology employed. Under the third phase of TransCom (TransCom 3), surface-atmosphere CO2 fluxes were estimated from an intercomparison of 16 different atmospheric tracer transport models and model variants in order to assess the contribution of uncertainties in transport ..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/transcom/level_1_annual_co2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "level_2_seasonal_co2_1198 v1 - This data set provides model outputs and seasonal mean CO2 fluxes from the Atmospheric Carbon Cycle Inversion Intercomparison (TransCom 3), Level 2 inversion experiment. Inversion methods can be used to estimate surface CO2 fluxes from atmospheric CO2 concentration measurements, given an atmospheric transport model to relate the two."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/transcom/level_2_seasonal_co2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

@@ -1,0 +1,36 @@
+Name: NASA CIOSS Project
+Description: |
+  The Gridded Altimeter Fields with Enhanced Coastal Coverage data product contains Sea Surface Height Anomalies (SSHA or SLA) and zonal and meridional geostrophic velocities for the US west coast encompassing 35.25 deg-48.5 deg N latitude and 227.75 deg-248.5 deg E longitude. This annually updated data product extends from October 14, 1992 through November 4, 2009. SSHA and current velocities are derived from the AVISO quarter degree DT UPD MSLA version 3.0 grids, 0.75 deg and greater away from the coast. Values within 0.75 deg of the coast are derived from tide gauge observations and interpolated out to the altimeter filled region. Details on how these data are derived can be found in: Saraceno, M., P. T. Strub, and P. M. Kosro (2008), Estimates of sea surface height and near-surface alongshore coastal currents from combinations of altimeters and tide gauges, J. Geophys. Res., 113, C11013, doi:10.1029/2008JC004756.
+  <br>
+
+  #### ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_DAILY
+  The Gridded Altimeter Fields with Enhanced Coastal Coverage data product contains Sea Surface Height Anomalies (SSHA or SLA) and zonal and meridional geostrophic velocities for the US west coast encompassing 35.25 deg-48.5 deg N latitude and 227.75 deg-248.5 deg E longitude. This annually updated data product extends from October 14, 1992 through January 19, 2011. SSHA and current velocities are derived from the AVISO quarter degree DT UPD MSLA version 3.0 grids, 0.75 deg and greater away from the coast. Values within 0.75 deg of the coast are derived from tide gauge observations and interpolated out to the altimeter filled region. Details on how these data are derived can be found in: Saraceno, M., P. T. Strub, and P. M. Kosro (2008), Estimates of sea surface height and near-surface alongshore coastal currents from combinations of altimeters and tide gauges, J. Geophys. Res., 113, C11013, doi:10.1029/2008JC004756.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST v1 - The Gridded Altimeter Fields with Enhanced Coastal Coverage data product contains Sea Surface Height Anomalies (SSHA or SLA) and zonal and meridional geostrophic velocities for the US west coast encompassing 35.25 deg-48.5 deg N latitude and 227.75 deg-248.5 deg E longitude. This annually updated data product extends from October 14, 1992 through November 4, 2009."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_DAILY v1 - The Gridded Altimeter Fields with Enhanced Coastal Coverage data product contains Sea Surface Height Anomalies (SSHA or SLA) and zonal and meridional geostrophic velocities for the US west coast encompassing 35.25 deg-48.5 deg N latitude and 227.75 deg-248.5 deg E longitude. This annually updated data product extends from October 14, 1992 through January 19, 2011."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/ALT_TIDE_GAUGE_L4_OST_SLA_US_WEST_COAST_DAILY
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

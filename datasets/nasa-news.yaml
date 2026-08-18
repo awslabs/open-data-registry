@@ -1,0 +1,33 @@
+Name: NASA NEWS Project
+Description: |
+  The world's premier catalyst for understanding Earth as a unified and dynamic system, empowering humanity through transformative insights into Earth system science.
+  <br>
+
+  #### NEWS_WEB_ACLIM
+  NASA Energy and Water cycle Study (NEWS) Climatology of the 1st decade of the 21st Century Dataset summarizes the original observationally-based mean fluxes of water and energy budget components during the first decade of the 21st Century, for each continent and ocean basin on monthly and annual scales as well as means over all oceans, all continents, and the globe. A careful accounting of uncertainty in the estimates is included. Also, it includes optimized versions of all component fluxes that simultaneously satisfy energy and water cycle balance constraints. The NEWS Climatology contains two data products: an annual climatology data product and a monthly climatology data product. This data product is the annual climatology product. The climatology base period is roughly 1998-2010, where individual datasets cover various periods starting as early as 1998 and as late as 2002, not all extending to 2010. The continents and ocean basins boundaries map is used in this study to compute regional means. The ocean basin data was provided by Kyle Hilburn and Chelle Gentemann at Remote Sensing Systems. The land portion and some inland water bodies of the data are delineated into continents according to general definitions found in Wikipedia and relevant past studies. The data are distributed with four different units (1000 km^3/year, W/m^2, cm/year, and mm/day), in three formats (NetCDF, xlsx, and csv).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://science.nasa.gov/earth-science/focus-areas/water-and-energy-cycle
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- netcdf
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NEWS_WEB_ACLIM v1.0 - NASA Energy and Water cycle Study (NEWS) Climatology of the 1st decade of the 21st Century Dataset summarizes the original observationally-based mean fluxes of water and energy budget components during the first decade of the 21st Century, for each continent and ocean basin on monthly and annual scales as well as means over all oceans, all continents, and the globe. A careful accounting of uncertainty in the estimates is included."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/NEWS/NEWS_WEB_ACLIM.1.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

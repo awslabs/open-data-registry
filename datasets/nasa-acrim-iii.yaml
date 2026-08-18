@@ -1,0 +1,43 @@
+Name: NASA ACRIM III Project
+Description: |
+  Launch and mission info for NASA's AcrimSat Earth satellite, which for 14 years monitored solar radiation and its effects on Earth's atmosphere and climate change.
+  <br>
+
+  #### ACR3L2DM
+  ACR3L2DM_1 is the Active Cavity Radiometer Irradiance Monitor (ACRIM) III Level 2 Daily Mean Data version 1 product consists of Level 2 total solar irradiance in the form of daily means gathered by the ACRIM III instrument on the ACRIMSAT satellite. The daily means are constructed from the shutter cycle results for each day.
+  <br>
+
+  #### ACR3L2SC
+  ACR3L2SC_1 is the Active Cavity Radiometer Irradiance Monitor (ACRIM) III Level 2 Shutter Cycle Data version 1 product contains Level 2 total solar irradiance in the form of shutter cycles gathered by the ACRIM instrument on the ACRIMSAT satellite.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.asdc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.jpl.nasa.gov/missions/active-cavity-irradiance-monitor-satellite-acrimsat/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- climate
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ACR3L2DM v1 - ACR3L2DM_1 is the Active Cavity Radiometer Irradiance Monitor (ACRIM) III Level 2 Daily Mean Data version 1 product consists of Level 2 total solar irradiance in the form of daily means gathered by the ACRIM III instrument on the ACRIMSAT satellite. The daily means are constructed from the shutter cycle results for each day."
+  ARN: arn:aws:s3:::asdc-prod-protected/ACRIM_III/ACR3L2DM_1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
+- Description: "ACR3L2SC v1 - ACR3L2SC_1 is the Active Cavity Radiometer Irradiance Monitor (ACRIM) III Level 2 Shutter Cycle Data version 1 product contains Level 2 total solar irradiance in the form of shutter cycles gathered by the ACRIM instrument on the ACRIMSAT satellite."
+  ARN: arn:aws:s3:::asdc-prod-protected/ACRIM_III/ACR3L2SC_1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
