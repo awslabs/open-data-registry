@@ -1,0 +1,38 @@
+Name: NASA JASON-3 Project
+Description: |
+  This is a near real time dataset that provides a GPS based orbit and Sea Surface Height Anomalies (SSHA) from that orbit. It is similar to the Jason-3 Operation Geophysical Data Record (OGDR) that is distributed at NOAA (http://www.nodc.noaa.gov/sog/jason/), but includes the GPS orbit and SSHA as two additional variables. It has a 5 hour time lag due to the time needed to calculate the GPS orbit and SSHA. The GPS orbits have been shown to be more accurate than the DORIS orbits on a near real time scale and therefore produces a more accurate SSHA.<br> Forward stream transitioned from processing baseline/version "F" to "G" in January 2025. The change is reflected in the product filename: JA3_GPSOPR_2P<b>f</b>S* -> JA3_GPSOPR_2P<b>g</b>S*
+  <br>
+
+  #### JASON_3_PD_CORRECTION
+  This dataset provides supplementary wet tropospheric corrections for historical Jason-3 observations (https://www.ncei.noaa.gov/archive/accession/Jason3-xGDR). Recent assessments of the global sea level budget have resulted in increased scrutiny of estimates of global sea level change based on Jason-3. After a careful assessment of the wet tropospheric correction derived from the Advanced Microwave Radiometer (AMR) instrument, it was determined that further improvements to the accuracy of the historical Jason-3 observations could be made. Since this assessment was only completed after Jason-3 data was reprocessed to GDR-F (Geophysical Data Record – Version F) standards, it was not included in the GDR-F product release. For this reason, this supplementary correction product has been created using the method of Brown et al. (2012) to allow users to correct path delay and sea surface height observations, reducing errors in estimates of global sea level change by 2-3 mm over 8 years.<br><br> The correction was computed based on comparison of the AMR-observed brightness temperatures with independent satellite observations from the Special Sensor Microwave Imager Sounder (SSMI), F16, F17 and F18, Fundamental Climate Data Records. SSMI data was obtained from the NOAA Climate Data Record (CDR) of SSMIS Microwave Brightness Temperatures, RSS Version 8 (Wentz et al., 2019, https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01567/html). The method described in Brown et al. (2012) to map SSMI Brightness Temperatures to AMR equivalent brightness temperatures (TBs) was used. Although it was found that it made little difference to the result, a bias was removed between SSMI equivalent AMR TBs and AMR TBs with respect to latitude for all data prior to computing temporal trends. In addition, only rain free, mostly clear data (TB18.7 GHz < 160K) data were considered.<br><br> The correction is supplied on a pass-by-pass basis in a 4-column text file. See the product documentation for guidance on how to apply it to Jason-3 observations.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "JASON_3_L2_OST_OGDR_GPS vG - This is a near real time dataset that provides a GPS based orbit and Sea Surface Height Anomalies (SSHA) from that orbit. It is similar to the Jason-3 Operation Geophysical Data Record (OGDR) that is distributed at NOAA (http://www.nodc.noaa.gov/sog/jason/), but includes the GPS orbit and SSHA as two additional variables."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON_3_L2_OST_OGDR_GPS
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON_3_PD_CORRECTION vF - This dataset provides supplementary wet tropospheric corrections for historical Jason-3 observations (https://www.ncei.noaa.gov/archive/accession/Jason3-xGDR). Recent assessments of the global sea level budget have resulted in increased scrutiny of estimates of global sea level change based on Jason-3."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON_3_PD_CORRECTION
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

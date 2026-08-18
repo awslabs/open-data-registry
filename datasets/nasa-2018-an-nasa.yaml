@@ -1,0 +1,49 @@
+Name: NASA 2018_AN_NASA Project
+Description: |
+  This data set contains geolocated waveforms of Greenland, Arctic, and Antarctic sea ice measured by the Airborne Topographic Mapper (ATM) near-infrared (NIR) lidar. The data complement, and are intended to be used with, the IceBridge Narrow Swath ATM L1B Elevation and Return Strength with Waveforms data, which are measured at green wavelength. The data were acquired as part of aircraft survey campaigns funded by Operation IceBridge.
+  <br>
+
+  #### IOCAM0
+  This data set contains raw images and associated aircraft position and attitude data, taken over Antarctica and Greenland by the Continuous Airborne Mapping By Optical Translator (CAMBOT), part of the Airborne Topographic Mapper (ATM) instrument suite. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### IOCAM1B
+  This data set contains high-resolution imagery taken with the Continuous Airborne Mapping By Optical Translator (CAMBOT) system over Antarctica and Greenland. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/ilnirw1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ILNIRW1B v1 - This data set contains geolocated waveforms of Greenland, Arctic, and Antarctic sea ice measured by the Airborne Topographic Mapper (ATM) near-infrared (NIR) lidar. The data complement, and are intended to be used with, the IceBridge Narrow Swath ATM L1B Elevation and Return Strength with Waveforms data, which are measured at green wavelength."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILNIRW1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IOCAM0 v1 - This data set contains raw images and associated aircraft position and attitude data, taken over Antarctica and Greenland by the Continuous Airborne Mapping By Optical Translator (CAMBOT), part of the Airborne Topographic Mapper (ATM) instrument suite. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IOCAM0/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IOCAM1B v2 - This data set contains high-resolution imagery taken with the Continuous Airborne Mapping By Optical Translator (CAMBOT) system over Antarctica and Greenland. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IOCAM1B/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

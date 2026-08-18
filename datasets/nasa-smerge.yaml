@@ -1,0 +1,29 @@
+Name: NASA SMERGE Project
+Description: |
+  Smerge-Noah-CCI root zone soil moisture 0-40 cm L4 daily 0.125 x 0.125 degree V2.0 is a multi-decadal root-zone soil moisture product. Smerge is developed by merging the North American Land Data Assimilation System (NLDAS) land surface model output with surface satellite retrievals from the European Space Agency Climate Change Initiative. The data have a 0.125 degree resolution at a daily time-step, covering the entire continental United States and spanning nearly four decades (January 1979 to May 2019). This data product contains root-zone soil moisture of 0 - 40 cm layer, Climate Change Initiative (CCI) derived soil moisture anomalies of 0-40 cm layer, and a soil moisture data estimation flag. This data product is the recommended replacement for the AMSR-E/Aqua root zone soil moisture L3 1 day 25 km x 25 km descending and 2-Layer Palmer Water Balance Model V001 product (LPRM_AMSRE_D_RZSM3), which will be removed from archive on June 27, 2022. Smerge provides a better root zone soil moisture estimation because it has higher data quality and longer temporal coverage.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.tamiu.edu/cees/smerge/overview.shtml
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SMERGE_RZSM0_40CM v2.0 - Smerge-Noah-CCI root zone soil moisture 0-40 cm L4 daily 0.125 x 0.125 degree V2.0 is a multi-decadal root-zone soil moisture product. Smerge is developed by merging the North American Land Data Assimilation System (NLDAS) land surface model output with surface satellite retrievals from the European Space Agency Climate Change Initiative."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/SMERGE/SMERGE_RZSM0_40CM.2.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
