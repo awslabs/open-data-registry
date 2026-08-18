@@ -1,0 +1,51 @@
+Name: Pan-Primate Reference Genome Project (PanPrimate-T2T)
+Description: >
+Chromosome-scale, phased de novo genome assemblies and annotations for ~40 primate species spanning ~70 million years of evolutionary diversification, generated from established Coriell cell lines. Includes the full data lineage - raw PacBio HiFi and Oxford Nanopore ultra-long sequencing signal, phased haplotype-resolved and primary/alternate assemblies, gene and repeat annotations, methylation and Fiber-seq output, variant calls, and comparative whole-genome alignments (MAF/HAL) - released in cloud-optimized, indexed formats for direct region-based streaming and co-located compute on AWS.
+Documentation: https://github.com/t2t-primates/PanPrimateGenomeProject/blob/main/README.md
+Contact: https://github.com/t2t-primates/PanPrimateGenomeProject/issues
+ManagedBy: "[University of California, Berkeley](https://ib.berkeley.edu)"
+UpdateFrequency: >
+New species assemblies are added on a rolling basis as sequencing and assembly complete. The initial ~40-species collection is expected to be substantially complete within about a year, after which updates are primarily re-curation/version revisions to existing genomes rather than large new data volumes.
+Tags:
+  - aws-pds
+  - bam
+  - biodiversity
+  - bioinformatics
+  - biology
+  - conservation
+  - epigenomics
+  - fasta
+  - fastq
+  - genetic
+  - genome
+  - genomic
+  - life sciences
+  - long read sequencing
+  - non-human primate
+  - whole genome sequencing
+License: >
+  Creative Commons Attribution 4.0 International (CC BY 4.0).
+  https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: >
+      Per-sample sequencing data, assemblies, annotations, and alignments
+      for the PanPrimate-T2T collection. Includes raw ONT POD5 signal,
+      PacBio HiFi/Kinnex BAM, phased (hap1/hap2) and primary/alternate
+      genome assemblies, GFF3 annotations, RepeatMasker output,
+      methylation and Fiber-seq calls, VCF variant calls, and BAM read
+      alignments - in bgzip/BAM/POD5 formats with .fai/.bai/.tbi indexes
+      for HTTP byte-range access. (Bucket not yet public - pending AWS
+      account linking.)
+    ARN: "arn:aws:s3:::primate-t2t-genomics-open"
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: PanPrimate-T2T"
+      URL: "https://github.com/t2t-primates/PanPrimateGenomeProject/blob/main/tutorials/get-to-know-a-dataset.ipynb"
+      NotebookURL: "https://github.com/t2t-primates/PanPrimateGenomeProject/blob/main/tutorials/get-to-know-a-dataset.ipynb"
+      AuthorName: Scott Ferguson
+      AuthorURL: https://github.com/fergsc
+      Services: S3, EC2, Batch, SageMaker
+ADXCategories:
+  - Healthcare & Life Sciences Data
