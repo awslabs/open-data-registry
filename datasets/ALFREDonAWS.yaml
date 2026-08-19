@@ -1,0 +1,143 @@
+Name: ALFRED on AWS
+Title: "ALlele FREquency Database (ALFRED)"
+Description: ALFRED is a database of allele frequencies for human populations.
+    This open dataset provides denormalized chromosome-level tables
+    containing population sample information together with SNP and
+    allele frequency information.
+Documentation: https://github.com/haseenaR/ALFRED/
+Contact: haseena.rajeevan@yale.edu
+ManagedBy: "Haseena Rajeevan"
+UpdateFrequency: N/A.
+Tags:
+  - population genetics
+  - genetic
+  - genotyping
+  - bioinformatics
+License: ALFRED data must not be used in ways that promote stigma or discrimination against any individual or ethnic group..
+DataAtWork:
+  Tutorials:
+  Title: Get to Know a Dataset: ALFRED (The Allele Frequency Database)
+  URL: https://github.com/haseenaR/ALFRED/blob/main/alfred-dataset-tutorial.ipynb
+  AuthorName: Haseena Rajeevan, Peter Schmiedeskamp
+  
+  
+Publications:
+    - Title: ALFRED: an allele frequency resource for research and teaching
+      URL: https://pubmed.ncbi.nlm.nih.gov/22039151/
+
+      AuthorName: Haseena Rajeevan, Usha Soundararajan, Judith R Kidd, Andrew J Pakstis & Kenneth K Kidd   
+
+Dataset:
+Name: alelle-frequency-tables
+Version: 1.0
+Description: Denormalized population genetic data containing SNP information, population/sample information, and allele frequencies for human populations. Data are provided as one Parquet table for each chromosome.
+Format: "parquet"
+Storage: "S3"
+Bucket:
+Name:alfred-mv
+AWS Region:us-west-2
+Files:
+Data_organization:
+  Strategy: "one-table-per-chromosome"
+  Chromosome_tables:
+    - Table_name: "MV_POPFREQ_1"
+      Chromosome: "1"
+      File: "MV_POPFREQ_1.parquet"
+
+    - Table_name: "MV_POPFREQ_2"
+      Chromosome: "2"
+      File: "MV_POPFREQ_2.parquet"
+
+    - Table_name: "MV_POPFREQ_3"
+      Chromosome: "3"
+      File: "MV_POPFREQ_3.parquet"
+
+    - Table_name: "MV_POPFREQ_4"
+      Chromosome: "4"
+      File: "MV_POPFREQ_4.parquet"
+
+    - Table_name: "MV_POPFREQ_5"
+      Chromosome: "5"
+      File: "MV_POPFREQ_5.parquet"
+
+    - Table_name: "MV_POPFREQ_6"
+      Chromosome: "6"
+      File: "MV_POPFREQ_6.parquet"
+
+    - Table_name: "MV_POPFREQ_7"
+      Chromosome: "7"
+      File: "MV_POPFREQ_7.parquet"
+
+    - Table_name: "MV_POPFREQ_8"
+      Chromosome: "8"
+      File: "MV_POPFREQ_8.parquet"
+
+    - Table_name: "MV_POPFREQ_9"
+      Chromosome: "9"
+      File: "MV_POPFREQ_9.parquet"
+
+    - Table_name: "MV_POPFREQ_10"
+      Chromosome: "10"
+      File: "MV_POPFREQ_10.parquet"
+
+    - Table_name: "MV_POPFREQ_11"
+      Chromosome: "11"
+      File: "MV_POPFREQ_11.parquet"
+
+    - Table_name: "MV_POPFREQ_12"
+      Chromosome: "12"
+      File: "MV_POPFREQ_12.parquet"
+
+    - Table_name: "MV_POPFREQ_13"
+      Chromosome: "13"
+      File: "MV_POPFREQ_13.parquet"
+
+    - Table_name: "MV_POPFREQ_14"
+      Chromosome: "14"
+      File: "MV_POPFREQ_14.parquet"
+
+    - Table_name: "MV_POPFREQ_15"
+      Chromosome: "15"
+      File: "MV_POPFREQ_15.parquet"
+
+    - Table_name: "MV_POPFREQ_16"
+      Chromosome: "16"
+      File: "MV_POPFREQ_16.parquet"
+
+    - Table_name: "MV_POPFREQ_17"
+      Chromosome: "17"
+      File: "MV_POPFREQ_17.parquet"
+
+    - Table_name: "MV_POPFREQ_18"
+      Chromosome: "18"
+      File: "MV_POPFREQ_18.parquet"
+
+    - Table_name: "MV_POPFREQ_19"
+      Chromosome: "19"
+      File: "MV_POPFREQ_19.parquet"
+
+    - Table_name: "MV_POPFREQ_20"
+      Chromosome: "20"
+      File: "MV_POPFREQ_20.parquet"
+
+    - Table_name: "MV_POPFREQ_21"
+      Chromosome: "21"
+      File: "MV_POPFREQ_21.parquet"
+
+    - Table_name: "MV_POPFREQ_22"
+      Chromosome: "22"
+      File: "MV_POPFREQ_22.parquet"
+
+Quality:
+  Data_type: "Experimental"
+  Description: Allele frequency computed
+  validation:
+    - "Verify chromosome identifiers"
+    - "Verify SNP identifiers"
+    - "Verify genomic positions"
+    - "Verify allele values"
+    - "Verify allele frequencies are within the valid range"
+    - "Verify population identifiers"
+    - "Verify sample identifiers"
+
+
