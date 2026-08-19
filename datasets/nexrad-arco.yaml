@@ -1,5 +1,12 @@
-Name: "NEXRAD ARCO - Analysis-Ready Cloud-Optimized Weather Radar"
-Description: NEXRAD Level II weather radar data converted to FAIR-compliant, analysis-ready cloud-optimized (ARCO) format using Zarr v3 and Icechunk V2. Hierarchically organized by Volume Coverage Pattern (VCP) and sweep, enabling instant time-series access to polarimetric variables (DBZH, ZDR, RHOHV, PHIDP, VELOCITY) without downloading individual files. Currently includes KLOT (Chicago, IL) with continuous updates.
+Name: "NEXRAD ARCO - atmoscale.ai Icechunk-Zarr"
+Description: |
+  NEXRAD Level II weather radar data converted into a FAIR-compliant, analysis-ready, cloud-optimized (ARCO) format using Zarr v3 and Icechunk V2. The dataset is hierarchically organized by Volume Coverage Pattern (VCP) and radar sweep, enabling efficient time-series access to polarimetric radar variables without downloading and processing individual Level II files.
+
+  This dataset has been transformed and optimized for cloud-native analysis by [AtmoScale](https://atmoscale.ai).
+
+  - **Temporal coverage:** January 1, 2015 to present.
+  - **Radar site:** KLOT, serving the Chicago, Illinois region.
+  - **Available variables:** Reflectivity (DBZH), differential reflectivity (ZDR), copolar correlation coefficient (RHOHV), differential phase (PHIDP), radial velocity (VELOCITY), and spectrum width (WRADH).
 Documentation: https://atmoscale.github.io/radar-datatree/
 Contact: contact@atmoscale.ai
 ManagedBy: "[Atmoscale](https://atmoscale.ai/)"
