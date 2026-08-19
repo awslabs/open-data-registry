@@ -1,0 +1,67 @@
+Name: NOAA Global Historical Climatology Network- Hourly (GHCN-H)
+Description:
+The Global Historical Climatology Network hourly (GHCNh) is a next generation hourly/synoptic dataset that replaces the Integrated Surface Dataset (ISD). GHCNh consists of hourly and synoptic surface weather observations from fixed, land-based stations. 
+<br /><br />
+This dataset is compiled from numerous data sources maintained by NOAA, the U.S. Air Force, and many other meteorological agencies (Met Services) around the world. These sources have been reformatted into a common data format and then harmonized into a set of unique period-of-record station files, which are then provided as GHCNh. 
+<br /><br />
+GHCNh was developed as part of a collaboration with the Copernicus Programme and partners at Maynooth University with the aim to make historical land and marine surface weather data more easily accessible worldwide. At NCEI, GHCNh was developed to be vertically aligned with its GHCN daily counterpart (GHCNd).
+<br /><br />
+Documentation: 
+https://www.ncei.noaa.gov/products/global-historical-climatology-network-hourly
+<br /><br />
+https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/doc/ghcnh_DOCUMENTATION.pdf
+<br /><br />
+Contact: |
+  For questions regarding data content or quality, visit [the NOAA GHCN site](https://www.ncdc.noaa.gov/ghcn-daily-description).  <br />
+  For any questions regarding data delivery or any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: Daily
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - agriculture
+  - climate
+  - meteorological
+  - weather
+License: NOAA data disseminated through NODD is made available under the [Creative Commons 1.0 Universal Public Domain Dedication (CC0-1.0) license](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1\), which is well-known and internationally recognized. There are no restrictions on the use of the data. The data are open to the public and can be used as desired. 
+  <br/>
+  <br/>
+  NOAA has adopted the Creative Commons license to ensure maximum use of our data, to spur and encourage exploration and innovation throughout the industry. This license is applicable to each of the NOAA datasets made available by NODD. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+Resources:
+  - Description: GHCN-H files
+    ARN: arn:aws:s3:::noaa-ghcnh-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-ghcnh-pds.s3.us-east-1.amazonaws.com/index.html)'
+  - Description: New data notifications for GHCN-H, only Lambda and SQS protocols allowed
+    ARN: arn:aws:sns:us-east-1:123901341784:NewGHCNHObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Visualize over 200 years of global climate data using Amazon Athena and Amazon QuickSight
+      URL: https://aws.amazon.com/blogs/big-data/visualize-over-200-years-of-global-climate-data-using-amazon-athena-and-amazon-quicksight/
+      AuthorName: Conor Delaney
+      Services:
+        - Amazon Athena
+        - AWS Glue
+    - Title: Calculating growing degree days using AWS Registry of Open Data
+      URL: https://aws.amazon.com/blogs/industries/calculating-growing-degree-days-using-aws-registry-of-open-data/
+      AuthorName: Karen Hildebrand and Zac Flamig
+      Services:
+        - Amazon Athena
+        - AWS CloudFormation
+        - AWS Glue
+    - Title: Explore & Visualize 200+ Years of Global Temperature
+      URL: https://medium.com/swlh/explore-visualize-200-years-of-global-temperature-using-apache-spark-bigquery-and-google-data-699ed8b3c67?sk=3721ca3220a75af80293ac3e4bf3f4d1
+      AuthorName: Kapil Sreedharan
+  Tools & Applications:
+  Publications:
+    - Title: "Natural and Socioeconomic Conditions Influence Tick-Borne Encephalitis Cases in Russia"
+      URL: http://www.pjoes.com/Natural-and-Socioeconomic-Conditions-Influence-nTick-Borne-Encephalitis-Cases-in,153552,0,2.html
+      AuthorName: Lantian Zhang, Linsheng Yang, Li Wang, Lijuan Gu, Hairong Li, Svetlana Malkhazova
