@@ -237,6 +237,16 @@ Resources:
     ARN: arn:aws:sns:us-east-1:703786580975:cmas-smoke-modeling-platform-2016-object_created
     Region: us-east-1
     Type: SNS Topic
+  - Description: NEMO 1km Emissions Data for CONUS 2017
+    ARN: arn:aws:s3:::nemo-1km-emissions-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://nemo-1km-emissions-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in NEMO 1km Emissions Data for CONUS 2017
+    ARN: arn:aws:sns:us-east-1:703786580975:nemo-1km-emissions-data-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Documentation for CMAQ on AWS ParallelCluster
