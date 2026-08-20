@@ -1,0 +1,42 @@
+Name: QLP
+Description: |
+  The MIT Quick-Look Pipeline (QLP) light curves are derived from [TESS](https://archive.stsci.edu/missions-and-data/tess) Full Frame Images (FFIs). 
+  Quick-Look products provide users an early look at TESS data before final mission products are available at the archive.
+Contact: archive@stsci.edu
+Documentation: https://archive.stsci.edu/hlsp/qlp
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: If using this data in published research, visit the [QLP HLSP page](https://archive.stsci.edu/hlsp/qlp) for the appropriate citation.
+UpdateFrequency: Hourly
+Tags:
+  - aws-pds
+  - astronomy
+License: All HLSPs hosted at MAST are subject to a [CC By 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+Resources:
+  - Description: QLP files
+    ARN: arn:aws:s3:::stpubdata/mast/hlsp/qlp
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/mast/hlsp/qlp
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "TIKE: a free, Jupyter-based cloud platform to access and analyze MAST's AWS timeseries data"
+    URL: https://timeseries.science.stsci.edu
+    AuthorName: MAST Staff
+  Publications: 
+    - Title: "Photometry of 10 Million Stars from the First Two Years of TESS Full Frame Images: Part I"
+      URL: https://ui.adsabs.harvard.edu/abs/2020RNAAS...4..204H/abstract
+      AuthorName: Huang et al.
+    - Title: "Photometry of 10 Million Stars from the First Two Years of TESS Full Frame Images: Part II"
+      URL: https://ui.adsabs.harvard.edu/abs/2020RNAAS...4..206H/abstract
+      AuthorName: Huang et al.
+    - Title: "Quick-look Pipeline Lightcurves for 9.1 Million Stars Observed over the First Year of the TESS Extended Mission"
+      URL: https://ui.adsabs.harvard.edu/abs/2021RNAAS...5..234K/abstract
+      AuthorName: Kunimoto et al.
+    - Title: "Quick-look Pipeline Light Curves for 5.7 Million Stars Observed Over the Second Year of TESS' First Extended Mission"
+      URL: https://ui.adsabs.harvard.edu/abs/2022RNAAS...6..236K/abstract
+      AuthorName: Kunimoto et al.
