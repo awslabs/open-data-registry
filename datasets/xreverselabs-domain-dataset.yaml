@@ -1,0 +1,48 @@
+Name: xReverseLabs Domain Dataset
+Description: >
+  The xReverseLabs Domain Dataset provides open collections of domain names and
+  their associated DNS records. It includes daily domain dumps, historical domain
+  data, domain lists grouped by TLD/extension, and a Forward DNS (FDNS) dataset
+  containing resolved domain-to-IP mappings with metadata. The dataset is designed
+  to support cybersecurity, threat intelligence, and internet-scale research.
+Documentation: https://opendata.xreverselabs.org/about.php
+Contact: opendata@xreverselabs.org
+ManagedBy: xReverseLabs
+UpdateFrequency: Daily
+Tags:
+  - dns
+  - internet
+  - domains
+  - reverse-dns
+  - cybersecurity
+  - threat-intelligence
+License: CC-BY-4.0
+Resources:
+  - Description: Daily Domain Dump Dataset (list of domains updated daily)
+    ARN: arn:aws:s3:::xreverselabs-domain-dataset/daily/*
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Domain By Date Full Data (historical daily new domains)
+    ARN: arn:aws:s3:::xreverselabs-domain-dataset/by-date/*
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Domain By Extension Dataset (grouped by TLD/extension)
+    ARN: arn:aws:s3:::xreverselabs-domain-dataset/by-extension/*
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Forward DNS Dataset (FDNS JSON records with IPs)
+    ARN: arn:aws:s3:::xreverselabs-domain-dataset/fdns/*
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset: xReverseLabs Domain Dataset
+      URL: https://github.com/xReverseLabs/open-data-examples/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: xReverseLabs
+      AuthorURL: https://opendata.xreverselabs.org
+  Publications: []
+  Tools & Applications: []
+Citation: >
+  Please cite as: xReverseLabs Domain Dataset, available at
+  https://registry.opendata.aws/xreverselabs-domain-dataset
+
