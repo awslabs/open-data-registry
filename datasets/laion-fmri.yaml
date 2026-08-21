@@ -3,7 +3,7 @@ Description: LAION-fMRI is one of the largest and most comprehensive high-resolu
 Documentation: https://laion-fmri.hebartlab.com
 Contact: hebart@cbs.mpg.de
 ManagedBy: "[Hebart Lab](https://hebartlab.com)"
-UpdateFrequency: Infrequent. The dataset is intended to be static after publication; updates will only occur for corrections or minor additions.
+UpdateFrequency: Infrequent. Supplemental fMRI sessions and additional metadata will be released after the launch release, otherwise updates are limited to corrections.
 Tags:
   - aws-pds
   - life sciences
@@ -16,16 +16,16 @@ Tags:
   - machine learning
   - deep learning
   - computer vision
-License: "LAION-fMRI Data Use Agreement \u2014 see the [documentation site](https://laion-fmri.hebartlab.com) for terms of use. (Placeholder: link to the formal DUA will be added before release.)"
+License: "CC0 1.0 for the fMRI data, derivatives, and metadata (https://creativecommons.org/publicdomain/zero/1.0/). Raw stimulus images require accepting a Data Use Agreement: https://laion-fmri.hebartlab.com/request"
 Resources:
   - Description: "BIDS-organized 7T fMRI data (NIfTI) with derivatives including preprocessed data, ROIs, single-trial beta estimates from GLMsingle, retinotopy maps, functional localizers, and precision diffusion MRI tractography."
-    Region: us-east-2
+    ARN: arn:aws:s3:::laion-fmri
+    Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
   Tutorials:
     - Title: LAION-fMRI documentation, tutorial and example code
       URL: https://github.com/ViCCo-Group/LAION-fMRI
-      NotebookURL: https://github.com/ViCCo-Group/LAION-fMRI/blob/main/get-to-know-a-dataset.ipynb
       AuthorName: ViCCo Group
       AuthorURL: https://github.com/ViCCo-Group
 ADXCategories:
