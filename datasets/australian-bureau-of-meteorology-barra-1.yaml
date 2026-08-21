@@ -1,0 +1,42 @@
+Name: Bureau of Meteorology Atmospheric Regional Reanalysis for Australia - Version 1 (BARRA) 
+Description: The Bureau of Meteorology high-resolution Regional Reanalysis for Australia (BARRA) is a high-resolution multi-decadal regional atmospheric reanalysis. The reanalysis provides information about surface conditions (such as temperature, precipitation, wind speed and direction, humidity, evaporation and soil moisture), information on multiple pressure and model levels, and information on solar radiation and cloud cover. The reanalysis suite is based on the Australian Community Climate Earth-System Simulator (ACCESS) and extends 70 levels (up to 80 km) into the atmosphere. It is nested within the required boundary and/or initial conditions provided by ERA-Interim reanalysis, Operational SST and Sea Ice Analysis, and the Bureau offline soil moisture reanalysis. The region covered by the reanalysis is the Australian continent, and the surrounding region including parts of southeast Asia, New Zealand, and south to the ice edge of the Antarctic continent. The suite contains 5 datasets.<br/ >The "regional" dataset contains about 100 parameters, available at hourly time steps at approximately 12-km resolution. The 4 "subdomain" datasets, (South-West Western Australia, South Australia, Eastern New South Wales, and Tasmania), are dynamically downscaled analyses at 1.5-km resolution. These have been developed using multiple convective-scale (1.5-km) downscaling analyses driven by the 12-km system. It can be used for weather and climate research, case studies of past weather events, studying climate variability.<br/ >BARRA includes':'<br/ >BARRA-R (Regional) Product':' BARRA-R is a moderate-resolution (12 km) regional reanalysis over Australia and the surrounding regions. The data set includes hourly data for temperature, moisture, wind and flux variables at sub-surface, surface, and pressure levels, and heights above surface.<br/ >BARRA-AD (Adelaide) Product':' Downscaled (1.5km) regional atmospheric reanalysis over South Australia centred at Adelaide.<br/ >BARRA-PH (Perth) Product':' Downscaled (1.5km) regional atmospheric reanalysis over south-western Western Australia at Perth.<br/ >BARRA-SY (Sydney) Product':' Downscaled (1.5km) regional atmospheric reanalysis over eastern New South Wales including Sydney.<br/ >BARRA-TA (Tasmania) Product':' Downscaled (1.5km) regional atmospheric reanalysis over Tasmania.
+Documentation: Documentation is available for "[BARRA 1](https://thredds.nci.org.au/thredds/fileServer/cj37/BARRA/FAQ_BARRA_August_2020.pdf)"
+Contact: data_governance_office@bom.gov.au
+ManagedBy: "[Bureau of Meteorology](https://www.bom.gov.au/)"
+UpdateFrequency: No longer updated
+Tags:
+  - aws-pds
+  - atmosphere
+  - climate
+  - climate model
+  - climate projections
+  - climate risk
+  - environmental
+  - extreme weather
+  - hydrology
+  - machine learning
+  - meteorological
+  - simulations
+  - weather
+License: "[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)"
+Citation:
+Resources:
+  - Description: BARRA S3 bucket
+    ARN: arn:aws:s3:::bom-opendata-climate/BARRA/
+    Region: ap-southeast-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://bom-opendata-climate.s3.amazonaws.com/index.html#BARRA/)'
+  - Description: Notification of new data in the bom-opendata-climate bucket
+    ARN: arn:aws:sns:ap-southeast-2:314272288789:bom-opendata-climate-object_created
+    Region: ap-southeast-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset BARRA
+      URL: https://github.com/xcastagn/open-data-examples
+      NotebookURL: https://github.com/xcastagn/open-data-examples/blob/master/get-to-know-a-dataset-barra_1.ipynb
+      AuthorName: Australian Bureau of Meteorology
+      AuthorURL: https://www.bom.gov.au/
+ADXCategories:
+  - Environmental Data
