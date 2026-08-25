@@ -27,9 +27,8 @@ Contact: Philip Sulewski (phsulewski@gmail.com)
 ManagedBy: "[Kietzmann Lab](https://kietzmannlab.uni-osnabrueck.de) at Universität Osnabrück"
 
 UpdateFrequency: >
-  Initial release as a single batch. Select additional derivative artifacts (e.g.
-  caption-to-object matching tables, scene-sampling metadata) are planned for future addition;
-  no fixed update schedule otherwise.
+  Initial release as a single batch, including caption-to-object matching tables and
+  scene-sampling metadata. No fixed update schedule.
 
 Tags:
   - aws-pds
@@ -51,10 +50,8 @@ Resources:
     ARN: arn:aws:s3:::kietzmannlab-avs
     Region: us-west-2
     Type: S3 Bucket
-    # Bucket currently holds only a partial demo subset (sub-01, 4/10 sessions, ~50 GiB) for
-    # ODP-review/tutorial purposes. The full ~712 GiB release upload is pending completion of
-    # AWS Open Data Sponsorship Program onboarding (billing-org linkage) — see
-    # release/README.md and memory/project_aws_open_data_grant.md.
+    # Full release uploaded 2026-08-25: 18,415 objects, ~663 GiB, verified against the
+    # release manifest.
   - Description: New-object notifications for the kietzmannlab-avs S3 bucket (from AWS's
       public-dataset CloudFormation template's default SNS topic).
     ARN: arn:aws:sns:us-west-2:406194432886:kietzmannlab-avs-object_created
@@ -67,8 +64,7 @@ DataAtWork:
       URL: https://github.com/KietzmannLab/pyavs/blob/main/examples/get-to-know-a-dataset.ipynb
       AuthorName: Philip Sulewski
       # Required first tutorial entry per the ODP handbook (Section 2.3). Runs end-to-end
-      # against the live public bucket, no credentials needed. Pending: this URL will 404
-      # until examples/get-to-know-a-dataset.ipynb is committed and pushed to pyavs main.
+      # against the live public bucket, no credentials needed.
     - Title: pyAVS Colab Quickstart
       URL: https://colab.research.google.com/github/KietzmannLab/pyavs/blob/main/examples/pyavs_colab_quickstart.ipynb
       NotebookURL: https://raw.githubusercontent.com/KietzmannLab/pyavs/main/examples/pyavs_colab_quickstart.ipynb
