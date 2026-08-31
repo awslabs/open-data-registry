@@ -1,0 +1,72 @@
+Name: Correlative Light and Electron Microscopy Dataset of Evidence Accumulation in Larval Zebrafish
+
+Description: >
+  A large-scale correlative light and electron microscopy (CLEM) dataset
+  combining two-photon calcium imaging with serial-section electron microscopy
+  in 7-day-old larval zebrafish. The dataset links functional activity
+  recordings to nanometer-resolution synaptic connectivity and full neuronal
+  reconstructions, enabling circuit-level analysis of evidence accumulation
+  and decision-making networks.
+
+Documentation: https://jboulanger91.github.io/fish1.5-release/
+
+Contact: boulangerweill@fas.harvard.edu; jonathan.boulanger.weill@gmail.com
+
+ManagedBy: Harvard University
+
+UpdateFrequency: Static dataset; no planned updates
+
+Tags:
+  - neuroscience
+  - microscopy
+  - connectomics
+  - imaging
+  - biology
+
+License: MIT License (https://opensource.org/licenses/MIT)
+
+Citation: >
+  Boulanger-Weill J, Kämpf F, Schuhknecht GFP, Schalek RL,
+  Petkova M, Vohra SK, et al.
+  Correlative light and electron microscopy reveals the fine circuit
+  structure underlying evidence accumulation in larval zebrafish.
+  bioRxiv 2025.03.14.643363.
+  https://doi.org/10.1101/2025.03.14.643363
+
+Resources:
+  - Description: >
+      Public S3 bucket containing volumetric electron microscopy data,
+      neuron segmentations, synapse annotations, reconstructed meshes,
+      and associated functional imaging datasets in standard formats
+      (NRRD, TIFF, OBJ, CSV).
+    ARN: arn:aws:s3:::larval-zebrafish-clem-connectomics
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+    AccountRequired: No
+    ControlledAccess:
+    Explore:
+      - https://s3.console.aws.amazon.com/s3/buckets/larval-zebrafish-clem-connectomics
+
+DataAtWork:
+  Tutorials:
+    - Title: Fish1.5 Dataset Tutorials
+      URL: https://jboulanger91.github.io/fish1.5-release/tutorials/
+      AuthorName: Boulanger-Weill J et al.
+      AuthorURL: https://github.com/jboulanger91
+
+  Tools & Applications:
+    - Title: Zebrafish CLEM Analysis Pipelines
+      URL: https://github.com/jboulanger91/Zebrafish_CLEM
+      AuthorName: Harvard University
+      AuthorURL: https://github.com/jboulanger91
+
+  Publications:
+    - Title: Correlative light and electron microscopy reveals the fine circuit structure underlying evidence accumulation in larval zebrafish
+      URL: https://doi.org/10.1101/2025.03.14.643363
+      AuthorName: Boulanger-Weill J, Kämpf F, Schuhknecht GFP, Schalek RL, Petkova M, Vohra SK, et al.
+      AuthorURL: https://www.biorxiv.org/content/10.1101/2025.03.14.643363v1
+
+ADXCategories:
+  - Healthcare & Life Sciences
+  - Research
