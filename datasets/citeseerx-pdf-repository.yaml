@@ -1,0 +1,58 @@
+Name: CiteSeerX PDF Repository
+Description: The dataset contains a total of 12,479,682 PDFs ingested by CiteSeerX since its launch in 1997. The PDFs are collected through a multi-stage pipeline encompassing data acquisition, document classification, information extraction, and document ingestion. During data acquisition, PDF documents are either collected via a focused web crawler or downloaded in bulk from academic document repositories. A machine learning classifier is then applied to distinguish academic documents from non-academic ones. Metadata, plain text, and structured text , e.g. XMLs, of academic papers are subsequently extracted from the PDFs using machine learning models. Finally, duplicate PDFs are removed, files are renamed, and the documents are copied to a production repository. Certain PDFs may subsequently be removed from the repository upon receipt of DMCA takedown requests.
+Documentation: https://github.com/SeerLabs/CiteSeerX/tree/master/doc
+Contact: j1wu@odu.edu
+ManagedBy: Old Dominion University
+UpdateFrequency: No update is planned.
+Tags: 
+  - scholarly big data
+  - pdf
+  - academic search engine
+  - citation graph 
+  - metadata
+  - information science 
+  - information retrieval 
+License: CC BY-NC-SA 4.0
+Resources:
+  - Description:A large collection of PDF documents, useful for building citation graphs
+    ARN:arn:aws:s3:::citeseer-repository
+    Region:us-east-1
+    Type:S3 Bucket
+    Explore:README.txt
+DataAtWork:
+  Tools & Applications:
+    - Title: CiteSeerX
+      URL: https://citeseerx.ist.psu.edu/
+      AuthorName: C. Lee Giles
+      AuthorURL: https://clgiles.ist.psu.edu/
+  Publications:
+    - Title: CiteSeer: An Automatic Citation Indexing System 
+      URL:https://doi.org/10.1145/276675.276685
+      AuthorName:C. Lee Giles 
+      AuthorURL:https://clgiles.ist.psu.edu/
+    - Title: CiteSeerx: A Scholarly Big Dataset 
+      URL:https://doi.org/10.1007/978-3-319-06028-6_26
+      AuthorName:Cornelia Caragea 
+      AuthorURL:https://www.cs.uic.edu/~cornelia/
+    - Title: Mining citation information from CiteSeer data
+      URL:https://doi.org/10.1007/s11192-010-0326-1
+      AuthorName:Dalibor Fiala 
+      AuthorURL:https://www.dalfia.net/
+    - Title: CiteSeer: An Autonomous Web Agent for Automatic Retrieval and Identification of Interesting Publications 
+      URL:https://doi.org/10.1145/280765.280786
+      AuthorName:Kurt D. Bollacker
+      AuthorURL:https://www.linkedin.com/in/kurt-bollacker-997b851/
+    - Title: Scholarly big data information extraction and integration in the CiteSeerχ digital library
+      URL:https://doi.org/10.1109/ICDEW.2014.6818305
+      AuthorName:Kyle Williams
+      AuthorURL:https://kylewilliams.ai/
+    - Title: CiteSeerX: AI In a Digital Library Search Engine
+      URL:https://doi.org/10.1609/aimag.v36i3.2601
+      AuthorName:Jian Wu
+      AuthorURL:https://www.cs.odu.edu/~jwu/
+    - Title: SeerSuite: Developing a scalable and reliable application framework for building digital libraries by crawling the web
+      URL:https://doi.org/10.5555/1863166.1863180
+      AuthorName:Pradeep B. Teregowda
+      AuthorURL:https://scholar.google.com/citations?user=jBS6BDIAAAAJ&hl=en
+ADXCategories:
+  - Public Sector Data  
