@@ -1,0 +1,30 @@
+Name: NASA NIMBUS-7 Project
+Description: |
+  NIMBUS7_NFOV_MLCE data are Nimbus 7 Narrow Field of View (NFOV) Maximum Likelihood Cloud Estimation (MLCE) Data in Native Format.The NIMBUS7_NFOV_MLCE data set uses the Nimbus-7 measurements and the MLCE algorithm for better regional and temporal resolution. The Earth Radiation Budget (ERB) parameters, derived from the Nimbus-7 scanner measurements, were rederived in 1990 using a Maximum Likelihood Cloud Estimation (MLCE) algorithm similar, but not identical, to the Earth Radiation Budget Experiment (ERBE) algorithm. Daily and monthly means are presented on two commensurate equal area world grids: (167 km by 167 km) and (500 km by 500 km). The MLCE procedure also yielded a rough estimate of the regional cloud cover.The scanner took measurements from November 16, 1978 through June 20, 1980; however, only 13 months (May 1979 through May 1980) of data sampling were reprocessed using the Sorting into Angular Bins and MLCE algorithms. There was poorer temporal sampling during the first five months of the experiment.The Nimbus 7 research-and-development satellite served as a stabilized, earth-oriented platform for the testing of advanced systems for sensing and collecting data in the pollution, oceanographic and meteorological disciplines. The polar-orbiting spacecraft consisted of three major structures: (1) a hollow torus-shaped sensor mount, (2) solar paddles, and (3) a control housing unit that was connected to the sensor mount by a tripod truss structure.
+  <br>
+
+  #### WENTZ_NIMBUS-7_SMMR_L2
+  Contains three parameters: ocean near-surface wind speed, columnar water vapor, and columnar liquid water. Product is produced by Frank Wentz at Remote Sensing Systems using data obtained from the Nimbus-7 Scanning Multichannel Microwave Radiometer (SMMR). Observations within 100 km of land are excluded; ice flags are also utilized. Data is obtained from all 10 individual SMMR channels, which closely correspond to the SMM/I channels and utilizing the same processing algorithms that were used to produce similar products derived from SSM/I observations (see PO.DAAC products 33 and 34).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br><br>
+Documentation: https://asdc.larc.nasa.gov/project/NIMBUS-7
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- ice
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "WENTZ_NIMBUS-7_SMMR_L2 v1 - Contains three parameters: ocean near-surface wind speed, columnar water vapor, and columnar liquid water. Product is produced by Frank Wentz at Remote Sensing Systems using data obtained from the Nimbus-7 Scanning Multichannel Microwave Radiometer (SMMR)."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/WENTZ_NIMBUS-7_SMMR_L2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

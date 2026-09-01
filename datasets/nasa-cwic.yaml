@@ -1,0 +1,59 @@
+Name: NASA CWIC Project
+Description: |
+  The The MODIS Near Real Time (NRT) product, MOD09Q1N provides Band 1 and 2 data at 250 meter resolution in a daily rolling 8-day gridded level-3 product in the Sinusoidal projection. Each MOD09Q1N pixel contains the best possible L2G observation during an 8-day period as selected on the basis of high observation coverage low view angle the absence of clouds or cloud shadow and aerosol loading. Science Data Sets provided for this product include reflectance values for Bands 1 and 2 and a quality rating.
+  <br>
+
+  #### SCAMSN6IM
+  The SCAMSN6IM data product consists of images of brightness temperatures, water vapor and temperature on 70 mm film strips from the Nimbus-6 Scanning Microwave Spectrometer. Each display contains eight vertical strips of data from one orbit. All strips have the same geographic coverage, but each represents a different parameter. The first three are brightness temperatures for channels 2 (31.65 GHz) and 3 (52.85 GHz) and their differences. The next two represent retrieved water vapor and liquid water from clouds or precipitation over the oceans, respectively. The remaining three strips on the right represent inverted mean temperatures for atmospheric layers 1000-500 mbar, 500-250 mbar, and 250-100 mbar, respectively. The first five parameters are displayed in 18-step gray levels, the values of which can be found in a table in each of the first five volumes of "The Nimbus 6 Data Catalog." The last three parameters are displayed by contour bands (labeled on the side) that are spaced 4 K apart. Spatial resolution on the ground for the parameters varies from 145 km at nadir to 330 km at the scan extremes. The images are saved as TIFF digital files. About 3-5 months of images are archived into a ZIP file. Additional information can be found in section 2.4.1 of "The Nimbus 6 User's Guide." The SCAMS experiment on Nimbus-6 is a follow on to the successful Nimbus-5 NEMS experiment. SCAMS continuously monitored emitted microwave radiation at frequencies of 22.235, 31.65, 52.85, 53.85 and 55.45 GHz. The three channels near the 5.0-mm oxygen absorption band were used primarily to deduce atmospheric temperature profiles. The two channels near 10 mm permitted water vapor and cloud water content over calm oceans to be estimated separately. The instrument, a Dicke-superheterodyne type, scanned +/- 45 degrees normal to the orbital plane with a 10 degree field of view. The three oxygen channels shared common signal and reference antennas. Both water vapor channels had their own signals and reference antennas. The absolute rms accuracy of the oxygen channels was better than 2 Kelvin and that of the water vapor channels better than 1 Kelvin. The SCAMS Principal Investigator was Prof. David H. Staelin from MIT. The Nimbus-6 SCAMS images are available from June 15, 1975 (day of year 166) through May 31, 1976 (day of year 152). This product was previously available from the NSSDC with the identifier ESAD-00200 (old ID 75-052A-10B).
+  <br>
+
+  #### TOVSB5NG
+  Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 5 days and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B. This dataset contains data from the NOAA-10 satellite.
+  <br>
+
+  #### TOVSBDNG
+  Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 1 day and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B. This dataset contains data from the NOAA-10 satellite.
+  <br>
+
+  #### TOVSBMNG
+  Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 1 month and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B. This dataset contains data from the NOAA-10 satellite.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br><br>
+Documentation: http://modis.gsfc.nasa.gov/sci_team/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- oceans
+- precipitation
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SCAMSN6IM v001 - The SCAMSN6IM data product consists of images of brightness temperatures, water vapor and temperature on 70 mm film strips from the Nimbus-6 Scanning Microwave Spectrometer. Each display contains eight vertical strips of data from one orbit."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Nimbus6_SCAMS_Level2/SCAMSN6IM.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TOVSB5NG v01 - Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 5 days and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/tovs/TOVSB5NG
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TOVSBDNG v01 - Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 1 day and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/tovs/TOVSBDNG
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TOVSBMNG v01 - Level 3 parameters from HIRS/2 and MSU radiances using the Improved Initialization Inversion (3I) classification retrieval scheme by the Laboratoire de Meteorologie Dynamique (Ecole Polytechnique) averaged over 1 month and mapped on to a 1x1 degree grid. This data was run as part of the NASA TOVS Pathfinder project and designated as Path-B."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/tovs/TOVSBMNG
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

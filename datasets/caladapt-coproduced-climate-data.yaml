@@ -2,7 +2,7 @@ Name: Co-Produced Climate Data to Support California's Resilience Investments
 Description: Downscaled future and historical climate projections for California and her environs in support of California's Fifth Climate Assessment
 Documentation: https://analytics.cal-adapt.org/data/
 Contact: analytics@cal-adapt.org
-ManagedBy: Cal-Adapt Analytics Engine https://analytics.cal-adapt.org/
+ManagedBy: "Cal-Adapt: Analytics Engine (by Eagle Rock Analytics, Inc.)"
 UpdateFrequency: Infrequent, Irregular
 Collabs:
   ASDI:
@@ -28,11 +28,44 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://cadcat.s3.amazonaws.com/index.html)'
-      - '[Data Catalog](https://cadcat.s3.amazonaws.com/cae-collection.csv)'
+      - '[Data Catalog](https://cadcat.s3.amazonaws.com/cae-zarr.csv)'
 DataAtWork:
   Tutorials:
-    - Title: Example Use Cases of Data Via Cal-Adapt Analytics Engine
-      URL: https://analytics.cal-adapt.org/analytics/example/
+    - Title: List Data Hosted on The Cal-Adapt Data Catalog
+      URL: https://nbviewer.org/urls/cadcat.s3.amazonaws.com/catalog.ipynb
       NotebookURL: https://nbviewer.org/urls/cadcat.s3.amazonaws.com/catalog.ipynb
       AuthorName: Cal-Adapt Analytics Engine Team
       AuthorURL: https://github.com/cal-adapt
+    - Title: Tutorial on Data Access Using `climakitae` 
+      URL: https://github.com/cal-adapt/cae-notebooks/blob/main/data-access/basic_data_access.ipynb
+      NotebookURL: https://github.com/cal-adapt/cae-notebooks/blob/main/data-access/basic_data_access.ipynb
+      AuthorName: Cal-Adapt Analytics Engine Team
+      AuthorURL: https://github.com/cal-adapt
+    - Title: Analyzing Data Through a Global Warming Level Lens
+      URL: https://github.com/cal-adapt/cae-notebooks/blob/main/analysis/warming_level_methods.ipynb
+      NotebookURL: https://github.com/cal-adapt/cae-notebooks/blob/main/analysis/warming_level_methods.ipynb
+      AuthorName: Cal-Adapt Analytics Engine Team
+      AuthorURL: https://github.com/cal-adaptj
+  Tools & Applications:
+    - Title: Analytics Engine Data Catalog
+      URL: https://analytics.cal-adapt.org/data/access/
+      AuthorName: "Cal-Adapt: Analytics Engine Team"
+      AuthorURL: https://github.com/cal-adapt
+    - Title: Direct Connection in Xarray with S3 Path
+      URL: https://analytics.cal-adapt.org/data/access/
+      AuthorName: "Cal-Adapt: Analytics Engine Team"
+      AuthorURL: https://github.com/cal-adapt
+    - Title: AWS Explorer Functions
+      URL: https://analytics.cal-adapt.org/data/access/
+      AuthorName: "Cal-Adapt: Analytics Engine Team"
+      AuthorURL: https://github.com/cal-adapt
+    - Title: AWS Command Line Interface (CLI)
+      URL: https://analytics.cal-adapt.org/data/access/
+      AuthorName: "Cal-Adapt: Analytics Engine Team"
+      AuthorURL: https://github.com/cal-adapt
+    - Title: Cal-Adapt Data Download Tool (DDT)
+      URL: https://analytics.cal-adapt.org/data/access/
+      AuthorName: "Cal-Adapt: Analytics Engine Team"
+      AuthorURL: https://github.com/cal-adapt
+ADXCategories:
+  - Environmental Data

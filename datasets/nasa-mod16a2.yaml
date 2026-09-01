@@ -1,0 +1,57 @@
+Name: MODIS/Terra Net Evapotranspiration 8-Day L4 Global 500m SIN Grid V061
+Description: "The MOD16A2 Version 6.1 Evapotranspiration/Latent Heat Flux product
+  is an 8-day composite dataset produced at 500 meter (m) pixel resolution. The algorithm
+  used for the MOD16 data product collection is based on the logic of the Penman-Monteith
+  equation, which includes inputs of daily meteorological reanalysis data along with
+  Moderate Resolution Imaging Spectroradiometer (MODIS) remotely sensed data products
+  such as vegetation property dynamics, albedo, and land cover. \n\nProvided in the
+  MOD16A2 product are layers for composited Evapotranspiration (ET), Latent Heat Flux
+  (LE), Potential ET (PET) and Potential LE (PLE) along with a quality control layer.
+  Two low resolution browse images, ET and LE, are also available for each MOD16A2
+  granule.\n\nThe pixel values for the two Evapotranspiration layers (ET and PET)
+  are the sum of all eight days within the composite period and the pixel values for
+  the two Latent Heat layers (LE and PLE) are the average of all eight days within
+  the composite period. Note that the last acquisition period of each year is a 5
+  or 6-day composite period, depending on the year.\n\nKnown Issues\n* Operational
+  and uncertainty issues are provided under Section 3 in the User Guide.\n* For complete
+  information about known issues please refer to the [MODIS/VIIRS Land Quality Assessment
+  website](https://landweb.modaps.eosdis.nasa.gov/knownissue?sensor=MODIS&sat=Terra&as=61).\n\nImprovements/Changes
+  from Previous Versions\n* The Version 6.1 Level-1B (L1B) products have been improved
+  by undergoing various calibration changes that include: changes to the response-versus-scan
+  angle (RVS) approach that affects reflectance bands for Aqua and Terra MODIS, corrections
+  to adjust for the optical crosstalk in Terra MODIS infrared (IR) bands, and corrections
+  to the Terra MODIS forward look-up table (LUT) update for the period 2012 - 2017.\n*
+  A polarization correction has been applied to the L1B Reflective Solar Bands (RSB).\n*
+  The product uses Climatology LAI/FPAR as back up to the operational LAI/FPAR.\nRead
+  our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME"
+Documentation: https://doi.org/10.5067/MODIS/MOD16A2.061
+Contact: 'User Services: lpdaac@usgs.gov. Home Page: https://www.earthdata.nasa.gov/centers/lp-daac/contact'
+ManagedBy: NASA
+UpdateFrequency: From 2021-01-01 to Ongoing (Weekly - < Monthly)
+Tags:
+  - aws-pds
+  - atmosphere
+  - earth observation
+  - evapotranspiration
+  - geospatial
+  - global
+  - land
+  - land cover
+  - opendap
+  - water
+  - hdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'MODIS/Terra Net Evapotranspiration 8-Day L4 Global 500m SIN Grid
+      V061.'
+    ARN: arn:aws:s3:::lp-prod-protected/MOD16A2.061
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials:
+   - Title: Download Files from S3 Using boto3
+     URL: https://github.com/nasa/LPDAAC-Data-Resources/blob/7f58ad3abeca7f0d17637ddb812642c0120a57ab/python/how-tos/Earthdata_Cloud__Download_file_from_S3.ipynb
+     AuthorName: LPDAAC

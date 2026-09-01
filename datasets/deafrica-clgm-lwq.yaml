@@ -1,0 +1,104 @@
+Name: Digital Earth Africa - Copernicus Global Land Service - Lake Water Quality
+Description: |
+    The Copernicus Global Land Service – Lake Water Quality products offer a comprehensive, satellite-derived monitoring system for assessing key water quality indicators in major large lakes, typically those greater than 50 hectares. These datasets are generated using optical satellite sensors, primarily Sentinel-2 MSI and Sentinel-3 OLCI, with earlier archives derived from Envisat MERIS. Spanning multiple spatial resolutions (100 m and 300 m) and temporal scales (10-day composites), they support both near-real-time and retrospective assessments of inland water quality.
+    
+    Key parameters include surface reflectance, turbidity, total suspended matter (TSM), chlorophyll-a concentration, trophic state index, and floating cyanobacteria risk—all essential for monitoring eutrophication, ecological health, and harmful algal blooms (HABs). The datasets cover the period from 2002 to the present, providing long-term continuity for environmental monitoring and scientific research, with focused coverage in Europe and Africa.
+    
+    All products are delivered using standardized geospatial grids (EPSG:4326) and include quality flags, detailed metadata, and validation against in situ observations to ensure reliability. Continuous improvements across product versions—such as enhanced atmospheric correction and updated retrieval algorithms—have significantly improved accuracy and usability. In addition, comprehensive user manuals, technical documentation, and support materials are available, making the data highly accessible to researchers, policymakers, and environmental managers.
+    
+    Digital Earth Africa (DE Africa) hosts these datasets for the African region, providing free and open access to both the data and associated tools.
+
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/CGLM_Lake_Water_Quality_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New scene-level data is added regularly, as the Lake Water Quality (LWQ) datasets are updated every 10 days (dekadal composites), with near-real-time versions typically available within 3 to 4 days after satellite acquisition.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - agriculture
+  - disaster response
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - water
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Lake Water Quality 2019-2024 (raster 100 m), 10-daily – version 1
+    ARN: arn:aws:s3:::deafrica-input-datasets/cgls_lwq100_2019_2024
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/cgls_lwq100_2019_2024)'
+  - Description: Lake Water Quality 2024 - present (raster 100 m), 10-daily – version 2
+    ARN: arn:aws:s3:::deafrica-input-datasets/cgls_lwq100_2024_nrt
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/cgls_lwq100_2024_nrt)'
+  - Description: Lake Water Quality 2002-2012 (raster 300 m), 10-daily – version 1
+    ARN: arn:aws:s3:::deafrica-services/cgls_lwq300_2002_2012
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/cgls_lwq300_2002_2012)'
+  - Description: Lake Water Quality 2016-2024 (raster 300 m), 10-daily – version 1
+    ARN: arn:aws:s3:::deafrica-services/cgls_lwq300_2016_2024
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/cgls_lwq300_2016_2024)'
+  - Description: Lake Water Quality 2024 - present (raster 300 m), 10-daily – version 2
+    ARN: arn:aws:s3:::deafrica-services/cgls_lwq300_2024_nrt
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/cgls_lwq300_2024_nrt)'
+DataAtWork:
+  Tutorials:
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer (Lake Water Quality 2019-2024 (raster 100 m), 10-daily – version 1)"
+      URL: https://explorer.digitalearth.africa/products/cgls_lwq100_2019_2024
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer ( Lake Water Quality 2024 - present (raster 100 m), 10-daily – version 2)"
+      URL: https://explorer.digitalearth.africa/products/cgls_lwq100_2024_nrt
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer ( Lake Water Quality 2002-2012 (raster 300 m), 10-daily – version 1)"
+      URL: https://explorer.digitalearth.africa/products/cgls_lwq300_2002_2012
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer ( Lake Water Quality 2016-2024 (raster 300 m), 10-daily – version 1)"
+      URL: https://explorer.digitalearth.africa/products/cgls_lwq300_2016_2024
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Explorer ( Lake Water Quality 2024 - present (raster 300 m), global, 10-daily – version 2)"
+      URL: https://explorer.digitalearth.africa/products/cgls_lwq300_2024_nrt
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors

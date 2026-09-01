@@ -1,0 +1,38 @@
+Name: Land/Sea static mask relevant to IMERG precipitation 0.1x0.1 degree V2 (GPM_IMERG_LandSeaMask) at GES DISC
+Description: |-
+  Version 2 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 2.
+
+  This land sea mask originated from the NOAA group at SSEC in the 1980s. It was originally produced at 1/6 deg resolution, and then regridded for the purposes of GPCP, TMPA, and IMERG precipitation products. NASA code 610.2, Terrestrial Information Systems Laboratory, restructured this land sea mask to match the IMERG grid, and converted the file to CF-compliant netCDF4. Version 2 was created in May, 2019 to resolve detected inaccuracies in coastal regions.
+
+  Users should be aware that this is a static mask, i.e. there is no seasonal or annual variability, and it is due for update. It is not recommended to be used outside of the aforementioned precipitation data.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/6P5EM1HPR3VD
+Contact: 'GES DISC HELP DESK SUPPORT GROUP: gsfc-dl-help-disc@mail.nasa.gov. Home Page: https://disc.gsfc.nasa.gov/'
+ManagedBy: NASA
+UpdateFrequency: From 1998-01-01 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - coastal
+  - datacenter
+  - global
+  - land
+  - metadata
+  - opendap
+  - netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'Land/Sea static mask relevant to IMERG precipitation 0.1x0.1 degree
+      V2 (GPM_IMERG_LandSeaMask) at GES DISC.'
+    ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/AUXILIARY/GPM_IMERG_LandSeaMask.2/
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials: 
+   - Title: How to Access GES DISC Data Using Python
+     URL: https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_to_Access_GES_DISC_Data_Using_Python.ipynb
+     AuthorName: James Acker, Jerome Alfred, Helen Amos, Chris Battisto, Thomas Hearty, Alexis Hunzinger, Lena Iredell, Christoph Keller, Binita KC, Carlee Loeser, Ariana Louise, Kristan Morgan, Dieu My T. Nguyen, Dana Ostrenga, Xiaohua Pan, Kanan Patel, Brianna R. Pagán, Andrey Savtchenko, Elliot Sherman,  
+                  Suhung Shen, Jian Su,Joseph Wysk, Rupesh Shrestha.

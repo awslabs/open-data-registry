@@ -1,0 +1,175 @@
+Name: NASA Model Archive Project
+Description: |
+  This model product provides: (1) the source code for the updated Berkeley-Dalhousie Soil Nitric Oxide (NO) Parameterization module (BDSNP, Version 1.0) as implemented with the Community Multi-scale Air Quality model (CMAQ, Version 5.0.2), (2) module input data from historical and new sources of maps for soil biome type, fertilizer, and arid and non-arid climates, and (3) sample CMAQ simulation outputs for three BDSNP module NO parameterizations (standard, historical, and newer inputs). The simulations use a 12-km spatial grid resolution for CMAQ modeling covering the conterminous United States for July 2011.
+  <br>
+
+  #### BIOME_BGC_m2_4_1_2_809
+  This archived model product contains the directions, executables, and procedures for running Biome-BGC, Version 4.1.2, to recreate the results of Law BE, Sun OJ, Campbell J, Van Tuyl S, Thornton PE, 2003. Changes in carbon storage and fluxes in a chronosequence of ponderosa pine. Global Change Biology, 9(4), 510-514.Law et al. 2003 excerpt: Abstract Forest development following stand-replacing disturbance influences a variety of ecosystem processes including carbon exchange with the atmosphere. On a series of ponderosa pine (Pinius ponderosa var. Laws.) stands ranging from 9 to > 300 years in central Oregon, USA, we used biological measurements to estimate carbon storage in vegetation and soil pools, net primary productivity (NPP) and net ecosystem productivity (NEP) to examine variation with stand age. Measurements were made in 2000 on a chronosequence of 12 ponderosa pine stands. Total ecosystem carbon storage and the fraction of ecosystem carbon in aboveground wood mass increased rapidly until 150-200 years, and did not decline in older stands. Forest inventory data on 950 ponderosa pine plots in Oregon show that the greatest proportion of plots exist in stands ~ 100 years old, indicating that a majority of stands are approaching maximum carbon storage and net carbon uptake. Our data suggests that NEP averages ~ 70 g C m-2 year-1 for ponderosa pine forests in Oregon. About 85% of the total carbon storage in biomass on the survey plots exists in stands greater than 100 years, which has implications for managing forests for carbon sequestration. To investigate variation in carbon storage and fluxes with disturbance, simulation with process models requires a dynamic parameterization for biomass allocation that depends on stand age, and should include a representation of competition between multiple plant functional types for space, water, and nutrients.
+  <br>
+
+  #### BIOME_BGC_m_4_1_1_806
+  This archived model product contains the directions, executables, and procedures for running Biome-BGC, Version 4.1.1, to recreate the results of: Thornton, P.E., Law, B.E., Gholz, H.L., Clark, K.L., Falge, E., Ellsworth, D.S., Goldstein, A.H., Monson, R.K., Hollinger, D., Falk, M., Chen, J. and Sparks, J.P. 2002. Modeling and measuring the effects of disturbance history and climate on carbon and water budgets in evergreen needleleaf forests. Agricultural and Forest Meteorology 113:185-222.Thornton et al., 2002 excerpt: AbstractThe effects of disturbance history, climate, and changes in atmospheric carbon dioxide (CO2) concentration and nitrogen deposition (Ndep) on carbon and water fluxes in seven North American evergreen forests are assessed using a coupled water, carbon, nitrogen model, canopy-scale flux observations, and descriptions of the vegetation type, management practices, and disturbance histories at each site. The effects of interannual climate variability, disturbance history, and vegetation ecophysiology on carbon and water fluxes and storage are integrated by the ecosystem process model Biome-BGC, with results compared to site biometric analyses and eddy covariance observations aggregated by month and year. The model produced good estimates of between-site variation in leaf area index, with mixed performance for between- and within-site variation in evapotranspiration. There is a model bias toward smaller annual carbon sinks at five sites, with a seasonal model bias toward smaller warm-season sink strength at all sites.
+  <br>
+
+  #### BIOME_BGC_4_1_1_805
+  Biome-BGC is a computer program that estimates fluxes and storage of energy, water, carbon, and nitrogen for the vegetation and soil components of terrestrial ecosystems. The primary model purpose is to study global and regional interactions between climate, disturbance, and biogeochemical cycles.Biome-BGC represents physical and biological processes that control fluxes of energy and mass. These processes include: New leaf growth and old leaf litterfall Sunlight interception by leaves and penetration to the ground Precipitation routing to leaves and soil Snow accumulation and melting Drainage and runoff of soil water Evaporation of water from soil and wet leaves Transpiration of soil water through leaf stomata Photosynthetic fixation of carbon from CO2 in the air Uptake of nitrogen from the soil Distribution of carbon and nitrogen to growing plant parts Decomposition of fresh plant litter and old soil organic matter Plant mortality Fire The model uses a daily time-step. This means that each flux is estimated for a one-day period. Between days, the program updates its memory of the mass stored in different components of the vegetation, litter, and soil. Weather is the most important control on vegetation processes. Flux estimates in Biome-BGC depend strongly on daily weather conditions. Model behavior over time depends on climate--the history of these weather conditions.A companion file with more information about Biome-BGC and its components is available at ftp://daac.ornl.gov/data/model_archive/BIOME_BGC/biome_bgc_4.1.1/comp/BiomeBGC_v411_release.pdf .Biome-BGC, Version 4.1.1 was developed and is maintained by the Numerical Terradynamic Simulation Group, School of Forestry, The University of Montana, Missoula, Montana, USA. Additional information can be found on there web site at: http://www.ntsg.umt.edu/.
+  <br>
+
+  #### century_vemap_m4_820
+  The CENTURY model, Version 4, is a general model of plant-soil nutrient cycling that is being used to simulate carbon and nutrient dynamics for different types of ecosystems including grasslands, agricultural lands, forests and savannas. CENTURY is composed of a soil organic matter/ decomposition submodel, a water budget model, a grassland/crop submodel, a forest production submodel, and management and events scheduling functions. It computes the flow of carbon, nitrogen, phosphorus, and sulfur through the model's compartments.
+  <br>
+
+  #### EDM_SA_Vegetation_1149
+  This model product contains the source code for the Ecosystem Demography Model (ED version 1.0) as well as model input and output data for a portion of South America including the Brazilian Amazon. The model output data are estimates of potential average live biomass (kg C/m2), potential average soil carbon (kg C/m2), and potential above-ground net primary production (NPP) (kg C/m2/yr) at 1.0 degree resolution. To produce these estimates, ED was forced with ISLSCP I data for 1987 and 1988, averaged into a single year (Moorcroft et al., 2001). Data for the three estimates are provided in both ASCII text and in NetCDF formatted files. ED is an individual-based terrestrial ecosystem model that predicts both ecosystem structure (e.g. above and below-ground biomass, vegetation height and basal area, and soil carbon stocks) and corresponding ecosystem fluxes (e.g. NPP, NEP and evapotranspiration) from climate, soil, and land-use inputs. The model consists of integrated sub-models governing processes such as leaf-level physiology, plant allocation, allometry, phenology, dispersal, the effects of fire disturbances, and below-ground sub-models for soil carbon dynamics and hydrology. Using a new method for scaling-up it is possible to predict ED's large-scale behavior without simulating the fate of every plant individually. ED is used to examine how climate and edaphic factors, natural disturbances, and human land-use practices affect ecosystem structure and fluxes. This data set contains six zip files which each uncompress into six unique subdirectories. Each subdirectory is described in detail in the Model Product Description section of this document. Installation and execution instructions are provided in the Model Documentation and User's Guide section of this document.
+  <br>
+
+  #### EDM_US_Carbon_1160
+  This model product contains the source code for the Ecosystem Demography Model (ED version 1.0) as well as model input and output data files for the conterminous United States. The ED is a mechanistic ecosystem model built around established sub-models of leaf level physiology, organic matter decomposition, hydrology, and functional biodiversity. It was used herein to estimate ecosystem carbon stocks and fluxes in the conterminous U.S. at 1.0 degree resolution from 1700 to 1990. Output data of carbon stocks and fluxes are stored in NetCDF format. To produce the U.S. scenario, ED was run from an estimated state of ecosystems in the year 1700 to an estimated state of ecosystems in the year 1990 for each 1 degree by 1 degree grid cell through time using ISLSCP Initiative I climate and soil data and a gridded land-use history reconstruction as inputs (Hurtt et al., 2002). The land-use history was based on several sources including: spatial distribution of potential vegetation in 1700, spatial patterns of cropland from 1700 to 1990, regional estimates of land use and logging from 1700 to 1990, and U.S. Forest Inventory and Analysis (FIA) data on the current age distribution of forest stands. The Miami Land Use History Model (Miami-LU), a far simpler empirically-based ecosystem model, was used to track the history of disturbance, land use, fire, and ecosystem recovery. The effects of fire suppression were also included. Atmospheric CO2 concentrations and climatic conditions were held constant throughout the runs to focus on the consequences of land-use and fire-management changes on carbon stocks and fluxes.
+  <br>
+
+  #### ibis_2_5_808
+  The Integrated Biosphere Simulator (or IBIS) is designed to be a comprehensive model of the terrestrial biosphere; the model represents a wide range of processes, including land surface physics, canopy physiology, plant phenology, vegetation dynamics and competition, and carbon and nutrient cycling. The model generates global simulations of the surface water balance (e.g., runoff), the terrestrial carbon balance (e.g., net primary production, net ecosystem exchange, soil carbon, aboveground and belowground litter, and soil CO2 fluxes), and vegetation structure (e.g., biomass, leaf area index, and vegetation composition). IBIS was developed by Center for Sustainability and the Global Environment (SAGE) researchers as a first step toward gaining an improved understanding of global biospheric processes and studying their potential response to human activity [Foley et al., 1996]. IBIS was constructed to explicitly link land surface and hydrological processes, terrestrial biogeochemical cycles, and vegetation dynamics within a single, physically consistent framework. Furthermore, IBIS was one of a new generation of global biosphere models, termed Dynamic Global Vegetation Models (or DGVMs), that consider transient changes in vegetation composition and structure in response to environmental change. Previous global ecosystem models have typically focused on the equilibrium state of vegetation and could not allow vegetation patterns to change over time.Version 2.5 of IBIS includes several major improvements and additions [Kucharik et al. 2000]. SAGE continues to test the performance of the model, assembling a wide range of continental- and global-scale data, including measurements of river discharge, net primary production, vegetation structure, root biomass, soil carbon, litter carbon, and soil CO2 flux. Using these field data and model results for the contemporary biosphere (1965-1994), their evaluation shows that simulated patterns of runoff, NPP, biomass, leaf area index, soil carbon, and total soil CO2 flux agreed reasonably well with measurements that have been compiled from numerous ecosystems. These results also compare favorably to other global model results [Kucharik et al. 2000].
+  <br>
+
+  #### LSM_807
+  The NCAR LSM 1.0 is a land surface model developed by Gordon Bonan to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, in a stand-alone mode, if an atmospheric forcing is provided. The model runs on a spatial grid that can range from one point to global. The model was designed for coupling to atmospheric numerical models. Consequently, there is a compromise between computational efficiency and the complexity with which the necessary atmospheric, ecological, and hydrologic processes are parameterized. The model is not meant to be a detailed micrometeorological model, but rather a simplified treatment of surface fluxes that reproduces at minimal computational cost the essential characteristics of land-atmosphere interactions important for climate simulations. The model is a complete executable code with its own time-stepping driver, initialization (subroutine lsmini), and main calling routine (subroutine lsmdrv). When coupled to an atmospheric model, the atmospheric model is the time-stepping driver. There is one call to subroutine lsmini during initialization to initialize all land points in the domain; there is one call per time step to subroutine lsmdrv to calculate surface fluxes and update the ecological, hydrological, and thermal state for all land points in the domain. The model writes its own restart and history files. These can be turned off if appropriate.Available for downloading from the ORNL DAAC are the LMS Model Documentation and User's Guide (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Users_Guide.pdf ), the model source code, input data set, and scripts for running the model. Applications of the model are described in two additional companion files (ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Bckgrnd_Application_Info.pdf and ftp://daac.ornl.gov/data/model_archive/LSM/lsm_1.0/comp/NCAR_LSM_Analyzed-Data.pdf.
+  <br>
+
+  #### LINKAGES_1166
+  This model product contains the source codes for version 1 of the individual-based forest ecosystem biogeochemistry model LINKAGES and two subsequent versions as well as example input and output data. LINKAGES predicts long-term structure and dynamics of forest ecosystems as constrained by nitrogen availability, climate, and soil moisture. Model simulations compare favorably to field data from different geographic areas worldwide. LINKAGES, written in FORTRAN and provided in ASCII format, simulates birth, growth, and death of all trees greater than 1.43-cm dbh. Litter fall and decomposition are also simulated. Sunlight is the driving variable. Growing season degree days, soil water availability, and AET are calculated from precipitation, temperature, soil field moisture capacity, and wilting point. Decomposition and soil N availability are calculated from organic matter quantity and carbon chemistry, evapotranspiration, and degree of canopy closure. Light availability to each tree is a function of leaf biomass of taller trees. Degree days and availabilities of light and water constrain species reproduction. These variables plus soil N constrain tree growth and carbon accumulation in biomass. Tree death probability increases with age and slow growth. Leaf, root, and woody litter are returned to the soil at the end of each year to decay the following year. Climatic and forest data for eastern North America and New South Wales are provided as example model inputs. Modelers may use their own site data within any version of LINKAGES. Example model output is also provided.
+  <br>
+
+  #### LPJ-WHyMe_v1-3-1_1150
+  This model product provides the Fortran 77 source code for the Lund-Potsdam-Jena (LPJ) Wetland Hydrology and Methane Dynamic Global Vegetation Model (LPJ-WHyMe v1.3.1), auxiliary C++ routines, ASCII and NetCDF input data, and NetCDF example output data. LPJ-WHyMe v1.3.1 simulates peatland hydrology, permafrost dynamics, peatland vegetation, and methane emissions. The model processes can be simulated on an area-averaged 0.5 or 1.0 degree grid cell basis at global, regional, or site scales and on a daily, monthly, or annual time step as appropriate. Input driver data are monthly mean air temperature, total precipitation, percentage of full sunshine, annual atmospheric CO2 concentration, and soil texture class. The simulation for each grid cell begins from "bare ground", requiring a "spin up" (under non-transient climate) of ca. 1,000 years to develop equilibrium vegetation, carbon, and soil structure. Model simulations compare favorably, with some exceptions, to field observations collected from peatland sites (e.g., Degero, Sweden; Lakkasuo, Finland; BOREAS Northern Study Area, Canada; and others) and non-peatland sites (e.g., Point Barrow, Alaska, and Spasskaya, Siberia). LPJ-WHyMe is a further development of LPJ-WHy, which dealt with the introduction of permafrost and peatlands into LPJ. Implementing peatlands in LPJ required the addition of two new plant functional types (PFTs) (flood tolerant C3 graminoids and Sphagnum mosses) to the already existing ten PFTs, the introduction of inundation stress for non-peatland PFTs, a slow-down in decomposition under inundation, and the addition of a root exudates pool. LPJ-WHyMe v1.3.1 adds a methane model subroutine. This model product has one compressed data file (.zip) and seven companion files.
+  <br>
+
+  #### MAPSS_853
+  MAPSS (Mapped Atmosphere-Plant-Soil System) is a landscape to global vegetation distribution model that was developed to simulate the potential biosphere impacts and biosphere-atmosphere feedbacks from climatic change. Model output from MAPSS has been used extensively in the Intergovernmental Panel on Climate Change's (IPCC) regional and global assessments of climate change impacts on vegetation and in several other projects.
+  <br>
+
+  #### CMAQ-N_Module_1661
+  This model product provides source code, input data files, and example model outputs for a new mechanistic soil nitrogen (N) module in-line with the Community Multiscale Air Quality (CMAQ) model 5.1 to simulate nitric oxide (NO), nitrous acid (HONO), nitrous oxide (N2O), and ammonia (NH3) soil emissions. The modeling domain covers the continental USA plus portions of northern Mexico and southern Canada, extending from 25 degrees north to 52 degrees north.The simulations use a 12-km spatial grid resolution. Input data are from high-quality reference sources for year 2011. Example model output data are provided for one day, April 21, 2011.
+  <br>
+
+  #### pnet_4_and_5_817
+  PnET (Photosynthetic / EvapoTranspiration model) is a nested series of models of carbon, water, and nitrogen dynamics in forest ecosystems. The models can be used to predict transient responses in net primary production (NPP), carbon and water balances, net nitrogen (N) mineralization and nitrification and N leaching losses, resulting from changes in climate, N deposition, tropospheric ozone and land use as well as variation in species composition. The models have been developed and validated in the Northeastern U.S. at both the site and grid level (to 1-km resolution) at the Complex Systems Research Center, University of New Hampshire, by John Aber and colleagues.
+  <br>
+
+  #### pnet_m_bgc_818
+  This archived model product contains the directions, executables, and procedures for running PnET-BGC to recreate the results of Gbondo-Tugbawa, S.S., C.T. Driscoll , J.D. Aber and G.E. Likens. 2001. The evaluation of an integrated biogeochemical model (PnET-BGC) at a northern hardwood forest ecosystem. Water Resources Research 37:1057-1070. Gbondo-Tugbawa et al,. 2001 Excerptfrom Abstract: An integrated biogeochemical model (PnET-BGC) was formulated to simulate chemical transformations of vegetation, soil, and drainage water in northern forest ecosystems. The model operates on a monthly time step and depicts the major biogeochemical processes, such as forest canopy element transformations, hydrology, soil organic matter dynamics, nitrogen cycling, geochemical weathering, and chemical equilibrium reactions involving solid and solution phases. The model was evaluated against soil and stream data at the Hubbard Brook Experimental Forest, New Hampshire. Model predictions of concentrations and fluxes of major elements generally agreed reasonably well with measured values, as estimated by normalized mean error and normalized mean absolute error. Model output of soil base saturation and stream acid neutralizing capacity were sensitive to parameter values of soil partial pressure of carbon dioxide, soil mass, soil cation exchange capacity, and soil selectivity coefficients of calcium and aluminum. PnET-BGC can be used as a tool to evaluate the response of soil and water chemistry of forest ecosystems to disturbances such as clear-cutting, climatic events, and atmospheric deposition.PnET-BGC, was used to investigate inputs and dynamics of S in a northern hardwood forest at the Hubbard Brook Experimental Forest (HBEF) (Gbondo-Tugbawa et al., 2002). The changes in soil S pools and stream-water were simulated to assess the response 22 SO4 to both atmospheric S deposition and forest clear-cutting disturbances. Watershed studies across the northeastern United States have shown that stream losses of exceed atmospheric sulfur (S) deposition. Understanding the processes responsible for this additional source of S is critical to quantifying ecosystem response to ongoing and potential future controls on SO2 emission.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- climate
+- hydrology
+- ice
+- netcdf
+- precipitation
+- soil moisture
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "BDSNP_CMAQ_Model_1351 v1 - This model product provides: (1) the source code for the updated Berkeley-Dalhousie Soil Nitric Oxide (NO) Parameterization module (BDSNP, Version 1.0) as implemented with the Community Multi-scale Air Quality model (CMAQ, Version 5.0.2), (2) module input data from historical and new sources of maps for soil biome type, fertilizer, and arid and non-arid climates, and (3) sample CMAQ simulation outputs for three BDSNP module NO parameterizations (standard, historical, and newer inputs). The simulations use a 12-km spatial grid resolution for CMAQ modeling covering the conterminous United Sta..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/BDSNP_CMAQ_Model/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BIOME_BGC_m2_4_1_2_809 v1 - This archived model product contains the directions, executables, and procedures for running Biome-BGC, Version 4.1.2, to recreate the results of Law BE, Sun OJ, Campbell J, Van Tuyl S, Thornton PE, 2003. Changes in carbon storage and fluxes in a chronosequence of ponderosa pine."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/BIOME_BGC_m2_4_1_2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BIOME_BGC_m_4_1_1_806 v1 - This archived model product contains the directions, executables, and procedures for running Biome-BGC, Version 4.1.1, to recreate the results of: Thornton, P.E., Law, B.E., Gholz, H.L., Clark, K.L., Falge, E., Ellsworth, D.S., Goldstein, A.H., Monson, R.K., Hollinger, D., Falk, M., Chen, J. and Sparks, J.P."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/BIOME_BGC_m_4_1_1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BIOME_BGC_4_1_1_805 v1 - Biome-BGC is a computer program that estimates fluxes and storage of energy, water, carbon, and nitrogen for the vegetation and soil components of terrestrial ecosystems. The primary model purpose is to study global and regional interactions between climate, disturbance, and biogeochemical cycles.Biome-BGC represents physical and biological processes that control fluxes of energy and mass."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/BIOME_BGC_4_1_1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "century_vemap_m4_820 v1 - The CENTURY model, Version 4, is a general model of plant-soil nutrient cycling that is being used to simulate carbon and nutrient dynamics for different types of ecosystems including grasslands, agricultural lands, forests and savannas. CENTURY is composed of a soil organic matter/ decomposition submodel, a water budget model, a grassland/crop submodel, a forest production submodel, and management and events scheduling functions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/century_vemap_m4/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "EDM_SA_Vegetation_1149 v1 - This model product contains the source code for the Ecosystem Demography Model (ED version 1.0) as well as model input and output data for a portion of South America including the Brazilian Amazon. The model output data are estimates of potential average live biomass (kg C/m2), potential average soil carbon (kg C/m2), and potential above-ground net primary production (NPP) (kg C/m2/yr) at 1.0 degree resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/EDM_SA_Vegetation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "EDM_US_Carbon_1160 v1 - This model product contains the source code for the Ecosystem Demography Model (ED version 1.0) as well as model input and output data files for the conterminous United States. The ED is a mechanistic ecosystem model built around established sub-models of leaf level physiology, organic matter decomposition, hydrology, and functional biodiversity."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/EDM_US_Carbon/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ibis_2_5_808 v1 - The Integrated Biosphere Simulator (or IBIS) is designed to be a comprehensive model of the terrestrial biosphere; the model represents a wide range of processes, including land surface physics, canopy physiology, plant phenology, vegetation dynamics and competition, and carbon and nutrient cycling. The model generates global simulations of the surface water balance (e.g., runoff), the terrestrial carbon balance (e.g., net primary production, net ecosystem exchange, soil carbon, aboveground and belowground litter, and soil CO2 fluxes), and vegetation structure (e.g., biomass, leaf area inde..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/ibis_2_5/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LSM_807 v1 - The NCAR LSM 1.0 is a land surface model developed by Gordon Bonan to examine biogeophysical and biogeochemical land-atmosphere interactions, especially the effects of land surfaces on climate and atmospheric chemistry. It can be run coupled to an atmospheric model or uncoupled, in a stand-alone mode, if an atmospheric forcing is provided."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/LSM/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LINKAGES_1166 v1 - This model product contains the source codes for version 1 of the individual-based forest ecosystem biogeochemistry model LINKAGES and two subsequent versions as well as example input and output data. LINKAGES predicts long-term structure and dynamics of forest ecosystems as constrained by nitrogen availability, climate, and soil moisture."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/LINKAGES/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LPJ-WHyMe_v1-3-1_1150 v1 - This model product provides the Fortran 77 source code for the Lund-Potsdam-Jena (LPJ) Wetland Hydrology and Methane Dynamic Global Vegetation Model (LPJ-WHyMe v1.3.1), auxiliary C++ routines, ASCII and NetCDF input data, and NetCDF example output data. LPJ-WHyMe v1.3.1 simulates peatland hydrology, permafrost dynamics, peatland vegetation, and methane emissions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/LPJ-WHyMe_v1-3-1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MAPSS_853 v1 - MAPSS (Mapped Atmosphere-Plant-Soil System) is a landscape to global vegetation distribution model that was developed to simulate the potential biosphere impacts and biosphere-atmosphere feedbacks from climatic change. Model output from MAPSS has been used extensively in the Intergovernmental Panel on Climate Change's (IPCC) regional and global assessments of climate change impacts on vegetation and in several other projects."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/MAPSS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CMAQ-N_Module_1661 v1 - This model product provides source code, input data files, and example model outputs for a new mechanistic soil nitrogen (N) module in-line with the Community Multiscale Air Quality (CMAQ) model 5.1 to simulate nitric oxide (NO), nitrous acid (HONO), nitrous oxide (N2O), and ammonia (NH3) soil emissions. The modeling domain covers the continental USA plus portions of northern Mexico and southern Canada, extending from 25 degrees north to 52 degrees north.The simulations use a 12-km spatial grid resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/CMAQ-N_Module/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "pnet_4_and_5_817 v1 - PnET (Photosynthetic / EvapoTranspiration model) is a nested series of models of carbon, water, and nitrogen dynamics in forest ecosystems. The models can be used to predict transient responses in net primary production (NPP), carbon and water balances, net nitrogen (N) mineralization and nitrification and N leaching losses, resulting from changes in climate, N deposition, tropospheric ozone and land use as well as variation in species composition."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/pnet_4_and_5/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "pnet_m_bgc_818 v1 - This archived model product contains the directions, executables, and procedures for running PnET-BGC to recreate the results of Gbondo-Tugbawa, S.S., C.T. Driscoll , J.D."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/model_archive/pnet_m_bgc/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

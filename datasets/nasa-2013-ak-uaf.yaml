@@ -1,0 +1,40 @@
+Name: NASA 2013_AK_UAF Project
+Description: |
+  This data set contains radar echograms acquired by the University of Alaska Fairbanks High-Frequency Radar Sounder over select glaciers in Alaska.
+  <br>
+
+  #### IRUAFHF2
+  This data set contains measurements of glacier surface elevation, bed elevation, and ice thickness for Alaska and Northwestern Canada. Glacier surface elevation is derived from IceBridge UAF Lidar Scanner L1B Geolocated Surface Elevation Triplets (ILAKS1B). Radar bed returns are sourced from IceBridge UAF L1B HF Geolocated Radar Echo Strength Profiles (IRUAFHF1B) to provide glacier bed elevation and ice thickness. Radar-derived ice thickness and glacier bed elevation are provided as per-trace measurements from the corresponding L1B radar echo strength profile (referencing the WGS 84 ellipsoid).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/iruafhf1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+- lidar
+- radar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IRUAFHF1B v1 - This data set contains radar echograms acquired by the University of Alaska Fairbanks High-Frequency Radar Sounder over select glaciers in Alaska."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRUAFHF1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IRUAFHF2 v1 - This data set contains measurements of glacier surface elevation, bed elevation, and ice thickness for Alaska and Northwestern Canada. Glacier surface elevation is derived from IceBridge UAF Lidar Scanner L1B Geolocated Surface Elevation Triplets (ILAKS1B)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRUAFHF2/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

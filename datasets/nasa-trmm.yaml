@@ -1,0 +1,639 @@
+Name: NASA TRMM Project
+Description: |
+  This is a new (GPM-formated) TRMM product. The equivalent old TRMM legacy product is TRMM_2H31. Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. Estimating vertical profiles of latent heating released by precipitating cloud systems is one of the key objectives of TRMM, together with accurately measuring the horizontal distribution of tropical rainfall. The method uses TRMM PR information [precipitation-top height (PTH), precipitation rates at the surface and melting level, and rain type] to select heating profiles from lookup tables. Heating-profile lookup tables for the three rain types—convective, shallow stratiform, and anvil rain (deep stratiform with a melting level)—were derived from numerical simulations of tropical cloud systems from the Tropical Ocean and Global Atmosphere Coupled Ocean–Atmosphere Response Experiment (TOGA COARE) utilizing a cloud-resolving model (CRM). The CSH algorithm is severely limited by the inherent sensitivity of the TRMM PR. For latent heating, the quantity required is actually cloud top, but the PR can detect only precipitation-sized particles. Because observed information on precipitation depth is used in addition to precipitation type and intensity, differences between shallow and deep convection are more distinct in the CSH algorithm in comparison with the CSH algorithm.
+  <br>
+
+  #### GPM_3HCSH_TRMM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM legacy TRMM_3H31 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. Estimating vertical profiles of latent heating released by precipitating cloud systems is one of the key objectives of TRMM, together with accurately measuring the horizontal distribution of tropical rainfall. The method uses TRMM PR information [precipitation-top height (PTH), precipitation rates at the surface and melting level, and rain type] to select heating profiles from lookup tables. Heating-profile lookup tables for the three rain types—convective, shallow stratiform, and anvil rain (deep stratiform with a melting level)—were derived from numerical simulations of tropical cloud systems from the Tropical Ocean and Global Atmosphere Coupled Ocean–Atmosphere Response Experiment (TOGA COARE) utilizing a cloud-resolving model (CRM). The CSH algorithm is severely limited by the inherent sensitivity of the TRMM PR. For latent heating, the quantity required is actually cloud top, but the PR can detect only precipitation-sized particles. Because observed information on precipitation depth is used in addition to precipitation type and intensity, differences between shallow and deep convection are more distinct in the CSH algorithm in comparison with the CSH algorithm. Monthly Spectral Latent Heating produces 0.25x0.25 degree grid of latent heating profiles from the TRMM PR rain. The grids are in the Planetary Grid 2 structure matching the Dual-frequency PR on the core GPM observatory that covers 67S to 67N degrees of latitudes. Areas beyond the ±40 degrees of latitudes are padded with empty grid cells.
+  <br>
+
+  #### GPM_3GCSH_TRMM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM legacy product TRMM_3G31. Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. Estimating vertical profiles of latent heating released by precipitating cloud systems is one of the key objectives of TRMM, together with accurately measuring the horizontal distribution of tropical rainfall. The method uses TRMM PR information [precipitation-top height (PTH), precipitation rates at the surface and melting level, and rain type] to select heating profiles from lookup tables. Heating-profile lookup tables for the three rain types—convective, shallow stratiform, and anvil rain (deep stratiform with a melting level)—were derived from numerical simulations of tropical cloud systems from the Tropical Ocean and Global Atmosphere Coupled Ocean–Atmosphere Response Experiment (TOGA COARE) utilizing a cloud-resolving model (CRM). The CSH algorithm is severely limited by the inherent sensitivity of the TRMM PR. For latent heating, the quantity required is actually cloud top, but the PR can detect only precipitation-sized particles. Because observed information on precipitation depth is used in addition to precipitation type and intensity, differences between shallow and deep convection are more distinct in the CSH algorithm in comparison with the CSH algorithm. The Gridded Orbital Spectral Latent Heating is actually one orbit gridded onto a global map with 0.25x0.25 degree grid cell size. These latent heating profiles from the TRMM Precipitation Radar (PR) rain. The granule temporal size is one orbit.
+  <br>
+
+  #### GPM_1BPR
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B21,1C21 Version 07 is the current version of the data set. Previous versions have been superseded by Version 07. The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. The 1B21 calculates the received power at the PR receiver input point from the Level-0 count value which is linearly proportional to the logarithm of the PR receiver output power. To convert the count value to the input power, extensive internal calibrations are applied, which are mainly based upon the system model, temperature dependence of model parameters and many temperature sensors attached at various locations of the PR. Periodically the input-output characteristics are measured using an internal calibration loop for the IF unit and later receiver stages. To make an absolute calibration, an Active Radar Calibrator (ARC) is placed at Kansai Branch of CRL and overall system gain of the PR is being measured every 2 months. Using the transfer function based on the above internal and external calibrations, the PR received power is obtained. Note that the value assumes that the signal follows the Rayleigh fading, so if the fading characteristics of a scatter is different, a small bias error may occur (within 1 or 2 dB). Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### GPM_3GSLH_TRMM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3G25 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. Estimating vertical profiles of latent heating released by precipitating cloud systems is one of the key objectives of TRMM, together with accurately measuring the horizontal distribution of tropical rainfall. The method uses TRMM PR information [precipitation-top height (PTH), precipitation rates at the surface and melting level, and rain type] to select heating profiles from lookup tables. Heating-profile lookup tables for the three rain types—convective, shallow stratiform, and anvil rain (deep stratiform with a melting level)—were derived from numerical simulations of tropical cloud systems from the Tropical Ocean and Global Atmosphere Coupled Ocean–Atmosphere Response Experiment (TOGA COARE) utilizing a cloud-resolving model (CRM). The SLH algorithm is severely limited by the inherent sensitivity of the TRMM PR. For latent heating, the quantity required is actually cloud top, but the PR can detect only precipitation-sized particles. Because observed information on precipitation depth is used in addition to precipitation type and intensity, differences between shallow and deep convection are more distinct in the SLH algorithm in comparison with the CSH algorithm. The Gridded Orbital Spectral Latent Heating is actually one orbit gridded onto a global map with 0.5 degree x 0.5 degree grid cell size. These latent heating profiles from the TRMM Precipitation Radar (PR) rain. The granule temporal size is one orbit.
+  <br>
+
+  #### GPM_3PRD
+  This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products. Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. This is the GPM-like formatted TRMM Precipitation Radar (PR) daily gridded data, first released with the "V8" TRMM reprocessing. The daily radar grid data is new for TRMM nomenclature and is introduced for consistency with the GPM Dual-frequency Precipitation Radar (DPR). The closest ancestor was 3A25 which was a monthly radar statistics. This product consists of daily statistics of the PR measurements at (0.25x0.25) degrees horizontal resolution. The objective of the algorithm is to calculate various daily statistics from the level 2 PR output products. Four types of statistics are calculated: 1. Probabilities of occurrence (count values) 2. Means and standard deviations In all cases, the statistics are conditioned on the presence of rain or some other quantity such as the presence of stratiform rain or the presence of a bright-band. For example, to compute the unconditioned mean rain rate, the conditional mean must be multiplied by the probability of rain which, in turn is calculated from the ratio of rain counts to the total number of observations in the box of interest. The grids are in the Planetary Grid 2 structure matching the Dual-frequency PR on the core GPM observatory that covers 67S to 67N degrees of latitudes. Areas beyond the ±40 degrees of latitudes are padded with empty grid cells.
+  <br>
+
+  #### GPM_2APR
+  This is the new, GPM-like, format for TRMM Precipitation Radar L2 data that now incorporates what was known as 2A21, 2A23 and 2A25 datasets. The primary purpose of 2A21 is to compute the path-integrated attenuation (PIA) using the surface reference technique (SRT). The surface reference technique rests on the assumption that the difference between the measurements of the normalized surface cross section outside and within the rain provides an estimate of the PIA. The secondary purpose of 2A21 is to compute the normalized radar cross sections ("sigma-not" or Normalized Radar Cross-Sectin (NRTS)) of the surface under rain-free conditions. Main objectives of 2A23 are as follows: (a) Detection of bright band (BB) and determination of the height of BB, the strength of BB, and the width (i.e. thickness) of BB when BB exists. (b) Classification of rain type into the following three categories: - stratiform, - convective, - other, where "other" means (ice) cloud only and/or maybe noise. (c) Detection of shallow isolated and shallow non-isolated. (d) Output of Rain/No-rain flag. (e) Computation of the estimated height of freezing level. (f) Output of the height of storm top. The objectives of 2A25 are to correct for the rain attenuation in measured radar reflectivity (Zm) and to estimate the instantaneous three-dimensional distribution of rain from the TRMM Precipitation Radar (PR) data. The estimated vertical profiles of attenuation-corrected radar reflectivity factor (Ze) and rainfall rate (R) are given at each resolution cell of the PR. The estimated rainfall rate at the actual surface height and the average rainfall rate between the two predefined altitudes (2 and 4 km) are also calculated for each beam position. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### GPM_3PR
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3A25,3A26 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. This is the GPM-like formatted TRMM Precipitation Radar (PR) monthly gridded data, first released with the "V8" TRMM reprocessing. The TRMM radar Level 3 grids are now consistent with the GPM Dual-frequency Precipitation Radar (DPR). The closest ancestor of this dataset was the monthly radar statistics 3A25. This product consists of monthly statistics of the PR measurements at 0.25x0.25 degrees, and monthly histograms and statistics at 5x5 degrees, horizontal resolution. The objective of the algorithm is to calculate various daily statistics from the level 2 PR output products. Four types of statistics are calculated: 1. Probabilities of occurrence (count values) 2. Means and standard deviations 3. Histograms 4. Correlation coefficients In all cases, the statistics are conditioned on the presence of rain or some other quantity such as the presence of stratiform rain or the presence of a bright-band. For example, to compute the unconditioned mean rain rate, the conditional mean must be multiplied by the probability of rain which, in turn is calculated from the ratio of rain counts to the total number of observations in the box of interest. The grids are in the Planetary Grid 2 structure matching the Dual-frequency PR on the core GPM observatory that covers 67S to 67N degrees of latitudes. The low resolution 5x5 deg grid covers 70S to 70N. Areas beyond the ±40 degrees of latitudes are padded with empty grid cells.
+  <br>
+
+  #### GPM_3HSLH_TRMM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3H25 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. Estimating vertical profiles of latent heating released by precipitating cloud systems is one of the key objectives of TRMM, together with accurately measuring the horizontal distribution of tropical rainfall. The method uses TRMM PR information [precipitation-top height (PTH), precipitation rates at the surface and melting level, and rain type] to select heating profiles from lookup tables. Heating-profile lookup tables for the three rain types—convective, shallow stratiform, and anvil rain (deep stratiform with a melting level)—were derived from numerical simulations of tropical cloud systems from the Tropical Ocean and Global Atmosphere Coupled Ocean–Atmosphere Response Experiment (TOGA COARE) utilizing a cloud-resolving model (CRM). The SLH algorithm is severely limited by the inherent sensitivity of the TRMM PR. For latent heating, the quantity required is actually cloud top, but the PR can detect only precipitation-sized particles. Because observed information on precipitation depth is used in addition to precipitation type and intensity, differences between shallow and deep convection are more distinct in the SLH algorithm in comparison with the CSH algorithm. Monthly Spectral Latent Heating produces 0.5 degree x 0.5 degree grid of latent heating profiles from the TRMM PR rain. The grids are in the Planetary Grid 2 structure matching the Dual-frequency PR on the core GPM observatory that covers 67S to 67N degrees of latitudes. Areas beyond the ±40 degrees of latitudes are padded with empty grid cells.
+  <br>
+
+  #### GPM_1BTMI
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B11 Version 07 is the current version of the data set. Previous versions have been superseded by Version 07. This dataset contains TRMM Micrwave Imager (TMI) L1B calibrated radiances in terms of Brightness Temperatures. The TMI calibration algorithm (1B11) converts the radiometer counts to antenna temperatures by applying a linear relationship of the form Ta = c1 + c2 x count. The coefficients are provided by the instrument contractor. Antenna temperatures are corrected for cross-polarization and spill over to produce brightness temperatures (Tb), but no antenna beam pattern correction or sample to pixel averaging are performed. Temperatures are provided at 104 scan positions for the low frequency channels and 208 scan positions at 85 GHz. There are four samples per pixel (3 -dB beamwidth) at 10 GHz, two samples at 19, 22, and 37 GHz, and one sample per pixel for the 85 GHz. Data Flow Description Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 760 km; Horizontal Resolution: ~13 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 878 km; Horizontal Resolution: ~13 km
+  <br>
+
+  #### GPM_1ATMI
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1A11 Version 07 is the current version of the data set. Previous versions have been superseded by Version 07. The 1ATMI product contains science and housekeeping sensor count data directly from the TRMM Microwave Imager (TMI) Instrument aboard the TRMM satellite. The data has been unpacked from the spacecraft packets and geolocated. A Level 1A file contains data for a single orbit and has a file size of about 33 MB. There are 16 files of TMI 1A data produced per day. Spatial coverage is between 38 degrees North and 38 degrees South owing to the 35 degree inclination of the TRMM satellite. This orbit provides extensive coverage in the tropics and allows each location to be covered at a different local time each day, enabling the analysis of the diurnal cycle of precipitation.
+  <br>
+
+  #### GPM_1BVIRS
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B01 Version 07 is the current version of the data set. Previous versions have been superseded by Version 07. This TRMM Visible and Infrared Scanner (VIRS) Level 1B Calibrated Radiance Product (1B01) contains calibrated radiances and auxiliary geolocation information from the five channels of the VIRS instrument, for each pixel of each scan. The data are stored in the Hierarchical Data Format (HDF), which includes both core and product specific metadata applicable to the VIRS measurements. A file contains a single orbit of data with a file size of about 95 MB. The EOSDIS "swath" structure is used to accommodate the actual geophysical data arrays. There are 16 files of VIRS 1B01 data produced per day. For channels 1 and 2, Level 1B radiances are derived from the Level 1A (1A01) sensor counts by computing calibration parameters (gain and offset) derived from the counts registered during space and solar and/or lunar views. New calibration parameters are produced every one to four weeks. Channels 3, 4, and 5 are calibrated using the internal blackbody and the space view. These calibration parameters, together with a quadratic term determined pre-launch, are used to generate a counts vs. radiance curve for each band, which is then used to convert the earth-view pixel counts to spectral radiances. Geolocation and channel data are written out for each pixel along the scan, whereas the time stamp, scan status (containing scan quality information), navigation, calibration coefficients, and solar/satellite geometry are specified on a per-scan basis. There are in general 18026 scans along the orbit pre-boost and 18223 post-boost, with each scan consisting of 261 pixels. The scan width is about 720 km pre-boost and 833 km post-boost. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 720 km; Horizontal Resolution: 2.2 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 833 km; Horizontal Resolution: 2.4 km
+  <br>
+
+  #### GPM_1AVIRS
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1A01 Version 07 is the current version of the data set. Previous versions have been superseded by Version 07. The 1AVIRS product contains science and housekeeping sensor count data directly from the Visible and Infrared Scanner (VIRS) aboard the TRMM satellite. The data has been unpacked from the spacecraft packets and geolocated. A Level 1A file contains data for a single orbit and has a file size of about 131 MB. There are 16 files of VIRS 1A data produced per day. The Visible and Infrared Scanner (VIRS) is a five-channel visible/infrared radiometer, which builds on the heritage of the Advanced Very High Resolution Radiometer (AVHRR) instrument flown aboard the NOAA series of Polar-Orbiting Operational Environmental Satellites (POES). The VIRS detects radiation at 1 visible, 2 near infrared and 2 thermal infrared wavelengths, allowing determination of cloud coverage, cloud top height and temperature, and precipitation indices. The central wavelengths for the VIRS channels are 0.63, 1.60,3.75, 10.8, and 12.0 microns. All channels are in operation during the daytime, but only channels 3, 4 and 5 operate during the nighttime. Spatial coverage is between 38 degrees North and 38 degrees South owing to the 35 degree inclination of the TRMM satellite. This orbit provides extensive coverage in the tropics and allows each location to be covered at a different local time each day, enabling the analysis of the diurnal cycle of precipitation
+  <br>
+
+  #### TRMM_TMPA_LandSeaMask
+  Version 2 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 2. This land sea mask originated from the NOAA group at SSEC in the 1980s. It was originally produced at 1/6 deg resolution, and then regridded for the purposes of GPCP, TMPA, and IMERG precipitation products. NASA code 610.2, Terrestrial Information Systems Laboratory, restructured this TMPA land sea mask to match the TMPA grid, and converted the file to CF-compliant netCDF4. Version 2 was created in May, 2019 to resolve detected inaccuracies in coastal regions. Users should be aware that this is a static mask, i.e. there is no seasonal or annual variability, and it is due for update. It is not recommended to be used outside of the aforementioned precipitation data.
+  <br>
+
+  #### LPRM_TMI_SOILM2
+  TMI/TRMM surface soil moisture (LPRM) L2 V001 is a Level 2 (swath) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM). Each swath is packaged with associated geolocation fields. The data set covers the period from December 1997 to April 2015 (when the instruments on the TRMM satellite were shut down in preparation for its reentry into the earth's atmosphere), at the spatial resolution (nominally 45 km) of TMI's X band (10.7 GHz). The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from TMI's Ka-band (37 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the TMI Brightness Temperatures (1B-11) product, archived at the Goddard Earth Sciences Data and Information Services Center (GES DISC).
+  <br>
+
+  #### LPRM_TMI_DY_SOILM3
+  TMI/TRMM surface soil moisture (LPRM) L3 1 day 25 km x 25 km daytime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM). There are two files per day, one daytime and one nighttime, archived as two different products. This document is for the daytime product. The data set covers the period from December 1997 to April 2015 (when the instruments on the TRMM satellite were shut down in preparation for its reentry into the earth's atmosphere). The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from TMI's Ka-band (37 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the TMI Brightness Temperatures (1B-11) product, daytime passes, as processed using LPRM (i.e., LPRM/TMI/TRMM Level 2 product, LPRM_TMI_SOILM2_V001).
+  <br>
+
+  #### LPRM_TMI_NT_SOILM3
+  TMI/TRMM surface soil moisture (LPRM) L3 1 day 25 km x 25 km nighttime V001 is Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM). There are two files per day, one daytime and one nighttime, archived as two different products. This document is for the nighttime product. The data set covers the period from December 1997 to April 2015 (when the instruments on the TRMM satellite were shut down in preparation for its reentry into the earth's atmosphere). The LPRM is based on a forward radiative transfer model to retrieve surface soil moisture and vegetation optical depth. The land surface temperature is derived separately from TMI's Ka-band (37 GHz). A unique feature of this method is that it can be applied at any microwave frequency, making it very suitable to exploit all the available passive microwave data from various satellites. Input data are from the TMI Brightness Temperatures (1B-11) product, nighttime passes, as processed using LPRM (i.e., LPRM/TMI/TRMM Level 2 product, LPRM_TMI_SOILM2_V001).
+  <br>
+
+  #### TRMM_3B42_Daily
+  TMPA (3B42_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDF/DAY/06). This daily accumulated precipitation product is generated from the research-quality 3-hourly TRMM Multi-Satellite Precipitation Analysis TMPA (3B42). It is produced at the NASA GES DISC, as a value added product. Simple summation of valid retrievals in a grid cell is applied for the data day. The result is given in (mm). The beginning and ending time for every daily granule are listed in the file global attributes, and are taken correspondingly from the first and the last 3-hourly granules participating in the aggregation. Thus the time period covered by one daily granule amounts to 24 hours, which can be inspected in the file global attributes. Counts of valid retrievals for the day are provided for every variable, making it possible to compute conditional and unconditional mean precipitation for grid cells where less than 8 retrievals for the day are available. Efforts have been made to make the format of this derived product as similar as possible to the new Global Precipitation Measurement CF-compliant file format. The information provided here on the TRMM mission, and on the original 3-hr 3B42 product, remain relevant for this derived product. Note, however, this product is in netCDF-4 format. The following describes the derivation in more details. The daily accumulation is derived by summing *valid* retrievals in a grid cell for the data day. Since the 3-hourly source data are in mm/hr, a factor of 3 is applied to the sum. Thus, for every grid cell we have Pdaily = 3 * SUM{Pi * 1[Pi valid]}, i=[1,Nf] Pdaily_cnt = SUM{1[Pi valid]} where: Pdaily - Daily accumulation (mm) Pi - 3-hourly input, in (mm/hr) Nf - Number of 3-hourly files per day, Nf=8 1[.] - Indicator function; 1 when Pi is valid, 0 otherwise Pdaily_cnt - Number of valid retrievals in a grid cell per day. Grid cells for which Pdaily_cnt=0, are set to fill value in the Daily files. Note that Pi=0 is a valid value. On occasion, the 3-hourly source data have fill values for Pi in a very few grid cells. The total accumulation for such grid cells is still issued, inspite of the likelihood that thus resulting accumulation has a larger uncertainty in representing the "true" daily total. These events are easily detectable using "counts" variables that contain Pdaily_cnt, whereby users can screen out any grid cells for which Pdaily_cnt less than Nf. There are various ways the accumulated daily error could be estimated from the source 3-hourly error. In this release, the daily error provided in the data files is calculated as follows. First, squared 3-hourly errors are summed, and then square root of the sum is taken. Similarly to the precipitation, a factor of 3 is finally applied: Perr_daily = 3 * { SUM[ (Perr_i * 1[Perr_i valid])^2 ] }^0.5 , i=[1,Nf] Ncnt_err = SUM( 1[Perr_i valid] ) where: Perr_daily - Magnitude of the daily accumulated error power, (mm) Ncnt_err - The counts for the error variable Thus computed Perr_daily represents the worst case scenario that assumes the error in the 3-hourly source data, which is given in mm/hr, accumulates first within the 3-hour period of the source data, and then continues to accumulate during the day. These values, however, can easily be converted to root mean square error estimate of the rainfall rate: rms_err = { (Perr_daily/3) ^2 / Ncnt_err }^0.5 (mm/hr) This estimate assumes that the error given in the 3-hourly files is representative of the error of the rainfall rate (mm/hr) within the 3-hour window of the files, and it is random throughout the day. Note, this should be interpreted as the error of the rainfall rate (mm/hr) for the day, not the daily accumulation.
+  <br>
+
+  #### TRMM_3B42
+  TMPA (3B42) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERG/3B-HH/06). This dataset was the output from the TMPA (TRMM Multi-satellite Precipitation Analysis) Algorithm. It provides precipitation estimates in the TRMM regions that have the (nearly-zero) bias of the ”TRMM Combined Instrument” precipitation estimate and the dense sampling of high-quality microwave data with fill-in using microwave-calibrated infrared estimates. The granule temporal coverage is 3 hours.
+  <br>
+
+  #### TRMM_3B41RT
+  TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06). These data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream. The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product 3B42. This particular dataset is an intermediate variable (VAR) rainrate IR estimate. Data files start with a header consisting of a 2880-byte record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the variable and version names, and giving the units of the variables. Immediately after the header follow 3 data fields, "precip", "error","# pixels", with byte count correspondingly 1382400,1382400,691200. First two are 2-byte integers, and the third is 1-byte. All fields are 1440x480 grid boxes (0-360E,60N-S). The first grid box center is at (0.125E,59.875N). The grid increments most rapidly to the east. Grid boxes without valid data are filled with the (2-byte integer) "missing" value -31999. Valid estimates are only provided in the band 50N-S. This binary data sets are in IEEE "big-endian" floating-point format.
+  <br>
+
+  #### TRMM_3B40RT
+  TMPA (3B40RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06). These data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream. The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to e.g. research quality product 3B42. This particular dataset is an intermediate high-quality (HQ) estimate from merged Microwave precipitation estimates. Data files start with a header consisteing of a 2880-byte header record containing ASCII characters. The header line makes the file nearly self-documenting, in particular spelling out the variable and version names, and giving the units of the variables. Immediately after the header follow the data fields. All fields are 1440x720 grid boxes (0-360�E,90�N-S). The first grid box center is at (0.125�E,89.875�N). The grid increments most rapidly to the east. Grid boxes without valid data are filled with the (2-byte integer) "missing" value -31999. Estimates are only computed for the band 70�N-S. This binary data sets are in IEEE ?big-endian? floating-point format. Files are produced every 3 hours on synoptic observation hours (00, 03, ..., 21 UTC) as an accumulation of all HQ swath data observed within +/-90 minutes of the nominal file time. I.e. Each file is a snapshot considered to represent the three-hour period centered on the "nominal" file time. So, e.g., 00 UTC nominally represents the period from 2230 UTC of the previous day to 0130 UTC of the current day.
+  <br>
+
+  #### TRMM_3B42RT_Daily
+  TMPA (3B42RT_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDE/DAY/06; 10.5067/GPM/IMERGDL/DAY/06). This daily accumulated precipitation product is generated from the Near Real-Time 3-hourly TRMM Multi-Satellite Precipitation Analysis TMPA (3B42RT). It is produced at the NASA GES DISC, as a value added product. Simple summation of valid retrievals in a grid cell is applied for the data day. The result is given in (mm). Although the grid is from 60S to 60N, the high latitudes (beyond 50S/N) near real-time retrievals are considered very unreliable and thus are screened out from the daily accumulations. The beginning and ending time for every daily granule are listed in the file global attributes, and are taken correspondingly from the first and the last 3-hourly granules participating in the aggregation. Thus the time period covered by one daily granule amounts to 24 hours, which can be inspected in the file global attributes. Counts of valid retrievals for the day are provided for every variable, making it possible to compute conditional and unconditional mean precipitation for grid cells where less than 8 retrievals for the day are available. Efforts have been made to make the format of this derived product as similar as possible to the new Global Precipitation Measurement CF-compliant file format. The latency of this derived daily product is about 7 hours after the UTC day is closed. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product. The information provided here on the TRMM mission, and on the original 3-hr 3B42 product, remain relevant for this derived product. Note, however, this product is in netCDF-4 format. The following describes the derivation in more details. The daily accumulation is derived by summing *valid* retrievals in a grid cell for the data day. Since the 3-hourly source data are in mm/hr, a factor of 3 is applied to the sum. Thus, for every grid cell we have Pdaily = 3 * SUM{Pi * 1[Pi valid]}, i=[1,Nf] Pdaily_cnt = SUM{1[Pi valid]} where: Pdaily - Daily accumulation (mm) Pi - 3-hourly input, in (mm/hr) Nf - Number of 3-hourly files per day, Nf=8 1[.] - Indicator function; 1 when Pi is valid, 0 otherwise Pdaily_cnt - Number of valid retrievals in a grid cell per day. Grid cells for which Pdaily_cnt=0, are set to fill value in the Daily files. Note that Pi=0 is a valid value. On occasion, the 3-hourly source data have fill values for Pi in a very few grid cells. The total accumulation for such grid cells is still issued, inspite of the likelihood that thus resulting accumulation has a larger uncertainty in representing the "true" daily total. These events are easily detectable using "counts" variables that contain Pdaily_cnt, whereby users can screen out any grid cells for which Pdaily_cnt less than Nf. There are various ways the accumulated daily error could be estimated from the source 3-hourly error. In this release, the daily error provided in the data files is calculated as follows. First, squared 3-hourly errors are summed, and then square root of the sum is taken. Similarly to the precipitation, a factor of 3 is finally applied: Perr_daily = 3 * { SUM[ (Perr_i * 1[Perr_i valid])^2 ] }^0.5 , i=[1,Nf] Ncnt_err = SUM( 1[Perr_i valid] ) where: Perr_daily - Magnitude of the daily accumulated error power, (mm) Ncnt_err - The counts for the error variable Thus computed Perr_daily represents the worst case scenario that assumes the error in the 3-hourly source data, which is given in mm/hr, is accumulating within the 3-hourly period of the source data and then during the day. These values, however, can easily be conveted to root mean square error estimate of the rainfall rate: rms_err = { (Perr_daily/3) ^2 / Ncnt_err }^0.5 (mm/hr) This estimate assumes that the error given in the 3-hourly files is representative of the error of the rainfall rate (mm/hr) within the 3-hour window of the files, and it is random throughout the day. Note, this should be interpreted as the error of the rainfall rate (mm/hr) for the day, not the daily accumulation.
+  <br>
+
+  #### TRMM_3B42RT
+  TMPA (3B42RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06). These data were output from the TRMM Multi-satellite Precipitation Analysis (TMPA), the Near Real-Time (RT) processing stream. The latency was about seven hours from the observation time, although processing issues may delay or prevent this schedule. Users should be mindful that the price for the short latency of these data is the reduced quality as compared to the research quality product. Each file is a snapshot considered to represent the three-hour period centered on the "nominal" file time. So, e.g., 00 UTC nominally represents the period from 2230 UTC of the previous day to 0130 UTC of the current day. Estimates outside the band 50 degree N-S are considered highly experimental. GES DISC initially receives these data from the Precipitation Processing System (PPS) in binary format. However, before archiving, the data are scaled to real numbers, and re-arranged to a standard grid so that the first grid cell is at 180W, 60S. Thus formatted, data are stored into CF-1.6 compliant netCDF-4 files and archived. This format is machine-independent, self-explanatory, provides extremely efficient seamless compression, and gives various options for previewing the data without downloading it. Apart from these technical differences, all other science content details remain the same, and users are strongly encouraged to read the provider's documentation that is linked to from here.
+  <br>
+
+  #### TRMM_3B43
+  TMPA (3B43) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERG/3B-MONTH/06). The 3B43 dataset is the monthly version of the 3B42 dataset. This product was created using TRMM-adjusted merged microwave-infrared precipitation rate (in mm/hr) and root-mean-square (RMS) precipitation-error estimates. It provides a "best" precipitation estimate in a latitude band covering 50o N to 50o S, an expansion of the TRMM region, from all global data sources, namely high-quality microwave data, infrared data, and analyses of rain gauges. The granule size is one month.
+  <br>
+
+  #### TRMM_1A11
+  The Level-1A Product file, "1A11", is a concatenation of Header record, Spacecraft Attitude packets, TMI Housekeeping packets, TMI Science Data packets, QACs and an MDUL. As such, it is reversible to Level 0. The header record contains information pertaining to orbit times, orbit number, times of the first scan, and number of scans, among other things. The Level 0 data contain the actual channel data expressed as"sensor counts". A Level 1A file contains data for a single orbit and has a file size of about 31 MB (uncompressed). Spatial coverage is between 38 degrees North and 38 degrees South owing to the 35 degree inclination of the TRMM satellite. This orbit provides extensive coverage in the tropics and allows each location to be covered at a different local time each day, enabling the analysis of the diurnal cycle of precipitation.
+  <br>
+
+  #### TRMM_1A01
+  The Level-1A Product file, "1A01", is a concatenation of Header record, Spacecraft Attitude packets, VIRS Housekeeping Data packets, VIRS Science Data packets, QACs, and an MDUL. As such, it is reversible to Level 0. The header record contains information pertaining to orbit times, orbit number, times of the first scan, and number of scans, among other things. The Level 0 data contain the actual channel data expressed as "sensor counts". A Level 1A file contains data for a single orbit and has a file size of about 31 MB (uncompressed). There are 16 files of VIRS 1A01 data produced per day. The Visible and Infrared Scanner (VIRS) is a five-channel visible/infrared radiometer, which builds on the heritage of theAdvanced Very High Resolution Radiometer (AVHRR) instrument flown aboard the NOAA series of Polar-Orbiting Operational EnvironmentalSatellites (POES). The VIRS detects radiation at 1 visible, 2 near infrared and 2 thermal infrared wavelengths, allowing determination of cloud coverage, cloud top height and temperature, and precipitation indices. The central wavelengths for the VIRS channels are 0.63, 1.60,3.75, 10.8, and 12.0 microns. All channels are in operation during the daytime, but only channels 3, 4 and 5 operate during the nighttime. Spatial coverage is between 38 degrees North and 38 degrees South owing to the 35 degree inclination of the TRMM satellite. This orbit provides extensive coverage in the tropics and allows each location to be covered at a different local time each day, enabling the analysis of the diurnal cycle of precipitation.
+  <br>
+
+  #### TRMM_2B31
+  This is the last version of the TRMM-formatted, in HDF4 format, Combined (Radar-Radiometer) product, which is in a state of permanent preservation. New version that is consistently processed with Global precipitation Measurement (GPM) algorithms, and in a consistent with GPM HDF5 format, is available under short name 'GPM_2BCMB_TRMM'. The dataset TRMM_2B31 combines data from the TMI and PR to produce the best rain estimate for TRMM. This combined rainfall product is derived from vertical hydrometeor profiles using data from the PR radar and TMI. It also includes computed correlation-corrected, mass-weighted, mean drop diameter and its standard deviation, and latent heating data. Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_CSH
+  This is a discontinued TRMM product from the old version '6' suite that is in a state of permament preservation. The most recent replacement can be found by following this DOI: 10.5067/GPM/PRTMI/TRMM/CSH/3B-MONTH/07. The latter should also be better cross-calibrated with the continuation GPM combined Dual-Frequency Precipitation Radar and GPM Microwave Imager latent heating product: 10.5067/GPM/DPRGMI/CSH/3B-MONTH/07. The version '6' dataset is output from the old Goddard Convective-Stratiform Heating (CSH) algorithm. The dataset contains global 0.5 x 0.5 monthly latent heating profiles from surface convective rain rate and surface stratiform rain rate.
+  <br>
+
+  #### TRMM_1C51
+  The purpose of the 1C51 algorithm is to remove non-meteorological radar echoes that adversely affect the quality of higher level products, such as clutter associated with insects, birds, chaff, wildfires, antenna towers, and anomalous propagation (AP). Eight adjustable parameters, three echo height thresholds and five radar reflectivity thresholds, are used to optimize the performance of the algorithm. Optimum performance is time consuming and requires an analyst to select different sets of parameters on a per volume scan basis, and on occasions performing several iterations while adjusting one or more of the parameters. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_1C51UW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Files are in "Universal Format", described in BAMS, Vol 61, No 11, November 1980, pp. 1401-1404. The purpose of the 1C51UW algorithm is to remove non-meteorological radar echoes that adversely affect the quality of higher level products, such as clutter associated with insects, birds, chaff, wildfires, antenna towers, and anomalous propagation (AP). Eight adjustable parameters, three echo height thresholds and five radar reflectivity thresholds, are used to optimize the performance of the algorithm. Optimum performance is time consuming and requires an analyst to select different sets of parameters on a per volume scan basis, and on occasions performing several iterations while adjusting one or more of the parameters. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_1B51
+  The TRMM_1B51 product displays the existence of rain in the radar volume scan. 'Existence' is the fraction of the radar FOV which has measurable precipitation. The GV radar FOV is defined as a base scan (i.e., the lowest level sweep). Each product file has the Existence data of one site (not one radar) for one month. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_baseUW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Data contains single level, cartesian grids containing output of NCAR SPRINT interpolation of lowest sweep of 1C51UW. Horizontal extent is 150x150km and horizontal resolution is 2km. Note that in the netCDF files, "alt" (altitude) is assigned the elevation angle of the lowest sweep (which is used to create this product) and "z_spacing" has no meaning. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_3A55
+  The 3A55, 'Monthly 3-D Structure', provides radar site monthly 3-D structure information obtained from 2A55. The 2A55 'Radar Site 3-D Reflectivities', is composed of 3 different fields. The first field has an array of 3-D reflectivities in Cartesian coordinates with a 2 km horizontal resolution over an area of 300 km x 300 km for single radar sites, and 724 km x 568 km for Texas multiple radar site, 512 km x 704 km for Florida multiple radar site. It has a vertical resolution of 1.5km and a height range up to 19.5 km. The second field has an array of vertical profiles based on the first field, and the third field has an array of the Contoured Frequency by Altitude Diagram (CFAD) data based on the first and second field. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A55
+  Radar Site 3-D Reflectivities', is composed of 3 different fields. The first field has an array of 3-D reflectivities in Cartesian coordinates with a 2 km horizontal resolution over an area of 300 km x 300 km for single radar sites, and 724 km x 568 km for Texas multiple radar site, 512 km x 704 km for Florida multiple radar site. It has a vertical resolution of 1.5km and a height range up to 19.5 km. The second field has an array of vertical profiles based on the first field, and the third field has an array of the Contoured Frequency by Altitude Diagram (CFAD) data based on the first and second field. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A55UW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Multiple-level cartesian grid containing output of NCAR SPRINT interpolation of CZ and VR fields of 1C51UW. Horizontal extent is 150x150km and resolution is 2km. Vertical range is 2-15km and resolution is 1km. Unlike other products, 2A55UW is not created for every volume but only for volumes of interest. These are defined as volumes within +/-15 minutes of overpass times and volumes with significant rainfall (areal rainfall rate greater or equal 0.15mm/hr). A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A53
+  Radar Site Rain Map', is an instantaneous surface rain rate map in Cartesian coordinates with a 2 km horizontal resolution. At single radar sites, the map covers an area of 300km x 300km. For the multiple radar site in Texas, the map covers a region of 724 km x 568 km, and in Florida 512 km x 704 km. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A53UW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Instantaneous rain rate cartesian grid based on baseUW and 2A54UW. Units are mm/hr. Min range is 17 km, max range is 150 km. Note that in the netCDF files, "alt" (altitude) is assigned the elevation angle of the lowest sweep (which is used to create baseUW) and "z_spacing" has no meaning. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_3A53
+  This is the 5-day accumulation of the 2A53 product, 'Radar Site Rain Map', which originally is an instantaneous surface rain rate map in Cartesian coordinates with a 2 km horizontal resolution. At single radar sites, the map covers an area of 300km x 300km. For the multiple radar site in Texas, the map covers a region of 724 km x 568 km, and in Florida 512 km x 704 km. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A54
+  Radar Site Convective/Stratiform Map', is an instantaneous map in Cartesian coordinates with a 2 km resolution. At single radar sites, the map covers an area of 300 km x 300 km. For the multiple radar site in Texas, the map covers a region of 724 km x 568 km, and in Florida 512 km x 704 km. The map identifies the surface precipitation as convective or stratiform. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A54UW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Instantaneous convective-stratiform cartesian grid based on baseUW. Values are 0 (no echo), 1 (stratiform), and 2 (convective). Min range is 17 km, max range is 150 km. Note that in the netCDF files, "alt" (altitude) is assigned the elevation angle of the lowest sweep (which is used to create baseUW) and "z_spacing" has no meaning. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_3A54
+  The 3A54 product, 'Site Rainfall Map', is a map of monthly surface rain totals derived from the instantaneous rain rate maps (2A53). The map is in Cartesian coordinates with a 2 km horizontal resolution and covers an area of 300km x 300km at single radar sites while the covered area varies for multiple radar sites - 724 km x 568 km at Texas site and 512 km x 704 km at Florida site. This monthly rainfall map is not a simple accumulation of the instantaneous maps as gaps in the data must be factored into the calculation. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_3A54UW
+  This dataset is part of the University of Washington TRMM Ground Validation products. Monthly rain accumulation cartesian grid based on 2A53UW. Units are mm. Min range is 17 km, max range is 150 km. Horizontal extent is 150x150km and resolution is 2km. Note that in the netCDF files, "alt" (altitude) is assigned the elevation angle of the lowest sweep (which is used to create baseUW) and "z_spacing" has no meaning. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A52
+  The TRMM_2A52 product displays the existence of rain in the radar volume scan. 'Existence' is the fraction of the radar FOV which has measurable precipitation. The GV radar FOV is defined as a base scan (i.e., the lowest level sweep). Each product file has the Existence data of one site (not one radar) for one month. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_2A56
+  The program rgmin generates 1-minute hourly rain rates from discrete tipping bucket rain gauge data by applying an interpolation algorithm. The interpolating routine is based on the cubic spline routine published in the book "Numerical Recipes". The mathematical theory underlying this algorithm is presented in section 3.3 of the book along with a copy of the source code. The mathematics involved will not be described in any detail, rather the spline will be described in context with its application to the broader algorithm being applied in rgmin. A key component of the TRMM project is the Ground Validation (GV) effort which consists of collecting data from ground-based radar, rain gauges and disdrometers. The data is quality-controlled, and then validation products are produced for comparison with TRMM satellite products. The four primary GV sites are: + Darwin, Australia; + Houston, Texas; + Kwajalein, Republic of the Marshall Islands; + Melbourne, Florida. A significant effort is also being supported at NASA Wallops Flight Facility (WFF) and vicinity to provide high quality, long-term measurements of rain rates (via a network of rain gauges collocated with National Weather Service gauges), as well as drop size distributions (DSD) using a variety of instruments, including impact-type Joss Waldvogel, laser-optical Parsivel, as well as two-dimensional video disdrometers. DSD measurements are also being collected at Melbourne and Kwajalein using Joss-Waldvogel disdrometers.
+  <br>
+
+  #### TRMM_1B11
+  The new version of these data is in GPM-like format (consistent with the GPM Microwave Imager data format), and can be found under the name GPM_1BTMI (search by keyword GPM_1BTMI). This dataset contains TRMM Micrwave Imager (TMI) L1B calibrated radiances in terms of Brightness Temperatures. The TMI calibration algorithm (1B11) converts the radiometer counts to antenna temperatures by applying a linear relationship of the form Ta = c1 + c2 x count. The coefficients are provided by the instrument contractor. Antenna temperatures are corrected for cross-polarization and spill over to produce brightness temperatures (Tb), but no antenna beam pattern correction or sample to pixel averaging are performed. Temperatures are provided at 104 scan positions for the low frequency channels and 208 scan positions at 85 GHz. There are four samples per pixel (3 -dB beamwidth) at 10 GHz, two samples at 19, 22, and 37 GHz, and one sample per pixel for the 85 GHz. Data Flow Description Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 760 km; Horizontal Resolution: 4.4 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 878 km; Horizontal Resolution: 5.1 km
+  <br>
+
+  #### TRMM_2A12
+  The new version of these data is in GPM-like format and can be found under the name GPM_2AGPROFTRMMTMI_CLIM. This dataset, 2A12, ”TMI Profiling”, generates surface rainfall and vertical hydrometeor profiles on a pixel by pixel basis from the TRMM Microwave Imager (TMI) brightness temperature data using the Goddard Profiling algorithm GPROF2010. Because the vertical information comes from a radiometer, it is not written out in independent vertical layers like the TRMM Precipitation Radar. Instead, the output is referenced to one of 100 typical structures for each hydrometeor or heating profile. These vertical structures are referenced as clusters in the output structure. Vertical hydrometeor profiles can be reconstructed to 28 layers by knowing the cluster number (i.e. shape) of the profile and a scale factor that is written for each pixel. This product contains hydrometeor profiles of cloud liquid water, precipitation water, cloud ice water, precipitation ice, rainfall type, and latent heating in 28 atmospheric layers. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 760 km; Horizontal Resolution: 4.4 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 878 km; Horizontal Resolution: 5.1 km
+  <br>
+
+  #### TRMM_3A11
+  The new equivalent for this dataset should be searched for as "GPM_3GPROFTRMMTMI_CLIM". The TMI Gridded Oceanic Rainfall Product, also known as TMI Emission, consists of 5 degree by 5 degree monthly oceanic rainfall maps using TMI Level 1 data as input. Statistics of the monthly rainfall, including number of samples, standard deviation, goodness-of-fit (of the brightness temperature histogram to the lognormal rainfall distribution function) and rainfall probability are also included in the output for each grid box. TMI brightness temperature histograms at 1 degree intervals are generated based on the 19, 21 and 19-21 GHz combination channels obtained from the Level 1B (calibrated brightness temperature) TMI product. Monthly rainfall indices over the ocean are derived by statistically matching monthly histograms of brightness temperatures with model calculated rainfall Probability Distribution Functions (PDF) using the 19-21 GHz combination data. Retrieved monthly rainfall data must pass a quality test based on the quality of the PDF fit.
+  <br>
+
+  #### TRMM_3A12
+  The new equivalent for this dataset should be searched for as "GPM_3GPROFTRMMTMI_CLIM". This product contains global monthly means of surface precipitation rate, rain rate, convective surface precipitation rate and 28 vertical layers of hydrometeor contents (cloud liquid water, rain water, cloud ice liquid water, snow liquid water, graupel liquid water and latent heating) on 0.5 x 0.5 degree grids.
+  <br>
+
+  #### TRMM_3G25
+  3G25, "Gridded Orbital Spectral Latent Heating", produces 0.5 degree x 0.5 degree latent heating, Q1-QR, and Q2 profiles from Precipitation Radar (PR) rain. The granule size is one orbit.
+  <br>
+
+  #### TRMM_1B21
+  The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. The 1B21 calculates the received power at the PR receiver input point from the Level-0 count value which is linearly proportional to the logarithm of the PR receiver output power. To convert the count value to the input power, extensive internal calibrations are applied, which are mainly based upon the system model, temperature dependence of model parameters and many temperature sensors attached at various locations of the PR. Periodically the input-output characteristics are measured using an internal calibration loop for the IF unit and later receiver stages. To make an absolute calibration, an Active Radar Calibrator (ARC) is placed at Kansai Branch of CRL and overall system gain of the PR is being measured every 2 months. Using the transfer function based on the above internal and external calibrations, the PR received power is obtained. Note that the value assumes that the signal follows the Rayleigh fading, so if the fading characteristics of a scatter is different, a small bias error may occur (within 1 or 2 dB). Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_1C21
+  The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. The 1C21 calculates the effective radar reflectivity factor at 13.8 GHz without any propagation loss (due to rain or any other atmospheric gas) correction (Zm). Therefore, the Zm value can be calculated just by applying a radar equation for volume scatter with PR system parameters. The noise-equivalent Zm is about 21 dBZ. Through the subtraction of the system noise, the Zm value as small as 16 or 18 dBZ are still usable although the data quality is marginal. In 1C21, all echoes stored in 1B21 are converted to "dBZ" unit. This is not relevant for "non-rain" echo; however, this policy is adopted so that the 1B21 and 1C21 product format should be as close as possible except for the following points: - Radar quantity is Zm in dBZ unit instead of received power (dBm). - Data at echo-free range bins judged in 1B21 are replaced with a dummy value. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_2A23
+  The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning single-frequency radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. PR 2A23 produces a rain/no-rain flag. Its main objectives are (1) to detect bright band (BB), (2) to classify rain type, and (3) to detect warm rain. 2A23 uses two different methods for classifying rain type: (1) vertical profile method (V-method) and (2) horizontal pattern method (H-method). Both methods classify rain into three categories: stratiform, convective, and other. To make the results user-friendly, 2A23 outputs a unified rain type. Further information about 2A23 can be found in Awaka et al. (1998). Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_2A25
+  The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. The TRMM 2A25 data are estimates of the three-dimensional distribution of rain from the TRMM Precipitation Radar. The average rainfall rate between two pre-defined altitudes is calculated for each beam position. Other output data include parameters of Z-R relationships, integrated rain rate of each beam, range bin numbers of rain layer boundaries, and many intermediate parameters. Iguchi and Meneghini (1994) describe this algorithm. Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_3H25
+  3H25, "Monthly Spectral Latent Heating", produces 0.5 degree x 0.5 degree latent heating, Q1-QR, and Q2 profiles from PR rain
+  <br>
+
+  #### TRMM_2A21
+  The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. This is the sigma zero algorithm, which inputs the PR power (1B21) and computes estimates of the path attenuation and its reliability by using the surface as a reference target. It also computes the spatial and temporal statistics of the surface scattering cross section and classifies the cross sections into land/ocean and rain/no rain categories. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 215 km; Horizontal Resolution: 4.3 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 247 km; Horizontal Resolution: 5.0 km
+  <br>
+
+  #### TRMM_3A26
+  The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_3PR. This dataset contains distributions of monthly surface rainfall. These data were derived from rain rate statistics and include the estimated values of the probability distribution function of the space-time rain rates at four levels (2 km, 4 km, 6 km, and path-averaged) and the mean, standard deviation, and probability of rain derived from these distributions. Three different rain rate estimates are used as input to the algorithm: (1) the standard Z-R (or 0th-order estimate having no attenuation correction); (2) the Hitschfield-Bordan (H-B); and (3) the rain rates taken from 2A25.
+  <br>
+
+  #### TRMM_3A25
+  The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_3PR. This product consists of monthly statistics of the PR measurements at both a low (5 degrees x 5 degrees) and a high (0.5 degrees x 0.5 degrees) horizontal resolution. The low resolution grids are in the Planetary Grid 1 structure and include 1) mean and standard deviation of the rain rate, reflectivity, path-integrated attenuation (PIA), storm height, Xi, bright band height and the NUBF (Non-Uniform Beam Filling) correction; 2) rain fractions; 3) histograms of the storm height, bright-band height, snow-ice layer, reflectivity, rain rate, path-attenuation and NUBF correction; 4) correlation coefficients. The high resolution grids are in the Planetary Grid 2 structure and contain mean rain rate along with standard deviation and rain fractions.
+  <br>
+
+  #### TRMM_3H31
+  3H31, "Monthly Convective Stratiform Heating from Combined", produces 0.5 deg x 0.5 deg monthly apparent heating profiles from surface convective rainfall rate and surface stratiform rainfall rate. The PI is Dr. Wei-Kuo Tao. The granule size is one month.
+  <br>
+
+  #### TRMM_3G31
+  3G31, Gridded Orbital Convective Stratiform Heating from Combined, produces 0.5 degree x 0.5 degree orbital apparent heating profiles from surface convective rainfall rate and surface stratiform rainfall rate. The granule size is one orbit.
+  <br>
+
+  #### TRMM_3B31
+  This is the last version of the TRMM-formatted, in HDF4 format, Combined (Radar-Radiometer) product, which is in a state of permanent preservation. New version that is consistently processed with Global precipitation Measurement (GPM) algorithms, and in a concistent with GPM HDF5 format, is available under short name GPM_3CMB_TRMM. Note that new TRMM Daily Combined product has now been made available: GPM_3CMB_TRMM_DAY. The dataset TRMM_3B31 uses the high quality retrievals done for the narrow swath in 2B31 to calibrate the wide swath retrievals generated in 2A12. For each 0.5 degree box and each vertical layer, an adjustment ratio is calculated for the swath overlap region for one month. Only TMI pixels with 2A12 pixelStatus equal to zero are included in monthly averages, which effectively removes sea ice.
+  <br>
+
+  #### TRMM_1B01
+  This TRMM Visible and Infrared Scanner (VIRS) Level 1B Calibrated Radiance Product (1B01) contains calibrated radiances and auxiliary geolocation information from the five channels of the VIRS instrument, for each pixel of each scan. The data are stored in the Hierarchical Data Format (HDF), which includes both core and product specific metadata applicable to the VIRS measurements. A file contains a single orbit of data with a file size of about 95 MB. The EOSDIS "swath" structure is used to accommodate the actual geophysical data arrays. There are 16 files of VIRS 1B01 data produced per day. For channels 1 and 2, Level 1B radiances are derived from the Level 1A (1A01) sensor counts by computing calibration parameters (gain and offset) derived from the counts registered during space and solar and/or lunar views. New calibration parameters are produced every one to four weeks. Channels 3, 4, and 5 are calibrated using the internal blackbody and the space view. These calibration parameters, together with a quadratic term determined pre-launch, are used to generate a counts vs. radiance curve for each band, which is then used to convert the earth-view pixel counts to spectral radiances. Geolocation and channel data are written out for each pixel along the scan, whereas the time stamp, scan status (containing scan quality information), navigation, calibration coefficients, and solar/satellite geometry are specified on a per-scan basis. There are in general 18026 scans along the orbit pre-boost and 18223 post-boost, with each scan consisting of 261 pixels. The scan width is about 720 km pre-boost and 833 km post-boost. Changes in horizontal resolution resulting from the TRMM boost that occurred on 24 August 2001: Pre-Boost (before 7 August 2001): Temporal Resolution: 91.5 min/orbit ~ 16 orbits/day; Swath Width: 720 km; Horizontal Resolution: 2.2 km Post-Boost (after 24 August 2001): Temporal Resolution: 92.5 min/orbit ~ 16 orbits/day; Swath Width: 833 km; Horizontal Resolution: 2.4 km
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://gpm.nasa.gov
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- earth observation
+- elevation
+- hdf
+- hdf5
+- ice
+- netcdf
+- oceans
+- precipitation
+- radar
+- satellite imagery
+- soil moisture
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GPM_2HCSH_TRMM v07 - This is a new (GPM-formated) TRMM product. The equivalent old TRMM legacy product is TRMM_2H31."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/GPM_2HCSH_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3HCSH_TRMM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM legacy TRMM_3H31 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3HCSH_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GCSH_TRMM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM legacy product TRMM_3G31."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3GCSH_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1BPR v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B21,1C21 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/GPM_1BPR.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GSLH_TRMM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3G25 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3GSLH_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3PRD v07 - This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3PRD.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2APR v07 - This is the new, GPM-like, format for TRMM Precipitation Radar L2 data that now incorporates what was known as 2A21, 2A23 and 2A25 datasets. The primary purpose of 2A21 is to compute the path-integrated attenuation (PIA) using the surface reference technique (SRT)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/GPM_2APR.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3PR v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3A25,3A26 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3PR.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3HSLH_TRMM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3H25 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3HSLH_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1BTMI v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B11 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/GPM_1BTMI.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1ATMI v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1A11 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1A/GPM_1ATMI.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1BVIRS v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1B01 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/GPM_1BVIRS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1AVIRS v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_1A01 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1A/GPM_1AVIRS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_TMPA_LandSeaMask v2 - Version 2 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 2."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/AUXILIARY/TRMM_TMPA_LandSeaMask.2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "LPRM_TMI_SOILM2 v001 - TMI/TRMM surface soil moisture (LPRM) L2 V001 is a Level 2 (swath) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_TMI_SOILM2.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "LPRM_TMI_DY_SOILM3 v001 - TMI/TRMM surface soil moisture (LPRM) L3 1 day 25 km x 25 km daytime V001 is a Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_TMI_DY_SOILM3.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "LPRM_TMI_NT_SOILM3 v001 - TMI/TRMM surface soil moisture (LPRM) L3 1 day 25 km x 25 km nighttime V001 is Level 3 (gridded) data set. Its land surface parameters, surface soil moisture, land surface (skin) temperature, and vegetation water content, are derived from passive microwave remote sensing data from the Tropical Rainfall Measuring Mission (TRMM) Microwave Imager (TMI), using the Land Parameter Retrieval Model (LPRM)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/WAOB/LPRM_TMI_NT_SOILM3.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B42_Daily v7 - TMPA (3B42_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDF/DAY/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3B42_Daily.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B42 v7 - TMPA (3B42) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERG/3B-HH/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3B42.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B41RT v7 - TMPA (3B41RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B41RT.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B40RT v7 - TMPA (3B40RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B40RT.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B42RT_Daily v7 - TMPA (3B42RT_Daily) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERGDE/DAY/06; 10.5067/GPM/IMERGDL/DAY/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B42RT_Daily.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B42RT v7 - TMPA (3B42RT) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG datasets (doi: 10.5067/GPM/IMERG/3B-HH-E/06, 10.5067/GPM/IMERG/3B-HH-L/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_RT/TRMM_3B42RT.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B43 v7 - TMPA (3B43) dataset have been discontinued as of Dec. 31, 2019, and users are strongly encouraged to shift to the successor IMERG dataset (doi: 10.5067/GPM/IMERG/3B-MONTH/06)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3B43.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1A11 v7 - The Level-1A Product file, \"1A11\", is a concatenation of Header record, Spacecraft Attitude packets, TMI Housekeeping packets, TMI Science Data packets, QACs and an MDUL. As such, it is reversible to Level 0."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1A/TRMM_1A11.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1A01 v7 - The Level-1A Product file, \"1A01\", is a concatenation of Header record, Spacecraft Attitude packets, VIRS Housekeeping Data packets, VIRS Science Data packets, QACs, and an MDUL. As such, it is reversible to Level 0."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1A/TRMM_1A01.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2B31 v7 - This is the last version of the TRMM-formatted, in HDF4 format, Combined (Radar-Radiometer) product, which is in a state of permanent preservation. New version that is consistently processed with Global precipitation Measurement (GPM) algorithms, and in a consistent with GPM HDF5 format, is available under short name 'GPM_2BCMB_TRMM'."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/TRMM_2B31.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_CSH v6 - This is a discontinued TRMM product from the old version ''6'' suite that is in a state of permament preservation. The most recent replacement can be found by following this DOI: 10.5067/GPM/PRTMI/TRMM/CSH/3B-MONTH/07."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_CSH.6
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1C51 v7 - The purpose of the 1C51 algorithm is to remove non-meteorological radar echoes that adversely affect the quality of higher level products, such as clutter associated with insects, birds, chaff, wildfires, antenna towers, and anomalous propagation (AP). Eight adjustable parameters, three echo height thresholds and five radar reflectivity thresholds, are used to optimize the performance of the algorithm."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L1/TRMM_1C51.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1C51UW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Files are in \"Universal Format\", described in BAMS, Vol 61, No 11, November 1980, pp."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L1/TRMM_1C51UW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1B51 v7 - The TRMM_1B51 product displays the existence of rain in the radar volume scan. 'Existence' is the fraction of the radar FOV which has measurable precipitation."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L1/TRMM_1B51.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_baseUW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Data contains single level, cartesian grids containing output of NCAR SPRINT interpolation of lowest sweep of 1C51UW."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L1/TRMM_baseUW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A55 v7 - The 3A55, 'Monthly 3-D Structure', provides radar site monthly 3-D structure information obtained from 2A55. The 2A55 'Radar Site 3-D Reflectivities', is composed of 3 different fields."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L3/TRMM_3A55.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A55 v7 - Radar Site 3-D Reflectivities', is composed of 3 different fields. The first field has an array of 3-D reflectivities in Cartesian coordinates with a 2 km horizontal resolution over an area of 300 km x 300 km for single radar sites, and 724 km x 568 km for Texas multiple radar site, 512 km x 704 km for Florida multiple radar site."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A55.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A55UW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Multiple-level cartesian grid containing output of NCAR SPRINT interpolation of CZ and VR fields of 1C51UW."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A55UW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A53 v7 - Radar Site Rain Map', is an instantaneous surface rain rate map in Cartesian coordinates with a 2 km horizontal resolution. At single radar sites, the map covers an area of 300km x 300km."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A53.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A53UW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Instantaneous rain rate cartesian grid based on baseUW and 2A54UW."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A53UW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A53 v7 - This is the 5-day accumulation of the 2A53 product, 'Radar Site Rain Map', which originally is an instantaneous surface rain rate map in Cartesian coordinates with a 2 km horizontal resolution. At single radar sites, the map covers an area of 300km x 300km."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L3/TRMM_3A53.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A54 v7 - Radar Site Convective/Stratiform Map', is an instantaneous map in Cartesian coordinates with a 2 km resolution. At single radar sites, the map covers an area of 300 km x 300 km."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A54.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A54UW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Instantaneous convective-stratiform cartesian grid based on baseUW."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A54UW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A54 v7 - The 3A54 product, 'Site Rainfall Map', is a map of monthly surface rain totals derived from the instantaneous rain rate maps (2A53). The map is in Cartesian coordinates with a 2 km horizontal resolution and covers an area of 300km x 300km at single radar sites while the covered area varies for multiple radar sites - 724 km x 568 km at Texas site and 512 km x 704 km at Florida site."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L3/TRMM_3A54.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A54UW v7 - This dataset is part of the University of Washington TRMM Ground Validation products. Monthly rain accumulation cartesian grid based on 2A53UW."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L3/TRMM_3A54UW.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A52 v7 - The TRMM_2A52 product displays the existence of rain in the radar volume scan. 'Existence' is the fraction of the radar FOV which has measurable precipitation."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A52.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A56 v7 - The program rgmin generates 1-minute hourly rain rates from discrete tipping bucket rain gauge data by applying an interpolation algorithm. The interpolating routine is based on the cubic spline routine published in the book \"Numerical Recipes\"."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_GV_L2/TRMM_2A56.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1B11 v7 - The new version of these data is in GPM-like format (consistent with the GPM Microwave Imager data format), and can be found under the name GPM_1BTMI (search by keyword GPM_1BTMI). This dataset contains TRMM Micrwave Imager (TMI) L1B calibrated radiances in terms of Brightness Temperatures."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/TRMM_1B11.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A12 v7 - The new version of these data is in GPM-like format and can be found under the name GPM_2AGPROFTRMMTMI_CLIM. This dataset, 2A12, ”TMI Profiling”, generates surface rainfall and vertical hydrometeor profiles on a pixel by pixel basis from the TRMM Microwave Imager (TMI) brightness temperature data using the Goddard Profiling algorithm GPROF2010."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/TRMM_2A12.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A11 v7 - The new equivalent for this dataset should be searched for as \"GPM_3GPROFTRMMTMI_CLIM\". The TMI Gridded Oceanic Rainfall Product, also known as TMI Emission, consists of 5 degree by 5 degree monthly oceanic rainfall maps using TMI Level 1 data as input."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3A11.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A12 v7 - The new equivalent for this dataset should be searched for as \"GPM_3GPROFTRMMTMI_CLIM\". This product contains global monthly means of surface precipitation rate, rain rate, convective surface precipitation rate and 28 vertical layers of hydrometeor contents (cloud liquid water, rain water, cloud ice liquid water, snow liquid water, graupel liquid water and latent heating) on 0.5 x 0.5 degree grids."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3A12.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3G25 v7 - 3G25, \"Gridded Orbital Spectral Latent Heating\", produces 0.5 degree x 0.5 degree latent heating, Q1-QR, and Q2 profiles from Precipitation Radar (PR) rain. The granule size is one orbit."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3G25.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1B21 v7 - The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. The 1B21 calculates the received power at the PR receiver input point from the Level-0 count value which is linearly proportional to the logarithm of the PR receiver output power."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/TRMM_1B21.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1C21 v7 - The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation. The 1C21 calculates the effective radar reflectivity factor at 13.8 GHz without any propagation loss (due to rain or any other atmospheric gas) correction (Zm)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/TRMM_1C21.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A23 v7 - The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. The TRMM Precipitation Radar (PR), the first of its kind in space, is an electronically scanning single-frequency radar, operating at 13.8 GHz that measures the 3-D rainfall distribution over both land and ocean, and defines the layer depth of the precipitation."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/TRMM_2A23.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A25 v7 - The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. The TRMM 2A25 data are estimates of the three-dimensional distribution of rain from the TRMM Precipitation Radar."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/TRMM_2A25.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3H25 v7 - 3H25, \"Monthly Spectral Latent Heating\", produces 0.5 degree x 0.5 degree latent heating, Q1-QR, and Q2 profiles from PR rain."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3H25.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_2A21 v7 - The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_2APR. This is the sigma zero algorithm, which inputs the PR power (1B21) and computes estimates of the path attenuation and its reliability by using the surface as a reference target."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/TRMM_2A21.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A26 v7 - The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_3PR. This dataset contains distributions of monthly surface rainfall."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3A26.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3A25 v7 - The new version of these data is in GPM-like format (consistent with the GPM Dual-frequency Radar data format), and can be found under the name GPM_3PR. This product consists of monthly statistics of the PR measurements at both a low (5 degrees x 5 degrees) and a high (0.5 degrees x 0.5 degrees) horizontal resolution."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3A25.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3H31 v7 - 3H31, \"Monthly Convective Stratiform Heating from Combined\", produces 0.5 deg x 0.5 deg monthly apparent heating profiles from surface convective rainfall rate and surface stratiform rainfall rate. The PI is Dr."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3H31.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3G31 v7 - 3G31, Gridded Orbital Convective Stratiform Heating from Combined, produces 0.5 degree x 0.5 degree orbital apparent heating profiles from surface convective rainfall rate and surface stratiform rainfall rate. The granule size is one orbit."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3G31.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_3B31 v7 - This is the last version of the TRMM-formatted, in HDF4 format, Combined (Radar-Radiometer) product, which is in a state of permanent preservation. New version that is consistently processed with Global precipitation Measurement (GPM) algorithms, and in a concistent with GPM HDF5 format, is available under short name GPM_3CMB_TRMM."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/TRMM_3B31.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TRMM_1B01 v7 - This TRMM Visible and Infrared Scanner (VIRS) Level 1B Calibrated Radiance Product (1B01) contains calibrated radiances and auxiliary geolocation information from the five channels of the VIRS instrument, for each pixel of each scan. The data are stored in the Hierarchical Data Format (HDF), which includes both core and product specific metadata applicable to the VIRS measurements."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L1/TRMM_1B01.7
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

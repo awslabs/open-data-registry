@@ -1,0 +1,31 @@
+Name: NASA DIS Project
+Description: |
+  The ORNL DAAC Spatial Data Access Tool (SDAT) is a suite of Web-based applications that enable users to visualize and download spatial data in user-selected spatial/temporal extents, file formats, and projections. SDAT incorporates Open Geospatial Consortium (OGC) standard Web services, including Web Coverage Service (WCS), Web Map Service (WMS), and Web Feature Service (WFS). The SDAT provides ORNL DAAC-archived data sets and additional relevant data products including agriculture, atmosphere, biosphere, climate indicators, human dimensions, land surface, oceans, terrestrial hydrosphere data types, and related model output data sets.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1388
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- climate
+- geospatial
+- ice
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SDAT_1388 v1 - The ORNL DAAC Spatial Data Access Tool (SDAT) is a suite of Web-based applications that enable users to visualize and download spatial data in user-selected spatial/temporal extents, file formats, and projections. SDAT incorporates Open Geospatial Consortium (OGC) standard Web services, including Web Coverage Service (WCS), Web Map Service (WMS), and Web Feature Service (WFS)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/services/SDAT/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

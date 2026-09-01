@@ -1,0 +1,29 @@
+Name: NASA HRAC Project
+Description: |
+  This is a dataset that enhances the TMPA monthly product (3B43) in its accuracy and spatial resolution, in hydrometeorological applications. About 9,200 gauge measurement are used to compare with the 3B43 product at 0.25° x 0.25° spatial resolution across the CONUS. Observed is a strong relationship between the bias and land surface elevation, in which 3B43 underestimates the true precipitation at the elevations above 1,500 m amsl. Satellite data is resampled to elevation data at ~1km grid size and applied a correction function to reduce bias in the data. Accordingly, a High-Resolution Altitude-Corrected product is constructed, based on 3B43 and covering the entire CONUS at 1-km resolution. This product is verified against 9,200 gauges across the country. The results showed a substantial improvement in the satellite-gauge data accuracy as well as spatial resolution.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://disc.gsfc.nasa.gov/datacollection/HRAC_Precip_1.html
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- precipitation
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "HRAC_Precip v1 - This is a dataset that enhances the TMPA monthly product (3B43) in its accuracy and spatial resolution, in hydrometeorological applications. About 9,200 gauge measurement are used to compare with the 3B43 product at 0.25° x 0.25° spatial resolution across the CONUS."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/LEGACY/HRAC_Precip.1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

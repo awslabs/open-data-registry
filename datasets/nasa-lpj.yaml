@@ -1,0 +1,36 @@
+Name: NASA LPJ Project
+Description: |
+  Exploring Greenhouse Gas Data; Driving Sustainable Strategies through Powerful Analysis
+  <br>
+
+  #### LPJ_EOSIM_L2_DCH4E_LL
+  The Lund-Potsdam-Jena Earth Observation SIMulator (LPJ-EOSIM) model estimates global wetland methane (CH4) emissions using simulated wetland extent and characteristics including soil moisture, temperature, and carbon content. For this dataset, wetlands are defined as land areas that are either permanently or seasonally saturated, excluding small ponds, lakes, and coastal wetlands. These wetland CH4 flux data will be used to support the United States Greenhouse Gas Center ([GHGC](https://earth.gov/ghgcenter)) and its mission to study natural GHG fluxes. The model will also be used to facilitate improved rapid detection and attribution of climate-carbon feedback and help with strategic placement of measurement campaigns and monitoring systems as they relate to predicted biogeochemical hotspots. The LPJ-EOSIM Level 2 Global Simulated Daily Wetland Methane Flux Low Latency (LPJ_EOSIM_L2_DCH4E_LL) Version 1 data product provides simulated daily wetland CH4 flux globally at a spatial resolution of 0.5 degrees. The daily data are presented in four Cloud Optimized GeoTIFF (COG) files: two based on the forcing datasets Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2) and European Centre for Medium-Range Weather Forecasts (ECMWF) Re-Analysis (ERA5), and two containing the mean and standard deviation values. Due to the latency of global carbon dioxide (CO2) concentration estimates required for computation of LPJ-EOSIM simulated daily CH4 flux data products, low latency (LPJ_EOSIM_L2_DCH4E_LL) and high latency ([LPJ_EOSIM_L2_DCH4E](https://doi.org/10.5067/Community/LPJ-EOSIM/LPJ_EOSIM_L2_DCH4E.001)) collections are available. Low latency data are delivered on a two-month cadence throughout the year. Granules will also be updated as new CO2 input data become available. Please refer to Section 2.0.1 of the User Guide for a more detailed explanation of CO2 estimate inputs and timing for scheduled updates to the collections.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earth.gov/ghgcenter/data-catalog/lpjeosim-wetlandch4-grid-v2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+- climate
+- cog
+- earth observation
+- soil moisture
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "LPJ_EOSIM_L2_DCH4E_LL v001 - The Lund-Potsdam-Jena Earth Observation SIMulator (LPJ-EOSIM) model estimates global wetland methane (CH4) emissions using simulated wetland extent and characteristics including soil moisture, temperature, and carbon content. For this dataset, wetlands are defined as land areas that are either permanently or seasonally saturated, excluding small ponds, lakes, and coastal wetlands."
+  ARN: arn:aws:s3:::lp-prod-protected/LPJ_EOSIM_L2_DCH4E_LL.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials

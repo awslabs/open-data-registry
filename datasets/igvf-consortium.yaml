@@ -1,0 +1,52 @@
+Name: The Impact of Variation on Function Consortium (IGVF)
+Description: |
+  The IGVF (Impact of Genomic Variation on Function) Consortium aims to understand how genomic variation affects genome function, 
+  which in turn impacts phenotype. The NHGRI is funding this collaborative program that brings together teams of investigators who 
+  will use state-of-the-art experimental and computational approaches to model, predict, characterize and map genome function, how 
+  genome function shapes phenotype, and how these processes are affected by genomic variation. These joint efforts will produce a 
+  catalog of the impact of genomic variants on genome function and phenotypes.  
+  The Data Corpus consists of single-cell Genomics experiments (both single modal, and multimodal, typically snRNA-seq and snATAC-seq), 
+  Characterization experiments using Massively Parallel Reporter Assays (MPRAs) and CRISPR-screens along with a variety of protein mutatation 
+  assays, and Predictive Models.
+  There are a huge variety of files in IGVF that are stored in the AWS OpenData Set so we recommend using the [metadata file]() or browsing the [IGVF Data Portal](https://data.igvf.org)
+Contact: igvf-portal-help@lists.stanford.edu
+ManagedBy: IGVF Data Administration and Coordination Center at Stanford University
+Documentation: https://data.igvf.org/general-help
+UpdateFrequency: Daily
+Tags:
+  - aws-pds
+  - biology
+  - bioinformatics
+  - genetic
+  - genomic
+  - life sciences
+License: CC BY 4.0 - https://creativecommons.org/licenses/by/4.0/ - You are free to share and adapt this data with proper attribution
+Resources:
+  - Description: Released and Archived IGVF Data Files
+    ARN: arn:aws:s3:::igvf-public
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for new IGVF data
+    ARN: arn:aws:sns:us-west-2:407227577691:igvf-public-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Load AnnData files from IGVF into scanpy and view the UMAPs
+      URL: https://github.com/IGVF-DACC/igvf-data-usage-examples/blob/master/igvf-scanpy.ipynb
+      AuthorName: Ben Hitz
+      AuthorURL: https://github.com/hitz
+    - Title: Ingesting IGVF Data into TileDB with S3 backend
+      URL: https://github.com/IGVF-DACC/igvf-data-usage-examples/blob/master/ingest_igvf_h5ad_data_to_anndata_and_tiledb.ipynb
+      AuthorName: Otto Jolanki
+      AuthorURL: https://github.com/ottojolanki
+  Tools & Applications:
+    - Title: The IGVF Catalog
+      URL: https://catalog.igvf.org
+      AuthorName: The IGVF Consortium
+      AuthorURL: www.igvf.org
+  Publications:
+    - Title: Deciphering the impact of genomic variation on function
+      URL: https://www-nature-com.stanford.idm.oclc.org/articles/s41586-024-07510-0
+      AuthorName: Jesse M. Engreitz and The IGVF Consortium 
+      AuthorURL: https://orcid.org/0000-0002-5754-1719

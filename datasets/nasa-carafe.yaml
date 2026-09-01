@@ -1,0 +1,31 @@
+Name: NASA CARAFE Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### CARAFE_2016_2017_v2_2002
+  This dataset provides airborne eddy covariance (EC) fluxes of carbon dioxide, methane, sensible heat, and latent heat at high spatial resolution collected during the NASA Carbon Airborne Flux Experiment (CARAFE) airborne 2016 and 2017 campaigns. CARAFE utilized the NASA C-23 Sherpa aircraft with a suite of commercial and custom instrumentation. Deployment occurred across the Mid-Atlantic Region for the period 2016-09-07 through 2016-09-26 and 2017-05-03 through 2017-05-26. The data also include downwelling radiation, water vapor, pressure, temperature, wind, and aircraft navigation data. Airborne EC can quantify surface fluxes at local to regional scales, potentially helping to bridge gaps between top-down and bottom-up flux estimates and offering novel insights into biophysical and biogeochemical processes.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/CARAFE/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "CARAFE_2016_2017_v2_2002 v1.1 - This dataset provides airborne eddy covariance (EC) fluxes of carbon dioxide, methane, sensible heat, and latent heat at high spatial resolution collected during the NASA Carbon Airborne Flux Experiment (CARAFE) airborne 2016 and 2017 campaigns. CARAFE utilized the NASA C-23 Sherpa aircraft with a suite of commercial and custom instrumentation."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carafe/CARAFE_2016_2017_v2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

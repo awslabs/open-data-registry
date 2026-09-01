@@ -1,0 +1,48 @@
+Name: NASA 2017_AN_NASA Project
+Description: |
+  This data set contains spot elevation measurements with corresponding waveforms of Arctic and Antarctic sea ice, and Greenland, Antarctic Peninsula, and West Antarctic region ice surface acquired using the NASA Airborne Topographic Mapper (ATM) instrumentation. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### ILATMGR
+  This data set reports surface grain size estimates of snow and ice using waveform measurements from NASA's Airborne Topographic Mapper (ATM) narrow-swath and wide-swath instrumentation over the Greenland ice sheet and surrounding sea ice.
+  <br>
+
+  #### ILNSAW1B
+  This data set contains spot elevation measurements with corresponding waveforms of Greenland, Arctic, and Antarctic sea ice. The data complement the IceBridge ATM L1B Near-Infrared Waveforms data, which are measured at near-infrared wavelength. The data were acquired as part of aircraft survey campaigns funded by Operation IceBridge.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/ilatmw1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ILATMW1B v1 - This data set contains spot elevation measurements with corresponding waveforms of Arctic and Antarctic sea ice, and Greenland, Antarctic Peninsula, and West Antarctic region ice surface acquired using the NASA Airborne Topographic Mapper (ATM) instrumentation. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILATMW1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILATMGR v1 - This data set reports surface grain size estimates of snow and ice using waveform measurements from NASA's Airborne Topographic Mapper (ATM) narrow-swath and wide-swath instrumentation over the Greenland ice sheet and surrounding sea ice."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILATMGR/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILNSAW1B v1 - This data set contains spot elevation measurements with corresponding waveforms of Greenland, Arctic, and Antarctic sea ice. The data complement the IceBridge ATM L1B Near-Infrared Waveforms data, which are measured at near-infrared wavelength."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILNSAW1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

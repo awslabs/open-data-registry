@@ -1,0 +1,47 @@
+Name: NASA SMAPVEX15 Project
+Description: |
+  This data set contains brightness temperatures obtained by the Passive Active L-band System (PALS) aircraft instrument. The data were collected as part of SMAPVEX15, the Soil Moisture Active Passive Validation Experiment 2015.
+  <br>
+
+  #### SV15PLSM
+  This data set contains soil moisture data derived from the brightness temperatures measured by the Passive Active L-band System (PALS) microwave aircraft instrument. The data were collected as part of the Soil Moisture Active Passive Validation Experiment 2015 (SMAPVEX15).
+  <br>
+
+  #### SV15PSM
+  This data set contains in situ gravimetric and volumetric soil moisture, bulk density, and soil temperature measurements collected for the Soil Moisture Active Passive Validation Experiment 2015 (SMAPVEX15). Sampling was performed at field sites approximately 1 m apart.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/sv15pltb/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SV15PLTB v1 - This data set contains brightness temperatures obtained by the Passive Active L-band System (PALS) aircraft instrument. The data were collected as part of SMAPVEX15, the Soil Moisture Active Passive Validation Experiment 2015."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV15PLTB/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV15PLSM v1 - This data set contains soil moisture data derived from the brightness temperatures measured by the Passive Active L-band System (PALS) microwave aircraft instrument. The data were collected as part of the Soil Moisture Active Passive Validation Experiment 2015 (SMAPVEX15)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV15PLSM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV15PSM v1 - This data set contains in situ gravimetric and volumetric soil moisture, bulk density, and soil temperature measurements collected for the Soil Moisture Active Passive Validation Experiment 2015 (SMAPVEX15). Sampling was performed at field sites approximately 1 m apart."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV15PSM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

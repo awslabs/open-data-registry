@@ -1,0 +1,70 @@
+Name: NASA FLDAS Project
+Description: |
+  This dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS), adapted from Land Information System (LIS7). The dataset contains 28 parameters in a 0.10 degree spatial resolution and from January 2019 to present. The temporal resolution is monthly and the spatial coverage is global (60S, 180W, 90N, 180E). The simulation was forced by a combination of the Global Data Assimilation System (GDAS) data and Climate Hazards Group InfraRed Precipitation with Station Preliminary (CHIRPS-PRELIM) 6-hourly rainfall data that has been downscaled using the NASA Land Data Toolkit, restarted from CHIRPS-FINAL of the previous month. The simulation was initialized on January 1, 2019 using soil moisture and other state fields from a FLDAS/Noah model climatology for that day of the year.
+  <br>
+
+  #### FLDAS_NOAH01_C_GL_M
+  This dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The data are in 0.10 degree resolution and range from January 1982 to present. The temporal resolution is monthly and the spatial coverage is global (60S, 180W, 90N, 180E). The FLDAS regional monthly datasets will no longer be available and have been superseded by the global monthly dataset. The simulation was forced by a combination of the Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2) data and Climate Hazards Group InfraRed Precipitation with Station (CHIRPS) 6-hourly rainfall data that has been downscaled using the NASA Land Data Toolkit. The simulation was initialized on January 1, 1982 using soil moisture and other state fields from a FLDAS/Noah model climatology for that day of the year. In November 2020, all FLDAS data were post-processed with the MOD44W MODIS land mask. Previously, some grid boxes over inland water were considered as over land and, thus, had non-missing values. The post-processing corrected this issue and masked out all model output data over inland water; the post-processing did not affect the meteorological forcing variables. More information on this can be found in the FLDAS README document, and the MOD44W MODIS land mask is available on the FLDAS Project site. If you had downloaded any FLDAS data prior to November 2020, please download the data again to receive the post-processed data.
+  <br>
+
+  #### FLDAS_NOAH01_C_GL_MA
+  The monthly anomaly data set contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The dataset comprises of monthly files, each representing how the month compares to the 35-year monthly climatology from 1982 to 2016, based on the FLDAS Noah Land Surface Model L4 Global Monthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS) V001 (FLDAS_NOAH01_C_GL_M_001) monthly data. The data are in 0.10 degree resolution and the spatial coverage is global (60S, 180W, 90N, 180E). The FLDAS regional monthly anomaly datasets will no longer be available and have been superseded by the global monthly anomaly dataset. More information about the monthly FLDAS can be found from the dataset landing page for FLDAS_NOAH01_C_GL_M_001 and the FLDAS README document. In November 2020, all FLDAS data were post-processed with the MOD44W MODIS land mask. Previously, some grid boxes over inland water were considered as over land and, thus, had non-missing values. The post-processing corrected this issue and masked out all model output data over inland water; the post-processing did not affect the meteorological forcing variables. More information on this can be found in the FLDAS README document, and the MOD44W MODIS land mask is available on the FLDAS Project site. If you had downloaded any FLDAS data prior to November 2020, please download the data again to receive the post-processed data.
+  <br>
+
+  #### FLDAS_NOAH01_C_GL_MC
+  The monthly climatology dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The dataset comprises of 12 monthly files, each representing the monthly data averaged over 35 years from 1982 to 2016, based on the FLDAS Noah Land Surface Model L4 Global Monthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS) V001 (FLDAS_NOAH01_C_GL_M_001) monthly data. The data are in 0.10 degree resolution and the spatial coverage is global (60S, 180W, 90N, 180E). The FLDAS regional monthly climatology datasets will no longer be available and have been superseded by the global monthly climatology dataset. More information about the monthly FLDAS can be found from the dataset landing page for FLDAS_NOAH01_C_GL_M_001 and the FLDAS README document. In November 2020, all FLDAS data were post-processed with the MOD44W MODIS land mask. Previously, some grid boxes over inland water were considered as over land and, thus, had non-missing values. The post-processing corrected this issue and masked out all model output data over inland water; the post-processing did not affect the meteorological forcing variables. More information on this can be found in the FLDAS README document, and the MOD44W MODIS land mask is available on the FLDAS Project site. If you had downloaded any FLDAS data prior to November 2020, please download the data again to receive the post-processed data.
+  <br>
+
+  #### FLDAS_NOAHMP001_G_CA_D
+  This dataset contains land surface parameters simulated by the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System version 2 (FLDAS2) Central Asia model. The FLDAS2 Central Asia model is a custom instance of the NASA Land Information System that has been adapted to work with domains, data streams, and monitoring and forecast requirements associated with food security assessment in data-sparse, developing country settings. The data are produced using the Noah Multi-Parameterization (Noah-MP) version 4.0.1 Land Surface Model (LSM) forced by Global Data Assimilation System (GDAS) meteorological data. The FLDAS2 Central Asia dataset is produced daily with a one-day latency. Data are available from October 1, 2000 to present. The dataset contains 27 parameters at a 0.01 degree spatial resolution over the Central Asia region (30-100°E, 21-56°N).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://ldas.gsfc.nasa.gov/FLDAS/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- precipitation
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "FLDAS_NOAH01_CP_GL_M v001 - This dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS), adapted from Land Information System (LIS7). The dataset contains 28 parameters in a 0.10 degree spatial resolution and from January 2019 to present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAH01_CP_GL_M.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "FLDAS_NOAH01_C_GL_M v001 - This dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The data are in 0.10 degree resolution and range from January 1982 to present."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAH01_C_GL_M.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "FLDAS_NOAH01_C_GL_MA v001 - The monthly anomaly data set contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The dataset comprises of monthly files, each representing how the month compares to the 35-year monthly climatology from 1982 to 2016, based on the FLDAS Noah Land Surface Model L4 Global Monthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS) V001 (FLDAS_NOAH01_C_GL_M_001) monthly data."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAH01_C_GL_MA.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "FLDAS_NOAH01_C_GL_MC v001 - The monthly climatology dataset contains a series of land surface parameters simulated from the Noah 3.6.1 model in the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System (FLDAS). The dataset comprises of 12 monthly files, each representing the monthly data averaged over 35 years from 1982 to 2016, based on the FLDAS Noah Land Surface Model L4 Global Monthly 0.1 x 0.1 degree (MERRA-2 and CHIRPS) V001 (FLDAS_NOAH01_C_GL_M_001) monthly data."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAH01_C_GL_MC.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "FLDAS_NOAHMP001_G_CA_D v001 - This dataset contains land surface parameters simulated by the Famine Early Warning Systems Network (FEWS NET) Land Data Assimilation System version 2 (FLDAS2) Central Asia model. The FLDAS2 Central Asia model is a custom instance of the NASA Land Information System that has been adapted to work with domains, data streams, and monitoring and forecast requirements associated with food security assessment in data-sparse, developing country settings."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/FLDAS/FLDAS_NOAHMP001_G_CA_D.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

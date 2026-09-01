@@ -1,0 +1,41 @@
+Name: Open Human Genome Library
+Description: >
+  The Open Human Genome Library (OpenHGL) is a collection of high-quality
+  *de novo* human assemblies that are publicly available in genomic databases
+  (e.g. NCBI and CNCB) or from individual research papers. It provides
+  consistent naming and uniform formats across datasets, supporting efficient
+  subsequence retrieval and approximate string search.
+Documentation: https://lh3.github.io/OpenHGL/
+Contact: https://github.com/lh3/OpenHGL/issues
+ManagedBy: Heng Li lab at Dana-Farber Cancer Institute and Harvard Medical School
+UpdateFrequency: As new data or new analyses become available
+Tags:
+  - aws-pds
+  - bioinformatics
+  - genomic
+  - biology
+  - life sciences
+License: Creative Commons Zero (CC0)
+Resources:
+  - Description: >
+      This bucket contains genomic sequences in the AGC format and the
+      corresponding FM-index in the ropebwt3 format.
+    ARN: arn:aws:s3:::openhgl
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for OpenHGL updates
+    ARN: arn:aws:sns:us-east-1:104240442756:openhgl-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Using OpenHGL data
+      URL: https://lh3.github.io/OpenHGL/
+      AuthorName: Heng Li
+  Publications:
+    - Title: "AGC: compact representation of assembled genomes with fast queries and updates"
+      URL: https://pubmed.ncbi.nlm.nih.gov/36864624/
+      AuthorName: Sebastian Deorowicz, Agnieszka Danek, Heng Li
+    - Title: BWT construction and search at the terabase scale
+      URL: https://doi.org/10.1093/bioinformatics/btae717
+      AuthorName: Heng Li

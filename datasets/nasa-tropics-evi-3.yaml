@@ -1,0 +1,42 @@
+Name: NASA TROPICS (EVI-3) Project
+Description: |
+  The "Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of five identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload. Each SV hosts an identical high-performance spectrometer named the TROPICS Millimeter-wave Sounder (TMS) that will provide temperature profiles using seven channels near the 118.75-GHz oxygen absorption line, water vapor profiles using three channels near the 183-GHz water vapor absorption line, imagery in a single channel near 90 GHz for precipitation measurements (when combined with higher resolution water vapor channels), and a single channel near 205 GHz that is more sensitive to cloud-sized ice particles. This dataset is the Level-2b Precipitation Ice Water Path (PIWP). PIWP is the total mass of ice-phase precipitation (like snow or hail) within a vertical atmospheric column, per unit area (measured in kilograms per square meter or kg/m2). PIWP is specifically about the portion that is falling as precipitation while Cloud Ice Water Path (CIWP) measures all ice particles in a cloud. TROPICS channels are not sensitive to small particles required for CIWP estimation. Presently, the algorithm retrieves PIWP over oceans only. Retrievals over land could be investigated in the future as resources and schedule permit. The inputs to the PIWP are the L1b brightness temperatures. Details for the L1b can be found in the L1 native radiance ATBD (TRPCS-ATBD-034). Each TROPICS netCDF file contains a granule of data with 81 spots and approximately 2880 scans, where a granule is defined as an orbit's worth of data.
+  <br>
+
+  #### TROPICS01DMINL2B
+  The "Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of five identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload. Each SV hosts an identical high-performance spectrometer named the TROPICS Millimeter-wave Sounder (TMS) that will provide temperature profiles using seven channels near the 118.75-GHz oxygen absorption line, water vapor profiles using three channels near the 183-GHz water vapor absorption line, imagery in a single channel near 90 GHz for precipitation measurements (when combined with higher resolution water vapor channels), and a single channel near 205 GHz that is more sensitive to cloud-sized ice particles. The Deep Multispectral INtensity of TCs estimator with 183 GHz brightness temperatures (D-MINT183), developed at the University of Wisconsin/CIMSS, estimates two primary TC variables: Minimum Sea Level Pressure (MSLP) and Maximum Sustained Winds (MSW). D-MINT183 is a convolutional neural network (CNN) with no inherent physical understanding of TC intensity relationships, which is an approach that differs from the other two TROPICS TC Intensity algorithm (i.e., TCIE and HISA). D-MINT183 is trained using combinations of 183±1 and 183±3 GHz imagery from SSMIS, ATMS, MHS, and AMSU-B, as well as 15 hours of infrared imagery (in 3-h increments) and scalar predictors. TROPICS has 184.41 GHz and 186.51 GHz imagery, which is used as a proxy for the 183±1 GHz and 183±3 GHz imagery.
+  <br>
+
+  #### TROPICS01ANTTL1A
+  The "Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of six identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload. This dataset is produced from the Pathfinder satellite, a single 3U small satellite, which has launched previous to the constellation, on a sun-synchronous orbital plane. Each SV hosts an identical high-performance spectrometer named the TROPICS Millimeter-wave Sounder (TMS) that will provide temperature profiles using seven channels near the 118.75-GHz oxygen absorption line, water vapor profiles using three channels near the 183-GHz water vapor absorption line, imagery in a single channel near 90 GHz for precipitation measurements (when combined with higher resolution water vapor channels), and a single channel near 205 GHz that is more sensitive to cloud-sized ice particles. Each TROPICS netCDF file contains a granule of data with 81 spots and approximately 2880 scans, where a granule is defined as an orbit's worth of data.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br><br>
+Documentation: https://tropics.ll.mit.edu/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- netcdf
+- oceans
+- precipitation
+- satellite imagery
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "TROPICS01DMINL2B v1.0 - The \"Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats\" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of five identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TROPICS_L2B/TROPICS01DMINL2B.1.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "TROPICS01ANTTL1A v1.0 - The \"Time-Resolved Observations of Precipitation structure and storm Intensity with a Constellation of Smallsats\" (TROPICS) mission has a goal of providing nearly all-weather observations of three-dimensional temperature and humidity, as well as cloud ice and precipitation horizontal structure, at high temporal resolution to conduct high-value science investigations of tropical cyclones. The mission comprises a constellation of six identical Space Vehicles (SVs) conforming to the 3U form factor and hosting a passive microwave spectrometer payload."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TROPICS_L1A/TROPICS01ANTTL1A.1.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

@@ -1,0 +1,32 @@
+Name: 'ABoVE: Bias-Corrected IMERG Monthly Precipitation for Alaska and Canada, 2000-2020'
+Description: |-
+  This dataset is a modification to the Integrated Multi-satellitE Retrievals for GPM (IMERG) Final Run microwave-only, daily precipitation Version 06 data. It provides bias-corrected IMERG monthly precipitation data for Alaska and Canada from June 2000 through December 2020 in Cloud-Optimized GeoTIFF (*.tif) format. Data are provided in the units of mm/day. NASA's IMERG data product is one of the most advanced satellite precipitation products with a 0.1-degree spatial resolution and near global coverage. This dataset bias-corrected IMERG's HQprecipitation precipitation estimates, which are based on passive microwave (PMW)-only retrievals, using a linear regression method. This method utilizes empirical measurements from rain gauge stations from the Global Historical Climatology Network (GHCN) and a digital elevation model. This bias correction approach improves estimates at elevations above 500 m a.s.l., which are typically underestimated.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.3334/ORNLDAAC/2097
+Contact: 'ORNL DAAC User Services Office: uso@daac.ornl.gov.'
+ManagedBy: NASA
+UpdateFrequency: From 2000-06-01 to 2020-12-31
+Tags:
+  - aws-pds
+  - atmosphere
+  - cog
+  - earth observation
+  - global
+  - land
+  - radar
+  - cog
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'ABoVE: Bias-Corrected IMERG Monthly Precipitation for Alaska and
+      Canada, 2000-2020.'
+    ARN: arn:aws:s3:::ornl-cumulus-prod-protected/above/IMERG_Precip_Canada_Alaska/data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials:
+    - Title: Accessing Data through ORNL DAAC Web Services
+      URL: https://github.com/ornldaac/web_services_data_access/blob/master/web_services_data_access.ipynb
+      AuthorName: ORNL DAAC
