@@ -1,0 +1,24 @@
+Name: SomBench
+Description: Benchmark Dataset for Advancing Machine Learning for Lunar Surface understanding
+Documentation: https://huggingface.co/datasets/nasa-ibm-ai4science/Sombench-pretraining-data
+Contact: sujit.roy@nasa.gov
+ManagedBy: NASA ODSI
+UpdateFrequency: This is the final version of the Dataset.
+Tags:
+  - machine learning
+  - aws-pds
+  - planetary
+License: |
+    Creative Commons Attribution 4.0 International.
+Citation:
+Resources:
+  - Description: Moon FM Bench
+    ARN: arn:aws:s3:::nasa-lunar-fm-bench
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](http://nasa-lunar-fm-bench.s3.amazonaws.com/index.html)'
+  - Description: Notifications for Lunar FM bench data
+    ARN:
+    Region: us-west-2
+    Type: SNS Topic
