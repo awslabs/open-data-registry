@@ -1,0 +1,42 @@
+Name: 'ECMWF static datasets'
+Description: |
+  A collection of curated, static ECMWF forecast datasets capturing notable weather events. Data are organised as <event>/<period>/<YYYYMMDD>/<product> following ECMWF naming conventions.
+Documentation: "[ECMWF Open and Free Datasets](https://confluence.ecmwf.int/x/2UykDQ)"
+Contact: https://support.ecmwf.int
+ManagedBy: "[European Centre for Medium-Range Weather Forecasts](https://www.ecmwf.int/)"
+UpdateFrequency: Updated as new curated event datasets are published.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - atmosphere
+  - meteorological
+  - weather
+  - climate
+License: "This ECMWF data is published under a Creative Commons Attribution 4.0 International license ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)) and the [ECMWF Terms of Use](https://apps.ecmwf.int/datasets/licences/general/)"
+Resources:
+  - Description: "Curated static ECMWF datasets"
+    ARN: arn:aws:s3:::ecmwf-static-datasets
+    Region: eu-central-1
+    Type: S3 Bucket
+ADXCategories:
+  - Environmental Data
+# To add a future static dataset, append ONE Tutorials entry (its documentation
+# page) and ONE Publications entry (its DOI) below. 
+DataAtWork:
+  Tutorials:
+    - Title: "European heatwave, June 2026 - dataset documentation"
+      URL: https://confluence.ecmwf.int/x/XLQnKQ
+      AuthorName: ECMWF
+    # - Title: "<event, period> - dataset documentation"
+    #   URL: <documentation page URL>
+    #   AuthorName: ECMWF
+  Publications:
+    - Title: "European heatwave, June 2026 - dataset citation (DOI)"
+      URL: https://doi.org/10.5281/zenodo.21224650
+      AuthorName: ECMWF
+    # - Title: "<event, period> - dataset citation (DOI)"
+    #   URL: <DOI URL>
+    #   AuthorName: ECMWF
