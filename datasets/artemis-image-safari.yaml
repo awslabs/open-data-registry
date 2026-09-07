@@ -7,10 +7,12 @@ Description: >
   Artemis (1,387,665 images) pairs imagery with linked agronomic, genotypic,
   and environmental metadata across four crops and four countries. Image
   Safari (6,081,555 images) captures diversity across 18 crops and nine
-  countries. A subset of 42,981 images includes organ-level annotations in
-  standard and benchmark tracks. The datasets combine crop imagery, structured
-  metadata, and benchmark annotations to support agricultural foundation
-  models, plant disease detection, growth stage recognition, and
+  countries. A subset of 42,981 images includes organ-level annotations.
+  Artemis annotations cover instance segmentation, object detection, and image
+  classification. Image Safari annotations cover point, semantic segmentation,
+  scribble, object detection, and instance segmentation. The datasets combine
+  crop imagery, structured metadata, and annotations to support agricultural
+  foundation models, plant disease detection, growth stage recognition, and
   cross-environment generalisation research.
 
 Documentation: https://github.com/CIAT-Artemis/imagesafari-artemis-crop-images/blob/main/README.md
@@ -52,27 +54,29 @@ Resources:
       Artemis structured phenotyping images (1,387,665 images, four crops:
       common bean, cowpea, soybean, sorghum) with linked agronomic, genotypic,
       and environmental metadata. Field images (JPEG, original acquisition
-      resolution), semantic segmentation masks (PNG), and object-level
-      annotations (COCO JSON) organised by crop species, collection site, and
-      acquisition date. Parquet and CSV metadata tables under each crop
-      directory's metadata/ subtree.
-    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/Artemis
-    Region: us-east-1
+      resolution) and annotations organised by crop under
+      annotations/instance_segmentation/, annotations/object_detection/, and
+      annotations/image_classification/ (COCO JSON and related formats).
+      Parquet and CSV metadata tables under each crop directory's metadata/
+      subtree.
+    ARN: arn:aws:s3:::alliance-artemis-imagesafari/Artemis
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#Artemis/)'
+      - '[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#Artemis/)'
   - Description: >
       Image Safari diversity-driven crop images (6,081,555 images, 18 crops)
       across nine countries in sub-Saharan Africa. Field images (JPEG, original
-      acquisition resolution), semantic segmentation masks (PNG), and
-      object-level annotations (COCO JSON) organised by crop species,
-      collection site, and acquisition date. Parquet and CSV metadata tables
-      under each crop directory's metadata/ subtree.
-    ARN: arn:aws:s3:::[S3_BUCKET_NAME]/ImageSafari
-    Region: us-east-1
+      acquisition resolution) and annotations organised by crop under
+      annotations for point, semantic_segmentation, scribble, object_detection,
+      and instance_segmentation (COCO JSON, PNG masks, and related formats).
+      Parquet and CSV metadata tables under each crop directory's metadata/
+      subtree.
+    ARN: arn:aws:s3:::alliance-artemis-imagesafari/ImageSafari
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
-      - '[Browse Bucket](https://[S3_BUCKET_NAME].s3.amazonaws.com/index.html#ImageSafari/)'
+      - '[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#ImageSafari/)'
 
 DataAtWork:
   Tutorials:
@@ -91,7 +95,7 @@ DataAtWork:
     - Title: >
         Artemis and Image Safari: Large imagery datasets targeting crop species and smallholder farming systems in the global south
       URL: [PAPER_DOI_URL]
-      AuthorName: "Mutuvi S., Guerena D., Zych M., Henday S., Agesa B., Ghandi A., et al."
+      AuthorName: "Mutuvi S., et al."
 
 ADXCategories:
   - Environmental Data
