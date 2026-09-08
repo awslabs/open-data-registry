@@ -12,11 +12,11 @@ Tags:
 License: Attribution required.
 Resources:
   - Description: Gaia DR3 HATS-Formatted Files
-    ARN: arn:aws:s3:::stpubdata/gaia
+    ARN: arn:aws:s3:::stpubdata/gaia/gaia_dr3/public/hats
     Region: us-east-1
     Type: S3 Bucket
     RequesterPays: False
-  - Description: Notifications for new data
+  - Description: Notifications for new Gaia data
     ARN: arn:aws:sns:us-east-1:879230861493:stpubdata/gaia
     Region: us-east-1
     Type: SNS Topic
@@ -25,3 +25,6 @@ DataAtWork:
     - Title: Dark Energy Survey / Gaia DR3 Crossmatch
       URL: https://docs.lsdb.io/en/stable/tutorials/pre_executed/des-gaia.html
       AuthorName: LSDB Collaboration
+    - Title: GAIA HATS Tutorial
+      URL: https://github.com/spacetelescope/odr-tutorials/blob/main/mast-gaia-dr3/get-to-know-a-dataset-HATS-Gaia-DR3-SourceCat.ipynb
+      AuthorName: MAST Staff
