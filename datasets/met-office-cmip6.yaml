@@ -1,0 +1,72 @@
+Name: Met Office Global DCPP hindcast data from CMIP6
+Description: |
+ This product provides global climate hindcast data on the native grids of the HadGEM3-GC31-MM model. The atmospheric and land surface data is presented on an N216 lat-lon grid (432 x 324 longitude/latitudes, 0.833 x 0.556 degrees). The ocean and sea ice data is presented on the ORCA025 tripolar grid (primarily 0.25 degrees; 1440 x 1205 longitude/latitudes).
+ <br><br>
+
+ The data consists of model output from the [Hadley Centre Global Environment Model in the Global Coupled configuration 3.1](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001995) (HadGEM3-GC3.1), as part of the [Decadal Climate Prediction Project](https://gmd.copernicus.org/articles/9/3751/2016/)  dcppA-hindcast experiment within the sixth Coupled Model Intercomparison Project (CMIP6).
+ <br><br>
+
+ The hindcasts (climate simulations initialised from historical data at a specified point in time) start in 1960 through to 2015. Each is typically 10 years long with 10 ensemble members for each start date. An ensemble of simulations was run, using different initial conditions for each member, to allow users of the data to understand and quantify levels of uncertainty.
+ <br><br>
+
+ This data has previously been published to [ESGF](https://esgf-ui.ceda.ac.uk/search?project=CMIP6&activeFacets=%7B%22institution_id%22%3A%22MOHC%22%2C%22activity_id%22%3A%22DCPP%22%2C%22experiment_id%22%3A%22dcppA-hindcast%22%7D) as part of CMIP6 and is presented here in an optimised netCDF format through application of the [CMIP7 repacking tools](https://github.com/NCAS-CMS/cmip7_repack).
+ <br><br>
+
+ Variables included are documented on the [github wiki](https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/wiki). This also includes a table describing associated metadata.
+ <br><br>
+
+ ## Parameters, timesteps, levels and forecast periods 
+
+ Variables are presented in the same form as published in CMIP6, with a single data variable per NetCDF4 file including coordinate data and global attribute metadata. The [github wiki](https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/wiki#table-of-variables) describes the list of variables included along with their definition. 
+ <br><br>
+
+ The start date and ensemble member identifier (variant_label) are encoded in the “member_id” field (as described in [Taylor et al](https://zenodo.org/records/15670624)). For example, the third ensemble member for the 1970 start date will have a member_id of `s1970-r3i1p1f2` and corresponding data will be found under “CMIP6/DCPP/MOHC/HadGEM3-GC31-MM/dcppA-hindcast/s1970-r3i1p1f2”. 
+ <br><br>
+ Other general information on CMIP6 data standards can be found [here](https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP6/). 
+
+ ## Archive length 
+
+ Simulations with start dates from 1960 through to 2018 are included and each simulation is approximately 10 years in length. 
+
+ ## Business needs 
+
+ This data can be used to evaluate the utility of decadal forecast data for both academic and commercial purposes. DCPP activities, through CMIP and the Met Office’s role as the [WMO Lead Centre for Annual-to-Decadal Climate Prediction](https://hadleyserver.metoffice.gov.uk/wmolc/https://hadleyserver.metoffice.gov.uk/wmolc/), will continue to provide similar data and updates to future CMIP exercises (CMIP6Plus, CMIP7).
+ 
+Documentation: "(https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast)"
+Contact: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - oceans
+  - land
+  - ice
+  - geospatial
+  - aws-pds
+  - sustainability
+  - CMIP6
+License: CMIP6 data included is licensed under CC-BY 4.0 (see [here](https://wcrp-cmip.github.io/CMIP6_CVs/docs/CMIP6_source_id_licenses.html).  
+Citation: |
+ Hermanson, Leon (2020). MOHC HadGEM3-GC31-MM model output prepared for CMIP6 DCPP dcppA-hindcast. Version YYYYMMDD[1]. Distributed via ASDI, equivalent to ESGF data published via doi:[10.22033/ESGF/CMIP6.5892](http://doi.org/10.22033/ESGF/CMIP6.5892)
+
+ [1] please use the version number corresponding to the data
+Resources: 
+  - Description: CMIP6 standards-compliant netCDF data 
+    ARN: arn:aws:s3:::met-office-cmip6
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-cmip6.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Global mean temperature calculation from a subset of hindcasts.
+      URL: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/tree/main/examples/get-to-know-met-office-cmip6-data.ipynb 
+      NotebookURL: https://github.com/MetOffice/ASDI-CMIP6-DCPP-hindcast/tree/main/examples/get-to-know-met-office-cmip6-data.ipynb
+      AuthorName: matthew-mizielinski
+      AuthorURL: https://github.com/matthew-mizielinski
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
