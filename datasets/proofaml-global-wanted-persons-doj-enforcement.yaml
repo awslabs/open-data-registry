@@ -1,0 +1,59 @@
+Name: ProofAML — Global Wanted Persons & Law-Enforcement Enforcement Actions Dataset
+
+Description: |
+  FBI/ICE/Secret Service/ATF/USPIS most-wanted lists, DOJ enforcement defendants, plus UK/NL/PL wanted.
+
+  A type-axis segment of the ProofAML corpus (global-wanted-persons-doj-enforcement) — 17,661 entity records across 10 sources, each traced to its original issuing authority.
+
+  An entirely different audience from the AML/compliance buyer the rest of this corpus targets: investigators, background-check vendors, and OSINT/investigative-journalism users who want active-fugitive and federal-enforcement-defendant data specifically, not sanctions or PEP records. No overlap with the sanctions, export-control, or PEP segments' source IDs.
+
+  OVERLAP: This dataset overlaps with other ProofAML segment datasets and the master snapshot — entities are not unique to this file. See https://proofaml.com/sources/ for the full corpus and the other available segments.
+
+  Licensing: the selection, arrangement, and entity-resolution layer of this compilation is licensed CC BY 4.0. Every individual record additionally carries its own upstream publisher's license — see the bundle's own NOTICE file for the full per-source breakdown before redistributing any individual record in isolation.
+
+  Research snapshot — not current data; production sanctions screening requires a live, monitored feed.
+
+  Recommended citation: ProofAML — https://proofaml.com — "ProofAML Global Wanted Persons & Law-Enforcement Enforcement Actions Dataset Snapshot 2026-08-24"
+
+Documentation: https://proofaml.com/sources/
+
+Contact: "[ProofAML — open a GitHub issue](https://github.com/proofaml/sanctions-snapshot/issues)"
+
+ManagedBy: "[ProofAML](https://proofaml.com)"
+
+UpdateFrequency: Quarterly (to start; monthly at most)
+
+Tags:
+  - government records
+  - legal data
+  - civic
+
+License: >-
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/legalcode) — applies
+  ONLY to ProofAML's selection/arrangement/entity-resolution compilation
+  layer. Every individual record separately carries its own upstream
+  publisher's license; see the bundle's NOTICE file for the full per-source
+  breakdown.
+
+Resources:
+  - Description: >-
+      ProofAML — Global Wanted Persons & Law-Enforcement Enforcement Actions Dataset (version 2026-08-24) — object
+      prefix in the shared proofaml-open-data S3 bucket hosting this segment's
+      redistributable bundle (compressed archive, manifest.json with per-dataset
+      checksums, LICENSE, and the per-source NOTICE).
+    ARN: arn:aws:s3:::proofaml-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Segment manifest (JSON)](https://proofaml-open-data.s3.us-east-1.amazonaws.com/segments/global-wanted-persons-doj-enforcement/2026-08-24/proofaml-global-wanted-persons-doj-enforcement-2026-08-24/manifest.json)'
+
+DataAtWork:
+  Tutorials: []
+  Tools & Applications: []
+  Publications:
+    - Title: "ProofAML — Global Wanted Persons & Law-Enforcement Enforcement Actions Dataset (archived, DOI-minted on Zenodo)"
+      URL: https://doi.org/10.5281/zenodo.22118983
+      AuthorName: ProofAML
+
+Citation: >-
+  ProofAML — https://proofaml.com — "ProofAML Global Wanted Persons & Law-Enforcement Enforcement Actions Dataset Snapshot 2026-08-24"
