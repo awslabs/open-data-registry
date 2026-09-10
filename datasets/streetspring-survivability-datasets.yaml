@@ -1,0 +1,57 @@
+Name: StreetSpring Business Survivability Datasets
+Description: |
+  Projected probability that a specific business type remains open two or more years at a specific
+  place, for 110 business types across 24 U.S. metropolitan areas. One national file (metro by
+  business type) and 24 metro files (neighborhood by business type), about 150,000 rows in total,
+  derived from a model trained on 570,000+ historical business outcomes and more than 100 location
+  factors, including nearby anchor tenants, direct competitor counts at five radii, and U.S. Census
+  American Community Survey context (income, poverty, education, commute, vacancy).
+  Each file carries a comment header with the citation, the license and three worked recipes, and a
+  README provides the full column dictionary, so the data is usable by both people and agents without
+  additional documentation. Typical questions the data answers directly: where in a metro a given
+  business type is most likely to last, which business types are most likely to last in a given
+  neighborhood, and how two neighborhoods compare for the same business.
+Documentation: https://streetspring.com/resources/datasets
+RegistryEntryAdded: '2026-09-03'
+RegistryEntryLastModified: '2026-09-03'
+Contact: info@streetspring.com
+ManagedBy: "[StreetSpring](https://streetspring.com)"
+UpdateFrequency: Quarterly
+Tags:
+  - economics
+  - geospatial
+  - cities
+  - urban
+  - commerce
+  - demographics
+  - socioeconomic
+  - census
+  - csv
+License: |
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: Survivability datasets (CSV, one national file and 24 metro files, plus README, LICENSE and CITATION.cff)
+    ARN: arn:aws:s3:::streetspring-seo/open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Column dictionary and recipes (README)](https://streetspring.com/resources/data/README.md)'
+      - '[Dataset pages with the questions each file answers](https://streetspring.com/resources/datasets)'
+DataAtWork:
+  Tutorials:
+    - Title: How to read a StreetSpring survivability file
+      URL: https://streetspring.com/resources/data/README.md
+      AuthorName: StreetSpring
+      AuthorURL: https://streetspring.com
+  Tools & Applications:
+    - Title: StreetSpring address scoring
+      URL: https://streetspring.com
+      AuthorName: StreetSpring
+      AuthorURL: https://streetspring.com
+  Publications:
+    - Title: "State of the Storefront 2026"
+      URL: https://streetspring.com/reports/state-of-the-storefront-2026.html
+      AuthorName: Bobby Koons, StreetSpring
+    - Title: "StreetSpring Survivability Datasets 2026 (Zenodo, DOI 10.5281/zenodo.22287997)"
+      URL: https://doi.org/10.5281/zenodo.22287997
+      AuthorName: Bobby Koons, StreetSpring
