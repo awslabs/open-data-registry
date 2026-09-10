@@ -1,0 +1,61 @@
+Name: US and Canadian Payroll, Sales and Property Tax Reference Data (2026)
+Description: |
+  A machine-readable reference of 2026 statutory tax parameters for the United
+  States and Canada, compiled from primary sources: IRS Publication 15-T and
+  Rev. Proc. 2025-32, the 50 state Departments of Revenue plus the District of
+  Columbia, the Social Security Administration wage base, U.S. Census Bureau
+  American Community Survey 5-year estimates, the Canada Revenue Agency and the
+  13 provincial and territorial authorities.
+  <br/>
+  <br/>
+  The collection covers net take-home pay for 51 US jurisdictions across 11
+  income levels and 2 filing statuses (1,122 observations); full state income
+  tax brackets, standard deductions and personal exemptions; federal brackets,
+  FICA thresholds and the 2025 OBBBA provisions; state and combined sales tax
+  rates; effective property tax rates for 51 states and 3,125 counties; vehicle
+  property tax by state; an hourly-to-annual salary reference table; and the
+  Canadian equivalents covering provincial net pay, GST/HST/PST, minimum wages
+  and TFSA/RRSP limits.
+  <br/>
+  <br/>
+  Every file is plain UTF-8 CSV with a documented header row, versioned by tax
+  year, and mirrored under persistent identifiers (DOI) for citation.
+Documentation: https://statetakehome.com/data
+Contact: For questions about data content, sources or methodology, see the [methodology page](https://statetakehome.com/methodology) or email contact@statetakehome.com
+ManagedBy: "[StateTakeHome](https://statetakehome.com/)"
+UpdateFrequency: Annually, following the publication of federal, state and provincial tax parameters for the coming tax year
+Tags:
+  - aws-pds
+  - economics
+  - statistics
+  - socioeconomic
+  - census
+  - housing
+  - canada
+License: |
+  Creative Commons Attribution 4.0 International (CC BY 4.0).
+  Attribution requested as: StateTakeHome, "US and Canadian Payroll, Sales and
+  Property Tax Reference Data (2026)", https://statetakehome.com/data
+Resources:
+  - Description: Tax reference data in CSV format, covering the United States (us/) and Canada (ca/)
+    ARN: arn:aws:s3:::statetakehome-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse bucket](https://statetakehome-open-data.s3.amazonaws.com/)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+    - Title: us-take-home-data - Rust crate for querying the take-home pay dataset
+      URL: https://docs.rs/us-take-home-data
+      AuthorName: StateTakeHome
+    - Title: StateTakeHome open data documentation
+      URL: https://statetakehome-docs.readthedocs.io/en/latest/
+      AuthorName: StateTakeHome
+  Publications:
+    - Title: "US Take-Home Pay by State, 2026: Net Pay After Federal, State and FICA Taxes"
+      URL: https://doi.org/10.7910/DVN/MY6XD3
+      AuthorName: Tresor Kaya
+    - Title: "US Property Taxes by State and County, 2026: Effective Rates, Median Home Values and Median Taxes Paid"
+      URL: https://doi.org/10.7910/DVN/JDRIUL
+      AuthorName: Tresor Kaya
