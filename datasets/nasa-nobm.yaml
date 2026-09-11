@@ -1,0 +1,43 @@
+Name: NASA NOBM Project
+Description: |
+  Global Modeling and Assimilation Office Research
+  <br>
+
+  #### NOBM_DAY
+  This is the assimilated daily data from NASA Ocean Biogeochemical Model (NOBM). The NOBM is a comprehensive, interactive ocean biogeochemical model coupled with a circulation and radiative model in the global oceans (Gregg and Casey, 2007). It spans the domain from -84 to 72 degree latitude in increments of 1.25 degree longitude by 2/3 degree latitude, including only open ocean areas where bottom depth > 200m. NOBM contains 4 phytoplankton groups, 4 nutrient groups, a single herbivore group, and 3 detrital pools, and the major ocean carbon components, dissolved organic and inorganic carbon (DOC and DIC).
+  <br>
+
+  #### NOBM_MON
+  This is the assimilated monthly data from NASA Ocean Biogeochemical Model (NOBM). The NOBM is a comprehensive, interactive ocean biogeochemical model coupled with a circulation and radiative model in the global oceans (Gregg and Casey, 2007). It spans the domain from -84 to 72 degree latitude in increments of 1.25 degree longitude by 2/3 degree latitude, including only open ocean areas where bottom depth >200m. NOBM contains 4 phytoplankton groups, 4 nutrient groups, a single herbivore group, and 3 detrital pools, and the major ocean carbon components, dissolved organic and inorganic carbon (DOC and DIC).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://gmao.gsfc.nasa.gov/gmao-products/merra-nobm/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+- ice
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NOBM_DAY vR2017 - This is the assimilated daily data from NASA Ocean Biogeochemical Model (NOBM). The NOBM is a comprehensive, interactive ocean biogeochemical model coupled with a circulation and radiative model in the global oceans (Gregg and Casey, 2007)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/nobm/NOBM_DAY.R2017
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NOBM_MON vR2017 - This is the assimilated monthly data from NASA Ocean Biogeochemical Model (NOBM). The NOBM is a comprehensive, interactive ocean biogeochemical model coupled with a circulation and radiative model in the global oceans (Gregg and Casey, 2007)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/nobm/NOBM_MON.R2017
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

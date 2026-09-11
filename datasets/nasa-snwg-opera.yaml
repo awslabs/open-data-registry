@@ -1,0 +1,83 @@
+Name: NASA SNWG/OPERA Project
+Description: |
+  This dataset contains Level-3 Dynamic OPERA surface water extent product version 1. The data are validated surface water extent observations beginning April 2023. Known issues and caveats on usage are described under Documentation. The input dataset for generating each product is the Harmonized Landsat-8 and Sentinel-2A/B/C (HLS) product version 2.0. HLS products provide surface reflectance (SR) data from the Operational Land Imager (OLI) aboard the Landsat 8 satellite and the MultiSpectral Instrument (MSI) aboard the Sentinel-2A/B/C satellite. The surface water extent products are distributed over projected map coordinates using the Universal Transverse Mercator (UTM) projection. Each UTM tile covers an area of 109.8 km × 109.8 km. This area is divided into 3,660 rows and 3,660 columns at 30-m pixel spacing. Each product is distributed as a set of 10 GeoTIFF (Geographic Tagged Image File Format) files including water classification, associated confidence, land cover classification, terrain shadow layer, cloud/cloud-shadow classification, Digital elevation model (DEM), and Diagnostic layer. <br><br> The digital elevation model (DEM) provided as a layer of the DSWx-HLS product (band 10) was generated using the Copernicus DEM 30-m and Copernicus DEM 90-m models provided by the European Space Agency. The Copernicus DEM 30-m and Copernicus DEM 90-m were produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved. The organizations in charge of the OPERA project, the Copernicus programme, and Airbus Defence and Space GmbH by law or by delegation do not assume any legal responsibility or liability, whether express or implied, arising from the use of this DEM. <br><br> The OPERA DSWx-HLS product contains modified Copernicus Sentinel data (2023-2025). <br><br> To access the calibration/validation database for OPERA Dynamic Surface Water Extent Products, please contact podaac@podaac.jpl.nasa.gov <br><br> The OPERA Project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.
+  <br>
+
+  #### OPERA_L3_DSWX-S1_V1
+  This dataset contains Level-3 Dynamic OPERA Surface Water Extent from Sentinel-1 (DSWx-S1) product version 1. DSWx-S1 provides near-global geographical mapping of surface water extent over land at a spatial resolution of 30 meters over the Military Grid reference System (MGRS) grid system, with a temporal revisit frequency between 6-12 days. Using Sentinel-1 radar observations, DSWx-S1 maps open inland water bodies greater than 3 hectares and 200 meters in width, irrespective of cloud conditions and daylight illumination that often pose challenges to optical sensors. Forward production of the DSWx-S1 data record began in Sept 2024. Each product is distributed as a set of 3 GeoTIFF (Geographic Tagged Image File Format) files including water classification and associated confidence layers. <br><br> The OPERA DSWx-S1 product contains modified Copernicus Sentinel data (2024-2025). <br><br> To access the calibration/validation database for OPERA Dynamic Surface Water Extent Products, please contact podaac@podaac.jpl.nasa.gov <br><br> The OPERA Project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies.
+  <br>
+
+  #### OPERA_DSWX-S1_CALVAL_V1
+  This dataset contains the calibration/validation (CalVal) database for the OPERA DSWx-S1 product. The CalVal database is a zip file of an Amazon Web Services S3 bucket containing classification items that enable algorithm calibration and validation of OPERA products. The CalVal database contains a Reference Document that further describes the structure and usage of the database, as well as a Validation Results document. Example notebooks demonstrating how to read the database tables, query for specific items, and download corresponding data files are available through the CalVal GitHub repository here: https://github.com/OPERA-Cal-Val/calval-database
+  <br>
+
+  #### OPERA_L3_DIST-ALERT-HLS_V1
+  The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) product Version 1 maps vegetation disturbance alerts that are derived from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). A vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel. The Level-3 data product also provides additional information about more general disturbance trends and auxiliary generic disturbance information as determined from the variations of the reflectance through the HLS scenes. [HLS](https://lpdaac.usgs.gov/product_search/?collections=HLS&status=Operational&view=list) data represent the highest temporal frequency data available at medium spatial resolution. The combined observations will provide greater sensitivity to land changes, whether of large magnitude/short duration or small magnitude/long duration. The OPERA_L3_DIST-ALERT-HLS (or DIST-ALERT) data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate file. There are 19 layers contained within the DIST-ALERT product. The layers for both vegetation and generic disturbance include disturbance status, loss or anomaly, maximum loss anomaly, disturbance confidence layer, date of disturbance, count of observations with loss anomalies, days of ongoing anomalies, and day of last disturbance detection. Additional layers are vegetation cover percent, historical percent vegetation cover, and data mask. See the Product Specification Document (PSD) for a more detailed description of the individual layers provided in the DIST-ALERT product. The OPERA project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies. The OPERA_L3_DIST-ALERT-HLS product contains modified Copernicus Sentinel data (2020-2025). Known Issues: Additional usage constraints are provided under Section 5 of the Algorithm Theoretical Basis Document (ATBD).
+  <br>
+
+  #### OPERA_L3_DIST-ALERT-HLS_PROVISIONAL_V0
+  The OPERA_L3_DIST-ALERT-HLS Version 0 data product was decommissioned on April 25, 2025. Users are encouraged to use the [OPERA_L3_DIST-ALERT-HLS V1](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product which was released on March 14, 2024, and has achieved stage 1 validation. The Observational Products for End-Users from Remote Sensing Analysis (OPERA) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) provisional data product Version 0 maps vegetation disturbance alerts from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). Vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel. The product also provides auxiliary generic disturbance information as determined from the variations of the reflectance through the HLS scenes to provide information about more general disturbance trends. HLS data represent the highest temporal frequency data available at medium spatial resolution. The combined observations will provide greater sensitivity to land changes, whether of large magnitude/short duration, or small magnitude/long duration. The OPERA_L3_DIST-ALERT-HLS (or DIST-ALERT) data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate file. There are 19 layers contained within in the DIST-ALERT product: vegetation disturbance status, current vegetation cover indicator, current vegetation anomaly value, historical vegetation cover indicator, max vegetation anomaly value, vegetation disturbance confidence layer, date of initial vegetation disturbance, number of detected vegetation loss anomalies, and vegetation disturbance duration. See the Product Specification for a more detailed description of the individual layers provided in the DIST-ALERT product. The OPERA project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies. Known Issues: Additional usage constraints are provided under Section 5 of the Algorithm Theoretical Basis Document (ATBD).
+  <br>
+
+  #### OPERA_L3_DIST-ANN-HLS_V1
+  The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product into an annual vegetation disturbance data product. Vegetation disturbance is mapped when there is an indicated decrease in vegetation cover within an HLS Version 2 pixel. The product also provides auxiliary generic disturbance information as determined from the variations of the reflectance through the DIST-ALERT scenes to provide information about more general disturbance trends. The DIST-ANN product tracks changes at the annual scale, aggregating changes identified in the DIST-ALERT product. Only confirmed disturbances from the associated year are reported together with the date of initial disturbance. As confirmed disturbances are determined using subsequent cloud-free observations to determine if the loss detections persist, the required number of HLS scenes depends on visibility of the target. Due to this dependency, summarizing the DIST-ALERT in the DIST-ANN product will have some latency contingent on the algorithmic calibration and is detailed in the Algorithm Theoretical Basis Document (ATBD). The OPERA_L3_DIST-ANN-HLS (or DIST-ANN) data product is provided in Cloud Optimized GeoTIFF (COG) format, and each layer is distributed as a separate COG. There are 21 layers contained within the DIST-ANN product: vegetation disturbance status, historical vegetation cover indicator, maximum vegetation cover indicator, maximum vegetation anomaly value, vegetation disturbance confidence layer, date of initial vegetation disturbance, number of detected vegetation loss anomalies, vegetation disturbance duration, date of last observation assessed for vegetation disturbance, and several generic disturbance layers. Each product layer is gridded to the same resolution and tiling system as HLS V2: 30 meter (m) and Military Grid Reference System ([MGRS](https://hls.gsfc.nasa.gov/products-description/tiling-system/)). See the Product Specification Document (PSD) for a more detailed description of the individual layers provided in the DIST-ANN product. The OPERA project is funded by NASA’s Satellite Needs Working Group (SNWG) which provides data products developed to meet the needs of stakeholders from US government agencies. The OPERA_L3_DIST-ANN-HLS product contains modified Copernicus Sentinel data (2020-2025). Known Issues: Additional usage constraints are provided under Section 5 of the Algorithm Theoretical Basis Document (ATBD).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- cog
+- earth observation
+- elevation
+- ice
+- land cover
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "OPERA_L3_DSWX-HLS_V1 v1.0 - This dataset contains Level-3 Dynamic OPERA surface water extent product version 1. The data are validated surface water extent observations beginning April 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-HLS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "OPERA_L3_DSWX-S1_V1 v1.0 - This dataset contains Level-3 Dynamic OPERA Surface Water Extent from Sentinel-1 (DSWx-S1) product version 1. DSWx-S1 provides near-global geographical mapping of surface water extent over land at a spatial resolution of 30 meters over the Military Grid reference System (MGRS) grid system, with a temporal revisit frequency between 6-12 days."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_L3_DSWX-S1_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "OPERA_DSWX-S1_CALVAL_V1 v1 - This dataset contains the calibration/validation (CalVal) database for the OPERA DSWx-S1 product. The CalVal database is a zip file of an Amazon Web Services S3 bucket containing classification items that enable algorithm calibration and validation of OPERA products."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/OPERA_DSWX-S1_CALVAL_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "OPERA_L3_DIST-ALERT-HLS_V1 v1 - The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Alert from Harmonized Landsat Sentinel-2 (HLS) product Version 1 maps vegetation disturbance alerts that are derived from data collected by Landsat 8 and Landsat 9 Operational Land Imager (OLI) and Sentinel-2A, Sentinel-2B, and Sentinel-2C Multi-Spectral Instrument (MSI). A vegetation disturbance alert is detected at 30 meter (m) spatial resolution when there is an indicated decrease in vegetation cover within an HLS pixel."
+  ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ALERT-HLS_V1.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "OPERA_L3_DIST-ALERT-HLS_PROVISIONAL_V0 v0 - The OPERA_L3_DIST-ALERT-HLS Version 0 data product was decommissioned on April 25, 2025. Users are encouraged to use the [OPERA_L3_DIST-ALERT-HLS V1](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product which was released on March 14, 2024, and has achieved stage 1 validation."
+  ARN: arn:aws:s3:::lp-protected/OPERA_DIST-ALERT-HLS_PROVISIONAL_V0.000
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "OPERA_L3_DIST-ANN-HLS_V1 v1 - The Observational Products for End-Users from Remote Sensing Analysis ([OPERA](https://www.jpl.nasa.gov/go/opera)) Land Surface Disturbance Annual from Harmonized Landsat Sentinel-2 (HLS) product Version 1 summarizes the [DIST-ALERT](https://doi.org/10.5067/SNWG/OPERA_L3_DIST-ALERT-HLS_V1.001) data product into an annual vegetation disturbance data product. Vegetation disturbance is mapped when there is an indicated decrease in vegetation cover within an HLS Version 2 pixel."
+  ARN: arn:aws:s3:::lp-protected/OPERA_L3_DIST-ANN-HLS_V1.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials

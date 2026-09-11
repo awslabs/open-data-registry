@@ -1,0 +1,38 @@
+Name: NASA 2010_GR_NASA Project
+Description: |
+  This data set contains reprocessed images depicting labels that indicate the sea ice surface category, created by processing IceBridge DMS L0 Raw Imagery with the Open Source Sea-ice Processing Algorithm. The images are provided as TIFF files (.tif). Additional metadata are provided as CSV text files (.csv), which are available as a single zip file named RDSISC4_metadata.zip. An orthorectified version of this data set is available as IceBridge-Related DMS-Derived L4 Sea Ice Surface Cover Classification Orthorectified Images.
+  <br>
+
+  #### RDSISCO4
+  This data set contains reprocessed, orthorectified images depicting labels that indicate the sea ice surface category, created by processing IceBridge DMS L0 Raw Imagery (IODMS0) with the Open Source Sea-ice Processing Algorithm. Orthorectification was done using digital elevation models from the IceBridge DMS L3 Ames Stereo Pipeline Photogrammetric DEM (IODEM3) collection. The standard (non-orthorectified) images are available as IceBridge-Related DMS-Derived L4 Sea Ice Surface Cover Classification Images (RDSISC4).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/rdsisc4/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "RDSISC4 v1 - This data set contains reprocessed images depicting labels that indicate the sea ice surface category, created by processing IceBridge DMS L0 Raw Imagery with the Open Source Sea-ice Processing Algorithm. The images are provided as TIFF files (.tif)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RDSISC4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "RDSISCO4 v1 - This data set contains reprocessed, orthorectified images depicting labels that indicate the sea ice surface category, created by processing IceBridge DMS L0 Raw Imagery (IODMS0) with the Open Source Sea-ice Processing Algorithm. Orthorectification was done using digital elevation models from the IceBridge DMS L3 Ames Stereo Pipeline Photogrammetric DEM (IODEM3) collection."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RDSISCO4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

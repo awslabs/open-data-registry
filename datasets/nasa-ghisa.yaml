@@ -1,0 +1,27 @@
+Name: NASA GHISA Project
+Description: |
+  The Global Hyperspectral Imaging Spectral-library of Agricultural crops (GHISA) is a comprehensive compilation, collation, harmonization, and standardization of hyperspectral signatures of agricultural crops of the world. This hyperspectral library of agricultural crops is developed for all major world crops and was collected by United States Geological Survey (USGS) and partnering volunteer agencies from around the world. Crops include wheat, rice, barley, corn, soybeans, cotton, sugarcane, potatoes, chickpeas, lentils, and pigeon peas, which together occupy about 65% of all global cropland areas. The GHISA spectral libraries were collected and collated using spaceborne, airborne (e.g., aircrafts and drones), and ground based hyperspectral imaging spectroscopy. The GHISA for Central Asia (GHISACASIA) Version 1 product provides dominant crop data (wheat, rice, corn, alfalfa, and cotton) in different growth stages across the Galaba and Kuva farm fields in the Syr Darya river basin in Central Asia. The GHISA hyperspectral library for the two irrigated areas was developed using Earth Observing-1 (EO-1) Hyperion hyperspectral data acquired in 2007 and ASD (Analytical Spectral Devices, Inc.) Spectroradiometer data acquired in 2006 and 2007. GHISACASIA is extracted from three Hyperion hyperspectral images and several thousands of field ASD Spectroradiometer data. Measurements were taken from 1,232 randomly chosen points scattered across the two farm sites throughout the growing season. All the processing algorithms are coded in Statistical Analysis System (SAS) format and available for download. Provided in the .xlsx files are the spectral library including image information, plot IDs, study area, instrument, Julian or acquisition date, and crop type labels for Central Asia sample fields.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/centers/lp-daac
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GHISACASIA v001 - The Global Hyperspectral Imaging Spectral-library of Agricultural crops (GHISA) is a comprehensive compilation, collation, harmonization, and standardization of hyperspectral signatures of agricultural crops of the world. This hyperspectral library of agricultural crops is developed for all major world crops and was collected by United States Geological Survey (USGS) and partnering volunteer agencies from around the world."
+  ARN: arn:aws:s3:::lp-prod-protected/GHISACASIA.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials

@@ -1,10 +1,12 @@
 Name: 'ECMWF real-time forecasts'
 Description: |
-  These products are a subset of the ECMWF real-time forecast data and are made available to the public free of charge. They are based on the medium-range (high-resolution and ensemble) and seasonal forecast models. Products are available at 0.4 degrees resolution in GRIB2 format unless stated otherwise. 
-Documentation: "[User Documentation](https://confluence.ecmwf.int/display/DAC/ECMWF+open+data%3A+real-time+forecasts)"
-Contact: https://confluence.ecmwf.int/site/support
+  These products are a subset of the ECMWF real-time forecast data and are made available to the public free of charge. They are based on the medium-range (high-resolution and ensembles) forecast models.
+  Note: The ECMWF Open Data Portal provides a rolling archive (most recent forecast runs), while the AWS replica bucket is updated as new data are published and may retain older data conventions/versions over time.
+Documentation: "[User Documentation](https://confluence.ecmwf.int/display/DAC/ECMWF+open+data%3A+real-time+forecasts+from+IFS+and+AIFS)"
+Contact: https://support.ecmwf.int
 ManagedBy: "[European Centre for Medium-Range Weather Forecasts](https://www.ecmwf.int/)"
-UpdateFrequency: "The data are released 1 hour after the [real-time dissemination schedule](https://confluence.ecmwf.int/display/DAC/Dissemination+schedule)."
+UpdateFrequency: |
+  IFS data is published according to the [real-time dissemination schedule](https://confluence.ecmwf.int/display/DAC/Dissemination+schedule), while AIFS data is published as soon as it is available for dissemination.
 Collabs:
   ASDI:
     Tags:
@@ -42,10 +44,9 @@ DataAtWork:
       AuthorName: Brian Blaylock
       AuthorURL: https://github.com/blaylockbk
   Publications:
-    - Title: ECMWF makes wide range of data openly available
-      URL: https://www.ecmwf.int/en/about/media-centre/news/2022/ecmwf-makes-wide-range-data-openly-available
+    - Title: Open Data Roadmap - Transition to Open Data
+      URL: https://www.ecmwf.int/node/29013
       AuthorName: ECMWF
       AuthorURL: https://www.ecmwf.int/
 ADXCategories:
   - Environmental Data
-

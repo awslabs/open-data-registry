@@ -1,0 +1,93 @@
+Name: NASA CLASIC07 Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### CL07SM
+  This data set is comprised of several parameters from in situ measurements collected for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07).
+  <br>
+
+  #### CL07V
+  This data set includes in situ vegetation data collected during the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07) campaign. Sampling was designed to coincide with satellite overpasses, such as Landsat's Thematic Mapper (TM) 5 and the Moderate Resolution Imaging Spectroradiometer (MODIS) sensor on NASA's Terra satellite (MODIS/Terra), which can be then used to estimate vegetation water content on the regional scale.
+  <br>
+
+  #### CL07LC
+  This data set consists of land cover classification data derived from satellite imagery as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07). ResourceSat-1 AWiFS images of the study area were retrieved for the period of April through August 2007. The land use classification image provides information about vegetation present in the study area at a resolution of 56 meters.
+  <br>
+
+  #### CL07PLBK
+  This data set contains backscatter data obtained by the Passive Active L-band System (PALS) microwave aircraft radar instrument as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07).
+  <br>
+
+  #### CL07PLTB
+  This data set contains brightness temperature data obtained by the Passive Active L-band System (PALS) microwave aircraft radiometer instrument as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07).
+  <br>
+
+  #### CL07ST
+  This data set contains soil texture data obtained for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07). The original data were extracted from a multi-layer soil characteristics database for the conterminous United States called CONUS-Soil and generated for the regional study area. Data are representative of the conditions present in the regional study area during the general timeline of the CLASIC07 campaign.
+  <br>
+
+  #### CL07VWC
+  The Vegetation Water Content (VWC) map for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07) was derived by calculating Normalized Difference Water Index (NDWI) from ResourceSat-1 satellite imagery.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/CLASIC07/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- land cover
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "CL07SM v1 - This data set is comprised of several parameters from in situ measurements collected for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07SM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07V v1 - This data set includes in situ vegetation data collected during the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07) campaign. Sampling was designed to coincide with satellite overpasses, such as Landsat's Thematic Mapper (TM) 5 and the Moderate Resolution Imaging Spectroradiometer (MODIS) sensor on NASA's Terra satellite (MODIS/Terra), which can be then used to estimate vegetation water content on the regional scale."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07V/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07LC v1 - This data set consists of land cover classification data derived from satellite imagery as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07). ResourceSat-1 AWiFS images of the study area were retrieved for the period of April through August 2007."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07LC/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07PLBK v1 - This data set contains backscatter data obtained by the Passive Active L-band System (PALS) microwave aircraft radar instrument as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07PLBK/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07PLTB v1 - This data set contains brightness temperature data obtained by the Passive Active L-band System (PALS) microwave aircraft radiometer instrument as part of the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07PLTB/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07ST v1 - This data set contains soil texture data obtained for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07). The original data were extracted from a multi-layer soil characteristics database for the conterminous United States called CONUS-Soil and generated for the regional study area."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07ST/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "CL07VWC v1 - The Vegetation Water Content (VWC) map for the Cloud and Land Surface Interaction Campaign 2007 (CLASIC07) was derived by calculating Normalized Difference Water Index (NDWI) from ResourceSat-1 satellite imagery."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/CL07VWC/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

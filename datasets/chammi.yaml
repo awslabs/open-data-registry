@@ -7,7 +7,7 @@ Description: |
   high-resolution images curated from 75 diverse, publicly available biological studies. This dataset is useful to investigate and develop channel-adaptive models, 
   which could process microscopy images of varying technical specifications and regardless of the number of channels. By breaking the limitations of existing models, 
   CHAMMI-75 is an invaluable resource for creating the next generation of foundation models for image-based biological research.  
-Documentation: https://github.com/CaicedoLab/CHAMMI-75
+Documentation: https://morgridge.org/research/labs/caicedo/chammi-75/
 Contact: Juan Caicedo, juan.caicedo@wisc.edu
 ManagedBy: Morgridge Institute for Research
 UpdateFrequency: Every 2 years
@@ -22,7 +22,7 @@ Tags:
   - fluorescence imaging
   - aws-pds
 License: CC BY 4.0 License
-Citation: 
+Citation: "Agrawal, V., Peters, J., Thompson, T. N., Sanian, M. V., Pham, C., Moshkov, N., Kazi, A., Pillai, A., Freeman, J., Kang, B., et al. (2025). CHAMMI-75: pre-training multi-channel models with heterogeneous microscopy images. arXiv preprint arXiv:2512.20833."
 Resources:
   - Description: "CHAMMI-75 Dataset: Images, training set and evaluation set available in an S3 bucket"
     ARN: arn:aws:s3:::chammi-data
@@ -34,11 +34,17 @@ DataAtWork:
       URL: https://github.com/CaicedoLab/CHAMMI-75/blob/main/aws-tutorials/
       NotebookURL: https://github.com/CaicedoLab/CHAMMI-75/blob/main/aws-tutorials/get-to-know-a-dataset-template.ipynb
       AuthorName: Vidit Agrawal, Juan Caicedo
-    - Title: Running CHAMMI-75 Evaluation Benchmarks
+    - Title: "Running CHAMMI-75 Evaluation Benchmarks"
       URL:  https://github.com/CaicedoLab/CHAMMI-75/blob/main/aws-tutorials/
       NotebookURL: https://github.com/CaicedoLab/CHAMMI-75/blob/main/aws-tutorials/running-benchmarks.ipynb
       AuthorName: Vidit Agrawal, Juan Caicedo
   Tools & Applications:
+    - Title: CHAMMI-75 Website
+      URL: https://morgridge.org/research/labs/caicedo/chammi-75/
+      AuthorName: Vidit Agrawal, Juan Caicedo
+    - Title: MorphEm Model (Trained on CHAMMI-75)
+      URL: https://huggingface.co/CaicedoLab/MorphEm
+      AuthorName: Vidit Agrawal, John Peters, Juan Caicedo
     - Title: CHAMMI-75 Source Code
       URL: https://github.com/CaicedoLab/CHAMMI-75
       AuthorName: Vidit Agrawal
@@ -46,6 +52,9 @@ DataAtWork:
       URL: https://github.com/chaudatascience/channel_adaptive_models
       AuthorName: Chau Pham
   Publications:
+    - Title: "CHAMMI-75: pre-training multi-channel models with heterogeneous microscopy images"
+      URL: https://arxiv.org/abs/2512.20833
+      AuthorName: Vidit Agrawal, John Peters, Tyler N. Thompson, Mohammad Vali Sanian, Chau Pham, Nikita Moshkov, Arshad Kazi, Aditya Pillai, Jack Freeman, Byunguk Kang, Samouil L. Farhi, Ernest Fraenkel, Ron Stewart, Lassi Paavolainen, Bryan A. Plummer, Juan C. Caicedo
     - Title: "CHAMMI: A benchmark for channel-adaptive models in microscopy imaging"
       URL: https://neurips.cc/virtual/2023/poster/73620
       AuthorName: Zitong Sam Chen, Chau Pham, Siqi Wang, Michael Doron, Nikita Moshkov, Bryan Plummer, Juan C. Caicedo

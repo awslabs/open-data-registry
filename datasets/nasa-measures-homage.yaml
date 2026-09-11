@@ -1,0 +1,50 @@
+Name: NASA MEaSUREs/HOMaGE Project
+Description: |
+  This data set contains the monthly Global Ocean Mass Anomalies (goma) since 04/2002, as measured by the GRACE and GRACE Follow-On (G/GFO) satellite missions. The data are averaged over the global ocean domain, at monthly intervals (note: data gaps exist). This file contains the goma time series based on the spherical harmonic gravity fields provided by the G/GFO SDS centers: JPL, CSR, GFZ. The data are frequently updated as new monthly observations are acquired by the GFO mission. The processing of the spherical harmonics gravity field coefficients is as follows: (1) GAD + GSM: the monthly de-aliasing product GAD is added back to the GSM L2 gravity fields; (2) [GSM + GAD] coefficients are averaged over the global ocean with a coastal buffer of 300 km (to avoid land-ocean leakage); (3) the spatial mean of atmospheric loading of the entire global ocean domain is removed (via the GAA L2 data product). A GIA correction using the ICE-6GD model (Peltier et al., 2018) is applied.
+  <br>
+
+  #### HOMAGE_GGFO_MSC_CRI_SALGRD_v01
+  This data set contains global gridded, monthly solutions of the sea level equation (gravitational-rotational-deformational GRD components) using surface mass data from the GRACE and GRACE Follow-On (G/GFO) satellite missions, beginning in April 2002. The sea level components are provided for separate land domains to allow users the local contributions from various ice melt sources (e.g., Greenland, Antarctica, mountain glaciers), as well as non-glaciated land regions. The full record for each component is given in a separate netCDF file, and includes gridded data of radial deformation, geoid height and relative sea level, as well as timeseries of global mean barystatic sea level. The data are frequently updated as new monthly observations are acquired by the GFO mission. <br><br> These data are based on the gridded JPL CRI-filtered mascons (e.g., https://doi.org/10.5067/TEMSC-3JC634), and thus inherit all processing steps from those fields. For more information on GRD definitions and related terminology, please refer to Gregory et al., 2019 (https://doi.org/10.1007/s10712-019-09525-z).
+  <br>
+
+  #### HOMAGE_STERIC_OHC_TIME_SERIES_v01
+  The [HOMAGE_STERIC_OHC_TIME_SERIES_v01] dataset contains monthly global mean ocean heat content (OHC) anomalies as well as thermosteric, halosteric and total steric sea level anomalies computed from various gridded ocean data sets of sub-temperature and salinity profiles as provided by different institutions: Scripps Institution of Oceanography (SIO); Institute of Atmospheric Physics (IAP); Barnes objective analysis (BOA from CSIO, MNR); Jamstec / Ishii et al. 2017 (I17); and Met Office Hadley Centre: EN4_c13, EN4_c14, EN4_g10, and EN4_I09. The data are averaged over the quasi-global ocean domain (i.e., where valid values are defined; note that gaps exist, in particular towards polar latitudes), at monthly intervals. The input profiling data (i.e, temperature and salinity profiles at depth levels), editing, quality flags and processing schemes vary across the different gridded products, please refer to the documentation for each institution’s data product for details. Since 2005, the profiling data are dominated by the observations from the global Argo network (e.g., https://argo.ucsd.edu/), which comprises nearly 4000 active floats (as of 08/2022). Before 2005, non-Argo data such as XBT profilers were used, and the global ocean coverage was significantly more sparse. Data sets from SIO and BOA are Argo-only, while the others also include other observations, such as expendable bathythermographs (XBTs) and Conductivity-Temperature-Depth (CTD) observations. The data are active forward stream data files and will be frequently updated as new observations are acquired by Argo, and processed by the data centers.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- netcdf
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "HOMAGE_GGFO_L4_GOMA_Monthly_v01 v1.0 - This data set contains the monthly Global Ocean Mass Anomalies (goma) since 04/2002, as measured by the GRACE and GRACE Follow-On (G/GFO) satellite missions. The data are averaged over the global ocean domain, at monthly intervals (note: data gaps exist)."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/HOMAGE_GGFO_L4_GOMA_Monthly_v01
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "HOMAGE_GGFO_MSC_CRI_SALGRD_v01 v1.0 - This data set contains global gridded, monthly solutions of the sea level equation (gravitational-rotational-deformational GRD components) using surface mass data from the GRACE and GRACE Follow-On (G/GFO) satellite missions, beginning in April 2002. The sea level components are provided for separate land domains to allow users the local contributions from various ice melt sources (e.g., Greenland, Antarctica, mountain glaciers), as well as non-glaciated land regions."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/HOMAGE_GGFO_MSC_CRI_SALGRD_v01
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "HOMAGE_STERIC_OHC_TIME_SERIES_v01 v1.0 - The [HOMAGE_STERIC_OHC_TIME_SERIES_v01] dataset contains monthly global mean ocean heat content (OHC) anomalies as well as thermosteric, halosteric and total steric sea level anomalies computed from various gridded ocean data sets of sub-temperature and salinity profiles as provided by different institutions: Scripps Institution of Oceanography (SIO); Institute of Atmospheric Physics (IAP); Barnes objective analysis (BOA from CSIO, MNR); Jamstec / Ishii et al. 2017 (I17); and Met Office Hadley Centre: EN4_c13, EN4_c14, EN4_g10, and EN4_I09."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/HOMAGE_STERIC_OHC_TIME_SERIES_v01
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

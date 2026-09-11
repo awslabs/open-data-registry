@@ -1,0 +1,63 @@
+Name: Kardashev Open U.S. Grid Dataset
+Description: |
+  Harmonized, cloud-optimized U.S. power grid data derived from public ISO, RTO, and federal
+  sources. Kardashev Labs normalizes interconnection queues, ERCOT GIS filing history,
+  ERCOT large-load queue observations, locational marginal prices, fuel mix, grid demand,
+  renewable curtailment, carbon intensity, and related reference tables into Parquet with
+  documented schemas and source provenance.
+
+  The dataset is designed for researchers, journalists, and energy analysts who need
+  machine-readable history across U.S. electricity markets without building their own
+  ingest pipelines. Kardashev-produced schemas, metadata, and derived tables are openly
+  licensed. Upstream source terms are documented per dataset; bulk republication of
+  restricted third-party feeds is excluded from the open release.
+
+  Live API and tools: https://data.kardashevlabs.org
+Documentation: https://github.com/kardashev-lab/kardashev-data/blob/main/docs/open-data-dataset.md
+Contact: ashutosh@kardashevlabs.org
+ManagedBy: "[Kardashev Labs](https://kardashevlabs.org)"
+UpdateFrequency: Daily to monthly, depending on source cadence
+Collabs:
+  ASDI:
+    Tags:
+      - energy
+Tags:
+  - aws-pds
+  - energy
+  - electricity
+  - sustainability
+  - environmental
+  - geospatial
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: Kardashev Open U.S. Grid Dataset (Parquet, JSON schema, README)
+    ARN: arn:aws:s3:::kardashev-open-us-grid
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://kardashev-open-us-grid.s3.us-west-2.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Kardashev Open U.S. Grid Dataset"
+      URL: https://github.com/kardashev-lab/open-data-examples/blob/main/kardashev-open-us-grid-dataset/get-to-know-a-dataset.ipynb
+      AuthorName: Ashutosh Mathore
+      AuthorURL: https://kardashevlabs.org
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: Kardashev Labs data API
+      URL: https://data.kardashevlabs.org/docs
+      AuthorName: Kardashev Labs
+      AuthorURL: https://kardashevlabs.org
+    - Title: kardashev Python package
+      URL: https://github.com/kardashev-lab/kardashev-py
+      AuthorName: Kardashev Labs
+      AuthorURL: https://kardashevlabs.org
+    - Title: Interconnection Queue Tracker
+      URL: https://interconnection-queue.kardashevlabs.org
+      AuthorName: Kardashev Labs
+      AuthorURL: https://kardashevlabs.org
+    - Title: ERCOT Large Load Tracker
+      URL: https://large-load-tracker.kardashevlabs.org
+      AuthorName: Kardashev Labs
+      AuthorURL: https://kardashevlabs.org

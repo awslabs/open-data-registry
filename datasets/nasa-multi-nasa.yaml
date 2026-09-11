@@ -1,0 +1,92 @@
+Name: NASA MULTI_NASA Project
+Description: |
+  This data set contains surface elevations from retracked CryoSat-2 waveforms, as well as model fitting parameters used to retrack the waveform. The primary data set used in the production of these data come from the ESA CryoSat-2 satellite.
+  <br>
+
+  #### RDEFT4
+  This data set contains estimates of Arctic sea ice thickness and concentration, ice freeboard and surface roughness, as well as snow density and depth, derived from the ESA CryoSat-2 Synthetic Aperture Interferometric Radar Altimeter (SIRAL). The data are provided daily on a 25 km grid as 30-day averages for the months between September and May.
+  <br>
+
+  #### IDBMG4
+  This data set contains a bed topography and bathymetry map of Greenland based on mass conservation, multi-beam data, and other techniques. It also includes surface elevation and ice thickness data, as well as an ice/ocean/land mask.
+  <br>
+
+  #### IRMCR3
+  This data set contains products from depth sounder measurements over Greenland and Antarctica taken from the Multichannel Coherent Radar Depth Sounder (MCoRDS). The data were collected as part of NASA Operation IceBridge funded campaigns.
+  <br>
+
+  #### IGBTH4
+  This data set contains bathymetry of Arctic fjords and Antarctic ice shelves based on measurements from the Sander Geophysics Airborne Inertially Referenced Gravimeter (AIRGrav) system. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### RDGBV4
+  This data set contains calculated balance velocity of the Greenland Ice Sheet during the last three quarters of the Holocene epoch (9ka).
+  <br>
+
+  #### RRRAG4
+  This data set presents the gridded radiostratigraphy of the Greenland Ice Sheet using very high frequency (VHF) radar sounding data, collected by The Center for Remote Sensing and Integrated Systems (CReSIS) at The University of Kansas.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/rdwes1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- elevation
+- ice
+- oceans
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "RDWES1B v1 - This data set contains surface elevations from retracked CryoSat-2 waveforms, as well as model fitting parameters used to retrack the waveform. The primary data set used in the production of these data come from the ESA CryoSat-2 satellite."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RDWES1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "RDEFT4 v1 - This data set contains estimates of Arctic sea ice thickness and concentration, ice freeboard and surface roughness, as well as snow density and depth, derived from the ESA CryoSat-2 Synthetic Aperture Interferometric Radar Altimeter (SIRAL). The data are provided daily on a 25 km grid as 30-day averages for the months between September and May."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RDEFT4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IDBMG4 v6 - This data set contains a bed topography and bathymetry map of Greenland based on mass conservation, multi-beam data, and other techniques. It also includes surface elevation and ice thickness data, as well as an ice/ocean/land mask."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IDBMG4/6
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IRMCR3 v2 - This data set contains products from depth sounder measurements over Greenland and Antarctica taken from the Multichannel Coherent Radar Depth Sounder (MCoRDS). The data were collected as part of NASA Operation IceBridge funded campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRMCR3/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IGBTH4 v1 - This data set contains bathymetry of Arctic fjords and Antarctic ice shelves based on measurements from the Sander Geophysics Airborne Inertially Referenced Gravimeter (AIRGrav) system. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IGBTH4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "RDGBV4 v1 - This data set contains calculated balance velocity of the Greenland Ice Sheet during the last three quarters of the Holocene epoch (9ka)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RDGBV4/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "RRRAG4 v2 - This data set presents the gridded radiostratigraphy of the Greenland Ice Sheet using very high frequency (VHF) radar sounding data, collected by The Center for Remote Sensing and Integrated Systems (CReSIS) at The University of Kansas."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE-Related/RRRAG4/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

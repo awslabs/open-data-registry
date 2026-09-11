@@ -1,0 +1,33 @@
+Name: The JWST Advanced Extragalactic Survey JADES
+Description: |
+  JADES is an infrared imaging and multi-object spectroscopy survey focused on two deep fields: the Hubble Deep Field (GOODS-N) 
+  and Hubble Ultra Deep Field (GOODS-S). JADES conducted NIRCam imaging in 8-10 bands, covering about 42 square arcminutes to very 
+  deep limits (fainter than 30th magnitude) with an average of about 100 hours of total exposure time, and then another 167 square arcminutes
+  to a typical exposure time of 25 hrs. Coordinated parallels with the MIRI instrument extend this imaging further into the infrared in smaller regions.
+  JADES then performed extensive NIRSpec spectroscopy with over 5000 targets on 31 separate pointings, including two deep exposures of
+  55 hrs spread across 5 dispersers. The JADES team added additional imaging and spectroscopy in Cycles 1, 2, and 3 from a number of 
+  affiliated guest observer programs.
+Contact: archive@stsci.edu
+Documentation: https://archive.stsci.edu/hlsp/jades
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: |
+  Please see the [JADES data page](https://jades-survey.github.io/scientists/data.html) for full instructions on
+  using JADES data in published works.
+UpdateFrequency: Never
+Tags:
+  - aws-pds
+  - astronomy
+License: All HLSPs hosted at MAST are subject to a [CC By 4.0 license](https://creativecommons.org/licenses/by/4.0/).
+Resources:
+  - Description: JADES files
+    ARN: arn:aws:s3:::stpubdata/mast/hlsp/jades
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "TIKE: a free, Jupyter-based cloud platform to access and analyze MAST's AWS timeseries data"
+    URL: https://timeseries.science.stsci.edu
+    AuthorName: MAST Staff
+  Publications: 

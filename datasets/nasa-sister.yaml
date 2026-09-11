@@ -1,0 +1,27 @@
+Name: NASA SISTER Project
+Description: |
+  The Space-based Imaging Spectroscopy and Thermal pathfindER (SISTER) activity originated in support of the NASA Earth System Observatory's Surface Biology and Geology (SBG) mission to develop prototype workflows with community algorithms and generate prototype data products envisioned for SBG. SISTER focused on developing a data system that is open, portable, scalable, standards-compliant, and reproducible. This collection contains EXPERIMENTAL workflows and sample data products, including (a) the Common Workflow Language (CWL) process file and a Jupyter Notebook that run the entire SISTER workflow capable of generating experimental sample data products spanning terrestrial ecosystems, inland and coastal aquatic ecosystems, and snow, (b) the archived algorithm steps (as OGC Application Packages) used to generate products at each step of the workflow, (c) a small number of experimental sample data products produced by the workflow which are based on the Airborne Visible/Infrared Imaging Spectrometer-Classic (AVIRIS or AVIRIS-CL) instrument, and (d) instructions for reproducing the sample products included in this dataset. DISCLAIMER: This collection contains experimental workflows, experimental community algorithms, and experimental sample data products to demonstrate the capabilities of an end-to-end processing system. The experimental sample data products provided have not been fully validated and are not intended for scientific use. The community algorithms provided are placeholders which can be replaced by any user's algorithms for their own science and application interests. These algorithms should not in any capacity be considered the algorithms that will be implemented in the upcoming Surface Biology and Geology mission.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SISTER_Workflow_V004_2335 v4 - The Space-based Imaging Spectroscopy and Thermal pathfindER (SISTER) activity originated in support of the NASA Earth System Observatory's Surface Biology and Geology (SBG) mission to develop prototype workflows with community algorithms and generate prototype data products envisioned for SBG. SISTER focused on developing a data system that is open, portable, scalable, standards-compliant, and reproducible."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sister/SISTER_Workflow_V004/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

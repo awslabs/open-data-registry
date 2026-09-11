@@ -1,0 +1,574 @@
+Name: NASA ATom Project
+Description: |
+  This dataset provides observations collected during eleven airborne campaigns from 2006&ndash;2017 and associated input and output from nine widely used chemical transport models (CTMs). The airborne campaigns include ARCTAS-A, ARCTAS-B, ATom-1 and ATom-2, CalNex, DC3, INTEX-B, KORUS-AQ, MILAGRO, SEAC4RS, and WINTER, and they sampled mainly tropospheric air over the conterminous U.S. and the state of Alaska, Mexico, Canada, Greenland, and South Korea and remote areas over the Arctic, Pacific, Southern, and Atlantic Oceans. The CTMs are the AM4.1, CCSM4, GEOS-5, GEOS-Chem TOMAS, GEOS-Chem v10, GEOS-Chem v12, GISS-MATRIX, GISS-ModelE, and TM4-ECPL-F, and the output includes sulfate, nitrate, temperature, specific humidity, mixing ratio of ammonium, the volume mixing ratio of nitric acid, surface pressure, gas-phase ammonia, gas-phase nitric acid, pressure, total ammonium, etc. The observations were collected in-situ from a variety of instruments, including the Aerosol Microphysical Properties (AMP), HR Aerodyne Aerosol Mass Spectrometer (AMS), CIT Chemical Ionization Mass Spectrometer (CIMS), diode laser hygrometer (DLH), a mist chamber/ion chromatography system (MC/IC), Particle Analysis by Laser Mass Spectrometer (PALMS), Single Particle Soot Photometer (SP2), and UCI Whole Air Sampler (WAS). In-situ data also include latitude, longitude, and pressure. These observations were used to investigate how aerosol pH and ammonium balance change from polluted to remote regions, such as over oceans, and were compared to predictions from the CTMs.
+  <br>
+
+  #### ATom_CAFS_Instrument_Data_V2_1933
+  This dataset contains actinic flux and photolysis frequencies for photodissociation reactions for a variety of chemical species during the four ATom campaigns. Spectrally resolved actinic flux was measured by the down- and up-welling Charged-coupled device Actinic Flux Spectroradiometers (CAFS) from approximately 280-650 nm. Photolysis frequencies were calculated from the actinic flux and published cross sections and quantum yield values for atmospherically relevant molecules. Solar radiation drives the chemistry of the atmosphere, including the evolution of ozone, greenhouse gases, biomass burning, and other anthropogenic and natural trace constituents.
+  <br>
+
+  #### ATom_SOAP_Instrument_Data_1898
+  This dataset contains one-second aerosol extinction and absorption measurements from the Spectrometers for Optical Aerosol Properties (SOAP) instrument aboard the NASA DC-8 aircraft during the ATom-4 campaign that occurred in 2018. SOAP is a compact, low maintenance instrument that measures aerosol extinction and absorption at 532 nm. Aerosol extinction is measured by cavity ringdown spectroscopy and aerosol absorption by photoacoustic spectroscopy. Extinction is measured with sufficient precision and accuracy for the remote atmosphere. The absorption measurements are valid only in strongly absorbing cases, such as in dilute plumes from wildfire smoke. The absorption and extinction of visible light by aerosol particles is a major component of the earth's radiation budget, strongly affecting climate. Highly absorbing particles directly heat the atmosphere, while particles that scatter light tend to cool the atmosphere. Extinction is the sum of absorption and scattering; in most cases scattering represents >90% of extinction, with absorption making up the remainder. These aerosol-radiation interactions also alter air temperature and the rates of photochemical reactions.
+  <br>
+
+  #### ATom_HIPPO_ORCAS_1788
+  This dataset provides calculated age of air (AoA) and the argon/nitrogen (Ar/N2) ratio (per meg) from stratospheric flask samples and simultaneous high-frequency measurements of nitrous oxide (N2O), carbon dioxide (CO2), ozone (O3), methane (CH4), and carbon monoxide (CO) compiled from three airborne projects. The trace gases were used to identify 235 flask samples with stratospheric influence collected by the Medusa Whole Air Sampler and to calculate AoA using a new N2O-AoA relationship developed using a Markov Chain Monte Carlo algorithm. The data span a wide range of latitudes poleward of 40 degrees in both the Northern and Southern Hemispheres and cover the period 2009-01-10 to 2018-05-21.
+  <br>
+
+  #### ATom_nav_1613
+  This dataset provides flight track and aircraft navigation data from the NASA Atmospheric Tomography Mission (ATom). Flight track information is available for the four ATom campaigns: ATom-1, ATom-2, ATom-3, and ATom-4. Each ATom campaign consists of multiple individual flights and flight navigational information is recorded in 10-second intervals. Data available for each flight includes research flight number, date, and start and stop time of each 10-second interval. In addition, latitude, longitude, altitude, pressure and temperature is included at each 10-second interval. NASA's ATom campaign deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. During each campaign, flights originate from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America. ATom establishes a single, contiguous, global-scale dataset. One intended use of this flight track data is to facilitate to mapping model results from global models onto the precise ATom flight tracks for comparison.
+  <br>
+
+  #### ATom_Rad_Measurements_ARMAS_1906
+  This dataset contains Level 2 (L2) absorbed radiation dose rates in silicon from the Automated Radiation Measurements for Aerospace Safety (ARMAS) system along ATom flight paths for the ATom-1 campaign conducted in July and August 2016. Absorbed dose rates measure how much energy is deposited in matter by ionizing radiation per unit time. The radiation sources can be from galactic cosmic rays, solar energetic particles, or Van Allen radiation belt energetic particles. Radiation can have adverse effects on human tissue and aerospace electronics, as well as profound effects on chemical species in the atmosphere, making them important to consider in atmospheric modeling and analyses. In this context, the derived ambient equivalent dose rates are also provided and relate the absorbed dose in human tissue to the effective biological damage of the radiation through a radiation weighting factor. In addition, visualizations of absorbed radiation dose for ATom-1 flight paths are included. The visualizations show the absorbed dose rates in silicon in the upper panel and the 3D representation of the flight in the bottom panel.
+  <br>
+
+  #### ATom_FlightTrack_Influences_1889
+  This dataset contains back trajectories, boundary layer influences, and convective influences of air parcels along NASA DC-8 aircraft's flight tracks during the four ATom campaigns that occurred from 2016 to 2018. Back trajectories were interpolated using National Centers for Environmental Prediction (NCEP) Global Forecast System (GFS) and Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2) meteorology. Back trajectory analysis determines the origin of air masses by modeling the path of an air parcel backward in time. It can be used to better understand the sources of atmospheric compounds. Boundary layer Influences were determined based on 30 Day Back Trajectories. The atmospheric boundary layer is the lowest part of the troposphere that is directly influenced by earth's surface. The boundary layer influences wind patterns and thus the dispersal of pollutants and other atmospheric compounds of interest. Convective influences were based on 10 Day Back Trajectories and NASA Langley cloud products. Convective influences model the effects of convection on the movement of water vapor through the atmosphere, which influences cloud behavior.
+  <br>
+
+  #### ATom_Carbon_Aerosol_Loadings_1618
+  This dataset provides black carbon (BC) mass mixing ratios (in units of ng BC / kg air) measured during NASA's Atmospheric Tomography (ATom)-1 flight campaign during July and August 2016. The BC-core masses of BC-containing aerosol particles were measured using a Single Particle Soot Photometer (SP2). Conversion to mass mixing ratio (MMR) is achieved by monitoring sample flow. Influences in air mass composition were determined using the Particle Analysis by Laser Mass Spectrometry (PALMS) instruments. Also included here are data from the Cloud, Aerosol and Precipitation Spectrometer (CAPS) instrument which are used to identify measurements taken while in clouds. Finally, the associated latitude, longitude, altitude, and the timestamp of each measurement are included. All data are at ten seconds resolution. ATom-1 flights originated from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America.
+  <br>
+
+  #### ATom_CESM2_1878
+  This dataset contains CAM-chem (Community Atmosphere Model with Chemistry) model outputs along ATom flight tracks. CAM-chem is a component of the Community Earth System Model Version 2 (CESM2) and is used for simulations of global tropospheric and stratospheric atmospheric composition and for studies of chemistry-climate interactions. In general, CAM-chem uses the MOZART chemical mechanism, with various choices of complexity for tropospheric and stratospheric chemistry. For this dataset, CAM-chem used the MOZART-TS1 chemical mechanism, and the model was nudged to reanalysis meteorology from MERRA2.
+  <br>
+
+  #### ATom_CAPSVienna_Data_1981
+  This dataset contains cloud type and coarse aerosol contents measured by the University of Vienna's second-generation Cloud Aerosol and Precipitation Spectrometer (CAPS) instrument mounted to the NASA DC-8 aircraft during the four ATom campaigns that occurred from 2016 to 2018. CAPS measures particle size distributions in a size range between nominally 0.5 micrometers and 960 micrometers. The sizes range between approximately 0.5 and 50 micrometers is covered by the optical particle counter component of CAPS-the Cloud and Aerosol Spectrometer with Depolarization Detection (CAS-DPOL). The sizes range from 15 to 930 micrometers is measured with the optical array probe called Cloud imaging Probe (CIP). Cloud types are determined using an algorithm developed to detect and classify clouds using measurements of CAPS. Relative humidity and temperature are considered by the algorithm. The cloud indicator provides a classification on a 1 Hz basis and separates data in cloud-free, aerosol-cloud transition regime (ACTR), liquid clouds, clouds in the mixed-phase temperature regime (MPTR), and cirrus clouds. The coarse aerosol product provides cloud and aerosol particle number concentrations at standard pressure (1013.25 hPa) and standard temperature (273.15 K) in selected size ranges. Particle sizes refer to ammonium sulfate optical equivalent diameter (m=1.52 + 0.0i).
+  <br>
+
+  #### ATom_Picarro_Instrument_Data_1732
+  This dataset contains atmospheric measurements of CO2, CH4, and CO mixing ratios made with a Picarro G2401 spectrometer during the four ATom campaigns. Picarro G2401 uses Wavelength-Scanned Cavity Ring Down Spectroscopy (WS-CRDS), a time-based measurement utilizing a near-infrared laser to measure a spectral signature of the molecule. For the ATom mission, the Picarro instrument was modified in the laboratory to operate across the full pressure altitude range of flight campaigns. The instrument was also modified to have a shorter measurement interval.
+  <br>
+
+  #### ATom_Mapping_OH_Troposphere_1669
+  This dataset provides profile-integrated column densities of formaldehyde (HCHO), hydroxyl (OH), and OH production rates, diel tropospheric mean OH concentrations, and uncertainties that were derived from direct observation data from selected profiles of NASA Atmospheric Tomography (ATom) mission 1 and 2 flights for the period July 29, 2016 to February 21, 2017. These calculated products were combined with coincident HCHO column retrievals from the Ozone Monitoring Instrument (OMI) to scale and extend the profile results to a global gridded (0.5 deg latitude x 0.625 deg longitude) product. In addition to OMI formaldehyde column data, model output products from the Global Modeling Initiative (GMI) including average tropopause height, scaling factor, column air mass, and column-average formaldehyde photolysis frequency are provided. The GMI model output products were used in calculations and are included for user convenience.
+  <br>
+
+  #### ATom_Aerosol_Properties_V2_2111
+  This dataset contains comprehensive measurements of aerosol microphysical, chemical, and optical properties derived for both dry and ambient conditions from in situ measurements made during the four ATom campaigns. The dataset includes composition-resolved size distributions the integrated mass of sulfate, organics, nitrate, sea salt, dust, black carbon, and other compounds in coarse and fine fractions; extinction and absorption coefficients from each species at both dry and ambient conditions; asymmetry parameters; Angstrom exponents; and fitted lognormal functions to describe the size distribution. Optical parameters are calculated for 10 wavelengths from the near UV to the near IR, and size distributions range from 3 nm to 50 um in diameter. One file contains these data at 1-minute time intervals. Another file contains a subset of these data averaged into 1-km vertical bins for each vertical profile the aircraft made, as well as composition-resolved integrated aerosol optical depth derived from each profile. The concentration of cloud condensation nuclei is calculated for 5 supersaturations.
+  <br>
+
+  #### ATom_FullModel_DataStream_1877
+  This dataset provides Modeling Data Stream (MDS) and Reactivity Data Stream (RDS) products for each of the four ATom campaigns conducted from 2016 to 2018. MDS files contain the atmospheric constituents needed to model the RDS of the air parcels along ATom flight paths. The MDS is a continuous data stream (every 10 seconds) of the atmospheric content of these key chemical species derived from the in-situ measurements collected along ATom flight paths (as reported in the comprehensive related dataset ATom: Merged Atmospheric Chemistry, Trace Gases, and Aerosols). Values for chemical species measured by multiple instruments were selected from the instrument with better coverage and/or greater precision. Missing values were filled using interpolation for short gaps. For long gaps owing to instrument failure, values were estimated using multiple linear regressions from comparable parallel flights from other ATom campaigns. All species were flagged for instrument source and values were flagged for gap-filling status. In combination, MDS and RDS provide, in essence, a photochemical climatology for each air parcel along ATom flight paths containing the reactive species that control the loss of methane and the production and loss of ozone.
+  <br>
+
+  #### ATom_Forward_Flight_Videos_1938
+  This dataset contains images taken from the front of the NASA DC-8 aircraft during the first three ATom campaigns from 2016-2017. Images were taken with an Axis P1357 High Definition camera with a Theia TH138A wide-angle lens. These images were then stitched together at a 10-second frequency into an MP4 (.mp4) video for each flight. The forward camera shows the visible atmosphere that DC-8 flew through, allowing the in situ measurements to be placed in the context of cloud fields, smoke and haze layers, and boundary layers.
+  <br>
+
+  #### ATom_Clouds_Aerosols_2250
+  This dataset is the basis for the development of the Cloud Indicator, a novel algorithm that automatically detects and classifies measurement periods inside clouds. The included data were used in the analysis and development of figures for the related publication. The Cloud Indicator algorithm was developed based on particle size distribution measurements from a second-generation Cloud, Aerosol, and Precipitation Spectrometer (CAPS) combined with measurements of relative humidity and temperature from other sensors, to automatically detect flight sequences in clouds and classify the cloud type. Measurements were collected on 2016-08-20 as part of the Atmospheric Tomography Mission (ATom-1) Campaign and on 2017-04-20 as part of the Absorbing aerosol layers in a changing climate: aging, LIFEtime and dynamics (A-LIFE) project. As an additional criterion for the Cloud Indicator, a cloud-aerosol volume factor was established to ensure a precise and robust distinction between clouds and aerosol layers such as mineral dust or biomass burning to reduce misclassifications. Data are provided in netCDF (.nc) format.
+  <br>
+
+  #### ATom_Mineral_Dust_Cirrus_Cloud_2006
+  This dataset provides: (1) In situ dust aerosol concentration measurements over remote tropical Pacific and Atlantic Oceans by NOAA Particle Analysis by Laser Mass Spectrometry (PALMS) airborne single-particle mass spectrometer combined with Aerosol Microphysical Properties (AMP) aerosol size spectrometers. Measurements were made aboard the NASA DC8 aircraft during the four ATom campaigns that occurred from 2016 to 2018 (2) Model output of dust and meteorology from the CESM global transport model extracted at the time and location of the aircraft; (3) Model output of dust, other aerosol, and meteorology from the GEOS global transport model extracted at the time and location of the aircraft; (4) CESM model global output of dust and meteorology for dust emitted by specific source regions; (5) NCEP Global Forecast System forward trajectories of air parcels initiated at the time and location of the aircraft; and (6) The location and properties of cirrus clouds formed along the forward trajectories simulated using a parcel model. These data have been applied to better understand the role of mineral dust in cirrus cloud formation.
+  <br>
+
+  #### Flight_Environment_Parameters_1909
+  This dataset contains flight dynamics and environmental parameters (often referred to as housekeeping) specific to the DC-8 aircraft as collected from an assortment of instruments across all four ATom campaigns flown from 2016 through 2018. Measurements include aircraft position, altitude, speed, wind parameters, air temperature, and atmospheric and cabin pressure. These data can be used to understand the interior and exterior conditions and positioning of the DC-8 aircraft at 1-second resolution.
+  <br>
+
+  #### Interpolated_Met_Products_1876
+  This dataset provides modeled meteorological conditions and tagged-CO tracer concentrations along ATom flight paths derived from the Goddard Earth Observing System Version 5 (GEOS-5) data assimilation products from the Global Modeling and Assimilation Office (GMAO) at NASA's Goddard Space Flight Center. The GMAO "GEOS fp" forward processing system ingests satellite, ground-based, and airborne data, using a sophisticated model along with the data's statistical properties to obtain global three-dimensional data gridded fields at regular time intervals. These data are from the GMAO model output that were fitted to the ATom flight tracks by interpolating the GMAO model output to the horizontal ATom flight tracks for each of the 4 ATom Deployments. The dataset also provides tagged-CO tracer concentrations, which represent the contribution of specific regional sources to the total simulated CO. The data products produced are consistent with both the original measurements and the physical laws governing the atmosphere. To provide some meteorological context for the ATom flights, the GEOS5 gridded data are interpolated in space and time to the flight tracks.
+  <br>
+
+  #### ATom_Photolysis_Rates_1651
+  This dataset provides the results from nine global chemistry-climate or chemistry-transport models that estimated gridded values of atmospheric photolytic rates (J values) for ozone (O3), designated J-O1D, and nitrogen dioxide (NO2), designated J-NO2, under cloudy and clear sky scenarios. Each model produced global 4-D fields (latitude by longitude by pressure for 24 hours) for one day in mid-August 2016 (nominally) of results from two simulations: first using their standard treatment of clouds (all sky or cloudy) and a second with clouds and aerosols removed (clear sky). Model resolution ranges from 0.5 to 2.5 degrees. Observed J-O1D and J-NO2 values from the first ATom deployment (29 July - 23 August 2016) were collected with the Charged-coupled device Actinic Flux Spectroradiometer (CAFS) instrument. The ATom CAFS measurements are 3-second averages along the flight path for selected remote areas over the tropical and northern Pacific Ocean. Both all-sky (cloudy) and synthesized clear-sky J values are provided. (3) Additional data are included for clouds and ozone column plus other cloudy and clear sky parameters for the same remote areas of the tropical and northern Pacific Ocean. These auxiliary data are provided for use with included MATLAB scripts to reproduce the plots and analyses performed in the related publication by Hall et al. (2018). Note that while the analyses in the related publication were limited to the Pacific basin, the global model data are archived with this dataset.
+  <br>
+
+  #### ATom_GlobalModelInitiative_CTM_1897
+  This dataset contains Global Modeling Initiative (GMI) Chemical Transport Model (CTM) outputs from the four Atom campaigns. GMI simulations of the ATom flight periods have a horizontal resolution of 1.0 x 1.25 degrees, with output every 15 minutes. The ICARTT files are generated by spatially and temporally interpolating the output to the ATom flight track. Vertical interpolation is linear in log-pressure. The netCDF files provide three-dimensional&nbsp;(3D) GMI simulation output for the region surrounding the flight track every 15 minutes at the original model resolution. GMI is a 3-D CTM that includes full chemistry for both the troposphere and stratosphere. GMI simulates the concentrations of many of the species measured during ATom.
+  <br>
+
+  #### ATom_DLH_Instrument_Data_V2_1937
+  This dataset provides the concentrations of water measured by the Diode Laser Hygrometer (DLH) flown on the NASA DC-8 during the ATom 1-4 campaigns from 2016 - 2018. The DLH measures the water vapor in the atmosphere by wavelength modulated differential absorption spectroscopy of an isolated rovibrational line. The measurements include water vapor mixing ratio in parts-per-million-by-volume (ppmv) and relative humidity in percent. Relative humidity, both with respect to liquid water and with respect to ice, are quantities derived from measurements of water vapor mixing ratio as well as ambient temperature and pressure.
+  <br>
+
+  #### ATom_CIT_Instrument_Data_V2_1927
+  This dataset provides the concentrations of gas-phase organic and inorganic analytes measured by the California Institute of Technology (CIT) Chemical Ionization Mass Spectrometer (CIMS), or CIT-CIMS, flown on the NASA DC-8 aircraft during the four ATom campaigns. The CIT-CIMS employs CF3O-ion chemistry with two independent mass spectrometers (compact time-of-flight and triple quadrupole) to enable sensitive and specific measurements of atmospheric trace gases. The measurements include hydrogen peroxide (H2O2), hydrogen cyanide (HCN), nitric acid (HNO3), methyl hydrogen peroxide (CH3OOH), peroxyacetic acid (C2O3H4), peroxynitric acid (HO2NO2), and sulfur dioxide (SO2), in units of parts-per-trillion-by-volume.
+  <br>
+
+  #### ATom_Aerosols_Meteorology_1684
+  This dataset provides (1) the results of in situ aerosol particle property measurements collected over remote tropical areas of both Pacific and Atlantic Oceans during the NASA airborne Atmospheric Tomography (ATom) campaigns for ATom-1 and ATom-2 and (2) modeled outputs of comparable aerosol properties, atmospheric chemistry and meteorology at 70 m resolution from four chemical-transport models matched to the location and time of the aircraft measurements.
+  <br>
+
+  #### Airborne_Insitu_Measurements_1784
+  This dataset provides results of selected in-situ measurements of airflow and aerosol particles collected during the following airborne campaigns: NASA Atmospheric Tomography (ATom), Saharan Aerosol Long-range Transport and Aerosol-Cloud-interaction Experiment (SALTRACE), and Absorbing aerosol layers in a changing climate: aging, lifetime and dynamics (A-LIFE). The airborne campaigns were conducted between 2013-06-10 and 2018-05-21. Depending upon the aircraft instrumentation per flight and campaign, the data include aircraft position, relative humidity, temperature, pressure, angle of attack (AOA), the probe location, true and probe air speeds, and aerosol particle diameters as extracted from Cloud Imaging Probe (CIP) images for the ATom and A-LIFE flights. Also provided are the results of combining the airborne data with numerical modeling to simulate particle sampling efficiency. Simulations investigated how airflow around wing-mounted instruments affected sampling efficiency and the induced errors for different realistic flight conditions.
+  <br>
+
+  #### ATom_WAS_Instrument_Data_1751
+  This dataset provides atmospheric concentrations of halocarbons and hydrocarbons measured by the UC-Irvine Whole Air Sampler (WAS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The analysis of samples from the UCI WAS provides measurements of more than 50 trace gases, including C2-C10 NMHCs, C1-C2 halocarbons, C1-C5 alkyl nitrates, and selected sulfur compounds. Species were identified and measured using an established technique of airborne whole air sampling followed by laboratory analysis using gas chromatography (GC) with flame ionization detection (FID), and mass spectrometric detection (MSD). The ATom mission deployed an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018.
+  <br>
+
+  #### ATom_NOyO3_Instrument_Data_1734
+  This dataset provides in situ concentrations of nitric oxide (NO), nitrogen dioxide (NO2), total reactive nitrogen oxides (NOy), and ozone (O3) measured by the NOAA Nitrogen Oxides and Ozone (NOyO3) 4-channel chemiluminescence (CL) instrument during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. NOyO3 provides fast-response, specific, high precision, and calibrated measurements of nitrogen oxides and ozone at a spatial resolution of better than 100 m. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. Flights originate from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America. ATom establishes a single, contiguous, global-scale dataset. This comprehensive dataset will be used to improve the representation of chemically reactive gases and short-lived climate forcers in global models of atmospheric chemistry and climate.
+  <br>
+
+  #### ATom_SP2_Instrument_Data_1672
+  This dataset provides the refractory black carbon mass concentration at one-second resolution measured by the Single Particle Soot Photometer (NOAA SP2) instrument during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The SP2 is a laser-induced incandescence instrument primarily used for measuring the black carbon mass content of individual particles.
+  <br>
+
+  #### ATom_AO2_Instrument_Data_V2_1880
+  This dataset provides in situ atmospheric oxygen and carbon dioxide concentrations measured by the NCAR Airborne Oxygen Instrument (AO2) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The AO2 Instrument measures O2 concentration using a vacuum-ultraviolet absorption technique. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for a systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. Flights originate from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America. ATom establishes a single, contiguous, global-scale dataset. This comprehensive dataset will be used to improve the representation of chemically reactive gases and short-lived climate forcers in global models of atmospheric chemistry and climate.
+  <br>
+
+  #### ATom_AMP_Instrument_Data_1671
+  This dataset provides the number, surface area, and volume concentrations and size distributions of dry aerosol particles measured by the Aerosol Microphysical Properties (AMP) instrument package during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. Five instruments--two nucleation-mode aerosol size spectrometers (NMASS), two ultra-high sensitivity aerosol spectrometers (UHSAS), and a laser aerosol spectrometer (LAS)--comprise the AMP package. The AMP payload provides size distributions with up to one-second time resolution for dry aerosol particles between 0.003 and 4.8 microns in diameter.
+  <br>
+
+  #### ATom_GT_CIMS_Instrument_Data_1715
+  This dataset provides measurements of two important components of photochemical smog - peroxyacetyl nitrate (PAN) and peroxyl propionyl nitrate (PPN)- measured by the Georgia Tech Chemical Ionization Mass Spectrometer (GT-CIMS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The GT-CIMS measures reactive nitrogen species in the lower atmosphere. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. Flights originate from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America. ATom establishes a single, contiguous, global-scale dataset. This comprehensive dataset will be used to improve the representation of chemically reactive gases and short-lived climate forcers in global models of atmospheric chemistry and climate.
+  <br>
+
+  #### ATom_HR-AMS_Instrument_Data_1716
+  This dataset provides the atmospheric concentrations of separated ions from inorganic and organic species measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS) collected during flights of the NASA ATom Mission. Data are available from all four ATom Campaigns. The HR-AMS detects non-refractory submicron aerosol composition by impaction on a vaporizer at 600 degrees C, followed by electron ionization and time-of-flight mass spectral analysis. The measurements include chemically speciated submicron non-refractory particulate mass at a one second and 60 second resolution, and the size distribution of chemically speciated submicron non-refractory particulate mass at 60 second resolution.
+  <br>
+
+  #### NOAA_ToF_CIMS_Instrument_Data_1921
+  This dataset provides the mixing ratios of reactive nitrogen and halogen species measured by the NOAA Iodide Ion Time-of-Flight Chemical Ionization Mass Spectrometer (NOAA CIMS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission for ATom-3 and ATom-4 campaigns. The NOAA CIMS uses chemical ionization mass spectrometric detection of gas phase organic and inorganic analytes via I- adduct formation. Measurements for ATom include N2O5 (dinitrogen pentoxide), ClNO2 (chloro nitrite), Cl2 (Chlorine), HCOOH (formic acid), C2H4O3S (hydroperoxymethyl thioformate), BrCl (bromine monochloride), BrCN (cyanogen bromide), and BrO (bromine monoxide). ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2-13 km altitude. This comprehensive dataset will be used to improve the representation of chemically reactive gases and short-lived climate forcers in global models of atmospheric chemistry and climate.
+  <br>
+
+  #### ATom_PFP_Instrument_Data_1746
+  This dataset provides mole fractions of atmospheric trace gases measured by the Programmable Flask Package (PFP) Whole Air Sampler during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The PFP whole air sampler provides a means of automated or manual filling of glass flasks. The sampler is designed to remove excess water vapor from the sampled air and compress it without contamination into ~1-liter volumes. These flasks are analyzed at the NOAA's Global Monitoring Division laboratory for trace gases and at the INSTAR's Staple Isotope Lab laboratory for isotopes of methane. Analysis of standardized PFP samples can measure more than 60 trace gases including N2O, SF6, H2, CS2, OCS, CO2, CH4, CO, CFCs, HCFCs, HFCs, Solvents, Methyl Halides, Hydrocarbons and Perfluorocarbons. The ATom mission deployed an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018.
+  <br>
+
+  #### ATom_ISAF_Instrument_Data_1730
+  This dataset provides the atmospheric volume mixing ratio of formaldehyde measured during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. The NASA In Situ Airborne Formaldehyde (ISAF) instrument, based at the Goddard Space Flight Center, measures formaldehyde on high-altitude NASA aircraft. The instrument uses laser-induced fluorescence (LIF) to obtain the high detection sensitivity needed to detect formaldehyde in the upper troposphere and lower stratosphere where abundances are 10 parts per trillion. LIF also enables a fast time response needed to measure the abundance of formaldehyde in the finely structured outflow of convective storms. These measurements of formaldehyde will be used elucidate mechanisms of convective transport and quantify the effects of boundary layer pollutants on the ozone photochemistry and cloud microphysics of the upper atmosphere.
+  <br>
+
+  #### ATom_Particulate_Iodine_1773
+  This dataset provides mass concentrations of particulate iodine as measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS) during the first two deployments of the NASA Atmospheric Tomography airborne missions (ATom-1 and ATom-2) in 2016 and 2017, respectively. The data provided in this dataset result from a reanalysis of the initial HR-AMS data based on post-mission calibrations and are reported at 1-minute resolution. The dataset also includes the fractions of the main ions (I+, HI+, and I2+) that can be used to ascertain the oxidation state of iodine in particles. Each observation includes an air mass classification flag (tropospheric or stratospheric conditions) based on collocated in situ water vapor and ozone measurements and positional data from the HR-AMS data feed.
+  <br>
+
+  #### ATom_Medusa_Instrument_Data_V2_1881
+  This dataset provides O2/N2, CO2, Ar/N2, and stable isotope ratios of CO2 measured in flasks collected by the Medusa Whole Air Sampler during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. ATom deployed an extensive gas and aerosol payload on the NASA DC-8 aircraft for a systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. Medusa collected 32 cryogenically dried, flow, and pressure-controlled samples per flight. The samples are collected by an automated sampler into 1.5 L glass flasks that integrate over 25 seconds. Medusa provides discretely-sampled comparisons for onboard in situ O2/N2 ratio and CO2 measurements and unique measurements of Ar/N2 and 13C, 14C, and 18O isotopologues of CO2. Medusa flasks are analyzed on a sector-magnet mass spectrometer and a LiCor non-dispersive infrared CO2 analyzer by the Scripps O2 Program at Scripps Institution of Oceanography.
+  <br>
+
+  #### ATom_SP2_LAM_FeOx_MMR_1828
+  This dataset provides mass mixing ratios and number density of light-absorbing metallic aerosols (LAM) in the size range 180-1290 nm obtained with the NOAA Single Particle Soot Photometer (SP2) during the four deployments of the NASA Atmospheric Tomography (ATom) airborne mission from 2016-2018. The NOAA SP2 detects light absorbing aerosols, such as black carbon (BC), via laser-induced incandescence to provide real-time in situ quantification of refractory aerosol mass and number density. The percent of LAM aerosols attributed to anthropogenic iron oxides (FeOx) by mass is also provided.
+  <br>
+
+  #### ATom_ATHOS_Instrument_Data_V2_1930
+  This dataset provides the mixing ratios of hydrogen oxides measured by the Airborne Tropospheric Hydrogen Oxides Sensor (ATHOS) during the ATom 1-4 campaigns. ATHOS uses laser-induced fluorescence (LIF) to measure hydroxide (OH) and hydroperoxyl (HO2) simultaneously. The measurements include OH and HO2 mixing ratios and the OH interference determined by chemical removal of OH. The reactivity of OH is measured by the OH Reactivity (OHR) instrument using the discharge flow method and is integrated into the ATHOS electronics. These data provide insights into the oxidative state of the global atmosphere. These data are useful for testing the oxidation chemistry in models and other analytical methods being developed to deduce the atmosphere's oxidative state.
+  <br>
+
+  #### ATom_MMS_Instrument_Data_1731
+  This dataset contains measurements from the Meteorological Measurement System (MMS) instrument from the four ATom campaigns. MMS is a state-of-the-art instrument for measuring accurate, high resolution in situ airborne state parameters (pressure, temperature, turbulence index, and the 3-dimensional wind vector). These key measurements enable our understanding of atmospheric dynamics, chemistry, and microphysical processes. The MMS is used to investigate atmospheric mesoscale (gravity and mountain lee waves) and microscale (turbulence) phenomena. An accurate characterization of the turbulence phenomenon is important for the understanding of dynamic processes in the atmosphere, such as the behavior of buoyant plumes within cirrus clouds, diffusions of chemical species within wake vortices generated by jet aircraft, and microphysical processes in breaking gravity waves. Accurate temperature and pressure data are needed to evaluate chemical reaction rates as well as to determine accurate mixing ratios. Accurate wind field data establish a detailed relationship with the various constituents and the measured wind also verifies numerical models used to evaluate air mass origin.
+  <br>
+
+  #### ATom_PALMS_Instrument_Data_1733
+  This dataset contains single-particle aerosol composition as measured by the Particle Analysis by Laser Mass Spectrometry (PALMS) instrument during the four ATom campaigns from 2016-2018. Single aerosol particles are classified into several particle types, including: mixed sulfate/organic nitrate, biomass burning, elemental carbon, mineral/metallic, meteoric material, alkali salt, sea salt, heavy oil combustion, and others. Particle types are reported as raw number fractions and as absolute mass concentrations. PALMS measures aerosol composition for particles from diameter ~100 to 5000 nm, with most of the particle data in the size range ~150 to 3000 nm. Also included are absolute aerosol concentrations measured by a modified Laser Aerosol Spectrometer (LAS). Integrated number, surface area, and volume concentrations from LAS are reported over multiple size ranges.
+  <br>
+
+  #### ATom_QCLS_Instrument_Data_V2_1932
+  This dataset provides atmospheric concentrations of CO2, CH4, CO, and N2O measured by the Harvard Quantum Cascade Laser System (QCLS) instruments during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The QCLS (DUAL and CO2) instrument package contains two separate optical assemblies and calibration systems, and a common data system and power supply. The QCLS DUAL instrument simultaneously measures CO, CH4, and N2O concentrations, in situ, using two thermoelectrically cooled pulsed-quantum cascade lasers light sources, a multiple pass absorption cell, and two liquid nitrogen-cooled solid-state detectors. The QCLS CO2 instrument measures CO2 concentrations in situ using a thermoelectrically cooled pulsed-quantum cascade laser light source, gas cells, and liquid nitrogen cooled solid-state detectors. The CO2 mixing ratio of air flowing through the sample gas cell is determined by measuring absorption from a single infrared transition line at 4.32 microns relative to a reference gas of known concentration.
+  <br>
+
+  #### ATom_UCATS_Instrument_Data_1750
+  This dataset, collected with the Unmanned Aircraft Systems (UAS) Chromatograph for Atmospheric Trace Species (UCATS), provides atmospheric concentrations of nitrous oxide (N2O), sulfur hexafluoride (SF6), methane (CH4), hydrogen (H2), carbon monoxide (CO), water vapor (H2O), and ozone (O3). The UCATS system is three different instruments in one enclosure: a two-channel chromatograph with electron capture detectors (one measures N2O and SF6, the other measures CH4, H2 and CO), a tunable diode laser instrument for H2O, and a dual-beam O3 photometer.
+  <br>
+
+  #### ATom_SAGA_Instrument_Data_1748
+  Soluble acidic gases and aerosols (SAGA) were collected with two related installations; a mist chamber/ion chromatography (MC/IC) system and a paired bulk aerosol system. The MC/IC system measures in situ atmospheric distributions of nitric acid (plus < 1 um NO3 aerosol) and fine (< 1 um) aerosol sulfate at an approximately 80-second interval. The paired bulk aerosol system collects particulates onto filters for subsequent analysis. Collected filters were first extracted with water to obtain the water-soluble (WS) constituents and then extracted again using methanol to collect the methanol soluble (MS) fraction. The light absorption of filtered extracts was measured from 300 to 700 nm. Ion chromatography on aqueous extracts of the bulk aerosol samples collected on Teflon filters were used to quantify soluble ions (Cl-, Br-, NO3-, SO42-, C2O42-, Na+, NH4+, K+, Ca+, and Mg+). The SAGA system is provided by the University of New Hampshire (UNH).
+  <br>
+
+  #### ATom_merge_1581
+  This dataset provides information on greenhouse gases and human-produced air pollution, including atmospheric concentrations of carbon dioxide (CO2), methane (CH4), tropospheric ozone (O3), and black carbon (BC) aerosols, collected during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. This dataset includes merged data from all instruments plus additional data such as numbered profiles and distance flown. Merged data have been created for seven different sampling intervals. In the case of data obtained over longer time intervals (e.g. flask data), the merge files provide (weighted) averages to match the sampling intervals. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for a systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude. Flights occurred in each of 4 seasons from 2016 to 2018. Flights originate from the Armstrong Flight Research Center in Palmdale, California, fly north to the western Arctic, south to the South Pacific, east to the Atlantic, north to Greenland, and return to California across central North America. ATom establishes a single, contiguous, global-scale dataset. This comprehensive dataset will be used to improve the representation of chemically reactive gases and short-lived climate forcers in global models of atmospheric chemistry and climate. Profiles of the reactive gases will also provide critical information for the validation of satellite data, particularly in remote areas where in situ data is lacking. Complete aircraft flight information including, but not limited to, latitude, longitude, and altitude are also provided. This data release provides results from all instruments on all four ATom flight campaigns.
+  <br>
+
+  #### ATom_NMASS_Data_1607
+  This dataset provides extensive calibration and in-flight performance data for two nucleation mode aerosol size spectrometer (NMASS) instruments utilized in the NASA Atmospheric Tomography Mission (ATom). Each NMASS has five condensation particle counters (CPCs) that detect particles above a different minimum size, determined by the maximum vapor supersaturation encountered by the particles. Operated in parallel, the CPCs provide continuous concentrations of particles in different cumulative size classes between 3 and 60 nm. Knowing the response function of each CPC, numerical inversion techniques were applied to recover size distributions from the continuous concentrations. Data provided include: NMASS counting efficiencies and diameters of calibration aerosols, inverted particle size distributions; comparisons of NMASS and Scanning Mobility Particle Sizer (SMPS) results; and performance at flows, temperatures, and pressures measured by both NMASSs and comparison with Ultra-High Sensitivity Aerosol Spectrometer (UHSAS) concentrations collected on board the NASA DC-8 aircraft during an ATom flight in February 2017.
+  <br>
+
+  #### ATom_CO_GEOS_1604
+  This dataset contains carbon monoxide (CO) observations at 10-second intervals from flights during the ATom-1 campaign in 2016 and simulated CO concentrations from the Goddard Earth Observing System version 5 (GEOS-5) model for the corresponding locations along the ATom flight tracks. The Atmospheric Tomography Mission (ATom) is a NASA Earth Venture Suborbital-2 mission studying the impact of human-produced air pollution on greenhouse gases and on chemically reactive gases in the atmosphere. The airborne observations were collected using the Quantum Cascade Laser System (QCLS) instrument, a high-frequency laser spectroscopy instrument for in situ atmospheric gas sampling. This dataset provides a direct comparison of observational and simulated CO that will be used to inform future atmospheric modeling experiments. The dataset also contains simulated tagged-CO tracer concentrations, which represent the contribution of specific regional sources to the total simulated CO. This dataset contributes to one of the ATom mission objectives to create an observation-based chemical climatology of important atmospheric constituents and their reactivity in the remote troposphere.
+  <br>
+
+  #### ATom_Organic_Aerossols_1795
+  This dataset provides airborne in situ observations of submicron organic aerosol (OA) mass concentrations during the first (mid-2016) and second (early-2017) global deployments of the Atmospheric Tomography Mission (ATom), as well as modeled submicron OA mass concentrations along the flight tracks from global chemistry models that implement a variety of commonly used representations of OA sources and chemistry. In situ observations include non-refractory submicron aerosols measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS), aerosol volume concentrations measured by the Aerosol Microphysical Properties package (AMP), black carbon mass content measured by the Single Particle Soot Photometer (NOAA SP2), and refractory and non-refractory aerosol composition measured by the Particle Analysis By Laser Mass Spectrometry (PALMS). Both observed and modeled data are provided at a 60-second temporal resolution. The data are provided in netCDF format.
+  <br>
+
+  #### ATom_Ozonesonde_InstrumentData_1910
+  This dataset contains ozone measurements from the Ozonesonde instrument in Antarctica, Hawaii, and Fiji taken during the Atom-4 campaign. The Electrochemical Concentration Cell (ECC) Ozonesonde is a balloon-borne instrument that collects ozone concentrations paired with a radiosonde to collect additional meteorological info along a vertical profile (as a result, unlike other ATom data, this dataset is not associated with DC-8). The balloon can ascend to altitudes of 35 km before bursting. Ozone in the stratosphere helps reduce UV radiation that reaches Earth's surface; however, ozone at ground level can negatively influence respiratory health.
+  <br>
+
+  #### ATom_Simulated_Data_1597
+  This dataset provides a simulated data stream representative of an Atmospheric Tomography mission (ATom) data collection flight and also modeled reactivities for ozone (O3) production and loss and methane (CH4) loss from six global atmospheric chemistry models: CAM, GEOS-Chem, GFDL, GISS-E2.1, GMI, and UCI. The simulated data include concentrations of selected atmospheric trace gases for 14,880 air parcels along a simulated north-south ATom flight path along 180-degrees longitude over the Pacific basin. Each of the six models produced ozone production and loss and methane loss reactivities initialized using the simulated data beginning with five different days in August (8-01, 8-06, 8-11, 8-16, 8-21). Modeled years for each individual model varied from 1997 to 2016.
+  <br>
+
+  #### ATom_SO2_LIF_Instrument_Data_1890
+  This dataset provides concentrations of sulfur dioxide (SO2) measured by the Laser Induced Fluorescence Instrumentation for Sulfur Dioxide (SO2-LIF) on the ATom-4 campaign in April and May 2018. The LIF-SO2 instrument detects SO2 at the single-part per trillion level using red-shifted laser-induced fluorescence. Measurements are reported at 1-second intervals along the flight paths. Sources of SO2 atmosphere from natural sources include volcanic eruptions and wildfires; however, most anthropogenic sources, such as fossil fuel combustion, arise. SO2 influences some negative health and environmental impacts and is an important precursor of aerosols in the nucleation of new particles globally.
+  <br>
+
+  #### ATom_PANTHER_Instrument_Data_1914
+  This dataset contains measurements of various trace gases from the PAN and Trace Hydrohalocarbon ExpeRiment (PANTHER) across the four ATom campaigns. PANTHER uses Electron Capture Detection and Gas Chromatography (ECD-GC) and Mass Selective Detection and Gas Chromatography (MSD-GC) to measure numerous trace gases, including methyl halides, HCFCs, PAN, N2O, SF6, CFC-12, CFC-11, Halon 1211, methyl chloroform, carbon tetrachloride.
+  <br>
+
+  #### ATom_UHSAS_Data_1619
+  This dataset provides extensive calibration and in-flight performance data for two Ultra-High Sensitivity Aerosol Spectrometers (UHSAS) used for particle size distribution and volatility measurements during the NASA Atmospheric Tomography Mission (ATom) airborne campaign. UHSAS-1 was equipped with a compact thermodenuder operating at 300 degrees C and UHSAS-2 was operated without a thermodenuder to determine the number and volume fraction of volatile particles. Laboratory studies utilized aerosols from limonene ozonolysis (limon), atomization of ammonium sulfate (AS), and atomization of 2-diethylhexyl (dioctyl) sebacate (DOS). Data include: UHSAS detection efficiency, sizing calibration, performance at a range of pressures and at a range of thermodenuder temperatures, comparison of UHSAS-2 and condensation particle counter (CPC) particle number concentrations, comparisons of UHSAS-1 and UHSAS-2 for dry particle number concentration, surface area and volume collected onboard of a NASA DC-8 aircraft during August 2016, and dry aerosol size distributions for thermodenuded and non-thermodenuded instrument collected in February 2017.
+  <br>
+
+  #### Aerosol_Sulfate_LowermostStrat_1868
+  This dataset consists of (a) selected aerosol and gas-phase observations made on all four deployments of NASA Atmospheric Tomography Mission (ATom), (b) thermodynamic properties related to aerosol formation derived from these measurements, (c) 48-h back trajectories for ATom-4 observations, and (d) output from the Model of Aerosols and Ions in the Atmosphere (MAIA). ATom observations, thermodynamics, and back trajectories were inputs for MAIA model runs. MAIA runs focused on data from ATom-4 deployment, and output includes aerosol formation rates, and ultrafine particle size distributions and number concentrations in the lowermost stratosphere (LMS). ATom 1-4 deployments included all four seasons from 2016 to 2018. This investigation sought to understand how new particle formation (NPF) can occur in the LMS, factors influencing the amount of NPF, and other potential sources of ultrafine aerosols in this region of the atmosphere. The data are provided in comma-separated value (CSV) format.
+  <br>
+
+  #### ATom_TOGA_Instrument_Data_V2_1936
+  This dataset provides concentrations of volatile organic compounds (VOCs) measured by the Trace Organic Gas Analyzer (TOGA) during the four ATom campaigns. These data are relevant to the impact of human-produced air pollution on greenhouse gases and on chemically reactive gases in the atmosphere. Specific data were obtained for radical precursors, tracers of anthropogenic and biogenic activities, tracers of urban and biomass combustion emissions, products of oxidative processing, precursors to aerosol formation, and compounds important for aerosol modification and transformation. TOGA measures a wide range of VOCs with high sensitivity (ppt or lower), frequency (2-minutes), accuracy (often 15% or better), and precision (<3%).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/data/projects/atom
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- climate
+- ice
+- netcdf
+- oceans
+- precipitation
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ATom_Modeled_Observed_Data_1857 v1 - This dataset provides observations collected during eleven airborne campaigns from 2006&ndash;2017 and associated input and output from nine widely used chemical transport models (CTMs). The airborne campaigns include ARCTAS-A, ARCTAS-B, ATom-1 and ATom-2, CalNex, DC3, INTEX-B, KORUS-AQ, MILAGRO, SEAC4RS, and WINTER, and they sampled mainly tropospheric air over the conterminous U.S."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Modeled_Observed_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_CAFS_Instrument_Data_V2_1933 v2 - This dataset contains actinic flux and photolysis frequencies for photodissociation reactions for a variety of chemical species during the four ATom campaigns. Spectrally resolved actinic flux was measured by the down- and up-welling Charged-coupled device Actinic Flux Spectroradiometers (CAFS) from approximately 280-650 nm."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_CAFS_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_SOAP_Instrument_Data_1898 v1 - This dataset contains one-second aerosol extinction and absorption measurements from the Spectrometers for Optical Aerosol Properties (SOAP) instrument aboard the NASA DC-8 aircraft during the ATom-4 campaign that occurred in 2018. SOAP is a compact, low maintenance instrument that measures aerosol extinction and absorption at 532 nm."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_SOAP_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_HIPPO_ORCAS_1788 v1 - This dataset provides calculated age of air (AoA) and the argon/nitrogen (Ar/N2) ratio (per meg) from stratospheric flask samples and simultaneous high-frequency measurements of nitrous oxide (N2O), carbon dioxide (CO2), ozone (O3), methane (CH4), and carbon monoxide (CO) compiled from three airborne projects. The trace gases were used to identify 235 flask samples with stratospheric influence collected by the Medusa Whole Air Sampler and to calculate AoA using a new N2O-AoA relationship developed using a Markov Chain Monte Carlo algorithm."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_HIPPO_ORCAS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_nav_1613 v1 - This dataset provides flight track and aircraft navigation data from the NASA Atmospheric Tomography Mission (ATom). Flight track information is available for the four ATom campaigns: ATom-1, ATom-2, ATom-3, and ATom-4."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_nav/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Rad_Measurements_ARMAS_1906 v1 - This dataset contains Level 2 (L2) absorbed radiation dose rates in silicon from the Automated Radiation Measurements for Aerospace Safety (ARMAS) system along ATom flight paths for the ATom-1 campaign conducted in July and August 2016. Absorbed dose rates measure how much energy is deposited in matter by ionizing radiation per unit time."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Rad_Measurements_ARMAS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_FlightTrack_Influences_1889 v1 - This dataset contains back trajectories, boundary layer influences, and convective influences of air parcels along NASA DC-8 aircraft's flight tracks during the four ATom campaigns that occurred from 2016 to 2018. Back trajectories were interpolated using National Centers for Environmental Prediction (NCEP) Global Forecast System (GFS) and Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2) meteorology."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_FlightTrack_Influences/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Carbon_Aerosol_Loadings_1618 v1 - This dataset provides black carbon (BC) mass mixing ratios (in units of ng BC / kg air) measured during NASA's Atmospheric Tomography (ATom)-1 flight campaign during July and August 2016. The BC-core masses of BC-containing aerosol particles were measured using a Single Particle Soot Photometer (SP2)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Carbon_Aerosol_Loadings/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_CESM2_1878 v1 - This dataset contains CAM-chem (Community Atmosphere Model with Chemistry) model outputs along ATom flight tracks. CAM-chem is a component of the Community Earth System Model Version 2 (CESM2) and is used for simulations of global tropospheric and stratospheric atmospheric composition and for studies of chemistry-climate interactions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_CESM2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_CAPSVienna_Data_1981 v1 - This dataset contains cloud type and coarse aerosol contents measured by the University of Vienna's second-generation Cloud Aerosol and Precipitation Spectrometer (CAPS) instrument mounted to the NASA DC-8 aircraft during the four ATom campaigns that occurred from 2016 to 2018. CAPS measures particle size distributions in a size range between nominally 0.5 micrometers and 960 micrometers."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_CAPSVienna_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Picarro_Instrument_Data_1732 v1 - This dataset contains atmospheric measurements of CO2, CH4, and CO mixing ratios made with a Picarro G2401 spectrometer during the four ATom campaigns. Picarro G2401 uses Wavelength-Scanned Cavity Ring Down Spectroscopy (WS-CRDS), a time-based measurement utilizing a near-infrared laser to measure a spectral signature of the molecule."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Picarro_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Mapping_OH_Troposphere_1669 v1 - This dataset provides profile-integrated column densities of formaldehyde (HCHO), hydroxyl (OH), and OH production rates, diel tropospheric mean OH concentrations, and uncertainties that were derived from direct observation data from selected profiles of NASA Atmospheric Tomography (ATom) mission 1 and 2 flights for the period July 29, 2016 to February 21, 2017. These calculated products were combined with coincident HCHO column retrievals from the Ozone Monitoring Instrument (OMI) to scale and extend the profile results to a global gridded (0.5 deg latitude x 0.625 deg longitude) product."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Mapping_OH_Troposphere/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Aerosol_Properties_V2_2111 v2.1 - This dataset contains comprehensive measurements of aerosol microphysical, chemical, and optical properties derived for both dry and ambient conditions from in situ measurements made during the four ATom campaigns. The dataset includes composition-resolved size distributions the integrated mass of sulfate, organics, nitrate, sea salt, dust, black carbon, and other compounds in coarse and fine fractions; extinction and absorption coefficients from each species at both dry and ambient conditions; asymmetry parameters; Angstrom exponents; and fitted lognormal functions to describe the size dis..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Aerosol_Properties_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_FullModel_DataStream_1877 v1 - This dataset provides Modeling Data Stream (MDS) and Reactivity Data Stream (RDS) products for each of the four ATom campaigns conducted from 2016 to 2018. MDS files contain the atmospheric constituents needed to model the RDS of the air parcels along ATom flight paths."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_FullModel_DataStream/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Forward_Flight_Videos_1938 v1 - This dataset contains images taken from the front of the NASA DC-8 aircraft during the first three ATom campaigns from 2016-2017. Images were taken with an Axis P1357 High Definition camera with a Theia TH138A wide-angle lens."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Forward_Flight_Videos/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Clouds_Aerosols_2250 v1 - This dataset is the basis for the development of the Cloud Indicator, a novel algorithm that automatically detects and classifies measurement periods inside clouds. The included data were used in the analysis and development of figures for the related publication."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Clouds_Aerosols/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Mineral_Dust_Cirrus_Cloud_2006 v1 - This dataset provides: (1) In situ dust aerosol concentration measurements over remote tropical Pacific and Atlantic Oceans by NOAA Particle Analysis by Laser Mass Spectrometry (PALMS) airborne single-particle mass spectrometer combined with Aerosol Microphysical Properties (AMP) aerosol size spectrometers. Measurements were made aboard the NASA DC8 aircraft during the four ATom campaigns that occurred from 2016 to 2018 (2) Model output of dust and meteorology from the CESM global transport model extracted at the time and location of the aircraft; (3) Model output of dust, other aerosol, an..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Mineral_Dust_Cirrus_Cloud/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Flight_Environment_Parameters_1909 v1 - This dataset contains flight dynamics and environmental parameters (often referred to as housekeeping) specific to the DC-8 aircraft as collected from an assortment of instruments across all four ATom campaigns flown from 2016 through 2018. Measurements include aircraft position, altitude, speed, wind parameters, air temperature, and atmospheric and cabin pressure."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/Flight_Environment_Parameters/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Interpolated_Met_Products_1876 v1 - This dataset provides modeled meteorological conditions and tagged-CO tracer concentrations along ATom flight paths derived from the Goddard Earth Observing System Version 5 (GEOS-5) data assimilation products from the Global Modeling and Assimilation Office (GMAO) at NASA's Goddard Space Flight Center. The GMAO \"GEOS fp\" forward processing system ingests satellite, ground-based, and airborne data, using a sophisticated model along with the data's statistical properties to obtain global three-dimensional data gridded fields at regular time intervals."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/Interpolated_Met_Products/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Photolysis_Rates_1651 v1 - This dataset provides the results from nine global chemistry-climate or chemistry-transport models that estimated gridded values of atmospheric photolytic rates (J values) for ozone (O3), designated J-O1D, and nitrogen dioxide (NO2), designated J-NO2, under cloudy and clear sky scenarios. Each model produced global 4-D fields (latitude by longitude by pressure for 24 hours) for one day in mid-August 2016 (nominally) of results from two simulations: first using their standard treatment of clouds (all sky or cloudy) and a second with clouds and aerosols removed (clear sky)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Photolysis_Rates/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_GlobalModelInitiative_CTM_1897 v1 - This dataset contains Global Modeling Initiative (GMI) Chemical Transport Model (CTM) outputs from the four Atom campaigns. GMI simulations of the ATom flight periods have a horizontal resolution of 1.0 x 1.25 degrees, with output every 15 minutes."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_GlobalModelInitiative_CTM/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_DLH_Instrument_Data_V2_1937 v2 - This dataset provides the concentrations of water measured by the Diode Laser Hygrometer (DLH) flown on the NASA DC-8 during the ATom 1-4 campaigns from 2016 - 2018. The DLH measures the water vapor in the atmosphere by wavelength modulated differential absorption spectroscopy of an isolated rovibrational line."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_DLH_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_CIT_Instrument_Data_V2_1927 v2 - This dataset provides the concentrations of gas-phase organic and inorganic analytes measured by the California Institute of Technology (CIT) Chemical Ionization Mass Spectrometer (CIMS), or CIT-CIMS, flown on the NASA DC-8 aircraft during the four ATom campaigns. The CIT-CIMS employs CF3O-ion chemistry with two independent mass spectrometers (compact time-of-flight and triple quadrupole) to enable sensitive and specific measurements of atmospheric trace gases."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_CIT_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Aerosols_Meteorology_1684 v1 - This dataset provides (1) the results of in situ aerosol particle property measurements collected over remote tropical areas of both Pacific and Atlantic Oceans during the NASA airborne Atmospheric Tomography (ATom) campaigns for ATom-1 and ATom-2 and (2) modeled outputs of comparable aerosol properties, atmospheric chemistry and meteorology at 70 m resolution from four chemical-transport models matched to the location and time of the aircraft measurements."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Aerosols_Meteorology/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Airborne_Insitu_Measurements_1784 v1 - This dataset provides results of selected in-situ measurements of airflow and aerosol particles collected during the following airborne campaigns: NASA Atmospheric Tomography (ATom), Saharan Aerosol Long-range Transport and Aerosol-Cloud-interaction Experiment (SALTRACE), and Absorbing aerosol layers in a changing climate: aging, lifetime and dynamics (A-LIFE). The airborne campaigns were conducted between 2013-06-10 and 2018-05-21."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/Airborne_Insitu_Measurements/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_WAS_Instrument_Data_1751 v1 - This dataset provides atmospheric concentrations of halocarbons and hydrocarbons measured by the UC-Irvine Whole Air Sampler (WAS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The analysis of samples from the UCI WAS provides measurements of more than 50 trace gases, including C2-C10 NMHCs, C1-C2 halocarbons, C1-C5 alkyl nitrates, and selected sulfur compounds."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_WAS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_NOyO3_Instrument_Data_1734 v1 - This dataset provides in situ concentrations of nitric oxide (NO), nitrogen dioxide (NO2), total reactive nitrogen oxides (NOy), and ozone (O3) measured by the NOAA Nitrogen Oxides and Ozone (NOyO3) 4-channel chemiluminescence (CL) instrument during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. NOyO3 provides fast-response, specific, high precision, and calibrated measurements of nitrogen oxides and ozone at a spatial resolution of better than 100 m."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_NOyO3_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_SP2_Instrument_Data_1672 v1 - This dataset provides the refractory black carbon mass concentration at one-second resolution measured by the Single Particle Soot Photometer (NOAA SP2) instrument during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The SP2 is a laser-induced incandescence instrument primarily used for measuring the black carbon mass content of individual particles."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_SP2_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_AO2_Instrument_Data_V2_1880 v2 - This dataset provides in situ atmospheric oxygen and carbon dioxide concentrations measured by the NCAR Airborne Oxygen Instrument (AO2) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The AO2 Instrument measures O2 concentration using a vacuum-ultraviolet absorption technique."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_AO2_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_AMP_Instrument_Data_1671 v1 - This dataset provides the number, surface area, and volume concentrations and size distributions of dry aerosol particles measured by the Aerosol Microphysical Properties (AMP) instrument package during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. Five instruments--two nucleation-mode aerosol size spectrometers (NMASS), two ultra-high sensitivity aerosol spectrometers (UHSAS), and a laser aerosol spectrometer (LAS)--comprise the AMP package."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_AMP_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_GT_CIMS_Instrument_Data_1715 v1 - This dataset provides measurements of two important components of photochemical smog - peroxyacetyl nitrate (PAN) and peroxyl propionyl nitrate (PPN)- measured by the Georgia Tech Chemical Ionization Mass Spectrometer (GT-CIMS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The GT-CIMS measures reactive nitrogen species in the lower atmosphere."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_GT_CIMS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_HR-AMS_Instrument_Data_1716 v1.1 - This dataset provides the atmospheric concentrations of separated ions from inorganic and organic species measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS) collected during flights of the NASA ATom Mission. Data are available from all four ATom Campaigns."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_HR-AMS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "NOAA_ToF_CIMS_Instrument_Data_1921 v2 - This dataset provides the mixing ratios of reactive nitrogen and halogen species measured by the NOAA Iodide Ion Time-of-Flight Chemical Ionization Mass Spectrometer (NOAA CIMS) during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission for ATom-3 and ATom-4 campaigns. The NOAA CIMS uses chemical ionization mass spectrometric detection of gas phase organic and inorganic analytes via I- adduct formation."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/NOAA_ToF_CIMS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_PFP_Instrument_Data_1746 v1 - This dataset provides mole fractions of atmospheric trace gases measured by the Programmable Flask Package (PFP) Whole Air Sampler during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The PFP whole air sampler provides a means of automated or manual filling of glass flasks."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_PFP_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_ISAF_Instrument_Data_1730 v1 - This dataset provides the atmospheric volume mixing ratio of formaldehyde measured during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. ATom deploys an extensive gas and aerosol payload on the NASA DC-8 aircraft for systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_ISAF_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Particulate_Iodine_1773 v1 - This dataset provides mass concentrations of particulate iodine as measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS) during the first two deployments of the NASA Atmospheric Tomography airborne missions (ATom-1 and ATom-2) in 2016 and 2017, respectively. The data provided in this dataset result from a reanalysis of the initial HR-AMS data based on post-mission calibrations and are reported at 1-minute resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Particulate_Iodine/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Medusa_Instrument_Data_V2_1881 v2 - This dataset provides O2/N2, CO2, Ar/N2, and stable isotope ratios of CO2 measured in flasks collected by the Medusa Whole Air Sampler during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. ATom deployed an extensive gas and aerosol payload on the NASA DC-8 aircraft for a systematic, global-scale sampling of the atmosphere, profiling continuously from 0.2 to 12 km altitude."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Medusa_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_SP2_LAM_FeOx_MMR_1828 v1 - This dataset provides mass mixing ratios and number density of light-absorbing metallic aerosols (LAM) in the size range 180-1290 nm obtained with the NOAA Single Particle Soot Photometer (SP2) during the four deployments of the NASA Atmospheric Tomography (ATom) airborne mission from 2016-2018. The NOAA SP2 detects light absorbing aerosols, such as black carbon (BC), via laser-induced incandescence to provide real-time in situ quantification of refractory aerosol mass and number density."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_SP2_LAM_FeOx_MMR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_ATHOS_Instrument_Data_V2_1930 v2 - This dataset provides the mixing ratios of hydrogen oxides measured by the Airborne Tropospheric Hydrogen Oxides Sensor (ATHOS) during the ATom 1-4 campaigns. ATHOS uses laser-induced fluorescence (LIF) to measure hydroxide (OH) and hydroperoxyl (HO2) simultaneously."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_ATHOS_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_MMS_Instrument_Data_1731 v1 - This dataset contains measurements from the Meteorological Measurement System (MMS) instrument from the four ATom campaigns. MMS is a state-of-the-art instrument for measuring accurate, high resolution in situ airborne state parameters (pressure, temperature, turbulence index, and the 3-dimensional wind vector)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_MMS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_PALMS_Instrument_Data_1733 v1 - This dataset contains single-particle aerosol composition as measured by the Particle Analysis by Laser Mass Spectrometry (PALMS) instrument during the four ATom campaigns from 2016-2018. Single aerosol particles are classified into several particle types, including: mixed sulfate/organic nitrate, biomass burning, elemental carbon, mineral/metallic, meteoric material, alkali salt, sea salt, heavy oil combustion, and others."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_PALMS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_QCLS_Instrument_Data_V2_1932 v2 - This dataset provides atmospheric concentrations of CO2, CH4, CO, and N2O measured by the Harvard Quantum Cascade Laser System (QCLS) instruments during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. The QCLS (DUAL and CO2) instrument package contains two separate optical assemblies and calibration systems, and a common data system and power supply."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_QCLS_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_UCATS_Instrument_Data_1750 v1 - This dataset, collected with the Unmanned Aircraft Systems (UAS) Chromatograph for Atmospheric Trace Species (UCATS), provides atmospheric concentrations of nitrous oxide (N2O), sulfur hexafluoride (SF6), methane (CH4), hydrogen (H2), carbon monoxide (CO), water vapor (H2O), and ozone (O3). The UCATS system is three different instruments in one enclosure: a two-channel chromatograph with electron capture detectors (one measures N2O and SF6, the other measures CH4, H2 and CO), a tunable diode laser instrument for H2O, and a dual-beam O3 photometer."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_UCATS_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_SAGA_Instrument_Data_1748 v1 - Soluble acidic gases and aerosols (SAGA) were collected with two related installations; a mist chamber/ion chromatography (MC/IC) system and a paired bulk aerosol system. The MC/IC system measures in situ atmospheric distributions of nitric acid (plus < 1 um NO3 aerosol) and fine (< 1 um) aerosol sulfate at an approximately 80-second interval."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_SAGA_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_merge_1581 v1.5 - This dataset provides information on greenhouse gases and human-produced air pollution, including atmospheric concentrations of carbon dioxide (CO2), methane (CH4), tropospheric ozone (O3), and black carbon (BC) aerosols, collected during airborne campaigns conducted by NASA's Atmospheric Tomography (ATom) mission. This dataset includes merged data from all instruments plus additional data such as numbered profiles and distance flown."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_merge/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_NMASS_Data_1607 v1 - This dataset provides extensive calibration and in-flight performance data for two nucleation mode aerosol size spectrometer (NMASS) instruments utilized in the NASA Atmospheric Tomography Mission (ATom). Each NMASS has five condensation particle counters (CPCs) that detect particles above a different minimum size, determined by the maximum vapor supersaturation encountered by the particles."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_NMASS_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_CO_GEOS_1604 v1 - This dataset contains carbon monoxide (CO) observations at 10-second intervals from flights during the ATom-1 campaign in 2016 and simulated CO concentrations from the Goddard Earth Observing System version 5 (GEOS-5) model for the corresponding locations along the ATom flight tracks. The Atmospheric Tomography Mission (ATom) is a NASA Earth Venture Suborbital-2 mission studying the impact of human-produced air pollution on greenhouse gases and on chemically reactive gases in the atmosphere."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_CO_GEOS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Organic_Aerossols_1795 v1 - This dataset provides airborne in situ observations of submicron organic aerosol (OA) mass concentrations during the first (mid-2016) and second (early-2017) global deployments of the Atmospheric Tomography Mission (ATom), as well as modeled submicron OA mass concentrations along the flight tracks from global chemistry models that implement a variety of commonly used representations of OA sources and chemistry. In situ observations include non-refractory submicron aerosols measured by the High-Resolution Aerosol Mass Spectrometer (HR-AMS), aerosol volume concentrations measured by the Aeros..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Organic_Aerossols/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Ozonesonde_InstrumentData_1910 v1 - This dataset contains ozone measurements from the Ozonesonde instrument in Antarctica, Hawaii, and Fiji taken during the Atom-4 campaign. The Electrochemical Concentration Cell (ECC) Ozonesonde is a balloon-borne instrument that collects ozone concentrations paired with a radiosonde to collect additional meteorological info along a vertical profile (as a result, unlike other ATom data, this dataset is not associated with DC-8)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Ozonesonde_InstrumentData/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_Simulated_Data_1597 v1 - This dataset provides a simulated data stream representative of an Atmospheric Tomography mission (ATom) data collection flight and also modeled reactivities for ozone (O3) production and loss and methane (CH4) loss from six global atmospheric chemistry models: CAM, GEOS-Chem, GFDL, GISS-E2.1, GMI, and UCI. The simulated data include concentrations of selected atmospheric trace gases for 14,880 air parcels along a simulated north-south ATom flight path along 180-degrees longitude over the Pacific basin."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_Simulated_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_SO2_LIF_Instrument_Data_1890 v1 - This dataset provides concentrations of sulfur dioxide (SO2) measured by the Laser Induced Fluorescence Instrumentation for Sulfur Dioxide (SO2-LIF) on the ATom-4 campaign in April and May 2018. The LIF-SO2 instrument detects SO2 at the single-part per trillion level using red-shifted laser-induced fluorescence."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_SO2_LIF_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_PANTHER_Instrument_Data_1914 v1 - This dataset contains measurements of various trace gases from the PAN and Trace Hydrohalocarbon ExpeRiment (PANTHER) across the four ATom campaigns. PANTHER uses Electron Capture Detection and Gas Chromatography (ECD-GC) and Mass Selective Detection and Gas Chromatography (MSD-GC) to measure numerous trace gases, including methyl halides, HCFCs, PAN, N2O, SF6, CFC-12, CFC-11, Halon 1211, methyl chloroform, carbon tetrachloride."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_PANTHER_Instrument_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_UHSAS_Data_1619 v1 - This dataset provides extensive calibration and in-flight performance data for two Ultra-High Sensitivity Aerosol Spectrometers (UHSAS) used for particle size distribution and volatility measurements during the NASA Atmospheric Tomography Mission (ATom) airborne campaign. UHSAS-1 was equipped with a compact thermodenuder operating at 300 degrees C and UHSAS-2 was operated without a thermodenuder to determine the number and volume fraction of volatile particles."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_UHSAS_Data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Aerosol_Sulfate_LowermostStrat_1868 v1 - This dataset consists of (a) selected aerosol and gas-phase observations made on all four deployments of NASA Atmospheric Tomography Mission (ATom), (b) thermodynamic properties related to aerosol formation derived from these measurements, (c) 48-h back trajectories for ATom-4 observations, and (d) output from the Model of Aerosols and Ions in the Atmosphere (MAIA). ATom observations, thermodynamics, and back trajectories were inputs for MAIA model runs."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/Aerosol_Sulfate_LowermostStrat/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ATom_TOGA_Instrument_Data_V2_1936 v2 - This dataset provides concentrations of volatile organic compounds (VOCs) measured by the Trace Organic Gas Analyzer (TOGA) during the four ATom campaigns. These data are relevant to the impact of human-produced air pollution on greenhouse gases and on chemically reactive gases in the atmosphere."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/atom/ATom_TOGA_Instrument_Data_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

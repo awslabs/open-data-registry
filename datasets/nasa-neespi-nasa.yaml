@@ -1,0 +1,130 @@
+Name: NASA NEESPI NASA Project
+Description: |
+  The dataset contains global monthly-mean soil moisture statistics (average values) for 1 by 1 degree grid cells. The source for the data is AMSR-E daily estimates of soil moisture (AE_Land3.002: AMSR-E/Aqua Daily L3 Surface Soil Moisture, Interpretive Parameters, QC EASE-Grids. Version 2 ). The dataset covers the time period from 2002-10-01 to 2011-09-30.
+  <br>
+
+  #### AMSRE_STDMO
+  The dataset contains global monthly soil moisture statistics (standard deviation ) for 1 by 1 degree grid cells. The source for the data is AMSR-E daily estimates of soil moisture (AE_Land3.002: AMSR-E/Aqua Daily L3 Surface Soil Moisture, Interpretive Parameters, QC EASE-Grids. Version 2 ). The dataset covers the time period from 2002-10-01 to 2011-09-30.
+  <br>
+
+  #### MYD14CM1
+  The gridded MODIS active fire products present statistical summaries of fire pixel information (Giglio et al., 2003). The global monthly products are generated at 1x1 degree spatial resolution for time period of one calendar month. These products are derived from MODIS CMG 0.5 degree products (Giglio et al., 2006) for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program in supporting researches on surface processes and climate modeling.
+  <br>
+
+  #### MYD11CM1D
+  The dataset contains global monthly day-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Aqua MYD11C3 Collection 005 product (MODIS/Aqua Monthly mean land surface temperature at 0.05 degree spatial resolution). The dataset covers the time period from 2002-08-01 to 2015-06-30.
+  <br>
+
+  #### MYD11CM1N
+  The dataset contains global monthly night-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Aqua MYD11C3 Collection 005 product (MODIS/Aqua Monthly mean land surface temperature at 0.05 degree spatial resolution). The dataset covers the time period from 2002-08-01 to 2015-06-30.
+  <br>
+
+  #### MYDVI
+  The global monthly gridded MODIS vegetation indices product is derived from the standard 0.05 CMG MODIS Aqua Vegetation Indices Monthly product MYD13C2 (Huete et al, 2002) collection-5. The product is generated for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program in supporting researches on the surface processes and climate modeling. The vegetation indices product is generated at 1x1 degree spatial resolution starting from July 2002.
+  <br>
+
+  #### MOD11CM1D
+  The dataset contains global monthly day-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Terra MOD11C3 Collection 005 product (MODIS/Terra Monthly mean land surface temperature at 0.05 degree spatial resolution). The dataset covers the time period from 2000-03-01 to 2015-06-30.
+  <br>
+
+  #### MOD11CM1N
+  The dataset contains global monthly night-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Terra MOD11C3 Collection 005 product (MODIS/Terra Monthly mean land surface temperature at 0.05 degree spatial resolution). The dataset covers the time period from 2000-03-01 to 2015-06-30.
+  <br>
+
+  #### MODVI
+  The global monthly gridded MODIS vegetation indices product is derived from the standard 0.05 CMG MODIS Terra Vegetation Indices Monthly product MOD13C2 (Huete et al, 2002) collection-5. The product is generated for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program in supporting researches on the surface processes and climate modeling. The vegetation indices product is generated at 1x1 degree spatial resolution starting from 2000.
+  <br>
+
+  #### NHICEM
+  This product is monthly Ice Cover Statistics. The dataset was prepared by Dr. Peter Romanov at Cooperative Institute for Climate Studies(CICS) of the University of Maryland for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program. The product includes the monthly ice statistics (frequency of occurrence) for Northern Hemisphere at 1x1 degree spatial resolution. The dataset covers the time period starting January 2000 to November 2014. The data was derived from daily ice cover charts produced at NOAA/NESDIS within Interactive Multisensor Ice Mapping System (IMS).
+  <br>
+
+  #### NHSNOWM
+  This product is Snow Cover Statistics. The dataset was prepared by Dr. Peter Romanov at Cooperative Institute for Climate Studies(CICS) of the University of Maryland for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program. The product includes the monthly snow statistics (frequency of occurrence) for Northern Hemisphere at 1x1 degree spatial resolution. The dataset covers the time period from January 2000 to November 2014. Monthly data were derived from daily snow cover charts produced at NOAA/NESDIS within Interactive Multisensor Ice Mapping System (IMS).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://disc.gsfc.nasa.gov/datacollection/AMSRE_AVRMO_005.html
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- ice
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "AMSRE_AVRMO v005 - The dataset contains global monthly-mean soil moisture statistics (average values) for 1 by 1 degree grid cells. The source for the data is AMSR-E daily estimates of soil moisture (AE_Land3.002: AMSR-E/Aqua Daily L3 Surface Soil Moisture, Interpretive Parameters, QC EASE-Grids."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Soil_Moisture/AMSRE_AVRMO.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "AMSRE_STDMO v005 - The dataset contains global monthly soil moisture statistics (standard deviation ) for 1 by 1 degree grid cells. The source for the data is AMSR-E daily estimates of soil moisture (AE_Land3.002: AMSR-E/Aqua Daily L3 Surface Soil Moisture, Interpretive Parameters, QC EASE-Grids."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Soil_Moisture/AMSRE_STDMO.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MYD14CM1 v005 - The gridded MODIS active fire products present statistical summaries of fire pixel information (Giglio et al., 2003). The global monthly products are generated at 1x1 degree spatial resolution for time period of one calendar month."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Fire/MYD14CM1.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MYD11CM1D v005 - The dataset contains global monthly day-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Aqua MYD11C3 Collection 005 product (MODIS/Aqua Monthly mean land surface temperature at 0.05 degree spatial resolution)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Land_Surface_Temperature/MYD11CM1D.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MYD11CM1N v005 - The dataset contains global monthly night-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Aqua MYD11C3 Collection 005 product (MODIS/Aqua Monthly mean land surface temperature at 0.05 degree spatial resolution)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Land_Surface_Temperature/MYD11CM1N.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MYDVI v005 - The global monthly gridded MODIS vegetation indices product is derived from the standard 0.05 CMG MODIS Aqua Vegetation Indices Monthly product MYD13C2 (Huete et al, 2002) collection-5. The product is generated for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program in supporting researches on the surface processes and climate modeling."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Vegetation_Indices/MYDVI.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MOD11CM1D v005 - The dataset contains global monthly day-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Terra MOD11C3 Collection 005 product (MODIS/Terra Monthly mean land surface temperature at 0.05 degree spatial resolution)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Land_Surface_Temperature/MOD11CM1D.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MOD11CM1N v005 - The dataset contains global monthly night-time land surface temperature averaged within 1 by 1 degree grid cells. The source for the data is MODIS/Terra MOD11C3 Collection 005 product (MODIS/Terra Monthly mean land surface temperature at 0.05 degree spatial resolution)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Land_Surface_Temperature/MOD11CM1N.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "MODVI v005 - The global monthly gridded MODIS vegetation indices product is derived from the standard 0.05 CMG MODIS Terra Vegetation Indices Monthly product MOD13C2 (Huete et al, 2002) collection-5. The product is generated for Northern Eurasia Earth Science Partnership Initiative (NEESPI) program in supporting researches on the surface processes and climate modeling."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Vegetation_Indices/MODVI.005
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NHICEM v001 - This product is monthly Ice Cover Statistics. The dataset was prepared by Dr."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Snow_Ice/NHICEM.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "NHSNOWM v001 - This product is Snow Cover Statistics. The dataset was prepared by Dr."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/Snow_Ice/NHSNOWM.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

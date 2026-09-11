@@ -1,0 +1,39 @@
+Name: NASA ASCENDS Airborne Project
+Description: |
+  This dataset provides in situ airborne measurements of atmospheric carbon dioxide (CO2) over California and Nevada on February 10-11, 2016. Measurements were taken onboard a DC-8 aircraft during this Active Sensing of CO2 Emissions over Nights, Days and Seasons (ASCENDS) airborne deployment. CO2 was measured with NASA's Atmospheric Vertical Observations of CO2 in the Earth's Troposphere (AVOCET) instrument while over California and Nevada. The objective of this deployment was to assess the performance of the 2016 version of the CO2 Sounder LiDAR. The two flights were flown to compare results from an experimental LiDAR sensor with the AVOCET instrument. Aircraft navigation and flight meteorological data are also provided. The data are provided in ICARTT and comma-separated values (CSV) formats.
+  <br>
+
+  #### ASCENDS_LAS_IN_Sept_2014_2116
+  This dataset provides in situ airborne measurements of atmospheric carbon dioxide (CO2) over Indianapolis, Indiana (IN) on September 3, 2014 during the morning commuter period with heavy traffic emissions. Stationary source emissions are also included. The observed CO2 plume downwind of the urban area, along with the prevailing wind speed and direction, enabled estimations of emission rates. CO2 was measured with an airborne CO2 Laser Absorption Spectrometer (JPL CO2LAS) developed at NASA's Jet Propulsion Laboratory (JPL) to demonstrate the airborne Integrated Path Differential-Absorption (IPDA) lidar technique as a stepping stone to a capability for global measurements of CO2 concentrations from space. The CO2LAS measures the weighted, column averaged carbon dioxide between the aircraft and the ground using a continuous-wave heterodyne technique. The instrument operates at a 2.05 micron wavelength optimized for enhancing sensitivity to boundary layer carbon dioxide. Measurements were taken onboard a DC-8 aircraft during this Active Sensing of CO2 Emissions over Nights, Days and Seasons (ASCENDS) airborne deployment. The data are provided in HDF-5 format.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+- hdf
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ASCENDS_AVOCET_CA_NV_Feb_2016_2115 v1 - This dataset provides in situ airborne measurements of atmospheric carbon dioxide (CO2) over California and Nevada on February 10-11, 2016. Measurements were taken onboard a DC-8 aircraft during this Active Sensing of CO2 Emissions over Nights, Days and Seasons (ASCENDS) airborne deployment."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/ascends/ASCENDS_AVOCET_CA_NV_Feb_2016/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ASCENDS_LAS_IN_Sept_2014_2116 v1 - This dataset provides in situ airborne measurements of atmospheric carbon dioxide (CO2) over Indianapolis, Indiana (IN) on September 3, 2014 during the morning commuter period with heavy traffic emissions. Stationary source emissions are also included."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/ascends/ASCENDS_LAS_IN_Sept_2014/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
