@@ -1,0 +1,62 @@
+Name: TESSERA (Temporal Embeddings of Surface Spectra for Earth Representation and Analysis)
+Description: | 
+  TESSERA is a global geospatial foundation model that turns the European Space Agency's raw Sentinel‑1 (SAR) + Sentinel‑2 (optical) time series into compact, gap-free, 128‑dimensional, 10‑meter embeddings, producing an annual “representation map” for every 10m land pixel worldwide from 2017–2024 (rolling forward each new year) enabling detailed analysis of land cover dynamics, vegetation health, and environmental monitoring over time.
+
+  Each 10m pixel encodes a full year’s spectral‑temporal behavior across the two major sensor modalities (optical + radar), enabling downstream tasks (carbon quantification, land cover, canopy height, change detection, hazards, habitat mapping, biodiversity) to start from a compact annual descriptor instead of petabytes of raw scenes. This collapses costs and latency for analysts and builders while enhancing accuracy and enabling indexing.
+Documentation: |
+  [TESSERA Documentation](https://github.com/ucam-eo/tessera)
+  How to use the TESSERA dataset, model details, and example applications. https://geotessera.readthedocs.io/en/latest/index.html
+Contact: 
+  Questions about the data can be raised as an issue at https://github.com/ucam-eo/geotessera/issues
+ManagedBy: |
+  "[Energy and Environment Group, Department of Computer Science and Technology, University of Cambridge](https://www.cst.cam.ac.uk/research/eeg)"
+  "[dClimate](https://dclimate.net/)"
+UpdateFrequency: Annually (as new Sentinel data becomes available)
+Tags:
+  - agriculture
+  - climate
+  - climate model
+  - earth observation
+  - environmental
+  - geospatial
+  - land cover
+  - land use
+  - satellite imagery
+License: CC‑BY‑SA
+Citation: https://arxiv.org/abs/2506.20380
+Resources:
+  - Description:
+    ARN:
+    Region:
+    Type:
+    Explore:
+DataAtWork:
+  Tutorials:
+    - Title: "Get to Know a Dataset: Tessera"
+      URL: https://github.com/ucam-eo/geotessera-aws-open-data/tree/main
+      NotebookURL: https://github.com/ucam-eo/geotessera-aws-open-data/blob/main/get-to-know-geotessera.ipynb
+      AuthorName: "Frank Feng, Anil Madhavapeddy"
+      AuthorURL: https://github.com/ucam-eo
+    - Title: Basic Data Analysis, Point Sampling Workflow, GIS Integration Workflow, Coverage Analysis with Boundary Visualization, Custom Analysis Workflows, Cloud-Native Analysis with Zarr
+      URL: https://geotessera.readthedocs.io/en/latest/tutorials.html
+      AuthorName: Cambridge Centre for Earth Observation
+      AuthorURL: https://github.com/ucam-eo
+  Tools & Applications:
+    - Title: GeoTessera Python Package
+      URL: https://github.com/ucam-eo/geotessera
+      AuthorName: Cambridge Centre for Earth Observation
+      AuthorURL: https://github.com/ucam-eo
+    - Title: Interactive Tessera Embedding Classifier
+      URL: https://github.com/ucam-eo/tessera-interactive-map
+      AuthorName: Cambridge Centre for Earth Observation
+      AuthorURL: https://github.com/ucam-eo
+    - Title: Solar Panel Detection with GeoTessera
+      URL: https://github.com/ucam-eo/geotessera-examples
+      AuthorName: Cambridge Centre for Earth Observation
+      AuthorURL: https://github.com/ucam-eo
+  Publications:
+    - Title: TESSERA Temporal Embeddings of Surface Spectra for Earth Representation and Analysis
+      URL: https://arxiv.org/abs/2506.20380
+      AuthorName: Zhengpeng F.(Cambridge), Atzberger C.(dClimate), Jaffer S.(Cambridge), Knezevic J.(Cambridge), Sormunen S.(Aalto Uni), Young R.(Cambridge), et al
+ADXCategories:   
+  - Environmental Data
