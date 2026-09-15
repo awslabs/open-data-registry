@@ -1,16 +1,18 @@
 Name: Kardashev Open U.S. Grid Dataset
 Description: |
   Harmonized, cloud-optimized U.S. power grid data derived from public ISO, RTO, and federal
-  sources. Kardashev Labs normalizes interconnection queues, ERCOT GIS filing history,
-  ERCOT large-load queue observations, locational marginal prices, fuel mix, grid demand,
-  renewable curtailment, carbon intensity, and related reference tables into Parquet with
-  documented schemas and source provenance.
+  sources. Kardashev Labs normalizes selected public filings into Parquet with documented
+  schemas and source provenance.
 
-  The dataset is designed for researchers, journalists, and energy analysts who need
-  machine-readable history across U.S. electricity markets without building their own
-  ingest pipelines. Kardashev-produced schemas, metadata, and derived tables are openly
-  licensed. Upstream source terms are documented per dataset; bulk republication of
-  restricted third-party feeds is excluded from the open release.
+  v1 open S3 release scope: ERCOT interconnection GIS film, ERCOT large-load queue
+  observations, derived ERCOT timeline aggregates, and EIA-based fuel-mix / reference tables.
+  Additional ISO layers (LMP, curtailment, carbon intensity, multi-ISO queues) may appear in
+  later releases where redistribution rights are clear, and remain available via the companion
+  live API in the meantime.
+
+  Not included in the open S3 release: bulk republication of ISO datasets whose public terms
+  restrict redistribution. Kardashev-produced schemas, metadata, and derived tables are openly
+  licensed. Upstream source terms are documented per dataset.
 
   Live API and tools: https://data.kardashevlabs.org
 Documentation: https://github.com/kardashev-lab/kardashev-data/blob/main/docs/open-data-dataset.md
