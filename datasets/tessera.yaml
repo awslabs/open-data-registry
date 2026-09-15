@@ -6,6 +6,7 @@ Description: |
 Documentation: |
   [TESSERA Documentation](https://github.com/ucam-eo/tessera)
   How to use the TESSERA dataset, model details, and example applications. https://geotessera.readthedocs.io/en/latest/index.html
+  How to generate the embeddings using AWS data https://github.com/dClimate/tessera-embeddings
 Contact: 
   Questions about the data can be raised as an issue at https://github.com/ucam-eo/geotessera/issues
 ManagedBy: |
@@ -25,11 +26,12 @@ Tags:
 License: CC‑BY‑SA
 Citation: https://arxiv.org/abs/2506.20380
 Resources:
-  - Description:
-    ARN:
-    Region:
-    Type:
-    Explore:
+  - Description: TESSERA v1.1 Embeddings 
+    ARN: arn:aws:s3:::tessera-embeddings/v1.1/dclimate.icechunk
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore: '[Browse Zarr](https://tessera-embeddings.s3.us-west-2.amazonaws.com/v1.1/dclimate.icechunk/)'
 DataAtWork:
   Tutorials:
     - Title: "Get to Know a Dataset: Tessera"
