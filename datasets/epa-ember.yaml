@@ -13,6 +13,8 @@ Description: >-
 Documentation: >-
   Dataset Description for 2023:
   https://www.sciencedirect.com/science/article/pii/S2352340924011703
+  Dataset Description for 2021, 2022, 2024, 2025:
+  https://www.epa.gov/system/files/documents/2026-06/development-of-the-expedited-modeling-of-burn-events-results-ember-datasets-for-2021-2022-2024-and-2025.pdf
 Contact: Simon.Heather@epa.gov
 ManagedBy: "[U.S. Environmental Protection Agency](https://www.epa.gov)"
 UpdateFrequency: As needed
@@ -133,11 +135,12 @@ Resources:
       - `O3_MDA8` — maximum daily 8-hour ozone concentrations
       - `ATOTIJ_AVG` — 24-hour average total PM2.5 concentrations
 
-      Additionally, integrated column data is provided for the base and zero fires simulations from each year for a subset of species: NO2, CO, tropospheric ozone and formaldehyde. Aerosol Optical Depth (AOD) at 550 nm is provided for 2024 and 2025 simulations only. Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI) and are found in the directory structure given below:
+      Additionally, integrated column data is provided for the base and zero fires simulations from each year for a subset of species: NO2, CO, tropospheric ozone and formaldehyde. Aerosol Optical Depth (AOD) at 550 nm is provided for 2024 and 2025 simulations only. Column integrals include all CMAQ model layers that encompass pressures levels less than 200 hPa. Layers with mid-level pressures less than 200 hPa are excluded because they most likely include the stratosphere, which is not the target of EMBER and was treated differently in 2025 than other years. Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI) and are found in the directory structure given below:
 
       $YYYY/CMAQ/outputs/columndata/
-          -basecase/CCTM_EMBER_basecase_COLUMN_36US3_$YYYY$MM$DD.nc
-          -zerofires/CCTM_EMBER_ZeroFires_COLUMN_36US3__$YYYY$MM$DD.nc
+
+          - `basecase/CCTM_EMBER_basecase_COLUMN_36US3_$YYYY$MM$DD.nc
+          - `zerofires/CCTM_EMBER_ZeroFires_COLUMN_36US3__$YYYY$MM$DD.nc
     ARN: arn:aws:s3:::epa-ember
     Region: us-east-1
     Type: S3 Bucket
