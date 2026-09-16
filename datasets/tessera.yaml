@@ -1,10 +1,9 @@
 Name: TESSERA (Temporal Embeddings of Surface Spectra for Earth Representation and Analysis)
 Description: | 
-  TESSERA is a global geospatial foundation model that turns the European Space Agency's raw Sentinel‑1 (SAR) + Sentinel‑2 (optical) time series into compact, gap-free, 128‑dimensional, 10‑meter embeddings, producing an annual “representation map” for every 10m land pixel worldwide from 2017–2024 (rolling forward each new year) enabling detailed analysis of land cover dynamics, vegetation health, and environmental monitoring over time.
-
-  Each 10m pixel encodes a full year’s spectral‑temporal behavior across the two major sensor modalities (optical + radar), enabling downstream tasks (carbon quantification, land cover, canopy height, change detection, hazards, habitat mapping, biodiversity) to start from a compact annual descriptor instead of petabytes of raw scenes. This collapses costs and latency for analysts and builders while enhancing accuracy and enabling indexing.
+  TESSERA is a global geospatial foundation model that turns the European Space Agency's raw Sentinel‑1 (SAR) + Sentinel‑2 (optical) time series into compact, gap-free, 128‑dimensional, 10‑meter embeddings, producing an annual “representation map” for every 10m land pixel worldwide from 2017–2025 (rolling forward each new year) enabling detailed analysis of land cover dynamics, vegetation health, and environmental monitoring over time. Each 10m pixel encodes a full year’s spectral‑temporal behavior across the two major sensor modalities (optical + radar), enabling downstream tasks (carbon quantification, land cover, canopy height, change detection, hazards, habitat mapping, biodiversity) to start from a compact annual descriptor instead of petabytes of raw scenes. This collapses costs and latency for analysts and builders while enhancing accuracy and enabling indexing.
 Documentation: |
   [TESSERA Documentation](https://github.com/ucam-eo/tessera)
+  How to use the embeddings https://github.com/dClimate/tessera-embeddings/blob/main/docs/global-store.md
   How to use the TESSERA dataset, model details, and example applications. https://geotessera.readthedocs.io/en/latest/index.html
   How to generate the embeddings using AWS data https://github.com/dClimate/tessera-embeddings
 Contact: 
@@ -33,7 +32,7 @@ Resources:
     Type: S3 Bucket
     RequesterPays: false
     Explore: 
-    - '[Browse Zarr](https://tessera-embeddings.s3.us-west-2.amazonaws.com/v1.1/dclimate.icechunk/)'
+    - '[Browse Icechunk Zarr](https://tessera-embeddings.s3.us-west-2.amazonaws.com/index.html)'
 DataAtWork:
   Tutorials:
     - Title: "Get to Know a Dataset: Tessera"
