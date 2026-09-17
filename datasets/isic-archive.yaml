@@ -1,0 +1,61 @@
+Name: International Skin Imaging Collaboration (ISIC) Archive
+Description: A public-access archive of skin lesion images, supporting teaching, research, and the development and evaluation of diagnostic algorithms.
+Documentation: https://www.isic-archive.com/
+Contact: support@isic-archive.com
+ManagedBy: International Skin Imaging Collaboration (ISIC)
+UpdateFrequency: Upon new data ingest from contributors.
+Tags:
+  - biology
+  - cancer
+  - classification
+  - computational pathology
+  - dicom
+  - grand-challenge.org
+  - health
+  - Homo sapiens
+  - imaging
+  - life sciences
+  - machine learning
+  - medical image computing
+  - medical imaging
+  - medicine
+  - microscopy
+  - segmentation
+License: Creative Commons licenses (CC-0, CC-BY, or CC-BY-NC) are defined per-image.
+Resources:
+  - Description: Images of skin lesions and associated metadata
+    ARN: arn:aws:s3:::isic-archive
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications of new data
+    ARN: arn:aws:sns:us-east-1:024848456264:isic-archive-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: ISIC Archive Data Dictionary
+      URL: https://www.isic-archive.com/data-dictionary
+      NotebookURL:
+      AuthorName: International Skin Imaging Collaboration (ISIC)
+  Tools & Applications:
+    - Title: ISIC Archive Gallery
+      URL: https://gallery.isic-archive.com
+      AuthorName: International Skin Imaging Collaboration (ISIC)
+    - Title: isic-cli - The official command line tool for interacting with the ISIC Archive
+      URL: https://pypi.org/project/isic-cli
+      AuthorName: International Skin Imaging Collaboration (ISIC)
+  Publications:
+    - Title: "A patient-centric dataset of images and metadata for identifying melanomas using clinical context"
+      URL: https://doi.org/10.1038/s41597-021-00815-z
+      AuthorName: Rotemberg V, Kurtansky N, Betz-Stablein B, Caffery L, Chousakos E, Codella N, et al
+    - Title: "The SLICE-3D dataset: 400,000 skin lesion image crops extracted from 3D TBP for skin cancer detection"
+      URL: https://doi.org/10.1038/s41597-024-03743-w
+      AuthorName: Kurtansky N, D'Alessandro B, Gillis M, Betz-Stablein B, Cerminara S, Garcia R, et al
+    - Title: "International Skin Imaging Collaboration - Designated Diagnoses (ISIC-DX): Consensus terminology for lesion diagnostic labeling"
+      URL: https://doi.org/10.1111/jdv.20055
+      AuthorName: Scope A, Liopyris K, Weber J, Barnhill R, Braun R, Curiel-Lewandrowski C, et al
+    - Title: "Human surface anatomy terminology for dermatology: a Delphi consensus from the International Skin Imaging Collaboration"
+      URL: https://doi.org/10.1111/jdv.16855
+      AuthorName: Navarrete-Dechent C, Liopyris K, Molenda M, Braun R, Curiel-Lewandrowski C, Dusza S, et al
+ADXCategories:
+  - Healthcare & Life Sciences Data

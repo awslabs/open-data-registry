@@ -22,18 +22,34 @@ License: NOAA data disseminated through NODD are open to the public and can be u
   <br/>
   NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
 Resources:
-  - Description: NOAA Coastal Lidar Dataset
+  - Description: NOAA Coastal Lidar Dataset Entwine Point Tiles
     ARN: arn:aws:s3:::noaa-nos-coastal-lidar-pds
     Region: us-east-1
     Type: S3 Bucket
     Explore: 
       - '[STAC V1.0.0 endpoint](https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/entwine/stac/catalog.json)'
+  - Description: NOAA Coastal Lidar Dataset Cloud Optimized Point Cloud (COPC)
+    ARN: arn:aws:s3:::noaa-nos-coastal-lidar-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+      - '[STAC V1.0.0 endpoint](https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/laz/stac/catalog.json)'
+  - Description: NOAA Coastal Lidar Dataset Raster DEMs
+    ARN: arn:aws:s3:::noaa-nos-coastal-lidar-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore: 
+      - '[STAC V1.0.0 endpoint](https://noaa-nos-coastal-lidar-pds.s3.us-east-1.amazonaws.com/dem/stac/catalog.json)'
   - Description: NOAA Coastal Lidar Dataset New Dataset Notification
     ARN: arn:aws:sns:us-east-1:709902155096:NewCoastalLidarObject
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
   Tools & Applications:
+    - Title: NOAA Digital Coast Data Access Viewer Custom Processing
+      URL: https://coast.noaa.gov/dataviewer
+      AuthorName: NOAA Office for Coastal Management
+      AuthorURL: https://coast.noaa.gov/
     - Title: OpenTopography access and processing of NOAA Coastal Lidar Data
       URL: https://portal.opentopography.org/datasets
       AuthorName: OpenTopography

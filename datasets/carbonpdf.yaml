@@ -1,0 +1,28 @@
+Name: CarbonPDF
+Description: A carbon question-answering (QA) dataset specifically designed to facilitate the extraction and analysis of data from real-world carbon reports of computing products. The dataset features annotated metadata, a variety of numerical reasoning tasks, and structured derivations to ensure accurate processing of fragmented and inconsistent information.
+Documentation: https://github.com/pittcps/carbonpdf-dataset
+Contact: kaz81@pitt.edu
+ManagedBy: Pittcps lab
+UpdateFrequency: Data for a new company is added once collected.
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - environmental
+  - product comparison
+  - csv
+  - information retrieval
+  - industry
+License:  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Resources:
+  - Description: A component-level product carbon footprint dataset and a corresponding question-answering dataset based on it
+    ARN: arn:aws:s3:::carbonpdf
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Explore](https://github.com/pittcps/carbonpdf-dataset)'
+ADXCategories:
+  - Environmental Data
+  - Manufacturing Data

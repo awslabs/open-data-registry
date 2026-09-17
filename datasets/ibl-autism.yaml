@@ -1,0 +1,41 @@
+Name: IBL Neuropixels Brainwide Map on AWS
+Description: Electrophysiological recordings of mouse brain activity acquired during a decision making task in multiple autism mice models.
+Documentation: https://docs.internationalbrainlab.org/notebooks_external/2025_data_release_autism_noel.html
+Contact: info@internationalbrainlab.org
+ManagedBy: "[International Brain Laboratory](https://www.internationalbrainlab.com)"
+UpdateFrequency: TBD
+Tags:
+  - aws-pds
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - open source software
+  - Mus musculus
+  - autism spectrum disorder
+License: CC-BY 4.0
+Resources:
+  - Description: Project data in public bucket
+    ARN: arn:aws:s3:::ibl-brain-wide-map-public
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Intermediate Datasets and Analysis Code
+      URL: https://osf.io/fap2s/ and https://osf.io/fap2s/wiki/home/
+      AuthorName: Noel et al.
+    - Title: Download the public data via ONE
+      URL: https://docs.internationalbrainlab.org/notebooks_external/data_download.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Find data associated with a release or publication
+      URL: https://docs.internationalbrainlab.org/notebooks_external/data_download.html#Find-data-associated-with-a-release-or-publication
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL: https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+    - Title: Loading Data
+      URL: https://docs.internationalbrainlab.org/loading_examples.html
+      AuthorName: IBL Data Architecture Working Group
+      AuthorURL:  https://github.com/orgs/int-brain-lab/teams/data-architecture-wg/members
+  Publications:
+    - Title: A common computational and neural anomaly across mouse models of autism
+      URL: https://doi.org/10.1038/s41593-025-01965-8
+      AuthorName: Noel et al.

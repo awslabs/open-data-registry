@@ -1,0 +1,63 @@
+Name: Data to Science Catalog
+Description: >
+  A user-generated geospatial data collection maintained by the Data to Science 
+  platform. Contributions vary by project, but typically include cloud-optimized 
+  datasets such as Cloud-Optimized GeoTIFFs (COGs) and Cloud-Optimized Point 
+  Clouds (COPCs), designed for efficient streaming, visualization, and analysis 
+  in modern geospatial applications.
+Documentation: https://docs.gdsl.org/data-to-science-user-manual/
+Contact: jinha@purdue.edu
+ManagedBy: Geospatial Data Science Lab at Purdue University
+UpdateFrequency: None
+Tags:
+  - aws-pds
+  - aerial imagery
+  - agriculture
+  - cog
+  - dsm
+  - dtm
+  - earth observation
+  - geospatial
+  - high-throughput imaging
+  - image processing
+  - lidar
+  - mapping
+  - stac
+  - tiff
+License: CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+Citation:
+Resources:
+  - Description: Storage for Data to Science open datasets
+    ARN: arn:aws:s3:::data-to-science-opendata-bucket
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Notifications for new Data to Science data
+    ARN: arn:aws:sns:us-east-2:244573782505:data-to-science-opendata-bucket-object_created
+    Region: us-east-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Data to Science User Manual
+      URL: https://docs.gdsl.org/data-to-science-user-manual/
+      NotebookURL:
+      AuthorName: GDSL
+      AuthorURL: https://gdsl.org
+      Services:
+    - Title: Data to Science Notebook Tutorials
+      URL: https://py.d2s.org/guides/
+      NotebookURL:
+      AuthorName: GDSL
+      AuthorURL: https://gdsl.org
+      Services:
+  Tools & Applications:
+    - Title: Data to Science Web Application
+      URL: https://aws.d2s.org
+      AuthorName: GDSL
+      AuthorURL: https://gdsl.org
+    - Title: D2S Browser
+      URL: https://plugins.qgis.org/plugins/d2s_browser/
+      AuthorName: GDSL
+      AuthorURL: https://gdsl.org
+  Publications:
+DeprecatedNotice:
+ADXCategories:

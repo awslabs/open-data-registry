@@ -1,0 +1,29 @@
+Name: NASA Saildrone Baja Project
+Description: |
+  Saildrone is a wind and solar powered unmanned surface vehicle (USV) capable of long distance deployments lasting up to 12 months and providing high quality, near real-time, multivariate surface ocean and atmospheric observations while transiting at typical speeds of 3-5 knots. The drone is autonomous in that it may be guided remotely from land while being completely wind driven. The saildrone Baja campaign was a 60-day cruise from San Francisco Bay, down along the US/Mexico coast to Guadalupe Island and back again over the period 11 April 2018 to 11 June 2018. Repeat surveys were taken around NDBC moored buoys, and during the final week of the cruise a targeted front was sampled. Scientific objectives included studies of upwelling and frontal region dynamics, air-sea interactions, and diurnal warming effects, while its validation objectives included establishing the utility of data from the saildrone platform for assessment of satellite data accuracy and model assimilation. During the Baja campaign, the single deployed saildrone was equipped with a suite of instruments that included a CTD, IR pyrometer, fluorometer, dissolved oxygen sensor, anemometer, barometer, and Acoustic Doppler Current Profiler (ADCP). Additionally, four temperature data loggers were positioned vertically along hull to provide further information on thermal variability near the ocean surface. This Saildrone Baja dataset is comprised of one data file with the saildrone platform telemetry and near-surface observational data (air temperature, sea surface skin and bulk temperatures, salinity, oxygen and chlorophyll-a concentrations, barometric pressure, wind speed and direction) for the entire cruise at 1 minute temporal resolution. A second file contains the ADCP current vector data that is depth-resolved to 100m at 2m intervals and binned temporally at 5 minute resolution. All data files are in netCDF format and CF/ACDD compliant consistent with the NOAA/NCEI specification.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- netcdf
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SAILDRONE_BAJA_SURFACE v1.0 - Saildrone is a wind and solar powered unmanned surface vehicle (USV) capable of long distance deployments lasting up to 12 months and providing high quality, near real-time, multivariate surface ocean and atmospheric observations while transiting at typical speeds of 3-5 knots. The drone is autonomous in that it may be guided remotely from land while being completely wind driven."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SAILDRONE_BAJA_SURFACE
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

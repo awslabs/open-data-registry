@@ -1,0 +1,27 @@
+Name: NASA OCO Project
+Description: |
+  Version 9r is the current version of the data set. Older versions will no longer be available and are superseded by Version 9r. The ACOS Lite files contain bias-corrected XCO2 along with other select fields aggregated as daily files. Orbital granules of the ACOS Level 2 standard product (ACOS_L2S) are used as input. The "ACOS" data set contains Carbon Dioxide (CO2) column averaged dry air mole fraction for all soundings for which retrieval was attempted. These are the highest-level products made available by the OCO Project, using TANSO-FTS spectral radiances. The GOSAT team at JAXA produces GOSAT TANSO-FTS Level 1B (L1B) data products for internal use and for distribution to collaborative partners, such as ESA and NASA. These calibrated products are augmented by the OCO Project with additional geolocation information and further corrections. Thus produced Level 1B products (with calibrated radiances and geolocation) are the input to the "ACOS" Level 2 production process.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://disc.gsfc.nasa.gov/datacollection/ACOS_L2_Lite_FP_9r.html
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ACOS_L2_Lite_FP v9r - Version 9r is the current version of the data set. Older versions will no longer be available and are superseded by Version 9r."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GOSAT_TANSO_Level2/ACOS_L2_Lite_FP.9r
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

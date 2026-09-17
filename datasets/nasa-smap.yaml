@@ -1,0 +1,150 @@
+Name: NASA smap Project
+Description: |
+  This data set contains data obtained by the Passive Active L- and S-band (PALS) microwave aircraft instrument that are matched up with a variety of soil moisture campaign data. The data were collected as part of four different campaigns: Southern Great Plains 1999 (SGP99), Cloud and Land Surface Interaction Campaign 2007 (CLASIC07), Soil Moisture Experiment 2002 (SMEX02), and the SMAP Validation Experiment 2008 (SMAPVEX08).
+  <br>
+
+  #### SPL1CTB_E
+  This enhanced Level-1C (L1C) product contains calibrated and geolocated brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. This product is derived from SMAP Level-1B (L1B) interpolated antenna temperatures. Backus-Gilbert optimal interpolation techniques are used to extract enhanced information from SMAP antenna temperatures before they are converted to brightness temperatures. The resulting brightness temperatures are posted to an Earth-fixed, 9 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0) in three projections: global cylindrical, Northern Hemisphere azimuthal, and Southern Hemisphere azimuthal.
+  <br>
+
+  #### SPL2SMP_E
+  This enhanced Level-2 (L2) product contains calibrated, geolocated, brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. This product is derived from SMAP Level-1B (L1B) interpolated antenna temperatures. Backus-Gilbert optimal interpolation techniques are used to extract maximum information from SMAP antenna temperatures and convert them to brightness temperatures, which are posted to the 9 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0) in a global cylindrical projection [available as the SPl1CTB_E product]. As of 2021, the data are also posted to the Northern Hemisphere EASE-Grid 2.0, an azimuthal equal-area projection. These 9-km brightness temperatures are then used to retrieve surface soil moisture posted on the 9-km grid [this SPL2SMP_E product].
+  <br>
+
+  #### SPL3FTP_E
+  This enhanced Level-3 (L3) product provides a daily composite of global and Northern Hemisphere landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radiometer from 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. This product is derived from SMAP enhanced Level-1C brightness temperatures (SPL1CTB_E). Backus-Gilbert optimal interpolation techniques are used to extract maximum information from SMAP antenna temperatures and convert them to brightness temperatures. The data are then posted to two 9 km Earth-fixed, Equal-Area Scalable Earth Grids, Version 2.0 (EASE-Grid 2.0): a global cylindrical and a Northern Hemisphere azimuthal.
+  <br>
+
+  #### SPL1CTB
+  This Level-1C (L1C) product contains calibrated and geolocated brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. This product is derived from SMAP L-band Level-1B time-ordered brightness temperatures resampled to an Earth-fixed, 36 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0) in three projections: global cylindrical, Northern Hemisphere azimuthal, and Southern Hemisphere azimuthal. This L1C product is a gridded version of the SMAP time-ordered Level-1B radiometer brightness temperature product.
+  <br>
+
+  #### SPL3FTA
+  This Level-3 (L3) product provides a daily composite of Northern Hemisphere landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radar from 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. SMAP L-band backscatter data are used to derive freeze/thaw data, which are then resampled to an Earth-fixed, Northern Hemisphere azimuthal 3 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0).
+  <br>
+
+  #### SPL3SMAP
+  This Level-3 (L3) soil moisture product provides a daily composite of global land surface conditions retrieved by both the Soil Moisture Active Passive (SMAP) radar and radiometer. SMAP L-band soil moisture data are resampled to an Earth-fixed, global, cylindrical 9 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0).
+  <br>
+
+  #### SPL3FTP
+  This Level-3 (L3) product provides a daily composite of landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radiometer from 6:00 a.m. descending and 6:00 p.m. ascending half-orbit passes. SMAP L-band brightness temperatures are used to derive freeze/thaw state and transition data, which are then resampled to both an Earth-fixed, Northern Hemisphere azimuthal 36 km Equal-Area Scalable Earth Grid (EASE-Grid 2.0), and to an Earth-fixed global 36 km EASE-Grid 2.0.
+  <br>
+
+  #### NSIDC-0774
+  This data set contains twice-daily synthetic aperture radar (SAR) and enhanced-resolution scatterometer radar backscatter derived from SMAP radar data. Data are available on the Northern Hemisphere, Southern Hemisphere, Temperate, and Mid-Latitude (sub-set of Global) EASE-Grid 2.0 projections and as either 25 km or 3.125 km resolution grids. This new product uses the drop-in-the bucket gridding (GRD) algorithm and Scatterometer Image Reconstruction (SIR) algorithm to process the individual swath-based data from the input data sets into twice-daily images, producing SAR images (high-resolution), slice and footprint images (both lower-resolution), respectively. Note, that as a companion product, the radiometer form of the SIR algorithm (rSIR) was used to derive brightness temperatures from SMAP radiometer data for the <i>SMAP Radiometer Twice-Daily rSIR-Enhanced EASE-Grid 2.0 Brightness Temperatures, Version 2</i>, data set (<a href="https://nsidc.org/data/nsidc-0738">NSIDC-0738</a>).
+  <br>
+
+  #### SV12PLSM
+  This data set contains soil moisture data obtained by the Passive Active L-band System (PALS) aircraft instrument. The data were collected as part of SMAPVEX12, the Soil Moisture Active Passive Validation Experiment 2012.
+  <br>
+
+  #### SV19MA_VOD
+  As part of the SMAPVEX19-22 campaign, an L-band radiometer was deployed on top of a tower at Harvard Forest,Massachusetts, looking down at a stand of red oak forest. The radiometer collected data in V-polarization from late April to mid October 2019. Over 4 days in early July 2019, the water potential and L-band complex dielectric constant of canopy leaves were measured at various times of day. Other instruments were installed within the radiometer's field of view to measure soil moisture and temperature, air temperature, tree xylem apparent dielectric permittivity at 70 MHz, tree xylem water potential, and canopy wetness. The goal of this experiment was to study the sensitivity of L-band vegetation optical depth (VOD) to changing vegetation water potential over a growing season.
+  <br>
+
+  #### SMAP_L4_C_ANC_PARAM
+  This ancillary SMAP product contains assorted static ancillary parameters, such as reference grids and land cover classifications, also referred to as Plant Function Type (PFT) maps.
+  <br>
+
+  #### SMAP_L4_SM_ANC_CLIM
+  This ancillary SMAP product contains a static soil moisture climatology data set. Specifically, this data set includes root zone and profile soil moisture climatology files for percentile conversion and post-processing of Land Data Assimilation Systems (LDAS) output.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/nsidc-0666/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- land cover
+- radar
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NSIDC-0666 v1 - This data set contains data obtained by the Passive Active L- and S-band (PALS) microwave aircraft instrument that are matched up with a variety of soil moisture campaign data. The data were collected as part of four different campaigns: Southern Great Plains 1999 (SGP99), Cloud and Land Surface Interaction Campaign 2007 (CLASIC07), Soil Moisture Experiment 2002 (SMEX02), and the SMAP Validation Experiment 2008 (SMAPVEX08)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/NSIDC-0666/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL1CTB_E v004 - This enhanced Level-1C (L1C) product contains calibrated and geolocated brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL1CTB_E/004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL2SMP_E v006 - This enhanced Level-2 (L2) product contains calibrated, geolocated, brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL2SMP_E/006
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL3FTP_E v004 - This enhanced Level-3 (L3) product provides a daily composite of global and Northern Hemisphere landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radiometer from 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL3FTP_E/004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL1CTB v006 - This Level-1C (L1C) product contains calibrated and geolocated brightness temperatures acquired by the Soil Moisture Active Passive (SMAP) radiometer during 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL1CTB/006
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL3FTA v003 - This Level-3 (L3) product provides a daily composite of Northern Hemisphere landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radar from 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL3FTA/003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL3SMAP v003 - This Level-3 (L3) soil moisture product provides a daily composite of global land surface conditions retrieved by both the Soil Moisture Active Passive (SMAP) radar and radiometer. SMAP L-band soil moisture data are resampled to an Earth-fixed, global, cylindrical 9 km Equal-Area Scalable Earth Grid, Version 2.0 (EASE-Grid 2.0)."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL3SMAP/003
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SPL3FTP v004 - This Level-3 (L3) product provides a daily composite of landscape freeze/thaw conditions retrieved by the Soil Moisture Active Passive (SMAP) radiometer from 6:00 a.m. descending and 6:00 p.m."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP/SPL3FTP/004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NSIDC-0774 v1 - This data set contains twice-daily synthetic aperture radar (SAR) and enhanced-resolution scatterometer radar backscatter derived from SMAP radar data. Data are available on the Northern Hemisphere, Southern Hemisphere, Temperate, and Mid-Latitude (sub-set of Global) EASE-Grid 2.0 projections and as either 25 km or 3.125 km resolution grids."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-Related/NSIDC-0774/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV12PLSM v1 - This data set contains soil moisture data obtained by the Passive Active L-band System (PALS) aircraft instrument. The data were collected as part of SMAPVEX12, the Soil Moisture Active Passive Validation Experiment 2012."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV12PLSM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV19MA_VOD v1 - As part of the SMAPVEX19-22 campaign, an L-band radiometer was deployed on top of a tower at Harvard Forest,Massachusetts, looking down at a stand of red oak forest. The radiometer collected data in V-polarization from late April to mid October 2019."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV19MA_VOD/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SMAP_L4_C_ANC_PARAM v1 - This ancillary SMAP product contains assorted static ancillary parameters, such as reference grids and land cover classifications, also referred to as Plant Function Type (PFT) maps."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-ANC/SMAP_L4_C_ANC_PARAM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SMAP_L4_SM_ANC_CLIM v1 - This ancillary SMAP product contains a static soil moisture climatology data set. Specifically, this data set includes root zone and profile soil moisture climatology files for percentile conversion and post-processing of Land Data Assimilation Systems (LDAS) output."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-ANC/SMAP_L4_SM_ANC_CLIM/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

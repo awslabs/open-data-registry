@@ -1,0 +1,29 @@
+Name: Reference Indexes for krepp
+Description: krepp is an alignment-free method for estimating distances and phylogenetic placement of individual reads to many thousands of reference genomes in a scalable manner using k-mers. This dataset includes k-mer-based indexes consisting of ultra-large reference genome sets that can be efficiently analyzed using krepp.
+Documentation: https://github.com/bo1929/krepp/wiki/Available-reference-indexes
+Contact: https://github.com/bo1929/krepp/issues
+ManagedBy: Mirarab Lab at UC San Diego
+UpdateFrequency: Quarterly or as new data becomes available
+Tags:
+  - bioinformatics
+  - metagenomics
+  - microbiome
+  - reference index
+  - aws-pds
+  - life sciences
+License: GPL-3.0 license. Use of the data should be cited in the usual way, following https://github.com/bo1929/krepp/tree/master?tab=readme-ov-file#citation.
+Resources:
+  - Description: This dataset contains genomic indexes for various reference datasets in binary format. Using krepp, you can perform distance estimation and phylogenetic placement with respect to these indexes.
+    ARN: arn:aws:s3:::kreppref
+    Region: us-west-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: Tutorial for using krepp indexes for metagenomic sequence analysis.
+      URL: https://github.com/bo1929/krepp/wiki/Tutorial
+      AuthorName: Ali Osman Berk Sapci
+      AuthorURL: https://bo1929.github.io/
+  Publications:
+    - Title: A k-mer-based maximum likelihood method for estimating distances of reads to genomes enables genome-wide phylogenetic placement.
+      URL: https://www.biorxiv.org/content/10.1101/2025.01.20.633730v2
+      AuthorName: Sapci et al. (2024)

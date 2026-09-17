@@ -1,0 +1,30 @@
+Name: NASA 2010_AN_NASA Project
+Description: |
+  This data set contains Level-3 tomographic ice thickness measurements and ice thickness errors over areas of Greenland and Antarctica. Two of the data files additionally provide bed elevation measurements. The data were derived from measurements taken by the Center for Remote Sensing of Ice Sheets (CReSIS) Multichannel Coherent Radar Depth Sounder (MCoRDS) instrument and were collected as part of NASA Operation IceBridge funded campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/irtit3/versions/2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- elevation
+- ice
+- radar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IRTIT3 v2 - This data set contains Level-3 tomographic ice thickness measurements and ice thickness errors over areas of Greenland and Antarctica. Two of the data files additionally provide bed elevation measurements."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRTIT3/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

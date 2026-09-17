@@ -1,0 +1,81 @@
+Name: NASA ACCP Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### plotchem_420
+  The purpose of these measurements was to determine plot-level average leaf concentrations of nitrogen, lignin, cellulose, etc. in order to investigate how AVIRIS reflectance measurements vary with chemistry. The plot-level leaf chemistry values were calculated from green leaf chemistry values and litterfall sample weights.
+  <br>
+
+  #### leafchem_421
+  As part of NASA's Accelerated Canopy Chemistry Program (ACCP) analyses were performed for the determination of carbon constituents and nitrogen content in fresh forest foliage. Samples were analyzed using a series of extraction's that yielded different carbon constituents: non-polar, polar, cellulose and lignin. Nitrogen analyses were conducted using a standard combustion procedure. Approximately 1000 leaf samples were collected from 5 geographically distinct sites and were analyzed at the University of New Hampshire to ensure consistency in analysis. Results were used as a calibration set for Visible/NIR reflectance and the estimation of canopy carbon and nitrogen concentrations.
+  <br>
+
+  #### canopychem_422
+  This data set describes the nitrogen and chlorophyll content of small, monospecific canopies formed from seedlings of Douglas-fir (Pseudotsuga menziesii) and bigleaf maple (Acer macrophyllum). The trees were provided different levels of fertilization in order to produce canopies with varying nitrogen and chlorophyll concentration. For the Douglas-fir, fertilization was provided during the dormant season, so there were no differences in growth or leaf area among canopies, and canopies were at a constant density with varying foliar chemistry. For the maple, seedlings were aggregated at various densities, producing a matrix of leaf area as well as chemistry variations. Before destructive analysis for foliar chemistry, canopy reflectance was measured under natural sunlight (see ACCP Seedling Canopy Reflectance Spectra Data).
+  <br>
+
+  #### canopyspec_423
+  This is a data set of spectral reflectance (400-2500 nm) of small, monospecific canopies formed from seedlings of Douglas-fir (Pseudotsuga menziesii) and bigleaf maple (Acer macrophyllum). The trees were provided different levels of fertilization in order to produce canopies with varying nitrogen and chlorophyll concentration. For the Douglas-fir, fertilization was provided during the dormant season, so there were no differences in growth or leaf area among canopies, and canopies were at a constant density with varying foliar chemistry. For the maple, seedlings were aggregated at various densities, producing a matrix of leaf area as well as chemistry variations. Canopy reflectance was measured under natural sunlight, and canopies were then destructively analyzed for chemical content and leaf area (see ACCP Seedling Canopy Chemistry Data).
+  <br>
+
+  #### plotspec_544
+  AVIRIS image scenes were acquired in 1992 over ACCP sites. Pixels that coincided with field study plots were extracted and reflectance values were correlated with estimated canopy carbon and nitrogen content.
+  <br>
+
+  #### leafspec_424
+  The leaf spectra datasets contain visible and near infrared reflectance spectra data for both fresh and dry leaf samples collected in the ACCP. These samples are from Blackhawk Island, WI, Harvard Forest, MA, Howland, ME, Jasper Ridge, CA field sites and the Douglas fir and bigleaf maple seedling canopy study sites. Data reported for each sample is absorbance [log(1/Reflectance)] from 400-2498nm at 2nm intervals and a resolution of 10nm. These data were collected for the purpose of determining the relationship of foliar chemical concentrations with visible and near infrared wavelength reflectance spectra.. Both multiple linear regression and partial least square regression techniques have been used to relate lab chemistry data to spectral reflectance. ORNL DAAC maintains information on the entire ACCP.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/ACCP/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "plotchem_420 v1 - The purpose of these measurements was to determine plot-level average leaf concentrations of nitrogen, lignin, cellulose, etc. in order to investigate how AVIRIS reflectance measurements vary with chemistry."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/plotchem/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "leafchem_421 v1 - As part of NASA''s Accelerated Canopy Chemistry Program (ACCP) analyses were performed for the determination of carbon constituents and nitrogen content in fresh forest foliage. Samples were analyzed using a series of extraction''s that yielded different carbon constituents: non-polar, polar, cellulose and lignin."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/leafchem/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "canopychem_422 v1 - This data set describes the nitrogen and chlorophyll content of small, monospecific canopies formed from seedlings of Douglas-fir (Pseudotsuga menziesii) and bigleaf maple (Acer macrophyllum). The trees were provided different levels of fertilization in order to produce canopies with varying nitrogen and chlorophyll concentration."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/canopychem/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "canopyspec_423 v1 - This is a data set of spectral reflectance (400-2500 nm) of small, monospecific canopies formed from seedlings of Douglas-fir (Pseudotsuga menziesii) and bigleaf maple (Acer macrophyllum). The trees were provided different levels of fertilization in order to produce canopies with varying nitrogen and chlorophyll concentration."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/canopyspec/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "plotspec_544 v1 - AVIRIS image scenes were acquired in 1992 over ACCP sites. Pixels that coincided with field study plots were extracted and reflectance values were correlated with estimated canopy carbon and nitrogen content."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/plotspec/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "leafspec_424 v1 - The leaf spectra datasets contain visible and near infrared reflectance spectra data for both fresh and dry leaf samples collected in the ACCP. These samples are from Blackhawk Island, WI, Harvard Forest, MA, Howland, ME, Jasper Ridge, CA field sites and the Douglas fir and bigleaf maple seedling canopy study sites."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/accp/leafspec/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

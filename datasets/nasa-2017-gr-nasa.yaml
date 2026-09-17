@@ -1,0 +1,39 @@
+Name: NASA 2017_GR_NASA Project
+Description: |
+  This data set contains gravity measurements taken over Greenland and Antarctica by the Lamont-Doherty Earth Observatory (LDEO) Gravimeter Suite. The data were collected as part of Operation IceBridge funded campaigns.
+  <br>
+
+  #### ILVIS2
+  This data set contains surface elevation data over parts of Greenland, measured by the NASA Land, Vegetation, and Ice Sensor (LVIS), an airborne lidar scanning laser altimeter. The data were collected as part of NASA Operation IceBridge funded campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/iglgs1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IGLGS1B v1 - This data set contains gravity measurements taken over Greenland and Antarctica by the Lamont-Doherty Earth Observatory (LDEO) Gravimeter Suite. The data were collected as part of Operation IceBridge funded campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IGLGS1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILVIS2 v2 - This data set contains surface elevation data over parts of Greenland, measured by the NASA Land, Vegetation, and Ice Sensor (LVIS), an airborne lidar scanning laser altimeter. The data were collected as part of NASA Operation IceBridge funded campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/LVIS/ILVIS2/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

@@ -1,0 +1,195 @@
+Name: NASA ACT-America Project
+Description: |
+  The ACT-America Campaign Catalog provides information about the airborne campaigns of the Atmospheric Carbon and Transport (ACT-America) project. ACT-America advanced atmospheric greenhouse gas inversions to a high level of accuracy and precision through new methods and models that improved knowledge of atmospheric transport, prior flux models, and space-based observations. The catalog compiles flight details for the five campaigns conducted during Summer 2016, Winter 2017, Fall 2017, Spring 2018, and Summer 2019 (2016-05-27 to 2019-07-26) across three regions of the eastern and central United States. Data include flight dates, regions, objectives, weather conditions, instrument status, aircraft flight paths, detailed weather reports, and measurement summary figures. A total of 121 research flights were conducted within the five six-week seasonal campaigns by each of the two instrumented aircraft platforms, the NASA Langley Beechcraft B-200 King Air and the NASA Wallops Flight Facility's C-130 Hercules. During 1,140 flight hours remote and in situ sensors onboard the two research aircraft measured greenhouse gas mole fractions, trace gases, and thermodynamic variables across a variety of continental surfaces and atmospheric conditions to study the transport and fluxes of atmospheric carbon dioxide and methane. As noted in the Flight_patterns_staus field, there were flights when both aircraft flew directly under Orbiting Carbon Observatory-2 (OCO-2) overpasses to evaluate the ability of OCO-2 to observe high-resolution atmospheric CO2 variations. The C-130 aircraft was also equipped with active remote sensing instruments for planetary boundary layer height detection and column greenhouse gas measurements. The data are provided in comma separated values (CSV), compressed Keyhole Markup Language (KMZ) formats along with figures as JPEG and Portable Network Graphics images.
+  <br>
+
+  #### CPL_ABL_Top_Height_1825
+  This dataset consists of the atmospheric boundary layer (ABL) top heights and the altitudes of the two additional aerosol layers (in km above mean sea level) derived from Cloud Physics Lidar (CPL) measurements using the Haar wavelet transform method. The CPL instrument was deployed onboard NASA's C-130 aircraft to obtain aerosol backscatter profiles during four ACT-America field campaigns (Summer 2016, Winter 2017, Fall 2017, and Spring 2018). CPL is a backscatter lidar designed to operate simultaneously at three wavelengths. The profiles were collected at 4-second temporal and 30 m vertical resolutions. The time resolution of the provided CPL-derived ABL top heights and other aerosol layers are 8 seconds.
+  <br>
+
+  #### ACT_CASA_Ensemble_Prior_Fluxes_1675
+  This data set provides gridded, model-derived gross primary productivity (GPP), ecosystem respiration (RECO), and net ecosystem exchange (NEE) of CO2 biogenic fluxes and their uncertainties at monthly and 3-hourly time scales over 2003-2019 on a 463-m spatial resolution grid for the conterminous United States (CONUS) and on both 5-km and half-degree spatial resolution grids for North America (NA). The biogeochemical model Carnegie Ames Stanford Approach (CASA) was used.
+  <br>
+
+  #### HALO_LiDAR_AOP_ML_Heights_1833
+  This dataset provides measurements from the High Altitude Lidar Observatory (HALO) instrument, an airborne multi-function Differential Absorption Lidar (DIAL) and High Spectral Resolution Lidar (HSRL), operating at 532 nm and 1064 nm wavelengths onboard a C-130 aircraft during the June and July 2019 ACT-America campaign. The flights took place over eastern and central North America based from Shreveport, Louisiana; Lincoln, Nebraska; and NASA Wallops Flight Facility located on the eastern shore of Virginia. HALO data were sampled at 0.5 s temporal and 1.25 m vertical resolutions. The data include profiles of aerosol optical properties (AOP), distributions of mixed layer heights (MLH), columns of tropospheric methane, and navigation parameters. The data are provided in HDF5 format along with PNG images and a companion files in Portable Document (.pdf) format.
+  <br>
+
+  #### ACTAMERICA_MFLL_L1_1817
+  This dataset provides Level 1 (L1) remotely sensed differential absorption optical depth (DAOD) measurements made through the Multi-Functional Fiber Laser Lidar (MFLL; Harris Corporation) during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the United States for the Atmospheric Carbon and Transport (ACT-America) project. DAOD were measured at 0.1 second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with MFLL. The MFLL is a set of Continuous-Wave (CW) lidar instruments consisting of an intensity modulated multi-frequency single-beam synchronous-detection Laser Absorption Spectrometer (LAS) operating at 1571 nm for measuring the column amount of CO2 number density and range between the aircraft and the surface or to cloud tops, and surface reflectance and a Pseudo-random Noise (PN) altimeter at 1596 nm for measuring the path length from the aircraft to the scattering surface and/or cloud tops. The MFLL was onboard all ACT-America seasonal campaigns, except Summer 2019. Complete aircraft flight information, interpolated to the 0.1 second column CO2 reporting frequency, are included, but not limited to, latitude, longitude, altitude, and attitude. Data users should note that a Level 2 (L2) MFLL data product is available (related dataset) that contains all data variables (plus the column-average CO2) included in this L1 MFLL data product but has undergone additional processing and calibrations and is recommended for most use cases.
+  <br>
+
+  #### ACTAMERICA_Hskping_1574
+  This dataset provides aircraft navigational parameters and related meteorological data (often referred to as "housekeeping" data) in support of the research activities for the two aircrafts that flew for the NASA Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spans five years and includes five 6-week intensive field campaigns covering all 4 seasons and 3 regions of the central and eastern United States. Two instrumented aircraft platforms, the NASA Langley Beechcraft B200 King Air and the NASA Goddard Space Flight Center's C-130H Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions. During these flights, aircraft positional, meteorological, and environmental data are recorded by a variety of instruments. For this dataset, measurements include, but are not limited to: latitude, longitude, altitude, ground speed, air temperature, and wind speed and direction. These data are incorporated into related ACT-America flight-instrumented datasets to provide geotrajectory file information for position, attitude, and altitude awareness of instrumented sampling.
+  <br>
+
+  #### Insitu_Tower_Greenhouse_Gas_1798
+  This dataset provides Level 1 (L1) in situ atmospheric carbon dioxide (CO2), carbon monoxide (CO), and methane (CH4) concentrations as measured on a network of instrumented communications towers across the central and eastern USA operated by the Atmospheric Carbon and Transport-America (ACT-America) project. There were 11 towers instrumented with cavity ring-down spectrometers (CRDS; Picarro Inc.) with measurements beginning in January 2015 and continuing to October 2019. The measurement period varied by tower site. The Picarro analyzers continuously measured total CH4, isotopic ratio of CH4, CO2, CO, and other greenhouse gas concentrations. Not all species were measured at all sites. Complete tower location, elevation, instrument height, and date/time information are also provided. Determination of greenhouse gas fluxes and uncertainty bounds is essential for the evaluation of the effectiveness of mitigation strategies. These L1 data are raw instrument outputs from the Picarro instruments. A Level 2 (L2) product derived from this L1 data is available and generally would be the preferred data for most use cases.
+  <br>
+
+  #### ACTAMERICA_PICARRO_1556
+  This dataset provides atmospheric carbon dioxide (CO2), carbon monoxide (CO), methane (CH4), water vapor (H2O), and ozone (O3) concentrations collected during airborne campaigns conducted by the Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spanned 4 years and included five 6-week airborne campaigns covering all 4 seasons and 3 regions of the central and eastern United States. This dataset provides results from all five campaigns, including Summer 2016, Winter 2017, Fall 2017, Spring 2018, and Summer 2019. Two instrumented aircraft platforms, the NASA Langley Beechcraft B200 King Air and the NASA Goddard Space Flight Center's C-130H Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions. CO2, CO, CH4, and H2O were collected with an infrared cavity ring-down spectrometer system (CRDS; Picarro Inc.). Ozone data were collected with a dual beam differential UV absorption ozone monitor (Model 205; 2B Technologies). Both aircraft hosted identical arrays of in situ sensors. Complete aircraft flight information including, but not limited to, latitude, longitude, altitude, and meteorological conditions are also provided.
+  <br>
+
+  #### ACTAMERICA_PFP_1575
+  This dataset provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), molecular hydrogen (H2), nitrous oxide (N2O), sulfur hexafluoride (SF6), and other trace gas mole fractions (i.e., concentrations) from airborne campaigns over North America for the NASA Atmospheric Carbon and Transport - America (ACT-America) project. ACT-America's mission spanned five years and included five six-week field campaigns covering all four seasons and three regions of the central and eastern United States. Two instrumented aircraft platforms, the NASA Langley Beechcraft B-200 King Air and the NASA Goddard Space Flight Center's C-130 Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions. The data were derived from laboratory measurements of whole air samples collected by Programmable Flask Packages (PFP) onboard the two ACT-America aircraft. Approximately 10 - 12 discrete flask samples were captured during each of the 195 flights. This dataset provides results from all five campaigns, including Summer 2016, Winter 2017, Fall 2017, Spring 2018, and Summer 2019.
+  <br>
+
+  #### ACTAMERICA-PICARRO_Ground_1568
+  This dataset provides atmospheric carbon dioxide (CO2), carbon monoxide (CO), and methane (CH4) concentrations as measured on a network of instrumented communications towers operated by the Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spans five years and includes five 6-week intensive field campaigns covering all 4 seasons and 3 regions of the central and eastern United States. Tower-based measurements began in early 2015 and are continuously collecting CO2, CO, and CH4 data to characterize ground-level (>100 m) carbon background conditions to support the periodic airborne measurement campaigns and transport modeling conducted by ACT-America. The towers are instrumented with infrared cavity ring-down spectrometer systems (CRDS; Picarro Inc.). Data are reported for the highest sampling port on each tower. The averaging interval standard deviation and uncertainty derived from periodic flask sample to in-situ measurement comparisons are provided. Complete tower location, elevation, instrument height, and date/time information are also provided.
+  <br>
+
+  #### ACTAMERICA_MFFLL_1649
+  This dataset provides Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the United States for the Atmospheric Carbon and Transport (ACT-America) project. Column-average CO2 concentrations were measured at 0.1 second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with a Multi-functional Fiber Laser Lidar (MFLL; Harris Corporation). The MFLL is a set of Continuous-Wave (CW) lidar instruments consisting of an intensity modulated multi-frequency single-beam synchronous-detection Laser Absorption Spectrometer (LAS) operating at 1571 nm for measuring the column amount of CO2 number density and range between the aircraft and the surface or to cloud tops, and surface reflectance and a Pseudo-random Noise (PN) altimeter at 1596 nm for measuring the path length from the aircraft to the scattering surface and/or cloud tops. The MFLL was onboard all ACT-America seasonal campaigns, except Summer 2019. Complete aircraft flight information, interpolated to the 0.1 second column CO2 reporting frequency, are included, but not limited to, latitude, longitude, altitude, and attitude. Processing for this Level 2 (L2) product included additional processing and calibration procedures described in this document as applied to retrieval of column CO2 from L1 MFLL data. Data users should use this L2 data unless different CO2 retrieval criteria are preferred.
+  <br>
+
+  #### MFLL_XCO2_Range_10Hz_1892
+  This dataset provides a direct subset (i.e., the Lite version) of the Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the U.S. for the Atmospheric Carbon and Transport (ACT-America) project. Column-average CO2 concentrations were measured at a 0.1-second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with a Multi-functional Fiber Laser Lidar (MFLL; Harris Corporation). The MFLL is a set of Continuous-Wave (CW) lidar instruments consisting of an intensity-modulated multi-frequency single-beam synchronous-detection Laser Absorption Spectrometer (LAS) operating at 1571 nm for measuring the column amount of CO2 number density and range between the aircraft and the surface or to cloud tops, and surface reflectance and a Pseudo-random Noise (PN) altimeter at 1596 nm for measuring the path length from the aircraft to the scattering surface and/or cloud tops. The MFLL was onboard all ACT-America seasonal campaigns, except Summer 2019. Complete aircraft flight information, interpolated to the 0.1-second column CO2 reporting frequency, is included, but not limited to, latitude, longitude, altitude, and attitude.
+  <br>
+
+  #### MFLL_CO2_Weighting_Functions_1891
+  This dataset provides vertical weighting function coefficients of the Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the U.S. for the Atmospheric Carbon and Transport (ACT-America) project. Column-average CO2 concentrations were measured at a 0.1-second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with a Multi-functional Fiber Laser Lidar (MFLL; Harris Corporation). The MFLL is a set of Continuous-Wave (CW) lidar instruments consisting of an intensity-modulated multi-frequency single-beam synchronous-detection Laser Absorption Spectrometer (LAS) operating at 1571 nm for measuring the column amount of CO2 number density and range between the aircraft and the surface or to cloud tops, and surface reflectance and a Pseudo-random Noise (PN) altimeter at 1596 nm for measuring the path length from the aircraft to the scattering surface and/or cloud tops. The MFLL was onboard all ACT-America seasonal campaigns, except Summer 2019. The MFLL-measured column-averaged CO2 values have certain distinct vertical weights on CO2 profiles depending on the meteorological conditions and the wavelengths used at the measurement time and location. This product includes the instrument location at the time of measurement in geographic coordinates and altitude, along with a vector of weighting function values representing conditions along the nadir direction.
+  <br>
+
+  #### ACTAMERICA_Merge_1593
+  This dataset provides merged data products acquired during flights over the central and eastern United States as part of the Atmospheric Carbon and Transport - America (ACT-America) project. Two aircraft platforms, the NASA Langley Beechcraft B200 King Air and the NASA Goddard Space Flight Center's C-130H Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions. The merged data products are composed of continuous in situ measurements of atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), ozone (O3), and ethane (C2H6, B200 aircraft only) that were averaged to uniform intervals and merged with aircraft navigation and meteorological variables as well as trace gas concentrations from discrete flask samples collected with the Programmable Flask Package (PFP). These merged data products provide integrated measurements at intervals useful to the modeling community for studying the transport and fluxes of atmospheric carbon dioxide and methane across North America.
+  <br>
+
+  #### Profile_based_PBL_heights_1706
+  This dataset provides profile-based estimates of the height to the top of the planetary boundary layer (PBL), also known as the atmospheric boundary layer (ABL), in meters above mean sea level estimated from meteorological measurements acquired during ascending or descending vertical profile flight segments during NASA's Atmospheric Carbon and Transport - America (ACT-America) airborne campaign. ACT-America flights sampled the atmosphere over the central and eastern United States seasonally from 2016 - 2019. Two aircraft platforms, the NASA Langley Beechcraft B-200 King Air and the NASA Goddard Space Flight Center's C-130 Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions.
+  <br>
+
+  #### ACTAMERICA_WRF_Chem_Output_1884
+  This dataset includes hourly output from the WRF-Chem simulation model for North America at a resolution of 27 km for 2016-06-29 through 2019-07-31. WRF-Chem is the Weather Research and Forecasting (WRF) model coupled with Chemistry. The output provides baseline conditions for comparison to data from ACT-America airborne campaigns conducted to study atmospheric CO2 and CH4 from 2016 to 2019. The WRF-Chem (v. 3.6.1) model was driven by meteorological conditions and sea-surface temperatures. The output includes 50 vertical layers up to atmospheric pressure of 50 hPa with 20 levels in the lowest 1 km. It provides information for understanding the fluxes and atmospheric transport of carbon dioxide (CO2), methane (CH4), and ethane (C2H6).
+  <br>
+
+  #### FLEXPART_Influence_Functions_2018
+  This dataset contains a set of Lagrangian particle dispersion simulations of carbon dioxide concentrations using the FLEXible PARTicle (FLEXPART) model. FLEXPART quantified the source-receptor relationships, so-called "influence functions", in a backward mode. The simulations were constructed for five Atmospheric Carbon and Transport America (ACT-America) deployments over the eastern U.S. that occurred in 2016-2019. Each receptor of the influence function is the 30-second or 10-minute interval along flight tracks, characterized by a box with boundaries between the maximum and minimum latitude/longitude as well as between the maximum and minimum altitudes during the interval. Each receptor box released 5,000 particles and simulated their transport and dispersion backward for 10 or 20 days. The simulations were driven by 27-km meteorology provided by the WRF-Chem simulation or by ERA-Interim data from the European Centre for Medium-Range Weather Forecasts (ECMWF). Background levels of carbon dioxide were obtained from CarbonTracker and OCO-2 v9 MIP. The data are provided in netCDF and FLEXPART binary formats.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://actamerica.ornl.gov
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- earth observation
+- elevation
+- hdf
+- hdf5
+- lidar
+- netcdf
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ACTAMERICA_Campaign_Catalog_1862 v1 - The ACT-America Campaign Catalog provides information about the airborne campaigns of the Atmospheric Carbon and Transport (ACT-America) project. ACT-America advanced atmospheric greenhouse gas inversions to a high level of accuracy and precision through new methods and models that improved knowledge of atmospheric transport, prior flux models, and space-based observations."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_Campaign_Catalog/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CPL_ABL_Top_Height_1825 v1 - This dataset consists of the atmospheric boundary layer (ABL) top heights and the altitudes of the two additional aerosol layers (in km above mean sea level) derived from Cloud Physics Lidar (CPL) measurements using the Haar wavelet transform method. The CPL instrument was deployed onboard NASA's C-130 aircraft to obtain aerosol backscatter profiles during four ACT-America field campaigns (Summer 2016, Winter 2017, Fall 2017, and Spring 2018)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/CPL_ABL_Top_Height/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACT_CASA_Ensemble_Prior_Fluxes_1675 v1.1 - This data set provides gridded, model-derived gross primary productivity (GPP), ecosystem respiration (RECO), and net ecosystem exchange (NEE) of CO2 biogenic fluxes and their uncertainties at monthly and 3-hourly time scales over 2003-2019 on a 463-m spatial resolution grid for the conterminous United States (CONUS) and on both 5-km and half-degree spatial resolution grids for North America (NA). The biogeochemical model Carnegie Ames Stanford Approach (CASA) was used."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACT_CASA_Ensemble_Prior_Fluxes/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "HALO_LiDAR_AOP_ML_Heights_1833 v1 - This dataset provides measurements from the High Altitude Lidar Observatory (HALO) instrument, an airborne multi-function Differential Absorption Lidar (DIAL) and High Spectral Resolution Lidar (HSRL), operating at 532 nm and 1064 nm wavelengths onboard a C-130 aircraft during the June and July 2019 ACT-America campaign. The flights took place over eastern and central North America based from Shreveport, Louisiana; Lincoln, Nebraska; and NASA Wallops Flight Facility located on the eastern shore of Virginia."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/HALO_LiDAR_AOP_ML_Heights/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_MFLL_L1_1817 v1 - This dataset provides Level 1 (L1) remotely sensed differential absorption optical depth (DAOD) measurements made through the Multi-Functional Fiber Laser Lidar (MFLL; Harris Corporation) during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the United States for the Atmospheric Carbon and Transport (ACT-America) project. DAOD were measured at 0.1 second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with MFLL."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_MFLL_L1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_Hskping_1574 v1.1 - This dataset provides aircraft navigational parameters and related meteorological data (often referred to as \"housekeeping\" data) in support of the research activities for the two aircrafts that flew for the NASA Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spans five years and includes five 6-week intensive field campaigns covering all 4 seasons and 3 regions of the central and eastern United States."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_Hskping/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Insitu_Tower_Greenhouse_Gas_1798 v1 - This dataset provides Level 1 (L1) in situ atmospheric carbon dioxide (CO2), carbon monoxide (CO), and methane (CH4) concentrations as measured on a network of instrumented communications towers across the central and eastern USA operated by the Atmospheric Carbon and Transport-America (ACT-America) project. There were 11 towers instrumented with cavity ring-down spectrometers (CRDS; Picarro Inc.) with measurements beginning in January 2015 and continuing to October 2019."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/Insitu_Tower_Greenhouse_Gas/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_PICARRO_1556 v1.2 - This dataset provides atmospheric carbon dioxide (CO2), carbon monoxide (CO), methane (CH4), water vapor (H2O), and ozone (O3) concentrations collected during airborne campaigns conducted by the Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spanned 4 years and included five 6-week airborne campaigns covering all 4 seasons and 3 regions of the central and eastern United States."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_PICARRO/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_PFP_1575 v1.2 - This dataset provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), molecular hydrogen (H2), nitrous oxide (N2O), sulfur hexafluoride (SF6), and other trace gas mole fractions (i.e., concentrations) from airborne campaigns over North America for the NASA Atmospheric Carbon and Transport - America (ACT-America) project. ACT-America's mission spanned five years and included five six-week field campaigns covering all four seasons and three regions of the central and eastern United States."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_PFP/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA-PICARRO_Ground_1568 v1.1 - This dataset provides atmospheric carbon dioxide (CO2), carbon monoxide (CO), and methane (CH4) concentrations as measured on a network of instrumented communications towers operated by the Atmospheric Carbon and Transport-America (ACT-America) project. ACT-America's mission spans five years and includes five 6-week intensive field campaigns covering all 4 seasons and 3 regions of the central and eastern United States."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA-PICARRO_Ground/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_MFFLL_1649 v1.1 - This dataset provides Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the United States for the Atmospheric Carbon and Transport (ACT-America) project. Column-average CO2 concentrations were measured at 0.1 second frequency during flights of the C-130 Hercules aircraft at altitudes up to 8 km with a Multi-functional Fiber Laser Lidar (MFLL; Harris Corporation)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_MFFLL/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MFLL_XCO2_Range_10Hz_1892 v1 - This dataset provides a direct subset (i.e., the Lite version) of the Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the U.S. for the Atmospheric Carbon and Transport (ACT-America) project."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/MFLL_XCO2_Range_10Hz/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MFLL_CO2_Weighting_Functions_1891 v1 - This dataset provides vertical weighting function coefficients of the Level 2 (L2) remotely sensed column-average carbon dioxide (CO2) concentrations measured during airborne campaigns in Summer 2016, Winter 2017, Fall 2017, and Spring 2018 conducted over central and eastern regions of the U.S. for the Atmospheric Carbon and Transport (ACT-America) project."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/MFLL_CO2_Weighting_Functions/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_Merge_1593 v1.2 - This dataset provides merged data products acquired during flights over the central and eastern United States as part of the Atmospheric Carbon and Transport - America (ACT-America) project. Two aircraft platforms, the NASA Langley Beechcraft B200 King Air and the NASA Goddard Space Flight Center's C-130H Hercules, were used to collect high-quality in situ measurements across a variety of continental surfaces and atmospheric conditions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_Merge/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Profile_based_PBL_heights_1706 v1.1 - This dataset provides profile-based estimates of the height to the top of the planetary boundary layer (PBL), also known as the atmospheric boundary layer (ABL), in meters above mean sea level estimated from meteorological measurements acquired during ascending or descending vertical profile flight segments during NASA's Atmospheric Carbon and Transport - America (ACT-America) airborne campaign. ACT-America flights sampled the atmosphere over the central and eastern United States seasonally from 2016 - 2019."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/Profile_based_PBL_heights/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ACTAMERICA_WRF_Chem_Output_1884 v1 - This dataset includes hourly output from the WRF-Chem simulation model for North America at a resolution of 27 km for 2016-06-29 through 2019-07-31. WRF-Chem is the Weather Research and Forecasting (WRF) model coupled with Chemistry."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/ACTAMERICA_WRF_Chem_Output/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "FLEXPART_Influence_Functions_2018 v1 - This dataset contains a set of Lagrangian particle dispersion simulations of carbon dioxide concentrations using the FLEXible PARTicle (FLEXPART) model. FLEXPART quantified the source-receptor relationships, so-called \"influence functions\", in a backward mode."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/actamerica/FLEXPART_Influence_Functions/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

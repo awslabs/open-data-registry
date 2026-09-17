@@ -1,0 +1,41 @@
+Name: NASA WDTS Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### WDTS_AVIRIS-C_foliar_traits_2403
+  This dataset holds maps of 14 foliar functional traits derived from AVIRIS-Classic imagery over the western United States for the Western Diversity Time Series (WDTS) project. Imagery was acquired from 2013-04-10 to 2018-08-16 and a georeferenced, corrected surface reflectance product was developed for WDTS for 87 acquisitions. Foliar traits were derived from the reflectance product by applying partial least squares regression models. These traits include foliar concentrations of nitrogen, cellulose, lignin, fiber, sugar, starch, calcium, potassium, phosphorus, sulfur, phenolics, and nonstructural carbohydrates. In addition, area concentration of chlorophyll A+B and leaf dry mass per area were estimated. The WDTS includes airborne imagery collected at least once per year (but often several times) over large areas of California for almost all years from 2013-2024. This dataset will enable multi-temporal analyses of plant functional traits and biodiversity at the ecoregion scale. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### WDTS_AVIRIS-C_L2_corrected_2391
+  This dataset includes Level-2 (L2) surface reflectance imagery from the AVIRIS-Classic instrument collected for NASA's Western Diversity Time Series Project over California and Nevada in 2013 to 2018. AVIRIS-Classic imagery were collected on the NASA ER-2 from altitude of 19,800 m, yielding imagery with 15-20 m ground sample distance. AVIRIS-Classic is a 224-channel whisk-broom instrument with four grating imaging spectrometers covering a spectral range from 400-2500 nm, with spectral sampling every 10 nm. Radiometric calibration accuracy is within 1 nm, and signal to noise ratio is greater than 100:1. Existing L2 imagery were reprocessed co-register pixels with cloud-free panchromatic imagery from Landsat. Then, topographic, FlexBRDF, and glint corrections were applied and the georectified images were resampled to 15-m spatial resolution. The imagery data are provided in ENVI format. Ground control points used in georectification along the BRDF and topographic correction coefficients are provided in JSON files.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/WDTS/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "WDTS_AVIRIS-C_foliar_traits_2403 v1 - This dataset holds maps of 14 foliar functional traits derived from AVIRIS-Classic imagery over the western United States for the Western Diversity Time Series (WDTS) project. Imagery was acquired from 2013-04-10 to 2018-08-16 and a georeferenced, corrected surface reflectance product was developed for WDTS for 87 acquisitions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/wdts/WDTS_AVIRIS-C_foliar_traits/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "WDTS_AVIRIS-C_L2_corrected_2391 v1 - This dataset includes Level-2 (L2) surface reflectance imagery from the AVIRIS-Classic instrument collected for NASA's Western Diversity Time Series Project over California and Nevada in 2013 to 2018. AVIRIS-Classic imagery were collected on the NASA ER-2 from altitude of 19,800 m, yielding imagery with 15-20 m ground sample distance."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/wdts/WDTS_AVIRIS-C_L2_corrected/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

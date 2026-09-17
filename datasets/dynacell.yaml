@@ -1,0 +1,79 @@
+Name: DynaCell
+Description: |
+  DynaCell is an evaluation framework for dynamic 3D virtual staining of live cells.
+  The dataset pairs label-free transmitted-light volumes (phase reconstructions from brightfield z-stacks) with fluorescence ground truth for four organelles (nucleus, cell membrane,
+  endoplasmic reticulum, mitochondria) across three conditions
+  (uninfected, Zika-infected, Dengue-infected).
+
+  The v1 release contains images of A549 human lung adenocarcinoma cells acquired on
+  the Mantis correlative label-free and light-sheet fluorescence microscope at Biohub
+  (24 OZX stores, 262 FOVs, ~407 GB), split into train and test sets across 4 organelle
+  markers and 3 conditions.
+
+  A v1.1 release will add the WTC-11 hiPSC component: cells from the Allen Institute
+  hiPSC single-cell image dataset (Viana et al., Nature 2023), reprocessed as paired
+  label-free and confocal fluorescence volumes. The iPSC dataset is redistributed under
+  the Allen Institute Terms of Use (https://www.allencell.org/terms-of-use.html), which
+  requires citation of the original dataset and limits use to noncommercial research.
+
+  All data are stored as RFC-9 zipped OME-Zarr (.ozx) archives following OME-NGFF v0.5,
+  readable with iohub (https://github.com/czbiohub-sf/iohub). Machine-readable metadata
+  (Croissant JSON-LD with Responsible AI fields, per the NeurIPS Datasets & Benchmarks
+  track) is published at s3://dynacell/v1/metadata/croissant.json.
+Documentation: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
+Contact: shalin.mehta@biohub.org
+ManagedBy: "[Biohub](https://www.biohub.org/)"
+UpdateFrequency: As needed - v1 (A549) is frozen; future releases will expand the dataset. Registry Entry Added 2026-05-04, Last Modified 2026-06-15.
+Tags:
+  - aws-pds
+  - biology
+  - image-based profiling
+  - cell biology
+  - life sciences
+  - cell imaging
+  - fluorescence imaging
+  - microscopy
+  - machine learning
+  - benchmark
+  - computer vision
+  - zarr
+  - Biohub
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: |
+      DynaCell v1 release: paired label-free and fluorescence 3D+time volumes
+      in RFC-9 zipped OME-Zarr (.ozx) format. Contains biohub-a549 (train/test
+      splits, 4 markers x 3 conditions = 24 stores), Croissant 1.1 metadata
+      with Responsible AI fields, and placeholders for forthcoming demo
+      samples, trained model checkpoints, and supplementary movies.
+    ARN: arn:aws:s3:::dynacell
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get to know DynaCell v1 — loading and exploring the dataset"
+      URL: https://github.com/mehta-lab/VisCy/blob/dynacell-models/applications/dynacell/examples/notebooks/get-to-know-dynacell-dataset.ipynb
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
+  Tools & Applications:
+    - Title: DynaCell virtual-staining demo (interactive Hugging Face Space)
+      URL: https://huggingface.co/spaces/biohub/dynacell
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
+    - Title: VisCy — training, prediction, and evaluation pipelines for DynaCell
+      URL: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
+    - Title: iohub — OME-Zarr and OZX I/O library
+      URL: https://github.com/czbiohub-sf/iohub
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
+    - Title: waveorder — phase reconstruction from label-free microscopy
+      URL: https://github.com/mehta-lab/waveorder
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-micro
+  Publications:
+    - Title: "DynaCell: an Evaluation Framework for Dynamic 3D Virtual Staining of Live Cells"
+      URL: https://github.com/mehta-lab/VisCy/tree/dynacell-models/applications/dynacell
+      AuthorName: Kalinin, Zheng, Theodoro, Ivanov, Hirata-Miyasaki, Lee, Liu, Varra, Chandler, Pradeep, Liu, Leonetti, Arias, Huang, Mehta
+      AuthorURL: https://www.biohub.org/comp-micro

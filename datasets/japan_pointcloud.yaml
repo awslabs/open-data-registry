@@ -1,0 +1,35 @@
+Name: Japan Prefectures, 3D Point Cloud Data
+Description: |
+  This dataset comprises high-precision 3D point cloud data that covers all prefectures throughout Japan.
+  The data is produced through aerial laser surveys, airborne laser bathymetry, and mobile mapping systems, representing the culmination of many years of dedicated effort.
+  This data will be visualized and analyzed for use in infrastructure maintenance, disaster prevention measures, and autonomous vehicle driving.
+Documentation: https://github.com/aigidjp/opendata_japan_pointcloud/blob/main/README.md
+Contact: japan-pointcloud@aigid.jp
+ManagedBy: "[AIGID](https://aigid.jp/)"
+UpdateFrequency: Currently not scheduled
+Tags:
+  - aws-pds
+  - disaster response
+  - elevation
+  - geospatial
+  - japanese
+  - land
+  - lidar
+  - mapping
+License: "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+Resources:
+  - Description: Point Cloud Data for Prefectures Across Japan
+    ARN: arn:aws:s3:::japan-pointcloud
+    Region: ap-northeast-1
+    Type: S3 Bucket
+  - Description: Notifications for new japan-pointcloud data
+    ARN: arn:aws:sns:ap-northeast-1:250546175908:japan-pointcloud-object_created
+    Region: ap-northeast-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Tutorial of handling LAS format point cloud data
+      URL: https://github.com/aigidjp/opendata_japan_pointcloud/blob/main/tutorials/README.md
+      AuthorName: AIGID
+  Tools & Applications:
+  Publications: 

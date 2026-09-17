@@ -1,0 +1,69 @@
+Name: GEDI L2A Elevation and Height Metrics Data Global Footprint Level V002
+Description: |-
+  The Global Ecosystem Dynamics Investigation ([GEDI](https://gedi.umd.edu/)) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth’s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station (ISS) and collects data globally between 51.6° N and 51.6° S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date. Each GEDI Version 2 granule encompasses one-fourth of an ISS orbit and includes georeferenced metadata to allow for spatial querying and subsetting.
+
+  The GEDI instrument was removed from the ISS and placed into storage on March 17, 2023. No data were acquired during the hibernation period from March 17, 2023, to April 24, 2024. GEDI has since been reinstalled on the ISS and resumed operations as of April 26, 2024.
+
+  The purpose of the GEDI Level 2A Geolocated Elevation and Height Metrics product (GEDI02_A) is to provide waveform interpretation and extracted products from each GEDI01_B received waveform, including ground elevation, canopy top height, and relative height (RH) metrics. The methodology for generating the GEDI02_A product datasets is adapted from the Land, Vegetation, and Ice Sensor (LVIS) algorithm. The GEDI02_A product is provided in HDF5 format and has a spatial resolution (average footprint) of 25 meters.
+
+  The GEDI02_A data product contains 156 layers for each of the eight beams, including ground elevation, canopy top height, relative return energy metrics (e.g., canopy vertical structure), and many other interpreted products from the return waveforms. Additional information for the layers can be found in the GEDI Level 2A Dictionary.
+
+  Known Issues
+
+  * Data acquisition gaps: GEDI data acquisitions were suspended on December 19, 2019 (2019 Day 353) and resumed on January 8, 2020 (2020 Day 8).
+  * Incorrect Reference Ground Track (RGT) number in the filename for select GEDI files: GEDI Science Data Products for six orbits on August 7, 2020, and November 12, 2021, had the incorrect RGT number in the filename. There is no impact to the science data, but users should reference this [document](https://lpdaac.usgs.gov/documents/2236/GEDI_CORRECTED_RGT_FILENAMES.pptx) for the correct RGT numbers.
+  * Known Issues: Section 8 of the User Guide provides additional information on known issues.
+
+  Improvements/Changes from Previous Versions
+
+  * Metadata has been updated to include spatial coordinates.
+  * Granule size has been reduced from one full ISS orbit (~5.83 GB) to four segments per orbit (~1.48 GB).
+  * Filename has been updated to include segment number and version number.
+  * Improved geolocation for an orbital segment.
+  * Added elevation from the SRTM digital elevation model for comparison.
+  * Modified the method to predict an optimum algorithm setting group per laser shot.
+  * Added additional land cover datasets related to phenology, urban infrastructure, and water persistence.
+  * Added selected_mode_flag dataset to root beam group using selected algorithm.
+  * Removed shots when the laser is not firing.
+  * Modified file name to include segment number and dataset version.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/GEDI/GEDI02_A.002
+Contact: 'User Services: lpdaac@usgs.gov'
+ManagedBy: NASA
+UpdateFrequency: From 2019-04-04 to 2023-03-16 (Varies)
+Tags:
+  - aws-pds
+  - biodiversity
+  - carbon
+  - datacenter
+  - earth observation
+  - energy
+  - global
+  - hdf
+  - ice
+  - land
+  - land cover
+  - lidar
+  - metadata
+  - orbit
+  - urban
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'GEDI L2A Elevation and Height Metrics Data Global Footprint Level
+      V002.'
+    ARN: arn:aws:s3:::lp-prod-protected/GEDI02_A.002
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: 'How to: Find and Access GEDI Data'
+      URL: https://github.com/nasa/GEDI-Data-Resources/blob/main/python/tutorials/how-to-find-and-access-GEDI-data_earthaccess.ipynb
+      AuthorName: Land Processes Distributed Active Archive Center (LP DAAC)
+      AuthorURL: https://lpdaac.usgs.gov/
+    - Title: Getting Started with GEDI L2A Version 2 Data in Python
+      URL: https://github.com/nasa/GEDI-Data-Resources/blob/main/python/tutorials/GEDI_L2A_V2_Tutorial.ipynb
+      AuthorName: Land Processes Distributed Active Archive Center (LP DAAC)
+      AuthorURL: https://lpdaac.usgs.gov/

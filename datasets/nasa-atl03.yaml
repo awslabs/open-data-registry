@@ -1,0 +1,31 @@
+Name: ATLAS/ICESat-2 L2A Global Geolocated Photon Data V006
+Description: |-
+  This data set (ATL03) contains height above the WGS 84 ellipsoid (ITRF2014 reference frame), latitude, longitude, and time for all photons downlinked by the Advanced Topographic Laser Altimeter System (ATLAS) instrument on board the Ice, Cloud and land Elevation Satellite-2 (ICESat-2) observatory. The ATL03 product was designed to be a single source for all photon data and ancillary information needed by higher-level ATLAS/ICESat-2 products. As such, it also includes spacecraft and instrument parameters and ancillary data not explicitly required for ATL03.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/ATLAS/ATL03.006
+Contact: 'Email: nsidc@nsidc.org. Home Page: https://nsidc.org/daac'
+ManagedBy: NASA
+UpdateFrequency: From 2018-10-13 to Ongoing
+Tags:
+  - aws-pds
+  - atmosphere
+  - datacenter
+  - earth observation
+  - global
+  - hdf
+  - ice
+  - land
+  - water
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'ATLAS/ICESat-2 L2A Global Geolocated Photon Data V006.'
+    ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ATLAS/ATL03/006
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Tutorials:
+    - Title: Accessing and working with ICESat-2 data in the cloud
+      URL: https://github.com/nsidc/NSIDC-Data-Tutorials/blob/main/notebooks/ICESat-2_Cloud_Access/ATL06-direct-access.ipynb
+      AuthorName: Andy Barrett, Jennifer Roebuck, Amy Steiker

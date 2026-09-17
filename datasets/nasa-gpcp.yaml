@@ -1,0 +1,42 @@
+Name: NASA GPCP Project
+Description: |
+  These data are transitioned to a state of permanent preservation. They are available upon request. More advanced datasets have been developed since. One recommended replacement is the GPCP (doi: 10.5067/DBVUO4KQHXTK) product developed under the MEaSUREs project. The Arkin and Janowiak GPI (GOES Precipitation Index) was the infrared-based monthly rainfall estimate produced by the early GPCP (Global Precipitation Climatology Project) algorithms. The infrared observations from geostationary satellites (GOES, GMS, Meteosat) are used to produce these monthly mean rainfall totals on a 2.5 deg by 2.5 deg grid from 40 N to 40 S for the period Jan 1986 to Dec 1995.
+  <br>
+
+  #### RAIN_JAEGER
+  The Jaeger Surface Rain Gauge Observations data set consists of gridded mean monthly global precipitation values for 1931 to 1960 over the continents and 1955 to 1965 over the oceans. In order to calculate monthly, seasonal, and annual variations of precipitation over the whole globe, both hemispheres, and various meridional zones, a gridding technique was used on data spanning 1931 to 1960 over the continents, and 1955 to 1965 over the oceans. For the continental regions, the grid point values were obtained as eye estimates from isopleth maps prepared from up-to-date climatic atlases containing annual and monthly rainfall values, supplemented by other data sets. Although it was initially intended to use data for the standard period 1931-1960, this did not prove possible for all regions. Moller's (1951) method for estimating rainfall frequencies was adopted to provide ocean precipitation data. Monthly percentage frequencies were extracted from the mapped isolines of the US Marine Climatic Atlas (US Naval Weather Service 1955-1965) and interpolated to the grid points. After re-expressing the monthly frequencies as annual percentages, the values were scaled to rainfall depth units using Geiger's (1965) precipitation map to yield monthly precipitation means.
+  <br>
+
+  #### RAIN_LEGATES
+  The Legates Surface and Shipboard Rain Gauge Observations data set consists of a global climatology of monthly mean precipitation values. A global climatology of mean monthly precipitation was developed using traditional land-based gauge measurements as well as extrapolations of oceanic precipitation from coastal and island observations. Data were obtained from a variety of source archives. These data were screened for coding errors, merged, and redundant stations were removed. The resulting data base contains 24,635 independent terrestrial station records and 2223 oceanic gridpoint estimates. Precipitation gauge catches, however, are known to underestimate actual precipitation. Errors in the gauge catch result from wind-field deformation above the orifice of the gauge, wetting losses, and evaporation from the gauge and amount globally to nearly 8, 2, and 1 percent of the catch, respectively. A procedure was developed to estimate these errors and was used to obtain better estimates of global precipitation. Spatial variations in gauge type, air temperature, wind speed, and natural vegetation have been interpolated to the nodes of a 0.5 degrees of latitude by 0.5 degrees of longitude lattice using a spherically-based interpolation algorithm. The data set is used to validate general circulation model simulations of the present-day precipitation climate, for ground-based comparison with satellite-derived precipitation estimates, and as a basis for global water balance studies.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br><br>
+Documentation: https://disc.gsfc.nasa.gov/datacollection/RAIN_ARKIN_1.html
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- ice
+- oceans
+- precipitation
+- satellite imagery
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "RAIN_JAEGER v1 - The Jaeger Surface Rain Gauge Observations data set consists of gridded mean monthly global precipitation values for 1931 to 1960 over the continents and 1955 to 1965 over the oceans. In order to calculate monthly, seasonal, and annual variations of precipitation over the whole globe, both hemispheres, and various meridional zones, a gridding technique was used on data spanning 1931 to 1960 over the continents, and 1955 to 1965 over the oceans."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/LEGACY/RAIN_JAEGER.1/1931/jaeger.dat.Z
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "RAIN_LEGATES v1 - The Legates Surface and Shipboard Rain Gauge Observations data set consists of a global climatology of monthly mean precipitation values. A global climatology of mean monthly precipitation was developed using traditional land-based gauge measurements as well as extrapolations of oceanic precipitation from coastal and island observations."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/LEGACY/RAIN_LEGATES.1/1920/legates.cor.Z
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

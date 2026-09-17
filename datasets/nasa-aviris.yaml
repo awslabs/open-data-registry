@@ -1,0 +1,111 @@
+Name: NASA AVIRIS Project
+Description: |
+  This dataset provides attributed geospatial and tabular information for identifying and querying flight lines of interest for the Airborne Visible InfraRed Imaging Spectrometer-Classic (AVIRIS-C) and Airborne Visible InfraRed Imaging Spectrometer-Next Generation (AVIRIS-NG) Facility Instrument collections. It includes attributed shapefile and GeoJSON files containing polygon representation of individual flights lines for all years and separate KMZ files for each year. These files allow users to visualize and query flight line locations using Geographic Information System (GIS) software. Tables of AVIRIS-C and AVIRIS-NG flight lines with attributed information include dates, bounding coordinates, site names, investigators involved, flight attributes, associated campaigns, and corresponding file names for associated L1B (radiance) and L2 (reflectance) files in the AVIRIS-C and AVIRIS-NG Facility Instrument Collections. Tabular information is also provided in comma-separated values (CSV) format.
+  <br>
+
+  #### AV3_L1B_RDN_2356
+  This dataset contains Level 1B (L1B) calibrated radiance images as well as observational geometry and illumination parameters from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at 7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm. The AVIRIS-3 sensor has a 40 degree instantaneous field of view with 1234 pixels, providing altitude dependent ground sampling distances from 12 m to sub meter range. This spectrometer measures radiance from surface and atmosphere and is extremely similar in design to the orbital Earth Surface Mineral Dust Source Investigation (EMIT) spectrometer. AVIRIS-3 has been designed to fly on a variety of aircraft platforms including the King Air B-200, Gulfstream III, Gulfstream V, and ER-2. For each flight line, two file types are included: calibrated radiance (RDN) and orthocorrected observation geometry and illumination (ORT) in netCDF format. Both file types include a geolocation lookup table (GLT) for georeferencing pixels in UTM and geographic coordinates. A band mask file indicates whether wavelengths were interpolated on a per pixel basis. In addition, ancillary files for each flight line are provided, including a quick look image in JPEG format and text files in YAML format that document processing algorithms and parameters used during production.
+  <br>
+
+  #### AV3_L2A_RFL_2357
+  This dataset contains Level 2A (L2A) surface reflectance images from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at 7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm. Surface hemispherical directional reflectance was derived from calibrated radiance using an optimal estimation algorithm. For each flight line, two file types are included: orthocorrected surface reflectance (RFL_ORT) and orthocorrected reflectance uncertainty (UNC_ORT) in netCDF format. Both file types include data projected in a UTM coordinate system. In addition, ancillary files for each flight line are provided, including a quick look image in GeoTIFF format and text files in YAML format that document processing algorithms and parameters used during production.
+  <br>
+
+  #### AV3_L2B_GHG_2358
+  This dataset contains Level 2B (L2b) enhancements of greenhouse gasses (GHG) derived from imagery collected by the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. Products include methane and carbon dioxide enhancements, each with per-pixel uncertainties and sensitivities to the background. Concentration enhancements are estimated from radiance measurements using a column-wise adaptive matched filter approach, which searches each pixel's radiance spectrum for deviations that are characteristic of a GHG's absorption spectrum. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at 7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm.
+  <br>
+
+  #### AVIRIS-Classic_L1B_Radiance_2155
+  This dataset contains Level 1B (L1B) orthocorrected, scaled radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from the Airborne Visible / Infrared Imaging Spectrometer (AVIRIS-Classic) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-Classic is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-Classic measures reflected radiance in 224 contiguous bands at approximately 10-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 400-2500 nm. The AVIRIS-Classic sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub meter range. AVIRIS-Classic is flown on a variety of aircraft platforms including the Twin Otter, NASA's WB-57, and NASA's high altitude ER-2. Multiple file types are included for each flight line. The primary data files include: orthocorrected calibrated radiance image (img) files, geometric lookup table (glt) and orthocorrected observation geometry and illumination (obs_ort) files. Also included are unprojected files of input geometry (igm), and parameters relating to the geometry of observation and illumination (obs). Additional files provide information on spectral (spc) and radiometric calibration (rcc, gain), spatial resolution (geo), aircraft and sensor position (eph, nav), deployment notes (info), and data processing (plog). Quicklook images (jpeg) and polygon outlines of imagery footprints (kmz) are provided for each flight line. The primary AVIRIS-Classic L1B data are provided in ENVI binary format, which includes a flat binary file accompanied by a header (.hdr) file holding metadata in text format. The ancillary files include JPEG images, maps in Keyhole Markup Language (KML), and calibration files in binary and text formats. This archive currently includes data from 2004, and 2006 - 2025. Additional L1B data will be added as they become available. AVIRIS-Classic supports NASA Science and applications in many areas including plant composition and function, geology and soils, greenhouse gas mapping, and calibration of orbital platforms.
+  <br>
+
+  #### AVIRIS-Classic_L2_Reflectance_2154
+  This dataset contains Level 2 (L2) orthocorrected reflectance from the Airborne Visible / Infrared Imaging Spectrometer (AVIRIS-Classic) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-Classic is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-Classic measures reflected radiance in 224 contiguous bands at approximately 10-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 400-2500 nm. The AVIRIS-Classic sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub meter range. AVIRIS-Classic is flown on a variety of aircraft platforms including the Twin Otter, NASA's WB-57, and NASA's high altitude ER-2. For each flight line, two types of L2 data files may be included: (a) calibrated surface reflectance and (b) water vapor and optical absorption paths for liquid water and ice. The L2 data are provided in ENVI format, which includes a flat binary file accompanied by a header (.hdr) file holding metadata in text format. This archive currently includes data from 2008 - 2025. Additional AVIRIS-Classic facility instrument L2 data will be added as they become available. AVIRIS-Classic supports NASA Science and applications in many areas including plant composition and function, geology and soils, greenhouse gas mapping, and calibration of orbital platforms.
+  <br>
+
+  #### AVIRIS-NG_L1B_radiance_2095
+  This dataset contains Level 1B (L1B) orthocorrected, scaled radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The NASA AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. In this dataset, for each flight line, six file types are included: orthocorrected calibrated radiance image (img) files, geometric lookup table (glt) and orthocorrected observation geometry and illumination (obs_ort) files. Also included are unprojected files of input geometry (igm), parameters relating to the geometry of observation and illumination (obs), and orthocorrected locations of each pixel (loc). In addition, ancillary files for the flight line are provided, including quick look images and polygon outlines of imagery footprints. The AVIRIS-NG L1B data are provided in ENVI binary format, which includes a flat binary file accompanied by a header (.hdr) file holding metadata in text format. The ancillary files include JPEG images and maps in Keyhole Markup Language (KML). The AVIRIS-NG is flown on a variety of aircraft platforms including the Twin Otter, the King Air B-200, and NASA's high altitude ER-2. This archive currently includes data from 2014 - 2022. Additional AVIRIS-NG facility instrument L1B data will be added as they become available. AVIRIS-NG supports NASA Science and applications in many areas including plant composition and function, geology and soils, greenhouse gas mapping, and calibration of orbital platforms.
+  <br>
+
+  #### AVIRIS-NG_L2_Reflectance_2110
+  This dataset contains Level 2 (L2) orthocorrected reflectance from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data. The AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. For each flight line, two types of L2 data files may be included: (a) calibrated surface reflectance and (b) water vapor and optical absorption paths for liquid water and ice. The L2 data are provided in ENVI format, which includes a flat binary file accompanied by a header (.hdr) file holding metadata in text format. The AVIRIS-NG is flown on a variety of aircraft platforms including the Twin Otter, the King Air B-200, and NASA's high altitude ER-2. This archive currently includes data from 2014 - 2022. Additional AVIRIS-NG facility instrument L2 data will be added as they become available. The AVIRIS-NG supports NASA Science and applications in many areas including plant composition and function, geology and soils, greenhouse gas mapping, and calibration of orbital platforms.
+  <br>
+
+  #### AVIRIS-NG_CH4_CO2_Plumes_2406
+  This dataset contains enhanced column-integrated methane (CH4) and carbon dioxide (CO2) (concentration lengths) acquired from 211 flight lines across North America imaged by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) between June 26 and August 15, 2023 for NASA's Synergistic TEMPO Air Quality Science (STAQS) campaign. Enhanced CH4 and CO2 concentrations were estimated from the L1B radiance measurements using a cluster matched filter approach. This algorithm searches each pixel's radiance spectrum for deviations that are characteristic of a greenhouses gas's absorption spectrum. A total of 177 greenhouse gas plumes were identified and delineated, of which 74 were CH4 and 103 were CO2. The data are provided in GeoTIFF and JSON formats.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- geospatial
+- ice
+- netcdf
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "AVIRIS_FlightLine_Locator_2140 v1.0 - This dataset provides attributed geospatial and tabular information for identifying and querying flight lines of interest for the Airborne Visible InfraRed Imaging Spectrometer-Classic (AVIRIS-C) and Airborne Visible InfraRed Imaging Spectrometer-Next Generation (AVIRIS-NG) Facility Instrument collections. It includes attributed shapefile and GeoJSON files containing polygon representation of individual flights lines for all years and separate KMZ files for each year."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS_FlightLine_Locator/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AV3_L1B_RDN_2356 v1 - This dataset contains Level 1B (L1B) calibrated radiance images as well as observational geometry and illumination parameters from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AV3_L1B_RDN/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AV3_L2A_RFL_2357 v1 - This dataset contains Level 2A (L2A) surface reflectance images from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AV3_L2A_RFL/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AV3_L2B_GHG_2358 v1 - This dataset contains Level 2B (L2b) enhancements of greenhouse gasses (GHG) derived from imagery collected by the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument. Products include methane and carbon dioxide enhancements, each with per-pixel uncertainties and sensitivities to the background."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AV3_L2B_GHG/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-Classic_L1B_Radiance_2155 v1 - This dataset contains Level 1B (L1B) orthocorrected, scaled radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from the Airborne Visible / Infrared Imaging Spectrometer (AVIRIS-Classic) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS-Classic_L1B_Radiance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-Classic_L2_Reflectance_2154 v1 - This dataset contains Level 2 (L2) orthocorrected reflectance from the Airborne Visible / Infrared Imaging Spectrometer (AVIRIS-Classic) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS-Classic_L2_Reflectance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-NG_L1B_radiance_2095 v1 - This dataset contains Level 1B (L1B) orthocorrected, scaled radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS-NG_L1B_radiance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-NG_L2_Reflectance_2110 v1 - This dataset contains Level 2 (L2) orthocorrected reflectance from the Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This is the NASA Earth Observing System Data and Information System (EOSDIS) facility instrument archive of these data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS-NG_L2_Reflectance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-NG_CH4_CO2_Plumes_2406 v1 - This dataset contains enhanced column-integrated methane (CH4) and carbon dioxide (CO2) (concentration lengths) acquired from 211 flight lines across North America imaged by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) between June 26 and August 15, 2023 for NASA's Synergistic TEMPO Air Quality Science (STAQS) campaign. Enhanced CH4 and CO2 concentrations were estimated from the L1B radiance measurements using a cluster matched filter approach."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/aviris/AVIRIS-NG_CH4_CO2_Plumes/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

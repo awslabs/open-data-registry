@@ -1,0 +1,30 @@
+Name: Surya Bench
+Description: |
+    This dataset provides machine learning (ML)-ready solar data curated from NASA’s Solar Dynamics Observatory (SDO), covering observations from May 13, 2010, to July 31, 2024. It includes Level-1.5 processed data from:
+    - Atmospheric Imaging Assembly (AIA):
+    - Helioseismic and Magnetic Imager (HMI):
+    The dataset is designed to facilitate large-scale ML applications in heliophysics, such as solar activity forecasting, unsupervised representation learning, and scientific foundation model development.
+Documentation: https://huggingface.co/datasets/nasa-impact/Surya-bench
+Contact: sujit.roy@nasa.gov
+ManagedBy: NASA IMPACT
+UpdateFrequency: This is the final version of the Dataset.
+Tags:
+  - machine learning
+  - solar
+  - aws-pds
+  - heliophysics
+License: |
+    Creative Commons Attribution 4.0 International.
+Citation: >
+  Roy, S., Singh, T., Freitag, M., Schmude, J., Lal, R., Hegde, D., Ranjan, S., Lin, A., Gaur, V., Vos, E.E. and Ghosal, R., 2024. AI Foundation Model for Heliophysics: Applications, Design, and Implementation. arXiv preprint arXiv:2410.10841.
+Resources:
+  - Description: Surya Bench
+    ARN: arn:aws:s3:::nasa-surya-bench
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](http://nasa-surya-bench.s3.amazonaws.com/index.html)'
+  - Description: Notifications for Surya bench data
+    ARN: arn:aws:sns:us-west-2:614929158106:nasa-surya-bench-object_created
+    Region: us-west-2
+    Type: SNS Topic

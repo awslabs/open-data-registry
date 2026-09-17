@@ -1,0 +1,47 @@
+Name: ASTER Level 1T Precision Terrain Corrected Registered At-Sensor Radiance V004
+Description: |-
+  The Terra Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Level 1 Precision Terrain Corrected Registered At-Sensor Radiance (AST_L1T) data contains calibrated at-sensor radiance, which corresponds with the ASTER Level 1B ([AST_L1B](https://doi.org/10.5067/ASTER/AST_L1B.004)) that has been geometrically corrected and rotated to a north-up UTM projection. The AST_L1T is created from a single resampling of the corresponding ASTER L1A ([AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.004)) product. The bands available in the AST_L1T depend on the bands in the AST_L1A and can include up to three Visible and Near Infrared (VNIR) bands, six Shortwave Infrared (SWIR) bands, and five Thermal Infrared (TIR) bands. The AST_L1T dataset does not include the aft-looking VNIR band 3. The AST_L1T product has a spatial resolution of 15 meters (m) for the VNIR bands, 30 m for the SWIR bands, and 90 m for the TIR bands.
+
+  The precision terrain correction process incorporates GLS2000 digital elevation data with derived ground control points (GCPs) to achieve topographic accuracy for all daytime scenes where correlation statistics reach a minimum threshold. Alternate levels of correction are possible (systematic terrain, systematic, or precision) for scenes acquired at night or that otherwise represent a reduced quality ground image (e.g., cloud cover).
+
+  For daytime images, if the VNIR or SWIR telescope collected data and precision correction was attempted, each precision terrain corrected image will have an accompanying independent quality assessment. It will include the geometric correction available for distribution as both a text file and single band browse images with the valid GCPs overlaid.
+
+  This multi-file product also includes georeferenced full resolution browse images. The number of browse images and the band combinations of the images depends on the bands available in the corresponding [AST_L1A](https://doi.org/10.5067/ASTER/AST_L1A.004) dataset.
+
+  Known Issues
+
+  * Since October 1, 2017, a correction addresses zero-filled scans in low-latitude, ascending orbit (nighttime) TIR data. Additional details are available in the ASTER L1T User Advisory.
+  * Data from the SWIR bands collected after April 2008 may show anomalous saturation and striping. See the ASTER SWIR User Advisory for further information.
+
+  Improvements/Changes from Previous Versions
+
+  * Enhanced Geolocation Accuracy: Version 4 uses Collection 2 Ground Control Points (GCPs) compared against Global Land Survey (GLS) 2000 standards to improve positional accuracy.
+  * Radiometric Calibration Update: Version 4 applies Radiometric Calibration Coefficient Version 5 (RCC V5) to improve the radiometric accuracy of the raw DNs, based on research by [Tsuchida and others (2020)](https://doi.org/10.3390/rs12030427), published in Remote Sensing.
+  Read our doc on how to get AWS Credentials to retrieve this data: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME
+Documentation: https://doi.org/10.5067/ASTER/AST_L1T.004
+Contact: 'User Services: lpdaac@usgs.gov. Home Page: https://www.earthdata.nasa.gov/centers/lp-daac/contact'
+ManagedBy: NASA
+UpdateFrequency: From 2000-03-04 to Ongoing (Varies)
+Tags:
+  - aws-pds
+  - cog
+  - earth observation
+  - global
+  - land
+  - orbit
+  - cog
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+  - Description: 'ASTER Level 1T Precision Terrain Corrected Registered At-Sensor
+      Radiance V004.'
+    ARN: arn:aws:s3:::lp-prod-protected/AST_L1T.004
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+DataAtWork:
+  Publications: ~
+  Tutorials:
+   - Title: Download Files from S3 Using boto3
+     URL: https://github.com/nasa/LPDAAC-Data-Resources/blob/7f58ad3abeca7f0d17637ddb812642c0120a57ab/python/how-tos/Earthdata_Cloud__Download_file_from_S3.ipynb
+     AuthorName: LPDAAC
