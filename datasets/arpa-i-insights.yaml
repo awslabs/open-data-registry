@@ -19,6 +19,10 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
+    - '[Browse Bucket](https://arpa-i-insights.s3.us-west-2.amazonaws.com/index.html)'
+    - '[INSIGHTS-LiDAR GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flidar%2Fv1%2Fstac%2Findex%2Fitems.parquet)'
+    - '[INSIGHTS-GIS-Labels GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flabels%2Fgis-surface%2Fv1%2Findex%2Fgis-surface-labels-index.geoparquet)'
+    - '[INSIGHTS-Manual-Semantic-Labels GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flabels%2Fmanual-semantic%2Fv1%2Findex%2Fmanual-semantic-labels-index.geoparquet)'
   - Description: Notifications for INSIGHTS bucket updates
     ARN: arn:aws:sns:us-west-2:218254303756:arpa-i-insights-object_created
     Region: us-west-2
