@@ -5,10 +5,12 @@ Contact: arpa-i-insights-admin@ll.mit.edu
 ManagedBy: MIT Lincoln Laboratory
 UpdateFrequency: Ad Hoc
 Tags:
-  - Lidar
-  - Digital Twin
-  - Transportation
-  - Aerial Lidar
+  - lidar
+  - transportation
+  - urban
+  - geospatial
+  - segmentation
+  - machine learning
 License: CC-BY-4.0
 Citation:
 Resources:
@@ -17,6 +19,10 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
+  - Description: Notifications for INSIGHTS bucket updates
+    ARN: arn:aws:sns:us-west-2:218254303756:arpa-i-insights-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get to know the ARPA-I INSIGHTS Dataset
