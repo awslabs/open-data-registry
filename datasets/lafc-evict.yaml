@@ -1,33 +1,4 @@
-# DRAFT — Registry of Open Data on AWS entry for LAFC-Evict
-#
-# STATUS: Private working draft. AWS Open Data Step 5 (CloudFormation
-# resource creation and public S3 upload) is complete: the S3 bucket and
-# SNS topic ARNs below are real, live AWS resources, re-verified
-# 2026-09-12 via anonymous S3 access and a 15/15 SHA-256 checksum match
-# against the frozen local release.
-#
-# Schema basis: awslabs/open-data-registry README.md and
-# datasets/registry-open-data.yaml. No <PENDING_...> placeholders remain
-# in this file as of 2026-09-12: the tutorial notebook is committed to a
-# public GitHub repository (github.com/SoroushVahidi/lafc-evict-tutorial)
-# and its DataAtWork.Tutorials URL/NotebookURL below are live. The
-# Registry landing-page URL referenced from inside that notebook still
-# depends on this Registry entry going live and is not a field in this
-# YAML file.
-#
-# Values below are sourced from the live, currently-public Hugging Face
-# dataset card (https://huggingface.co/datasets/SoroushVahidi/lafc-evict,
-# v0.3, re-verified 2026-09-12 against the live Hugging Face Hub API), the
-# dataset's own CITATION.cff, and the live AWS resources created in Step 5
-# (CloudFormation stack `pdsbuckets`, region us-west-2).
-
 Name: "LAFC-Evict: Learning-Augmented Cache Eviction Dataset"
-# "LAFC-Evict" is the dataset's coined proper name (parallel to e.g. ImageNet
-# or COCO), not an unexplained acronym — the Name field spells out what the
-# dataset is ("Learning-Augmented Cache Eviction Dataset") immediately after
-# it. "LAFC" itself is not defined as an acronym anywhere in the dataset's
-# own citation metadata (CITATION.cff, HF card), so no expansion is invented
-# here.
 
 Description: >-
   LAFC-Evict is a derived, tabular research dataset of counterfactual
@@ -53,34 +24,17 @@ Description: >-
   smoke-test fixture and is not a scientific release.
 
 Documentation: "https://huggingface.co/datasets/SoroushVahidi/lafc-evict"
-# This is the dataset's existing, already-public documentation surface (the
-# live HF dataset card), which predates this AWS application and is already
-# author-attributed. AWS's onboarding handbook (§2.2) prefers a standalone
-# documentation page and explicitly permits hosting "where you choose." A
-# dedicated public GitHub documentation page is planned for public launch;
-# see this repository's `documentation/README.md`.
 
 Contact: "sv96@njit.edu"
 
 ManagedBy: "Soroush Vahidi"
-# Dataset provider: Soroush Vahidi. NJIT is the provider's academic affiliation,
-# not the dataset provider for this AWS Open Data onboarding.
 
 UpdateFrequency: "No fixed schedule. Updated on major dataset releases (see Version history in the dataset documentation); the current version is v0.3, published 2026-08-13."
-# Date corrected 2026-09-12 from 2026-08-12 to 2026-08-13 to match the
-# canonical publication_date_hf recorded in the dataset-publication repository
-# (publication/LAFC_EVICT_PUBLICATION_STATE.json) and independently confirmed
-# via the live Hugging Face Hub API.
 
 Tags:
   - "machine learning"
   - "benchmark"
   - "parquet"
-# Only tags present in the Registry's own controlled tags.yaml are used
-# here. Most of the free-form Hugging Face tags ("caching", "cache-eviction",
-# "learning-augmented-algorithms", "counterfactual-supervision", "tabular",
-# "v0.3", "wiki2018-only") do not exist in the AWS Registry's controlled tag
-# list and were deliberately not copied over.
 
 License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
 
@@ -113,24 +67,8 @@ DataAtWork:
       AuthorURL: "https://github.com/SoroushVahidi"
       Services:
         - "Amazon S3"
-      # The notebook is committed to a public GitHub repository
-      # (github.com/SoroushVahidi/lafc-evict-tutorial, default branch
-      # `main`), re-executed there against the real public S3 bucket
-      # created in Step 5, and confirmed live (2026-09-12): the GitHub
-      # blob view, the raw .ipynb URL, and the repository's README/LICENSE
-      # all return HTTP 200 and the raw file parses as valid notebook JSON.
   Tools & Applications:
     - Title: "LAFC-Evict dataset-generation pipeline (Augmented-caching)"
       URL: "https://github.com/SoroushVahidi/Augmented-caching"
       AuthorName: "Soroush Vahidi"
       AuthorURL: "https://github.com/SoroushVahidi"
-      # Public generator source (branch `main`): cache simulator and
-      # candidate-row feature/label generation code. This dataset's own
-      # repository (currently private) packages an already-generated
-      # candidate-row tree into the public release; it does not regenerate
-      # rows from raw traces. Added 2026-09-12 to close a documentation gap
-      # (generator source was public but not linked from the Registry entry).
-  Publications: []
-  # The associated SSRN preprint could be listed here (it is already
-  # public), but is intentionally left out of this draft until the rest of
-  # the entry is finalized, to avoid partially-published Registry metadata.
