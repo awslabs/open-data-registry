@@ -1,0 +1,121 @@
+Name: Korean Variant Archive 3 (KOVA3)
+Description: |
+  KOVA3 is a population-scale whole-genome reference for Korean and East Asian genomics, derived from
+  11,000 Korean whole genomes jointly genotyped on GRCh38 with the Illumina DRAGEN iterative gVCF
+  genotyper. East Asians account for only 2.78% of gnomAD v4, and Koreans are genetically distinct from
+  Chinese and Japanese populations, so variants common in Koreans are often absent or imprecisely
+  estimated in broader reference databases.
+
+  The dataset is released in two tiers. The open tier is a registration-free allele-frequency resource of
+  approximately 100-115 million variants, published as chromosome-sharded sites-only VCF with tabix
+  indexes, Apache Parquet partitioned for Amazon Athena, and a prebuilt Hail Table, with allele count,
+  allele number, allele frequency, homozygote count, call rate, filter status and callable-region
+  resources. The controlled-access tier holds participant-level FASTQ, CRAM, per-sample gVCF and the
+  genotyped multi-sample VCF, available to approved academic researchers under the KOVA3 Data Use
+  Agreement.
+
+  The open tier supports population-matched rare-disease variant filtering, ACMG/AMP population-frequency
+  evidence, carrier-frequency estimation, pharmacogenomics and comparative population genetics. The
+  controlled tier supports haplotype phasing and linkage disequilibrium, imputation-reference
+  construction, relatedness and fine-scale population structure, variant-caller benchmarking, and
+  structural-variant and short-tandem-repeat method development.
+Documentation: https://github.com/KuChoiLab/kova3
+Contact: https://github.com/KuChoiLab/kova3/issues
+ManagedBy: "[Choi Lab, Korea University College of Medicine](https://choi.korea.ac.kr/)"
+UpdateFrequency: |
+  Growth is stepwise rather than continuous. A new release is produced when a cohort is incorporated and
+  the joint callset is regenerated; the next release, planned within the coming year, adds approximately
+  2,500 genomes. Published release paths are immutable and superseded releases are retained.
+Tags:
+  - aws-pds
+  - bioinformatics
+  - genetic
+  - genome
+  - genomic
+  - health
+  - life sciences
+  - medicine
+  - population
+  - population genetics
+  - variant annotation
+  - whole genome sequencing
+License: |
+  The open tier is released under the Creative Commons Attribution 4.0 International license
+  (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Access requires no registration, approval,
+  data-use agreement, payment or AWS account.
+
+  The controlled-access tier is available free of charge to eligible academic researchers for
+  non-commercial research under the KOVA3 Data Use Agreement. Eligibility criteria, application
+  materials, review procedures and the agreement terms are published at
+  https://github.com/KuChoiLab/kova3/blob/main/docs/data-access.md
+Citation: |
+  Cite the resource and state the release version used, for example "KOVA3 open tier release v3.0.0".
+  Allele frequencies change between releases, so an analysis is not reproducible without the version.
+  Full citation guidance, including the references for the contributing cohorts, is at
+  https://github.com/KuChoiLab/kova3/blob/main/CITATION.md
+  A KOVA3 publication citation will be added here on publication.
+Resources:
+  - Description: |
+      Open tier. Aggregate allele-frequency callset for 11,000 Korean whole genomes: chromosome-sharded
+      sites-only VCF with tabix indexes, Apache Parquet partitioned by chromosome and genomic-position
+      bin, a prebuilt Hail Table, callable-region and allele-number resources, aggregate cohort metadata,
+      documentation, schemas, release manifests and SHA-256 checksums. Contains no participant-level
+      genotypes.
+    ARN: arn:aws:s3:::kova3-open
+    Region: ap-northeast-2
+    Type: S3 Bucket
+  - Description: |
+      Controlled-access tier. Participant-level data for the same 11,000 genomes: gzip-compressed
+      paired-end FASTQ, CRAM with CRAI indexes, bgzip-compressed per-sample gVCF with tabix indexes, and
+      the chromosome-sharded genotyped multi-sample VCF. Read-level format varies by sample; per-sample
+      manifests record which format is available for each genome. Access requires an approved application
+      and a signed Data Use Agreement.
+    ARN: arn:aws:s3:::kova3-controlled
+    Region: ap-northeast-2
+    Type: S3 Bucket
+    ControlledAccess: https://github.com/KuChoiLab/kova3/blob/main/docs/data-access.md
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Korean Variant Archive 3 (KOVA3)"
+      URL: https://github.com/seungsookim-99/open-data-examples/blob/main/kova3/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/seungsookim-99/open-data-examples/blob/main/kova3/get-to-know-a-dataset.ipynb
+      AuthorName: Choi Lab, Korea University College of Medicine
+      AuthorURL: https://choi.korea.ac.kr/
+      Services:
+        - Amazon S3
+        - Amazon Athena
+    - Title: Streaming a gene or interval from the sites-only VCF on Amazon S3
+      URL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/01_stream_interval_bcftools.ipynb
+      NotebookURL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/01_stream_interval_bcftools.ipynb
+      AuthorName: Choi Lab, Korea University College of Medicine
+      AuthorURL: https://choi.korea.ac.kr/
+      Services:
+        - Amazon S3
+    - Title: Annotating your own VCF with Korean allele frequencies
+      URL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/02_annotate_patient_vcf.ipynb
+      NotebookURL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/02_annotate_patient_vcf.ipynb
+      AuthorName: Choi Lab, Korea University College of Medicine
+      AuthorURL: https://choi.korea.ac.kr/
+      Services:
+        - Amazon S3
+    - Title: Querying a gene panel with Amazon Athena
+      URL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/03_athena_gene_panel.ipynb
+      NotebookURL: https://github.com/KuChoiLab/kova3/blob/main/tutorials/03_athena_gene_panel.ipynb
+      AuthorName: Choi Lab, Korea University College of Medicine
+      AuthorURL: https://choi.korea.ac.kr/
+      Services:
+        - Amazon Athena
+        - Amazon S3
+  Publications:
+    - Title: "A database of 5305 healthy Korean individuals reveals genetic and clinical implications for an East Asian population"
+      URL: https://www.nature.com/articles/s12276-022-00871-4
+      AuthorName: Lee J, Lee J, Jeon S, et al.
+    - Title: "Korea4K: whole genome sequences of 4,157 Koreans with 107 phenotypes derived from extensive health check-ups"
+      URL: https://doi.org/10.1093/gigascience/giae014
+      AuthorName: Jeon S, Choi H, Jeon Y, et al.
+    - Title: "10,239 whole genomes with multiomic and clinical health information as the Korean population multiomic reference dataset"
+      URL: https://doi.org/10.1101/2025.11.17.688763
+      AuthorName: An K, Jeon S, Kwon Y, et al.
+    - Title: "Korean Variant Archive (KOVA): a reference database of genetic variations in the Korean population"
+      URL: https://doi.org/10.1038/s41598-017-04642-4
+      AuthorName: Lee S, Seo J, Park J, et al.
