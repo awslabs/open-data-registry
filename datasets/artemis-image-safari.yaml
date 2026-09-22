@@ -1,4 +1,4 @@
-Name: Artemis and Image Safari Agricultural Imaging Dataset
+Name: Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species
 Description: >
   Artemis and Image Safari are complementary large-scale agricultural imaging
   datasets containing approximately 7.5 million field images (7,469,218) from
@@ -49,7 +49,8 @@ License: >
 Citation: >
   Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical
   Crop Species was accessed on [DATE] at registry.opendata.aws/artemis-image-safari.
-  Please also cite the associated data descriptor (Mutuvi S. et al.).
+  Please also cite the associated data descriptor (Mutuvi S. et al.),
+  https://doi.org/10.31220/agriRxiv.2026.00491.
 
 Resources:
   - Description: >
@@ -81,6 +82,11 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://alliance-artemis-imagesafari.s3.amazonaws.com/index.html#ImageSafari/)'
+  - Description: Notifications for new Artemis and Image Safari data
+    ARN: arn:aws:sns:us-west-2:066107820359:alliance-artemis-imagesafari-object_created
+    Region: us-west-2
+    Type: SNS Topic
+
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species"
@@ -93,5 +99,9 @@ DataAtWork:
         - Amazon SageMaker
         - AWS Glue
         - Amazon Athena
-ADXCategories:
-  - Environmental Data
+
+  Publications:
+    - Title: >
+        Artemis and Image Safari - Crop Imagery Datasets Spanning Globally Critical Crop Species
+      URL: https://doi.org/10.31220/agriRxiv.2026.00491
+      AuthorName: "Mutuvi S., Guerena D., Zych M., Henday S., Girma E., Mungubariki T., Agesa B., Zochowski M., Ciolek D., Lazowik M., Chen J., Goeke L., Omwandho J., del Palma G., Malabi J., Phomebeya S., Sanena M., Marcos J. T. C., Ghandi H., Nas M., Rathore A., Mendes T., Yadav S., Adjah K. L., Woltering L., Lekasio E., Mushi B., Abraham L., Katunzi G., Remy S. L., Siyavora T., Selvaraj M., Casas J., Boukar O., Ongom P., Nakato G. V., Mwanje G., Agre P., Laporte M.-A., Asefa T., Odama R., Mukankusi C., and Wu W."
