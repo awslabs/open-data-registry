@@ -1,0 +1,41 @@
+Name: ARPA-I INSIGHTS Dataset
+Description: "The ARPA-I INSIGHTS Dataset is a large-scale, high-density (~85 pts/m²) geiger-mode aerial LiDAR dataset covering over 1,600 km² across the Salt Lake City, UT and Denver, CO metropolitan regions, including major freeway corridors. Collected in June 2025, the dataset provides dense three-dimensional measurements with approximately 30 cm vertical and horizontal point spacing, enabling detailed representation of transportation infrastructure and surrounding urban environments. The data was acquired as part of a U.S. Department of Transportation ARPA-I-funded project, executed by MIT Lincoln Laboratory, to support state and regional transportation agencies. The dataset is designed to enable transportation digital twins, supporting virtual inspection, measurement, and inventory of infrastructure assets at corridor and regional scales. In addition to raw point clouds, the dataset includes annotated subsets for machine learning, with labeled classes for surface types (e.g., road, sidewalk, trail, driveway) and infrastructure elements (e.g., power lines, traffic signals, light poles). The data is optimized for cloud-based access through a STAC catalog with GeoParquet index, and tiled storage of cloud-optimized point clouds, supporting scalable workflows for geospatial analysis, infrastructure monitoring, and multimodal AI research."
+Documentation: https://github.com/VolpeUSDOT/ARPA-I_INSIGHTS_Documentation
+Contact: arpa-i-insights-admin@ll.mit.edu
+ManagedBy: MIT Lincoln Laboratory
+UpdateFrequency: Ad Hoc
+Tags:
+  - lidar
+  - transportation
+  - urban
+  - geospatial
+  - segmentation
+  - machine learning
+License: CC-BY-4.0
+Citation:
+Resources:
+  - Description: S3 bucket containing STAC geoparquet indices, tiled COPC LAZ and LAS point clouds, and metadata for the INSIGHTS LiDAR, GIS-Surface-Labels, and Manual-Semantic-Labels datasets.
+    ARN: arn:aws:s3:::arpa-i-insights
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://arpa-i-insights.s3.us-west-2.amazonaws.com/index.html)'
+    - '[INSIGHTS-LiDAR GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flidar%2Fv1%2Fstac%2Findex%2Fitems.parquet)'
+    - '[INSIGHTS-GIS-Labels GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flabels%2Fgis-surface%2Fv1%2Findex%2Fgis-surface-labels-index.geoparquet)'
+    - '[INSIGHTS-Manual-Semantic-Labels GeoParquet Index](https://geoparquet.info/?url=https%3A%2F%2Farpa-i-insights.s3.us-west-2.amazonaws.com%2Flabels%2Fmanual-semantic%2Fv1%2Findex%2Fmanual-semantic-labels-index.geoparquet)'
+  - Description: Notifications for INSIGHTS bucket updates
+    ARN: arn:aws:sns:us-west-2:218254303756:arpa-i-insights-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to know the ARPA-I INSIGHTS Dataset
+      URL: https://github.com/VolpeUSDOT/ARPA-I_INSIGHTS_Documentation
+      NotebookURL: https://github.com/VolpeUSDOT/ARPA-I_INSIGHTS_Documentation/blob/main/examples/get-to-know-ARPA-I-INSIGHTS.ipynb 
+      AuthorName: Jeffrey Liu
+      AuthorURL: https://www.linkedin.com/in/jeffreyliu0/
+      Services:
+DeprecatedNotice:
+ADXCategories:
+  - Environmental Data
+  - Public Sector Data
