@@ -1,0 +1,33 @@
+Name: NASA AVUELO Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### AVUELO_AV3_L2A_Reflectance_2479
+  This dataset contains Level 2A (L2A) orthocorrected surface reflectance and uncertainty estimates from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument acquired for the Airborne Validation Unified Experiment: Land to Ocean (AVUELO) project in 2025. This L2A data product was generated with a provisional calibration algorithm. AVUELO aims to advance the validation and calibration of spaceborne imaging spectroscopy (hyperspectral) data for tropical ecosystems by combining airborne imaging spectroscopy for terrestrial and marine sites in Panama and Costa Rica with contemporaneous field measurements and data collected in February 2025. The NASA AVIRIS-3 is a spectral mapping system that measures reflected radiance at ~7.4-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 390-2500 nm. The AVIRIS-3 sensor has a 40 degree instantaneous field of view with 1,234 pixels, providing altitude dependent ground sampling distances from 12 m to sub meter range. This spectrometer measures radiance from surface and atmosphere and is identical in design to the orbital Earth Surface Mineral Dust Source Investigation (EMIT) spectrometer. AVIRIS-3 was deployed on a King Air aircraft. Surface hemispherical directional reflectance was derived from calibrated radiance using an optimal estimation algorithm. For each flight scene, two file types are included: orthocorrected surface reflectance (RFL_ORT) and orthocorrected reflectance uncertainty (UNC_ORT) in netCDF format. Both file types include data projected in a UTM coordinate system. When available, a version 2 calibration Level 2A (L2A) of orthocorrected surface reflectance and uncertainty data for these same flight lines will be available in an AVIRIS-3 L2A Orthocorrected Surface Reflectance, Facility Instrument Collection, Version 2.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/AVUELO/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- netcdf
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "AVUELO_AV3_L2A_Reflectance_2479 v1 - This dataset contains Level 2A (L2A) orthocorrected surface reflectance and uncertainty estimates from the Airborne Visible / Infrared Imaging Spectrometer-3 (AVIRIS-3) instrument acquired for the Airborne Validation Unified Experiment: Land to Ocean (AVUELO) project in 2025. This L2A data product was generated with a provisional calibration algorithm."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/avuelo/AVUELO_AV3_L2A_Reflectance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

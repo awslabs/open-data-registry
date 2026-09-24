@@ -1,0 +1,99 @@
+Name: NASA tempo Project
+Description: |
+  The mountains of Nepal are one of the most hazardous environments in the world, with frequent landslides caused by tectonic activity, extreme rainfall and infrastructure development. As a landlocked country, Nepal relies on proper functioning of major transportation networks such as the highways to sustain and improve the livelihoods of the population. Every year there are reports of landslides blocking the highways, especially during the rainy season; however, the frequency and location of landslides along the highway corridors are not well reported. RapidEye satellite imagery was used to create annual landslide initiation point inventories along three important highways in Nepal: the Arniko, Karnali, and Pasang Lhamu highway.
+  <br>
+
+  #### HMA_SR_D
+  Snowpack plays a significant role in the hydrologic cycle over High Mountain Asia (HMA). As a vital water resource, the distribution of snowpack volume also impacts the water availability for downstream populations. To assess the regional water balance, it is important to characterize the spatio-temporal distribution of water storage in the HMA snowpack. This HMA snow reanalysis data set contains daily estimates of posterior snow water equivalent (SWE), fractional snow covered area (fSCA), snow depth (SD), etc.
+  <br>
+
+  #### NmHRIR1T
+  This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 3.4 to 4.2 µm window. These data were detected by the High Resolution Infrared Radiometer (HRIR) on board the Nimbus 1, Nimbus 2, and Nimbus 3 satellites during 1964, 1966, and 1969-1970. The Nimbus HRIR sensor was used to map the earth's nighttime cloud cover and to measure cloud top temperatures or surface temperatures. Note: This data set is not georeferenced and contains some gaps in temporal coverage because of missing data.
+  <br>
+
+  #### NmTHIR115-1T
+  This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 11.5 µm window (10.5 µm - 12.5 µm). These data were detected by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 4, Nimbus 5, and Nimbus 6 satellites, respectively, during 1970-1971, 1973-1975 and 1975. The Nimbus satellites used the THIR 11.5 µm window to measure cloud top or surface temperatures. Note: This data set is not georeferenced and contains some gaps in temporal coverage because of missing data.
+  <br>
+
+  #### NmTHIR67-1T
+  This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 6.7 µm window (6.5 µm - 7.0 µm). These data were detected by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 4, Nimbus 5, and Nimbus 6 satellites, respectively, during 1970-1971, 1973-1975, and 1975. The Nimbus satellites used the THIR 6.7 µm window to map the water vapor distribution in the upper troposphere and stratosphere. Note: This data set is not georeferenced and there are some gaps in temporal coverage because of missing data.
+  <br>
+
+  #### NmTHIRmtg-1T
+  This data set consists of daily, global grayscale TIFF images measured in the 6.7 µm window (6.5 µm - 7.0 µm) and the 11.5 µm window (10.5 µm - 12.5 µm) by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 7 satellite. Each data granule is a daytime or nighttime global composite of all the swaths in a day. Note: This data set is not georeferenced and there are some gaps in the temporal coverage because of missing data.
+  <br>
+
+  #### SV16I_TNET
+  These data consist of soil moisture and temperature measurements recorded by the temporary soil moisture network deployed to SMAPVEX16-Iowa for the summer season of 2016. The sites were spread out over an experiment domain of about 30km by 40 km located about 30 km north of Ames, Iowa, USA. The data file contains the soil moisture and temperature measurements for each station located at the site.
+  <br>
+
+  #### WUS_UCLA_SR
+  This Western United States snow reanalysis data set contains daily estimates of posterior snow water equivalent (SWE), fractional snow-covered area (fSCA) and snow depth (SD) at 16 arc-second (~500 m) resolution from water years 1985 to 2021. This data set was developed to be compared to SnowEx data sets but its utility reaches beyond that since its spatial and temporal bounds extend over the entire Western U.S. and over several decades.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/hma_mtli/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "HMA_MTLI v1 - The mountains of Nepal are one of the most hazardous environments in the world, with frequent landslides caused by tectonic activity, extreme rainfall and infrastructure development. As a landlocked country, Nepal relies on proper functioning of major transportation networks such as the highways to sustain and improve the livelihoods of the population."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA_MTLI/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "HMA_SR_D v1 - Snowpack plays a significant role in the hydrologic cycle over High Mountain Asia (HMA). As a vital water resource, the distribution of snowpack volume also impacts the water availability for downstream populations."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA_SR_D/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NmHRIR1T v1 - This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 3.4 to 4.2 µm window. These data were detected by the High Resolution Infrared Radiometer (HRIR) on board the Nimbus 1, Nimbus 2, and Nimbus 3 satellites during 1964, 1966, and 1969-1970."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/NIMBUS/NmHRIR1T/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NmTHIR115-1T v1 - This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 11.5 µm window (10.5 µm - 12.5 µm). These data were detected by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 4, Nimbus 5, and Nimbus 6 satellites, respectively, during 1970-1971, 1973-1975 and 1975."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/NIMBUS/NmTHIR115-1T/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NmTHIR67-1T v1 - This data set consists of daily, global grayscale TIFF images derived from radiative temperatures measured in the 6.7 µm window (6.5 µm - 7.0 µm). These data were detected by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 4, Nimbus 5, and Nimbus 6 satellites, respectively, during 1970-1971, 1973-1975, and 1975."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/NIMBUS/NmTHIR67-1T/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NmTHIRmtg-1T v1 - This data set consists of daily, global grayscale TIFF images measured in the 6.7 µm window (6.5 µm - 7.0 µm) and the 11.5 µm window (10.5 µm - 12.5 µm) by the Temperature-Humidity Infrared Radiometer (THIR) on board the Nimbus 7 satellite. Each data granule is a daytime or nighttime global composite of all the swaths in a day."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/NIMBUS/NmTHIRmtg-1T/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV16I_TNET v1 - These data consist of soil moisture and temperature measurements recorded by the temporary soil moisture network deployed to SMAPVEX16-Iowa for the summer season of 2016. The sites were spread out over an experiment domain of about 30km by 40 km located about 30 km north of Ames, Iowa, USA."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV16I_TNET/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "WUS_UCLA_SR v1 - This Western United States snow reanalysis data set contains daily estimates of posterior snow water equivalent (SWE), fractional snow-covered area (fSCA) and snow depth (SD) at 16 arc-second (~500 m) resolution from water years 1985 to 2021. This data set was developed to be compared to SnowEx data sets but its utility reaches beyond that since its spatial and temporal bounds extend over the entire Western U.S."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SNOWEX/WUS_UCLA_SR/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

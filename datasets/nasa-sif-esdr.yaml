@@ -1,0 +1,91 @@
+Name: NASA SIF-ESDR Project
+Description: |
+  This dataset provides global solar-induced chlorophyll fluorescence (SIF) estimates at a 0.05-degree resolution (approximately 5 km at the equator) for each month from January 2003 through December 2017. SIF data (740 nm) was retrieved from the SCanning Imaging Absorption spectroMeter for Atmospheric CHartographY (SCIAMACHY) and Global Ozone Monitoring Experiment 2 (GOME-2) instruments onboard the MetOp-A satellite. The data were downscaled to 0.05 degrees using the Random Forest algorithm and predictors from Moderate Resolution Imaging Spectroradiometer (MODIS) and Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2) reanalysis, and then harmonized with the cumulative distribution function (CDF) matching technique. The uncertainty of the harmonized SIF estimates was also quantified and provided. Validation of the harmonized product showed that it retained high spatial and temporal consistency with the original SCIAMACHY and GOME-2 SIF retrievals and had good correlations with independent airborne and ground-based SIF measurements. The dataset can inform on the synergy between satellite SIF and photosynthesis and research on drought, yield estimation, and land degradation evaluation. The data are provided in netCDF format.
+  <br>
+
+  #### Global_SIF_OCO2_MODIS_1863
+  This dataset provides spatially-contiguous global mean daily solar-induced chlorophyll fluorescence (SIF) estimates at 0.05 degree (approximately 5 km at the equator) spatial and 16-day temporal resolution from September 2014 through July 2020. This product was derived from Orbiting Carbon Observatory-2 (OCO-2) SIF observations and produced by training an artificial neural network (ANN) on the native OCO-2 SIF observations and MODIS BRDF-corrected seven-band surface reflectance along OCO-2's orbits. The trained ANN model was then applied to predict mean daily SIF (mW/m2/nm/sr) in OCO-2's gap regions based on MODIS reflectance and landcover. This framework was stratified by biomes and 16-day time steps. This dataset's high resolution and global contiguous coverage will greatly enhance the synergy between satellite SIF and photosynthesis measured on the ground at consistent spatial scales. Potential applications of this dataset include advancing dynamic drought monitoring and mitigation, informing agricultural planning and yield estimation, and providing a benchmark for upcoming satellite missions with SIF capabilities at higher spatial resolutions.
+  <br>
+
+  #### ERS2_GOME_SIF_1758
+  This dataset provides Level 2 Solar-Induced Fluorescence (SIF) of Chlorophyll estimates derived from the Global Ozone Monitoring Experiment (GOME) instrument on the European Space Agency's (ESA's) European Remote-Sensing 2 (ERS-2) satellite. Each file contains daily raw and bias-adjusted solar-induced fluorescence on an orbital basis (land pixels only), at a resolution of 40 km x 320 km, along with quality control information and ancillary data. Data is provided for the period from 1995-07-01 to 2003-06-22. The GOME SIF product is inherently noisy due to low signal levels and has undergone only a limited amount of validation. This dataset includes both Version 1 and Version 2 files. Version 2 includes new fields such as SIF uncertainties, longitude-latitude corners, and data coverage over ocean. In addition, the SIF bias adjustment differs between Versions 1 and 2. The data are provided in NetCDF format.
+  <br>
+
+  #### MetOpA_GOME2_SIF_V2_2292
+  This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the Global Ozone Monitoring Experiment 2 (GOME-2) instrument on the European Meteorological Satellite (EUMETSAT) MetOp-A with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. GOME-2 covers global land on an orbital basis at a resolution of approximately 40 km x 80 km (before 15 July 2013) or 40 km x 40 km (since 15 July 2013). Data are provided for the period from 2007-02-01 to 2018-02-01. Each file contains daily raw and bias-adjusted solar-induced fluorescence, quality control information, and ancillary data. SIF measurements can provide information on vegetation's functional status, including light-use efficiency and global primary productivity, which can be used for global carbon cycle modeling and agricultural applications. The GOME-2 SIF product is inherently noisy due to low signal levels and has undergone only a limited amount of validation. The data are provided in netCDF format.
+  <br>
+
+  #### MetOpB_GOME2_SIF_2182
+  This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the Global Ozone Monitoring Experiment 2 (GOME-2) instrument on the European Meteorological Satellite (EUMETSAT) MetOp-B with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. GOME-2 covers global land (observations up to 75-degree solar zenith angle) at a resolution of approximately 40 km x 80. Data are provided for the period from 2013-04-01 to 2021-06-07. Each file contains daily raw and bias-adjusted solar-induced fluorescence along with quality control information and ancillary data. SIF measurements can provide information on the functional status of vegetation including light-use efficiency and global primary productivity that can be used for global carbon cycle modeling and agricultural applications. The GOME-2 SIF product is inherently noisy owing to low signal levels and has undergone only a limited amount of validation. The data are provided in netCDF (.nc) format.
+  <br>
+
+  #### ENVISAT_SCIAMACHY_SIF_1871
+  This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the SCanning Imaging Absorption spectroMeter for Atmospheric CartograpHY (SCIAMACHY) instrument on the European Space Agency's (ESA's) Environmental satellite (Envisat) with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. SCIAMACHY covers global land between approximately 70 and -57 degrees latitude on an orbital basis at a resolution of approximately 30 km x 240 km. Data are provided for the period from 2003-01-01 to 2012-04-08. Each file contains daily raw and bias-adjusted solar-induced fluorescence along with quality control information and ancillary data.
+  <br>
+
+  #### TROPOMI_SIF_Arctic_Ocean_2378
+  This dataset provides solar-induced chlorophyll fluorescence (SIF) estimates over the Arctic Ocean at a 0.05-degree resolution for each month from January 2004 through December 2020. Red SIF data from TROPOspheric Monitoring Instrument (TROPOMI) (2018 to 2021) were extended over the study period using a random forest machine learning model trained using TROPOMI SIF climatological records. These data are useful for monitoring the physiological responses of phytoplankton to ongoing climate change over this ocean region. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://science.jpl.nasa.gov/projects/measures/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- carbon
+- climate
+- netcdf
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SIF_SCIAMACHY_GOME2_Harmonized_2317 v2 - This dataset provides global solar-induced chlorophyll fluorescence (SIF) estimates at a 0.05-degree resolution (approximately 5 km at the equator) for each month from January 2003 through December 2017. SIF data (740 nm) was retrieved from the SCanning Imaging Absorption spectroMeter for Atmospheric CHartographY (SCIAMACHY) and Global Ozone Monitoring Experiment 2 (GOME-2) instruments onboard the MetOp-A satellite."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/SIF_SCIAMACHY_GOME2_Harmonized/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_SIF_OCO2_MODIS_1863 v2 - This dataset provides spatially-contiguous global mean daily solar-induced chlorophyll fluorescence (SIF) estimates at 0.05 degree (approximately 5 km at the equator) spatial and 16-day temporal resolution from September 2014 through July 2020. This product was derived from Orbiting Carbon Observatory-2 (OCO-2) SIF observations and produced by training an artificial neural network (ANN) on the native OCO-2 SIF observations and MODIS BRDF-corrected seven-band surface reflectance along OCO-2's orbits."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/Global_SIF_OCO2_MODIS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ERS2_GOME_SIF_1758 v1 - This dataset provides Level 2 Solar-Induced Fluorescence (SIF) of Chlorophyll estimates derived from the Global Ozone Monitoring Experiment (GOME) instrument on the European Space Agency's (ESA's) European Remote-Sensing 2 (ERS-2) satellite. Each file contains daily raw and bias-adjusted solar-induced fluorescence on an orbital basis (land pixels only), at a resolution of 40 km x 320 km, along with quality control information and ancillary data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/ERS2_GOME_SIF/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MetOpA_GOME2_SIF_V2_2292 v2 - This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the Global Ozone Monitoring Experiment 2 (GOME-2) instrument on the European Meteorological Satellite (EUMETSAT) MetOp-A with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. GOME-2 covers global land on an orbital basis at a resolution of approximately 40 km x 80 km (before 15 July 2013) or 40 km x 40 km (since 15 July 2013)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/MetOpA_GOME2_SIF_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MetOpB_GOME2_SIF_2182 v1 - This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the Global Ozone Monitoring Experiment 2 (GOME-2) instrument on the European Meteorological Satellite (EUMETSAT) MetOp-B with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. GOME-2 covers global land (observations up to 75-degree solar zenith angle) at a resolution of approximately 40 km x 80."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/MetOpB_GOME2_SIF/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ENVISAT_SCIAMACHY_SIF_1871 v1 - This dataset provides Level 2 (L2) Solar-Induced Fluorescence (SIF) of chlorophyll estimates derived from the SCanning Imaging Absorption spectroMeter for Atmospheric CartograpHY (SCIAMACHY) instrument on the European Space Agency's (ESA's) Environmental satellite (Envisat) with ~0.5 nm spectral resolution and wavelengths between 734 and 758 nm. SCIAMACHY covers global land between approximately 70 and -57 degrees latitude on an orbital basis at a resolution of approximately 30 km x 240 km."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/ENVISAT_SCIAMACHY_SIF/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "TROPOMI_SIF_Arctic_Ocean_2378 v1 - This dataset provides solar-induced chlorophyll fluorescence (SIF) estimates over the Arctic Ocean at a 0.05-degree resolution for each month from January 2004 through December 2020. Red SIF data from TROPOspheric Monitoring Instrument (TROPOMI) (2018 to 2021) were extended over the study period using a random forest machine learning model trained using TROPOMI SIF climatological records."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/sif-esdr/17-MEASURES-0032/TROPOMI_SIF_Arctic_Ocean/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

@@ -1,0 +1,49 @@
+Name: NASA 2009_AK_NASA Project
+Description: |
+  This data set represents a collection of orthorectified images that were created using the NASA Ames Stereo Pipeline. The final images were obtained by processing stereo images from the IceBridge DMS L0 Raw Imagery data set, along with NASA's Land, Vegetation, and Ice Sensor (LVIS) and Airborne Topographic Mapper (ATM) lidar data from the IceBridge LVIS L2 Geolocated Surface Elevation Product and IceBridge ATM L1B Elevation and Return Strength data sets, respectively. The closely related data set IceBridge DMS L3 Ames Stereo Pipeline Photogrammetric DEM provides the corresponding digital elevation models (DEMs) in GeoTIFF format.
+  <br>
+
+  #### IODEM3
+  This data set represents a collection of digital elevation models (DEMs) that were created using the NASA Ames Stereo Pipeline. The final DEMs were obtained by processing stereo images from the IceBridge DMS L0 Raw Imagery data set, along with NASA's Land, Vegetation, and Ice Sensor (LVIS) and Airborne Topographic Mapper (ATM) lidar data from the IceBridge LVIS L2 Geolocated Surface Elevation Product and IceBridge ATM L1B Elevation and Return Strength data sets, respectively. The closely related data set IceBridge DMS L3 Ames Stereo Pipeline Orthorectified Images provides the corresponding orthorectified images in GeoTIFF format.
+  <br>
+
+  #### IRWIS2
+  This data set contains depth sounder measurements of elevation, surface, bottom, and thickness for Alaska taken from the Warm Ice Sounding Explorer (WISE). The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/iodim3/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IODIM3 v1 - This data set represents a collection of orthorectified images that were created using the NASA Ames Stereo Pipeline. The final images were obtained by processing stereo images from the IceBridge DMS L0 Raw Imagery data set, along with NASA's Land, Vegetation, and Ice Sensor (LVIS) and Airborne Topographic Mapper (ATM) lidar data from the IceBridge LVIS L2 Geolocated Surface Elevation Product and IceBridge ATM L1B Elevation and Return Strength data sets, respectively."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IODIM3/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IODEM3 v1 - This data set represents a collection of digital elevation models (DEMs) that were created using the NASA Ames Stereo Pipeline. The final DEMs were obtained by processing stereo images from the IceBridge DMS L0 Raw Imagery data set, along with NASA's Land, Vegetation, and Ice Sensor (LVIS) and Airborne Topographic Mapper (ATM) lidar data from the IceBridge LVIS L2 Geolocated Surface Elevation Product and IceBridge ATM L1B Elevation and Return Strength data sets, respectively."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IODEM3/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IRWIS2 v1 - This data set contains depth sounder measurements of elevation, surface, bottom, and thickness for Alaska taken from the Warm Ice Sounding Explorer (WISE). The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRWIS2/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

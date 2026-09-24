@@ -1,0 +1,71 @@
+Name: NASA Daymet Project
+Description: |
+  This dataset provides annual climate summaries derived from Daymet Version 4 R1 daily data at a 1 km x 1 km spatial resolution for five Daymet variables: minimum and maximum temperature, precipitation, vapor pressure, and snow water equivalent. Annual averages are provided for minimum and maximum temperature, vapor pressure, and snow water equivalent, and annual totals are provided for the precipitation variable. Each data file is provided as a single year by variable and covers the same period of record as the Daymet V4 R1 daily data. The annual climatology files are derived from the larger datasets of daily weather parameters produced on a 1 km x 1 km grid for North America (including Canada, the United States, and Mexico), Hawaii, and Puerto Rico. Separate annual files are provided for the land areas of continental North America, Hawaii, and Puerto Rico. Data are distributed in standardized Climate and Forecast (CF)-compliant netCDF (.nc) and Cloud Optimized GeoTIFF (.tif) file formats. In Version 4 R1, all 2020 and 2021 files (60 total) were updated to improve predictions especially in high-latitude areas. It was found that input files used for deriving 2020 and 2021 data had, for a significant portion of Canadian weather stations, missing daily variable readings for the month of January. NCEI has corrected issues with the Environment Canada ingest feed which led to the missing readings. The revised 2020 and 2021 Daymet V4 R1 files were derived with new GHCNd inputs. Files outside of 2020 and 2021 have not changed from the previous V4 release.
+  <br>
+
+  #### Daymet_Daily_V4R1_2129
+  This dataset provides Daymet Version 4 R1 data as gridded estimates of daily weather parameters for North America, Hawaii, and Puerto Rico. Daymet variables include the following parameters: minimum temperature, maximum temperature, precipitation, shortwave radiation, vapor pressure, snow water equivalent, and day length. The dataset covers the period from January 1, 1980, to December 31 (or December 30 in leap years) of the most recent full calendar year for the Continental North America and Hawaii spatial regions. Data for Puerto Rico is available starting in 1950. Each subsequent year is processed individually at the close of a calendar year. Daymet variables are provided as individual files, by variable and year, at a 1 km x 1 km spatial resolution and a daily temporal resolution. Areas of Hawaii and Puerto Rico are available as files separate from the continental North America. Data are in a North America Lambert Conformal Conic projection and are distributed in a standardized Climate and Forecast (CF)-compliant netCDF file format. In Version 4 R1, all 2020 and 2021 files were updated to improve predictions especially in high-latitude areas. It was found that input files used for deriving 2020 and 2021 data had, for a significant portion of Canadian weather stations, missing daily variable readings for the month of January. NCEI has corrected issues with the Environment Canada ingest feed which led to the missing readings. The revised 2020 and 2021 Daymet V4 R1 files were derived with new GHCNd inputs. Files outside of 2020 and 2021 have not changed from the previous V4 release.
+  <br>
+
+  #### Daymet_Monthly_V4R1_2131
+  This dataset provides Daymet Version 4 R1 monthly climate summaries derived from Daymet Version 4 R1 daily data at a 1 km x 1 km spatial resolution for five Daymet variables: minimum and maximum temperature, precipitation, vapor pressure, and snow water equivalent. Monthly averages are provided for minimum and maximum temperature, vapor pressure, and snow water equivalent, and monthly totals are provided for the precipitation variable. Each data file is yearly by variable with 12 monthly time steps and covers the same period of record as the Daymet V4 R1 daily data. The monthly climatology files are derived from the larger datasets of daily weather parameters produced on a 1 km x 1 km grid for North America, Hawaii, and Puerto Rico. Separate monthly files are provided for the land areas of continental North America (Canada, the United States, and Mexico), Hawaii, and Puerto Rico. Data are distributed in standardized Climate and Forecast (CF)-compliant netCDF (.nc) and Cloud-Optimized GeoTIFF (.tif) formats. In Version 4 R1 (ver 4.1), all 2020 and 2021 files (60 total) were updated to improve predictions especially in high-latitude areas. It was found that input files used for deriving 2020 and 2021 data had, for a significant portion of Canadian weather stations, missing daily variable readings for the month of January. NCEI has corrected issues with the Environment Canada ingest feed which led to the missing readings. The revised 2020 and 2021 Daymet V4 R1 files were derived with new GHCNd inputs. Files outside of 2020 and 2021 have not changed from the previous V4 release.
+  <br>
+
+  #### Daymet_xval_V4R1_2132
+  This dataset reports the station-level daily weather observation data and the corresponding cross-validation results for three Daymet model parameters: minimum temperature (tmin), maximum temperature (tmax), and daily total precipitation (prcp) across continental North America (including Canada, the United States, and Mexico), Hawaii, and Puerto Rico. Each data file contains the daily observations and cross-validation results for one parameter for each modeled region and each year, that is, from 1980 to the current calendar year for stations across continental North America and Hawaii and from 1950 to the current year for Puerto Rico. Also included are corresponding station metadata files listing every surface weather station used in Daymet processing for each parameter, region, and year and containing the station name, station identification, latitude, and longitude. The data are provided in netCDF and text formats. In Version 4 R1, all 2020 and 2021 files were updated to improve predictions especially in high-latitude areas. It was found that input files used for deriving 2020 and 2021 data had, for a significant portion of Canadian weather stations, missing daily variable readings for the month of January. NCEI has corrected issues with the Environment Canada ingest feed which led to the missing readings. The revised 2020 and 2021 Daymet V4 R1 files were derived with new GHCNd inputs. Files outside of 2020 and 2021 have not changed from the previous V4 release.
+  <br>
+
+  #### Daymet_SubDaily_Puerto_Rico_1977
+  To support high spatial- and temporal-resolution land surface modeling, this dataset provides 3-hourly time step historic weather forcing at 1-km spatial resolution for Puerto Rico and surrounding islands. The latest Daymet V4 data provides gridded historic daily weather observation at 1-km spatial resolution from 1950 to present. Using sub-daily temporal information from two meteorological reanalysis datasets (GSWP3 and NARR), Daymet was further temporally downscaled to 3-hourly time steps and provided in the format required for land surface model simulations. The process of temporal downscaling preserves the relative magnitude in each sub-daily time step from GSWP3 and NARR while maintaining the total and average values from Daymet at each day. These result in two blended datasets: 1950-2014 Daymet-GSWP3 and 1979-2019 Daymet-NARR. Available variables include surface air temperature, precipitation, specific humidity, shortwave and longwave radiation, wind speed, and pressure. These data can be used as a high-resolution meteorological forcing dataset to support high-resolution land surface modeling where accurate meteorological forcing datasets built from historic observations and/or reanalysis datasets are desirable.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://daymet.ornl.gov
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- ice
+- netcdf
+- precipitation
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "Daymet_Annual_V4R1_2130 v4.1 - This dataset provides annual climate summaries derived from Daymet Version 4 R1 daily data at a 1 km x 1 km spatial resolution for five Daymet variables: minimum and maximum temperature, precipitation, vapor pressure, and snow water equivalent. Annual averages are provided for minimum and maximum temperature, vapor pressure, and snow water equivalent, and annual totals are provided for the precipitation variable."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/daymet/Daymet_Annual_V4R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Daymet_Daily_V4R1_2129 v4.1 - This dataset provides Daymet Version 4 R1 data as gridded estimates of daily weather parameters for North America, Hawaii, and Puerto Rico. Daymet variables include the following parameters: minimum temperature, maximum temperature, precipitation, shortwave radiation, vapor pressure, snow water equivalent, and day length."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/daymet/Daymet_Daily_V4R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Daymet_Monthly_V4R1_2131 v4.1 - This dataset provides Daymet Version 4 R1 monthly climate summaries derived from Daymet Version 4 R1 daily data at a 1 km x 1 km spatial resolution for five Daymet variables: minimum and maximum temperature, precipitation, vapor pressure, and snow water equivalent. Monthly averages are provided for minimum and maximum temperature, vapor pressure, and snow water equivalent, and monthly totals are provided for the precipitation variable."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/daymet/Daymet_Monthly_V4R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Daymet_xval_V4R1_2132 v4.1 - This dataset reports the station-level daily weather observation data and the corresponding cross-validation results for three Daymet model parameters: minimum temperature (tmin), maximum temperature (tmax), and daily total precipitation (prcp) across continental North America (including Canada, the United States, and Mexico), Hawaii, and Puerto Rico. Each data file contains the daily observations and cross-validation results for one parameter for each modeled region and each year, that is, from 1980 to the current calendar year for stations across continental North America and Hawaii and f..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/daymet/Daymet_xval_V4R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Daymet_SubDaily_Puerto_Rico_1977 v1 - To support high spatial- and temporal-resolution land surface modeling, this dataset provides 3-hourly time step historic weather forcing at 1-km spatial resolution for Puerto Rico and surrounding islands. The latest Daymet V4 data provides gridded historic daily weather observation at 1-km spatial resolution from 1950 to present."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/daymet/Daymet_SubDaily_Puerto_Rico/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

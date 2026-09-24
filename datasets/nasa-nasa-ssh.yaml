@@ -1,0 +1,90 @@
+Name: NASA NASA-SSH Project
+Description: |
+  This dataset contains the Global Mean Sea Level (GMSL) trend generated from the Integrated Multi-Mission Ocean Altimeter Data for Climate Research Version 5.2. The GMSL trend is a 1-dimensional time series of globally averaged Sea Surface Height Anomalies (SSHA) from TOPEX/Poseidon, Jason-1, OSTM/Jason-2, Jason-3, and Sentinel-6A that covers September 1992 to present with a lag of up to 4 months. The data are reported as variations relative to a 20-year TOPEX/Jason collinear mean. Bias adjustments and cross-calibrations were applied to ensure SSHA data are consistent across the missions; Glacial Isostatic Adjustment (GIA) was also applied. The data are available as a table in ASCII format. Changes between the version 5.1 and version 5.2 releases are described in detail in the user handbook.
+  <br>
+
+  #### NASA_SSH_REF_ALONGTRACK_V1
+  The NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset produced by NASA provide observations of sea surface height, or sea level, anomaly measured using radar altimeter satellites in the reference mission orbit. These include TOPEX/Poseidon, the Jason series, and Sentinel-6. The data begin in Oct 1992, with data from TOPEX/Poseidon, and continues to the present. In this data set all missions have been referenced to a common baseline, additional quality control has been performed, and errors with wavelengths around one orbital cycle have been reduced. <br> The data consist of along-track observations of sea surface height, collected approximately once per second (1 Hz), and are parsed into files containing one day’s worth of data per file. A flag variable is included to allow users to easily select only valid observations, and a variable containing sea surface height with the flag applied and a small amount along track smoothing (~20 km), is suggested for most users. <br> Additionally, a “basin” flag variable is provided, along with a table defining it. This allows users to easily select all observations from a specific body of water. The basin flag assigns a number to each point corresponding to a specific ocean basin or lake. A table is included with a text description of each basin number. A text version of that table is available (https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_name_table.txt). The basin definitions can be downloaded as a shape file from https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_polygon_files.tar.gz, or as a kml file https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/NASA-SSH_Basins.kmz. <br> New data will be released approximately once per week, with a latency of a few weeks.
+  <br>
+
+  #### NASA_SSH_ENSO_INDICATOR
+  This file contains an indicator for the El Nino-Southern Oscillation (ENSO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br> Indicator values were calculated using cyclostationary empirical orthogonal functions (CSEOFs; Kim et al., 2015) computed by decomposing the gridded sea surface height anomalies over the time period from 1993 to 2019. After removing the linear trend from each individual gridded location, three sets of regional CSEOFs were generated, one each for ENSO, the Pacific Decadal Oscillation (PDO) and Indian Ocean Diode (IOD). In each case, the dominant statistical mode represents the seasonal cycle. The second most dominant mode represents the variability explained by each respective indicator and is referred to as the “indicator mode”. The seasonal mode and indicator mode are then projected onto the along-track sea surface height anomalies to produce the indicator time series through the most current date. In this case, the ENSO mode was used to produce the time series contained in this file.<br><br> The file with the filename "NASA_SSH_ENSO_INDICATOR.txt" is always the most up-to-date time series containing the most recent data.
+  <br>
+
+  #### NASA_SSH_GMSL_INDICATOR
+  This file contains a time series of globally-averaged sea level change, or "global mean sea level" (GMSL) in units of centimeters. The estimate is based on satellite observations of sea surface height anomaly, measured by reference radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br> GMSL was calculated as the area-weighted average over each map in the time series of Simple Gridded Sea Surface Height. Because maps are computed using 10-days of observations, but are computed once every 7 days, there is a small amount of overlap between data used to compute successive time steps. A version of the estimate smoothed over 60 days is also provided. <br><br> Expert users, please note that this estimate has NOT been adjusted for Glacial Isostatic Adjustment, to account for the slight long-term depression of the sea floor. Users who study the sea level budget will need to account for this effect in order to properly evaluate closure of the budget. <br><br> Note that occasional improvements to data quality can result in mm level change in the historical portions of this estimate. However, such changes remain small relative to the 3-5 mm uncertainty in global sea level estimates over the course of the 30+ year record (https://essd.copernicus.org/articles/11/1189/2019/) <br><br> The file with the filename "NASA_SSH_GMSL_INDICATOR.txt" is always the most up-to-date time series containing the most recent data.
+  <br>
+
+  #### NASA_SSH_IOD_INDICATOR
+  This file contains an indicator for the Indian Ocean Dipole (IOD), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br> Indicator values were calculated using cyclostationary empirical orthogonal functions (CSEOFs; Kim et al., 2015) computed by decomposing the gridded sea surface height anomalies over the time period from 1993 to 2019. After removing the linear trend from each individual gridded location, three sets of regional CSEOFs were generated, one each for the El Nino-Southern Oscillation (ENSO), the Pacific Decadal Oscillation (PDO) and (IOD). In each case, the dominant statistical mode represents the seasonal cycle. The second most dominant mode represents the variability explained by each respective indicator and is referred to as the “indicator mode”. The seasonal mode and indicator mode are then projected onto the along-track sea surface height anomalies to produce the indicator time series through the most current date. In this case, the IOD mode was used to produce the time series contained in this file. <br><br> The file with the filename "NASA_SSH_IOD_INDICATOR.txt" is always the most up-to-date time series containing the most recent data.
+  <br>
+
+  #### NASA_SSH_PDO_INDICATOR
+  This file contains an indicator for the Pacific Decadal Oscillation (PDO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1 . <br><br> Indicator values were calculated using cyclostationary empirical orthogonal functions (CSEOFs; Kim et al., 2015) computed by decomposing the gridded sea surface height anomalies over the time period from 1993 to 2019. After removing the linear trend from each individual gridded location, three sets of regional CSEOFs were generated, one each for El Nino-Southern Oscillation (ENSO), the PDO and Indian Ocean Diode (IOD). In each case, the dominant statistical mode represents the seasonal cycle. The second most dominant mode represents the variability explained by each respective indicator and is referred to as the “indicator mode”. The seasonal mode and indicator mode are then projected onto the along-track sea surface height anomalies to produce the indicator time series through the most current date. In this case, the PDO mode was used to produce the time series contained in this file.<br><br> The file with the filename "NASA_SSH_PDO_INDICATOR.txt" is always the most up-to-date time series containing the most recent data.
+  <br>
+
+  #### NASA_SSH_REF_SIMPLE_GRID_V1
+  The NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 dataset produced by NASA provides 2-D maps of sea surface height, or sea level, anomaly once every 7 days. The grids are based on observations of sea surface height from the radar altimeter satellites in the reference mission orbits, including TOPEX/Poseidon, the Jason series, and Sentinel-6. The data begin in Oct 1992 and continue through the present. They are created using the NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset. <br> The grids consist of 10-days worth of observations, which covers approximately 1 complete repeat cycle of observations from the reference missions. The grids are produced on a 0.5-degree latitude and longitude grid, by taking a simple gaussian weighted spatial average with a width of 100 km. The grids are produced every 7 days to allow for easy interpolation in time. However, since they are created using 10-days of data, there is some overlap of information between adjacent time steps. The grids are also created using the basin flags to avoid mixing data from distinct ocean basins (for example, to avoid mixing observations from the Caribbean Sea with observations from the Pacific across the Isthmus of Panama). Connected basins are allowed to share data, however. This is accomplished by using a table of connections between basins. The basin connection table is available (https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_connection_table.txt). The basin definitions can be downloaded as a shape file from https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/basin_polygon_files.tar.gz, or as a kml file https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/web-misc/nasa-ssh/NASA-SSH_Basins.kmz. <br> A new grid will be released approximately once per week, with a latency of a few weeks.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- oceans
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "MERGED_TP_J1_OSTM_OST_GMSL_ASCII_V52 v5.2 - This dataset contains the Global Mean Sea Level (GMSL) trend generated from the Integrated Multi-Mission Ocean Altimeter Data for Climate Research Version 5.2. The GMSL trend is a 1-dimensional time series of globally averaged Sea Surface Height Anomalies (SSHA) from TOPEX/Poseidon, Jason-1, OSTM/Jason-2, Jason-3, and Sentinel-6A that covers September 1992 to present with a lag of up to 4 months."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/MERGED_TP_J1_OSTM_OST_GMSL_ASCII_V52
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_REF_ALONGTRACK_V1 v1 - The NASA-SSH Along-Track Sea Surface Height from Standardized Reference Missions Version 1 dataset produced by NASA provide observations of sea surface height, or sea level, anomaly measured using radar altimeter satellites in the reference mission orbit. These include TOPEX/Poseidon, the Jason series, and Sentinel-6."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_REF_ALONGTRACK_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_ENSO_INDICATOR v1 - This file contains an indicator for the El Nino-Southern Oscillation (ENSO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_ENSO_INDICATOR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_GMSL_INDICATOR v1 - This file contains a time series of globally-averaged sea level change, or \"global mean sea level\" (GMSL) in units of centimeters. The estimate is based on satellite observations of sea surface height anomaly, measured by reference radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_GMSL_INDICATOR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_IOD_INDICATOR v1 - This file contains an indicator for the Indian Ocean Dipole (IOD), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_IOD_INDICATOR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_PDO_INDICATOR v1 - This file contains an indicator for the Pacific Decadal Oscillation (PDO), based on satellite observations of sea surface height anomaly, measured by radar altimeter missions such as TOPEX/Poseidon, the Jason series, and Sentinel-6. The indicator values were calculated using NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 https://podaac.jpl.nasa.gov/dataset/NASA_SSH_REF_SIMPLE_GRID_V1."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_PDO_INDICATOR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "NASA_SSH_REF_SIMPLE_GRID_V1 v1 - The NASA-SSH Simple Gridded Sea Surface Height from Standardized Reference Missions Only Version 1 dataset produced by NASA provides 2-D maps of sea surface height, or sea level, anomaly once every 7 days. The grids are based on observations of sea surface height from the radar altimeter satellites in the reference mission orbits, including TOPEX/Poseidon, the Jason series, and Sentinel-6."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/NASA_SSH_REF_SIMPLE_GRID_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

@@ -1,0 +1,38 @@
+Name: NASA 2011_AN_NASA Project
+Description: |
+  This data set contains surface temperature measurements of Arctic and Antarctic sea ice and land ice acquired by the Heitronics KT19.85 Series II Infrared Radiation Pyrometer. The instrument is operated by the Wallops Flight Facility (WFF) as part of the ATM instrument suite. The data were collected as part of the Operation IceBridge funded survey campaigns.
+  <br>
+
+  #### ILNSA1B
+  This data set contains spot elevation measurements of Greenland, Arctic, and Antarctic sea ice acquired using the NASA Airborne Topographic Mapper (ATM) 4CT3 narrow scan instrumentation. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/iakst1b/versions/2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- ice
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IAKST1B v2 - This data set contains surface temperature measurements of Arctic and Antarctic sea ice and land ice acquired by the Heitronics KT19.85 Series II Infrared Radiation Pyrometer. The instrument is operated by the Wallops Flight Facility (WFF) as part of the ATM instrument suite."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IAKST1B/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILNSA1B v1 - This data set contains spot elevation measurements of Greenland, Arctic, and Antarctic sea ice acquired using the NASA Airborne Topographic Mapper (ATM) 4CT3 narrow scan instrumentation. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILNSA1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

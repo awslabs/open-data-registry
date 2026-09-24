@@ -1,0 +1,29 @@
+Name: NASA chirps Project
+Description: |
+  This data set provides downscaled six-hourly atmospheric forcings from European Centre for Medium-Range Weather Forecasts (ECMWF) and Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) precipitation from 2003 to 2019 at a spatial resolution of ~1km across High Mountain Asia.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/hma_dm_6h/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- precipitation
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "HMA_DM_6H v1 - This data set provides downscaled six-hourly atmospheric forcings from European Centre for Medium-Range Weather Forecasts (ECMWF) and Climate Hazards Group InfraRed Precipitation with Station data (CHIRPS) precipitation from 2003 to 2019 at a spatial resolution of ~1km across High Mountain Asia."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA_DM_6H/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

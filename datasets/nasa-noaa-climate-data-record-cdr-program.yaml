@@ -1,0 +1,31 @@
+Name: NASA NOAA CLIMATE DATA RECORD (CDR) PROGRAM Project
+Description: |
+  The Smith & Reynolds Extended Reconstructed Sea Surface Temperature (ERSST) Level 4 dataset provides a historical reconstruction of monthly global ocean surface temperatures and temperature anomalies over a 2 degree spatial grid since 1854 from in-situ observations based on a consistent statistical methodology that accounts for uneven sampling distributions over time and related observational biases. Version 5 of this dataset implements release 3.0 of ICOADS (International Comprehensive Ocean-Atmosphere Data Set) and is supplemented by monthly GTS (Global Telecommunications Ship and buoy) system data. As for the prior ERSST version, v5 implements Empirical Orthogonal Teleconnection analysis (EOT) but with an improved tuning method for sparsely sampled regions and periods. ERSST anomalies are computed with respect to a 1971-2000 monthly climatology. The version 5 has been improved from previous version 4. Major improvements in v5 include: 1) Inclusion and use of new sources and new versions of input datasets, such as data from Argo floats (new source), ICOADS R3.0 (from R2.5), HadISST2 (from HadISST1) sea ice concentration, and 2) Improved methodologies, such as inclusion of additional statistical modes, less spatial-temporal smoothing, better quality control method, and bias correction with baseline to modern buoy observations. The new version improves the spatial structures and magnitudes of El Nino and La Nina events. The ERSST v5 in netCDF format contains extended reconstructed sea surface temperature, SST anomaly, and associated estimated SST error standard deviation fields, in compliance with CF1.6 standard metadata.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- climate
+- ice
+- netcdf
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "REYNOLDS_NCDC_L4_MONTHLY_V5 v5 - The Smith & Reynolds Extended Reconstructed Sea Surface Temperature (ERSST) Level 4 dataset provides a historical reconstruction of monthly global ocean surface temperatures and temperature anomalies over a 2 degree spatial grid since 1854 from in-situ observations based on a consistent statistical methodology that accounts for uneven sampling distributions over time and related observational biases. Version 5 of this dataset implements release 3.0 of ICOADS (International Comprehensive Ocean-Atmosphere Data Set) and is supplemented by monthly GTS (Global Telecommunications Ship and buoy) s..."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/REYNOLDS_NCDC_L4_MONTHLY_V5
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

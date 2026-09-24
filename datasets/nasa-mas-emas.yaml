@@ -1,0 +1,60 @@
+Name: NASA MAS_eMAS Project
+Description: |
+  The Enhanced Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (eMAS)instrument is maintained and operated by the Airborne Sensor Facility at NASA Ames Research Center in Mountain View, California, under the oversight of the EOS Project Science Office at NASA Goddard. Prior to 1995, the MAS was deployed on the NASA's ER-2 and C-130 aircraft platforms using a 12-channel, 8-bit data system that somewhat constrained the full benefit of having a 50-channel scanning spectrometer. Beginning in January 1995, a 50-channel, 16-bit digitizer was used on the ER-2 platform, which greatly enhanced the capability of MAS to simulate MODIS data over a wide range of environmental conditions. Recently, it has undergone extensive upgrades to the optics and other components. New detectors have been installed and the spectral bands have been streamlined. The eMAS instrument is now a 38-channel instrument, sensing in the range from 0.445 to 13.844 um. For more information and for a list of MAS campaign flights visit ladsweb at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/mas/ or, visit the eMAS Homepage at: https://asapdata.arc.nasa.gov/emas/
+  <br>
+
+  #### eMASL2AER
+  The Enhanced Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (eMAS)instrument is maintained and operated by the Airborne Sensor Facility at NASA Ames Research Center in Mountain View, California, under the oversight of the EOS Project Science Office at NASA Goddard. The eMAS instrument is now a 38-channel instrument, sensing in the range from 0.445 to 13.844 um. The Enhanced MODIS Airborne Simulator (eMAS) L2 Aerosol Data product (eMASL2AER) consists of in-situ measurements of trace gas and aerosol emissions for wildfires and prescribed fires in great detail, relate them to fuel and fire conditions at the point of emission, characterize the conditions relating to plume rise, follow plumes downwind to understand chemical transformation and air quality impacts, and assess the efficacy of satellite detections for estimating the emissions from sampled fires. These measurements were collected onboard the DC-8 aircraft during FIREX-AQ, during summer 2019. The DC-8 aircraft had a comprehensive instrument payload capable of measuring over 200 trace gases as well as aerosol microphysical, optical, and chemical properties. The eMASL2AER product files are stored in Hierarchical Data Format (HDF-EOS). All gridded cloud parameters are stored as Scientific Data Sets (SDS) within the file. For more information and for a list of MAS campaign flights visit ladsweb at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/mas/ or, visit the eMAS Homepage at: https://asapdata.arc.nasa.gov/emas/
+  <br>
+
+  #### MASL1B
+  The Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (MAS) sensor was developed for NASA's high-altitude ER-2 research aircraft by Daedalus Enterprises, Inc., in support of the MODIS remote sensing algorithm development. The overall goal was to modify the spectral coverage and gains of the MAS to emulate as many of the MODIS spectral channels as possible. With its much higher spatial resolution (50 m vs. 250-1000 m for MODIS), MAS is able to provide unique information on the small-scale distribution of various geophysical parameters. The MAS instrument has been deployed on multiple platforms for many field campaigns since its first mission in 1991, as the prototype Wildfire Spectrometer. For more information and for a list of MAS campaign flights visit ladsweb at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/mas/
+  <br>
+
+  #### MASL2CLD
+  The MODIS Airborne Simulator (MAS) Level-2 Cloud Data product (MASL2CLD) consists of cloud optical and physical parameters. These parameters are derived using remotely sensed infrared and near infrared solar reflected radiances. Multispectral images of the reflectance and brightness temperature at 10 wavelengths between 0.66 and 13.98nm were used to derive the probability of clear sky (or cloud), cloud thermodynamic phase, and the optical thickness and effective radius of liquid water and ice clouds. MASL2CLD product files are stored in Hierarchical Data Format (HDF-EOS). All gridded cloud parameters are stored as Scientific Data Sets (SDS) within the file. For more information and for a list of MAS campaign flights visit ladsweb at: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/mas/
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://asapdata.arc.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- hdf
+- ice
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "eMASL1B v1 - The Enhanced Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (eMAS)instrument is maintained and operated by the Airborne Sensor Facility at NASA Ames Research Center in Mountain View, California, under the oversight of the EOS Project Science Office at NASA Goddard. Prior to 1995, the MAS was deployed on the NASA's ER-2 and C-130 aircraft platforms using a 12-channel, 8-bit data system that somewhat constrained the full benefit of having a 50-channel scanning spectrometer."
+  ARN: arn:aws:s3:::prod-lads/eMASL1B
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "eMASL2AER v1 - The Enhanced Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (eMAS)instrument is maintained and operated by the Airborne Sensor Facility at NASA Ames Research Center in Mountain View, California, under the oversight of the EOS Project Science Office at NASA Goddard. The eMAS instrument is now a 38-channel instrument, sensing in the range from 0.445 to 13.844 um."
+  ARN: arn:aws:s3:::prod-lads/eMASL2AER
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "MASL1B v1 - The Moderate Resolution Imaging Spectroradiometer (MODIS) Airborne Simulator (MAS) sensor was developed for NASA's high-altitude ER-2 research aircraft by Daedalus Enterprises, Inc., in support of the MODIS remote sensing algorithm development. The overall goal was to modify the spectral coverage and gains of the MAS to emulate as many of the MODIS spectral channels as possible."
+  ARN: arn:aws:s3:::prod-lads/MASL1B
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "MASL2CLD v1 - The MODIS Airborne Simulator (MAS) Level-2 Cloud Data product (MASL2CLD) consists of cloud optical and physical parameters. These parameters are derived using remotely sensed infrared and near infrared solar reflected radiances."
+  ARN: arn:aws:s3:::prod-lads/MASL2CLD
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.laadsdaac.earthdatacloud.nasa.gov/s3credentials

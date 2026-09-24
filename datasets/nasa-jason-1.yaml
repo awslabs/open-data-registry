@@ -1,0 +1,91 @@
+Name: NASA JASON-1 Project
+Description: |
+  The enhanced Jason-1 Microwave Radiometer (JMR) corrections contains better wet tropospheric path delay corrections along with better land, rain and ice flagging for coastal regions than that found in the Jason-1 Geophysical Data Records (GDR). The enhanced corrections can be used in place of the GDR wet troposphere correction to provide more accurate Sea Surface Height Anomalies for coastal regions.
+  <br>
+
+  #### JASON-1_L2_OST_GPR_E
+  These Sea Surface Height Anomalies (SSHA) are derived from the Jason-1 Geophysical Data Record (GDR). Jason-1 is an altimetric mission whose instruments make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, and position relative to the GPS satellite constellation. Using the various parameter the SSHA can be calculated and are provided in this dataset. The data are in NetCDF format. This dataset only contains the parameters that are directly related to SSHA.
+  <br>
+
+  #### JASON-1_L2_OST_GPR_E_GEODETIC
+  These Sea Surface Height Anomalies (SSHA) are derived from the Jason-1 Geophysical Data Record (GDR) Geodetic Mission. Jason-1 is an altimetric mission whose instruments make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, and position relative to the GPS satellite constellation. Using the various parameter the SSHA can be calculated and are provided in this dataset. The data are in NetCDF format.
+  <br>
+
+  #### JASON-1_L2_OST_GPN_E
+  The Jason-1 Geophysical Data Records (GDR) contain full accuracy altimeter data to measure sea surface height, with a high precision orbit (accuracy ~1.5 cm). The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation. The GDR contain all relevant corrections needed to calculate the sea surface height. Sea surface height anomalies calculation and recommended data edit criteria are specified in the Jason-1 GDR User Handbook at https://archive.podaac.earthdata.nasa.gov/podaac-ops-cumulus-docs/jason1/open/L2/gdr_netcdf_e/docs/Handbook_Jason-1_v5.1_April2016.pdf
+  <br>
+
+  #### JASON-1_L2_OST_GPN_E_GEODETIC
+  The Jason-1 Geophysical Data Records (GDR) Geodetic Mission contain full accuracy altimeter data, with a high precision orbit, provided approximately 35 days after data collection. The data are sorted into cycles that are approximately 11 days long and contain 280 pass files. The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation. The GDR contain all relevant corrections needed to calculate the sea surface height.
+  <br>
+
+  #### JASON-1_L2_OST_GPS_E
+  The Sensory Geophysical Data Record (SGDR) files contain full accuracy altimeter data, with a high precision orbit (accuracy ~1.5 cm). The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation. The SGDR contain all relevant corrections needed to calculate the sea surface height. It also contains the 20Hz waveforms that are required for retracking. The SGDR is an expert level product, if you do not require the waveforms then the GDR/GPN or GPR will be more suited for your needs.
+  <br>
+
+  #### JASON-1_L2_OST_GPS_E_GEODETIC
+  The Sensory Geophysical Data Record (SGDR) files from the Geodetic Mission contain full accuracy altimeter data, with a high precision orbit. The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation. The SGDR contain all relevant corrections needed to calculate the sea surface height. It also contains the 20Hz waveforms that are required for retracking. The SGDR is an expert level product, if you do not require the waveforms then the GDR will be more suited for your needs.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- netcdf
+- oceans
+- radar
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "JASON-1_JMR_ENH v1 - The enhanced Jason-1 Microwave Radiometer (JMR) corrections contains better wet tropospheric path delay corrections along with better land, rain and ice flagging for coastal regions than that found in the Jason-1 Geophysical Data Records (GDR). The enhanced corrections can be used in place of the GDR wet troposphere correction to provide more accurate Sea Surface Height Anomalies for coastal regions."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_JMR_ENH
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPR_E vE - These Sea Surface Height Anomalies (SSHA) are derived from the Jason-1 Geophysical Data Record (GDR). Jason-1 is an altimetric mission whose instruments make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, and position relative to the GPS satellite constellation."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPR_E
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPR_E_GEODETIC vE - These Sea Surface Height Anomalies (SSHA) are derived from the Jason-1 Geophysical Data Record (GDR) Geodetic Mission. Jason-1 is an altimetric mission whose instruments make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, and position relative to the GPS satellite constellation."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPR_E_GEODETIC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPN_E vE - The Jason-1 Geophysical Data Records (GDR) contain full accuracy altimeter data to measure sea surface height, with a high precision orbit (accuracy ~1.5 cm). The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPN_E
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPN_E_GEODETIC vE - The Jason-1 Geophysical Data Records (GDR) Geodetic Mission contain full accuracy altimeter data, with a high precision orbit, provided approximately 35 days after data collection. The data are sorted into cycles that are approximately 11 days long and contain 280 pass files."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPN_E_GEODETIC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPS_E vE - The Sensory Geophysical Data Record (SGDR) files contain full accuracy altimeter data, with a high precision orbit (accuracy ~1.5 cm). The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPS_E
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "JASON-1_L2_OST_GPS_E_GEODETIC vE - The Sensory Geophysical Data Record (SGDR) files from the Geodetic Mission contain full accuracy altimeter data, with a high precision orbit. The instruments on Jason-1 make direct observations of the following quantities: altimeter range, significant wave height, ocean radar backscatter cross-section (a measure of wind speed), ionospheric electron content (derived by a simple formula), tropospheric water content, mean sea surface, and position relative to the GPS satellite constellation."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/JASON-1_L2_OST_GPS_E_GEODETIC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

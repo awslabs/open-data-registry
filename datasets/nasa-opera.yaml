@@ -1,0 +1,100 @@
+Name: NASA opera Project
+Description: |
+  This data set is an inventory of some 2800 landslides that occurred in the High Mountain Asia (HMA) study area between 5 January 2007 and 31 December 2018 (plus one event from 28 January 1990). The catalog includes dates and locations of landslides, plus additional characteristics such as event triggers, country, length and area of the slide, and the number of injuries and fatalities. The events in this catalog represent an HMA-specific subset of the Cooperative Open Online Landslide Repository (COOLR), a project that was created to build a more robust, publicly available inventory of landslides by supplementing data in the NASA Global Landslide Catalog with citizen science reports.
+  <br>
+
+  #### HMA2_MTLI
+  The transboundary Pumpqu/Arun River basin spreads across Nepal and Tibet. Nearly 95% of the basin lies in Tibet through which the Pumpqu River flows. The river is named the Arun River once it enters Nepal. Five large hydropower projects (in total about 3,163 MW) are currently under construction or are planned for the Arun River valley. Rainfall and earthquake-induced landslides, landslide dammed lakes, and landslide-induced glacial lake outburst floods pose major risks to the smooth operation of these projects. This data set is a multitemporal landslide inventory covering the whole Pumpqu/Arun River basin. It was generated in support of the World Bank’s Risk Assessment of Landslides in the Upper Arun Hydropower Project.
+  <br>
+
+  #### IPFLT1B
+  This data set contains simplified, or thinned, flight lines from NASA Operation IceBridge Greenland, Arctic, Antarctic, and Alaska missions. The thinning was performed using a Python library called Shapely. The full resolution flight line data were collected as part of Operation IceBridge funded aircraft survey campaigns. The corresponding flight reports can be found in the IceBridge L1B Flight Reports (IPFLR1B) data set.
+  <br>
+
+  #### NISE
+  The Near-real-time Ice and Snow Extent (NISE) data set provides daily, global maps of sea ice concentrations and snow extent. These data are not suitable for time series, anomalies, or trends analyses. They are meant to provide a best estimate of current ice and snow conditions based on information and algorithms available at the time the data are acquired. Near-real-time products are not intended for operational use in assessing sea ice conditions for navigation. This NISE Version 2 product contains SSMIS-derived sea ice concentrations and snow extents derived from the Special Sensor Microwave Imager (SSM/I) aboard the Defense Meteorological Satellite Program (DMSP) F13 satellite. For DMSP-F16, SSMIS-derived data, see <a href="https://doi.org/10.5067/JAQDJKPX0S60"> NISE Version 3</a>. For DMSP-F17, SSMIS-derived data, see <a href="https://nsidc.org/data/nise/versions/4"> NISE Version 4</a>. For DMSP-F18, SSMIS-derived data, see <a href="https://doi.org/10.5067/3KB2JPLFPK3R"> NISE Version 5</a>.
+  <br>
+
+  #### SV19MA_TNET
+  These data consist of ground-based, soil moisture, soil temperature, and air temperature measurements recorded by twenty-five temporary stations located in the vicinity of Petersham, MA during the SMAPVEX19-22 campaign. The stations were installed across an area of approximately 23 km by 36 km in May 2019 and operated through 2022. Note that the product is named SMAPVEX19-22 because, although the current coverage is through 2021, it is projected to include 2022 data in the future.
+  <br>
+
+  #### SV19MB_TNET
+  These data consist of soil moisture sensor, soil temperature and air temperature measurements recorded by 25 temporary stations in the Millbrook (MB) experiment location during SMAPVEX19-22. The stations were spread out over the experiment domain of about 30 by 40 km located around Millbrook, NY. The stations were installed in May 2019 and are to continue operation until 2022. Note that the product is named SMAPVEX19-22 because, although the current coverage is through 2021, it is projected to include 2022 data in the future.
+  <br>
+
+  #### SWOT_SIMULATED_L2_KARIN_SSH_GLORYS_CALVAL_V1
+  This dataset provides simulated sea surface height data product that resembles data which will be collected by KaRIn. Swaths span 60 km on both sides of nadir with a nadir gap. Product provides sea surface height, sea surface height anomaly, wind speed, significant waveheight, on a geographically fixed, swath-aligned 2x2 km2 grid, as well as sea surface height on a 250x250 m2 native grid. SSH data produced by GLORYS were rendered from their native output format into the format prescribed in the SWOT L2 SSH PDD to aid ongoing data product development and to benefit future users of data produced during operational phases of the SWOT mission.
+  <br>
+
+  #### SWOT_SIMULATED_L2_NADIR_SSH_GLORYS_CALVAL_V1
+  This dataset provides simulated sea surface height (SSH) in a format similar to the future SWOT Level 2 (L2) altimetry data from the Poseidon 3C nadir altimeter. The simulated data are from the Global Ocean Reanalysis and Simulations (GLORYS). SSH data from GLORYS were rendered from their native output format into the format prescribed in the SWOT L2 SSH PDD to aid ongoing data product development and to benefit future users of data produced during operational phases of the SWOT mission.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/hma_ls_cat/versions/2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- oceans
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "HMA_LS_Cat v2 - This data set is an inventory of some 2800 landslides that occurred in the High Mountain Asia (HMA) study area between 5 January 2007 and 31 December 2018 (plus one event from 28 January 1990). The catalog includes dates and locations of landslides, plus additional characteristics such as event triggers, country, length and area of the slide, and the number of injuries and fatalities."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA_LS_Cat/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "HMA2_MTLI v1 - The transboundary Pumpqu/Arun River basin spreads across Nepal and Tibet. Nearly 95% of the basin lies in Tibet through which the Pumpqu River flows."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA2_MTLI/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "IPFLT1B v1 - This data set contains simplified, or thinned, flight lines from NASA Operation IceBridge Greenland, Arctic, Antarctic, and Alaska missions. The thinning was performed using a Python library called Shapely."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IPFLT1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "NISE v2 - The Near-real-time Ice and Snow Extent (NISE) data set provides daily, global maps of sea ice concentrations and snow extent. These data are not suitable for time series, anomalies, or trends analyses."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/PM/NISE/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV19MA_TNET v1 - These data consist of ground-based, soil moisture, soil temperature, and air temperature measurements recorded by twenty-five temporary stations located in the vicinity of Petersham, MA during the SMAPVEX19-22 campaign. The stations were installed across an area of approximately 23 km by 36 km in May 2019 and operated through 2022."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV19MA_TNET/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SV19MB_TNET v1 - These data consist of soil moisture sensor, soil temperature and air temperature measurements recorded by 25 temporary stations in the Millbrook (MB) experiment location during SMAPVEX19-22. The stations were spread out over the experiment domain of about 30 by 40 km located around Millbrook, NY."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/SMAP-VAL/SV19MB_TNET/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "SWOT_SIMULATED_L2_KARIN_SSH_GLORYS_CALVAL_V1 v1 - This dataset provides simulated sea surface height data product that resembles data which will be collected by KaRIn. Swaths span 60 km on both sides of nadir with a nadir gap."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SWOT_SIMULATED_L2_KARIN_SSH_GLORYS_CALVAL_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SWOT_SIMULATED_L2_NADIR_SSH_GLORYS_CALVAL_V1 v1 - This dataset provides simulated sea surface height (SSH) in a format similar to the future SWOT Level 2 (L2) altimetry data from the Poseidon 3C nadir altimeter. The simulated data are from the Global Ocean Reanalysis and Simulations (GLORYS)."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SWOT_SIMULATED_L2_NADIR_SSH_GLORYS_CALVAL_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
