@@ -1,7 +1,7 @@
-Name: GHS‑WUP-BUILT-S
+Name: GHS-WUP-BUILT-S
 Description: This product contains the spatial raster dataset grids representing the distribution of the total built-up (BU) surfaces estimates between 1975 and 2100 in 5 years intervals. The data between 1975 and 2020 is obtained from the GHS-BUILT-S R2023 product and the 2025-2100 total built-up surface projections are computed considering a stable non-residential built-up surface and modelling the growth of the residential component of the total built-up surface.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_wup_built_s_r2025a.php
-Contact: JRC‑GHSL‑DATA@ec.europa.eu
+Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
 UpdateFrequency: NA
 Tags:
@@ -20,12 +20,8 @@ Tags:
   - tiles
 License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: Spatial raster dataset grids in World Mollweide (EPSG:54009) at 1km spatial resolution from 1975 to 2100 at 5 years interval representing the total built-up surfaces estimates.
-    ARN: arn:aws:s3:::ghs_wup_built_s_mt_globe_r2025a_54009_1000
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: Spatial raster dataset grids in WGS 1984 (EPSG:4326) at 30ss spatial resolution from 1975 to 2100 at 5 years interval representing the total built-up surfaces estimates.
-    ARN: arn:aws:s3:::ghs_wup_built_s_mt_globe_r2025a_4326_30ss
+  - Description: Spatial raster dataset grids in World Mollweide (EPSG:54009) at 1km spatial resolution; also available in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2100 at 5 years interval representing the total built-up surfaces estimates.
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-wup-built-s
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:

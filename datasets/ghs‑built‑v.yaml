@@ -1,7 +1,7 @@
-Name: GHS‑BUILT‑V
+Name: GHS-BUILT-V
 Description: The spatial raster dataset depicts the distribution of built-up volumes, expressed as number of cubic metres. The data reports about the total built-up volume and the built-up volume allocated to dominant non-residential (NRES) uses.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_buV2023.php
-Contact: JRC‑GHSL‑DATA@ec.europa.eu
+Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
 UpdateFrequency: NA
 Tags:
@@ -20,36 +20,13 @@ Tags:
   - tiles
 License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: The GHS built-up volume raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_mt_globe_r2023a_54009_100
+  - Description: The GHS built-up volume raster layer in World Mollweide (EPSG:54009) at 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030 in 5 years interval
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-v
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: The GHS built-up volume raster layer in World Mollweide (EPSG:54009) at 1km spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_mt_globe_r2023a_54009_1000
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS built-up volume raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_mt_globe_r2023a_4326_3ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS built-up volume raster layer in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_mt_globe_r2023a_4326_30ss
-    Region: eu-central-1
-    Type: S3 Bucket
+  - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in World Mollweide (EPSG:54009) at 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030 in 5 years interval
   - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_nres_mt_globe_r2023a_54009_100
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in World Mollweide (EPSG:54009) at 1km spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_nres_mt_globe_r2023a_54009_1000
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_nres_mt_globe_r2023a_4326_3ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_v_nres_mt_globe_r2023a_4326_30ss
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-v-nres
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:

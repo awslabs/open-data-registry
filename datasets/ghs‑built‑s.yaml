@@ -1,7 +1,7 @@
-Name: GHS‑BUILT‑S
+Name: GHS-BUILT-S
 Description: The spatial raster dataset depicts the distribution of built-up surfaces, expressed as number of square metres. The data report about the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses. Data are spatial-temporal interpolated or extrapolated from 1975 to 2030 in 5 years intervals. For the temporal anchor point of 2018 the data is published at 10m as observed from the S2 image data.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php
-Contact: JRC‑GHSL‑DATA@ec.europa.eu
+Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
 UpdateFrequency: NA
 Tags:
@@ -20,44 +20,12 @@ Tags:
   - tiles
 License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: The GHS built-up surface raster layer in World Mollweide (EPSG:54009) at 10m spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_s_e2018_globe_r2023a_54009_10
+  - Description: The GHS built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2018 for the 10m dataset. Spatial extent is Global and temporal extent is from 1975 to 2030 in 5 years interval for 100m, 1000m, 3ss and 30ss datasets
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-s
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: The GHS built-up surface raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_mt_globe_r2023a_54009_100
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS built-up surface raster layer in World Mollweide (EPSG:54009) at 1km spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_mt_globe_r2023a_54009_1000
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS built-up surface raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_mt_globe_r2023a_4326_3ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS built-up surface raster layer in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_mt_globe_r2023a_4326_30ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_s_nres_e2018_globe_r2023a_54009_10
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_nres_mt_globe_r2023a_54009_100
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 1km spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_nres_mt_globe_r2023a_54009_1000
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_nres_mt_globe_r2023a_4326_3ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030, 5 years interval
-    ARN: arn:aws:s3:::ghs_built_s_nres_mt_globe_r2023a_4326_30ss
+  - Description: The GHS “non-residential domain” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2018 for the 10m dataset. Spatial extent is Global and temporal extent is from 1975 to 2030 in 5 years interval for 100m, 1000m, 3ss and 30ss datasets
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-s-nres
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:

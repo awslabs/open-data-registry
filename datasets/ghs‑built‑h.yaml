@@ -1,7 +1,7 @@
-Name: GHS‑BUILT‑H
+Name: GHS-BUILT-H
 Description: Description: The spatial raster dataset depicts the spatial distribution of the building heights as extracted from the filtering of a composite of global digital elevation models (DEM) and the filtering of satellite imagery using linear regression techniques The used input DEMs are the ALOS World 3D - 30m (AW3D30, 2006-2011) and the Shuttle Radar Topography Mission 30m (SRTM30, 2000). The building heights extracted from these sources are updated using the support of the shadow markers extracted from the Sentinel2 image data composite of the year 2018 (GHS-composite-S2 R2020A). The Average of the Gross Building Height is the result of dividing the built-up volume by the grid surface. The Average of the Net Building Height is the result of dividing the built-up volume by the built-up surface.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_buH2023.php
-Contact: JRC‑GHSL‑DATA@ec.europa.eu
+Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
 UpdateFrequency: NA
 Tags:
@@ -19,20 +19,12 @@ Tags:
   - tiles
 License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: The GHS Average of the Gross Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_h_agbh_e2018_globe_r2023a_54009_100
+  - Description: The GHS Average of the Gross Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-h-agbh
     Region: eu-central-1
     Type: S3 Bucket
-  - Description: The GHS Average of the Gross Building raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_h_agbh_e2018_globe_r2023a_4326_3ss
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS Average of the Net Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_h_anbh_e2018_globe_r2023a_54009_100
-    Region: eu-central-1
-    Type: S3 Bucket
-  - Description: The GHS Average of the Net Building raster layer in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
-    ARN: arn:aws:s3:::ghs_built_h_anbh_e2018_globe_r2023a_4326_3ss
+  - Description: The GHS Average of the Net Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-built-h-anbh
     Region: eu-central-1
     Type: S3 Bucket
 DataAtWork:
