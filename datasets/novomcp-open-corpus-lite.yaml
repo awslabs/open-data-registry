@@ -1,14 +1,16 @@
 Name: NovoMCP Open Corpus (lite)
 Description: >-
   122,454,458 PubChem compounds with RDKit physicochemical descriptors,
-  ~30 ADMET/toxicity predictions (NovoMCP models, trained on the public
-  Therapeutics Data Commons benchmark), and PAINS structural-alert flags. One row
-  per PubChem CID, stored as Apache Parquet (Snappy) for direct in-place querying
-  (Athena, DuckDB, PyArrow, pandas). An analysis-ready cheminformatics substrate
-  for drug discovery: virtual screening, drug-likeness (QED) filtering, similarity
-  search, chemical-space exploration, and training ADMET models at scale — so you
-  don't recompute descriptors and property predictions across all of PubChem
-  yourself. Computed properties and model predictions for research use — not
+  ADMET/toxicity predictions from NovoMCP's own models (most trained on the public
+  Therapeutics Data Commons ADMET benchmark; a few base heads on other public
+  toxicology data such as Tox21), a machine-learned logP, and PAINS structural-alert
+  flags. One row per PubChem CID, stored as Apache Parquet (Snappy) for direct
+  in-place querying (Athena, DuckDB, PyArrow, pandas). An analysis-ready
+  cheminformatics substrate for drug discovery: virtual screening, drug-likeness
+  (QED) filtering, similarity search, chemical-space exploration, and training ADMET
+  models at scale — so you don't recompute descriptors and property predictions
+  across all of PubChem yourself. Per-endpoint model provenance is documented in the
+  dataset card. Computed properties and model predictions for research use — not
   experimental measurements or regulatory determinations.
 Documentation: https://github.com/NovoMCP/open-data-examples/tree/main/novomcp-open-corpus-lite
 Contact: https://github.com/NovoMCP/novomcp/issues
@@ -24,7 +26,7 @@ Tags:
   - parquet
 License: CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)
 Resources:
-  - Description: Parquet shards (1409 files, 27.4 GB, 122,454,458 rows x 59 columns)
+  - Description: Parquet shards (21 files, 36.8 GB, 122,454,458 rows x 59 columns)
     ARN: arn:aws:s3:::novomcp-open-corpus/novomcp-open-corpus-lite/
     Region: us-east-2
     Type: S3 Bucket
@@ -43,5 +45,5 @@ DataAtWork:
       AuthorName: Ari Harrison, NovoMCP
   Publications:
     - Title: "NovoMCP Open Corpus (lite): 122M compounds (Zenodo record, DOI)"
-      URL: https://doi.org/10.5281/zenodo.21710895
+      URL: https://doi.org/10.5281/zenodo.21710894
       AuthorName: Ari Harrison, NovoMCP

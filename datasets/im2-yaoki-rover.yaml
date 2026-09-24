@@ -1,0 +1,78 @@
+Name: YAOKI Lunar Rover IM-2 Mission Telemetry and Imagery Dataset
+Description: |
+  Mission telemetry and imagery from Dymon's YAOKI Lunar rover, which was deployed aboard the Intuitive Machines IM-2 lander to the Lunar south pole (lat=84.79059, lon=29.19567). JAOPS conducted operations between 2025-03-07 02:17:15+00.00 and 2025-03-07 04:33:04+00.00 using the open source Yamcs Mission Control System. This dataset contains telemetry received from the rover, relevant lander telemetry shared by the IM-2 team, telecommands sent to the rover, and images captured by the rover's camera.  The Yamcs archive allows replay of the original mission control environment. 
+Documentation: https://github.com/jaops-space/im2-yaoki-yamcs-public
+Contact: Louis Burtz (ljburtz@jaops.com), Shinichiro Nakajima (s_nakajima@dymon.co.jp), Zack Gainsforth (data@openlunar.org)
+ManagedBy: "[JAOPS Inc.](https://www.jaops.com/)"
+UpdateFrequency: The dataset is static. The IM-2 / YAOKI mission concluded in March 2025; no further updates are planned.
+Tags:
+  - aws-pds
+  - planetary
+  - robotics
+  - astronomy
+  - exploration
+  - lunar
+License: CC-BY-4.0
+Citation: "JAOPS and Dymon Co., Ltd. (2025). Dymon YAOKI Lunar Rover Mission Data (IM-2).  Registry of Open Data on AWS." 
+Resources:
+  - Description: Browse YAOKI Lunar Rover IM-2 Mission Telemetry and Imagery Dataset
+    ARN: arn:aws:s3:::im2-yaoki-rover-public
+    Region: ap-northeast-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://im2-yaoki-rover-public.s3.ap-northeast-1.amazonaws.com/index.html)'
+  - Description: |
+      Time series data stored as parquet for primary telemetry (TM) and telecommand (TC) channels.
+    ARN: arn:aws:s3:::im2-yaoki-rover-public/timeseries/*  
+    Region: ap-northeast-1
+    Type: S3 Bucket
+  - Description: |
+      Lunar surface imagery captured by the YAOKI imager, provided both as raw sensor
+      payloads (.raw) and reconstructed PNG images.
+    ARN: arn:aws:s3:::im2-yaoki-rover-public/images/*
+    Region: ap-northeast-1
+    Type: S3 Bucket
+  - Description: |
+      Complete mission archive: Yamcs RocksDB data store containing all received
+      telemetry packets and parameters, sent telecommands, and engineering events from
+      the YAOKI rover and the relayed IM-2 lander telemetry. 
+    ARN: arn:aws:s3:::im2-yaoki-rover-public/yamcs-data/*
+    Region: ap-northeast-1
+    Type: S3 Bucket
+  - Description: Notifications for YAOKI data updates
+    ARN: arn:aws:sns:ap-northeast-1:103242399928:im2-yaoki-rover-public-object_created
+    Region: ap-northeast-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: YAOKI Lunar Rover IM-2 Mission Telemetry and Imagery Dataset"
+      URL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/get-to-know-a-dataset.ipynb
+      AuthorName: JAOPS
+      AuthorURL: https://www.jaops.com/
+    - Title: Plotting the YAOKI telemetry and telecommands
+      URL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/yaoki_tmtc.ipynb
+      NotebookURL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/yaoki_tmtc.ipynb
+      AuthorName: JAOPS
+      AuthorURL: https://www.jaops.com/
+    - Title: Images from the YAOKI rover camera
+      URL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/yaoki_images.ipynb
+      NotebookURL: https://github.com/jaops-space/im2-yaoki-yamcs-public/blob/main/analysis/yaoki_images.ipynb
+      AuthorName: JAOPS
+      AuthorURL: https://www.jaops.com/
+    - Title: Running the YAOKI Yamcs mission control stack locally via Docker
+      URL: https://github.com/jaops-space/im2-yaoki-yamcs-public#option-2-docker-setup
+      AuthorName: JAOPS
+      AuthorURL: https://www.jaops.com/
+  Tools & Applications:
+    - Title: Yamcs Mission Control System
+      URL: https://yamcs.org/
+      AuthorName: Space Applications Services
+      AuthorURL: https://www.spaceapplications.com/
+  Publications:
+    - Title: Analysis of the Data from the YAOKI Rover on the IM-2 Mission to the Lunar South Pole
+      URL: https://im2-yaoki-rover-public.s3.ap-northeast-1.amazonaws.com/PublicRelease_YAOKI_IM2_data_analysis_by_JAOPS.pdf 
+      AuthorName: Louis Burtz
+    - Title: Data Release Announcement Presentation Slides
+      URL: https://im2-yaoki-rover-public.s3.ap-northeast-1.amazonaws.com/PublicRelease_Overview_Lunar_Ledger_YAOKI_Dymon_JAOPS.pdf
+      AuthorName: Shinichiro Nakajima, Alejandro Sela, Louis Burtz, Zack Gainsforth
