@@ -1,0 +1,74 @@
+Name: "LAFC-Evict: Learning-Augmented Cache Eviction Dataset"
+
+Description: >-
+  LAFC-Evict is a derived, tabular research dataset of counterfactual
+  supervision labels for learning-augmented cache-eviction research. Each row
+  describes one candidate object considered for eviction at one full-cache-miss
+  decision point, together with engineered state/candidate features and a
+  label describing what would happen to the cache miss rate over a short
+  future horizon if that specific candidate were evicted. It is intended for
+  training and evaluating machine-learning-based cache-eviction policies and
+  for studying disagreement between learned predictors and classical
+  eviction heuristics such as LRU. LAFC-Evict is a generated/derived
+  artifact: it is computed by the dataset author from third-party, CC0-1.0
+  Wikimedia pageview data, and it does not redistribute any raw Wikimedia
+  pageview rows, raw page titles, or third-party trace data. Upstream
+  Wikimedia data must be cited separately according to its own terms; this
+  release claims authorship only of the derived candidate-row features and
+  labels, not of the underlying popularity signal.
+
+  The current public release (v0.3) contains 22,356,992 rows across two
+  Parquet configurations, built entirely from the `wiki2018` trace family.
+  A smaller, fully synthetic companion dataset,
+  `SoroushVahidi/lafc-evict-sample`, exists separately as a packaging/format
+  smoke-test fixture and is not a scientific release.
+
+Documentation: "https://huggingface.co/datasets/SoroushVahidi/lafc-evict"
+
+Contact: "sv96@njit.edu"
+
+ManagedBy: "Soroush Vahidi"
+
+UpdateFrequency: "No fixed schedule. Updated on major dataset releases (see Version history in the dataset documentation); the current version is v0.3, published 2026-08-13."
+
+Tags:
+  - "machine learning"
+  - "benchmark"
+  - "parquet"
+
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+
+Citation: >-
+  Please cite both the dataset release and, if discussing methodology or
+  results, the associated paper/preprint. Dataset:
+  Vahidi, S. "LAFC-Evict: Learning-Augmented Cache Eviction Dataset (v0.3)."
+  Hugging Face, 2026. https://huggingface.co/datasets/SoroushVahidi/lafc-evict
+  Paper (public preprint, no peer-reviewed venue claimed):
+  Vahidi, S. "Decision-aligned eviction-value prediction for robust
+  learning-augmented caching." SSRN abstract ID 6636732, 2026.
+  https://ssrn.com/abstract=6636732
+
+Resources:
+  - Description: "LAFC-Evict v0.3 — Parquet data and metadata"
+    ARN: arn:aws:s3:::lafc-evict-open-data
+    Region: us-west-2
+    Type: "S3 Bucket"
+  - Description: "Notifications for new objects created in the LAFC-Evict public bucket"
+    ARN: arn:aws:sns:us-west-2:761705104187:lafc-evict-open-data-object_created
+    Region: us-west-2
+    Type: "SNS Topic"
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: LAFC-Evict"
+      URL: "https://github.com/SoroushVahidi/lafc-evict-tutorial/blob/main/get-to-know-a-dataset.ipynb"
+      NotebookURL: "https://raw.githubusercontent.com/SoroushVahidi/lafc-evict-tutorial/main/get-to-know-a-dataset.ipynb"
+      AuthorName: "Soroush Vahidi"
+      AuthorURL: "https://github.com/SoroushVahidi"
+      Services:
+        - "Amazon S3"
+  Tools & Applications:
+    - Title: "LAFC-Evict dataset-generation pipeline (Augmented-caching)"
+      URL: "https://github.com/SoroushVahidi/Augmented-caching"
+      AuthorName: "Soroush Vahidi"
+      AuthorURL: "https://github.com/SoroushVahidi"
