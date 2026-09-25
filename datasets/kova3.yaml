@@ -1,7 +1,7 @@
 Name: Korean Variant Archive 3 (KOVA3)
 Description: |
   KOVA3 is a population-scale whole-genome reference for Korean and East Asian genomics, derived from
-  11,000 Korean whole genomes jointly genotyped on GRCh38 with the Illumina DRAGEN iterative gVCF
+  10,988 Korean whole genomes jointly genotyped on GRCh38 with the Illumina DRAGEN iterative gVCF
   genotyper. East Asians account for only 2.78% of gnomAD v4, and Koreans are genetically distinct from
   Chinese and Japanese populations, so variants common in Koreans are often absent or imprecisely
   estimated in broader reference databases.
@@ -56,7 +56,7 @@ Citation: |
   A KOVA3 publication citation will be added here on publication.
 Resources:
   - Description: |
-      Open tier. Aggregate allele-frequency callset for 11,000 Korean whole genomes: chromosome-sharded
+      Open tier. Aggregate allele-frequency callset for 10,988 Korean whole genomes: chromosome-sharded
       sites-only VCF with tabix indexes, Apache Parquet partitioned by chromosome and genomic-position
       bin, a prebuilt Hail Table, callable-region and allele-number resources, aggregate cohort metadata,
       documentation, schemas, release manifests and SHA-256 checksums. Contains no participant-level
@@ -65,7 +65,7 @@ Resources:
     Region: ap-northeast-2
     Type: S3 Bucket
   - Description: |
-      Controlled-access tier. Participant-level data for the same 11,000 genomes: gzip-compressed
+      Controlled-access tier. Participant-level data for the same 10,988 genomes: gzip-compressed
       paired-end FASTQ, CRAM with CRAI indexes, bgzip-compressed per-sample gVCF with tabix indexes, and
       the chromosome-sharded genotyped multi-sample VCF. Read-level format varies by sample; per-sample
       manifests record which format is available for each genome. Access requires an approved application
