@@ -1,0 +1,80 @@
+Name: Handwritten Digit Classification with Neural Cultures
+
+Description: |
+  Electrophysiological recordings from human iPSC-derived neuronal cultures
+  performing a spatio-temporal handwritten digit classification task on the
+  Cortical Labs CL1 biological computing platform.
+
+  The dataset was generated to investigate biological reservoir computing and
+  the effects of neural architecture, cellular lineage, network dynamics, and
+  decoding methodology on computational performance. Experimental preparations
+  include neuronal monolayers, three-dimensional neural organoids, and modular
+  cultures, including cortical and hippocampal neuronal lineages.
+
+  The dataset contains approximately 85 GB of electrophysiological recordings
+  and associated experimental and classification metadata across 52 experimental
+  recordings. Recordings are provided as chunked HDF5 files, accompanied by a
+  CSV manifest describing each experimental run and its associated classification
+  results.
+
+Documentation: https://github.com/Cortical-Labs/handwritten-digit-neural-cultures
+
+Contact: alon@corticallabs.com
+
+ManagedBy: "[Cortical Labs](https://corticallabs.com/)"
+
+UpdateFrequency: |
+  This is a static research dataset associated with the publication
+  "Handwritten Digit classification with neural cultures is influenced by
+  neural architecture, network dynamics, and decoding methods."
+
+Tags:
+  - aws-pds
+  - biology
+  - electrophysiology
+  - hdf5
+  - life sciences
+  - neuroscience
+  - neurophysiology
+  - machine learning
+
+License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
+
+Citation: |
+  Loeffler, A., Habibollahi, F., Abu-Bonsrah, K. D., Azadi, A., Desouza, C.,
+  Chan, H. W., Nishi, Y., Zhou, J., Doensen, F., Yamamoto, H., Watmuff, B., and
+  Kagan, B. J. (2026). Handwritten Digit classification with neural cultures is
+  influenced by neural architecture, network dynamics, and decoding methods.
+  bioRxiv 2026.08.10.743829. https://doi.org/10.64898/2026.08.10.743829
+
+RegistryEntryAdded: "2026-08-25"
+RegistryEntryLastModified: "2026-08-25"
+
+Resources:
+  - Description: |
+      Electrophysiological recordings and associated metadata from neural
+      cultures performing the spatio-temporal handwritten digit classification
+      task. Recordings are stored as chunked HDF5 files with an accompanying CSV
+      experimental manifest.
+    # Replace these two placeholders after AWS confirms the sponsored account is linked.
+    ARN: TBD
+    Region: TBD
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Handwritten Digit Classification with Neural Cultures"
+      URL: https://github.com/Cortical-Labs/handwritten-digit-neural-cultures/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/Cortical-Labs/handwritten-digit-neural-cultures/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      AuthorName: Cortical Labs
+      AuthorURL: https://corticallabs.com/
+      Services:
+        - Amazon S3
+  Publications:
+    - Title: "Handwritten Digit classification with neural cultures is influenced by neural architecture, network dynamics, and decoding methods"
+      URL: https://www.biorxiv.org/content/10.64898/2026.08.10.743829v1
+      AuthorName: Alon Loeffler et al.
+      AuthorURL: https://www.biorxiv.org/content/10.64898/2026.08.10.743829v1
+
+ADXCategories:
+  - Healthcare & Life Sciences Data
