@@ -1,0 +1,58 @@
+Name: EMC-BUILT
+Description: The Exposure Mapping Component EMC-BUILT product consists in three datasets, named EMC-BUILT-S (built-up surface), EMC-BUILT-S-NRES (non-residential built-up surface) and EMC-BUILT-GREENNESS (vegetation fraction in the built-up domain). The data is produced for the year 2022 and based on Sentinel-2 data.
+Documentation: https://human-settlement.emergency.copernicus.eu/emc_built_s.php
+Contact: JRC-GHSL-DATA@ec.europa.eu
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
+UpdateFrequency: NA
+Tags:
+  - aws-pds
+  - classification
+  - cog
+  - disaster response
+  - earth observation
+  - geoscience
+  - geospatial
+  - global
+  - land cover
+  - land use
+  - mapping
+  - planetary
+  - tiff
+  - tiles
+License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+Resources:
+  - Description: The EMC built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+    ARN: arn:aws:s3:::jrc-ghsl/emc-built-s
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
+  - Description: The GHS “non-residential” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+    ARN: arn:aws:s3:::jrc-ghsl/emc-built-s-nres
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
+  - Description: The EMC Greenness layer represents the fraction of vegetation (NDVI) within and around built-up areas. Raster is in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+    ARN: arn:aws:s3:::jrc-ghsl/emc-built-greenness
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: EMC BUILT"
+      URL: https://github.com/lucamaff/open-data-examples/tree/main/emc-built
+      NotebookURL: https://github.com/lucamaff/open-data-examples/blob/main/emc-built/get-to-know-a-dataset.ipynb
+      AuthorName: MAFFENINI Luca
+      AuthorURL: https://github.com/lucamaff
+  Publications:
+    - Title: Copernicus Exposure Mapping Component Built-up product 2022
+      URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC144315
+      AuthorName: KEMPER Thomas, POLITIS Panagiotis, MARI RIVERO Ines, RIFFLER Michael, LEITNER Armin, RALSER Stefan, POGLITSCH Eva, SCHLEICHER Christian, FAUCQUEUR Loic, PENNEC Alexandre, MARCONCINI Mattia, ESCH Thomas, JULEA Andreea Maria, MELCHIORRI Michele
+ADXCategories:
+  - Public Sector Data
