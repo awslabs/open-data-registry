@@ -24,14 +24,20 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-s
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
   - Description: The GHS “non-residential” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-s-nres
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
   - Description: The EMC Greenness layer represents the fraction of vegetation (NDVI) within and around built-up areas. Raster is in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-greenness
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
   - Description: Notifications for new data
     ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
     Region: eu-central-1

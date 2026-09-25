@@ -24,10 +24,14 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/ghs-built-v
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
   - Description: The GHS “non-residential domain” (NRES) built-up volume raster layer in World Mollweide (EPSG:54009) at 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2030 in 5 years interval
     ARN: arn:aws:s3:::jrc-ghsl/ghs-built-v-nres
     Region: eu-central-1
     Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
   - Description: Notifications for new data
     ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
     Region: eu-central-1
