@@ -2,7 +2,7 @@ Name: GHS-LAND
 Description: Land fraction per pixel as derived from Sentinel2 data composite and OpenStreetMap (OSM) data.
 Documentation:
 Contact: JRC-GHSL-DATA@ec.europa.eu
-ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
   - classification
@@ -24,6 +24,10 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/ghs-land
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: GHS LAND

@@ -2,7 +2,7 @@ Name: GHS-BUILT-S
 Description: The spatial raster dataset depicts the distribution of built-up surfaces, expressed as number of square metres. The data report about the total built-up surface and the built-up surface allocated to dominant non-residential (NRES) uses. Data are spatial-temporal interpolated or extrapolated from 1975 to 2030 in 5 years intervals. For the temporal anchor point of 2018 the data is published at 10m as observed from the S2 image data.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
-ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
   - classification
@@ -28,6 +28,10 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/ghs-built-s-nres
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: GHS BUILT-S

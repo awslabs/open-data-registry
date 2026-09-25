@@ -2,7 +2,7 @@ Name: GHS-WUP-POP
 Description: This product contains the spatial raster dataset grids from 1975 to 2100 at 5 years interval representing the distribution of human population, expressed as the number of people per cell. Residential population estimates at 5 years interval between 1975 and 2020 are derived from the raw global census data harmonized by CIESIN for the Gridded Population of the World (GPWv4.11) combined with population trends obtained from the Urban Agglomeration time series of the UN World Urbanisation Prospects 2018 (UN WUP 2018 – F22). The 2025-2100 population projections are computed following the 2000-2020 local growth rate in subnational Functional Areas converging to the national growth rate (UN World Population Prospects, 2024) in 100 years and downscaled using CRISP methodology.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_wup_pop_r2025a.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
-ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
   - census
@@ -24,6 +24,10 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/ghs-wup-pop
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: GHS WUP POP

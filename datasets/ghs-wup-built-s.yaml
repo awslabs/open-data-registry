@@ -2,7 +2,7 @@ Name: GHS-WUP-BUILT-S
 Description: This product contains the spatial raster dataset grids representing the distribution of the total built-up (BU) surfaces estimates between 1975 and 2100 in 5 years intervals. The data between 1975 and 2020 is obtained from the GHS-BUILT-S R2023 product and the 2025-2100 total built-up surface projections are computed considering a stable non-residential built-up surface and modelling the growth of the residential component of the total built-up surface.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_wup_built_s_r2025a.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
-ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
   - classification
@@ -24,6 +24,10 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/ghs-wup-built-s
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: GHS WUP BUILT-S

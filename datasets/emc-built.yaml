@@ -2,7 +2,7 @@ Name: EMC-BUILT
 Description: The Exposure Mapping Component EMC-BUILT product consists in three datasets, named EMC-BUILT-S (built-up surface), EMC-BUILT-S-NRES (non-residential built-up surface) and EMC-BUILT-GREENNESS (vegetation fraction in the built-up domain). The data is produced for the year 2022 and based on Sentinel-2 data.
 Documentation: https://human-settlement.emergency.copernicus.eu/emc_built_s.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
-ManagedBy: [JRC](https://joint-research-centre.ec.europa.eu)
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
   - classification
@@ -32,6 +32,10 @@ Resources:
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-greenness
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Get To Know A Dataset: EMC BUILT
