@@ -12,7 +12,7 @@ Description: |
   allele number, allele frequency, homozygote count, call rate, filter status and callable-region
   resources. The controlled-access tier holds participant-level FASTQ, CRAM, per-sample gVCF and the
   genotyped multi-sample VCF, available to approved academic researchers under the KOVA3 Data Use
-  Agreement.
+  Agreement. Read-level data are not available for one contributing cohort.
 
   The open tier supports population-matched rare-disease variant filtering, ACMG/AMP population-frequency
   evidence, carrier-frequency estimation, pharmacogenomics and comparative population genetics. The
@@ -67,8 +67,9 @@ Resources:
   - Description: |
       Controlled-access tier. Participant-level data for the same 10,988 genomes: gzip-compressed
       paired-end FASTQ, CRAM with CRAI indexes, bgzip-compressed per-sample gVCF with tabix indexes, and
-      the chromosome-sharded genotyped multi-sample VCF. Read-level format varies by sample; per-sample
-      manifests record which format is available for each genome. Access requires an approved application
+      the chromosome-sharded genotyped multi-sample VCF. Read-level format varies by sample, and the
+      National Integrated Bio-Big Data (KOBIC) cohort (4,739 genomes) has per-sample gVCF but no
+      read-level data; per-sample manifests record which formats are available for each genome. Access requires an approved application
       and a signed Data Use Agreement.
     ARN: arn:aws:s3:::kova3-controlled
     Region: ap-northeast-2
