@@ -35,6 +35,10 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://brain-wide-bench.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new brain-wide-bench data
+    ARN: arn:aws:sns:us-east-1:842577843587:brain-wide-bench-sns
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: BrainWideBench - benchmark code with training and evaluation pipelines for all task suites
