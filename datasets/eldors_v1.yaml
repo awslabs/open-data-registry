@@ -4,11 +4,11 @@ Description: |
   updated repository of RNA sequence data curated from diverse genomic, non-coding RNA, 
   and metagenomic sources. Following a rigorous hierarchical redundancy removal workflow, 
   the dataset features two distinct tiers: the baseline elDORS_raw database (elDORS_raw_v1) containing 
-  1.91 billion sequences, and a clustered and optimized elDORS version (elDORS_v1) containing 1.32 billion sequences 
+  ~1.91 billion sequences, and a clustered and optimized elDORS version (elDORS_v1) containing ~1.32 billion sequences 
   (clustered at 80% sequence identity and 80% overlap, keeping sequences between 10 and 4096 nucleotides). 
   To bypass severe network bottlenecks, the database is distributed in raw chunked formats, 
   compressed archives, and pre-indexed pipeline builds optimized for immediate drop-in compatibility 
-  with deep RNA alignment tools like rMSA and the RNAcmap3-elDORS pipeline.
+  with deep RNA multiple sequence alignment pipelines rMSA and RNAcmap3.
 
 Documentation: https://github.com/duttan710/open-data-examples/blob/main/elDORS_v1_Documentation.md
 Contact: https://github.com/duttan710/open-data-examples/issues
@@ -28,9 +28,9 @@ Resources:
   - Description: |
       The complete elDORS v1 S3 bucket organized into four distinct database formats:
       1. Raw Sequence Distribution (/elDORS_v1_raw) - 1.2 TB baseline unclustered FASTA format sequence database.
-      2. Compressed Archive (/GZIPPED_elDORS_v1) - elDORS (clustered at 80% identity, 80% sequence overlap, and filtering for length (10 to 4096), the optimized database contains 1.32 billion sequences (582 GB unzipped FASTA), 170 GB sequence-aware ~9GB chunks 
-      3. rMSA-Optimized Build (/rMSA_optimized_elDORS) - 1.0 TB uncompressed FASTA and BLAST format files optimized for using the database with rMSA ().
-      4. RNAcmap3-Optimized Build (/RNAcmap3_optimized_elDORS) - 861 GB multi-volume BLAST and FASTA format files optimized for RNAcmap3-elDORS split-strategy pipeline.
+      2. Clustered version (/elDORS_v1) - elDORS (clustered at 80% identity and 80% sequence overlap); the optimized database contains ~1.32 billion sequences (within the sequence length range (10≤length≤4096)); Both the 170 GB single-volume (.fasta.gz) file and multi-volume (total 170GB) distribution as ~9 GB sequence-aware chunks (.fasta.gz) are provided. 
+      3. rMSA-Optimized Build (/rMSA_optimized_elDORS) - 1.0 TB uncompressed FASTA and BLAST format files optimized for using the database with the rMSA pipeline.
+      4. RNAcmap3-Optimized Build (/RNAcmap3_optimized_elDORS) - 861 GB multi-volume BLAST and FASTA format files optimized for the RNAcmap3 split-strategy pipeline.
     ARN: arn:aws:s3:::eldors-v1-database
     Region: us-east-1
     Type: S3 Bucket

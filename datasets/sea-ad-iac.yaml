@@ -1,0 +1,48 @@
+Name: "The SEA-AD Integrative Analysis Center Study (SEA-AD IAC)"
+
+Description: |
+  The Seattle Alzheimer's Disease Brain Cell Atlas Integrative Analysis Center
+  (SEA-AD IAC) reprocesses datasets from SEA-AD and other large-scale
+  Alzheimer's disease and related dementia studies to support harmonized
+  cross-study analyses. The study provides uniformly processed single-cell
+  genomics and multiomic data, harmonized metadata, and representations of
+  disease pathology mapped to highly annotated BRAIN Initiative Cell Atlas
+  Network (BICAN) and SEA-AD cell classifications. These resources support
+  investigation of cell-type-specific molecular changes across Alzheimer's
+  disease cohorts and stages of disease progression.
+
+Documentation: "https://doi.org/10.7303/9618107"
+
+Contact: "https://www.synapse.org/Synapse:syn2580853/discussion/default"
+
+ManagedBy: "Sage Bionetworks"
+
+UpdateFrequency: "AD Knowledge Portal Data Releases are published monthly (https://news.adknowledgeportal.org/). Updates to specific studies are dependent on data contributor and ingress timelines."
+
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - epigenomics
+  - gene expression
+  - genomic
+  - Homo sapiens
+  - life sciences
+  - medicine
+  - neurobiology
+  - neuroscience
+  - RNA-seq
+  - single-cell transcriptomics
+  - transcriptomics
+
+License: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn64410371#Acknowledgement"
+
+Resources:
+  - Description: "This study provides controlled-access, uniformly reprocessed single-nucleus RNA sequencing and multiomic data, harmonized metadata, cell-type classifications, and associated representations of Alzheimer's disease pathology from SEA-AD and other community studies."
+    ARN: "arn:aws:s3:::sea-ad-iac.opendata.sagebase.org"
+    Region: "us-east-1"
+    Type: "S3 Bucket"
+    ControlledAccess: "https://adknowledgeportal.synapse.org/Data%20Access"
+
+ADXCategories:
+  - "Healthcare & Life Sciences Data"

@@ -1,0 +1,53 @@
+Name: "The MIT ROSMAP Single-Nucleus Multiomics Study (MIT_ROSMAP_Multiomics)"
+
+Description: |
+  The MIT ROSMAP Single-Nucleus Multiomics Study provides single-nucleus
+  transcriptomic and chromatin accessibility data generated from postmortem
+  brain tissue from participants in the Religious Orders Study and Rush Memory
+  and Aging Project (ROSMAP). The study includes single-nucleus RNA sequencing,
+  single-nucleus ATAC sequencing, and paired multiome data from 427 prefrontal
+  cortex samples, as well as single-nucleus RNA sequencing data from multiple
+  brain regions. These data support investigation of cell-type-specific
+  molecular changes, cellular vulnerability, cognitive resilience, and
+  Alzheimer's disease progression.
+
+Documentation: "https://doi.org/10.7303/9618323"
+
+Contact: "https://www.synapse.org/Synapse:syn2580853/discussion/default"
+
+ManagedBy: "Sage Bionetworks"
+
+UpdateFrequency: "AD Knowledge Portal Data Releases are published monthly (https://news.adknowledgeportal.org/). Updates to specific studies are dependent on data contributor and ingress timelines."
+
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - epigenomics
+  - gene expression
+  - Homo sapiens
+  - life sciences
+  - medicine
+  - neurobiology
+  - neuroscience
+  - RNA-seq
+  - single-cell transcriptomics
+  - transcriptomics
+
+License: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn52293417#Acknowledgement"
+
+Resources:
+  - Description: "This study provides controlled-access single-nucleus RNA sequencing, single-nucleus ATAC sequencing, paired RNA and chromatin-accessibility multiome data, and related metadata generated from postmortem brain tissue from ROSMAP participants."
+    ARN: "arn:aws:s3:::mit-rosmap.opendata.sagebase.org"
+    Region: "us-east-1"
+    Type: "S3 Bucket"
+    ControlledAccess: "https://adknowledgeportal.synapse.org/Data%20Access"
+
+DataAtWork:
+  Publications:
+    - Title: "Single-cell atlas reveals correlates of high cognitive function, dementia, and resilience to Alzheimer's disease pathology"
+      URL: "https://doi.org/10.1016/j.cell.2023.08.039"
+      AuthorName: "Mathys H, Peng Z, Boix CA, Victor MB, Leary N, Babu S, et al."
+
+ADXCategories:
+  - "Healthcare & Life Sciences Data"

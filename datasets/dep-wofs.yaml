@@ -1,38 +1,66 @@
-Name: Digital Earth Pacific Water Observatins from Space (WOfS)
+Name: Digital Earth Pacific Water Observations from Space (WOfS, Landsat, 30 m)
 Description: |
-  Water Observations from Space (WOfS) beta version product for Water
-  Observations from Space (WOfS) is an annual summary of the temporal
-  and spatial extent of surface water over landscapes. In essence, this
-  highlights where water is usually or where it is rarely. The results
-  are visualised to compare points in time spanning over a year, a season
-  or multiple years. The dataset extends back historically to 2013.
+  Water Observations from Space (WOfS) maps the presence of surface water
+  across the Pacific region using Landsat satellite imagery, highlighting
+  where water is usually present and where it is rarely present. The
+  dataset supports flood mapping, drought monitoring, hydrological
+  analysis, and water resource management. It comprises three products:
+
+  - Scene-based Surface Water: per-scene classification of surface water
+    presence, derived from Landsat imagery using water detection
+    algorithms, from 1984 onwards.
+  - Annual Summary: annual statistics of wet and clear observation counts
+    and water frequency, capturing interannual variability in water
+    extent.
+  - All-Time Summary: the frequency of water presence across all available
+    observations, highlighting persistent and seasonal water bodies.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
-UpdateFrequency: Annually
+UpdateFrequency: Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually
 Collabs:
   ASDI:
     Tags:
       - oceans
 Tags:
+- aws-pds
 - earth observation
 - environmental
 - water
+- surface water
+- disaster response
 - geoscience
 - geospatial
 License: |
   Digital Earth Pacific Data is available under the Creative Commons
   Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-- Description: Data access
-  ARN: arn:aws:s3:::dep-public-data
+- Description: Water Observations from Space (WOfS) Scene-based Surface Water (Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_wofl
   Region: us-west-2
   Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofl)'
+- Description: Water Observations from Space (WOfS) Annual Summary (Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_wofs_summary_annual
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofs_summary_annual)'
+- Description: Water Observations from Space (WOfS) All-Time Summary (Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_wofs_summary_alltime
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_wofs_summary_alltime)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   - Title: "Digital Earth Pacific Map"
-    URL: https://maps.digitalearthpacific.org/#share=s-azdGYqKlUn1BWnljBhtB
+    URL: https://maps.digitalearthpacific.org
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
     AuthorName: Digital Earth Pacific Contributors
   Publications:
   - Title: Digital Earth Pacific Open Data Access Documentation
