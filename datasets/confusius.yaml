@@ -1,0 +1,79 @@
+Name: ConfUSIus Functional Ultrasound Imaging Dataset Collection
+Description: |
+  ConfUSIus Functional Ultrasound Imaging Dataset Collection is a curated set of public
+  functional ultrasound imaging (fUSI) datasets and derived templates for neuroscience.
+  The collection brings together data from multiple studies and laboratories and makes it
+  available for programmatic access through stable cloud paths and the ConfUSIus Python
+  toolkit. Where possible, datasets are organized or re-exported using fUSI-BIDS/BIDS
+  conventions; original formats, derivatives, provenance, and licenses vary by source
+  dataset.
+Documentation: https://confusius.tools/latest/user-guide/datasets/
+Contact: maintainers@confusius.tools
+ManagedBy: "[ConfUSIus](https://confusius.tools/)"
+UpdateFrequency: Updated as new openly redistributable functional ultrasound imaging datasets or corrected metadata are incorporated into the ConfUSIus dataset collection.
+Tags:
+  - aws-pds
+  - biology
+  - imaging
+  - life sciences
+  - neurobiology
+  - neuroimaging
+  - neuroscience
+  - nifti
+  - signal processing
+  - volumetric imaging
+  - Mus musculus
+  - Rattus norvegicus
+License: Licenses vary by source dataset and include CC BY 4.0, CC0 1.0, CC BY-NC 4.0, and CC BY-NC-SA 4.0. Users must comply with the license and citation requirements for each source dataset. See the documentation for per-dataset license and provenance details.
+Citation: Please cite ConfUSIus when using the access tooling, and cite the original publication and dataset associated with each source dataset used.
+Resources:
+  - Description: Functional ultrasound imaging datasets and templates organized by stable ConfUSIus dataset identifiers. Most imaging data are NIfTI files with BIDS/fUSI-BIDS metadata; some datasets include derivatives, tabular metadata, videos, or source files.
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: ConfUSIus Functional Ultrasound Imaging Dataset Collection"
+      URL: https://github.com/confusius-tools/confusius/blob/aws-open-data-onboarding/open-data-examples/confusius-functional-ultrasound-imaging-dataset-collection/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/confusius-tools/confusius/blob/aws-open-data-onboarding/open-data-examples/confusius-functional-ultrasound-imaging-dataset-collection/get-to-know-a-dataset.ipynb
+      AuthorName: ConfUSIus developers
+      AuthorURL: https://github.com/confusius-tools
+      Services:
+        - Amazon S3
+    - Title: Registration of two sessions from the same subject
+      URL: https://confusius.tools/latest/examples/_built/registration/register_volume_same_subject/
+      AuthorName: ConfUSIus developers
+      AuthorURL: https://confusius.tools/
+    - Title: First-level GLM analysis of fUSI data
+      URL: https://confusius.tools/latest/examples/_built/glm/first_level/
+      AuthorName: ConfUSIus developers
+      AuthorURL: https://confusius.tools/
+    - Title: Searchlight decoding of a continuous variable
+      URL: https://confusius.tools/latest/examples/_built/decoding/searchlight_speed/
+      AuthorName: ConfUSIus developers
+      AuthorURL: https://confusius.tools/
+  Tools & Applications:
+    - Title: ConfUSIus
+      URL: https://confusius.tools/
+      AuthorName: ConfUSIus developers
+      AuthorURL: https://github.com/confusius-tools/confusius
+  Publications:
+    - Title: Neural correlates of blood flow measured by ultrasound
+      URL: https://doi.org/10.1016/j.neuron.2022.02.012
+      AuthorName: Nunez-Elizalde AO et al.
+    - Title: Induction of haemodynamic travelling waves by glial-related vasomotion in a rat model of neuroinflammation
+      URL: https://doi.org/10.1016/j.ebiom.2025.105777
+      AuthorName: Pereira M et al.
+    - Title: A vascular code for speed in the spatial navigation system
+      URL: https://doi.org/10.1016/j.celrep.2025.116791
+      AuthorName: Cybis Pereira F et al.
+    - Title: Brainwide blood volume reflects opposing neural populations
+      URL: https://doi.org/10.1038/s41586-026-10350-9
+      AuthorName: Landemard A et al.
+    - Title: A queen odour mediates reproductive suppression in a eusocial mammal
+      URL: https://doi.org/10.1038/s41586-026-10772-5
+      AuthorName: Khallaf MA et al.
+    - Title: Structural and dynamic embedding of the mouse functional connectome revealed by functional ultrasound imaging
+      URL: https://doi.org/10.64898/2026.02.05.704055
+      AuthorName: Pepe C et al.
+ADXCategories:
+  - Healthcare & Life Sciences Data
