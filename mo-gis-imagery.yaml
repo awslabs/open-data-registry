@@ -1,0 +1,48 @@
+Name: Missouri Statewide Aerial Imagery Collection
+Description: | 
+  The Missouri Spatial Data Information Service (MSDIS) is responsible for the storage and distribution of digital spatial data, aerial photography, and LiDAR related to the state of Missouri. 
+Documentation: https://data-msdis.opendata.arcgis.com
+Contact: msdismail@missouri.edu
+ManagedBy: Missouri Spatial Data Information Service 
+UpdateFrequency: Missouri's imagery cycle is based on funding availability.
+Tags:
+- aws-pds
+- aerial imagery
+- agriculture
+- earth observation
+- geospatial
+- imaging
+- mapping
+- natural resource
+- planning
+- sustainability
+License: Access to Missouri aerial imagery distributed by the Missouri Spatial Data Information Service (MSDIS) is governed by Creative Commons BY 4.0 (CC BY 4.0):: https://creativecommons.org/licenses/by/4.0/       
+Resources:
+- Description: Aerial imagery of the state of Missouri.
+  ARN: arn:aws:s3:::mo-gis-imagery
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - "[Browse Bucket](https://mo-gis-imagery.s3.us-west-2.amazonaws.com/index.html)"
+- Description: Notification for Missouri Statewide Aerial Imagery Collection.
+  ARN: arn:aws:sns:us-west-2:092382576634:mo-gis-imagery-object_created
+  Region: us-west-2
+  Type: SNS Topic
+DataAtWork:
+  Tutorials
+    - Title: "Get to Know A Dataset" Missouri Statewide Imagery Collection"
+      URL: https://github.com/TVought/mo-gis-opendata/blob/main/mo-gis-imagery/get-to-know-a-dataset-mo-gis-imagery.ipynb
+      NotebookURL: https://github.com/TVought/mo-gis-opendata/blob/main/mo-gis-imagery/get-to-know-a-dataset-mo-gis-imagery.ipynb
+      AuthorName: Missouri Spatial Data Information Service
+      AuthorURL: https://data-msdis.opendata.arcgis.com/
+  Tools & Applications:
+    - Title: Fly MO Imagery
+      URL:  https://www.flymoimagery.com/
+      AuthorName: Missouri Office of Geospatial Information
+    - Title: The Missouri Map
+      URL: https://arcg.is/0bSreG0
+      AuthorName: Missouri Spatial Data Information Service
+    - Title: 2023 Missouri Imagery Webinar
+      URL: https://msdis-archive.missouri.edu/archive/MSDIS_Outbox/2022_2023_ImageryWebinars/07%20March%202023%20Webinar.mp4
+      AuthorName: Missouri GIS Advisory Council
+ 
