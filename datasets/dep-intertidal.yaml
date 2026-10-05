@@ -1,0 +1,51 @@
+Name: Digital Earth Pacific Intertidal Elevation and Exposure (Sentinel-2/Landsat, 30 m)
+Description: |
+  This dataset provides spatial information on intertidal elevation and
+  exposure across Pacific Island coastlines derived from multi-sensor
+  satellite observations. It includes elevation estimates and exposure
+  metrics indicating the proportion of time areas are exposed within the
+  intertidal zone. The dataset supports coastal monitoring, habitat
+  mapping, and shoreline dynamics analysis.
+
+  It is produced by combining Landsat and Sentinel observations to model
+  intertidal elevation and calculate exposure metrics.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Irregularly, as new versions are produced
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+- aws-pds
+- earth observation
+- coastal
+- elevation
+- marine
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Intertidal Elevation and Exposure (Sentinel-2/Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2ls_intertidal
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2ls_intertidal)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific
