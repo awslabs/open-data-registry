@@ -1,0 +1,43 @@
+Name: "The Whole Genome Sequence Harmonization Study (WGS_Harmonization)"
+
+Description: |
+  The Whole Genome Sequence Harmonization Study provides uniformly processed
+  whole-genome sequencing data generated from the three primary AMP-AD cohort
+  studies: the Religious Orders Study and Memory and Aging Project (ROSMAP),
+  the Mount Sinai Brain Bank (MSBB), and the Mayo RNAseq Study. The project
+  harmonizes whole-genome sequence data across these cohorts to support
+  cross-study analyses of genomic variation associated with aging,
+  Alzheimer's disease, and related dementias.
+
+Documentation: "https://doi.org/10.7303/9618322"
+
+Contact: "https://www.synapse.org/Synapse:syn2580853/discussion/default"
+
+ManagedBy: "Sage Bionetworks"
+
+UpdateFrequency: "AD Knowledge Portal Data Releases are published monthly (https://news.adknowledgeportal.org/). Updates to specific studies are dependent on data contributor and ingress timelines."
+
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biology
+  - genomic
+  - genotyping
+  - Homo sapiens
+  - life sciences
+  - medicine
+  - neurobiology
+  - neuroscience
+  - whole genome sequencing
+
+License: "https://adknowledgeportal.synapse.org/Explore/Studies/DetailsPage/StudyDetails?Study=syn22264775#Acknowledgement"
+
+Resources:
+  - Description: "This study provides controlled-access harmonized whole-genome sequencing alignments, joint genomic variant calls, and related clinical and biospecimen metadata from the ROSMAP, MSBB, and MayoRNAseq cohorts."
+    ARN: "arn:aws:s3:::wgs-harmonization.opendata.sagebase.org"
+    Region: "us-east-1"
+    Type: "S3 Bucket"
+    ControlledAccess: "https://adknowledgeportal.synapse.org/Data%20Access"
+
+ADXCategories:
+  - "Healthcare & Life Sciences Data"

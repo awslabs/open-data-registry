@@ -1,0 +1,49 @@
+Name: Digital Earth Pacific Seagrass Extent, Machine Learning (Sentinel-2, 10 m)
+Description: |
+  This dataset maps the distribution of seagrass ecosystems across the
+  Pacific region using Sentinel-2 imagery. It applies machine learning
+  techniques to classify seagrass extent at high spatial resolution, and
+  includes seagrass probability, classification and thresholded extent
+  layers from 2017 onwards. The dataset supports marine habitat mapping,
+  biodiversity monitoring, and coastal ecosystem management.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - biodiversity
+Tags:
+- aws-pds
+- earth observation
+- marine
+- coastal
+- biodiversity
+- oceans
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Seagrass Extent, Machine Learning (Sentinel-2, 10 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_seagrass
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_seagrass)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific
