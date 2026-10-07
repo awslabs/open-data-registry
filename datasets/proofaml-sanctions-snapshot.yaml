@@ -1,0 +1,76 @@
+Name: ProofAML Sanctions & PEP Watchlist Snapshot
+
+Description: |
+  A versioned, redistributable snapshot of ProofAML's resolved global
+  sanctions, watchlist, and politically-exposed-person (PEP) corpus —
+  120,886 entity records across 69 datasets, each traced to its original
+  issuing authority (OFAC, the UN Security Council, the EU, UK OFSI,
+  national parliaments, the CIA World Leaders directory, and more). The
+  PEP subset is sourced entirely from official government and
+  international-organization publications, not crowdsourced data.
+
+  Licensing: the selection, arrangement, and entity-resolution layer of
+  this compilation is licensed CC BY 4.0. Every individual record
+  additionally carries its own upstream publisher's license (US public
+  domain, UK Open Government Licence v3, EU Commission Decision
+  2011/833/EU, UN CC BY 3.0 IGO, France Licence Ouverte/Etalab, CC0,
+  Nordic NLOD, and others) — see the bundle's own NOTICE file for the
+  full per-source breakdown before redistributing any individual record
+  in isolation. Sources evaluated but excluded (share-alike terms, no
+  snapshot artifact yet) are listed transparently in manifest.json's
+  "excluded" array.
+
+  Research snapshot — not current data; production sanctions screening
+  requires a live, monitored feed.
+
+  Recommended citation: ProofAML — https://proofaml.com —
+  "ProofAML Sanctions Snapshot 2026-08-24"
+
+Documentation: https://proofaml.com/sources/
+
+Contact: "[ProofAML — open a GitHub issue](https://github.com/proofaml/sanctions-snapshot/issues)"
+
+ManagedBy: "[ProofAML](https://proofaml.com)"
+
+UpdateFrequency: Quarterly (to start; monthly at most)
+
+Tags:
+  - financial markets
+  - government records
+  - legal data
+  - regulatory
+  - civic
+
+License: >-
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/legalcode) —
+  applies ONLY to ProofAML's selection/arrangement/entity-resolution
+  compilation layer. Every individual record separately carries its own
+  upstream publisher's license (US public domain, UK OGL v3, EU
+  2011/833/EU, UN CC BY 3.0 IGO, and others); see the bundle's NOTICE file
+  for the full per-source breakdown.
+
+Resources:
+  - Description: >-
+      ProofAML Sanctions & PEP Watchlist Snapshot (version 2026-08-24) —
+      S3 bucket hosting the versioned, redistributable dataset bundle
+      (compressed archive, manifest.json with per-dataset checksums,
+      LICENSE, and the per-source NOTICE). Bucket is public — anonymous
+      s3:GetObject, us-east-1, no-cost download.
+    ARN: arn:aws:s3:::proofaml-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Dataset manifest (JSON)](https://proofaml-open-data.s3.us-east-1.amazonaws.com/snapshot/2026-08-24/proofaml-sanctions-snapshot-2026-08-24/manifest.json)'
+
+DataAtWork:
+  Tutorials: []
+  Tools & Applications: []
+  Publications:
+    - Title: "ProofAML Sanctions & PEP Watchlist Snapshot (archived, DOI-minted on Zenodo)"
+      URL: https://doi.org/10.5281/zenodo.22115768
+      AuthorName: ProofAML
+
+Citation: >-
+  ProofAML. (2026). ProofAML Sanctions & PEP Watchlist Snapshot
+  (Version 2026-08-24) [Data set]. Zenodo.
+  https://doi.org/10.5281/zenodo.22115768

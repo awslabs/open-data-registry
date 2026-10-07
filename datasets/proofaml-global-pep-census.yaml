@@ -1,0 +1,60 @@
+Name: ProofAML — Global PEP Census Dataset
+
+Description: |
+  51,751 politically exposed persons, all official government/IGO sources, zero Wikidata.
+
+  A type-axis segment of the ProofAML corpus (global-pep-census) — 51,751 entity records across 21 sources, each traced to its original issuing authority.
+
+  This is the deliverable that operationalizes the existing "Global PEP Census" flagship narrative page as an actual downloadable, separately-citable bundle. Reuses the existing brand name rather than inventing a second, competing "PEP dataset" concept. No sanctions/wanted/watchlist rows at all — pure PEP, which is the entire point (a PEP flag is a classification requiring enhanced due diligence, never a designation, per the product's own sanctions/PEP bifurcation). All sources are official government or intergovernmental publications; no crowdsourced (Wikidata) data.
+
+  OVERLAP: This dataset overlaps with other ProofAML segment datasets and the master snapshot — entities are not unique to this file. See https://proofaml.com/sources/ for the full corpus and the other available segments.
+
+  Licensing: the selection, arrangement, and entity-resolution layer of this compilation is licensed CC BY 4.0. Every individual record additionally carries its own upstream publisher's license — see the bundle's own NOTICE file for the full per-source breakdown before redistributing any individual record in isolation.
+
+  Research snapshot — not current data; production sanctions screening requires a live, monitored feed.
+
+  Recommended citation: ProofAML — https://proofaml.com — "ProofAML Global PEP Census Dataset Snapshot 2026-08-24"
+
+Documentation: https://proofaml.com/sources/
+
+Contact: "[ProofAML — open a GitHub issue](https://github.com/proofaml/sanctions-snapshot/issues)"
+
+ManagedBy: "[ProofAML](https://proofaml.com)"
+
+UpdateFrequency: Quarterly (to start; monthly at most)
+
+Tags:
+  - government records
+  - civic
+  - legal data
+  - regulatory
+
+License: >-
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/legalcode) — applies
+  ONLY to ProofAML's selection/arrangement/entity-resolution compilation
+  layer. Every individual record separately carries its own upstream
+  publisher's license; see the bundle's NOTICE file for the full per-source
+  breakdown.
+
+Resources:
+  - Description: >-
+      ProofAML — Global PEP Census Dataset (version 2026-08-24) — object
+      prefix in the shared proofaml-open-data S3 bucket hosting this segment's
+      redistributable bundle (compressed archive, manifest.json with per-dataset
+      checksums, LICENSE, and the per-source NOTICE).
+    ARN: arn:aws:s3:::proofaml-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Segment manifest (JSON)](https://proofaml-open-data.s3.us-east-1.amazonaws.com/segments/global-pep-census/2026-08-24/proofaml-global-pep-census-2026-08-24/manifest.json)'
+
+DataAtWork:
+  Tutorials: []
+  Tools & Applications: []
+  Publications:
+    - Title: "ProofAML — Global PEP Census Dataset (archived, DOI-minted on Zenodo)"
+      URL: https://doi.org/10.5281/zenodo.22118981
+      AuthorName: ProofAML
+
+Citation: >-
+  ProofAML — https://proofaml.com — "ProofAML Global PEP Census Dataset Snapshot 2026-08-24"
