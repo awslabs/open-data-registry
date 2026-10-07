@@ -1,0 +1,113 @@
+Name: Pancreatlas - Human Pancreas Biomolecular Imaging Data
+Description: |
+  Pancreatlas is a collection of over 4,200 pancreas-specific biological images
+  from 908 de-identified organ donors, available for interactive browsing at
+  pancreatlas.org. Data was generated using tissue from organ donors studied by
+  multiple national and international phenotyping consortia. Image modalities
+  include traditional histology, brightfield and fluorescence
+  immunohistochemistry, multiplexed immunohistochemistry (CODEX), and imaging
+  mass cytometry (IMC). Many images are large whole-slide cross-sectional scans
+  measuring >100 square millimeters (~500,000–2,000,000 cells per image).
+  The dataset spans the human lifespan (birth to 79 years) and includes donors
+  with non-diabetic, type 1 diabetes (T1D), type 2 diabetes (T2D), cystic
+  fibrosis-related diabetes (CFRD), neonatal diabetes (NDM), autoantibody-
+  positive (AAB), and atypical diabetes phenotypes. Expression patterns of 70+
+  proteins are visualized by immunohistochemistry, alongside rich morphological
+  information from traditional histological imaging. Images are organized into
+  ten research collections contributed by programs including nPOD, HPAP,
+  HANDEL-P, HANDEL-I, IIDP, EADB, and the Vanderbilt Pancreas Biorepository.
+  Pancreatlas is the only publicly available reference dataset for human pancreas
+  tissue architecture, making it a critical resource for research into diabetes,
+  pancreatitis, and pancreatic cancer.
+Documentation: https://www.pancreatlas.org/data
+Contact: jp.cartailler@vanderbilt.edu
+ManagedBy: "[Vanderbilt University](https://www.vanderbilt.edu)"
+UpdateFrequency: |
+  New image collections are added as contributing research programs complete
+  data processing, which occurs on a rolling basis.
+Tags:
+  - aws-pds
+  - biology
+  - cell imaging
+  - computational pathology
+  - computer vision
+  - CSV
+  - deep learning
+  - digital pathology
+  - fluorescence imaging
+  - high-throughput imaging
+  - histopathology
+  - imaging
+  - life sciences
+  - machine learning
+  - medical imaging
+  - medicine
+  - microscopy
+  - protein
+  - TIFF
+License: >
+  [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)](https://creativecommons.org/licenses/by-nd/4.0/).
+  Users are free to use and redistribute the data for any purpose, provided
+  appropriate credit is given and no derivative works are distributed.
+  Per-collection citation guidance is available at pancreatlas.org/data.
+Resources:
+  - Description: >
+      Whole-slide and fluorescence microscopy images organized by collection
+      using Hive-style prefixes (images/dataset_id=XXX/), plus tabular metadata
+      files (image_metadata.csv, collection_metadata.csv, nomenclature.csv)
+      under the metadata/ prefix.
+    ARN: arn:aws:s3:::pancreatlas
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: >
+      SNS topic for S3 object creation notifications. Subscribe via SQS or
+      Lambda to receive notifications when new images are added to the dataset.
+    ARN: arn:aws:sns:us-east-1:3818-4373-0472:pancreatlas-object-created  # TODO: update with actual account ID after AWS account creation
+    Region: us-east-1
+    Type: SNS Topic
+ADXCategories:
+  - Healthcare & Life Sciences Data
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Pancreatlas"
+      URL: https://github.com/vandydata/open-data-examples/blob/main/pancreatlas-human-pancreas-biomolecular-imaging/get-to-know-a-dataset.ipynb
+      AuthorName: Jean-Philippe Cartailler
+      AuthorURL: https://www.vanderbilt.edu
+      NotebookType: JupyterNotebook
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: "Pancreatlas — Interactive pancreas image browser"
+      URL: https://www.pancreatlas.org
+      AuthorName: Vanderbilt University
+      AuthorURL: https://www.vanderbilt.edu
+  Publications:
+    - Title: >
+        Induction of bronchus-associated lymphoid tissue is an early life
+        adaptation for promoting human B cell immunity
+      URL: https://doi.org/10.1038/s41590-023-01557-3
+      AuthorName: Matsumoto et al. 2023
+      AuthorURL: https://www.vanderbilt.edu
+    - Title: >
+        Integrated single-cell analyses reveal mechanisms of beta cell
+        dysfunction in islets of prediabetic and early-onset type 2 diabetes
+      URL: https://doi.org/10.1038/s41586-023-06693-2
+      AuthorName: Walker, Saunders & Rai et al. 2023
+      AuthorURL: https://medicine.umich.edu
+    - Title: >
+        Reduced acinar cell number is the main cause of the smaller pancreas
+        volume in type 1 diabetes
+      URL: https://doi.org/10.1007/s00125-020-05155-y
+      AuthorName: Wright et al. 2020
+      AuthorURL: https://www.vanderbilt.edu
+    - Title: >
+        Beta cell loss and beta cell stress in cystic fibrosis-related diabetes
+      URL: https://doi.org/10.1172/jci.insight.98240
+      AuthorName: Hart et al. 2018
+      AuthorURL: https://www.vanderbilt.edu
+    - Title: >
+        Multiomic profiling establishes the connectivity between commonly used
+        diabetic research models
+      URL: https://doi.org/10.2337/DB19-0058
+      AuthorName: Wang et al. 2019
+      AuthorURL: https://www.upenn.edu
