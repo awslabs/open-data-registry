@@ -3,7 +3,7 @@ Description: |
   A multi-model archive of long-range reforecasts from AI weather models, initialized
   daily from 2000 to 2025 and rolled out to 50 days on a global 0.25° grid. Models include GraphCast, Aurora 1.5,
   AIFS-single v2, and the 51-member ensembles AIFS-ENS v2, FGN, Aurora 1.5 ENS, and
-  NeuralGCM. Every model is run under the same protocol, so forecasts are
+  NeuralGCM (2.8° grid). Every model is run under the same protocol, so forecasts are
   directly comparable. The archive supports benchmarking of AI weather models, training
   of downstream machine learning models, and multi-model blending, and powers
   [AI-Almanac](https://ai-almanac.org), UChicago-LAUDE's interactive forecast platform.
@@ -16,7 +16,7 @@ Contact: marchakitus@uchicago.edu
 ManagedBy: "[University of Chicago](https://www.uchicago.edu/)"
 UpdateFrequency: |
   New AI weather models are added as they are released, roughly one to three per year,
-  using a commmon initialization cadence, format, and variable set as
+  using a common initialization cadence, format, and variable set as
   existing models. Real-time forecasts initialized from operational ECMWF IFS analyses
   are planned.
 Tags:
