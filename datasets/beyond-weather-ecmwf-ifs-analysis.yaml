@@ -1,0 +1,72 @@
+Name: ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr
+Description: |
+  The ECMWF Integrated Forecasting System (IFS) operational analysis, every 6 hours from 2011
+  to 2024, on the native N320 reduced Gaussian grid (542,080 points, about 31 km). It contains a
+  selection of variables: 6 upper-air variables on 18 pressure levels, 18 surface variables, and
+  the land-sea mask and orography of each IFS cycle. This is the input set of data-driven
+  weather models such as ECMWF's AIFS, for training, fine-tuning and verification. Stored as
+  versioned Icechunk Zarr, chunked by timestep for fast random access.
+Documentation: https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/README.md
+Contact: https://github.com/Beyond-Weather-Git/open-data-examples/issues
+ManagedBy: "[Beyond Weather](https://beyond-weather.com)"
+UpdateFrequency: Not currently updated. The archive covers 2011-01-01 to 2024-12-31.
+Tags:
+  - aws-pds
+  - weather
+  - meteorological
+  - atmosphere
+  - forecast
+  - global
+  - machine learning
+  - zarr
+License: |
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),
+  following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).
+  Copyright © 2011-2024 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.
+  ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,
+  or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables and
+  levels, conversion from GRIB to Icechunk Zarr, and lossy bit rounding.
+Citation: |
+  Contains modified ECMWF IFS operational analysis data, Copyright © 2011-2024 European Centre for
+  Medium-Range Weather Forecasts (ECMWF), www.ecmwf.int, licensed under CC BY 4.0.
+Resources:
+  - Description: IFS operational analysis 2011-2024, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository
+    ARN: arn:aws:s3:::beyond-weather-ecmwf-ifs-analysis
+    Region: us-east-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://beyond-weather-ecmwf-ifs-analysis.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr data
+    ARN: arn:aws:sns:us-east-2:239830941214:beyond-weather-ecmwf-ifs-analysis-object_created
+    Region: us-east-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr"
+      URL: https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/get-to-know-a-dataset.ipynb
+      AuthorName: Beyond Weather
+      AuthorURL: https://beyond-weather.com
+  Tools & Applications:
+    - Title: icechunk
+      URL: https://icechunk.io
+      AuthorName: Earthmover
+      AuthorURL: https://earthmover.io
+    - Title: xarray
+      URL: https://docs.xarray.dev/
+      AuthorName: xarray Developers
+    - Title: Anemoi - framework for data-driven weather forecasting
+      URL: https://anemoi.readthedocs.io
+      AuthorName: ECMWF and partners
+    - Title: earthkit-regrid - regridding of reduced Gaussian grids
+      URL: https://github.com/ecmwf/earthkit-regrid
+      AuthorName: ECMWF
+  Publications:
+    - Title: IFS Documentation
+      URL: https://www.ecmwf.int/en/publications/ifs-documentation
+      AuthorName: ECMWF
+    - Title: Changes to the forecasting system (IFS cycle history)
+      URL: https://confluence.ecmwf.int/display/FCST/Changes+to+the+forecasting+system
+      AuthorName: ECMWF
+ADXCategories:
+  - Environmental Data
