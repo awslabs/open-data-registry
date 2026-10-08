@@ -1,0 +1,76 @@
+Name: UChicago AI Weather Model Reforecast Archive
+Description: |
+  A multi-model archive of long-range reforecasts from AI weather models, initialized
+  daily from 2000 to 2025 and rolled out to 50 days on a global 0.25° grid. Models include GraphCast, Aurora 1.5,
+  AIFS-single v2, and the 51-member ensembles AIFS-ENS v2, FGN, Aurora 1.5 ENS, and
+  NeuralGCM. Every model is run under the same protocol, so forecasts are
+  directly comparable. The archive supports benchmarking of AI weather models, training
+  of downstream machine learning models, and multi-model blending, and powers
+  [AI-Almanac](https://ai-almanac.org), UChicago-LAUDE's interactive forecast platform.
+  <br/>
+  <br/>
+  These reforecasts are experimental machine-learning output produced for research use.
+  They are not official products of any model provider or meteorological agency.
+Documentation: https://envfluids.github.io/reforecast/
+Contact: marchakitus@uchicago.edu
+ManagedBy: "[University of Chicago](https://www.uchicago.edu/)"
+UpdateFrequency: |
+  New AI weather models are added as they are released, roughly one to three per year,
+  using a commmon initialization cadence, format, and variable set as
+  existing models. Real-time forecasts initialized from operational ECMWF IFS analyses
+  are planned.
+Tags:
+  - aws-pds
+  - weather
+  - forecast
+  - meteorological
+  - atmosphere
+  - climate
+  - air temperature
+  - precipitation
+  - global
+  - machine learning
+  - deep learning
+  - benchmark
+  - zarr
+License: |
+  Forecasts were produced with third-party models, and the archive does not relicense them.
+  The terms of the weights that generated each store apply: CC BY 4.0 (AIFS-single v2,
+  AIFS-ENS v2, GraphCast, FGN), CC BY-SA 4.0 (NeuralGCM), and MIT (Aurora 1.5, Aurora 1.5 ENS).
+  ECMWF data © European Centre for Medium-Range Weather Forecasts, licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); contains modified Copernicus
+  Climate Change Service information. See the
+  [licensing & attribution details](https://envfluids.github.io/reforecast/) for full terms.
+Resources:
+  - Description: |
+      Reforecasts stored as one zarr store per model per initialization at
+      forecasts_<model>/init_YYYYMMDDT00.zarr. All data are float32 with dimensions
+      (time, [number,] prediction_timedelta, lat, lon) for 6-hourly fields and
+      prediction_timedelta_daily for daily aggregates; number is the ensemble-member dimension.
+    # TODO: replace with the bucket after the CloudFormation template is deployed
+    ARN: arn:aws:s3:::uchicago-ai-weather-reforecast
+    Region: us-west-2
+    Type: S3 Bucket
+    # TODO: add a bucket browser link
+    # Explore:
+    #   - '[Browse Bucket](https://uchicago-ai-weather-reforecast.s3.amazonaws.com/index.html)'
+  # TODO: the CloudFormation template creates an SNS topic for new objects.
+  # - Description: Notifications for new objects added to the archive
+  #   ARN: arn:aws:sns:us-west-2:<account-id>:<topic-name>
+  #   Region: us-west-2
+  #   Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: UChicago AI Weather Model Reforecast Archive"
+      URL: https://github.com/envfluids/reforecast/blob/main/examples/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/envfluids/reforecast/blob/main/examples/get-to-know-a-dataset.ipynb
+      AuthorName: Adam Marchakitus
+      AuthorURL: https://github.com/envfluids
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: AI-Almanac, an interactive, human-centered forecast platform powered by the archive
+      URL: https://ai-almanac.org
+      AuthorName: UChicago-LAUDE
+ADXCategories:
+  - Environmental Data
