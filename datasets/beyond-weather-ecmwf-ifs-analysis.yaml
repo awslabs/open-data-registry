@@ -36,6 +36,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://beyond-weather-ecmwf-ifs-analysis.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr data
+    ARN: arn:aws:sns:us-east-2:239830941214:beyond-weather-ecmwf-ifs-analysis-object_created
+    Region: us-east-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr"
