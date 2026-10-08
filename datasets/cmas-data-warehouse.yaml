@@ -100,6 +100,16 @@ Resources:
     Explore:
     - '[Browse Bucket](https://epa-equates-v1.s3.amazonaws.com/index.html)'
     - '[EPA CMAQ 2019 3D Gridded and Column data from EQUATES Project](https://aws.amazon.com/marketplace/pp/prodview-kziefcewnxcxe?sr=0-5&ref_=beagle&applicationId=AWSMPContessa)'
+  - Description: CMAQ v6 2022 Data 
+    ARN: arn:aws:s3:::cmaq-v6-2022-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://cmaq-v6-2022-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in CMAQ v6 2022 Data 
+    ARN: arn:aws:sns:us-east-1:703786580975:cmaq-v6-2022-data-object_created
+    Region: us-east-1
+    Type: SNS Topic
   - Description: CMAQ 2025 12US1 CRACMM2 CAP-HAP Modeling Platform 
     ARN: arn:aws:s3:::cmaq-12us1-cracmm2-cap-hap-modeling-platform-2025
     Region: us-east-1
@@ -235,6 +245,16 @@ Resources:
     - '[Browse Bucket](https://cmas-smoke-modeling-platform-2016.s3.amazonaws.com/index.html)'
   - Description: Notifications for new data in SMOKE 2016 Modeling Platform
     ARN: arn:aws:sns:us-east-1:703786580975:cmas-smoke-modeling-platform-2016-object_created
+    Region: us-east-1
+    Type: SNS Topic
+  - Description: NEMO 1km Emissions Data for CONUS 2017
+    ARN: arn:aws:s3:::nemo-1km-emissions-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://nemo-1km-emissions-data.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data in NEMO 1km Emissions Data for CONUS 2017
+    ARN: arn:aws:sns:us-east-1:703786580975:nemo-1km-emissions-data-object_created
     Region: us-east-1
     Type: SNS Topic
 DataAtWork:
