@@ -27,7 +27,8 @@ Tags:
 License: Licenses vary by source dataset and include CC BY 4.0, CC0 1.0, CC BY-NC 4.0, and CC BY-NC-SA 4.0. Users must comply with the license and citation requirements for each source dataset. See the documentation for per-dataset license and provenance details.
 Citation: Please cite ConfUSIus when using the access tooling, and cite the original publication and dataset associated with each source dataset used.
 Resources:
-  - Description: Functional ultrasound imaging datasets and templates organized by stable ConfUSIus dataset identifiers. Most imaging data are NIfTI files with BIDS/fUSI-BIDS metadata; some datasets include derivatives, tabular metadata, videos, or source files.
+  - Description: Functional ultrasound imaging datasets and templates organized into immutable releases under datasets/<dataset-id>/<version>/ and templates/<template-id>/<version>/. Each release includes a manifest.json with file sizes and SHA-256 checksums; last_versions.conf lists the latest versions. Most imaging data are NIfTI files with BIDS/fUSI-BIDS metadata; some datasets include derivatives, tabular metadata, videos, or source files. Public read access requires no AWS credentials.
+    ARN: arn:aws:s3:::confusius-datasets
     Region: us-west-2
     Type: S3 Bucket
 DataAtWork:
