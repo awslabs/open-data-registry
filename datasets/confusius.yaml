@@ -31,6 +31,10 @@ Resources:
     ARN: arn:aws:s3:::confusius-datasets
     Region: us-west-2
     Type: S3 Bucket
+  - Description: Notifications for newly created objects in the ConfUSIus dataset collection S3 bucket.
+    ARN: arn:aws:sns:us-west-2:837109648923:confusius-datasets-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: ConfUSIus Functional Ultrasound Imaging Dataset Collection"
