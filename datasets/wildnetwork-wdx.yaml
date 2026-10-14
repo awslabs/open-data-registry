@@ -1,6 +1,6 @@
 Name: WildNetwork Open Wildlife Detections (Wildlife Detection Exchange, WDX)
 Description: |
-  WildNetwork is a free, open live map of wildlife detections from community acoustic stations (BirdNET-Pi, BirdNET-Go, the open-hardware WildNetwork Base), AI-classified camera traps and citizen science (iNaturalist, GBIF), covering about 18,800 sensors and 44,000 species worldwide. Every record is a Wildlife Detection Exchange (WDX) event that keeps the species, time and place together with the AI model and version that made the identification, its confidence score, the station's listening effort and a human review status, so users can judge how far to trust each detection. This dataset provides weekly snapshots of openly licensed detection events as GeoParquet, together with daily and weekly counts per species and 5-degree grid cell for studying presence, migration timing and range shifts.
+  WildNetwork is a free, open live map of wildlife detections from community acoustic stations (BirdNET-Pi, BirdNET-Go, the open-hardware WildNetwork Base), AI-classified camera traps and citizen science (iNaturalist, GBIF), covering about 18,800 sensors and 44,000 species worldwide. Every record is a Wildlife Detection Exchange (WDX) event that keeps the species, time and place together with the AI model and version that made the identification, its confidence score, the station's listening effort and a human review status, so users can judge how far to trust each detection. This dataset provides weekly snapshots of openly licensed detection events (with non-commercial records kept in a separate prefix) as GeoParquet, together with daily and weekly counts per species and 5-degree grid cell for studying presence, migration timing and range shifts.
 Documentation: https://github.com/arunrajiah/open-data-examples/blob/main/wildnetwork-wdx/README.md
 Contact: arunrajiah@gmail.com or https://github.com/arunrajiah/wildnetwork/issues
 ManagedBy: "[WildNetwork](https://wildnetwork.arunrajiah.com)"
@@ -16,11 +16,15 @@ Tags:
   - geospatial
   - parquet
   - machine learning
-License: "Each record carries its own SPDX licence: CC BY 4.0 for contributed WDX detections and derived aggregates; iNaturalist and GBIF records keep their source licences (CC0, CC BY or CC BY-NC). See the [licensing section](https://github.com/arunrajiah/open-data-examples/blob/main/wildnetwork-wdx/README.md#licensing-and-sources)."
+License: "Each record carries its own SPDX licence: CC BY 4.0 for contributed WDX detections and derived aggregates; iNaturalist and GBIF records keep their source licences. CC0 and CC BY records are in the main prefixes; CC BY-NC records are kept separately under the noncommercial/ prefix. See the [licensing section](https://github.com/arunrajiah/open-data-examples/blob/main/wildnetwork-wdx/README.md#licensing-and-sources)."
 Citation: "Please also cite the WDX format: Rajiah, A. Wildlife Detection Exchange (WDX), doi:10.5281/zenodo.22200864, and credit the underlying observers and sources as their licences require."
 Resources:
-  - Description: WildNetwork WDX detection events (GeoParquet, partitioned by date) and daily and weekly species aggregates per 5-degree grid cell (Parquet), with the WDX JSON Schema and a manifest
+  - Description: WildNetwork WDX detection events, CC0 and CC BY only (GeoParquet, partitioned by date) and daily and weekly species aggregates per 5-degree grid cell (Parquet), with the WDX JSON Schema and a manifest
     ARN: arn:aws:s3:::wildnetwork-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Detection events and aggregates whose observers chose a non-commercial licence (CC BY-NC 4.0), kept separate from the openly licensed data, with the same layout and columns
+    ARN: arn:aws:s3:::wildnetwork-open-data/noncommercial/
     Region: us-east-1
     Type: S3 Bucket
 DataAtWork:
