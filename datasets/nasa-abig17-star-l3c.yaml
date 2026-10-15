@@ -1,0 +1,29 @@
+Name: GHRSST NOAA/STAR GOES-17 ABI  L3C America Region SST v2.71 dataset in GDS2
+Description: The ACSPO G17/ABI L3C (Level 3 Collated) product is a gridded version of the ACSPO G17/ABI L2P product available at https://podaac.jpl.nasa.gov/dataset/ABI_G17-STAR-L2P-v2.71. The L3C output files are 1hr granules in NetCDF4 format, compliant with the GHRSST Data Specification version 2 (GDS2). Due to the loop heat pipe (LHP) issue on G17 ABI, there are only 13 granules available per 24hr interval, from 20UTC to 08UTC, followed by a break from 09UTC to 19UTC, with a total data volume of 0.1GB/day. Valid SSTs are found over oceans, sea, lakes or rivers, with fill values reported elsewhere.
+Documentation: https://cmr.earthdata.nasa.gov/search/concepts/C2036877645-POCLOUD.html
+Contact: https://podaac.jpl.nasa.gov/contact
+ManagedBy: "[NASA Physical Oceanography Distributed Active Archive Center](https://podaac.jpl.nasa.gov/)"
+UpdateFrequency: Daily
+Tags:
+- aws-pds
+- analysis ready data
+- wind speeds
+- oceans
+- ocean circulation
+- ocean currents
+- ocean velocity
+- ocean sea surface height
+- ocean simulation
+- surface water
+- water
+- us
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: GHRSST NOAA/STAR GOES-17 ABI  L3C America Region SST v2.71 dataset in GDS2 data files
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/ABI_G17-STAR-L3C-v2.71
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+ADXCategories:
+- Environment
