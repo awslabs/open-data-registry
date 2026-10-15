@@ -1,0 +1,29 @@
+Name: "search.wilsonl.in Web Search Index Crawl + Text Embeddings"
+Description: 'search.wilsonl.in is a web search engine built from scratch using neural embeddings, RocksDB, HNSW. This dataset contains the index, source documents, and text embeddings for 280M pages.'
+Documentation: https://github.com/wilsonzlin/datasets/search-engine-open-data/
+Contact: wl@wilsonl.in
+ManagedBy: Wilson Lin
+UpdateFrequency: The dataset has been finalized and will not be updated.
+Tags:
+  - aws-pds
+  - natural language processing
+  - internet
+  - web archive
+  - semantic search
+  - text embeddings
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: Dataset files
+    ARN: arn:aws:s3:::aws-opendata.wilsonl.in/search-engine
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Publications:
+    - Title: "Building a web search engine from scratch in two months with 3 billion neural embeddings"
+      URL: https://blog.wilsonl.in/search-engine/
+      AuthorName: Wilson Lin
+  Tutorials:
+    - Title: "Get To Know A Dataset: search.wilsonl.in Web Search Index Crawl + Text Embeddings"
+      URL: https://github.com/wilsonzlin/datasets/blob/master/search-engine-open-data/notebooks/get-to-know-a-dataset.ipynb
+      AuthorName: Wilson Lin
+      AuthorURL: https://github.com/wilsonzlin
