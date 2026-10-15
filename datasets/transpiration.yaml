@@ -1,0 +1,32 @@
+Name: IWMI DIWASA Transpiration for Africa
+Description: The evaporation dataset quantifies the amount of water lost from soil, open water bodies, and other surfaces into the atmosphere as vapor. It is calculated as the difference between evapotranspiration and transpiration. The dataset provides monthly values from 2003 to 2021 across Africa at 1 km resolution. Understanding evaporation is critical for water balance analysis, drought monitoring, and designing water-saving strategies in agriculture.
+Documentation: https://iwmi.africageoportal.com/pages/continent-africa
+Contact: iwmiwaplus@gmail.com
+ManagedBy: "[IWMI](https://www.iwmi.org/)"
+UpdateFrequency: None
+Tags:
+  - aws-pds
+  - surface water
+  - irrigated cropland
+  - ground water
+  - transpiration
+  - water
+License: "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)"
+Resources:
+  - Description: Monthly Transpiration for Africa
+    ARN: arn:aws:s3:::iwmi-datasets/Water_accounting_plus/Africa/Transpiration_M/
+    Region: af-south-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://iwmi-datasets.s3.af-south-1.amazonaws.com/index.html#Water_accounting_plus/Africa/Transpiration_M/)'
+DataAtWork:
+  Tutorials:
+    - Title: Analysis of IWMI’s Water Data Products through Digital Earth Africa 
+      URL: https://learn.digitalearthafrica.org/courses/course-v1:IWMI+DIWASA1+2024_10/about
+      AuthorName: A.T. Haile, E.T. Negash, K. Mubea, M. Tadesse
+      AuthorURL: https://github.com/iwmiwaplus
+  Tools & Applications:
+    - Title: Multi-Scale Water Accounting in the Volta Basin
+      URL: https://public.tableau.com/app/profile/iwmi.wa/viz/Voltabasinvertical/Merged?publish=yes
+      AuthorName: iwmiwaplus
+      AuthorURL: https://public.tableau.com/app/profile/iwmi.wa
