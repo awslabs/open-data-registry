@@ -1,0 +1,60 @@
+Name: ProofAML — Global Sanctions & Regulatory Enforcement Dataset
+
+Description: |
+  The core OFAC/UN/EU/UK/Canada sanctions lists plus bank-regulator enforcement actions, in one file.
+
+  A type-axis segment of the ProofAML corpus (global-sanctions-regulatory-enforcement) — 46,015 entity records across 15 sources, each traced to its original issuing authority.
+
+  This is the file an AML/BSA sanctions-screening officer actually screens against day to day — every major Western financial-sanctions regime (US, UN, EU, UK, Canada) plus the regulator enforcement actions (MAS, FINTRAC, DNB) a compliance team monitors alongside them. It excludes export-control/trade-compliance data (see the Global Export Control & Denied-Party segment) and PEP data (see the Global PEP Census segment) on purpose: a buyer who wants "just the sanctions lists" doesn't want to wade through 51,751 PEP records or 5,349 denied-party records to get there. Distinct from the master (120,886 entities, 69 sources spanning four unrelated data types) by being exactly the subset one specific job function needs.
+
+  OVERLAP: This dataset overlaps with other ProofAML segment datasets and the master snapshot — entities are not unique to this file. See https://proofaml.com/sources/ for the full corpus and the other available segments.
+
+  Licensing: the selection, arrangement, and entity-resolution layer of this compilation is licensed CC BY 4.0. Every individual record additionally carries its own upstream publisher's license — see the bundle's own NOTICE file for the full per-source breakdown before redistributing any individual record in isolation.
+
+  Research snapshot — not current data; production sanctions screening requires a live, monitored feed.
+
+  Recommended citation: ProofAML — https://proofaml.com — "ProofAML Global Sanctions & Regulatory Enforcement Dataset Snapshot 2026-08-24"
+
+Documentation: https://proofaml.com/sources/
+
+Contact: "[ProofAML — open a GitHub issue](https://github.com/proofaml/sanctions-snapshot/issues)"
+
+ManagedBy: "[ProofAML](https://proofaml.com)"
+
+UpdateFrequency: Quarterly (to start; monthly at most)
+
+Tags:
+  - financial markets
+  - government records
+  - legal data
+  - regulatory
+
+License: >-
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/legalcode) — applies
+  ONLY to ProofAML's selection/arrangement/entity-resolution compilation
+  layer. Every individual record separately carries its own upstream
+  publisher's license; see the bundle's NOTICE file for the full per-source
+  breakdown.
+
+Resources:
+  - Description: >-
+      ProofAML — Global Sanctions & Regulatory Enforcement Dataset (version 2026-08-24) — object
+      prefix in the shared proofaml-open-data S3 bucket hosting this segment's
+      redistributable bundle (compressed archive, manifest.json with per-dataset
+      checksums, LICENSE, and the per-source NOTICE).
+    ARN: arn:aws:s3:::proofaml-open-data
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Segment manifest (JSON)](https://proofaml-open-data.s3.us-east-1.amazonaws.com/segments/global-sanctions-regulatory-enforcement/2026-08-24/proofaml-global-sanctions-regulatory-enforcement-2026-08-24/manifest.json)'
+
+DataAtWork:
+  Tutorials: []
+  Tools & Applications: []
+  Publications:
+    - Title: "ProofAML — Global Sanctions & Regulatory Enforcement Dataset (archived, DOI-minted on Zenodo)"
+      URL: https://doi.org/10.5281/zenodo.22118976
+      AuthorName: ProofAML
+
+Citation: >-
+  ProofAML — https://proofaml.com — "ProofAML Global Sanctions & Regulatory Enforcement Dataset Snapshot 2026-08-24"
