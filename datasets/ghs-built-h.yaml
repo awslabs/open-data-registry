@@ -1,17 +1,17 @@
-Name: GHS-BUILT-H
+Name: GHSL global building height estimates (GHS-BUILT-H)
 Description: |
-  Description: The spatial raster dataset depicts the spatial distribution of the building heights as extracted from the filtering of a composite of global digital elevation models (DEM) and the filtering of satellite imagery using linear regression techniques The used input DEMs are the ALOS World 3D - 30m (AW3D30, 2006-2011) and the Shuttle Radar Topography Mission 30m (SRTM30, 2000). The building heights extracted from these sources are updated using the support of the shadow markers extracted from the Sentinel2 image data composite of the year 2018 (GHS-composite-S2 R2020A). The Average of the Gross Building Height is the result of dividing the built-up volume by the grid surface. The Average of the Net Building Height is the result of dividing the built-up volume by the built-up surface.
+  GHS-BUILT-H depicts the depicts the global spatial distribution of building heights extracted from global digital elevation models (DEMs) and Sentinel-2 satellite imagery. The datasets consist of two products: 1) Average of the Net Building Height (ANBH), representing the mean building height per grid cell, in meters, 2) Average of the Gross Building Height (AGBH), in cubic meters per surface unit. The input DEMs are the ALOS World 3D - 30m (2006-2011) and the Shuttle Radar Topography Mission 30m (timestamp 2000). The building heights extracted from these sources are updated using shadow markers extracted from more recent Sentinel-2 imagery for the year 2018 (GHS-composite-S2 R2020A).
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_buH2023.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
-  - aws-pds
   - cities
   - classification
   - cog
   - disaster response
   - earth observation
+  - elevation
   - geoscience
   - geospatial
   - global
@@ -19,15 +19,15 @@ Tags:
   - planetary
   - tiff
   - tiles
-License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: The GHS Average of the Gross Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
+  - Description: Average gross building height estimates in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3 arcsecond spatial resolution, globally for the year 2018.
     ARN: arn:aws:s3:::jrc-ghsl/ghs-built-h-agbh
     Region: eu-central-1
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
-  - Description: The GHS Average of the Net Building raster layer in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss spatial resolution. Spatial extent is Global and temporal extent is year 2018
+  - Description: Average net building height estimates in World Mollweide (EPSG:54009) at 100m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3 arcsecond spatial resolution, globally for the year 2018.
     ARN: arn:aws:s3:::jrc-ghsl/ghs-built-h-anbh
     Region: eu-central-1
     Type: S3 Bucket
