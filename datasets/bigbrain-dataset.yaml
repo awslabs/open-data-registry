@@ -1,0 +1,118 @@
+Name: The BigBrain
+Description: 'The BigBrain is an ultra-high-resolution 3D reconstruction of a complete human brain, created from 7,404 coronal histological sections cut at 20 µm, stained for cell bodies, digitized at high resolution, and reconstructed in 3D at 20 µm isotropic resolution. The dataset includes volumetric reconstructions, cortical surfaces, classified tissue volumes, cortical layer maps, cytoarchitectonic maps, selected 1 µm scans, and additional derived datasets. It is used as a reference for studying human brain microstructure, validating neuroimaging measurements, developing brain parcellations, training machine-learning methods, and supporting computational neuroscience.
+
+  '
+Contact: bryan.caron@mcgill.ca
+Documentation: https://bigbrainproject.org/maps-and-models.html
+ManagedBy: '[McGill Centre for Integrative Neuroscience, McGill University](https://www.mcgill.ca/neuro/about/neuroinformatics/mcin)'
+UpdateFrequency: 'The core BigBrain dataset is maintained as a reference dataset. New versions and additional high-resolution histology-derived brain models, maps, and representations are added as they become available. Anticipated growth is approximately 1 TB per year.
+
+  '
+Tags:
+- life sciences
+- brain images
+- brain models
+- neuroscience
+- neuroimaging
+- microscopy
+- Homo sapiens
+- nifti
+- volumetric imaging
+- connectomics
+- medical image computing
+- machine learning
+- imaging
+- image processing
+- medical imaging
+- segmentation
+License: 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0): https://creativecommons.org/licenses/by-nc-sa/4.0/'
+Citation: 'When using the BigBrain data through the AWS Registry of Open Data, please cite as: "The BigBrain dataset was accessed on [DATE] at registry.opendata.aws/bigbrain" and also cite the canonical BigBrain publication: Amunts K, Lepage C, Borgeat L, Mohlberg H, Dickscheid T, Rousseau M-É, Bludau S, Bazin P-L, Lewis LB, Oros-Peusquens A-M, Shah NJ, Lippert T, Zilles K, Evans AC. BigBrain: An Ultrahigh-Resolution 3D Human Brain Model. Science. 2013;340(6139):1472-1475. https://doi.org/10.1126/science.1235381'
+Resources:
+- Description: BigBrain data files in a public S3 bucket
+  ARN: REPLACE_WITH_S3_BUCKET_ARN
+  Region: REPLACE_WITH_AWS_REGION
+  Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+  - Title: Get to Know the BigBrain Dataset
+    URL: https://github.com/bryancaron/open-data-examples/blob/main/bigbrain/get-to-know-a-dataset.ipynb
+    NotebookURL: https://github.com/bryancaron/open-data-examples/blob/main/bigbrain/get-to-know-a-dataset.ipynb
+    AuthorName: Bryan Caron
+    AuthorURL: https://github.com/bryancaron
+  - Title: 'EBRAINS siibra explorer tutorial: Zooming to cellular resolution'
+    URL: https://ebrains.eu/news-and-events/2023/siibra-explorer-tutorial-zooming-into-a-brain-region-of-interest-to-the-level
+    AuthorName: EBRAINS
+    AuthorURL: https://ebrains.eu
+  - Title: BigBrain Project Tools & Services Directory
+    URL: https://bigbrainproject.org/tools-and-services.html
+    AuthorName: BigBrain Project
+    AuthorURL: https://bigbrainproject.org
+  - Title: 'siibra-python: Access BigBrain high-resolution data'
+    URL: https://siibra-python.readthedocs.io/en/latest/examples/02_maps_and_templates/004_access_bigbrain.html
+    AuthorName: siibra team
+    AuthorURL: https://siibra-python.readthedocs.io/
+  - Title: BigBrainWarp tutorials
+    URL: https://bigbrainwarp.readthedocs.io/en/latest/pages/tutorials_overview.html
+    AuthorName: BigBrainWarp developers
+    AuthorURL: https://bigbrainwarp.readthedocs.io/en/latest/
+  - Title: BigBrain processing with CBRAIN
+    URL: https://github.com/bryancaron/hws
+    AuthorName: CBRAIN team
+    AuthorURL: https://www.cbrain.ca/
+  - Title: Processing with Boutiques API
+    URL: https://github.com/bryancaron/hws
+    AuthorName: CBRAIN team
+    AuthorURL: https://www.cbrain.ca/
+    NotebookURL: https://github.com/bryancaron/hws/blob/master/DataLad_Boutiques_tutorial.ipynb
+  Tools & Applications:
+  - Title: Display
+    URL: https://mcin.ca/technology/visualization/display/
+    AuthorName: David MacDonald et al.
+    AuthorURL: https://mcin.ca
+  - Title: Atelier3D
+    URL: https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/computer-vision-graphics
+    AuthorName: Louis Borgeat, Philippe Massicotte, et al.
+    AuthorURL: https://nrc.canada.ca
+  - Title: EBRAINS siibra explorer
+    URL: https://atlases.ebrains.eu/viewer/
+    AuthorName: EBRAINS
+    AuthorURL: https://ebrains.eu
+  - Title: BrainBrowser
+    URL: https://natacha-beck.github.io/brainbrowser/BrainBrowserSurfaceUI/
+    AuthorName: Tarek Sherif et al.
+    AuthorURL: https://brainbrowser.cbrain.mcgill.ca
+  - Title: MicroDraw
+    URL: https://microdraw.pasteur.fr/
+    AuthorName: Roberto Toro et al.
+    AuthorURL: https://neuroanatomy.github.io
+  - Title: siibra Python
+    URL: https://siibra-python.readthedocs.io/en/latest/
+    AuthorName: Forschungszentrum Jülich, Big Data Analytics Group
+    AuthorURL: https://www.fz-juelich.de/en/inm/inm-1
+  - Title: CBRAIN
+    URL: https://www.cbrain.ca/
+    AuthorName: CBRAIN team
+    AuthorURL: https://www.mcgill.ca/neuro/about/neuroinformatics/mcin
+  - Title: BigBrainWarp
+    URL: https://bigbrainwarp.readthedocs.io/en/latest/
+    AuthorName: Casey Paquola et al.
+    AuthorURL: https://bigbrainwarp.readthedocs.io/en/latest/
+  - Title: The Human Brain in Chimera
+    URL: https://www.cgl.ucsf.edu/chimera/data/bigbrain-jul2013/bigbrain.html
+    AuthorName: Tom Goddard
+    AuthorURL: https://www.cgl.ucsf.edu
+  - Title: BrainBox
+    URL: https://brainbox.pasteur.fr/
+    AuthorName: BrainBox
+    AuthorURL: https://brainbox.pasteur.fr/
+  - Title: The Virtual Brain
+    URL: https://www.thevirtualbrain.org/tvb/
+    AuthorName: Viktor Jirsa et al.
+    AuthorURL: https://www.thevirtualbrain.org
+  Publications:
+  - Title: BigBrain - An Ultrahigh-Resolution 3D Human Brain Model
+    URL: https://doi.org/10.1126/science.1235381
+    AuthorName: Amunts K, Lepage C, Borgeat L, Mohlberg H, Dickscheid T, Rousseau M-É, Bludau S, Bazin P-L, Lewis LB, Oros-Peusquens A-M, Shah NJ, Lippert T, Zilles K, Evans AC
+    AuthorURL: https://bigbrainproject.org
+ADXCategories:
+- Healthcare & Life Sciences Data
