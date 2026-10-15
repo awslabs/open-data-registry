@@ -1,0 +1,46 @@
+Name: UCSB CHC CHIRPS - dynamical.org Icechunk Zarr
+Description: |
+    The Climate Hazards Center Infrared Precipitation with Stations (CHIRPS) version 3 combines satellite estimates and station observations into a precipitation record over land.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [UCSB CHC CHIRPS analysis, final](https://dynamical.org/catalog/ucsb-chc-chirps-analysis-final/) - Daily precipitation from the Climate Hazards Center Infrared Precipitation with Stations (CHIRPS) version 3.0 final product.
+    - [UCSB CHC CHIRPS analysis, preliminary](https://dynamical.org/catalog/ucsb-chc-chirps-analysis-preliminary/) - Daily precipitation from the Climate Hazards Center Infrared Precipitation with Stations (CHIRPS) version 3.0 preliminary product.
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "UCSB CHC CHIRPS analysis, final: 1 day; UCSB CHC CHIRPS analysis, preliminary: 1 day"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: UCSB CHC CHIRPS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-ucsb-chc-chirps
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-ucsb-chc-chirps.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-ucsb-chc-chirps-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "UCSB CHC CHIRPS analysis, final — CHIRPS preliminary and final"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/ucsb-chc-chirps-analysis.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ucsb-chc-chirps-analysis.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+    - Title: "UCSB CHC CHIRPS analysis, preliminary — CHIRPS preliminary and final"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/ucsb-chc-chirps-analysis.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/ucsb-chc-chirps-analysis.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
