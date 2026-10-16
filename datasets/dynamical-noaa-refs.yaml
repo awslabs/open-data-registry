@@ -1,0 +1,48 @@
+Name: NOAA REFS - dynamical.org Icechunk Zarr
+Description: |
+    The RRFS Ensemble Forecast System (REFS) is a National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Prediction (NCEP) ensemble product system. It produces ensemble products on a 3 km grid, including means, spreads and probabilities of exceeding thresholds, from the current and 6 hour old cycles of the deterministic Rapid Refresh Forecast System (RRFS) and its ensemble (RRFS ENS), plus two HRRR members over the continental United States.
+    
+    NOAA REFS is pre-operational, so expect changes to the model data and to the structure of this dataset.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [NOAA REFS forecast, hourly, virtual](https://dynamical.org/catalog/noaa-refs-forecast-hourly-virtual/) - Ensemble weather forecast products from NOAA's RRFS Ensemble Forecast System (REFS).
+    - [NOAA REFS forecast, 3 hourly, virtual](https://dynamical.org/catalog/noaa-refs-forecast-3-hourly-virtual/) - Ensemble weather forecast products from NOAA's RRFS Ensemble Forecast System (REFS).
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA REFS forecast, hourly, virtual: Forecasts initialized every 6 hours; NOAA REFS forecast, 3 hourly, virtual: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA REFS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-refs
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-refs.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-refs-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "NOAA REFS forecast, hourly, virtual — RRFS and REFS forecasts, virtual"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+    - Title: "NOAA REFS forecast, 3 hourly, virtual — RRFS and REFS forecasts, virtual"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
