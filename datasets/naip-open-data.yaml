@@ -38,8 +38,8 @@ Resources:
       GeoTIFFs, and USDA's original county mosaics (MrSID, 2024 on, under naip-ccm/) with
       COGs for 2026. Each has a STAC 1.1.0 Item beside it, and each COG a 512 px PNG
       thumbnail. A static STAC catalog starts at catalog.json. USDA's seamlines
-      and county metadata are under usda/. Partitioned by year=, state= and (for
-      acquisitions) date=.
+      and county metadata are under usda/. Paths run year/state/ and, for
+      acquisitions, year/state/YYYYMMDD/ (the local flight day).
     ARN: arn:aws:s3:::TODO-bucket-name
     Region: us-west-2
     Type: S3 Bucket
