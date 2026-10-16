@@ -1,0 +1,24 @@
+Name: ECG-Derived Respiration
+Description: The ECG-Derived Respiration (EDR) technique is an approach to obtain
+  a respiration signal from an ECG.. It is based on the observation that the positions
+  of ECG electrodes on the chest surface move relative to the heart, and transthoracic
+  impedance varies, as the lungs fill and empty. Thus the lead axes vary at different
+  points in the respiratory cycle, and any sufficiently precise measurement of the
+  mean cardiac electrical axis shows variations that are correlated with respiration.
+  This method is particularly effective if two or more ECG signals are available,
+  but a single lead is sufficient. The EDR can be obtained even in the context of
+  congestive heart failure, in which RSA may be absent.
+Documentation: https://physionet.org/content/edr/
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://physionet.org/content/edr/
+  ARN: arn:aws:s3:::physionet-open/edr/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

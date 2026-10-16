@@ -1,0 +1,23 @@
+Name: PhysioZoo - mammalian NSR databases
+Description: 'The PhysioZoo database contains electrocardiographic recordings (ECG)
+  taken from multiple types of mammals (dogs, rabbits, mice). Each record is provided
+  in 3 different formats: MATLAB (.mat), simple text (.txt), PhysioNet (.hea,.dat,.qrs).
+  For each record the following data is available: the raw ECG signal, reference (human
+  corrected) R-peak annotations and the signal quality annotations. All of the files
+  formats are compatible with the PhysioZoo open source software available at physiozoo.com.
+  When the recordings were taken, all the mammals were conscious, and no drugs were
+  administered prior to the recordings.'
+Documentation: https://doi.org/10.13026/p63q-hq95
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/p63q-hq95
+  ARN: arn:aws:s3:::physionet-open/physiozoo/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

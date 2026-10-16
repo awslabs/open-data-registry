@@ -1,0 +1,32 @@
+Name: Eye Tracking Dataset for the 12-Lead Electrocardiogram Interpretation of Medical
+  Practitioners and Students
+Description: 'This dataset contains collected eye tracking data from medical practitioners
+  and students with different expertise levels to understand their electrocardiogram
+  interpretation behavior. These medical practitioners encounter electrocardiograms
+  during their daily medical practice. The end goal of the collection of this dataset
+  was to use it for analysis to uncover insights about key best practices as well
+  as pitfall in the ECG interpretation process. The data consists of quantitative
+  eye tracking measurements for different eye gaze features for 63 participants. These
+  participants belong to six expertise categories, namely: medical students, nurses,
+  technicians, residents, fellows and finally consultants. Each one of these participants
+  contributed to the data collection by interpreting ten different electrocardiograms.
+  The eye tracking data includes the eye fixations count and duration, the eye gaze
+  duration, and finally the fixations revisitations. It was collected at 60 frames
+  per second using a Tobii Pro X2-60. Each participant was allowed a timeframe of
+  30 seconds to interpret each one of the ten ECGs. The collected data was processed
+  taking into consideration two defined area of interest distributions. This enabled
+  the extraction of metrics specifically tailored for the 12-lead electrocardiogram.'
+Documentation: https://doi.org/10.13026/gsr5-8b11
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Open Database License v1.0
+Resources:
+- Description: https://doi.org/10.13026/gsr5-8b11
+  ARN: arn:aws:s3:::physionet-open/eye-tracking-ecg/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

@@ -1,0 +1,26 @@
+Name: Santa Fe Time Series Competition Data Set B
+Description: This is a multivariate data set recorded from a patient in the sleep
+  laboratory of the Beth Israel Hospital (now the Beth Israel Deaconess Medical Center)
+  in Boston, Massachusetts. This data set was extracted from record slp60 of the MIT-BIH
+  Polysomnographic Database, and it was submitted to the Santa Fe Time Series Competition
+  in 1991 by our group. The data are presented in text form and have been split into
+  two sequential parts. Each line contains simultaneous samples of three parameters;
+  the interval between samples in successive lines is 0.5 seconds. The first column
+  is the heart rate, the second is the chest volume (respiration force), and the third
+  is the blood oxygen concentration (measured by ear oximetry). The sampling frequency
+  for each measurement is 2 Hz (i.e., the time interval between measurements in successive
+  rows is 0.5 seconds).
+Documentation: https://doi.org/10.13026/C20W2T
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/C20W2T
+  ARN: arn:aws:s3:::physionet-open/santa-fe/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data
