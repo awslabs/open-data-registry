@@ -1,0 +1,30 @@
+Name: EEG Motor Movement/Imagery Dataset
+Description: 'The EEG Motor Movement/Imagery Dataset provides 64-channel electroencephalography
+  recordings collected with the BCI2000 system during real and imagined motor tasks.
+  Participants completed 14 experimental runs, including two one-minute baseline recordings
+  with eyes open and eyes closed, followed by three repetitions of four two-minute
+  task conditions. These conditions involved either executing or imagining unilateral
+  fist movements in response to left/right visual targets, or executing or imagining
+  bilateral fist or foot movements in response to top/bottom visual targets. EEG signals
+  were recorded according to the international 10-10 electrode placement system at
+  a sampling rate of 160 Hz and are provided in EDF+ format with accompanying annotation
+  channels. Event labels identify rest periods and task onsets using three codes:
+  T0 for rest, T1 for left-fist or both-fists movement/imagery depending on the run
+  type, and T2 for right-fist or both-feet movement/imagery. The dataset supports
+  research in brain-computer interfaces, motor imagery classification, movement-related
+  EEG dynamics, and the development of signal-processing and machine-learning methods
+  for neural decoding.'
+Documentation: https://doi.org/10.13026/C28G6P
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/C28G6P
+  ARN: arn:aws:s3:::physionet-open/eegmmidb/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

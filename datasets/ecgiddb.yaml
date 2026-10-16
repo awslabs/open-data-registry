@@ -1,0 +1,20 @@
+Name: ECG-ID Database
+Description: 'The database contains 310 ECG recordings, obtained from 90 persons.
+  Each recording contains: ECG lead I, recorded for 20 seconds, digitized at 500 Hz
+  with 12-bit resolution over a nominal ±10 mV range; 10 annotated beats (unaudited
+  R- and T-wave peaks annotations from an automated detector); information (in the
+  .hea file for the record) containing age, gender and recording date.'
+Documentation: https://doi.org/10.13026/C2J01F
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/C2J01F
+  ARN: arn:aws:s3:::physionet-open/ecgiddb/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

@@ -1,0 +1,24 @@
+Name: MIT-BIH Arrhythmia Database P-Wave Annotations
+Description: This database provides manually reviewed P-wave annotations for twelve
+  ECG recordings from the MIT-BIH Arrhythmia Database [1]. The recordings were selected
+  to support evaluation of P-wave detection across a range of rhythms, including pathological
+  conditions that can make detection difficult. One expert annotated the recordings,
+  a second expert reviewed the annotations, and ambiguous segments were discussed
+  jointly. The annotations are supplied in standard WFDB format alongside the corresponding
+  ECG signals and header files. They support the development and evaluation of automated
+  P-wave detection methods, although annotation completeness and accuracy are not
+  guaranteed.
+Documentation: https://doi.org/10.13026/C2108F
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/C2108F
+  ARN: arn:aws:s3:::physionet-open/pwave/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

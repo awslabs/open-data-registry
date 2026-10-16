@@ -1,0 +1,29 @@
+Name: A Multi-Modal Satellite Imagery Dataset for Public Health Analysis in Colombia
+Description: We introduce a cost-effective public health analysis solution for low-
+  and middle-income countries—the Multi-Modal Satellite Imagery Dataset in Colombia.
+  By leveraging high-quality, spatiotemporally aligned satellite images and corresponding
+  metadata, the dataset integrates economic, demographic, meteorological, and epidemiological
+  data. Employing a single forwards and a forward-backward technique ensures clear
+  satellite images with minimal cloud cover for every epi-week, significantly enhancing
+  overall data quality. The extraction process utilizes the satellite extractor package
+  powered by the SentinelHub API, resulting in a comprehensive dataset of 12,636 satellite
+  images from 81 municipalities in Colombia between 2016 and 2018, along with relevant
+  metadata. Beyond expediting public health data analysis across diverse locations
+  and timeframes, this versatile framework consistently captures multimodal features.
+  Its applications extend to various realms in multimodal AI, encompassing deforestation
+  monitoring, forecasting education indices, water quality assessment, tracking extreme
+  climatic events, addressing epidemic illnesses, and optimizing precision agriculture.
+Documentation: https://doi.org/10.13026/xr5s-xe24
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Zero 1.0 Universal Public Domain Dedication
+Resources:
+- Description: https://doi.org/10.13026/xr5s-xe24
+  ARN: arn:aws:s3:::physionet-open/multimodal-satellite-data/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

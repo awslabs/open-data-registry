@@ -1,0 +1,37 @@
+Name: Software for computing Heart Rate Fragmentation
+Description: Heart rate fragmentation (HRF) is a new method for assessing neuroautonomic
+  integrity based on the analysis of short-term (high-frequency [HF]) heart rate dynamics.
+  The code (in AWK) provided here is for the computation of three different metrics,
+  PIP, PNNLS, and PNNSS introduced in 2017 by Costa and colleagues. The motivation
+  for developing HRF was the recognition that changes in heart rate (HR) above the
+  respiratory frequency not only inflate the value of traditional heart rate variability
+  (HRV) metrics, such as rMSSD and HF power, but are a dynamical marker of cardioautonomic
+  dysfunction. In healthy subjects, HR increases with inspiration and decreases with
+  expiration, defining a “high-frequency” pattern referred to as respiratory sinus
+  arrhythmia. This physiologic oscillation is driven primarily by changes in vagal
+  tone. In contexts in which cardio-respiratory coupling is degraded, e.g., with aging
+  and disease, non-vagally mediated oscillations whose frequencies are higher than
+  the breathing frequency may develop. Non-vagally mediated fluctuations are characterized
+  by an excess of reversals in HR acceleration. The simplest measure of HRF is the
+  percentage of “inflection points,” (PIP) i.e., of changes in HR acceleration sign.
+  Of key importance is fact that traditional short-term HRV measures can be high for
+  two opposite reasons, one healthy – respiratory sinus arrhythmia – consistent with
+  high vagal tone modulation, and one pathologic – fragmented rhythms – consistent
+  with decreased/impaired vagal activity. Increased HRF has been shown to be independently
+  associated with higher risk of incident major adverse cardiovascular events and
+  atrial fibrillation. These results have been independently confirmed, as described
+  in Background section.
+Documentation: https://doi.org/10.13026/0mzj-gn98
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: GNU General Public License version 3
+Resources:
+- Description: https://doi.org/10.13026/0mzj-gn98
+  ARN: arn:aws:s3:::physionet-open/heart-rate-fragmentation-code/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

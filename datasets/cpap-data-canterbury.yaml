@@ -1,0 +1,31 @@
+Name: CPAP Pressure and Flow Data from a Local Trial of 30 Adults at the University
+  of Canterbury
+Description: 'A pressure and flow dataset for CPAP (continuous positive airway pressure)
+  breathing obtained from 30 subjects for model-based identification of patient-specific
+  lung mechanics using a specially designed sensor system comprising an array of differential
+  pressure sensors (Sensirion AG SDP816-125PA) and gauge pressure sensors (NXP MPVZ4006GW7U).
+  Relevant medical information was collected using a questionnaire, including: sex;
+  age; weight; height; smoking history; and history of asthma. Subjects were tasked
+  with breathing at five different rates (including passive) from very slow to very
+  fast breathing, matched to an online pacing sound and video, at two different levels
+  of CPAP (4 and 7 cmH2O) for between 50 and 180 seconds depending on rate. Each data
+  set for a breathing rate comprises ~17 breaths, including rest periods between breathing
+  rates and CPAP levels. Data with significant observed sensor error was removed during
+  processing. A better-fitted mask would be expected to reduce error in fully capturing
+  expiration by reducing leaks around the masks seal with the face. The sensors measure
+  inspiration and expiration using separate unidirectional differential flow sensors,
+  which are combined in post-processing to for complete breathing data.'
+Documentation: https://doi.org/10.13026/xfae-vv63
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution-ShareAlike 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/xfae-vv63
+  ARN: arn:aws:s3:::physionet-open/cpap-data-canterbury/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data
