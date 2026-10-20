@@ -1,0 +1,42 @@
+# ONBOARDING DRAFT: submit as a draft PR before billing/account linkage.
+# Add the real S3 resource after linkage and keep the PR draft until launch checks pass.
+Name: END Sea Surface Temperature Collections
+Description: >-
+  Proposed versioned Zarr V3 and Icechunk conversions of six global sea surface
+  temperature analyses: CMC V2, CMC V3, GAMSSA, NOAA Geo-Polar Blended Night,
+  NOAA OISST V2.1 and UK Met Office OSTIA. END maintains the conversions,
+  retains source coordinates, and documents source fields, corrections,
+  snapshots and quality metadata. Public hosting is pending; OSTIA inclusion
+  awaits historical rights confirmation. The originating agencies remain
+  the data producers.
+Documentation: https://github.com/endcorp-hq/open-data-examples/tree/main/endcorp-sst
+Contact: https://github.com/endcorp-hq/open-data-examples/issues
+ManagedBy: END
+UpdateFrequency: >-
+  Active source feeds are checked four times daily, with updates subject to
+  upstream availability and release validation. CMC V2 is historical.
+Tags:
+  - climate
+  - earth observation
+  - oceans
+  - weather
+License: >-
+  Source-specific terms and attribution are documented at
+  https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/source-rights.md.
+  OSTIA will not be distributed until its historical redistribution terms are
+  confirmed. END's example-code MIT licence is not a licence for the data.
+Citation: >-
+  Cite the original source product and its version, the access date, and the
+  END release snapshot. Product-specific attribution accompanies each release.
+RegistryEntryAdded: '2026-10-20'
+RegistryEntryLastModified: '2026-10-20'
+# Planned region: us-west-2. No bucket exists before AWS confirms billing linkage.
+Resources: []
+DataAtWork:
+  Tutorials:
+    - Title: 'Get To Know A Dataset: END Sea Surface Temperature Collections'
+      URL: https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/get-to-know-a-dataset.ipynb
+      AuthorName: END
+      Services:
+        - Amazon S3
