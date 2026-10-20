@@ -1,0 +1,102 @@
+Name: FathomNet
+Description: >
+  FathomNet is a global, open-source database of underwater imagery and
+  machine-learning-ready annotations designed to make ocean visual data usable
+  at scale. It aggregates imagery collected over more than three decades by
+  research institutions using remotely operated vehicles, autonomous
+  underwater vehicles, drop cameras, and diver-based imaging systems, along
+  with citizen science contributions through the FathomVerse and FathomVerse
+  ID apps. Images are paired with standardized metadata (time, location,
+  depth, environmental measurements, provenance, and taxonomic concepts
+  integrated with the World Register of Marine Species) and enriched with
+  expert, community, and machine-generated annotations including
+  classifications, bounding boxes, and segmentation masks. FathomNet contains
+  more than 480,000 images and 1.2 million bounding box annotations. Unlike
+  curated, iconic image collections, FathomNet captures the real conditions of
+  operational ocean science: variable illumination, occlusion, complex
+  backgrounds, unusual viewpoints, and strongly long-tailed taxonomic
+  distributions. The data are used to train, test, and benchmark computer
+  vision systems for detection, classification, segmentation, and
+  biodiversity monitoring.
+Documentation: https://www.fathomnet.org # TODO: link to bucket layout / data dictionary docs
+Contact: TODO # team email, contact form, or GitHub issues URL
+ManagedBy: "[Monterey Bay Aquarium Research Institute (MBARI)](https://www.mbari.org/)"
+UpdateFrequency: TODO # e.g. "Versioned snapshots of the FathomNet Database are published quarterly."
+Tags:
+  - aws-pds
+  - oceans
+  - marine
+  - biodiversity
+  - ecosystems
+  - computer vision
+  - object detection
+  - segmentation
+  - classification
+  - machine learning
+  - deep learning
+  - labeled
+  - imaging
+  - video
+ADXCategories:
+  - Environmental Data
+License: >
+  FathomNet visual content is licensed on a per-asset basis using permissive
+  licenses selected by the data contributor. The license for each image is
+  recorded in its metadata. Accepted licenses are documented at
+  https://database.fathomnet.org/fathomnet/#/license.
+Citation: >
+  Katija, K., Orenstein, E., Schlining, B., Lundsten, L., Barnard, K., Sainz,
+  G., Boulais, O., Cromwell, M., Butler, E., Woodward, B., and Bell, K. L. C.
+  (2022). FathomNet: A global image database for enabling artificial
+  intelligence in the ocean. Scientific Reports, 12, 15914.
+  https://doi.org/10.1038/s41598-022-19939-2
+Resources:
+  # TODO: bucket name, account ID, and prefixes are placeholders until the
+  # sponsored account and CloudFormation stack exist.
+  - Description: >
+      FathomNet images (JPEG, PNG, TIFF) and video (MP4, MOV) under data/,
+      with thumbnails under data/thumbnails/. Image metadata and annotations
+      (bounding boxes, classifications, segmentation masks) are provided as
+      partitioned Parquet under metadata/ for querying with Amazon Athena,
+      with COCO JSON and CSV exports under exports/.
+    ARN: arn:aws:s3:::fathomnet-pds
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://fathomnet-pds.s3.us-west-2.amazonaws.com/index.html)'
+  - Description: Notifications for new FathomNet objects
+    ARN: arn:aws:sns:us-west-2:000000000000:fathomnet-pds-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: FathomNet"
+      URL: https://github.com/fathomnet/open-data-examples/blob/main/fathomnet/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/fathomnet/open-data-examples/blob/main/fathomnet/get-to-know-a-dataset.ipynb
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+      Services:
+        - Amazon S3
+        - Amazon Athena
+        - Amazon SageMaker
+  Tools & Applications:
+    - Title: fathomnet-py - Python client for the FathomNet API
+      URL: https://github.com/fathomnet/fathomnet-py
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+    - Title: FathomNet Database portal
+      URL: https://database.fathomnet.org
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+    - Title: Segment Anything Model 3 (SAM 3), trained and evaluated in part on FathomNet
+      URL: https://huggingface.co/facebook/sam3
+      AuthorName: Meta
+      AuthorURL: https://ai.meta.com/
+    - Title: BioCLIP 2, trained and evaluated in part on FathomNet
+      URL: https://huggingface.co/imageomics/bioclip-2
+      AuthorName: Imageomics Institute
+      AuthorURL: https://imageomics.osu.edu/
+  Publications:
+    - Title: "FathomNet: A global image database for enabling artificial intelligence in the ocean"
+      URL: https://doi.org/10.1038/s41598-022-19939-2
+      AuthorName: Katija K, Orenstein E, Schlining B, Lundsten L, Barnard K, Sainz G, et al.
