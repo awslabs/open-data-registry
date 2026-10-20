@@ -1,0 +1,40 @@
+# Draft for AWS Open Data onboarding. Add the bucket after billing linkage.
+Name: END Sea Surface Temperature Collections
+Description: >-
+  Global sea surface temperature analyses from CMC V2, CMC V3, GAMSSA,
+  NOAA Geo-Polar Blended Night and NOAA OISST V2.1, converted by END to
+  Zarr V3 with Icechunk. END maintains the conversions and documents source
+  fields, corrections, snapshots and quality checks. The originating agencies
+  produce the analyses. Public hosting is pending. OSTIA may be added once
+  historical redistribution rights are confirmed.
+Documentation: https://github.com/endcorp-hq/open-data-examples/tree/main/endcorp-sst
+Contact: https://github.com/endcorp-hq/open-data-examples/issues
+ManagedBy: END
+UpdateFrequency: >-
+  END checks active feeds four times daily. The public update schedule will
+  be set before launch. CMC V2 is historical.
+Tags:
+  - climate
+  - earth observation
+  - oceans
+  - weather
+License: >-
+  See the source terms and attribution at
+  https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/source-rights.md.
+  OSTIA will not be distributed until its historical redistribution terms are
+  confirmed. The MIT licence applies only to END's examples and documentation.
+Citation: >-
+  Cite the original source product and its version, the access date, and the
+  END release snapshot. Product-specific attribution accompanies each release.
+RegistryEntryAdded: '2026-10-20'
+RegistryEntryLastModified: '2026-10-20'
+# Planned region: us-west-2. Bucket pending billing linkage.
+Resources: []
+DataAtWork:
+  Tutorials:
+    - Title: 'Get To Know A Dataset: END Sea Surface Temperature Collections'
+      URL: https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/endcorp-hq/open-data-examples/blob/main/endcorp-sst/get-to-know-a-dataset.ipynb
+      AuthorName: END
+      Services:
+        - Amazon S3
