@@ -1,0 +1,74 @@
+Name: Harmonized Human Normal Brain Chromatin Accessibility Atlas (snATAC-seq)
+Description: |
+  A harmonized single-nucleus ATAC-seq (snATAC-seq) atlas of normal human brain
+  tissue spanning 23 previously published cohorts (approximately 160 donors
+  across multiple adult and developmental brain regions), totaling 41 million
+  barcodes integrated against a shared 2,058,099-peak narrow union reference
+  on GRCh38 (hg38). After the standard scATAC quality filter (nnz ≥ 1,000
+  accessible peaks per cell), approximately 6 million high-quality cells remain,
+  with every one of the 23 contributing studies still represented.
+
+  The core problem this atlas solves: human normal brain snATAC-seq data has
+  been publicly deposited across more than two dozen separate studies — SEA-AD,
+  CATLAS, 4DN hippocampus, zen-Aerts Parkinson's substantia nigra, Siletti-like
+  broad brain surveys, GEO deposits spanning cortex / striatum / cerebellum /
+  hippocampus / brainstem / etc. — but those datasets have NEVER been
+  harmonized against a shared peak set. Each cohort was processed independently
+  with its own peak caller (CATLAS, author-defined, MACS2/MACS3 variants) and
+  its own cell type taxonomy, which has forced every downstream user who wants
+  a cross-cohort view to redo the harmonization work from scratch. This atlas
+  does that work once: a Design-B union peak set deliberately constrained to
+  narrow peaks (≤1,000 bp, median 518 bp, max 7 kb) to preserve AAV
+  cloneability, projection of every cohort's cells to that shared peak set,
+  and a 16-class major cell type taxonomy (Excitatory, Inhibitory, Astrocyte,
+  Microglia, Oligodendrocyte, OPC, Endothelial, Progenitor, GABAergic
+  subclasses, Dopaminergic, Serotonergic, T_cell, Immune_other, Meninges,
+  Neuron_other, Unclassified).
+
+  The atlas also includes a per-cohort "any-width overlap" replicability matrix
+  recording for each narrow union peak which of the 23 contributing studies
+  supports it at any peak width — 1,000,435 peaks (49%) are supported by all
+  23 studies; 99.4% have ≥21-study support. This replicability signal is a
+  core input to downstream enhancer-nomination scoring (specificity, strength,
+  patient-level reproducibility, cross-cohort replication).
+
+  Target users: computational neuroscientists, developers of normal-brain
+  reference atlases, AAV therapy groups wanting a cross-cohort chromatin
+  landscape for cell-type-specific element discovery, and anyone needing
+  a harmonized human normal brain scATAC baseline.
+Documentation: https://github.com/jpmcginnis/HumanAAVProject
+Contact: jpmcginnis1@gmail.com
+ManagedBy: "[McGinnis Lab, Baylor College of Medicine](https://github.com/jpmcginnis/HumanAAVProject)"
+UpdateFrequency: On major atlas release (approximately annually)
+Collabs:
+Tags:
+  - aws-pds
+  - genetics
+  - genomics
+  - healthcare
+  - life sciences
+  - brain
+  - neurobiology
+  - neuroscience
+  - single cell
+  - chromatin accessibility
+  - ATAC-seq
+  - snATAC-seq
+  - reference
+License: "[Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/) for the processed atlas derivatives. Original cohort data remains under its depositor's license (open data from GEO, EBI CELLxGENE, 4DN Data Portal, Zenodo, HRA)."
+Resources:
+  - Description: Integrated normal brain atlas h5ad (342 GB), narrow union peak BED (47 MB), per-cohort annotated inputs (213 GB), replicability matrix, methods narrative, and build script
+    ARN: arn:aws:s3:::jpm-atacseq-archive-2026
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse data_processed_nb_integrated/v1.1/](https://jpm-atacseq-archive-2026.s3.us-east-1.amazonaws.com/data_processed_nb_integrated/v1.1/)'
+      - '[Browse per_cell_deposits/v1.1_annotated_pre_designB/](https://jpm-atacseq-archive-2026.s3.us-east-1.amazonaws.com/per_cell_deposits/v1.1_annotated_pre_designB/)'
+DataAtWork:
+  Tutorials:
+    - Title: "Load the Normal Brain atlas h5ad with anndata backed-mode"
+      URL: https://github.com/jpmcginnis/HumanAAVProject
+      AuthorName: JP McGinnis
+      AuthorURL: https://github.com/jpmcginnis
+  Tools & Applications:
+  Publications:
