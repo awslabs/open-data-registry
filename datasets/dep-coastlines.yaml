@@ -1,10 +1,17 @@
-Name: Pacific Coastlines Change
+Name: Digital Earth Pacific Annual Shorelines (Landsat, 30 m)
 Description: |
-  Pacific Coastlines beta version product includes coastline change detection
-  since the year 2000 for Pacific Island Country and Territories (PICTs).
-  This product will provide ongoing monitoring of coastline change detection.
-  This provides insights into processes including erosion (where landmass
-  area decreases) and accretion or deposition (where landmass area increases).
+  This dataset provides annual coastline positions across the Pacific
+  region derived from Landsat satellite imagery. It captures long-term
+  shoreline change by mapping coastal boundaries over time, providing
+  insights into processes including erosion (where landmass area
+  decreases) and accretion or deposition (where landmass area increases).
+  The dataset supports coastal change analysis, erosion monitoring, and
+  climate adaptation planning.
+
+  Annual shoreline vectors are extracted and composited from Landsat
+  imagery, and are published as a vector time series in both GeoPackage
+  and PMTiles formats. A WMTS service is also available at https://tileser
+  ver.prod.digitalearthpacific.io/styles/coastlines/wmts.xml.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
@@ -14,24 +21,34 @@ Collabs:
     Tags:
       - oceans
 Tags:
+- aws-pds
 - earth observation
 - environmental
 - coastal
+- climate
 - geoscience
 - geospatial
 License: |
   Digital Earth Pacific Data is available under the Creative Commons
   Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-- Description: Data access
-  ARN: arn:aws:s3:::dep-public-data
+- Description: Annual Shorelines (Landsat, 30 m) vector data in GeoPackage and PMTiles formats
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_coastlines
   Region: us-west-2
   Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_coastlines)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   - Title: "Digital Earth Pacific Map"
-    URL: https://maps.digitalearthpacific.org/#share=s-pzzMOVCCoPWNeWFs33Sg
+    URL: https://maps.digitalearthpacific.org
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific Coastline Change Dashboard"
+    URL: https://dashboards.digitalearthpacific.org/
     AuthorName: Digital Earth Pacific Contributors
   Publications:
   - Title: Digital Earth Pacific Open Data Access Documentation

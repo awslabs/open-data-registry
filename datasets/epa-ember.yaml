@@ -13,8 +13,11 @@ Description: >-
 Documentation: >-
   Dataset Description for 2023:
   https://www.sciencedirect.com/science/article/pii/S2352340924011703
+  Dataset Description for 2021, 2022, 2024, 2025:
+  https://www.epa.gov/system/files/documents/2026-06/development-of-the-expedited-modeling-of-burn-events-results-ember-datasets-for-2021-2022-2024-and-2025.pdf
 Contact: Simon.Heather@epa.gov
-ManagedBy: "[U.S. Environmental Protection Agency](https://www.epa.gov)"
+ManagedBy: >-
+  U.S. Environmental Protection Agency (https://www.epa.gov)
 UpdateFrequency: As needed
 Collabs:
   ASDI:
@@ -38,7 +41,7 @@ Citation: >-
   and 2025", 454R26002
 Resources:
   - Description: |
-      The data are organized into four yearly folders (`2021 data`, `2022 data`, `2024 data`, and `2025 data`), each with the same directory structure:
+      The data are organized into five yearly folders (`2021 data`, `2022 data`, `2023 data`, `2024 data`, and `2025 data`), each with the same directory structure:
 
       ```
       $YYYY (four digit year)
@@ -50,6 +53,9 @@ Resources:
           │   ├── ICBC
           │   └── MCIP
           └── Outputs
+              └── columndata
+                   ├── basecase
+                   └── zerofires
       ```
 
       All files are NetCDF version 3 formatted files using I/O API (IOAPI) data structures.
@@ -59,7 +65,7 @@ Resources:
       Emissions are split into two main directories, **Anthropogenic** and **Fires**.<br>
       <br>
 
-      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations. The same anthropogenic emissions are used for the 2021 and 2022 simulations, so the files are only provided in the 2021 directory (the 2022 directory contains a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there).
+      **Anthropogenic** includes all anthropogenic emissions, used in the base simulation as well as both zero-out simulations. The same anthropogenic emissions are used for the 2021, 2022 and 2023 simulations, so the files are only provided in the 2021 directory (the 2022 and 2023 directories contain a README pointing there). Likewise, the same emissions are used for 2024 and 2025 for all sectors except ptegu. All emissions files from sectors other than ptegu are only provided in the 2024 directory (the 2025 directory contains a README pointing there).
       <br><br>
       Subfolders:
       <br>
@@ -79,7 +85,7 @@ Resources:
       Subfolders:
       <br>
       - `ptfire_othna` (2021 and 2022) — wildland and agricultural fires in Canada and Mexico
-      - `ptfire-canada` (2024 and 2025) — wildfires in Canada
+      - `ptfire-canada` (2023, 2024 and 2025) — wildfires in Canada
       - `ptfire_mexona` (2024 and 2025) — wildland and agricultural fires in Mexico
       - `ptfire-rx` — prescribed fires in the United States
       - `ptfire-wild` — wildfires in the United States
@@ -109,6 +115,11 @@ Resources:
         Zero fires:            HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noFires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
         Zero CA/MX fires:      HR2DAY_CMAQv55_cb6r5_ae7_aq.36US3.35.noCN-MXfires2022_2022_O3_PM25_01Apr2022to30Sep2022.nc
 
+      2023/CMAQ/outputs/
+        Base:                  HR2DAY_CMAQv54_cb6r5_ae7_aq.36US3.35.basecase2023_2023_O3_PM25_11Apr2023to29Sep2023.nc
+        Zero fires:            HR2DAY_CMAQv54_cb6r5_ae7_aq.36US3.35.basecase2023_nofires_2023_O3_PM25_11Apr2023to29Sep2023.nc
+        Zero CA fires:         HR2DAY_CMAQv54_cb6r5_ae7_aq.36US3.35.basecase2023_noCAfires_2023_O3_PM25_11Apr2023to29Sep2023.nc
+
       2024/CMAQ/outputs/
         Base:                  hr2day_merged_2024.2024basecase_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
         Zero fires:            hr2day_merged_2024.EMBER_noFires_AMD_36US3_35.v55_m3dry.Apr-Sep.keyvars.ncf
@@ -124,6 +135,13 @@ Resources:
 
       - `O3_MDA8` — maximum daily 8-hour ozone concentrations
       - `ATOTIJ_AVG` — 24-hour average total PM2.5 concentrations
+
+      Additionally, integrated column data is provided for the base and zero fires simulations from each year for a subset of species: NO2, CO, tropospheric ozone and formaldehyde. Aerosol Optical Depth (AOD) at 550 nm is provided for 2024 and 2025 simulations only. Column integrals include all CMAQ model layers that encompass pressures levels less than 200 hPa. Layers with mid-level pressures less than 200 hPa are excluded because they most likely include the stratosphere, which is not the target of EMBER and was treated differently in 2025 than other years. Files are NetCDF version 3 formatted files using I/O API data structures (IOAPI) and are found in the directory structure given below:
+      <br><br>
+      `$YYYY/CMAQ/outputs/columndata/`
+      <br>
+      - `basecase/CCTM_EMBER_basecase_COLUMN_36US3_$YYYY$MM$DD.nc`
+      - `zerofires/CCTM_EMBER_ZeroFires_COLUMN_36US3_$YYYY$MM$DD.nc`
     ARN: arn:aws:s3:::epa-ember
     Region: us-east-1
     Type: S3 Bucket

@@ -28,6 +28,10 @@ Resources:
     ARN: arn:aws:s3:::ecmwf-forecasts
     Region: eu-central-1
     Type: S3 Bucket
+  - Description: "Globally cached CloudFront distribution of the ecmwf-forecasts dataset"
+    Host: d2zvc0wgha4k2l.cloudfront.net
+    Region: eu-central-1
+    Type: CloudFront Distribution
 DataAtWork:
   Tutorials:
     - Title: A collection of Jupyter Notebooks that make use of the ecmwf-opendata package. This package simplifies the download of ECMWF open data.

@@ -1,0 +1,63 @@
+Name: Digital Earth Pacific Fractional Land Cover (Landsat, 30 m)
+Description: |
+  Fractional Land Cover represents the percentage of bare soil,
+  photosynthetic vegetation, and non-photosynthetic vegetation across the
+  Pacific region, derived from multi-mission Landsat surface reflectance
+  imagery using spectral unmixing. The dataset supports long-term
+  environmental monitoring, land cover change analysis, ecosystem
+  monitoring, trend analysis, and land degradation assessment. It
+  comprises two products:
+
+  - Scene-based Fractional Land Cover: per-scene estimates of bare soil
+    (bs), photosynthetic vegetation (pv) and non-photosynthetic vegetation
+    (npv) fractions, plus unmixing error (ue), from 1984 onwards.
+  - Annual Summary: yearly statistical summaries (10th, 50th and 90th
+    percentiles) of each cover fraction, along with counts of valid
+    observations.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Scene-based data is added as new Landsat scenes are acquired; summaries are updated annually
+Collabs:
+  ASDI:
+    Tags:
+      - agriculture
+Tags:
+- aws-pds
+- earth observation
+- environmental
+- land cover
+- agriculture
+- sustainability
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Fractional Land Cover, Scene-based (Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_fc
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_fc)'
+- Description: Fractional Land Cover Annual Summary (Landsat, 30 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_fc_summary_annual
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_fc_summary_annual)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific
