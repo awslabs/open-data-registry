@@ -30,7 +30,7 @@ Tags:
   - deep learning
   - labeled
   - imaging
-  - video
+  - parquet
 ADXCategories:
   - Environmental Data
 License: >
@@ -48,11 +48,12 @@ Resources:
   # TODO: bucket name, account ID, and prefixes are placeholders until the
   # sponsored account and CloudFormation stack exist.
   - Description: >
-      FathomNet images (JPEG, PNG, TIFF) and video (MP4, MOV) under data/,
-      with thumbnails under data/thumbnails/. Image metadata and annotations
-      (bounding boxes, classifications, segmentation masks) are provided as
-      partitioned Parquet under metadata/ for querying with Amazon Athena,
-      with COCO JSON and CSV exports under exports/.
+      Original FathomNet images (JPEG, PNG, TIFF) under images/ and 512 px
+      JPEG thumbnails under thumbnails/, keyed by image UUID. Metadata for
+      images, bounding boxes, tags, collections (Darwin Core), and taxonomic
+      concepts is provided as Parquet under metadata/, versioned by release
+      date, with COCO JSON exports under exports/. Source video under video/
+      is planned.
     ARN: arn:aws:s3:::fathomnet-pds
     Region: us-west-2
     Type: S3 Bucket
@@ -71,8 +72,6 @@ DataAtWork:
       AuthorURL: https://www.mbari.org/
       Services:
         - Amazon S3
-        - Amazon Athena
-        - Amazon SageMaker
   Tools & Applications:
     - Title: FathomNet Database
       URL: https://database.fathomnet.org
