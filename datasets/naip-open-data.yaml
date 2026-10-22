@@ -1,0 +1,62 @@
+Name: National Agriculture Imagery Program (NAIP) Acquisitions and County Mosaics
+Description: |
+  USDA National Agriculture Imagery Program (NAIP) aerial imagery of the continental United
+  States, 2024 onward, as Cloud-Optimized GeoTIFFs (COGs) with STAC metadata. USDA's county
+  mosaics combine flights up to three months apart under one date; using USDA's seamlines,
+  this dataset cuts them into acquisitions, each one minute of one aircraft's flight with its
+  own time, for 2024 and 2025. 2026 county mosaics, whose seamlines are not yet published, are
+  converted to COG. USDA's original MrSID county mosaics are included for every season.
+  Imagery is 4-band (red, green, blue, near-infrared), 8-bit, at 30 cm or 60 cm, from county
+  mosaics USDA compresses about 40:1. For lossless 2010-2023 quarter quads, see NAIP on AWS.
+Documentation: https://github.com/EarthLegend/naip-open-data
+Contact: aws-ops+naip-ccm@lgnd.ai
+ManagedBy: "[LGND](https://lgnd.ai)"
+UpdateFrequency: >-
+  New imagery is added as USDA delivers it. USDA posts a state's county mosaics three to six
+  months after the flying season and its seamlines when the state is complete; acquisitions
+  are added when the seamlines arrive. Each state is flown every two to three years.
+Tags:
+  - aws-pds
+  - aerial imagery
+  - agriculture
+  - earth observation
+  - geospatial
+  - land cover
+  - land use
+  - natural resource
+  - cog
+  - stac
+License: |
+  NAIP imagery is a work of the US Government and is in the public domain. Please credit
+  "USDA Farm Service Agency, National Agriculture Imagery Program (NAIP)".
+Citation: "Imagery: USDA Farm Service Agency, National Agriculture Imagery Program (NAIP)."
+Resources:
+  - Description: >-
+      NAIP acquisitions (2024 and 2025, under naip-acquisitions/) as Cloud-Optimized
+      GeoTIFFs, and USDA's original county mosaics (MrSID, 2024 on, under naip-ccm/) with
+      COGs for 2026. Each file has a STAC 1.1.0 Item and each COG a PNG thumbnail; the
+      static STAC catalog starts at catalog.json. Paths run state/year/ (and
+      state/year/YYYYMMDD/ for acquisitions), with a folder per Item. USDA's metadata and
+      seamlines sit beside the county mosaics.
+    ARN: arn:aws:s3:::TODO-bucket-name
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+      - "[Documentation](https://github.com/EarthLegend/naip-open-data/tree/main/docs)"
+  - Description: >-
+      Notifications for new objects in the bucket. Subscribe with Amazon SQS or AWS Lambda.
+    ARN: arn:aws:sns:us-west-2:TODO-account-id:TODO-topic-name
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: NAIP Acquisitions and County Mosaics"
+      URL: https://github.com/EarthLegend/naip-open-data/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/EarthLegend/naip-open-data/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      AuthorName: LGND
+      AuthorURL: https://lgnd.ai
+      Services:
+        - Amazon S3
+ADXCategories:
+  - Environmental Data
