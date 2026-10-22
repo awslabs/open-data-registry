@@ -56,6 +56,10 @@ Resources:
     ARN: arn:aws:s3:::thal-kak-msa/hhblits/
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new Thal-Kak Multiple Sequence Alignment Databases data
+    ARN: arn:aws:sns:us-east-1:029678959616:thal-kak-msa-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: Thal-Kak Multiple Sequence Alignment Databases"
