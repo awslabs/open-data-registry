@@ -1,0 +1,80 @@
+Name: Thal-Kak Multiple Sequence Alignment Databases
+Description: >-
+  A collection of prebuilt protein sequence databases for multiple sequence alignment (MSA) search.
+  MSAs are the main input of protein structure prediction and are also used to study conservation,
+  coevolution and protein function. The nine databases, in the native formats of MMseqs2 and
+  HH-suite, derive from UniProt UniRef100 (release 2026_01), the reduced BFD, MGnify (release
+  2024_04), EnVhogDB and the Logan protein catalogue from the NCBI Sequence Read Archive. The
+  sequences of UniRef100, MGnify and the reduced BFD were re-clustered, EnVhogDB was re-clustered
+  at its upstream standard level, and Logan was built into an MMseqs2 expandable-profile database.
+  Each database is published as one .tar.zst archive.
+  They are set up for Thal-Kak, a pipeline that unifies several structure prediction models, so that
+  its local MSA search writes MSAs in the input format of those models.
+Documentation: https://github.com/CSSB-SNU/Thal-Kak/tree/main/aws_open_data
+Contact: https://github.com/CSSB-SNU/Thal-Kak/issues
+ManagedBy: "[CSSB, Seoul National University](https://biosci.snu.ac.kr/cssb)"
+UpdateFrequency: Irregularly. New releases are added as new archives.
+Tags:
+  - aws-pds
+  - bioinformatics
+  - biomolecular modeling
+  - life sciences
+  - metagenomics
+  - msa
+  - protein
+  - protein folding
+  - structural biology
+License: |
+  Each database carries the license of the source it derives from; no database mixes sources.
+  [LICENSE.txt](https://thal-kak-msa.s3.amazonaws.com/LICENSE.txt) at the bucket root is the full
+  record of upstream licenses, attribution, citation and changes.
+
+  | Archives | License | Source |
+  | --- | --- | --- |
+  | hhblits/uniref100_2026_01 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | UniProt UniRef100, release 2026_01 |
+  | mmseqs/bfd_reduced | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | BFD reduced subset, via the AlphaFold databases |
+  | mmseqs/mgnify_clusters, hhblits/mgnify_clusters | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | MGnify protein database, release 2024_04 |
+  | mmseqs/envhog_std, hhblits/envhog | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | EnVhogDB |
+  | mmseqs/logan_human, hhblits/logan_human, hhblits/logan_nonhuman | No license is granted. [NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/) | Logan v1 (SRA cutoff 2023-12-10) |
+Citation: >-
+  For the pipeline that searches these databases, cite Bae J. et al. Thal-Kak: unifying biomolecular
+  structure predictors reveals a sampling-selection gap. bioRxiv 2026.08.19.745680 (2026).
+  doi:10.64898/2026.08.19.745680. Also cite the upstream database of each archive you use, as given
+  in LICENSE.txt; for the CC BY and CC BY-SA databases this attribution is a license condition.
+Resources:
+  - Description: >-
+      MMseqs2 expandable profile databases, one .tar.zst archive per database (mgnify_clusters,
+      envhog_std, bfd_reduced, logan_human). Each archive holds four MMseqs2 databases; build the
+      .idx search index after extraction.
+    ARN: arn:aws:s3:::thal-kak-msa/mmseqs/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: >-
+      HH-suite (FFindex) databases, one .tar.zst archive per database (uniref100_2026_01,
+      mgnify_clusters, logan_nonhuman, envhog, logan_human). Each archive holds the a3m, hhm and
+      cs219 databases.
+    ARN: arn:aws:s3:::thal-kak-msa/hhblits/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for new Thal-Kak Multiple Sequence Alignment Databases data
+    ARN: arn:aws:sns:us-east-1:029678959616:thal-kak-msa-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Thal-Kak Multiple Sequence Alignment Databases"
+      URL: https://github.com/CSSB-SNU/Thal-Kak/blob/main/aws_open_data/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/CSSB-SNU/Thal-Kak/blob/main/aws_open_data/get-to-know-a-dataset.ipynb
+      AuthorName: Kwanwook Kim (CSSB, Seoul National University)
+      AuthorURL: https://github.com/Alphaketo1103
+  Tools & Applications:
+    - Title: Thal-Kak
+      URL: https://github.com/CSSB-SNU/Thal-Kak
+      AuthorName: CSSB, Seoul National University
+      AuthorURL: https://biosci.snu.ac.kr/cssb
+  Publications:
+    - Title: "Thal-Kak: unifying biomolecular structure predictors reveals a sampling-selection gap"
+      URL: https://doi.org/10.64898/2026.08.19.745680
+      AuthorName: Bae J., Jo S., Kim Y., Kim D., Kim K., Park S., et al.
+ADXCategories:
+  - Healthcare & Life Sciences Data
