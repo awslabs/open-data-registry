@@ -22,10 +22,10 @@ Description: |
   metadata file, and open its COGs by their known keys.
   <br/>
   <br/>
-  A STAC-compatible catalog for richer discovery — search by capture date,
-  upload date, spatial area of interest, and metadata fields such as IUCN
-  habitat classification — is planned and will be added after the initial
-  launch. 
+  A static STAC 1.1 catalog describes every dataset as a STAC Item and can be
+  browsed with STAC Browser or read with pystac and other STAC clients. A STAC
+  API for server-side search (by capture date, area of interest, and metadata
+  fields such as IUCN habitat classification) is planned.
   <br/>
   <br/>
   The collection includes only datasets that GeoNadir is able to publish
@@ -53,8 +53,7 @@ Tags:
   - agriculture
   - coastal
   - sustainability
-  - drone
-  - UAV
+  - imaging
 License: |
   This dataset is licensed under the Creative Commons Attribution 4.0
   International license (CC-BY-4.0). You are free to share and adapt the
@@ -63,7 +62,7 @@ License: |
   https://creativecommons.org/licenses/by/4.0/
 Citation: 'GeoNadir FAIR Data was accessed on DATE from https://registry.opendata.aws/geonadir-fair-data. GeoNadir. 2026. GeoNadir FAIR Data: open drone mapping datasets.'
 RegistryEntryAdded: '2026-08-24'
-RegistryEntryLastModified: '2026-08-31'
+RegistryEntryLastModified: '2026-10-23'
 Resources:
   - Description: GeoNadir FAIR Data drone mapping datasets (Cloud Optimized GeoTIFFs, raw image ZIPs, and per-dataset JSON metadata)
     ARN: arn:aws:s3:::geonadir-fair-data
@@ -71,35 +70,16 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse GeoNadir FAIR Data](https://data.geonadir.com/fairgeo)'
-      # STAC is not live yet. Re-add this Explore link only once
-      # https://data.geonadir.com/stac/collections/geonadir-fair-data returns a
-      # valid STAC collection (a dead link here would 404 on the registry page):
-      #   - '[STAC catalog](https://data.geonadir.com/stac/collections/geonadir-fair-data)'
-# DRAFT NOTE (remove before taking PR out of draft):
-#   1. Confirm the final bucket name once the AWS Open Data CloudFormation stack
-#      has been created in the dedicated open-data account. If the name differs
-#      from "geonadir-fair-data", update the ARN above and every s3:// reference
-#      in OPEN_DATA_STRUCTURE.md and the tutorial notebook.
-#   2. The CloudFormation template also provisions an SNS topic for S3
-#      object-creation notifications. After the stack exists, add a second
-#      Resources entry for it, e.g.:
-#        - Description: New object notifications for GeoNadir FAIR Data (Lambda and SQS protocols only)
-#          ARN: arn:aws:sns:ap-southeast-2:209003640346:<topic-name>
-#          Region: ap-southeast-2
-#          Type: SNS Topic
-#   3. STAC is NOT live at launch. The STAC catalog Explore link is commented out
-#      above, and the STAC tutorial will not run until the endpoint exists.
-#      Re-enable both once https://data.geonadir.com/stac/ serves the collection.
+      - '[STAC catalog](https://data.geonadir.com/stac/catalog.json)'
+      - '[Browse with STAC Browser](https://radiantearth.github.io/stac-browser/#/external/data.geonadir.com/stac/catalog.json)'
+  - Description: New object notifications for GeoNadir FAIR Data (Lambda and SQS protocols only)
+    ARN: arn:aws:sns:ap-southeast-2:209003640346:geonadir-fair-data-object_created
+    Region: ap-southeast-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: 'Get To Know A Dataset: GeoNadir FAIR Data'
       URL: https://github.com/Geonadir/open-data-examples/blob/main/datasets/geonadir-fair-data/get-to-know-a-dataset.ipynb
-      AuthorName: GeoNadir
-      AuthorURL: https://geonadir.com/
-      Services:
-        - Amazon S3
-    - Title: 'Get To Know A Dataset: GeoNadir FAIR Data (STAC catalog — runs once the STAC endpoint is live)'
-      URL: https://github.com/Geonadir/open-data-examples/blob/main/datasets/geonadir-fair-data/get-to-know-a-dataset-stac.ipynb
       AuthorName: GeoNadir
       AuthorURL: https://geonadir.com/
       Services:
