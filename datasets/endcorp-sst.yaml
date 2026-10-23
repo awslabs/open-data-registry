@@ -1,4 +1,4 @@
-# Draft for AWS Open Data onboarding. Add the bucket after billing linkage.
+# Draft for AWS Open Data onboarding. Resources are not yet provisioned.
 Name: END Sea Surface Temperature Collections
 Description: >-
   Global sea surface temperature analyses from CMC V2, CMC V3, GAMSSA,
@@ -27,9 +27,17 @@ Citation: >-
   Cite the original source product and its version, the access date, and the
   END release snapshot. Product-specific attribution accompanies each release.
 RegistryEntryAdded: '2026-10-20'
-RegistryEntryLastModified: '2026-10-20'
-# Planned region: us-west-2. Bucket pending billing linkage.
-Resources: []
+RegistryEntryLastModified: '2026-10-23'
+# Placeholders only. Provision after written billing-link confirmation.
+Resources:
+  - Description: Planned SST data bucket; not yet provisioned.
+    ARN: "arn:aws:s3:::<bucket-name>"
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Planned new-object notifications; not yet provisioned.
+    ARN: "arn:aws:sns:us-west-2:<account-id>:<topic-name>"
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: 'Get To Know A Dataset: END Sea Surface Temperature Collections'
