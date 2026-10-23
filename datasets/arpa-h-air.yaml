@@ -39,6 +39,10 @@ Resources:
     ARN: arn:aws:s3:::multimodal-imaging-for-cerebrovascular-disease
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications of new data
+    ARN: arn:aws:sns:us-east-1:471112506215:multimodal-imaging-for-cerebrovascular-disease-object_created
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: "TAIR: Toolkit for Autonomous Interventions and Robots"
