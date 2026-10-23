@@ -8,66 +8,66 @@ Contact: CO-OPS.UserServices@noaa.gov
 ManagedBy: "[NOAA’s National Ocean Service, The Center for Operational Oceanographic Products and Services (CO-OPS)](https://tidesandcurrents.noaa.gov/about_us.html)"
 UpdateFrequency: Intermittent.
 Tags:
-	- aws-pds
-	- agriculture
-	- weather
-	- climate
-	- environmental
-	- disaster response
-	- agriculture
-	- transportation
-	- oceans
+   - aws-pds
+   - agriculture
+   - weather
+   - climate
+   - environmental
+   - disaster response
+   - agriculture
+   - transportation
+   - oceans
 License: These data are produced by NOAA and are not subject to copyright protection in the United States. NOAA waives any potential copyright and related rights in these data worldwide through the Creative Commons Universal Public Domain Dedication (CC0-1.0). Pursuant to 17 U.S.C. 403, third parties producing copyrighted (compilation) works consisting predominantly of material created by Federal Government employees are encouraged to provide notice with such work(s) identifying the U.S. Government material incorporated and stating that such material is not subject to copyright protection.
 Citation: NOAA's Coastal Ocean Reanalysis (CORA) Dataset was accessed on DATE from https://registry.opendata.aws/noaa-nos-cora.
 Resources:
-	- Description: CORA data
-      ARN: arn:aws:s3:::noaa-nos-cora-pds
-      Region: us-east-1
-      Type: S3 Bucket
-      Explore:
-	  - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
-	- Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications"
-      ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
-      Region: us-east-1
-      Type: SNS Topic
+   - Description: CORA data
+     ARN: arn:aws:s3:::noaa-nos-cora-pds
+     Region: us-east-1
+     Type: S3 Bucket
+     Explore:
+	 - '[Browse Bucket](https://noaa-nos-cora-pds.s3.amazonaws.com/index.html)'
+   - Description: "NOAA’s Coastal Ocean Reanalysis (CORA) Dataset Notifications"
+     ARN: arn:aws:sns:us-east-1:709902155096:NewNOSCORAObject
+     Region: us-east-1
+     Type: SNS Topic
 DataAtWork:
   Tutorials:
-	- Title: Accessing Data
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Accessing_Data.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/
-	- Title: Bounding Box
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_bounding_box.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/
-	- Title: Convert Datums
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Convert_Datums.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/
-	- Title: Compare With Observations
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_compare_with_observations.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/
-	- Title: Visualize Water Level Maxima
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_visualize_water_level_maxima.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/
-	- Title: Plot Mesh
-	  NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Plot_Mesh.ipynb
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/	  
+   - Title: Accessing Data
+     NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Accessing_Data.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/
+   - Title: Bounding Box
+	 NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_bounding_box.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/
+   - Title: Convert Datums
+	 NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Convert_Datums.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/
+   - Title: Compare With Observations
+	 NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_compare_with_observations.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/
+   - Title: Visualize Water Level Maxima
+	 NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_visualize_water_level_maxima.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/
+   - Title: Plot Mesh
+	 NotebookURL: https://github.com/NOAA-CO-OPS/CORA-Coastal-Ocean-Reanalysis-CORA/blob/main/CORA_Plot_Mesh.ipynb
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/	  
   Tools & Applications:
-    - Title: NOAA's Experimental High Resolution Monthly High Tide Flooding Outlook
-      URL: https://tidesandcurrents.noaa.gov/high-tide-flooding/experimental/hires-monthly-outlook.html
-      AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
-      AuthorURL: https://tidesandcurrents.noaa.gov/ 
+   - Title: NOAA's Experimental High Resolution Monthly High Tide Flooding Outlook
+     URL: https://tidesandcurrents.noaa.gov/high-tide-flooding/experimental/hires-monthly-outlook.html
+     AuthorName: "NOAA's Center for Operational Oceanographic Products and Services" 
+     AuthorURL: https://tidesandcurrents.noaa.gov/ 
   Publications:
-    - Title: NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)
-      URL: https://doi.org/10.25923/5ypp-4e84 
-      AuthorName: Keeney, Analise; Dusek, Gregory; Callahan, John; Ratcliff, John; Jima, Tigist; Brooks, William; Marcy, Doug; Blanton, Brian; Tilson, Jeffrey; Asher, Taylor G.; Leuttich, Richard A.; Widlansky, Matthew J.; Rose, Linta; Morse, Cheryl; Haddad, Jana; & Waring, Blake
-    - Title: Assessment of water levels from 43 years of NOAA’s Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coasts
-      URL: https://doi.org/10.3389/fmars.2024.1381228  
-      AuthorName: Rose, Linta; Widlansky, Matthew J.; Feng, Xue; Thompson, Thompson; Asher, Taylor G.; Dusek, Gregory; Blanton, Blanton; Luettich, Richard A. Jr.; Callahan, John; Brooks, William; Keeney, Analise; Haddad, Jana; Sweet, William; Genz, Ayesha; Hovenga, Paige; Marra, John & Tilson, Jeffrey
-	  - Title: Filling the gaps between tide gauges: Demonstrating high-resolution seasonal high tide flooding predictions using NOAA’s Coastal Ocean Reanalysis
-	    URL: https://doi.org/10.1371/journal.pone.0344695
-	    AuthorName: Conlin, Matthew; Dusek, Gregory; Ratcliff, John; Callahan, John; Kavanaugh, Karen; Brooks, William; Waring, Blake; Keeney, Analise; Sweet, William; & Widlansky, Matthew
+   - Title: NOAA Technical Report NOS CO-OPS 108: NOAA’s Coastal Ocean Reanalysis: Gulf of Mexico, Atlantic, and Caribbean (January 2025)
+     URL: https://doi.org/10.25923/5ypp-4e84 
+     AuthorName: Keeney, Analise; Dusek, Gregory; Callahan, John; Ratcliff, John; Jima, Tigist; Brooks, William; Marcy, Doug; Blanton, Brian; Tilson, Jeffrey; Asher, Taylor G.; Leuttich, Richard A.; Widlansky, Matthew J.; Rose, Linta; Morse, Cheryl; Haddad, Jana; & Waring, Blake
+   - Title: Assessment of water levels from 43 years of NOAA’s Coastal Ocean Reanalysis (CORA) for the Gulf of Mexico and East Coasts
+     URL: https://doi.org/10.3389/fmars.2024.1381228  
+     AuthorName: Rose, Linta; Widlansky, Matthew J.; Feng, Xue; Thompson, Thompson; Asher, Taylor G.; Dusek, Gregory; Blanton, Blanton; Luettich, Richard A. Jr.; Callahan, John; Brooks, William; Keeney, Analise; Haddad, Jana; Sweet, William; Genz, Ayesha; Hovenga, Paige; Marra, John & Tilson, Jeffrey
+   - Title: Filling the gaps between tide gauges: Demonstrating high-resolution seasonal high tide flooding predictions using NOAA’s Coastal Ocean Reanalysis
+	 URL: https://doi.org/10.1371/journal.pone.0344695
+	 AuthorName: Conlin, Matthew; Dusek, Gregory; Ratcliff, John; Callahan, John; Kavanaugh, Karen; Brooks, William; Waring, Blake; Keeney, Analise; Sweet, William; & Widlansky, Matthew
