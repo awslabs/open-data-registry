@@ -1,0 +1,27 @@
+Name: Brno University of Technology ECG Signal Database with Annotations of P Wave
+  (BUT PDB)
+Description: Brno University of Technology ECG Signal Database with Annotations of
+  P Wave (BUT PDB) is an ECG signal database with marked peaks of P waves created
+  by the cardiology team at the Department of Biomedical Engineering, Brno University
+  of Technology. The database consists of 50 2-minute 2-lead ECG signal records with
+  various types of pathology. The ECGs were selected from three existing databases
+  of ECG signal - the MIT-BIH Arrhythmia Database, the MIT-BIH Supraventricular Arrhythmia
+  Database, and the Long Term AF Database. The P waves positions were manually annotated
+  by two ECG experts in all 50 records. Each record contains also annotation of positions
+  and types of QRS complexes (from original database) and dominant diagnosis (pathology)
+  present in record. This database is created for the development, evaluation and
+  objective comparison of P wave detection algorithms.
+Documentation: https://doi.org/10.13026/hwvj-5b53
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/hwvj-5b53
+  ARN: arn:aws:s3:::physionet-open/but-pdb/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

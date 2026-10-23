@@ -1,0 +1,19 @@
+Name: Estimating Activity from Instantaneous Heart Rate
+Description: Using only a heart rate time series, it is possible to measure a number
+  of features that reflect the level of physical activity. Here we provide software
+  for deriving an "activity index" based on measurements of mean heart rate, total
+  power of the instantaneous heart rate time series over a given interval, and stationarity.
+Documentation: https://physionet.org/content/activity/
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://physionet.org/content/activity/
+  ARN: arn:aws:s3:::physionet-open/activity/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

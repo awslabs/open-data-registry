@@ -1,0 +1,31 @@
+Name: The CirCor DigiScope Phonocardiogram Dataset
+Description: A total number of 5272 heart sound recordings were collected from the
+  main four auscultation locations of 1568 subjects, aged between 0 and 21 years (mean
+  ± STD = 6.1 ± 4.3 years), with a duration between 4.8 to 80.4 seconds (mean ± STD
+  = 22.9 ± 7.4 s), totaling more than 33.5 hours of recording. Each cardiac murmur
+  in the dataset has been annotated in detail by a human annotator, in terms of timing,
+  shape, pitch, grading, quality and location. Moreover, segmentation annotations
+  regarding the location of fundamental heart sounds (S1 and S2) in the recordings
+  have been obtained using a semi-supervised scheme. The segmentation annotations
+  were performed by voting between three state-of-the-art machine-based algorithms.
+  An expert annotator later studied the consensus and mismatches between the algorithms
+  beat-by-beat and performed a manual annotation whenever the algorithms had disagreed
+  or were not acceptable for the expert. To date, the dataset is the largest publicly
+  available pediatric heart sound dataset, supporting deeper research on the topic
+  of auscultation-based health recommendation systems. The dataset is being used in
+  the George B. Moody PhysioNet Challenge 2022 on Heart Murmur Detection from Phonocardiogram
+  Recordings.
+Documentation: https://doi.org/10.13026/tshs-mw03
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/tshs-mw03
+  ARN: arn:aws:s3:::physionet-open/circor-heart-sound/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

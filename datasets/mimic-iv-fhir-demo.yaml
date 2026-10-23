@@ -1,0 +1,29 @@
+Name: MIMIC-IV Clinical Database Demo on FHIR
+Description: Interoperability of healthcare data has become increasingly important
+  given the increase in deployment of data driven algorithms in clinical settings.
+  The Fast Healthcare Interoperability Resources (FHIR) standard has emerged as a
+  promising mechanism to share healthcare data across vendors in real-time and batch
+  settings. Real-world datasets available in FHIR would accelerate research and development
+  of data-driven algorithms. Existing datasets in FHIR are primarily synthetic, and
+  cover a limited number of resources. To address this gap, we have reformatted the
+  Medical Information Mart for Intensive Care (MIMIC)-IV Clinical Database Demo into
+  FHIR. The MIMIC clinical databases have received wide adoption and the constituent
+  data are understood by the community. As much as possible, we adhered to the base
+  resources with minimal extensions. Alongside the dataset, we publish openly available
+  code allowing researchers to quickly build upon our work. Translating MIMIC-IV into
+  FHIR provides a benchmark dataset for institutions to experiment with FHIR based
+  tools, and we hope this resource supports adoption and use of FHIR.
+Documentation: https://physionet.org/content/mimic-iv-fhir-demo/
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Open Database License v1.0
+Resources:
+- Description: https://physionet.org/content/mimic-iv-fhir-demo/
+  ARN: arn:aws:s3:::physionet-open/mimic-iv-fhir-demo/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

@@ -1,0 +1,37 @@
+Name: 'HeartCycle: A comprehensive dataset of synchronized impedance cardiography
+  and echocardiography for hemodynamic predictions'
+Description: The "HeartCycle" dataset offers a comprehensive collection of synchronized
+  impedance cardiography (ICG) and echocardiography (ECHO) signals, supplemented with
+  finger photoplethysmography (PPG), heart sounds, and electrocardiography (ECG) data
+  from 17 healthy volunteers. Collected during the HeartCycle project (FP7-216695),
+  this dataset aims to address biases in the ICG waveform, particularly the ABEXYOZ
+  complex, where the B and X points do not precisely align with the aortic valve opening
+  and closing notches. The biases in B and X point detection are critical for hemodynamic
+  prediction because these characteristic points are used to calculate essential diagnostic
+  parameters, including systolic time intervals (PEP and LVET), contractility, stroke
+  volume, and cardiac output. By providing synchronized ICG and ECHO signals, researchers
+  can better understand these biases and develop more accurate models for hemodynamic
+  parameter computation. The dataset is stored in HDF5 format, facilitating the storage
+  of complex data structures and easy access to various physiological parameters.
+  It is ideal for developing machine learning models to enhance the detection of characteristic
+  points in ICG signals. For instance, machine learning models can be used to detect
+  characteristic points for improved left ventricular ejection time (LVET) estimation
+  or mapping the ICG signal to the different mechanical events in the cardiac cycle
+  using the ECHO as a reference. Detailed metadata and usage notes are included to
+  support data utilization across different software environments. Ethical approval
+  was obtained from the University of Coimbra Hospital's ethics committee, and informed
+  consent was provided by all participants.
+Documentation: https://doi.org/10.13026/z865-eb23
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/z865-eb23
+  ARN: arn:aws:s3:::physionet-open/heartcycle/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

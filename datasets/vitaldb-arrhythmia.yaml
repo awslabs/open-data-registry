@@ -1,0 +1,33 @@
+Name: 'VitalDB Arrhythmia Database: Anesthesiologist-Validated Intraoperative Arrhythmia
+  Dataset with Beat and Rhythm Labels'
+Description: Intraoperative cardiac arrhythmias present distinct characteristics and
+  clinical challenges compared to non-surgical environments, yet publicly available
+  electrocardiogram (ECG) databases have primarily focused on ambulatory and intensive
+  care environments. To address this gap, we present the VitalDB Arrhythmia Database,
+  a comprehensive collection of annotated intraoperative ECG recordings specifically
+  designed for developing and validating arrhythmia detection algorithms in the surgical
+  context. The database comprises 734,528 seconds of continuous ECG data from 482
+  surgical patients, with over 660,000 individually annotated heartbeats classified
+  across four beat types and 10 distinct rhythm categories. To efficiently process
+  the extensive source data, we developed a custom deep learning beat classifier that
+  served as an automated screening tool for arrhythmia candidate segments. All annotations
+  underwent rigorous validation by five anesthesiologists, with each segment independently
+  reviewed by at least two anesthesiologists. Inter-rater reliability analysis demonstrated
+  excellent agreement with an overall Cohen's kappa of 0.930 ± 0.130. This publicly
+  accessible resource provides the research community with clinically validated intraoperative
+  arrhythmia data, facilitating the development of robust detection algorithms suited
+  to the unique physiological and technical challenges of the perioperative environment.
+Documentation: https://doi.org/10.13026/axd6-wm13
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/axd6-wm13
+  ARN: arn:aws:s3:::physionet-open/vitaldb-arrhythmia/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

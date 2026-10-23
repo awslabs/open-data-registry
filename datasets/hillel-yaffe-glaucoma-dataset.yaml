@@ -1,0 +1,35 @@
+Name: 'Hillel Yaffe Glaucoma Dataset (HYGD): A Gold-Standard Annotated Fundus Dataset
+  for Glaucoma Detection'
+Description: 'Glaucomatous optic neuropathy (GON) is a leading cause of irreversible
+  blindness worldwide, affecting an estimated 64.3 million people globally with projections
+  reaching 111.8 million by 2040. Approximately 50% of cases remain undiagnosed until
+  advanced stages when vision loss becomes noticeable. Traditional diagnosis requires
+  comprehensive ophthalmic examinations by specialists, creating accessibility barriers
+  in many regions. The Hillel Yaffe Glaucoma Dataset (HYGD) addresses a critical limitation
+  in existing GON datasets: the lack of gold-standard annotations. Unlike most publicly
+  available datasets where glaucoma labels are determined solely from digital fundus
+  images (DFIs), HYGD''s labels are based on comprehensive ophthalmic examinations,
+  including visual acuity assessment, intraocular pressure measurement, optical coherence
+  tomography (OCT), visual field tests, and at least one year of follow-up monitoring.
+  The dataset is structured to include both the DFIs and a labels file containing
+  patient IDs, GON classifications, and image quality scores. All DFIs were taken
+  using a TOPCON DRI OCT Triton retinal camera with a 45° FOV and underwent deidentification
+  and standardization processing. HYGD enables researchers to train and benchmark
+  models on rigorously annotated data, potentially improving their reliability. This
+  dataset serves as a valuable resource for developing generalizable models that can
+  function across diverse patient populations and clinical settings, ultimately supporting
+  earlier detection and treatment of GON.'
+Documentation: https://doi.org/10.13026/m92s-0z95
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/m92s-0z95
+  ARN: arn:aws:s3:::physionet-open/hillel-yaffe-glaucoma-dataset/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

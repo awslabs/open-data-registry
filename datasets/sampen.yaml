@@ -1,0 +1,19 @@
+Name: Sample Entropy Estimation
+Description: Sample Entropy is a useful tool for investigating the dynamics of heart
+  rate and other time series. Sample Entropy is the negative natural logarithm of
+  an estimate of the conditional probability that subseries (epochs) of length m that
+  match pointwise within a tolerance r also match at the next point.
+Documentation: https://physionet.org/content/sampen/
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://physionet.org/content/sampen/
+  ARN: arn:aws:s3:::physionet-open/sampen/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data
