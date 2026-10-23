@@ -1,0 +1,38 @@
+Name: HYbrid Coordinate Ocean Model Tendral Statistical Interpolation Gulf of Mexico Reanalysis 
+Description: "The GOMb0.01 and GOMe0.01 domains are set-up with the high resolution 1km bathymetry of the Gulf of Mexico (Velissariou, 2014) over a domain going from 98ºE to 77ºE in longitude and from 18ºN to 32ºN in latitude. With 41-hybrid layers in the vertical, the latest version of the HYCOM model (2.3.01: github.com/HYCOM/HYCOM-src). GOMb0.01 is forced at the surface with the CFSR hourly atmospheric forcing from 2001 to 2011 and CFSv2 from 2012 onward. GOMe0.01 is forced at the surface with the CFSv2 hourly atmospheric forcing. The lateral open boundaries are relaxed to daily means of the global HYCOM ESPC-D-V02 reanalysis. Five tidal constituents (M2,S2,O1,K1,N2) are applied at the surface through a local tidal potential and at the boundaries with the Browning-Kreiss boundary conditions. Tidal data are extracted from the Oregon State University (OSU) tidal models: the TPXO9 atlas (Egbert and Erofeeva, 2002). The resolution is 1/100º (~1km) and the domain extends from 98ºE to 77ºE in longitude and from 18ºN to 32ºN in latitude. The temportal frequency has both hourly and daily outputs. We (COAPS and FSU) acknowledge the support from the Bureau of Ocean Energy Management (BOEM) under award number M20AC10020-40 and from the National Academy of Sciences (NAS) under award number SCON-10000541. The content is solely the responsibility of the authors and does not necessarily represent the official views of the Bureau of Ocean Energy Management nor the National Academy of Sciences."
+Documentation: https://www.hycom.org/dataserver/gom/gom-reanalysis
+Contact: help@hycom.org
+ManagedBy: "[COAPS](https://www.coaps.fsu.edu/)"
+UpdateFrequency: "GOMb0.01 (Static Dataset Covering 2001-01-01 to 2024-08-31). GOMe0.01 (2024-09-01 to "Present" with a 1-6 month output delay)"
+Tags:
+  - aws-pds
+  - HYCOM   
+  - oceans
+License: There are no restrictions on the use of this data.
+Resources:
+  - Description: "HYCOM-TSIS 1/100º Gulf of Mexico Reanalysis"
+    ARN: arn:aws:s3:::hycom-tsis-gom-reanalysis
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: HYCOM-examples Jupyter Notebook
+      NotebookURL: https://github.com/HYCOM/HYCOM-docs/blob/master/Tutorials/open-data-registry/hycom-tsis-gom-reanalysis.ipynb
+      AuthorName: Dr. Alexandra Bozec
+      AuthorURL: https://www.coaps.fsu.edu/people/alexandra-bozec
+    - Title: HYCOM-examples repository
+      URL: https://github.com/HYCOM/HYCOM-examples
+      AuthorName: Dr. Alexandra Bozec
+      AuthorURL: https://www.coaps.fsu.edu/people/alexandra-bozec
+  Tools & Applications:
+    - Title: HYCOM-tools repository
+      URL: https://github.com/HYCOM/HYCOM-tools
+      AuthorName: Dr. Alan Wallcraft
+      AuthorURL: https://www.coaps.fsu.edu/people/alan-wallcraft
+  Publications:
+    - Title: "A Statistical Interpolation Code for Ocean Analysis and Forecasting"
+      URL: https://doi.org/10.1175/JTECH-D-21-0033.1
+      AuthorName: Ashwanth Srinivasan, T. M. Chin, E. P. Chassignet, M. Iskandarani, N. Groves
+    - Title: "Gulf of Mexico High-Resolution (0.01° x 0.01°) Bathymetric Grid - Version 2.0, February 2013"
+      URL: https://doi.org/10.7266/N7X63JZ5
+      AuthorName: Velissariou, Panagiotis
