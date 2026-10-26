@@ -16,6 +16,10 @@ resources = yaml.safe_load(open("resources.yaml"))
 services = yaml.safe_load(open("services.yaml"))
 
 arn_regex = re.compile(r"^arn:(aws|aws-iso):.+:.*:.*:.+$")
+# S3 bucket naming rules: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
+s3_bucket_regex = re.compile(r"(?!\d+\.\d+\.\d+\.\d+$)(?!.*\.\.)[a-z0-9][a-z0-9\.-]{1,61}[a-z0-9]")
+s3_bucket_reserved_prefixes = ("xn--", "sthree-", "amzn-s3-demo-")
+s3_bucket_reserved_suffixes = ("-s3alias", "--ol-s3", ".mrap", "--x-s3", "--table-s3")
 host_regex = re.compile(r"^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,63})(\/.*)*\/?$")
 controlled_access_regex = re.compile(
     r"^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$"
@@ -90,6 +94,18 @@ def ext_resources_arn(value, rule_obj, path):
             )
         )
         return False
+
+    # S3 bucket ARNs (no region or account) start with the bucket name, optionally followed by a key prefix
+    parts = value.split(":", 5)
+    if parts[2:5] == ["s3", "", ""]:
+        bucket = parts[5].split("/", 1)[0]
+        if (
+            not s3_bucket_regex.fullmatch(bucket)
+            or bucket.startswith(s3_bucket_reserved_prefixes)
+            or bucket.endswith(s3_bucket_reserved_suffixes)
+        ):
+            print("ARN '{}' does not contain a valid S3 bucket name".format(value))
+            return False
 
     return True
 
