@@ -1,0 +1,66 @@
+Name: "LAFC-Evict: Learning-Augmented Cache Eviction Dataset"
+
+Description: >-
+  LAFC-Evict is a derived, tabular research dataset of counterfactual
+  supervision labels for learning-augmented cache-eviction research. Each row
+  describes one candidate object considered for eviction at one full-cache-miss
+  decision point, together with engineered state/candidate features and labels
+  describing what would happen to the cache miss rate over a short future
+  horizon if that specific candidate were evicted. The current AWS release,
+  v1.0, contains five trace families: cloudphysics, metacdn, metakv,
+  twemcache, and wiki2018. It includes 277,995,072 candidate rows, 2,363,286
+  decision-view rows, and a 1,000,000-row pairwise sample. LAFC-Evict is a
+  generated/derived artifact and does not redistribute raw upstream trace
+  logs, raw Wikimedia pageview rows, raw page titles, or other third-party
+  raw data. The historical v0.3 wiki2018-only AWS publication remains
+  preserved at the bucket root for reproducibility; v1.0 is available under
+  the versioned prefix s3://lafc-evict-open-data/v1.0/.
+
+Documentation: "https://huggingface.co/datasets/SoroushVahidi/lafc-evict"
+
+Contact: "sv96@njit.edu"
+
+ManagedBy: "Soroush Vahidi"
+
+UpdateFrequency: "No fixed schedule. Updated on major dataset releases; the current AWS version is v1.0, published 2026-09-24."
+
+Tags:
+  - "machine learning"
+  - "benchmark"
+  - "parquet"
+
+License: "[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)"
+
+Citation: >-
+  Please cite the dataset release and, where relevant, the upstream raw data
+  sources used to derive the published features and labels. Dataset: Vahidi,
+  S. "LAFC-Evict: Learning-Augmented Cache Eviction Dataset (v1.0)." 2026.
+  https://huggingface.co/datasets/SoroushVahidi/lafc-evict Associated public
+  preprint, without claiming peer review: Vahidi, S. "Decision-aligned
+  eviction-value prediction for robust learning-augmented caching." SSRN
+  abstract ID 6636732, 2026. https://ssrn.com/abstract=6636732
+
+Resources:
+  - Description: "LAFC-Evict S3 bucket. Current v1.0 release is under s3://lafc-evict-open-data/v1.0/; historical v0.3 objects remain preserved at the bucket root."
+    ARN: arn:aws:s3:::lafc-evict-open-data
+    Region: us-west-2
+    Type: "S3 Bucket"
+  - Description: "Notifications for new objects created in the LAFC-Evict public bucket"
+    ARN: arn:aws:sns:us-west-2:761705104187:lafc-evict-open-data-object_created
+    Region: us-west-2
+    Type: "SNS Topic"
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: LAFC-Evict"
+      URL: "https://github.com/SoroushVahidi/lafc-evict-tutorial/blob/main/get-to-know-a-dataset.ipynb"
+      NotebookURL: "https://raw.githubusercontent.com/SoroushVahidi/lafc-evict-tutorial/main/get-to-know-a-dataset.ipynb"
+      AuthorName: "Soroush Vahidi"
+      AuthorURL: "https://github.com/SoroushVahidi"
+      Services:
+        - "Amazon S3"
+  Tools & Applications:
+    - Title: "LAFC-Evict dataset-generation pipeline (Augmented-caching)"
+      URL: "https://github.com/SoroushVahidi/Augmented-caching"
+      AuthorName: "Soroush Vahidi"
+      AuthorURL: "https://github.com/SoroushVahidi"
