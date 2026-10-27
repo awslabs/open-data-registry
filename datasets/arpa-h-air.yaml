@@ -1,0 +1,50 @@
+Name: Multimodal Imaging Dataset for Cerebrovascular Disease
+Description: |
+  As part of the ARPA-H AIR program, we are collecting prospective and retrospective
+  Computed Tomography Angiography (CTA), Magnetic Resonance Angiography (MRA), and video fluoroscopy
+  recordings. In total, we will collect 2,500 CTA/MRA and 1,500 video fluoroscopy recordings. The 1,500 video
+  fluoroscopy recordings will be paired with the corresponding CTA/MRA data. We will also upload annotations for
+  150 of the recordings and images and 100 anatomic segmentations. These data will be collected in a
+  multi-institutional effort under the ARPA-H AIR program. The immediate goal of the program is to
+  develop and train autonomous robots for stroke treatment. In the future, this dataset could support
+  autonomous segmentation, labeling, and robotics for a range of cerebrovascular diseases. The data
+  will be uploaded in 4 tranches starting in October 2026 and ending in December 2027.
+Documentation: https://kitware.github.io/TAIR
+Contact: rachel.clipp@kitware.com
+ManagedBy: Kitware, Inc.
+UpdateFrequency: Four tranches between October 2026 and December 2027.
+Tags:
+  - 3d-mesh
+  - cardiovascular
+  - cta
+  - dicom
+  - endovascular
+  - fluoroscopy
+  - health
+  - magnetic resonance imaging
+  - medical imaging
+  - medicine
+  - neuroimaging
+  - neurosurgery
+  - neurovascular
+  - radiology
+  - robotics
+  - segmentation
+  - simulations
+  - stroke
+  - x-ray
+License: Creative Commons Attribution 4.0 International License (CC BY 4.0)
+Resources:
+  - Description: Multimodal clinical data such as images (DICOM) and video (MP4)
+    ARN: arn:aws:s3:::multimodal-imaging-for-cerebrovascular-disease
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications of new data
+    ARN: arn:aws:sns:us-east-1:471112506215:multimodal-imaging-for-cerebrovascular-disease-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: "TAIR: Toolkit for Autonomous Interventions and Robots"
+      URL: https://kitware.github.io/TAIR
+      AuthorName: Kitware
