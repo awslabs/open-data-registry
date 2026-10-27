@@ -1,0 +1,53 @@
+Name: SpotLake AWS Spot Instance Dataset (2025 Sample)
+Description: |
+  SpotLake is a spot instance dataset archive service operated by the DDPS Lab at Hanyang University.
+  This dataset is a one-year sample of its AWS data: every 10-minute snapshot of 2025. For each
+  instance type and Availability Zone on the AWS spot market, a snapshot records the Spot Placement
+  Score, the Spot Instance Advisor interruption frequency band, the spot price, the on-demand price,
+  and the resulting savings. All values come from public AWS APIs and data, and the collection
+  method is documented. It supports research on spot availability, pricing dynamics, and
+  capacity-aware scheduling.
+Documentation: https://github.com/ddps-lab/spotlake-open-data
+Contact: spotlake@hanyang.ac.kr
+ManagedBy: "[DDPS Lab, Hanyang University](https://ddps.cloud)"
+UpdateFrequency: Not updated. Static sample covering calendar year 2025.
+Tags:
+  - aws-pds
+  - cloud computing
+  - economics
+  - infrastructure
+  - csv
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "S. Lee, J. Hwang, and K. Lee, \"SpotLake: Diverse Spot Instance Dataset Archive Service,\" IEEE International Symposium on Workload Characterization (IISWC), 2022. https://doi.org/10.1109/IISWC55918.2022.00029"
+Resources:
+  - Description: Gzip-compressed CSV snapshots, one object per 10 minutes, under data/aws/2025/MM/DD/HH-MM-SS.csv.gz (UTC)
+    ARN: arn:aws:s3:::spotlake-open-data
+    Region: us-west-2
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: SpotLake AWS Spot Instance Dataset (2025 Sample)"
+      URL: https://github.com/ddps-lab/spotlake-open-data/blob/main/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/ddps-lab/spotlake-open-data/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: DDPS Lab, Hanyang University
+      AuthorURL: https://ddps.cloud
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: SpotLake web service
+      URL: https://spotlake.ddps.cloud
+      AuthorName: DDPS Lab, Hanyang University
+      AuthorURL: https://ddps.cloud
+  Publications:
+    - Title: "SpotLake: Diverse Spot Instance Dataset Archive Service"
+      URL: https://doi.org/10.1109/IISWC55918.2022.00029
+      AuthorName: Lee S., Hwang J., Lee K.
+    - Title: Public Spot Instance Dataset Archive Service
+      URL: https://doi.org/10.1145/3543873.3587314
+      AuthorName: Kim K., Park S., Hwang J., Lee H., Kang S., Lee K.
+    - Title: Making Cloud Spot Instance Interruption Events Visible
+      URL: https://doi.org/10.1145/3589334.3645548
+      AuthorName: Kim K., Lee K.
+    - Title: Multi-Node Spot Instances Availability Score Collection System
+      URL: https://doi.org/10.1145/3731545.3735122
+      AuthorName: Cheon S., Kim K., Kim K., Song M., Lee K.
