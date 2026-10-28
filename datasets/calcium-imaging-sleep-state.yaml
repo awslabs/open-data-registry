@@ -1,0 +1,24 @@
+Name: Wide-field calcium imaging sleep state database
+Description: A collection of wide-field calcium imaging (WFCI) sleep and wake recordings
+  collected from twelve transgenic mice expressing GCaMP6f in excitatory neurons.
+  Each mouse underwent a three-hour undisturbed WFCI recording session where wake,
+  REM (rapid eye movement) sleep and NREM (non-REM) sleep was recorded. Each WFCI
+  recording is manually scored by sleep scoring experts in 10-second epochs as wake,
+  NREM or REM by use of adjunct EEG/EMG. The dataset contains annotated WFCI recordings,
+  brain mask and the Paxinos atlas used for defining the brain regions. The dataset
+  was collected as part of a study evaluating a deep learning-based automated sleep
+  state classification method.
+Documentation: https://doi.org/10.13026/prp1-2d11
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/prp1-2d11
+  ARN: arn:aws:s3:::physionet-open/calcium-imaging-sleep-state/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

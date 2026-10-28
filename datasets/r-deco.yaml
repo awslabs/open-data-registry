@@ -1,0 +1,36 @@
+Name: 'R-DECO: An open-source Matlab based graphical user interface for the detection
+  and correction of R-peaks'
+Description: Many of the existing ECG toolboxes focus on the derivation of heart rate
+  variability features from RR-intervals. By doing so, they assume correct detection
+  of the QRS-complexes. However, it is highly likely that not all detections are correct.
+  Therefore, it is recommended to visualize the actual R-peak positions in the ECG
+  signal and allow manual adaptations. As a solution, we present R-DECO, an easy-to-use
+  graphical user interface for the detection and correction of R-peaks. Within R-DECO,
+  the R-peaks are detected by an adaptation of the Pan-Tompkins algorithm. Instead
+  of using all the pre-processing steps of the latter algorithm, the proposed algorithm
+  uses only an envelope-based procedure to flatten the ECG and enhance the QRS-complexes.
+  The algorithm obtained an overall sensitivity of 99.60% and positive predictive
+  value of 99.69% on the MIT/BIH arrhythmia database. Additionally, R-DECO includes
+  support for several input data formats for ECG signals, three basic filters, the
+  possibility to load other R-peak locations and intuitive methods to correct ectopic,
+  wrong, or missed heartbeats. All functionalities can be accessed via the graphical
+  user interface and the analysis results can be exported as Matlab or Excel files.
+  Through its easy-to-use-graphical user interface, R-DECO allows both clinicians
+  and researchers to use all functionalities, without previous knowledge. R-DECO has
+  been developed on Windows 10 using Matlab 2018a. GUIDE, MATLAB’s GUI development
+  environment, was used to design the GUI of R-DECO. It has been tested and proven
+  to be functional for older Matlab versions going back to Matlab 2016a.
+Documentation: https://doi.org/10.13026/x6j7-sp58
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: GNU General Public License version 3
+Resources:
+- Description: https://doi.org/10.13026/x6j7-sp58
+  ARN: arn:aws:s3:::physionet-open/r-deco/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

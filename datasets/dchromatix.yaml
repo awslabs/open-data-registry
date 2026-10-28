@@ -1,0 +1,26 @@
+Name: Data Chromatix
+Description: Analysis of biomedical time series plays a key role in clinical management
+  and basic investigation. However, most conventional monitors streaming data in real-time
+  show only the most recent values, not referenced to past dynamics. The proposed
+  visualization method (termed “data chromatix”) was developed to address this challenge
+  by bringing memory of the system’s past behavior into the current display window.
+  The function DataChromatix.m (version 1.0) assigns a color to each data point of
+  a time series. The color is determined by the values of a normalized histogram (estimated
+  probability density function) computed from a pre-selected segment of the data.
+  The algorithm receives the time series as input and generates a video of its colorized
+  version as it would look on a typical monitor display, as well as a static graph
+  of the entire colorized signal.
+Documentation: https://physionet.org/content/dchromatix/
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://physionet.org/content/dchromatix/
+  ARN: arn:aws:s3:::physionet-open/dchromatix/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

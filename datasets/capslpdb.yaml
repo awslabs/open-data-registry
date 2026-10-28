@@ -1,0 +1,23 @@
+Name: CAP Sleep Database
+Description: The CAP Sleep Database is a collection of 108 polysomnographic recordings
+  registered at the Sleep Disorders Center of the Ospedale Maggiore of Parma, Italy.
+  The waveforms (contained in the .edf files of the database) include at least 3 EEG
+  channels (F3 or F4, C3 or C4 and O1 or O2, referred to A1 or A2), EOG (2 channels),
+  EMG of the submentalis muscle, bilateral anterior tibial EMG, respiration signals
+  (airflow, abdominal and thoracic effort and SaO2) and EKG. Additional traces include
+  EEG bipolar traces, according to the 10-20 international system (Fp1-F3, F3-C3,
+  C3-P3, P3-O1 and/or Fp2-F4, F4-C4, C4-P4, P4-O2).
+Documentation: https://doi.org/10.13026/C2VC79
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/C2VC79
+  ARN: arn:aws:s3:::physionet-open/capslpdb/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

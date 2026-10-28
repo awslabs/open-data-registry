@@ -1,0 +1,35 @@
+Name: GRABMyoFlow - Dataset extension
+Description: 'This dataset is an extension of the Gesture Recognition and Biometrics
+  Electromyogram (GRABMyo) dataset, a comprehensive collection of surface electromyography
+  (sEMG) signals from the forearm and wrist while performing static gestures, designed
+  for hand gesture recognition (HGR) and biometric authentication research. The study
+  extends the dataset in two key aspects: 1) by adding wrist-only recordings from
+  20 newly recruited healthy adults, and 2) by including a dynamic trial at the end
+  of each session. The extension study follows the protocol established in the original
+  study to ensure methodological consistency and reliable data acquisition. Combined
+  with prior wrist recordings, the extended dataset now includes data from 63 participants,
+  significantly increasing the sample size. Signal strength and quality in the new
+  recordings have been validated to match the standards of the original dataset, ensuring
+  uniformity across all subjects. The dynamic gesture recordings included in the extension
+  capture the natural transitions between hand poses, better simulating real-world
+  movement scenarios. These dynamic data enable new avenues for continuous authentication
+  and gesture-event segmentation, directly addressing prior limitations of static-only
+  datasets. Data acquisition employed the established electrode configuration, and
+  open access to the data in the waveform database (WFDB)-format is provided to support
+  the widespread use of research. This enriched dataset enhances both the scale and
+  temporal complexity of the GRABMyo dataset, delivering a robust resource for advancing
+  sEMG-based HGR for human-computer interaction or biometric systems research.'
+Documentation: https://doi.org/10.13026/ah52-zq51
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/ah52-zq51
+  ARN: arn:aws:s3:::physionet-open/grabmyo-flow/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

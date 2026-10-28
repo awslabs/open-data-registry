@@ -1,0 +1,24 @@
+Name: Logistic Regression-HSMM-based Heart Sound Segmentation
+Description: The identification of the exact positions of the first and second heart
+  sounds within a phonocardiogram (PCG), or heart sound segmentation, is an essential
+  step in the automatic analysis of heart sound recordings, allowing for the classification
+  of pathological events. While threshold-based segmentation methods have shown modest
+  success, probabilistic models, such as hidden Markov models, have recently been
+  shown to surpass the capabilities of previous methods. Segmentation performance
+  is further improved when apriori information about the expected duration of the
+  states is incorporated into the model, such as in a hidden semi-Markov model (HSMM).
+  This code provides Matlab algorithms to perform HSMM-based heart sound segmentation.
+Documentation: https://doi.org/10.13026/vnt9-kf93
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: GNU General Public License version 3
+Resources:
+- Description: https://doi.org/10.13026/vnt9-kf93
+  ARN: arn:aws:s3:::physionet-open/hss/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

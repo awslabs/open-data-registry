@@ -1,0 +1,31 @@
+Name: Brno University of Technology Smartphone PPG Database (BUT PPG)
+Description: 'Brno University of Technology Smartphone PPG Database (BUT PPG) is a
+  database created by the cardiology team at the Department of Biomedical Engineering,
+  Brno University of Technology, for the purpose of evaluating PPG quality and estimation
+  of heart rate (HR). The data comprises 3,888 10-second recordings of PPGs and associated
+  ECG signals used for determination of reference HR. All of the signals contain QRS
+  complex positions, most signals contain moreover accelerometric data (ACC), and
+  single-value annotations of blood pressure, blood oxygen saturation and glycaemia.
+  The data were collected from 50 subjects (25 female, 25 male) aged between 19 to
+  76 years at rest and during various types of movement. Recordings were carried out
+  between August 2020 and December 2021. PPG data were collected by smartphones Xiaomi
+  Mi9 and Huawei P20 Pro with sampling frequency of 30 Hz. Reference ECG signals and
+  ACC data were recorded using a mobile recorder Bittium Faros 360 or 180 with a sampling
+  frequency of 1,000 Hz (ECG) and 100 Hz (ACC). Each PPG signal includes annotation
+  of quality and reference HR. PPG signal quality is indicated binary: 1 indicates
+  good quality for HR estimation, 0 indicates signals where HR cannot be detected
+  reliably and thus these signals are unsuitable for any analysis.'
+Documentation: https://doi.org/10.13026/tn53-8153
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/tn53-8153
+  ARN: arn:aws:s3:::physionet-open/butppg/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

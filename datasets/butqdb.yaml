@@ -1,0 +1,33 @@
+Name: Brno University of Technology ECG Quality Database (BUT QDB)
+Description: 'BUT QDB is a database created by the cardiology team at the Department
+  of Biomedical Engineering, Brno University of Technology, for the purpose of evaluating
+  ECG quality. The data comprises 18 long-term recordings of single-lead ECGs and
+  associated 3-axis accelerometer data, collected from 15 subjects (9 female, 6 male)
+  aged between 21 to 83 years. Recordings were carried out between August 2018 and
+  October 2019 while the subjects were undertaking ordinary everyday activities ("free-living
+  conditions"). Data was collected using a mobile ECG and accelerometer (Bittium Faros
+  180) with a sampling frequency of 1,000 Hz for ECG signals and 100 Hz for accelerometer
+  signals. The minimum length of recording is 24 hours. Three signals were fully annotated
+  in terms of ECG signal quality. The remaining 15 signals were annotated in two selected
+  segments, each of 20 minutes in duration. Furthermore, five additional segments
+  of poor signal quality were also annotated. Signal quality was classified as follows:
+  Class 1 indicates that all ECG significant waveforms (P wave, T wave and QRS complex)
+  are clearly visible and their onsets and offsets can be detected reliably; Class
+  2 indicates that the noise level is increased and ECG significant points cannot
+  be reliably detected, but the signal enables reliable QRS detection; Class 3 indicates
+  that QRS complexes cannot be detected reliably and the signal is unsuitable for
+  any further analysis.'
+Documentation: https://doi.org/10.13026/kah4-0w24
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Creative Commons Attribution 4.0 International Public License
+Resources:
+- Description: https://doi.org/10.13026/kah4-0w24
+  ARN: arn:aws:s3:::physionet-open/butqdb/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data

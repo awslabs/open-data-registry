@@ -1,0 +1,24 @@
+Name: ECG Fragment Database for the Exploration of Dangerous Arrhythmia
+Description: The database contains a set of 2 second fragments of ECG signals with
+  rhythm disturbances, which are grouped into separate classes according to the degree
+  of threat to the patient's life. It is intended for practical use to develop and
+  test the efficiency of algorithms for detecting dangerous arrhythmias for continuous
+  monitoring systems. The “MIT-BIH Malignant Ventricular Ectopy Database” (MVED) was
+  selected as the primary source of ECG records. This database contains heart rhythm
+  disturbances necessary for research and is widely used for testing and comparative
+  analysis of various algorithms for detecting arrhythmia threats. The signal is a
+  modified limb lead II (MLII).
+Documentation: https://doi.org/10.13026/kpfg-xs25
+Contact: https://physionet.org/about/#contact_us
+ManagedBy: '[PhysioNet](https://physionet.org/)'
+UpdateFrequency: Not updated
+Tags:
+- aws-pds
+License: Open Data Commons Attribution License v1.0
+Resources:
+- Description: https://doi.org/10.13026/kpfg-xs25
+  ARN: arn:aws:s3:::physionet-open/ecg-fragment-high-risk-label/
+  Region: us-east-1
+  Type: S3 Bucket
+ADXCategories:
+- Healthcare & Life Sciences Data
