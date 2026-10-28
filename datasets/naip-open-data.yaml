@@ -38,7 +38,7 @@ Resources:
       static STAC catalog starts at catalog.json. Paths run state/year/ (and
       state/year/YYYYMMDD/ for acquisitions), with a folder per Item. USDA's metadata and
       seamlines sit beside the county mosaics.
-    ARN: arn:aws:s3:::TODO-bucket-name
+    ARN: arn:aws:s3:::naip-cogs
     Region: us-west-2
     Type: S3 Bucket
     RequesterPays: False
@@ -46,7 +46,7 @@ Resources:
       - "[Documentation](https://github.com/EarthLegend/naip-open-data/tree/main/docs)"
   - Description: >-
       Notifications for new objects in the bucket. Subscribe with Amazon SQS or AWS Lambda.
-    ARN: arn:aws:sns:us-west-2:TODO-account-id:TODO-topic-name
+    ARN: arn:aws:sns:us-west-2:265603449739:naip-cogs-object_created
     Region: us-west-2
     Type: SNS Topic
 DataAtWork:
