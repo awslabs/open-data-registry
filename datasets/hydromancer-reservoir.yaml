@@ -1,0 +1,59 @@
+Name: "Reservoir: Hyperliquid Historical Market Data"
+Description: |
+  Reservoir is a free archive of Hyperliquid exchange data, built from the chain's public data and stored as Parquet files partitioned by day. It covers every fill (trade) on Hyperliquid's own perpetual markets, spot markets, HIP-3 venues and HIP-4 prediction markets from July 2025, plus 1-second candles, daily snapshots of every open position, spot balance and account value, and 1-minute order book snapshots (top 20 levels). It is updated daily.
+
+  #### Datasets
+
+  | Dataset | Path | Starts |
+  | --- | --- | --- |
+  | Every fill on every venue | `s3://hydromancer-reservoir/global/fills/raw/` | 28 Jul 2025 |
+  | Perp fills by venue, plus liquidations, ADL, TWAP and builder fills | `s3://hydromancer-reservoir/by_dex/{venue}/fills/perp/` | 28 Jul 2025 |
+  | Spot fills | `s3://hydromancer-reservoir/global/fills/spot/` | 28 Jul 2025 |
+  | HIP-4 prediction-market fills | `s3://hydromancer-reservoir/global/fills/outcome/` | 2 May 2026 |
+  | 1-second candles | `s3://hydromancer-reservoir/global/candles/1s/` | 31 Jul 2025 |
+  | Position, spot balance and account value snapshots | `s3://hydromancer-reservoir/global/snapshots/` | 29 Jul 2025 (some days missing) |
+  | Order books, 20 levels, every minute | `s3://hydromancer-reservoir/by_dex/{venue}/orderbook/1m/` | 15 Dec 2025 |
+Documentation: https://docs.hydromancer.xyz/reservoir
+Contact: data@hydromancer.xyz
+ManagedBy: "[Hydromancer](https://hydromancer.xyz)"
+UpdateFrequency: Daily. Each UTC day is added the following day, around 10:00 to 12:00 UTC.
+Tags:
+  - blockchain
+  - cryptocurrency
+  - financial markets
+  - market data
+  - trading
+  - parquet
+License: "Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/"
+Citation: "Hydromancer. Reservoir: Hyperliquid historical market data. https://docs.hydromancer.xyz/reservoir"
+Resources:
+  - Description: Hyperliquid fills, candles, snapshots and order books as Parquet files, one folder per UTC day (for example `date=2026-10-08`). `global/` holds every venue together; `by_dex/` splits the same data by venue.
+    ARN: arn:aws:s3:::hydromancer-reservoir
+    Region: ap-northeast-1
+    Type: S3 Bucket
+    RequesterPays: True
+DataAtWork:
+  Tutorials:
+    - Title: How to Query Reservoir's Hyperliquid Data
+      URL: https://hydromancer.xyz/blog/exploring-reservoir
+      AuthorName: Hydromancer
+      AuthorURL: https://hydromancer.xyz
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: Reservoir sample on Hugging Face (liquidations, HIP-4 fills, order books, positions)
+      URL: https://huggingface.co/datasets/realjojo/hyperliquid-reservoir
+      AuthorName: Hydromancer
+      AuthorURL: https://hydromancer.xyz
+    - Title: Reservoir sample on Kaggle
+      URL: https://www.kaggle.com/datasets/realjojo/hyperliquid-reservoir
+      AuthorName: Hydromancer
+      AuthorURL: https://hydromancer.xyz
+    - Title: Reservoir tables and dashboard on Dune
+      URL: https://dune.com/jojo_hydromancer/hyperliquid-reservoir
+      AuthorName: Hydromancer
+      AuthorURL: https://hydromancer.xyz
+  Publications:
+    - Title: "Trading in the Sunshine or in the Shade: Market Impact and Adverse Selection on Hyperliquid"
+      URL: https://arxiv.org/abs/2606.15715
+      AuthorName: Barone D., Lillo F.
