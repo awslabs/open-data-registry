@@ -1,0 +1,68 @@
+Name: NASA OCO-3 Project
+Description: |
+  The ECOSTRESS/OCO-3 (“ECOCO3”) data set consists of spatially and temporally co-located observations from the ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) and the Orbiting Carbon Observatory 3 (OCO-3) instruments currently operating on the International Space Station. Land Surface Temperature, Evapotranspiration, and Water Use Efficiency data products from ECOSTRESS, and Solar-Induced Chlorophyll Fluorescence and Dry-Air Column Mole Fraction CO2 from OCO-3 are matched in space and time over 3°x3° areas across the globe where OCO-3 performs Snapshot Area Map and Target mode observations. The original, native resolution data products are filtered for data quality and spatially averaged onto a 0.005°x0.005° uniform grid, i.e., 557m x 557m or 0.3km2 at the Equator. The aim of the ECOCO3 product is to provide users with synergistic, high-quality data of terrestrial vegetation and atmospheric parameters, for easy and ready use in scientific analysis and modeling. The initial V1.0 release is based on ECOSTRESS Collection 1 and OCO-3 Version 11 data products, for the common measurement period of August 2019 through January 2023, from the start of OCO-3 observations through the end of ECOSTRESS Collection 1.
+  <br>
+
+  #### OCO3_L1aAE
+  Version 11 is the current version of the data set. Older versions will no longer be available and are superseded by Version 11. The Orbiting Carbon Observatory is the first NASA mission designed to collect space-based measurements of atmospheric carbon dioxide with the precision, resolution, and coverage needed to characterize the processes controlling its buildup in the atmosphere. The OCO-3 project uses the LEOStar-2 spacecraft that carries a single instrument. It incorporates three high-resolution spectrometers that make coincident measurements of reflected sunlight in the near-infrared CO2 near 1.61 and 2.06 micrometers and in molecular oxygen (O2) A-Band at 0.76 micrometers. The three spectrometers have different characteristics and are calibrated independently. Their raw data numbers (DN) are delivered correlated in time to the Level 1B process as Level 1A products. Each band has 1016 spectral elements, although some are masked out in the L2 retrieval.This product is the input to the Level 1B process. It is depacketized raw data formatted into a standard granularity with calibrated engineering data (for both science and calibration observations), in the Sample Mode of operation.This is the retrospective processing where the calibration data is estimated from the full timeseries of data (before, during, and after the measurements), and is expected to be of slightly higher quality.
+  <br>
+
+  #### OCO3_L1aAE
+  Version 11r is the current version of the data set. Older versions will no longer be available and are superseded by Version 11r. The Orbiting Carbon Observatory is the first NASA mission designed to collect space-based measurements of atmospheric carbon dioxide with the precision, resolution, and coverage needed to characterize the processes controlling its buildup in the atmosphere. The OCO-3 project uses the LEOStar-2 spacecraft that carries a single instrument. It incorporates three high-resolution spectrometers that make coincident measurements of reflected sunlight in the near-infrared CO2 near 1.61 and 2.06 micrometers and in molecular oxygen (O2) A-Band at 0.76 micrometers. The three spectrometers have different characteristics and are calibrated independently. Their raw data numbers (DN) are delivered correlated in time to the Level 1B process as Level 1A products. Each band has 1016 spectral elements, although some are masked out in the L2 retrieval.This product is the input to the Level 1B process. It is depacketized raw data formatted into a standard granularity with calibrated engineering data (for both science and calibration observations), in the Sample Mode of operation.This is the retrospective processing where the calibration data is estimated from the full timeseries of data (before, during, and after the measurements), and is expected to be of slightly higher quality.
+  <br>
+
+  #### OCO3_L1B_Calibration
+  Version 10r is the current version of the data set. Older versions will no longer be available and are superseded by Version 10r. The Orbiting Carbon Observatory -3 (OCO-3) was deployed to the International Space Station in May, 2019. It is technically a single instrument, almost identical to OCO-2. The Orbiting Carbon Observatory is the first NASA mission designed to collect space-based measurements of atmospheric carbon dioxide with the precision, resolution, and coverage needed to characterize the processes controlling its buildup in the atmosphere. The OCO-3 incorporates three high-resolution spectrometers that make coincident measurements ofreflected sunlight in the near-infrared CO2 near 1.61 and 2.06 micrometers and in molecular oxygen (O2) A-Band at 0.76 micrometers. The three spectrometers have different characteristics and are calibrated independently. Their raw data numbers (DN) are delivered correlated in time to the Level 1B process as Level 1A products. Each band has 1016 spectralelements, although some are masked out in the L2 retrieval. This L1B product results from calibration mode measurements (e.g., Lunar,Solar, Dark observations), and thus it differs from the OCO3_L1B_Science(L1bSc) product. The differences in the product formats are only in the geolocation information provided. Whereas the L1bSc products report geolocation data for each sounding, calibration products report the directionof the boresight vector.This is the retrospective processing where the calibration data is estimated from the full timeseries of data (before, during, and after the measurements), and is expected to be of slightly higher quality. This is the retrospective processing where the calibration data is estimated from the full timeseries of data (before, during, and after the measurements), and is expected to be of slightly higher quality.
+  <br>
+
+  #### OCO3_L2_Lite_FP
+  Version 10.4r is the current version of the data set. Older versions will no longer be available and are superseded by Version 10.4r. The Orbiting Carbon Observatory -3 (OCO-3) was deployed to the International Space Station in May, 2019. It is technically a single instrument, almost identical to OCO-2. The Orbiting Carbon Observatory is the first NASA mission designed to collect space-based measurements of atmospheric carbon dioxide with the precision, resolution, and coverage needed to characterize the processes controlling its buildup in the atmosphere. OCO-3 incorporates three high-resolution spectrometers that make coincident measurements of reflected sunlight in the near-infrared CO2 near 1.61 and 2.06 micrometers and in molecular oxygen (O2) A-Band at 0.76 micrometers. The three spectrometers have different characteristics and are calibrated independently. Oxygen-A Band cloud screening algorithm is one of the primary cloud screening tools implemented in the operational OCO processing pipeline. The algorithm was introduced and applied to early GOSAT data with further analysis performed on OCO-2 simulations. The OCO ABO2 algorithm employs a fast Bayesian retrieval to estimate surface pressure and surface albedo from high resolution spectra of the molecular oxygen (O2) A-band, near 0.765 µm. The radiative transfer forward model (FM) assumes a clear-sky condition, i.e. Rayleigh scattering only, such that differences between the modeled and measured radiances are apparent when the measurement scene contains cloud or aerosol.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://ocov3.jpl.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "ECOCO3 v1.0 - The ECOSTRESS/OCO-3 (“ECOCO3”) data set consists of spatially and temporally co-located observations from the ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) and the Orbiting Carbon Observatory 3 (OCO-3) instruments currently operating on the International Space Station. Land Surface Temperature, Evapotranspiration, and Water Use Efficiency data products from ECOSTRESS, and Solar-Induced Chlorophyll Fluorescence and Dry-Air Column Mole Fraction CO2 from OCO-3 are matched in space and time over 3°x3° areas across the globe where OCO-3 performs Snapshot Area Ma..."
+  ARN: arn:aws:s3:::ecoco3
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OCO3_L1aAE v11 - Version 11 is the current version of the data set. Older versions will no longer be available and are superseded by Version 11."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OCO3_DATA/OCO3_L1aAE.11
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OCO3_L1aAE v11r - Version 11r is the current version of the data set. Older versions will no longer be available and are superseded by Version 11r."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OCO3_DATA/OCO3_L1aAE.11r
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OCO3_L1B_Calibration v10r - Version 10r is the current version of the data set. Older versions will no longer be available and are superseded by Version 10r."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OCO3_DATA/OCO3_L1B_Calibration.10r
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "OCO3_L2_Lite_FP v10.4r - Version 10.4r is the current version of the data set. Older versions will no longer be available and are superseded by Version 10.4r."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/OCO3_DATA/OCO3_L2_Lite_FP.10.4r
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

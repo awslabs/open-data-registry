@@ -1,0 +1,66 @@
+Name: "NOAA's Observations for Global Workflow (GW) Test Cases"
+Description: |
+   A collection of observations necessary to run National Weather Service’s (NWS) GW test cases. These may include incomplete or otherwise immature data or data formats that are subject to change as development proceeds.
+   
+   <br><br>
+   - dump_nr: non-restricted versions of observations from NWS Observation Processing (ObsProc) in Binary Universal Form for the Representation of meteorological data (BUFR) format
+   - dump_ioda_nr: non-restricted observations converted to the Interface for Observation Data Access (IODA) format
+   - experimental_obs: Additional atmospheric and marine observations
+   - GEFS_ExtData: Assorted aerosol emission data
+   - prod_anl_tars: GFS analysis restarts from production in tarball format
+   <br><br>
+
+   GW is the primary driver for many of the NWS’s global models, including the Global Forecast System (GFS), Global Ensemble Forecast System (GEFS), and the upcoming Climate Forecast System (CFS) successor, the Seasonal Forecast System (SFS) and the upcoming Global Chemistry and Aerosols Forecast System (GCAFS). The workflow is currently managed by National Oceanic and Atmospheric Administration (NOAA) Office of Model Development (OMD), which is also the primary developer. The Earth Prediction Innovation Center (EPIC) is responsible for the public release and user support of the GW.
+   
+Documentation: |
+   - NWS ObsProc: https://www.nco.ncep.noaa.gov/pmb/products/obsproc/
+   - IODA: https://jcsda-jedi-docs.readthedocs-hosted.com/en/latest/inside/jedi-components/ioda/introduction.html
+   - Soil Moisture and Ocean Salinity (SMOS) salinity: https://www.esa.int/Applications/Observing_the_Earth/FutureEO/SMOS
+   - Advanced Microwave Scanning Radiometer 2 (AMSR2) sea ice: https://www.earthdata.nasa.gov/data/instruments/amsr2
+   - Advanced Clear‑Sky Processor for Oceans (ACSPO) global Sea Surface Temperature (SST): https://coastwatch.noaa.gov/cwn/processing-algorithms/acspo.html
+   - Emissions: https://global-workflow.readthedocs.io/en/latest/User_Guide/gcafs.html#emissions-preprocessing
+   - Modern‑Era Retrospective analysis for Research and Applications, version 2 (MERRA2): https://gmao.gsfc.nasa.gov/gmao-products/merra-2/data-access_merra-2/
+   - Global Biomass Burning Emissions Product, experimental (GBBEPx): https://www.ospo.noaa.gov/products/land/gbbepx/
+   - Quick Fire Emissions Dataset (QFED): https://github.com/GEOS-ESM/QFED
+   - Community Emissions Data System (CEDS): https://www.pnnl.gov/projects/ceds
+   - Hemispheric Transport of Air Pollution (HTAP): https://edgar.jrc.ec.europa.eu/dataset_htap_v3
+   - Copernicus Atmosphere Monitoring Service (CAMS): https://atmosphere.copernicus.eu/
+   - Model of Emissions of Gases and Aerosols from Nature (MEGAN): https://www2.acom.ucar.edu/modeling/model-emissions-gases-and-aerosols-nature-megan
+   - Global workflow: https://global-workflow.readthedocs.io/en/latest/
+   <br><br>
+  
+Contact:  |
+  For any questions about this particular dataset, please contact Walter.Kolczynski@noaa.gov. For any general questions regarding the NOAA Open Data Dissemination (NODD) Program, email the NODD Team at nodd@noaa.gov.
+  <br /> We also seek to identify case studies on how NOAA data is being used and will be featuring those stories in joint publications and in upcoming events. If you are interested in seeing your story highlighted, please share it with the NODD team by emailing nodd@noaa.gov
+ManagedBy: "[NOAA](http://www.noaa.gov/)"
+UpdateFrequency: |
+  Irregularly, as required to support GW.
+  <br><br>
+Collabs:
+  ASDI:
+    Tags:
+      -  weather
+Tags:
+  - aws-pds
+  - weather
+  - environmental
+  - forecast
+License: |
+  NOAA data disseminated through NODD are open to the public and can be used as desired. NOAA makes data openly available to ensure maximum use of our data, and to spur and encourage exploration and innovation throughout the industry. NOAA requests attribution for the use or dissemination of unaltered NOAA data. However, it is not permissible to state or imply endorsement by or affiliation with NOAA. If you modify NOAA data, you may not state or imply that it is original, unaltered NOAA data.
+  <br><br>
+Resources:
+  - Description: "Observations for Global Workflow (GW) Test Cases"
+    ARN: arn:aws:s3:::noaa-epic-global-release-pds
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://noaa-epic-global-release-pds.s3.amazonaws.com/index.html)'
+  - Description: "New data notifications for Global Workflow Test Cases, only Lambda and SQS protocols allowed"
+    ARN: arn:aws:sns:us-east-1:709902155096:NewEPICGlobalReleaseObject
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tools & Applications:
+    - Title: Running Global Workfow on Supported HPC
+      URL: https://global-workflow.readthedocs.io/en/latest/User_Guide/run_hpc.html
+      AuthorName: "NOAA/NWS/NCEP/EMC" 

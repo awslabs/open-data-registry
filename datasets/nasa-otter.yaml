@@ -1,0 +1,161 @@
+Name: NASA OTTER Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### chem_26
+  Canopy characteristics: leaf chemistry, specific leaf area, LAI, PAR, IPAR, NPP, and standing biomass.
+  <br>
+
+  #### model_36
+  Steve Running's Forest-BGC Model
+  <br>
+
+  #### lai_45
+  LAI estimates computed from unweighted openness by the canopy program from digitized canopy photographs.
+  <br>
+
+  #### spectra_licor_47
+  The variability of bi-directional spectral reflectance of cut conifer foilage between age classes, species and sites measured by LICOR.
+  <br>
+
+  #### spectra_perkin_48
+  Absolute reflectance of leaves measured in the lab by Perkin-Elmer spectrophotometer to aid in understanding remotely sensed spectral data.
+  <br>
+
+  #### meteo_50
+  Meteorology data collected on an hourly basis from stations located near the OTTER sites in 1990 and summarized to monthly data.
+  <br>
+
+  #### airsunp_61
+  Airborne sun photometer data collected from 1990 through 1991 used to provide quantitative atmospheric correction to remotely sensed data of forest reflectance and radiance.
+  <br>
+
+  #### fieldsunp_65
+  Field sun photometer data collected from 1990 through 1991 is used to provide quantitative atmospheric correction to remotely sensed data of forest reflectance and radiance.
+  <br>
+
+  #### spectra_target_74
+  Spectral reflectance measurements of flat field targets as reference points representative of psuedo-invariant targets as measured by the Spectron SE590 spectrophotometer.
+  <br>
+
+  #### spectra_se590_field_80
+  Spectral reflectance measurements made by Spectron SE590 instruments in the context of validation of geometric-optical BRDF models.
+  <br>
+
+  #### spectra_se590_lab_83
+  Laboratory hemispherical reflectance spectra measurements taken to eliminate the effects of atmosphere, understory, exposed soils, mixed species and canopy architecture.
+  <br>
+
+  #### spectra_se590_landscape_84
+  Bidirectional spectral reflectance factors of landscape elements (litter, scrubs and grasses, leaves) measured by the Spectron SE590 spectroradiometer.
+  <br>
+
+  #### spectra_se590_altitude_86
+  Low altitude (Ultralight) spectral reflectances of OTTER research sites measured by Spectron SE590 spectrophotometer.
+  <br>
+
+  #### timber_125
+  Height, crown width, DBH, and height-to-crown distance collected using variable-radius plot sampling with a steel tape and a hand held compass to locate points along a transect.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/OTTER/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "chem_26 v1 - Canopy characteristics: leaf chemistry, specific leaf area, LAI, PAR, IPAR, NPP, and standing biomass."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/chem/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "model_36 v1 - Steve Running's Forest-BGC Model."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/model/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "lai_45 v1 - LAI estimates computed from unweighted openness by the canopy program from digitized canopy photographs."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/lai/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_licor_47 v1 - The variability of bi-directional spectral reflectance of cut conifer foilage between age classes, species and sites measured by LICOR."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_licor/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_perkin_48 v1 - Absolute reflectance of leaves measured in the lab by Perkin-Elmer spectrophotometer to aid in understanding remotely sensed spectral data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_perkin/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "meteo_50 v1 - Meteorology data collected on an hourly basis from stations located near the OTTER sites in 1990 and summarized to monthly data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/meteo/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "airsunp_61 v1 - Airborne sun photometer data collected from 1990 through 1991 used to provide quantitative atmospheric correction to remotely sensed data of forest reflectance and radiance."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/airsunp/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "fieldsunp_65 v1 - Field sun photometer data collected from 1990 through 1991 is used to provide quantitative atmospheric correction to remotely sensed data of forest reflectance and radiance."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/fieldsunp/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_target_74 v1 - Spectral reflectance measurements of flat field targets as reference points representative of psuedo-invariant targets as measured by the Spectron SE590 spectrophotometer."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_target/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_se590_field_80 v1 - Spectral reflectance measurements made by Spectron SE590 instruments in the context of validation of geometric-optical BRDF models."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_se590_field/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_se590_lab_83 v1 - Laboratory hemispherical reflectance spectra measurements taken to eliminate the effects of atmosphere, understory, exposed soils, mixed species and canopy architecture."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_se590_lab/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_se590_landscape_84 v1 - Bidirectional spectral reflectance factors of landscape elements (litter, scrubs and grasses, leaves) measured by the Spectron SE590 spectroradiometer."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_se590_landscape/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "spectra_se590_altitude_86 v1 - Low altitude (Ultralight) spectral reflectances of OTTER research sites measured by Spectron SE590 spectrophotometer."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/spectra_se590_altitude/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "timber_125 v1 - Height, crown width, DBH, and height-to-crown distance collected using variable-radius plot sampling with a steel tape and a hand held compass to locate points along a transect."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/otter/timber/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

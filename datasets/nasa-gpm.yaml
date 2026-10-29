@@ -1,0 +1,296 @@
+Name: NASA GPM Project
+Description: |
+  Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. The 'CLIM' products differ from their 'regular' counterparts (without the 'CLIM' in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the 'CLIM' output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: + TMI (TRMM) + GMI, (GPM) + SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18, F19) + AMSR2 (GCOM-W1) + MHS (NOAA 18,19) + MHS (METOP A,B) + ATMS (NPP) + SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are near-realtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an a-priori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_1CAQUAAMSRE
+  All 1C products have a common L1C data structure, simple and generic. Each L1C swath includes scan time, latitude and longitude, scan status, quality, incidence angle, Sun glint angle, and the intercalibrated brightness temperature (Tc). One or more swaths are included in a product. The radiometer data are recalibrated to a common basis so that precipitation products derived from them are consistent. 1CSSMIS contains common calibrated brightness temperature from the SSMIS passive microwave instruments flown on the DMSP satellites. Swath S1 has 3 low frequency channels (19V 19H 22V). Swath S2 has 2 low frequency channels (37V 37H). Swath S3 has 4 high frequency channels (150H 183+/-1H 183+/-3H 183+/-7H). S4 has 2 high frequency channels (91V 91H). All the above frequencies are in GHz. Earth observations for all four swaths are taken during a 144o segment of the instrument rotation when SSMIS scans in the direction of foreward satellite motion. We define the spacecraft vector (v) at the center of this segment.
+  <br>
+
+  #### GPM_2AGPROFNOAA15AMSUB_CLIM
+  The 'CLIM' products differ from their 'regular' counterparts (without the 'CLIM' in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the 'CLIM' output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. The 2AGPROF (Goddard Profiling) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: + TMI (TRMM) + GMI, (GPM) + SSMI (DMSP F11, F13, F14, F15); SSMIS (DMSP F16, F17, F18, F19) + AMSR2 (GCOM-W1) + MHS (NOAA 18,19) + MHS (METOP A,B) + ATMS (NPP) + SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are nearrealtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an apriori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty
+  <br>
+
+  #### GPM_3GPROFNOAA15AMSUB_DAY_CLIM
+  The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_2AGPROFNOAA20ATMS_CLIM
+  Version 07 is the current version of the data set. The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A&B), ATMS (SNPP and NOAA-20). This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are near-realtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an a-priori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_3GPROFNOAA20ATMS_DAY_CLIM
+  Version 07 is the current version of the data set. Older versions are no longer available and have been superseded by Version 07. The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_2AGPROFNOAA20ATMS
+  Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A&B), ATMS (SNPP and NOAA-20). This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are near-realtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an a-priori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_3GPROFNOAA20ATMS
+  Version 07 is the current version of the data set. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_2AGPROFNOAA21ATMS
+  Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A&B), ATMS (SNPP and NOAA-21). This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are near-realtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an a-priori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_3GPROFNPPATMS
+  3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_3GCSH
+  The Gridded Convective Stratiform Heating (3GCSH) products contain latent heating, Q1-QR and Q2 profiles from DPR raindata. Version 07 is the current version of the data set. Older versions will no longer be available and are superseded by Version 07.
+  <br>
+
+  #### GPM_3HCSH
+  The Gridded Convective Stratiform Heating (3HCSH) products contain latent heating, Q1-QR and Q2 profiles from DPR raindata. Version 07 is the current version of the data set. Older versions will no longer be available and are superseded by Version 07.
+  <br>
+
+  #### GPM_2HSLH
+  Version 6B of these data were introduced in July, 2020. Please, see documentation tab for release notes. Latent heating variables are retrieved utilizing two separate algorithms for tropics and for mid-latitudes. First, location of each GPM KuPR pixel is assigned to either tropics or mid-latitudes, depending on monthly maps of precipitation types determined in a similar manner as described in Takayabu (2008). Then, three dimensional convective latent heating are retrieved, Q1-QR (Q1R), and Q2, applying either tropical/mid-latitude algorithms to precipitation data observed from GPM DPR (KuPR). Here, Q1 and Q2 are apparent heat source and apparent moisture sink, respectively, introduced by Yanai et al. (1973), and QR is radiative heating of the atmosphere.
+  <br>
+
+  #### GPM_BASEGPMGMI
+  Version 07 is the current version of the data set. Older versions are no longer available and have been superseded by the current version. GMI is a multi-channel, conical- scanning, microwave radiometer. The BASEGPMGMI product contains unaltered data directly from the Global Microwave Imager (GMI) aboard the GPM core satellite. It is the standard GMI calibration product with full precision of all physical fields. It contains one full orbit with no overlaps to other orbits in the production, although up to 200 overlap scans may be used for multi-scan calibration in the process. If there is enough bandwidth, the entire circle of GMI samples will be sent down. The BASEGPMGMI product's swaths 4 and 5 contain all of the samples that are sent down. Later products only use the subset of these data that contains the Earth view, hot load, and cold sky samples.
+  <br>
+
+  #### GPM_3IMERGHHE
+  Version 07B is the current version of the IMERG data sets. Older versions will no longer be available and have been superseded by Version 07. The Integrated Multi-satellitE Retrievals for GPM (IMERG) is the unified U.S. algorithm that provides the multi-satellite precipitation product for the U.S. GPM team. The precipitation estimates from the various precipitation-relevant satellite passive microwave (PMW) sensors comprising the GPM constellation are computed using the 2021 version of the Goddard Profiling Algorithm (GPROF2021), then gridded, intercalibrated to the GPM Combined Ku Radar-Radiometer Algorithm (CORRA) product, and merged into half-hourly 0.1°x0.1° (roughly 10x10 km) fields. Note that CORRA is adjusted to the monthly Global Precipitation Climatology Project (GPCP) Satellite-Gauge (SG) product over high-latitude ocean to correct known biases. The half-hourly intercalibrated merged PMW estimates are then input to both a Morphing-Kalman Filter (KF) Lagrangian time interpolation scheme based on work by the Climate Prediction Center (CPC) and the Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks (PERSIANN) Dynamic Infrared–Rain Rate (PDIR) re-calibration scheme. In parallel, CPC assembles the zenith-angle-corrected, intercalibrated merged geo-IR fields and forwards them to PPS for input to the PERSIANN-CCS algorithm (supported by an asynchronous re-calibration cycle) which are then input to the KF morphing (quasi-Lagrangian time interpolation) scheme. The KF morphing (supported by an asynchronous KF weights updating cycle) uses the PMW and IR estimates to create half-hourly estimates. Motion vectors for the morphing are computed by maximizing the pattern correlation of successive hours within each of the precipitation (PRECTOT), total precipitable liquid water (TQL), and vertically integrated vapor (TQV) data fields provided by the Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2) and Goddard Earth Observing System model Version 5 (GEOS-5) Forward Processing (FP) for the post-real-time (Final) Run and the near-real-time (Early and Late) Runs, respectively. The vectors from PRECTOT are chosen if available, else from TQL, if available, else from TQV. The KF uses the morphed data as the “forecast” and the IR estimates as the “observations”, with weighting that depends on the time interval(s) away from the microwave overpass time. The IR becomes important after about ±90 minutes away from the overpass time. Variable averaging in the KF is accounted for in a routine (Scheme for Histogram Adjustment with Ranked Precipitation Estimates in the Neighborhood, or SHARPEN) that compares the local histogram of KF morphed precipitation to the local histogram of forward- and backward-morphed microwave data and the IR. The IMERG system is run twice in near-real time: "Early" multi-satellite product ~4 hr after observation time using only forward morphing and "Late" multi-satellite product ~14 hr after observation time, using both forward and backward morphing and once after the monthly gauge analysis is received: "Final", satellite-gauge product ~4 months after the observation month, using both forward and backward morphing and including monthly gauge analyses. In V07, the near-real-time Early and Late half-hourly estimates have a monthly climatological concluding calibration based on averaging the concluding calibrations computed in the Final, while in the post-real-time Final Run the multi-satellite half-hourly estimates are adjusted so that they sum to the Final Run monthly satellite-gauge combination. In all cases the output contains multiple fields that provide information on the input data, selected intermediate fields, and estimation quality. In general, the complete calibrated precipitation, precipitation, is the data field of choice for most users. Precipitation phase is a diagnostic variable computed using analyses of surface temperature, humidity, and pressure.
+  <br>
+
+  #### GPM_2AGPROFMETOPCMHS
+  Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A;B;C), ATMS (NPP), SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are near-realtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an a-priori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty. ABSTRACT
+  <br>
+
+  #### GPM_1CMETOPCMHS
+  Version 07 is the current version of the data set. 1CAMSR2 contains common calibrated brightness temperature from the AMSR2 passive microwave instrument flown on the GCOMW1 satellite. This products contains 6 swaths. Swath 1 has channels 10.65V 10.65H. Swath 2 has channels 18.7V 18.7H. Swath 3 has channels 23.8V 23.8H. Swath 4 has channels 36.5V 36.5H. Swath S5 has 2 high frequency A-Scan channels (89V 89H). Swath S6 has 2 high frequency B-Scan channels (89V 89H). Data for all six swaths is observed in the same revolution of the instrument. High frequency A and high frequency B data are observed in separate feedhorns. All 1C products have a common L1C data structure, simple and generic. Each L1C swath includes scan time, latitude and longitude, scan status, quality, incidence angle, Sun glint angle, and the intercalibrated brightness temperature (Tc). One or more swaths are included in a product. The radiometer data are recalibrated to a common basis so that precipitation products derived from them are consistent.
+  <br>
+
+  #### GPM_3CMB_TRMM_DAY
+  This a new (GPM-formated) TRMM product, for the TRMM epoch (December 1997 - April 2015), created using GPM Algorithms. There is no equivalent in the old TRMM suite of products. This is the GPM-like formatted TRMM Combined Precipitation (TRMM Ku radar and microwave radiometer/imager), first released with the "V8" TRMM reprocessing. Combined Radar-Radiometer Algorithm performs two basic functions: First, it provides, in principle, the most accurate, high resolution estimates of surface rainfall rate and precipitation vertical distributions that can be achieved from a spaceborne platform, and it is therefore valuable for applications where information regarding instantaneous storm structure are vital. Second, a global, representative collection of combined algorithm estimates will yield a single common reference dataset that can be used to “cross-calibrate” rain rate estimates from all of the passive microwave radiometers in the TRMM and GPM constellations. The cross-calibration of radiometer estimates is crucial for developing a consistent, high time-resolution precipitation record for climate science and prediction model validation applications.
+  <br>
+
+  #### GPM_3CMB_TRMM
+  This is the new (GPM-formated) TRMM Combined product, using the GPM algorithms, for the TRMM epoch (December 1997 - April 2015). It replaces the old TRMM_3B31 This is the GPM-like formatted TRMM Combined Precipitation (TRMM Ku radar and microwave radiometer/imager), first released with the "V8" TRMM reprocessing. The corresponding GPM Combined product is archived under the name GPM_3CMB, with beginning date March 2014. Gombined Radar-Radiometer Algorithm performs two basic functions: First, it provides, in principle, the most accurate, high resolution estimates of surface rainfall rate and precipitation vertical distributions that can be achieved from a spaceborne platform, and it is therefore valuable for applications where information regarding instantaneous storm structure are vital. Second, a global, representative collection of combined algorithm estimates will yield a single common reference dataset that can be used to “cross-calibrate” rain rate estimates from all of the passive microwave radiometers in the TRMM and GPM constellations. The cross-calibration of radiometer estimates is crucial for developing a consistent, high time-resolution precipitation record for climate science and prediction model validation applications.
+  <br>
+
+  #### GPM_2BCMB_TRMM
+  This is the new (GPM-formated) TRMM Combined product, using the GPM algorithms, for the TRMM epoch (December 1997 - April 2015). It replaces the old TRMM_2B31 This is the GPM-like formatted TRMM Combined Precipitation (TRMM Ku radar and microwave radiometer/imager), first released with the "V8" TRMM reprocessing. The corresponding GPM Combined product is archived under the name GPM_2BCMB, with beginning date March 2014. Gombined Radar-Radiometer Algorithm performs two basic functions: First, it provides, in principle, the most accurate, high resolution estimates of surface rainfall rate and precipitation vertical distributions that can be achieved from a spaceborne platform, and it is therefore valuable for applications where information regarding instantaneous storm structure are vital. Second, a global, representative collection of combined algorithm estimates will yield a single common reference dataset that can be used to “cross-calibrate” rain rate estimates from all of the passive microwave radiometers in the TRMM and GPM constellations. The cross-calibration of radiometer estimates is crucial for developing a consistent, high time-resolution precipitation record for climate science and prediction model validation applications.
+  <br>
+
+  #### GPM_2APRPSMT1SAPHIR_CLIM
+  Version 6 is the current version of this dataset. Older versions are no longer available and have been superseded by Version 6. The Precipitation Retrieval and Profiling Scheme (PRPS)is designed to provide a best estimate of precipitation based upon matched SAPHIR-DPR observations. This fulfils in part the essence of GPM (and its predecessor, TRMM) in which the core observatory acts as a calibrator of precipitation retrievals for the international constellation of passive microwave instruments. In doing so the retrievals from the partner constellation sensors are able to provide greater temporal sampling and great spatial coverage than is possible from the DPR instrument alone. However, the limitations of the DPR instrument are transferred through the retrieval scheme to the resulting precipitation products. Fundamental to the design of the PRPS is the independence from any dynamic ancillary data sets: the retrieval is based solely upon the satellite radiances, a static a priori radiance-rainrate database (and index), and (static) topographical data. Critically, the technique is independent of any model information, unlike the retrievals generated through the Goddard PROFiling (GPROF) scheme: this independence is advantageous when generating products across time scales from near real-time (inaccessibility to model data) to climatological scales (circumventing trends in model data). The algorithm is designed to generate instantaneous estimates of precipitation at a constant resolution (regardless of scan position), for all scan positions and scan lines. In addition to the actual precipitation estimate, an assessment of the error is made, and a measure of the ‘fit’ of the observations to the database provided. A quality flag is also provided, with any bad data generating a ‘missing flag’ in the retrieval.
+  <br>
+
+  #### GPM_2AGPROFF08SSMI_CLIM
+  Version 7 is the current version of the data set. Older versions will no longer be available and have been superseded by the current version. The 'CLIM' products differ from their 'regular' counterparts (without the 'CLIM' in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the 'CLIM' output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. The 2AGPROF (Goddard Profiling) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: + TMI (TRMM) + GMI, (GPM) + SSMI (DMSP F11, F13, F14, F15); SSMIS (DMSP F16, F17, F18, F19) + AMSR2 (GCOM-W1) + MHS (NOAA 18,19) + MHS (METOP A,B) + ATMS (NPP) + SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are nearrealtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an apriori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_2AGPROFTRMMTMI_CLIM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_2A12 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. The 2AGPROF (Goddard Profiling) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: + TMI (TRMM) + GMI, (GPM) + SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18, F19) + AMSR2 (GCOM-W1) + MHS (NOAA 18,19) + MHS (METOP A,B) + ATMS (NPP) + SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM. For each sensor, there are nearrealtime (NRT) products, standard products, and climate products. These differ only in the amount of data that are available within 3 hours, 48 hours, and 3 months of collection, as well as the ancillary data used. The NRT product uses GANAL forecast fields. Standard products use the GANAL analysis product, while the climate product uses ECMWF reanalysis in order to allow for consistent data records with earlier missions. These earlier data may be archived separately. The main strength of the product is the large sampling provided. The GPM radiometer algorithms are Bayesian-type algorithms. These algorithms search an apriori database of potential rain profiles and retrieve a weighted average of these entries based upon the proximity of the observed brightness temperature (Tb) to the simulated Tb corresponding to each rain profile. By using the same a-priori database of rain profiles, with appropriate simulated Tb for each constellation sensor, the Bayesian method is completely parametric and thus well suited for GPM's constellation approach. The a-priori information will be supplied by the combined algorithm supplied by GPM's core satellite as soon after launch as feasible. Databases for V0 of the algorithm had to be constructed from various sources as described in the ATBD. The solution provides a mean rain rate as well as the vertical structure of cloud and precipitation hydrometeors and their uncertainty.
+  <br>
+
+  #### GPM_3GPROFTRMMTMI_DAY_CLIM
+  This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products. Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_3GPROFTRMMTMI_CLIM
+  This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3A12,3A11 Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07. The "CLIM" products differ from their "regular" counterparts (without the "CLIM" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series. Hence, the ECMWF-Interim (European Centre for Medium-Range Weather Forecasts, 2-3 months lag behind the regular production) reanalysis is used as ancillary data to derive surface and atmospheric conditions required by the GPROF algorithm for the "CLIM" output. The GPROF databases are also adjusted accordingly for these climate-referenced retrievals. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere.
+  <br>
+
+  #### GPM_IMERG_LandSeaMask
+  Version 2 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 2. This land sea mask originated from the NOAA group at SSEC in the 1980s. It was originally produced at 1/6 deg resolution, and then regridded for the purposes of GPCP, TMPA, and IMERG precipitation products. NASA code 610.2, Terrestrial Information Systems Laboratory, restructured this land sea mask to match the IMERG grid, and converted the file to CF-compliant netCDF4. Version 2 was created in May, 2019 to resolve detected inaccuracies in coastal regions. Users should be aware that this is a static mask, i.e. there is no seasonal or annual variability, and it is due for update. It is not recommended to be used outside of the aforementioned precipitation data.
+  <br>
+
+  #### GPM_MERGIR
+  These data originate from NOAA/NCEP. The NOAA Climate Prediction Center/NCEP/NWS is making the data available originally in binary format, in a weekly rotating archive. The NASA GES DISC is acquiring the binary files as they become available, converts them into CF (Climate and Forecast) -convention compliant netCDF-4 format, and stores the product in a permanent archive. The original record started from February, 2000, but in June, 2025 it was extended back to January, 1998. The leading edge of data availability is delayed by about 24 hours from real-time to abide by international data exchange agreements between NOAA and EUMETSAT (the METEOSAT data providers). The data contain globally-merged (60°S-60°N) 4-km pixel-resolution IR brightness temperature data (equivalent blackbody temps), merged from the European, Japanese, and U.S. geostationary satellites over the period of record (GOES-8/9/10/11/12/13/14/15/16/17/18/19, METEOSAT-5/7/8/9/10/11, and GMS-5/MTSat-1R/2/Himawari-8/9). The global geo-IR are dynamically calibrated to GOES East, using a 35 day trailing inter-calibration using time/space-matched IR Tb’s at the mid-point between sub-satellite positions. In the event of duplicate data in a grid box, the value with the smaller zenith angle is taken. The data have been corrected for "zenith angle dependence", in which IR temperatures for locations far from satellite nadir are erroneously cold due to a combination of geometric effects and radiometric path extinction effects (Joyce et al. 2001). Finally, the data are re-navigated for parallax, which shifts the geo-location of the GEO-IR footprints to approximately account for the cloud tops that the IR “sees” being displaced away from their actual geographic location when viewed along a slanted path. These corrections allow for the merging of the IR data from the various GEO-satellites with greatly reduced discontinuities at GEO-satellite data boundaries. In the event of duplicate data in a grid box, the value with the smaller zenith angle is taken. The NASA GES DISC is curating these data in a self-documenting, CF-compliant, netCDF-4 format, which allows a broad range of applications to access the data directly, without the need to cope with the original binary data format. In addition to the direct download of netCDF-4 data, the GES DISC provides data download in binary, ASCII, and netCDF-3 formats using the OPeNDAP interface which also provides remote data access. Similarities with the original ----------------------------- As in the original binaries, every netCDF-4 file covers one hour, and contains two half-hourly grids, at 4-km grid cell resolution. Differences from the original ----------------------------- 1. The data in the netCDF-4 files are already converted to physical values of Brightness Temperatures in Kelvin. Because the original data values are round with no decimal precision, the data type in the netCDF-4 files has been changed to 2-byte signed integer, a transition that took place in mid-August, 2025. This reduces the file size and speeds up data download and remote access. There is no need to further scale these data. The netCDF-4 format is machine-independent and users need not worry about the endian-ness of their machines. 2. To meet the requirements of collection spatial metadata, the grid is re-ordered from the original and now goes from -180 (West) to 180 (East). It is also starting from -60 (South). The data and time units are reflected in the corresponding "units" attributes, and grid dimensions are described by longitude ("lon"), latitude ("lat") and "time" vectors. Thus, any CF-compliant tool should automatically understand the setup in the data files and the starting time for each half-hourly grid. Even without such tools, simple "ncdump" or "h5dump" command line tools will easily disclose the netCDF-4 files configuration. Acknowledgements ------------------ The creation of the original data at NOAA/NCEP is supported by funding from the NOAA Office of Global Programs for the Global Precipitation Climatology Project (GPCP) and by NASA via the Tropical Rainfall Measuring Mission (TRMM). The permanent archive at GES DISC is supported by NASA's HQ Earth Science Data Systems (ESDS) Program.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://gpm.nasa.gov
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- climate
+- earth observation
+- ice
+- netcdf
+- oceans
+- precipitation
+- radar
+- satellite imagery
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GPM_2AGPROFGCOMW1AMSR2_CLIM v07 - Version 07 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 07."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFGCOMW1AMSR2_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1CAQUAAMSRE v07 - All 1C products have a common L1C data structure, simple and generic. Each L1C swath includes scan time, latitude and longitude, scan status, quality, incidence angle, Sun glint angle, and the intercalibrated brightness temperature (Tc)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L1C/GPM_1CAQUAAMSRE.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFNOAA15AMSUB_CLIM v07 - The 'CLIM' products differ from their 'regular' counterparts (without the 'CLIM' in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFNOAA15AMSUB_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFNOAA15AMSUB_DAY_CLIM v07 - The \"CLIM\" products differ from their \"regular\" counterparts (without the \"CLIM\" in the name) by the ancillary data they use. They are Climate-Reference products, which requires homogeneous ancillary data over the climate time series."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GPROFNOAA15AMSUB_DAY_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFNOAA20ATMS_CLIM v07 - Version 07 is the current version of the data set. The \"CLIM\" products differ from their \"regular\" counterparts (without the \"CLIM\" in the name) by the ancillary data they use."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFNOAA20ATMS_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFNOAA20ATMS_DAY_CLIM v07 - Version 07 is the current version of the data set. Older versions are no longer available and have been superseded by Version 07."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GPROFNOAA20ATMS_DAY_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFNOAA20ATMS v07 - Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A&B), ATMS (SNPP and NOAA-20)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFNOAA20ATMS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFNOAA20ATMS v07 - Version 07 is the current version of the data set. 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GPROFNOAA20ATMS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFNOAA21ATMS v07 - Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A&B), ATMS (SNPP and NOAA-21)."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFNOAA21ATMS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFNPPATMS v07 - 3GPROF products provide global gridded monthly/daily precipitation averages from multiple satellites that can be used for climate studies. The 3GPROF products are based on retrievals from high-quality microwave sensors, which are sensitive to liquid and ice-phase precipitation hydrometeors in the atmosphere."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GPROFNPPATMS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GCSH v07 - The Gridded Convective Stratiform Heating (3GCSH) products contain latent heating, Q1-QR and Q2 profiles from DPR raindata. Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3GCSH.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3HCSH v07 - The Gridded Convective Stratiform Heating (3HCSH) products contain latent heating, Q1-QR and Q2 profiles from DPR raindata. Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3HCSH.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2HSLH v07 - Version 6B of these data were introduced in July, 2020. Please, see documentation tab for release notes."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2HSLH.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_BASEGPMGMI v07 - Version 07 is the current version of the data set. Older versions are no longer available and have been superseded by the current version."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L1BASE/GPM_BASEGPMGMI.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3IMERGHHE v07 - Version 07B is the current version of the IMERG data sets. Older versions will no longer be available and have been superseded by Version 07."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L3/GPM_3IMERGHHE.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFMETOPCMHS v07 - Version 07 is the current version of the data set. The 2AGPROF (also known as, GPM GPROF (Level 2)) algorithm retrieves consistent precipitation and related science fields from the following GMI and partner passive microwave sensors: GMI, SSMI (DMSP F15), SSMIS (DMSP F16, F17, F18) AMSR2 (GCOM-W1), TMI MHS (NOAA 18&19, METOP A;B;C), ATMS (NPP), SAPHIR (MT1) This provides the bulk of the 3-hour coverage achieved by GPM."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFMETOPCMHS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_1CMETOPCMHS v07 - Version 07 is the current version of the data set. 1CAMSR2 contains common calibrated brightness temperature from the AMSR2 passive microwave instrument flown on the GCOMW1 satellite."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L1C/GPM_1CMETOPCMHS.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3CMB_TRMM_DAY v07 - This a new (GPM-formated) TRMM product, for the TRMM epoch (December 1997 - April 2015), created using GPM Algorithms. There is no equivalent in the old TRMM suite of products."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3CMB_TRMM_DAY.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3CMB_TRMM v07 - This is the new (GPM-formated) TRMM Combined product, using the GPM algorithms, for the TRMM epoch (December 1997 - April 2015). It replaces the old TRMM_3B31 This is the GPM-like formatted TRMM Combined Precipitation (TRMM Ku radar and microwave radiometer/imager), first released with the \"V8\" TRMM reprocessing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3CMB_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2BCMB_TRMM v07 - This is the new (GPM-formated) TRMM Combined product, using the GPM algorithms, for the TRMM epoch (December 1997 - April 2015). It replaces the old TRMM_2B31 This is the GPM-like formatted TRMM Combined Precipitation (TRMM Ku radar and microwave radiometer/imager), first released with the \"V8\" TRMM reprocessing."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/GPM_2BCMB_TRMM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2APRPSMT1SAPHIR_CLIM v06 - Version 6 is the current version of this dataset. Older versions are no longer available and have been superseded by Version 6."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2APRPSMT1SAPHIR_CLIM.06
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFF08SSMI_CLIM v07 - Version 7 is the current version of the data set. Older versions will no longer be available and have been superseded by the current version."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GPM_L2/GPM_2AGPROFF08SSMI_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_2AGPROFTRMMTMI_CLIM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_2A12 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L2/GPM_2AGPROFTRMMTMI_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFTRMMTMI_DAY_CLIM v07 - This a new (GPM-formated) TRMM product. There is no equivalent in the old TRMM suite of products."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3GPROFTRMMTMI_DAY_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_3GPROFTRMMTMI_CLIM v07 - This is the new (GPM-formated) TRMM product. It replaces the old TRMM_3A12,3A11 Version 07 is the current version of the data set."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/TRMM_L3/GPM_3GPROFTRMMTMI_CLIM.07
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_IMERG_LandSeaMask v2 - Version 2 is the current version of the data set. Older versions will no longer be available and have been superseded by Version 2."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/AUXILIARY/GPM_IMERG_LandSeaMask.2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GPM_MERGIR v1 - These data originate from NOAA/NCEP. The NOAA Climate Prediction Center/NCEP/NWS is making the data available originally in binary format, in a weekly rotating archive."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/MERGED_IR/GPM_MERGIR.1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials

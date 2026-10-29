@@ -1,0 +1,952 @@
+Name: NASA Vegetation Project
+Description: |
+  This global data set of photosynthetic rates and leaf nutrient traits was compiled from a comprehensive literature review. It includes estimates of Vcmax (maximum rate of carboxylation), Jmax (maximum rate of electron transport), leaf nitrogen content (N), leaf phosphorus content (P), and specific leaf area (SLA) data from both experimental and ambient field conditions, for a total of 325 species and treatment combinations. Both the original published Vcmax and Jmax values as well as estimates at standard temperature are reported. The maximum rate of carboxylation (Vcmax) and the maximum rate of electron transport (Jmax) are primary determinants of photosynthetic rates in plants, and modeled carbon fluxes are highly sensitive to these parameters. Previous studies have shown that Vcmax and Jmax correlate with leaf nitrogen across species and regions, and locally across species with leaf phosphorus and specific leaf area, yet no universal relationship suitable for global-scale models is currently available. These data are suitable for exploring the general relationships of Vcmax and Jmax with each other and with leaf N, P and SLA. This data set contains one .csv file.
+  <br>
+
+  #### Leaf_Carbon_Nutrients_1106
+  This data set provides carbon (C), nitrogen (N), phosphorus (P), potassium (K), calcium (Ca), and magnesium (Mg) concentrations in green and senesced leaves. Vegetation characteristics reported include species growth habit, leaf area, mass, and mass loss with senescence. The data were compiled from 86 selected studies in 31 countries, and resulted in approximately 1,000 data points for both green and senesced leaves from woody and non-woody vegetation as described in Vergutz et al (2012). The studies were conducted from 1970-2009. There are two comma-delimited data files with this data set.
+  <br>
+
+  #### LAI_Woody_Plants_1231
+  This data set provides global leaf area index (LAI) values for woody species. The data are a compilation of field-observed data from 1,216 locations obtained from 554 literature sources published between 1932 and 2011. Only site-specific maximum LAI values were included from the sources; values affected by significant artificial treatments (e.g. continuous fertilization and/or irrigation) and LAI values that were low due to drought or disturbance (e.g. intensive thinning, wildfire, or disease), or because vegetation was immature or old/declining, were excluded (Lio et al., 2014). To maximize the generic applicability of the data, original LAI values from source literature and values standardized using the definition of half of total surface area (HSA) are included. Supporting information, such as geographical coordinates of plot, altitude, stand age, name of dominant species, plant functional types, and climate data are also provided in the data file. There is one data file in comma-separated (.csv) format with this data set and one companion file which provides the data sources.
+  <br>
+
+  #### Global_Litter_Carbon_Nutrients_1244
+  Measurement data of aboveground litterfall and littermass and litter carbon, nitrogen, and nutrient concentrations were extracted from 685 original literature sources and compiled into a comprehensive database to support the analysis of global patterns of carbon and nutrients in litterfall and litter pools. Data are included from sources dating from 1827 to 1997. The reported data include the literature reference, general site information (description, latitude, longitude, and elevation), site climate data (mean annual temperature and precipitation), site vegetation characteristics (management, stand age, ecosystem and vegetation-type codes), annual quantities of litterfall (by class, kg m-2 yr-1), litter pool mass (by class and litter layer, kg m-2), and concentrations of nitrogen (N), phosphorus (P), and base cations for the litterfall (g m-2 yr-1) and litter pool components (g m-2). The investigators intent was to compile a comprehensive data set of individual direct field measurements as reported by researchers. While the primary emphasis was on acquiring C data, measurements of N, P, and base cations were also obtained, although the database is sparse for elements other than C and N. Each of the 1,497 records in the database represents a measurement site. Replicate measurements were averaged according to conventions described in Section 5 and recorded for each site in the database. The sites were at 575 different locations.
+  <br>
+
+  #### Amazon_ForestStructure_LIDAR_2412
+  This dataset provides initial condition files for initializing the Ecosystem Demography Model (ED2). This dataset holds regional forest structure characteristics across the Brazilian Amazon that were derived from 545 airborne lidar transects (300 x 12500 m each) acquired during the Amazon Biomass Estimation Project (EBA2016) campaign in 2016. These data contain vertical distributions of stem density, carbon storage, and other vegetation traits for over 1,300,000 columns (50 x 50 m each) that were aggregated into 288 grid cells (1 x 1 degree). This dataset also contains soil edaphic characteristics obtained from existing datasets and carbon stored in litter and soil layers estimated from the land use history and limited measurements in different land use types. Three types of files are provided: Site files (.sss) hold soil and terrain characteristics. Patch files (.sss) hold patch location, area, disturbance type, stem density, stem basal area, leaf area index (LAI), aboveground biomass (AGB), along with carbon and nitrogen density in several categories for patches within sites. Cohort files (.css) hold diameter at breast height, plant height, stem density, mass of living and dead biomass, LAI, AGB), and plant functional type for cohorts of stems within patches and sites. The data are provided in text format compatible with the ED2 model.
+  <br>
+
+  #### Non-Forest_Trees_Sahara_Sahel_1832
+  This dataset provides georeferenced polygon vectors of individual tree canopy geometries for dryland areas in West African Sahara and Sahel that were derived using deep learning applied to 50-cm resolution satellite imagery. More than 1.8 billion non-forest trees (i.e., woody plants with a crown size over 3 m2) over about 1.3 million km2 were identified from panchromatic and pansharpened normalized difference vegetation index (NDVI) images at 0.5-m spatial resolution using an automatic tree detection framework based on supervised deep-learning techniques. Combined with existing and future fieldwork, these data lay the foundation for a comprehensive database that contains information on all individual trees outside of forests and could provide accurate estimates of woody carbon in arid and semi-arid areas throughout the Earth for the first time.
+  <br>
+
+  #### LULC_Nigeria_Ethiopia_SAfrica_2367
+  This dataset provides a two-tier annual Land Use (LU) and Urban Land Cover (LC) product suite over three African countries, Ethiopia, Nigeria, and South Africa, across a 5-year period of 2016-2020. Remote sensing data sources were used to create 30-m resolution LU maps (Tier-1), which were then utilized to delineate urban boundaries for 10-m resolution LC classes (Tier-2). Random Forest machine learning classifier models were trained on reference data for each tier and country (but one model was trained across all years); models were validated using a separate reference data set for each tier and country. Tier-1 LU maps were based on the 30-m Landsat time series, and Tier-2 urban LC maps were based on the 10-m Sentinel-2 time series. Additional data sources included climate, topography, night-time light, and soils. The overall map accuracy was 65-80% for Tier-1 maps and 60-80% for Tier-2 maps, depending on the year and country. The data are provided in cloud optimized GeoTIFF (COG) format.
+  <br>
+
+  #### BASIN_TCP_963
+  This data set reports stable isotope ratio data of CO2 (13C/12C and 18O/16O) associated with photosynthetic and respiratory exchanges across the biosphere-atmosphere boundary. Measurements were made at selected AmeriFlux sites including Harvard Forest, Howland Forest, Rannells Flint Hills Prairie, Niwot Ridge Forest, and the Wind River Canopy Crane Site, which span the dominant ecosystem types of the United States. These data were collected periodically from 2001 through 2004 and are available as an ASCII comma separated file. The goal of this Terrestrial Carbon Processes (TCP) project is to better capture isotopic effects of ecosystem-atmosphere interaction at diurnal, seasonal and interannual time scales by long-term monitoring 13C of CO2 exchange with the atmosphere at weekly intervals. Photosynthesis and respiration in terrestrial ecosystems have opposite effects on diurnal and seasonal patterns on atmospheric CO2 concentration and isotope ratios. This isotopic variation contains information about the functioning of different terrestrial ecosystems.
+  <br>
+
+  #### biomass_allocation_703
+  This data set of leaf, stem, and root biomass for various plant taxa was compiled from the primary literature of the 20th century with a significant portion derived from Cannell (1982). Recent allometric additions include measurements made by Niklas and colleagues (Niklas, 2003). This is a unique data set with which to evaluate allometric patterns of standing biomass within and across the broad spectrum of vascular plant species. Despite its importance to ecology, global climate research, and evolutionary and ecological theory, the general principles underlying how plant metabolic production is allocated to above- and below-ground biomass remain unclear. The resulting uncertainty severely limits the accuracy of models for many ecologically and evolutionarily important phenomena across taxonomically diverse communities. Thus, although quantitative assessments of biomass allocation patterns are central to biology, theoretical or empirical assessments of these patterns remain contentious.
+  <br>
+
+  #### LaSelva_Land_Use_1312
+  This data set contains land-use, canopy height, and aboveground carbon estimates derived from LiDAR data collected at La Selva Biological Station in Costa Rica in March 1998 and March 2005. The data are provided as GeoTIFFs (.tif) of 100-m (1-ha) resolution. A look-up table is provided that relates modeled changes in height to changes in stand characteristics (including age and carbon content). The data were used to test the accuracy and scale-dependency of high-resolution predictions of vegetation dynamics and carbon flux by the Ecosystem Demography (ED). The ED model is an individual-based terrestrial ecosystem model that predicts both ecosystem structure and corresponding ecosystem fluxes from climate, soil, and land-use inputs.
+  <br>
+
+  #### Semi-Arid_Tree_Carbon_50cm_2117
+  This dataset provides allometrically-estimated carbon stocks of 9,947,310,221 tree crowns derived from 50-cm resolution satellite images within the 0 to 1000 mm/year precipitation zone of Africa north of the equator and south of the Sahara Desert. These data are presented in GeoPackage (.gpkg) format and are summarized in Cloud-Optimized GeoTIFF (COG) format. An interactive viewer application developed to display these carbon estimates at the individual tree level across the study area is available at: https://trees.pgc.umn.edu/app. The analysis utilized 326,523 Maxar multispectral satellite images collected between 2002 to 2021 for the early dry season months of November to March to identify tree crowns. Metadata from satellite image processing across the study area are presented in Shapefile (.shp) format. Additionally, field measurements from destructive harvests used to derive allometry equations are contained in comma-separated values (.csv) files. These data demonstrate a new tool for studying discrete semi-arid carbon stocks at the tree level with immediate applications provided by the viewer application. Uncertainty of carbon estimates are +/- 19.8%.
+  <br>
+
+  #### african_woody_savanna_850
+  This data set includes the soil and vegetation characteristics, herbivore estimates, and precipitation measurement data for the 854 sites described and analyzed in Sankaran et al., 2005. Savannas are globally important ecosystems of great significance to human economies. In these biomes, which are characterized by the co-dominance of trees and grasses, woody cover is a chief determinant of ecosystem properties. The availability of resources (water, nutrients) and disturbance regimes (fire, herbivory) are thought to be important in regulating woody cover but perceptions differ on which of these are the primary drivers of savanna structure. Analyses of data from 854 sites across Africa (Figure 1) showed that maximum woody cover in savannas receiving a mean annual precipitation (MAP) of less than approximately 650 mm is constrained by, and increases linearly with, MAP. These arid and semi-arid savannas may be considered stable systems in which water constrains woody cover and permits grasses to coexist, while fire, herbivory and soil properties interact to reduce woody cover below the MAP-controlled upper bound. Above a MAP of approximately 650 mm, savannas are unstable systems in which MAP is sufficient for woody canopy closure, and disturbances (fire, herbivory) are required for the coexistence of trees and grass. These results provide insights into the nature of African savannas and suggest that future changes in precipitation may considerably affect their distribution and dynamics (Sankaran et al., 2005).This data set includes the site characteristics and measurement data for the 854 sites described and analyzed in Sankaran et al., 2005. The data are provided in two formats, .xls and .csv. See the data format section below for more information. A companion document composed of the supplemental documentation and figures provided with Sankaran et al., 2005 is also included (ftp://daac.ornl.gov/data/global_vegetation/savanna_woody_cover/comp/Woody_Cover.pdf).
+  <br>
+
+  #### Decadal_LULC_India_1336
+  This data set provides land use and land cover (LULC) classification products at 100-m resolution for India at decadal intervals for 1985, 1995 and 2005. The data were derived from Landsat 4 and 5 Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+), and Multispectral (MSS) data, India Remote Sensing satellites (IRS) Resourcesat Linear Imaging Self-Scanning Sensor-1 or III (LISS-I, LISS-III) data, ground truth surveys, and visual interpretation. The data were classified according to the International Geosphere-Biosphere Programme (IGBP) classification scheme.
+  <br>
+
+  #### Siberian_Larch_Stand_Age_1364
+  This data set provides mapped estimates of the stand age of young (less than 25 years old) larch forests across Siberia from 1989-2012 at 30-m resolution. The age estimates were derived from Landsat-based composites and tree cover for years 2000 and 2012 developed by the Global Forest Change (GFC) project and the stand-replacing fire mapping (SRFM) data set. This approach is based on the assumption that the relationship between the spectral signature of a burned or unburned forest stand acquired by Landsat ETM+ and TM sensors and stand age before and after the year 2000 is similar, thus allowing for training an algorithm on the data from the post-2000 era and applying the algorithm to infer stand age for the pre-2000 era. The output map combines the modeled forest disturbances before 2000 and direct observations of forest loss after 2000 to deliver a 24-year stand age distribution map.
+  <br>
+
+  #### Young_Russian_Forest_Map_1330
+  This data set provides the distribution of young forests (forests less than 27 years of age) and their estimated stand ages across the full extent of Russia at 500-m resolution for the year 2012. The distribution of young forests was modeled with MODIS 500-m records for 12- to 27-year-old forests and augmented with the 0- to 11-year-old forest distribution as aggregated from 30 m resolution contemporary Landsat imagery.
+  <br>
+
+  #### litter_decomp_651
+  The results of published and unpublished experiments investigating the impacts of elevated carbon dioxide on the chemistry (nitrogen and lignin concentration) of leaf litter and the decomposition of plant tissues are assembled in a format appropriate for statistical meta-analysis of the effect of carbon dioxide. The synthesis originated from a workshop, Litter Quality and Decomposition under Elevated CO2, held in Capri, Italy, September 1998, under the auspices of Global Change and Terrestrial Ecosystems project (GCTE) and the European COST network. Data on litter chemistry and decomposition of plant tissue grown in elevated and ambient carbon dioxide concentrations were gathered from participants of that workshop and from other published and pre-publication sources. The litter chemistry database comprised observations of naturally senesced leaves of herbaceous and woody plants exposed to elevated carbon dioxide (typically 600-700 ppm) in the field or in field chambers in the United States, Europe, New Zealand, and Australia. Data from plants grown in growth chambers with artificial lighting were excluded because of the possible artifacts of unbalanced nutrition or abnormal senescence. Also excluded were data from non-senesecent green leaves. The measures of litter chemistry were nitrogen concentration (mg/g) and lignin concentration (mg/g), with the number of replications and standard deviations included when available. The decomposition database included a wide range of plant tissue from different types of carbon dioxide-enrichment experiments. The measure of decomposition was percentage of initial mass lost over the course of the decomposition trial, which varied in duration.
+  <br>
+
+  #### Boreal_Fire_Severity_Metrics_1520
+  This data set provides products characterizing immediate and longer-term ecosystem changes from fires in the circumpolar boreal forests of Northern Eurasia and North America. The data include fire intensity (fire radiative power; FRP), increase in spring albedo, decrease in tree cover, normalized burn ratio, normalized difference vegetation index, and land surface temperature, as well as three derived fire metrics: crown scorch, vegetation destruction, and fire-induced tree mortality. Longer-term changes are indicated by mean albedo determined 5-12 years after fires, mean percent decrease in tree cover 5-7 years after fires, and mean annual burned percentage. The data cover the period 2001-2013 and are provided at quarter, half, and one degree resolutions for boreal forests within the 40 to 80 degree North circumpolar region. The data were derived from a variety of sources including MODIS products, climate reanalysis data, and forest inventories. A data file with identified boreal forest area (pixels), as defined by climate and vegetation type, and a file with the defined North American and Eurasian boreal forest study regions are included.
+  <br>
+
+  #### Forest_Inventory_Acre_Brazil_1654
+  This data set provides measurements of diameter at breast height (DBH) and species identification at four forest sites in the eastern side of Acre, Brazil including Bonal (A), Catuaba (B), Humaita (C) and Transacreana (D). The inventory locations include forests burned in 2005 and 2010 and nearby unburned areas. Inventory surveys were conducted in October and December 2017.
+  <br>
+
+  #### Forest_Inventory_Data_Brazil_1563
+  This dataset provides measurements for diameter at breast height (DBH) and species identification of trees for inventories taken at five tropical forest sites in Acre state, Brazil, in the southwestern Amazon region. The sites included one in a forest reserve (Reserva Bonal) and four within forest fragments situated on private property. The inventory sites included forests burned in 2005 and 2010 and also unburned forests. Surveys were conducted in July and August 2014.
+  <br>
+
+  #### Forest_Diversity_CAF_WesternUS_2481
+  This dataset holds maps of forest structure and structural diversity metrics at a range of spatial scales (1, 5, 10, 15, 20 and 25 km) derived from NASA's Global Ecosystem Dynamics Investigation (GEDI) spaceborne lidar data collected between April 2019 and March 2023. It also holds the airborne laser scanning (ALS) data that provides simulated GEDI waveforms and was used to evaluate the GEDI-derived metrics. Forest structural diversity is a key component of ecosystem diversity and essential for informing conservation and restoration strategies in the face of rapid global climate change and biodiversity loss. Structural metrics include canopy height at 25th and 98th percentiles, plant area index, canopy cover, and foliage height diversity. Structural diversity metrics include richness, evenness, and divergence. Focusing on two biodiversity global hotspots in Central Africa and the western US, GEDI-derived forest structural metrics were validated at 1 km2 resolution over 391 km2 of airborne ALS coverage. GEDI-derived metrics showed robust correlations with ALS data, particularly in dense, flat Central African forests (R2 up to 0.85) compared to more variable terrains like the California Sierra Nevada (R2 up to 0.55). Structural diversity was calculated through probability density-based methods that consider multivariate forest structural metrics. GEDI canopy height (rh98), canopy cover, and foliage height diversity were effective metrics for capturing structural diversity with an R2 of 0.37 when compared to wall-to-wall ALS data at 1-km2 scale. The maps reveal high structural diversity in mid elevation and coastal forests in the western U.S. and in Central African forest-savanna transitions and volcanic ranges, aligning with ecological processes related to disturbance, wildfires and topographic gradients and aridity. The data are provided in GeoTIFF and comma separated values (CSV) formats. A map of the western US study area is provided in a Keyhole Markup Language (KML) file.
+  <br>
+
+  #### geoecology_R1_656
+  The Geoecology database is a compilation of environmental data for the period 1941 to 1981. The Geoecology database contains selected data on terrain and soils, water resources, forestry, vegetation, agriculture, land use, wildlife, air quality, climate, natural areas, and endangered species. Data on selected human population characteristics are also included to complement the environmental files. Data represent the conterminous United States at the county level. These historical data are provided as a source of 1970s baseline environmental conditions for the United States.
+  <br>
+
+  #### Global_Biomass_1950-2010_1296
+  This data set provides global forest area, forest growing stock, and forest biomass data at 1-degree resolution for the period 1950-2010. The data set is based on a compilation of forest area and growing stock data reported in international assessments performed by FAO, MCPFE (now Forest Europe), and UNECE. Data of different assessments are to the extent possible harmonized to reflect both forest area and other wooded land, to be comparable between countries and assessments.
+  <br>
+
+  #### Global_Clumping_Index_1531
+  This dataset provides global clumping index (CI) data for 2006 derived from the MODIS Bidirectional Reflectance Distribution Function (BRDF) data product. Clumping index is a key structural parameter of plant canopies which represents the degree of foliage grouping within distinct canopy structures relative to a random distribution. The data are provided at substantially higher resolution (500-m) than existing clumping index data products.
+  <br>
+
+  #### Global_Maps_C_Density_2010_1763
+  This dataset provides temporally consistent and harmonized global maps of aboveground and belowground biomass carbon density for the year 2010 at a 300-m spatial resolution. The aboveground biomass map integrates land-cover specific, remotely sensed maps of woody, grassland, cropland, and tundra biomass. Input maps were amassed from the published literature and, where necessary, updated to cover the focal extent or time period. The belowground biomass map similarly integrates matching maps derived from each aboveground biomass map and land-cover specific empirical models. Aboveground and belowground maps were then integrated separately using ancillary maps of percent tree cover and landcover and a rule-based decision tree. Maps reporting the accumulated uncertainty of pixel-level estimates are also provided.
+  <br>
+
+  #### root_biomass_658
+  A global data set of root biomass, rooting profiles, and concentrations nutrients in roots was compiled from the primary literature and used to study distributions of root properties. This data set consists of estimates of fine root biomass and specific area, site characteristics, and source references associated with two papers (Jackson et al. 1996 and 1997).Understanding and predicting ecosystem functioning (e.g., carbon and water fluxes) and the role of soils in carbon storage requires an accurate assessment of plant rooting distributions.
+  <br>
+
+  #### root_nutrients_659
+  Nutrient measurements for fine roots were compiled from 56 published studies providing information on 372 different combinations of species, root diameter, rooting depths, and soils at a variety of locations. The compilation was used to examine dynamics of 14 nutrients, including translocation properties of roots of varying size and status.Fine roots are an important source and sink for nutrients in terrestrial biogeochemistry. The data collected come from 56 published studies that give information on fine root (less than 5mm diameter) nutrient concentrations, root diameters, and retranslocation of nutrients. These studies include diverse vegetation and biomes, including grass, shrub, and tree functional types from temperate, tropical, boreal and tundra systems. The preponderance of data comes from experiments with temperate and coniferous trees.
+  <br>
+
+  #### root_profiles_660
+  Rooting depths were estimated from a global database of root profiles that was assembled from the primary literature to study relationships of abiotic and biotic factors associated with belowground vegetation structure. Variables used to characterize belowground vegetation structure include the depths above which 50% of all roots and 95% of all roots are located in the profile. For each root profile, information recorded includes latitude and longitude, elevation, soil texture, depth of organic horizons, type of roots measured (e.g., fine or total, live or dead), sampling methods, units of measurements (root mass, length, number, surface area), and sampling depth.
+  <br>
+
+  #### root_turnover_661
+  Estimates of root turnover rates were calculated from measurements of live root standing crop and belowground net primary production (BNPP) compiled from the primary literature. Vegetation characteristics, soil properties, and climate conditions were associated with turnover rates to examine patterns and controls for biomes worldwide. Building on prior analyses (Jackson et al. 1996, 1997), data were compiled from approximately 190 papers from additional journals, book chapters, technical reports, and unpublished manuscripts that included information on live root standing crop and belowground BNPP. The papers described research on every continent except Antarctica, although the majority were from North America. In the database, the plant functional type and biome coverage were most abundant for grasslands and temperate zones.
+  <br>
+
+  #### fire_emissions_v4_R1_1293
+  This dataset provides global estimates of monthly burned area, monthly emissions and fractional contributions of different fire types, daily or 3-hourly fields to scale the monthly emissions to higher temporal resolutions, and data for monthly biosphere fluxes. The data are at 0.25-degree latitude by 0.25-degree longitude spatial resolution and are available from June 1995 through 2016, depending on the dataset. Emissions data are available for carbon (C), dry matter (DM), carbon dioxide (CO2), carbon monoxide (CO), methane (CH4), hydrogen (H2), nitrous oxide (N2O), nitrogen oxides (NOx), non-methane hydrocarbons (NMHC), organic carbon (OC), black carbon (BC), particulate matter less than 2.5 microns (PM2.5), total particulate matter (TPM), and sulfur dioxide (SO2) among others. These data are yearly totals by region, globally, and by fire source for each region.
+  <br>
+
+  #### forest_carbon_flux_949
+  A comprehensive global database has been assembled to quantify CO2 fluxes and pathways across different levels of integration (from photosynthesis up to net ecosystem production) in forest ecosystems. The database fills an important gap for model calibration, model validation, and hypothesis testing at global and regional scales. The database archive includes: a Microsoft Office Access Database; data files for all tables in the database; query outputs from the database; and SQL script file for re-creating the database from the tables. The database is structured by site (i.e., a forest or stand of known geographical location, biome, species composition, and management regime). It contains carbon budget variables (fluxes and stocks), ecosystem traits (standing biomass, leaf area index, age), and ancillary information (management regime, climate, soil characteristics) for 529 sites from eight forest biomes. Data entries originated from peer-reviewed literature and personal communications with researchers involved in Fluxnet. Flux estimates were included in the database when they were based on direct measurements (e.g., tower-based eddy covariance system measurements), derived from single or multiple direct measurements, or modeled. Stand description was based on observed values, and climatic description was based on the CRU data set and ORCHIDEE model output. Uncertainty for each carbon balance component in the database was estimated in a uniformed way by expert judgment. Robustness of CO2 balances was tested, and closure terms were introduced as a numerical way to approach data quality and flux uncertainty at the biome level.
+  <br>
+
+  #### HistoricalLai_584
+  Approximately 1000 published estimates of leaf area index (LAI) from nearly 400 unique field sites, covering the period 1932-2000, have been compiled into a single data set. LAI is a key parameter for global and regional models of biosphere/atmosphere exchange of carbon dioxide, water vapor, etc. This data set provides a benchmark of typical values and ranges of LAI for a variety of biomes and land cover types, in support of model development and validation of satellite-derived remote sensing estimates of LAI and other vegetation parameters. The LAI data are linked to a bibliography of over 300 original-source references. These historical LAI data are mostly from natural and semi-natural (managed) ecosystems, although some agricultural estimates are also included. Caution is advised in using these data; they were collected using a wide range of methodologies and assumptions and may not be comparable among sites. Some attempts have been made to detect and flag the outliers in this data set, according to different biome/land cover classes. Needleleaf (coniferous) forests are by far the most commonly measured biome/land cover types in this compilation, with 22% of the measurements from temperate evergreen needleleaf forests, and boreal evergreen needleleaf forests and crops the next most common (about 9% each). About 40% of the records in the data set were published in the past 10 years (1991-2000), with a further 20% collected between 1981 and 1990. Mean LAI (+/- standard deviation), distributed between 15 biome/land cover classes, ranged from 1.31 +/- 0.85 for deserts to 8.72 +/- 4.32 for tree plantations, with evergreen forests (needleleaf and broadleaf) displaying the highest LAI among the natural vegetation classes. Further information on this data set is available from the link below: Leaf Area Index Data Citation: Cite this data set as follows: Scurlock, J. M. O., G. P. Asner, and S. T. Gower. 2001. Global Leaf Area Index from Field Measurements, 1932-2000. Available on-line [http://www.daac.ornl.gov] from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.
+  <br>
+
+  #### FluxSat_GPP_FPAR_1835
+  This dataset provides global gridded daily estimates of gross primary production (GPP) and uncertainties at 0.05-degree resolution for the period 2000-03-01 to the recent past. The GPP was derived from the MODerate-resolution Imaging Spectroradiometer (MODIS) instruments on the NASA Terra and Aqua satellites using the MCD43C4v006 Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectances (NBAR) product as input to neural networks that were used to globally upscale GPP estimated from selected FLUXNET 2015 eddy covariance tower sites. Additional data will be added periodically.
+  <br>
+
+  #### Global_Monthly_GPP_1789
+  This dataset provides global monthly average gross primary productivity (GPP; g carbon/m2/d) modeled at 8 km spatial resolution for each of the 35 years from 1982-2016. GPP is based on the well-known Monteith light use efficiency (LUE) equation but was improved with optimized spatially and temporally explicit LUE values derived from selected FLUXNET tower site data. Optimized LUE was extrapolated to a consistent 8 km resolution global grid using multiple explanatory variables representing climatic, landscape, and vegetation factors influencing LUE and GPP. Global gridded long-term daily GPP was derived using the optimized LUE, Global Inventory Modeling and Mapping Studies (GIMMS3g) canopy fraction of photosynthetically active radiation (FPAR), and Modern-Era Retrospective analysis for Research and Applications, Version 2, (MERRA-2) meteorological information. These data will improve satellite-based estimation and understanding of GPP using a refined LUE model framework.
+  <br>
+
+  #### Mean_Seasonal_LAI_1653
+  This dataset provides a global 0.25 degree x 0.25 degree gridded monthly mean leaf area index (LAI) climatology as averaged over the period from August 1981 to August 2015. The data were derived from the Advanced Very High Resolution Radiometer (AVHRR) Global Inventory Modeling and Mapping Studies (GIMMS) LAI3g version 2, a bi-weekly data product from 1981 to 2015 (GIMMS-LAI3g version 2). The LAI3g version 2 (raw) data were first regridded from 1/12 x 1/12 degree to 0.25 x 0.25 degree resolution, then processed to remove missing and unreasonable values, scaled to obtain LAI values, and the bi-weekly LAI values were averaged for every month. Finally, the monthly long-term mean LAI (1981-2015) was calculated.
+  <br>
+
+  #### Global_Veg_Greenness_GIMMS_3G_2187
+  This dataset holds the Global Inventory Modeling and Mapping Studies-3rd Generation V1.2 (GIMMS-3G+) data for the Normalized Difference Vegetation Index (NDVI). NDVI was based on corrected and calibrated measurements from Advanced Very High Resolution Radiometer (AVHRR) data with a spatial resolution of 0.0833 degree and global coverage for 1982 to 2022. Maximum NDVI values are reported within twice monthly compositing periods (two values per month). The dataset was assembled from different AVHRR sensors and accounts for various deleterious effects, such as calibration loss, orbital drift, and volcanic eruptions. The data are provided in NetCDF format.
+  <br>
+
+  #### GEDI_ICESAT2_Global_Veg_Height_2294
+  This dataset provides global rasters of relative height metrics for vegetation from Global Ecosystem Dynamics Investigation (GEDI) L2A data and Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) L3A ATL08 data at 100-, 200-, 500-, and 1000-m spatial resolutions. The metrics include the relative heights RH98, RH90, RH75, and RH50, corresponding to the height at which the respective 98th, 90th, 75th, and 50th percentile of returned energy is reached relative to the ground. These metrics provide measures of vegetation canopy height and structure. The different relative height metrics were intercalibrated over the overlap area (50 - 52 degrees N). GEDI data were collected from 2019-2022, and ICESat2 data were from 2019-2021. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### MatthewsVegetation_419
+  The global vegetation type data of 1 x 1 degree latitude and longitude resolution were designed for use in studies of climate and climate change. Vegetation data were compiled in digital form from approximately 100 published sources. The raw data base distinguished about 180 vegetation types that have been collapsed to 32. The vegetation data were encoded using the UNESCO classification system. Additional information about this data set can be found at http://www.giss.nasa.gov/data/landuse/vegeem.html. ORNL DAAC maintains information on related data sets in the Vegetation Collection. Data Citation The data set should be cited as follows: Matthews, E. 1999. Global Vegetation Types, 1971-1982. Available on-line from Oak Ridge National Laboratory Distributed Active Archive Center, Oak Ridge, Tennessee, U.S.A.
+  <br>
+
+  #### Gridded_Biomass_Africa_1777
+  This dataset provides maps of woody (tree and shrub) cover and biomass across Sub-Saharan Africa at a resolution of 1 km for the period 2000-2004. Canopy cover observations and remote-sensing data related to woody vegetation were used to predict woody cover across Africa. Predicted woody cover, canopy height, and tree allometry were used to estimate woody biomass for Sub-Saharan Africa. Canopy cover observations were assembled from field measurements and Google Earth imagery collected from 2000-2004. Remote-sensing data related to the structural attributes of woody vegetation were derived from MODIS optical data and Q-SCAT (Quick Scatterometer) microwave measurements. Canopy height estimates were derived from spaceborne lidar and tree allometry equations were retrieved from GlobAllomeTree.
+  <br>
+
+  #### GEDI_HighQuality_Shots_Rasters_2339
+  This dataset consists of near-global, analysis-ready, multi-resolution gridded vegetation structure metrics derived from NASA Global Ecosystem Dynamics Investigation (GEDI) Level 2 and 4A products associated with 25-m diameter lidar footprints. This dataset provides a comprehensive representation of near-global vegetation structure that is inclusive of the entire vertical profile, based solely on GEDI lidar, and validated with independent data. The GEDI sensor, mounted on the International Space Station (ISS), uses eight laser beams spaced by 60 m along-track and 600 m across-track on the Earth surface to measure ground elevation and vegetation structure between approximately 52 degrees North and South latitude. Between April 17th 2019 and March 16th 2023, GEDI acquired 11 and 7.7 billion quality waveforms suitable for measuring ground elevation and vegetation structure, respectively. This dataset provides GEDI shot metrics aggregated into raster grids at three spatial resolutions: 1 km, 6 km, and 12 km. In addition to many of the standard L2 and L4A shot metrics, several additional metrics have been derived which may be particularly useful for applications in carbon and water cycling processes in earth system models, as well as forest management, biodiversity modeling, and habitat assessment. Variables include canopy height, canopy cover, plant area index, foliage height diversity, and plant area volume density at 5 m strata. Eight statistics are included for each GEDI shot metric: mean, bootstrapped standard error of the mean, median, standard deviation, interquartile range, 95th percentile, Shannon's diversity index, and shot count. Quality shot filtering methodology that aligns with the GEDI L4B Gridded Aboveground Biomass Density, Version 2.1 was used. In comparison to the current GEDI L3 dataset, this dataset provides additional gridded metrics at multiple spatial resolutions and over several temporal periods (annual and the full mission duration). Files are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### GEDI_Fusion_Structure_2236
+  This dataset provides eight GEDI forest structure metrics relevant to wildlife habitat modeling and biodiversity assessments at 30-m resolutions across Washington, Oregon, Idaho, Montana, Wyoming, and Colorado. The metrics characterize canopy height, strata densities, and canopy cover. The data were derived using random forest modeling and prediction frameworks. The models created were also hindcasted using 2019 and 2020 GEDI footprints back to 2016 on annual time steps leveraging continuous Landsat spectral and disturbance information, Sentinel-1 backscatter metrics and ratios, topographic information, and bioclimatic variables. Machine learning data fusion approaches were used to scale-up structure information provided by the novel space-borne Global Ecosystems Dynamics Investigation (GEDI) waveform lidar sensor to continuous extents using additional satellite-based continuous earth observation data. GEDI provides a consistent sample of forest structure information at 25-m diameter footprints at near-global extents, providing a valuable source of reference information to drive continuous mapping efforts.
+  <br>
+
+  #### AVIRIS-NG_Data_Idaho_1533
+  This dataset provides surface reflectance measured by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument during flights over research sites in Idaho and California in 2014 and 2015. AVIRIS-NG measures reflected radiance at 5-nanometer (nm) intervals in the visible to shortwave infrared spectral range between 380 and 2510 nm. Measurements are radiometrically and geometrically calibrated and provided at 1-meter spatial resolution. The data include 72 flight lines covering long-term research sites in the Reynolds Creek Experimental Watershed in southwestern Idaho and Hollister in southeastern Idaho. Several flight lines from a site in the Inyo National Forest near Big Pine, California are included.
+  <br>
+
+  #### New_Hampshire_Landcover_1305
+  The New Hampshire Geographically Referenced Analysis and Information Transfer System (GRANIT) land cover data set provides a land cover and land use product at 30-m resolution with 23 individual classes across the state. The classification is based largely on the analysis of 12 Landsat Thematic Mapper (TM and ETM+) images. Over 1,400 new classification training site data points were collected to supplement 1,200 archived sites from previous projects. The classification represents a snapshot in time from 1996 to 2001. This time range spans the dates of the most recent acquisitions of a TM scene for each region of the state and the dates of the most recent field data collection.
+  <br>
+
+  #### Phenology_AmeriFlux_Neon_Sites_2033
+  This land surface phenology (LSP) dataset provides spatially explicit data related to the timing of phenological changes such as the start, peak, and end of vegetation activity, vegetation index metrics and associated quality assurance flags. The data are for the growing seasons of 2017-2021 for 10-km x 10-km windows centered over 104 eddy covariance towers at AmeriFlux and National Ecological Observatory Network (NEON) sites. The dataset is derived at 3-m spatial resolution from PlanetScope imagery across a range of plant functional types and climates in North America. These LSP data can be used to assess satellite-based LSP products, to evaluate predictions from land surface models, and to analyze processes controlling the seasonality of ecosystem-scale carbon, water, and energy fluxes. The data are provided in NetCDF format along with geospatial area-of-interest information and visualizations of the analysis window for each site in GeoJSON and HTML formats.
+  <br>
+
+  #### Phenology_Deciduous_Forest_1570
+  This dataset provides Landsat phenology algorithm (LPA) derived start and end of growing seasons (SOS and EOS) at 500-m resolution for deciduous and mixed forest areas of 75 selected Landsat sidelap regions across the Eastern United States and Canada. The data are a 30-year time series (1984-2013) of derived spring and autumn phenology for forested areas of the Eastern Temperate Forest, Northern Forest, and Taiga ecoregions.
+  <br>
+
+  #### Forested_Areas_Amazonas_Brazil_1515
+  This data set provides LiDAR point clouds and digital terrain models (DTM) from surveys over the K34 tower site in the Cuieiras Biological Reserve, over forest inventory plots in the Adolpho Ducke Forest Reserve, and over sites of the Biological Dynamics of Forest Fragments Project (BDFFP) in Rio Preto da Eva municipality near Manaus, Amazonas, Brazil during June 2008. The surveys encompass the K34 eddy flux tower managed through the Large-scale Biosphere-Atmosphere Experiment in Amazonia, forest inventory plots managed by the Programa de Pesquisa em Biodiversidade (PPBio), and sites managed by the BDFFP. The LiDAR data was collected to measure forest canopy structure across Amazonian landscapes to monitor the effects of selective logging on forest biomass and carbon balance, and forest recovery over time.
+  <br>
+
+  #### Forested_Areas_Para_Brazil_1514
+  This data set provides LiDAR point clouds and digital terrain models (DTM) from surveys over the Tapajos National Forest in Belterra municipality, Para, Brazil during late June and early July 2008. The surveys encompass the K67 and K83 eddy flux towers and a deforestation chronosequence managed through the Large-Scale Biosphere-Atmosphere Experiment in Amazonia providing long-term flux measurements of carbon dioxide. The LiDAR data was collected to measure forest canopy structure across Amazonian landscapes to monitor the effects of selective logging on forest biomass and carbon balance, and forest recovery over time.
+  <br>
+
+  #### LiDAR_Veg_Ht_Idaho_1532
+  This dataset provides the point cloud data derived from small footprint waveform LiDAR data collected in August 2014 over Reynolds Creek Experimental Watershed and Hollister in southern Idaho. The LiDAR data have been georeferenced, noise-filtered, and corrected for misalignment for overlapping flight lines and are provided in 1 km tiles. High resolution digital elevation models and maps of maximum vegetation height derived from the LiDAR data are provided for each site.
+  <br>
+
+  #### Eurasia_Biomass_1278
+  This data set provides estimates of aboveground biomass (AGB) for defined land cover types within World Wildlife Fund (WWF) ecoregions across the boreal biome of eastern and western Eurasia, roughly between 50 and 70 degrees N. The study focused on within-growing-season data, i.e. leaf-on conditions. The AGB estimates were derived from a series of models that first related ground-based measured biomass to airborne data collected with an Optech Airborne Laser Terrain Mapper (ALTM) 3100, and a second set of models that related the airborne estimates of biomass to Geoscience Laser Altimeter System (GLAS) LiDAR canopy structure measurements. The ground, airborne, and GLAS measurements were used to formulate the models needed to generate biomass predictions for western Eurasia. Eastern Eurasia employed a two-phase approach relating field measurements directly to the GLAS measurements without the airborne intermediary. The GLAS LiDAR biomass estimates were extrapolated by land cover types and ecoregions across the entire biome area. The study compiled remotely sensed forest structure data collected in June of 2005 and 2006 from the GLAS LiDAR instrument aboard the NASA Ice, Cloud, and land Elevation (ICESat) satellite and from an Optech Airborne Laser Terrain Mapper (ALTM) 3100 airborne instrument flown in Southeast Norway over both the ground plots and the ICESat GLAS flight path. For a consistent biome-level analysis, ecoregions contained within the boreal forest biome were identified by the World Wildlife Fund's (WWF) ecoregion map of the world (Olson et al., 2001). MODIS MOD12Q1 land cover products (2004) were used to identify land cover types for stratification purposes within eco-regions. The ground-based measurements are not provided with this data set.
+  <br>
+
+  #### GSMNP_Vegetation_Structure_R1_1286
+  This dataset provides multiple-return LiDAR-derived vegetation canopy structure at 30-meter spatial resolution for the Great Smoky Mountains National Park (GSMNP). Canopy characteristics were analyzed using high resolution three-dimensional point cloud measurements gathered between February-April 2011 for Tennessee and during March-April 2005 for North Carolina sections of the park. Vegetation types were mapped by grouping areas of similar canopy structure. The map was compared and validated against existing vegetation maps for the park.
+  <br>
+
+  #### white_model_parameters_652
+  Ecosystem simulation models use descriptive input parameters to establish the physiology, biochemistry, structure, and allocation patterns of vegetation functional types, or biomes. For single-stand simulations, it is possible to measure required data, but as spatial resolution increases, data availability decreases. Generalized biome parameterizations are then required. Undocumented parameter selection and unknown model sensitivity to parameter variation for larger-resolution simulations are currently the major limitations to global and regional modeling. We present documented input parameters for process-based ecosystem simulation models (specifically for the BIOME-BGC) for major natural temperate biomes. Parameter groups include the following: turnover and mortality; allocation; carbon to nitrogen ratios (C:N); the percent of plant material in labile, cellulose, and lignin pools; leaf morphology; leaf conductance rates and limitations; canopy water interception and light extinction; and the percent of leaf nitrogen in Rubisco (i.e., ribulose bisphosphate-1,5-carboxylase/oxygenase). Input parameters may also be used for other ecosystem models.
+  <br>
+
+  #### GIMMS3g_NDVI_Trends_1275
+  This data set provides normalized difference vegetation index (NDVI) data for the arctic growing season derived primarily with data from Advanced Very High Resolution Radiometer (AVHRR) sensors onboard several NOAA satellites over the years 1982 through 2012. The NDVI data, which show vegetation activity, were averaged annually for the arctic growing season (GS; June, July and August). The products include the annual GS-NDVI values and the results of a cumulative GS-NDVI time series trends analysis. The data are circumpolar in coverage at 8-km resolution and limited to greater than 20 degrees N. These normalized difference vegetation index (NDVI) trends were calculated using the third generation data set from the Global Inventory Modeling and Mapping Studies (GIMMS 3g). GIMMS 3g improves on its predecessor (GIMMS g) in three important ways. First, GIMMS 3g integrates data from NOAA-17 and 18 satellites to lengthen its record. Second, it addresses the spatial discontinuity north of 72 degrees N, by using SeaWiFS, in addition to SPOT VGT, to calibrate between the second and third versions of the AVHRR sensor (AVHRR/2 and AVHRR/3). Finally, the GIMMS 3g algorithm incorporates improved snowmelt detection and is calibrated based on data from the shorter, arctic growing season (May-September) rather than the entire year (January-December).
+  <br>
+
+  #### Land_Use_Harmonization_V1_1248
+  These data represent fractional land use and land cover patterns annually for the years 1500 - 2100 for the globe at 0.5-degree (~50-km) spatial resolution. Land use categories of cropland, pasture, primary land, secondary (recovering) land, and urban land, and underlying annual land-use transitions, are included. Annual data on age and biomass density of secondary land, as well as annual wood harvest, are included for each grid cell. Historical land cover data for the years 1500 - 2005 are based on HYDE 3.1 and future land cover projections for the period 2006 - 2100 came from four Integrated Assessment Model (IAM) scenarios which reach different levels of radiative forcing by year 2100: MESSAGE (8.5 W/m2), AIM (6 W/m2), GCAM (4.5 W/m2), and IMAGE (2.6 W/m2). A key feature of these data is that historical reconstructions of land use were harmonized (computationally adjusted to minimize differences at the transition period) with modeled future scenarios, allowing for a seamless examination of historical and future land use. The output data present a single consistent, spatially gridded set of land-use change scenarios for studies of human impacts on the past, present, and future Earth system. For additional information about the algorithms, inputs, and options used in creating the land use transitions data, please refer to Hurtt et al. (2006) and Hurtt et al. (2011). Data are presented as a series of twenty (20) different data products representing different past and future model scenarios. There are a total of 560 NetCDF v4 files (.nc4), one for each combination of data product and land use variable.
+  <br>
+
+  #### LUH2_GCB2019_1851
+  This dataset, referred to as LUH2-GCB2019, includes 0.25-degree gridded, global maps of fractional land-use states, transitions, and management practices for the period 0850-2019. The LUH2-GCB2019 dataset is an update to the previous Land-Use Harmonization Version 2 (LUH2-GCB) datasets prepared as required input to land models in the annual Global Carbon Budget (GCB) assessments, including land-use change data relating to agricultural expansion, deforestation, wood harvesting, shifting cultivation, afforestation, and crop rotations. Compared with previous LUH2-GCB datasets, the LUH2-GCB2019 takes advantage of new data inputs that corrected cropland and grazing areas in the globally important region of Brazil, as far back as 1950. LUH2-GCB datasets are used by bookkeeping models and Dynamic Global Vegetation Models (DGVMs) for the GCB.
+  <br>
+
+  #### Land_Use_Harmonization_V2_1721
+  This dataset provides 0.25-degree gridded, global, annual estimates of fractional land use and land cover patterns for the period 2015-2100, designed to support the ISIMIP2b effort to assess the impacts of 1.5 Deg Celcius global warming. Land use types, land use transitions, and cropland estimates of area fraction are provided and include detailed separation of primary and secondary natural vegetation into forest and non-forest sub-types, pasture into managed pasture and rangeland, and cropland into multiple crop functional types; all transitions between land use states per grid cell per year, including crop rotations, shifting cultivation, and wood harvest; and agriculture management including irrigation, synthetic nitrogen fertilizer, and biofuel management. The LUH2-ISIMIP2b datasets were derived using Land Use Harmonization 2 (LUH2) methodology and are based on land-use scenarios provided by the REMIND-MAgPIE Integrated Assessment Model using an SSP2 storyline along with RCP2.6 and RCP6.0 emissions scenarios. In contrast to the standard SSP scenarios, these land use changes additionally account for climate and atmospheric CO2 fertilization effects on the underlying patterns of potential crop yields, water availability, and terrestrial carbon content. This is achieved by using the LPJmL (Lund-Potsdam-Jena managed land) model forced with atmospheric CO2 concentrations and patterns of climate change generated from 4 different climate models (GFDL, HADGEM, IPSL, and MIROC) consistent with the 2 different RCP scenarios, resulting in a set of 8 different LUH2-ISIMIP2b datasets.
+  <br>
+
+  #### MangroveExtent_Landsat_MSS_2329
+  This dataset includes a regional map of mangrove extent for Myanmar, Thailand, and Cambodia for the period of 1972-1977. The map was developed from Landsat 1-2 MSS Collection 1 Tier 2 imagery. Mangrove extent was generated using a Random Forest machine learning algorithm that effectively mapped a total of 15,420.51 km2 at the nominal Landsat scale of 30 m. This map of mangrove extent served as a baseline to analyze changes in mangrove distribution in Southeast Asia from 1970s through 2020. Southeast Asia is home to some of the planet's most carbon-dense and biodiverse mangrove ecosystems. There is still much uncertainty with regards to the timing and magnitude of changes in mangrove cover over the past 50 years. While there are several regional to global maps of mangrove extent in Southeast Asia for the early 21st century, data prior to the mid-1990s are limited due to the scarcity of Earth Observation (EO) data of sufficient quality and the historical limitations to publicly available EO data. The data are provided in Cloud optimized GeoTIFF format at 60-m resolution. In addition, a shapefile outlines the region of analysis.
+  <br>
+
+  #### US_MODIS_NDVI_1299
+  This data set provides Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, smoothed and gap-filled, for the conterminous US for the period 2000-01-01 through 2015-12-31. The data were generated using the NASA Stennis Time Series Product Tool (TSPT) to generate NDVI data streams from the Terra satellite (MODIS MOD13Q1 product) and Aqua satellite (MODIS MYD13Q1 product) instruments. TSPT produces NDVI data that are less affected by clouds and bad pixels.
+  <br>
+
+  #### LAI_Africa_2325
+  This dataset provides leaf area index (LAI) estimates for Sub-Saharan Africa for woody, herbaceous, and aggregate vegetation types. The estimates were derived from Moderate Resolution Imaging Spectroradiometer (MODIS) Level 4 and the native MODIS LAI product (MCD15A2H Version 6.1), which provides LAI measurements every 8 days at 500-m pixel size. Data from the MCD15A2H product were processed further to generate three layers including: a smoothed and gap filled LAI layer referred to as aggregate leaf area index and two additional layers processed to separate woody LAI (tree and shrubs) and herbaceous LAI (grass and forbs). The data include 31 MODIS 10-degree tiles and cover 2002 to 2022. The data are provided in NetCDF format.
+  <br>
+
+  #### NA_MODIS_Surface_Biophysics_1210
+  This data set provides MODIS-derived surface biophysical climatologies of bidirectional distribution function (BRDF), BDRF/albedo, land surface temperature (LST), leaf area index (LAI), and evapotranspiration (ET) as separate files for each of the MODIS land cover types, and four radiative forcing data files for four scenarios of potential vegetation shifts in North America. Each biophysical variable has temporal periods that represent the average of all 8-day periods from the years 2000 – 2012. The data have a spatial resolution of 0.05 degree (~5 km) and a temporal resolution of eight days. Additionally, a file containing diffuse fraction of surface downward solar radiation (DiffuseFraction) at a monthly scale, and a file containing snow water equivalent (SWE) are provided. The extent of the data covers the land area of North America, from 20 to 60 degrees N. The land-cover map used was synthesized from nine yearly 500-m MODIS land-cover layers (MCD12 Q1 Collection 5) for 2001-2008. These high-resolution land data were originally developed for quantifying biophysical forcing from land-use changes associated with forestry activities, such as radiative forcing from altered surface albedo.
+  <br>
+
+  #### UAV_Imagery_BigLakeTrail_1834
+  This dataset provides multispectral reflectance imagery (green at 550 nm, red at 660 nm, red edge at 735 nm, and near-infrared at 790 nm), normalized difference vegetation index (NDVI), and digital surface and terrain models for a 0.5 km2 area surrounding Big Trail Lake (BTL) in the Goldstream Creek Valley north of Fairbanks, Alaska. These high spatial resolution maps (13 cm x 13 cm) were generated by unmanned aerial vehicle (UAV) imagery collected on 2019-08-04. Raw images (n=908) were combined into mosaic layers that incorporated ground control points with centimeter accuracy. These layers were then used to generate vegetation, water body, and elevation maps and then combined with in situ measurements of methane flux to improve upscaling models of greenhouse gas emissions.
+  <br>
+
+  #### Xingu_Albedo_Radiation_1622
+  This dataset provides daily average land surface net radiation (Rnet) as an 8-day time series at approximately 0.5 km resolution for the upper Xingu River Basin in Mato Grosso, Brazil, from 2000-02-18 to 2012-11-16. The parameters needed to calculate Rnet, including albedo, downward shortwave radiation (RSnet), upward longwave radiation (RLnet[up]) and downward longwave radiation (RLnet[down]) were derived from MODIS products (MOD43A3, MOD11A2, MOD08E3) and local weather station data. Parameters were estimated under all sky conditions. These parameters are also provided for the Xingu Basin but at varying spatial and temporal resolutions.
+  <br>
+
+  #### ForestHt_Biomass_GEDI_TDX_2298
+  This dataset includes maps of canopy height and aboveground biomass at spatial resolutions of 25 m and 100 m for Mexico, Gabon, French Guiana, and the Amazon Basin. The GEDI-TanDEM-X (GTDX) fusion maps were created by combining data from NASA's Global Ecosystem Dynamics Investigation (GEDI) Version 2 footprint data (from 2019-04-18 to 2021-08-18) and TanDEM-X (abbreviated as TDX) Interferometric Synthetic Aperture Radar (InSAR) images (from 2011-01-06 to 2020-12-31). The GTDX canopy height maps were generated by using the TDX coherence maps to invert the TDX height and subsequently using GEDI canopy height as reference data to calibrate the inverted height. The GTDX aboveground biomass maps were produced based on a generalized hierarchical model-based (GHMB) framework that utilizes GEDI biomass as training data to establish models for estimating biomass based on the GTDX canopy height. The dataset also includes maps of canopy height uncertainty, biomass uncertainty, and ancillary data including a regional modeling parameter and forest disturbance. The uncertainty of GTDX canopy height was estimated for each pixel by propagating the GEDI-TDX model error to each GTDX pixel prediction. The uncertainty of GTDX aboveground biomass was estimated by considering the error in both the GEDI footprint biomass data and the GEDI-TDX model, and then applying it to each GTDX biomass pixel prediction. The regional model parameter indicates the size of the analysis window (2 to 50 km or country wide) used for each pixel. The forest disturbance information identifies pixels where disturbance occurred between 2011 and 2020, and provides the year of last disturbance.
+  <br>
+
+  #### Phenocam_Images_V2_1689
+  This dataset provides a time series of visible-wavelength digital camera imagery collected through the PhenoCam Network at each of 393 sites predominantly in North America from 2000-2018. The raw imagery was used to derive information on phenology, including time series of vegetation color, canopy greenness, and phenology transition dates for the PhenoCam Dataset v2.0.
+  <br>
+
+  #### PhenoCam_V2_1674
+  This data set provides a time series of vegetation phenological observations for 393 sites across diverse ecosystems of the world (mostly North America) from 2000-2018. The phenology data were derived from conventional visible-wavelength automated digital camera imagery collected through the PhenoCam Network at each site. From each acquired image, RGB (red, green, blue) color channel information was extracted and means and other statistics calculated for a region-of-interest (ROI) that delineates an area of specific vegetation type. From the high-frequency (typically, 30 minute) imagery collected over several years, time series characterizing vegetation color, including canopy greenness, plus greenness rising and greenness falling transition dates, were summarized over 1- and 3-day intervals.
+  <br>
+
+  #### Phenocam_Images_V3_2364
+  This dataset provides a time series of visible-wavelength digital camera imagery collected through the PhenoCam Network at each of 738 sites across diverse ecosystems of the world (mostly North America) from 2000-2023. Vegetation types such as deciduous broadleaf forests, grasslands, evergreen needleleaf forests, and agriculture are the best-represented. The raw imagery was used to derive information on phenology, including time series of vegetation color, canopy greenness, and phenology transition dates for the PhenoCam Dataset v3.0. The images are provided in JPEG format organized in compressed tar.gz archives by site and date. Site locations and basic metadata are included in a GeoJSON file.
+  <br>
+
+  #### PhenoCam_V3_2389
+  This dataset provides vegetation phenological observations for 738 sites across diverse ecosystems of the world (mostly North America) from 2000 to 2023. The phenology data were derived from conventional visible-wavelength automated digital camera imagery collected through the PhenoCam Network at each site. From each acquired image, RGB (red, green, blue) color channel information was extracted and summary statistics were calculated for a region-of-interest (ROI) that delineates an area of specific vegetation type. From the high-frequency (typically, 30 minute) imagery collected over several years, time series characterizing vegetation color, including canopy greenness, plus greenness rising and greenness falling transition dates, were summarized over 1- and 3-day intervals. These data products, consisting of 4805.5 site-years of observations, can be used for phenological modeling, to evaluate satellite remote sensing data products, to understand relationships between canopy phenology and ecosystem processes, to study the seasonal changes in leaf-level physiology that are associated with changes in leaf color, for benchmarking earth system models, and for studies of climate change impacts on terrestrial ecosystems. The data are provided in comma separated values (CSV), TIFF image, text, JSON, and GeoJSON formats.
+  <br>
+
+  #### Landsat8_Sentinel2_Phenocam_2248
+  This dataset provides a reference of land surface phenology (LSP) at 30-m pixels for 78 regions of 10 x 10 km2 across a wide range of ecological and climatic regions in North America during 2019 and 2020. The data were derived by fusing the Harmonized Landsat 8 and Sentinel-2 (HLS) observations with near- surface PhenoCam time series (hereafter called HP-LSP). The HP-LSP dataset consists of two parts: (1) the 3-day synthetic gap-free EVI2 (two-band Enhanced Vegetation Index) time series and (2) four key phenological transition dates that are greenup onset, maturity onset, senescence onset, and dormancy onset (accuracy less than or equal to five days). The PhenoCam network offers near-surface observations via the RGB (Red, Green, and Blue) imagery every 30 minutes. Each RGB imagery enables us to calculate as many as 100 Green Chromatic Coordinate (GCC) for generating a collection of localized vegetation dynamics. The HLS EVI2 time series with frequent gaps was fused with the most comparable PhenoCam GCC temporal shape selected from the GCC collection using the Spatiotemporal Shape Matching Model (SSMM) to create the synthetic gap-free HLS-PhenoCam EVI2 time series, which was used to establish the physically-based hybrid piecewise logistic model (HPLM) for detecting phenological transition dates (phenometrics).
+  <br>
+
+  #### WhitePhenoregions_799
+  The overall purpose in this research was to identify the regions of the world best suited for long-term monitoring of biospheric responses to climate change, i.e. monitoring land surface phenology. The user is referred to White et al. [2005] for further details. Using global 8 km 1982 to 1999 Normalized Difference Vegetation Index (NDVI) data and an eight-element monthly climatology, we identified pixels consistently dominated by annual cycles and then created phenologically and climatically self-similar clusters, which we term phenoregions. We then ranked and screened each phenoregion as a function of landcover homogeneity and consistency, evidence of human impacts, and political diversity.This dataset contains material providing users with direct access to data used to construct the figures in White et al. [2005]. Users are referred to this reference for additional information. Data files include ASCII and binary versions of the image files for the 500 elemental phenoregions and the 136 final monitoring phenoregions (shown in figure below) and a corresponding .jpg map. Also included are the classification data in tabular ACSII format for each of the 500 elemental phenoregions.Selected monitoring phenoregions. Phenoregions with fewer than 100 pixels or dominated by crop, urban or barren landcover removed. The 136 remaining phenoregions are those passing the screening factors in Table 1 and are shown with normalized rankings by landcover. (From White et al., 2005)
+  <br>
+
+  #### King_Rim_Fire_Analysis_1288
+  This data set provides high-resolution surface reflectance, thermal imagery, burn severity metrics, and LiDAR-derived structural measures of forested areas in the Sierra Nevada Mountains, California, USA, collected before and after the August 2013 Rim and September 2014 King mega forest fires. Pre-fire data were paired with post-fire collections to assess pre- and post-fire landscape characteristics and fire severity. Field estimates of fire severity were collected to compare with derived remote sensing indices. Reflectance measurements for the spectroscopic AVIRIS and MASTER sensors are distributed as multi-band geotiffs for each megafire and acquisition date. Derived operational metric products for each sensor are provided in individual GeoTIFFs. GeoTIFFs produced from LiDAR point data depict first order topographic indices and summary statistics of vertical vegetation structure.
+  <br>
+
+  #### rlc_land_cover_689
+  This dataset is a 15-kilometer resolution land cover map for the land area of the Former Soviet Union. There are sixty land cover classes distinguished in this dataset, of which 38 are forest cover classes. The data set is useful for stratification of the FSU into general sub-regions of land cover for subsequent study using higher resolution satellite data.
+  <br>
+
+  #### rlc_landcover_far_east_690
+  This data set is a 1-kilometer resolution land cover map for the land area of the Primor'ye and Southern Khabarovsk Regions, in the Russian Far East, based on 1990 NOAA AVHRR data. Labeling of land cover classes depended upon the Russian 1990 Forest Cover Map (Garsia, 1990), the analyst's experience with AVHRR data, and Russian data sources. There are eight classes distinguished in this dataset, of which 5 are forest cover classes.The objective of this work was to create a 1-km resolution land cover map of the region of the Far Eastern Siberia based on NOAA AVHRR data which might be used by World Wildlife Fund researchers to aid in the definition of remaining habitats and range for threatened animal species (Stone and Schlesinger, 1996).
+  <br>
+
+  #### rlc_forest_map_1990_691
+  This data set is a 1:2.5 million scale forest cover map for the land area of the Former Soviet Union that was completed in 1990 (Garsia 1990). There are forty-five classes distinguished in this data set, of which 38 are forest cover classes. The purpose of this map was to create a generalized and up-to-date map of forest cover for the USSR. This map should not be viewed as a detailed forest cover map but more like an economic forestry map. The most important tree species of a region are highlighted rather than the dominant trees species or tree cover. Very few tree species are defined. In many cases, of course, the dominant and the most important trees species are the same.
+  <br>
+
+  #### rlc_forest_map_1973_692
+  This data set is a 1:15 million scale forest cover map for the land area of the Former Soviet Union. Twenty-two land cover classes are distinguished, of which 20 are forest cover classes. The source data were acquired by map digitization from the Atlas of Forests of the USSR (Anon. 1973) which was likely based on forestry data from the 1940s, 1950s and 1960s.
+  <br>
+
+  #### rlc_forest_map_krasnoyarsk_693
+  This dataset is a 1:2 million scale forest cover map for the land area of the Krasnoyarsk Region, Russia. Thirty-two land cover classes are distinguished. These data were digitized from maps of the Atlas of Forests of the USSR (Anon. 1973). This map should not be strictly viewed as a map of actual forest cover, but rather as a map of dominant tree species. Very few tree species are defined, and generally, each polygon and color has only one tree species assigned to it.
+  <br>
+
+  #### rlc_fire_images_russia_694
+  This data set is made up of images of forest fires in Russia from NOAA's Operational Significant Event Imagery (OSEI) archive (http://www.osei.noaa.gov) for the 1998 and 1999 seasons. OSEI fire products include multichannel color composite imagery of wildfire and controlled burn events. Products in this event group show fire, smoke, and hotspots (FSMHS) from the fires.
+  <br>
+
+  #### rlc_fire_sumpt_695
+  This dataset is derived from Russian forest fire imagery from the National Forest Fire Center of Russia archive that was collected by the Center of Remote Sensing, Institute of Solar Terrestrial Physics, Irkutsk, Russia for the 1998 and 1999 fire seasons. The data are vector (point) maps of forest fire locations (1998 and 1999) in ArcView shapefile format.
+  <br>
+
+  #### rlc_forest_carbon_696
+  This dataset is a 1:15 million scale map of forest stand carbon for the land area of Russia (Stone et al., 2000). The objective was to create a first approximation of the forest stand carbon reserves of Russia. Data include continuous estimates of forest stand carbon in units of metric tons/ha of carbon (C) and categorized data depicting rages of forest stand carbon. The resulting maps show forest stand C by region in a spatially explicit form. It is the first map of its type for Russia of which we are aware. The mapped C represents 96% of the total of 26.1 Pg forest tree stand C described by Alexeyev and Birdsey (1994) and Alexeyev et al. (1995). Of the remaining 4%, nearly half was due to bushes, which were assumed not to be mapped in the 1973 forest cover map.The source data for the forest stand carbon map were acquired by map digitization from the Atlas of Forests for the Soviet Union (State Committee on Forests, 1973) and spatial application and arithmetic manipulation of carbon storage data from Alexeyev and Birdsey (1998).
+  <br>
+
+  #### rlc_world_forest_map_697
+  This data set is the Former Soviet Union (FSU) portion of the Generalized World Forest Map (WCMC, 1998), a 1-kilometer resolution generalized forest cover map for the land area of the Former Soviet Union. There are five forest classes in the original global generalized map. Only two of those classes were distinguished in the geographical portion comprising the FSU.
+  <br>
+
+  #### rlc_vector_data_698
+  This data set consists of roads, drainage, railroads, utilities, and population center information in readily usable vector format for the land area of the Former Soviet Union. The purpose of this dataset was to create a completely intact vector layer which could be readily used to aid in mapping efforts for the area of the FSU. These five vector data layers were assembled from the Digital Chart of the World (DCW), 1993. Individual record attributes were stored for population centers only. Vector maps for the FSU are in ArcView shapefile format.
+  <br>
+
+  #### rlc_admin_boundaries_699
+  This data set of state and regional boundaries was derived from the 1:3 million scale administrative boundaries (ESRI, 1998) for the land area of the Former Soviet Union. There are 162 administrative regions distinguished in this data set. The vector map of state and regional boundaries for the FSU is in ArcView shapefile format.
+  <br>
+
+  #### rlc_vegetation_1990_700
+  This dataset is a 1:4 million scale vegetation map for the land area of the Former Soviet Union. Three hundred seventy-three cover classes are distinguished, of which nearly 145 are forest cover-related classes. Stone and Schlesinger (1993) digitized the map Vegetation of the Soviet Union, 1990 (Institute of Geography, 1990).
+  <br>
+
+  #### Russian_Forest_Disturbance_1294
+  This data set provides Boreal forest disturbance maps at 30-m resolution for 55 selected sites across Northern Eurasia within the Russian Federation. Disturbance events were derived from selected high-quality multi-year time series of Landsat Thematic Mapper and Enhanced Thematic Mapper Plus images (stacks) over the 1984 to 2000 time period. Forest pixels were classified by year of latest disturbance or as undisturbed.
+  <br>
+
+  #### Idaho_field_shrub_data_1503
+  This dataset provides the results of the characterization of shrubland vegetation at two study areas in southern Idaho, USA: the Reynolds Creek Experimental Watershed (RCEW) and Hollister. Data were collected in September and October 2014. In each study area, several 10-m x 10-m plots were randomly established that are representative of the local dominant vegetation types. Measurements are reported for both plot and individual shrub attributes. Plot measurements include shrub density and biometric data, percent shrub cover derived from line intercept transects, percent plant species and bare ground cover derived from photo analysis, and average LAI. Measurements for selected individual shrubs include height, width, length, number of stems, and LAI. Leaf samples were collected for determining LAI, specific leaf area (SLA), carbon and nitrogen concentrations, and isotopic nitrogen and carbon.
+  <br>
+
+  #### SiB3_Carbon_Flux_909
+  The Simple Biosphere Model, Version 3 (SiB3) was used to produce a global data set of hourly carbon fluxes between the atmosphere and the terrestrial biosphere for the years 1998-2006. This data set represents the global net ecosystem exchange (NEE) of carbon between the atmosphere and the terrestrial biosphere; specifically, the flux of CO2 between the planetary boundary layer (PBL) and the surface vegetation layer. Following atmospheric convention, flux is defined as positive into the atmosphere and negative into the surface vegetation.The data reported are 9 years of estimated hourly carbon flux for 14637 land points. Units are moles C/m2/sec.Data are provided in two NetCDF formats: * The NetCDF format provided by the investigators -- format designed specifically to minimize disk storage volume that excludes water grid cells. * A CF Compliant NetCDF format -- generated by the ORNL DAAC that includes both land and water grid cells.The investigator provided NetCDF formatted files can be processed using the provided FORTRAN code (sib_process_flux.f90) and the land mask (sib_mask.nc) into hourly, daily-mean, or monthly-mean fluxes on a global 1x1 degree Cartesian grid. The monthly-mean SiB3 fluxes were compared to TransCom flux data available for years 2000-2005 (Gurney et al., 2008) as a means of evaluating overall behavior of the model. In general, SiB3 fluxes are within the error bars of the TransCom results.The CF compliant NetCDF format files have been processed by the ORNL DAAC and the hourly and summarized daily-mean and monthly-mean flux data files are provided. GeoTIFF format files:In addition, the CF convention NetCDF files were converted to GeoTIFF image files by the ORNL DAAC and are included with the data set. Companion file:Additional information about the data formats, methodology, and data quality is found in the companion file: SiB3_carbon_flux_readme.pdfAccess to GeoTIFF format files via WCS Interface:The ORNL DAAC also provides access to the GeoTIFF files via a Web Coverage Service Interface (WCS). The OpenGISÂ® Web Coverage Service Interface Standard (WCS) defines a standard interface and operations that enables interoperable access to geospatial coverages.These data are a carbon cycle reanalysis, which may be thought of as analogous to NCEP meteorological reanalysis products. Carbon fluxes have been used by a large community of atmospheric transport modelers to create reanalysis of CO2 concentrations and the results have been evaluated against observations. In addition, the reanalyzed flux and CO2 fields are important for designing future observing strategies for the global carbon cycle.
+  <br>
+
+  #### Siberian_Biomass_Wildfire_1321
+  This data set provides 30-meter resolution mapped estimates of Cajander larch (Larix cajanderi) aboveground biomass (AGB), circa 2007, and a map of burn perimeters for 116 forest fires that occurred from 1966-2007. The data cover ~100,000 km2 of the Kolyma River Basin in northeastern Siberia, Sakha Republic, Russia.
+  <br>
+
+  #### ARID_White_Paper_V1.1_2408
+  This dataset provides the final report from the Adaptation and Response in Drylands (ARID) scoping study. ARID is one of the two scoping studies funded by NASA in 2023 to identify the scientific questions and develop the initial study design and implementation concept for a new NASA Terrestrial Ecology field campaign. This report emphasizes a prioritized research agenda and an initial implementation plan, focusing on the western U.S. to deepen our understanding of national dryland processes and resources. ARID is also leveraging an extensive network of international sites and collaborators in Africa, Australia, Mexico, and South America. This global approach facilitates the evaluation, monitoring, and forecasting of drylands worldwide, ensuring a coordinated effort to address and inform solutions for the challenges facing these critical ecosystems. ARID will use cutting-edge approaches to address four Science Themes: 1) Climate Variability and Drought, 2) Ecosystem Structure, Function, and Biodiversity, 3) Carbon Cycle Interannual Variability and Long-Term Trends, and 4) Social-Ecological Systems. The scoping study performed extensive outreach, conducting over 160 meetings and events with hundreds of scientists and decision-makers across six continents, which translated to the ARID science plan being co-created with a wide range of contributors and perspectives, including remote sensing, modeling, and dryland scientists; Tribal Nations; and a range of U.S. federal entities. This report outlines a targeted plan to deploy field and NASA airborne instruments to vastly augment data derived from satellite observations that, when joined, will substantially advance quantification of drylands' large and changing role in the U.S. and in the Earth system.
+  <br>
+
+  #### PANGEA_White_Paper_V1.1_2405
+  This dataset provides the final report from the PAN tropical investigation of bioGeochemistry and Ecological Adaptation (PANGEA) scoping study. PANGEA is one of the two scoping studies funded by NASA in 2023 to identify the scientific questions and develop the initial study design and implementation concept for a new NASA Terrestrial Ecology field campaign. This report provides 1) the scientific rationale; 2) an initial study design concept; 3) a presentation of science questions, goals, and objectives; 4) the rationale in terms of state-of-the-art, relevance, and expected advances; 5) implementation concepts; and 6) other information to enable NASA to fully evaluate the project. This report outlines the PANGEA concept, including the PANGEA science themes, science questions, the scientific and technical advancement arising from PANGEA, the critical role of NASA remote sensing, PANGEA's research strategy and study design, PANGEA's capacity-building and training priorities, community engagement strategy, ability to enable Earth Action, and technical and logistical feasibility. The PANGEA concept reflects the voices of many and was developed in collaboration with over 800 individuals representing over 300 organizations from 42 countries across five continents. This report is provided in five languages including English, Spanish, French, Portuguese, and Indonesian.
+  <br>
+
+  #### Taiga_Tundra_Tree_Cover_1218
+  This data set provides a map of selected areas with defined tree canopy cover over the circumpolar taiga-tundra ecotone (TTE). Canopy cover was derived from the 500-meter MODIS Vegetation Continuous Fields (VCF) product as averaged over six years from 2000-2005 and processed as described in Ranson et al. (2011). This process identified patches of low tree canopy cover which are indicative of the transition from forest to tundra and differentiate the circumpolar taiga–tundra ecotone for the 2000–2005 period. The TTE is the Earth's longest vegetation transition zone and stretches for more than 13,400 km around Arctic North America, Scandinavia, and Eurasia. In Eurasia, the map extends from 60 degrees N to 70 degrees N, and in North America from 50 degrees N to 70 degrees N, excluding Baffin Island in northeastern Canada and the Aleutian Peninsula in southwestern Alaska. Note that for this product, taiga is being used one and the same as boreal forest. This circumpolar TTE area was classified according to VCF tree canopy cover.
+  <br>
+
+  #### Forest_Inventory_Tapajos_1552
+  This dataset provides tree inventory, tree height, diameter at breast height (DBH), and estimated crown measurements from 30 plots located in the Tapajos National Forest, Para, Brazil collected in September 2010. The plots were located in primary forest, primary forest subject to reduced-impact selective logging (PFL) between 1999 and 2003, and secondary forest (SF) with different age and disturbance histories. Plots were centered on GLAS (the Geoscience Laser Altimeter System) LiDAR instrument footprints selected along two sensor acquisition tracks spanning a wide range in vertical structure and aboveground biomass.
+  <br>
+
+  #### Tree_Mortality_Western_US_1512
+  This dataset provides annual estimates of tree mortality due to fires and bark beetles from 2003 to 2012 on forestland in the continental western United States. Tree mortality was estimated at 1-km spatial resolution by combining tree aboveground carbon (AGC) and disturbance datasets derived largely from remote sensing. Tree mortality is expressed as the amount of AGC stored in trees killed by disturbance (Mg carbon per km2). The dataset also includes annual uncertainty maps that were generated using a Monte Carlo approach in which tree biomass, biomass carbon content, and disturbance severity were iteratively varied by their uncertainty.
+  <br>
+
+  #### VHR_Urban_Land_Cover_Maps_2413
+  This dataset consists of very high resolution urban land cover maps for two African cities, Mekelle, Ethiopia and Polokwane, South Africa for 2020. Maps were generated from Planet SuperDove satellite imagery at 3.125-m spatial resolution, and Worldview-3 satellite imagery (Maxar Techologies) at two spatial resolutions, 2 m for multispectral imagery and 0.5-m spatial resolution for pansharpened imagery. An object-based image classification approach was used to produce a multi-class land cover product for each image source. The aim of this work was to support fine scale urban land cover analyses and comparative assessments between different high resolution satellite imagery sources. The data are provided in shapefile format.
+  <br>
+
+  #### WAVeTrends_1738
+  The WAVeTrends dataset is a 0.05 degree (5.55 km) vegetation change product, spanning the West African Sudano-Sahel region. It provides pixel-wise information on concurrent woody and herbaceous vegetation trends over a 32-year period (1982-2013). Change in woody vegetation was derived using long-term rain use efficiency (RUE) sensitivity, i.e., the per-pixel comparison of the difference of mean RUE between the first and last decades of the 32-year time series. Herbaceous vegetation change was defined by short-term RUE sensitivity, i.e., comparing the slope of the RUE relationship (productivity vs. precipitation) between both decades using per-pixel Analysis of Covariance (ANCOVA). Categorical vegetation change was then determined for each pixel using the direction of the change and a significance level of p<0.05. The use of RUE (the amount of biomass produced per unit of precipitation) for vegetation trend analysis in savanna regions relies on the assumption that rainfall is a significant positive driver of net production in drylands. Testing of this long-term productivity-rainfall relationship revealed that the assumption was not always met, therefore, validity flags are included for each pixel location.
+  <br>
+
+  #### woody_biomass_657
+  Estimates of the woody biomass density and pools were derived at the county scale of resolution of all forests of the eastern United States using new approaches for converting inventoried wood volume to estimates of above and belowground biomass. Biomass density and pools were estimated from the US Department of Agriculture Forest Service, Forest Inventory and Analysis database on growing stock volume by forest type and stand size-class. Estimates were compiled for 2,009 counties in the 33 Eastern states based on state-based inventories conducted between 1983 and 1996 (see Brown and Schroeder 1999). Stand volume was converted to aboveground biomass with regression equations for biomass expansion factors (BEF; ratio of aboveground biomass density of all living trees to merchantable volume). Belowground biomass was estimated as a function of aboveground biomass with regression equations. Biomass pools were calculated as the product of biomass density and forest area, summed by stand-size class. Forest area was defined by the Forest Service as land producing or capable of producing in excess of 20 cubic feet per acre per year of industrial roundwood products. Statistics were presented for hardwood and softwood (pine plus spruce-fir) forest categories. The approach accounted for commercial and non commercial tree species with diameters greater than 2.5 cm and included noncommercial tree components (branches, twigs, and leaves). Belowground components include both fine and coarse roots.The estimation methods were based on work by Schroeder et al. 1997 and were also used to estimate aboveground woody production (Brown and Schroeder 1999).Based on the analysis of the biomass data (Brown et al. 1999), total biomass density for hardwood forests ranged from 36 to 344 Mg ha-1, with an area-weighted mean of 159 Mg ha-1. About 50% of all counties had hardwood forests with biomass densities between 125 and 175 Mg ha-1. For softwood forests, biomass density ranged from 2 to 346 Mg ha-1, with an area-weighted mean of 110 Mg ha-1. Biomass densities were generally lower for softwoods than for hardwoods; ca. 40% of all counties had softwood forests with biomass densities between 75 and 125 Mg ha-1. Highest amounts of forest biomass were located in the Northern Lake states, mountain areas of the Mid-Atlantic states, and parts of New England, and lowest amounts in the Midwest states. The total biomass for all eastern forests for the late 1980s was estimated at 20.5 Pg, 80% of which was in hardwood forests. Maps (Brown et al. 1999) provided a visual representation of the pattern of forest biomass densities and pools over space that are useful for forest managers and decision makers, and for verification of vegetation models.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- climate
+- cog
+- earth observation
+- elevation
+- geospatial
+- ice
+- land cover
+- lidar
+- netcdf
+- precipitation
+- radar
+- satellite imagery
+- stac
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "Leaf_Photosynthesis_Traits_1224 v1 - This global data set of photosynthetic rates and leaf nutrient traits was compiled from a comprehensive literature review. It includes estimates of Vcmax (maximum rate of carboxylation), Jmax (maximum rate of electron transport), leaf nitrogen content (N), leaf phosphorus content (P), and specific leaf area (SLA) data from both experimental and ambient field conditions, for a total of 325 species and treatment combinations."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Leaf_Photosynthesis_Traits/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Leaf_Carbon_Nutrients_1106 v1 - This data set provides carbon (C), nitrogen (N), phosphorus (P), potassium (K), calcium (Ca), and magnesium (Mg) concentrations in green and senesced leaves. Vegetation characteristics reported include species growth habit, leaf area, mass, and mass loss with senescence."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Leaf_Carbon_Nutrients/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LAI_Woody_Plants_1231 v1 - This data set provides global leaf area index (LAI) values for woody species. The data are a compilation of field-observed data from 1,216 locations obtained from 554 literature sources published between 1932 and 2011."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LAI_Woody_Plants/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Litter_Carbon_Nutrients_1244 v1 - Measurement data of aboveground litterfall and littermass and litter carbon, nitrogen, and nutrient concentrations were extracted from 685 original literature sources and compiled into a comprehensive database to support the analysis of global patterns of carbon and nutrients in litterfall and litter pools. Data are included from sources dating from 1827 to 1997."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Litter_Carbon_Nutrients/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Amazon_ForestStructure_LIDAR_2412 v1 - This dataset provides initial condition files for initializing the Ecosystem Demography Model (ED2). This dataset holds regional forest structure characteristics across the Brazilian Amazon that were derived from 545 airborne lidar transects (300 x 12500 m each) acquired during the Amazon Biomass Estimation Project (EBA2016) campaign in 2016."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Amazon_ForestStructure_LIDAR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Non-Forest_Trees_Sahara_Sahel_1832 v1 - This dataset provides georeferenced polygon vectors of individual tree canopy geometries for dryland areas in West African Sahara and Sahel that were derived using deep learning applied to 50-cm resolution satellite imagery. More than 1.8 billion non-forest trees (i.e., woody plants with a crown size over 3 m2) over about 1.3 million km2 were identified from panchromatic and pansharpened normalized difference vegetation index (NDVI) images at 0.5-m spatial resolution using an automatic tree detection framework based on supervised deep-learning techniques."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Non-Forest_Trees_Sahara_Sahel/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LULC_Nigeria_Ethiopia_SAfrica_2367 v1 - This dataset provides a two-tier annual Land Use (LU) and Urban Land Cover (LC) product suite over three African countries, Ethiopia, Nigeria, and South Africa, across a 5-year period of 2016-2020. Remote sensing data sources were used to create 30-m resolution LU maps (Tier-1), which were then utilized to delineate urban boundaries for 10-m resolution LC classes (Tier-2)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LULC_Nigeria_Ethiopia_SAfrica/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BASIN_TCP_963 v1 - This data set reports stable isotope ratio data of CO2 (13C/12C and 18O/16O) associated with photosynthetic and respiratory exchanges across the biosphere-atmosphere boundary. Measurements were made at selected AmeriFlux sites including Harvard Forest, Howland Forest, Rannells Flint Hills Prairie, Niwot Ridge Forest, and the Wind River Canopy Crane Site, which span the dominant ecosystem types of the United States."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/BASIN_TCP/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "biomass_allocation_703 v1 - This data set of leaf, stem, and root biomass for various plant taxa was compiled from the primary literature of the 20th century with a significant portion derived from Cannell (1982). Recent allometric additions include measurements made by Niklas and colleagues (Niklas, 2003)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/biomass_allocation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LaSelva_Land_Use_1312 v1 - This data set contains land-use, canopy height, and aboveground carbon estimates derived from LiDAR data collected at La Selva Biological Station in Costa Rica in March 1998 and March 2005. The data are provided as GeoTIFFs (.tif) of 100-m (1-ha) resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LaSelva_Land_Use/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Semi-Arid_Tree_Carbon_50cm_2117 v1 - This dataset provides allometrically-estimated carbon stocks of 9,947,310,221 tree crowns derived from 50-cm resolution satellite images within the 0 to 1000 mm/year precipitation zone of Africa north of the equator and south of the Sahara Desert. These data are presented in GeoPackage (.gpkg) format and are summarized in Cloud-Optimized GeoTIFF (COG) format."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Semi-Arid_Tree_Carbon_50cm/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "african_woody_savanna_850 v1 - This data set includes the soil and vegetation characteristics, herbivore estimates, and precipitation measurement data for the 854 sites described and analyzed in Sankaran et al., 2005. Savannas are globally important ecosystems of great significance to human economies."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/african_woody_savanna/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Decadal_LULC_India_1336 v1 - This data set provides land use and land cover (LULC) classification products at 100-m resolution for India at decadal intervals for 1985, 1995 and 2005. The data were derived from Landsat 4 and 5 Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+), and Multispectral (MSS) data, India Remote Sensing satellites (IRS) Resourcesat Linear Imaging Self-Scanning Sensor-1 or III (LISS-I, LISS-III) data, ground truth surveys, and visual interpretation."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Decadal_LULC_India/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Siberian_Larch_Stand_Age_1364 v1 - This data set provides mapped estimates of the stand age of young (less than 25 years old) larch forests across Siberia from 1989-2012 at 30-m resolution. The age estimates were derived from Landsat-based composites and tree cover for years 2000 and 2012 developed by the Global Forest Change (GFC) project and the stand-replacing fire mapping (SRFM) data set."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Siberian_Larch_Stand_Age/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Young_Russian_Forest_Map_1330 v1 - This data set provides the distribution of young forests (forests less than 27 years of age) and their estimated stand ages across the full extent of Russia at 500-m resolution for the year 2012. The distribution of young forests was modeled with MODIS 500-m records for 12- to 27-year-old forests and augmented with the 0- to 11-year-old forest distribution as aggregated from 30 m resolution contemporary Landsat imagery."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Young_Russian_Forest_Map/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "litter_decomp_651 v1 - The results of published and unpublished experiments investigating the impacts of elevated carbon dioxide on the chemistry (nitrogen and lignin concentration) of leaf litter and the decomposition of plant tissues are assembled in a format appropriate for statistical meta-analysis of the effect of carbon dioxide. The synthesis originated from a workshop, Litter Quality and Decomposition under Elevated CO2, held in Capri, Italy, September 1998, under the auspices of Global Change and Terrestrial Ecosystems project (GCTE) and the European COST network."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/litter_decomp/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Boreal_Fire_Severity_Metrics_1520 v1 - This data set provides products characterizing immediate and longer-term ecosystem changes from fires in the circumpolar boreal forests of Northern Eurasia and North America. The data include fire intensity (fire radiative power; FRP), increase in spring albedo, decrease in tree cover, normalized burn ratio, normalized difference vegetation index, and land surface temperature, as well as three derived fire metrics: crown scorch, vegetation destruction, and fire-induced tree mortality."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Boreal_Fire_Severity_Metrics/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forest_Inventory_Acre_Brazil_1654 v1 - This data set provides measurements of diameter at breast height (DBH) and species identification at four forest sites in the eastern side of Acre, Brazil including Bonal (A), Catuaba (B), Humaita (C) and Transacreana (D). The inventory locations include forests burned in 2005 and 2010 and nearby unburned areas."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forest_Inventory_Acre_Brazil/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forest_Inventory_Data_Brazil_1563 v1 - This dataset provides measurements for diameter at breast height (DBH) and species identification of trees for inventories taken at five tropical forest sites in Acre state, Brazil, in the southwestern Amazon region. The sites included one in a forest reserve (Reserva Bonal) and four within forest fragments situated on private property."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forest_Inventory_Data_Brazil/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forest_Diversity_CAF_WesternUS_2481 v1 - This dataset holds maps of forest structure and structural diversity metrics at a range of spatial scales (1, 5, 10, 15, 20 and 25 km) derived from NASA's Global Ecosystem Dynamics Investigation (GEDI) spaceborne lidar data collected between April 2019 and March 2023. It also holds the airborne laser scanning (ALS) data that provides simulated GEDI waveforms and was used to evaluate the GEDI-derived metrics."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forest_Diversity_CAF_WesternUS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "geoecology_R1_656 v1 - The Geoecology database is a compilation of environmental data for the period 1941 to 1981. The Geoecology database contains selected data on terrain and soils, water resources, forestry, vegetation, agriculture, land use, wildlife, air quality, climate, natural areas, and endangered species."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/geoecology_R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Biomass_1950-2010_1296 v1 - This data set provides global forest area, forest growing stock, and forest biomass data at 1-degree resolution for the period 1950-2010. The data set is based on a compilation of forest area and growing stock data reported in international assessments performed by FAO, MCPFE (now Forest Europe), and UNECE."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Biomass_1950-2010/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Clumping_Index_1531 v1 - This dataset provides global clumping index (CI) data for 2006 derived from the MODIS Bidirectional Reflectance Distribution Function (BRDF) data product. Clumping index is a key structural parameter of plant canopies which represents the degree of foliage grouping within distinct canopy structures relative to a random distribution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Clumping_Index/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Maps_C_Density_2010_1763 v1 - This dataset provides temporally consistent and harmonized global maps of aboveground and belowground biomass carbon density for the year 2010 at a 300-m spatial resolution. The aboveground biomass map integrates land-cover specific, remotely sensed maps of woody, grassland, cropland, and tundra biomass."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Maps_C_Density_2010/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "root_biomass_658 v1 - A global data set of root biomass, rooting profiles, and concentrations nutrients in roots was compiled from the primary literature and used to study distributions of root properties. This data set consists of estimates of fine root biomass and specific area, site characteristics, and source references associated with two papers (Jackson et al."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/root_biomass/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "root_nutrients_659 v1 - Nutrient measurements for fine roots were compiled from 56 published studies providing information on 372 different combinations of species, root diameter, rooting depths, and soils at a variety of locations. The compilation was used to examine dynamics of 14 nutrients, including translocation properties of roots of varying size and status.Fine roots are an important source and sink for nutrients in terrestrial biogeochemistry."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/root_nutrients/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "root_profiles_660 v1 - Rooting depths were estimated from a global database of root profiles that was assembled from the primary literature to study relationships of abiotic and biotic factors associated with belowground vegetation structure. Variables used to characterize belowground vegetation structure include the depths above which 50% of all roots and 95% of all roots are located in the profile."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/root_profiles/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "root_turnover_661 v1 - Estimates of root turnover rates were calculated from measurements of live root standing crop and belowground net primary production (BNPP) compiled from the primary literature. Vegetation characteristics, soil properties, and climate conditions were associated with turnover rates to examine patterns and controls for biomes worldwide."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/root_turnover/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "fire_emissions_v4_R1_1293 v4.1 - This dataset provides global estimates of monthly burned area, monthly emissions and fractional contributions of different fire types, daily or 3-hourly fields to scale the monthly emissions to higher temporal resolutions, and data for monthly biosphere fluxes. The data are at 0.25-degree latitude by 0.25-degree longitude spatial resolution and are available from June 1995 through 2016, depending on the dataset."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/fire_emissions_v4_R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "forest_carbon_flux_949 v1 - A comprehensive global database has been assembled to quantify CO2 fluxes and pathways across different levels of integration (from photosynthesis up to net ecosystem production) in forest ecosystems. The database fills an important gap for model calibration, model validation, and hypothesis testing at global and regional scales."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/forest_carbon_flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "HistoricalLai_584 v1 - Approximately 1000 published estimates of leaf area index (LAI) from nearly 400 unique field sites, covering the period 1932-2000, have been compiled into a single data set. LAI is a key parameter for global and regional models of biosphere/atmosphere exchange of carbon dioxide, water vapor, etc."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/HistoricalLai/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "FluxSat_GPP_FPAR_1835 v2 - This dataset provides global gridded daily estimates of gross primary production (GPP) and uncertainties at 0.05-degree resolution for the period 2000-03-01 to the recent past. The GPP was derived from the MODerate-resolution Imaging Spectroradiometer (MODIS) instruments on the NASA Terra and Aqua satellites using the MCD43C4v006 Nadir Bidirectional Reflectance Distribution Function (BRDF)-Adjusted Reflectances (NBAR) product as input to neural networks that were used to globally upscale GPP estimated from selected FLUXNET 2015 eddy covariance tower sites."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/FluxSat_GPP_FPAR/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Monthly_GPP_1789 v1 - This dataset provides global monthly average gross primary productivity (GPP; g carbon/m2/d) modeled at 8 km spatial resolution for each of the 35 years from 1982-2016. GPP is based on the well-known Monteith light use efficiency (LUE) equation but was improved with optimized spatially and temporally explicit LUE values derived from selected FLUXNET tower site data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Monthly_GPP/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Mean_Seasonal_LAI_1653 v1 - This dataset provides a global 0.25 degree x 0.25 degree gridded monthly mean leaf area index (LAI) climatology as averaged over the period from August 1981 to August 2015. The data were derived from the Advanced Very High Resolution Radiometer (AVHRR) Global Inventory Modeling and Mapping Studies (GIMMS) LAI3g version 2, a bi-weekly data product from 1981 to 2015 (GIMMS-LAI3g version 2)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Mean_Seasonal_LAI/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Global_Veg_Greenness_GIMMS_3G_2187 v1 - This dataset holds the Global Inventory Modeling and Mapping Studies-3rd Generation V1.2 (GIMMS-3G+) data for the Normalized Difference Vegetation Index (NDVI). NDVI was based on corrected and calibrated measurements from Advanced Very High Resolution Radiometer (AVHRR) data with a spatial resolution of 0.0833 degree and global coverage for 1982 to 2022."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Global_Veg_Greenness_GIMMS_3G/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "GEDI_ICESAT2_Global_Veg_Height_2294 v1 - This dataset provides global rasters of relative height metrics for vegetation from Global Ecosystem Dynamics Investigation (GEDI) L2A data and Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) L3A ATL08 data at 100-, 200-, 500-, and 1000-m spatial resolutions. The metrics include the relative heights RH98, RH90, RH75, and RH50, corresponding to the height at which the respective 98th, 90th, 75th, and 50th percentile of returned energy is reached relative to the ground."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/GEDI_ICESAT2_Global_Veg_Height/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MatthewsVegetation_419 v1 - The global vegetation type data of 1 x 1 degree latitude and longitude resolution were designed for use in studies of climate and climate change. Vegetation data were compiled in digital form from approximately 100 published sources."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/MatthewsVegetation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Gridded_Biomass_Africa_1777 v1 - This dataset provides maps of woody (tree and shrub) cover and biomass across Sub-Saharan Africa at a resolution of 1 km for the period 2000-2004. Canopy cover observations and remote-sensing data related to woody vegetation were used to predict woody cover across Africa."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Gridded_Biomass_Africa/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "GEDI_HighQuality_Shots_Rasters_2339 v1 - This dataset consists of near-global, analysis-ready, multi-resolution gridded vegetation structure metrics derived from NASA Global Ecosystem Dynamics Investigation (GEDI) Level 2 and 4A products associated with 25-m diameter lidar footprints. This dataset provides a comprehensive representation of near-global vegetation structure that is inclusive of the entire vertical profile, based solely on GEDI lidar, and validated with independent data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/GEDI_HighQuality_Shots_Rasters/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "GEDI_Fusion_Structure_2236 v1 - This dataset provides eight GEDI forest structure metrics relevant to wildlife habitat modeling and biodiversity assessments at 30-m resolutions across Washington, Oregon, Idaho, Montana, Wyoming, and Colorado. The metrics characterize canopy height, strata densities, and canopy cover."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/GEDI_Fusion_Structure/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AVIRIS-NG_Data_Idaho_1533 v1 - This dataset provides surface reflectance measured by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument during flights over research sites in Idaho and California in 2014 and 2015. AVIRIS-NG measures reflected radiance at 5-nanometer (nm) intervals in the visible to shortwave infrared spectral range between 380 and 2510 nm."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/AVIRIS-NG_Data_Idaho/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "New_Hampshire_Landcover_1305 v1 - The New Hampshire Geographically Referenced Analysis and Information Transfer System (GRANIT) land cover data set provides a land cover and land use product at 30-m resolution with 23 individual classes across the state. The classification is based largely on the analysis of 12 Landsat Thematic Mapper (TM and ETM+) images."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/New_Hampshire_Landcover/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Phenology_AmeriFlux_Neon_Sites_2033 v1 - This land surface phenology (LSP) dataset provides spatially explicit data related to the timing of phenological changes such as the start, peak, and end of vegetation activity, vegetation index metrics and associated quality assurance flags. The data are for the growing seasons of 2017-2021 for 10-km x 10-km windows centered over 104 eddy covariance towers at AmeriFlux and National Ecological Observatory Network (NEON) sites."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Phenology_AmeriFlux_Neon_Sites/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Phenology_Deciduous_Forest_1570 v1 - This dataset provides Landsat phenology algorithm (LPA) derived start and end of growing seasons (SOS and EOS) at 500-m resolution for deciduous and mixed forest areas of 75 selected Landsat sidelap regions across the Eastern United States and Canada. The data are a 30-year time series (1984-2013) of derived spring and autumn phenology for forested areas of the Eastern Temperate Forest, Northern Forest, and Taiga ecoregions."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Phenology_Deciduous_Forest/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forested_Areas_Amazonas_Brazil_1515 v1 - This data set provides LiDAR point clouds and digital terrain models (DTM) from surveys over the K34 tower site in the Cuieiras Biological Reserve, over forest inventory plots in the Adolpho Ducke Forest Reserve, and over sites of the Biological Dynamics of Forest Fragments Project (BDFFP) in Rio Preto da Eva municipality near Manaus, Amazonas, Brazil during June 2008. The surveys encompass the K34 eddy flux tower managed through the Large-scale Biosphere-Atmosphere Experiment in Amazonia, forest inventory plots managed by the Programa de Pesquisa em Biodiversidade (PPBio), and sites manage..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forested_Areas_Amazonas_Brazil/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forested_Areas_Para_Brazil_1514 v1 - This data set provides LiDAR point clouds and digital terrain models (DTM) from surveys over the Tapajos National Forest in Belterra municipality, Para, Brazil during late June and early July 2008. The surveys encompass the K67 and K83 eddy flux towers and a deforestation chronosequence managed through the Large-Scale Biosphere-Atmosphere Experiment in Amazonia providing long-term flux measurements of carbon dioxide."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forested_Areas_Para_Brazil/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LiDAR_Veg_Ht_Idaho_1532 v1 - This dataset provides the point cloud data derived from small footprint waveform LiDAR data collected in August 2014 over Reynolds Creek Experimental Watershed and Hollister in southern Idaho. The LiDAR data have been georeferenced, noise-filtered, and corrected for misalignment for overlapping flight lines and are provided in 1 km tiles."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LiDAR_Veg_Ht_Idaho/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Eurasia_Biomass_1278 v1 - This data set provides estimates of aboveground biomass (AGB) for defined land cover types within World Wildlife Fund (WWF) ecoregions across the boreal biome of eastern and western Eurasia, roughly between 50 and 70 degrees N. The study focused on within-growing-season data, i.e."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Eurasia_Biomass/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "GSMNP_Vegetation_Structure_R1_1286 v1.2 - This dataset provides multiple-return LiDAR-derived vegetation canopy structure at 30-meter spatial resolution for the Great Smoky Mountains National Park (GSMNP). Canopy characteristics were analyzed using high resolution three-dimensional point cloud measurements gathered between February-April 2011 for Tennessee and during March-April 2005 for North Carolina sections of the park."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/GSMNP_Vegetation_Structure_R1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "white_model_parameters_652 v1 - Ecosystem simulation models use descriptive input parameters to establish the physiology, biochemistry, structure, and allocation patterns of vegetation functional types, or biomes. For single-stand simulations, it is possible to measure required data, but as spatial resolution increases, data availability decreases."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/white_model_parameters/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "GIMMS3g_NDVI_Trends_1275 v1 - This data set provides normalized difference vegetation index (NDVI) data for the arctic growing season derived primarily with data from Advanced Very High Resolution Radiometer (AVHRR) sensors onboard several NOAA satellites over the years 1982 through 2012. The NDVI data, which show vegetation activity, were averaged annually for the arctic growing season (GS; June, July and August)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/GIMMS3g_NDVI_Trends/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Land_Use_Harmonization_V1_1248 v1 - These data represent fractional land use and land cover patterns annually for the years 1500 - 2100 for the globe at 0.5-degree (~50-km) spatial resolution. Land use categories of cropland, pasture, primary land, secondary (recovering) land, and urban land, and underlying annual land-use transitions, are included."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Land_Use_Harmonization_V1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LUH2_GCB2019_1851 v1 - This dataset, referred to as LUH2-GCB2019, includes 0.25-degree gridded, global maps of fractional land-use states, transitions, and management practices for the period 0850-2019. The LUH2-GCB2019 dataset is an update to the previous Land-Use Harmonization Version 2 (LUH2-GCB) datasets prepared as required input to land models in the annual Global Carbon Budget (GCB) assessments, including land-use change data relating to agricultural expansion, deforestation, wood harvesting, shifting cultivation, afforestation, and crop rotations."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LUH2_GCB2019/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Land_Use_Harmonization_V2_1721 v1 - This dataset provides 0.25-degree gridded, global, annual estimates of fractional land use and land cover patterns for the period 2015-2100, designed to support the ISIMIP2b effort to assess the impacts of 1.5 Deg Celcius global warming. Land use types, land use transitions, and cropland estimates of area fraction are provided and include detailed separation of primary and secondary natural vegetation into forest and non-forest sub-types, pasture into managed pasture and rangeland, and cropland into multiple crop functional types; all transitions between land use states per grid cell per ye..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Land_Use_Harmonization_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "MangroveExtent_Landsat_MSS_2329 v1 - This dataset includes a regional map of mangrove extent for Myanmar, Thailand, and Cambodia for the period of 1972-1977. The map was developed from Landsat 1-2 MSS Collection 1 Tier 2 imagery."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/MangroveExtent_Landsat_MSS/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "US_MODIS_NDVI_1299 v3 - This data set provides Moderate Resolution Imaging Spectroradiometer (MODIS) normalized difference vegetation index (NDVI) data, smoothed and gap-filled, for the conterminous US for the period 2000-01-01 through 2015-12-31. The data were generated using the NASA Stennis Time Series Product Tool (TSPT) to generate NDVI data streams from the Terra satellite (MODIS MOD13Q1 product) and Aqua satellite (MODIS MYD13Q1 product) instruments."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/US_MODIS_NDVI/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "LAI_Africa_2325 v1 - This dataset provides leaf area index (LAI) estimates for Sub-Saharan Africa for woody, herbaceous, and aggregate vegetation types. The estimates were derived from Moderate Resolution Imaging Spectroradiometer (MODIS) Level 4 and the native MODIS LAI product (MCD15A2H Version 6.1), which provides LAI measurements every 8 days at 500-m pixel size."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/LAI_Africa/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "NA_MODIS_Surface_Biophysics_1210 v1 - This data set provides MODIS-derived surface biophysical climatologies of bidirectional distribution function (BRDF), BDRF/albedo, land surface temperature (LST), leaf area index (LAI), and evapotranspiration (ET) as separate files for each of the MODIS land cover types, and four radiative forcing data files for four scenarios of potential vegetation shifts in North America. Each biophysical variable has temporal periods that represent the average of all 8-day periods from the years 2000 – 2012."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/NA_MODIS_Surface_Biophysics/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "UAV_Imagery_BigLakeTrail_1834 v1 - This dataset provides multispectral reflectance imagery (green at 550 nm, red at 660 nm, red edge at 735 nm, and near-infrared at 790 nm), normalized difference vegetation index (NDVI), and digital surface and terrain models for a 0.5 km2 area surrounding Big Trail Lake (BTL) in the Goldstream Creek Valley north of Fairbanks, Alaska. These high spatial resolution maps (13 cm x 13 cm) were generated by unmanned aerial vehicle (UAV) imagery collected on 2019-08-04."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/UAV_Imagery_BigLakeTrail/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Xingu_Albedo_Radiation_1622 v1 - This dataset provides daily average land surface net radiation (Rnet) as an 8-day time series at approximately 0.5 km resolution for the upper Xingu River Basin in Mato Grosso, Brazil, from 2000-02-18 to 2012-11-16. The parameters needed to calculate Rnet, including albedo, downward shortwave radiation (RSnet), upward longwave radiation (RLnet[up]) and downward longwave radiation (RLnet[down]) were derived from MODIS products (MOD43A3, MOD11A2, MOD08E3) and local weather station data."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Xingu_Albedo_Radiation/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ForestHt_Biomass_GEDI_TDX_2298 v1 - This dataset includes maps of canopy height and aboveground biomass at spatial resolutions of 25 m and 100 m for Mexico, Gabon, French Guiana, and the Amazon Basin. The GEDI-TanDEM-X (GTDX) fusion maps were created by combining data from NASA's Global Ecosystem Dynamics Investigation (GEDI) Version 2 footprint data (from 2019-04-18 to 2021-08-18) and TanDEM-X (abbreviated as TDX) Interferometric Synthetic Aperture Radar (InSAR) images (from 2011-01-06 to 2020-12-31)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/ForestHt_Biomass_GEDI_TDX/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Phenocam_Images_V2_1689 v2 - This dataset provides a time series of visible-wavelength digital camera imagery collected through the PhenoCam Network at each of 393 sites predominantly in North America from 2000-2018. The raw imagery was used to derive information on phenology, including time series of vegetation color, canopy greenness, and phenology transition dates for the PhenoCam Dataset v2.0."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Phenocam_Images_V2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PhenoCam_V2_1674 v2 - This data set provides a time series of vegetation phenological observations for 393 sites across diverse ecosystems of the world (mostly North America) from 2000-2018. The phenology data were derived from conventional visible-wavelength automated digital camera imagery collected through the PhenoCam Network at each site."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/PhenoCam_V2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Phenocam_Images_V3_2364 v3 - This dataset provides a time series of visible-wavelength digital camera imagery collected through the PhenoCam Network at each of 738 sites across diverse ecosystems of the world (mostly North America) from 2000-2023. Vegetation types such as deciduous broadleaf forests, grasslands, evergreen needleleaf forests, and agriculture are the best-represented."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Phenocam_Images_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PhenoCam_V3_2389 v3 - This dataset provides vegetation phenological observations for 738 sites across diverse ecosystems of the world (mostly North America) from 2000 to 2023. The phenology data were derived from conventional visible-wavelength automated digital camera imagery collected through the PhenoCam Network at each site."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/PhenoCam_V3/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Landsat8_Sentinel2_Phenocam_2248 v1 - This dataset provides a reference of land surface phenology (LSP) at 30-m pixels for 78 regions of 10 x 10 km2 across a wide range of ecological and climatic regions in North America during 2019 and 2020. The data were derived by fusing the Harmonized Landsat 8 and Sentinel-2 (HLS) observations with near- surface PhenoCam time series (hereafter called HP-LSP)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Landsat8_Sentinel2_Phenocam/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "WhitePhenoregions_799 v1 - The overall purpose in this research was to identify the regions of the world best suited for long-term monitoring of biospheric responses to climate change, i.e. monitoring land surface phenology."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/WhitePhenoregions/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "King_Rim_Fire_Analysis_1288 v1 - This data set provides high-resolution surface reflectance, thermal imagery, burn severity metrics, and LiDAR-derived structural measures of forested areas in the Sierra Nevada Mountains, California, USA, collected before and after the August 2013 Rim and September 2014 King mega forest fires. Pre-fire data were paired with post-fire collections to assess pre- and post-fire landscape characteristics and fire severity."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/King_Rim_Fire_Analysis/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_land_cover_689 v1 - This dataset is a 15-kilometer resolution land cover map for the land area of the Former Soviet Union. There are sixty land cover classes distinguished in this dataset, of which 38 are forest cover classes."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_land_cover/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_landcover_far_east_690 v1 - This data set is a 1-kilometer resolution land cover map for the land area of the Primor'ye and Southern Khabarovsk Regions, in the Russian Far East, based on 1990 NOAA AVHRR data. Labeling of land cover classes depended upon the Russian 1990 Forest Cover Map (Garsia, 1990), the analyst's experience with AVHRR data, and Russian data sources."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_landcover_far_east/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_forest_map_1990_691 v1 - This data set is a 1:2.5 million scale forest cover map for the land area of the Former Soviet Union that was completed in 1990 (Garsia 1990). There are forty-five classes distinguished in this data set, of which 38 are forest cover classes."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_forest_map_1990/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_forest_map_1973_692 v1 - This data set is a 1:15 million scale forest cover map for the land area of the Former Soviet Union. Twenty-two land cover classes are distinguished, of which 20 are forest cover classes."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_forest_map_1973/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_forest_map_krasnoyarsk_693 v1 - This dataset is a 1:2 million scale forest cover map for the land area of the Krasnoyarsk Region, Russia. Thirty-two land cover classes are distinguished."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_forest_map_krasnoyarsk/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_fire_images_russia_694 v1 - This data set is made up of images of forest fires in Russia from NOAA's Operational Significant Event Imagery (OSEI) archive (http://www.osei.noaa.gov) for the 1998 and 1999 seasons. OSEI fire products include multichannel color composite imagery of wildfire and controlled burn events."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_fire_images_russia/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_fire_sumpt_695 v1 - This dataset is derived from Russian forest fire imagery from the National Forest Fire Center of Russia archive that was collected by the Center of Remote Sensing, Institute of Solar Terrestrial Physics, Irkutsk, Russia for the 1998 and 1999 fire seasons. The data are vector (point) maps of forest fire locations (1998 and 1999) in ArcView shapefile format."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_fire_sumpt/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_forest_carbon_696 v1 - This dataset is a 1:15 million scale map of forest stand carbon for the land area of Russia (Stone et al., 2000). The objective was to create a first approximation of the forest stand carbon reserves of Russia."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_forest_carbon/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_world_forest_map_697 v1 - This data set is the Former Soviet Union (FSU) portion of the Generalized World Forest Map (WCMC, 1998), a 1-kilometer resolution generalized forest cover map for the land area of the Former Soviet Union. There are five forest classes in the original global generalized map."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_world_forest_map/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_vector_data_698 v1 - This data set consists of roads, drainage, railroads, utilities, and population center information in readily usable vector format for the land area of the Former Soviet Union. The purpose of this dataset was to create a completely intact vector layer which could be readily used to aid in mapping efforts for the area of the FSU."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_vector_data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_admin_boundaries_699 v1 - This data set of state and regional boundaries was derived from the 1:3 million scale administrative boundaries (ESRI, 1998) for the land area of the Former Soviet Union. There are 162 administrative regions distinguished in this data set."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_admin_boundaries/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "rlc_vegetation_1990_700 v1 - This dataset is a 1:4 million scale vegetation map for the land area of the Former Soviet Union. Three hundred seventy-three cover classes are distinguished, of which nearly 145 are forest cover-related classes."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/rlc_vegetation_1990/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Russian_Forest_Disturbance_1294 v1 - This data set provides Boreal forest disturbance maps at 30-m resolution for 55 selected sites across Northern Eurasia within the Russian Federation. Disturbance events were derived from selected high-quality multi-year time series of Landsat Thematic Mapper and Enhanced Thematic Mapper Plus images (stacks) over the 1984 to 2000 time period."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Russian_Forest_Disturbance/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Idaho_field_shrub_data_1503 v1 - This dataset provides the results of the characterization of shrubland vegetation at two study areas in southern Idaho, USA: the Reynolds Creek Experimental Watershed (RCEW) and Hollister. Data were collected in September and October 2014."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Idaho_field_shrub_data/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SiB3_Carbon_Flux_909 v1 - The Simple Biosphere Model, Version 3 (SiB3) was used to produce a global data set of hourly carbon fluxes between the atmosphere and the terrestrial biosphere for the years 1998-2006. This data set represents the global net ecosystem exchange (NEE) of carbon between the atmosphere and the terrestrial biosphere; specifically, the flux of CO2 between the planetary boundary layer (PBL) and the surface vegetation layer."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/SiB3_Carbon_Flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Siberian_Biomass_Wildfire_1321 v1 - This data set provides 30-meter resolution mapped estimates of Cajander larch (Larix cajanderi) aboveground biomass (AGB), circa 2007, and a map of burn perimeters for 116 forest fires that occurred from 1966-2007. The data cover ~100,000 km2 of the Kolyma River Basin in northeastern Siberia, Sakha Republic, Russia."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Siberian_Biomass_Wildfire/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "ARID_White_Paper_V1.1_2408 v1.1 - This dataset provides the final report from the Adaptation and Response in Drylands (ARID) scoping study. ARID is one of the two scoping studies funded by NASA in 2023 to identify the scientific questions and develop the initial study design and implementation concept for a new NASA Terrestrial Ecology field campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/ARID_White_Paper_V1.1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "PANGEA_White_Paper_V1.1_2405 v1.1 - This dataset provides the final report from the PAN tropical investigation of bioGeochemistry and Ecological Adaptation (PANGEA) scoping study. PANGEA is one of the two scoping studies funded by NASA in 2023 to identify the scientific questions and develop the initial study design and implementation concept for a new NASA Terrestrial Ecology field campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/PANGEA_White_Paper_V1.1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Taiga_Tundra_Tree_Cover_1218 v1 - This data set provides a map of selected areas with defined tree canopy cover over the circumpolar taiga-tundra ecotone (TTE). Canopy cover was derived from the 500-meter MODIS Vegetation Continuous Fields (VCF) product as averaged over six years from 2000-2005 and processed as described in Ranson et al."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Taiga_Tundra_Tree_Cover/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Forest_Inventory_Tapajos_1552 v1 - This dataset provides tree inventory, tree height, diameter at breast height (DBH), and estimated crown measurements from 30 plots located in the Tapajos National Forest, Para, Brazil collected in September 2010. The plots were located in primary forest, primary forest subject to reduced-impact selective logging (PFL) between 1999 and 2003, and secondary forest (SF) with different age and disturbance histories."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Forest_Inventory_Tapajos/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Tree_Mortality_Western_US_1512 v1.1 - This dataset provides annual estimates of tree mortality due to fires and bark beetles from 2003 to 2012 on forestland in the continental western United States. Tree mortality was estimated at 1-km spatial resolution by combining tree aboveground carbon (AGC) and disturbance datasets derived largely from remote sensing."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/Tree_Mortality_Western_US/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "VHR_Urban_Land_Cover_Maps_2413 v1 - This dataset consists of very high resolution urban land cover maps for two African cities, Mekelle, Ethiopia and Polokwane, South Africa for 2020. Maps were generated from Planet SuperDove satellite imagery at 3.125-m spatial resolution, and Worldview-3 satellite imagery (Maxar Techologies) at two spatial resolutions, 2 m for multispectral imagery and 0.5-m spatial resolution for pansharpened imagery."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/VHR_Urban_Land_Cover_Maps/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "WAVeTrends_1738 v1 - The WAVeTrends dataset is a 0.05 degree (5.55 km) vegetation change product, spanning the West African Sudano-Sahel region. It provides pixel-wise information on concurrent woody and herbaceous vegetation trends over a 32-year period (1982-2013)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/WAVeTrends/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "woody_biomass_657 v1 - Estimates of the woody biomass density and pools were derived at the county scale of resolution of all forests of the eastern United States using new approaches for converting inventoried wood volume to estimates of above and belowground biomass. Biomass density and pools were estimated from the US Department of Agriculture Forest Service, Forest Inventory and Analysis database on growing stock volume by forest type and stand size-class."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/global_vegetation/woody_biomass/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

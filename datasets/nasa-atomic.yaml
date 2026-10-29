@@ -1,0 +1,33 @@
+Name: NASA ATOMIC Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### SAILDRONE_ATOMIC
+  Saildrone is a wind and solar powered unmanned surface vehicle (USV) capable of long distance deployments lasting up to 12 months and providing high quality, near real-time, multivariate surface ocean and atmospheric observations while transiting at typical speeds of 3-5 knots. The drone is autonomous in that it may be guided remotely from land while being completely wind driven. The saildrone ATOMIC (Atlantic Tradewind Ocean-Atmosphere Mesoscale Interaction Campaign) campaign involved the deployment of a fleet of saildrones, jointly funded by NASA and NOAA, in the Atlantic waters offshore of Barbados over a 45 day period from 17 January to 2 March 2020. The goal was to understand the Ocean-Atmosphere interaction particularly over the mesoscale ocean eddies in that region. The saildrones were equipped with a suite of instruments that included a CTD, IR pyrometer, fluorometer, dissolved oxygen sensor, anemometer, barometer, and Acoustic Doppler Current Profiler (ADCP). Additionally, four temperature data loggers were positioned vertically along hull to provide further information on thermal variability near the ocean surface. This Saildrone ATOMIC dataset is comprised of two data files for each of the three NASA-funded saildrones deployed, one for the surface observations and one for the ADCP measuements. The surface data files contain saildrone platform telemetry and near-surface observational data (air temperature, sea surface skin and bulk temperatures, salinity, oxygen and chlorophyll-a concentrations, barometric pressure, wind speed and direction) spanning the entire cruise at 1 minute temporal resolution. The ADCP files for each saildrone are at 5 minute resolution for the duration of the deployments. All data files are in netCDF format and CF/ACDD compliant consistent with the NOAA/NCEI specification.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/ATOMIC/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- netcdf
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SAILDRONE_ATOMIC v1.0 - Saildrone is a wind and solar powered unmanned surface vehicle (USV) capable of long distance deployments lasting up to 12 months and providing high quality, near real-time, multivariate surface ocean and atmospheric observations while transiting at typical speeds of 3-5 knots. The drone is autonomous in that it may be guided remotely from land while being completely wind driven."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SAILDRONE_ATOMIC
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

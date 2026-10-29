@@ -1,0 +1,198 @@
+Name: NASA SHIFT Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### SHIFT_AVNG_Canopy_WaterContent_2242
+  This dataset provides per-pixel vegetation canopy water content (CWC) derived from surface reflectance measured by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument from 2022-02-24 to 2022-05-17. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign. AVIRIS-NG measures reflected radiance in 425 bands at 5-nanometer (nm) intervals in the visible to shortwave infrared spectral range between 380 and 2510 nm. Measurements were radiometrically and geometrically calibrated as well as atmospherically corrected, and are provided at approximately 5-meter spatial resolution. These data include mosaics of several flight lines that were flown on a weekly basis covering a 640-square-mile (1,656-square-kilometer) study area, which stretches from Los Padres National Forest in the east to the Central California coast and into the coastal ocean in the west, including Dangermond Preserve and UCSB's Sedgwick Reserve. These data will help track changes in vegetation characteristics from late winter through early summer by providing insights into health and resilience of ecosystems as California's climate grows drier. In particular, temporal and spatial patterns of CWC will indicate drought stress and increased wildfire risk. The CWC files in this publication were processed by applying a simple fitting of spectral absorption features of liquid water and are distributed in cloud-optimized GeoTIFF (COG) format.
+  <br>
+
+  #### SHIFT_AVNG_Plant_Trait_Mosaics_2453
+  This dataset provides maps of 20 plant functional traits across a broad region of Santa Barbara County, California, USA. The maps were derived from AVIRIS-NG imagery collected during the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign between February and May 2022. Foliar traits were derived from the surface reflectance product by applying partial least squares regression models. These traits include foliar concentrations of cellulose, lignin, sugar, hemicellulose, aluminum, calcium, manganese, nitrogen, magnesium, potassium, phosphorus, and sulfur. Area content of chlorophylls, leaf dry mass, and leaf water content were estimated. Thirteen maps of surface reflectance (7 bands) by image acquisition date and a mask for ocean pixels are included. With near-weekly temporal resolution, the dataset captures phenological trajectories of plant traits across diverse ecosystems in the region. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### SHIFT_AVNG_FullRes_QkLook_2189
+  This dataset holds full-resolution 3-band (true color) imagery acquired by NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign which occurred during February to May, 2022, with a follow up activity for one week in September. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures radiance at approximately 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The images in this dataset are true color (RGB) images from the wavelengths centered at approximately 808, 658, and 563 nm, subset from the full spectrum collected by AVIRIS-NG. The spatial resolution matches the native observed resolution (variable depending on the flightline, generally finer than 5 m and down to 2 m). There are two files for each flight line, one in PNG and one in georeferenced cloud-optimized GeoTIFF format; the GeoTIFF contains radiance floating point values while the PNG has been scaled and converted to integers.
+  <br>
+
+  #### SHIFT_AVNG_L1A_RDN_unrec_2184
+  This dataset contains Level 1A (L1A) unrectified surface radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. This campaign will generate precise, high-frequency data on plant communities collected over nearly 1,656 square kilometers across Santa Barbara County, California, US, and nearby coastal Pacific waters. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. In this dataset, for each flight line, four file types are included: unrectified measured surface radiance image (rdn) files, geometric lookup table (glt), gridded files of input geometry (igm), and parameters relating to the geometry of observation and illumination rendered using the geometric lookup table (obs). The AVIRIS-NG L1B data are provided in ENVI binary format, which includes a flat binary file (bin) accompanied by a header (hdr) file holding metadata in text format.
+  <br>
+
+  #### SHIFT_AVNG_L1B_RDN_V2_2432
+  This dataset contains Level 1B (L1B) unrectified calibrated surface radiance images as well as files of observational geometry and illumination parameters and supporting sensor band information from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected at regular (approximately weekly) intervals in 2022 between February and May, as well as in September as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. This campaign will generate precise, high-frequency data on plant communities collected over nearly 1,656 square kilometers across Santa Barbara County, California, US, and nearby coastal Pacific waters. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. In this dataset, for each flight line, the data include: orthocorrected calibrated radiance imagery, geometric lookup table, observation geometry and illumination information, input geometry, and orthocorrected locations of each pixel.These AVIRIS-NG L1B data are provided in netCDF format along with RGB quicklook images in TIFF image format.
+  <br>
+
+  #### SHIFT_AVNG_L2A_RFL_V2_2431
+  This dataset contains Level 2A (L2A) orthorectified surface reflectance images from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected approximately weekly in 2022 between February and May, as well as in September as part of the Surface Biology and Geology High Frequency Time Series (SHIFT) campaign. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. This campaign will generate precise, high-frequency data on plant communities collected over nearly 1,656 square kilometers across Santa Barbara County, California, US, and nearby coastal Pacific waters. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from ~380-2500 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. For this collection, most data is around 5 m, with some flight lines at finer spatial resolution. For each AVIRIS-NG flight line, two file types are included: orthocorrected surface reflectance (RFL_ORT) and orthocorrected reflectance uncertainty (UNC_ORT) in netCDF format. Both file types include data projected in a UTM coordinate system. In addition, ancillary files for each flight line are provided, including a quick look image in GeoTIFF format and text files in YAML format that document processing algorithms and parameters used during production.
+  <br>
+
+  #### SHIFT_AVIRISNG_L2A_refl_2376
+  This dataset contains Level 2A (L2A) unrectified surface reflectance images from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign which occurred during February to May, 2022, with a follow up activity for one week in September. The SHIFT campaign leveraged NASA's AVIRIS-NG facility instrument to collect VSWIR data at approximately a weekly cadence across a broad study area, enabling traceability analyses related to the science value of VSWIR revisits. This campaign will generate precise, high-frequency data on plant communities collected over nearly 1,656 square kilometers across Santa Barbara County, California, US, and nearby coastal Pacific waters. AVIRIS-NG is a pushbroom spectral mapping system with high signal-to-noise ratio (SNR), designed and toleranced for high performance spectroscopy. AVIRIS-NG measures reflected radiance at 5-nm intervals in the Visible to Shortwave Infrared (VSWIR) spectral range from 380-2510 nm. The AVIRIS-NG sensor has a 1 milliradian instantaneous field of view, providing altitude dependent ground sampling distances from 20 m to sub-meter range. The AVIRIS-NG L2A data are provided in ENVI binary format, which includes a flat binary file accompanied by a header (.hdr) file holding metadata in text format.
+  <br>
+
+  #### SHIFT_HyTES_L1_2022_2245
+  This dataset holds Level 1 (L1) brightness temperature data collected by the Hyperspectral Thermal Emission Spectrometer (HyTES) instrument. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign on March 23, 2022. The SHIFT campaign generated precise, high-frequency data on plant communities for nearly 1,656 square kilometers across Santa Barbara County, California, US, and the nearby ocean. HyTES is a compact image spectrometer that acquires data in 256 spectral bands between 7.5 and 12 micrometers; it was deployed on a Twin Otter aircraft. The SHIFT campaign sought to demonstrate the joint use of both VSWIR and thermal infrared (TIR) data. TIR data are used to measure land surface temperature (LST), which informs models of water flux from land surface through processes such as evapotranspiration. LST is sensitive to solar heat gains and local cooling effects due to evaporative cooling. The HyTES instrument measures TIR radiances that can be used to derive LST, emissivity and Level 3 products such as latent heat flux and detection of air pollution sources. The HyTES data are provided in HDF5 format and include 91 flight scenes. The data are not projected, but georeferencing information for each pixel are provided in the HDF5 and a separate ENVI file for each flight scene. In addition, the flight scene boundaries and an overlay image are provided in Keyhole Markup Language (KML) along with a quicklook image and spectral response data.
+  <br>
+
+  #### SHIFT_HyTES_L2_2022_2246
+  This dataset holds Level 2 (L2) data for surface emissivity and land surface temperature (LST) collected by the Hyperspectral Thermal Emission Spectrometer (HyTES) instrument. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign on March 23, 2022. The SHIFT campaign generated precise, high-frequency data on plant communities for nearly 1,656 square kilometers across Santa Barbara County, California, US, and the nearby ocean. HyTES is a compact image spectrometer that acquires data in 256 spectral bands between 7.5 and 12 micrometers; it was deployed on a Twin Otter aircraft. The SHIFT campaign sought to demonstrate the joint use of both VSWIR and thermal infrared (TIR) data. TIR data are used to measure land surface temperature (LST), which informs models of water flux from land surface through processes such as evapotranspiration. LST is sensitive to solar heat gains and local cooling effects due to evaporative cooling. The HyTES instrument measures TIR radiances that can be used to derive LST, emissivity and Level 3 products such as latent heat flux and detection of air pollution sources. The HyTES data are provided in HDF5 format and include 91 flight scenes. In addition, overlay images for emissivity and LST are provided in compressed Keyhole Markup Language (KMZ) along with a quicklook image.
+  <br>
+
+  #### SHIFT_Foliar_Chemical_Analysis_2337
+  This dataset holds laboratory foliar chemical analyses results for field samples collected during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign in Santa Barbara County, California, USA. Leaf samples were collected from plots within the Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve during the period of 2022-02-23 to 2022-09-27 and dried for later analysis. This project collected field data contemporaneously with weekly flights of the NASA's Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) facility instrument over the study areas. Sixteen chemical traits from two different lab analyses are provided. (a) Elemental analysis: foliar nitrogen (%), phosphorus (%), magnesium (%), potassium (%), calcium (%), sulfur (%), boron (ppm), iron (ppm), manganese (ppm), copper (ppm), zinc (ppm), aluminum (ppm), and sodium (ppm). (b) AnkomFiber analysis: foliar hemicellulose and bound protein (%), cellulose (%), and lignin (%). Related data packages contain additional plot-level characterization, biogeochemical, reflectance, and foliar data. These data are provided in comma separated values (CSV) format.
+  <br>
+
+  #### SHIFT_Leaf_Traits_Chl_SB_CA_2233
+  This dataset provides leaf images and measurements of leaf traits (area, wet weight, dry weight, leaf mass per area, leaf water content) and leaf pigments (chlorophyll) and species information as sampled from meadow, shrub, and tree from Santa Barbara California, USA. Samples were collected from plots within the Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt March Reserve during the period of February 23, 2022 to September 27, 2022 for the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign. The associated data package contains image scans used for the leaf area calculations as well as python processing code used to calculate the area. A comma-separated value (CSV) formatted file includes plot-level leaf area (cm2), wet weight (g), leaf mass area (LMA, g leaf dry mass per meter square), leaf water content (LWC, (wet weight - dry weight/wet weight, %)), chlorophyll fluorescence ratio (CFR), and chlorophyll content (CHL).
+  <br>
+
+  #### SHIFT_ASDSpec_PseudoInvaTarget_2446
+  This dataset provides biweekly surface reflectance measurements of pseudo-invariant sites at Sedgwick Reserve, Santa Barbara, California, collected with an ASD FieldSpec Pro field spectrometer during the SBG High-Frequency Time-Series (SHIFT) campaign in Spring and Fall 2022. The dataset includes measurements of seven primary spatially-homogenous, temporally pseudo-invariant sites (three areas of gravel road, two dirt paddocks, two serpentinite outcrops); one spatially-homogenous, temporally variable site (vegetated meadow); component measurements of three pseudo-invariant sites with high spatial resolution features (a tennis court, a road and its surroundings, and a Y-intersection and its surroundings); and additional temporally transient targets (a car roof). These measurements were taken every two weeks and were made on the same day as the AVIRIS-NG overflights. Atmospheric measurements were also taken with a MicroTops sun photometer at the serpentinite outcrop site. The data are provided in comma separated values (CSV), JPEG image, and GeoJSON formats along with Python processing code.
+  <br>
+
+  #### SHIFT_RamsesTriOS_Rrs_SB_CA_2234
+  This dataset provides calculated remote sensing reflectance (Rrs) from measurements collected with a Ramses TriOS radiometer deployed on the Santa Barbara Museum of Natural History Sea Center at Stearns Wharf, Santa Barbara, California, U.S. All measurements were taken over a fixed position at (34.41037665, -119.68557147). Three sensors are used to collect solar downwelling irradiance (Ed), sky radiance (Ls) and water-leaving radiance (Lw). These data have been processed to Rrs at 10 second intervals and are either concurrent or taken within 2.5 hours of SHIFT campaign flights. The data collected by the three Ramses TriOS sensors for eight days during the period 2022-04-05 to 2022-05-29 are also included. The data were translated from the proprietary format output by the Ramses TriOS instrument and saved in comma-separated values (CSV) format.
+  <br>
+
+  #### SHIFT_DriedGround_Leaf_Reflec_2244
+  This dataset provides full-spectrum (350-2500 nm) reflectance measurements of dried ground leaf samples from meadow, shrub, and tree sites. Samples were collected during the period of February 23, 2022 to September 27th, 2022 for the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign in Santa Barbara County, California, USA. The primary goal of the SHIFT campaign was to collect a repeated dense time series of airborne Visible to ShortWave Infrared (VSWIR) airborne imaging spectroscopy data with coincident field measurements in both inland terrestrial and coastal aquatic areas. Reflectance measurements were collected using a ASD FieldSpec 3 spectrometer following Serbin et al. (2014) and Wang et al. (2020). After sample collection, each leaf sample was divided into two portions: one portion with ~10 g fresh weight was oven dried and another portion with ~5 g fresh weight was flash frozen. Both samples were ground and homogenized (20-mesh, 833 micrometers). The oven dried samples were then re-dried in oven at 70 degrees C for 24 h and the flash frozen samples were dried using a Virtis Model 24DX48 specimen freeze dryer before the reflectance measurement. Data are in a comma-separated values (.csv) format.
+  <br>
+
+  #### SHIFT_Field_Survey_Metadata_2295
+  This dataset contains vegetation plot locations, descriptions, fractional cover, and sample identifier information from surveys conducted as part of the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign. Surveys took place from 2022-02-23 to 2022-09-27 at the Jack and Laura Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve, which are located in Santa Barbara County, California, USA. This project collected field data contemporaneously with weekly flights of the NASA Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) facility instrument over the study areas. Plot information includes: plot tree subform, species lists, plot description, plot samples characterization, and plot location and contextual information. Related data packages contain additional biogeochemical, reflectance, and foliar data. Survey data and metadata are presented in comma-separated values (.csv) format along with survey plot polygons in GeoJSON (.geojson) format.
+  <br>
+
+  #### SHIFT_Plot_Level_Photos_2334
+  This dataset contains photographs of the plots where field vegetation sampling was conducted during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign. Sampling occurred at the Jack and Laura Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve, which are located in Santa Barbara County, California, USA. Photographs were taken from 2022-02-23 to 2022-09-18. This project collected field data contemporaneously with weekly flights of Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) over the study areas. Related SHIFT data packages contain additional biogeochemical, reflectance, and foliar data.
+  <br>
+
+  #### SHIFT_Wetland_Salinity_2436
+  This dataset includes field data, analysis code, and corresponding airborne imagery collected and generated during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign within Devereux Slough estuary in Santa Barbara County, California, USA. This campaign collected field data contemporaneously with weekly flights of the NASA's Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) facility instrument over the study areas. Soil samples were collected in North Campus Open Space and Coal Oil Point Reserve between 2022-02-24 to 2022-09-16 and analyzed for salinity (electric conductivity). Soil samples were paired with corresponding AVIRIS-NG flights, and AVIRIS-NG Level 2A Unrectified Reflectance data were used to derive fractional cover and vegetation and soil indices across the study area. Multiple endmember spectral mixture analysis (MESMA) was used to estimate fractional cover for four cover classes. Additionally, canopy response stress index, modified anthocyanin reflectance index, normalized difference vegetation index, and vegetation soil salinity index were derived. The data are provided in cloud-optimized GeoTIFF, ENVI, comma separated values (CSV) , and shapefile formats.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/SHIFT/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- cog
+- earth observation
+- hdf
+- hdf5
+- ice
+- netcdf
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SHIFT_AVNG_Canopy_WaterContent_2242 v1 - This dataset provides per-pixel vegetation canopy water content (CWC) derived from surface reflectance measured by the Airborne Visible/Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument from 2022-02-24 to 2022-05-17. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_Canopy_WaterContent/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVNG_Plant_Trait_Mosaics_2453 v1 - This dataset provides maps of 20 plant functional traits across a broad region of Santa Barbara County, California, USA. The maps were derived from AVIRIS-NG imagery collected during the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign between February and May 2022."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_Plant_Trait_Mosaics/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVNG_FullRes_QkLook_2189 v1 - This dataset holds full-resolution 3-band (true color) imagery acquired by NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign which occurred during February to May, 2022, with a follow up activity for one week in September."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_FullRes_QkLook/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVNG_L1A_RDN_unrec_2184 v1 - This dataset contains Level 1A (L1A) unrectified surface radiance image files as well as files of observational geometry and illumination parameters and supporting sensor band information from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_L1A_RDN_unrec/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVNG_L1B_RDN_V2_2432 v2 - This dataset contains Level 1B (L1B) unrectified calibrated surface radiance images as well as files of observational geometry and illumination parameters and supporting sensor band information from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected at regular (approximately weekly) intervals in 2022 between February and May, as well as in September as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_L1B_RDN_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVNG_L2A_RFL_V2_2431 v2 - This dataset contains Level 2A (L2A) orthorectified surface reflectance images from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected approximately weekly in 2022 between February and May, as well as in September as part of the Surface Biology and Geology High Frequency Time Series (SHIFT) campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVNG_L2A_RFL_V2/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_AVIRISNG_L2A_refl_2376 v1 - This dataset contains Level 2A (L2A) unrectified surface reflectance images from NASA's Airborne Visible / Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) instrument. This imagery was collected as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign which occurred during February to May, 2022, with a follow up activity for one week in September."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_AVIRISNG_L2A_refl/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_HyTES_L1_2022_2245 v1 - This dataset holds Level 1 (L1) brightness temperature data collected by the Hyperspectral Thermal Emission Spectrometer (HyTES) instrument. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign on March 23, 2022."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_HyTES_L1_2022/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_HyTES_L2_2022_2246 v1 - This dataset holds Level 2 (L2) data for surface emissivity and land surface temperature (LST) collected by the Hyperspectral Thermal Emission Spectrometer (HyTES) instrument. This imagery was acquired as part of the Surface Biology and Geology High-Frequency Time Series (SHIFT) campaign on March 23, 2022."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_HyTES_L2_2022/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_Foliar_Chemical_Analysis_2337 v1 - This dataset holds laboratory foliar chemical analyses results for field samples collected during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign in Santa Barbara County, California, USA. Leaf samples were collected from plots within the Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve during the period of 2022-02-23 to 2022-09-27 and dried for later analysis."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_Foliar_Chemical_Analysis/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_Leaf_Traits_Chl_SB_CA_2233 v1 - This dataset provides leaf images and measurements of leaf traits (area, wet weight, dry weight, leaf mass per area, leaf water content) and leaf pigments (chlorophyll) and species information as sampled from meadow, shrub, and tree from Santa Barbara California, USA. Samples were collected from plots within the Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt March Reserve during the period of February 23, 2022 to September 27, 2022 for the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_Leaf_Traits_Chl_SB_CA/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_ASDSpec_PseudoInvaTarget_2446 v1 - This dataset provides biweekly surface reflectance measurements of pseudo-invariant sites at Sedgwick Reserve, Santa Barbara, California, collected with an ASD FieldSpec Pro field spectrometer during the SBG High-Frequency Time-Series (SHIFT) campaign in Spring and Fall 2022. The dataset includes measurements of seven primary spatially-homogenous, temporally pseudo-invariant sites (three areas of gravel road, two dirt paddocks, two serpentinite outcrops); one spatially-homogenous, temporally variable site (vegetated meadow); component measurements of three pseudo-invariant sites with high s..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_ASDSpec_PseudoInvaTarget/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_RamsesTriOS_Rrs_SB_CA_2234 v1 - This dataset provides calculated remote sensing reflectance (Rrs) from measurements collected with a Ramses TriOS radiometer deployed on the Santa Barbara Museum of Natural History Sea Center at Stearns Wharf, Santa Barbara, California, U.S. All measurements were taken over a fixed position at (34.41037665, -119.68557147)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_RamsesTriOS_Rrs_SB_CA/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_DriedGround_Leaf_Reflec_2244 v1 - This dataset provides full-spectrum (350-2500 nm) reflectance measurements of dried ground leaf samples from meadow, shrub, and tree sites. Samples were collected during the period of February 23, 2022 to September 27th, 2022 for the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign in Santa Barbara County, California, USA."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_DriedGround_Leaf_Reflec/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_Field_Survey_Metadata_2295 v1 - This dataset contains vegetation plot locations, descriptions, fractional cover, and sample identifier information from surveys conducted as part of the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign. Surveys took place from 2022-02-23 to 2022-09-27 at the Jack and Laura Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve, which are located in Santa Barbara County, California, USA."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_Field_Survey_Metadata/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_Plot_Level_Photos_2334 v1 - This dataset contains photographs of the plots where field vegetation sampling was conducted during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign. Sampling occurred at the Jack and Laura Dangermond Preserve, Sedgwick Reserve, and Carpinteria Salt Marsh Reserve, which are located in Santa Barbara County, California, USA."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_Plot_Level_Photos/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "SHIFT_Wetland_Salinity_2436 v1 - This dataset includes field data, analysis code, and corresponding airborne imagery collected and generated during the 2022 NASA Surface Biology Geology (SBG) High Frequency Time series (SHIFT) campaign within Devereux Slough estuary in Santa Barbara County, California, USA. This campaign collected field data contemporaneously with weekly flights of the NASA's Airborne Visible-Infrared Imaging Spectrometer-Next Generation (AVIRIS-NG) facility instrument over the study areas."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/shift/SHIFT_Wetland_Salinity/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

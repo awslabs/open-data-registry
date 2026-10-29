@@ -1,0 +1,29 @@
+Name: NASA 2012_AN_NASA Project
+Description: |
+  This data set contains radar echograms taken from the Center for Remote Sensing of Ice Sheets (CReSIS) ultra Multichannel Coherent Radar Depth Sounder (MCoRDS) over land and sea ice in the Arctic and Antarctic.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/irmcr1b/versions/2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- earth observation
+- ice
+- radar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IRMCR1B v2 - This data set contains radar echograms taken from the Center for Remote Sensing of Ice Sheets (CReSIS) ultra Multichannel Coherent Radar Depth Sounder (MCoRDS) over land and sea ice in the Arctic and Antarctic."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IRMCR1B/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

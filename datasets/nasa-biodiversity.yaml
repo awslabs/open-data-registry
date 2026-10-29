@@ -1,0 +1,39 @@
+Name: NASA Biodiversity Project
+Description: |
+  This dataset contains vegetation canopy metrics for the Greater Kruger National Park region of South Africa for 2007-2010 and 2015-2024. Metrics include relative height 98th percentile (RH98), fractional canopy cover, and foliage height diversity. This dataset contains vegetation canopy metrics for the Greater Kruger National Park region of South Africa. Metrics include relative height 98th percentile (RH98), fractional canopy cover, and foliage height diversity. They were derived by modeling a sample of Global Ecosystem Dynamics Investigation (GEDI) Level 2A Elevation and Height Metrics and Level 2B Canopy Cover and Vertical Profile Metrics at the 25-m footprint level with wall-to-wall spatial datasets including Landsat, PALSAR, topography derived from NASADEM, and soils data from iSDAsoil. Maps for 2023 and 2024 were created by applying the model trained from 2007-2022 data to PALSAR and Landsat data for 2023 and 2024. The data are suitable for analyzing change in woody canopy structure within the savanna ecosystems of this region. The data are provided in cloud optimized GeoTIFF format.
+  <br>
+
+  #### Acoustic_Data_SonomaCounty_CA_2341
+  This dataset holds in situ sound recordings from sites in Sonoma County, California, USA as part of the Soundscapes to Landscapes citizen science project. Recordings were collected from 2017 to 2022 during the bird breeding season (mid-March thru mid-July). Sites (n=1399) were selected across the county; locations were stratified with respect to topographic position and broad land use/land cover types, such as forest, shrubland, herbaceous, urban, agriculture, and riparian areas. Two types of automated recorders were used: Android-based smartphones with attached microphones and AudioMoths. Recorders were deployed at sites for at least 3 days, and programmed to record 1 min of every 10, thus providing temporal sampling through day and night. Each recording was saved in a waveform audio file format (.wav) with 16-bit digitization depth and 44.1 kHz or 48 kHz sampling rate for smartphone and AudioMoth recorders, respectively. The dataset also includes site information including site location when so permitted by landowners in tabular form and photographs of field sites.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- elevation
+- land cover
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GEDI_Canopy_Metrics_GreaterKNP_2401 v1 - This dataset contains vegetation canopy metrics for the Greater Kruger National Park region of South Africa for 2007-2010 and 2015-2024. Metrics include relative height 98th percentile (RH98), fractional canopy cover, and foliage height diversity."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/biodiversity/GEDI_Canopy_Metrics_GreaterKNP/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Acoustic_Data_SonomaCounty_CA_2341 v1 - This dataset holds in situ sound recordings from sites in Sonoma County, California, USA as part of the Soundscapes to Landscapes citizen science project. Recordings were collected from 2017 to 2022 during the bird breeding season (mid-March thru mid-July)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/biodiversity/Acoustic_Data_SonomaCounty_CA/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

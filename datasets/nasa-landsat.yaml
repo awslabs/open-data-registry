@@ -1,0 +1,37 @@
+Name: NASA landsat Project
+Description: |
+  This data set contains shapefiles of Greenland’s glacial termini and basins for the years 1972 to 2019. These vector data were created from Landsat 1-8 satellite imagery using the Calving Front Machine (CALFIN) an automated processing workflow utilizing neural networks for extracting calving fronts from satellite images of marine-terminating glaciers.
+  <br>
+
+  #### HMA2_DCG_SGL
+  This data set identifies the extent of supraglacial lakes (SGLs) from 1988 to 2023 on 769 of the largest debris-covered glaciers in the High Mountain Asia region. SGLs were generated via automated processing of 30 m Landsat imagery and are provided at 1-year intervals from 2004-2023, at 2-year intervals from 1992-2003, and as a single 4-year interval from 1988-1991.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/landsat
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "NSIDC-0764 v1 - This data set contains shapefiles of Greenland’s glacial termini and basins for the years 1972 to 2019. These vector data were created from Landsat 1-8 satellite imagery using the Calving Front Machine (CALFIN) an automated processing workflow utilizing neural networks for extracting calving fronts from satellite images of marine-terminating glaciers."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/MEASURES/NSIDC-0764/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "HMA2_DCG_SGL v1 - This data set identifies the extent of supraglacial lakes (SGLs) from 1988 to 2023 on 769 of the largest debris-covered glaciers in the High Mountain Asia region. SGLs were generated via automated processing of 30 m Landsat imagery and are provided at 1-year intervals from 2004-2023, at 2-year intervals from 1992-2003, and as a single 4-year interval from 1988-1991."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/HMA/HMA2_DCG_SGL/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

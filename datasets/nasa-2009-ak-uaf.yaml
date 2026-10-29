@@ -1,0 +1,48 @@
+Name: NASA 2009_AK_UAF Project
+Description: |
+  This data set contains flight reports from NASA Operation IceBridge Greenland, Arctic, Antarctic, and Alaska missions. Flight reports contain information on region, mission, aircraft model, flight data, purpose of flight, and on-board sensors. The flight reports were collected as part of Operation IceBridge funded aircraft survey campaigns. The corresponding flight lines can be found in the IceBridge L1B Thinned Flight Lines (IPFLT1B) data set.
+  <br>
+
+  #### ILAKP1B
+  This data set contains surface profiles of Alaska Glaciers acquired using the airborne University of Alaska Fairbanks (UAF) Glacier Lidar system. The data were collected as part of Operation IceBridge funded aircraft survey campaigns.
+  <br>
+
+  #### ILAKS1B
+  This data set contains scanning laser altimetry data points of Alaskan glaciers and parts of East and West Antarctica acquired by the airborne University of Alaska Fairbanks (UAF) Glacier Lidar system. The data were collected as part of NASA Operation IceBridge funded campaigns.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/ipflr1b/versions/1
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "IPFLR1B v1 - This data set contains flight reports from NASA Operation IceBridge Greenland, Arctic, Antarctic, and Alaska missions. Flight reports contain information on region, mission, aircraft model, flight data, purpose of flight, and on-board sensors."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/IPFLR1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILAKP1B v1 - This data set contains surface profiles of Alaska Glaciers acquired using the airborne University of Alaska Fairbanks (UAF) Glacier Lidar system. The data were collected as part of Operation IceBridge funded aircraft survey campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILAKP1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "ILAKS1B v1 - This data set contains scanning laser altimetry data points of Alaskan glaciers and parts of East and West Antarctica acquired by the airborne University of Alaska Fairbanks (UAF) Glacier Lidar system. The data were collected as part of NASA Operation IceBridge funded campaigns."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/ICEBRIDGE/ILAKS1B/1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

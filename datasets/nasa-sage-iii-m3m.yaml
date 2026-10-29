@@ -1,0 +1,58 @@
+Name: NASA SAGE III-M3M Project
+Description: |
+  Level 1B pixel group transmission profiles for a single solar event.
+  <br>
+
+  #### g3acld
+  g3acld_004 is the Stratospheric Aerosol and Gas Experiment III (SAGE III) on the Meteor-3M (M-3M) platform (SAGE III/M3M) Level 2 Monthly Cloud Presence Data (HDF-EOS) Version 4 product. It is a monthly compilation of polar cloud presence from SAGE III coincident with solar event granules, that provides information about cloud presence during data capture of the granules. SAGE III obtains profile measurements of aerosol extinction, ozone, water vapor, nitrogen dioxide, nitrogen trioxide, chlorine dioxide, and cloud formations throughout the mesosphere, stratosphere, and upper troposphere with a vertical resolution of 0.5 - 1 km resolution. SAGE III was a fourth generation, satellite-borne instrument and a crucial element in NASA's Earth Observing System (EOS) . The instrument was launched on the Russian M-3M spacecraft in December 2001. The M-3M and SAGE III missions were terminated on March 6, 2006, because of a power supply system failure resulting in loss of communication with the satellite. The newest SAGE mission, SAGE III on ISS, was launched in 2017. SAGE III M-3M L2 Monthly Cloud Presence Data are monthly data files coincident with solar event granules that provides information about cloud presence during data capture of the granules.
+  <br>
+
+  #### g3acldb
+  g3acldb_004 is the Stratospheric Aerosol and Gas Experiment III (SAGE III) on the Meteor-3M (M-3M) platform (SAGE III/M3M) SAGE III Meteor-3M L2 Monthly Cloud Presence Data (Native) Version 4 data product. It is monthly data file coincident with solar event granules, that provides a monthly compilation of polar cloud presence from SAGE III during data capture of the granules. SAGE III obtains profile measurements of aerosol extinction, ozone, water vapor, nitrogen dioxide, nitrogen trioxide, chlorine dioxide and cloud formations throughout the mesosphere, stratosphere, and upper troposphere with a vertical resolution of 0.5 - 1 km resolution. SAGE III was a fourth generation, satellite-borne instrument and a crucial element in NASA's Earth Observing System (EOS) . The instrument was launched on the Russian M-3M spacecraft in December 2001. The M-3M and SAGE III missions were terminated on March 6, 2006, because of a power supply system failure resulting in loss of communication with the satellite. The newest SAGE mission, SAGE III on ISS, was launched in 2017.
+  <br>
+
+  #### g3assp
+  A Level 2 data file containing all the species products for a single solar event
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.asdc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://sage.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- hdf
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "g3at v004 - Level 1B pixel group transmission profiles for a single solar event."
+  ARN: arn:aws:s3:::asdc-prod-protected/SAGE_III/g3at_004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
+- Description: "g3acld v004 - g3acld_004 is the Stratospheric Aerosol and Gas Experiment III (SAGE III) on the Meteor-3M (M-3M) platform (SAGE III/M3M) Level 2 Monthly Cloud Presence Data (HDF-EOS) Version 4 product. It is a monthly compilation of polar cloud presence from SAGE III coincident with solar event granules, that provides information about cloud presence during data capture of the granules."
+  ARN: arn:aws:s3:::asdc-prod-protected/SAGE_III/g3acld_004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
+- Description: "g3acldb v004 - g3acldb_004 is the Stratospheric Aerosol and Gas Experiment III (SAGE III) on the Meteor-3M (M-3M) platform (SAGE III/M3M) SAGE III Meteor-3M L2 Monthly Cloud Presence Data (Native) Version 4 data product. It is monthly data file coincident with solar event granules, that provides a monthly compilation of polar cloud presence from SAGE III during data capture of the granules."
+  ARN: arn:aws:s3:::asdc-prod-protected/SAGE_III/g3acldb_004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials
+- Description: "g3assp v004 - A Level 2 data file containing all the species products for a single solar event."
+  ARN: arn:aws:s3:::asdc-prod-protected/SAGE_III/g3assp_004
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials

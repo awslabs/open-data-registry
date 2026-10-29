@@ -1,0 +1,59 @@
+Name: NASA G-LiHT Project
+Description: |
+  Goddard’s LiDAR, Hyperspectral, and Thermal Imager ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico. The purpose of G-LiHT’s Aerial Orthomosaic data product (GLORTHO) is to provide orthorectified high-resolution aerial photography. This data is provided as a supplement to other G-LiHT data products. GLORTHO data are processed as a raster data product (GeoTIFF) at 1 inch spatial resolution over locally defined areas. A low resolution browse is also provided with a color map applied in PNG format. Known Issues: Orthomosaics are automatically generated, and results may not be optimal.
+  <br>
+
+  #### GLCHMK
+  Goddard’s LiDAR, Hyperspectral, and Thermal Imager ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission utilizes a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico. The purpose of G-LiHT’s Canopy Height Model Keyhole Markup Language (KML) data product (GLCHMK) is to provide LiDAR-derived maximum canopy height and canopy variability information to aid in the study and analysis of biodiversity and climate change. Scientists at NASA’s Goddard Space Flight Center began collecting data over locally-defined areas in 2011 and that the collection will continue to grow as aerial campaigns are flown and processed. GLCHMK data are processed as a Google Earth overlay KML file at a nominal 1 meter spatial resolution over locally-defined areas. A low resolution browse is also provided showing the canopy height with a color map applied in JPEG format.
+  <br>
+
+  #### GLDSMT
+  Goddard’s LiDAR, Hyperspectral, and Thermal Imagery ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico. The purpose of G-LiHT’s Digital Surface Model data product (GLDSMT) is to provide LiDAR-derived visualizations of elevation above bare earth. GLDSMT data is offered in multiple formats, including Digital Surface Model, Mean, Aspect, Rugosity, and Slope. GLDSMT data are processed as multiple raster data products (GeoTIFFs) at a nominal 1 meter spatial resolution over locally defined areas. A low resolution browse is also provided showing the digital surface model with a color map applied in PNG format.
+  <br>
+
+  #### GLTRAJECTORY
+  Goddard’s LiDAR, Hyperspectral, and Thermal Imagery ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico. The purpose of G-LiHT’s Trajectory data product (GLTRAJECTORY) is to provide aircraft location and orientation to support and supplement other G-LiHT data products. GLTRAJECTORY data are processed as a Google Earth overlay Keyhole Markup Language (KML) file over the extent of an entire flight path. A low resolution browse is also provided to show the flight path.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.lpdaac.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://www.earthdata.nasa.gov/centers/lp-daac
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- climate
+- elevation
+- lidar
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GLORTHO v001 - Goddard’s LiDAR, Hyperspectral, and Thermal Imager ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico."
+  ARN: arn:aws:s3:::lp-prod-protected/GLORTHO.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "GLCHMK v001 - Goddard’s LiDAR, Hyperspectral, and Thermal Imager ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission utilizes a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico."
+  ARN: arn:aws:s3:::lp-prod-protected/GLCHMK.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "GLDSMT v001 - Goddard’s LiDAR, Hyperspectral, and Thermal Imagery ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over the Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico."
+  ARN: arn:aws:s3:::lp-prod-protected/GLDSMT.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials
+- Description: "GLTRAJECTORY v001 - Goddard’s LiDAR, Hyperspectral, and Thermal Imagery ([G-LiHT](https://gliht.gsfc.nasa.gov/)) mission is a portable, airborne imaging system that aims to simultaneously map the composition, structure, and function of terrestrial ecosystems. G-LiHT primarily focuses on a broad diversity of forest communities and ecoregions in North America, mapping aerial swaths over Conterminous United States (CONUS), Alaska, Puerto Rico, and Mexico."
+  ARN: arn:aws:s3:::lp-prod-protected/GLTRAJECTORY.001
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.lpdaac.earthdatacloud.nasa.gov/s3credentials

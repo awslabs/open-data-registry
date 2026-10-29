@@ -1,0 +1,37 @@
+Name: NASA TOPEX/POSEIDON Project
+Description: |
+  The Sensory Data Record (SDR) is similar to the GDR product except that it also contains waveforms, which are required for retracking. This is an expert level product. If you do not need the waveforms then the GDR should suit your needs.
+  <br>
+
+  #### TOPEX_POSEIDON_GDR_F
+  The TOPEX/POSEIDON Geophysical Data Record (GDR) contains global coverage altimeter data. The objective of the TOPEX/POSEIDON mission, launched in August 1992, is to determine ocean topography with a sea surface height measurement precision of 3 cm and a sealevel measurement accuracy of 13 cm. The dataset contains measurements from two altimeters, a NASA dual frequency (Ku and C band) instrument similar to the Geosat altimeter, and a French space agency (CNES) instrument which is a proof-of-concept solid-state altimeter (Ku band). It also contains Sea Surface Height (SSH), significant wave height, ionospheric correction, tides and other geophysical corrections. It is emphasized that this product is considered research data because of the form and content of the data. The data consist entirely of files comprising headers and data records which contain over a hundred parameters for each second. It is swath data and there are no images. Analysis software is the responsibility of the user. Calculation of sea surface height anomalies from the altimeter range and environmental corrections is the responsibility of the user. The data are arranged in 10 day cycles that are separated into 254 passes, each about 56 minutes.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- oceans
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "TOPEX_ALTSDR vA - The Sensory Data Record (SDR) is similar to the GDR product except that it also contains waveforms, which are required for retracking. This is an expert level product."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/TOPEX_ALTSDR
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "TOPEX_POSEIDON_GDR_F vF - The TOPEX/POSEIDON Geophysical Data Record (GDR) contains global coverage altimeter data. The objective of the TOPEX/POSEIDON mission, launched in August 1992, is to determine ocean topography with a sea surface height measurement precision of 3 cm and a sealevel measurement accuracy of 13 cm."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/TOPEX_POSEIDON_GDR_F
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

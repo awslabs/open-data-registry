@@ -1,0 +1,108 @@
+Name: NASA viirs-snpp Project
+Description: |
+  This data set contains daily 'cloud-free' snow cover produced from the VIIRS/JPSS-1 Snow Cover Daily L3 Global 375m SIN Grid, Version 2 snow cover product. A cloud-gap-filled algorithm is utilized to replace ‘cloud-covered’ pixels with ‘cloud-free pixels’ for the purpose of estimating the snow cover that may exist under current cloud cover. The data are provided daily and mapped to a 375 m sinusoidal grid.
+  <br>
+
+  #### VJ110
+  This data set reports the location of snow cover using radiance data acquired by the Visible Infrared Imager Radiometer Suite (VIIRS) on board the Joint Polar Satellite System's first satellite (JPSS-1). Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of quality control screens.
+  <br>
+
+  #### VJ110D1F
+  VJ110D1F is a daily global view of cloud-gap-filled (CGF) snow cover at 375 m resolution. This daily global product is produced by reprojecting all of the <a href="https://nsidc.org/data/vj110a1f/versions/2">VJ110A1F</a> product tiles from each day to a global geographic projection. The data files include the NDSI_Snow_Cover and Cloud_Persistence data layers from <a href="https://nsidc.org/data/vJ110a1f/versions/2">VJ110A1F</a>.
+  <br>
+
+  #### VJ110A1
+  This data set contains daily snow cover derived from radiance data acquired by the Visible Infrared Imaging Radiometer Suite (VIIRS) on board the Joint Polar Satellite System's first satellite (JPSS-1). The data is a gridded composite, generated from 6 minute swaths, and projected to a 375 m Sinusoidal grid. Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of screens designed to alleviate errors and flag uncertain snow cover detections.
+  <br>
+
+  #### VJ210D1F
+  VJ210D1F is a daily global view of snow cover at 375 m resolution. This daily global product is produced by reprojecting the all the VJ110A1 product tiles for a day to a global geographic projection. Only the NDSI_Snow_Cover data layer from the VJ110A1 product is input to produce this global product.
+  <br>
+
+  #### VNP10A1F
+  This data set contains daily 'cloud-free' snow cover produced from the VIIRS/NPP Snow Cover Daily L3 Global 375m SIN Grid, Version 2 snow cover product. A cloud-gap-filled algorithm is utilized to replace ‘cloud-covered’ pixels with ‘cloud-free pixels’ for the purpose of estimating the snow cover that may exist under current cloud cover. The data are provided daily and mapped to a 375 m sinusoidal grid.
+  <br>
+
+  #### VNP10
+  This data set reports snow cover using radiance data acquired by the Visible Infrared Imager Radiometer Suite (VIIRS) on board the Suomi National Polar-orbiting Partnership (NPP) satellite. Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of quality control screens.
+  <br>
+
+  #### VNP10D1F
+  VNP10D1F is a daily global view of cloud-gap-filled (CGF) snow cover at 375 m resolution. This daily global product is produced by reprojecting all of the <a href="https://nsidc.org/data/vnp10a1f/versions/2">VNP10A1F</a> product tiles from each day to a global geographic projection. The data files include the NDSI_Snow_Cover and Cloud_Persistence data layers from <a href="https://nsidc.org/data/vnp10a1f/versions/2">VNP10A1F</a>.
+  <br>
+
+  #### VNP10A1
+  This data set contains daily snow cover derived from radiance data acquired by the Visible Infrared Imaging Radiometer Suite (VIIRS) on board the Suomi National Polar-orbiting Partnership (NPP) satellite. The data is a gridded composite, generated from 6 minute swaths, and projected to a 375 m Sinusoidal grid. Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of screens designed to alleviate errors and flag uncertain snow cover detections.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.nsidc.earthdatacloud.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nsidc.org/data/vj110a1f/versions/2
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- ice
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "VJ110A1F v2 - This data set contains daily 'cloud-free' snow cover produced from the VIIRS/JPSS-1 Snow Cover Daily L3 Global 375m SIN Grid, Version 2 snow cover product. A cloud-gap-filled algorithm is utilized to replace ‘cloud-covered’ pixels with ‘cloud-free pixels’ for the purpose of estimating the snow cover that may exist under current cloud cover."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VJ110A1F/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VJ110 v2 - This data set reports the location of snow cover using radiance data acquired by the Visible Infrared Imager Radiometer Suite (VIIRS) on board the Joint Polar Satellite System's first satellite (JPSS-1). Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of quality control screens."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VJ110/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VJ110D1F v2 - VJ110D1F is a daily global view of cloud-gap-filled (CGF) snow cover at 375 m resolution. This daily global product is produced by reprojecting all of the <a href=\"https://nsidc.org/data/vj110a1f/versions/2\">VJ110A1F</a> product tiles from each day to a global geographic projection."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VJ110D1F/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VJ110A1 v2 - This data set contains daily snow cover derived from radiance data acquired by the Visible Infrared Imaging Radiometer Suite (VIIRS) on board the Joint Polar Satellite System's first satellite (JPSS-1). The data is a gridded composite, generated from 6 minute swaths, and projected to a 375 m Sinusoidal grid."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VJ110A1/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VJ210D1F v2 - VJ210D1F is a daily global view of snow cover at 375 m resolution. This daily global product is produced by reprojecting the all the VJ110A1 product tiles for a day to a global geographic projection."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VJ210D1F/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VNP10A1F v2 - This data set contains daily 'cloud-free' snow cover produced from the VIIRS/NPP Snow Cover Daily L3 Global 375m SIN Grid, Version 2 snow cover product. A cloud-gap-filled algorithm is utilized to replace ‘cloud-covered’ pixels with ‘cloud-free pixels’ for the purpose of estimating the snow cover that may exist under current cloud cover."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VNP10A1F/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VNP10 v2 - This data set reports snow cover using radiance data acquired by the Visible Infrared Imager Radiometer Suite (VIIRS) on board the Suomi National Polar-orbiting Partnership (NPP) satellite. Snow cover is identified using the Normalized Difference Snow Index (NDSI) and a series of quality control screens."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VNP10/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VNP10D1F v2 - VNP10D1F is a daily global view of cloud-gap-filled (CGF) snow cover at 375 m resolution. This daily global product is produced by reprojecting all of the <a href=\"https://nsidc.org/data/vnp10a1f/versions/2\">VNP10A1F</a> product tiles from each day to a global geographic projection."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VNP10D1F/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials
+- Description: "VNP10A1 v2 - This data set contains daily snow cover derived from radiance data acquired by the Visible Infrared Imaging Radiometer Suite (VIIRS) on board the Suomi National Polar-orbiting Partnership (NPP) satellite. The data is a gridded composite, generated from 6 minute swaths, and projected to a 375 m Sinusoidal grid."
+  ARN: arn:aws:s3:::nsidc-cumulus-prod-protected/VIIRS/VNP10A1/2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.nsidc.earthdatacloud.nasa.gov/s3credentials

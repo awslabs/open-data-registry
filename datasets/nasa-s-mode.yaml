@@ -1,0 +1,380 @@
+Name: NASA S-MODE Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### SMODE_L1_DOPPLERSCATT_V1
+  This dataset contains concurrent airborne DopplerScatt radar retrievals of surface vector winds and ocean currents from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. DopplerScatt is a Ka-band (35.75 GHz) scatterometer with a swath width of 24 km that records Doppler measurements of the relative velocity between the platform and the surface. It is mounted on a B200 aircraft which flies daily surveys of the field domain during deployments, and data is used to give larger scale context, and also to compare with in-situ measurements of velocities and divergence. Level 1 data includes geolocated physical measurements for a measurement footprint, which are the basis for the DopplerScatt L2 surface winds and currents estimates. Data are available in netCDF format and are ordered by measurement acquisition time and radar range, and are not on a geospatial grid.
+  <br>
+
+  #### SMODE_L2_DOPPLERSCATT_WINDS_CURRENT_V2
+  This dataset contains concurrent airborne DopplerScatt radar retrievals of surface vector winds and ocean currents from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE). S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Data were collected approximately 300 km offshore of San Fransisco during a pilot campaign in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. DopplerScatt is a Ka-band (35.75 GHz) scatterometer with a swath width of 24 km that records Doppler measurements of the relative velocity between the platform and the surface. It is mounted on a B200 aircraft which flies daily surveys of the field domain during deployments, and data is used to give larger scale context, and also to compare with in-situ measurements of velocities and divergence. Level 2 data includes estimates of surface winds and currents. The V2 data have been cross-calibrated against ADCPs, surface drifters, and the SIO-DopVis instrument collected during the Pilot and IOP1 campaigns. Additional DopVis data collected during IOP1 and IOP2, in addition to IOP2 ADCP and surface drifter data will lead to a reprocessing of this dataset, and it should be regarded as provisional. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_DRIFTER_POSITIONS_V1
+  This dataset contains in-situ position data from surface drifters from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Drifting buoys were deployed from the research vessels and configured to nominally report positions every five minutes. Drifters deployed were a mixture of CARTHE and Microstar types. CARTHE drifters are drogued at 40 cm depth and measure the average horizontal velocity of currents in the upper 60 cm of the ocean (Novelli et al., 2017). Microstar drifters are drogued at 1 m depth and measure the average horizontal velocity of ocean currents between 0.4 m and 1.6 m depth (Ohlmann et al., 2005). See the S-MODE Data Submission Report sections 2.3.2.2, 2.4.2.2 and 2.5.2.3 for more information. Tracking and telemetry of the drifters is done by Pacific Gyre, Inc. The data are available in netCDF format with a dimension of time. <br><br> Novelli, G., C. M. Guigand, C. Cousin, E. H. Ryan, N. J. M. Laxague, H. Dai, B. K. Haus, and T. M. Özgökmen, 2017: A Biodegradable Surface Drifter for Ocean Sampling on a Massive Scale. J. Atmos. Oceanic Technol., 34, 2509–2532, https://doi.org/10.1175/JTECH-D-17-0055.1. <br><br> Ohlmann, J. C., P. F. White, A. L. Sybrandy, and P. P. Niiler, 2005: GPS–Cellular Drifter Technology for Coastal Ocean Observing Systems. J. Atmos. Oceanic Technol., 22, 1381–1388, https://doi.org/10.1175/JTECH1786.1. <br><br> Westbrook, E., Bingham, F. M., Brodnitz, S., Farrar, J. T., Rodriguez, E., & Zappa, C., (2024). Submesoscale Ocean Dynamics Experiment (S-MODE) Data Submission Report. Technical Report. Woods Hole Oceanographic Institution, WHOI-2024-03, https://doi.org/10.1575/1912/69362
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_ADCP_V1
+  This dataset contains shipboard Acoustic Doppler Current Profiler (ADCP) measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign and two intensive operating periods (IOPs) conducted approximately 300 km offshore of San Francisco during Fall 2021, 2022, and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The ADCP was mounted to the bottom of the hulls of the research vessels deployed during each campaign, measuring horizontal and vertical currents, as well as acoustic backscatter from approximately 3 m to 50 m depth along the ship’s track. The data are available in netCDF format with dimensions of time and depth.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_BOTTLES_V1
+  This dataset contains in-situ seawater samples taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Water samples collected in Niskin bottles mounted on the ship’s rosette sampler were taken of chlorophyll (µg/L), phaeopigments (µg/L), and nutrient concentrations (µM or µmol/L) of particulate organic carbon, particulate organic nitrogen, silicate, nitrate, nitrite, and phosphate. Samples analyzed with fluorometry contain chlorophyll concentrations in µg/L and phaeopigment concentrations in µg/L. Samples analyzed with elemental analysis contain POC molarity in µM and PON molarity in µM. Samples analyzed via ion analysis contain silicate concentrations in µM, total nitrate+nitrite in µM, phosphate in µM, nitrite in µM, and nitrate in µM. These data are mainly used by S-MODE for validating the PRISM-derived products and calibrating the in-situ sensors on the autonomous platforms. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_CTD_V1
+  This dataset contains shipboard conductivity, temperature, and depth (CTD) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The shipboard CTD rosette is cast from the R/V Oceanus where it records ocean temperature, conductivity, and pressure as it descends to depth and then returns to the surface. IOP1 and IOP2 measurements also contain biological data. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_RADIOSONDES_METEOROLOGY_V1
+  This dataset contains atmospheric sounding measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Sounding profiles were collected using shipboard Windsond S1H3-S radiosondes launched from the R/V Oceanus cruise OC2108A, to a maximum elevation of at least 5 km above ground level (ABL). These measurements are used to understand the vertical structure of atmospheric temperature, winds, and moisture. The original 1Hz observations were gridded onto a uniform 20 m vertical grid. The data are available in netCDF format with dimensions of altitude and profile number.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_SUNA_V1
+  This dataset contains Submersible Ultraviolet Nitrate Analyzer (SUNA) nitrate measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. SUNA is a standalone optical nitrate sensor that mounts onto the shipboard CTD rosette cast from the R/V Oceanus. The SUNA measurements are calibrated against bottle nutrient samples taken from the underway flow-through system on the ship and later analyzed with a Lachat Nutrient Analyzer. From the Lachat data, the average concentration of nitrate+nitrite are used for each sample. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_TSG_V1
+  This dataset contains shipboard thermosalinograph (TSG), meteorology, and bio-optics measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The TSG instrument measures the temperature and conductivity of seawater passing through a port in the hull of the ship. TSG data is calibrated using water samples compared to standard seawater and a laboratory salinometer onboard the ship. This dataset also contains chlorophyll and meteorology measurements including air temperature, barometric pressure, wind speed and direction, relative humidity, and radiative fluxes. Data are available in netCDF format, with separate dimensions for time, time of bio-optics measurements, and time of radiometer measurements.
+  <br>
+
+  #### SMODE_L2_SAILDRONES_V1
+  This dataset contains Saildrone in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and an intensive operating period (IOP) in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Saildrones are wind-and-solar-powered unmanned surface vehicles rigged with atmospheric and oceanic sensors that measure upper ocean horizontal velocities, near-surface temperature and salinity, Chlorophyll-a fluorescence, dissolved oxygen concentration, 5-m winds, air temperature, and surface radiation. Acoustic Doppler Current Profiler (ADCP) data samples originally measured at 1 Hz frequency are averaged into 5 minute bins, along with navigation data. Non-ADCP data from IOP1 contain additional bio-optical measurements. All data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_LAGRANGIAN_FLOATS_V1
+  This dataset contains in-situ measurements of temperature, salinity, and velocity from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco, during an intensive observation period in the fall of 2022. The data are available in netCDF format with a dimension of time. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The target in-situ quantities were measured by Lagrangian floats, which were deployed from research vessels and retrieved 3-5 days later. The floats follow the 3D motion of water parcels at depths within or just below the mixed layer and carried a CTD instrument to measure temperature, salinity, and pressure, in addition to an ADCP instrument to measure velocity.
+  <br>
+
+  #### SMODE_L1_MASS_DOPPVIS_V1
+  This dataset contains airborne DoppVis imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Modular Aerial Sensing System (MASS) is an airborne instrument package that is mounted on the DHC-6 Twin Otter aircraft which flies long duration detailed surveys of the field domain during deployments. MASS includes a Nikon D850 camera with a 14mm lens mounted with a 90 degree rotation and a 30 degree positive pitch angle during flight. The camera was synchronized to a coupled GPS/IMU system with images taken at 2hz. Raw images were calibrated for lens distortion and boresight misalignment with the GPS/IMU. Images were georeferenced to the processed aircraft trajectory and exported with reference to WGS84 datum with a UTM zone 10 projection (EPSG 32610) at 50cm resolution. Level 1 DoppVis images are available as GZIP flightlines containing individual TIFF images.
+  <br>
+
+  #### SMODE_L3_SEAGLIDERS_TEMP_SALINITY_V1
+  This dataset contains profiles of temperature, dissolved oxygen, salinity, and other observations collected by Seagliders during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Seagliders are autonomous underwater vehicles (AUVs) designed to glide from the ocean surface to as deep as 1000 m and back while collecting profiles of oceanic variables. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L3_SHIPBOARD_UCTD_ECOCTD_V1
+  This dataset contains shipboard Underway conductivity, temperature, and depth (UCDT) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Underway CTD system contains a standard UCDT probe measuring conductivity, temperature, and pressure, as well as an augmented EcoCDT probe that concurrently measures both hydrographic and bio-optical data including conductivity, temperature, pressure, dissolved oxygen concentration, chlorophyll-fluorescence, and particulate backscatter at two different wavelengths. Level 3 data are available in netCDF format with dimensions of profile number and depth.
+  <br>
+
+  #### SMODE_L4_WAVEGLIDERS_V1
+  This dataset contains waveglider observations from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Three wave gliders were deployed as part of the S-MODE pilot campaign, equipped with a suite of sensors including sonic anemometers, shortwave and longwave radiometers, CTD profilers, and ADCPs. All wave gliders include an IMU that records platform orientation and motion at 20Hz. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L1_MASS_HYPERSPECTRAL_V1
+  This dataset contains airborne hyperspectral imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Modular Aerial Sensing System (MASS) is an airborne instrument package that is mounted on the DHC-6 Twin Otter aircraft which flies long duration detailed surveys of the field domain during deployments. MASS includes a hyperspectral camera operating in the visible to near-IR range (400-990 nm). Hyperspectral data are used by S-MODE to provide visible imagery of the kinematics of whitecaps and ocean color measurements. Level 1 data are available as zip files containing data in ENVI format and text files containing location and timing information.
+  <br>
+
+  #### SMODE_L1_MASS_LIDAR_V1
+  This dataset contains geolocated airborne LiDAR point cloud measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Modular Aerial Sensing System (MASS) is an airborne instrument package that is mounted on the DHC-6 Twin Otter aircraft which flies long duration detailed surveys of the field domain during deployments. MASS includes a high resolution LiDAR, used to characterize the properties of ocean surface topography. The sensor has a maximum pulse repetition rate of 400 kHz, with a +/- 30° cross-heading raster scan rate of 200 Hz. Level 1 LiDAR point clouds are available in .laz format.
+  <br>
+
+  #### SMODE_L1_MASS_LWIR_V1
+  NOTICE: This dataset is currently undergoing maintenance to be repackaged as zip files of flight lines. The file count will decrease dramatically when new zip files are available. <br> This dataset contains airborne longwave infrared (LWIR) imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Modular Aerial Sensing System (MASS) is an airborne instrument package that is mounted on the DHC-6 Twin Otter aircraft which flies long duration detailed surveys of the field domain during deployments. MASS includes a FLIR SC6700 camera with 13mm lens was mounted nadir in the aircraft in an orientation so that the short edge of the image was parallel with the flight track. The camera was synchronized to a coupled GPS/IMU system with images collected at 50hz. Raw images were calibrated for lens distortion, vignetting, and boresight misalignment with the GPS/IMU. Images were georeferenced to the processed aircraft trajectory and exported with reference to the WGS84 datum with a UTM zone 10 projection (EPSG 32610) at an altitude-dependent resolution. Level 1 images are available in TIFF format.
+  <br>
+
+  #### SMODE_L1_MASS_VISIBLE_V1
+  This dataset contains airborne visible imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Modular Aerial Sensing System (MASS) is an airborne instrument package that is mounted on the DHC-6 Twin Otter aircraft which flies long duration detailed surveys of the field domain during deployments. MASS includes an IO Industries Flare 12M125-CL camera with 14mm lens mounted nadir in the aircraft in an orientation so that the short edge of the image was parallel with the aircraft heading. The camera was synchronized to a coupled GPS/IMU system with images taken at 5hz. Raw images were calibrated for lens distortion and boresight misalignment with the GPS/IMU. Images were georeferenced to the post-processed aircraft trajectory and exported with reference to WGS84 datum with a UTM zone 10 projection (EPSG 32610) at an altitude-dependent spatial resolution. Level 1 images are available in TIFF format.
+  <br>
+
+  #### SMODE_L2_MOSES_LWIR_SST_V1
+  This dataset contains airborne sea surface temperature (SST) measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE). Data were collected approximately 300 km offshore of San Fransisco during a pilot campaign in October 2021, and an intensive operating period (IOP) in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Multiscale Observing System of the Ocean Surface (MOSES) is an aerial observing system that primarily uses a longwave infrared (LWIR) camera to record SST at a resolution of several meters. Individual images are mosaiced together to provide a synoptic map of the sample domain covering approximately 200 km. MOSES is mounted on the B200 aircraft which flies daily surveys of the field domain during deployments. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L4_NCOM_V1
+  This dataset contains model output from the Navy Coastal Ocean Model (NCOM) run during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. NCOM model output consists of daily files during the deployment dates of the pilot campaign in Fall 2021, IOP1 in Fall 2022, and IOP2 in Spring 2023. Data consists of ocean variables such as salinity, sea water temperature, water depth, and surface wind stress, and are available in netCDF format.
+  <br>
+
+  #### SMODE_L1_ASIT_KABODS_V1
+  This data set includes tower-based Ka-band ocean surface backscatter measurements (cross section, incidence angle, radial velocity from radar, pulse-pair correlation) located offshore of Martha’s Vineyard (41°19.5′N, 70°34′W), Massachusetts (USA) over a period of three months, from October 2019 to January 2020. Data from the Ka-band radar are collected at multiple distances from the tower (up to ~32 m) at several incidence angles and at sub-second resolution. The measurements are provided as hourly files in netCDF format. <br> <br> Ka-band backscatter data are often utilized to derived ocean surface vector winds. The instrument used for this dataset was a Ka-Band Ocean continuous wave Doppler Scatterometer (KaBODS) built by the University of Massachusetts, Amherst, which was installed on the Woods Hole Oceanographic Institution Air-Sea Interaction Tower (ASIT). The tower is located in 15 m deep water and extends 76 feet into the marine atmosphere. Data were collected as part of a pre-pilot campaign for the S-MODE (Submesoscale Ocean Dynamics Experiment) project. The measurements provided the opportunity to develop Ka-band backscatter models as well as study backscattering mechanisms under different wind, wave, and weather conditions in order to support operation of the airborne Ka-band Doppler scatterometer used during the main S-MODE intensive observation periods.
+  <br>
+
+  #### SMODE_L1_ASIT_SLOPEFIELDS_V1
+  These wave slope data from polarimetry described below are considered preliminary and should not be used for any purpose without consulting Chris Zappa (zappa@ldeo.columbia.edu). <br> <br> This data set includes tower-based measurements of ocean wave slope fields from visible-band polarimetry using a Polaris Pyxis Mono VIS polarimetric camera. The data here include wave slope fields at 30 frames per second temporal resolution and mm-scale spatial resolution over a ~2 m x 2 m area of ocean surface observed off the Air-Sea Interaction Tower (ASIT; 41°20.1950'N, 70°33.3865'W). Measurements were taken over the period from October 2019 through January 2020. Surface slopes are along two dimensions: along-look and cross-look orientations of the camera. Data was acquired for 10 minutes per hour, 8 hours per day, and each data file (netCDF-4) captures one of the 10-minute segments. Note that data files are large, 142 GB each. <br> <br> Data were collected as part of a pre-pilot campaign for the S-MODE (Submesoscale Ocean Dynamics Experiment) project. The polarimetric slope sensing (PSS) technique of Zappa et al. [2008] allows one to reconstruct the water surface slope field by measuring the polarization state of reflected light at each image pixel, allowing for surface resolutions of order 1 mm with no in-water measurement component. From these data one is able to compute water surface slope variance, wave directional spreading, and the near-surface current profile.
+  <br>
+
+  #### SMODE_L1_PRISM_V1
+  This dataset contains PRISM data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Portable Remote Imaging Spectrometer (PRISM) is an airborne instrument package that is mounted on the GIII aircraft which flies long duration detailed surveys of the field domain during deployments. PRISM contains a pushbroom imaging spectrometer operating at near-UV to near-IR wavelengths (350-1050 nm), which will produce high temporal resolution and resolve spatial features as small as 30 cm. PRISM also has a two-channel spot radiometer at short-wave infrared (SWIR) band (1240 nm and 1640 nm), that is co-aligned with the spectrometer and will be used to provide accurate atmospheric correction of the ocean color measurements. Level 1 data is available in netCDF format.
+  <br>
+
+  #### SMODE_L2_PRISM_CHLA_V1
+  This dataset contains estimated chlorophyll-a and particulate organic carbon concentration data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Portable Remote Imaging Spectrometer (PRISM) is an airborne instrument package that is mounted on the GIII aircraft which flies long duration detailed surveys of the field domain during deployments. PRISM contains a pushbroom imaging spectrometer operating at near-UV to near-IR wavelengths (350-1050 nm), which produced high temporal resolution and resolve spatial features as small as 30 cm. PRISM also has a two-channel spot radiometer at short-wave infrared (SWIR) band (1240 nm and 1640 nm), that is co-aligned with the spectrometer and is used to provide accurate atmospheric correction of the ocean color measurements. Level 2 chlorophyll-a data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2a_PRISM_REFL_V1
+  This dataset contains orthocorrected and atmospherically corrected water-leaving reflectance data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Portable Remote Imaging Spectrometer (PRISM) is an airborne instrument package that is mounted on the GIII aircraft which flies long duration detailed surveys of the field domain during deployments. PRISM contains a pushbroom imaging spectrometer operating at near-UV to near-IR wavelengths (350-1050 nm), which produced high temporal resolution and resolve spatial features as small as 30 cm. PRISM also has a two-channel spot radiometer at short-wave infrared (SWIR) band (1240 nm and 1640 nm), that is co-aligned with the spectrometer and is used to provide accurate atmospheric correction of the ocean color measurements. Level 2a reflectance data is available in ENVI format.
+  <br>
+
+  #### SMODE_L1_SAILDRONES_V1
+  This dataset contains a suite of Saildrone in-situ measurements (including but not limited to temperature, salinity, currents, biochemistry, and meteorology) taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign spanning two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Saildrones are wind-and-solar-powered unmanned surface vehicles rigged with atmospheric and oceanic sensors that measure upper ocean horizontal velocities, near-surface temperature and salinity, Chlorophyll-a fluorescence, dissolved oxygen concentration, 5-m winds, air temperature, and surface radiation. Acoustic Doppler Current Profiler (ADCP) data samples are available in their raw 1 Hz sampling frequency as well as 5 minute averages, the latter available with navigation data. Other measurements are available as raw files (1Hz or 20 Hz where applicable), as well as 1 minute averages. L1 data are available as a zip file.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_BIO_V1
+  This dataset contains shipboard bio-optical measurements collected during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during an intensive operating period (IOP) in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_RADIOMETER_METEOROLOGY_V1
+  This dataset contains shipboard radiometer measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Air-Sea Interaction METeorology (ASIMET) sensors mounted onboard the R/V Oceanus record shortwave and longwave radiation fluxes. These are used by S-MODE to compare with DopplerScatt retrievals. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_UCTD_ECOCTD_V1
+  This dataset contains shipboard Underway conductivity, temperature, and depth (UCDT) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The Underway CTD system contains a standard UCDT probe measuring conductivity, temperature, and pressure, as well as an augmented EcoCDT probe that concurrently measures both hydrographic and bio-optical data including conductivity, temperature, pressure, dissolved oxygen concentration, chlorophyll-fluorescence, and particulate backscatter at two different wavelengths. The level 2 data herein combines measurements from both the UCDT and EcoCDT into a single dataset, where for each variable, all profiles are binned onto a 5m vertical grid and merged into a 2-D matrix. Additional computed variables include backscatter baseline signal and backscatter spike signal. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_APEX_FLOAT_V1
+  This dataset contains APEX float in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. Data was collected approximately 300 km offshore of San Francisco, during Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. US Naval Oceanographic Office (NAVO) APEX floats measure subsurface properties including temperature and salinity. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L2_SLOCUM_GLIDERS_V1
+  This dataset contains Slocum glider in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. US Naval Oceanographic Office (NAVOCEANO) Slocum gliders measure subsurface properties including temperature and salinity by profiling to a depth of 1000m at a fixed location every 4 hours. Data are available in netCDF format.
+  <br>
+
+  #### SMODE_L4_ROMS_ANCILLARY_V1
+  This dataset provides ancillary data for the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) Regional Ocean Modelling System (ROMS) model runs, and is intended for expert users. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The ancillary data include files required to initialize the model, forcing fields, grid files, and configuration files. ROMS ancillary files are provided in NetCDF format.
+  <br>
+
+  #### SMODE_L4_ROMS_V1
+  This dataset contains output data files for the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) Regional Ocean Modelling System (ROMS) model runs. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. Model output is limited to the SMODE field campaign region and uses 1hr ERA5 atmospheric forcings. ROMS model output files are provided in NetCDF format. Users should note that these files are very large and are encouraged to do analysis in the cloud rather than downloading.
+  <br>
+
+  #### SMODE_L2_SHIPBOARD_WINDCUBE_LIDAR_V1
+  This dataset contains shipboard windcube data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean. The data are available in netCDF format.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/S-MODE/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- elevation
+- geospatial
+- ice
+- lidar
+- netcdf
+- oceans
+- radar
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "SMODE_L1_DOPPLERSCATT_V1 v1 - This dataset contains concurrent airborne DopplerScatt radar retrievals of surface vector winds and ocean currents from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_DOPPLERSCATT_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_DOPPLERSCATT_WINDS_CURRENT_V2 v2 - This dataset contains concurrent airborne DopplerScatt radar retrievals of surface vector winds and ocean currents from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE). S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_DOPPLERSCATT_WINDS_CURRENT_V2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_DRIFTER_POSITIONS_V1 v1 - This dataset contains in-situ position data from surface drifters from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_DRIFTER_POSITIONS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_ADCP_V1 v1 - This dataset contains shipboard Acoustic Doppler Current Profiler (ADCP) measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign and two intensive operating periods (IOPs) conducted approximately 300 km offshore of San Francisco during Fall 2021, 2022, and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_ADCP_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_BOTTLES_V1 v1 - This dataset contains in-situ seawater samples taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_BOTTLES_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_CTD_V1 v1 - This dataset contains shipboard conductivity, temperature, and depth (CTD) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SHIPBOARD_CTD_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_RADIOSONDES_METEOROLOGY_V1 v1 - This dataset contains atmospheric sounding measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_RADIOSONDES_METEOROLOGY_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_SUNA_V1 v1 - This dataset contains Submersible Ultraviolet Nitrate Analyzer (SUNA) nitrate measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_SUNA_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_TSG_V1 v1 - This dataset contains shipboard thermosalinograph (TSG), meteorology, and bio-optics measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_TSG_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SAILDRONES_V1 v1 - This dataset contains Saildrone in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and an intensive operating period (IOP) in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SAILDRONES_V2
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_LAGRANGIAN_FLOATS_V1 v1 - This dataset contains in-situ measurements of temperature, salinity, and velocity from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco, during an intensive observation period in the fall of 2022. The data are available in netCDF format with a dimension of time."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_LAGRANGIAN_FLOATS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_MASS_DOPPVIS_V1 v1 - This dataset contains airborne DoppVis imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_MASS_DOPPVIS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L3_SEAGLIDERS_TEMP_SALINITY_V1 v1 - This dataset contains profiles of temperature, dissolved oxygen, salinity, and other observations collected by Seagliders during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L3_SEAGLIDER_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L3_SHIPBOARD_UCTD_ECOCTD_V1 v1 - This dataset contains shipboard Underway conductivity, temperature, and depth (UCDT) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L3_SHIPBOARD_UCTD_ECOCTD_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L4_WAVEGLIDERS_V1 v1 - This dataset contains waveglider observations from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L4_WAVEGLIDERS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_MASS_HYPERSPECTRAL_V1 v1 - This dataset contains airborne hyperspectral imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_MASS_HYPERSPECTRAL_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_MASS_LIDAR_V1 v1 - This dataset contains geolocated airborne LiDAR point cloud measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_MASS_LIDAR_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_MASS_LWIR_V1 v1 - NOTICE: This dataset is currently undergoing maintenance to be repackaged as zip files of flight lines. The file count will decrease dramatically when new zip files are available."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_MASS_LWIR_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_MASS_VISIBLE_V1 v1 - This dataset contains airborne visible imagery from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during a pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_MASS_VISIBLE_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_MOSES_LWIR_SST_V1 v1 - This dataset contains airborne sea surface temperature (SST) measurements from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE). Data were collected approximately 300 km offshore of San Fransisco during a pilot campaign in October 2021, and an intensive operating period (IOP) in Fall 2022."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_MOSES_LWIR_SST_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L4_NCOM_V1 v1 - This dataset contains model output from the Navy Coastal Ocean Model (NCOM) run during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L4_NCOM_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_ASIT_KABODS_V1 v1 - This data set includes tower-based Ka-band ocean surface backscatter measurements (cross section, incidence angle, radial velocity from radar, pulse-pair correlation) located offshore of Martha’s Vineyard (41°19.5′N, 70°34′W), Massachusetts (USA) over a period of three months, from October 2019 to January 2020. Data from the Ka-band radar are collected at multiple distances from the tower (up to ~32 m) at several incidence angles and at sub-second resolution."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_ASIT_KABODS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_ASIT_SLOPEFIELDS_V1 v1 - These wave slope data from polarimetry described below are considered preliminary and should not be used for any purpose without consulting Chris Zappa (zappa@ldeo.columbia.edu). <br> <br> This data set includes tower-based measurements of ocean wave slope fields from visible-band polarimetry using a Polaris Pyxis Mono VIS polarimetric camera."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_ASIT_WAVE_SLOPE_POLARIMETRY_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_PRISM_V1 v1 - This dataset contains PRISM data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L1_PRISM_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_PRISM_CHLA_V1 v1 - This dataset contains estimated chlorophyll-a and particulate organic carbon concentration data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_PRISM_CHLA_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2a_PRISM_REFL_V1 v1 - This dataset contains orthocorrected and atmospherically corrected water-leaving reflectance data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) during the IOP1 campaign conducted approximately 300 km offshore of San Francisco during Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2a_PRISM_REFL_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L1_SAILDRONES_V1 v1 - This dataset contains a suite of Saildrone in-situ measurements (including but not limited to temperature, salinity, currents, biochemistry, and meteorology) taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign spanning two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SAILDRONES_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_BIO_V1 v1 - This dataset contains shipboard bio-optical measurements collected during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during an intensive operating period (IOP) in Fall 2022. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SHIPBOARD_BIO_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_RADIOMETER_METEOROLOGY_V1 v1 - This dataset contains shipboard radiometer measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) pilot campaign conducted approximately 300 km offshore of San Francisco over two weeks in October 2021. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_LX_SHIPBOARD_RADIOMETER_METEOROLOGY_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_UCTD_ECOCTD_V1 v1 - This dataset contains shipboard Underway conductivity, temperature, and depth (UCDT) measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SHIPBOARD_UCTD_ECOCTD_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_APEX_FLOAT_V1 v1 - This dataset contains APEX float in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. Data was collected approximately 300 km offshore of San Francisco, during Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_APEX_FLOATS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SLOCUM_GLIDERS_V1 v1 - This dataset contains Slocum glider in-situ measurements taken during the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) field campaign. The experiment was conducted approximately 300 km offshore of San Francisco, during a pilot campaign that spanned two weeks in October 2021, and two intensive operating periods in Fall 2022 and Spring 2023."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SLOCUM_GLIDERS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L4_ROMS_ANCILLARY_V1 v1 - This dataset provides ancillary data for the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) Regional Ocean Modelling System (ROMS) model runs, and is intended for expert users. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L4_ROMS_ANCILLARY_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L4_ROMS_V1 v1 - This dataset contains output data files for the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) Regional Ocean Modelling System (ROMS) model runs. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L4_ROMS_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "SMODE_L2_SHIPBOARD_WINDCUBE_LIDAR_V1 v1 - This dataset contains shipboard windcube data from the Sub-Mesoscale Ocean Dynamics Experiment (S-MODE) conducted approximately 300 km offshore of San Francisco during a pilot campaign over two weeks in October 2021, and two intensive operating periods (IOPs) in Fall 2022 and Spring 2023. S-MODE aims to understand how ocean dynamics acting on short spatial scales influence the vertical exchange of physical and biological variables in the ocean."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/SMODE_L2_SHIPBOARD_WINDCUBE_LIDAR_V1
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

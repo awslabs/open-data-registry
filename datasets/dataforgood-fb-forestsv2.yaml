@@ -1,0 +1,56 @@
+Name: Version 2 High Resolution Canopy Height Maps by WRI and Meta
+Description: |
+  Version 2 Global and regional Canopy Height Maps (CHMv2). Created using machine learning models on high-resolution worldwide Vantor satellite imagery. 
+Documentation: https://github.com/facebookresearch/dinov3
+Contact: dataforgood@meta.com
+ManagedBy: "[Meta](https://dataforgood.fb.com/)"
+UpdateFrequency: TBD
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - cog
+  - earth observation
+  - climate
+  - land cover
+  - agriculture
+  - machine learning
+  - aerial imagery
+  - satellite imagery
+  - image processing
+  - geospatial
+License: |
+  https://creativecommons.org/licenses/by/4.0/
+Citation:
+  Meta and World Resources Institude (WRI) - 2026. Version 2 High Resolution
+  Canopy Height Maps (CHMv2). Source imagery for CHM © 2016 [Vantor](https://vantor.com/product/vivid/mosaic/).
+  Accessed DAY MONTH YEAR.
+Resources:
+  - Description: Global Canopy Height maps. GeoTIFF files and Geojson files with observation date
+    ARN: arn:aws:s3:::dataforgood-fb-data/forests/v2/global/dinov3_global_chm_v2_ml3/
+    Region: us-east-1
+    Type: S3 Bucket
+  - Description: Notifications for new Version 2 High Resolution Canopy Height Maps by WRI and Meta data
+    ARN: arn:aws:sns:us-east-1:632571768781:dataforgood-fb-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset - CHMv2
+      URL: https://github.com/facebookresearch/dinov3/blob/main/notebooks/chmv2_dataset_exploration.ipynb
+      NotebookURL: https://github.com/facebookresearch/dinov3/blob/main/notebooks/chmv2-get_to_know_a_dataset.ipynb
+      AuthorName: Meta
+  Tools & Applications:
+    - Title: Global Canopy Height on Earth Engine
+      URL: https://meta-forest-monitoring-okw37.projects.earthengine.app/view/canopyheight
+      AuthorName: Meta and WRI
+  Publications:
+    - Title: "CHMv2: Improvements in Global Canopy Height Mapping using DINOv3"
+      URL: https://arxiv.org/abs/2603.06382
+      AuthorName: John Brandt, Seungeun Yi, Jamie Tolan, Xinyuan Li, Peter Potapov,Jessica Ertel, Justine Spore, Huy V. Vo, Michael Ramamonjisoa, Patrick Labatut, Piotr Bojanowski, and Camille Couprie
+    - Title: "DINOv3"
+      URL: https://arxiv.org/abs/2508.10104
+      AuthorName: Oriane Siméoni, Huy V. Vo, Maximilian Seitzer, Federico Baldassarre, Maxime Oquab, Cijo Jose, Vasil Khalidov, Marc Szafraniec, Seungeun Yi, Michaël Ramamonjisoa, Francisco Massa, Daniel Haziza, Luca Wehrstedt, Jianyuan Wang, Timothée Darcet, Théo Moutakanni, Leonel Sentana, Claire Roberts, Andrea Vedaldi, Jamie Tolan, John Brandt, Camille Couprie, Julien Mairal, Hervé Jégou, Patrick Labatut, Piotr Bojanowski
+ 

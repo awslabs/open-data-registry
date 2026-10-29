@@ -1,0 +1,156 @@
+Name: Icechunk ERA5
+Description: |
+  <b>An analysis-ready, cloud-optimized (ARCO) edition of ERA5, the fifth-generation global
+  reanalysis from the Copernicus Climate Change Service (C3S) at ECMWF. Provided as a single
+  Icechunk + Zarr v3 store on AWS S3, this version enables efficient, scalable access to global
+  reanalysis data for weather, climate, and ML/AI applications. Managed by [Earthmover](https://earthmover.io).</b>
+  <br /><br />
+
+  ERA5 provides hourly estimates of atmospheric, land-surface, and ocean variables from 1940 to
+  2025 on a ~31 km (0.25°) global latitude-longitude grid. This Earthmover edition delivers 35
+  single-level (surface) variables, 8 pressure-level variables on 13 isobaric levels
+  (50–1000 hPa), and a curated 500 hPa geopotential slice, all with CF-1.7 compliant metadata.
+  <br /><br />
+
+  The store is organized into three top-level groups (single, pressure, and 500hPa). Each group
+  is provided with two complementary chunking strategies that hold identical data: a "spatial"
+  layout (one full global map per hour) optimized for map-style and regional queries, and a
+  "temporal" layout (long time series in small spatial tiles) optimized for time-series
+  extraction, location-based analysis, and ML training workflows. Arrays are stored as Float32
+  with PCodec compression for high compression ratios.
+  Only lossless compression has been applied; data values are bit-for-bit identical to raw ECMWF NetCDFs. 
+  <br /><br />
+
+  The data is provided in the [Icechunk](https://icechunk.io/en/stable/overview/) format.
+  Icechunk is an open source tensor storage engine that augments Zarr with transactional updates,
+  version history, and an optimized, Rust-based I/O path for maximum performance in the cloud.
+  <br /><br />
+
+  An interactive browser for the data is available via the Earthmover Data Marketplace:
+  [https://app.earthmover.io/marketplace/6a19bcfe9aa6e97720a2fad2?tab=dataset](https://app.earthmover.io/marketplace/6a19bcfe9aa6e97720a2fad2?tab=dataset)
+  <br /><br />
+
+  Earthmover maintains two complementary ERA5 datasets:
+  - This one, updated at quarterly frequency, available free under an open license.
+  - A low-latency version with the same variables, but updated daily with the latest
+    ERA5T near-real-time data. This is available at a competitive price and comes with a strong SLA.
+    See [ERA5 (Daily Updates)](https://app.earthmover.io/marketplace/6a18ae1ba1c8feafd01f2b76) on
+    the Earthmover Data Marketplace.
+
+  If your organization is using ERA5 in a serious operational context, please consider subscribing
+  to the low-latency version of this dataset.
+  Paid subscribers for the low-latency dataset are what make it sustainable for us to provide this
+  high-quality free, open dataset. 
+  Contact [sales@earthmover.io](mailto:sales@earthmover.io) to learn more.
+  <br /><br />
+
+  The ERA5 dataset is public and can be opened directly from S3 with the
+  [Icechunk](https://icechunk.io/) and [Xarray](https://xarray.pydata.org/) libraries:
+  <br /><br />
+  ```python
+  import icechunk
+  import xarray as xr
+
+  storage = icechunk.s3_storage(
+      bucket="earthmover-icechunk-era5",
+      prefix="icechunkV2",
+      region="us-east-1",
+      anonymous=True,
+  )
+  repo = icechunk.Repository.open(storage)
+  session = repo.readonly_session("main")
+  ds = xr.open_zarr(session.store, group="single/spatial", consolidated=False, chunks=None)
+  ```
+  <br /><br />
+
+  Alternatively, you can use the Arraylake client for a more concise syntax.
+  <br /><br />
+  ```python
+  from arraylake import Client
+  import xarray as xr
+
+  client = Client()
+  client.login()
+
+  repo = client.get_repo("earthmover-public/era5")
+  session = repo.readonly_session("main")
+  ds = xr.open_zarr(session.store, group="single/spatial", consolidated=False, chunks=None)
+  ```
+  <br /><br />
+
+  The dataset is assembled from the NSF NCAR Curated ERA5 archive and the Copernicus Climate Data
+  Store. It is widely used for ML/AI training, climate and weather research, extreme-event
+  analysis, and applications such as renewable energy siting.
+
+Documentation: https://app.earthmover.io/marketplace/6a19bcfe9aa6e97720a2fad2
+Contact: hello@earthmover.io
+ManagedBy: "[Earthmover](https://earthmover.io)"
+UpdateFrequency: Quarterly (every three months); historical reanalysis covering 1940 to 2025
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - aws-pds
+  - climate
+  - model
+  - atmosphere
+  - land
+  - data assimilation
+  - forecast
+  - meteorological
+  - weather
+  - geoscience
+  - geospatial
+  - machine learning
+  - energy
+  - zarr
+License: Creative Commons Attribution 4.0 International (CC-BY 4.0) - https://creativecommons.org/licenses/by/4.0/
+Citation: >
+  This dataset was generated using Copernicus Climate Change Service information 2026.
+
+  Copernicus Climate Change Service, Climate Data Store, (2023): ERA5 hourly data on single levels
+  from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS).
+  DOI: https://doi.org/10.24381/cds.adbb2d47 (Accessed in 2026).
+
+  Copernicus Climate Change Service, Climate Data Store, (2023): ERA5 hourly data on pressure levels
+  from 1940 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS).
+  DOI: https://doi.org/10.24381/cds.bd0915c6 (Accessed in 2026).
+
+  Historical backfill from the NSF NCAR Curated ERA5 archive: European Centre for Medium-Range
+  Weather Forecasts. 2019, updated monthly. ERA5 Reanalysis (0.25 Degree Latitude-Longitude Grid).
+  Research Data Archive at the National Center for Atmospheric Research, Computational and
+  Information Systems Laboratory. https://doi.org/10.5065/BH6N-5N20.
+Resources:
+  - Description: ERA5 Zarr / Icechunk Data (Cloud-Optimized) - Icechunk store at s3://earthmover-icechunk-era5/icechunkV2
+    ARN: arn:aws:s3:::earthmover-icechunk-era5/icechunkV2
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://earthmover-icechunk-era5.s3.amazonaws.com/index.html)'
+  - Description: Notifications for the ERA5 Zarr + Icechunk dataset
+    ARN: arn:aws:sns:us-east-1:871265417473:earthmover-icechunk-era5-object_created
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: ERA5 sample data - access examples and documentation
+      URL: https://docs.earthmover.io/sample-data/era5
+      AuthorName: Earthmover
+      AuthorURL: https://earthmover.io
+  Tools & Applications:
+    - Title: era5-qc - verify ERA5 data against the original ECMWF CDS source
+      URL: https://github.com/earth-mover/era5-qc
+      AuthorName: Earthmover
+      AuthorURL: https://earthmover.io
+  Publications:
+    - Title: Low Latency Icechunk ERA5 Now Available on the Earthmover Data Marketplace
+      URL: https://www.earthmover.io/blog/low-latency-era5-icechunk-marketplace
+      AuthorName: Ryan Abernathey
+      AuthorURL: https://www.earthmover.io/blog/author/ryan-abernathey
+    - Title: The ERA5 global reanalysis
+      URL: https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803
+      AuthorName: Hersbach et al 2020
+      AuthorURL: https://orcid.org/0000-0001-5330-7071
+ADXCategories:
+  - Environmental Data

@@ -1,0 +1,27 @@
+Name: NASA GSESA Project
+Description: |
+  The Global Surface Emissivity Spectral Atlas (GSESA) database contains global, monthly climatology infrared emissivity functional Empirical Orthogonal Function (EOF) scores in 0.25 x 0.25 latitude-longitude resolution. An eigenvector file and a reader file allow customers to produce emissivity spectra. The emissivity functional EOF scores were developed using the Infrared Atmospheric Sounding Interferometer (IASI) instrument on the METOP-A, METOP-B, and METOP-C satellites for the period 2007-07-01 to 2025-01-31. An inversion scheme, dealing with cloudy as well as cloud-free radiances observed with ultraspectral infrared (IR) sounders, was developed to simultaneously retrieve atmospheric thermodynamic and surface or cloud microphysical parameters. This inversion scheme was applied to the IASI instrument. Rapidly produced surface spectral emissivity (SSE) is initially evaluated through quality control checks on the retrievals of other impacted surface and atmospheric parameters. The GSESA data are provided in binary format, with sample reader files that can be used in a Fortan IDE to read a functional emissivity EOF compressed file (e.g., MFEMI_MONTH01_A_V5P.bin) and its EOF eigenvector file (IASI_B_EV_FUNC_GLOBAL_V4.bin) to produce spectral emissivity at a certain location (latitude and longitude). A sample reader file can be used in a Matlab IDE is also provided. These data were created with funding from the NASA Internal Scientist Funding Model for the National Airborne Sounder Testbed-Interferometer (NAST-I).
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.asdc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://asdc.larc.nasa.gov/project/GSESA/GSESA_V01
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GSESA vV01 - The Global Surface Emissivity Spectral Atlas (GSESA) database contains global, monthly climatology infrared emissivity functional Empirical Orthogonal Function (EOF) scores in 0.25 x 0.25 latitude-longitude resolution. An eigenvector file and a reader file allow customers to produce emissivity spectra."
+  ARN: arn:aws:s3:::asdc-prod-protected/GSESA/GSESA_V01
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.asdc.earthdata.nasa.gov/s3credentials

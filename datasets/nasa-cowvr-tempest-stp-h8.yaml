@@ -1,0 +1,50 @@
+Name: NASA COWVR-TEMPEST/STP-H8 Project
+Description: |
+  This data set includes satellite-based observations of calibrated, geo-located antenna temperature and brightness temperatures, along with the sensor telemetry used to derive those values. Brightness temperatures are derived from the microwave band frequencies 18.7 GHz, 23.8 GHz, and 34.5 GHz. This product is best suited for a cal/val user or sensor expert. These level 1c measurements make up the temperature sensor data record (TSDR) from the COWVR (Compact Ocean Wind Vector Radiometer) sensor aboard the international space station (ISS), starting in January 2022 forward-streaming to PO.DAAC till the planned mission end in December 2024. Its swath width is 1012 km and spatial resolution is <35 km. Data files in HDF5 format are available at roughly hourly frequency (the ISS orbit period is ~90 minutes), although note that the coverage shown in the thumbnail is for a full day. Files include calibration and flag data in addition to brightness temperatures. Version 10.0 is the first public release, and is named as such to be consistent with the internal version numbers of the project team prior to release <br><br> The COWVR sensor is a fully polarimetric, conically imaging microwave radiometer for measuring ocean surface wind vectors. It operates nominally on-orbit aboard the ISS and data are non-sun-synchronous. It was deployed as part of the Space Test Program - Houston 8 (STP-H8) technology demonstration mission. A successful COWVR mission will demonstrate a lower-cost sensor architecture (e.g. in comparison to WindSat) for providing imaging passive microwave data, including ocean surface vector wind products for the Department of Defense (DoD). COWVR was provided by the Jet Propulsion Laboratory and flown by the United States Space Force, Space Systems Command, Development Corps for Innovation and Prototyping.
+  <br>
+
+  #### COWVR_STPH8_L2_EDR_V10.0
+  This dataset includes satellite-based observations of geolocated surface wind vectors, precipitable water vapor, and integrated cloud liquid water, as well as the microwave brightness temperatures used to derive them. Theses measurements make up the environmental data record (EDR) from the COWVR (Compact Ocean Wind Vector Radiometer) sensor aboard the international space station (ISS), beginning in January 2022 with forward-streaming to PO.DAAC. Data over the satellite swath are available in HDF5 format with roughly one file per hour (the ISS orbit period is ~90 minutes), and coverage shown in the thumbnail is for a full day. Spatial resolution is roughly 35 km. The file metadata formats may be different than what an average user is familiar with – please see the User Guide to learn more. Version 10.0 is the first public release, and is named as such to be consistent with the internal version numbering of the project team prior to release. <br><br> The COWVR sensor is a fully polarimetric, conically imaging microwave radiometer for measuring ocean surface wind vectors. It operates nominally on-orbit aboard the ISS and data are non-sun-synchronous. It was deployed as part of the Space Test Program - Houston 8 (STP-H8) technology demonstration mission. A successful COWVR mission will demonstrate a lower-cost sensor architecture (e.g. in comparison to WindSat) for providing imaging passive microwave data, including ocean surface vector wind products for the Department of Defense (DoD). COWVR was provided by the Jet Propulsion Laboratory and flown by the United States Space Force, Space Systems Command, Development Corps for Innovation and Prototyping.
+  <br>
+
+  #### TEMPEST_STPH8_L1_TSDR_V10.0
+  This dataset includes satellite-based observations of calibrated, geo-located antenna temperature and brightness temperatures, along with the sensor telemetry used to derive those values. Brightness temperatures are derived from the microwave band frequencies 87, 164, 174, 178 and 181 GHz. This product is best suited for a cal/val user or sensor expert. These level 1c measurements make up the temperature sensor data record (TSDR) from the TEMPEST (Temporal Experiment for Storms and Tropical Systems) sensor aboard the international space station (ISS), starting in January 2022 forward-streaming to PO.DAAC till the planned mission end in December 2024. TEMPEST swath width is 1400 kilometers and resolution at nadir is 25 km for the 87 GHz channel and 13 km for the 180 GHz channels. Data files in HDF5 format are available at roughly hourly frequency (the ISS orbit period is ~90 minutes), although note that the coverage shown in the thumbnail is for a full day. Files include calibration and flag data in addition to brightness temperatures. Version 10.0 is the first public release, and is named as such to be consistent with the internal version numbering of the project team prior to release. <br><br> The TEMPEST instrument is a microwave radiometer deployed as part of the Space Test Program - Houston 8 (STP-H8) technology demonstration mission, with the primary objective of tropical cyclone intensity tracking. It operates nominally on-orbit aboard the ISS and data are non-sun-synchronous. A successful mission will demonstrate a lower-cost, lighter-weight sensor architecture for providing microwave data. TEMPEST was provided by the Jet Propulsion Laboratory and flown by the United States Space Force, Space Systems Command, Development Corps for Innovation and Prototyping.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://archive.podaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://earthdata.nasa.gov/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- hdf
+- hdf5
+- oceans
+- satellite imagery
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "COWVR_STPH8_L1_TSDR_V10.0 v10.0 - This data set includes satellite-based observations of calibrated, geo-located antenna temperature and brightness temperatures, along with the sensor telemetry used to derive those values. Brightness temperatures are derived from the microwave band frequencies 18.7 GHz, 23.8 GHz, and 34.5 GHz."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/COWVR_STPH8_L1_TSDR_V10.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "COWVR_STPH8_L2_EDR_V10.0 v10.0 - This dataset includes satellite-based observations of geolocated surface wind vectors, precipitable water vapor, and integrated cloud liquid water, as well as the microwave brightness temperatures used to derive them. Theses measurements make up the environmental data record (EDR) from the COWVR (Compact Ocean Wind Vector Radiometer) sensor aboard the international space station (ISS), beginning in January 2022 with forward-streaming to PO.DAAC."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/COWVR_STPH8_L2_EDR_V10.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials
+- Description: "TEMPEST_STPH8_L1_TSDR_V10.0 v10.0 - This dataset includes satellite-based observations of calibrated, geo-located antenna temperature and brightness temperatures, along with the sensor telemetry used to derive those values. Brightness temperatures are derived from the microwave band frequencies 87, 164, 174, 178 and 181 GHz."
+  ARN: arn:aws:s3:::podaac-ops-cumulus-protected/TEMPEST_STPH8_L1_TSDR_V10.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://archive.podaac.earthdata.nasa.gov/s3credentials

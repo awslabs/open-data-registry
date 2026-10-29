@@ -1,22 +1,43 @@
 Name: EEGDash on AWS
-Description: The EEG-DaSh data archive will establish a data-sharing resource for MEEG (EEG, MEG) data, enabling large-scale computational advancements to preserve and share scientific data from publicly funded research for machine learning and deep learning applications.
+Description: >
+  The EEG-DaSh (EEG Data Sharing) data archive is a large-scale data-sharing resource for
+  magnetoencephalography and electroencephalography (MEEG) data hosted at the Swartz Center
+  for Computational Neuroscience (SCCN), UC San Diego. It provides curated, BIDS-formatted
+  datasets for neuroscience research, machine learning, and deep learning applications.
+  The archive spans three S3 buckets: (1) the EEGDash bucket for data served through the
+  EEGDash platform, (2) the NEMAR archive containing datasets contributed through the
+  NEMAR (Neuroelectromagnetic Data Archive and Tools Resource) platform, which serves as
+  the upstream data source for EEGDash, and (3) a competition-specific collection of
+  datasets adapted and preprocessed for machine learning benchmarks and competitions.
 Documentation: https://eegdash.org
 Contact: adelorme@ucsd.edu
 ManagedBy: "[Swartz Center for Computational Neuroscience](https://sccn.ucsd.edu/)"
-UpdateFrequency: About once a week.
+UpdateFrequency: About once a week
 Tags:
   - aws-pds
   - life sciences
   - machine learning
+  - deep learning
   - neuroscience
+  - neuroimaging
 License: There are no restrictions on the use of this data.
 Resources:
   - Description: EEGDash data
     ARN: arn:aws:s3:::eegdash
     Region: us-east-2
     Type: S3 Bucket
-    Explore:
-    - '[Browse Bucket](https://eegdash.s3.amazonaws.com)'
+  - Description: NEMAR datasets - primary archive of MEEG datasets contributed through the NEMAR platform
+    ARN: arn:aws:s3:::nemar
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Competition datasets - MEEG datasets adapted and preprocessed for machine learning benchmarks
+    ARN: arn:aws:s3:::nmdatasets
+    Region: us-east-2
+    Type: S3 Bucket
+  - Description: Notifications for EEGDash
+    ARN: arn:aws:sns:us-east-2:191754232783:eegdash-nemar
+    Region: us-east-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: Deep Learning on EEGDash Data example
@@ -28,3 +49,15 @@ DataAtWork:
       URL: https://pypi.org/project/eegdash/
       AuthorName: Young Truong
       AuthorURL: https://github.com/dungscout96
+    - Title: NEMAR - Neuroelectromagnetic Data Archive and Tools Resource
+      URL: https://nemar.org
+      AuthorName: SCCN
+      AuthorURL: https://sccn.ucsd.edu/
+    - Title: EEGLAB - An open source environment for electrophysiological signal processing
+      URL: https://eeglab.org
+      AuthorName: SCCN
+      AuthorURL: https://sccn.ucsd.edu/
+  Publications:
+    - Title: "NEMAR: an open access data, tools, and compute resource operating on neuroelectromagnetic data"
+      URL: https://doi.org/10.1093/database/baac096
+      AuthorName: A. Delorme, D. Truong, C. Youn, T. Mullen, A. Smetanin, S. Bhatt, S. Makeig

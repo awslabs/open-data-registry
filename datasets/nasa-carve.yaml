@@ -1,0 +1,287 @@
+Name: NASA CARVE Project
+Description: |
+  An inventory of NASA's airborne and field campaigns for Earth Science
+  <br>
+
+  #### Polar-VPRM_Alaskan-NEE_1314
+  This data set provides 3-hourly estimates of gross ecosystem CO2 exchange (GEE) and respiration (autotrophic and heterotrophic) for the state of Alaska from 2012 to 2014. The data were generated using the Polar Vegetation Photosynthesis and Respiration Model (PolarVPRM) and are provided at ~ 1 km2 [1/4-degree (longitude) by 1/6-degree (latitude)] pixel resolution. The PolarVPRM produces high-frequency estimates of GEE of CO2 for North American biomes from remotely-sensed data sets. For Alaska, the model used meteorological inputs from the North American regional re-analysis (NARR) and inputs of fractional snow cover and land surface water index (LSWI) from the Moderate Resolution Imaging Spectroradiometer (MODIS). Land surface greenness was factored into the model from three sources: 1) Enhanced Vegetation Index (EVI) from MODIS; 2) Solar Induced Florescence (SIF) from the Orbiting Carbon Observatory 2 (OCO-2); and 3) SIF from the Global Ozone Monitoring Experiment 2 (GOME-2). Three independent estimates of GEE are included in the data set, one for each source of greenness observations.
+  <br>
+
+  #### CH4_Aircraft_STILT_footprints_1300
+  This data set provides the results of (1) year-round measurements of methane (CH4) flux along with soil and air temperatures at five eddy covariance towers at sites located in the Alaskan Arctic tundra from June 2013 to December 2014 and (2) airborne CH4 and ozone (O3) measurements collected during Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight campaigns for years 2012 through 2014. The included site-level flux data at half-hourly intervals were calculated following standard eddy covariance data processing procedures. Also reported are daily mean methane flux, soil temperature with depth, and air temperature for each tower site. Also identified for each flux tower site were the "zero curtain" periods of extended cold when soil temperatures were poised near 0 degrees C. The reported CARVE airborne CH4 and O3 data were aggregated horizontally at 5 km intervals. Measurement heights are reported. These aircraft positions were treated as receptors in a Stochastic Time-Inverted Lagrangian Transport (STILT) model coupled with meteorology fields from the polar variant of the Weather and Research Forecasting model (WRF), in order to model the land surface influence on the aircraft-observed methane concentrations. The summed land surface influence on the aircraft data at each position is reported. For each airborne measurement, 2D surface influence fields (i.e. footprints) at two different spatial resolutions were derived using the WRF-STILT simulations. These gridded footprints are provided as netCDF formatted files. Regional C-CH4 fluxes were calculated from the CARVE CH4 data and footprints for the period 2012-2014 and are also included with this data set. Acknowledgements: Data collection efforts were funded by NSF ARCSS project "Methane Loss From Arctic" (ARCSS #1204263; http://www.nsf.gov/awardsearch/showAward?AWD_ID=1204263) and by NASA's Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE).
+  <br>
+
+  #### AKFED_V1_1282
+  This data set provides estimates of annual carbon emissions (kg carbon per square meter) from boreal fires at 450-m resolution for the state of Alaska between 2001 and 2013. To produce these data, daily burned area for 2001 to 2013 was mapped using imagery from the Moderate Resolution Imaging Spectroradiometer (MODIS) combined with perimeters from the Alaska Large Fire Database. Carbon consumption was calibrated using available field measurements from black spruce forests in Alaska. Above- and below-ground carbon consumption were modeled based on environmental variables including elevation, day of burning within the fire season, pre-fire tree cover and the differenced normalized burn ratio (dNBR). Modeled uncertainties in carbon consumption are included in the data set. The derived burn area and carbon emissions product, referred to as the Alaskan Fire Emissions Database (AKFED), provides a resource for study of the environmental controls on daily fire dynamics, boreal fire emissions in biogeochemical models, and potential feedbacks from changing fire regimes. There are 26 data files in GeoTIFF (.tif) format with this data set. There are 13 .tifs for carbon consumption, one for each year, and 13 .tifs for carbon consumption uncertainty, one for each year.
+  <br>
+
+  #### Alaskan_CH4_CO2_Fluxes_1316
+  This data set provides hourly atmospheric concentrations of methane (CH4), carbon dioxide (CO2), and carbon monoxide (CO) as mole fractions, from January 2012 to December 2014 measured at the CARVE flux tower in Fox, Alaska (17 km north of Fairbanks) as part of NASA's Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). High-resolution meteorological fields from the Polar Weather Research and Forecasting (WRF) model coupled with the Stochastic Time-Inverted Lagrangian Transport model (WRF- STILT), along with the Polar Vegetation Photosynthesis and Respiration Model (PolarVPRM) were used to determine the influence region of the tower site and investigate the inter-annual and seasonal variability of regional fluxes of CO2 and CH4 in boreal Alaska using the tower observations. Modeled estimates of CH4, CO2, and CO background concentrations are provided. The WRF-STILT model "footprints" for the CARVE tower are provided with this data set.
+  <br>
+
+  #### CARVE_Reports_1434
+  This dataset includes detailed daily flight reports from each of the airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The reports include plots of the flight path, altitude, wind and weather conditions, IR and visible light images, and initial analysis of the atmospheric gas concentrations encountered along the flight. Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The CARVE measurements are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_Land_Thaw_State_1383
+  This data set provides daily 10 km resolution maps of the Alaskan and Arctic Boreal land surface state as either frozen, melting, or thawed. These data are generated from passive microwave radiometer observations made from 2003 through 2014 by the Advanced Microwave Scanning Radiometer (AMSR-E) and the Special Sensor Microwave Imager (SSM/I). Data products overlap with science data collections carried out during the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE).
+  <br>
+
+  #### CARVE_Ecosystem_CH4_Flux_1558
+  This dataset provides methane flux estimates derived from airborne measurements collected over Alaska and the western Yukon Territory during the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) between 2012 and 2014. The state-scale methane fluxes were calculated using a combination of atmospheric profiles and lagrangian transport modeling. The methane flux estimates were used in a simple linear regression model to estimate the fluxes from the tundra and boreal ecosystems. Methane fluxes were also used with a combination of environmental variables to derive a statistical relationship between domain-wide flux and soil temperature. Soil temperature products from North American Regional Reanalysis and derived parameters from a Boltmann-Arrhenius model were used to model methane flux and related uncertainties within the domain at monthly and daily frequencies.
+  <br>
+
+  #### BC_Aerosol_Dynamics_Alaska_1340
+  This data set provides measurements of the isotopic composition of black carbon and organic carbon aerosols collected at two locations in interior Alaska during the summer of 2013, as part of NASA's Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The delta14C end member of fire aerosol was derived and linked to soil elemental and isotopic composition in Alaskan boreal forests. Soil and aerosol measurements were used to estimate average depth of burn in Alaska during the summer of 2013.
+  <br>
+
+  #### CARVE_Photos_1435
+  This dataset contains photos taken by scientists aboard the CARVE aircraft during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content.
+  <br>
+
+  #### CARVE_Videos_1433
+  This dataset contains videos captured by a camera mounted on the CARVE aircraft during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content.
+  <br>
+
+  #### CARVE_L1_Infrared_1428
+  This data set provides earth referenced radiance counts measured by the Forward Looking Infrared (FLIR) camera aboard the CARVE aircraft between April 2013 and November 2015 for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The FLIR camera records images of the surface temperature while measuring concentrations of atmospheric carbon dioxide, methane, and ozone. Thermal images from the FLIR camera will be used to characterize land surfaces underlain by permafrost during specific phases in the freeze-thaw cycle. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L1_FlightPath_Winds_1427
+  This data set provides high-frequency wind speed and direction data for the C-23 Sherpa aircraft during airborne campaigns over the Alaskan and Canadian Arctic as part of the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using the Aventech AIMMS-30 Airborne Wind Sensor onboard the aircraft and are presented at 1-second intervals throughout each flight. The Winds instrument was available for flights in year 2015 only. The measurements included in this data set are most useful when paired with the scientific data collected by other CARVE airborne instruments.
+  <br>
+
+  #### CARVE_L1_FlightPath_1425
+  This data set provides high-frequency geolocation, time, height, pitch, roll, and heading information for the C-23 Sherpa aircraft during airborne campaigns over the Alaskan and Canadian Arctic as part of the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using the Digital Air Data System (DADS) onboard the aircraft and are presented at 1-second intervals throughout each flight. Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are useful for matching aircraft position with the scientific data collected by other CARVE airborne instruments.
+  <br>
+
+  #### CARVE_L1_Ground_Flux_1424
+  This data set provides ground in situ flux and meteorological science data from fixed instruments at three eddy covariance tower sites located in the Alaskan Arctic tundra. Real and gap-filled observations of carbon dioxide, methane, water vapor, and latent energy flux in addition to standard meteorological and environmental variables are reported at half-hourly intervals between 2011 and 2015 for sites at Atqasuk, Barrow, and Ivotuk, Alaska. The three sites form a 300-km north-south transect on the North Slope of Alaska, each site representing distinct Arctic vegetation communities. These tower measurements create a long-term record of one of the largest, most volatile carbon stocks on the planet. Observations from these towers are being used to determine the seasonal and inter-annual patterns of CO2 and CH4 flux, and their relationship to changes in environmental factors.
+  <br>
+
+  #### CARVE_L1_FTS_Spectra_1426
+  This data set contains Level 1 spectral radiance data collected using the Fourier Transform Spectrometer (FTS) during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_AtmosGas_Harvard_1403
+  This data set provides atmospheric carbon dioxide (CO2), methane (CH4), and carbon monoxide (CO) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using a four-species cavity ring-down spectrometer system (CRDS; Picarro Inc.) provided by Harvard University and are presented at 5-second intervals throughout each flight. The Harvard CRDS instrument only collected data in 2012-2014; no Harvard data are available for year 2015. Aircraft latitude, longitude, and altitude are also provided. CARVE flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_AtmosGas_NOAA_1401
+  This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), and water vapor (H2O) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using a cavity ring-down spectrometer (CRDS; Picarro Inc.) and are presented at 2-second intervals throughout each flight. Aircraft latitude, longitude, and altitude are also provided. Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_AtmosGas_Ground_1419
+  This data set provides atmospheric methane (CH4), carbon dioxide (CO2), and carbon monoxide (CO) dry air mole fractions and water vapor mole fractions (H2O) from continuous in situ measurements at the CARVE flux tower in Fox, Alaska between October 2011 and May 2015 for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Air was drawn from three different heights above the base of the tower (31.7 m, 17.1 m, and 4.9 m) and analyzed using a Picarro cavity ring-down spectrometer (CRDS). Measurements of ambient and sonic temperature, vertical and horizontal velocity, and atmospheric pressure are also included in the data set.
+  <br>
+
+  #### CARVE_L2_Flask_1404
+  This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), molecular hydrogen (H2), nitrous oxide (N2O), sulfur hexafluoride (SF6), and other trace gas mole fractions (i.e. "concentrations") from airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The CARVE flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas abundances. The data were derived from laboratory measurements of whole air samples collected by a Programmable Flask Package (PFP) onboard the CARVE aircraft. Air samples were collected at strategic intervals to coincide with the overflight of a ground site of interest, or when interesting geophysical conditions were encountered. While most of these samples were collected near the surface in the planetary boundary layer (PBL), on almost every flight samples were also collected in the free troposphere. A minimum of 12 flask samples were collected per flight. Whole air samples collected in the PFPs were analyzed on automated systems at the NOAA Earth System Research Laboratory (ESRL) Global Monitoring Division in Boulder, CO, which also analyzes samples from the NOAA/ESRL Global Greenhouse Gas Reference Network. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_Flask_Ground_1405
+  This data set provides atmospheric carbon dioxide, methane, carbon monoxide, molecular hydrogen, nitrous oxide, sulfur hexafluoride, and other trace gas mole fractions (i.e. "concentrations") from a flask sampling system at the CARVE flux tower in Fox, Alaska for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were derived from laboratory measurements of whole air samples collected by a Programmable Flask Package (PFP) from the top of the tower at 32 m above ground level during late evening multiple times per month since January 2012. Whole air samples collected in the PFPs were analyzed on automated systems at the NOAA Earth System Research Laboratory (ESRL) Global Monitoring Division in Boulder, CO, which also analyzes samples from the NOAA/ESRL Global Greenhouse Gas Reference Network. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_FTS_ColumnGas_1429
+  This data set provides total vertical column O2, CO2, CH4, CO, and H2O, as well as dry-air columns of CO2, CH4, CO, and H2O from airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data represent the Level 2 Quick Retrieval (L2QR) data product collected using the CARVE Fourier Transform Spectrometer (FTS). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L2_AtmosGas_Merge_1402
+  This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), ozone (O3), and water vapor (H2O) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). These data are merged and gap-filled outputs from two different cavity ring-down spectrometers (CRDS; Picarro Inc.) flown aboard the CARVE aircraft and are presented at 5-second intervals throughout each flight. Aircraft latitude, longitude, and altitude are also provided. Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L4_WRF-STILT_Footprint_1431
+  This data set provides Weather Research and Forecasting (WRF) Stochastic Time-Inverted Lagrangian Transport (STILT) Footprint data products for particle receptors located at positions along Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight paths (2012 - 2015) and various meteorological stations in Alaska and the Canadian Arctic. Each product consists of multiple NetCDF footprint files packaged as a TAR/GZIP file. These aircraft and station positions were treated as receptors in the WRF-STILT model in order to simulate the land surface influence on observed atmospheric constituents. The measurements included in this data set are crucial for understanding changes in Arctic carbon cycling and the potential threats posed by thawing of Arctic permafrost.
+  <br>
+
+  #### CARVE_L4_WRF-STILT_Particle_1430
+  This data set provides Weather Research and Forecasting (WRF) Stochastic Time-Inverted Lagrangian Transport (STILT) model inputs for particle receptors located at positions along Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight paths (2012 - 2015) and various meteorological stations in Alaska and the Canadian Arctic. Each product consists of multiple NetCDF files packaged as a TAR/GZIP file. These data correspond to WRF-STILT model footprint data also generated by the CARVE science team.
+  <br>
+
+  #### Alaskan_CO2_Flux_1325
+  This data set reports monthly averages of atmospheric CO2 concentration from satellite and airborne observations between 2009 and 2013 and simulated present and future monthly concentrations and land-atmosphere CO2 flux for periods between 1990 and 2200. Atmospheric CO2 concentration measurements were obtained from Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) and NOAA Arctic Coast Guard (ACG) flights, the Greenhouse Gases Observing Satellite (GOSAT), and NOAA/ESRL vertical profile measurements at Poker Flat, Alaska (PFA). Present and future monthly CO2 concentrations and fluxes were simulated using the GEOS-Chem global tracer model and the Community Land Model, Version 4.5, for multiple regional flux and permafrost thaw scenarios.
+  <br>
+
+  #### AK_Regional_CO2_Flux_1389
+  This data set provides estimates of 3-hourly net ecosystem CO2 exchange (NEE) at 0.5-degree resolution over the state of Alaska for 2012-2014. The NEE estimates are the output are from Geostatistical Inverse Modeling of a subset of CARVE aircraft CO2 data, WRF-STILT footprints, and PVPRM-SIF data from flux towers (CRV: located in Fox, AK and BRW: located just outside Barrow, AK). Daily mean NEE is also provided as calculated for all of Alaska and for four sub-regions (0.5-degree resolution) that were defined across Alaska, based on general landcover type: North Slope Tundra, South and West Tundra, Boreal Forests, and Mixed (all other). Also provided are derived annual carbon budgets for (1) all of Alaska with defined contributions from biogenic, fossil fuel, and biomass burning sources and (2) annual biogenic carbon budgets for the four landcover-type regions of Alaska. Provided for completeness are the CARVE aircraft atmospheric measurement data used in estimating NEE.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.ornldaac.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://impact.earthdata.nasa.gov/casei/campaign/CARVE/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- atmosphere
+- aws-pds
+- carbon
+- elevation
+- ice
+- netcdf
+- satellite imagery
+- weather
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "Polar-VPRM_Alaskan-NEE_1314 v1 - This data set provides 3-hourly estimates of gross ecosystem CO2 exchange (GEE) and respiration (autotrophic and heterotrophic) for the state of Alaska from 2012 to 2014. The data were generated using the Polar Vegetation Photosynthesis and Respiration Model (PolarVPRM) and are provided at ~ 1 km2 [1/4-degree (longitude) by 1/6-degree (latitude)] pixel resolution."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/Polar-VPRM_Alaskan-NEE/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CH4_Aircraft_STILT_footprints_1300 v1 - This data set provides the results of (1) year-round measurements of methane (CH4) flux along with soil and air temperatures at five eddy covariance towers at sites located in the Alaskan Arctic tundra from June 2013 to December 2014 and (2) airborne CH4 and ozone (O3) measurements collected during Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight campaigns for years 2012 through 2014. The included site-level flux data at half-hourly intervals were calculated following standard eddy covariance data processing procedures."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/CH4_Aircraft_STILT_footprints/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AKFED_V1_1282 v1 - This data set provides estimates of annual carbon emissions (kg carbon per square meter) from boreal fires at 450-m resolution for the state of Alaska between 2001 and 2013. To produce these data, daily burned area for 2001 to 2013 was mapped using imagery from the Moderate Resolution Imaging Spectroradiometer (MODIS) combined with perimeters from the Alaska Large Fire Database."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/AKFED_V1/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Alaskan_CH4_CO2_Fluxes_1316 v1 - This data set provides hourly atmospheric concentrations of methane (CH4), carbon dioxide (CO2), and carbon monoxide (CO) as mole fractions, from January 2012 to December 2014 measured at the CARVE flux tower in Fox, Alaska (17 km north of Fairbanks) as part of NASA's Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). High-resolution meteorological fields from the Polar Weather Research and Forecasting (WRF) model coupled with the Stochastic Time-Inverted Lagrangian Transport model (WRF- STILT), along with the Polar Vegetation Photosynthesis and Respiration Model (PolarVPRM) were..."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/Alaskan_CH4_CO2_Fluxes/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_Reports_1434 v1 - This dataset includes detailed daily flight reports from each of the airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The reports include plots of the flight path, altitude, wind and weather conditions, IR and visible light images, and initial analysis of the atmospheric gas concentrations encountered along the flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_Reports/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_Land_Thaw_State_1383 v1.1 - This data set provides daily 10 km resolution maps of the Alaskan and Arctic Boreal land surface state as either frozen, melting, or thawed. These data are generated from passive microwave radiometer observations made from 2003 through 2014 by the Advanced Microwave Scanning Radiometer (AMSR-E) and the Special Sensor Microwave Imager (SSM/I)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/CARVE_Land_Thaw_State/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_Ecosystem_CH4_Flux_1558 v1 - This dataset provides methane flux estimates derived from airborne measurements collected over Alaska and the western Yukon Territory during the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) between 2012 and 2014. The state-scale methane fluxes were calculated using a combination of atmospheric profiles and lagrangian transport modeling."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/CARVE_Ecosystem_CH4_Flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "BC_Aerosol_Dynamics_Alaska_1340 v1 - This data set provides measurements of the isotopic composition of black carbon and organic carbon aerosols collected at two locations in interior Alaska during the summer of 2013, as part of NASA's Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The delta14C end member of fire aerosol was derived and linked to soil elemental and isotopic composition in Alaskan boreal forests."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/BC_Aerosol_Dynamics_Alaska/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_Photos_1435 v1 - This dataset contains photos taken by scientists aboard the CARVE aircraft during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_Photos/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_Videos_1433 v1 - This dataset contains videos captured by a camera mounted on the CARVE aircraft during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_Videos/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L1_Infrared_1428 v1 - This data set provides earth referenced radiance counts measured by the Forward Looking Infrared (FLIR) camera aboard the CARVE aircraft between April 2013 and November 2015 for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The FLIR camera records images of the surface temperature while measuring concentrations of atmospheric carbon dioxide, methane, and ozone."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_Infrared/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L1_FlightPath_Winds_1427 v1 - This data set provides high-frequency wind speed and direction data for the C-23 Sherpa aircraft during airborne campaigns over the Alaskan and Canadian Arctic as part of the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using the Aventech AIMMS-30 Airborne Wind Sensor onboard the aircraft and are presented at 1-second intervals throughout each flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_FlightPath_Winds/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L1_FlightPath_1425 v1 - This data set provides high-frequency geolocation, time, height, pitch, roll, and heading information for the C-23 Sherpa aircraft during airborne campaigns over the Alaskan and Canadian Arctic as part of the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using the Digital Air Data System (DADS) onboard the aircraft and are presented at 1-second intervals throughout each flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_FlightPath/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L1_Ground_Flux_1424 v1 - This data set provides ground in situ flux and meteorological science data from fixed instruments at three eddy covariance tower sites located in the Alaskan Arctic tundra. Real and gap-filled observations of carbon dioxide, methane, water vapor, and latent energy flux in addition to standard meteorological and environmental variables are reported at half-hourly intervals between 2011 and 2015 for sites at Atqasuk, Barrow, and Ivotuk, Alaska."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_Ground_Flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L1_FTS_Spectra_1426 v1 - This data set contains Level 1 spectral radiance data collected using the Fourier Transform Spectrometer (FTS) during airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Flight campaigns took place from 2012 to 2015 between the months of March and November to enable investigation of both seasonal and inter-annual variability in atmospheric gas content."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L1_FTS_Spectra/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_AtmosGas_Harvard_1403 v1 - This data set provides atmospheric carbon dioxide (CO2), methane (CH4), and carbon monoxide (CO) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using a four-species cavity ring-down spectrometer system (CRDS; Picarro Inc.) provided by Harvard University and are presented at 5-second intervals throughout each flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_AtmosGas_Harvard/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_AtmosGas_NOAA_1401 v1 - This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), and water vapor (H2O) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data were collected in situ using a cavity ring-down spectrometer (CRDS; Picarro Inc.) and are presented at 2-second intervals throughout each flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_AtmosGas_NOAA/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_AtmosGas_Ground_1419 v1 - This data set provides atmospheric methane (CH4), carbon dioxide (CO2), and carbon monoxide (CO) dry air mole fractions and water vapor mole fractions (H2O) from continuous in situ measurements at the CARVE flux tower in Fox, Alaska between October 2011 and May 2015 for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). Air was drawn from three different heights above the base of the tower (31.7 m, 17.1 m, and 4.9 m) and analyzed using a Picarro cavity ring-down spectrometer (CRDS)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_AtmosGas_Ground/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_Flask_1404 v1 - This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), molecular hydrogen (H2), nitrous oxide (N2O), sulfur hexafluoride (SF6), and other trace gas mole fractions (i.e. \"concentrations\") from airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_Flask/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_Flask_Ground_1405 v1 - This data set provides atmospheric carbon dioxide, methane, carbon monoxide, molecular hydrogen, nitrous oxide, sulfur hexafluoride, and other trace gas mole fractions (i.e. \"concentrations\") from a flask sampling system at the CARVE flux tower in Fox, Alaska for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_Flask_Ground/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_FTS_ColumnGas_1429 v1 - This data set provides total vertical column O2, CO2, CH4, CO, and H2O, as well as dry-air columns of CO2, CH4, CO, and H2O from airborne campaigns over the Alaskan and Canadian Arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). The data represent the Level 2 Quick Retrieval (L2QR) data product collected using the CARVE Fourier Transform Spectrometer (FTS)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_FTS_ColumnGas/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L2_AtmosGas_Merge_1402 v1 - This data set provides atmospheric carbon dioxide (CO2), methane (CH4), carbon monoxide (CO), ozone (O3), and water vapor (H2O) concentrations from airborne campaigns over the Alaskan and Canadian arctic for the Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE). These data are merged and gap-filled outputs from two different cavity ring-down spectrometers (CRDS; Picarro Inc.) flown aboard the CARVE aircraft and are presented at 5-second intervals throughout each flight."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L2_AtmosGas_Merge/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L4_WRF-STILT_Footprint_1431 v1.1 - This data set provides Weather Research and Forecasting (WRF) Stochastic Time-Inverted Lagrangian Transport (STILT) Footprint data products for particle receptors located at positions along Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight paths (2012 - 2015) and various meteorological stations in Alaska and the Canadian Arctic. Each product consists of multiple NetCDF footprint files packaged as a TAR/GZIP file."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L4_WRF-STILT_Footprint/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "CARVE_L4_WRF-STILT_Particle_1430 v1.1 - This data set provides Weather Research and Forecasting (WRF) Stochastic Time-Inverted Lagrangian Transport (STILT) model inputs for particle receptors located at positions along Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) flight paths (2012 - 2015) and various meteorological stations in Alaska and the Canadian Arctic. Each product consists of multiple NetCDF files packaged as a TAR/GZIP file."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/campaign/CARVE_L4_WRF-STILT_Particle/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "Alaskan_CO2_Flux_1325 v1.1 - This data set reports monthly averages of atmospheric CO2 concentration from satellite and airborne observations between 2009 and 2013 and simulated present and future monthly concentrations and land-atmosphere CO2 flux for periods between 1990 and 2200. Atmospheric CO2 concentration measurements were obtained from Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE) and NOAA Arctic Coast Guard (ACG) flights, the Greenhouse Gases Observing Satellite (GOSAT), and NOAA/ESRL vertical profile measurements at Poker Flat, Alaska (PFA)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/Alaskan_CO2_Flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials
+- Description: "AK_Regional_CO2_Flux_1389 v1 - This data set provides estimates of 3-hourly net ecosystem CO2 exchange (NEE) at 0.5-degree resolution over the state of Alaska for 2012-2014. The NEE estimates are the output are from Geostatistical Inverse Modeling of a subset of CARVE aircraft CO2 data, WRF-STILT footprints, and PVPRM-SIF data from flux towers (CRV: located in Fox, AK and BRW: located just outside Barrow, AK)."
+  ARN: arn:aws:s3:::ornl-cumulus-prod-protected/carve/AK_Regional_CO2_Flux/data
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.ornldaac.earthdata.nasa.gov/s3credentials

@@ -1,0 +1,39 @@
+Name: NASA GRACE-DA-DM Project
+Description: |
+  Scientists at NASA Goddard Space Flight Center generate groundwater and soil moisture drought indicators each week. They are based on terrestrial water storage observations derived from GRACE satellite data and integrated with other observations, using a sophisticated numerical model of land surface water and energy processes. This data product is GRACE Data Assimilation for Drought Monitoring (GRACE-DA-DM) U.S. Version 4.0 data product and supersedes the GRACE-DA-DM Version 2.0. The GRACE-DA-DM U.S. V4.0 is based on the Catchment Land Surface Model (CLSM) Fortuna 2.5 version simulation that was created within the Land Information System data assimilation framework (Kumar et al., 2016). This simulation used the latest GRACE RL06 (GRACE; 2002-2017) and GRACE Follow On (GRACE-FO; 2018-present) Mascon solutions version 2, at 0.25 degree resolution, from the University of Texas at Austin (Save et al., 2016; Save, 2020). The CLSM soil parameters were updated to address a soil moisture dry limit issue found near Zapata, Texas. Because the root zone soil moisture frequently reaches the dry limit there, drought conditions are often “normal” when the area should be in drought. The new soil parameters resolved the issue, and the root zone soil moisture now matches closely the in-situ observation near Zapata. In the data assimilation, the baseline for Terrestrial Water Storage anomaly computation was updated to the 2003-2019 mean, whereas previous simulations used the 2003-2016 mean. The percentile computation was switched to a 7-day moving average climatology, instead of monthly, to improve the temporal transition of drought/wetness conditions. The GRACE-DA-DM V1.0 was created by the stand alone CLSM (an older version) using the GRACE-Tellus 1 degree data from the Center for Space Research at University of Texas. The GRACE data assimilation (DA) is executed on a grid-to-grid basis in V2.0, while a basin scale average was used in V1.0 (Zaitchik et al. 2008). The V2.0 data were reprocessed (on June 14, 2017), using the GRACE RL05 Mascon solutions version 1 data set from UT CSR, for the entire period from April 1, 2002 to June 5, 2017. The reprocessing included fixes in the DA and increased the bedrock depth by 3 meters to enhance the drought indicator calculations. The GRACE-DA-DM U.S. V4.0 uses the same configuration as the V2.0 for the DA scheme and increased bedrock depth, with the updates previously mentioned, thus supersedes the previous versions. The GRACE-DA-DM U.S. V4.0 data product contains three drought indicators: Groundwater Percentile, Root Zone Soil Moisture Percentile, and Surface Soil Moisture Percentile. These drought indicators express wet or dry conditions as a percentile, indicating the probability of occurrence within the period of record from 1948 to 2014. The drought indicator data are daily, but available only one day (Monday) per week. The data have a spatial resolution of 0.125 x 0.125 degree over North America and range from April 1, 2002 to present (with a 3-6 months latency). The data are archived in NetCDF format.
+  <br>
+
+  #### GRACEDADM_CLSM025GL_7D
+  Scientists at NASA Goddard Space Flight Center generate groundwater and soil moisture drought indicators each week. They are based on terrestrial water storage observations derived from GRACE-FO satellite data and integrated with other observations, using a sophisticated numerical model of land surface water and energy processes. This data product is GRACE Data Assimilation for Drought Monitoring (GRACE-DA-DM) Global Version 3.0 from a global GRACE and GRACE-FO data assimilation and drought indicator product generation (Li et al., 2019). It varies from the other GRACE-DA-DM products which are from the U.S. GRACE-based drought indicator product generation (Houborg et al., 2012). The GRACE-DA-DM Global V3.0 is similar to the GRACE-DA-DM U.S. V4.0 product. Both products are based on the Catchment Land Surface Model (CLSM) Fortuna 2.5 version simulation that was created within the Land Information System data assimilation framework (Kumar et al., 2016). GRACE-DA-DM Global V3.0 drought indicator maps are derived from the GLDAS_CLSM025_DA1_D product, at 0.25 degree resolution, forced by ECMWF meteorological data, and assimilated RL06 GRACE and GRACE-FO data from the University of Texas at Austin (Save et al., 2016; Save, 2020). The GRACE-DA-DM U.S. V4.0 is at 0.125 degree, which is based on a model simulation (not published at GES DISC) forced by NLDAS-2 meteorological data and assimilated with RL06 GRACE/GRACE-FO data. More information on GRACE-DA-DM U.S. V4.0 and previous versions of the data can be found in the README. The GRACE-DA-DM Global V3.0 data product contains three drought indicators: Groundwater Percentile, Root Zone Soil Moisture Percentile, and Surface Soil Moisture Percentile. These drought indicators express wet or dry conditions as a percentile, indicating the probability of occurrence within the period of record from 1948 to 2014. The drought indicator data are daily, but available only one day (Monday) per week. The data have a spatial resolution of 0.25 x 0.25 degree with global coverage (60S, 180W, 90N, 180E), and a temporal range from February 2003 to present (with a 3-6 month latency). The data are archived in NetCDF format. The GRACE-DA-DM is an operational project which produces groundwater and soil moisture drought indicators each week. The operational data is available weekly with a 2-9 day latency from the NASA GRACE project home page found under the Documentation tab. The GRACE-DA-DM data distributed here at GESDISC is the final archive version, which is generated after the latest GRACE-FO data are available.
+  <br>
+
+  #### Data Discovery
+  Explore this data using NASA's [Earthdata Search](https://search.earthdata.nasa.gov/), a comprehensive tool for discovering and visualizing Earth science datasets.
+  <br>
+
+  #### Data Access
+  Access requires an [Earthdata Login](https://urs.earthdata.nasa.gov/) account. [Read our guide on obtaining AWS credentials](https://data.gesdisc.earthdata.nasa.gov/s3credentialsREADME) to retrieve this data from AWS.
+  <br><br>
+Documentation: https://nasagrace.unl.edu/
+Contact: https://earthdata.nasa.gov/contact
+ManagedBy: NASA
+UpdateFrequency: Varies by dataset
+Tags:
+- aws-pds
+- netcdf
+- satellite imagery
+- soil moisture
+License: '[Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/)'
+Resources:
+- Description: "GRACEDADM_CLSM0125US_7D v4.0 - Scientists at NASA Goddard Space Flight Center generate groundwater and soil moisture drought indicators each week. They are based on terrestrial water storage observations derived from GRACE satellite data and integrated with other observations, using a sophisticated numerical model of land surface water and energy processes."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GRACEDA/GRACEDADM_CLSM0125US_7D.4.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
+- Description: "GRACEDADM_CLSM025GL_7D v3.0 - Scientists at NASA Goddard Space Flight Center generate groundwater and soil moisture drought indicators each week. They are based on terrestrial water storage observations derived from GRACE-FO satellite data and integrated with other observations, using a sophisticated numerical model of land surface water and energy processes."
+  ARN: arn:aws:s3:::gesdisc-cumulus-prod-protected/GRACEDA/GRACEDADM_CLSM025GL_7D.3.0
+  Region: us-west-2
+  Type: S3 Bucket
+  RequesterPays: false
+  ControlledAccess: https://data.gesdisc.earthdata.nasa.gov/s3credentials
