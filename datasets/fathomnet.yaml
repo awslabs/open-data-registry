@@ -50,10 +50,9 @@ Resources:
   - Description: >
       Original FathomNet images (JPEG, PNG, TIFF) under images/ and 512 px
       JPEG thumbnails under thumbnails/, keyed by image UUID. Metadata for
-      images, bounding boxes, tags, collections (Darwin Core), and taxonomic
-      concepts is provided as Parquet under metadata/, versioned by release
-      date, with COCO JSON exports under exports/. Source video under video/
-      is planned.
+      images, bounding boxes, tags, and collections (Darwin Core) is provided
+      as Parquet under metadata/, versioned by release date, with COCO JSON
+      exports under exports/. Source video under video/ is planned.
     ARN: arn:aws:s3:::fathomnet-pds
     Region: us-west-2
     Type: S3 Bucket
