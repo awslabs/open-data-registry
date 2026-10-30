@@ -1,0 +1,70 @@
+Name: Open Subsurface Data
+Description: |
+  Open subsurface data from public archives, kept as the sources shipped them, byte for byte: 3D post-stack
+  seismic volumes and scientific ocean drilling data. The seismic comes from the USGS National Archive of Marine
+  Seismic Surveys and South Australia's SARIG. Each survey comes with a JSON summary of its header layout and the
+  fixes a reader needs, and index tables tie the Gulf of Mexico surveys to the exploration wells drilled inside
+  them and whether those wells found pay. The ocean drilling data are the LDEO LogDB downhole logs and the
+  International Ocean Discovery Program community on Zenodo. Release 0.1 holds 3.9 TB: every SARIG 3D survey,
+  the NAMSS surveys offshore California and in the Beaufort Sea, 20 depth-migrated Gulf of Mexico surveys,
+  downhole logs from 712 DSDP, ODP and IODP holes, and 3,416 IODP records (expedition data from the JOIDES
+  Resolution, ODP and DSDP Proceedings volumes, technical notes).
+Documentation: https://github.com/mnky9800n/open-subsurface-data/blob/main/docs/dataset.md
+Contact: john@veleslabs.ai, or open an issue at https://github.com/mnky9800n/open-subsurface-data/issues
+ManagedBy: "[Veles Labs](https://veleslabs.ai)"
+UpdateFrequency: New surveys and sources are added in numbered releases, a few times a year. Files already in the bucket do not change.
+Tags:
+  - aws-pds
+  - geophysics
+  - geoscience
+  - geology
+  - seismology
+  - oceans
+  - exploration
+  - energy
+  - drilling
+  - machine learning
+License: |
+  Each file keeps its source's terms, listed with credit lines in data/sources.csv of the repository and per
+  file in the release file list.
+  USGS NAMSS: Public domain ("no restrictions on usage or publication"); DataCite lists CC0 1.0 for the DOI.
+  SARIG: CC BY 4.0 (CKAN license_id; the disclaimer file inside each zip says CC BY 3.0 AU).
+  LDEO LogDB on Zenodo: CC0 1.0.
+  IODP community on Zenodo: per record, as Zenodo states it (CC BY 4.0 for most files, CC0 1.0, CC BY-SA 4.0).
+  Index tables and per-survey metadata written by Veles Labs: CC BY 4.0.
+Citation: |
+  Aiken, J. M. (2026). Open Subsurface Data, release 0.1. Veles Labs. DOI to come.
+  Please also cite each source you use. NAMSS: Triezenberg, P.J., Hart, P.E., and Childs, J.R., 2016, National
+  Archive of Marine Seismic Surveys (NAMSS), U.S. Geological Survey data release, https://doi.org/10.5066/F7930R7P.
+  SARIG: Department for Energy and Mining, Government of South Australia (SARIG).
+  LogDB: LDEO Borehole Research Group, Scientific Well Logging (LogDB), https://zenodo.org/communities/logdb, with
+  the DOI of each hole's record. IODP: each record's own citation and DOI, https://zenodo.org/communities/iodp.
+Resources:
+  - Description: |
+      Seismic volumes as SEG-Y, with the side files from each source zip (navigation shapefiles, processing
+      reports, notes), under data/original/source=<source>/survey=<survey_id>/. LogDB and IODP files as deposited
+      on Zenodo, under data/original/source=<source>/record=<record>/. Per-survey header metadata (JSON), the
+      index tables (CSV, GeoJSON) and a file list with checksums for each release under metadata/.
+    ARN: arn:aws:s3:::veleslabs-open-subsurface-data
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for new objects in the bucket
+    ARN: arn:aws:sns:us-west-2:030571646750:veleslabs-open-subsurface-data-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Open Subsurface Data"
+      URL: https://github.com/mnky9800n/open-subsurface-data/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/mnky9800n/open-subsurface-data/blob/main/notebooks/get-to-know-a-dataset.ipynb
+      AuthorName: John M. Aiken
+      AuthorURL: https://veleslabs.ai
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: osd, a command-line tool that selects, fetches and checks files listed in the index
+      URL: https://github.com/mnky9800n/open-subsurface-data
+      AuthorName: Veles Labs
+      AuthorURL: https://veleslabs.ai
+ADXCategories:
+  - Resources Data
