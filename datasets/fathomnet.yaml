@@ -33,9 +33,11 @@ Tags:
 ADXCategories:
   - Environmental Data
 License: >
-  FathomNet visual content is licensed on a per-asset basis using permissive
-  licenses selected by the data contributor. The license for each image is
-  recorded in its metadata. Accepted licenses are documented at
+  There is no single license for FathomNet. Each contributor chooses the
+  licenses for their own images and annotations, and that license is attached
+  to every record: image_license on each image and annotation_license on each
+  bounding box in the metadata tables. An image and its annotations can be
+  licensed differently. Accepted licenses are documented at
   https://database.fathomnet.org/fathomnet/#/license.
 Citation: >
   Katija, K., Orenstein, E., Schlining, B., Lundsten, L., Barnard, K., Sainz,
@@ -51,7 +53,8 @@ Resources:
       JPEG thumbnails under thumbnails/, keyed by image UUID. Metadata for
       images, bounding boxes, tags, and collections (Darwin Core) is provided
       as Parquet under metadata/, versioned by release date, with COCO JSON
-      exports under exports/. Source video under video/ is planned.
+      exports under exports/. Every image and annotation record includes the
+      license its contributor chose. Source video under video/ is planned.
     ARN: arn:aws:s3:::fathomnet-pds
     Region: us-west-2
     Type: S3 Bucket
