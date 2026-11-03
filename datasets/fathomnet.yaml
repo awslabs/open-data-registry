@@ -46,8 +46,6 @@ Citation: >
   intelligence in the ocean. Scientific Reports, 12, 15914.
   https://doi.org/10.1038/s41598-022-19939-2
 Resources:
-  # TODO: bucket name, account ID, and prefixes are placeholders until the
-  # sponsored account and CloudFormation stack exist.
   - Description: >
       Original FathomNet images (JPEG, PNG, TIFF) under images/ and 512 px
       JPEG thumbnails under thumbnails/, keyed by image UUID. Metadata for
@@ -58,10 +56,8 @@ Resources:
     ARN: arn:aws:s3:::fathomnet-pds
     Region: us-west-2
     Type: S3 Bucket
-    Explore:
-      - '[Browse Bucket](https://fathomnet-pds.s3.us-west-2.amazonaws.com/index.html)'
   - Description: Notifications for new FathomNet objects
-    ARN: arn:aws:sns:us-west-2:000000000000:fathomnet-pds-object_created
+    ARN: arn:aws:sns:us-west-2:639589055367:fathomnet-pds-object_created
     Region: us-west-2
     Type: SNS Topic
 DataAtWork:
