@@ -1,34 +1,26 @@
 Name: NASA Planetary Data System Geosciences Node Planetary Science Archive
 Description: |
   The NASA Planetary Data System (PDS) Geosciences Node at Washington University in
-  St. Louis archives data on the surfaces and interiors of terrestrial planetary bodies,
-  including Mars, the Moon, Venus and Mercury, from missions such as Mars Reconnaissance
-  Orbiter, Curiosity (MSL), Perseverance (Mars 2020), Mars Odyssey, Mars Express, Lunar
-  Reconnaissance Orbiter and Artemis II.
-# [CONFIRM cloud formats, e.g. COG/Zarr]
-Documentation: https://pds-geosciences.wustl.edu/  # [CONFIRM doc URL]
-# Descriptive documentation draft: https://github.com/fossettlab/open-data-examples
+  St. Louis archives and distributes data for the geosciences discipline—the study of
+  the surfaces and interiors of terrestrial planetary bodies, including Mars, the Moon,
+  Venus, Mercury, and related targets (see node holdings). Data on AWS will be provided
+  in standard PDS3 and PDS4 archive formats: each product includes science data,
+  documentation, and ancillary files with a PDS label (keyword=value in PDS3; XML in
+  PDS4). PDS4 archives use directory names beginning with urn-nasa-pds.
+Documentation: https://github.com/fossettlab/open-data-registry/blob/main/pds-geosciences-opendata/README.md
 Contact: Alex Bradley, abradley@wustl.edu
 ManagedBy: "[NASA PDS Geosciences Node, Washington University in St. Louis](https://pds-geosciences.wustl.edu/)"
-UpdateFrequency: New data are added as NASA mission releases are delivered, typically every three months.
-# Collabs:
-#   [CONFIRM: ask AWS whether to tag the NASA collab — https://registry.opendata.aws/collab/nasa/]
-#   ASDI?:
-#     Tags:
-#       - geospatial
+UpdateFrequency: |
+  The Geosciences Node archives new mission deliveries on an ongoing basis. The node
+  DOI list is updated as new DOIs are acquired (see node documentation).
+Size: about 400 TB
 Tags:
-  - aws-pds
+  - nasa
   - planetary
+  - mars
   - geospatial
-  - lunar
-  # [CONFIRM tags: earth observation, nasa, mars]
-License: "[Public domain](https://pds-geosciences.wustl.edu/faq.html). There are no restrictions on the use of PDS data; please cite datasets as described in the PDS citation guidance."
-Resources:
-  - Description: PDS Geosciences Node archive
-    ARN: arn:aws:s3:::pds-geosciences
-    Region: us-west-2  # handbook default for geospatial
-    Type: S3 Bucket
-# [CONFIRM exact size / what will go up first — about 400 TB per Oct 2026 WashU/AWS discussions]
+License: "[Public domain](https://pds-geosciences.wustl.edu/faq.html). There are no restrictions on the use of PDS data; please cite datasets as described in the [PDS citation guidance](https://pds.nasa.gov/datastandards/citing/)."
+Resources: []
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: NASA PDS Geosciences Node Planetary Science Archive"
