@@ -1,0 +1,54 @@
+Name: Digital Earth Pacific Satellite-Derived Bathymetry (Sentinel-2, 10 m)
+Description: |
+  This dataset provides bathymetric estimates for optically shallow, clear
+  coastal waters across the Pacific region using satellite imagery. It
+  enables mapping of seabed depth in shallow coastal areas (typically down
+  to depths where the seafloor remains optically visible, up to 30 m
+  depth) where traditional survey data may be limited. The dataset
+  supports marine spatial planning, coastal management, and environmental
+  monitoring.
+
+  It is derived from multispectral Sentinel-2 imagery using bathymetric
+  inversion methods to estimate shallow water depth, and includes depth,
+  mean, standard deviation and observation count layers.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Irregularly, as new versions are produced
+Collabs:
+  ASDI:
+    Tags:
+      - oceans
+Tags:
+- aws-pds
+- earth observation
+- bathymetry
+- coastal
+- marine
+- oceans
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Satellite-Derived Bathymetry (Sentinel-2, 10 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_sdb
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_sdb)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific

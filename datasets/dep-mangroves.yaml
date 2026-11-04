@@ -1,13 +1,19 @@
-Name: Digital Earth Pacific Mangroves Extent and Density
+Name: Digital Earth Pacific Mangrove Extent, Density, Change and Condition (Sentinel-2, 10 m)
 Description: |
-  Pacific Mangroves beta version product is an extension of
-  the Global Mangrove Watch (GMV v3, 2020). which shows the
-  extent of mangrove ecosystems across Pacific Island Countries
-  and Territories (PICTs). The changes in mangroves extent was
-  further classified into three categories of closed (high-density),
-  open (lower density) and non-mangrove. This was used as the
-  baseline training layer where mangrove categories between
-  2016 and 2022 were analysed.
+  These datasets map mangrove ecosystems across Pacific Island Countries
+  and Territories (PICTs) using Sentinel-2 satellite observations,
+  supporting coastal protection, carbon accounting, biodiversity
+  assessment, resilience planning, and ecosystem accounting. They comprise
+  two products:
+
+  - Mangrove Extent and Density: an extension of the Global Mangrove Watch
+    (GMW v3, 2020) baseline, classifying mangrove areas annually from 2017
+    into closed (high-density), open (lower density) and non-mangrove
+    categories.
+  - Mangrove Change and Condition (AMMI): analytical indicators describing
+    changes and condition of mangrove ecosystems, built on the satellite-
+    derived mangrove extent data to identify patterns of ecosystem change
+    over time.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
@@ -17,8 +23,12 @@ Collabs:
     Tags:
       - biodiversity
 Tags:
+- aws-pds
 - earth observation
 - environmental
+- coastal
+- biodiversity
+- carbon
 - climate
 - geoscience
 - geospatial
@@ -26,15 +36,26 @@ License: |
   Digital Earth Pacific Data is available under the Creative Commons
   Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-- Description: Data access
-  ARN: arn:aws:s3:::dep-public-data
+- Description: Mangrove Extent and Density (Sentinel-2, 10 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_mangroves
   Region: us-west-2
   Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_mangroves)'
+- Description: Mangrove Change and Condition, AMMI (Sentinel-2, 10 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_ammi
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_ammi)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   - Title: "Digital Earth Pacific Map"
     URL: https://maps.digitalearthpacific.org/#share=s-ux1MvvWAfZueW286xCPv
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
     AuthorName: Digital Earth Pacific Contributors
   Publications:
   - Title: Digital Earth Pacific Open Data Access Documentation

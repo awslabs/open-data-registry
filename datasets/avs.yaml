@@ -1,0 +1,76 @@
+Name: Active Visual Semantics
+Description: >
+  The Active Visual Semantics (AVS) Dataset is a multimodal neuroimaging dataset combining
+  magnetoencephalography (MEG), eye-tracking, and structural MRI, recorded from 5 participants
+  (sub-01-sub-05) as they actively explored 4,080 natural scenes (subsampled from the Natural
+  Scenes Dataset, NSD) across 10 recording sessions each, yielding more than 200,000 fixation
+  epochs in total. Unlike neuroimaging datasets that rely on passive viewing with enforced
+  central fixation, AVS captures brain activity during active, self-directed scene exploration,
+  including natural saccades and fixations. A semantic scene-captioning task on 25% of trials
+  links gaze behaviour to scene understanding and memory. For each session we provide
+  eye-movement-locked MEG epochs (fixation- and saccade-locked; epochs for other events such as
+  scene onset can be easily recomputed), raw and preprocessed eye-tracking data, per-fixation
+  object category labels, human ratings of whether fixation targets were mentioned in
+  participants' scene captions, pupil dynamics, and defaced structural MRI scans. Individualised
+  head stabilisation casts, together with the structural scans, enable precise source
+  reconstruction at the single-participant level across sessions. Source-reconstruction
+  derivatives (FreeSurfer cortical surfaces, BEM models, forward solutions) are provided for
+  every subject and are directly usable as an MNE-Python SUBJECTS_DIR. The dataset is
+  accompanied by the open-source pyAVS Python package for loading, preprocessing, and analysis.
+
+Documentation: https://kietzmannlab.uni-osnabrueck.de/avs/
+# The pyAVS Sphinx docs site — dataset structure, methods pages, tutorials, full API reference.
+
+Contact: Philip Sulewski (phsulewski@gmail.com)
+
+ManagedBy: "[Kietzmann Lab](https://kietzmannlab.uni-osnabrueck.de) at Universität Osnabrück"
+
+UpdateFrequency: >
+  Initial release as a single batch, including caption-to-object matching tables and
+  scene-sampling metadata. No fixed update schedule.
+
+Tags:
+  - aws-pds
+  - neuroscience
+  - neuroimaging
+  - machine learning
+  - electrophysiology
+  - magnetic resonance imaging
+  - brain images
+  - computer vision
+  - life sciences
+  - natural language processing
+
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+
+Resources:
+  - Description: MEG, eye-tracking, MRI/FreeSurfer derivatives, and behavioural data from the
+      Active Visual Semantics (AVS) dataset.
+    ARN: arn:aws:s3:::kietzmannlab-avs
+    Region: us-west-2
+    Type: S3 Bucket
+    # Full release uploaded 2026-08-25: 18,415 objects, ~663 GiB, verified against the
+    # release manifest.
+  - Description: New-object notifications for the kietzmannlab-avs S3 bucket (from AWS's
+      public-dataset CloudFormation template's default SNS topic).
+    ARN: arn:aws:sns:us-west-2:406194432886:kietzmannlab-avs-object_created
+    Region: us-west-2
+    Type: SNS Topic
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Active Visual Semantics (AVS)"
+      URL: https://github.com/KietzmannLab/pyavs/blob/main/examples/get-to-know-a-dataset.ipynb
+      AuthorName: Philip Sulewski
+      # Required first tutorial entry per the ODP handbook (Section 2.3). Runs end-to-end
+      # against the live public bucket, no credentials needed.
+    - Title: pyAVS Colab Quickstart
+      URL: https://colab.research.google.com/github/KietzmannLab/pyavs/blob/main/examples/pyavs_colab_quickstart.ipynb
+      NotebookURL: https://raw.githubusercontent.com/KietzmannLab/pyavs/main/examples/pyavs_colab_quickstart.ipynb
+      AuthorName: Philip Sulewski
+  Publications:
+    - Title: Fixation duration on natural scenes is explained by memory encoding not processing demand
+      URL: https://doi.org/10.1038/s41593-026-02285-1
+      AuthorName: Philip Sulewski et al.
+      # Interim citation: uses the AVS dataset but is not the dataset paper itself
+      # (Sulewski et al., "Active Visual Semantics..."), which is in preparation for submission. 
