@@ -1,0 +1,93 @@
+Name: GeoNadir FAIR Data
+Description: |
+  <br/>
+  <br/>
+  GeoNadir FAIR Data is an open collection of uncrewed aerial vehicle (UAV or drone) mapping datasets
+  contributed through the GeoNadir platform and published as cloud-native
+  geospatial files on Amazon S3.
+  <br/>
+  <br/>
+  Each dataset represents one drone survey. Every dataset provides a normalized
+  metadata file and a ZIP package of the original raw images. Where available,
+  a dataset may also include an RGB orthomosaic, a multispectral orthomosaic,
+  a Digital Surface Model (DSM), and a Digital Terrain Model (DTM), each stored
+  as a Cloud Optimized GeoTIFF (COG) that can be read directly by GDAL,
+  Rasterio, QGIS, and other cloud-native geospatial tools without downloading
+  the full file.
+  <br/>
+  <br/>
+  The files are addressable directly on Amazon S3 by a stable key convention, so
+  the collection is fully usable today with standard tools such as boto3,
+  Rasterio, GDAL, and QGIS: list the datasets prefix, read each survey's
+  metadata file, and open its COGs by their known keys.
+  <br/>
+  <br/>
+  A static STAC 1.1 catalog describes every dataset as a STAC Item and can be
+  browsed with STAC Browser or read with pystac and other STAC clients. A STAC
+  API for server-side search (by capture date, area of interest, and metadata
+  fields such as IUCN habitat classification) is planned.
+  <br/>
+  <br/>
+  The collection includes only datasets that GeoNadir is able to publish
+  publicly under the Creative Commons Attribution 4.0
+  International license (CC-BY-4.0) license. Private workspace data and unpublished
+  datasets are out of scope for this collection.
+Documentation: https://github.com/Geonadir/open-data-examples/blob/main/OPEN_DATA_STRUCTURE.md
+Contact: opendata@geonadir.com
+ManagedBy: "[GeoNadir](https://geonadir.com/)"
+UpdateFrequency: New drone mapping datasets are added as they are contributed and cleared for open publication.
+Tags:
+  - aws-pds
+  - aerial imagery
+  - geospatial
+  - earth observation
+  - cog
+  - stac
+  - dem
+  - elevation
+  - mapping
+  - land cover
+  - land use
+  - biodiversity
+  - conservation
+  - environmental
+  - agriculture
+  - coastal
+  - sustainability
+  - dsm
+  - dtm
+  - global
+  - ecosystems
+  - coral reef
+  - marine
+  - wildlife
+License: |
+  This dataset is licensed under the Creative Commons Attribution 4.0
+  International license (CC-BY-4.0). You are free to share and adapt the
+  material for any purpose, provided you give appropriate credit to GeoNadir
+  and the contributing data provider. Full license text is available at
+  https://creativecommons.org/licenses/by/4.0/
+Citation: 'GeoNadir FAIR Data was accessed on DATE from https://registry.opendata.aws/geonadir-fair-data. GeoNadir. 2026. GeoNadir FAIR Data: open drone mapping datasets.'
+Resources:
+  - Description: GeoNadir FAIR Data drone mapping datasets (Cloud Optimized GeoTIFFs, raw image ZIPs, and per-dataset JSON metadata)
+    ARN: arn:aws:s3:::geonadir-fair-data
+    Region: ap-southeast-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://geonadir-fair-data.s3.ap-southeast-2.amazonaws.com/index.html)'
+      - '[Browse GeoNadir FAIR Data](https://data.geonadir.com/fairgeo)'
+      - '[STAC catalog](https://data.geonadir.com/stac/catalog.json)'
+      - '[Browse with STAC Browser](https://radiantearth.github.io/stac-browser/#/external/data.geonadir.com/stac/catalog.json)'
+  - Description: New object notifications for GeoNadir FAIR Data (Lambda and SQS protocols only)
+    ARN: arn:aws:sns:ap-southeast-2:209003640346:geonadir-fair-data-object_created
+    Region: ap-southeast-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: 'Get To Know A Dataset: GeoNadir FAIR Data'
+      URL: https://github.com/Geonadir/open-data-examples/blob/main/datasets/geonadir-fair-data/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/Geonadir/open-data-examples/blob/main/datasets/geonadir-fair-data/get-to-know-a-dataset.ipynb
+      AuthorName: GeoNadir
+      AuthorURL: https://geonadir.com/
+      Services:
+        - Amazon S3
