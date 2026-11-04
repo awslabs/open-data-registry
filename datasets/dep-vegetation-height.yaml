@@ -1,0 +1,50 @@
+Name: Digital Earth Pacific Vegetation Height, Satellite-Derived Canopy Height (Sentinel-2, 10 m)
+Description: |
+  This dataset provides spatial estimates of vegetation height across the
+  Pacific region derived from Sentinel-2 imagery using modelling
+  approaches to estimate vegetation canopy height. It includes height and
+  confidence layers from 2020 onwards, enabling quarterly analysis of
+  forest structure, biomass, and ecosystem condition. The dataset supports
+  applications in land management, carbon monitoring, and biodiversity
+  assessment.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Quarterly
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+- aws-pds
+- earth observation
+- environmental
+- land cover
+- carbon
+- biodiversity
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Vegetation Height, Satellite-Derived Canopy Height (Sentinel-2, 10 m)
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_vegheight
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_vegheight)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific

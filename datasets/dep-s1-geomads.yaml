@@ -1,0 +1,53 @@
+Name: Digital Earth Pacific Annual Radar Composite (Sentinel-1, GeoMAD, 10 m)
+Description: |
+  This dataset provides annual radar-based composite imagery derived from
+  Sentinel-1 observations across the Pacific region. Sentinel-1 carries a
+  C-band Synthetic Aperture Radar (SAR), which acquires data day and night
+  and in all weather conditions, so the composite is independent of cloud
+  cover.
+
+  Multi-temporal Sentinel-1 backscatter observations (VV and VH
+  polarisations) are aggregated into annual geometric median composites,
+  along with median absolute deviation measures (emad, smad and bcmad) and
+  a count of observations. The dataset is available annually from 2017 and
+  supports monitoring of land, water, and environmental change.
+Documentation: https://digitalearthpacific.org/#/applications
+Contact: dep@spc.int
+ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
+UpdateFrequency: Annually
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+- aws-pds
+- earth observation
+- satellite imagery
+- environmental
+- climate
+- geoscience
+- geospatial
+License: |
+  Digital Earth Pacific Data is available under the Creative Commons
+  Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
+Resources:
+- Description: Annual Radar Composite (Sentinel-1, GeoMAD, 10 m) Cloud Optimized GeoTIFFs
+  ARN: arn:aws:s3:::dep-public-data/dep_s1_geomad
+  Region: us-west-2
+  Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s1_geomad)'
+DataAtWork:
+  Tutorials:
+  Tools & Applications:
+  - Title: "Digital Earth Pacific Map"
+    URL: https://maps.digitalearthpacific.org
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  Publications:
+  - Title: Digital Earth Pacific Open Data Access Documentation
+    URL: https://digitalearthpacific.github.io/data-access/
+    AuthorName: digitalearthpacific
+    AuthorURL: https://github.com/digitalearthpacific
