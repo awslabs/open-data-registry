@@ -1,0 +1,23 @@
+Name: Common Connectivity Matrix (CCM)
+Description: Multimodal brain connectivity data harmonized into a common representation for BRAIN CONNECTS. Brings together synaptic connectivity, single-cell morphology, long-range projections, cell features and cell-type annotations in one shared set of Delta Lake tables described by common LinkML schemas. The initial releases cover mouse visual cortex (VISp); later releases may cover other brain regions and species. Each release is stored under its own prefix in the bucket and earlier releases are retained.
+Documentation: https://alleninstitute.github.io/ccm-data-overview/
+Contact: yagmur.yener@alleninstitute.org
+ManagedBy: "[Allen Institute](https://alleninstitute.org/)"
+UpdateFrequency: New versioned releases are added as separate prefixes; earlier releases are retained.
+Tags:
+  - neuroscience
+  - connectomics
+  - electron microscopy
+  - electrophysiology
+  - morphological reconstructions
+  - single-cell transcriptomics
+  - barcoded methods
+  - parquet
+License: The schemas and code are under the MIT License (https://github.com/AllenInstitute/ConnectsCommonConnectivity/blob/main/LICENSE). Each release repackages previously published datasets; refer to each source dataset's terms and citation requirements, which are described in the Documentation link.
+Resources:
+  - Description: Public bucket, no AWS account needed (s3://connects-common-connectivity/, use --no-sign-request with the AWS CLI). One folder per release; see the Documentation link for the list of releases. Each containing Delta Lake tables (Parquet files with _delta_log) that follow the CCM LinkML schemas (https://github.com/AllenInstitute/ConnectsCommonConnectivity). Read with a Delta reader (Polars, deltalake, Spark, DuckDB delta_scan). Keep a release's directory layout intact when copying it locally.
+    ARN: arn:aws:s3:::connects-common-connectivity
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[List releases](https://connects-common-connectivity.s3.us-west-2.amazonaws.com/?list-type=2&delimiter=/)'
