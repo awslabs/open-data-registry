@@ -1,0 +1,32 @@
+Name: RSNA Large Language Model Benchmark Dataset for Chest Radiographs of Cardiothoracic Disease (REVEAL-CXR)
+Description: "The RSNA Large Language Model Benchmark Dataset for Chest Radiographs of Cardiothoracic Disease: Radiologist Evaluation and Validation Enhanced by AI Labels (REVEAL-CXR) is a benchmark for evaluating multimodal large language models (LLMs) on chest radiograph interpretation. It was built from 13,735 deidentified chest radiograph studies and reports from the Medical Imaging and Data Resource Center (MIDRC, https://www.midrc.org/) that had not been released to the public. GPT-4o extracted abnormal findings from the reports, and a locally hosted LLM (Phi-4-Reasoning) mapped them to 12 benchmark labels: airspace opacity, aneurysm, cardiomegaly, chronic obstructive pulmonary disease (COPD), hiatal hernia, interstitial opacity, lung mass, lung nodule, lymphadenopathy, pleural effusion, pleural thickening and pneumothorax. Seventeen fellowship-trained cardiothoracic radiologists from 10 institutions in 4 countries reviewed 1,000 sampled studies, three radiologists per study. Of the 381 studies that at least two radiologists rated “Agree All”, 200 were selected, each with one to four benchmark labels, and split evenly into a released set and a holdout set. This dataset provides the 100 released studies with their benchmark labels and the level of expert agreement. The 100 holdout studies are retained by RSNA to evaluate models independently and are not distributed. The dataset is described in Wei et al., arXiv 2026 (https://doi.org/10.48550/arXiv.2601.15129)."
+Documentation: https://arxiv.org/abs/2601.15129
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - natural language processing
+  - labeled
+  - dicom
+  - x-ray
+  - benchmark
+  - life sciences
+License: "Access requires individual registration at https://mira.rsna.org. Use is limited to research and governed by the RSNA MIRA Dataset Research Use Agreement, which each user accepts on MIRA before downloading."
+Citation: "Wei Y, et al. RSNA Large Language Model Benchmark Dataset for Chest Radiographs of Cardiothoracic Disease: Radiologist Evaluation and Validation Enhanced by AI Labels (REVEAL-CXR). arXiv, January 2026 [https://doi.org/10.48550/arXiv.2601.15129]."
+Resources:
+  - Description: Zip archive containing the 100 released chest radiograph studies in DICOM format with their benchmark labels and expert agreement levels
+    ARN: arn:aws:s3:::reveal-cxr
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/10
+DataAtWork:
+  Publications:
+    - Title: "RSNA Large Language Model Benchmark Dataset for Chest Radiographs of Cardiothoracic Disease: Radiologist Evaluation and Validation Enhanced by AI Labels (REVEAL-CXR)"
+      URL: https://doi.org/10.48550/arXiv.2601.15129
+      AuthorName: Wei Y, Flanders AE, Colak E, Mongan J, Prevedello LM, Chen PH, et al.
