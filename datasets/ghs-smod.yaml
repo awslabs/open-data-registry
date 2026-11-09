@@ -1,0 +1,58 @@
+Name: GHSL Degree of Urbanisation settlement model (GHS-SMOD)
+Description: |
+  These gridded datasets represent the “Degree of Urbanisation” (DEGURBA) settlement model per 1-km grid cell from 1975 to 2030 in 5-year time steps, derived from the GHS-POP R2023A gridded population estimates and GHS-BUILT-S gridded estimates of built-up surface. The DEGURBA methodology has been endorsed by the UN Statistical Commission and categorizes the Earth's surface into either three broad classes (level 1) or seven more detailed classes (level 2), capturing the spectrum from rural to urban areas. For instance, level one differentiates between urban centres, peri-urban or semi-dense areas, and rural areas. The Degree of Urbanisation method is based on segmentation of gridded population data (GHS-POP R2023A) and gridded built-up surface estimates from GHS-BUILT-S R2023A). These datasets represent the Degree of Urbanisation settlement model at the detailed level 2. The level-1 classification can be obtained by class aggregation. Class codes: 10 (water), 11 (Very low density rural area), 12 (Low density rural area), 13 (Rural cluster), 21 (Suburban or periurban area), 22 (Semi-dense urban cluster), 23 (Dense urban cluster), 30 (Urban centre).
+Documentation: https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php
+Contact: JRC-GHSL-DATA@ec.europa.eu
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
+UpdateFrequency: NA
+Tags:
+  - aws-pds
+  - census
+  - cities
+  - classification
+  - cog
+  - demography
+  - demographics 
+  - disaster response
+  - earth observation
+  - geoscience
+  - geospatial
+  - global
+  - land use
+  - mapping
+  - planetary
+  - population
+  - tiff
+  - tiles  
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+Resources:
+  - Description: The GHSL Degree of Urbanisation settlement model in World Mollweide projection (EPSG:54009) at 1km spatial resolution; also available in WGS 1984 (EPSG:4326) at 30 arcsecond spatial resolution, globally from 1975 to 2030 in 5-year time steps.
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-smod
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: GHS SMOD"
+      URL: https://github.com/lucamaff/open-data-examples/tree/main/ghs-smod
+      NotebookURL: https://github.com/lucamaff/open-data-examples/tree/main/ghs-smod/get-to-know-a-dataset.ipynb
+      AuthorName: MAFFENINI Luca
+      AuthorURL: https://github.com/lucamaff
+  Tools & Applications:
+    - Title: Global visualisation
+      URL: https://human-settlement.emergency.copernicus.eu/visualisation.php
+      AuthorName: TOMMASI Pierpaolo, MAFFENINI Luca
+  Publications:
+    - Title: Applying the degree of urbanisation - A methodological manual to define cities, towns and rural areas for international comparisons
+      URL: https://doi.org/10.2785/706535
+      AuthorName: Eurostat (European Commission) 
+    - Title: GHSL Data Package 2023
+      URL: https://publications.jrc.ec.europa.eu/repository/handle/JRC133256
+      AuthorName: SCHIAVINA Marcello, MELCHIORRI Michele, PESARESI Martino, POLITIS Panagiotis, CARNEIRO FREIRE Sergio Manuel, MAFFENINI Luca, FLORIO Pietro, EHRLICH Daniele, GOCH Katarzyna, CARIOLI Alessandra, UHL Johannes, TOMMASI Pierpaolo, KEMPER Thomas 
+ADXCategories:
+  - Public Sector Data
