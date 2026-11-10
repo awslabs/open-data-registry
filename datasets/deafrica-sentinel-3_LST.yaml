@@ -1,0 +1,72 @@
+Name: Digital Earth Africa Sentinel-3 SLSTR Land Surface Temperature
+Description: |
+  Digital Earth Africa (DE Africa) provides free and open access to Sentinel-3 SLSTR Level-2 Land Surface Temperature data over Africa. These products are generated through the European Space Agency (ESA) land processing branch of the Copernicus Sentinel-3 mission. The Sentinel-3 mission, jointly operated by ESA and the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT), monitors the Earth’s oceans and land surfaces. Sentinel-3A and Sentinel-3B were launched in February 2016 and April 2018, respectively. Both satellites carry the Sea and Land Surface Temperature Radiometer (SLSTR), which acquires observations for monitoring surface temperature and environmental change. The SLSTR Level-2 Land Surface Temperature product provides temperature estimates at approximately 1 km spatial resolution, with an approximately daily revisit frequency when observations from Sentinel-3A and Sentinel-3B are combined. Revisit frequency does not guarantee valid daily observations, as cloud cover affects data availability. Land surface temperature is retrieved using a split-window algorithm applied to thermal infrared observations near 11 and 12 µm. The processing accounts for atmospheric effects and surface emissivity through information on atmospheric water vapour, viewing geometry, land cover and vegetation. The product also includes uncertainty estimates and quality flags to support filtering and interpretation. Further details are available in the SLSTR processing documentation.
+
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Sentinel-3_Land_Surface_Temperature_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New data are added regularly, usually within a few hours of them being available.
+
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - air quality
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Digital Earth Africa Sentinel-3 SL 2LST
+    ARN: arn:aws:s3:::deafrica-sentinel-3-slstr-l2-lst/Sentinel-3/SLSTR/SL_2_LST/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/stac/collections/s3_slstr_l2_lst)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Notifications for new Sentinel-3 SL 2LST data
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-3-slstr-l2-lst-scene-topic
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get to Know a Dataset: [Digital Earth Africa Sentinel-3 SLSTR Land Surface Temperature]"
+      URL: https://github.com/digitalearthafrica/deafrica-direct-access/blob/main/Datasets/open-data-examples/Sentinel_3_LST/get-to-know-a-dataset.ipynb
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer"
+      URL: https://explorer.digitalearth.africa/products/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
