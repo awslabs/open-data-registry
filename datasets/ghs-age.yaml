@@ -1,0 +1,44 @@
+Name: Global gridded estimates of the dominant age of the built stock (GHS-AGE) 
+Description: GHS-AGE consists of spatial raster datasets representing global, gridded estimates of the dominant age of the built stock. GHS-AGE has been derived from a multi-temporal stack of gridded estimates of built-up surface (GHS-BUILT-S R2023A, 1975-2020) that has derived from integrated processing of Sentinel-2 and historical Landsat multispectral data. GHS-AGE estimates represent the epoch in which 50% of the built-up surface of 2020 has been exceeded for the first time, for each grid cell. GHS-AGE enables the global, fine-grained modelling of approximate building construction epoch information using a globally consistent methodology.
+Documentation: https://data.jrc.ec.europa.eu/dataset/d503bb56-9884-4e4d-bb8f-d86711d9f749
+Contact: JRC-GHSL-DATA@ec.europa.eu
+ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
+UpdateFrequency: NA
+Tags:
+  - age
+  - classification
+  - cog
+  - disaster response
+  - earth observation
+  - geoscience
+  - geospatial
+  - global
+  - mapping
+  - planetary
+  - tiff
+  - tiles
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+Resources:
+  - Description: "GHS-AGE is available in World Mollweide Equal Area projection (ESRI:54009), at 100 m and 1000 m resolution, and for two levels of temporal resolution (i.e., 5-year and 10-year intervals). Class codes for 10-year intervals: 0: not built-up; 1: median age < 1980; 2: 1980 - 1990, 3: 1990 - 2000, 4: 2000 - 2010, 5: 2010 - 2020. Class codes for 5-year intervals: 0: not built-up; 1: median age < 1975; 2: 1975 - 1980,..., 10: 2010 - 2020."
+    ARN: arn:aws:s3:::jrc-ghsl/ghs-age
+    Region: eu-central-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new data
+    ARN: arn:aws:sns:eu-central-1:291461994469:jrc-ghsl-object_created
+    Region: eu-central-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: GHS-AGE"
+      URL: https://github.com/lucamaff/open-data-examples/tree/main/ghs-age
+      NotebookURL: https://github.com/lucamaff/open-data-examples/tree/main/ghs-age/get-to-know-a-dataset.ipynb
+      AuthorName: MAFFENINI Luca
+      AuthorURL: https://github.com/lucamaff
+  Publications:
+    - Title: "GHS-AGE: Global gridded estimates of the dominant age of the built stock (1975-2020)"
+      URL: https://dx.doi.org/10.2760/6443992
+      AuthorName: UHL, Johannes H., POLITIS, Panagiotis, PESARESI, Martino
+ADXCategories:
+  - Public Sector Data

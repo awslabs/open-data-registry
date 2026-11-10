@@ -17,6 +17,10 @@ Resources:
     ARN: arn:aws:s3:::ibl-brain-wide-map-public
     Region: us-east-1
     Type: S3 Bucket
+  - Description: Notifications for new IBL data release
+    ARN: arn:aws:sns:us-east-1:842577843587:ibl-brain-wide-map-public-sns
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tools & Applications:
     - Title: ONE-api on pypi.python.org - python API to query and download neurophysiology data
