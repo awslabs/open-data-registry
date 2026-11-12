@@ -1,5 +1,5 @@
 Name: Aging Mouse Brain Epigenetic
-Description: "Aging is a major risk factor for neurodegenerative diseases, yet underlying epigenetic mechanisms remain unclear. Here, we generated a comprehensive single-nucleus cell atlas of brain aging across multiple brain regions, comprising 132,551 single-cell methylomes and 72,666 joint chromatin conformation-methylome nuclei. Integration with companion transcriptomic and chromatin accessibility data yielded a cross-modality taxonomy of 36 major cell types."
+Description: "Aging is a major risk factor for neurodegenerative diseases, yet underlying epigenetic mechanisms remain unclear. Here, we generated a comprehensive single-nucleus cell atlas of brain aging across multiple brain regions, comprising 132,551 single-cell methylomes and 72,666 joint chromatin conformation-methylome nuclei. Integration with companion transcriptomic and chromatin accessibility data yielded a cross-modality taxonomy of 36 major cell types. The bucket holds two parts of this atlas, from mice at 2, 9 and 18 months: (1) `female-amb-sc-allc/`, single-cell DNA methylation (ALLC) files for 77,001 female nuclei in 29 pools (`pool_amb*/`), one tabix-indexed `.allc.tsv.gz` file per nucleus (8.4 TB); (2) raw MERFISH spatial transcriptomics runs of brain slices, one `.tar.gz` archive per run (10 runs, 22.3 TB)."
 Contact: ecker@salk.edu
 Documentation: https://doi.org/10.1101/2025.04.21.648266
 ManagedBy: "[Salk Institute](http://www.salk.edu)" 
@@ -11,18 +11,21 @@ Tags:
   - whole genome sequencing
   - whole exome sequencing
   - transcriptomics
+  - epigenomics
+  - spatial transcriptomics
+  - neuroscience
   - fastq
   - bam
   - cram
   - aws-pds
 License: "[NCBI Policy](https://www.ncbi.nlm.nih.gov/home/about/policies/) and [NIH Genomic Data Sharing Policy ](https://osp.od.nih.gov/scientific-sharing/genomic-data-sharing/)"
 Resources:
-  - Description: Aging mouse brain epigenomics dataset
+  - Description: Aging mouse brain single-cell DNA methylation (ALLC) files and MERFISH spatial transcriptomics runs
     ARN: arn:aws:s3:::salk-aging-mouse-brain-epigenetics
     Region: us-west-2
     Type: S3 Bucket
   - Description: Dataset update notifications
-    ARN: arn:aws:sns:us-west-2:855738613743:salk-aging-mouse-brain-epigenetics-updates
+    ARN: arn:aws:sns:us-west-2:855738613743:salk-aging-mouse-brain-epigenetics-object_created
     Region: us-west-2
     Type: SNS Topic
 DataAtWork:
