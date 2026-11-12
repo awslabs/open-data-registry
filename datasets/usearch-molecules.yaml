@@ -1,18 +1,56 @@
 Name: USearch Molecules
-Description: Collection of 7 billion small molecules in SMILES notation with 28 billion fingerprints, including MACCS, ECFP4, FCFP4, and PubChem, with pre-constructed USearch indexes over them.
-Documentation: https://github.com/ashvardanian/usearch-molecules
+Description: |
+  USearch Molecules is an open, searchable atlas of chemical and biological entities: the small molecules people make, screen and buy, the proteins they target and the antibodies that bind them.
+  Every entity is one Parquet row under a permanent key derived from the entity itself, so a compound or a sequence lands on the same key in every collection that holds it.
+  It brings together PubChem, GDB-13 and Enamine REAL compounds, AlphaFold DB protein structures with UniProt annotations, and Observed Antibody Space repertoires,
+  with fingerprints, conformers, structures and germline calls beside the rows, and USearch graphs linking each entity to its nearest neighbors.
+Documentation: https://github.com/unum-science/USearchMolecules
 Contact: ash.vardanian@unum.cloud
 ManagedBy: "[Ash Vardanian](https://ashvardanian.com)"
-UpdateFrequency: Not updated
+UpdateFrequency: New collections, representations and indexes are added as they are produced; published rows keep their keys.
 Tags:
   - aws-pds
-  - life sciences
-  - biology
+  - chemistry
+  - molecule
+  - protein
+  - structural biology
+  - bioinformatics
+  - drug discovery
   - chemical biology
-  - pharmaceutical
-License: "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+  - life sciences
+  - machine learning
+  - information retrieval
+  - parquet
+ADXCategories:
+  - Healthcare & Life Sciences Data
+Citation: "Vardanian A. USearchMolecules: An Open, Searchable Atlas of Chemical and Biological Entities. doi:10.5281/zenodo.21613663"
+License: |
+  Indexes, keys and code under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0); AlphaFold DB, UniProt and Observed Antibody Space content under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/);
+  InterPro annotations under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/); compounds under the terms of PubChem, GDB-13 and Enamine REAL.
 Resources:
-  - Description: Project data files in a public bucket
+  - Description: |
+      Parquet shards under `data/<collection>/parquet/`, one row per entity: compounds with SMILES, MACCS, PubChem, ECFP4 and FCFP4 fingerprints and `.3D.parquet` conformers,
+      proteins with sequences, UniProt annotations and `.3D.parquet` Cα traces with pLDDT, and antibody chains and cells with germline calls and run metadata.
+      USearch `index-*.safegraphs` graphs sit beside each `parquet/`; start with `data/example/`.
     ARN: arn:aws:s3:::usearch-molecules
     Region: us-west-2
     Type: S3 Bucket
+DataAtWork:
+  Tools & Applications:
+    - Title: USearch, the search engine that builds and serves the indexes
+      URL: https://github.com/unum-cloud/USearch
+      AuthorName: Ash Vardanian
+      AuthorURL: https://ashvardanian.com
+    - Title: usearchmolecules, a Python package to read, search and extend the shards
+      URL: https://github.com/unum-science/USearchMolecules
+      AuthorName: Ash Vardanian
+      AuthorURL: https://ashvardanian.com
+  Publications:
+    - Title: "USearch Molecules: 28 Billion Chemical Embeddings on AWS"
+      URL: https://ashvardanian.com/posts/usearch-molecules/
+      AuthorName: Ash Vardanian
+      AuthorURL: https://ashvardanian.com
+    - Title: "USearchMolecules dataset on Zenodo"
+      URL: https://doi.org/10.5281/zenodo.21613663
+      AuthorName: Ash Vardanian
+      AuthorURL: https://ashvardanian.com
