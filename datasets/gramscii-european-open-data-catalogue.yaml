@@ -1,6 +1,6 @@
 Name: Gramscii European Open Data Catalogue
 Description: |
-  A catalogue of more than half a million public datasets from over 40 European and international providers: statistical offices, Eurostat, the OECD, the ILO, the ECB, national open data portals, Italian cities and regions, and the Earth-observation and marine catalogues of NASA, Copernicus and EMODnet. For every dataset it records its metadata, licence and attribution, its structure (dimensions, code lists and their labels in each published language) and a searchable description per language. It holds metadata only: the values stay with the original provider, which each entry names and links.
+  A catalogue of 78,150 public datasets from 34 European, international and Italian providers: ISTAT, Eurostat, INSEE, the OECD, the ILO, the ECB, the BIS, the Deutsche Bundesbank, the FAO, France's national open data portal, Italian cities and regions, and their urban plans. For every dataset it records its metadata, licence and attribution, its structure (dimensions, code lists and their labels in each published language) and a searchable description per language. It holds metadata only: the values stay with the original provider, which each entry names and links.
 Documentation: https://github.com/Gramscii-Git/open-data-examples/tree/main/european-open-data-catalogue
 Contact: amministrazione@gramscii.com, or an issue at https://github.com/Gramscii-Git/open-data-examples/issues
 ManagedBy: "[Gramscii](https://gramscii.com/)"
@@ -24,7 +24,7 @@ License: |
   Each dataset keeps its provider's terms, recorded in the catalogue's `licence`, `attribution` and `sources` fields. Gramscii's compilation and documentation are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); those terms cover Gramscii's contribution, not the underlying sources.
 Resources:
   - Description: |
-      The catalogue's eleven tables in Apache Parquet (Zstandard), partitioned by provider, with a manifest.json that records the release's snapshot time, every table's rows and columns, and every file's size and SHA-256.
+      The catalogue's twelve tables in Apache Parquet (Zstandard), partitioned by provider, with a manifest.json that records the release's snapshot time, every table's rows and columns, and every file's size and SHA-256.
     ARN: arn:aws:s3:::gramscii-european-open-data-catalogue
     Region: eu-central-1
     Type: S3 Bucket
@@ -42,4 +42,4 @@ DataAtWork:
       AuthorName: Gramscii
       AuthorURL: https://gramscii.com/
 RegistryEntryAdded: "2026-10-28"
-RegistryEntryLastModified: "2026-10-28"
+RegistryEntryLastModified: "2026-11-13"
