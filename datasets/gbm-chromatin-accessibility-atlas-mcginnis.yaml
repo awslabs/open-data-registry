@@ -1,0 +1,87 @@
+Name: Harmonized Human Glioblastoma Chromatin Accessibility Atlas (snATAC-seq)
+Description: |
+  A harmonized single-nucleus ATAC-seq (snATAC-seq) atlas of 67 IDH-wildtype
+  primary glioblastoma patients across 10 previously published cohorts,
+  totaling ~1.65 million nuclei quantified against a shared 2,085,175-peak
+  union reference on GRCh38 (hg38).
+
+  snATAC-seq data for primary GBM has been publicly deposited across many
+  separate studies, but those datasets have never been harmonized against a
+  shared peak set or scoring framework. Each cohort was processed with its
+  own peak caller, its own cell type labels, and its own QC conventions.
+  This atlas re-quantifies the four cohorts that deposited raw fragments
+  (Sundaram et al. 2024, Sojka et al. 2025, Pai et al. 2025, Terekhanova
+  et al. 2023) against a shared union peak reference built from CATLAS
+  (544,735 peaks) plus per-cohort MACS3 calls on fragment-released
+  pseudobulks, and projects the six cohorts that deposited only processed
+  matrices (de Jong et al. 2026, Lin et al. 2026, Wang L et al. 2022,
+  Wang L et al. 2019, Guilhamon et al. 2021, Raviram et al. 2023). Every
+  pseudobulk column carries explicit <cohort>__<patient_id>__<cell_type>
+  provenance, so forward traceability is preserved from any aggregated
+  value back to its original cohort deposit.
+
+  On top of this harmonized matrix, the atlas provides per-cell-type
+  specificity scoring explicitly designed for cell-type-specific enhancer
+  therapy design, a methodology that scores every accessible peak on four
+  components (strength-based log2FC between the top and next cell type for
+  specificity, mean patient-level width-normalized fragments-per-cell for
+  strength, patient-level detection rate, and cross-cohort replication) and
+  ranks via the mean of specificity and strength percentile ranks, with a
+  60% patient-detection hard floor applied before top-1000 selection.
+
+  Target users: computational neuroscientists, GBM biologists, AAV therapy
+  developers, and anyone wanting a cross-cohort view of the GBM chromatin
+  accessibility landscape without redoing the harmonization work themselves.
+Documentation: https://github.com/jpmcginnis/HumanAAVProject
+Contact: jpmcginnis1@gmail.com
+ManagedBy: "[McGinnis Lab, Baylor College of Medicine](https://github.com/jpmcginnis/HumanAAVProject)"
+UpdateFrequency: On major atlas release (approximately annually)
+Collabs:
+Tags:
+  - aws-pds
+  - genetics
+  - genomics
+  - healthcare
+  - life sciences
+  - brain
+  - cancer
+  - oncology
+  - neurobiology
+  - single cell
+  - chromatin accessibility
+  - ATAC-seq
+  - snATAC-seq
+  - glioblastoma
+License: "[Creative Commons Attribution 4.0 International (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/) for the processed atlas derivatives. Original cohort data remains under its depositor's license (predominantly open; see cohort_attribution.csv for per-cohort license statements)."
+Resources:
+  - Description: Integrated atlas h5ad, scoring parquets, cohort provenance JSON, union peak reference BED, and per-cohort projection h5ads
+    ARN: arn:aws:s3:::jpm-atacseq-archive-2026
+    Region: us-east-1
+    Type: S3 Bucket
+    Explore:
+      - '[Browse data_processed_gbm_integrated/v1.1/](https://jpm-atacseq-archive-2026.s3.us-east-1.amazonaws.com/data_processed_gbm_integrated/v1.1/)'
+  - Description: Notifications for new GBM atlas data releases
+    ARN: arn:aws:sns:us-east-1:593400911582:gbm-atlas-updates
+    Region: us-east-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Harmonized Human Glioblastoma Chromatin Accessibility Atlas (snATAC-seq)"
+      URL: https://github.com/jpmcginnis/open-data-examples/blob/main/gbm-chromatin-accessibility-atlas/get-to-know-a-dataset.ipynb
+      AuthorName: JP McGinnis
+      AuthorURL: https://github.com/jpmcginnis
+      Services:
+        - Amazon S3
+    - Title: "Load the GBM atlas h5ad and query per-cell-type specificity scores"
+      URL: https://github.com/jpmcginnis/HumanAAVProject
+      AuthorName: JP McGinnis
+      AuthorURL: https://github.com/jpmcginnis
+  Tools & Applications:
+    - Title: "atlas_v4_filterable.html — in-browser filterable viewer (DuckDB-WASM)"
+      URL: https://github.com/jpmcginnis/HumanAAVProject
+      AuthorName: JP McGinnis
+      AuthorURL: https://github.com/jpmcginnis
+  Publications:
+    - Title: "A harmonized human glioblastoma chromatin accessibility atlas (preprint)"
+      URL: https://github.com/jpmcginnis/HumanAAVProject
+      AuthorName: JP McGinnis et al.
