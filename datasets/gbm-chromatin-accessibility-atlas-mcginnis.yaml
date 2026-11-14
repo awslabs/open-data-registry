@@ -1,33 +1,33 @@
 Name: Harmonized Human Glioblastoma Chromatin Accessibility Atlas (snATAC-seq)
 Description: |
-  A harmonized single-nucleus ATAC-seq (snATAC-seq) atlas of 48 IDH-wildtype
-  primary glioblastoma patients across 8 previously published cohorts,
-  totaling 1.46 million nuclei quantified against a shared 1,958,753-peak
+  A harmonized single-nucleus ATAC-seq (snATAC-seq) atlas of 67 IDH-wildtype
+  primary glioblastoma patients across 10 previously published cohorts,
+  totaling ~1.65 million nuclei quantified against a shared 2,085,175-peak
   union reference on GRCh38 (hg38).
 
-  The core problem this atlas solves: snATAC-seq data for primary GBM has
-  been publicly deposited across many separate studies, but those datasets
-  have NEVER been harmonized against a shared peak set or scoring framework.
-  Each cohort was processed with its own peak caller, its own cell type labels,
-  and its own QC conventions, which makes cross-study comparison and cross-
-  patient aggregation effectively impossible for downstream users. This
-  atlas re-quantifies the 2 cohorts that deposited raw fragments (Sundaram
-  et al. 2024, Sojka et al. 2025) against a shared union peak reference,
-  and projects the 6 cohorts that deposited only processed matrices (Greenwald,
-  Zhao, Mathewson, Guo, Guilhamon, GSE165037) through a sparse overlap map onto
-  the same reference. Every cell carries explicit quantification_mode and
-  cohort_provenance metadata so forward provenance is traceable from any
-  cell back to its original cohort deposit.
+  snATAC-seq data for primary GBM has been publicly deposited across many
+  separate studies, but those datasets have never been harmonized against a
+  shared peak set or scoring framework. Each cohort was processed with its
+  own peak caller, its own cell type labels, and its own QC conventions.
+  This atlas re-quantifies the four cohorts that deposited raw fragments
+  (Sundaram et al. 2024, Sojka et al. 2025, Pai et al. 2025, Terekhanova
+  et al. 2023) against a shared union peak reference built from CATLAS
+  (544,735 peaks) plus per-cohort MACS3 calls on fragment-released
+  pseudobulks, and projects the six cohorts that deposited only processed
+  matrices (de Jong et al. 2026, Lin et al. 2026, Wang L et al. 2022,
+  Wang L et al. 2019, Guilhamon et al. 2021, Raviram et al. 2023). Every
+  pseudobulk column carries explicit <cohort>__<patient_id>__<cell_type>
+  provenance, so forward traceability is preserved from any aggregated
+  value back to its original cohort deposit.
 
   On top of this harmonized matrix, the atlas provides per-cell-type
-  specificity scoring explicitly designed for AAV-delivered cell-type-specific
-  enhancer therapy design — a methodology that scores every accessible
-  peak on four orthogonal components (log2FC_top_vs_next specificity,
-  width-normalized penetrance strength, patient-level reproducibility,
-  cross-cohort replication) and ranks via a rank-percentile combination of
-  specificity and strength. The scoring framework was validated against
-  three independent published scoring methods (ArchR log2FC-vs-background,
-  Gini coefficient, PeakRankR) with convergent top-500 overlap.
+  specificity scoring explicitly designed for cell-type-specific enhancer
+  therapy design, a methodology that scores every accessible peak on four
+  components (strength-based log2FC between the top and next cell type for
+  specificity, mean patient-level width-normalized fragments-per-cell for
+  strength, patient-level detection rate, and cross-cohort replication) and
+  ranks via the mean of specificity and strength percentile ranks, with a
+  60% patient-detection hard floor applied before top-1000 selection.
 
   Target users: computational neuroscientists, GBM biologists, AAV therapy
   developers, and anyone wanting a cross-cohort view of the GBM chromatin
