@@ -60,6 +60,10 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[Browse data_processed_gbm_integrated/v1.1/](https://jpm-atacseq-archive-2026.s3.us-east-1.amazonaws.com/data_processed_gbm_integrated/v1.1/)'
+  - Description: Notifications for new GBM atlas data releases
+    ARN: arn:aws:sns:us-east-1:593400911582:gbm-atlas-updates
+    Region: us-east-1
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: Harmonized Human Glioblastoma Chromatin Accessibility Atlas (snATAC-seq)"
