@@ -1,15 +1,15 @@
 Name: "ECMWF IFS Analysis N320 - Beyond Weather Icechunk Zarr"
 Description: |
   The ECMWF Integrated Forecasting System (IFS) operational analysis, every 6 hours from 2011
-  to 2024, on the native N320 reduced Gaussian grid (542,080 points, about 31 km). It contains a
-  selection of variables: 6 upper-air variables on 18 pressure levels, 18 surface variables, and
+  to 2026, on the native N320 reduced Gaussian grid (542,080 points, about 31 km). It contains a
+  selection of variables: 6 upper-air variables on 18 pressure levels, 22 surface variables, and
   the land-sea mask and orography of each IFS cycle. This is the input set of data-driven
   weather models such as ECMWF's AIFS, for training, fine-tuning and verification. Stored as
   versioned Icechunk Zarr, chunked by timestep for fast random access.
 Documentation: https://github.com/Beyond-Weather-Git/open-data-examples/blob/main/ifs-analysis-n320/README.md
 Contact: https://github.com/Beyond-Weather-Git/open-data-examples/issues
 ManagedBy: "[Beyond Weather](https://beyond-weather.com)"
-UpdateFrequency: Not currently updated. The archive covers 2011-01-01 to 2024-12-31.
+UpdateFrequency: Not currently updated. The archive covers 2011-01-01 to 2026-09-30.
 Tags:
   - aws-pds
   - weather
@@ -22,15 +22,18 @@ Tags:
 License: |
   [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),
   following the [ECMWF terms of use](https://apps.ecmwf.int/datasets/licences/general/).
-  Copyright © 2011-2024 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.
+  Copyright © 2011-2026 European Centre for Medium-Range Weather Forecasts (ECMWF). Source: www.ecmwf.int.
   ECMWF does not accept any liability whatsoever for any error or omission in the data, their availability,
   or for any loss or damage arising from their use. Modified by Beyond Weather: selection of variables and
-  levels, conversion from GRIB to Icechunk Zarr, and lossy bit rounding.
+  levels, interpolation to the N320 grid by ECMWF MARS, conversion from GRIB to Icechunk Zarr, renaming of
+  variables, and lossy bit rounding. Beyond Weather provides its modifications and hosting as-is, without
+  warranty, to the fullest extent permitted by law. This modified dataset is not endorsed by, sponsored by
+  or affiliated with ECMWF.
 Citation: |
-  Contains modified ECMWF IFS operational analysis data, Copyright © 2011-2024 European Centre for
+  Contains modified ECMWF IFS operational analysis data, Copyright © 2011-2026 European Centre for
   Medium-Range Weather Forecasts (ECMWF), www.ecmwf.int, licensed under CC BY 4.0.
 Resources:
-  - Description: IFS operational analysis 2011-2024, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository
+  - Description: IFS operational analysis 2011-2026, 6-hourly, N320 reduced Gaussian grid, Zarr v3 in an Icechunk repository
     ARN: arn:aws:s3:::beyond-weather-ecmwf-ifs-analysis
     Region: us-east-2
     Type: S3 Bucket

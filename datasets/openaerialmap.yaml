@@ -1,6 +1,6 @@
 Name: OpenAerialMap on AWS
 Description: OpenAerialMap is a collection of high-resolution openly licensed satellite and aerial imagery.
-Documentation: https://docs.openaerialmap.org/
+Documentation: https://docs.imagery.hotosm.org/
 Contact: info@openaerialmap.org
 ManagedBy: "[Humanitarian OpenStreetMap Team](https://www.hotosm.org/)"
 UpdateFrequency: New imagery is added as soon as it is uploaded by community contributors.
@@ -14,18 +14,18 @@ Tags:
   - earth observation
   - disaster response
   - cog
-License: All imagery is publicly licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network. All imagery is available to be traced in OpenStreetMap..
+License: All imagery is publicly licensed CC-BY 4.0, with attribution as contributors of Open Imagery Network. All imagery is available to be traced in OpenStreetMap.
 Resources:
   - Description: OpenAerialMap files and metadata
-    ARN: arn:aws:s3:::oin-hotosm
+    ARN: arn:aws:s3:::oin-hotosm-temp
     Region: us-east-1
     Type: S3 Bucket
     Explore:
-    - '[Browse Bucket](https://oin-hotosm.s3.amazonaws.com/)'
+    - '[Browse Bucket](https://oin-hotosm-temp.s3.amazonaws.com/)'
 DataAtWork:
   Tutorials:
-    - Title: OAM User Guide
-      URL: https://docs.openaerialmap.org/browser/user-guide/
+    - Title: Using OpenAerialMap imagery
+      URL: https://docs.imagery.hotosm.org/usage/using-imagery/
       AuthorName: Humanitarian OpenStreetMap Team
       AuthorURL: https://www.hotosm.org/
     - Title: Displaying OpenAerialMap Imagery in Simple GIS Client
@@ -41,18 +41,14 @@ DataAtWork:
       AuthorName: Julia Lenhardt
       AuthorURL: https://www.esri.com
   Tools & Applications:
-    - Title: OpenAerialMap API for metadata about available images and map layers.
-      URL: https://docs.openaerialmap.org/api/api/
+    - Title: OpenAerialMap for searching, viewing and downloading imagery
+      URL: https://imagery.hotosm.org/
       AuthorName: Humanitarian OpenStreetMap Team
       AuthorURL: https://www.hotosm.org/
-    - Title: OpenAerialMap Broswer for exploring and accessing imagery
-      URL: https://map.openaerialmap.org/
+    - Title: OpenAerialMap STAC API for imagery metadata and search
+      URL: https://api.imagery.hotosm.org/stac
       AuthorName: Humanitarian OpenStreetMap Team
       AuthorURL: https://www.hotosm.org/
-    - Title: New OpenAerialMap Browser
-      URL: https://new.openaerialmap.org/
-      AuthorName: Kontur
-      AuthorURL: https://www.kontur.io/
   Publications:
     - Title: "OpenAerialMap: A Distributed Commons for Searching and Hosting Free Imagery"
       URL: https://www.slideshare.net/slideshow/openaerialmap-a-distributed-commons-for-searching-and-hosting-free-imagery/52880462
