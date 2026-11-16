@@ -1,0 +1,83 @@
+Name: FathomNet
+Description: >
+  FathomNet is a global, open-source database of ocean imagery and AI-ready
+  annotations. It aggregates more than three decades of imagery from remotely
+  operated vehicles, autonomous underwater vehicles, drop cameras, divers, and
+  citizen scientists using the FathomVerse apps. Images carry standardized
+  metadata (time, location, depth, environmental measurements, provenance, and
+  taxonomic concepts) and expert, community, and machine-generated annotations,
+  including classifications and bounding boxes. With more than 480,000 images
+  and 1.2 million bounding boxes, FathomNet reflects the real conditions of
+  ocean science (variable illumination, occlusion, complex backgrounds, unusual
+  viewpoints, and long-tailed taxonomic distributions) and is used to train,
+  test, and benchmark computer vision models for detection, classification, and
+  biodiversity monitoring.
+Documentation: https://github.com/fathomnet/fathomnet-open-data
+Contact: fathomnet@mbari.org
+ManagedBy: "[Monterey Bay Aquarium Research Institute](https://www.mbari.org/)"
+UpdateFrequency: Ad hoc, as new imagery and annotations are contributed and reviewed.
+Tags:
+  - aws-pds
+  - oceans
+  - marine
+  - biodiversity
+  - ecosystems
+  - computer vision
+  - object detection
+  - classification
+  - machine learning
+  - deep learning
+  - labeled
+  - imaging
+  - parquet
+  - life sciences
+License: >
+  There is no single license for FathomNet. Each contributor chooses the
+  licenses for their own images and annotations, and that license is attached
+  to every record: image_license on each image and annotation_license on each
+  bounding box in the metadata tables. An image and its annotations can be
+  licensed differently. Accepted licenses are documented at
+  https://database.fathomnet.org/fathomnet/#/license.
+Citation: >
+  Katija, K., Orenstein, E., Schlining, B., Lundsten, L., Barnard, K., Sainz,
+  G., Boulais, O., Cromwell, M., Butler, E., Woodward, B., and Bell, K. L. C.
+  (2022). FathomNet: A global image database for enabling artificial
+  intelligence in the ocean. Scientific Reports, 12, 15914.
+  https://doi.org/10.1038/s41598-022-19939-2
+Resources:
+  - Description: >
+      Original FathomNet images (JPEG, PNG, TIFF) under images/ and 512 px
+      JPEG thumbnails under thumbnails/, keyed by image UUID. Metadata for
+      images, bounding boxes, tags, and collections (Darwin Core) is provided
+      as Parquet under metadata/, versioned by release date, with COCO JSON
+      exports under exports/. Every image and annotation record includes the
+      license its contributor chose. Source video under video/ is planned.
+    ARN: arn:aws:s3:::fathomnet-pds
+    Region: us-west-2
+    Type: S3 Bucket
+  - Description: Notifications for new FathomNet objects
+    ARN: arn:aws:sns:us-west-2:639589055367:fathomnet-pds-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: FathomNet"
+      URL: https://github.com/fathomnet/fathomnet-open-data/blob/main/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/fathomnet/fathomnet-open-data/blob/main/get-to-know-a-dataset.ipynb
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+  Tools & Applications:
+    - Title: FathomNet Database
+      URL: https://database.fathomnet.org
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+    - Title: fathomnet-py - Python client for the FathomNet API
+      URL: https://github.com/fathomnet/fathomnet-py
+      AuthorName: MBARI
+      AuthorURL: https://www.mbari.org/
+  Publications:
+    - Title: "FathomNet: A global image database for enabling artificial intelligence in the ocean"
+      URL: https://doi.org/10.1038/s41598-022-19939-2
+      AuthorName: Katija K, Orenstein E, Schlining B, Lundsten L, Barnard K, Sainz G, et al.
+ADXCategories:
+  - Environmental Data
