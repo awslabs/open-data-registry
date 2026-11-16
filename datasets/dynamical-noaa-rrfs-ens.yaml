@@ -1,0 +1,42 @@
+Name: NOAA RRFS ENS - dynamical.org Icechunk Zarr
+Description: |
+    The Rapid Refresh Forecast System ensemble (RRFS ENS) is a National Oceanic and Atmospheric Administration (NOAA) National Centers for Environmental Prediction (NCEP) convection-allowing ensemble with a 3 km grid. Five members run with different initial conditions, lateral boundary conditions and model physics from the deterministic RRFS forecast, to better cover the range of forecast possibilities. REFS combines these members with the deterministic RRFS and HRRR into ensemble products.
+    
+    NOAA RRFS ENS is pre-operational, so expect changes to the model data and to the structure of this dataset.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [NOAA RRFS ENS forecast, virtual](https://dynamical.org/catalog/noaa-rrfs-ens-forecast-virtual/) - Ensemble weather forecasts from the Rapid Refresh Forecast System (RRFS) operated by NOAA NWS NCEP.
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA RRFS ENS forecast, virtual: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA RRFS ENS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-rrfs-ens
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-rrfs-ens.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-rrfs-ens-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "NOAA RRFS ENS forecast, virtual — RRFS and REFS forecasts, virtual"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rrfs-refs-forecast-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
