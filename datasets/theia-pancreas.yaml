@@ -1,0 +1,47 @@
+Name: THEIA-Pancreas
+Description: |
+  THEIA-Pancreas is an openly licensed collection of human pancreas whole-slide images
+  (WSIs) for digital pathology. It contains 1,687 WSIs from 284 organ donors, sampled
+  across head, body, tail, and uncinate process, plus 223 expert-annotated pancreatic
+  ductal adenocarcinoma (PDAC) WSIs from a neoadjuvant-treated UT Southwestern cohort and
+  the treatment-naive CPTAC-PDA cohort, carrying more than 140,000 hand-curated polygon
+  annotations. It also includes the DeepSeg Human-Curated PDAC (DHCP) segmentation
+  benchmark: 75,519 image/mask tiles with patient-level splits. Total size is about 3.5 TB.
+Documentation: https://github.com/wigasper/open-data-examples/tree/main/theia-pancreas
+Contact: william.gasper@utsouthwestern.edu
+ManagedBy: Ligorio Lab & Ghersi Lab
+UpdateFrequency: Periodic. New donor slides and annotations will be added as they are curated; benchmark releases are versioned and existing versions are not modified.
+Tags:
+  - digital pathology
+  - cancer
+  - histopathology
+  - imaging
+  - medical imaging
+  - life sciences
+  - machine learning
+  - deep learning
+  - computer vision
+  - segmentation
+  - benchmark
+  - labeled
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) - https://creativecommons.org/licenses/by/4.0/
+Resources:
+  - Description: |
+      Whole-slide images (SVS, NDPI, QPTIFF, TIFF and JPEG), JSON
+      polygon annotations, slide-level metadata (CSV), and the DHCP segmentation benchmark
+      (JPEG image tiles with single-channel PNG masks). See the documentation for the full
+      key prefix layout and data dictionary.
+    ARN: arn:aws:s3:::theia-pancreas
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://theia-pancreas.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: THEIA-Pancreas"
+      URL: https://github.com/wigasper/open-data-examples/blob/main/theia-pancreas/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/wigasper/open-data-examples/blob/main/theia-pancreas/get-to-know-a-dataset.ipynb
+      AuthorName: William Gasper
+      AuthorURL: https://www.williamgasper.com
+      Services:
+        - Amazon S3
