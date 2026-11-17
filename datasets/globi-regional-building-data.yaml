@@ -1,0 +1,101 @@
+Name: GloBI Regional Building Inventory Data
+Description: |
+  Versioned Urban Building Energy Modeling (UBEM) input bundles and building-level
+  simulation results from the Global Building Inventory (GloBI) by the MIT
+  Sustainable Design Lab, spanning eight regions across seven countries (Brazil,
+  India, Kenya, Norway, Portugal, Singapore, United Kingdom, and United States).
+
+  Two prefixes share one public S3 bucket:
+  (1) `globi-inputs/` stores immutable regional input bundles (SQLite EnergyPlus
+  component/material libraries, semantic archetype mappings, and historical TMY
+  plus 2050 SSP2-4.5 FTMY weather files; excludes raw partner building footprints,
+  whose sha256 hashes are recorded for verification).
+  (2) `globi-public/` stores analysis-ready Apache Parquet tables across 28
+  paired climate and decarbonization/resilience experiments (`energy_and_peak`,
+  `overheating`, and `emissions_by_building`). Cryptographic provenance and
+  version catalogs are maintained in the globi-data GitHub repository.
+
+  Draft: bucket ARN and region are placeholders pending AWS Open Data onboarding.
+Documentation: https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/PUBLIC-DATA.md
+Contact: sd-lab-admin@mit.edu
+ManagedBy: "[MIT Sustainable Design Lab](https://sustainability.mit.edu/)"
+UpdateFrequency: |
+  Immutable versioned releases (`v001`, `v002`, ...): new prefixes are added when
+  partner input bundles are updated, new cities are onboarded, or additional
+  climate/policy scenarios are simulated. Prior versions remain available for
+  reproducibility; see inputs/*/CURRENT.yml and outputs/STATUS.md in globi-data.
+Citation: |
+  Please cite the Global Building Inventory (GloBI) project by the MIT Sustainable
+  Design Lab and reference GloBI Regional Building Inventory Data on the Registry
+  of Open Data on AWS (https://registry.opendata.aws/globi-regional-building-data).
+  A peer-reviewed publication DOI will be added upon publication.
+License: |
+  MIT License (https://github.com/MITSustainableDesignLab/globi-data/blob/main/LICENSE).
+  Partner-derived stock attributes carry source attribution noted in per-version
+  README files; raw building footprint geometries are not distributed in this bucket.
+Tags:
+  - aws-pds
+  - energy
+  - energy modeling
+  - climate
+  - sustainability
+  - geospatial
+  - cities
+  - urban
+  - weather
+  - parquet
+  - simulations
+  - model
+RegistryEntryAdded: "2026-11-16"
+RegistryEntryLastModified: "2026-11-16"
+Resources:
+  - Description: |
+      Regional UBEM **input bundles** under `globi-inputs/<ISO>/<Partner>/vNNN/`:
+      SQLite component/HVAC libraries (`components-lib.db`), semantic archetype
+      mappings, TMY and 2050 SSP2-4.5 FTMY weather files (`.epw`, `.ddy`, `.zip`),
+      and `input-version.yml` sha256 manifests (8 regions, 130 files, ~57 MB at
+      launch; excludes raw `buildings.geojson`).
+    ARN: arn:aws:s3:::globi-regional-building-data
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+      - "[Technical documentation & access guide](https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/PUBLIC-DATA.md)"
+      - "[Input bundle catalog in globi-data](https://github.com/MITSustainableDesignLab/globi-data/tree/main/inputs)"
+      - "[Data components & schema specification](https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/DATA-COMPONENTS.md)"
+  - Description: |
+      Building-level **processed simulation results** in Apache Parquet under
+      `globi-public/<ISO>/<City>/<weather>/<Scenario>/<output_version>/`:
+      `energy_and_peak.parquet`, `overheating.parquet`, and
+      `emissions_by_building.parquet` (84 Parquet objects across 28 TMY/FTMY
+      experiments at launch).
+    ARN: arn:aws:s3:::globi-regional-building-data
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+      - "[Public result products & Parquet keys](https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/PUBLIC-PRODUCT.md)"
+      - "[Experiment provenance manifests](https://github.com/MITSustainableDesignLab/globi-data/tree/main/outputs/runs)"
+DataAtWork:
+  Tutorials:
+    - Title: Querying and downloading GloBI inputs and Parquet results on AWS
+      URL: https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/PUBLIC-DATA.md#accessing-the-data-no-aws-account-required
+      AuthorName: MIT Sustainable Design Lab
+      AuthorURL: https://sustainability.mit.edu/
+      Services:
+        - Amazon S3
+        - Amazon Athena
+        - Amazon EC2
+    - Title: Understanding GloBI regional input bundles
+      URL: https://github.com/MITSustainableDesignLab/globi-data/blob/main/docs/HOW-TO-DOWNLOAD-INPUTS.md
+      AuthorName: MIT Sustainable Design Lab
+      AuthorURL: https://sustainability.mit.edu/
+  Tools & Applications:
+    - Title: globi-data — versioned catalog, provenance & download CLI
+      URL: https://github.com/MITSustainableDesignLab/globi-data
+      AuthorName: MIT Sustainable Design Lab
+      AuthorURL: https://github.com/MITSustainableDesignLab/globi-data
+    - Title: GloBI — Urban Building Energy Modeling simulation engine
+      URL: https://github.com/MITSustainableDesignLab/globi
+      AuthorName: MIT Sustainable Design Lab
+      AuthorURL: https://github.com/MITSustainableDesignLab/globi
