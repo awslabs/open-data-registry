@@ -54,6 +54,10 @@ Resources:
     Type: S3 Bucket
     Explore:
       - '[STAC catalog](https://planetarydems.s3.us-west-2.amazonaws.com/mars/mesa/v1/stac/catalog.json)'
+  - Description: Notifications for new MESA data
+    ARN: arn:aws:sns:us-west-2:712288107382:planetarydems-object_created
+    Region: us-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: "Get To Know A Dataset: MESA, the 18 m global DEM of Mars"
