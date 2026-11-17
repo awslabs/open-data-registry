@@ -1,0 +1,71 @@
+Name: Digital Earth Africa Sentinel-3 OLCI L2 Water
+Description: |
+  The Sentinel-3 OLCI Level-2 Water Full Resolution (OL_2_WFR) product delivers satellite-derived observations for monitoring the optical properties, biological characteristics, and quality of marine and inland waters. Acquired by the Ocean and Land Colour Instrument (OLCI) onboard the Sentinel-3A and Sentinel-3B satellites, the product provides global coverage at approximately 300-meter spatial resolution, with a revisit time of 1–2 days at the equator when both satellites are operational. OLCI’s 21 spectral bands, spanning visible to near-infrared wavelengths, are designed to support detailed observations of water colour and ocean and inland water properties.Key outputs include water-leaving reflectance across multiple spectral bands, algal pigment (chlorophyll) concentration, Total Suspended Matter (TSM), and the diffuse attenuation coefficient (KD490), which provides an indication of water transparency. The product also includes atmospheric parameters such as aerosol optical depth, aerosol Ångström exponent, and Integrated Water Vapour (IWV), together with per-pixel quality and science flags and associated uncertainty estimates. These observations support applications such as water quality monitoring, detection and assessment of algal blooms, turbidity and sediment monitoring, aquatic ecosystem assessment, and the monitoring of changes in coastal and inland water bodies. Digital Earth Africa (DE Africa) provides open and free access to Sentinel-3 OLCI L2 Water Full Resolution products for the African continent via its cloud-hosted infrastructure and the DE Africa Sandbox. This enables direct analysis in cloud environments, and integration with other DE Africa datasets.
+
+Documentation: https://docs.digitalearthafrica.org/en/latest/data_specs/Sentinel-3_OLCI_L2_WATER_specs.html
+Contact: helpdesk@digitalearthafrica.org
+ManagedBy: "[Digital Earth Africa](https://www.digitalearthafrica.org/)"
+UpdateFrequency: New data are added regularly, usually within a few hours of them being available.
+
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - earth observation
+  - geospatial
+  - natural resource
+  - satellite imagery
+  - deafrica
+  - stac
+  - cog
+License: |
+  DE Africa makes this data available under the Creative Commons Attribute 4.0 license https://creativecommons.org/licenses/by/4.0/.
+Resources:
+  - Description: Digital Earth Africa Sentinel-3 OLCI L2 Water
+    ARN: arn:aws:s3:::deafrica-sentinel-3-olci-l2-water/Sentinel-3/OLCI/OL_2_WFR/
+    Region: af-south-1
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC V1.0.0 endpoint](https://explorer.digitalearth.africa/products/s3_olci_l2_wfr)'
+  - Description: "[S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-inventory.html#storage-inventory-contents)"
+    ARN: arn:aws:s3:::deafrica-services-inventory
+    Region: af-south-1
+    Type: S3 Bucket
+  - Description: Notifications for new Sentinel-3 OLCI L2 Water
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-sentinel-3-olci-l2-water-scene-topic
+    Region: af-south-1
+    Type: SNS Topic
+  - Description: Bucket creation event notification, can subscribe with [Lambda](https://aws.amazon.com/lambda/) or [SQS](https://aws.amazon.com/sqs/). Message sent by the s3 bucket for all object create events.
+    ARN: arn:aws:sns:af-south-1:543785577597:deafrica-services-topic
+    Region: af-south-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get to Know a Dataset: [Digital Earth Africa Sentinel-3 OLCI L2 Water]"
+      URL: https://github.com/digitalearthafrica/deafrica-direct-access/blob/main/Datasets/open-data-examples/Sentinel_3_Water/get-to-know-a-dataset.ipynb
+      AuthorName: Digital Earth Africa Contributors
+    - Title: Digital Earth Africa Training
+      URL: http://learn.digitalearthafrica.org/
+      AuthorName: Digital Earth Africa Contributors
+  Tools & Applications:
+    - Title: "Digital Earth Africa Explorer"
+      URL: https://explorer.digitalearth.africa/products/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa web services"
+      URL: https://ows.digitalearth.africa
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Map"
+      URL: https://maps.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Sandbox"
+      URL: https://sandbox.digitalearth.africa/
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Notebook Repo"
+      URL: https://github.com/digitalearthafrica/deafrica-sandbox-notebooks
+      AuthorName: Digital Earth Africa Contributors
+    - Title: "Digital Earth Africa Geoportal"
+      URL: https://www.africageoportal.com/pages/digital-earth-africa
+      AuthorName: Digital Earth Africa Contributors
