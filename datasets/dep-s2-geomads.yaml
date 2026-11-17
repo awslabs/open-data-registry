@@ -1,14 +1,17 @@
-Name: Sentinel-2 Geometric Median and Absolute Deviations (GeoMAD) over the Pacific
+Name: Digital Earth Pacific Annual Surface Reflectance Composite (Sentinel-2, GeoMAD, 10 m)
 Description: |
-  The Geometric Median and Absolute Deviations (GeoMAD) product is
-  a cloud-free annual mosaic that uses a more robust method of
-  determining the median observation than a simple median. Along
-  with the median observation, the GeoMAD produces three measures
-  of variance, or absolute deviations, which helps to understand
-  how the data over the time period changes. For example, some areas,
-  such as desert, will change very little. Whereas crop land will change
-  more. All ofthese values are useful in understand what is happening
-  in the area covered by the GeoMAD.
+  This dataset provides annual cloud-free composite imagery derived from
+  Sentinel-2 observations across the Pacific region using geometric median
+  and absolute deviation (GeoMAD) methods. The geometric median uses a
+  more robust method of determining the median observation than a simple
+  median, and represents stable surface conditions.
+
+  Along with the median observation, the GeoMAD produces three measures of
+  variance, or absolute deviations (emad, smad and bcmad), which help to
+  understand how the data change over the time period. For example, some
+  areas, such as bare rock, will change very little, whereas crop land
+  will change more. The dataset is available annually from 2017 and
+  supports monitoring of vegetation, land cover, and coastal environments.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
@@ -18,22 +21,30 @@ Collabs:
     Tags:
       - climate
 Tags:
+- aws-pds
 - earth observation
+- satellite imagery
+- land cover
 - geoscience
 - geospatial
 License: |
   Digital Earth Pacific Data is available under the Creative Commons
   Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-- Description: Data access
-  ARN: arn:aws:s3:::dep-public-data
+- Description: Annual Surface Reflectance Composite (Sentinel-2, GeoMAD, 10 m) Cloud Optimized GeoTIFFs
+  ARN: arn:aws:s3:::dep-public-data/dep_s2_geomad
   Region: us-west-2
   Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_s2_geomad)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   - Title: "Digital Earth Pacific Map"
     URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
     AuthorName: Digital Earth Pacific Contributors
   Publications:
   - Title: Digital Earth Pacific Open Data Access Documentation
