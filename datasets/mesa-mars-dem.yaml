@@ -1,0 +1,82 @@
+Name: MESA - Mars Elevation from Shading and Altimetry, an 18 m global digital elevation model of Mars
+Description: |
+  MESA (Mars Elevation from Shading and Altimetry) is a global digital elevation model (DEM) of Mars on an
+  18 m grid. Elevation is predicted from single Context Camera (CTX) images by a neural network trained on
+  2,817 CTX stereo DEMs. The other inputs are the Mars Orbiter Laser Altimeter (MOLA) gridded DEM, the direction
+  of the Sun, and the distance to the nearest MOLA laser shot. Predictions from 48,002 CTX images acquired
+  between 2006 and 2025 are leveled to the MOLA laser shots and joined into one surface. 97.6% of Mars is
+  predicted from images. 2.3% is infilled and marked in the provenance mask. Against 618 HiRISE stereo DEMs the median
+  per-DEM mean absolute error of the predicted pixels is 8.5 m, compared with 18.0 m for the 463 m MOLA gridded
+  DEM (11.2 m against 19.2 m at 359 held-out CTX stereo DEMs). The release contains the DEM with its provenance
+  mask and flags as single global Cloud-Optimized GeoTIFFs (COG), a global per-pixel uncertainty layer (typical
+  and 90th-percentile elevation error, an uncertainty class, and seam errors), an image-footprint layer that
+  identifies the CTX image and acquisition date behind each pixel, a 6 m mosaic of the CTX images used for
+  prediction, and a STAC catalog. All rasters share one projection: equirectangular on the Mars 2015 sphere
+  (IAU_2015:49910), planetocentric latitude, longitude -180 to 180. Heights are meters above the MOLA areoid.
+Documentation: https://github.com/planetarydems/open-data-examples/tree/main/mesa
+Contact: https://github.com/planetarydems/open-data-examples/issues
+ManagedBy: "[Planetary DEMs, Perron Group and Gaia Lab, Massachusetts Institute of Technology](https://planetarydems.org)"
+UpdateFrequency: Static. A new version is published when the model or the mosaic changes. Versions are kept under separate prefixes. Earlier versions are not removed without notice.
+Tags:
+  - aws-pds
+  - planetary
+  - satellite imagery
+  - elevation
+  - dem
+  - dtm
+  - geospatial
+  - mapping
+  - cog
+  - stac
+  - geopackage
+  - tiff
+  - global
+  - machine learning
+  - deep learning
+License: |
+  [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+  MESA is a derived product made at MIT. The input data (MRO CTX images, MOLA altimetry) are NASA Planetary Data
+  System products in the public domain.
+Citation: |
+  Mitchell, W. H., Stucky de Quay, G., Goudge, T. A., Li, E., Quayum, R., Freeman, W. T., and Perron, J. T. (2026).
+  MESA: Mars Elevation from Shading and Altimetry. Manuscript in preparation. The journal reference and the
+  dataset DOI will be added on publication.
+Resources:
+  - Description: |
+      MESA version 1 (prefix mars/mesa/v1/): the global 18 m DEM with its provenance mask and flags (three COGs of
+      1,185,494 x 592,747 pixels, float32 and uint8), the uncertainty layer (four global COGs on the same grid:
+      median error, 90th-percentile error, class, seam errors), the image footprint layer (per-tile image-index
+      and overlap-depth COGs for 648 tiles of 10 x 10 degrees, image tables as CSV, footprint polygons as
+      GeoPackage), the 6 m CTX image mosaic (one COG of 3,556,482 x 1,778,241 pixels, uint8), a STAC 1.1 catalog,
+      SHA-256 checksums, and documentation.
+    ARN: arn:aws:s3:::planetarydems
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[STAC catalog](https://planetarydems.s3.us-west-2.amazonaws.com/mars/mesa/v1/stac/catalog.json)'
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: MESA, the 18 m global DEM of Mars"
+      URL: https://github.com/planetarydems/open-data-examples/blob/main/mesa/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/planetarydems/open-data-examples/blob/main/mesa/get-to-know-a-dataset.ipynb
+      AuthorName: Planetary DEMs (MIT)
+      AuthorURL: https://planetarydems.org
+      Services:
+        - Amazon S3
+    - Title: MESA in QGIS, ArcGIS, GDAL, and rasterio
+      URL: https://planetarydems.org/#data
+      AuthorName: Planetary DEMs (MIT)
+      AuthorURL: https://planetarydems.org
+  Tools & Applications:
+    - Title: MESA source code and trained model weights
+      URL: https://github.com/planetarydems/mesa
+      AuthorName: W. H. Mitchell
+      AuthorURL: https://planetarydems.org
+    - Title: Interactive 3-D viewer of MESA
+      URL: https://planetarydems.org
+      AuthorName: Planetary DEMs (MIT)
+      AuthorURL: https://planetarydems.org
+  Publications:
+    - Title: "MESA: Mars Elevation from Shading and Altimetry"
+      URL: https://planetarydems.org
+      AuthorName: Mitchell WH, Stucky de Quay G, Goudge TA, Li E, Quayum R, Freeman WT, Perron JT
