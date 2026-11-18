@@ -1,0 +1,23 @@
+Name: Common Connectivity Matrix (CCM)
+Description: Multimodal brain connectivity datasets from multiple sources, harmonized into a common representation. CCM was developed for BRAIN CONNECTS, but its LinkML schemas can package connectivity data from any project. Synaptic connectivity, single-cell morphology, long-range projections, cell features and cell-type annotations are combined in one set of Delta Lake tables. Initial releases cover mouse primary visual cortex (VISp); later releases may add other brain regions and species.
+Documentation: https://alleninstitute.github.io/ccm-data-overview/
+Contact: yagmur.yener@alleninstitute.org
+ManagedBy: "[Allen Institute](https://alleninstitute.org/)"
+UpdateFrequency: New versioned releases are added as they become available; earlier releases are retained.
+Tags:
+  - neuroscience
+  - connectomics
+  - electron microscopy
+  - electrophysiology
+  - morphological reconstructions
+  - single-cell transcriptomics
+  - spatial transcriptomics
+  - parquet
+License: Schemas and code are under the MIT License (https://github.com/AllenInstitute/ConnectsCommonConnectivity/blob/main/LICENSE). Releases mostly repackage previously published datasets; for these, follow each source dataset's original terms and citation guidelines, listed in the documentation.
+Resources:
+  - Description: One folder per release, each holding Delta Lake tables (Parquet files plus _delta_log). Read with any Delta reader (Polars, deltalake, Spark, DuckDB delta_scan), and keep a release's directory layout intact when copying it locally.
+    ARN: arn:aws:s3:::connects-common-connectivity
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[List releases](https://connects-common-connectivity.s3.us-west-2.amazonaws.com/?list-type=2&delimiter=/)'
