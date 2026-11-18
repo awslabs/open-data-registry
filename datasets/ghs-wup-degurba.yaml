@@ -1,15 +1,17 @@
-Name: GHS-WUP-DEGURBA
-Description: This product contains the spatial raster dataset grids from 1975 to 2100 at 5 years interval representing the settlement classification per grid cell and, for the year 2025, the vector layers of the delineated boundaries of settlement entities (i.e. urban centres, UC, dense urban clusters, DUC, semi-dense urban clusters, SDUC, and rural clusters, RC) with main attributes, in vector files (country, area, population, built-up surface and population weighted centroid) and the list of country capitals with reference to the entity IDs.
+Name: GHSL World Urbanisation Prospects Projected Degree of Urbanisation (GHS-WUP-DEGURBA)
+Description: |
+  These gridded datasets represent the “Degree of Urbanisation” (DEGURBA) settlement classification per 1-km grid cell from 1975 to 2100 in 5-year time steps, derived from the GHS-WUP-POP gridded population projections. The DEGURBA methodology classifies human settlements into three to seven classes along the rural-urban continuum and provides a globally consistent way to delineate cities, towns, sub- and periurban settlements, villages, and scattered rural settlements. Class codes: 10 (water), 11 (Very low density rural area), 12 (Low density rural area), 13 (Rural cluster), 21 (Suburban or periurban area), 22 (Semi-dense urban cluster), 23 (Dense urban cluster), 30 (Urban centre).
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_wup_degurba_r2025a.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
-  - aws-pds
   - census
   - cities
   - classification
   - cog
+  - demography
+  - demographics   
   - disaster response
   - earth observation
   - geoscience
@@ -20,11 +22,10 @@ Tags:
   - planetary
   - population
   - tiff
-  - tiles
-  - urban
-License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+  - tiles 
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: Settlement typology codes by epoch Resolution of 1km - World Mollweide (EPSG:54009). Year 2025 includes entities shapefile and capitals list 
+  - Description: Degree of Urbanisation settlement class codes at 1 km resolution in five-year steps from 1975 to 2100 in World Mollweide projection (EPSG:54009) 
     ARN: arn:aws:s3:::jrc-ghsl/ghs-wup-degurba
     Region: eu-central-1
     Type: S3 Bucket

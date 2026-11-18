@@ -1,11 +1,10 @@
-Name: EMC-BUILT
-Description: The Exposure Mapping Component EMC-BUILT product consists in three datasets, named EMC-BUILT-S (built-up surface), EMC-BUILT-S-NRES (non-residential built-up surface) and EMC-BUILT-GREENNESS (vegetation fraction in the built-up domain). The data is produced for the year 2022 and based on Sentinel-2 data.
+Name: Exposure Mapping Component (EMC) EMC-BUILT
+Description: The EMC-BUILT product consists of three datasets, including EMC-BUILT-S (gridded built-up surface estimates), EMC-BUILT-S-NRES (non-residential built-up surface estimates) and EMC-BUILT-GREENNESS (NDVI within and nearby the built-up domain). This global dataset has been produced for the year 2022 and is based on Sentinel-2 multispectral data.
 Documentation: https://human-settlement.emergency.copernicus.eu/emc_built_s.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
-  - aws-pds
   - classification
   - cog
   - disaster response
@@ -19,21 +18,21 @@ Tags:
   - planetary
   - tiff
   - tiles
-License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: The EMC built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+  - Description: EMC built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3 and 30 arcsecond spatial resolution, globally for the year 2022.    
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-s
     Region: eu-central-1
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
-  - Description: The GHS “non-residential” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+  - Description: EMC “non-residential” (NRES) built-up surface raster layer in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3 and 30 arcsecond spatial resolution, globally for the year 2022.
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-s-nres
     Region: eu-central-1
     Type: S3 Bucket
     Explore:
       - '[Browse Bucket](https://jrc-ghsl.s3.amazonaws.com/index.html)'
-  - Description: The EMC Greenness layer represents the fraction of vegetation (NDVI) within and around built-up areas. Raster is in World Mollweide (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3ss and 30ss spatial resolution. Spatial extent is Global and temporal extent is year 2022
+  - Description: The EMC Greenness layer represents the Normalized Difference Vegetation Index (NDVI) within and around built-up areas. The gridded data are available in World Mollweide projection (EPSG:54009) at 10m, 100m and 1000m spatial resolution; also available in WGS 1984 (EPSG:4326) at 3 and 30 arcsecond spatial resolution, globally for the year 2022.
     ARN: arn:aws:s3:::jrc-ghsl/emc-built-greenness
     Region: eu-central-1
     Type: S3 Bucket

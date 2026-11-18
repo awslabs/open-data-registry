@@ -1,11 +1,10 @@
-Name: GHS-WUP-BUILT-S
-Description: This product contains the spatial raster dataset grids representing the distribution of the total built-up (BU) surfaces estimates between 1975 and 2100 in 5 years intervals. The data between 1975 and 2020 is obtained from the GHS-BUILT-S R2023 product and the 2025-2100 total built-up surface projections are computed considering a stable non-residential built-up surface and modelling the growth of the residential component of the total built-up surface.
+Name: GHSL World Urbanisation Prospects projected gridded built-up surface estimates (GHS-WUP-BUILT-S)
+Description: Gridded datasets representing estimates of the distribution of built-up surface from 1975 to 2100 in 5-year time steps. The built-up surface estimates from 1975 to 2020 are obtained from the GHS-BUILT-S R2023 product, while the projected estimates from 2025 to 2100 are computed using the CRISP model, assuming a stable share of non-residential built-up surface while modelling the growth of the residential component of the total built-up surface.
 Documentation: https://human-settlement.emergency.copernicus.eu/ghs_wup_built_s_r2025a.php
 Contact: JRC-GHSL-DATA@ec.europa.eu
 ManagedBy: "[JRC](https://joint-research-centre.ec.europa.eu)"
 UpdateFrequency: NA
 Tags:
-  - aws-pds
   - classification
   - cog
   - disaster response
@@ -18,10 +17,10 @@ Tags:
   - mapping
   - planetary
   - tiff
-  - tiles
-License: The GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+  - tiles 
+License: GHSL data are provided under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 Resources:
-  - Description: Spatial raster dataset grids in World Mollweide (EPSG:54009) at 1km spatial resolution; also available in WGS 1984 (EPSG:4326) at 30ss spatial resolution. Spatial extent is Global and temporal extent is from 1975 to 2100 at 5 years interval representing the total built-up surfaces estimates.
+  - Description: Spatial raster datasets in World Mollweide projection (EPSG:54009) at 1km spatial resolution; also available in WGS 1984 (EPSG:4326) at 30 arcsecond spatial resolution. Data are available globally from 1975 to 2100 in 5-year steps and represent the estimated total built-up surface per grid cell in square metres.
     ARN: arn:aws:s3:::jrc-ghsl/ghs-wup-built-s
     Region: eu-central-1
     Type: S3 Bucket

@@ -1,9 +1,17 @@
-Name: Landsat Geometric Median and Absolute Deviations (GeoMAD) over the Pacific.
+Name: Digital Earth Pacific Annual Surface Reflectance Composite (Landsat, GeoMAD, 30 m)
 Description: |
-  The GeoMAD is derived from Landsat surface reflectance data.
-  The data are masked for cloud, shadows and other image artefacts
-  using the associated pixel quality product to help provide as
-  clear a set of observations as possible from which to calculate the medians.
+  This dataset provides annual cloud-free composite imagery derived from
+  Landsat surface reflectance observations across the Pacific region using
+  geometric median and absolute deviation (GeoMAD) methods. The data are
+  masked for cloud, shadows and other image artefacts using the associated
+  pixel quality product to help provide as clear a set of observations as
+  possible from which to calculate the medians.
+
+  Along with the geometric median surface reflectance bands, the GeoMAD
+  includes three measures of variability (Euclidean, spectral and Bray-
+  Curtis median absolute deviations: emad, smad and bcmad) and a count of
+  clear observations. The dataset is available annually from 2000 and
+  supports monitoring of vegetation, land cover, and coastal environments.
 Documentation: https://digitalearthpacific.org/#/applications
 Contact: dep@spc.int
 ManagedBy: "[Pacific Community (SPC)](https://www.spc.int/)"
@@ -13,22 +21,30 @@ Collabs:
     Tags:
       - satellite imagery
 Tags:
+- aws-pds
 - earth observation
+- satellite imagery
+- land cover
 - geoscience
 - geospatial
 License: |
   Digital Earth Pacific Data is available under the Creative Commons
   Attribution 4.0 International license https://creativecommons.org/licenses/by/4.0/
 Resources:
-- Description: Data access
-  ARN: arn:aws:s3:::dep-public-data
+- Description: Annual Surface Reflectance Composite (Landsat, GeoMAD, 30 m) Cloud Optimized GeoTIFFs
+  ARN: arn:aws:s3:::dep-public-data/dep_ls_geomad
   Region: us-west-2
   Type: S3 Bucket
+  Explore:
+  - '[STAC V1.0.0 endpoint](https://stac.digitalearthpacific.org/collections/dep_ls_geomad)'
 DataAtWork:
   Tutorials:
   Tools & Applications:
   - Title: "Digital Earth Pacific Map"
     URL: https://maps.digitalearthpacific.org/
+    AuthorName: Digital Earth Pacific Contributors
+  - Title: "Digital Earth Pacific STAC Browser"
+    URL: https://stac-browser.digitalearthpacific.org/
     AuthorName: Digital Earth Pacific Contributors
   Publications:
   - Title: Digital Earth Pacific Open Data Access Documentation
