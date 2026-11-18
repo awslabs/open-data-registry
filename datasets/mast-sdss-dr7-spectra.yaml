@@ -1,0 +1,38 @@
+Name: SDSS DR7 Spectra
+Description: |
+  The Sloan Digital Sky Survey (SDSS) Data Release 7 (DR7) provides imaging over 11,663 deg^2, with five-band photometry for 357 million objects. 
+  It includes regions in the Northern and Southern Galactic Caps, as well as areas at low Galactic latitude. 
+  The survey has completed spectroscopy over 9,380 deg^2, collecting over 1.6 million spectra in total from galaxies, quasars, and stars.
+Contact: archive@stsci.edu
+Documentation: |
+  [The SDSS Legacy Archive at MAST](https://archive.stsci.edu/missions-and-data/sdss). 
+  [The SDSS DR7 website](https://classic.sdss.org/dr7/).
+ManagedBy: "[Space Telescope Science Institute](http://www.stsci.edu/)"
+Citation: If using this data in published research, visit the [SDSS Credits page](https://classic.sdss.org/collaboration/credits.php) for the appropriate citation.
+UpdateFrequency: Never
+Tags:
+  - aws-pds
+  - astronomy
+License: Public domain. Attribution required for refereed scientific papers.
+Resources:
+  - Description: SDSS DR7 spectra files
+    ARN: arn:aws:s3:::stpubdata/sdss/public/hats/sdss_dr7_spectra
+    Region: us-east-1
+    Type: S3 Bucket
+    RequesterPays: False
+DataAtWork:
+  Tutorials:
+    - Title: "Exploring Stellar Spectra with SDSS SEGUE"
+      URL: https://spacetelescope.github.io/mast_notebooks/notebooks/SDSS/SDSS_SEGUE_spectra/sdss_stellar_spectra.html
+      AuthorName: Julie Imig
+    - Title: "Using LSDB to open and inspect HATS catalogs"
+      URL: https://docs.lsdb.io/en/latest/tutorials/catalog_object.html
+      AuthorName: Sandro Campos, Melissa DeLucchi, and Sean McGuire
+    - Title: "Full set of tutorials using LSDB to analyze HATS-format catalogs"
+      URL: https://docs.lsdb.io/en/latest/index.html
+      AuthorName: LINCC Frameworks
+  Tools & Applications:
+  Publications: 
+    - Title: "The Seventh Data Release of the Sloan Digital Sky Survey"
+      URL: https://ui.adsabs.harvard.edu/abs/2009ApJS..182..543A/abstract
+      AuthorName: Abazajian et al.
