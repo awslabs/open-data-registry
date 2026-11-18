@@ -1,0 +1,38 @@
+Name: ALADIN Czech Republic 1 km Weather Forecasts
+Description: Hourly 72-hour numerical weather prediction forecasts for the Czech Republic from the ALADIN limited-area model operated by the Czech Hydrometeorological Institute (ČHMÚ / CHMI), on its 1 km CZ_1km domain (48.5–51.1 °N, 12.0–19.0 °E). Every model run (00, 06, 12 and 18 UTC) is archived with 24 surface and near-surface parameters, including 2 m temperature and humidity, 10 m wind, mean sea level pressure, cloud cover, visibility, precipitation (total, rain, snow, type), snow water equivalent, CAPE, a lightning diagnostic, sunshine duration and surface radiation. ČHMÚ publishes the GRIB files for only a few days; this dataset keeps them as a continuous archive starting in June 2025, converted to cloud-optimized Zarr v3 stores (one store per parameter and calendar month) that can be read directly with xarray without downloading whole files.
+Documentation: https://github.com/dandamasek/open-data-examples/tree/main/aladin-cz-forecast
+Contact: https://github.com/dandamasek/open-data-examples/issues
+ManagedBy: David Sladek
+UpdateFrequency: Daily. Once per day the four ALADIN runs (00, 06, 12 and 18 UTC) of the previous day are appended to the store of the current month.
+Tags:
+  - aws-pds
+  - weather
+  - meteorological
+  - forecast
+  - atmosphere
+  - climate
+  - environmental
+  - geospatial
+  - zarr
+License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Source data © Czech Hydrometeorological Institute (ČHMÚ), https://opendata.chmi.cz/. The data were converted from GRIB to Zarr and limited to the first 72 forecast hours; values were not otherwise modified.
+Citation: "Source: Czech Hydrometeorological Institute (ČHMÚ), ALADIN CZ_1km model output, https://opendata.chmi.cz/, licensed under CC BY 4.0."
+Resources:
+  - Description: ALADIN CZ_1km forecasts as Zarr v3 stores with consolidated metadata, one store per parameter and calendar month, at meteo_data/<YYYYMM>/<PARAMETER>.zarr (e.g. meteo_data/202506/CLSTEMPERATURE.zarr). Dimensions (time, step, latitude, longitude) = (model run, forecast hour, 290, 501), float32, Zstd compression.
+    ARN: arn:aws:s3:::DOPLNIT-bucket-name
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://DOPLNIT-bucket-name.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new objects in the bucket
+    ARN: arn:aws:sns:us-west-2:DOPLNIT:DOPLNIT-bucket-name-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: ALADIN Czech Republic 1 km Weather Forecasts"
+      URL: https://github.com/dandamasek/open-data-examples/blob/main/aladin-cz-forecast/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/dandamasek/open-data-examples/blob/main/aladin-cz-forecast/get-to-know-a-dataset.ipynb
+      AuthorName: David Sladek
+      AuthorURL: https://github.com/dandamasek
+      Services:
+        - Amazon S3
