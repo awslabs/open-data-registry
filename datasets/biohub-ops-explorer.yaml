@@ -1,0 +1,62 @@
+# DRAFT — prepared for review before submission.
+# Sources checked 2026-10-29:
+# https://biohub.ai/ops-explorer/about
+# https://chanzuckerberg.github.io/ops-schema/
+# Bucket ARN and region verified from its public S3 response headers.
+# Confirm AWS Open Data sponsorship before adding the aws-pds tag.
+Name: OPS Explorer — Optical Pooled Screening Data
+Description: >-
+  OPS Explorer brings together optical pooled screening datasets that link
+  genetic perturbations to cellular phenotypes measured by microscopy.
+  The data include cell images, morphological profiles, perturbation-level
+  summaries, and associated experimental metadata, with complementary
+  single-cell gene expression data where available. Researchers can explore
+  collections in an interactive viewer or download files for analysis.
+Documentation: https://chanzuckerberg.github.io/ops-schema/
+Contact: opsdata@biohub.org
+ManagedBy: "[Biohub](https://biohub.org)"
+UpdateFrequency: Collections are added on an ad hoc basis as they are submitted.
+Tags:
+  - Biohub
+  - biology
+  - bioinformatics
+  - cell biology
+  - cell imaging
+  - genetic
+  - imaging
+  - life sciences
+  - microscopy
+  - zarr
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: >-
+  Please acknowledge the data contributors, cite the publications associated
+  with the collections used, and cite OPS Explorer. See the documentation
+  and collection pages for attribution details.
+Resources:
+  - Description: >-
+      Optical pooled screening data used by OPS Explorer, including Zarr
+      image stores and AnnData (.h5ad) files containing cellular features
+      and perturbation-level summaries. Contents vary by collection;
+      consult the collection pages and documentation to select files.
+    ARN: arn:aws:s3:::ops-explorer-public
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[OPS Explorer collections](https://biohub.ai/ops-explorer/about)'
+DataAtWork:
+  Tutorials:
+    - Title: OPS Explorer Quickstart
+      URL: https://chanzuckerberg.github.io/ops-schema/tutorials/quickstart/
+      AuthorName: Biohub
+    - Title: Download OPS Explorer data with the Biohub data CLI
+      URL: https://chanzuckerberg.github.io/ops-schema/cli/
+      AuthorName: Biohub
+  Tools & Applications:
+    - Title: OPS Explorer
+      URL: https://biohub.ai/ops-explorer/about
+      AuthorName: Biohub
+    - Title: Biohub Data CLI
+      URL: https://github.com/chanzuckerberg/biohub-data-cli
+      AuthorName: Biohub
+ADXCategories:
+  - Healthcare & Life Sciences Data
