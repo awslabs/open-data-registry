@@ -55,14 +55,10 @@ RegistryEntryAdded: "2026-08-25"
 RegistryEntryLastModified: "2026-11-20"
 
 Resources:
-  - Description: Electrophysiological recordings and associated metadata from neural
-      cultures performing the spatio-temporal handwritten digit classification
-      task. Recordings are stored as chunked HDF5 files with an accompanying CSV
-      experimental manifest.
+  - Description: Electrophysiological recordings and associated metadata from neural cultures performing the spatio-temporal handwritten digit classification task. Recordings are stored as chunked HDF5 files with an accompanying CSV experimental manifest.
     ARN: arn:aws:s3:::cortical-labs-open-data-mnist-v0-044986459918-us-east-1-an
     Region: us-east-1
     Type: S3 Bucket
-
   - Description: Notifications for new handwritten-digit-neural-cultures data
     ARN: arn:aws:sns:us-east-1:044986459918:cortical-labs-open-data-mnist-v0_object-created
     Region: us-east-1
@@ -81,7 +77,7 @@ DataAtWork:
     - Title: "Handwritten Digit classification with neural cultures is influenced by neural architecture, network dynamics, and decoding methods"
       URL: https://www.biorxiv.org/content/10.64898/2026.08.10.743829v1
       AuthorName: Alon Loeffler et al.
-      AuthorURL: https://www.biorxiv.org/content/10.64898/2026.08.10.743829v1
+      AuthorURL: https://corticallabs.com/
 
 ADXCategories:
   - Healthcare & Life Sciences Data
