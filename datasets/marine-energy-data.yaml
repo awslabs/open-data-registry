@@ -1,4 +1,4 @@
-Name: Department of Energy's Marine Energy Data Lake 
+Name: "Department of Energy's Marine Energy Data Lake"
 Description: |
   Data released from projects funded by the Department of Energy's Water Power Technologies Office (DOE WPTO) 
   that are too large or complex to be conveniently accessed by traditional means. The Marine Energy data lake 
@@ -25,7 +25,7 @@ Resources:
     Region: us-west-2
     Type: S3 Bucket
     Explore:
-    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data)'
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data)'  
   - Description: "[Tidal Resource Data from Sequim Bay Inlet, WA, August 2020](https://mhkdr.openei.org/submissions/395)"
     ARN: arn:aws:s3:::marine-energy-data/primre/sequim-tidal-resource/
     Region: us-west-2
@@ -62,6 +62,18 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=uw-passive-acoustics%2F)'
+  - Description: "NREL MOIS Data for NWEI Azura"
+    ARN: arn:aws:s3:::marine-energy-data/mois/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=mois%2F)'
+  - Description: "[Ocean Surface Wave Model Hindcast Data-US East Coast, Gulf of Mexico, Caribbean Sea (Puerto Rico & US Virgin Islands)](https://mhkdr.openei.org/submissions/629)"
+    ARN: arn:aws:s3:::marine-energy-data/swan/
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Dataset](https://data.openei.org/s3_viewer?bucket=marine-energy-data&prefix=swan%2F)'
 DataAtWork:
   Tools & Applications:
   Publications:

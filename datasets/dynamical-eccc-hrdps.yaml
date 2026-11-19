@@ -1,0 +1,40 @@
+Name: ECCC HRDPS - dynamical.org Icechunk Zarr
+Description: |
+    The High Resolution Deterministic Prediction System (HRDPS) is the 2.5 km limited-area weather forecast model operated by Environment and Climate Change Canada (ECCC), Canada's national meteorological service. Its continental domain covers Canada and the northern United States at a resolution that captures fine-scale weather features.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [ECCC HRDPS forecast](https://dynamical.org/catalog/eccc-hrdps-forecast/) - Weather forecasts from the High Resolution Deterministic Prediction System (HRDPS) continental domain, operated by Environment and Climate Change Canada (ECCC).
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "ECCC HRDPS forecast: Forecasts initialized every 6 hours"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: ECCC HRDPS Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-eccc-hrdps
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-eccc-hrdps.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-eccc-hrdps-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "ECCC HRDPS forecast — Quickstart"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/eccc-hrdps-forecast.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/eccc-hrdps-forecast.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
