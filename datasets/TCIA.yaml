@@ -1,0 +1,75 @@
+Name: The Cancer Imaging Archive (TCIA)
+Description: This dataset holds Cancer-related imaging and other data that has been curated by The Cancer Imaging Archive (TCIA) team and that is not currently available in the Imaging Data Commons (IDC - see https://registry.opendata.aws/nci-imaging-data-commons/). The data includes whole slide pathology data in a variety of formats, data in the NFiTI or BIDS research formats, as well as data in various multi-media formats such as mpeg, jpeg, tiff, etc. Data from TCIA in DICOM format is copied to IDC, and is not duplicated here. Hence, see both AWS datasets to get all publicly-available TCIA data.
+Documentation: https://cancerimagingarchive.net
+Contact: help@cancerimagingarchive.net
+ManagedBy: The Cancer Imaging Archive team, centered at the University of Arkansas for Medical Sciences, under contract to the National Cancer Institute Cancer Imaging Program administered by Frederick National Laboratory
+UpdateFrequency: Rolling updates, after approved datasets complete the data curation process.  Typically one or more datasets come out each month.
+Tags:
+  - cancer
+  - cell imaging
+  - computed tomography
+  - COVID-19
+  - csv
+  - dicom
+  - digital pathology
+  - image processing
+  - imaging
+  - machine learning
+  - mammography
+  - medical image computing
+  - medical imaging
+  - metadata
+  - microscopy
+  - multimedia
+  - nfiti
+  - post-processing
+  - radiology
+  - segmentation
+  - tiff
+  - volumetric imaging
+  - x-ray
+License: CC By, either 4.0 or 3.0, in very few cases NC.  The exact licenses used by each collection is described on the landing page for each collection, found by following the links in the collection table at https://www.cancerimagingarchive.net/browse-collections/.  The most common license is CC By 4.0 (Attribution 4.0 International)
+Citation: The landing page for each collection includes a section titled, "Citations & Data Usage Policy", with collection-specific instructions for citing that collection.  Each collection also is referenced by a Digital Object Identifier (DOI).  See also the "Attribution Requirements" section at https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/
+Resources:
+  - Description: There are two main prefixes in the TCIA open data bucket. The first, "manifests/", prefixes objects named for each TCIA collection. These manifest objects are comma separated value files that list objects that are part of a particular version or subset of a collection. These manifests correspond to the Aspera Faspex packages referenced on TCIA's main web site and are suitable for feeding into programs used to analyze or download the data in the collection. The second top level prefix, "data/" organizes the data objects themselves that are listed in those manifests. The objects in "data/" have subprefixes identifying the collection the data object belongs to.  The format is "data/<collection name>/<object name>".  Objects prefixed by "data/" may be referred to by more than one manifest in "manifests/".
+    ARN: arn:aws:s3:::tcia-open-data
+    Region: TBD
+    Type: S3 Bucket
+    Explore: aws s3 ls --no-sign-request s3://tcia-open-data/
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset: TCIA
+      URL: https://github.com/TCIA/aws-open-data-examples/TCIA/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/TCIA/aws-open-data-examples/TCIA/get-to-know-a-dataset.ipynb
+      AuthorName: The Cancer Imaging Archive Team
+      AuthorURL: https://www.cancerimagingarchive.net
+      Services:
+  Tools & Applications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title: The public cancer radiology imaging collections of The Cancer Imaging Archive
+      URL: https://www.nature.com/articles/sdata2017124
+      AuthorName: Prior, F., Smith, K., Sharma, A., Kirby, J., Tarbox, L., Clark, K., et al
+      AuthorURL: https://www.cancerimagingarchive.net
+    - Title: The Cancer Imaging Archive (TCIA):  Maintaining and Operating a Public Information Repository
+      URL: https://link.springer.com/article/10.1007/s10278-013-9622-7
+      AuthorName: Clark K, Vendt B, Smith K, Freymann J, Kirby J, Koppel P, et al
+      AuthorURL: https://www.cancerimagingarchive.net
+    - Title: TCIA: An Information Resource to Enable Open Science
+      URL: https://ieeexplore.ieee.org/document/6609742 https://pmc.ncbi.nlm.nih.gov/articles/PMC4257783/
+      AuthorName: Prior F, Clark K, Commean P, Freymann J, Jaffe C, Kirby J, et al
+      AuthorURL: https://www.cancerimagingarchive.net
+    - Title: De-identification of Medical Images with Retention of Scientific Research Value
+      URL: https://pubs.rsna.org/doi/10.1148/rg.2015140244 https://pmc.ncbi.nlm.nih.gov/articles/PMC4450976/
+      AuthorName: Moore S, Maffitt D, Smith K, Kirby J, Clark K, Freymann J, Vendt B, et al
+      AuthorURL: https://www.cancerimagingarchive.net
+    - Title: Over 3000 publications have referenced TCIA data.  See the list at
+      URL: https://www.cancerimagingarchive.net/publications/
+      AuthorName: Various. See the complete list at
+      AuthorURL: https://www.cancerimagingarchive.net/publications/
+DeprecatedNotice:
+ADXCategories:
+  -     
