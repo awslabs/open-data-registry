@@ -18,9 +18,17 @@ mapping:
   Description:
     type: str
     required: True
+  # Documentation is deprecated, use DocumentationLinks instead.
   Documentation:
     type: str
+    required: False
+  DocumentationLinks:
+    type: seq
     required: True
+    sequence:
+      - type: str
+        pattern: ^(https?:\/\/)?([\da-z\.\-\_]+)\.([a-z\.]{2,63})(\/.*)*\/?$
+        required: True
   Contact:
     type: str
     required: True
