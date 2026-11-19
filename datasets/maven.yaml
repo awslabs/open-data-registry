@@ -1,0 +1,35 @@
+Name: NASA's Mars Atmosphere and Volatile Evolution (MAVEN) Mission 
+Description: The MAVEN mission has provided a long-term record of the Mars' upper atmosphere, ionosphere, and its dynamic interaction with the solar wind since its arrival at Mars in 2014. The dataset contains correlative measurements from a suite of instruments, including in-situ particles and fields data as well as remote-sensing ultraviolet imagery. Key data products characterize the composition and structure of the upper atmosphere, the escape rates of critical gases like oxygen and hydrogen to space, and the energy inputs from the Sun that drive this atmospheric loss.
+Documentation: https://lasp.colorado.edu/maven/sdc/public/
+Contact: mavensdc@lasp.colorado.edu
+ManagedBy: "[LASP](https://lasp.colorado.edu)"
+UpdateFrequency: Quarterly (Feb. 15 / May 15 / Aug. 15 / Nov. 15)
+Tags:
+  - aws-pds
+  - mars
+  - aeronomy
+  - planetary
+  - astronomy
+  - atmosphere
+  - physics
+  - heliophysics
+License: There are no restrictions on the use, access, and/or download of data from the NASA project.
+Resources:
+  - Description: All MAVEN public data
+    ARN: arn:aws:s3:::nasa-maven-data
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore: https://us-west-2.console.aws.amazon.com/s3/buckets/nasa-maven-data
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know A Dataset: NASA's Mars Atmosphere and Volatile Evolution (MAVEN) Mission 
+      URL: https://github.com/MAVENSDC/maven-data-use-tutorial/blob/main/maven_data_usage_tutorial.ipynb
+      NotebookURL: https://github.com/MAVENSDC/maven-data-use-tutorial/blob/main/maven_data_usage_tutorial.ipynb
+      AuthorName: Bryan Harter
+      Services: Amazon S3
+  Publications:
+    - Title: The Mars Atmosphere and Volatile Evolution (MAVEN) Mission
+      URL: https://ui.adsabs.harvard.edu/abs/2015SSRv..195....3J/abstract
+      AuthorName: Jakosky, B., Lin, R., Grebowsky, J., Luhmann, J., Mitchell, D., Beutelschies, G, et al
+ADXCategories:
+  - Public Sector Data
