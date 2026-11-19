@@ -15,6 +15,11 @@ else
 fi
 
 
+# Unit test the schema extensions
+echo "Running ext.py unit tests..."
+python3 -B -m unittest _scripts/test_ext.py
+
+
 # Validate yaml
 echo "Validating yamls against schema..."
 ls datasets |
