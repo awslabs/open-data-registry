@@ -1,0 +1,43 @@
+Name: RSNA Intracerebral Hemorrhage, Intraventricular Hemorrhage and Perihematomal Edema CT Segmentation Dataset
+Description: "This dataset provides voxel-level segmentations of intracerebral hemorrhage (ICH), intraventricular hemorrhage (IVH) and perihematomal edema (PHE) for 359 non-contrast head CT examinations (357 patients) selected from the RSNA 2019 Intracranial Hemorrhage Detection dataset (https://mira.rsna.org/dataset/1). Each examination is provided as a NIfTI CT volume with a matching three-label NIfTI mask. A team at the Université de Montréal and the Centre hospitalier de l'Université de Montréal (CHUM) created the masks, and the dataset is the training and internal test set of a published, externally tested benchmark model (IIPS), described in Wu et al., Radiology Advances 2026 (https://doi.org/10.1093/radadv/umag036). The 183-examination external test set from CHUM is not included."
+Documentation: https://doi.org/10.1093/radadv/umag036
+Contact: informatics@rsna.org
+ManagedBy: 'Radiological Society of North America (https://www.rsna.org/)'
+UpdateFrequency: The dataset may be updated with additional or corrected data on a need-to-update basis.
+Tags:
+  - aws-pds
+  - radiology
+  - medical imaging
+  - medical image computing
+  - machine learning
+  - computer vision
+  - csv
+  - labeled
+  - segmentation
+  - nifti
+  - neuroimaging
+  - computed tomography
+  - x-ray tomography
+  - benchmark
+  - life sciences
+License: "Access requires individual registration at https://mira.rsna.org. Use is limited to non-commercial research and governed by the RSNA MIRA Dataset Research Use Agreement, which each user accepts on MIRA before downloading. If you publish work using the data, cite the dataset and the publications in the citation for this entry."
+Citation: "RSNA Intracerebral Hemorrhage, Intraventricular Hemorrhage and Perihematomal Edema CT Segmentation Dataset, October 2026 [https://doi.org/10.1148/dataset.msich.2026]. Wu AN, et al. Multiclass Segmentation of Intracerebral Hemorrhage, Intraventricular Hemorrhage, and Perihematomal Edema: Public CT Dataset and Benchmark. Radiology Advances 2026 [https://doi.org/10.1093/radadv/umag036]. Flanders AE, et al. Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge. Radiology: Artificial Intelligence 2020;2(3):e190211 [https://doi.org/10.1148/ryai.2020190211]."
+Resources:
+  - Description: Zip archive containing NIfTI (.nii.gz) CT volumes and segmentation masks, and a CSV file mapping each examination to its RSNA 2019 identifiers
+    ARN: arn:aws:s3:::intracerebral-hemorrhage-multiclass-segmentation
+    Region: us-west-2
+    Type: S3 Bucket
+    ControlledAccess: https://mira.rsna.org/dataset/11
+DataAtWork:
+  Tools & Applications:
+    - Title: "IIPS (IPH-IVH-PHE Segmentation): benchmark nnU-Net model trained on this dataset, distributed as a Docker image"
+      URL: https://avnir-models-documentation.readthedocs.io/models/iips.html
+      AuthorName: avnirlab
+      AuthorURL: https://hub.docker.com/r/avnirlab/iips
+  Publications:
+    - Title: "Multiclass Segmentation of Intracerebral Hemorrhage, Intraventricular Hemorrhage, and Perihematomal Edema: Public CT Dataset and Benchmark"
+      URL: https://doi.org/10.1093/radadv/umag036
+      AuthorName: Wu AN, Portafaix A, Pilon D, Cusson T, Panetta L, Noël MJ, et al.
+    - Title: "Construction of a Machine Learning Dataset through Collaboration: The RSNA 2019 Brain CT Hemorrhage Challenge"
+      URL: https://doi.org/10.1148/ryai.2020190211
+      AuthorName: Flanders AE, Prevedello LM, Shih G, Halabi SS, Kalpathy-Cramer J, Ball R, et al.
