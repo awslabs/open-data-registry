@@ -1,0 +1,77 @@
+Name: Real Record — Open Civic Data: Local Government Transcripts and Fiscal Records
+
+Description: |
+  Open government transparency infrastructure linking four layers of civic accountability data
+  across Washington State local jurisdictions. Transcript segments: speaker-attributed,
+  timestamped speech from city council, planning commission, and county council meetings
+  (2019–present). Fiscal joins: fund-level revenue and expenditure histories, tax levy
+  authorizations, sales tax, impact fees, connection fees, and ballot-measure linkages
+  (1999–present). Legislative joins: 908 tracked ordinances, resolutions, contract awards,
+  grant acceptances, and state bills cross-referenced to meetings with vote tallies and dollar
+  amounts. Written briefings: machine-assisted meeting summaries with topic tags and fiscal
+  cross-references. Current coverage: Bellingham and Whatcom County, WA; King County in active
+  pipeline; 281 WA cities tracked for expansion. CC BY 4.0. ~3 GB text.
+
+Documentation: "[Data Dictionary & Methodology](https://realrecord.org/methodology)"
+
+Contact: brian@realhousingreform.org
+
+ManagedBy: "[Real Housing Reform Initiative](https://realrecord.org)"
+
+UpdateFrequency: Update cadence varies by jurisdiction size -- daily for large cities (100k+,
+  e.g., Seattle), weekly for mid-size jurisdictions (e.g., Bellingham, Whatcom County), and at
+  least monthly for smaller cities and lower-frequency meeting bodies (tourism boards, advisory
+  committees, etc.). Fiscal data is updated quarterly when jurisdictions publish new budget
+  documents. New jurisdictions are added on a rolling basis across all 281 incorporated WA
+  cities and 39 counties; all four data layers connect automatically on import.
+
+Tags:
+  - aws-pds
+  - civic
+  - government records
+  - governance
+  - government spending
+  - legal data
+  - natural language processing
+  - text analysis
+  - speech recognition
+  - transparency
+  - politics
+  - parquet
+  - json
+  - us
+  - analytics
+  - socioeconomic
+
+License: "[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+
+Citation: |
+  Real Housing Reform Initiative. (2024–present). Real Record — Open Civic Data:
+  Local Government Transcripts and Fiscal Records [Data set]. AWS Open Data.
+  https://registry.opendata.aws/real-record-civic-data/
+
+ADXCategories:
+  - "Public Sector Data"
+  - "Financial Services Data"
+
+Resources:
+  - Description: >
+      Full corpus of transcript segments, fiscal joins (revenue, expenditure, levies, impact fees,
+      connection fees), legislative joins (ordinances, resolutions, state legislation), and written
+      briefings. Available in Parquet (analytics), JSON-Lines (streaming/pipeline), and Markdown
+      formats. Organized by format, data layer, jurisdiction, and year using Hive partition
+      conventions. No AWS credentials required -- bucket is publicly readable.
+    ARN: arn:aws:s3:::real-record-civic-data
+    Region: us-west-2
+    Type: S3 Bucket
+
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Real Record — Open Civic Data"
+      URL: https://github.com/realhousingreform/open-data-examples/blob/main/real-record/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/realhousingreform/open-data-examples/blob/main/real-record/get-to-know-a-dataset.ipynb
+      AuthorName: Real Housing Reform Initiative
+      AuthorURL: https://realrecord.org
+      Services:
+        - Amazon S3
+        - Amazon Athena
