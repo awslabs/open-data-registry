@@ -11,7 +11,7 @@ Description: |
   include neuronal monolayers, three-dimensional neural organoids, and modular
   cultures, including cortical and hippocampal neuronal lineages.
 
-  The dataset contains approximately 85 GB of electrophysiological recordings
+  The dataset contains approximately 150 GB of electrophysiological recordings
   and associated experimental and classification metadata across 52 experimental
   recordings. Recordings are provided as chunked HDF5 files, accompanied by a
   CSV manifest describing each experimental run and its associated classification
@@ -19,7 +19,7 @@ Description: |
 
 Documentation: https://github.com/Cortical-Labs/handwritten-digit-neural-cultures
 
-Contact: alon@corticallabs.com
+Contact: open-data@corticallabs.com
 
 ManagedBy: "[Cortical Labs](https://corticallabs.com/)"
 
@@ -36,7 +36,11 @@ Tags:
   - life sciences
   - neuroscience
   - neurophysiology
-  - machine learning
+  - biocomputing
+  - neurocomputing
+  - MNIST
+  - neurons
+  - MEA
 
 License: "[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)"
 
@@ -48,18 +52,21 @@ Citation: |
   bioRxiv 2026.08.10.743829. https://doi.org/10.64898/2026.08.10.743829
 
 RegistryEntryAdded: "2026-08-25"
-RegistryEntryLastModified: "2026-08-25"
+RegistryEntryLastModified: "2026-11-20"
 
 Resources:
-  - Description: |
-      Electrophysiological recordings and associated metadata from neural
+  - Description: Electrophysiological recordings and associated metadata from neural
       cultures performing the spatio-temporal handwritten digit classification
       task. Recordings are stored as chunked HDF5 files with an accompanying CSV
       experimental manifest.
-    # Replace these two placeholders after AWS confirms the sponsored account is linked.
-    ARN: TBD
-    Region: TBD
+    ARN: arn:aws:s3:::cortical-labs-open-data-mnist-v0-044986459918-us-east-1-an
+    Region: us-east-1
     Type: S3 Bucket
+
+  - Description: Notifications for new handwritten-digit-neural-cultures data
+    ARN: arn:aws:sns:us-east-1:044986459918:cortical-labs-open-data-mnist-v0_object-created
+    Region: us-east-1
+    Type: SNS Topic
 
 DataAtWork:
   Tutorials:
