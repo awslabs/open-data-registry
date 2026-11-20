@@ -1,0 +1,49 @@
+Name: UKCP18 Probabilistic climate projections
+Description: |
+   The dataset contains probabilistic climate projections for the UK over land from 1961-2100 and projections of probabilistic climate extremes.
+   <br><br>
+   The UKCP18 probabilistic projections consist of 3000 individual realizations of time-dependent climate change plus a set of probability distributions, derived from the realizations and presented as probability density functions (PDFs) and cumulative distribution functions (CDFs). These products are provided on a 25-km national OSGB grid and for 43 aggregated regions. The data is available for RCP2.6, RCP4.5, RCP6.0, RCP8.5 and SRESA1B emission scenarios and Global warming levels 1.5, 2.0, 2.5, 3.0 and 4.0.
+   <br><br>
+   The UKCP18 probabilistic extremes dataset shows 21st century projections of 20-, 50- and 100-year return levels of daily maximum surface air temperature (TXx), daily precipitation (Rx1day) and 5-day accumulated precipitation (Rx5day) at 25km resolution. Results are available for five emissions scenarios (RCP2.6, 4.5, 6.0 and 8.5, and SRES A1B). Data are presented as absolute future values in °C or mm. The results are suitable for analysis of extremes at specific 25-km grid squares, but not for analysis of joint risks at spatially distributed locations.
+   <br><br>
+   The data has been converted to cloud-optimised Zarr v3 data stores.
+Documentation: https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-reports
+Contact: https://www.metoffice.gov.uk/forms/contact-us-ukcp18
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - environmental
+  - land
+  - geospatial
+  - sustainability
+  - zarr
+License: UKCP18 data included is licensed under the [Open Government Licence v3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+Citation: 
+Resources: 
+  - Description: UKCP18 Probabilistic data in Zarr format
+    ARN: arn:aws:s3:::met-office-ukcp18-probabilistic-climate-projections
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-ukcp18-probabilistic-climate-projections.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: UKCP Starters' Guide
+      URL: https://www.metoffice.gov.uk/api/assets/file/ukcp-starters-guide-february-2026-updatepdf?prefix=assets
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
+DeprecatedNotice:
+ADXCategories:
