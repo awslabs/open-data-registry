@@ -1,0 +1,41 @@
+Name: UKCP18 Marine climate projections
+Description: UKCP18 Marine projections provide information on future changes in sea level and marine conditions around the UK under different greenhouse gas emissions scenarios. The projections include changes in mean sea level, extreme sea levels, storm surges and wave climate, supporting coastal flood risk assessment, adaptation planning and long-term coastal management. The data has been converted to cloud-optimised Zarr v3 data stores.
+Documentation: https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-reports
+Contact: https://www.metoffice.gov.uk/forms/contact-us-ukcp18
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - ocean
+  - environmental
+  - geospatial
+  - sustainability
+  - zarr
+License: UKCP18 data included is licensed under the [Open Government Licence v3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+Citation: 
+Resources: 
+  - Description: UKCP18 Marine data in Zarr format
+    ARN: arn:aws:s3:::met-office-ukcp18-marine-climate-projections
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-ukcp18-marine-climate-projections.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: UKCP Starters' Guide
+      URL: https://www.metoffice.gov.uk/api/assets/file/ukcp-starters-guide-february-2026-updatepdf?prefix=assets
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
+DeprecatedNotice:
+ADXCategories:
