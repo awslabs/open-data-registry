@@ -1,0 +1,42 @@
+Name: UKCP18 Global climate projections
+Description: Global climate model projections, including 15 from the Met Office Hadley Centre (PPE-15, Perturbed Physics Ensemble) and 13 from other international climate modelling centres (CMIP5-13), together with their derived products: European circulation indices and UKCP18 Derived Projections. The global projections are available in the RCP2.6 and RCP8.5 emissions scenarios and from 1900-2100. The data is available for the entire globe, at daily and monthly temporal resolutions on a N216 Gaussian grid. The data is also available at UK-scale, at daily, monthly, seasonal and annual resolutions on a 60km OSGB grid, for major UK river catchments, administrative regions and each of the countries of the United Kingdom. The data has been converted to cloud-optimised Zarr v3 data stores.
+Documentation: https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-reports
+Contact: https://www.metoffice.gov.uk/forms/contact-us-ukcp18
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - environmental
+  - land
+  - geospatial
+  - sustainability
+  - zarr
+License: UKCP18 data included is licensed under the [Open Government Licence v3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+Citation: 
+Resources: 
+  - Description: UKCP18 Global data in Zarr format
+    ARN: arn:aws:s3:::met-office-ukcp18-global-climate-projections
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-ukcp18-global-climate-projections.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: UKCP Starters' Guide
+      URL: https://www.metoffice.gov.uk/api/assets/file/ukcp-starters-guide-february-2026-updatepdf?prefix=assets
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
+DeprecatedNotice:
+ADXCategories:
