@@ -1,0 +1,83 @@
+Name: "ML4HP-US: Machine Learning for High-Resolution Precipitation - United States"
+
+Description: |
+  ML4HP-US is a long-term, spatially continuous, high-resolution
+  hourly precipitation dataset covering the contiguous United States
+  (CONUS) from 2002 through 2025 at nominal 4-km spatial resolution.
+
+  Developed by the Hydroclimate Research Group at Auburn University,
+  ML4HP-US is generated using XTPrecip, a multi-source spatiotemporal
+  deep learning framework that integrates radar precipitation
+  estimates, satellite observations, atmospheric and land-surface
+  reanalyses, and topographic information. The framework is trained
+  using quality-controlled NOAA Cooperative Observer Program (COOP)
+  precipitation observations.
+
+  The model combines CONUS-wide pretraining with regional fine-tuning
+  across seven National Climate Assessment regions.
+
+  The dataset contains hourly precipitation estimates stored in
+  monthly NetCDF files. Two precipitation variables are provided:
+  precip_raw (original blended model estimates) and precip_scaled
+  (intensity-scaled precipitation estimates).
+
+  ML4HP-US supports climate and hydrological research, precipitation
+  extremes analysis, flood and drought studies, water resources
+  assessment, and evaluation of precipitation products.
+
+  The initial archive contains 288 monthly NetCDF files, with an
+  estimated total size of approximately 600 GB. Public data release
+  is planned for the end of 2026.
+
+Documentation: https://github.com/Hydroclimate-AI/ML4HP-US
+
+Contact: https://github.com/Hydroclimate-AI/ML4HP-US/issues
+
+ManagedBy: "Auburn University"
+
+UpdateFrequency: >
+  The initial release covers 2002-2025. The dataset is designed
+  for continued updates, with the update frequency to be
+  determined after the initial public release.
+
+Tags:
+  - aws-pds
+  - climate
+  - precipitation
+  - hydrology
+  - meteorological
+  - weather
+  - earth observation
+  - deep learning
+  - machine learning
+  - netcdf
+  - extreme weather
+  - geospatial
+
+License: >
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+  is proposed. The final dataset license is pending institutional
+  approval and confirmation of upstream data-use terms.
+
+RegistryEntryAdded: "2026-11-23"
+RegistryEntryLastModified: "2026-11-23"
+
+# AWS S3 resource information will be added after
+# the sponsored AWS account and bucket are configured.
+#
+# Resources:
+#   - Description: >
+#       ML4HP-US 4-km hourly precipitation dataset covering
+#       CONUS from 2002 to 2025, provided as monthly NetCDF files.
+#     ARN: arn:aws:s3:::CONFIRMED-BUCKET-NAME
+#     Region: CONFIRMED-AWS-REGION
+#     Type: S3 Bucket
+
+# The tutorial notebook will be added once published.
+#
+# DataAtWork:
+#   Tutorials:
+#     - Title: "Getting to Know ML4HP-US"
+#       URL: https://github.com/Hydroclimate-AI/ML4HP-US
+#       NotebookURL: ADD-NOTEBOOK-URL
+#       AuthorName: "Hydroclimate Research Group, Auburn University"
