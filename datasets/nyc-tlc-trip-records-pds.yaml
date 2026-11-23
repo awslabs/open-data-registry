@@ -1,5 +1,7 @@
+Deprecated: True
+DeprecatedNotice: Direct access to this dataset via the legacy S3 bucket (s3://nyc-tlc) is no longer available. Data files can be downloaded directly from the official NYC TLC CloudFront distribution at https://d37ci6vzurychx.cloudfront.net/trip-data/ or via the documentation link below.
 Name: New York City Taxi and Limousine Commission (TLC) Trip Record Data
-Description: "Data of trips taken by taxis and for-hire vehicles in New York City. Note: access to this dataset is free, however direct S3 access does require an AWS account. Anonymous downloads are accessible from the dataset's documentation webpage listed below."
+Description: "Data of trips taken by taxis and for-hire vehicles in New York City. Note: Direct S3 access via the legacy s3://nyc-tlc bucket is no longer available. Public downloads are accessible directly via NYC TLC's official CloudFront distribution (https://d37ci6vzurychx.cloudfront.net/trip-data/) or from the dataset's documentation webpage listed below."
 Documentation: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 Contact: research@tlc.nyc.gov
 ManagedBy: City of New York Taxi and Limousine Commission
@@ -15,11 +17,10 @@ Tags:
   - transportation
 License: http://www1.nyc.gov/home/terms-of-use.page
 Resources:
-  - Description: PARQUET files containing NYC TLC trip data.
+  - Description: Legacy PARQUET files containing NYC TLC trip data (direct S3 access is no longer available; use official CloudFront distribution or documentation link).
     ARN: arn:aws:s3:::nyc-tlc
     Region: us-east-1
     Type: S3 Bucket
-    AccountRequired: True
 DataAtWork:
   Tutorials:
     - Title: Machine learning on distributed Dask using Amazon SageMaker and AWS Fargate
