@@ -1,0 +1,40 @@
+Name: NOAA URMA - dynamical.org Icechunk Zarr
+Description: |
+    The Unrestricted Mesoscale Analysis (URMA) is NOAA's analysis of near-surface weather conditions incorporating observations that arrive too late for RTMA. NOAA runs URMA about six hours after analysis time, allowing it to provide a more complete historical analysis than the faster RTMA and RTMA-RU products. URMA serves as the National Weather Service's analysis of record for forecast verification.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [NOAA URMA analysis, virtual](https://dynamical.org/catalog/noaa-urma-analysis-virtual/) - Hourly Unrestricted Mesoscale Analysis (URMA) operated by NOAA NWS NCEP on the native CONUS grid, incorporating observations received after the RTMA analysis.
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA URMA analysis, virtual: 1 hour"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA URMA Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-urma
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-urma.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-urma-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "NOAA URMA analysis, virtual — RTMA, RTMA-RU and URMA analyses"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
