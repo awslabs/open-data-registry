@@ -10,7 +10,7 @@ Tags:
   - oceans
 License: CC0
 Resources:
-  - Description: A collection of NetCDF files, kerchunk-generated Parquet reference files, and an Intake catalog
+  - Description: A collection of NetCDF files, a virtual Icechunk (Zarr v3) store referencing them, and a STAC catalog describing that store
     ARN: arn:aws:s3:::umassd-fvcom
     Region: us-east-1
     Type: S3 Bucket
@@ -21,8 +21,8 @@ Resources:
 DataAtWork:
   Tutorials:
     - Title: FVCOM Explorer Notebook
-      URL: https://github.com/opensciencecomputing/umassd-fvcom/blob/main/fvcom_gom3_explore.ipynb
-      NotebookURL: https://github.com/opensciencecomputing/umassd-fvcom/blob/main/fvcom_gom3_explore.ipynb
+      URL: https://github.com/opensciencecomputing/umassd-fvcom/blob/main/FVCOM_explore_icechunk_v2.ipynb
+      NotebookURL: https://github.com/opensciencecomputing/umassd-fvcom/blob/main/FVCOM_explore_icechunk_v2.ipynb
       AuthorName: Rich Signell
       AuthorURL: https://about.me/rich.signell
       Services:
