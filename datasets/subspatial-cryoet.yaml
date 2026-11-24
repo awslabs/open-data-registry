@@ -1,0 +1,59 @@
+Name: Subspatial Cryo-Electron Tomography Open Data (EMPIAR-11830)
+Description: >-
+  Subspatial hosts cloud-accessible cryo-electron tomography (cryo-ET) datasets
+  on Amazon S3 for integrative structural cell biology and method development.
+  The initial release provides the Chlamydomonas reinhardtii in situ cryo-ET
+  dataset (EMPIAR-11830), including raw tilt-series frames and reconstructed
+  tomograms across multiple binning and denoising levels (must_bin8, must_bin4,
+  cryocare_bin4, and ctf3d_bin4). All files are stored in open, non-proprietary
+  formats directly on Amazon S3 for anonymous read access without downloading
+  entire archives, enabling reproducible cloud-native workflows and machine
+  learning benchmarking.
+Documentation: https://github.com/subspatial-org/open-data
+Contact: https://github.com/subspatial-org/open-data/issues
+ManagedBy: "[Subspatial](https://github.com/subspatial-org)"
+UpdateFrequency: As new datasets and curated releases become available.
+Tags:
+  - aws-pds
+  - cryo electron tomography
+  - electron microscopy
+  - electron tomography
+  - structural biology
+  - cell biology
+  - life sciences
+  - microscopy
+  - imaging
+  - volumetric imaging
+  - machine learning
+License: >-
+  [CC0 1.0 Universal (Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/)
+Resources:
+  - Description: >-
+      Primary Amazon S3 bucket hosting Subspatial open cryo-ET datasets,
+      including raw tilt series and reconstructed tomograms for EMPIAR-11830.
+    ARN: arn:aws:s3:::subspatial-opendata
+    Region: eu-north-1
+    Type: S3 Bucket
+    Explore:
+      - "[Browse documentation and layout](https://github.com/subspatial-org/open-data)"
+      - "[Get to know the dataset notebook](https://github.com/subspatial-org/open-data/blob/main/empiar-11830/get-to-know-a-dataset.ipynb)"
+  - Description: >-
+      Amazon SNS topic publishing notifications when new dataset release
+      manifests are added to the bucket.
+    ARN: arn:aws:sns:eu-north-1:732227445052:subspatial-opendata-notifications
+    Region: eu-north-1
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: Get to know the Subspatial EMPIAR-11830 cryo-ET dataset on AWS
+      URL: https://github.com/subspatial-org/open-data/blob/main/empiar-11830/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/subspatial-org/open-data/blob/main/empiar-11830/get-to-know-a-dataset.ipynb
+      AuthorName: Subspatial
+      AuthorURL: https://github.com/subspatial-org
+  Publications:
+    - Title: EMPIAR-11830, In situ cryo-ET dataset of Chlamydomonas reinhardtii prepared using cryo-plasmaFIB milling
+      URL: https://www.ebi.ac.uk/empiar/EMPIAR-11830/
+      AuthorName: Kelley, Khavnekar, Righetto et al.
+    - Title: Towards community-driven visual proteomics with large-scale cryo-electron tomography of Chlamydomonas reinhardtii
+      URL: https://www.biorxiv.org/content/10.1101/2024.12.28.630444v1
+      AuthorName: Kelley, Khavnekar, Righetto et al.
