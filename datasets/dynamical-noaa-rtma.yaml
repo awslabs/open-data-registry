@@ -1,0 +1,46 @@
+Name: NOAA RTMA - dynamical.org Icechunk Zarr
+Description: |
+    The Real-Time Mesoscale Analysis (RTMA) is NOAA's analysis of near-surface weather conditions, combining observations with a model background. NOAA publishes hourly RTMA analyses about an hour after analysis time. Its Rapid Update variant, RTMA-RU, produces analyses every 15 minutes with about 15 minutes of latency. Their sibling, URMA, incorporates later-arriving observations for a more complete historical analysis.
+
+    These datasets have been translated to cloud-optimized Icechunk Zarr format by [dynamical.org](https://dynamical.org).
+
+    - [NOAA RTMA analysis, virtual](https://dynamical.org/catalog/noaa-rtma-analysis-virtual/) - Hourly Real-Time Mesoscale Analysis (RTMA) operated by NOAA NWS NCEP on the native CONUS grid.
+    - [NOAA RTMA-RU analysis, virtual](https://dynamical.org/catalog/noaa-rtma-ru-analysis-virtual/) - Real-Time Mesoscale Analysis Rapid Update (RTMA-RU) operated every 15 minutes by NOAA NWS NCEP on the native CONUS grid.
+Documentation: https://dynamical.org/catalog/
+Contact: feedback@dynamical.org
+ManagedBy: "[dynamical.org](https://dynamical.org)"
+UpdateFrequency: "NOAA RTMA analysis, virtual: 1 hour; NOAA RTMA-RU analysis, virtual: 15 minutes"
+Tags:
+  - aws-pds
+  - weather
+  - atmosphere
+  - meteorological
+  - climate
+  - forecast
+  - zarr
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+Resources:
+  - Description: NOAA RTMA Icechunk Zarr data
+    ARN: arn:aws:s3:::dynamical-noaa-rtma
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - "[Browse Bucket](https://dynamical-noaa-rtma.s3.amazonaws.com/index.html)"
+  - Description: Notifications for dataset updates
+    ARN: arn:aws:sns:us-west-2:761136292730:dynamical-noaa-rtma-object_created
+    Region: us-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: "NOAA RTMA analysis, virtual — RTMA, RTMA-RU and URMA analyses"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+    - Title: "NOAA RTMA-RU analysis, virtual — RTMA, RTMA-RU and URMA analyses"
+      URL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      NotebookURL: https://github.com/dynamical-org/notebooks/blob/main/noaa-rtma-rtma-ru-urma-analysis-virtual.ipynb
+      AuthorName: dynamical.org
+      AuthorURL: https://dynamical.org
+ADXCategories:
+  - Environmental Data
