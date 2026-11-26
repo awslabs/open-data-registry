@@ -1,0 +1,47 @@
+Name: UKCP18 Local climate projections
+Description: |
+   A set of 16 high resolution convection-permitting climate projections for the UK from 1981-2080, for the RCP8.5 emissions scenario, driven by the regional climate model projections. The dataset also includes FUTURE-DRAINAGE rainfall uplifts derived from UKCP18 Local. The data is available on a 2.2km grid on a rotated pole at various temporal resolutions: hourly (for some variables), 3-hourly (for some variables), daily and longer averages. Additionally, a version of the data has been re-gridded onto a 5km grid on the Ordnance Survey's British National Grid. The data has been converted to cloud-optimised Zarr v3 data stores.
+Documentation: https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-reports
+Contact: https://www.metoffice.gov.uk/forms/contact-us-ukcp18
+ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
+UpdateFrequency: Rare once complete
+Collabs:
+  ASDI:
+    Tags:
+      - climate
+Tags:
+  - climate
+  - model
+  - climate model
+  - atmosphere
+  - environmental
+  - land
+  - geospatial
+  - sustainability
+  - zarr
+License: UKCP18 data included is licensed under the [Open Government Licence v3](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+Citation: 
+Resources: 
+  - Description: UKCP18 Local data in Zarr format
+    ARN: arn:aws:s3:::met-office-ukcp18-local-climate-projections
+    Region: eu-west-2
+    Type: S3 Bucket
+    Explore:
+    - '[Browse Bucket](https://met-office-ukcp18-local-climate-projections.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new UKCP18 Local climate projections data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-ukcp18-local-climate-projections-object_created
+    Region: eu-west-2
+    Type: SNS Topic
+DataAtWork:
+  Tutorials:
+    - Title: UKCP Starters' Guide
+      URL: https://www.metoffice.gov.uk/api/assets/file/ukcp-starters-guide-february-2026-updatepdf?prefix=assets
+      AuthorName: Met Office
+      AuthorURL: https://www.metoffice.gov.uk
+  Tools & Applications:
+    - Title: Iris
+      URL: https://scitools-iris.readthedocs.io/en/stable/userguide/index.html
+      AuthorName: Iris Contributors
+      AuthorURL: https://scitools-iris.readthedocs.io/en/stable/copyright.html
+DeprecatedNotice:
+ADXCategories:
