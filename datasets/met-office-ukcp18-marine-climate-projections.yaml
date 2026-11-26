@@ -12,7 +12,7 @@ Tags:
   - climate
   - model
   - climate model
-  - ocean
+  - oceans
   - environmental
   - geospatial
   - sustainability
@@ -26,6 +26,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://met-office-ukcp18-marine-climate-projections.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new UKCP18 Marine climate projections data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-ukcp18-marine-climate-projections-object_created
+    Region: eu-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: UKCP Starters' Guide
