@@ -1,5 +1,5 @@
 Name: UKCP18 Regional climate projections
-Description: A set of 16 regional climate projections for the UK and North-West Europe at 12 km spatial resolution. The set comprises 12 models from the Met Office Hadley Centre Perturbed Physics Ensemble (PPE) and 4 models from other international modelling centres (CMIP5). The projections are available for the period 1981-2080 under the RCP8.5 emissions scenario. The regional projections are available at UK-scale (land-gcm(uk)) at daily, monthly, seasonal and annual temporal resolutions on a 12km OSGB grid, for major UK river catchments, regions and each of the countries of the United Kingdom. This data is also available for North-West Europe at daily and monthly temporal resolutions. The data has been converted to cloud-optimised Zarr v3 data stores.
+Description: A set of 16 regional climate projections for the UK and North-West Europe at 12 km spatial resolution. The set comprises 12 models from the Met Office Hadley Centre Perturbed Physics Ensemble (PPE) and 4 models from other international modelling centres (CMIP5). The projections are available for the period 1981-2080 under the RCP8.5 emissions scenario. The regional projections are available at UK-scale at daily, monthly, seasonal and annual temporal resolutions on a 12km OSGB grid, for major UK river catchments, regions and each of the countries of the United Kingdom. This data is also available for North-West Europe at daily and monthly temporal resolutions. The data has been converted to cloud-optimised Zarr v3 data stores.
 Documentation: https://www.metoffice.gov.uk/research/approach/collaboration/ukcp/guidance-reports
 Contact: https://www.metoffice.gov.uk/forms/contact-us-ukcp18
 ManagedBy: "[Met Office](https://www.metoffice.gov.uk)"
@@ -27,6 +27,10 @@ Resources:
     Type: S3 Bucket
     Explore:
     - '[Browse Bucket](https://met-office-ukcp18-regional-climate-projections.s3.amazonaws.com/index.html)'
+  - Description: Notifications for new UKCP18 Regional climate projections data
+    ARN: arn:aws:sns:eu-west-2:633885181284:met-office-ukcp18-regional-climate-projections-object_created
+    Region: eu-west-2
+    Type: SNS Topic
 DataAtWork:
   Tutorials:
     - Title: UKCP Starters' Guide
