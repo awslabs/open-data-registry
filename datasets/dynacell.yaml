@@ -2,30 +2,36 @@ Name: DynaCell
 Description: |
   The DynaCell evaluation suite assesses dynamic 3D virtual staining of live cells.
   This evaluation suite is part of DynaCell, a broader framework for image-based
-  profiling of cell-state dynamics.
-  The dataset pairs label-free transmitted-light volumes (phase reconstructions from brightfield z-stacks) with fluorescence ground truth for four organelles (nucleus, cell membrane,
-  endoplasmic reticulum, mitochondria) across three conditions
-  (uninfected, Zika-infected, Dengue-infected).
+  profiling of cell-state dynamics. The dataset pairs label-free transmitted-light
+  volumes (brightfield z-stacks and phase reconstructed from them) with fluorescence
+  ground truth for four organelles (nucleus, cell membrane, endoplasmic reticulum,
+  mitochondria). Both components below are split into train and test sets.
 
-  The v1 release contains images of A549 human lung adenocarcinoma cells acquired on
-  the Mantis correlative label-free and light-sheet fluorescence microscope at Biohub
-  (24 OZX stores, 262 FOVs, ~407 GB), split into train and test sets across 4 organelle
-  markers and 3 conditions.
+  The biohub-a549 component contains 3D time-lapse images of A549 human lung
+  adenocarcinoma cells acquired on the Mantis correlative label-free and light-sheet
+  fluorescence microscope at Biohub, across three conditions (uninfected,
+  Zika-infected, Dengue-infected): 24 OZX stores (4 organelle markers x 3 conditions
+  x 2 splits), 262 FOVs, ~620 GB.
 
-  A v1.1 release will add the WTC-11 hiPSC component: cells from the Allen Institute
-  hiPSC single-cell image dataset (Viana et al., Nature 2023), reprocessed as paired
-  label-free and confocal fluorescence volumes. The iPSC dataset is redistributed under
-  the Allen Institute Terms of Use (https://www.allencell.org/terms-of-use.html), which
-  requires citation of the original dataset and limits use to noncommercial research.
+  The aics-hipsc component contains WTC-11 human induced pluripotent stem cells from
+  the Allen Institute hiPSC single-cell image dataset (Viana et al., Nature 2023),
+  reprocessed as paired label-free and spinning-disk confocal fluorescence volumes:
+  6 OZX stores, 1,723 FOVs, ~309 GB. This component is redistributed under the Allen
+  Institute Terms of Use (https://www.allencell.org/terms-of-use.html), which require
+  citation of the original dataset and limit use to noncommercial research.
+
+  The bucket also holds the trained baseline model checkpoints with their training
+  configs, a small demo bundle, per-FOV quality-control reports for the A549 stores,
+  supplementary movies, and the data behind the project website's interactive viewer.
 
   All data are stored as RFC-9 zipped OME-Zarr (.ozx) archives following OME-NGFF v0.5,
   readable with iohub (https://github.com/Biohub/iohub). Machine-readable metadata
-  (Croissant JSON-LD with Responsible AI fields, per the NeurIPS Datasets & Benchmarks
-  track) is published at s3://dynacell/v1/metadata/croissant.json.
+  (Croissant 1.1 JSON-LD with Responsible AI fields) is published at
+  s3://dynacell/v1/metadata/croissant.json.
 Documentation: https://github.com/Biohub/VisCy/tree/main/applications/dynacell
 Contact: shalin.mehta@biohub.org
 ManagedBy: "[Biohub](https://www.biohub.org/)"
-UpdateFrequency: As needed - v1 (A549) is frozen; future releases will expand the dataset. Registry Entry Added 2026-05-04, Last Modified 2026-06-15.
+UpdateFrequency: As needed - future releases will expand the dataset. Registry Entry Added 2026-05-04, Last Modified 2026-11-25.
 Tags:
   - aws-pds
   - biology
@@ -40,14 +46,15 @@ Tags:
   - computer vision
   - zarr
   - Biohub
-License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+License: "biohub-a549: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); aics-hipsc: [Allen Institute Terms of Use](https://www.allencell.org/terms-of-use.html)"
 Resources:
   - Description: |
-      DynaCell v1 release: paired label-free and fluorescence 3D+time volumes
-      in RFC-9 zipped OME-Zarr (.ozx) format. Contains biohub-a549 (train/test
-      splits, 4 markers x 3 conditions = 24 stores), Croissant 1.1 metadata
-      with Responsible AI fields, and placeholders for forthcoming demo
-      samples, trained model checkpoints, and supplementary movies.
+      DynaCell v1 release: paired label-free and fluorescence 3D volumes in
+      RFC-9 zipped OME-Zarr (.ozx) format for biohub-a549 (24 stores) and
+      aics-hipsc (6 stores), each with train and test splits; Croissant 1.1
+      metadata with Responsible AI fields; trained baseline model checkpoints
+      and configs; a demo bundle; quality-control reports; and supplementary
+      movies.
     ARN: arn:aws:s3:::dynacell
     Region: us-west-2
     Type: S3 Bucket
@@ -76,6 +83,6 @@ DataAtWork:
       AuthorURL: https://www.biohub.org/comp-micro
   Publications:
     - Title: "The DynaCell Evaluation Suite for Dynamic 3D Virtual Staining of Live Cells"
-      URL: https://github.com/Biohub/VisCy/tree/main/applications/dynacell
+      URL: https://arxiv.org/abs/2611.02324
       AuthorName: Kalinin, Zheng, Theodoro, Ivanov, Hirata-Miyasaki, Lee, Liu, Varra, Chandler, Pradeep, Liu, Leonetti, Arias, Huang, Mehta
       AuthorURL: https://www.biohub.org/comp-micro
