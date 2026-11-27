@@ -1,0 +1,52 @@
+Name: "MemProtMD: Membrane Proteins in Self-Assembled Lipid Bilayers"
+Description: |
+  MemProtMD is a database of every membrane protein structure in the Protein Data Bank (PDB), each inserted into a lipid bilayer by coarse-grained molecular dynamics self-assembly. For each structure, a DPPC bilayer assembles around the protein over 1 µs with the MARTINI force field, and the final frame is converted to atomistic detail. The dataset covers about 9,500 structures. For each one it gives coarse-grained and atomistic snapshots of the protein in its membrane, and the bilayer thickness next to the protein and far from it. It also gives per-residue depth in the membrane and contacts with lipid head groups, lipid tails and water, rendered images, and GROMACS inputs to rerun each simulation. Catalogue tables (TSV and Parquet) summarise every simulation and every residue, for large-scale analysis and machine learning of how proteins sit in membranes.
+Documentation: https://github.com/stansfeldlab/stansfeldlab.github.io/blob/main/open-data/memprotmd/README.md
+Contact: https://stansfeldlab.github.io/memprotmd/#/about
+ManagedBy: "[Stansfeld Research Group, University of Warwick](https://stansfeldlab.github.io/)"
+UpdateFrequency: New membrane protein structures are simulated as the PDB releases them, typically weekly.
+Tags:
+  - aws-pds
+  - amino acid
+  - bioinformatics
+  - biomolecular modeling
+  - life sciences
+  - machine learning
+  - molecular dynamics
+  - molecule
+  - parquet
+  - protein
+  - simulations
+  - structural biology
+License: "[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)"
+Citation: "Newport TD, Sansom MSP, Stansfeld PJ (2019). The MemProtMD database: a resource for membrane-embedded protein structures and their lipid interactions. Nucleic Acids Research 47(D1):D390–D397. https://doi.org/10.1093/nar/gky1047"
+Resources:
+  - Description: Simulations, structures, per-residue analysis, images and catalogue tables for every MemProtMD entry
+    ARN: arn:aws:s3:::memprotmd
+    Region: eu-north-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: MemProtMD"
+      URL: https://github.com/stansfeldlab/stansfeldlab.github.io/blob/main/open-data/memprotmd/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/stansfeldlab/stansfeldlab.github.io/blob/main/open-data/memprotmd/get-to-know-a-dataset.ipynb
+      AuthorName: Stansfeld Research Group
+      AuthorURL: https://stansfeldlab.github.io/
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: MemProtMD website
+      URL: https://stansfeldlab.github.io/memprotmd/
+      AuthorName: Stansfeld Research Group
+      AuthorURL: https://stansfeldlab.github.io/
+    - Title: MemProtMD trajectories in the MDDB
+      URL: https://oxford.mddbr.eu/#/browse?option=MemProtMD
+      AuthorName: Molecular Dynamics Data Bank
+      AuthorURL: https://mddbr.eu/
+  Publications:
+    - Title: "The MemProtMD database: a resource for membrane-embedded protein structures and their lipid interactions"
+      URL: https://doi.org/10.1093/nar/gky1047
+      AuthorName: Newport TD, Sansom MSP, Stansfeld PJ
+    - Title: "MemProtMD: automated insertion of membrane protein structures into explicit lipid membranes"
+      URL: https://doi.org/10.1016/j.str.2015.05.006
+      AuthorName: Stansfeld PJ, Goose JE, Caffrey M, Carpenter EP, Parker JL, Newstead S, et al.
