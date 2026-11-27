@@ -1,0 +1,121 @@
+Name: Probabilistic Forecasts of Global Human Modification, 2025-2040
+Description: |
+  Global probabilistic forecasts of cumulative Human Modification (HM) of terrestrial ecosystems
+  at ~1 km resolution for 2025, 2030, 2035 and 2040, with the observed 1990-2020 HM record on the
+  same grid. HM is a continuous 0-1 index combining 16 anthropogenic threats mapped to the IUCN
+  threat taxonomy. Each land pixel has a full forecast distribution (64 quantiles per year)
+  from a convolutional LSTM trained on the 1990-2020 HM time series, so users can estimate
+  expected change, uncertainty, and the probability of crossing thresholds such as loss of
+  natural land (HM > 0.1).
+  <br /><br />
+
+  The forecasts were produced by The Nature Conservancy to support anticipatory conservation
+  planning, for example siting protected and conserved areas under Target 3 of the
+  Kunming-Montreal Global Biodiversity Framework, assessing conservation additionality, and
+  providing forward-looking inputs to biodiversity and ecosystem condition models. Out-of-sample
+  forecasts outperform a persistence baseline at every horizon (CRPS skill 0.16-0.30), and their
+  95% prediction intervals contain 92-96% of held-out observations.
+  <br /><br />
+
+  Data are provided as a single [Icechunk](https://icechunk.io) repository of Zarr v3 arrays
+  in EPSG:4326 at 0.009 degrees, covering land from 84°N to 70°S. The repository contains two
+  groups: `hm_prob_forecast` (dimensions year, percentile, latitude, longitude) and
+  `hm_observed` (dimensions year, latitude, longitude). Values are stored as uint16 with CF
+  scale_factor and fill-value attributes, which xarray decodes to HM on the 0-1 scale. Each
+  chunk holds all 64 percentiles for a 256 x 320 pixel window, so one read returns complete
+  pixel distributions.
+  <br /><br />
+
+  The data can be opened anonymously with [Icechunk](https://icechunk.io) and
+  [Xarray](https://xarray.dev):
+  <br /><br />
+  ```python
+  import icechunk
+  import xarray as xr
+
+  storage = icechunk.s3_storage(
+      bucket="tnc-human-modification",
+      prefix="hm_probability_forecast",
+      region="us-west-2",
+      anonymous=True,
+  )
+  repo = icechunk.Repository.open(storage)
+  session = repo.readonly_session(branch="main")
+  forecast = xr.open_zarr(session.store, group="hm_prob_forecast", consolidated=False, chunks=None)
+  observed = xr.open_zarr(session.store, group="hm_observed", consolidated=False, chunks=None)
+  ```
+  <br /><br />
+
+  Forecasts are conditional on the continuation of historical relationships and dynamics, and
+  pixel distributions are estimated independently. Expected values and exceedance
+  probabilities can be aggregated over regions, but percentile maps cannot. See the
+  documentation for guidance. Single-band GeoTIFFs of summary layers are also available from
+  [Zenodo](https://doi.org/10.5281/zenodo.19700998), and an interactive browser is available on
+  the [Earthmover Data Marketplace](https://app.earthmover.io/marketplace/6abb60fba504351ef2a29c6f).
+Documentation: https://github.com/GMoncrieff/open-data-examples/tree/main/human-modification-forecasts
+Contact: glenn.moncrieff@tnc.org
+ManagedBy: "[The Nature Conservancy](https://www.nature.org/)"
+UpdateFrequency: >-
+  Not updated on a fixed schedule. A new version of the forecasts will be released when the
+  underlying Human Modification time series is extended to a new epoch.
+Tags:
+  - aws-pds
+  - biodiversity
+  - conservation
+  - ecosystems
+  - environmental
+  - forecast
+  - time series forecasting
+  - geospatial
+  - global
+  - land use
+  - deep learning
+  - zarr
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) - https://creativecommons.org/licenses/by/4.0/
+Citation: >
+  Moncrieff, G. R., Voigt, M., Oakleaf, J. R., Theobald, D. M., Walker, K. S., Fitzsimons, J. A.,
+  Kiesecker, J., and Kennedy, C. M. (2026). Probabilistic projections of human modification of
+  the terrestrial biosphere from 2020 to 2040. EcoEvoRxiv. https://doi.org/10.32942/X2S11G
+
+  Historical Human Modification data: Theobald, D. M., Oakleaf, J. R., Moncrieff, G., Voigt, M.,
+  Kiesecker, J., and Kennedy, C. M. (2025). Global extent and change in human modification of
+  terrestrial ecosystems from 1990 to 2022. Scientific Data, 12, 606.
+  https://doi.org/10.1038/s41597-025-04892-2
+Resources:
+  - Description: >-
+      Icechunk repository (Zarr v3) at s3://tnc-human-modification/hm_probability_forecast
+      containing the HM forecast quantile functions for 2025-2040 (group hm_prob_forecast) and
+      the observed HM record for 1990-2020 (group hm_observed), uint16-encoded, EPSG:4326, 0.009 degrees.
+    ARN: arn:aws:s3:::tnc-human-modification
+    Region: us-west-2
+    Type: S3 Bucket
+    Explore:
+      - '[Browse Bucket](https://tnc-human-modification.s3.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: "Get To Know A Dataset: Probabilistic Forecasts of Global Human Modification, 2025-2040"
+      URL: https://github.com/GMoncrieff/open-data-examples/blob/main/human-modification-forecasts/get-to-know-a-dataset.ipynb
+      NotebookURL: https://github.com/GMoncrieff/open-data-examples/blob/main/human-modification-forecasts/get-to-know-a-dataset.ipynb
+      AuthorName: Glenn Moncrieff
+      AuthorURL: https://gmoncrieff.github.io
+      Services:
+        - Amazon S3
+  Tools & Applications:
+    - Title: Human Modification Forecasts explorer - interactive 3D globe of observed and forecast HM
+      URL: https://gmoncrieff.github.io/hm_forecasts_app/
+      AuthorName: Glenn Moncrieff
+      AuthorURL: https://gmoncrieff.github.io
+    - Title: spatio-temporal - code for fitting and evaluating the HM forecasting model
+      URL: https://github.com/GMoncrieff/spatio-temporal
+      AuthorName: Glenn Moncrieff
+      AuthorURL: https://github.com/GMoncrieff
+  Publications:
+    - Title: Probabilistic projections of human modification of the terrestrial biosphere from 2020 to 2040
+      URL: https://doi.org/10.32942/X2S11G
+      AuthorName: Moncrieff G, Voigt M, Oakleaf J, Theobald D, Walker K, Fitzsimons J, et al.
+      AuthorURL: https://gmoncrieff.github.io
+    - Title: Global extent and change in human modification of terrestrial ecosystems from 1990 to 2022
+      URL: https://www.nature.com/articles/s41597-025-04892-2
+      AuthorName: Theobald D, Oakleaf J, Moncrieff G, Voigt M, Kiesecker J, Kennedy C
+ADXCategories:
+  - Environmental Data
