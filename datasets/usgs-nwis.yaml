@@ -1,0 +1,69 @@
+Name: USGS National Water Information System (NWIS) Water Data
+Description: |
+  The United States Geological Survey (USGS) collects water data at monitoring
+  locations across the United States using automated sensors and manual data 
+  collection. Each monitoring location has location information that details
+  the location name and identifier, the agency responsible for data collection,
+  and geographic information about the location. This dataset includes both
+  continuous and daily data collected at these locations, collected as part of
+  USGS' National Water Information System (NWIS).
+  
+  Continuous data are collected via automated sensors installed at a monitoring
+  location. They are collected at a high frequency and often at a fixed 
+  15-minute interval. Depending on the specific monitoring location, the data 
+  may be transmitted automatically via telemetry and be available on WDFN
+  within minutes of collection, while other times the delivery of data may be
+  delayed if the monitoring location does not have the capacity to automatically
+  transmit data. Continuous data are described by parameter name and parameter
+  code (pcode). These data might also be referred to as "instantaneous values"
+  or "IV".
+
+  Daily data provide one data value to represent water conditions for the day. 
+  Throughout much of the history of the USGS, the primary water data available
+  were daily data. These data were originally collected manually at the 
+  monitoring location each day, then transitioned to being recorded at the
+  location. With improved availability of computer storage and automated
+  transmission of data, the daily data published today are generally a summary
+  statistic or single metric of the continuous data collected each day. Daily
+  data are automatically calculated from the continuous data of the same
+  parameter code and are described by parameter name and parameter code (pcode)
+  and a statistic code. These data have also been referred to as “daily values”
+  or “DV”.
+
+Documentation: https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/schema
+Contact: https://waterdata.usgs.gov/questions-comments?referrerUrl=https://api.waterdata.usgs.gov
+ManagedBy: [USGS Water Data for the Nation](https://waterdata.usgs.gov)
+UpdateFrequency: Daily
+Tags:
+  - air temperature
+  - geospatial
+  - ground water
+  - hydrology
+  - natural resource
+  - parquet
+  - precipitation
+  - soil moisture
+  - stac
+  - surface water
+  - us
+  - water
+License: US Government Work in the Public Domain. Citation information is available at [https://waterdata.usgs.gov/citation](https://waterdata.usgs.gov/citation).
+Citation: U.S. Geological Survey, `YEAR`, U.S. Geological Survey National Water Information System database, accessed `DATE`, at https://doi.org/10.5066/F7P55KJN.
+Resources:
+  - Description:
+    ARN: arn:aws:s3:::usgs-nwis/continuous
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: false
+    Explore:
+      - '[Browse Bucket](https://awslabs.github.io/aws-js-s3-explorer/?region=us-west-2&bucket=usgs-nwis/)'
+DataAtWork:
+  Tutorials:
+    - Title: Get To Know a Dataset: USGS National Water Information System (NWIS) Water Data
+      URL: https://api.waterdata.usgs.gov/docs/stac/open-s3
+      NotebookURL: https://api.waterdata.usgs.gov/docs/stac/open-s3.ipynb
+      AuthorName: USGS
+  Tools & Applications:
+    - Title: Water Data for the Nation (WDFN)
+      URL: https://waterdata.usgs.gov/
+      AuthorName: USGS
