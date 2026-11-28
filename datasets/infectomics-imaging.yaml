@@ -1,0 +1,115 @@
+Name: Infectomics Imaging
+Description: |
+  Infectomics Imaging is a live-cell imaging atlas of how cell and organelle
+  morphology change during viral infection. It is one of three parts of the
+  infectomics resource: the Organelle Box cell lines, this imaging release, and
+  DynaCell, the deep learning framework that profiles and aligns the dynamic
+  cellular responses. Together they let researchers model how perturbations
+  rewire cellular organization.
+
+  The release holds 62 imaging acquisitions, recorded between 2023-09-21 and
+  2026-09-25. Each is an OME-Zarr store (OME-NGFF 0.5 on Zarr v3) laid out as a
+  high-content screening plate, one 5D (T, C, Z, Y, X) array per field of view:
+  7,845 fields of view and about 302 TB in all. Every acquisition also has a
+  maximum-intensity-projection companion store (suffix "_mip", 4.3 TB in all)
+  for fast browsing and for 2D analysis.
+
+  Two microscopes contribute. The Mantis correlative label-free and light-sheet
+  fluorescence microscope (v1 and v2; 33 acquisitions, 1,413 fields of view,
+  255 TB) follows single cells every 30 minutes through infection. An Andor
+  Dragonfly spinning-disk confocal with brightfield (29 acquisitions, 6,432
+  fields of view, 47 TB) screens the whole cell-line panel every 6 hours.
+
+  Each field of view pairs a 3D phase volume, reconstructed from the brightfield
+  z-stack with waveorder, with the fluorescence channels: the well's GFP-tagged
+  organelle marker, an mCherry protease sensor of infection where one is
+  present, and Cytoland virtual-stain predictions of the nucleus and the cell
+  membrane.
+
+  The biology is live A549 human lung adenocarcinoma cells (ATCC CCL-185), each
+  well carrying one GFP-tagged organelle or cell-state marker, imaged under
+  Dengue virus, Zika virus and herpes simplex virus 1 infection, and under the
+  antiviral MK-0608, bafilomycin A1, oligomycin A and DMSO vehicle. Counted by
+  field of view: 1,642 Zika, 1,577 Dengue, 896 herpes simplex 1, 9 OC43, 2,316
+  uninfected, 9 mock, 523 vehicle, 396 MK-0608, 36 bafilomycin A1, 36
+  oligomycin A, and 880 in the fixation and quality-control references, which
+  carry no perturbation record. 475 fields received a drug and a virus together
+  and so are counted under both, which is why these counts sum to 8,320 rather
+  than to the 7,845 fields of view. The "organelle_box_v2" store is the
+  cell-line reference: 23
+  GFP-tagged lines imaged live and after methanol and paraformaldehyde fixation,
+  773 fields of view. Two further stores, "mantis_figure_4" and
+  "mantis_figure_5", hold HEK293T OpenCell endogenous-tag panels, the second
+  under human coronavirus OC43; these two carry a noncommercial license, stated
+  in the License field below.
+
+  Every store carries machine-readable curation metadata in
+  tables/obs/obs.parquet: one row per field of view giving the marker, the
+  condition, the perturbation with its NCBI Taxonomy or PubChem identifier, the
+  microscope and its time increment, the voxel size, the cell line with its
+  Cellosaurus identifier, and the provenance of each annotated value. The stores
+  are read with iohub (https://github.com/Biohub/iohub) or with any
+  OME-NGFF reader; HTTP range requests let a client stream single slices without
+  downloading a store.
+Documentation: https://biohub.ai/infectomics/imaging
+Contact: shalin.mehta@biohub.org
+ManagedBy: "[Biohub](https://www.biohub.org/)"
+UpdateFrequency: As needed - future releases will add acquisitions and single-cell embeddings.
+Tags:
+  - aws-pds
+  - biology
+  - cell biology
+  - life sciences
+  - cell imaging
+  - fluorescence imaging
+  - light-sheet microscopy
+  - volumetric imaging
+  - high-throughput imaging
+  - imaging
+  - microscopy
+  - image-based profiling
+  - virus
+  - machine learning
+  - deep learning
+  - computer vision
+  - zarr
+  - Biohub
+License: "All stores except two: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). mantis_figure_4 and mantis_figure_5 (HEK293T OpenCell panels): [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), noncommercial research only."
+Resources:
+  - Description: |
+      Infectomics Imaging v1, under the v1/ prefix: 62 OME-Zarr acquisitions
+      (OME-NGFF 0.5 on Zarr v3) of live A549 and HEK293T cells through viral
+      infection and drug treatment, 7,845 fields of view, about 302 TB; a
+      maximum-intensity-projection companion store for each acquisition, 4.3 TB;
+      and per-field curation metadata in each store's tables/obs/obs.parquet.
+    ARN: arn:aws:s3:::bh-infectomics
+    Region: us-east-1
+    Type: S3 Bucket
+DataAtWork:
+  Tutorials:
+    - Title: "Get to know Infectomics Imaging - exploring the atlas from S3"
+      URL: https://github.com/Biohub/VisCy/blob/main/applications/dynaclr/examples/demos/imaging_infectomics_opendata_demo/get-to-know-infectomics-imaging.ipynb
+      NotebookURL: https://github.com/Biohub/VisCy/blob/main/applications/dynaclr/examples/demos/imaging_infectomics_opendata_demo/get-to-know-infectomics-imaging.ipynb
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
+  Tools & Applications:
+    - Title: Infectomics Atlas - interactive explorer of the single-cell embedding and the images
+      URL: https://biohub.ai/infectomics/imaging
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
+    - Title: Organelle Box - the engineered A549 cell lines imaged in this release
+      URL: https://biohub.ai/infectomics/organellebox
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
+    - Title: VisCy - training, prediction and evaluation pipelines for DynaCell
+      URL: https://github.com/Biohub/VisCy
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
+    - Title: iohub - OME-Zarr I/O library for these stores
+      URL: https://github.com/Biohub/iohub
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
+    - Title: waveorder - phase reconstruction from label-free microscopy
+      URL: https://github.com/Biohub/waveorder
+      AuthorName: Computational Imaging Group at Biohub
+      AuthorURL: https://www.biohub.org/comp-imaging
